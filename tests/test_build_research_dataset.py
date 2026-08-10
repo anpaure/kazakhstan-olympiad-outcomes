@@ -1,6 +1,10 @@
 import unittest
 
-from scripts.build_research_dataset import build_rows, organization_category
+from scripts.build_research_dataset import (
+    build_rows,
+    normalize_destination,
+    organization_category,
+)
 from scripts.build_outcomes_visualization import compact_person
 
 
@@ -118,6 +122,46 @@ class OrganizationCategoryTest(unittest.TestCase):
                     organization_category(organization, "employment"), "Academia"
                 )
 
+
+class DestinationNormalizationTest(unittest.TestCase):
+    def test_completed_degree_is_history_not_destination(self):
+        normalized = normalize_destination(
+            "Example University", "BSc Graduate", "education", "2018", "2022"
+        )
+
+        self.assertEqual(normalized[0], "")
+        self.assertEqual(normalized[3], "history_only")
+
+    def test_active_phd_student_remains_a_destination(self):
+        normalized = normalize_destination(
+            "Example University", "PhD Student", "education", "2024", ""
+        )
+
+        self.assertEqual(normalized[0], "Example University")
+        self.assertEqual(normalized[3], "current_education")
+
+    def test_university_researcher_is_employment(self):
+        normalized = normalize_destination(
+            "Example University", "Senior Researcher", "education", "2024", ""
+        )
+
+        self.assertEqual(normalized[2], "employment")
+        self.assertEqual(normalized[3], "latest_employment")
+
+    def test_publication_authorship_is_not_a_job(self):
+        normalized = normalize_destination(
+            "Example University", "Research author", "education", "2025", "2025"
+        )
+
+        self.assertEqual(normalized[0], "")
+        self.assertEqual(normalized[3], "history_only")
+
+    def test_unscoped_academic_organization_is_not_a_destination(self):
+        normalized = normalize_destination("MIT", "", "organization", "", "")
+
+        self.assertEqual(normalized[0], "")
+        self.assertEqual(normalized[3], "history_only")
+
     def test_university_abbreviations_are_not_classified_as_industry(self):
         for organization in ["MIT", "HKUST", "KAIST", "UNIST"]:
             with self.subTest(organization=organization):
@@ -152,6 +196,55 @@ class VisualizationOrganizationAliasTest(unittest.TestCase):
         self.assertEqual(compact["aliases"], ["Test Person", "Person Test"])
         self.assertEqual(compact["lastYear"], 2019)
         self.assertEqual(compact["awards"], ["Bronze", "Silver"])
+
+    def test_compact_person_exposes_alma_mater_history_and_country(self):
+        row = {
+            "person_id": "kaz-test",
+            "name": "Test Person",
+            "aliases": "Test Person",
+            "olympiads": "IMO",
+            "first_year": "2018",
+            "last_year": "2018",
+            "awards": "Silver",
+            "confidence": "confirmed",
+            "organization": "Current Co",
+            "role": "Engineer",
+            "organization_category": "Industry",
+            "role_category": "Engineering",
+            "destination_status": "latest_employment",
+            "profile_url": "https://example.test/career",
+            "linkedin_url": "https://linkedin.com/in/test",
+            "evidence_urls": "https://imo-official.org/test",
+            "research_scope": "career",
+        }
+        affiliations = [
+            {
+                "organization": "Example University",
+                "role": "BSc",
+                "selected_as_alma_mater": True,
+                "evidence_url": "https://linkedin.com/in/test",
+            },
+            {
+                "organization": "Past Co",
+                "role": "Analyst",
+                "selected_as_alma_mater": False,
+                "evidence_url": "https://linkedin.com/in/test",
+            },
+        ]
+        location = {
+            "country_code": "CH",
+            "country_name": "Switzerland",
+            "location_label": "Zurich, Switzerland",
+            "confidence": "probable",
+            "evidence_url": "https://linkedin.com/in/test",
+        }
+
+        compact = compact_person(row, location, affiliations)
+
+        self.assertEqual(compact["almaMater"], "Example University")
+        self.assertIn("Past Co", compact["historyTerms"])
+        self.assertEqual(compact["country"], "Switzerland")
+        self.assertTrue(compact["sources"])
 
 
 if __name__ == "__main__":

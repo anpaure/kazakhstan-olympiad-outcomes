@@ -1,14 +1,20 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "primary_key": {
     "people": "person_id",
+    "affiliations": "affiliation_id",
+    "locations": "location_id",
     "evidence": "evidence_id",
     "sources": "source_id"
   },
   "joins": [
     "people.person_id = evidence.person_id",
     "evidence.source_id = sources.source_id",
-    "participations.evidence_id = evidence.evidence_id"
+    "participations.evidence_id = evidence.evidence_id",
+    "affiliations.evidence_id = evidence.evidence_id",
+    "affiliations.source_id = sources.source_id",
+    "locations.evidence_id = evidence.evidence_id",
+    "locations.source_id = sources.source_id"
   ],
   "review_statuses": [
     "accepted",
@@ -20,9 +26,11 @@
   "counts": {
     "people": 457,
     "participations": 680,
-    "evidence_rows": 2693,
-    "sources": 1357,
+    "affiliations": 924,
+    "locations": 145,
+    "evidence_rows": 3747,
+    "sources": 1365,
     "rejections": 112,
-    "complete_outcomes": 304
+    "complete_outcomes": 309
   }
 }

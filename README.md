@@ -12,10 +12,12 @@ The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
 - 457 canonical people after 29 reviewed name merges
-- 304 researched people, all classified as probable or confirmed
-- 252 confirmed and 52 probable education or career outcomes
-- 272 manually reviewed outcomes backed by public evidence
-- 285 researched people with a resolved organization and 227 with a public LinkedIn URL
+- 309 researched people, all classified as probable or confirmed
+- 255 confirmed and 54 probable identity, education, or career outcomes
+- 277 manually reviewed outcomes backed by public evidence
+- 267 researched people with one resolved destination and 230 with a public LinkedIn URL
+- 924 sourced employment/education history rows, including 201 selected alma-mater records
+- 145 sourced current-country records across 16 countries
 - 3 additional people with candidate-only evidence retained for audit but no accepted outcome
 - 112 rejected identity sources retained with review reasons and supporting links
 
@@ -28,6 +30,8 @@ The current first step is implemented in `scripts/collect_kazakhstan_participant
 - IBO: Scoreboard JSON plus the official IBO result-report archive for historical and recent PDF backfill
 
 Exa is used as the source-discovery/audit layer when `EXA_API_KEY` is set. The collector still uses curated result URLs for parsing so the participant list is deterministic.
+
+Destination is deliberately narrow: one latest reviewed employment role, or one active student/PhD affiliation. Completed and undated education remains searchable as history or alma-mater evidence but does not enter destination rankings. `Current country` means the location exposed by an accepted public profile or current-role record, not verified citizenship or legal residence.
 
 ## Setup
 
@@ -115,6 +119,8 @@ Outputs:
 python scripts/apply_exa_identity_rejections.py
 python scripts/apply_exa_outcome_integrations.py
 python scripts/build_research_dataset.py
+python scripts/build_affiliation_history.py
+python scripts/build_location_evidence.py
 python scripts/build_audit_bundle.py
 python scripts/validate_research.py
 ```
@@ -123,9 +129,11 @@ python scripts/validate_research.py
 
 The two apply scripts merge the auditable Exa review overlays before assembly. `data/exa_outcome_integrations.csv` records accepted career updates with their direct evidence URLs, while `data/exa_identity_rejections.csv` records newly identified namesakes. Both merges reject duplicate overlay keys and are safe to rerun. `data/exa_identity_review_decisions.csv` and `data/exa_outcome_review_decisions.csv` retain explicit reasons and supporting links for profiles that are supporting, deferred, rejected, or intentionally not used as the current outcome.
 
-`scripts/build_audit_bundle.py` then creates normalized audit tables under `data/audit/`. The final people table joins to a row-level evidence ledger through `person_id`; evidence joins to a deduplicated source registry through `source_id`; every evidence row retains its direct `source_url`. Accepted, supporting, candidate, superseded, and rejected claims remain visible instead of being collapsed into one compound URL field. See `data/audit/README.md` for the audit procedure and data dictionary.
+`scripts/build_affiliation_history.py` extracts employment and education headings only from accepted profiles and reviewed structured records. It writes a source URL on every history row and selects at most one display alma mater per person. `scripts/build_location_evidence.py` prioritizes the explicit public-profile country code, then a location attached to the current role, then reviewed overrides and structured affiliation country.
 
-The validation step checks participant-row conservation, unique person IDs, confidence/evidence rules, timeline conflicts, recent-competitor exclusions, exact publication of every accepted Exa outcome overlay, preservation of manual evidence, rejection-ledger leakage, audit-table joins, direct HTTP(S) source links, and complete traceability for every probable or confirmed outcome.
+`scripts/build_audit_bundle.py` then creates normalized audit tables under `data/audit/`. The final people, affiliation-history, and location tables join to a row-level evidence ledger; evidence joins to a deduplicated source registry through `source_id`; every evidence row retains its direct `source_url`. Accepted, supporting, candidate, superseded, and rejected claims remain visible instead of being collapsed into one compound URL field. See `data/audit/README.md` for the audit procedure and data dictionary.
+
+The validation step checks participant-row conservation, unique person IDs, confidence/evidence rules, timeline conflicts, recent-competitor exclusions, strict destination statuses, one selected alma mater per person, sourced country codes, exact publication of every accepted Exa outcome overlay, preservation of manual/history evidence, rejection-ledger leakage, audit-table joins, direct HTTP(S) source links, and complete traceability for every probable or confirmed outcome.
 
 Outputs:
 
@@ -133,6 +141,8 @@ Outputs:
 - `data/researched_people.json`
 - `data/audit/people.csv` and `.json`
 - `data/audit/participations.csv` and `.json`
+- `data/audit/affiliations.csv` and `.json`
+- `data/audit/locations.csv` and `.json`
 - `data/audit/evidence.csv` and `.json`
 - `data/audit/sources.csv` and `.json`
 - `data/audit/rejections.csv` and `.json`
@@ -144,7 +154,7 @@ Outputs:
 python scripts/build_outcomes_visualization.py
 ```
 
-The generator embeds `data/researched_people.json` into `docs/index.html`, the GitHub Pages site. Use `--template` and `--out` to target another visualization workspace.
+The generator joins `data/researched_people.json`, sourced affiliation history, current-country evidence, and the normalized audit ledger into `docs/index.html`, the GitHub Pages site. Past jobs and schools participate in substring search but never destination ranking. Use `--template` and `--out` to target another visualization workspace.
 
 ## Optional LinkedIn Search Audit
 

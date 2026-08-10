@@ -46,6 +46,8 @@ class ResearchedPerson:
     affiliation_type: str
     organization_category: str
     role_category: str
+    destination_status: str
+    destination_note: str
     start_year: str
     end_year: str
     country_code: str
@@ -175,6 +177,104 @@ def role_category(role: str, organization: str, affiliation_type: str) -> str:
     if affiliation_type == "education":
         return "Student"
     return "Other"
+
+
+def normalize_destination(
+    organization: str,
+    role: str,
+    affiliation_type: str,
+    start_year: str,
+    end_year: str,
+    as_of_year: int = 2026,
+) -> tuple[str, str, str, str, str, str, str]:
+    organization = clean_text(organization)
+    role = clean_text(role)
+    affiliation_type = clean_text(affiliation_type)
+    start_year = clean_text(start_year)
+    end_year = clean_text(end_year)
+    if not organization:
+        return "", "", "", "none", "No reviewed destination is available.", "", ""
+
+    if role.casefold() == "research author":
+        return (
+            "",
+            "",
+            "",
+            "history_only",
+            "Publication authorship is retained in history but is not treated as a job.",
+            "",
+            "",
+        )
+
+    if not role and organization_category(organization, affiliation_type) in {
+        "Academia",
+        "Education",
+    }:
+        return (
+            "",
+            "",
+            "",
+            "history_only",
+            "An undated academic organization without a student or staff role is retained only in history.",
+            "",
+            "",
+        )
+
+    if affiliation_type.casefold() == "education":
+        role_text = role.casefold()
+        active_student = bool(
+            re.search(r"\b(?:student|ph\.?d candidate|doctoral candidate|incoming)\b", role_text)
+        )
+        end_is_current = not end_year or (
+            end_year.isdigit() and int(end_year) >= as_of_year
+        )
+        if active_student and end_is_current:
+            return (
+                organization,
+                role,
+                "education",
+                "current_education",
+                "The latest reviewed destination is an active student affiliation.",
+                start_year,
+                end_year,
+            )
+
+        staff_role = bool(
+            re.search(
+                r"\b(?:researcher|scientist|professor|lecturer|teacher|engineer|faculty|postdoc)\b",
+                role_text,
+            )
+        )
+        if staff_role and not re.search(r"\b(?:student|candidate)\b", role_text):
+            return (
+                organization,
+                role,
+                "employment",
+                "latest_employment",
+                "A university staff role is treated as employment, not education.",
+                start_year,
+                end_year,
+            )
+
+        return (
+            "",
+            "",
+            "",
+            "history_only",
+            "Completed or undated education is retained as alma-mater/history evidence, not as a destination.",
+            "",
+            "",
+        )
+
+    return (
+        organization,
+        role,
+        affiliation_type,
+        "latest_employment",
+        "One reviewed latest employment or organizational role is used as the destination.",
+        start_year,
+        end_year,
+    )
 
 
 def best_linkedin(rows: list[dict[str, str]], minimum_confidence: str) -> str:
@@ -338,6 +438,24 @@ def build_rows(
             )
             manual_urls = []
 
+        (
+            organization,
+            role,
+            affiliation_type,
+            destination_status,
+            destination_note,
+            start_year,
+            end_year,
+        ) = normalize_destination(
+            organization,
+            role,
+            affiliation_type,
+            start_year,
+            end_year,
+        )
+        if not organization:
+            country_code = ""
+
         urls = {
             clean_text(url)
             for url in manual_urls
@@ -369,6 +487,8 @@ def build_rows(
                 affiliation_type=affiliation_type,
                 organization_category=organization_category(organization, affiliation_type),
                 role_category=role_category(role, organization, affiliation_type),
+                destination_status=destination_status,
+                destination_note=destination_note,
                 start_year=start_year,
                 end_year=end_year,
                 country_code=country_code,

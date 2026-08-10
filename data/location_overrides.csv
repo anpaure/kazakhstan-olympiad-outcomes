@@ -1,0 +1,6 @@
+person_id,name,country_code,country_name,location_label,evidence_url,evidence_kind,confidence,review_reason
+kaz-e4459aeba14c,Azamat Sarsembaev,US,United States,San Francisco Bay Area,https://www.linkedin.com/in/azzy-polymath,manual_public_profile_location,confirmed,The accepted public profile exposes San Francisco Bay Area as its location.
+kaz-094a17bb49f6,Alexander Averjanov,RU,Russia,Russia,https://www.linkedin.com/in/alexander-averyanov,manual_public_profile_location,confirmed,The accepted public profile exposes Russia as its location.
+kaz-8282f3ec5f44,Almas Rymov,CA,Canada,Canada,https://lifeinsurance.kz/severnaya-i-yuzhnaya-amerika/nakopitelnoe-strahovanie-vzglyad-iz-kanady,career_source_location,probable,The accepted career source places him at Sun Life Financial in Canada.
+kaz-8deb08a4e5fd,Yevgeni Poroshenko,RU,Russia,Novosibirsk,https://xn--h1ajp7b.xn--p1ai/sveden/employees%3Fspec%3D6609.html,career_source_location,confirmed,NSTU's current faculty roster places the accepted professor in Novosibirsk Russia.
+kaz-09d9fdb93af5,Saken Serhanov,US,United States,Los Angeles,https://petroviclab.chem.ucla.edu/people/,career_source_location,confirmed,UCLA's current laboratory roster places Saken Sherkhanov in Los Angeles.

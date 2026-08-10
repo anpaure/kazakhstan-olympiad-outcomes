@@ -13,6 +13,9 @@ source URL used for review.
    `supports_final_outcome` is `True`.
 5. Review any `candidate`, `superseded`, or `rejected` rows for contrary or
    discarded matches.
+6. Filter `affiliations.csv` for sourced past jobs, schools, and the selected
+   alma mater; filter `locations.csv` for the public-profile/current-role
+   country claim.
 
 ## Tables
 
@@ -20,6 +23,11 @@ source URL used for review.
   a traceability status.
 - `participations.csv`: one row per Olympiad appearance, joined to `person_id`
   and its evidence record.
+- `affiliations.csv`: accepted employment and education history. Every row
+  joins to evidence/source IDs; at most one education row per person has
+  `selected_as_alma_mater=true`.
+- `locations.csv`: one sourced current-country claim per covered person. This
+  is public profile/current-role location, not legal residence or citizenship.
 - `evidence.csv`: one row per person-source-claim relationship. This is the main
   audit ledger.
 - `sources.csv`: one row per deduplicated URL with usage and review-status
@@ -49,7 +57,7 @@ directory rather than being flattened into the final-outcome tables:
 
 - `exa_linkedin_review_queue.csv`: all 326 exact-name profile results and their
   deterministic review and outcome statuses.
-- `exa_outcome_integrations.csv`: 52 accepted career updates with direct
+- `exa_outcome_integrations.csv`: 55 accepted career updates with direct
   Olympiad and career evidence links.
 - `exa_identity_review_decisions.csv`: supporting, deferred, and rejected
   decisions for secondary profiles, each with a reason and review link.
@@ -64,6 +72,8 @@ directory rather than being flattened into the final-outcome tables:
 python scripts/apply_exa_identity_rejections.py
 python scripts/apply_exa_outcome_integrations.py
 python scripts/build_research_dataset.py
+python scripts/build_affiliation_history.py
+python scripts/build_location_evidence.py
 python scripts/build_audit_bundle.py
 python scripts/validate_research.py
 ```

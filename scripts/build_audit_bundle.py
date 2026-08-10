@@ -30,6 +30,14 @@ AUDIT_PEOPLE_FIELDS = [
     "country_code",
     "organization_category",
     "role_category",
+    "destination_status",
+    "destination_note",
+    "alma_mater",
+    "alma_mater_source_url",
+    "current_country_code",
+    "current_country_name",
+    "current_location_label",
+    "current_country_source_url",
     "review_method",
     "traceability_status",
     "participation_evidence_count",
@@ -40,6 +48,40 @@ AUDIT_PEOPLE_FIELDS = [
     "primary_profile_url",
     "linkedin_url",
     "audit_summary",
+]
+
+AUDIT_AFFILIATION_FIELDS = [
+    "affiliation_id",
+    "evidence_id",
+    "source_id",
+    "person_id",
+    "name",
+    "organization",
+    "role",
+    "affiliation_type",
+    "start_year",
+    "end_year",
+    "is_current",
+    "selected_as_alma_mater",
+    "evidence_url",
+    "evidence_kind",
+    "confidence",
+    "evidence_text",
+]
+
+AUDIT_LOCATION_FIELDS = [
+    "location_id",
+    "evidence_id",
+    "source_id",
+    "person_id",
+    "name",
+    "country_code",
+    "country_name",
+    "location_label",
+    "evidence_url",
+    "evidence_kind",
+    "confidence",
+    "review_reason",
 ]
 
 EVIDENCE_FIELDS = [
@@ -506,11 +548,21 @@ def build_audit_people(
     researched: list[dict[str, str]],
     verified: list[dict[str, str]],
     evidence: list[dict[str, object]],
+    locations: list[dict[str, str]] | None = None,
+    affiliation_history: list[dict[str, str]] | None = None,
 ) -> list[dict[str, object]]:
     verified_ids = {row["person_id"] for row in verified}
     evidence_by_person: dict[str, list[dict[str, object]]] = defaultdict(list)
     for row in evidence:
         evidence_by_person[str(row["person_id"])].append(row)
+    locations_by_person = {
+        row["person_id"]: row for row in locations or [] if row.get("person_id")
+    }
+    alma_by_person = {
+        row["person_id"]: row
+        for row in affiliation_history or []
+        if row.get("selected_as_alma_mater", "").casefold() == "true"
+    }
 
     output: list[dict[str, object]] = []
     for row in researched:
@@ -535,6 +587,8 @@ def build_audit_people(
             traceability = "review_required"
         else:
             traceability = "participation_only"
+        location = locations_by_person.get(row["person_id"], {})
+        alma = alma_by_person.get(row["person_id"], {})
         output.append(
             {
                 "person_id": row["person_id"],
@@ -553,6 +607,14 @@ def build_audit_people(
                 "country_code": row["country_code"],
                 "organization_category": row["organization_category"],
                 "role_category": row["role_category"],
+                "destination_status": row.get("destination_status", ""),
+                "destination_note": row.get("destination_note", ""),
+                "alma_mater": alma.get("organization", ""),
+                "alma_mater_source_url": alma.get("evidence_url", ""),
+                "current_country_code": location.get("country_code", ""),
+                "current_country_name": location.get("country_name", ""),
+                "current_location_label": location.get("location_label", ""),
+                "current_country_source_url": location.get("evidence_url", ""),
                 "review_method": (
                     "manual_review"
                     if row["person_id"] in verified_ids
@@ -572,6 +634,106 @@ def build_audit_people(
             }
         )
     return output
+
+
+def append_affiliation_history_evidence(
+    evidence: list[dict[str, object]],
+    researched: list[dict[str, str]],
+    affiliation_history: list[dict[str, str]],
+) -> list[dict[str, object]]:
+    final_by_person = {row["person_id"]: row for row in researched}
+    seen = {str(row["evidence_id"]) for row in evidence}
+    audit_rows: list[dict[str, object]] = []
+    for row in affiliation_history:
+        person_id = row["person_id"]
+        final = final_by_person[person_id]
+        claim_type = (
+            "education_history"
+            if row.get("affiliation_type") == "education"
+            else "employment_history"
+        )
+        claim_summary = f"{row.get('role') or 'Affiliation'} at {row.get('organization')}"
+        evidence_id = add_evidence(
+            evidence,
+            seen,
+            person_id=person_id,
+            person_name=final["name"],
+            claim_type=claim_type,
+            claim_summary=claim_summary,
+            source_url=row.get("evidence_url", ""),
+            provenance="accepted_affiliation_history",
+            source_adapter=row.get("evidence_kind", ""),
+            review_status="supporting",
+            confidence=row.get("confidence", "probable"),
+            supports_final_outcome=(
+                clean_text(row.get("organization")) == clean_text(final.get("organization"))
+                and clean_text(row.get("role")) == clean_text(final.get("role"))
+                and bool(clean_text(final.get("organization")))
+            ),
+            organization=row.get("organization", ""),
+            role=row.get("role", ""),
+            evidence_text=row.get("evidence_text", ""),
+        )
+        source_url = row.get("evidence_url", "")
+        audit_rows.append(
+            {
+                "affiliation_id": stable_id(
+                    "aff",
+                    person_id,
+                    row.get("affiliation_type", ""),
+                    row.get("organization", ""),
+                    row.get("role", ""),
+                    row.get("start_year", ""),
+                    row.get("end_year", ""),
+                    normalize_url(source_url),
+                ),
+                "evidence_id": evidence_id,
+                "source_id": source_id_for(source_url),
+                **row,
+            }
+        )
+    return audit_rows
+
+
+def append_location_evidence(
+    evidence: list[dict[str, object]],
+    researched: list[dict[str, str]],
+    locations: list[dict[str, str]],
+) -> list[dict[str, object]]:
+    final_by_person = {row["person_id"]: row for row in researched}
+    seen = {str(row["evidence_id"]) for row in evidence}
+    audit_rows: list[dict[str, object]] = []
+    for row in locations:
+        person_id = row["person_id"]
+        final = final_by_person[person_id]
+        source_url = row.get("evidence_url", "")
+        claim_summary = f"Current country: {row.get('country_name')}"
+        evidence_id = add_evidence(
+            evidence,
+            seen,
+            person_id=person_id,
+            person_name=final["name"],
+            claim_type="current_country",
+            claim_summary=claim_summary,
+            source_url=source_url,
+            provenance="accepted_location_evidence",
+            source_adapter=row.get("evidence_kind", ""),
+            review_status="supporting",
+            confidence=row.get("confidence", "probable"),
+            supports_final_outcome=False,
+            evidence_text=row.get("review_reason", ""),
+        )
+        audit_rows.append(
+            {
+                "location_id": stable_id(
+                    "loc", person_id, row.get("country_code", ""), normalize_url(source_url)
+                ),
+                "evidence_id": evidence_id,
+                "source_id": source_id_for(source_url),
+                **row,
+            }
+        )
+    return audit_rows
 
 
 def build_sources(evidence: list[dict[str, object]]) -> list[dict[str, object]]:
@@ -627,26 +789,46 @@ def build_bundle(
     affiliations: list[dict[str, str]],
     verified: list[dict[str, str]],
     rejections: list[dict[str, str]],
+    locations: list[dict[str, str]] | None = None,
+    affiliation_history: list[dict[str, str]] | None = None,
 ) -> dict[str, object]:
     participations = build_participations(participants, people)
     evidence = build_evidence(
         participations, researched, identities, affiliations, verified, rejections
     )
-    audit_people = build_audit_people(researched, verified, evidence)
+    audit_affiliations = append_affiliation_history_evidence(
+        evidence, researched, affiliation_history or []
+    )
+    audit_locations = append_location_evidence(evidence, researched, locations or [])
+    audit_people = build_audit_people(
+        researched, verified, evidence, locations, affiliation_history
+    )
     sources = build_sources(evidence)
     audit_rejections = build_audit_rejections(rejections, researched)
     manifest = {
-        "schema_version": 1,
-        "primary_key": {"people": "person_id", "evidence": "evidence_id", "sources": "source_id"},
+        "schema_version": 2,
+        "primary_key": {
+            "people": "person_id",
+            "affiliations": "affiliation_id",
+            "locations": "location_id",
+            "evidence": "evidence_id",
+            "sources": "source_id",
+        },
         "joins": [
             "people.person_id = evidence.person_id",
             "evidence.source_id = sources.source_id",
             "participations.evidence_id = evidence.evidence_id",
+            "affiliations.evidence_id = evidence.evidence_id",
+            "affiliations.source_id = sources.source_id",
+            "locations.evidence_id = evidence.evidence_id",
+            "locations.source_id = sources.source_id",
         ],
         "review_statuses": ["accepted", "supporting", "candidate", "superseded", "rejected"],
         "counts": {
             "people": len(audit_people),
             "participations": len(participations),
+            "affiliations": len(audit_affiliations),
+            "locations": len(audit_locations),
             "evidence_rows": len(evidence),
             "sources": len(sources),
             "rejections": len(audit_rejections),
@@ -658,6 +840,8 @@ def build_bundle(
     return {
         "people": audit_people,
         "participations": participations,
+        "affiliations": audit_affiliations,
+        "locations": audit_locations,
         "evidence": evidence,
         "sources": sources,
         "rejections": audit_rejections,
@@ -674,6 +858,8 @@ def main() -> int:
     parser.add_argument("--affiliation-csv", default="data/affiliation_candidates.csv")
     parser.add_argument("--verified-csv", default="data/verified_evidence.csv")
     parser.add_argument("--rejections-csv", default="data/rejected_identity_candidates.csv")
+    parser.add_argument("--locations-csv", default="data/person_locations.csv")
+    parser.add_argument("--affiliation-history-csv", default="data/person_affiliations.csv")
     parser.add_argument("--out-dir", default="data/audit")
     args = parser.parse_args()
 
@@ -685,12 +871,18 @@ def main() -> int:
         read_csv(Path(args.affiliation_csv)),
         read_csv(Path(args.verified_csv)),
         read_csv(Path(args.rejections_csv)),
+        read_csv(Path(args.locations_csv)),
+        read_csv(Path(args.affiliation_history_csv)),
     )
     output_dir = Path(args.out_dir)
     write_rows(output_dir / "people.csv", bundle["people"], AUDIT_PEOPLE_FIELDS)
     write_rows(
         output_dir / "participations.csv", bundle["participations"], PARTICIPATION_FIELDS
     )
+    write_rows(
+        output_dir / "affiliations.csv", bundle["affiliations"], AUDIT_AFFILIATION_FIELDS
+    )
+    write_rows(output_dir / "locations.csv", bundle["locations"], AUDIT_LOCATION_FIELDS)
     write_rows(output_dir / "evidence.csv", bundle["evidence"], EVIDENCE_FIELDS)
     write_rows(output_dir / "sources.csv", bundle["sources"], SOURCE_FIELDS)
     write_rows(output_dir / "rejections.csv", bundle["rejections"], REJECTION_FIELDS)
