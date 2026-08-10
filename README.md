@@ -12,17 +12,17 @@ The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
 - 456 canonical people after 30 reviewed name merges
-- 352 researched people, all classified as probable or confirmed
-- 278 confirmed and 74 probable identity, education, or career outcomes
-- 321 manually reviewed outcomes backed by public evidence
-- 306 researched people with one resolved destination and 256 with a public LinkedIn URL
-- 2,306 sourced employment/education history rows, including 465 selected alma-mater records across 290 people
-- 37 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
-- 424 reviewed organization aliases collapsed into canonical employers and universities
-- 152 reviewed sector classifications covering every displayed non-educational destination
-- 268 sourced outcome-country records across 24 countries
+- 364 researched people, all classified as probable or confirmed
+- 281 confirmed and 83 probable identity, education, or career outcomes
+- 333 manually reviewed outcomes backed by public evidence
+- 318 researched people with one resolved destination and 268 with a public LinkedIn URL
+- 2,361 sourced employment/education history rows, including 460 selected alma-mater records across 301 people
+- 39 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
+- 443 reviewed organization aliases collapsed into canonical employers and universities
+- 162 reviewed sector classifications covering every displayed non-educational destination
+- 210 sourced outcome-country records across 28 countries
 - 3 additional people with candidate-only evidence retained for audit but no accepted outcome
-- 114 rejected identity sources retained with review reasons and supporting links
+- 128 rejected identity sources retained with review reasons and supporting links
 
 The current first step is implemented in `scripts/collect_kazakhstan_participants.py`. It collects Kazakhstan competitors from:
 
@@ -34,7 +34,7 @@ The current first step is implemented in `scripts/collect_kazakhstan_participant
 
 Exa is used as the source-discovery/audit layer when `EXA_API_KEY` is set. The collector still uses curated result URLs for parsing so the participant list is deterministic.
 
-Destination is deliberately narrow: one latest reviewed employment role, or one active student/PhD affiliation. Completed and undated education remains searchable as history or alma-mater evidence but does not enter destination rankings. `Outcome country` normally follows the accepted public-profile or role location; reviewed overrides replace demonstrably stale profile headers. It is not citizenship or verified legal residence.
+Destination is deliberately narrow: one latest reviewed employment role, or one active student/PhD affiliation. Completed and undated education remains searchable as history or alma-mater evidence but does not enter destination rankings. `Outcome country` follows the location attached to the selected current role. For active students it follows the sourced campus country of the selected institution, so a stale LinkedIn header cannot override MIT, Oxford, UNIST, or another current degree. A profile header is corroboration only: when it conflicts with the active role it is rejected, and when no active-affiliation location is available the country is left unknown unless a reviewed career source or structured affiliation supplies it. The field is a best-supported current outcome location, not citizenship or verified legal residence.
 
 ## Setup
 
@@ -133,7 +133,7 @@ python scripts/validate_research.py
 
 The two apply scripts merge the auditable Exa review overlays before assembly. `data/exa_outcome_integrations.csv` records accepted career updates with their direct evidence URLs, while `data/exa_identity_rejections.csv` records newly identified namesakes. Both merges reject duplicate overlay keys and are safe to rerun. `data/exa_identity_review_decisions.csv` and `data/exa_outcome_review_decisions.csv` retain explicit reasons and supporting links for profiles that are supporting, deferred, rejected, or intentionally not used as the current outcome.
 
-`scripts/hydrate_linkedin_profiles_with_exa.py` records every accepted LinkedIn URL in the Exa profile audit, checkpointing successes and errors without persisting the API key. Full `/contents` retrieval is the default; `--from-search-cache` can fill a newly accepted URL from an existing Exa search result and labels that evidence separately as `search_cache`. This avoids losing education or location data when a name search returns only namesakes. `scripts/build_affiliation_history.py` extracts employment and education headings only from accepted profiles, reviewed manual transcriptions, and structured records. It writes a source URL on every history row and selects every distinct higher-education institution as an alma mater, falling back to one secondary school only when no university-level record is known. `scripts/build_location_evidence.py` uses explicit profile/role location, reviewed stale-profile overrides, and structured affiliation country.
+`scripts/hydrate_linkedin_profiles_with_exa.py` records every accepted LinkedIn URL in the Exa profile audit, checkpointing successes and errors without persisting the API key. Full `/contents` retrieval is the default; `--from-search-cache` can fill a newly accepted URL from an existing Exa search result and labels that evidence separately as `search_cache`. This avoids losing education or location data when a name search returns only namesakes. `scripts/build_affiliation_history.py` extracts employment and education headings only from accepted profiles, reviewed manual transcriptions, and structured records. It writes a source URL on every history row and selects every distinct higher-education institution as an alma mater, falling back to one secondary school only when no university-level record is known. `scripts/build_location_evidence.py` matches explicit current-role locations to the selected destination organization or role, then uses reviewed overrides, structured affiliation country, and `data/organization_locations.csv`. Active students are assigned to the sourced campus country of their selected current institution. LinkedIn header locations are never accepted by themselves; they may only corroborate an active-role location. The organization-location registry records the canonical institution, country, campus label, rationale, and direct official source URL.
 
 `data/organization_aliases.csv` is the reviewed organization registry shared by the research assembler, history builder, Exa reconciliation, audit bundle, and visualization. It records the canonical/display name, merge type, rationale, and a direct evidence URL for nontrivial parent, former-name, and successor mappings. Source text is retained in the evidence ledger, while destination and affiliation tables use canonical names. Validation rejects low-risk duplicate variants, canonical-name alias chains, display labels shared by different canonical organizations, and malformed normalization-source URLs.
 

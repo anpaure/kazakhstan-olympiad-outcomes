@@ -32,8 +32,11 @@ source URL used for review.
   `selected_as_alma_mater=true`, with one secondary-school fallback only when
   no higher education is known.
 - `locations.csv`: one sourced outcome-country claim per covered person. It
-  usually follows public profile/role location, with reviewed overrides for
-  stale profile headers; it is not legal residence or citizenship.
+  follows the explicit location of the selected current role; active students
+  use the sourced campus country in the parent `organization_locations.csv`
+  registry. A profile header may corroborate the role but is never accepted by
+  itself, and a conflicting header is discarded. It is not legal residence or
+  citizenship.
 - `organization_aliases.csv`: reviewed alias-to-canonical mappings for legal
   names, acronyms, multilingual labels, campuses, and parent organizations;
   source-backed parent, former-name, and successor mappings include a direct
@@ -72,7 +75,7 @@ directory rather than being flattened into the final-outcome tables:
 
 - `exa_linkedin_review_queue.csv`: all 347 exact-name profile results and their
   deterministic review and outcome statuses.
-- `exa_outcome_integrations.csv`: 63 accepted career updates with direct
+- `exa_outcome_integrations.csv`: 75 accepted career updates with direct
   Olympiad and career evidence links.
 - `exa_identity_review_decisions.csv`: supporting, deferred, and rejected
   decisions for secondary profiles, each with a reason and review link.

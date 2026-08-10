@@ -7,6 +7,7 @@ from scripts.destination_reviews import (
     DESTINATION_REVIEW_FIELDS,
     load_destination_reviews,
 )
+from scripts.validate_research import stale_employment_superseded_by_active_education
 
 
 class DestinationReviewRegistryTest(unittest.TestCase):
@@ -60,6 +61,67 @@ class DestinationReviewRegistryTest(unittest.TestCase):
 
         with self.assertRaisesRegex(ValueError, "duplicate person ID"):
             load_destination_reviews(path)
+
+    def test_detects_ended_job_followed_by_active_degree(self):
+        outcome = {
+            "organization": "Huawei",
+            "affiliation_type": "employment",
+            "end_year": "",
+        }
+        affiliations = [
+            {
+                "organization": "Huawei",
+                "affiliation_type": "employment",
+                "end_year": "2025",
+                "is_current": "false",
+                "evidence_kind": "accepted_linkedin_profile",
+            },
+            {
+                "organization": "MBZUAI",
+                "affiliation_type": "education",
+                "end_year": "2029",
+                "is_current": "false",
+                "evidence_kind": "accepted_linkedin_profile",
+            },
+        ]
+
+        self.assertTrue(
+            stale_employment_superseded_by_active_education(outcome, affiliations)
+        )
+
+    def test_current_role_prevents_stale_employment_flag(self):
+        outcome = {
+            "organization": "Huawei",
+            "affiliation_type": "employment",
+            "end_year": "",
+        }
+        affiliations = [
+            {
+                "organization": "Huawei",
+                "affiliation_type": "employment",
+                "end_year": "2023",
+                "is_current": "false",
+                "evidence_kind": "accepted_linkedin_profile",
+            },
+            {
+                "organization": "Huawei Switzerland",
+                "affiliation_type": "employment",
+                "end_year": "",
+                "is_current": "true",
+                "evidence_kind": "accepted_linkedin_profile",
+            },
+            {
+                "organization": "ETH Zurich",
+                "affiliation_type": "education",
+                "end_year": "2026",
+                "is_current": "false",
+                "evidence_kind": "accepted_linkedin_profile",
+            },
+        ]
+
+        self.assertFalse(
+            stale_employment_superseded_by_active_education(outcome, affiliations)
+        )
 
 
 if __name__ == "__main__":

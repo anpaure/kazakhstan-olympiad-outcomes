@@ -11,13 +11,17 @@ from pathlib import Path
 
 try:
     from scripts.build_exa_review_queue import canonical_url
-    from scripts.build_location_evidence import COUNTRY_NAMES
+    from scripts.build_location_evidence import (
+        COUNTRY_NAMES,
+        load_organization_locations,
+    )
     from scripts.destination_reviews import load_destination_reviews
     from scripts.organization_names import (
         canonicalize_organization,
         display_organization,
         load_organization_aliases,
         organization_audit_key,
+        organization_key,
     )
     from scripts.organization_sectors import (
         load_organization_sectors,
@@ -25,13 +29,14 @@ try:
     )
 except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
     from build_exa_review_queue import canonical_url
-    from build_location_evidence import COUNTRY_NAMES
+    from build_location_evidence import COUNTRY_NAMES, load_organization_locations
     from destination_reviews import load_destination_reviews
     from organization_names import (
         canonicalize_organization,
         display_organization,
         load_organization_aliases,
         organization_audit_key,
+        organization_key,
     )
     from organization_sectors import load_organization_sectors, organization_metadata
 
@@ -47,6 +52,7 @@ AUDIT_REVIEW_STATUSES = {
     "superseded",
     "rejected",
 }
+DATA_AS_OF_YEAR = 2026
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -56,6 +62,43 @@ def read_csv(path: Path) -> list[dict[str, str]]:
 
 def split_values(value: str) -> set[str]:
     return {item.strip() for item in value.split(";") if item.strip()}
+
+
+def stale_employment_superseded_by_active_education(
+    outcome: dict[str, str],
+    affiliations: list[dict[str, str]],
+    as_of_year: int = DATA_AS_OF_YEAR,
+) -> bool:
+    if (
+        outcome.get("affiliation_type", "").strip() != "employment"
+        or outcome.get("end_year", "").strip()
+    ):
+        return False
+    organization = canonicalize_organization(outcome.get("organization", ""))
+    matching_employment = [
+        row
+        for row in affiliations
+        if row.get("affiliation_type") == "employment"
+        and canonicalize_organization(row.get("organization", "")) == organization
+        and row.get("evidence_kind") == "accepted_linkedin_profile"
+    ]
+    ended_employment = any(
+        row.get("end_year", "").isdigit()
+        and int(row["end_year"]) < as_of_year
+        for row in matching_employment
+    )
+    ongoing_employment = any(
+        row.get("is_current", "").strip().casefold() == "true"
+        for row in matching_employment
+    )
+    active_education = any(
+        row.get("affiliation_type") == "education"
+        and row.get("evidence_kind") == "accepted_linkedin_profile"
+        and row.get("end_year", "").isdigit()
+        and int(row["end_year"]) >= as_of_year
+        for row in affiliations
+    )
+    return ended_employment and not ongoing_employment and active_education
 
 
 def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
@@ -73,6 +116,7 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "locations": data_dir / "person_locations.csv",
         "affiliations": data_dir / "person_affiliations.csv",
         "organization_aliases": data_dir / "organization_aliases.csv",
+        "organization_locations": data_dir / "organization_locations.csv",
         "organization_sectors": data_dir / "organization_sectors.csv",
         "rejections": data_dir / "rejected_identity_candidates.csv",
         "audit_people": data_dir / "audit" / "people.csv",
@@ -103,6 +147,9 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     locations = read_csv(required["locations"])
     affiliations = read_csv(required["affiliations"])
     organization_aliases = read_csv(required["organization_aliases"])
+    organization_locations = load_organization_locations(
+        required["organization_locations"]
+    )
     organization_sectors = read_csv(required["organization_sectors"])
     rejections = read_csv(required["rejections"])
     audit_people = read_csv(required["audit_people"])
@@ -314,6 +361,17 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
                 f"destination review is missing from affiliation history for {person_id}"
             )
 
+    for person_id, outcome in exa_outcomes_by_id.items():
+        if person_id in destination_reviews_by_id:
+            continue
+        if stale_employment_superseded_by_active_education(
+            outcome, affiliations_by_person.get(person_id, [])
+        ):
+            errors.append(
+                f"ended LinkedIn employment supersedes an active education destination "
+                f"without review for {person_id}"
+            )
+
     merge_ids = [row.get("canonical_person_id", "") for row in person_merges]
     if len({person_id for person_id in merge_ids if person_id}) != len(
         [person_id for person_id in merge_ids if person_id]
@@ -388,6 +446,7 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     if duplicate_manual_affiliations:
         errors.append("manual affiliation history contains duplicate sourced records")
 
+    locations_by_person = {row.get("person_id", ""): row for row in locations}
     for row in locations:
         person_id = row.get("person_id", "")
         code = row.get("country_code", "")
@@ -397,13 +456,59 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             errors.append(f"location country name disagrees with code for {person_id}")
         if not row.get("evidence_url", "").startswith(("http://", "https://")):
             errors.append(f"location evidence has no direct HTTP(S) source for {person_id}")
+        if row.get("evidence_kind") in {
+            "manual_public_profile_location",
+            "public_profile_location",
+        }:
+            errors.append(
+                f"LinkedIn header location lacks active-affiliation corroboration for {person_id}"
+            )
         final = researched_by_id.get(person_id, {})
         accepted_urls = split_values(final.get("evidence_urls", "")) | {
             final.get("profile_url", ""),
             final.get("linkedin_url", ""),
         }
-        if row.get("evidence_url", "") not in accepted_urls:
+        organization_location = organization_locations.get(
+            organization_key(
+                canonicalize_organization(final.get("organization", ""))
+            )
+        )
+        is_current_education_location = (
+            row.get("evidence_kind") == "current_education_location"
+            and organization_location
+            and row.get("evidence_url") == organization_location.get("evidence_url")
+        )
+        if (
+            row.get("evidence_url", "") not in accepted_urls
+            and not is_current_education_location
+        ):
             errors.append(f"location source is not linked to accepted evidence for {person_id}")
+
+    for person_id, final in researched_by_id.items():
+        if (
+            final.get("confidence") not in {"probable", "confirmed"}
+            or final.get("destination_status") != "current_education"
+        ):
+            continue
+        organization = canonicalize_organization(final.get("organization", ""))
+        expected = organization_locations.get(organization_key(organization))
+        if not expected:
+            errors.append(
+                f"current education destination lacks an organization location: "
+                f"{person_id} {organization}"
+            )
+            continue
+        actual = locations_by_person.get(person_id)
+        if not actual:
+            errors.append(
+                f"current education destination lacks country evidence: {person_id}"
+            )
+            continue
+        if actual.get("country_code") != expected.get("country_code"):
+            errors.append(
+                f"current education country conflicts with institution location for "
+                f"{person_id}: {actual.get('country_code')} vs {expected.get('country_code')}"
+            )
 
     affiliation_keys = [
         (

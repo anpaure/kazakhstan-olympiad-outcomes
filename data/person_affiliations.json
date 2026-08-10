@@ -603,6 +603,21 @@
     "person_id": "kaz-236abc470fa7",
     "name": "Adilet Abu",
     "organization": "Ulsan National Institute of Science and Technology (UNIST)",
+    "role": "Bachelor's Student in Mathematics and Computer Science",
+    "affiliation_type": "education",
+    "start_year": "2023",
+    "end_year": "2027",
+    "is_current": true,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://kz.linkedin.com/in/adilet-abu-974647260",
+    "evidence_kind": "destination_source_review",
+    "confidence": "confirmed",
+    "evidence_text": "The accepted profile dates the Huawei research internship from August through October 2025 and shows the 2023-2027 UNIST mathematics and computer science degree as the ongoing affiliation."
+  },
+  {
+    "person_id": "kaz-236abc470fa7",
+    "name": "Adilet Abu",
+    "organization": "Ulsan National Institute of Science and Technology (UNIST)",
     "role": "Bachelor's degree Mathematics and Computer Science",
     "affiliation_type": "education",
     "start_year": "2023",
@@ -13288,6 +13303,21 @@
     "evidence_url": "https://linkedin.com/in/dauren-muratov-1a114676",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-ac8d11f139c6",
+    "name": "David Li",
+    "organization": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
+    "role": "PhD Student in Machine Learning",
+    "affiliation_type": "education",
+    "start_year": "2025",
+    "end_year": "2029",
+    "is_current": true,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://ru.linkedin.com/in/david-li-ab07b332b",
+    "evidence_kind": "destination_source_review",
+    "confidence": "probable",
+    "evidence_text": "The accepted profile dates the Huawei deep-learning research role through August 2025 and lists the 2025-2029 MBZUAI machine-learning PhD as the ongoing affiliation in Abu Dhabi."
   },
   {
     "person_id": "kaz-ac8d11f139c6",

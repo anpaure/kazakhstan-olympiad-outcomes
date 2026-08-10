@@ -31,13 +31,13 @@
   "counts": {
     "people": 456,
     "participations": 680,
-    "affiliations": 2359,
-    "locations": 280,
+    "affiliations": 2361,
+    "locations": 210,
     "organization_aliases": 443,
     "organization_sectors": 162,
-    "destination_reviews": 37,
-    "evidence_rows": 5373,
-    "sources": 1500,
+    "destination_reviews": 39,
+    "evidence_rows": 5307,
+    "sources": 1531,
     "rejections": 128,
     "complete_outcomes": 364
   }

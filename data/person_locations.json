@@ -6,20 +6,9 @@
     "country_name": "Poland",
     "location_label": "Warsaw, Mazowieckie, Poland",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://linkedin.com/in/abilmuzhubayev"
-  },
-  {
-    "person_id": "kaz-00a1687b2b23",
-    "name": "Abylay Kabdulkhadyr",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Astana, Kazakhstan",
-    "evidence_url": "https://kz.linkedin.com/in/abylay-kabdulkhadyr-2b527a331",
-    "evidence_kind": "manual_public_profile_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted self-authored LinkedIn profile exposes Astana Kazakhstan as Abylay Kabdulkhadyr's location."
+    "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees.",
+    "evidence_url": "https://linkedin.com/in/abilmuzhubayev"
   },
   {
     "person_id": "kaz-408aa9ea598e",
@@ -37,10 +26,10 @@
     "name": "Adil Baiguzhin",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "location_label": "Almaty",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the location attached to the accepted current role at chem.kz. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/adil-baiguzhin-9786aa9"
   },
   {
@@ -50,64 +39,31 @@
     "country_name": "Luxembourg",
     "location_label": "Luxembourg",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://linkedin.com/in/kabylda"
-  },
-  {
-    "person_id": "kaz-c81d0e9f9556",
-    "name": "Adil Zhugralin",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/adil-zhugralin-9bb1b03"
+    "review_reason": "Country follows the location attached to the accepted current role at University of Luxembourg. The public profile header independently agrees.",
+    "evidence_url": "https://linkedin.com/in/kabylda"
   },
   {
     "person_id": "kaz-236abc470fa7",
     "name": "Adilet Abu",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Ulsan, South Korea",
+    "evidence_url": "https://www.unist.ac.kr/campus-life/directions/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/adilet-abu-974647260"
+    "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
     "person_id": "kaz-59a056858c02",
     "name": "Adilet Zauytkhan",
     "country_code": "KR",
     "country_name": "South Korea",
-    "location_label": "South Korea",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Ulsan, South Korea",
+    "evidence_url": "https://www.unist.ac.kr/campus-life/directions/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/adilet-zauytkhan-37a94221b"
-  },
-  {
-    "person_id": "kaz-cfbf52394abd",
-    "name": "Adilkhan Sarsen",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/adilkhan-sarsen-b62749140/"
-  },
-  {
-    "person_id": "kaz-96fed62edd90",
-    "name": "Adilzhan Ismailov",
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "location_label": "United Kingdom",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://uk.linkedin.com/in/adilzhanismailov"
+    "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
     "person_id": "kaz-a93521357d27",
@@ -115,32 +71,21 @@
     "country_code": "KR",
     "country_name": "South Korea",
     "location_label": "Ulsan, South Korea",
-    "evidence_url": "https://www.linkedin.com/company/gettoijso",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://www.unist.ac.kr/campus-life/directions/",
+    "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Outcome country follows the reviewed GETTOIJSO post's current UNIST affiliation."
+    "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
-    "person_id": "kaz-d36d7bbcbacc",
-    "name": "Aibek A. Mukhamediyev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_url": "https://kz.linkedin.com/in/aibek-mukhamediyev-a20b3420",
-    "evidence_kind": "manual_public_profile_location",
+    "person_id": "kaz-1f5957f35c2c",
+    "name": "Adlet Turtemir",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Ulsan, South Korea",
+    "evidence_url": "https://www.unist.ac.kr/campus-life/directions/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted rare-name public profile exposes Kazakhstan as Aibek Mukhamediyev's location."
-  },
-  {
-    "person_id": "kaz-af55ed678a4e",
-    "name": "Aibek Myrzatay",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/eyebaek/"
+    "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
     "person_id": "kaz-845e316f4e10",
@@ -149,8 +94,8 @@
     "country_name": "Kazakhstan",
     "location_label": "Алматы, Казахстан",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at BTC.KZ. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/aibek-umbetalin-70a71224"
   },
   {
@@ -160,8 +105,8 @@
     "country_name": "United States",
     "location_label": "Mountain View, California, United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Lunar Energy. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/aidarzhetessov"
   },
   {
@@ -169,76 +114,43 @@
     "name": "Aidos Kuatov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Dartmouth, Massachusetts, United States",
+    "evidence_url": "https://www.umassd.edu/about/directions/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/aidoskuatov"
+    "review_reason": "Country follows the accepted active student affiliation at University of Massachusetts Dartmouth; the linked official institution source establishes the campus location. UMass Dartmouth's official directions page identifies its Dartmouth campus."
   },
   {
     "person_id": "kaz-dd3a643dd7b7",
     "name": "Aiganym Baltashova",
-    "country_code": "KR",
-    "country_name": "South Korea",
-    "location_label": "South Korea",
-    "evidence_kind": "public_profile_location",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Cambridge, Massachusetts, United States",
+    "evidence_url": "https://www.mit.edu/visitmit/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/aiganym-baltashova"
-  },
-  {
-    "person_id": "kaz-1b79632fc187",
-    "name": "Aigerim Turuspekova",
-    "country_code": "IT",
-    "country_name": "Italy",
-    "location_label": "Milan, Lombardy, Italy",
-    "evidence_url": "https://it.linkedin.com/in/aigerim-turuspekova",
-    "evidence_kind": "manual_public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile exposes Milan Lombardy Italy as Aigerim Turuspekova's location."
+    "review_reason": "Country follows the accepted active student affiliation at Massachusetts Institute of Technology (MIT); the linked official institution source establishes the campus location. MIT's official visitor page identifies its Cambridge campus."
   },
   {
     "person_id": "kaz-f3a805a1727a",
     "name": "Aivar Abrashuly",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "San Jose, California, United States",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Ayar Labs. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/aivar-abrashuly-754163156"
-  },
-  {
-    "person_id": "kaz-3c4d427574a2",
-    "name": "Aizana Turmukhametova",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/aizana-turmukhametova-95b31b19"
-  },
-  {
-    "person_id": "kaz-ec80d9fc8daf",
-    "name": "Akezhan Amankeldi",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/akezhan-amankeldi"
   },
   {
     "person_id": "kaz-d3e9cb1dd495",
     "name": "Akhan Ismailov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "London Area, United Kingdom",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Squarepoint Capital. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://kz.linkedin.com/in/404akhan"
   },
   {
@@ -246,76 +158,43 @@
     "name": "Akhmet Issa",
     "country_code": "HK",
     "country_name": "Hong Kong",
-    "location_label": "Hong Kong, Hong Kong SAR",
-    "evidence_url": "https://hk.linkedin.com/in/akhmetissa7",
-    "evidence_kind": "manual_public_profile_location",
+    "location_label": "Hong Kong",
+    "evidence_url": "https://www.hku.hk/visit/maps_contact.html",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile exposes Hong Kong as Akhmet Issa's location."
-  },
-  {
-    "person_id": "kaz-6ff2bc2176bd",
-    "name": "Alen Abdrakhmanov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/alen-abdrakhmanov"
-  },
-  {
-    "person_id": "kaz-b045af74dc39",
-    "name": "Alen Bayev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/alen-bayev-1402012bb"
+    "review_reason": "Country follows the accepted active student affiliation at University of Hong Kong; the linked official institution source establishes the campus location. HKU's official contact page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-094a17bb49f6",
     "name": "Alexander Averjanov",
-    "country_code": "RU",
-    "country_name": "Russia",
-    "location_label": "Russia",
-    "evidence_url": "https://www.linkedin.com/in/alexander-averyanov",
-    "evidence_kind": "manual_public_profile_location",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted public profile exposes Russia as its location."
+    "review_reason": "Country follows the location attached to the accepted current role at VELES TRUST. The profile header points to Russia, but it conflicts with the active-role location and is not used.",
+    "evidence_url": "https://www.linkedin.com/in/alexander-averyanov"
   },
   {
     "person_id": "kaz-0260225556fe",
     "name": "Alexandr Shakiyev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "San Francisco, United States",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Armeta. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://kz.linkedin.com/in/supertorex"
-  },
-  {
-    "person_id": "kaz-e2c1785c3b0f",
-    "name": "Alexey Tsekhovoy",
-    "country_code": "DE",
-    "country_name": "Germany",
-    "location_label": "Germany",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://de.linkedin.com/in/alexey-tsekhovoy-7a75b4257"
   },
   {
     "person_id": "kaz-0622dfe9a63f",
     "name": "Ali Dautalinov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Алматы",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Synergy Partners Law Firm. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/ali-dautalinov"
   },
   {
@@ -323,10 +202,10 @@
     "name": "Ali-Amir Aldan",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Palo Alto, CA",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Fourier. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/ali-amir-aldan-a2b81b46"
   },
   {
@@ -334,55 +213,44 @@
     "name": "Alibek Aldangarov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "Berkeley, California, United States",
+    "location_label": "Emeryville, California, United States",
     "evidence_url": "https://www.linkedin.com/in/alibek-a-124731244/",
-    "evidence_kind": "manual_public_profile_location",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "The reviewed public LinkedIn profile exposes Berkeley, California, United States as its location."
+    "review_reason": "The reviewed LinkedIn history places the ongoing OnPoint Analytics consultant role in Emeryville, California, United States; the Berkeley header independently agrees at country level."
   },
   {
     "person_id": "kaz-3b19b5bc5f6d",
     "name": "Alibek Orazalin",
     "country_code": "HK",
     "country_name": "Hong Kong",
-    "location_label": "Hong Kong, Hong Kong SAR",
-    "evidence_url": "https://hk.linkedin.com/in/alibek-orazalin-3020011a9",
+    "location_label": "Hong Kong SAR",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile places Alibek Orazalin's current Qube Research and Technologies role in Hong Kong."
+    "review_reason": "Country follows the location attached to the accepted current role at Qube Research & Technologies. The public profile header independently agrees.",
+    "evidence_url": "https://hk.linkedin.com/in/alibek-orazalin-3020011a9"
   },
   {
     "person_id": "kaz-15c5ca0ee628",
     "name": "Alibek Sailanbayev",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at National Information Technologies JSC (NITEC). The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/alibek-sailanbayev"
-  },
-  {
-    "person_id": "kaz-477ae2fd5dbc",
-    "name": "Alikhan Kudaibergenov",
-    "country_code": "CA",
-    "country_name": "Canada",
-    "location_label": "Canada",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/alikhan-kudaibergenov-27726a154"
   },
   {
     "person_id": "kaz-61c6139b5eb9",
     "name": "Alikhan Zhumagaleyev",
     "country_code": "HK",
     "country_name": "Hong Kong",
-    "location_label": "Hong Kong, Hong Kong SAR",
-    "evidence_url": "https://hk.linkedin.com/in/alikhan-zhumagaleyev",
-    "evidence_kind": "manual_public_profile_location",
+    "location_label": "Hong Kong",
+    "evidence_url": "https://www.cuhk.edu.hk/english/campus/cuhk-campus.html",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile exposes Hong Kong as Alikhan Zhumagaleyev's location and identifies his CUHK student role."
+    "review_reason": "Country follows the accepted active student affiliation at The Chinese University of Hong Kong (CUHK); the linked official institution source establishes the campus location. CUHK's official campus page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-ceec4f816e2c",
@@ -390,10 +258,21 @@
     "country_code": "CH",
     "country_name": "Switzerland",
     "location_label": "Zurich, Switzerland",
-    "evidence_url": "https://linkedin.com/in/gaukhar-alina",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile places the current Google DeepMind software-engineering role in Zurich Switzerland."
+    "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees.",
+    "evidence_url": "https://linkedin.com/in/gaukhar-alina"
+  },
+  {
+    "person_id": "kaz-6c98b70e785e",
+    "name": "Alisher Nazarbekov",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Daejeon, South Korea",
+    "evidence_url": "https://www.kaist.ac.kr/en/html/kaist/011501.html",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
   },
   {
     "person_id": "kaz-1e71a64a8ebb",
@@ -402,8 +281,8 @@
     "country_name": "United Kingdom",
     "location_label": "London Area, United Kingdom",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Citadel Securities. The public profile header independently agrees.",
     "evidence_url": "https://uk.linkedin.com/in/alishertortay"
   },
   {
@@ -412,10 +291,10 @@
     "country_code": "FR",
     "country_name": "France",
     "location_label": "Paris, France",
-    "evidence_url": "https://www.ens.psl.eu/sites/default/files/admis-et-lc-bo2026_signe.pdf",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://www.ens.psl.eu/en/contact",
+    "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Outcome country follows the accepted probable exact-name admission to ENS physics in Paris."
+    "review_reason": "Country follows the accepted active student affiliation at École normale supérieure (ENS); the linked official institution source establishes the campus location. ENS's official contact page identifies its Paris campus."
   },
   {
     "person_id": "kaz-8282f3ec5f44",
@@ -435,8 +314,8 @@
     "country_name": "Kazakhstan",
     "location_label": "Астана, Казахстан",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Quantum Management Company. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/almas-ordabayev-04808078"
   },
   {
@@ -446,8 +325,8 @@
     "country_name": "Kazakhstan",
     "location_label": "Астана, Казахстан",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Republican Physics and Mathematics School (RFMS). The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/almaz-kungozhin"
   },
   {
@@ -455,10 +334,10 @@
     "name": "Almaz Rakhmetov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "Seattle, Washington",
+    "location_label": "Seattle, Washington, United States",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "review_reason": "Country follows the location attached to the accepted current role at Amazon. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/almaz-rakhmetov-a2451223"
   },
   {
@@ -467,20 +346,20 @@
     "country_code": "US",
     "country_name": "United States",
     "location_label": "Cambridge, Massachusetts, United States",
-    "evidence_url": "https://www.linkedin.com/in/almira-nurlanova-a6777727a",
-    "evidence_kind": "manual_public_profile_location",
+    "evidence_url": "https://www.mit.edu/visitmit/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile exposes Cambridge Massachusetts as Almira Nurlanova's location."
+    "review_reason": "Country follows the accepted active student affiliation at Massachusetts Institute of Technology (MIT); the linked official institution source establishes the campus location. MIT's official visitor page identifies its Cambridge campus."
   },
   {
     "person_id": "kaz-e97b6a989458",
     "name": "Altair Ashurov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "Greater London, England, United Kingdom",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Squarepoint Capital. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://linkedin.com/in/fracta1l"
   },
   {
@@ -488,11 +367,11 @@
     "name": "Aman Sariyev",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://nu.edu.kz/en/about/contacts",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/aman-sariyev"
+    "review_reason": "Country follows the accepted active student affiliation at Nazarbayev University; the linked official institution source establishes the campus location. Nazarbayev University's official contact page identifies its Astana campus."
   },
   {
     "person_id": "kaz-f0c3ebfd6e9a",
@@ -501,20 +380,9 @@
     "country_name": "Kazakhstan",
     "location_label": "Kazakhstan",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://kz.linkedin.com/in/aman-zhumekeshov-a9156630"
-  },
-  {
-    "person_id": "kaz-95803b7b2c5f",
-    "name": "Amanzhol Kuantay",
-    "country_code": "HK",
-    "country_name": "Hong Kong",
-    "location_label": "Hong Kong",
-    "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://hk.linkedin.com/in/amanzholkuantay"
+    "review_reason": "Country follows the location attached to the accepted current role at ENERGY Insights & Analytics. The public profile header independently agrees.",
+    "evidence_url": "https://kz.linkedin.com/in/aman-zhumekeshov-a9156630"
   },
   {
     "person_id": "kaz-449a09030208",
@@ -522,31 +390,31 @@
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Astana, Kazakhstan",
-    "evidence_url": "https://www.researchgate.net/institution/Nazarbayev-University/members/77",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://nu.edu.kz/en/about/contacts",
+    "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Outcome country follows the accepted probable exact-name biology affiliation at Nazarbayev University in Astana."
+    "review_reason": "Country follows the accepted active student affiliation at Nazarbayev University; the linked official institution source establishes the campus location. Nazarbayev University's official contact page identifies its Astana campus."
   },
   {
     "person_id": "kaz-380ff32a092b",
     "name": "Amir Bralin",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Lubbock, Texas, United States",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Texas Tech University. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/amirbralin"
   },
   {
     "person_id": "kaz-67db791fca33",
     "name": "Amir Mokhammed-Ali",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "RS",
+    "country_name": "Serbia",
+    "location_label": "Belgrade, Serbia",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Perplexity. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://kz.linkedin.com/in/amir-mokhammed-ali-4a4218151"
   },
   {
@@ -555,32 +423,21 @@
     "country_code": "GB",
     "country_name": "United Kingdom",
     "location_label": "London, United Kingdom",
-    "evidence_url": "https://www.globtalent.org/gtf-big-talent-scholars-bios/amir-pshenbayev",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://www.imperial.ac.uk/visit/campuses/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The Global Talent Fund biography explicitly places Amir Pshenbayev's current physics education at Imperial College London."
+    "review_reason": "Country follows the accepted active student affiliation at Imperial College London; the linked official institution source establishes the campus location. Imperial's official campus page identifies its London campuses."
   },
   {
     "person_id": "kaz-64e130a742d3",
     "name": "Amir Sakhipov",
     "country_code": "HK",
     "country_name": "Hong Kong",
-    "location_label": "Hong Kong, Hong Kong SAR",
-    "evidence_url": "https://hk.linkedin.com/in/amir-sakhipov-91a8893a2",
-    "evidence_kind": "manual_public_profile_location",
+    "location_label": "Hong Kong",
+    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile exposes Hong Kong as Amir Sakhipov's location and identifies his current HKUST education."
-  },
-  {
-    "person_id": "kaz-b695dee1b41c",
-    "name": "Amirbek Azatbekov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/amirbek-azatbekov-34b313386"
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-f85457929c5d",
@@ -589,20 +446,9 @@
     "country_name": "Hong Kong",
     "location_label": "Hong Kong SAR",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://hk.linkedin.com/in/amirkhan-bailin"
-  },
-  {
-    "person_id": "kaz-1a21d28a2426",
-    "name": "Amirlan Amanzholov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/amirlan-amanzholov-482536305"
+    "review_reason": "Country follows the location attached to the accepted current role at Pulsar. The public profile header independently agrees.",
+    "evidence_url": "https://hk.linkedin.com/in/amirkhan-bailin"
   },
   {
     "person_id": "kaz-4a00a35c3f4a",
@@ -621,9 +467,9 @@
     "country_code": "US",
     "country_name": "United States",
     "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Altbridge. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/kimandrik"
   },
   {
@@ -633,8 +479,8 @@
     "country_name": "Germany",
     "location_label": "Karlsruhe, Baden-Württemberg, Germany",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Karlsruhe Institute of Technology (KIT). The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/andrey-sapronov"
   },
   {
@@ -644,52 +490,30 @@
     "country_name": "Germany",
     "location_label": "Berlin, Germany",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Amazon. The public profile header independently agrees.",
     "evidence_url": "https://de.linkedin.com/in/anel-orazgaliyeva"
-  },
-  {
-    "person_id": "kaz-310c08212560",
-    "name": "Anton Morgunov",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/anmorgunov"
-  },
-  {
-    "person_id": "kaz-c9401ed42eb0",
-    "name": "Anuar Nurtazin",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/anuarnurtazin01"
   },
   {
     "person_id": "kaz-070fb0fd555d",
     "name": "Arman Bissembayev",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Astana, Kazakhstan",
-    "evidence_url": "https://linkedin.com/in/skeeu",
-    "evidence_kind": "manual_public_profile_location",
+    "location_label": "Астана, Казахстан",
+    "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "The accepted public profile exposes Astana Kazakhstan as Arman Bisembaev's location and places both university and current employment there."
+    "review_reason": "Country follows the location attached to the accepted current role at re:Kassa. The public profile header independently agrees.",
+    "evidence_url": "https://linkedin.com/in/skeeu"
   },
   {
     "person_id": "kaz-2b2d1a08a130",
     "name": "Arnat Balabiyev",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Tempe, Arizona, United States",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Arizona State University. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/arnat-balabiyev"
   },
   {
@@ -699,8 +523,8 @@
     "country_name": "Switzerland",
     "location_label": "Zurich, Switzerland",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Meta. The public profile header independently agrees.",
     "evidence_url": "https://ch.linkedin.com/in/makenov"
   },
   {
@@ -709,32 +533,32 @@
     "country_code": "SG",
     "country_name": "Singapore",
     "location_label": "Singapore",
-    "evidence_kind": "public_profile_location",
+    "evidence_url": "https://www.ntu.edu.sg/about-us/visit-us",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/artur-kim-983558282"
+    "review_reason": "Country follows the accepted active student affiliation at Nanyang Technological University (NTU); the linked official institution source establishes the campus location. NTU's official visitor page identifies its Singapore campus."
   },
   {
     "person_id": "kaz-32bc606217ec",
     "name": "Aruzhan Amanbayeva",
     "country_code": "CH",
     "country_name": "Switzerland",
-    "location_label": "Lausanne, Vaud, Switzerland",
-    "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://linkedin.com/in/aaruzhan"
+    "location_label": "Lausanne, Switzerland",
+    "evidence_url": "https://www.epfl.ch/campus/visitors/coming-to-epfl/",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at EPFL; the linked official institution source establishes the campus location. EPFL's official visitor page identifies its Lausanne campus."
   },
   {
     "person_id": "kaz-c5022eefe384",
     "name": "Asan Zholdassov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Almaty, Kazakhstan",
-    "evidence_url": "https://linkedin.com/in/assan-zholdassov-5290639",
-    "evidence_kind": "manual_public_profile_location",
+    "location_label": "Казахстан",
+    "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "The accepted profile and Pifagor's official biography place the founder and school in Almaty."
+    "review_reason": "Country follows the location attached to the accepted current role at Pifagor School. The public profile header independently agrees.",
+    "evidence_url": "https://linkedin.com/in/assan-zholdassov-5290639"
   },
   {
     "person_id": "kaz-61a74e788b9b",
@@ -743,41 +567,30 @@
     "country_name": "United States",
     "location_label": "Boston, Massachusetts, United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://www.linkedin.com/in/askarbek-orakov"
-  },
-  {
-    "person_id": "kaz-5e6bd77516c5",
-    "name": "Askarbek Zadauly",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/askarbek-zadauly-264b8662"
+    "review_reason": "Country follows the location attached to the accepted current role at Harvard University. The public profile header independently agrees.",
+    "evidence_url": "https://www.linkedin.com/in/askarbek-orakov"
   },
   {
     "person_id": "kaz-53073a123482",
     "name": "Assem Zhunis",
     "country_code": "HK",
     "country_name": "Hong Kong",
-    "location_label": "Hong Kong SAR",
-    "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://hk.linkedin.com/in/assemzhunis"
+    "location_label": "Hong Kong",
+    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-40e246e1831e",
     "name": "Asset Daliyev",
-    "country_code": "SG",
-    "country_name": "Singapore",
-    "location_label": "Singapore",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the location attached to the accepted current role at Khan Group. The profile header points to Singapore, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://sg.linkedin.com/in/asset-daliyev-4ab6a532"
   },
   {
@@ -788,7 +601,7 @@
     "location_label": "Almaty, Kazakhstan",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "review_reason": "Country follows the location attached to the accepted current role at Self-employed. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/ayansegizbay"
   },
   {
@@ -796,22 +609,11 @@
     "name": "Ayat Tassanov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "University Park, Pennsylvania, United States",
+    "evidence_url": "https://www.psu.edu/visitors-and-neighbors/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/ayattasanov"
-  },
-  {
-    "person_id": "kaz-8fe9da4c845a",
-    "name": "Azamat Abilkhanov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/azamat-abilkhanov-a4522210"
+    "review_reason": "Country follows the accepted active student affiliation at Pennsylvania State University; the linked official institution source establishes the campus location. Penn State's official visitor page identifies its University Park campus."
   },
   {
     "person_id": "kaz-e310964136d0",
@@ -820,8 +622,8 @@
     "country_name": "Kazakhstan",
     "location_label": "Astana, Kazakhstan",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at iOS/Flutter. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/azamat-aidanov-64046076"
   },
   {
@@ -830,31 +632,20 @@
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev University. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/azamat-amzebek"
-  },
-  {
-    "person_id": "kaz-e4459aeba14c",
-    "name": "Azamat Sarsembaev",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "San Francisco Bay Area",
-    "evidence_url": "https://www.linkedin.com/in/azzy-polymath",
-    "evidence_kind": "manual_public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "The accepted public profile exposes San Francisco Bay Area as its location."
   },
   {
     "person_id": "kaz-ae7bbfa79815",
     "name": "Azamat Smagulov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "San Francisco, California, United States",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Prog.AI. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://linkedin.com/in/azamatsmagulov"
   },
   {
@@ -865,29 +656,18 @@
     "location_label": "London Area, United Kingdom",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "review_reason": "Country follows the location attached to the accepted current role at Vitol. The public profile header independently agrees.",
     "evidence_url": "https://uk.linkedin.com/in/azamat-ukpegaziyev-868b1947"
-  },
-  {
-    "person_id": "kaz-c1c692af0296",
-    "name": "Azizkhan Almakhan",
-    "country_code": "CH",
-    "country_name": "Switzerland",
-    "location_label": "Switzerland",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/azizkhan-almakhan-1652b952"
   },
   {
     "person_id": "kaz-ce11e3134fa1",
     "name": "Baizak Kudaibergenov",
     "country_code": "AE",
     "country_name": "United Arab Emirates",
-    "location_label": "United Arab Emirates",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "location_label": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the location attached to the accepted current role at Khalifa University. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/baizaq"
   },
   {
@@ -896,10 +676,10 @@
     "country_code": "US",
     "country_name": "United States",
     "location_label": "College Station, Texas, United States",
-    "evidence_url": "https://linkedin.com/in/bakdaulet-seisenkul-8ab00b230",
-    "evidence_kind": "manual_public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "The accepted exact-name public profile exposes College Station Texas as Bakdaulet Seisenkul's location and the current Texas A&M lab roster corroborates it."
+    "evidence_url": "https://www.tamu.edu/campus-community/visit-campus/index.html",
+    "evidence_kind": "current_education_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the accepted active student affiliation at Texas A&M University; the linked official institution source establishes the campus location. Texas A&M's official visitor page identifies its College Station campus."
   },
   {
     "person_id": "kaz-8309d6e00897",
@@ -907,21 +687,21 @@
     "country_code": "KR",
     "country_name": "South Korea",
     "location_label": "Daejeon, South Korea",
-    "evidence_url": "https://kz.linkedin.com/in/bakdaulet-yernazarov-308431353",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://www.kaist.ac.kr/en/html/kaist/011501.html",
+    "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "The active 2025-2029 KAIST affiliation is used instead of the profile's stale Kazakhstan header."
+    "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
   },
   {
-    "person_id": "kaz-da119ef48a6d",
-    "name": "Batyr Sardarbekov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "person_id": "kaz-9b2fecb414ca",
+    "name": "Bakhytbek Zhalmagambetov",
+    "country_code": "ID",
+    "country_name": "Indonesia",
+    "location_label": "Surabaya, Indonesia",
+    "evidence_url": "https://unair.ac.id/en/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/998batrr"
+    "review_reason": "Country follows the accepted active student affiliation at Airlangga University; the linked official institution source establishes the campus location. Airlangga University's official site identifies its Surabaya campuses."
   },
   {
     "person_id": "kaz-4357b3307079",
@@ -930,8 +710,8 @@
     "country_name": "United States",
     "location_label": "Mountain View, California, United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/batyrkhan-orynkul-68a45817b"
   },
   {
@@ -939,33 +719,22 @@
     "name": "Batyrkhan Sakenov",
     "country_code": "HK",
     "country_name": "Hong Kong",
-    "location_label": "Hong Kong, Hong Kong SAR",
-    "evidence_url": "https://www.math.hkust.edu.hk/ug/chern_class/",
-    "evidence_kind": "affiliation_country",
+    "location_label": "Hong Kong",
+    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Outcome country follows the accepted probable exact-name current HKUST mathematics affiliation."
-  },
-  {
-    "person_id": "kaz-fae12779c8ad",
-    "name": "Baurzhan Bektemirov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/bbektemir"
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-add07caaba9e",
     "name": "Baurzhan Smailov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Almaty, Kazakhstan",
-    "evidence_url": "https://almaty.fizmat.kz/ru/teachers/smaylov-b-b/",
-    "evidence_kind": "career_source_location",
+    "location_label": "Алматы",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "RFMS's current teacher biography places Bauyrzhan Smailov at its Almaty campus."
+    "review_reason": "Country follows the location attached to the accepted current role at Republican Physics and Mathematics School (RFMS). The public profile header independently agrees.",
+    "evidence_url": "https://linkedin.com/in/bauyrzhan-smailov-74a55390"
   },
   {
     "person_id": "kaz-b82a97fb3f53",
@@ -974,7 +743,7 @@
     "country_name": "Kazakhstan",
     "location_label": "Atyrau, Kazakhstan",
     "evidence_url": "https://www.signalhire.com/profiles/bauyrzhan-sainov/240078956",
-    "evidence_kind": "public_profile_location",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "The reviewed current employment profile places Bauyrzhan Sainov's Tengizchevroil role in Atyrau Kazakhstan and his LinkedIn header confirms Kazakhstan."
   },
@@ -984,21 +753,10 @@
     "country_code": "KR",
     "country_name": "South Korea",
     "location_label": "Ulsan, South Korea",
-    "evidence_url": "https://cmcm.ibs.re.kr/cmcm/?MM=02&SM=01",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://www.unist.ac.kr/campus-life/directions/",
+    "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Outcome country follows the accepted current undergraduate affiliation at the Institute for Basic Science center hosted at UNIST in Ulsan."
-  },
-  {
-    "person_id": "kaz-674fe7c75a81",
-    "name": "Bekzhan Bekbolatuly",
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "location_label": "United Kingdom",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/bekzhan29"
+    "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
     "person_id": "kaz-ef33110ee8b0",
@@ -1006,10 +764,10 @@
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Almaty, Kazakhstan",
-    "evidence_url": "https://galaxy.edu.kz/en/staff/163",
-    "evidence_kind": "career_source_location",
-    "confidence": "confirmed",
-    "review_reason": "Galaxy International School's current staff page places Binazar Zhassulan's Academic Principal role at its Almaty campus."
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the location attached to the accepted current role at Galaxy International School Almaty.",
+    "evidence_url": "https://linkedin.com/in/zhassulan-binazar-294bb7146"
   },
   {
     "person_id": "kaz-ebbffad91290",
@@ -1017,32 +775,10 @@
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Almaty, Kazakhstan",
-    "evidence_url": "https://linkedin.com/in/birzhan-moldagaliyev",
-    "evidence_kind": "manual_public_profile_location",
+    "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "The accepted public profile exposes Almaty Kazakhstan as Birzhan Moldagaliyev's location."
-  },
-  {
-    "person_id": "kaz-12d9dc922ba8",
-    "name": "Bogdan Zagribelnyy",
-    "country_code": "AE",
-    "country_name": "United Arab Emirates",
-    "location_label": "United Arab Emirates",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/bogdanzagribelnyy"
-  },
-  {
-    "person_id": "kaz-679b5f1e598a",
-    "name": "Bulat Biizhanov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/bulat-biizhanov-b4051a30"
+    "review_reason": "Country follows the location attached to the accepted current role at Kcell. The public profile header independently agrees.",
+    "evidence_url": "https://linkedin.com/in/birzhan-moldagaliyev"
   },
   {
     "person_id": "kaz-d3e4616882fd",
@@ -1050,10 +786,10 @@
     "country_code": "US",
     "country_name": "United States",
     "location_label": "Berkeley, California, United States",
-    "evidence_url": "https://statistics.berkeley.edu/people/danat-duisenbekov",
-    "evidence_kind": "career_source_location",
+    "evidence_url": "https://visit.berkeley.edu/",
+    "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "The accepted probable exact-name match is listed in UC Berkeley's Statistics PhD program and the department address is in Berkeley California."
+    "review_reason": "Country follows the accepted active student affiliation at University of California, Berkeley; the linked official institution source establishes the campus location. UC Berkeley's official visitor page identifies its Berkeley campus."
   },
   {
     "person_id": "kaz-8a1e18c44a89",
@@ -1062,30 +798,19 @@
     "country_name": "South Korea",
     "location_label": "Seoul, South Korea",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://linkedin.com/in/daniilmel"
-  },
-  {
-    "person_id": "kaz-3be79cb80aa3",
-    "name": "Daniil Shatokhin",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/daniil-shatokhin-9a69b7297"
+    "review_reason": "Country follows the location attached to the accepted current role at HITS. The public profile header independently agrees.",
+    "evidence_url": "https://linkedin.com/in/daniilmel"
   },
   {
     "person_id": "kaz-f8f0e6bb7675",
     "name": "Daniyar Abesbek",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "CA",
+    "country_name": "Canada",
+    "location_label": "Toronto, Ontario, Canada",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Leap Tools. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://linkedin.com/in/dohchuk"
   },
   {
@@ -1093,43 +818,43 @@
     "name": "Daniyar Kamal",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Астана",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at WeGlobal.ai. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/daniyar-kamal-91b041118"
   },
   {
-    "person_id": "kaz-612c627fb60c",
-    "name": "Daniyar Kelbetov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "person_id": "kaz-f20d8c3abb87",
+    "name": "Daniyar Otarbayev",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Ulsan, South Korea",
+    "evidence_url": "https://www.unist.ac.kr/campus-life/directions/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/daniyar-frm"
+    "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
     "person_id": "kaz-c1c8ab962b25",
     "name": "Daniyar Zakarin",
-    "country_code": "IT",
-    "country_name": "Italy",
-    "location_label": "Italy",
-    "evidence_kind": "public_profile_location",
+    "country_code": "CH",
+    "country_name": "Switzerland",
+    "location_label": "Zurich, Switzerland",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Huawei. The profile header points to Italy, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://linkedin.com/in/daniyarzt"
   },
   {
     "person_id": "kaz-f721e7240925",
     "name": "Darkhan Akzholov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "CH",
+    "country_name": "Switzerland",
+    "location_label": "Цюрих, Швейцарская Конфедерация",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Google. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://kz.linkedin.com/in/darkhan-akzholov-b0399151"
   },
   {
@@ -1139,8 +864,8 @@
     "country_name": "United States",
     "location_label": "Menlo Park, California, United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Meta. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/daulet-askarov-98347b26"
   },
   {
@@ -1148,10 +873,10 @@
     "name": "Daulet Kurmantayev",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Tele2 Kazakhstan. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/daulet-kurmantayev-41912a176"
   },
   {
@@ -1162,30 +887,8 @@
     "location_label": "Эр-Рияд, Саудовская Аравия",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "review_reason": "Country follows the location attached to the accepted current role at HUMAIN. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/daulet-toibazar-54118b174"
-  },
-  {
-    "person_id": "kaz-afe18421e5b7",
-    "name": "Daulet Zhanguzin",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/daulet-zhanguzin"
-  },
-  {
-    "person_id": "kaz-3769a5a94566",
-    "name": "Dauren Auzhani",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/dauren-auzhani-44134222"
   },
   {
     "person_id": "kaz-dc3a6a35b589",
@@ -1193,31 +896,31 @@
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the location attached to the accepted current role at DashDevs. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/dauren-muratov-1a114676"
   },
   {
     "person_id": "kaz-ac8d11f139c6",
     "name": "David Li",
-    "country_code": "RU",
-    "country_name": "Russia",
-    "location_label": "Russia",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://ru.linkedin.com/in/david-li-ab07b332b"
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "location_label": "Abu Dhabi, United Arab Emirates",
+    "evidence_url": "https://mbzuai.ac.ae/about/contact/",
+    "evidence_kind": "current_education_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the accepted active student affiliation at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI); the linked official institution source establishes the campus location. MBZUAI's official contact page identifies its Abu Dhabi campus."
   },
   {
     "person_id": "kaz-462ea4363511",
     "name": "Denis Ovchinnikov",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "country_code": "CA",
+    "country_name": "Canada",
+    "location_label": "Toronto, ON",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at NVIDIA. The profile header points to United States, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://www.linkedin.com/in/denis-ovchinnikov-math"
   },
   {
@@ -1226,10 +929,10 @@
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_kind": "public_profile_location",
+    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/dias-suleimenov-23888828b"
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-319ba97c86aa",
@@ -1237,10 +940,10 @@
     "country_code": "GB",
     "country_name": "United Kingdom",
     "location_label": "Cambridge, England, United Kingdom",
-    "evidence_url": "https://uk.linkedin.com/in/dinmukhamed-rakhimzhanov-93a2b8302",
-    "evidence_kind": "manual_public_profile_location",
+    "evidence_url": "https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work/visiting-the-university",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile exposes Cambridge England as Dinmukhamed Rakhimzhanov's location."
+    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official visitor page identifies its Cambridge location."
   },
   {
     "person_id": "kaz-8263929a366c",
@@ -1248,43 +951,21 @@
     "country_code": "AT",
     "country_name": "Austria",
     "location_label": "St. Gilgen, Salzburg, Austria",
-    "evidence_url": "https://www.math.aau.at/OeMO/Ergebnisse/GWF/west/2026",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://www.stgis.at/contact",
+    "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Austria's official 2026 Mathematics Olympiad results place Dinmukhamed Yegeubayev at St. Gilgen International School."
+    "review_reason": "Country follows the accepted active student affiliation at St. Gilgen International School; the linked official institution source establishes the campus location. The school's official contact page identifies its St. Gilgen campus."
   },
   {
     "person_id": "kaz-2fe78cfd647b",
     "name": "Dinmukhammed Nurbek",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Астана",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at EPAM Systems. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/dinmukhammed-nurbek"
-  },
-  {
-    "person_id": "kaz-bdb3a76b4430",
-    "name": "Dinmukhammed Omar",
-    "country_code": "SG",
-    "country_name": "Singapore",
-    "location_label": "Singapore",
-    "evidence_url": "https://linkedin.com/in/dinmukhammedomar",
-    "evidence_kind": "manual_public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "The accepted exact-name public profile exposes Singapore as Dinmukhammed Omar's location."
-  },
-  {
-    "person_id": "kaz-4e3828c7955c",
-    "name": "Diyar Mailepessov",
-    "country_code": "SG",
-    "country_name": "Singapore",
-    "location_label": "Singapore",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/diyar-mailepessov-5828b722"
   },
   {
     "person_id": "kaz-49e2c68e6afb",
@@ -1293,8 +974,8 @@
     "country_name": "Germany",
     "location_label": "Erlangen, Bavaria, Germany",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Siemens Healthineers. The public profile header independently agrees.",
     "evidence_url": "https://de.linkedin.com/in/diyart"
   },
   {
@@ -1305,7 +986,7 @@
     "location_label": "Hillsboro, Oregon",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "review_reason": "Country follows the location attached to the accepted current role at Intel Corporation. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/dmitriy-dolzhnikov-7a874037"
   },
   {
@@ -1313,33 +994,22 @@
     "name": "Doszhan Bissimbi",
     "country_code": "HK",
     "country_name": "Hong Kong",
-    "location_label": "Hong Kong, Hong Kong SAR",
-    "evidence_url": "https://hk.linkedin.com/in/doszhan-bissimbi-a15621291",
-    "evidence_kind": "manual_public_profile_location",
+    "location_label": "Hong Kong",
+    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile exposes Hong Kong as Doszhan Bissimbi's location and identifies his current HKUST education."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-5354c12725ae",
     "name": "Dulat Azhibek",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev University. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/dulat-azhibek-31417557"
-  },
-  {
-    "person_id": "kaz-39523361f70b",
-    "name": "Eldos Samalov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/yeldos-samalov-396a1666"
   },
   {
     "person_id": "kaz-087d239f6acf",
@@ -1347,20 +1017,20 @@
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_kind": "public_profile_location",
+    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/fetullakh-sam-108a08225"
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-6ea5dd0e4291",
     "name": "Furkat Mukhtarov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "Ithaca, New York",
+    "location_label": "Ithaca, New York, United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at TETmedical. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/furkatmukhtarov"
   },
   {
@@ -1369,10 +1039,10 @@
     "country_code": "KR",
     "country_name": "South Korea",
     "location_label": "Daejeon, South Korea",
-    "evidence_url": "https://kr.linkedin.com/in/galymzhnb",
-    "evidence_kind": "manual_public_profile_location",
+    "evidence_url": "https://www.kaist.ac.kr/en/html/kaist/011501.html",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile exposes Daejeon South Korea as Galymzhan Baktybai's location and identifies his current KAIST education."
+    "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
   },
   {
     "person_id": "kaz-44c1e8dd8198",
@@ -1381,8 +1051,8 @@
     "country_name": "South Korea",
     "location_label": "Ulsan, South Korea",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Institute for Basic Science (IBS). The public profile header independently agrees.",
     "evidence_url": "https://kr.linkedin.com/in/moldagulovg"
   },
   {
@@ -1392,8 +1062,8 @@
     "country_name": "United States",
     "location_label": "Greater Seattle Area",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Microsoft. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/gani-nazirov"
   },
   {
@@ -1401,32 +1071,21 @@
     "name": "Guldana Abduali",
     "country_code": "KR",
     "country_name": "South Korea",
-    "location_label": "South Korea",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kr.linkedin.com/in/guldana-abduali"
-  },
-  {
-    "person_id": "kaz-afd3a80b5994",
-    "name": "Igor Ganichev",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/igor-ganichev-067bba16"
+    "location_label": "Daejeon, South Korea",
+    "evidence_url": "https://www.kaist.ac.kr/en/html/kaist/011501.html",
+    "evidence_kind": "current_education_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
   },
   {
     "person_id": "kaz-3007575deed1",
     "name": "Igor Stassiy",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Menlo Park, California, United States",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Meta. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/istassiy"
   },
   {
@@ -1434,10 +1093,10 @@
     "name": "Ilya Skripin",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Boston Consulting Group (BCG). The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/ilya-skripin-a9a31552"
   },
   {
@@ -1447,8 +1106,8 @@
     "country_name": "United States",
     "location_label": "Princeton, New Jersey, United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Princeton University. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/ilya-vilkoviskiy"
   },
   {
@@ -1456,22 +1115,11 @@
     "name": "Ivan Senyushkin",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Pavlodar, Kazakhstan",
-    "evidence_url": "https://linkedin.com/in/senivaser",
-    "evidence_kind": "manual_public_profile_location",
+    "location_label": "Павлодар, Павлодарская область, Казахстан",
+    "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "The accepted public profile exposes Pavlodar Kazakhstan as Ivan Senyushkin's location."
-  },
-  {
-    "person_id": "kaz-9f8b5c60daf2",
-    "name": "Kairat Akhmetov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/kairatakhmetov"
+    "review_reason": "Country follows the location attached to the accepted current role at WTT Solutions. The public profile header independently agrees.",
+    "evidence_url": "https://linkedin.com/in/senivaser"
   },
   {
     "person_id": "kaz-f0f8ae850677",
@@ -1480,30 +1128,19 @@
     "country_name": "South Korea",
     "location_label": "Seoul, South Korea",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://kr.linkedin.com/in/allbackoff"
-  },
-  {
-    "person_id": "kaz-bcd45c045c97",
-    "name": "Kairat Zhubayev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/kairat-zhubayev-150785174"
+    "review_reason": "Country follows the location attached to the accepted current role at Adriel. The public profile header independently agrees.",
+    "evidence_url": "https://kr.linkedin.com/in/allbackoff"
   },
   {
     "person_id": "kaz-e266aa85e93e",
     "name": "Kaisarbek Omirzakhov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "San Jose, California, United States",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Ayar Labs. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/kaisarbek"
   },
   {
@@ -1511,32 +1148,21 @@
     "name": "Kambarov Yerkebulan",
     "country_code": "BE",
     "country_name": "Belgium",
-    "location_label": "Mol, Flemish Region, Belgium",
-    "evidence_url": "https://linkedin.com/in/yerkebulan-kambarov-b32aa160",
-    "evidence_kind": "manual_public_profile_location",
+    "location_label": "Бельгия",
+    "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "The accepted LinkedIn profile exposes Mol in Belgium's Flemish Region as his location."
-  },
-  {
-    "person_id": "kaz-b60a544a248a",
-    "name": "Kanat Satylkhanov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/kanat-satylkhanov-bb205080"
+    "review_reason": "Country follows the location attached to the accepted current role at Johnson & Johnson.",
+    "evidence_url": "https://linkedin.com/in/yerkebulan-kambarov-b32aa160"
   },
   {
     "person_id": "kaz-492c4144387e",
     "name": "Kassym Mukhanbetiyar",
     "country_code": "IT",
     "country_name": "Italy",
-    "location_label": "Italy",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Milan, Lombardy, Italy",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Huawei. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/kassymm/"
   },
   {
@@ -1556,20 +1182,20 @@
     "country_code": "US",
     "country_name": "United States",
     "location_label": "Santa Clara, California, United States",
-    "evidence_url": "https://linkedin.com/in/aidynkemeldinov",
-    "evidence_kind": "manual_public_profile_location",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile places his current Applied Materials role in Santa Clara California."
+    "review_reason": "Country follows the location attached to the accepted current role at Applied Materials.",
+    "evidence_url": "https://linkedin.com/in/aidynkemeldinov"
   },
   {
     "person_id": "kaz-2d9952af7ca2",
     "name": "Khafiz Zhumadil",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Abbott. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/khafiz-zhumadil-8130571a6"
   },
   {
@@ -1577,11 +1203,11 @@
     "name": "Khaidar Kairbek",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Hanover, New Hampshire, United States",
+    "evidence_url": "https://home.dartmouth.edu/visit",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/khaidar-kairbek"
+    "review_reason": "Country follows the accepted active student affiliation at Dartmouth College; the linked official institution source establishes the campus location. The official Dartmouth visitor page identifies its Hanover campus."
   },
   {
     "person_id": "kaz-22487c0da1b1",
@@ -1590,8 +1216,8 @@
     "country_name": "Qatar",
     "location_label": "Doha, Qatar",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Siemens Energy. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/khairosh"
   },
   {
@@ -1610,66 +1236,55 @@
     "name": "Kibriyanur Abdugafarova",
     "country_code": "KR",
     "country_name": "South Korea",
-    "location_label": "South Korea",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Daejeon, South Korea",
+    "evidence_url": "https://www.kaist.ac.kr/en/html/kaist/011501.html",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kr.linkedin.com/in/kibriyanur-abdugafarova"
+    "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
   },
   {
     "person_id": "kaz-79f187c010c6",
     "name": "Kirill Kim",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Cambridge, Massachusetts, United States",
+    "evidence_url": "https://www.mit.edu/visitmit/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/kirill-kim-4bb3a8346"
+    "review_reason": "Country follows the accepted active student affiliation at Massachusetts Institute of Technology (MIT); the linked official institution source establishes the campus location. MIT's official visitor page identifies its Cambridge campus."
   },
   {
     "person_id": "kaz-f29c25aa7066",
     "name": "Kirill Mayerle",
     "country_code": "RU",
     "country_name": "Russia",
-    "location_label": "Moscow, Russia",
-    "evidence_url": "https://linkedin.com/in/kirillmaerle",
-    "evidence_kind": "manual_public_profile_location",
+    "location_label": "Москва, Россия",
+    "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "The accepted public profile places Kirill Maerle's Skoltech role in Moscow Russia."
-  },
-  {
-    "person_id": "kaz-5a5848e42390",
-    "name": "Kuandyk Altynkhanov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/kuandyk-altynkhanov-9b591ba9"
+    "review_reason": "Country follows the location attached to the accepted current role at Skoltech.",
+    "evidence_url": "https://linkedin.com/in/kirillmaerle"
   },
   {
     "person_id": "kaz-6a1491f166e0",
     "name": "Kuat Yessenov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Mountain View, California",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/kuat-yessenov-b1b188b3"
   },
   {
-    "person_id": "kaz-74fe1fe53ea1",
-    "name": "Madi Khamitbekov",
-    "country_code": "CA",
-    "country_name": "Canada",
-    "location_label": "Canada",
-    "evidence_kind": "public_profile_location",
+    "person_id": "kaz-c792c9bfcef4",
+    "name": "Madi Baltagulov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "New Haven, Connecticut, United States",
+    "evidence_url": "https://www.yale.edu/about-yale/visit-campus",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/khmadi"
+    "review_reason": "Country follows the accepted active student affiliation at Yale University; the linked official institution source establishes the campus location. Yale's official visitor page identifies its New Haven campus."
   },
   {
     "person_id": "kaz-0bab17661adc",
@@ -1678,9 +1293,20 @@
     "country_name": "United Kingdom",
     "location_label": "London, England, United Kingdom",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Snap. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/aitbayev"
+  },
+  {
+    "person_id": "kaz-ccd2ad3a4c7d",
+    "name": "Madiyar Kassymaly",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://nu.edu.kz/en/about/contacts",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at Nazarbayev University; the linked official institution source establishes the campus location. Nazarbayev University's official contact page identifies its Astana campus."
   },
   {
     "person_id": "kaz-f648d0d6bf6d",
@@ -1688,20 +1314,20 @@
     "country_code": "AU",
     "country_name": "Australia",
     "location_label": "Sydney, New South Wales, Australia",
-    "evidence_url": "https://linkedin.com/in/angsar-manatuly-7409bb2b9",
-    "evidence_kind": "manual_public_profile_location",
+    "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "The accepted LinkedIn profile places his current UTS role in Sydney Australia."
+    "review_reason": "Country follows the location attached to the accepted current role at University of Technology Sydney.",
+    "evidence_url": "https://linkedin.com/in/angsar-manatuly-7409bb2b9"
   },
   {
     "person_id": "kaz-776ae509d19e",
     "name": "Mansur Mukimbekov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "New York, United States",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Axiom. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/mansurmukimbekov"
   },
   {
@@ -1709,22 +1335,11 @@
     "name": "Mansur Taimas",
     "country_code": "KR",
     "country_name": "South Korea",
-    "location_label": "South Korea",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Daejeon, South Korea",
+    "evidence_url": "https://www.kaist.ac.kr/en/html/kaist/011501.html",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/mansur-taimas"
-  },
-  {
-    "person_id": "kaz-a125f99f4940",
-    "name": "Marat Shotanov",
-    "country_code": "AE",
-    "country_name": "United Arab Emirates",
-    "location_label": "United Arab Emirates",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://ae.linkedin.com/in/marat-shotanov"
+    "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
   },
   {
     "person_id": "kaz-c8b296e6cadb",
@@ -1732,32 +1347,10 @@
     "country_code": "GB",
     "country_name": "United Kingdom",
     "location_label": "London, United Kingdom",
-    "evidence_url": "https://www.linkedin.com/posts/spectrum-international-school_huge-congratulations-to-our-student-margulan-activity-7445314253726830592-wCy6",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://www.imperial.ac.uk/visit/campuses/",
+    "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Outcome country follows the accepted exact-name Imperial College London admission."
-  },
-  {
-    "person_id": "kaz-3dd740673c5d",
-    "name": "Maxat Aipanov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/maxat-aipanov-192903a3"
-  },
-  {
-    "person_id": "kaz-be6c0520f71e",
-    "name": "Maxim Shpilkin",
-    "country_code": "AE",
-    "country_name": "United Arab Emirates",
-    "location_label": "United Arab Emirates",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/maxim-shpilkin"
+    "review_reason": "Country follows the accepted active student affiliation at Imperial College London; the linked official institution source establishes the campus location. Imperial's official campus page identifies its London campuses."
   },
   {
     "person_id": "kaz-c97c1b9e1718",
@@ -1766,8 +1359,8 @@
     "country_name": "Singapore",
     "location_label": "Singapore",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Virtu Financial. The public profile header independently agrees.",
     "evidence_url": "https://sg.linkedin.com/in/medet-zhanbulatuly-0b009884"
   },
   {
@@ -1775,21 +1368,21 @@
     "name": "Meiirbek Baimuratov",
     "country_code": "IT",
     "country_name": "Italy",
-    "location_label": "Italy",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Padua, Italy",
+    "evidence_url": "https://www.unipd.it/en/how-reach-us",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/meiirbek-baimuratov/"
+    "review_reason": "Country follows the accepted active student affiliation at University of Padua; the linked official institution source establishes the campus location. The university's official directions page identifies its Padua location."
   },
   {
     "person_id": "kaz-8b4bb46b3041",
     "name": "Meiram Murzabulatov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Astana",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev University. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/meiram-murzabulatov-8889b0138"
   },
   {
@@ -1799,8 +1392,8 @@
     "country_name": "Germany",
     "location_label": "Munich Area, Germany",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Google. The profile header points to United Kingdom, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://linkedin.com/in/meirambek77"
   },
   {
@@ -1810,8 +1403,8 @@
     "country_name": "United States",
     "location_label": "New York City Metropolitan Area",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Fitch Ratings. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/mikhail-okhin-109129148"
   },
   {
@@ -1819,10 +1412,10 @@
     "name": "Mikhail Shakhmatov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at KAZ Minerals. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/mikhail-shakhmatov"
   },
   {
@@ -1830,22 +1423,11 @@
     "name": "Miras Bekbergenov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Астана, Казахстан",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at VACANTE. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/miras-bekbergenov-73b54a231"
-  },
-  {
-    "person_id": "kaz-a8612d505db7",
-    "name": "Miras Myrzakerey",
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "location_label": "United Kingdom",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/miras-myrzakerey-b37529101"
   },
   {
     "person_id": "kaz-69bda00903cf",
@@ -1853,10 +1435,10 @@
     "country_code": "GB",
     "country_name": "United Kingdom",
     "location_label": "Cambridge, England, United Kingdom",
-    "evidence_url": "https://www.globtalent.org/gtf-big-talent-scholars-bios/miron-yurkevich",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work/visiting-the-university",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The Global Talent Fund biography places Miron Yurkevich's current mathematics education at Trinity College at the University of Cambridge."
+    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official visitor page identifies its Cambridge location."
   },
   {
     "person_id": "kaz-2c17c88cc511",
@@ -1864,20 +1446,20 @@
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Almaty, Kazakhstan",
-    "evidence_url": "https://linkedin.com/in/maxim-mukashev-73a18827",
-    "evidence_kind": "manual_public_profile_location",
+    "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "The accepted LinkedIn profile places Maxim Mukashev in Almaty Kazakhstan."
+    "review_reason": "Country follows the location attached to the accepted current role at AeroTransport Consultants.",
+    "evidence_url": "https://linkedin.com/in/maxim-mukashev-73a18827"
   },
   {
     "person_id": "kaz-69f40396a2e9",
     "name": "Mukhammadarif Sakhmoldin",
-    "country_code": "HK",
-    "country_name": "Hong Kong",
-    "location_label": "Hong Kong",
-    "evidence_kind": "public_profile_location",
+    "country_code": "NL",
+    "country_name": "Netherlands",
+    "location_label": "Amsterdam, North Holland, Netherlands",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Optiver. The profile header points to Hong Kong, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://hk.linkedin.com/in/mukhammadarifsakhmoldin"
   },
   {
@@ -1888,7 +1470,7 @@
     "location_label": "Singapore, Singapore",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "review_reason": "Country follows the location attached to the accepted current role at National University of Singapore. The public profile header independently agrees.",
     "evidence_url": "https://sg.linkedin.com/in/mshagirov"
   },
   {
@@ -1898,8 +1480,8 @@
     "country_name": "Germany",
     "location_label": "Berlin, Germany",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Deutsche Bank. The public profile header independently agrees.",
     "evidence_url": "https://de.linkedin.com/in/mussa-rajamov"
   },
   {
@@ -1907,32 +1489,32 @@
     "name": "Nasharov A. Askar",
     "country_code": "RU",
     "country_name": "Russia",
-    "location_label": "Astrakhan, Russia",
-    "evidence_url": "https://linkedin.com/in/nasharov-askar-bb397466",
-    "evidence_kind": "manual_public_profile_location",
+    "location_label": "Астрахань, Астраханская область, Россия",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile places his current SLB role in Astrakhan Russia."
+    "review_reason": "Country follows the location attached to the accepted current role at SLB.",
+    "evidence_url": "https://linkedin.com/in/nasharov-askar-bb397466"
   },
   {
     "person_id": "kaz-8ba9adfc1870",
     "name": "Nazar Serazitdinov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "Oxford, England, United Kingdom",
+    "evidence_url": "https://www.ox.ac.uk/visitors/visiting-oxford",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/nazar-serazitdinov-2030a229b"
+    "review_reason": "Country follows the accepted active student affiliation at University of Oxford; the linked official institution source establishes the campus location. Oxford's official visitor page identifies its Oxford location."
   },
   {
     "person_id": "kaz-ce2eeb5d3d04",
     "name": "Nazarbek Altybay",
     "country_code": "GB",
     "country_name": "United Kingdom",
-    "location_label": "United Kingdom",
-    "evidence_kind": "public_profile_location",
+    "location_label": "London Area, United Kingdom",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Qube Research & Technologies. The public profile header independently agrees.",
     "evidence_url": "https://uk.linkedin.com/in/nazarbek"
   },
   {
@@ -1943,85 +1525,41 @@
     "location_label": "Атырау, Атырауская область, Казахстан",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "review_reason": "Country follows the location attached to the accepted current role at North Caspian Operating Company (NCOC). The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/nurassyl-serik-2a257918a"
   },
   {
     "person_id": "kaz-b35790c250cd",
     "name": "Nurbol Duisenbayev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/nurbol-duisenbayev"
-  },
-  {
-    "person_id": "kaz-0647e630efc7",
-    "name": "Nurbol Kisembaev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_url": "https://linkedin.com/in/nurbol-kissembayev-44017720",
-    "evidence_kind": "manual_public_profile_location",
+    "country_code": "CH",
+    "country_name": "Switzerland",
+    "location_label": "Zurich, Switzerland",
+    "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "The accepted public profile exposes Kazakhstan as Nurbol Kissembayev's location."
-  },
-  {
-    "person_id": "kaz-7bc4b3d48a29",
-    "name": "Nurdaulet Kemel",
-    "country_code": "HK",
-    "country_name": "Hong Kong",
-    "location_label": "Hong Kong",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://hk.linkedin.com/in/nurdauletkemel"
-  },
-  {
-    "person_id": "kaz-b788eb650e7a",
-    "name": "Nurgali Arystanov",
-    "country_code": "KR",
-    "country_name": "South Korea",
-    "location_label": "South Korea",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/nurgali-arystanov-07548042"
+    "review_reason": "Country follows the location attached to the accepted current role at Google. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
+    "evidence_url": "https://kz.linkedin.com/in/nurbol-duisenbayev"
   },
   {
     "person_id": "kaz-92adb8a08f0e",
     "name": "Nurgul Yegenbergenova",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Cambridge, Massachusetts, United States",
+    "evidence_url": "https://www.mit.edu/visitmit/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/nurgul-yegenbergenova-395548347"
+    "review_reason": "Country follows the accepted active student affiliation at Massachusetts Institute of Technology (MIT); the linked official institution source establishes the campus location. MIT's official visitor page identifies its Cambridge campus."
   },
   {
     "person_id": "kaz-2732f0e135fa",
     "name": "Nurislam Tursynbek",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Chapel Hill, North Carolina, United States",
+    "evidence_url": "https://www.unc.edu/visitors/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/nurislam-tursynbek-0a8620ab"
-  },
-  {
-    "person_id": "kaz-253b9dc2b33d",
-    "name": "Nurlan Algashev",
-    "country_code": "DK",
-    "country_name": "Denmark",
-    "location_label": "Denmark",
-    "evidence_url": "https://linkedin.com/in/nurlan-algashov",
-    "evidence_kind": "manual_public_profile_location",
-    "confidence": "probable",
-    "review_reason": "The accepted public profile exposes Denmark as Nurlan Algashov's location."
+    "review_reason": "Country follows the accepted active student affiliation at University of North Carolina at Chapel Hill; the linked official institution source establishes the campus location. UNC's official visitor page identifies its Chapel Hill campus."
   },
   {
     "person_id": "kaz-633cb9726092",
@@ -2030,63 +1568,41 @@
     "country_name": "South Korea",
     "location_label": "Сеул, Южная Корея",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at AlliedYoung FBC. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/nurlybek-sulaimanov-387201245"
   },
   {
     "person_id": "kaz-569883c06e81",
     "name": "Nurlykhan Kairly",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/nurlykhan"
-  },
-  {
-    "person_id": "kaz-d9616cfe0fb5",
-    "name": "Nurlykhan Kopenov",
     "country_code": "KR",
     "country_name": "South Korea",
     "location_label": "South Korea",
-    "evidence_kind": "public_profile_location",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kr.linkedin.com/in/nurlykhan-kopenov"
-  },
-  {
-    "person_id": "kaz-a242fdf22bda",
-    "name": "Nursultan Pangsat",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/nursultan-pansat-6b0559210"
+    "review_reason": "Country follows the location attached to the accepted current role at Listly. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
+    "evidence_url": "https://kz.linkedin.com/in/nurlykhan"
   },
   {
     "person_id": "kaz-49fee0c7373b",
     "name": "Nurtas Shyntas",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "New York, New York, United States",
+    "evidence_url": "https://www.nyu.edu/footer/map.html",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/nurtas-shyntas-54b850199"
+    "review_reason": "Country follows the accepted active student affiliation at New York University; the linked official institution source establishes the campus location. NYU's official campus map identifies its New York campus."
   },
   {
     "person_id": "kaz-d1a89ad778a3",
     "name": "Nurzhan Bakibayev",
     "country_code": "GB",
     "country_name": "United Kingdom",
-    "location_label": "United Kingdom",
-    "evidence_kind": "public_profile_location",
+    "location_label": "London Area, United Kingdom",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Jane Street. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/hypuk"
   },
   {
@@ -2101,25 +1617,14 @@
     "review_reason": "Country comes from the accepted structured affiliation record."
   },
   {
-    "person_id": "kaz-f2b0c2f36f45",
-    "name": "Nurzhan Ustemirov",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/nurzhan"
-  },
-  {
     "person_id": "kaz-ef4bc11dbc64",
     "name": "Nurzhas Aidynov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Delaware, United States",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Solai. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://kz.linkedin.com/in/nurzhas-aidynov-747540155"
   },
   {
@@ -2129,42 +1634,9 @@
     "country_name": "United Kingdom",
     "location_label": "Greater London, England, United Kingdom",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Laminar. The public profile header independently agrees.",
     "evidence_url": "https://uk.linkedin.com/in/olzhas-nurpeisov"
-  },
-  {
-    "person_id": "kaz-f1194a0f246c",
-    "name": "Parassat Kyzyrkanov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/pkyzyrkanov"
-  },
-  {
-    "person_id": "kaz-01957a6accca",
-    "name": "Pavel Levchenko",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/pavel-levchenko-a315041a7"
-  },
-  {
-    "person_id": "kaz-3bb636937f0d",
-    "name": "Raiymbek Akshulakov",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "Mountain View, California, United States",
-    "evidence_url": "https://linkedin.com/in/raiymbek-akshulakov",
-    "evidence_kind": "manual_public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "The accepted self-authored LinkedIn profile exposes Mountain View California as Raiymbek Akshulakov's location."
   },
   {
     "person_id": "kaz-8db1b6d8afd7",
@@ -2172,21 +1644,10 @@
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_kind": "public_profile_location",
+    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/raiymbek-baishuak-6a1892245"
-  },
-  {
-    "person_id": "kaz-07372798186f",
-    "name": "Rakhim Baimurzin",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/baimurzzin"
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-ccd5a4548c56",
@@ -2195,8 +1656,8 @@
     "country_name": "United Kingdom",
     "location_label": "London Area, United Kingdom",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Laminar. The public profile header independently agrees.",
     "evidence_url": "https://uk.linkedin.com/in/rainhunter13"
   },
   {
@@ -2204,10 +1665,10 @@
     "name": "Rashid Amirov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the location attached to the accepted current role at FINCRAFT Investment House. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/rashidamirov"
   },
   {
@@ -2215,33 +1676,33 @@
     "name": "Rassul Karabalin",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Greater Los Angeles Area",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Amazon. The public profile header independently agrees.",
     "evidence_url": "http://www.linkedin.com/in/rassul"
   },
   {
     "person_id": "kaz-a7e23606a27b",
     "name": "Rassul Magauin",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "location_label": "Abu Dhabi, United Arab Emirates",
+    "evidence_url": "https://mbzuai.ac.ae/about/contact/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/rassul-magauin"
+    "review_reason": "Country follows the accepted active student affiliation at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI); the linked official institution source establishes the campus location. MBZUAI's official contact page identifies its Abu Dhabi campus."
   },
   {
     "person_id": "kaz-2d3646888fa9",
     "name": "Rauan Kaldybayev",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/rkaldybayev"
+    "location_label": "Davis, California, United States",
+    "evidence_url": "https://www.ucdavis.edu/about/visit",
+    "evidence_kind": "current_education_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the accepted active student affiliation at University of California, Davis; the linked official institution source establishes the campus location. UC Davis's official visitor page identifies its Davis campus."
   },
   {
     "person_id": "kaz-264dfb257029",
@@ -2250,8 +1711,8 @@
     "country_name": "Ireland",
     "location_label": "Dublin, County Dublin, Ireland",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees.",
     "evidence_url": "https://ie.linkedin.com/in/rauanrakhmet"
   },
   {
@@ -2259,43 +1720,21 @@
     "name": "Renat Bekbolatov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Bellevue, Washington, United States",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Genie. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/bekbolatov"
-  },
-  {
-    "person_id": "kaz-07b1a7ba2159",
-    "name": "Renat Shaimardanov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/renatshaimardanov"
-  },
-  {
-    "person_id": "kaz-166b996bb739",
-    "name": "Rinat Ilyussizov",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/rinat-ilyussizov-4b1b9b290"
   },
   {
     "person_id": "kaz-5529282c441f",
     "name": "Roman Cheremnov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Astana/Almaty Physics Battles Tournament. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/roman-cheremnov-a02b8a341"
   },
   {
@@ -2303,11 +1742,11 @@
     "name": "Rustam Timirbekov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_url": "https://linkedin.com/in/%D1%80%D1%83%D1%81%D1%82%D0%B0%D0%BC-%D1%82%D0%B5%D0%BC%D0%B8%D1%80%D0%B1%D0%B5%D0%BA%D0%BE%D0%B2-65269287",
-    "evidence_kind": "manual_public_profile_location",
+    "location_label": "Казахстан",
+    "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "The accepted public profile exposes Kazakhstan as Rustam Temirbekov's location."
+    "review_reason": "Country follows the location attached to the accepted current role at Astana Motors. The public profile header independently agrees.",
+    "evidence_url": "https://linkedin.com/in/%D1%80%D1%83%D1%81%D1%82%D0%B0%D0%BC-%D1%82%D0%B5%D0%BC%D0%B8%D1%80%D0%B1%D0%B5%D0%BA%D0%BE%D0%B2-65269287"
   },
   {
     "person_id": "kaz-5da1ec7d4068",
@@ -2316,31 +1755,20 @@
     "country_name": "Kazakhstan",
     "location_label": "Astana, Kazakhstan",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://linkedin.com/in/rustem-takhanov-7907149"
-  },
-  {
-    "person_id": "kaz-329a330cca14",
-    "name": "Saken Dushayev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/saken-dushayev-30095b204"
+    "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev University. The profile header points to Russia, but it conflicts with the active-role location and is not used.",
+    "evidence_url": "https://linkedin.com/in/rustem-takhanov-7907149"
   },
   {
     "person_id": "kaz-09d9fdb93af5",
     "name": "Saken Serhanov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "Los Angeles",
-    "evidence_url": "https://petroviclab.chem.ucla.edu/people/",
-    "evidence_kind": "career_source_location",
+    "location_label": "Los Angeles, California, United States",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "UCLA's current laboratory roster places Saken Sherkhanov in Los Angeles."
+    "review_reason": "Country follows the location attached to the accepted current role at University of California, Los Angeles (UCLA). The public profile header independently agrees.",
+    "evidence_url": "https://www.linkedin.com/in/saken-sherkhanov-398a65264"
   },
   {
     "person_id": "kaz-fc66298b9bbf",
@@ -2348,43 +1776,32 @@
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at KAZ Minerals. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/salamat-nuraliyev-6a24b613"
   },
   {
     "person_id": "kaz-f7a361eeb22e",
     "name": "Sanzhar Bissenali",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Pasadena, California, United States",
+    "evidence_url": "https://www.caltech.edu/about/visit",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/sanzhar-bissenali-323103260"
-  },
-  {
-    "person_id": "kaz-62d816e1ec2d",
-    "name": "Sanzhar Karatayev",
-    "country_code": "SG",
-    "country_name": "Singapore",
-    "location_label": "Singapore",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://sg.linkedin.com/in/sanzharedu"
+    "review_reason": "Country follows the accepted active student affiliation at California Institute of Technology (Caltech); the linked official institution source establishes the campus location. Caltech's official visitor page identifies its Pasadena campus."
   },
   {
     "person_id": "kaz-2c30c8a4a543",
     "name": "Sanzhar Nurgaliyev",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://nu.edu.kz/en/about/contacts",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/sanzhar-nurgaliyev-b277762b8"
+    "review_reason": "Country follows the accepted active student affiliation at Nazarbayev University; the linked official institution source establishes the campus location. Nazarbayev University's official contact page identifies its Astana campus."
   },
   {
     "person_id": "kaz-860c6f9abbfa",
@@ -2398,15 +1815,15 @@
     "review_reason": "Country comes from the accepted structured affiliation record."
   },
   {
-    "person_id": "kaz-32373fc425de",
-    "name": "Sergazy Kalmurzayev",
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "location_label": "United Kingdom",
-    "evidence_kind": "public_profile_location",
+    "person_id": "kaz-01091dcfd107",
+    "name": "Selimzhan Chalyshkan",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Evanston, Illinois, United States",
+    "evidence_url": "https://www.northwestern.edu/about/visit/campuses.html",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://uk.linkedin.com/in/sergazy-kalmurzayev-2ba468231"
+    "review_reason": "Country follows the accepted active student affiliation at Northwestern University; the linked official institution source establishes the campus location. Northwestern's official campus page identifies its Evanston campus."
   },
   {
     "person_id": "kaz-0f9baaef8ac0",
@@ -2415,8 +1832,8 @@
     "country_name": "United States",
     "location_label": "United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at ChooSmart. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/sergey-umentayev"
   },
   {
@@ -2437,30 +1854,30 @@
     "country_name": "United States",
     "location_label": "Mountain View, California, United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/shaikhitdin"
   },
   {
-    "person_id": "kaz-c444a5fa2a99",
-    "name": "Shaninov Arman",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "Oklahoma, United States",
-    "evidence_url": "https://www.linkedin.com/in/arman-shaninov-6950b7132",
-    "evidence_kind": "manual_public_profile_location",
-    "confidence": "probable",
-    "review_reason": "The accepted LinkedIn profile and public employer directory place his current teaching role in Oklahoma."
+    "person_id": "kaz-0606abc1583b",
+    "name": "Shirali Kadyrov",
+    "country_code": "UZ",
+    "country_name": "Uzbekistan",
+    "location_label": "Tashkent, Uzbekistan",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at New Uzbekistan University. The public profile header independently agrees.",
+    "evidence_url": "https://linkedin.com/in/shirali-kadyrov-0731b6217"
   },
   {
     "person_id": "kaz-e894ef915410",
     "name": "Shyngys Aitkazinov",
-    "country_code": "CH",
-    "country_name": "Switzerland",
-    "location_label": "Switzerland",
-    "evidence_kind": "public_profile_location",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "London Area, United Kingdom",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Citadel Securities. The profile header points to Switzerland, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://ch.linkedin.com/in/shyngys-aitkazinov-00496b193"
   },
   {
@@ -2470,8 +1887,8 @@
     "country_name": "Singapore",
     "location_label": "Singapore",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Graviton Research Capital. The public profile header independently agrees.",
     "evidence_url": "https://sg.linkedin.com/in/shyngys-bilyalov-23b6b819b"
   },
   {
@@ -2490,54 +1907,32 @@
     "name": "Sossin Viktor",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Petropavl, Kazakhstan",
-    "evidence_url": "https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404",
-    "evidence_kind": "career_source_location",
+    "location_label": "Петропавловск Г.А., Северо-Казахстанская область, Казахстан",
+    "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "NIS's official appointment notice places his current principal role in Petropavl Kazakhstan."
-  },
-  {
-    "person_id": "kaz-2a649bf1de05",
-    "name": "Sultan Aitekenov",
-    "country_code": "CA",
-    "country_name": "Canada",
-    "location_label": "Canada",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://ca.linkedin.com/in/sultan-aitekenov"
+    "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev Intellectual Schools (NIS).",
+    "evidence_url": "https://linkedin.com/in/viktorsossin"
   },
   {
     "person_id": "kaz-c884dd65cdc8",
     "name": "Sultan Dalipov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Dalip.kz. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/sultan-dalipov-620ba924"
-  },
-  {
-    "person_id": "kaz-40d2fa33ec3e",
-    "name": "Syrymbet Iskakov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/syrymbet-iskakov-42335a20"
   },
   {
     "person_id": "kaz-bda0b6a1ab68",
     "name": "Taimas Korganbayev",
-    "country_code": "HK",
-    "country_name": "Hong Kong",
-    "location_label": "Hong Kong",
-    "evidence_kind": "public_profile_location",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Jump Trading. The profile header points to Hong Kong, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://linkedin.com/in/taimas-korganbayev-a19b75211"
   },
   {
@@ -2546,10 +1941,10 @@
     "country_code": "FR",
     "country_name": "France",
     "location_label": "Paris, France",
-    "evidence_url": "https://fondation.ens.psl.eu/en/pi-day-olympic-scholarships-2025/",
-    "evidence_kind": "career_source_location",
+    "evidence_url": "https://www.ens.psl.eu/en/contact",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The ENS Foundation identifies Tair Satubaldin as a mathematics student who joined École normale supérieure in Paris in September 2024."
+    "review_reason": "Country follows the accepted active student affiliation at École normale supérieure (ENS); the linked official institution source establishes the campus location. ENS's official contact page identifies its Paris campus."
   },
   {
     "person_id": "kaz-7907a5491483",
@@ -2558,8 +1953,8 @@
     "country_name": "Kazakhstan",
     "location_label": "Kazakhstan",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Honeywell. The profile header points to United Arab Emirates, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://ae.linkedin.com/in/talgat-ismukhamedov-a7b77323"
   },
   {
@@ -2568,9 +1963,9 @@
     "country_code": "SG",
     "country_name": "Singapore",
     "location_label": "Singapore",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the location attached to the accepted current role at ZEISS Group. The public profile header independently agrees.",
     "evidence_url": "https://sg.linkedin.com/in/talgat-sailov-75552947"
   },
   {
@@ -2580,118 +1975,30 @@
     "country_name": "Germany",
     "location_label": "Karlsruhe",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Karlsruhe Institute of Technology (KIT). The public profile header independently agrees.",
     "evidence_url": "https://de.linkedin.com/in/tbeka"
-  },
-  {
-    "person_id": "kaz-c83291856fc0",
-    "name": "Tamirlan Seidakhmetov",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "San Francisco Bay Area",
-    "evidence_url": "https://www.linkedin.com/in/tamirlan",
-    "evidence_kind": "manual_public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "The accepted public profile exposes San Francisco Bay Area as Tamirlan Seidakhmetov's location."
-  },
-  {
-    "person_id": "kaz-aec3847e43a0",
-    "name": "Temirkhan Zimanov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/hcps42"
-  },
-  {
-    "person_id": "kaz-dcb24ecb815a",
-    "name": "Temirlan Amangeldinov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/temirlan-amangeldinov"
-  },
-  {
-    "person_id": "kaz-c6c074aef2cf",
-    "name": "Temirlan Baibolov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/bthero"
-  },
-  {
-    "person_id": "kaz-c91345744362",
-    "name": "Temirlan Ismagulov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/temirlan-ismagulov-766740206"
-  },
-  {
-    "person_id": "kaz-d19956e64f90",
-    "name": "Temirlan Izmailov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/temirlan-izmailov-caia-cfa-485bab89"
   },
   {
     "person_id": "kaz-b893faccd3fc",
     "name": "Temirulan Mussayev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Astana, Kazakhstan",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Palo Alto, California, United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Deep Infra. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/temirulan"
-  },
-  {
-    "person_id": "kaz-cc4a2f7877ce",
-    "name": "Timur Murat",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/timur-murat-2a1735333"
-  },
-  {
-    "person_id": "kaz-47297d0b8770",
-    "name": "Tolebi Sailauov",
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "location_label": "United Kingdom",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://uk.linkedin.com/in/tolebi-sailauov-phd"
   },
   {
     "person_id": "kaz-36f5d4e0f896",
     "name": "Van Li",
-    "country_code": "KR",
-    "country_name": "South Korea",
-    "location_label": "South Korea",
-    "evidence_kind": "public_profile_location",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong SAR",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Huawei. The profile header points to South Korea, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://linkedin.com/in/van-li-972a8a2b8"
   },
   {
@@ -2701,8 +2008,8 @@
     "country_name": "United States",
     "location_label": "Palo Alto, California, United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Augment Code. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/viktor-passichenko"
   },
   {
@@ -2712,30 +2019,19 @@
     "country_name": "Türkiye",
     "location_label": "Antalya, Turkey",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://tr.linkedin.com/in/vitaliy-tsvayer"
-  },
-  {
-    "person_id": "kaz-fe0afafbd5f3",
-    "name": "Vladimir Bychkov",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/vladimir-bychkov-98954252"
+    "review_reason": "Country follows the location attached to the accepted current role at Self-employed. The public profile header independently agrees.",
+    "evidence_url": "https://tr.linkedin.com/in/vitaliy-tsvayer"
   },
   {
     "person_id": "kaz-de970224e20f",
     "name": "Vladimir Dolzhnikov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Moscow, Moscow City, Russia",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at PATRIOT. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
     "evidence_url": "https://linkedin.com/in/vladimir-dolzhnikov-95684017b"
   },
   {
@@ -2744,10 +2040,10 @@
     "country_code": "FR",
     "country_name": "France",
     "location_label": "Palaiseau, France",
-    "evidence_url": "https://www.globtalent.org/gtf-big-talent-scholars-bios/vladimir-rogovskiy",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://www.polytechnique.edu/en/campus/access-campus",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The Global Talent Fund biography explicitly places Vladimir Rogovskiy's current mathematics education at École Polytechnique in France."
+    "review_reason": "Country follows the accepted active student affiliation at École Polytechnique; the linked official institution source establishes the campus location. École Polytechnique's official access page identifies its Palaiseau campus."
   },
   {
     "person_id": "kaz-ba8a6f8bb8aa",
@@ -2756,8 +2052,8 @@
     "country_name": "United States",
     "location_label": "San Francisco, CA",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Mirendil. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/vladcherd"
   },
   {
@@ -2767,8 +2063,8 @@
     "country_name": "United States",
     "location_label": "Hillsboro, Oregon, United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Intel Corporation. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/vladislav-kamysbayev-83bb81181"
   },
   {
@@ -2776,22 +2072,11 @@
     "name": "Vyacheslav Li",
     "country_code": "NL",
     "country_name": "Netherlands",
-    "location_label": "Netherlands",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Amsterdam",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Statkraft. The public profile header independently agrees.",
     "evidence_url": "https://nl.linkedin.com/in/vyacheslav-li"
-  },
-  {
-    "person_id": "kaz-41f531ed3520",
-    "name": "Yegor Klochkov",
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "location_label": "United Kingdom",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://uk.linkedin.com/in/yegor-klochkov-1a06a093"
   },
   {
     "person_id": "kaz-279f8d67af01",
@@ -2799,10 +2084,10 @@
     "country_code": "HU",
     "country_name": "Hungary",
     "location_label": "Debrecen, Hungary",
-    "evidence_url": "https://hu.linkedin.com/in/yerassyl-muratov-21a223214",
-    "evidence_kind": "manual_public_profile_location",
+    "evidence_url": "https://edu.unideb.hu/page.php?id=64",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn profile exposes Debrecen Hungary as Yerassyl Muratov's location and identifies his University of Debrecen medical program."
+    "review_reason": "Country follows the accepted active student affiliation at University of Debrecen; the linked official institution source establishes the campus location. The university's official contact page identifies its Debrecen campus."
   },
   {
     "person_id": "kaz-a07bb87cf2c6",
@@ -2810,10 +2095,10 @@
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/final-reports/IBO-2024%20Report.pdf",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "The official IBO report identifies Yerassyl Temirbekov as an HKUST undergraduate in Hong Kong and independently joins that affiliation to his 2022 IBO silver medal."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-a93118601e76",
@@ -2822,8 +2107,8 @@
     "country_name": "United States",
     "location_label": "Somerville, Massachusetts, United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Generate:Biomedicines. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/ordabayevy"
   },
   {
@@ -2833,8 +2118,8 @@
     "country_name": "United States",
     "location_label": "San Francisco Bay Area",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Square. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/yerkebulant"
   },
   {
@@ -2845,7 +2130,7 @@
     "location_label": "Al Khobar, Eastern, Saudi Arabia",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "review_reason": "Country follows the location attached to the accepted current role at SLB. The public profile header independently agrees.",
     "evidence_url": "https://sa.linkedin.com/in/yermek-kaipov-50525632"
   },
   {
@@ -2853,43 +2138,21 @@
     "name": "Yernar Batyrzhanov",
     "country_code": "KR",
     "country_name": "South Korea",
-    "location_label": "South Korea",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Ulsan, South Korea",
+    "evidence_url": "https://www.unist.ac.kr/campus-life/directions/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/yernar-batyrzhanov-166028228"
-  },
-  {
-    "person_id": "kaz-59b5ec3d2687",
-    "name": "Yernaz Satybaldiyev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/yernaz-satybaldiyev"
-  },
-  {
-    "person_id": "kaz-518d651456c7",
-    "name": "Yerniyaz Nurgabylov",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://www.linkedin.com/in/yerniyaz-nurgabylov-701b83121"
+    "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
     "person_id": "kaz-26886bea5396",
     "name": "Yernur Rysmagambetov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Астана, Казахстан",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Alem Entertainment. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/yernur-rysmagambetov"
   },
   {
@@ -2908,11 +2171,11 @@
     "name": "Yersultan Pitebay",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Cambridge, Massachusetts, United States",
+    "evidence_url": "https://www.mit.edu/visitmit/",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/yersultan-pitebay-81bb9a2bb"
+    "review_reason": "Country follows the accepted active student affiliation at Massachusetts Institute of Technology (MIT); the linked official institution source establishes the campus location. MIT's official visitor page identifies its Cambridge campus."
   },
   {
     "person_id": "kaz-28588384ab57",
@@ -2920,21 +2183,10 @@
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at EPAM Systems. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/yerzhan-imanmalik"
-  },
-  {
-    "person_id": "kaz-209930256d24",
-    "name": "Yerzhigit Tolebekov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Almaty, Kazakhstan",
-    "evidence_url": "https://linkedin.com/in/yerzhigit-tulebekov-6096b180",
-    "evidence_kind": "manual_public_profile_location",
-    "confidence": "probable",
-    "review_reason": "The accepted public profile places Yerzhigit Tulebekov's founder role in Almaty Kazakhstan."
   },
   {
     "person_id": "kaz-3fc7579c7a89",
@@ -2943,20 +2195,9 @@
     "country_name": "United Kingdom",
     "location_label": "London, England, United Kingdom",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://uk.linkedin.com/in/yeskas"
-  },
-  {
-    "person_id": "kaz-29109acd6898",
-    "name": "Yeskendr Bissenov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/yeskendir-bissenov-66569b37"
+    "review_reason": "Country follows the location attached to the accepted current role at The Trade Desk. The public profile header independently agrees.",
+    "evidence_url": "https://uk.linkedin.com/in/yeskas"
   },
   {
     "person_id": "kaz-8deb08a4e5fd",
@@ -2974,32 +2215,21 @@
     "name": "Yevgeniy Zagayevskiy",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "United States",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Houston, Texas, United States",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at VoltaGrid. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/yevgeniy-zagayevskiy"
-  },
-  {
-    "person_id": "kaz-36fb8d2c335b",
-    "name": "Zeinul-Gabiden Kazhkenov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/zeinul-gabiden-kazhkenov-23203052"
   },
   {
     "person_id": "kaz-73232d09a9cf",
     "name": "Zhalgas Serimbetov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "review_reason": "Country follows the location attached to the accepted current role at Impala Partners. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/zhalgasserimbetov"
   },
   {
@@ -3010,7 +2240,7 @@
     "location_label": "Hwaseong",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "review_reason": "Country follows the location attached to the accepted current role at Samsung Electronics. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/zhamaliddin-kalzhan"
   },
   {
@@ -3018,11 +2248,11 @@
     "name": "Zhambyl Maksotov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://nu.edu.kz/en/about/contacts",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://linkedin.com/in/zhambyl-maksotov"
+    "review_reason": "Country follows the accepted active student affiliation at Nazarbayev University; the linked official institution source establishes the campus location. Nazarbayev University's official contact page identifies its Astana campus."
   },
   {
     "person_id": "kaz-7b9356cf00a8",
@@ -3031,9 +2261,31 @@
     "country_name": "United Kingdom",
     "location_label": "London Area, United Kingdom",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Stealth Startup. The public profile header independently agrees.",
     "evidence_url": "https://uk.linkedin.com/in/zhan-kurbanbayev"
+  },
+  {
+    "person_id": "kaz-9aa80e862003",
+    "name": "Zhanadil Nurtoleuov",
+    "country_code": "TW",
+    "country_name": "Taiwan",
+    "location_label": "Taipei, Taipei City, Taiwan",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees.",
+    "evidence_url": "https://linkedin.com/in/zhanadil"
+  },
+  {
+    "person_id": "kaz-c03aa47c2122",
+    "name": "Zhanibek Bekkhozhin",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Hanover, New Hampshire, United States",
+    "evidence_url": "https://home.dartmouth.edu/visit",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at Dartmouth College; the linked official institution source establishes the campus location. The official Dartmouth visitor page identifies its Hanover campus."
   },
   {
     "person_id": "kaz-9b09f062bfeb",
@@ -3042,41 +2294,19 @@
     "country_name": "United States",
     "location_label": "Palo Alto, California, United States",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Nace AI. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/zdatbayev"
-  },
-  {
-    "person_id": "kaz-c412a21c7fc6",
-    "name": "Zhanibek Kaimuldenov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/zhanibek-kaimuldenov-5567b7124"
-  },
-  {
-    "person_id": "kaz-d7f55daeca5c",
-    "name": "Zhanybek Alpichshev",
-    "country_code": "AT",
-    "country_name": "Austria",
-    "location_label": "Austria",
-    "evidence_kind": "public_profile_location",
-    "confidence": "confirmed",
-    "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://at.linkedin.com/in/zhanybek-alpichshev-41bb4b207"
   },
   {
     "person_id": "kaz-f67b534425a5",
     "name": "Zhaslan Baraissov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "Ithaca, New York",
-    "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country is derived from the location attached to the accepted current role.",
-    "evidence_url": "https://linkedin.com/in/zhaslan-baraissov-5460b1151"
+    "location_label": "Ithaca, New York, United States",
+    "evidence_url": "https://www.cornell.edu/visit/",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at Cornell University; the linked official institution source establishes the campus location. Cornell's official visitor page identifies its Ithaca campus."
   }
 ]

@@ -1,18 +1,26 @@
+import json
+import tempfile
 import unittest
+from pathlib import Path
 
-from scripts.build_location_evidence import country_from_location, extract_location
+from scripts.build_location_evidence import (
+    build_rows,
+    country_from_location,
+    extract_location,
+    load_organization_locations,
+)
+from scripts.organization_names import canonicalize_organization, organization_key
 
 
 class LocationExtractionTest(unittest.TestCase):
-    def test_public_profile_country_code_is_preferred(self):
+    def test_current_role_location_is_preferred_over_profile_header(self):
         result = extract_location(
             "# Person CTO at Example Singapore (SG) 57 connections "
             "## Experience ### CTO - Example (Current) in Kazakhstan"
         )
 
-        self.assertEqual(result["country_code"], "SG")
-        self.assertEqual(result["evidence_kind"], "public_profile_location")
-        self.assertEqual(result["confidence"], "confirmed")
+        self.assertEqual(result["country_code"], "KZ")
+        self.assertEqual(result["evidence_kind"], "current_role_location")
 
     def test_current_role_location_is_used_without_profile_location(self):
         result = extract_location(
@@ -59,6 +67,147 @@ class LocationExtractionTest(unittest.TestCase):
 
         self.assertEqual(result["country_code"], "HU")
         self.assertEqual(result["country_name"], "Hungary")
+
+    def test_current_education_uses_institution_country_not_profile_header(self):
+        people = [
+            {
+                "person_id": "kaz-test",
+                "name": "Example Student",
+                "confidence": "confirmed",
+                "linkedin_url": "https://linkedin.com/in/example-student",
+                "organization": "Massachusetts Institute of Technology (MIT)",
+                "affiliation_type": "education",
+                "destination_status": "current_education",
+            }
+        ]
+        searches = [
+            {
+                "results": [
+                    {
+                        "url": "https://linkedin.com/in/example-student",
+                        "highlights": [
+                            "# Example Student Astana, Kazakhstan (KZ) 20 connections"
+                        ],
+                    }
+                ]
+            }
+        ]
+        organization_locations = {
+            "massachusetts institute of technology mit": {
+                "organization": "Massachusetts Institute of Technology (MIT)",
+                "country_code": "US",
+                "country_name": "United States",
+                "location_label": "Cambridge, Massachusetts, United States",
+                "evidence_url": "https://www.mit.edu/visitmit/",
+                "rationale": "MIT's official visitor page identifies its campus.",
+            }
+        }
+
+        rows = build_rows(people, searches, {}, organization_locations)
+
+        self.assertEqual(rows[0]["country_code"], "US")
+        self.assertEqual(rows[0]["evidence_kind"], "current_education_location")
+        self.assertEqual(rows[0]["evidence_url"], "https://www.mit.edu/visitmit/")
+
+    def test_current_employment_matches_destination_role_before_other_current_role(self):
+        people = [
+            {
+                "person_id": "kaz-worker",
+                "name": "Example Worker",
+                "confidence": "confirmed",
+                "linkedin_url": "https://linkedin.com/in/example-worker",
+                "organization": "Deep Infra",
+                "role": "Computational Scientist",
+                "affiliation_type": "employment",
+                "destination_status": "latest_employment",
+            }
+        ]
+        searches = [
+            {
+                "results": [
+                    {
+                        "url": "https://linkedin.com/in/example-worker",
+                        "highlights": [
+                            "# Example Worker\n\nAstana, Kazakhstan (KZ)\n\n"
+                            "500 connections\n\n## Experience\n\n"
+                            "### Computational Scientist - [Deep Infra Inc.]"
+                            "(https://linkedin.com/company/deep-infra) (Current)\n\n"
+                            "Jul 2024 - Present (2 years) in Palo Alto, "
+                            "California, United States\n\nDepartment: Research\n\n"
+                            "### Member - Kazakhstan Programming Federation (Current)\n\n"
+                            "Jul 2022 - Present (4 years) in Astana, Kazakhstan"
+                        ],
+                    }
+                ]
+            }
+        ]
+
+        rows = build_rows(people, searches, {})
+
+        self.assertEqual(rows[0]["country_code"], "US")
+        self.assertEqual(rows[0]["location_label"], "Palo Alto, California, United States")
+        self.assertIn("is not used", rows[0]["review_reason"])
+
+    def test_header_only_location_is_not_used_for_current_employment(self):
+        people = [
+            {
+                "person_id": "kaz-worker",
+                "name": "Example Worker",
+                "confidence": "confirmed",
+                "linkedin_url": "https://linkedin.com/in/example-worker",
+                "organization": "Global Company",
+                "role": "Engineer",
+                "affiliation_type": "employment",
+                "destination_status": "latest_employment",
+            }
+        ]
+        searches = [
+            {
+                "results": [
+                    {
+                        "url": "https://linkedin.com/in/example-worker",
+                        "highlights": [
+                            "# Example Worker Astana, Kazakhstan (KZ) 20 connections"
+                        ],
+                    }
+                ]
+            }
+        ]
+
+        self.assertEqual(build_rows(people, searches, {}), [])
+
+    def test_organization_location_loader_rejects_duplicate_canonical_names(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "locations.csv"
+            path.write_text(
+                "canonical_name,country_code,location_label,evidence_url,rationale\n"
+                "MIT,US,Cambridge,https://www.mit.edu/,First\n"
+                "MIT,US,Cambridge,https://www.mit.edu/,Second\n",
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(ValueError, "Duplicate organization location"):
+                load_organization_locations(path)
+
+    def test_all_current_education_destinations_have_location_mapping(self):
+        people = json.loads(
+            Path("data/researched_people.json").read_text(encoding="utf-8")
+        )
+        locations = load_organization_locations(Path("data/organization_locations.csv"))
+        missing = sorted(
+            {
+                canonicalize_organization(person.get("organization"))
+                for person in people
+                if person.get("confidence") in {"probable", "confirmed"}
+                and person.get("destination_status") == "current_education"
+                and organization_key(
+                    canonicalize_organization(person.get("organization"))
+                )
+                not in locations
+            }
+        )
+
+        self.assertEqual(missing, [])
 
 
 if __name__ == "__main__":

@@ -15,6 +15,21 @@
     "review_reason": "The cited 2022 profile explicitly identifies Samatov as the director of BIL No. 1 and says he had taught chemistry for eleven years."
   },
   {
+    "destination_review_id": "dest-review-a41003a396796a54",
+    "evidence_id": "ev-787c12d5ee8e2024",
+    "source_id": "src-930e3ee43c01",
+    "person_id": "kaz-236abc470fa7",
+    "name": "Adilet Abu",
+    "organization": "Ulsan National Institute of Science and Technology (UNIST)",
+    "role": "Bachelor's Student in Mathematics and Computer Science",
+    "affiliation_type": "education",
+    "start_year": "2023",
+    "end_year": "2027",
+    "evidence_url": "https://kz.linkedin.com/in/adilet-abu-974647260",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "The accepted profile dates the Huawei research internship from August through October 2025 and shows the 2023-2027 UNIST mathematics and computer science degree as the ongoing affiliation."
+  },
+  {
     "destination_review_id": "dest-review-ce3f6458930933ec",
     "evidence_id": "ev-50ba2c47eb64bd65",
     "source_id": "src-430c805dcf05",
@@ -118,6 +133,21 @@
     "evidence_url": "https://kz.linkedin.com/in/daulet-kurmantayev-41912a176",
     "reviewed_at": "2026-08-10",
     "review_reason": "The accepted profile lists Junior Data Scientist at Tele2 Kazakhstan as current from May 2023."
+  },
+  {
+    "destination_review_id": "dest-review-35dcab8bb41b204b",
+    "evidence_id": "ev-485f82ff3deb7b1f",
+    "source_id": "src-d8b3f3b80991",
+    "person_id": "kaz-ac8d11f139c6",
+    "name": "David Li",
+    "organization": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
+    "role": "PhD Student in Machine Learning",
+    "affiliation_type": "education",
+    "start_year": "2025",
+    "end_year": "2029",
+    "evidence_url": "https://ru.linkedin.com/in/david-li-ab07b332b",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "The accepted profile dates the Huawei deep-learning research role through August 2025 and lists the 2025-2029 MBZUAI machine-learning PhD as the ongoing affiliation in Abu Dhabi."
   },
   {
     "destination_review_id": "dest-review-3d1056c76323e86e",

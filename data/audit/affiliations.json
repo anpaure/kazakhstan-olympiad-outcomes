@@ -720,6 +720,24 @@
     "evidence_text": "MIT officially identifies the rare exact-name Kazakhstan chemistry student and Boston College documents the same research career while current professional and patent records place him in Novartis intellectual property"
   },
   {
+    "affiliation_id": "aff-46cd035e1d718da8",
+    "evidence_id": "ev-2f2c96d18804f37a",
+    "source_id": "src-930e3ee43c01",
+    "person_id": "kaz-236abc470fa7",
+    "name": "Adilet Abu",
+    "organization": "Ulsan National Institute of Science and Technology (UNIST)",
+    "role": "Bachelor's Student in Mathematics and Computer Science",
+    "affiliation_type": "education",
+    "start_year": "2023",
+    "end_year": "2027",
+    "is_current": "true",
+    "selected_as_alma_mater": "false",
+    "evidence_url": "https://kz.linkedin.com/in/adilet-abu-974647260",
+    "evidence_kind": "destination_source_review",
+    "confidence": "confirmed",
+    "evidence_text": "The accepted profile dates the Huawei research internship from August through October 2025 and shows the 2023-2027 UNIST mathematics and computer science degree as the ongoing affiliation."
+  },
+  {
     "affiliation_id": "aff-35e9907b857cba92",
     "evidence_id": "ev-4cf28593d3431c4b",
     "source_id": "src-930e3ee43c01",
@@ -15946,6 +15964,24 @@
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable",
     "evidence_text": "iOS App Developer - [Делимобиль](https://www.linkedin.com/company/delimobil) Nov 2018 - May 2020 (1 year and 6 months) in Москва, Россия Developed from scratch an app called “AnytimePrime” (4.3 stars on app store) - car-sharing service with premium cars, 6k daily users, in a team of 2 people. The app was built using MVC-N architecture. Developed and maintained “Delimobil” app (4.1 stars) - one of the largest car-sharing services in Moscow, 75k daily users, in a team of 3 people. Worked on car re"
+  },
+  {
+    "affiliation_id": "aff-f1b59e1024e8a25a",
+    "evidence_id": "ev-3cda4cd10ac97025",
+    "source_id": "src-d8b3f3b80991",
+    "person_id": "kaz-ac8d11f139c6",
+    "name": "David Li",
+    "organization": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
+    "role": "PhD Student in Machine Learning",
+    "affiliation_type": "education",
+    "start_year": "2025",
+    "end_year": "2029",
+    "is_current": "true",
+    "selected_as_alma_mater": "false",
+    "evidence_url": "https://ru.linkedin.com/in/david-li-ab07b332b",
+    "evidence_kind": "destination_source_review",
+    "confidence": "probable",
+    "evidence_text": "The accepted profile dates the Huawei deep-learning research role through August 2025 and lists the 2025-2029 MBZUAI machine-learning PhD as the ongoing affiliation in Abu Dhabi."
   },
   {
     "affiliation_id": "aff-ee7056d9ca654d05",
