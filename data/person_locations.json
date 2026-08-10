@@ -143,6 +143,17 @@
     "evidence_url": "https://www.linkedin.com/in/aivar-abrashuly-754163156"
   },
   {
+    "person_id": "kaz-d0f8031edfa1",
+    "name": "Aizere Zhengiskhanova",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Ust-Kamenogorsk, Kazakhstan",
+    "evidence_url": "https://www.nis.edu.kz/ru/news/icho-2026-nis-oqusylary-altyn-zane-kumis-medal-ensiledi",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The official NIS article identifies Aizere as a current student at its Ust-Kamenogorsk school."
+  },
+  {
     "person_id": "kaz-d3e9cb1dd495",
     "name": "Akhan Ismailov",
     "country_code": "GB",
@@ -803,6 +814,17 @@
     "evidence_url": "https://linkedin.com/in/birzhan-moldagaliyev"
   },
   {
+    "person_id": "kaz-e9cd35b41255",
+    "name": "Damir Kurman",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://trz.nis.edu.kz/en/school/nzm-astana-nura/news/2406",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "NIS Astana-Nura identifies Damir as its current grade-11 student in Astana."
+  },
+  {
     "person_id": "kaz-d3e4616882fd",
     "name": "Danat Duisenbekov",
     "country_code": "US",
@@ -1142,6 +1164,17 @@
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Meta. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/istassiy"
+  },
+  {
+    "person_id": "kaz-33b90013745b",
+    "name": "Iliyas Kazymbek",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/iliyas-kazymbek-77237a286",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Iliyas in Astana and documents his ongoing Spectrum International School education there."
   },
   {
     "person_id": "kaz-9dadae71693b",

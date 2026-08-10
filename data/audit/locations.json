@@ -182,6 +182,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Ayar Labs. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-12231c48d6709af4",
+    "evidence_id": "ev-e7befb4e10d4268c",
+    "source_id": "src-f761578728ca",
+    "person_id": "kaz-d0f8031edfa1",
+    "name": "Aizere Zhengiskhanova",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Ust-Kamenogorsk, Kazakhstan",
+    "evidence_url": "https://www.nis.edu.kz/ru/news/icho-2026-nis-oqusylary-altyn-zane-kumis-medal-ensiledi",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The official NIS article identifies Aizere as a current student at its Ust-Kamenogorsk school."
+  },
+  {
     "location_id": "loc-a8a2528874638d8c",
     "evidence_id": "ev-6b831e29bc15de8e",
     "source_id": "src-dc4cc4d4170d",
@@ -1022,6 +1036,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Kcell. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-034d46a911ec2acb",
+    "evidence_id": "ev-8edda09b505ad273",
+    "source_id": "src-6a81428d9c97",
+    "person_id": "kaz-e9cd35b41255",
+    "name": "Damir Kurman",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://trz.nis.edu.kz/en/school/nzm-astana-nura/news/2406",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "NIS Astana-Nura identifies Damir as its current grade-11 student in Astana."
+  },
+  {
     "location_id": "loc-48311cfcb4c170ad",
     "evidence_id": "ev-69a11149498c9534",
     "source_id": "src-dea80d9f0944",
@@ -1454,6 +1482,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Meta. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-648675a1a8db92bd",
+    "evidence_id": "ev-901516647a31f371",
+    "source_id": "src-5a10ed18c0f2",
+    "person_id": "kaz-33b90013745b",
+    "name": "Iliyas Kazymbek",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/iliyas-kazymbek-77237a286",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Iliyas in Astana and documents his ongoing Spectrum International School education there."
   },
   {
     "location_id": "loc-e0369233ef0cfc11",

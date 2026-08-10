@@ -2130,6 +2130,21 @@
     "confidence": "probable"
   },
   {
+    "person_id": "kaz-d0f8031edfa1",
+    "name": "Aizere Zhengiskhanova",
+    "organization": "Nazarbayev Intellectual Schools (NIS)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.nis.edu.kz/ru/news/icho-2026-nis-oqusylary-altyn-zane-kumis-medal-ensiledi",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "The official NIS article identifies Aizere Zhengiskhanova as its Ust-Kamenogorsk student and Kazakhstan's 2026 IChO gold medalist; the official IChO registry independently confirms the exact-name award."
+  },
+  {
     "person_id": "kaz-ec80d9fc8daf",
     "name": "Akezhan Amankeldi",
     "organization": "Nazarbayev University",
@@ -11925,6 +11940,36 @@
     "confidence": "probable"
   },
   {
+    "person_id": "kaz-e9cd35b41255",
+    "name": "Damir Kurman",
+    "organization": "Nazarbayev Intellectual Schools (NIS)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "2021",
+    "end_year": "2026",
+    "is_current": true,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://trz.nis.edu.kz/en/school/nzm-astana-nura/news/2406",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "NIS Astana-Nura identifies Damir Kurman as its grade-11 student and a 2026 IPhO gold medalist; his exact-name self-authored profile independently lists 2021-2026 NIS education and the official IPhO registry confirms the Kazakhstan award."
+  },
+  {
+    "person_id": "kaz-e9cd35b41255",
+    "name": "Damir Kurman",
+    "organization": "Nazarbayev Intellectual Schools (NIS)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "2021",
+    "end_year": "2026",
+    "is_current": false,
+    "evidence_text": "High School Student at Nazarbayev Intellectual Schools 2021 - 2026",
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://kz.linkedin.com/in/damir-kurman-7570372ab",
+    "evidence_kind": "accepted_linkedin_profile",
+    "confidence": "probable"
+  },
+  {
     "person_id": "kaz-d3e4616882fd",
     "name": "Danat Duisenbekov",
     "organization": "University of California, Berkeley",
@@ -16363,6 +16408,21 @@
     "evidence_url": "https://www.linkedin.com/in/istassiy",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-33b90013745b",
+    "name": "Iliyas Kazymbek",
+    "organization": "Spectrum International School",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "2025",
+    "end_year": "2027",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://kz.linkedin.com/in/iliyas-kazymbek-77237a286",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "His exact-name self-authored profile identifies him as a high-school student and explicitly lists his IPhO bronze medal together with 2025-2027 Spectrum International School education; the official IPhO registry independently confirms his 2024 bronze and 2026 gold medals for Kazakhstan."
   },
   {
     "person_id": "kaz-9dadae71693b",

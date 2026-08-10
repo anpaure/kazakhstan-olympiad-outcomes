@@ -1022,5 +1022,13 @@
     "evidence_url": "https://linkedin.com/in/danpoletaev",
     "reason": "An established backend-engineering career in Russia and Czechia predates the alumnus's 2026 school-level IChO participation and proves this exact-name result is an older namesake",
     "review_evidence_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan"
+  },
+  {
+    "person_id": "kaz-1e390288b2cc",
+    "person_name": "Danil Murtazin",
+    "source_id": "src-426bc1d620c9",
+    "evidence_url": "https://linkedin.com/in/daniyar-murtazin-47b177330",
+    "reason": "The profile is Daniyar rather than Danil Murtazin and its 2020-2024 university timeline is incompatible with Kazakhstan's school-level 2000 and 2001 IPhO participant",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
   }
 ]

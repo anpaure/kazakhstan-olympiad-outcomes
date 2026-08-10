@@ -474,5 +474,37 @@
     "review_reason": "The current official biography uses Kadzhiakbarov for the same rare name that the IMO registry transliterates as Kajikabarov and RFMS records in Cyrillic.",
     "evidence_url": "https://www.inform.kz/person/nurzhan-khazhimuratuly-kadzhiakbarov-1736839590",
     "canonical_person_id": "kaz-55cdb586d884"
+  },
+  {
+    "left": "Aizere Zhengiskhanova",
+    "right": "Aizere Zhengiskhanova",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IChO"
+    ],
+    "left_years": [
+      2026
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The official NIS annual report uses the Zheniskhanova transliteration for the same NIS Oskemen chemistry student recorded as Zhengiskhanova by the IChO registry.",
+    "evidence_url": "https://www.nis.edu.kz/storage/files/01KV4Y1KZ9NGGW1K9FB69D47Q8.pdf",
+    "canonical_person_id": "kaz-d0f8031edfa1"
+  },
+  {
+    "left": "Damir Kurman",
+    "right": "Damir Kurman",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2026
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "Contemporary reporting uses Kurman and Kurmanov for the same member of Kazakhstan's five-person 2026 IPhO gold-medal team.",
+    "evidence_url": "https://dsml.kz/en/news/d9dd125d-a1cb-47ab-bf49-85c420248f0f",
+    "canonical_person_id": "kaz-e9cd35b41255"
   }
 ]

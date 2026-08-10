@@ -212,7 +212,10 @@ TRUSTED_OVERRIDE_KINDS = {
     "career_source_location",
     "current_role_location",
 }
-PRIORITY_OVERRIDE_KINDS = {"current_role_location"}
+PRIORITY_OVERRIDE_KINDS = {
+    "active_affiliation_profile_location",
+    "current_role_location",
+}
 
 OUTPUT_FIELDS = [
     "person_id",

@@ -122,6 +122,48 @@ class LocationExtractionTest(unittest.TestCase):
         self.assertEqual(rows[0]["evidence_kind"], "current_education_location")
         self.assertEqual(rows[0]["evidence_url"], "https://www.mit.edu/visitmit/")
 
+    def test_reviewed_active_affiliation_location_beats_network_location(self):
+        people = [
+            {
+                "person_id": "kaz-student",
+                "name": "Example Student",
+                "confidence": "confirmed",
+                "organization": "National School Network",
+                "affiliation_type": "education",
+                "destination_status": "current_education",
+            }
+        ]
+        overrides = {
+            "kaz-student": {
+                "person_id": "kaz-student",
+                "name": "Example Student",
+                "country_code": "KZ",
+                "country_name": "Kazakhstan",
+                "location_label": "Ust-Kamenogorsk, Kazakhstan",
+                "evidence_url": "https://example.edu/student",
+                "evidence_kind": "active_affiliation_profile_location",
+                "confidence": "confirmed",
+                "review_reason": "The current student source identifies the campus.",
+            }
+        }
+        organization_locations = {
+            "national school network": {
+                "organization": "National School Network",
+                "country_code": "KZ",
+                "country_name": "Kazakhstan",
+                "location_label": "Kazakhstan",
+                "evidence_url": "https://example.edu/",
+                "rationale": "The network operates nationally.",
+            }
+        }
+
+        rows = build_rows(people, [], overrides, organization_locations)
+
+        self.assertEqual(rows[0]["location_label"], "Ust-Kamenogorsk, Kazakhstan")
+        self.assertEqual(
+            rows[0]["evidence_kind"], "active_affiliation_profile_location"
+        )
+
     def test_current_employment_matches_destination_role_before_other_current_role(self):
         people = [
             {

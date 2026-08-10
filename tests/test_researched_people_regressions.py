@@ -257,6 +257,61 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             "Chapel Hill, North Carolina, United States",
         )
 
+    def test_iliyas_kazymbek_current_spectrum_school_outcome(self):
+        person = self.people["kaz-33b90013745b"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Spectrum International School")
+        self.assertEqual(person["role"], "High School Student")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://kz.linkedin.com/in/iliyas-kazymbek-77237a286",
+        )
+        self.assertIn("Ilyas Kazymbek", person["aliases"])
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Astana, Kazakhstan")
+
+    def test_aizere_zhengiskhanova_current_nis_outcome(self):
+        person = self.people["kaz-d0f8031edfa1"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(
+            person["organization"], "Nazarbayev Intellectual Schools (NIS)"
+        )
+        self.assertEqual(person["role"], "High School Student")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertIn("Aizere Zheniskhanova", person["aliases"])
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(
+            location["location_label"], "Ust-Kamenogorsk, Kazakhstan"
+        )
+
+    def test_damir_kurman_current_nis_outcome_and_profile(self):
+        person = self.people["kaz-e9cd35b41255"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(
+            person["organization"], "Nazarbayev Intellectual Schools (NIS)"
+        )
+        self.assertEqual(person["role"], "High School Student")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://kz.linkedin.com/in/damir-kurman-7570372ab",
+        )
+        self.assertIn("Damir Kurmanov", person["aliases"])
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Astana, Kazakhstan")
+
+    def test_older_gold_medalists_are_not_forced_to_namesakes(self):
+        for person_id in ("kaz-dbcaf30d53de", "kaz-1e390288b2cc"):
+            with self.subTest(person_id=person_id):
+                person = self.people[person_id]
+                self.assertEqual(person["confidence"], "unmatched")
+                self.assertEqual(person["organization"], "")
+                self.assertEqual(person["role"], "")
+
 
 if __name__ == "__main__":
     unittest.main()
