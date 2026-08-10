@@ -1,6 +1,7 @@
 organization_sector_id,canonical_name,organization_type,sector,rationale
 sector-88a78b3d3bd39f9b,Abbott,company,Healthcare & Life Sciences,Reviewed core activity is medical devices and diagnostics.
 sector-3dbd9e2bae24481c,Adriel,company,Technology & Software,Reviewed core activity is advertising software and analytics.
+sector-5de9181c78178316,AeroTransport Consultants,company,Transportation & Infrastructure,Reviewed core activity is aviation consulting and air-transport services.
 sector-396f519e0425ac52,AGP Holding,company,Industrial & Manufacturing,Reviewed core activity is industrial construction and oilfield services.
 sector-e6d1865215f76ba3,Agregator,company,Independent & Other,Reviewed profile identifies a private owner-operated business without a narrower public classification.
 sector-96c934e1bce4a135,Alem Entertainment,company,Consumer & Media,Reviewed core activity is entertainment and media.
@@ -9,6 +10,7 @@ sector-88cfdd827fa04845,Altbridge,company,Technology & Software,Reviewed core ac
 sector-65ccac7ddbcae0fc,Altyn Bank,company,Finance & Insurance,Reviewed core activity is commercial banking.
 sector-49d2dc07acd9eff5,Amazon,company,Technology & Software,Reviewed core activity includes cloud computing and technology services.
 sector-c65b60e850ea8f26,AnyMind Group,company,Technology & Software,Reviewed core activity is marketing and commerce technology.
+sector-21008d721504d84c,Applied Materials,company,Industrial & Manufacturing,Reviewed core activity is semiconductor and display manufacturing equipment.
 sector-3e908df5beadcc80,Armeta,company,Technology & Software,Reviewed core activity is artificial intelligence software.
 sector-e6226c677ef67b03,Association for the Conservation of Biodiversity of Kazakhstan,nonprofit,Environment & Nonprofit,Reviewed core activity is biodiversity conservation.
 sector-f4a81c7d5e7063e1,Astana International Financial Centre,government,Finance & Insurance,Reviewed organization is Kazakhstan's statutory international financial centre and includes the Green Finance Centre destination.
@@ -36,6 +38,7 @@ sector-5324d0e0a8a9a060,Desargues AI,company,Technology & Software,Reviewed core
 sector-538b15b97d3270c2,Deutsche Bank,company,Finance & Insurance,Reviewed core activity is banking and financial services.
 sector-64be73229f88cac9,Deutsches Elektronen-Synchrotron DESY,nonprofit,Education & Research,Reviewed organization is a publicly funded scientific research center.
 sector-f6f193d615ec248c,DFlow,company,Technology & Software,Reviewed core activity is blockchain trading infrastructure.
+sector-d9b71961fa5e8228,Dove Science Academy,nonprofit,Education & Research,Reviewed organization is a public charter-school network.
 sector-bb090d4cc6a01ecd,Drizzle,company,Technology & Software,Reviewed core activity is software products.
 sector-91268016fe6765ef,ElevenLabs,company,Technology & Software,Reviewed core activity is AI audio software.
 sector-c4f106ca6cc7424d,Embassy of Kazakhstan in the Republic of Korea,government,Government & Public Sector,Reviewed organization is a diplomatic mission.
@@ -64,6 +67,7 @@ sector-5505720f19964d65,Insilico Medicine,company,Healthcare & Life Sciences,Rev
 sector-5e28929224141843,Intel Corporation,company,Technology & Software,Reviewed core activity is semiconductor technology.
 sector-b288c35eeecfae63,iOS/Flutter,company,Technology & Software,Reviewed core activity is mobile software development.
 sector-79bab30d3f57461d,Jane Street,company,Finance & Insurance,Reviewed core activity is quantitative trading.
+sector-c19dda288f70d1cb,Johnson & Johnson,company,Healthcare & Life Sciences,Reviewed core activity is pharmaceuticals and medical technology.
 sector-6e6ce675ecaea0f9,Jump Trading,company,Finance & Insurance,Reviewed core activity is quantitative trading.
 sector-ff6edff87dd81b9e,Kashgari Dictionary,company,Education & Research,Reviewed core activity is language-learning technology.
 sector-8ed4019ab02787c7,KAZ Minerals,company,Energy & Natural Resources,Reviewed core activity is mining and natural resources.
@@ -126,6 +130,7 @@ sector-ebe29e0397cfcb43,Stealth Startup,independent,Independent & Other,Public e
 sector-2ab656b52d27d253,STEMICQ AI/Multiomics Ventures,company,Healthcare & Life Sciences,Reviewed core activity is multiomics and life-science ventures.
 sector-70a0872fe2bfe76b,Sulzer Chemtech,company,Industrial & Manufacturing,Reviewed core activity is chemical-process engineering and manufacturing.
 sector-cda93fe6f1ff7983,Sun Life Financial,company,Finance & Insurance,Reviewed core activity is insurance and financial services.
+sector-bbc770da3d157156,synapse.kz,independent,Education & Research,The official site describes an independent community and project platform for extracurricular biology and natural-science education.
 sector-f03755f5d4cf8a4e,Synergy Partners Law Firm,company,Consulting & Professional Services,Reviewed core activity is legal services.
 sector-5f21f219a3487d08,Tansar Capital,company,Finance & Insurance,Reviewed core activity is investment management.
 sector-a7444f7b87182779,Tele2 Kazakhstan,company,Technology & Software,Reviewed core activity is telecommunications.

@@ -116,6 +116,7 @@ org-6e5152ad2301e66c,"Genie, Inc.",Genie,Genie,same_entity,Legal-form punctuatio
 org-990c20b7d1cf5e4d,The George Washington University,George Washington University,George Washington University,same_entity,Leading-article variant,https://www.gwu.edu/
 org-4e075c5ced0129a6,Google Deepmind,Google,Google,parent_organization,Google DeepMind is a combined Google AI research unit,
 org-a4de49f86606d496,Graviton Research Capital LLP,Graviton Research Capital,Graviton Research Capital,same_entity,Legal-form variant,
+org-82cd2ddd0d236111,Hacettepe Üniversitesi,Hacettepe University,Hacettepe University,multilingual_name,Turkish public name normalized to the university's English name,https://www.hacettepe.edu.tr/
 org-afed4f94b89f26b6,HARBOUR.SPACE,Harbour.Space University,Harbour.Space,same_entity,Capitalization variant,
 org-0ee0364b3655ee89,Harbour.Space University - Barcelona Campus,Harbour.Space University,Harbour.Space,parent_organization,Campus label,
 org-04b3b88b38bbbc1f,Harvard T.H. Chan School of Public Health,Harvard University,Harvard University,parent_organization,University school,
@@ -137,6 +138,8 @@ org-73a9588126c8c08a,Humboldt-Universität zu Berlin,Humboldt University of Berl
 org-5bd261f8f6cedff2,Imperial College,Imperial College London,Imperial College London,same_entity,Common short name,
 org-6b2e2a032874f2bd,IBS Data Science Group,Institute for Basic Science (IBS),Institute for Basic Science,parent_organization,Data Science Group is an IBS research group,https://www.ibs.re.kr/cop/bbs/BBSMSTR_000000000739/selectBoardArticle.do?nttId=24424
 org-710aace3877a7b5b,Institute for basic science (IBS),Institute for Basic Science (IBS),Institute for Basic Science,same_entity,Capitalization variant,
+org-1dde1e166fd833c1,Institute of Gene Biology RAS,"Institute of Gene Biology, Russian Academy of Sciences",Institute of Gene Biology RAS,acronym_expansion,Common English short name for the institute,https://www.genebiology.ru/en/
+org-d4c2d9b12d81bfb9,Институт биологии гена Российской академии наук,"Institute of Gene Biology, Russian Academy of Sciences",Institute of Gene Biology RAS,multilingual_name,Russian official name normalized to the English institutional name,https://www.genebiology.ru/
 org-f51d11acaeca5ec9,Institute of Science and Technology Austria,Institute of Science and Technology Austria,ISTA,same_entity,Canonical display declaration,
 org-017b74a9f6d28253,IST Austria,Institute of Science and Technology Austria,ISTA,same_entity,Former short brand,
 org-ceb969825feb6323,Tokyo Institute of Technology,Institute of Science Tokyo,Science Tokyo,former_name,Tokyo Tech merged into Institute of Science Tokyo in 2024,https://www.isct.ac.jp/en/news/fqsr7lxwvnbe
@@ -257,6 +260,8 @@ org-5fcaf3e326918ced,"Mechanobiology Institute, National University of Singapore
 org-3428ec5fd8b78d77,NAVER Corp,NAVER,NAVER,legal_form_variant,Legal-form cleanup,
 org-1f45ffb950d52b62,NAVER WEBTOON CORP,NAVER WEBTOON,NAVER WEBTOON,legal_form_variant,Legal-form cleanup,
 org-625e5a4e0a63e7d3,ТОО Navus,Navus,Navus,multilingual_name,Cyrillic legal-form cleanup,
+org-c4a5d35377cf8e17,Nazarbayev Intellectual School of Physics and Mathematics in Taldykorgan,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Taldykorgan campus normalized to the national NIS network,https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404
+org-7481c22305fa7e6c,Nazarbayev Intellectual School of physics and mathematics in Taldykorgan,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Capitalization variant of the Taldykorgan NIS campus,https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404
 org-f76a839d4e5571c5,Nazarbayev Intellectual Schools,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Official network name without acronym,
 org-d4c532d7f385e184,NIS Medeu (NIS PhM Almaty),Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Campus label,
 org-66d043dcc1b47640,Назарбаев Интеллектуальные школы,Nazarbayev Intellectual Schools (NIS),NIS,multilingual_name,Russian name,
@@ -354,6 +359,7 @@ org-9f1b5a8821d486ca,Suleyman Demiral University,Suleyman Demirel University (SD
 org-9595ff2914bacbb3,Suleyman Demirel University,Suleyman Demirel University (SDU),SDU,same_entity,Official name without acronym,
 org-c39fd9226404a9f9,"Suleyman Demirel University, Kazakhstan",Suleyman Demirel University (SDU),SDU,same_entity,Location suffix,
 org-3da6de126f6ec3cf,Summer STEM Institute (SSI),Summer STEM Institute,Summer STEM Institute,same_entity,Acronym suffix,
+org-212094f0683163fa,Synapse.kz,synapse.kz,synapse.kz,capitalization_variant,Capitalization variant of the education community's public domain name,https://synapse.kz/
 org-53e45136cf793e94,JSC «Tau-Кen Samruk» National Mining Company,Tau-Ken Samruk,Tau-Ken Samruk,legal_form_variant,Legal-form and descriptor cleanup,
 org-bd54d2278299d3dd,Tavia Acquisition Corp,Tavia Acquisition,Tavia Acquisition,legal_form_variant,Legal-form cleanup,
 org-7b11447b2e365b80,Тенгизшевройл,Tengizchevroil,Tengizchevroil,multilingual_name,Russian company name,

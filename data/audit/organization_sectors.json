@@ -14,6 +14,13 @@
     "rationale": "Reviewed core activity is advertising software and analytics."
   },
   {
+    "organization_sector_id": "sector-5de9181c78178316",
+    "canonical_name": "AeroTransport Consultants",
+    "organization_type": "company",
+    "sector": "Transportation & Infrastructure",
+    "rationale": "Reviewed core activity is aviation consulting and air-transport services."
+  },
+  {
     "organization_sector_id": "sector-396f519e0425ac52",
     "canonical_name": "AGP Holding",
     "organization_type": "company",
@@ -68,6 +75,13 @@
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is marketing and commerce technology."
+  },
+  {
+    "organization_sector_id": "sector-21008d721504d84c",
+    "canonical_name": "Applied Materials",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is semiconductor and display manufacturing equipment."
   },
   {
     "organization_sector_id": "sector-3e908df5beadcc80",
@@ -257,6 +271,13 @@
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is blockchain trading infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-d9b71961fa5e8228",
+    "canonical_name": "Dove Science Academy",
+    "organization_type": "nonprofit",
+    "sector": "Education & Research",
+    "rationale": "Reviewed organization is a public charter-school network."
   },
   {
     "organization_sector_id": "sector-bb090d4cc6a01ecd",
@@ -453,6 +474,13 @@
     "organization_type": "company",
     "sector": "Finance & Insurance",
     "rationale": "Reviewed core activity is quantitative trading."
+  },
+  {
+    "organization_sector_id": "sector-c19dda288f70d1cb",
+    "canonical_name": "Johnson & Johnson",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed core activity is pharmaceuticals and medical technology."
   },
   {
     "organization_sector_id": "sector-6e6ce675ecaea0f9",
@@ -887,6 +915,13 @@
     "organization_type": "company",
     "sector": "Finance & Insurance",
     "rationale": "Reviewed core activity is insurance and financial services."
+  },
+  {
+    "organization_sector_id": "sector-bbc770da3d157156",
+    "canonical_name": "synapse.kz",
+    "organization_type": "independent",
+    "sector": "Education & Research",
+    "rationale": "The official site describes an independent community and project platform for extracurricular biology and natural-science education."
   },
   {
     "organization_sector_id": "sector-f03755f5d4cf8a4e",

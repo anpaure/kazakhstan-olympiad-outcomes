@@ -168,6 +168,7 @@ class OrganizationCategoryTest(unittest.TestCase):
             "Almaty KTL",
             "NIS Medeu (NIS PhM Almaty)",
             "Astana/Almaty Physics Battles Tournament",
+            "Dove Science Academy",
         ]
 
         for organization in organizations:

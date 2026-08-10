@@ -27,7 +27,9 @@ except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path
 
 
 EXA_CONTENTS_URL = "https://api.exa.ai/contents"
+EXA_SEARCH_URL = "https://api.exa.ai/search"
 DEFAULT_INPUT = Path("data/researched_people.csv")
+DEFAULT_SEARCH_AUDIT = Path("data/exa_linkedin_search_audit.json")
 DEFAULT_JSON_OUTPUT = Path("data/exa_linkedin_profile_audit.json")
 DEFAULT_CSV_OUTPUT = Path("data/exa_linkedin_profile_audit.csv")
 
@@ -42,6 +44,7 @@ CSV_FIELDS = [
     "title",
     "resolved_url",
     "content_characters",
+    "source_endpoint",
     "text",
 ]
 
@@ -172,6 +175,7 @@ def normalize_batch(
                 "title": clean_text(result.get("title")) if result else "",
                 "resolved_url": clean_text(result.get("url")) if result else "",
                 "content_characters": len(text),
+                "source_endpoint": EXA_CONTENTS_URL,
                 "text": text,
             }
         )
@@ -190,7 +194,7 @@ def normalize_batch(
 def profile_search_records(profiles: list[dict[str, object]]) -> list[dict[str, object]]:
     records = []
     for profile in profiles:
-        if clean_text(profile.get("status")) != "success":
+        if clean_text(profile.get("status")) not in {"success", "search_cache"}:
             continue
         text = str(profile.get("text") or "")
         url = clean_text(profile.get("resolved_url") or profile.get("linkedin_url"))
@@ -209,6 +213,48 @@ def profile_search_records(profiles: list[dict[str, object]]) -> list[dict[str, 
             }
         )
     return records
+
+
+def cached_profiles_from_search(
+    selected: list[dict[str, str]], searches: list[dict[str, object]]
+) -> list[dict[str, object]]:
+    results_by_url: dict[str, tuple[dict[str, object], dict[str, object]]] = {}
+    for search in searches:
+        for result in search.get("results", []):
+            if not isinstance(result, dict):
+                continue
+            key = canonical_url(clean_text(result.get("url")))
+            if key:
+                results_by_url[key] = (search, result)
+
+    profiles = []
+    for person in selected:
+        match = results_by_url.get(canonical_url(person["linkedin_url"]))
+        if not match:
+            continue
+        search, result = match
+        text = "\n\n".join(
+            str(item).strip()
+            for item in result.get("highlights", [])
+            if str(item).strip()
+        )
+        if not text:
+            continue
+        profiles.append(
+            {
+                **person,
+                "status": "search_cache",
+                "error": "",
+                "request_id": clean_text(search.get("request_id")),
+                "retrieved_at": clean_text(search.get("searched_at")),
+                "title": clean_text(result.get("title")),
+                "resolved_url": clean_text(result.get("url")),
+                "content_characters": len(text),
+                "source_endpoint": EXA_SEARCH_URL,
+                "text": text,
+            }
+        )
+    return profiles
 
 
 def load_existing(path: Path) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
@@ -230,16 +276,27 @@ def write_outputs(
     input_people_count: int,
     accepted_linkedin_count: int,
 ) -> None:
+    for profile in profiles:
+        if not clean_text(profile.get("source_endpoint")):
+            profile["source_endpoint"] = (
+                EXA_SEARCH_URL
+                if clean_text(profile.get("status")) == "search_cache"
+                else EXA_CONTENTS_URL
+            )
     profiles.sort(key=lambda row: (clean_text(row.get("name")).casefold(), clean_text(row.get("person_id"))))
     payload = {
         "provider": "Exa",
         "endpoint": EXA_CONTENTS_URL,
+        "fallback_endpoint": EXA_SEARCH_URL,
         "generated_at": utc_now(),
         "input_path": str(input_path),
         "input_people_count": input_people_count,
         "accepted_linkedin_count": accepted_linkedin_count,
         "profile_count": len(profiles),
         "successful_profile_count": sum(row.get("status") == "success" for row in profiles),
+        "cached_search_profile_count": sum(
+            row.get("status") == "search_cache" for row in profiles
+        ),
         "error_profile_count": sum(row.get("status") == "error" for row in profiles),
         "total_cost_usd": round(
             sum(float(row.get("cost_usd", 0.0) or 0.0) for row in requests_log), 6
@@ -271,6 +328,7 @@ def write_outputs(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
+    parser.add_argument("--search-audit", type=Path, default=DEFAULT_SEARCH_AUDIT)
     parser.add_argument("--output-json", type=Path, default=DEFAULT_JSON_OUTPUT)
     parser.add_argument("--output-csv", type=Path, default=DEFAULT_CSV_OUTPUT)
     parser.add_argument("--person-id", action="append", default=[])
@@ -281,13 +339,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--delay", type=float, default=0.25)
     parser.add_argument("--refresh", action="store_true")
     parser.add_argument("--retry-errors", action="store_true")
+    parser.add_argument(
+        "--from-search-cache",
+        action="store_true",
+        help="Fill missing accepted profiles from the existing Exa search audit.",
+    )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
     api_key = os.getenv("EXA_API_KEY")
-    if not api_key:
+    if not api_key and not args.from_search_cache:
         print("EXA_API_KEY is required and must be supplied through the environment.", file=sys.stderr)
         return 2
     if args.limit is not None and args.limit < 1:
@@ -317,10 +380,48 @@ def main() -> int:
         if clean_text(row.get("person_id")) in accepted_person_ids
     ]
     by_person = {clean_text(row.get("person_id")): row for row in existing_profiles}
+
+    if args.from_search_cache:
+        searches_payload = json.loads(args.search_audit.read_text(encoding="utf-8"))
+        searches = [
+            row for row in searches_payload.get("searches", []) if isinstance(row, dict)
+        ]
+        cache_selected = [
+            person
+            for person in selected
+            if args.refresh
+            or by_person.get(person["person_id"], {}).get("status") in {None, "error"}
+        ]
+        cached_profiles = cached_profiles_from_search(cache_selected, searches)
+        for profile in cached_profiles:
+            by_person[clean_text(profile.get("person_id"))] = profile
+        write_outputs(
+            list(by_person.values()),
+            requests_log,
+            args.output_json,
+            args.output_csv,
+            args.input,
+            len(people),
+            len(all_profiles),
+        )
+        print(
+            json.dumps(
+                {
+                    "accepted_linkedin_profiles": len(all_profiles),
+                    "selected": len(selected),
+                    "cached_profiles_added": len(cached_profiles),
+                    "output_json": str(args.output_json),
+                    "output_csv": str(args.output_csv),
+                },
+                indent=2,
+            )
+        )
+        return 0
+
     pending = []
     for person in selected:
         previous = by_person.get(person["person_id"])
-        if args.refresh or previous is None or (
+        if args.refresh or previous is None or previous.get("status") == "search_cache" or (
             args.retry_errors and previous.get("status") == "error"
         ):
             pending.append(person)
@@ -345,6 +446,7 @@ def main() -> int:
                     "title": "",
                     "resolved_url": "",
                     "content_characters": 0,
+                    "source_endpoint": EXA_CONTENTS_URL,
                     "text": "",
                 }
                 for person in batch

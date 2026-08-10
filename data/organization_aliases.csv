@@ -417,3 +417,9 @@ Saint-Petersburg State University,Saint Petersburg State University,Saint Peters
 КазНУ им. аль-Фараби,Al-Farabi Kazakh National University,Al-Farabi KazNU,multilingual_name,Russian abbreviated name,https://www.kaznu.kz/en
 Kazakh-Turkish High-School,Kazakh-Turkish High School,Kazakh-Turkish High School,punctuation_variant,Hyphenation variant in a public education profile,https://www.linkedin.com/in/askarbek-orakov/
 NURORDA High School,Nurorda High School,Nurorda High School,capitalization_variant,Capitalization variant in a public education profile,https://hk.linkedin.com/in/amanzholkuantay
+Hacettepe Üniversitesi,Hacettepe University,Hacettepe University,multilingual_name,Turkish public name normalized to the university's English name,https://www.hacettepe.edu.tr/
+Institute of Gene Biology RAS,"Institute of Gene Biology, Russian Academy of Sciences",Institute of Gene Biology RAS,acronym_expansion,Common English short name for the institute,https://www.genebiology.ru/en/
+Институт биологии гена Российской академии наук,"Institute of Gene Biology, Russian Academy of Sciences",Institute of Gene Biology RAS,multilingual_name,Russian official name normalized to the English institutional name,https://www.genebiology.ru/
+Nazarbayev Intellectual School of Physics and Mathematics in Taldykorgan,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Taldykorgan campus normalized to the national NIS network,https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404
+Nazarbayev Intellectual School of physics and mathematics in Taldykorgan,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Capitalization variant of the Taldykorgan NIS campus,https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404
+Synapse.kz,synapse.kz,synapse.kz,capitalization_variant,Capitalization variant of the education community's public domain name,https://synapse.kz/

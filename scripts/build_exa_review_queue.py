@@ -13,8 +13,10 @@ from urllib.parse import urlparse
 
 try:
     from scripts.organization_names import canonicalize_organization
+    from scripts.search_linkedin_with_exa import exact_name_in_title
 except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
     from organization_names import canonicalize_organization
+    from search_linkedin_with_exa import exact_name_in_title
 
 
 DEFAULT_PEOPLE = Path("data/researched_people.csv")
@@ -311,9 +313,15 @@ def build_queue(
         for result in search.get("results", []):
             if not isinstance(result, dict):
                 continue
-            if not result.get("exact_name_in_title") or result.get("result_kind") != "profile":
+            if result.get("result_kind") != "profile":
                 continue
-            row = classify_candidate(person, search, result)
+            name_matches = bool(result.get("exact_name_in_title")) or exact_name_in_title(
+                clean_text(person.get("name")), clean_text(result.get("title"))
+            )
+            if not name_matches:
+                continue
+            normalized_result = {**result, "exact_name_in_title": True}
+            row = classify_candidate(person, search, normalized_result)
             candidate_key = canonical_url(str(row["candidate_url"]))
             selected_keys = {
                 canonical_url(person.get("linkedin_url", "")),

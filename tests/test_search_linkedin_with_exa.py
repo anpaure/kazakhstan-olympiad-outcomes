@@ -37,6 +37,15 @@ class ExaLinkedInAuditTest(unittest.TestCase):
         )
         self.assertEqual(linkedin_result_kind("https://example.com/in/person"), "non_linkedin")
 
+    def test_exact_name_accepts_reversed_name_order(self):
+        self.assertTrue(exact_name_in_title("Kemeldinov Aidyn", "Aidyn Kemeldinov | LinkedIn"))
+
+    def test_exact_name_ignores_middle_initials(self):
+        self.assertTrue(exact_name_in_title("Nasharov A. Askar", "Nasharov Askar | LinkedIn"))
+
+    def test_exact_name_rejects_extended_surname(self):
+        self.assertFalse(exact_name_in_title("Aslan Kuan", "Aslan Kuanbayev | LinkedIn"))
+
     def test_explicit_person_selection_ignores_default_confidence_filter(self):
         people = [
             {

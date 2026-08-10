@@ -1,6 +1,8 @@
 import unittest
 
 from scripts.hydrate_linkedin_profiles_with_exa import (
+    EXA_SEARCH_URL,
+    cached_profiles_from_search,
     csv_value,
     normalize_batch,
     profile_search_records,
@@ -102,6 +104,35 @@ class ExaProfileHydrationTest(unittest.TestCase):
         self.assertEqual(len(records), 1)
         self.assertEqual(records[0]["person_id"], "person-1")
         self.assertEqual(records[0]["results"][0]["highlights"], ["## Education ### MIT"])
+
+    def test_cached_search_result_becomes_audited_profile(self):
+        selected = [
+            {
+                "person_id": "person-1",
+                "name": "Reversed Person",
+                "linkedin_url": "https://www.linkedin.com/in/reversed-person/",
+            }
+        ]
+        searches = [
+            {
+                "request_id": "search-1",
+                "searched_at": "2026-08-10T00:00:00+00:00",
+                "results": [
+                    {
+                        "title": "Reversed Person",
+                        "url": "https://linkedin.com/in/reversed-person",
+                        "highlights": ["## Education\n\n### Example University"],
+                    }
+                ],
+            }
+        ]
+
+        profiles = cached_profiles_from_search(selected, searches)
+
+        self.assertEqual(len(profiles), 1)
+        self.assertEqual(profiles[0]["status"], "search_cache")
+        self.assertEqual(profiles[0]["source_endpoint"], EXA_SEARCH_URL)
+        self.assertEqual(len(profile_search_records(profiles)), 1)
 
 
 if __name__ == "__main__":

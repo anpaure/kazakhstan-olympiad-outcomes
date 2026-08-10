@@ -1554,18 +1554,18 @@
     "review_reason": "Country code is exposed in the accepted public profile location."
   },
   {
-    "location_id": "loc-01ea39dbd514918f",
-    "evidence_id": "ev-d14edc2bdf283e6c",
-    "source_id": "src-00ba24842cca",
+    "location_id": "loc-5289a5b5c0ba214b",
+    "evidence_id": "ev-dbd25328e0085436",
+    "source_id": "src-86a5c359be93",
     "person_id": "kaz-bdb3a76b4430",
     "name": "Dinmukhammed Omar",
     "country_code": "SG",
     "country_name": "Singapore",
     "location_label": "Singapore",
-    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/final-reports/IBO-2024%20Report.pdf",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://linkedin.com/in/dinmukhammedomar",
+    "evidence_kind": "manual_public_profile_location",
     "confidence": "confirmed",
-    "review_reason": "The official IBO report identifies Dinmukhammed Omar as an NTU undergraduate in Singapore."
+    "review_reason": "The accepted exact-name public profile exposes Singapore as Dinmukhammed Omar's location."
   },
   {
     "location_id": "loc-77d8fb634e85336f",
@@ -1848,6 +1848,20 @@
     "review_reason": "Country code is exposed in the accepted public profile location."
   },
   {
+    "location_id": "loc-f65cf55cd4dd3a34",
+    "evidence_id": "ev-46bde050495d03ce",
+    "source_id": "src-502cf1665a9e",
+    "person_id": "kaz-8b03ffcc0625",
+    "name": "Kambarov Yerkebulan",
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "location_label": "Mol, Flemish Region, Belgium",
+    "evidence_url": "https://linkedin.com/in/yerkebulan-kambarov-b32aa160",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted LinkedIn profile exposes Mol in Belgium's Flemish Region as his location."
+  },
+  {
     "location_id": "loc-27c1ef99b7bd59d5",
     "evidence_id": "ev-3a8a32e3a1abebe4",
     "source_id": "src-1fff7e5cbf7e",
@@ -1888,6 +1902,20 @@
     "evidence_kind": "affiliation_country",
     "confidence": "confirmed",
     "review_reason": "Outcome country follows the reviewed Harvard affiliation; the LinkedIn header predates Harvard and still exposes the former Kazakhstan school location."
+  },
+  {
+    "location_id": "loc-c62b52dfcd042ef9",
+    "evidence_id": "ev-95ce380f3f141ae3",
+    "source_id": "src-edaeb9c1b7dc",
+    "person_id": "kaz-f02da7099fac",
+    "name": "Kemeldinov Aidyn",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Santa Clara, California, United States",
+    "evidence_url": "https://linkedin.com/in/aidynkemeldinov",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile places his current Applied Materials role in Santa Clara California."
   },
   {
     "location_id": "loc-1ffef44ff42131a8",
@@ -2028,6 +2056,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role."
+  },
+  {
+    "location_id": "loc-90a00e11f73dfe39",
+    "evidence_id": "ev-9c0f2f9481f7fca0",
+    "source_id": "src-b74827157927",
+    "person_id": "kaz-f648d0d6bf6d",
+    "name": "Manatuly Angsar",
+    "country_code": "AU",
+    "country_name": "Australia",
+    "location_label": "Sydney, New South Wales, Australia",
+    "evidence_url": "https://linkedin.com/in/angsar-manatuly-7409bb2b9",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted LinkedIn profile places his current UTS role in Sydney Australia."
   },
   {
     "location_id": "loc-aaaf9b275f27b1a2",
@@ -2240,6 +2282,20 @@
     "review_reason": "The Global Talent Fund biography places Miron Yurkevich's current mathematics education at Trinity College at the University of Cambridge."
   },
   {
+    "location_id": "loc-67bab5f935d37438",
+    "evidence_id": "ev-454a2a9dfed8c4ad",
+    "source_id": "src-c4e16c829368",
+    "person_id": "kaz-2c17c88cc511",
+    "name": "Mukashev Maxim",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/maxim-mukashev-73a18827",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted LinkedIn profile places Maxim Mukashev in Almaty Kazakhstan."
+  },
+  {
     "location_id": "loc-a06fad1db8b7bde1",
     "evidence_id": "ev-2afe48367ac76da2",
     "source_id": "src-e64e95dda380",
@@ -2280,6 +2336,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role."
+  },
+  {
+    "location_id": "loc-27876b08907f7873",
+    "evidence_id": "ev-4f14541eaf7ef3be",
+    "source_id": "src-99a783999a5e",
+    "person_id": "kaz-9dc053108701",
+    "name": "Nasharov A. Askar",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Astrakhan, Russia",
+    "evidence_url": "https://linkedin.com/in/nasharov-askar-bb397466",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile places his current SLB role in Astrakhan Russia."
   },
   {
     "location_id": "loc-eb26d95fef333a8d",
@@ -2912,6 +2982,20 @@
     "review_reason": "Country is derived from the location attached to the accepted current role."
   },
   {
+    "location_id": "loc-5a8dbe2c9f50b5f5",
+    "evidence_id": "ev-82bc8014dac51c53",
+    "source_id": "src-cf812b5a2a98",
+    "person_id": "kaz-c444a5fa2a99",
+    "name": "Shaninov Arman",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Oklahoma, United States",
+    "evidence_url": "https://www.linkedin.com/in/arman-shaninov-6950b7132",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted LinkedIn profile and public employer directory place his current teaching role in Oklahoma."
+  },
+  {
     "location_id": "loc-12fb1f4a130a0ff5",
     "evidence_id": "ev-eefb67d2cf92d831",
     "source_id": "src-0e7536464307",
@@ -2938,6 +3022,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role."
+  },
+  {
+    "location_id": "loc-ef95356a6a5c5d21",
+    "evidence_id": "ev-0fa4031bea46df17",
+    "source_id": "src-c773ef07f8a1",
+    "person_id": "kaz-b48f403765ac",
+    "name": "Sossin Viktor",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Petropavl, Kazakhstan",
+    "evidence_url": "https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "NIS's official appointment notice places his current principal role in Petropavl Kazakhstan."
   },
   {
     "location_id": "loc-b8291a7632f14c81",
@@ -3428,6 +3526,20 @@
     "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location."
+  },
+  {
+    "location_id": "loc-41eb7a5d655f0429",
+    "evidence_id": "ev-f4dd7b2b63d826ab",
+    "source_id": "src-3982f08ec932",
+    "person_id": "kaz-cae8a8caf16a",
+    "name": "Yerokhin Maxim",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Moscow, Russia",
+    "evidence_url": "https://www.genebiology.ru/ob-institute/sotrudniki/erokhin-maksim-maksimovich/",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The Institute of Gene Biology's current staff page places his laboratory role at its Moscow institute."
   },
   {
     "location_id": "loc-129adb18650100a6",

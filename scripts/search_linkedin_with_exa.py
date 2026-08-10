@@ -15,6 +15,7 @@ import os
 import re
 import sys
 import time
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
@@ -69,7 +70,16 @@ def normalize_name(value: str) -> str:
 def exact_name_in_title(name: str, title: str) -> bool:
     normalized_name = normalize_name(name)
     normalized_title = normalize_name(title)
-    return bool(normalized_name and normalized_name in normalized_title)
+    if not normalized_name:
+        return False
+    if f" {normalized_name} " in f" {normalized_title} ":
+        return True
+
+    name_tokens = [token for token in normalized_name.split() if len(token) > 1]
+    if len(name_tokens) < 2:
+        return False
+    title_counts = Counter(normalized_title.split())
+    return not (Counter(name_tokens) - title_counts)
 
 
 def linkedin_result_kind(url: str) -> str:

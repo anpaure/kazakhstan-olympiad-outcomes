@@ -114,7 +114,7 @@ EDUCATION_TERMS = re.compile(
 POSTSECONDARY_ROLE_PATTERN = re.compile(
     r"\b(?:associate(?:'s)?|bachelors?|b\.?\s*sc\.?|b\.?\s*s\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|"
     r"masters?|m\.?\s*sc\.?|m\.?\s*s\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|mba\b|mph\b|"
-    r"ph\.?d|doctor(?:ate)?|specialist|undergraduate|graduate student|medical student|бакалавр|магистр|специалист)\b",
+    r"ph\.?d|doctor(?:ate)?|specialist|undergraduate|graduate (?:student|studies)|medical student|бакалавр|магистр|специалист)\b",
     re.IGNORECASE,
 )
 POSTSECONDARY_INSTITUTION_PATTERN = re.compile(

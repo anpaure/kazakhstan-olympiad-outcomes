@@ -490,6 +490,17 @@ class AlmaMaterSelectionTest(unittest.TestCase):
 
         self.assertFalse(is_postsecondary_education(row))
 
+    def test_graduate_studies_are_postsecondary_education(self):
+        self.assertTrue(
+            is_postsecondary_education(
+                {
+                    "organization": "École Nationale Supérieure de Géologie (ENSG)",
+                    "role": "Graduate studies",
+                    "evidence_text": "",
+                }
+            )
+        )
+
 
 class ManualAffiliationTest(unittest.TestCase):
     def test_includes_sourced_manual_history_and_selects_alma_mater(self):

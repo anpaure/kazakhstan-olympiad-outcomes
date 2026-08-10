@@ -162,6 +162,37 @@ class ExaReviewQueueTest(unittest.TestCase):
         self.assertEqual(len(queue), 2)
         self.assertEqual(queue[0]["person_id"], "kaz-unmatched")
 
+    def test_queue_repairs_cached_reverse_order_name_match(self):
+        people = {
+            "kaz-1": {
+                "person_id": "kaz-1",
+                "name": "Kemeldinov Aidyn",
+                "olympiads": "IPhO",
+                "years": "2010",
+                "confidence": "unmatched",
+            }
+        }
+        searches = [
+            {
+                "person_id": "kaz-1",
+                "results": [
+                    {
+                        "rank": 1,
+                        "title": "Aidyn Kemeldinov | LinkedIn",
+                        "url": "https://linkedin.com/in/aidynkemeldinov",
+                        "result_kind": "profile",
+                        "exact_name_in_title": False,
+                        "highlights": ["IPhO 2010 silver medal"],
+                    }
+                ],
+            }
+        ]
+
+        queue = build_queue(people, searches)
+
+        self.assertEqual(len(queue), 1)
+        self.assertEqual(queue[0]["review_tier"], "explicit_bridge")
+
     def test_queue_labels_selected_and_rejected_linkedin_variants(self):
         people = {
             "kaz-1": {

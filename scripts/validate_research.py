@@ -674,28 +674,28 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         unknown_profiles = sorted(set(hydrated_profiles) - set(accepted_linkedin))
         if missing_profiles:
             errors.append(
-                f"Exa direct-profile audit is missing {len(missing_profiles)} accepted LinkedIn profiles"
+                f"Exa profile audit is missing {len(missing_profiles)} accepted LinkedIn profiles"
             )
         if unknown_profiles:
             errors.append(
-                f"Exa direct-profile audit has {len(unknown_profiles)} unaccepted profiles"
+                f"Exa profile audit has {len(unknown_profiles)} unaccepted profiles"
             )
     if exa_profiles.get("key_persisted") is not False:
-        errors.append("Exa direct-profile audit does not declare key_persisted=false")
+        errors.append("Exa profile audit does not declare key_persisted=false")
     if exa_profiles.get("accepted_linkedin_count") != len(accepted_linkedin):
-        errors.append("Exa direct-profile audit accepted count is stale")
+        errors.append("Exa profile audit accepted count is stale")
     if exa_profiles.get("profile_count") != len(hydrated_profiles):
-        errors.append("Exa direct-profile audit profile count is stale")
+        errors.append("Exa profile audit profile count is stale")
     for person_id, profile in hydrated_profiles.items():
         if canonical_url(profile.get("linkedin_url", "")) != canonical_url(
             accepted_linkedin.get(person_id, "")
         ):
-            errors.append(f"Exa direct-profile URL disagrees for {person_id}")
+            errors.append(f"Exa profile URL disagrees for {person_id}")
         status = profile.get("status")
-        if status not in {"success", "error"}:
-            errors.append(f"Exa direct-profile audit has invalid status for {person_id}")
-        if status == "success" and not profile.get("text", "").strip():
-            errors.append(f"Exa direct-profile audit has empty successful content for {person_id}")
+        if status not in {"success", "search_cache", "error"}:
+            errors.append(f"Exa profile audit has invalid status for {person_id}")
+        if status in {"success", "search_cache"} and not profile.get("text", "").strip():
+            errors.append(f"Exa profile audit has empty successful content for {person_id}")
 
     for person_id, expected in exa_outcomes_by_id.items():
         merged = verified_by_id.get(person_id)

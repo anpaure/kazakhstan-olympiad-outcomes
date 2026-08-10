@@ -70,9 +70,9 @@ accepted participation evidence and accepted or supporting outcome evidence.
 The complete exact-name LinkedIn review trail remains in the parent `data/`
 directory rather than being flattened into the final-outcome tables:
 
-- `exa_linkedin_review_queue.csv`: all 325 exact-name profile results and their
+- `exa_linkedin_review_queue.csv`: all 347 exact-name profile results and their
   deterministic review and outcome statuses.
-- `exa_outcome_integrations.csv`: 55 accepted career updates with direct
+- `exa_outcome_integrations.csv`: 63 accepted career updates with direct
   Olympiad and career evidence links.
 - `exa_identity_review_decisions.csv`: supporting, deferred, and rejected
   decisions for secondary profiles, each with a reason and review link.

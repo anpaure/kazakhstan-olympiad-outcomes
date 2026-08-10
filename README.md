@@ -12,17 +12,17 @@ The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
 - 456 canonical people after 30 reviewed name merges
-- 344 researched people, all classified as probable or confirmed
-- 275 confirmed and 69 probable identity, education, or career outcomes
-- 313 manually reviewed outcomes backed by public evidence
-- 298 researched people with one resolved destination and 248 with a public LinkedIn URL
-- 2,151 sourced employment/education history rows, including 379 selected alma-mater records across 259 people
+- 352 researched people, all classified as probable or confirmed
+- 278 confirmed and 74 probable identity, education, or career outcomes
+- 321 manually reviewed outcomes backed by public evidence
+- 306 researched people with one resolved destination and 256 with a public LinkedIn URL
+- 2,306 sourced employment/education history rows, including 465 selected alma-mater records across 290 people
 - 37 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
-- 288 reviewed organization aliases collapsed into canonical employers and universities
-- 147 reviewed sector classifications covering every displayed non-educational destination
-- 260 sourced outcome-country records across 22 countries
+- 424 reviewed organization aliases collapsed into canonical employers and universities
+- 152 reviewed sector classifications covering every displayed non-educational destination
+- 268 sourced outcome-country records across 24 countries
 - 3 additional people with candidate-only evidence retained for audit but no accepted outcome
-- 113 rejected identity sources retained with review reasons and supporting links
+- 114 rejected identity sources retained with review reasons and supporting links
 
 The current first step is implemented in `scripts/collect_kazakhstan_participants.py`. It collects Kazakhstan competitors from:
 
@@ -133,7 +133,7 @@ python scripts/validate_research.py
 
 The two apply scripts merge the auditable Exa review overlays before assembly. `data/exa_outcome_integrations.csv` records accepted career updates with their direct evidence URLs, while `data/exa_identity_rejections.csv` records newly identified namesakes. Both merges reject duplicate overlay keys and are safe to rerun. `data/exa_identity_review_decisions.csv` and `data/exa_outcome_review_decisions.csv` retain explicit reasons and supporting links for profiles that are supporting, deferred, rejected, or intentionally not used as the current outcome.
 
-`scripts/hydrate_linkedin_profiles_with_exa.py` retrieves every accepted LinkedIn URL directly through Exa, checkpointing successes and errors without persisting the API key. This avoids losing education or location data when a name search returns only namesakes. `scripts/build_affiliation_history.py` extracts employment and education headings only from accepted profiles, reviewed manual transcriptions, and structured records. It writes a source URL on every history row and selects every distinct higher-education institution as an alma mater, falling back to one secondary school only when no university-level record is known. `scripts/build_location_evidence.py` uses explicit profile/role location, reviewed stale-profile overrides, and structured affiliation country.
+`scripts/hydrate_linkedin_profiles_with_exa.py` records every accepted LinkedIn URL in the Exa profile audit, checkpointing successes and errors without persisting the API key. Full `/contents` retrieval is the default; `--from-search-cache` can fill a newly accepted URL from an existing Exa search result and labels that evidence separately as `search_cache`. This avoids losing education or location data when a name search returns only namesakes. `scripts/build_affiliation_history.py` extracts employment and education headings only from accepted profiles, reviewed manual transcriptions, and structured records. It writes a source URL on every history row and selects every distinct higher-education institution as an alma mater, falling back to one secondary school only when no university-level record is known. `scripts/build_location_evidence.py` uses explicit profile/role location, reviewed stale-profile overrides, and structured affiliation country.
 
 `data/organization_aliases.csv` is the reviewed organization registry shared by the research assembler, history builder, Exa reconciliation, audit bundle, and visualization. It records the canonical/display name, merge type, rationale, and a direct evidence URL for nontrivial parent, former-name, and successor mappings. Source text is retained in the evidence ledger, while destination and affiliation tables use canonical names. Validation rejects low-risk duplicate variants, canonical-name alias chains, display labels shared by different canonical organizations, and malformed normalization-source URLs.
 
@@ -194,16 +194,16 @@ failed counts, and coverage percentage.
 
 Current Exa search coverage: 456 of 456 canonical people, 456 successful searches,
 zero errors, and 2,330 ranked result rows. Total recorded search cost is $3.192.
-The exact-URL hydration audit covers all 248 accepted LinkedIn profiles: 238
-retrievals succeeded and 10 explicit `ENTITY_NOT_FOUND` errors remain logged, at
-$0.238 recorded cost.
+The profile audit covers all 256 accepted LinkedIn profiles: 238 full-content
+retrievals succeeded, 8 are backed by cached Exa search results, and 10 explicit
+`ENTITY_NOT_FOUND` errors remain logged, at $0.238 recorded hydration cost.
 
 Outputs:
 
 - `data/exa_linkedin_search_audit.json`: nested request and result evidence
 - `data/exa_linkedin_search_audit.csv`: one flat row per ranked result
-- `data/exa_linkedin_profile_audit.json`: exact accepted-profile contents and statuses
-- `data/exa_linkedin_profile_audit.csv`: flat exact-profile retrieval audit
+- `data/exa_linkedin_profile_audit.json`: accepted-profile evidence, endpoints, and statuses
+- `data/exa_linkedin_profile_audit.csv`: flat accepted-profile evidence audit
 
 Build the deterministic manual-review queue after a search run:
 
@@ -217,11 +217,12 @@ and current-affiliation language. Its priority score orders unresolved explicit
 identity bridges first without treating a name match alone as proof. Every row has
 a deterministic `review_status` of `selected`, `supporting`, `deferred`, or `rejected`, matched
 against the accepted evidence and rejection ledger after LinkedIn URL
-canonicalization. The current queue contains 106 people with an explicit
+canonicalization. The current queue contains 112 people with an explicit
 expected-Olympiad bridge; none remain unmatched or probable, and none need an
-outcome decision. Across all 325 exact-name profile results, 199 are selected, 5
+outcome decision. Across all 347 exact-name profile results, 211 are selected, 5
 are supporting duplicate profiles, 31 are explicitly deferred with review reasons,
-and 90 are rejected. No result remains silently unreviewed.
+and 91 are rejected. Nine exact-name-only candidates across three unresolved people
+remain unreviewed.
 
 Review-queue outputs:
 

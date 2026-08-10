@@ -127,6 +127,8 @@ def organization_category(organization: str, affiliation_type: str) -> str:
             " institutes ",
             " school ",
             " schools ",
+            " academy ",
+            " academies ",
             " college ",
             " lyceum ",
             " lyceums ",

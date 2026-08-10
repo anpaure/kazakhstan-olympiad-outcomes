@@ -1053,6 +1053,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-82cd2ddd0d236111",
+    "alias": "Hacettepe Üniversitesi",
+    "canonical_name": "Hacettepe University",
+    "display_name": "Hacettepe University",
+    "merge_type": "multilingual_name",
+    "rationale": "Turkish public name normalized to the university's English name",
+    "evidence_url": "https://www.hacettepe.edu.tr/"
+  },
+  {
     "organization_alias_id": "org-afed4f94b89f26b6",
     "alias": "HARBOUR.SPACE",
     "canonical_name": "Harbour.Space University",
@@ -1240,6 +1249,24 @@
     "merge_type": "same_entity",
     "rationale": "Capitalization variant",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-1dde1e166fd833c1",
+    "alias": "Institute of Gene Biology RAS",
+    "canonical_name": "Institute of Gene Biology, Russian Academy of Sciences",
+    "display_name": "Institute of Gene Biology RAS",
+    "merge_type": "acronym_expansion",
+    "rationale": "Common English short name for the institute",
+    "evidence_url": "https://www.genebiology.ru/en/"
+  },
+  {
+    "organization_alias_id": "org-d4c2d9b12d81bfb9",
+    "alias": "Институт биологии гена Российской академии наук",
+    "canonical_name": "Institute of Gene Biology, Russian Academy of Sciences",
+    "display_name": "Institute of Gene Biology RAS",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian official name normalized to the English institutional name",
+    "evidence_url": "https://www.genebiology.ru/"
   },
   {
     "organization_alias_id": "org-f51d11acaeca5ec9",
@@ -2322,6 +2349,24 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-c4a5d35377cf8e17",
+    "alias": "Nazarbayev Intellectual School of Physics and Mathematics in Taldykorgan",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "parent_organization",
+    "rationale": "Taldykorgan campus normalized to the national NIS network",
+    "evidence_url": "https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404"
+  },
+  {
+    "organization_alias_id": "org-7481c22305fa7e6c",
+    "alias": "Nazarbayev Intellectual School of physics and mathematics in Taldykorgan",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "parent_organization",
+    "rationale": "Capitalization variant of the Taldykorgan NIS campus",
+    "evidence_url": "https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404"
+  },
+  {
     "organization_alias_id": "org-f76a839d4e5571c5",
     "alias": "Nazarbayev Intellectual Schools",
     "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
@@ -3193,6 +3238,15 @@
     "merge_type": "same_entity",
     "rationale": "Acronym suffix",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-212094f0683163fa",
+    "alias": "Synapse.kz",
+    "canonical_name": "synapse.kz",
+    "display_name": "synapse.kz",
+    "merge_type": "capitalization_variant",
+    "rationale": "Capitalization variant of the education community's public domain name",
+    "evidence_url": "https://synapse.kz/"
   },
   {
     "organization_alias_id": "org-53e45136cf793e94",
