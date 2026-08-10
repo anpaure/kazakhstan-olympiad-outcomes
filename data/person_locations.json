@@ -1738,6 +1738,17 @@
     "evidence_url": "https://kz.linkedin.com/in/nurbol-duisenbayev"
   },
   {
+    "person_id": "kaz-7bc4b3d48a29",
+    "name": "Nurdaulet Kemel",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong, Hong Kong SAR",
+    "evidence_url": "https://hk.linkedin.com/in/nurdauletkemel",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile identifies Hong Kong as Nurdaulet's current location; this is consistent with his ongoing quantitative-research role and continuous HKU, Hong Kong trading, and local internship trajectory."
+  },
+  {
     "person_id": "kaz-92adb8a08f0e",
     "name": "Nurgul Yegenbergenova",
     "country_code": "US",

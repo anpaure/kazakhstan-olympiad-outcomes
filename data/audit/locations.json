@@ -2212,6 +2212,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Google. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used."
   },
   {
+    "location_id": "loc-7ca5c5e6aac2ecc0",
+    "evidence_id": "ev-4015c0ecb7c282e1",
+    "source_id": "src-6be0102e4d2b",
+    "person_id": "kaz-7bc4b3d48a29",
+    "name": "Nurdaulet Kemel",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong, Hong Kong SAR",
+    "evidence_url": "https://hk.linkedin.com/in/nurdauletkemel",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile identifies Hong Kong as Nurdaulet's current location; this is consistent with his ongoing quantitative-research role and continuous HKU, Hong Kong trading, and local internship trajectory."
+  },
+  {
     "location_id": "loc-322228e1fe46606d",
     "evidence_id": "ev-03b35ec3421dc046",
     "source_id": "src-83744c9838c3",

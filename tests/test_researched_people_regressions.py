@@ -390,6 +390,20 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             "Pittsburgh, Pennsylvania, United States",
         )
 
+    def test_nurdaulet_kemel_current_hong_kong_location(self):
+        person = self.people["kaz-7bc4b3d48a29"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Undisclosed prop trading firm")
+        self.assertEqual(person["role"], "Quantitative Researcher")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://hk.linkedin.com/in/nurdauletkemel",
+        )
+        self.assertEqual(location["country_code"], "HK")
+        self.assertEqual(location["country_name"], "Hong Kong")
+        self.assertEqual(location["location_label"], "Hong Kong, Hong Kong SAR")
+
     def test_zhassulan_shaikhygali_indrive_and_unist(self):
         person = self.people["kaz-0e1075c1b53e"]
         location = self.locations[person["person_id"]]

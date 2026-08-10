@@ -5599,15 +5599,15 @@
     "source_url": "https://hk.linkedin.com/in/nurdauletkemel",
     "source_host": "hk.linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 10,
+    "evidence_rows": 11,
     "people_count": 1,
     "accepted_rows": 2,
-    "supporting_rows": 8,
+    "supporting_rows": 9,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;manual_destination_reconciliation;manual_review",
-    "source_adapters": "accepted_linkedin_profile;destination_review;destination_source_review;linkedin;manual;manual_review"
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review",
+    "source_adapters": "accepted_linkedin_profile;active_affiliation_profile_location;destination_review;destination_source_review;linkedin;manual;manual_review"
   },
   {
     "source_id": "src-516e4860170e",
