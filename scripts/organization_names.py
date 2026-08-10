@@ -19,6 +19,8 @@ AUDIT_LEGAL_FORM_TERMS = {
     "company",
     "corp",
     "corporation",
+    "cjsc",
+    "gmbh",
     "inc",
     "incorporated",
     "jsc",
@@ -27,10 +29,19 @@ AUDIT_LEGAL_FORM_TERMS = {
     "llp",
     "ltd",
     "nv",
+    "ojsc",
     "plc",
+    "pjsc",
     "pte",
+    "pty",
+    "sarl",
     "the",
     "ао",
+    "жшс",
+    "зао",
+    "оао",
+    "ооо",
+    "пао",
     "тоо",
 }
 
@@ -83,8 +94,13 @@ def load_organization_aliases(
         alias = clean_organization(row.get("alias"))
         canonical = clean_organization(row.get("canonical_name"))
         display = clean_organization(row.get("display_name")) or canonical
+        evidence_url = clean_organization(row.get("evidence_url"))
         if not alias or not canonical:
             raise ValueError(f"Organization alias row is incomplete: {row}")
+        if evidence_url and not evidence_url.startswith(("http://", "https://")):
+            raise ValueError(
+                f"Organization alias row has an invalid evidence URL: {row}"
+            )
         alias_key = organization_key(alias)
         previous = alias_to_canonical.get(alias_key)
         if previous and previous != canonical:

@@ -4,6 +4,7 @@ from scripts.build_affiliation_history import (
     build_rows,
     education_score,
     extract_affiliations,
+    is_postsecondary_education,
 )
 
 
@@ -194,6 +195,80 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["organization"], "Google")
         self.assertEqual(rows[0]["affiliation_type"], "employment")
+
+    def test_recovers_specialist_degree_inside_education_section(self):
+        rows = extract_affiliations(
+            "## Education\n"
+            "### Specialist Mathematics & Computer Science at "
+            "Saint-Petersburg State University\n"
+            "2007 - 2012 (5 years)"
+        )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["organization"], "Saint Petersburg State University")
+        self.assertEqual(rows[0]["role"], "Specialist Mathematics & Computer Science")
+
+    def test_recovers_linked_school_with_leading_at(self):
+        rows = extract_affiliations(
+            "## Education\n"
+            "### at [Nazarbayev University](https://linkedin.com/school/nu)\n"
+            "2015 - 2019"
+        )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["organization"], "Nazarbayev University")
+        self.assertEqual(rows[0]["role"], "")
+
+    def test_linked_school_ignores_descriptive_body_as_role(self):
+        rows = extract_affiliations(
+            "## Education\n"
+            "### [Kazakh-Turkish lyceum for gifted students]"
+            "(https://linkedin.com/school/bilim)\n"
+            "Kazakhstan\n\nStudent of the year\n\n"
+            "Kazakh-Turkish lyceum for gifted students is an educational institution."
+        )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["organization"], "Bilim-Innovation Lyceums (BIL)")
+        self.assertEqual(rows[0]["role"], "")
+
+    def test_recovers_bare_known_university_acronym(self):
+        rows = extract_affiliations(
+            "## Education\n### KBTU\n2010 - 2014"
+        )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(
+            rows[0]["organization"],
+            "Kazakh-British Technical University (KBTU)",
+        )
+
+    def test_recovers_russian_bachelor_degree(self):
+        rows = extract_affiliations(
+            "## Education\n"
+            "### бакалавр, Прикладная математика at "
+            "Казахский национальный университет имени аль-Фараби\n"
+            "2001 - 2006"
+        )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(
+            rows[0]["organization"],
+            "Al-Farabi Kazakh National University",
+        )
+
+    def test_recovers_abbreviated_us_degrees(self):
+        rows = extract_affiliations(
+            "## Education\n"
+            "### M.S. Computer Science Economics at Iowa State University\n"
+            "2014 - 2016\n"
+            "### B.S. Computer Science Math at University of Nebraska-Lincoln\n"
+            "2010 - 2014"
+        )
+
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[0]["role"], "M.S. Computer Science Economics")
+        self.assertEqual(rows[1]["role"], "B.S. Computer Science Math")
 
 
 class AlmaMaterSelectionTest(unittest.TestCase):
@@ -405,6 +480,15 @@ class AlmaMaterSelectionTest(unittest.TestCase):
         }
 
         self.assertEqual(selected, {"Degree University"})
+
+    def test_summer_semester_in_evidence_is_not_an_alma_mater(self):
+        row = {
+            "organization": "University at Buffalo",
+            "role": "Chemical Engineering",
+            "evidence_text": "May 2018 - Jul 2018 Summer Semester",
+        }
+
+        self.assertFalse(is_postsecondary_education(row))
 
 
 class ManualAffiliationTest(unittest.TestCase):

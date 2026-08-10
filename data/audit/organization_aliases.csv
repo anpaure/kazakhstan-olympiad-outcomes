@@ -1,289 +1,419 @@
-organization_alias_id,alias,canonical_name,display_name,merge_type,rationale
-org-6994e06341ff8092,Казахский национальный педагогический университет имени Абая,Abai Kazakh National Pedagogical University,Abai Kazakh National Pedagogical University,multilingual_name,Russian university name
-org-769df70c1898529a,AGP Holding LLP,AGP Holding,AGP Holding,same_entity,Legal-form variant
-org-4c3f71cd5cb3ea1b,Universitas Airlangga,Airlangga University,Airlangga University,translated_name,Official English name
-org-38dfeae5b20d7ca2,Akhmet Yassawi University,Akhmet Yassawi International Kazakh-Turkish University,Akhmet Yassawi University,same_entity,Short university name
-org-d387e298d8921ade,Kazahskij Nacionalnij Universitet im. Al Farabi,Al-Farabi Kazakh National University,Al-Farabi KazNU,transliterated_name,Transliterated Russian name
-org-52d7d7658cebefe4,Kazakh National University,Al-Farabi Kazakh National University,Al-Farabi KazNU,same_entity,Common short name
-org-76aa2ced5655708d,Kazakh National University named after al-Farabi,Al-Farabi Kazakh National University,Al-Farabi KazNU,same_entity,Translated official name
-org-4172ef0c9e401a9b,Казахский национальный университет имени аль-Фараби (КазНУ),Al-Farabi Kazakh National University,Al-Farabi KazNU,multilingual_name,Russian name
-org-122d12e11e1d6ede,International Alatoo University,Ala-Too International University,Ala-Too International University,same_entity,English brand spelling variant
-org-0978a3b8e6680bd8,Alem Entertainment GP,Alem Entertainment,Alem Entertainment,same_entity,Legal-form variant
-org-ed4f7ac0686a535a,Alem Entertainment Ltd.,Alem Entertainment,Alem Entertainment,same_entity,Legal-form variant
-org-4126e79821602202,AlliedYoung FBC / 아영FBC,AlliedYoung FBC,AlliedYoung FBC,multilingual_name,English and Korean combined label
-org-fe8b2174c8b7d1d4,Alma Mater Studiorum - Università di Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,punctuation_variant,ASCII-hyphen variant
-org-20136c97de560451,Alma Mater Studiorum – Università di Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,same_entity,Official university name and English display declaration
-org-2fb375128942664f,University of Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,translated_name,English name
-org-d01c58a6e1af101f,Università di Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,same_entity,Short Italian name
-org-b6ba66535effce0a,Amazon Music,Amazon,Amazon,parent_organization,Amazon business unit
-org-91c37305bd0a28d6,Amazon Web Services,Amazon,Amazon,parent_organization,AWS is an Amazon business
-org-551c505dc4e7689f,Amazon Web Services (AWS),Amazon,Amazon,parent_organization,AWS is an Amazon business
-org-a73e40fdb639b67f,Amazon.com,Amazon,Amazon,same_entity,Corporate name variant
-org-f36d9115b6482aba,AWS Center for Quantum Computing at Amazon,Amazon,Amazon,parent_organization,Amazon research unit
-org-a43e697951b2b961,Arizona State University,Arizona State University,Arizona State University,same_entity,Canonical display declaration
-org-98a4bf0760fba898,ASU,Arizona State University,Arizona State University,same_entity,Acronym corroborated by the same person's full affiliation
-org-d13db05f900f5735,S D Asfendiyarov Kazakh National Medical University,Asfendiyarov Kazakh National Medical University,Asfendiyarov KazNMU,same_entity,Initials variant
-org-b7a4b3e81390978e,AIFC (Astana International Financial Centre),Astana International Financial Centre,AIFC,same_entity,Acronym-first variant
-org-97b90c3033c30a33,Barcelona Graduate School of Economics,Barcelona School of Economics (BSE),Barcelona School of Economics,former_name,University adopted the Barcelona School of Economics brand in 2021
-org-5713ad437c7ca9e4,BestYs Pte Ltd,BestYs,BestYs,same_entity,Legal-form variant
-org-4dd7db4104433b78,BeyondCurriculum,Beyond Curriculum PF,Beyond Curriculum,same_entity,Spacing variant
-org-df70189f42617291,PF Beyond Curriculum,Beyond Curriculum PF,Beyond Curriculum,name_order,Legal-form word-order variant
-org-dd4f02caa6d84ecc,BI GROUP (Development & Construction & Engineering & Road Construction),BI Group,BI Group,same_entity,Descriptor suffix and capitalization variant
-org-ab03c6c2763324e7,Aktau BIL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
-org-1b48fcff6103f4f1,Aktau KTL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former KTL campus label
-org-1a504dedf2a62d37,Aktobe KTL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former KTL campus label
-org-beb314d32e580bee,Almaty KTL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former KTL name for an Almaty BIL campus
-org-e56295925be3f7c9,AlmatyKTL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Spacing variant of an Almaty campus in the BIL network
-org-14c665d771579972,Astana Bilim Innovation Lyceum,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
-org-e2c055c0aa1293b4,Astana BILIM-INNOVATION lyceum,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus capitalization variant
-org-9b4c87c28546ae3b,"Atyrau, ""Bilim-Innovation"" Lyceum",Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
-org-56db226ccd5775d9,"Bilim-Innovation Boarding Lyceum for Gifted Girls, Astana",Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
-org-3658865abaa0df98,BILIM-INNOVATION International Social Foundation,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Network foundation label
-org-984e47e8f98eef6e,"Bilim-Innovation Lyceum No. 1, Karaganda",Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
-org-a3d57bcae75ed36e,"Bilim-Innovation Specialized Boarding Lyceum, North Kazakhstan",Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
-org-119b615bd71a623e,Kazakh-Turkish High Schools,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former network name
-org-0b476d027628fae0,Kazakh-Turkish lyceum for gifted students,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former network name
-org-1aee4fa84006531a,Oral Bilim Innovation High School,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
-org-9370c72d300cb151,Pavlodar Bilim Innovation Lyceum,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
-org-6ef68b58861d38f0,Turkistan Bilim-Innovation Lyceum,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
-org-00bc7566dfb15a28,BINUS International,BINUS University,BINUS University,parent_organization,International campus label
-org-1dbac3e9366e676c,BIOCAD (Russia),BIOCAD,BIOCAD,same_entity,Location suffix
-org-97708d2775819944,Bloomberg LP,Bloomberg,Bloomberg,same_entity,Legal-form variant
-org-9a84dc7c01856133,Bocconi,Bocconi University,Bocconi University,same_entity,Common short name
-org-42a07b51b552eeca,Università Bocconi,Bocconi University,Bocconi University,multilingual_name,Italian name
-org-4b898f87824a7625,California Institute of Technology,California Institute of Technology (Caltech),Caltech,same_entity,Official name without acronym
-org-7a15daf168dd4f66,Caltech,California Institute of Technology (Caltech),Caltech,same_entity,Common short name
-org-e9953f482f174b0e,DNA Lab (Caltech),California Institute of Technology (Caltech),Caltech,parent_organization,University laboratory
-org-8d890708c6536167,Jacobs University Bremen,Constructor University,Constructor University,former_name,University adopted the Constructor University name in 2022
-org-485be888e14d892a,Crazing lab,Crazing Lab,Crazing Lab,same_entity,Capitalization variant
-org-834432b29d6e6357,East Kazakhstan State Technical University,D. Serikbayev East Kazakhstan Technical University,D. Serikbayev EKTU,former_name,Former university name
-org-423b34ce0ecb3bac,Thayer School of Engineering at Dartmouth,Dartmouth College,Dartmouth College,parent_organization,University school
-org-7e0da8e2ac499930,DashDevs LLC,DashDevs,DashDevs,same_entity,Legal-form variant
-org-0b63819d9976f098,Deep Infra Inc,Deep Infra,Deep Infra,same_entity,Legal-form punctuation variant
-org-9760c54ebd9118e5,Deep Infra Inc.,Deep Infra,Deep Infra,same_entity,Legal-form punctuation variant
-org-1b5d4acf03e08942,Deutsche Elektronen-Synchrotron DESY,Deutsches Elektronen-Synchrotron DESY,DESY,same_entity,Spelling variant
-org-6d8604bd143e10c8,Embassy of Kazkhstan to the Republic of Korea,Embassy of Kazakhstan in the Republic of Korea,Embassy of Kazakhstan in South Korea,same_entity,Typo and preposition variant
-org-9c2e03101c64d9b8,EPFL (École polytechnique fédérale de Lausanne),EPFL,EPFL,same_entity,Acronym with expanded name
-org-a5f91476e4dc8464,ETH Zürich,ETH Zurich,ETH Zurich,same_entity,Diacritic variant
-org-0c8ce773ddb67da6,EMBL,European Molecular Biology Laboratory (EMBL),EMBL,acronym_expansion,Official laboratory acronym
-org-4cf2e5cc9aa08d7c,European Molecular Biology Laboratory,European Molecular Biology Laboratory (EMBL),EMBL,same_entity,Official name without acronym
-org-1c0aa453df7bd2b8,Fatih Üniversitesi,Fatih University,Fatih University,translated_name,Turkish university name
-org-78e7e6b2a4abe9ec,Freedom Horizons Corp.,Freedom Horizons,Freedom Horizons,same_entity,Legal-form variant
-org-7984cc94992ae4a4,Freedom Telecom Kazakhstan,Freedom Telecom,Freedom Telecom,same_entity,Country-suffix variant
-org-bf8e0c3d12a281c6,"Genie, Inc",Genie,Genie,same_entity,Legal-form punctuation variant
-org-6e5152ad2301e66c,"Genie, Inc.",Genie,Genie,same_entity,Legal-form punctuation variant
-org-4e075c5ced0129a6,Google Deepmind,Google,Google,parent_organization,Google DeepMind is a combined Google AI research unit
-org-a4de49f86606d496,Graviton Research Capital LLP,Graviton Research Capital,Graviton Research Capital,same_entity,Legal-form variant
-org-afed4f94b89f26b6,HARBOUR.SPACE,Harbour.Space University,Harbour.Space,same_entity,Capitalization variant
-org-0ee0364b3655ee89,Harbour.Space University - Barcelona Campus,Harbour.Space University,Harbour.Space,parent_organization,Campus label
-org-04b3b88b38bbbc1f,Harvard T.H. Chan School of Public Health,Harvard University,Harvard University,parent_organization,University school
-org-e96c81c30cfc1fbc,HITS Inc,HITS,HITS,same_entity,Legal-form variant
-org-368b2a57c29b9763,AO Home Credit Bank Kazakhstan,Home Credit Bank,Home Credit Bank,same_entity,Former Kazakhstan legal-name variant
-org-32b467b6d9dcce11,Home Credit Bank Kazakhstan,Home Credit Bank,Home Credit Bank,same_entity,Country-suffix variant
-org-fc3808ce27a71ce4,HKUST,Hong Kong University of Science and Technology (HKUST),HKUST,same_entity,Acronym
-org-8ebedea815a5cc66,Hong Kong University of Science and Technology,Hong Kong University of Science and Technology (HKUST),HKUST,same_entity,Official name without acronym
-org-bef7625e65b73e38,The Hong Kong University of Science and Technology,Hong Kong University of Science and Technology (HKUST),HKUST,same_entity,Leading-article variant
-org-057fe3f78bbc6cc8,Visual Intelligence Lab @ HKUST,Hong Kong University of Science and Technology (HKUST),HKUST,parent_organization,University laboratory
-org-88872ef027d1afdd,Higher School of Economics,HSE University,HSE University,same_entity,Former English brand
-org-6e8348fc26daa5bc,Высшая Школа Экономики,HSE University,HSE University,multilingual_name,Russian name
-org-974c28baccdc4ac8,Huawei Hong Kong Research Center(HKRC),Huawei,Huawei,parent_organization,Huawei research unit
-org-f049cf2eecf4aa83,Huawei Noah's Ark Lab,Huawei,Huawei,parent_organization,Huawei research unit
-org-cf143e4123dd376a,Huawei Switzerland,Huawei,Huawei,parent_organization,Huawei national subsidiary
-org-05f61f7cdc304453,Huawei Technologies Research & Development (UK) Ltd,Huawei,Huawei,parent_organization,Huawei research subsidiary
-org-73a9588126c8c08a,Humboldt-Universität zu Berlin,Humboldt University of Berlin,Humboldt University of Berlin,translated_name,Official English name
-org-5bd261f8f6cedff2,Imperial College,Imperial College London,Imperial College London,same_entity,Common short name
-org-710aace3877a7b5b,Institute for basic science (IBS),Institute for Basic Science (IBS),Institute for Basic Science,same_entity,Capitalization variant
-org-f51d11acaeca5ec9,Institute of Science and Technology Austria,Institute of Science and Technology Austria,ISTA,same_entity,Canonical display declaration
-org-017b74a9f6d28253,IST Austria,Institute of Science and Technology Austria,ISTA,same_entity,Former short brand
-org-a4b2a20471e060a2,Intel Labs,Intel Corporation,Intel,parent_organization,Intel research organization
-org-6ffbb29e23c15b2d,Almaty IITU,International Information Technology University (IITU),IITU,same_entity,Location and acronym variant
-org-d04ff6b530c96efd,IITU,International Information Technology University (IITU),IITU,same_entity,Acronym
-org-0ab0b1a7ea174d35,International Information Technologies University,International Information Technology University (IITU),IITU,same_entity,Plural variant
-org-dc03cdcc3853884e,International Information Technology University,International Information Technology University (IITU),IITU,same_entity,Official name without acronym
-org-b036db504106c3b5,International IT University,International Information Technology University (IITU),IITU,same_entity,Short name
-org-36a0366aa1e97466,IoS_Flutter company,ios_flutter,ios_flutter,same_entity,Capitalization and suffix variant
-org-06541bd14c58d118,The Johns Hopkins University - Paul H. Nitze School of Advanced International Studies (SAIS),Johns Hopkins University,Johns Hopkins University,parent_organization,University school
-org-c3d99ae80673cea7,J.P. Morgan,JPMorgan Chase,JPMorgan Chase,same_entity,Brand and punctuation variant
-org-7a4fef434ec612cb,Jump Trading Group,Jump Trading,Jump Trading,same_entity,Corporate-name variant
-org-a31b39be861f1cfd,Karlsruhe Institute of Technology,Karlsruhe Institute of Technology (KIT),KIT,same_entity,Official name without acronym
-org-66710c370cf8b372,wbk - Institute of Production Science,Karlsruhe Institute of Technology (KIT),KIT,parent_organization,University institute
-org-1e67d09116cb0665,KAZ Minerals Management LLP,KAZ Minerals,KAZ Minerals,parent_organization,KAZ Minerals management entity
-org-f44e5bb99803c5f5,RSE Kazaeronavigatsia,Kazaeronavigatsia,Kazaeronavigatsia,same_entity,Legal-form prefix variant
-org-8b1047944b248538,Kazakh British Technical University,Kazakh-British Technical University (KBTU),KBTU,same_entity,Hyphen variant
-org-9686eb314e43df67,Kazakh-British Techincal University,Kazakh-British Technical University (KBTU),KBTU,same_entity,Typo variant
-org-068171823f1bdb7b,Kazakh-British Technical University,Kazakh-British Technical University (KBTU),KBTU,same_entity,Official name without acronym
-org-d2d8fb364e5de92f,KBTU,Kazakh-British Technical University (KBTU),KBTU,same_entity,Acronym
-org-a7c8e1c4561339ed,KBTU Kazakh British Technical University,Kazakh-British Technical University (KBTU),KBTU,same_entity,Acronym-first full-name variant
-org-3afe146dce1c67ff,Kazakhmys Corporation,Kazakhmys,Kazakhmys,same_entity,Corporate-name variant
-org-d12853861a9863b9,Kazakhmys Services Limited / Corporate Development Center (CDC) LLP,Kazakhmys,Kazakhmys,parent_organization,Kazakhmys corporate-services unit
-org-96fc5894e2d92fd4,Kazakhstan Temir Zholy JSC,Kazakhstan Temir Zholy,Kazakhstan Temir Zholy,same_entity,Legal-form variant
-org-34ce33f5c1092d42,ктж,Kazakhstan Temir Zholy,Kazakhstan Temir Zholy,multilingual_name,Cyrillic acronym
-org-c2b0af534c670302,казкомнет,Kazkomnet,Kazkomnet,multilingual_name,Cyrillic capitalization variant
-org-9ead6127817556c6,KazMunayGas (Kazakhstan),KazMunayGas,KazMunayGas,same_entity,Location suffix
-org-e7261f5516de30f9,Kcell JSC,Kcell,Kcell,same_entity,Legal-form variant
-org-13d132b38e232122,Kcell АО,Kcell,Kcell,multilingual_name,Russian legal-form variant
-org-6cc74eb49362be0f,@khangroupkz,Khan Group,Khan Group,same_entity,Public handle corroborated by a second Khan Group affiliation
-org-d11fdc22db7122f6,Khan Group LLP,Khan Group,Khan Group,same_entity,Legal-form variant
-org-05e93d903e6886c7,KAUST,King Abdullah University of Science and Technology (KAUST),KAUST,same_entity,Acronym
-org-f524fa89838b083c,KAUST (King Abdullah University of Science and Technology),King Abdullah University of Science and Technology (KAUST),KAUST,same_entity,Reversed acronym label
-org-998745fa7b0b1777,King Abdullah University of Science and Technology,King Abdullah University of Science and Technology (KAUST),KAUST,same_entity,Official name without acronym
-org-6b59421a55d78137,"3D Integrated Opto-Electronic Device Lab, KAIST",Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory
-org-5b67c49c9a1acb1b,"Center for Cell-Encapsulation Research, KAIST",Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University research center
-org-94667313775fe61d,Data & AI Systems in Organizations Lab (KAIST),Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory
-org-a93769ab931f713c,High Dimensional Statistics Lab at KAIST,Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory
-org-40f63b759dad48fa,KAIST,Korea Advanced Institute of Science and Technology (KAIST),KAIST,same_entity,Acronym
-org-513efb2e9a3a738d,KAIST Computational Media Lab,Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory
-org-b6695746138b3a24,KAIST Graduate School of Medical Science and Engineering,Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University graduate school
-org-70223ec6628195fd,Korea Advanced Institute of Science and Technology,Korea Advanced Institute of Science and Technology (KAIST),KAIST,same_entity,Official name without acronym
-org-7ddfab30cb37c4fe,"Smart and Mobile Systems Lab, KAIST",Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory
-org-4baa1bc1a2144b04,"Young Laboratory of Quantitative and Computational Biology, KAIST",Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory
-org-db023e91aaa4baaa,한국과학기술원(KAIST),Korea Advanced Institute of Science and Technology (KAIST),KAIST,multilingual_name,Korean name
-org-e218f419cd9bc9f5,L N Gumilyov Eurasian National University,L.N. Gumilyov Eurasian National University,L.N. Gumilyov ENU,same_entity,Punctuation variant
-org-7dbf860147a8102a,L. N. Gumilyov Eurasian National University,L.N. Gumilyov Eurasian National University,L.N. Gumilyov ENU,same_entity,Punctuation variant
-org-7c1b1945ed58dd30,L.N.Gumilyov Eurasian National University,L.N. Gumilyov Eurasian National University,L.N. Gumilyov ENU,same_entity,Spacing variant
-org-c21c857d6bb459e0,Евразийский национальный университет имени Л. Н. Гумилёва,L.N. Gumilyov Eurasian National University,L.N. Gumilyov ENU,multilingual_name,Russian name
-org-7c8a20dbc077b69b,Laminar (YC S24),Laminar,Laminar,same_entity,Accelerator suffix
-org-55c4cc5cdc82ae45,Lindstrom,Lindström,Lindström,same_entity,Diacritic variant of official brand
-org-0185ddf72bc4aaa3,Linkoping University,Linköping University,Linköping University,diacritic_variant,ASCII spelling
-org-30ee8d6d7f1c3ffa,Kazakhstan Branch of Lomonosov Moscow State University,Lomonosov Moscow State University (MSU),Moscow State University,parent_organization,University branch campus
-org-472f7744dc56a5fb,KB MSU,Lomonosov Moscow State University (MSU),Moscow State University,acronym_expansion,Kazakhstan branch acronym
-org-95b43bf890f0a472,Lomonosov Moscow State University,Lomonosov Moscow State University (MSU),Moscow State University,same_entity,Official name without acronym
-org-5ab0cf63144c4e2c,Moscow State University,Lomonosov Moscow State University (MSU),Moscow State University,same_entity,Common short name
-org-432a6187f2bcb598,Massachusetts Institute of Technology,Massachusetts Institute of Technology (MIT),MIT,same_entity,Official name without acronym
-org-96f0809e353e09c0,MIT,Massachusetts Institute of Technology (MIT),MIT,same_entity,Acronym
-org-6ca5ce81bc1cb02f,MIT Computer Science and Artificial Intelligence Laboratory (CSAIL),Massachusetts Institute of Technology (MIT),MIT,parent_organization,University laboratory
-org-409f2029f95c8b9b,MIT CSAIL,Massachusetts Institute of Technology (MIT),MIT,parent_organization,University laboratory acronym
-org-94447549216ecdbb,MIT Media Lab,Massachusetts Institute of Technology (MIT),MIT,parent_organization,University laboratory
-org-76c13b8f5652824f,Research Laboratory of Electronics at MIT,Massachusetts Institute of Technology (MIT),MIT,parent_organization,University laboratory
-org-e891fd3384351af8,Facebook,Meta,Meta,same_entity,Former corporate name before the Meta rebrand
-org-84a8d93587d6ef52,Instagram,Meta,Meta,parent_organization,Instagram is a Meta business
-org-360bc84e09469317,Meta Platforms,Meta,Meta,same_entity,Corporate-name variant
-org-79f30cb76f23e83c,Microsoft Corporation,Microsoft,Microsoft,same_entity,Corporate-name variant
-org-3f6112d21a4a55ad,Microsoft Research,Microsoft,Microsoft,parent_organization,Microsoft research organization
-org-43b9d65d3ca0250b,Orta Doğu Teknik Üniversitesi / Middle East Technical University,Middle East Technical University,Middle East Technical University,multilingual_name,Turkish and English combined label
-org-94724bcee0c7eb72,MBZUAI (Mohamed bin Zayed University of Artificial Intelligence),Mohamed bin Zayed University of Artificial Intelligence (MBZUAI),MBZUAI,name_order,Acronym-first source label
-org-2692fcf72aa4541c,Montana State University-Bozeman,Montana State University,Montana State University,same_entity,Campus suffix
-org-66c10f4de0d2d29a,MIPT (SU),Moscow Institute of Physics and Technology (MIPT),MIPT,same_entity,Acronym variant
-org-57633474d70e44a3,Moscow Institute of Physics and Technology,Moscow Institute of Physics and Technology (MIPT),MIPT,same_entity,Official name without acronym
-org-8fce8c5aa5721687,Moscow Institute of Physics and Technology (State University) (MIPT),Moscow Institute of Physics and Technology (MIPT),MIPT,same_entity,Former legal-name variant
-org-47af585a5c2017c2,Nanyang Technological University,Nanyang Technological University (NTU),NTU,same_entity,Official name without acronym
-org-9111e167822b0bf0,Nanyang Technological University Singapore,Nanyang Technological University (NTU),NTU,same_entity,Location suffix
-org-19459a724a89d07c,National Center for Biotechnology Information (NIH),National Center for Biotechnology Information (NCBI),NCBI,same_entity,Corrects the institution acronym while preserving the NIH parent context in source evidence
-org-0bf91fe25e6be27f,National Environment Agency,National Environment Agency Singapore,National Environment Agency,same_entity,Country context omitted in source label
-org-c34f0ecd2720b5d5,National Information Technologies JSC (NITEC),National Information Technologies JSC (NITEC),NITEC,same_entity,Canonical display declaration
-org-d40b12ea1978ebbe,NITEC,National Information Technologies JSC (NITEC),NITEC,same_entity,Acronym
-org-30f94beecff48ba7,National Investment Corporation of National Bank of Kazakhstan,National Investment Corporation of the National Bank of Kazakhstan,National Investment Corporation (NIC),same_entity,Definite-article variant
-org-6a6ee2ec38ad0fc3,National Investment Corporation of National Bank of Kazakhstan (NIC),National Investment Corporation of the National Bank of Kazakhstan,National Investment Corporation (NIC),same_entity,Acronym variant
-org-23deaf7b6257b8fa,National Investment Corporation of NBK,National Investment Corporation of the National Bank of Kazakhstan,National Investment Corporation (NIC),acronym_expansion,Parent-bank acronym variant
-org-148d791416d455ad,Mechanobiology Institute,National University of Singapore,NUS,parent_organization,NUS Research Centre of Excellence
-org-5fcaf3e326918ced,"Mechanobiology Institute, National University of Singapore",National University of Singapore,NUS,parent_organization,University institute
-org-f76a839d4e5571c5,Nazarbayev Intellectual Schools,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Official network name without acronym
-org-d4c532d7f385e184,NIS Medeu (NIS PhM Almaty),Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Campus label
-org-66d043dcc1b47640,Назарбаев Интеллектуальные школы,Nazarbayev Intellectual Schools (NIS),NIS,multilingual_name,Russian name
-org-bdd6357eab5cc7c4,Astana Business Campus,Nazarbayev University,Nazarbayev University,parent_organization,Nazarbayev University innovation campus
-org-b04d1a985e486e11,Institute of Smart Systems and Artificial Intelligence - Nazarbayev University,Nazarbayev University,Nazarbayev University,parent_organization,University institute
-org-f14482d632ff05d3,National Laboratory Astana,Nazarbayev University,Nazarbayev University,parent_organization,Nazarbayev University research center
-org-aae1ec8b193ad29e,Nazarbayev,Nazarbayev University,Nazarbayev University,same_entity,Truncated public-profile school label linked to the university
-org-fa4c923af55987ff,Nazarbayev University Graduate School of Education,Nazarbayev University,Nazarbayev University,parent_organization,University school
-org-dffe5325b0c9fe50,Nazarbayev University Research and Innovation System,Nazarbayev University,Nazarbayev University,parent_organization,University research system
-org-c10ceb5a4fdc74ca,Nazarbayev University School of Medicine,Nazarbayev University,Nazarbayev University,parent_organization,University school
-org-f5f5ffd82b06ee4b,Назарбаев Университет,Nazarbayev University,Nazarbayev University,multilingual_name,Russian name
-org-078c367ed8685b8b,New York University Abu Dhabi,New York University,New York University,parent_organization,University campus
-org-1ce40bd7d6b83978,NYU Tandon School of Engineering,New York University,New York University,parent_organization,University school
-org-35c3e45924a921ca,North American University (NAU),North American University,North American University,same_entity,Acronym suffix
-org-3574c4eeacc347b8,NCOC,North Caspian Operating Company (NCOC),NCOC,same_entity,Acronym
-org-cb818ac2f5d9b50e,North Caspian Operating Company N.V. (NCOC N.V.),North Caspian Operating Company (NCOC),NCOC,same_entity,Legal-form variant
-org-cc26a521b8c0d6af,North Caspian Operating Company N.V. (NCOC),North Caspian Operating Company (NCOC),NCOC,same_entity,Legal-form variant
-org-6b68a2076c97d854,NWAFU,Northwest A&F University,Northwest A&F University,acronym_expansion,Official university acronym
-org-adb6fafbffab9665,"OnPoint Analytics, Inc.",OnPoint Analytics,OnPoint Analytics,same_entity,Legal-form variant
-org-f21d3b7c0c53ea62,Penn State University,Pennsylvania State University,Penn State,same_entity,Common short name
-org-5c5562ba3596d016,Pennsylvania State University Applied Research Laboratory,Pennsylvania State University,Penn State,parent_organization,University laboratory
-org-557fa04d8980c101,a private hedge fund,Private hedge fund,Private hedge fund,same_entity,Article variant
-org-6f4cfafe9630db98,Pro Wheel XR Limited,Pro Wheel XR,Pro Wheel XR,same_entity,Legal-form variant
-org-2a71d318101a63c3,Purdue Physics and Astronomy,Purdue University,Purdue University,parent_organization,University department
-org-81d9036ce3c13135,Purdue University System,Purdue University,Purdue University,parent_organization,System label
-org-7a041dcd8a846e95,Purdue University West Lafayette,Purdue University,Purdue University,parent_organization,Main campus label
-org-3d8fd8dc3aa5232f,National School of Physics & Math (FIZMAT),Republican Physics and Mathematics School (RFMS),RFMS,same_entity,English brand variant
-org-6fbed550061ec5bd,National School of Physics & Math (RFMS),Republican Physics and Mathematics School (RFMS),RFMS,same_entity,English acronym variant
-org-017a190c5724d617,National School of Physics & Math (РФМШ),Republican Physics and Mathematics School (RFMS),RFMS,multilingual_name,Cyrillic acronym variant
-org-d9fc32901daf8674,Republican Physics and Mathematics School,Republican Physics and Mathematics School (RFMS),RFMS,same_entity,Official name without acronym
-org-e2f2ffc8c0b81cef,Jury Member - RSPC Daryn,Republican Scientific and Practical Center Daryn,RSPC Daryn,parser_normalization,Source employer label includes the position prefix
-org-ec078809cdb574ca,"Republican Scientific and Practical center ""Daryn""",Republican Scientific and Practical Center Daryn,RSPC Daryn,same_entity,Capitalization and quotation variant
-org-a70f9fcda2254caf,RSPC Daryn,Republican Scientific and Practical Center Daryn,RSPC Daryn,acronym_expansion,Common acronym
-org-6f1bdfc567b9014f,S.Seifullin Kazakh Agro Technical University,S. Seifullin Kazakh Agrotechnical Research University,S. Seifullin Kazakh Agrotechnical Research University,former_name,Former university name
-org-a69f4b0553b3abcd,Universität des Saarlandes,Saarland University,Saarland University,translated_name,Official English name
-org-4f5b0284472c4443,East Kazakhstan State University,Sarsen Amanzholov East Kazakhstan University,Sarsen Amanzholov EKU,former_name,Former university name
-org-816608c2dc5abe41,Freelance,Self-employed,Self-employed,category_normalization,Independent-work label
-org-3ea84e64d16ad576,none,Self-employed,Self-employed,placeholder_name,Profile used no employer for an independent open-source project
-org-159669d20ffe1411,Remote,Self-employed,Self-employed,category_normalization,Generic remote-work label predates the Remote company and describes independent work
-org-40167509d393f8d1,Self-Employed,Self-employed,Self-employed,same_entity,Capitalization variant
-org-45595550b2a00d36,Предприниматель,Self-employed,Self-employed,translated_name,Russian label
-org-62e003bd6816f01e,Фриланс,Self-employed,Self-employed,translated_name,Russian independent-work label
-org-8d2823660992ad01,Şifa Üniversitesi,Sifa University,Sifa University,translated_name,Turkish university name
-org-8bf943769104cc45,Silleno LLP,Silleno,Silleno,same_entity,Legal-form variant
-org-c6f1304d5207aa1d,Silleno​ LLP,Silleno,Silleno,same_entity,Zero-width character and legal-form variant
-org-752808c71f0605fd,Skolkovo Institute of Science and Technology,Skoltech,Skoltech,same_entity,Official name
-org-da3b87227b73983c,Schlumberger,SLB,SLB,same_entity,Former brand before the SLB rebrand
-org-d1fdeb4b7b8d301e,Snap Inc,Snap,Snap,same_entity,Legal-form punctuation variant
-org-09615f7d377d2232,Snap Inc.,Snap,Snap,same_entity,Legal-form punctuation variant
-org-74d36916c93c9b68,Solai Inc,Solai,Solai,same_entity,Legal-form punctuation variant
-org-5eb865983eb37f65,Solai Inc.,Solai,Solai,same_entity,Legal-form punctuation variant
-org-6a5212c48ab6600f,Squarepoint,Squarepoint Capital,Squarepoint Capital,same_entity,Short brand name
-org-3cd4a533172c690c,Caspimunaygas Scientific Research Institute,SRDI Caspiymunaygas,SRDI Caspiymunaygas,same_entity,Expanded institute-name variant
-org-a77ad1155acde3fc,"SRDI ""Caspiymunaygas"" JSC",SRDI Caspiymunaygas,SRDI Caspiymunaygas,same_entity,Quoted legal-name variant
-org-af701ac9a56e6d60,SRDI Caspiymunaygas JSC,SRDI Caspiymunaygas,SRDI Caspiymunaygas,same_entity,Legal-form variant
-org-1fb70fb8583b9894,Stonelab,StoneLab,StoneLab,same_entity,Capitalization variant
-org-a10afc3d14b10776,StoneLab Inc,StoneLab,StoneLab,same_entity,Legal-form variant
-org-b19e9d200b86531c,SDU,Suleyman Demirel University (SDU),SDU,same_entity,Acronym
-org-3735c9c6471606f2,SDU University,Suleyman Demirel University (SDU),SDU,same_entity,Brand variant
-org-9f1b5a8821d486ca,Suleyman Demiral University,Suleyman Demirel University (SDU),SDU,same_entity,Typo variant
-org-9595ff2914bacbb3,Suleyman Demirel University,Suleyman Demirel University (SDU),SDU,same_entity,Official name without acronym
-org-c39fd9226404a9f9,"Suleyman Demirel University, Kazakhstan",Suleyman Demirel University (SDU),SDU,same_entity,Location suffix
-org-3da6de126f6ec3cf,Summer STEM Institute (SSI),Summer STEM Institute,Summer STEM Institute,same_entity,Acronym suffix
-org-7b11447b2e365b80,Тенгизшевройл,Tengizchevroil,Tengizchevroil,multilingual_name,Russian company name
-org-bb0d7ba862021016,"TETmedical, Inc",TETmedical,TETmedical,same_entity,Legal-form punctuation variant
-org-e5c2ee751340a694,"TETmedical, Inc.",TETmedical,TETmedical,same_entity,Legal-form punctuation variant
-org-a3bcd420ed9593ff,CUHK,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Common acronym
-org-98e0a0fac9911b18,The Chinese University of Hong Kong,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Official name without acronym
-org-e1bee67ecf214e73,Tulane University School of Public Health and Tropical Medicine,Tulane University,Tulane University,parent_organization,University school
-org-49ace9e90cb4d2e0,Ulsan National Insitute of Science and Technology,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Typo variant
-org-674ecb4012a6af22,Ulsan National Institute of Science and Technology,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Official name without acronym
-org-dd517a0bd8e8c29f,UNIST,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Acronym
-org-2a98cad91d505c9f,UNIST Discrete Math,Ulsan National Institute of Science and Technology (UNIST),UNIST,parent_organization,University research group
-org-25e6913c5ecdf069,울산과학기술원,Ulsan National Institute of Science and Technology (UNIST),UNIST,multilingual_name,Korean name
-org-6347733801b598d1,NDA,Undisclosed employer,Undisclosed employer,same_entity,Disclosure-status abbreviation
-org-9a69bb7d0468fa5c,Some Company,Undisclosed employer,Undisclosed employer,placeholder_name,Public profile uses a placeholder rather than disclosing the employer
-org-28098cf8b37d7de1,Rheinische Friedrich-Wilhelms-Universität Bonn,University of Bonn,University of Bonn,translated_name,Official German legal name
-org-32bf92cfcd18cadb,The University of Bonn,University of Bonn,University of Bonn,same_entity,Leading-article variant
-org-696eb8933d5e5f04,Berkeley Artificial Intelligence Research,"University of California, Berkeley",UC Berkeley,parent_organization,University research laboratory
-org-7c19571a21133bd7,UC Berkeley,"University of California, Berkeley",UC Berkeley,same_entity,Common short name
-org-ff661e5dceb8bb46,UC Berkeley Electrical Engineering & Computer Sciences (EECS),"University of California, Berkeley",UC Berkeley,parent_organization,University department
-org-8b3c92efde945da5,University of California Berkeley,"University of California, Berkeley",UC Berkeley,same_entity,Punctuation variant
-org-6abcfaa66547e033,University of California Davis,"University of California, Davis",UC Davis,same_entity,Punctuation variant
-org-ee177673a62c1364,Institute for Pure and Applied Mathematics,"University of California, Los Angeles (UCLA)",UCLA,parent_organization,University institute
-org-e5e362fbd63a0e6c,"Institute for Pure and Applied Mathematics, UCLA","University of California, Los Angeles (UCLA)",UCLA,parent_organization,University institute
-org-42693b41b5ac4af5,"University of California, Los Angeles","University of California, Los Angeles (UCLA)",UCLA,same_entity,Official name without acronym
-org-25761a19847d1b03,Cambridge University,University of Cambridge,University of Cambridge,same_entity,Informal name
-org-c5ee3f17a4496870,Harris School of Public Policy at the University of Chicago,University of Chicago,University of Chicago,parent_organization,University school
-org-2fdc3189c3f0c4b6,Debreceni Egyetem,University of Debrecen,University of Debrecen,multilingual_name,Hungarian name
-org-2aabf202eceac140,HKU,University of Hong Kong,University of Hong Kong,same_entity,Common acronym
-org-f676743426ce5ad1,The University of Hong Kong,University of Hong Kong,University of Hong Kong,same_entity,Leading-article variant
-org-4c4666c3ee495e03,University of Hong Kong,University of Hong Kong,University of Hong Kong,same_entity,Official name
-org-bb4f16196171fb6b,Alliance Manchester Business School,University of Manchester,University of Manchester,parent_organization,University business school
-org-25e4f9c45791da91,The University of Manchester,University of Manchester,University of Manchester,same_entity,Leading-article variant
-org-f8fbe44f767b5174,University of Michigan - Stephen M. Ross School of Business,University of Michigan,University of Michigan,parent_organization,University school
-org-74246aebff0a91e9,University of Minnesota-Twin Cities,University of Minnesota,University of Minnesota,same_entity,Campus-name variant
-org-136d09e3cdcd0ac1,UNC Chapel Hill,University of North Carolina at Chapel Hill,UNC Chapel Hill,same_entity,Common campus name
-org-cd6b762ba622be87,Università degli Studi di Padova (UNIPD) / University of Padua,University of Padua,University of Padua,multilingual_name,Bilingual source label
-org-db998b25964d1687,Università di Padova,University of Padua,University of Padua,multilingual_name,Italian short name
-org-d9419f61f5b751fd,The University of Texas at Brownsville,University of Texas at Brownsville,University of Texas at Brownsville,same_entity,Leading-article variant
-org-51c8c68f865c77ee,Atyrau Oil&Gas Institute,Utebayev Atyrau Oil and Gas University,Atyrau Oil and Gas University,former_name,Former institute name for the current university
-org-a2c85bdd610298c6,VACANTE LLP,VACANTE,VACANTE,same_entity,Legal-form variant
-org-3e21b8dab14d458d,vacante.kz,VACANTE,VACANTE,same_entity,Domain-style brand variant
-org-4231a992ea3e313f,Washington University School of Medicine in St. Louis,Washington University in St. Louis,Washington University in St. Louis,parent_organization,University school
-org-0695481704fca89c,元智大學,Yuan Ze University,Yuan Ze University,multilingual_name,Official Chinese name
-org-c25970605d44df89,Ecole normale superieure,École normale supérieure (ENS),ENS,transliterated_name,ASCII spelling
-org-7f6577b9284ce292,ENS,École normale supérieure (ENS),ENS,same_entity,Common acronym
-org-19fec30719cc62df,École normale supérieure,École normale supérieure (ENS),ENS,same_entity,Official name without acronym
-org-037ebf891e920293,Ecole Polytechnique,École Polytechnique,École Polytechnique,transliterated_name,ASCII spelling
-org-3586da23ff91eb54,École Polytechnique,École Polytechnique,École Polytechnique,same_entity,Official name
+organization_alias_id,alias,canonical_name,display_name,merge_type,rationale,evidence_url
+org-86e77b97e1c7305a,3TECH Engineering Limited,3TECH Engineering,3TECH Engineering,legal_form_variant,Legal-form cleanup,
+org-6994e06341ff8092,Казахский национальный педагогический университет имени Абая,Abai Kazakh National Pedagogical University,Abai Kazakh National Pedagogical University,multilingual_name,Russian university name,
+org-362f7e070f06da87,"Age of Learning, Inc. / ABCmouse.com",Age of Learning,Age of Learning,parent_organization,Product and legal-form suffix cleanup,https://www.ageoflearning.com/
+org-769df70c1898529a,AGP Holding LLP,AGP Holding,AGP Holding,same_entity,Legal-form variant,
+org-0c7dc004aec88e97,AIJKO GmbH,AIJKO,AIJKO,legal_form_variant,Legal-form cleanup,
+org-4c3f71cd5cb3ea1b,Universitas Airlangga,Airlangga University,Airlangga University,translated_name,Official English name,
+org-38dfeae5b20d7ca2,Akhmet Yassawi University,Akhmet Yassawi International Kazakh-Turkish University,Akhmet Yassawi University,same_entity,Short university name,
+org-9e9f9fce00e3d354,«Aksaigasservice» JSC,Aksaigasservice,Aksaigasservice,legal_form_variant,Legal-form and quotation cleanup,
+org-d387e298d8921ade,Kazahskij Nacionalnij Universitet im. Al Farabi,Al-Farabi Kazakh National University,Al-Farabi KazNU,transliterated_name,Transliterated Russian name,
+org-52d7d7658cebefe4,Kazakh National University,Al-Farabi Kazakh National University,Al-Farabi KazNU,same_entity,Common short name,
+org-76aa2ced5655708d,Kazakh National University named after al-Farabi,Al-Farabi Kazakh National University,Al-Farabi KazNU,same_entity,Translated official name,
+org-d7a9ae1cca0c1a02,Казахский национальный университет имени аль-Фараби,Al-Farabi Kazakh National University,Al-Farabi KazNU,multilingual_name,Russian full name without parenthetical acronym,https://www.kaznu.kz/en
+org-4172ef0c9e401a9b,Казахский национальный университет имени аль-Фараби (КазНУ),Al-Farabi Kazakh National University,Al-Farabi KazNU,multilingual_name,Russian name,
+org-9d58183a60569cb2,КазНУ им. аль-Фараби,Al-Farabi Kazakh National University,Al-Farabi KazNU,multilingual_name,Russian abbreviated name,https://www.kaznu.kz/en
+org-122d12e11e1d6ede,International Alatoo University,Ala-Too International University,Ala-Too International University,same_entity,English brand spelling variant,
+org-11ef96e8df9a2269,Alan Tech LLC,Alan Tech,Alan Tech,legal_form_variant,Legal-form cleanup,
+org-e2b8b32405afc2be,Alanza LLC,Alanza,Alanza,legal_form_variant,Legal-form cleanup,
+org-0978a3b8e6680bd8,Alem Entertainment GP,Alem Entertainment,Alem Entertainment,same_entity,Legal-form variant,
+org-ed4f7ac0686a535a,Alem Entertainment Ltd.,Alem Entertainment,Alem Entertainment,same_entity,Legal-form variant,
+org-15e6e66909102f96,Alem,Alem Research,Alem Research,same_entity,Truncated employer label duplicated with the full name on one profile,https://www.goszakup.gov.kz/ru/registry/show_supplier/69217
+org-ece38bb8275d3a29,Alem Research LLP,Alem Research,Alem Research,same_entity,Legal-form variant,https://www.goszakup.gov.kz/ru/registry/show_supplier/69217
+org-25122324c972a9c4,Alemcard LLP,Alemcard,Alemcard,legal_form_variant,Legal-form cleanup,
+org-4126e79821602202,AlliedYoung FBC / 아영FBC,AlliedYoung FBC,AlliedYoung FBC,multilingual_name,English and Korean combined label,
+org-fe8b2174c8b7d1d4,Alma Mater Studiorum - Università di Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,punctuation_variant,ASCII-hyphen variant,
+org-20136c97de560451,Alma Mater Studiorum – Università di Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,same_entity,Official university name and English display declaration,
+org-2fb375128942664f,University of Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,translated_name,English name,
+org-d01c58a6e1af101f,Università di Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,same_entity,Short Italian name,
+org-b6ba66535effce0a,Amazon Music,Amazon,Amazon,parent_organization,Amazon business unit,
+org-91c37305bd0a28d6,Amazon Web Services,Amazon,Amazon,parent_organization,AWS is an Amazon business,
+org-551c505dc4e7689f,Amazon Web Services (AWS),Amazon,Amazon,parent_organization,AWS is an Amazon business,
+org-a73e40fdb639b67f,Amazon.com,Amazon,Amazon,same_entity,Corporate name variant,
+org-f36d9115b6482aba,AWS Center for Quantum Computing at Amazon,Amazon,Amazon,parent_organization,Amazon research unit,
+org-798838c550dd721d,Ames Laboratory,Ames National Laboratory,Ames National Laboratory,former_name,Former laboratory name,https://www.ameslab.gov/news/ames-laboratory-is-now-ames-national-laboratory
+org-ceb4f94e56442676,Ames Laboratory / Iowa State University,Ames National Laboratory,Ames National Laboratory,former_name,Ames Laboratory adopted its current national-laboratory name in 2022,https://www.ameslab.gov/news/ames-laboratory-is-now-ames-national-laboratory
+org-69aaba4616d535eb,AOE GmbH,AOE,AOE,legal_form_variant,Legal-form cleanup,
+org-ba1a00b612295905,aramco,Aramco,Aramco,capitalization_variant,Official brand capitalization,https://www.aramco.com/
+org-a43e697951b2b961,Arizona State University,Arizona State University,Arizona State University,same_entity,Canonical display declaration,
+org-98a4bf0760fba898,ASU,Arizona State University,Arizona State University,same_entity,Acronym corroborated by the same person's full affiliation,
+org-d13db05f900f5735,S D Asfendiyarov Kazakh National Medical University,Asfendiyarov Kazakh National Medical University,Asfendiyarov KazNMU,same_entity,Initials variant,
+org-b7a4b3e81390978e,AIFC (Astana International Financial Centre),Astana International Financial Centre,AIFC,same_entity,Acronym-first variant,
+org-60776ba73f5e1299,AIFC Green Finance Centre,Astana International Financial Centre,AIFC,parent_organization,Green Finance Centre is an AIFC subsidiary,https://aifc.kz/news/aifc-green-finance-centre-to-open-a-branch-in-bishkek/
+org-adc7df264d6a8a56,AIFC Green Finance Centre Ltd,Astana International Financial Centre,AIFC,parent_organization,Legal name of the AIFC subsidiary,https://aifc.kz/wp-content/uploads/2024/06/aifc_ar2020_eng.pdf
+org-749db96589b950d7,Atyrau Refinery Llp,Atyrau Refinery,Atyrau Refinery,legal_form_variant,Legal-form and capitalization cleanup,
+org-97b90c3033c30a33,Barcelona Graduate School of Economics,Barcelona School of Economics (BSE),Barcelona School of Economics,former_name,University adopted the Barcelona School of Economics brand in 2021,
+org-5713ad437c7ca9e4,BestYs Pte Ltd,BestYs,BestYs,same_entity,Legal-form variant,
+org-4dd7db4104433b78,BeyondCurriculum,Beyond Curriculum PF,Beyond Curriculum,same_entity,Spacing variant,
+org-df70189f42617291,PF Beyond Curriculum,Beyond Curriculum PF,Beyond Curriculum,name_order,Legal-form word-order variant,
+org-dd4f02caa6d84ecc,BI GROUP (Development & Construction & Engineering & Road Construction),BI Group,BI Group,same_entity,Descriptor suffix and capitalization variant,
+org-ab03c6c2763324e7,Aktau BIL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label,
+org-1b48fcff6103f4f1,Aktau KTL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former KTL campus label,
+org-1a504dedf2a62d37,Aktobe KTL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former KTL campus label,
+org-beb314d32e580bee,Almaty KTL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former KTL name for an Almaty BIL campus,
+org-e56295925be3f7c9,AlmatyKTL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Spacing variant of an Almaty campus in the BIL network,
+org-14c665d771579972,Astana Bilim Innovation Lyceum,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label,
+org-e2c055c0aa1293b4,Astana BILIM-INNOVATION lyceum,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus capitalization variant,
+org-9b4c87c28546ae3b,"Atyrau, ""Bilim-Innovation"" Lyceum",Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label,
+org-56db226ccd5775d9,"Bilim-Innovation Boarding Lyceum for Gifted Girls, Astana",Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label,
+org-3658865abaa0df98,BILIM-INNOVATION International Social Foundation,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Network foundation label,
+org-984e47e8f98eef6e,"Bilim-Innovation Lyceum No. 1, Karaganda",Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label,
+org-a3d57bcae75ed36e,"Bilim-Innovation Specialized Boarding Lyceum, North Kazakhstan",Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label,
+org-119b615bd71a623e,Kazakh-Turkish High Schools,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former network name,
+org-0b476d027628fae0,Kazakh-Turkish lyceum for gifted students,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former network name,
+org-1aee4fa84006531a,Oral Bilim Innovation High School,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label,
+org-9370c72d300cb151,Pavlodar Bilim Innovation Lyceum,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label,
+org-6ef68b58861d38f0,Turkistan Bilim-Innovation Lyceum,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label,
+org-00bc7566dfb15a28,BINUS International,BINUS University,BINUS University,parent_organization,International campus label,
+org-1dbac3e9366e676c,BIOCAD (Russia),BIOCAD,BIOCAD,same_entity,Location suffix,
+org-97708d2775819944,Bloomberg LP,Bloomberg,Bloomberg,same_entity,Legal-form variant,
+org-9a84dc7c01856133,Bocconi,Bocconi University,Bocconi University,same_entity,Common short name,
+org-dfc09aa2831d875f,Bocconi AI & Neuroscience Student Association,Bocconi University,Bocconi University,parent_organization,Bocconi student association,https://www.unibocconi.it/
+org-a23e9062624435ab,Bocconi Statistics and Data Science Student Association,Bocconi University,Bocconi University,parent_organization,Bocconi student association,https://www.unibocconi.it/
+org-42a07b51b552eeca,Università Bocconi,Bocconi University,Bocconi University,multilingual_name,Italian name,
+org-d12a01eb2e8adaf1,Boreskov Institute of catalysis,Boreskov Institute of Catalysis,Boreskov Institute of Catalysis,capitalization_variant,Capitalization correction,https://catalysis.ru/
+org-94d09c4e0004cd14,Boston University School of Medicine,Boston University,Boston University,parent_organization,Former name of a Boston University school,https://www.bu.edu/brand/guidelines/editorial-style/schools-colleges-and-departments/
+org-c94295522ef9b0f6,Chobanian & Avedisian School of Medicine,Boston University,Boston University,parent_organization,Current Boston University medical-school name,https://www.bu.edu/brand/guidelines/editorial-style/schools-colleges-and-departments/
+org-021c9fe05e7ca038,Buzachi Operating LTD,Buzachi Operating,Buzachi Operating,legal_form_variant,Legal-form cleanup,
+org-4b898f87824a7625,California Institute of Technology,California Institute of Technology (Caltech),Caltech,same_entity,Official name without acronym,
+org-7a15daf168dd4f66,Caltech,California Institute of Technology (Caltech),Caltech,same_entity,Common short name,
+org-e9953f482f174b0e,DNA Lab (Caltech),California Institute of Technology (Caltech),Caltech,parent_organization,University laboratory,
+org-dc49b5d63d8caa8b,stoltz group,California Institute of Technology (Caltech),Caltech,parent_organization,Stoltz research group at Caltech,https://www.stoltz.caltech.edu/
+org-1cab57cb9a732cb8,Stoltz Group,California Institute of Technology (Caltech),Caltech,parent_organization,Capitalization variant of the Caltech research group,https://www.stoltz.caltech.edu/
+org-4ed4273aeb9da4a7,"JSC ""CAUSTIC""",Caustic,Caustic,legal_form_variant,Legal-form and quotation cleanup,
+org-3b119f8aba13311c,Centerra Gold Inc,Centerra Gold,Centerra Gold,legal_form_variant,Legal-form cleanup,
+org-df9f582d5876ca3c,"Chain Lightning Co., Ltd",Chain Lightning,Chain Lightning,legal_form_variant,Legal-form cleanup,
+org-8d890708c6536167,Jacobs University Bremen,Constructor University,Constructor University,former_name,University adopted the Constructor University name in 2022,
+org-4c6c6e962ffb1f02,"Cornami, Inc",Cornami,Cornami,legal_form_variant,Legal-form cleanup,
+org-6665a5d47e019bcb,Weill Cornell Medicine,Cornell University,Cornell University,parent_organization,Medical college of Cornell University,https://weill.cornell.edu/our-story/history
+org-80e37a928356526f,"Crabel Capital Management, LLC",Crabel Capital Management,Crabel Capital Management,legal_form_variant,Legal-form cleanup,
+org-485be888e14d892a,Crazing lab,Crazing Lab,Crazing Lab,same_entity,Capitalization variant,
+org-cfc0826f941ea4cb,Cummins Inc,Cummins,Cummins,legal_form_variant,Legal-form cleanup,
+org-834432b29d6e6357,East Kazakhstan State Technical University,D. Serikbayev East Kazakhstan Technical University,D. Serikbayev EKTU,former_name,Former university name,
+org-26f73c83a237a1d0,Damu Enterpreneurship Development Fund,Damu Entrepreneurship Development Fund,Damu Entrepreneurship Development Fund,spelling_variant,Quotation and spelling cleanup,
+org-6904ec850a398931,Dartmouth Blockchain,Dartmouth College,Dartmouth College,parent_organization,Dartmouth student organization,https://home.dartmouth.edu/
+org-dd7b0560b0554b9c,Dartmouth Formula Racing,Dartmouth College,Dartmouth College,parent_organization,Dartmouth student engineering team,https://home.dartmouth.edu/
+org-423b34ce0ecb3bac,Thayer School of Engineering at Dartmouth,Dartmouth College,Dartmouth College,parent_organization,University school,
+org-7e0da8e2ac499930,DashDevs LLC,DashDevs,DashDevs,same_entity,Legal-form variant,
+org-0b63819d9976f098,Deep Infra Inc,Deep Infra,Deep Infra,same_entity,Legal-form punctuation variant,
+org-9760c54ebd9118e5,Deep Infra Inc.,Deep Infra,Deep Infra,same_entity,Legal-form punctuation variant,
+org-1b5d4acf03e08942,Deutsche Elektronen-Synchrotron DESY,Deutsches Elektronen-Synchrotron DESY,DESY,same_entity,Spelling variant,
+org-a39cef6f0a5b1bad,Diamant LLC,Diamant,Diamant,legal_form_variant,Legal-form cleanup,
+org-99a7283ebe896453,Computing Center,Dorodnitsyn Computing Centre,Dorodnitsyn Computing Centre,former_name,Short former label for the RAS computing centre,https://en.wikipedia.org/wiki/Dorodnitsyn_Computing_Centre
+org-4372337743797e95,Computing Center of RAS,Dorodnitsyn Computing Centre,Dorodnitsyn Computing Centre,former_name,Former English name of the Dorodnitsyn centre,https://en.wikipedia.org/wiki/Dorodnitsyn_Computing_Centre
+org-2776e5bd17ffc095,Computing Centre of the Russian Academy of Sciences,Dorodnitsyn Computing Centre,Dorodnitsyn Computing Centre,former_name,Expanded former English name,https://en.wikipedia.org/wiki/Dorodnitsyn_Computing_Centre
+org-6d8604bd143e10c8,Embassy of Kazkhstan to the Republic of Korea,Embassy of Kazakhstan in the Republic of Korea,Embassy of Kazakhstan in South Korea,same_entity,Typo and preposition variant,
+org-9c2e03101c64d9b8,EPFL (École polytechnique fédérale de Lausanne),EPFL,EPFL,same_entity,Acronym with expanded name,
+org-a5f91476e4dc8464,ETH Zürich,ETH Zurich,ETH Zurich,same_entity,Diacritic variant,
+org-0c8ce773ddb67da6,EMBL,European Molecular Biology Laboratory (EMBL),EMBL,acronym_expansion,Official laboratory acronym,
+org-4cf2e5cc9aa08d7c,European Molecular Biology Laboratory,European Molecular Biology Laboratory (EMBL),EMBL,same_entity,Official name without acronym,
+org-1c0aa453df7bd2b8,Fatih Üniversitesi,Fatih University,Fatih University,translated_name,Turkish university name,
+org-90ce0db8cfbd1ec5,Fonte Capital LTD,Fonte Capital,Fonte Capital,legal_form_variant,Legal-form cleanup,
+org-78e7e6b2a4abe9ec,Freedom Horizons Corp.,Freedom Horizons,Freedom Horizons,same_entity,Legal-form variant,
+org-7984cc94992ae4a4,Freedom Telecom Kazakhstan,Freedom Telecom,Freedom Telecom,same_entity,Country-suffix variant,
+org-bf8e0c3d12a281c6,"Genie, Inc",Genie,Genie,same_entity,Legal-form punctuation variant,
+org-6e5152ad2301e66c,"Genie, Inc.",Genie,Genie,same_entity,Legal-form punctuation variant,
+org-990c20b7d1cf5e4d,The George Washington University,George Washington University,George Washington University,same_entity,Leading-article variant,https://www.gwu.edu/
+org-4e075c5ced0129a6,Google Deepmind,Google,Google,parent_organization,Google DeepMind is a combined Google AI research unit,
+org-a4de49f86606d496,Graviton Research Capital LLP,Graviton Research Capital,Graviton Research Capital,same_entity,Legal-form variant,
+org-afed4f94b89f26b6,HARBOUR.SPACE,Harbour.Space University,Harbour.Space,same_entity,Capitalization variant,
+org-0ee0364b3655ee89,Harbour.Space University - Barcelona Campus,Harbour.Space University,Harbour.Space,parent_organization,Campus label,
+org-04b3b88b38bbbc1f,Harvard T.H. Chan School of Public Health,Harvard University,Harvard University,parent_organization,University school,
+org-295c1178439899aa,The HEINEKEN Company,HEINEKEN,HEINEKEN,same_entity,Public brand name,https://www.theheinekencompany.com/
+org-e96c81c30cfc1fbc,HITS Inc,HITS,HITS,same_entity,Legal-form variant,
+org-368b2a57c29b9763,AO Home Credit Bank Kazakhstan,Home Credit Bank,Home Credit Bank,same_entity,Former Kazakhstan legal-name variant,
+org-32b467b6d9dcce11,Home Credit Bank Kazakhstan,Home Credit Bank,Home Credit Bank,same_entity,Country-suffix variant,
+org-fc3808ce27a71ce4,HKUST,Hong Kong University of Science and Technology (HKUST),HKUST,same_entity,Acronym,
+org-8ebedea815a5cc66,Hong Kong University of Science and Technology,Hong Kong University of Science and Technology (HKUST),HKUST,same_entity,Official name without acronym,
+org-bef7625e65b73e38,The Hong Kong University of Science and Technology,Hong Kong University of Science and Technology (HKUST),HKUST,same_entity,Leading-article variant,
+org-057fe3f78bbc6cc8,Visual Intelligence Lab @ HKUST,Hong Kong University of Science and Technology (HKUST),HKUST,parent_organization,University laboratory,
+org-88872ef027d1afdd,Higher School of Economics,HSE University,HSE University,same_entity,Former English brand,
+org-6e8348fc26daa5bc,Высшая Школа Экономики,HSE University,HSE University,multilingual_name,Russian name,
+org-974c28baccdc4ac8,Huawei Hong Kong Research Center(HKRC),Huawei,Huawei,parent_organization,Huawei research unit,
+org-f049cf2eecf4aa83,Huawei Noah's Ark Lab,Huawei,Huawei,parent_organization,Huawei research unit,
+org-cf143e4123dd376a,Huawei Switzerland,Huawei,Huawei,parent_organization,Huawei national subsidiary,
+org-05f61f7cdc304453,Huawei Technologies Research & Development (UK) Ltd,Huawei,Huawei,parent_organization,Huawei research subsidiary,
+org-73a9588126c8c08a,Humboldt-Universität zu Berlin,Humboldt University of Berlin,Humboldt University of Berlin,translated_name,Official English name,
+org-5bd261f8f6cedff2,Imperial College,Imperial College London,Imperial College London,same_entity,Common short name,
+org-6b2e2a032874f2bd,IBS Data Science Group,Institute for Basic Science (IBS),Institute for Basic Science,parent_organization,Data Science Group is an IBS research group,https://www.ibs.re.kr/cop/bbs/BBSMSTR_000000000739/selectBoardArticle.do?nttId=24424
+org-710aace3877a7b5b,Institute for basic science (IBS),Institute for Basic Science (IBS),Institute for Basic Science,same_entity,Capitalization variant,
+org-f51d11acaeca5ec9,Institute of Science and Technology Austria,Institute of Science and Technology Austria,ISTA,same_entity,Canonical display declaration,
+org-017b74a9f6d28253,IST Austria,Institute of Science and Technology Austria,ISTA,same_entity,Former short brand,
+org-ceb969825feb6323,Tokyo Institute of Technology,Institute of Science Tokyo,Science Tokyo,former_name,Tokyo Tech merged into Institute of Science Tokyo in 2024,https://www.isct.ac.jp/en/news/fqsr7lxwvnbe
+org-c0afc19b4a6f9780,Tokyo Tech,Institute of Science Tokyo,Science Tokyo,former_name,Short former brand of Institute of Science Tokyo,https://www.isct.ac.jp/en/news/fqsr7lxwvnbe
+org-a4b2a20471e060a2,Intel Labs,Intel Corporation,Intel,parent_organization,Intel research organization,
+org-6ffbb29e23c15b2d,Almaty IITU,International Information Technology University (IITU),IITU,same_entity,Location and acronym variant,
+org-d04ff6b530c96efd,IITU,International Information Technology University (IITU),IITU,same_entity,Acronym,
+org-0ab0b1a7ea174d35,International Information Technologies University,International Information Technology University (IITU),IITU,same_entity,Plural variant,
+org-dc03cdcc3853884e,International Information Technology University,International Information Technology University (IITU),IITU,same_entity,Official name without acronym,
+org-b036db504106c3b5,International IT University,International Information Technology University (IITU),IITU,same_entity,Short name,
+org-e9de831c294a67b2,ios_flutter,iOS/Flutter,iOS/Flutter,capitalization_variant,Normalized capitalization of the source employer label,https://kz.linkedin.com/in/azamat-aidanov-64046076
+org-3a82c1992e209ebb,IoS_Flutter company,iOS/Flutter,iOS/Flutter,same_entity,Source employer label with generic company suffix,https://kz.linkedin.com/in/azamat-aidanov-64046076
+org-4233dfc4c745cfad,It service & solution GmbH & Co. KG,IT Service & Solution,IT Service & Solution,legal_form_variant,Capitalization and legal-form cleanup,
+org-06541bd14c58d118,The Johns Hopkins University - Paul H. Nitze School of Advanced International Studies (SAIS),Johns Hopkins University,Johns Hopkins University,parent_organization,University school,
+org-b5aee2cb70fe091e,Joint Institute for Nuclear Research,Joint Institute for Nuclear Research,JINR,same_entity,Canonical display declaration,https://ugrk.jinr.ru/contacts/requisites.php
+org-faa72095c90daf7d,OIYaI,Joint Institute for Nuclear Research,JINR,transliterated_name,Transliteration of the Russian abbreviation OIYaI,https://ugrk.jinr.ru/contacts/requisites.php
+org-229a272196f47306,ОИЯИ,Joint Institute for Nuclear Research,JINR,multilingual_name,Official Russian abbreviation,https://ugrk.jinr.ru/contacts/requisites.php
+org-c3d99ae80673cea7,J.P. Morgan,JPMorgan Chase,JPMorgan Chase,same_entity,Brand and punctuation variant,
+org-7a4fef434ec612cb,Jump Trading Group,Jump Trading,Jump Trading,same_entity,Corporate-name variant,
+org-a31b39be861f1cfd,Karlsruhe Institute of Technology,Karlsruhe Institute of Technology (KIT),KIT,same_entity,Official name without acronym,
+org-66710c370cf8b372,wbk - Institute of Production Science,Karlsruhe Institute of Technology (KIT),KIT,parent_organization,University institute,
+org-5561ab400387346a,kaspi bank,Kaspi.kz,Kaspi.kz,parent_organization,Capitalization variant of the Kaspi.kz banking subsidiary,https://ir.kaspi.kz/media/EX-8.1_List_of_subsidiaries_of_the_Registrant.pdf
+org-dbe79c2e24b057fb,Kaspi Bank,Kaspi.kz,Kaspi.kz,parent_organization,Kaspi Bank is a Kaspi.kz subsidiary,https://ir.kaspi.kz/media/EX-8.1_List_of_subsidiaries_of_the_Registrant.pdf
+org-d287ea3cb7aeb2c7,Kaspi Bank JSC,Kaspi.kz,Kaspi.kz,parent_organization,Legal name of the Kaspi.kz banking subsidiary,https://ir.kaspi.kz/media/EX-8.1_List_of_subsidiaries_of_the_Registrant.pdf
+org-1e67d09116cb0665,KAZ Minerals Management LLP,KAZ Minerals,KAZ Minerals,parent_organization,KAZ Minerals management entity,
+org-f44e5bb99803c5f5,RSE Kazaeronavigatsia,Kazaeronavigatsia,Kazaeronavigatsia,same_entity,Legal-form prefix variant,
+org-8b1047944b248538,Kazakh British Technical University,Kazakh-British Technical University (KBTU),KBTU,same_entity,Hyphen variant,
+org-9686eb314e43df67,Kazakh-British Techincal University,Kazakh-British Technical University (KBTU),KBTU,same_entity,Typo variant,
+org-068171823f1bdb7b,Kazakh-British Technical University,Kazakh-British Technical University (KBTU),KBTU,same_entity,Official name without acronym,
+org-d2d8fb364e5de92f,KBTU,Kazakh-British Technical University (KBTU),KBTU,same_entity,Acronym,
+org-a7c8e1c4561339ed,KBTU Kazakh British Technical University,Kazakh-British Technical University (KBTU),KBTU,same_entity,Acronym-first full-name variant,
+org-81b597d539929fa0,Kazakh-Turkish High-School,Kazakh-Turkish High School,Kazakh-Turkish High School,punctuation_variant,Hyphenation variant in a public education profile,https://www.linkedin.com/in/askarbek-orakov/
+org-3afe146dce1c67ff,Kazakhmys Corporation,Kazakhmys,Kazakhmys,same_entity,Corporate-name variant,
+org-d12853861a9863b9,Kazakhmys Services Limited / Corporate Development Center (CDC) LLP,Kazakhmys,Kazakhmys,parent_organization,Kazakhmys corporate-services unit,
+org-2048ec7886ca597b,KAZAKHSTAN ASELSAN ENGINEERING (KAE) LLP,Kazakhstan Aselsan Engineering (KAE),Kazakhstan Aselsan Engineering,legal_form_variant,Legal-form and capitalization cleanup,
+org-64a44b152ff13010,Kazakhstan Petrochemical Industries Inc. Liability Limited Partnership,Kazakhstan Petrochemical Industries (KPI),Kazakhstan Petrochemical Industries,legal_form_variant,Legal-name cleanup,
+org-96fc5894e2d92fd4,Kazakhstan Temir Zholy JSC,Kazakhstan Temir Zholy,Kazakhstan Temir Zholy,same_entity,Legal-form variant,
+org-34ce33f5c1092d42,ктж,Kazakhstan Temir Zholy,Kazakhstan Temir Zholy,multilingual_name,Cyrillic acronym,
+org-c2b0af534c670302,казкомнет,Kazkomnet,Kazkomnet,multilingual_name,Cyrillic capitalization variant,
+org-9ead6127817556c6,KazMunayGas (Kazakhstan),KazMunayGas,KazMunayGas,same_entity,Location suffix,
+org-0312dbacd7b31ab2,"KAZPHOSPHATE LLC (ALMATY, TARAZ)",Kazphosphate,Kazphosphate,legal_form_variant,Legal-form location and capitalization cleanup,
+org-1cf4b3f595903c37,"KBR, Inc",KBR,KBR,legal_form_variant,Legal-form cleanup,
+org-e7261f5516de30f9,Kcell JSC,Kcell,Kcell,same_entity,Legal-form variant,
+org-13d132b38e232122,Kcell АО,Kcell,Kcell,multilingual_name,Russian legal-form variant,
+org-a4d4c6b30feb2065,Khabar Agency JSC,Khabar Agency,Khabar Agency,legal_form_variant,Legal-form cleanup,
+org-6cc74eb49362be0f,@khangroupkz,Khan Group,Khan Group,same_entity,Public handle corroborated by a second Khan Group affiliation,
+org-d11fdc22db7122f6,Khan Group LLP,Khan Group,Khan Group,same_entity,Legal-form variant,
+org-6e92bd4ca208172c,Institute of Theoretical and Applied Mechanics,Khristianovich Institute of Theoretical and Applied Mechanics (ITAM SB RAS),ITAM SB RAS,same_entity,Expanded official institute name,https://www.sbras.ru/en/org_soran/list
+org-5032ad1f8aee499e,Khristianovich Institute of Theoretical and Applied Mechanics,Khristianovich Institute of Theoretical and Applied Mechanics (ITAM SB RAS),ITAM SB RAS,same_entity,Official short name without parent acronym,https://www.sbras.ru/en/org_soran/list
+org-05e93d903e6886c7,KAUST,King Abdullah University of Science and Technology (KAUST),KAUST,same_entity,Acronym,
+org-f524fa89838b083c,KAUST (King Abdullah University of Science and Technology),King Abdullah University of Science and Technology (KAUST),KAUST,same_entity,Reversed acronym label,
+org-998745fa7b0b1777,King Abdullah University of Science and Technology,King Abdullah University of Science and Technology (KAUST),KAUST,same_entity,Official name without acronym,
+org-6b59421a55d78137,"3D Integrated Opto-Electronic Device Lab, KAIST",Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory,
+org-5b67c49c9a1acb1b,"Center for Cell-Encapsulation Research, KAIST",Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University research center,
+org-94667313775fe61d,Data & AI Systems in Organizations Lab (KAIST),Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory,
+org-a93769ab931f713c,High Dimensional Statistics Lab at KAIST,Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory,
+org-40f63b759dad48fa,KAIST,Korea Advanced Institute of Science and Technology (KAIST),KAIST,same_entity,Acronym,
+org-513efb2e9a3a738d,KAIST Computational Media Lab,Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory,
+org-b6695746138b3a24,KAIST Graduate School of Medical Science and Engineering,Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University graduate school,
+org-70223ec6628195fd,Korea Advanced Institute of Science and Technology,Korea Advanced Institute of Science and Technology (KAIST),KAIST,same_entity,Official name without acronym,
+org-4f034d160e09d6fd,Nano/2D Materials Laboratory,Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,Materials laboratory is a KAIST unit,https://mse.kaist.ac.kr/?mid=mse_lab_en
+org-7ddfab30cb37c4fe,"Smart and Mobile Systems Lab, KAIST",Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory,
+org-9f663fe448940fc6,SoftSec Lab,Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,Software Security Research Lab is at KAIST,https://softsec.kaist.ac.kr/
+org-4baa1bc1a2144b04,"Young Laboratory of Quantitative and Computational Biology, KAIST",Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory,
+org-db023e91aaa4baaa,한국과학기술원(KAIST),Korea Advanced Institute of Science and Technology (KAIST),KAIST,multilingual_name,Korean name,
+org-4ec0d134f1edfe97,Korea Institute of Science and Technology,Korea Institute of Science and Technology,KIST,same_entity,Canonical display declaration,https://www.kist.re.kr/eng/
+org-d1f8224115724b28,Kumtor Gold Company,Kumtor Gold Company,Kumtor Gold,same_entity,Canonical display declaration,https://www.kumtor.kg/en/deposit/history/
+org-b926aa88e794646d,Kumtor Operating Company,Kumtor Gold Company,Kumtor Gold,former_name,Operations transferred from KOC to KGC in 2014,https://www.kumtor.kg/en/deposit/history/
+org-e218f419cd9bc9f5,L N Gumilyov Eurasian National University,L.N. Gumilyov Eurasian National University,L.N. Gumilyov ENU,same_entity,Punctuation variant,
+org-7dbf860147a8102a,L. N. Gumilyov Eurasian National University,L.N. Gumilyov Eurasian National University,L.N. Gumilyov ENU,same_entity,Punctuation variant,
+org-7c1b1945ed58dd30,L.N.Gumilyov Eurasian National University,L.N. Gumilyov Eurasian National University,L.N. Gumilyov ENU,same_entity,Spacing variant,
+org-c21c857d6bb459e0,Евразийский национальный университет имени Л. Н. Гумилёва,L.N. Gumilyov Eurasian National University,L.N. Gumilyov ENU,multilingual_name,Russian name,
+org-7c8a20dbc077b69b,Laminar (YC S24),Laminar,Laminar,same_entity,Accelerator suffix,
+org-55c4cc5cdc82ae45,Lindstrom,Lindström,Lindström,same_entity,Diacritic variant of official brand,
+org-0185ddf72bc4aaa3,Linkoping University,Linköping University,Linköping University,diacritic_variant,ASCII spelling,
+org-8ecce89fbfa5d319,"Locu, Inc",Locu,Locu,legal_form_variant,Legal-form cleanup,
+org-30ee8d6d7f1c3ffa,Kazakhstan Branch of Lomonosov Moscow State University,Lomonosov Moscow State University (MSU),Moscow State University,parent_organization,University branch campus,
+org-472f7744dc56a5fb,KB MSU,Lomonosov Moscow State University (MSU),Moscow State University,acronym_expansion,Kazakhstan branch acronym,
+org-95b43bf890f0a472,Lomonosov Moscow State University,Lomonosov Moscow State University (MSU),Moscow State University,same_entity,Official name without acronym,
+org-5ab0cf63144c4e2c,Moscow State University,Lomonosov Moscow State University (MSU),Moscow State University,same_entity,Common short name,
+org-dcd615017c7dd6e5,"Lowe's Companies, Inc",Lowe's,Lowe's,legal_form_variant,Legal-form cleanup,
+org-432a6187f2bcb598,Massachusetts Institute of Technology,Massachusetts Institute of Technology (MIT),MIT,same_entity,Official name without acronym,
+org-96f0809e353e09c0,MIT,Massachusetts Institute of Technology (MIT),MIT,same_entity,Acronym,
+org-6ca5ce81bc1cb02f,MIT Computer Science and Artificial Intelligence Laboratory (CSAIL),Massachusetts Institute of Technology (MIT),MIT,parent_organization,University laboratory,
+org-409f2029f95c8b9b,MIT CSAIL,Massachusetts Institute of Technology (MIT),MIT,parent_organization,University laboratory acronym,
+org-94447549216ecdbb,MIT Media Lab,Massachusetts Institute of Technology (MIT),MIT,parent_organization,University laboratory,
+org-76c13b8f5652824f,Research Laboratory of Electronics at MIT,Massachusetts Institute of Technology (MIT),MIT,parent_organization,University laboratory,
+org-b9a41b1f5567f969,Memorial Sloan-Kettering Cancer Center,Memorial Sloan Kettering Cancer Center,Memorial Sloan Kettering Cancer Center,punctuation_variant,Current institution spelling omits the hyphen,https://www.mskcc.org/
+org-e891fd3384351af8,Facebook,Meta,Meta,same_entity,Former corporate name before the Meta rebrand,
+org-84a8d93587d6ef52,Instagram,Meta,Meta,parent_organization,Instagram is a Meta business,
+org-360bc84e09469317,Meta Platforms,Meta,Meta,same_entity,Corporate-name variant,
+org-e40b1dfee4c0117a,"Miaplaza, Inc",Miaplaza,Miaplaza,legal_form_variant,Legal-form cleanup,
+org-25ae1a2442e4d8a2,Michigan State University Center for Quantum Computing (MSU-Q),Michigan State University,Michigan State University,parent_organization,MSU-Q is Michigan State University's quantum-computing center,https://msuq.msu.edu/
+org-19c907b30a4cdb86,MSU-Q,Michigan State University,Michigan State University,parent_organization,University center acronym,https://msuq.msu.edu/
+org-79f30cb76f23e83c,Microsoft Corporation,Microsoft,Microsoft,same_entity,Corporate-name variant,
+org-3f6112d21a4a55ad,Microsoft Research,Microsoft,Microsoft,parent_organization,Microsoft research organization,
+org-43b9d65d3ca0250b,Orta Doğu Teknik Üniversitesi / Middle East Technical University,Middle East Technical University,Middle East Technical University,multilingual_name,Turkish and English combined label,
+org-94724bcee0c7eb72,MBZUAI (Mohamed bin Zayed University of Artificial Intelligence),Mohamed bin Zayed University of Artificial Intelligence (MBZUAI),MBZUAI,name_order,Acronym-first source label,
+org-2692fcf72aa4541c,Montana State University-Bozeman,Montana State University,Montana State University,same_entity,Campus suffix,
+org-66c10f4de0d2d29a,MIPT (SU),Moscow Institute of Physics and Technology (MIPT),MIPT,same_entity,Acronym variant,
+org-57633474d70e44a3,Moscow Institute of Physics and Technology,Moscow Institute of Physics and Technology (MIPT),MIPT,same_entity,Official name without acronym,
+org-8fce8c5aa5721687,Moscow Institute of Physics and Technology (State University) (MIPT),Moscow Institute of Physics and Technology (MIPT),MIPT,same_entity,Former legal-name variant,
+org-1652ee0e8e840a63,"MoveAWheeL, Inc",MoveAWheeL,MoveAWheeL,legal_form_variant,Legal-form cleanup,
+org-47af585a5c2017c2,Nanyang Technological University,Nanyang Technological University (NTU),NTU,same_entity,Official name without acronym,
+org-9111e167822b0bf0,Nanyang Technological University Singapore,Nanyang Technological University (NTU),NTU,same_entity,Location suffix,
+org-d8a3f9793ed5e614,SCELSE,Nanyang Technological University (NTU),NTU,parent_organization,Research-institute acronym,https://www.ntu.edu.sg/research/research-capabilities/research-centres-of-excellence
+org-bcaf04feeaddebb3,Singapore Centre for Environmental Life Sciences Engineering,Nanyang Technological University (NTU),NTU,parent_organization,SCELSE is an NTU university research institute,https://www.ntu.edu.sg/research/research-capabilities/research-centres-of-excellence
+org-19459a724a89d07c,National Center for Biotechnology Information (NIH),National Center for Biotechnology Information (NCBI),NCBI,same_entity,Corrects the institution acronym while preserving the NIH parent context in source evidence,
+org-0bf91fe25e6be27f,National Environment Agency,National Environment Agency Singapore,National Environment Agency,same_entity,Country context omitted in source label,
+org-c34f0ecd2720b5d5,National Information Technologies JSC (NITEC),National Information Technologies JSC (NITEC),NITEC,same_entity,Canonical display declaration,
+org-d40b12ea1978ebbe,NITEC,National Information Technologies JSC (NITEC),NITEC,same_entity,Acronym,
+org-30f94beecff48ba7,National Investment Corporation of National Bank of Kazakhstan,National Investment Corporation of the National Bank of Kazakhstan,National Investment Corporation (NIC),same_entity,Definite-article variant,
+org-6a6ee2ec38ad0fc3,National Investment Corporation of National Bank of Kazakhstan (NIC),National Investment Corporation of the National Bank of Kazakhstan,National Investment Corporation (NIC),same_entity,Acronym variant,
+org-23deaf7b6257b8fa,National Investment Corporation of NBK,National Investment Corporation of the National Bank of Kazakhstan,National Investment Corporation (NIC),acronym_expansion,Parent-bank acronym variant,
+org-1e488fa9ca52a344,National Research Nuclear University MEPhI (Moscow Engineering Physics Institute),National Research Nuclear University MEPhI (Moscow Engineering Physics Institute),MEPhI,same_entity,Canonical display declaration,https://mephi.ru/
+org-148d791416d455ad,Mechanobiology Institute,National University of Singapore,NUS,parent_organization,NUS Research Centre of Excellence,
+org-5fcaf3e326918ced,"Mechanobiology Institute, National University of Singapore",National University of Singapore,NUS,parent_organization,University institute,
+org-3428ec5fd8b78d77,NAVER Corp,NAVER,NAVER,legal_form_variant,Legal-form cleanup,
+org-1f45ffb950d52b62,NAVER WEBTOON CORP,NAVER WEBTOON,NAVER WEBTOON,legal_form_variant,Legal-form cleanup,
+org-625e5a4e0a63e7d3,ТОО Navus,Navus,Navus,multilingual_name,Cyrillic legal-form cleanup,
+org-f76a839d4e5571c5,Nazarbayev Intellectual Schools,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Official network name without acronym,
+org-d4c532d7f385e184,NIS Medeu (NIS PhM Almaty),Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Campus label,
+org-66d043dcc1b47640,Назарбаев Интеллектуальные школы,Nazarbayev Intellectual Schools (NIS),NIS,multilingual_name,Russian name,
+org-bdd6357eab5cc7c4,Astana Business Campus,Nazarbayev University,Nazarbayev University,parent_organization,Nazarbayev University innovation campus,
+org-b04d1a985e486e11,Institute of Smart Systems and Artificial Intelligence - Nazarbayev University,Nazarbayev University,Nazarbayev University,parent_organization,University institute,
+org-f14482d632ff05d3,National Laboratory Astana,Nazarbayev University,Nazarbayev University,parent_organization,Nazarbayev University research center,
+org-aae1ec8b193ad29e,Nazarbayev,Nazarbayev University,Nazarbayev University,same_entity,Truncated public-profile school label linked to the university,
+org-fa4c923af55987ff,Nazarbayev University Graduate School of Education,Nazarbayev University,Nazarbayev University,parent_organization,University school,
+org-dffe5325b0c9fe50,Nazarbayev University Research and Innovation System,Nazarbayev University,Nazarbayev University,parent_organization,University research system,
+org-c10ceb5a4fdc74ca,Nazarbayev University School of Medicine,Nazarbayev University,Nazarbayev University,parent_organization,University school,
+org-f5f5ffd82b06ee4b,Назарбаев Университет,Nazarbayev University,Nazarbayev University,multilingual_name,Russian name,
+org-dbb74489a889d8cd,NetCracker,Netcracker Technology,Netcracker,same_entity,Current public company brand,https://www.netcracker.com/
+org-b68d8a34b31a73a4,Networks Energy LLP,Networks Energy,Networks Energy,legal_form_variant,Legal-form cleanup,
+org-078c367ed8685b8b,New York University Abu Dhabi,New York University,New York University,parent_organization,University campus,
+org-1ce40bd7d6b83978,NYU Tandon School of Engineering,New York University,New York University,parent_organization,University school,
+org-35c3e45924a921ca,North American University (NAU),North American University,North American University,same_entity,Acronym suffix,
+org-3574c4eeacc347b8,NCOC,North Caspian Operating Company (NCOC),NCOC,same_entity,Acronym,
+org-cb818ac2f5d9b50e,North Caspian Operating Company N.V. (NCOC N.V.),North Caspian Operating Company (NCOC),NCOC,same_entity,Legal-form variant,
+org-cc26a521b8c0d6af,North Caspian Operating Company N.V. (NCOC),North Caspian Operating Company (NCOC),NCOC,same_entity,Legal-form variant,
+org-6b68a2076c97d854,NWAFU,Northwest A&F University,Northwest A&F University,acronym_expansion,Official university acronym,
+org-90f1660619996003,Novosibirsk State University (NSU),Novosibirsk State University (NSU),NSU,same_entity,Canonical display declaration,https://english.nsu.ru/
+org-0bbed4d0cca2dfa5,NTP Ltd,NTP,NTP,legal_form_variant,Legal-form cleanup,
+org-55257ac6e7068ef3,NURORDA High School,Nurorda High School,Nurorda High School,capitalization_variant,Capitalization variant in a public education profile,https://hk.linkedin.com/in/amanzholkuantay
+org-8481815c12edd059,NURORDA INTERNATIONAL SCHOOLS,Nurorda International Schools,Nurorda International Schools,capitalization_variant,Capitalization cleanup,
+org-adb6fafbffab9665,"OnPoint Analytics, Inc.",OnPoint Analytics,OnPoint Analytics,same_entity,Legal-form variant,
+org-c28645300b56e558,Opt-AI Inc,Opt-AI,Opt-AI,legal_form_variant,Legal-form cleanup,
+org-f21d3b7c0c53ea62,Penn State University,Pennsylvania State University,Penn State,same_entity,Common short name,
+org-5c5562ba3596d016,Pennsylvania State University Applied Research Laboratory,Pennsylvania State University,Penn State,parent_organization,University laboratory,
+org-c7265886d7c6894b,"Platonus, LLP",Platonus,Platonus,legal_form_variant,Legal-form cleanup,
+org-e47393fc5bcb6d7b,Predictive Oncology Inc,Predictive Oncology,Predictive Oncology,legal_form_variant,Legal-form cleanup,
+org-95cc1ca59821ab30,Thompson Lab,Princeton University,Princeton University,parent_organization,Jeff Thompson's Princeton research laboratory,https://ece.princeton.edu/people/jeff-thompson
+org-557fa04d8980c101,a private hedge fund,Private hedge fund,Private hedge fund,same_entity,Article variant,
+org-6f4cfafe9630db98,Pro Wheel XR Limited,Pro Wheel XR,Pro Wheel XR,same_entity,Legal-form variant,
+org-2a71d318101a63c3,Purdue Physics and Astronomy,Purdue University,Purdue University,parent_organization,University department,
+org-81d9036ce3c13135,Purdue University System,Purdue University,Purdue University,parent_organization,System label,
+org-7a041dcd8a846e95,Purdue University West Lafayette,Purdue University,Purdue University,parent_organization,Main campus label,
+org-c4cf30fc8f179763,Q Capital Ltd,Q Capital,Q Capital,legal_form_variant,Legal-form cleanup,
+org-d0c665792464a4ee,Quadrat educational center,Quadrat Educational Center,Quadrat Educational Center,capitalization_variant,Quotation and capitalization cleanup,
+org-bfd184c945652952,Qwerky Inc,Qwerky,Qwerky,legal_form_variant,Legal-form cleanup,
+org-3b8d7cd71ccb91a1,Ratio Global Inc,Ratio Global,Ratio Global,legal_form_variant,Legal-form cleanup,
+org-3d8fd8dc3aa5232f,National School of Physics & Math (FIZMAT),Republican Physics and Mathematics School (RFMS),RFMS,same_entity,English brand variant,
+org-6fbed550061ec5bd,National School of Physics & Math (RFMS),Republican Physics and Mathematics School (RFMS),RFMS,same_entity,English acronym variant,
+org-017a190c5724d617,National School of Physics & Math (РФМШ),Republican Physics and Mathematics School (RFMS),RFMS,multilingual_name,Cyrillic acronym variant,
+org-d9fc32901daf8674,Republican Physics and Mathematics School,Republican Physics and Mathematics School (RFMS),RFMS,same_entity,Official name without acronym,
+org-e2f2ffc8c0b81cef,Jury Member - RSPC Daryn,Republican Scientific and Practical Center Daryn,RSPC Daryn,parser_normalization,Source employer label includes the position prefix,
+org-317e3445914f4e0f,Ministry of Education and Science of the Republic of Kazakhstan (Center Daryn),Republican Scientific and Practical Center Daryn,RSPC Daryn,parent_organization,Source label identifies Center Daryn within the ministry,https://www.gov.kz/memleket/entities/daryn
+org-ec078809cdb574ca,"Republican Scientific and Practical center ""Daryn""",Republican Scientific and Practical Center Daryn,RSPC Daryn,same_entity,Capitalization and quotation variant,
+org-a70f9fcda2254caf,RSPC Daryn,Republican Scientific and Practical Center Daryn,RSPC Daryn,acronym_expansion,Common acronym,
+org-8a8156803a1cc9ff,Rocket Fuel Inc,Rocket Fuel,Rocket Fuel,legal_form_variant,Legal-form cleanup,
+org-6f1bdfc567b9014f,S.Seifullin Kazakh Agro Technical University,S. Seifullin Kazakh Agrotechnical Research University,S. Seifullin Kazakh Agrotechnical Research University,former_name,Former university name,
+org-a69f4b0553b3abcd,Universität des Saarlandes,Saarland University,Saarland University,translated_name,Official English name,
+org-f3f5631dd8cbbe24,Saint-Petersburg State University,Saint Petersburg State University,Saint Petersburg State University,punctuation_variant,Hyphenated public-profile spelling,https://www.linkedin.com/in/viktor-passichenko/
+org-0b297b687bcaf800,SAMRUK-KAZYNA,Samruk-Kazyna,Samruk-Kazyna,capitalization_variant,Capitalization cleanup,https://sk.kz/
+org-efe653dee124f5c4,«SOVEREIGN WEALTH FUND «SAMRUK-KAZYNA» JSC,Samruk-Kazyna,Samruk-Kazyna,legal_form_variant,Expanded legal-name variant,https://sk.kz/
+org-b14f04d53f928741,Samruk-Kazyna Corporate University,Samruk-Kazyna Corporate University,Samruk-Kazyna Corporate University,punctuation_variant,Quotation cleanup,
+org-4f5b0284472c4443,East Kazakhstan State University,Sarsen Amanzholov East Kazakhstan University,Sarsen Amanzholov EKU,former_name,Former university name,
+org-5652292751da7116,Institute of Physics and Technology at Satbayev University,Satbayev University,Satbayev University,parent_organization,University institute,https://satbayev.university/
+org-2dda77894dbb0e63,"Satbayev University, Institute of Physics and Technology",Satbayev University,Satbayev University,parent_organization,University institute,https://satbayev.university/
+org-e73abcaf36f55458,казнту,Satbayev University,Satbayev University,former_name,The KazNTU abbreviation refers to the university now branded Satbayev University,https://official.satbayev.university/en/university/osnovnye-polozheniya-
+org-44c4a8dd3cbd3410,SDAIA | سدايا,Saudi Data and AI Authority (SDAIA),SDAIA,multilingual_name,English and Arabic brand label,https://sdaia.gov.sa/
+org-816608c2dc5abe41,Freelance,Self-employed,Self-employed,category_normalization,Independent-work label,
+org-3ea84e64d16ad576,none,Self-employed,Self-employed,placeholder_name,Profile used no employer for an independent open-source project,
+org-159669d20ffe1411,Remote,Self-employed,Self-employed,category_normalization,Generic remote-work label predates the Remote company and describes independent work,
+org-40167509d393f8d1,Self-Employed,Self-employed,Self-employed,same_entity,Capitalization variant,
+org-45595550b2a00d36,Предприниматель,Self-employed,Self-employed,translated_name,Russian label,
+org-62e003bd6816f01e,Фриланс,Self-employed,Self-employed,translated_name,Russian independent-work label,
+org-0355b45213a5ddfe,Senimdi Kurylys LLP (Bechtel-Enka JV),Senimdi Kurylys (Bechtel-Enka JV),Senimdi Kurylys,legal_form_variant,Legal-form cleanup,
+org-8d2823660992ad01,Şifa Üniversitesi,Sifa University,Sifa University,translated_name,Turkish university name,
+org-8bf943769104cc45,Silleno LLP,Silleno,Silleno,same_entity,Legal-form variant,
+org-c6f1304d5207aa1d,Silleno​ LLP,Silleno,Silleno,same_entity,Zero-width character and legal-form variant,
+org-752808c71f0605fd,Skolkovo Institute of Science and Technology,Skoltech,Skoltech,same_entity,Official name,
+org-da3b87227b73983c,Schlumberger,SLB,SLB,same_entity,Former brand before the SLB rebrand,
+org-310d86d1003d98b2,Smart Remont Ltd,Smart Remont,Smart Remont,legal_form_variant,Legal-form cleanup,
+org-3d5d482493c02933,SmarTestPrep Ltd,SmarTestPrep,SmarTestPrep,legal_form_variant,Legal-form cleanup,
+org-d1fdeb4b7b8d301e,Snap Inc,Snap,Snap,same_entity,Legal-form punctuation variant,
+org-09615f7d377d2232,Snap Inc.,Snap,Snap,same_entity,Legal-form punctuation variant,
+org-38ccb096a9b42841,Societe Generale,Société Générale,Société Générale,diacritic_variant,Official French brand spelling,https://www.societegenerale.com/
+org-74d36916c93c9b68,Solai Inc,Solai,Solai,same_entity,Legal-form punctuation variant,
+org-5eb865983eb37f65,Solai Inc.,Solai,Solai,same_entity,Legal-form punctuation variant,
+org-05141f082d391251,Sovenok olympiad group for high-school students,Sovenok Olympiad Group,Sovenok Olympiad Group,descriptor_cleanup,Quotation and descriptor cleanup,
+org-e2cb0dc7e38e579f,SESC NSU — ( СУНЦ НГУ \ ФМШ ),Specialized Educational Scientific Center of Novosibirsk State University (SESC NSU),SESC NSU,multilingual_name,Bilingual school label normalized to its expanded English name,https://sesc.nsu.ru/
+org-6e88701618d8d127,Sprint Squads - Top 1% of software engineers and data scientists of Central Asia,Sprint Squads,Sprint Squads,descriptor_cleanup,Marketing descriptor cleanup,
+org-c037e9b8e6e3ad64,SPS Inc,SPS,SPS,legal_form_variant,Legal-form cleanup,
+org-6a5212c48ab6600f,Squarepoint,Squarepoint Capital,Squarepoint Capital,same_entity,Short brand name,
+org-3cd4a533172c690c,Caspimunaygas Scientific Research Institute,SRDI Caspiymunaygas,SRDI Caspiymunaygas,same_entity,Expanded institute-name variant,
+org-a77ad1155acde3fc,"SRDI ""Caspiymunaygas"" JSC",SRDI Caspiymunaygas,SRDI Caspiymunaygas,same_entity,Quoted legal-name variant,
+org-af701ac9a56e6d60,SRDI Caspiymunaygas JSC,SRDI Caspiymunaygas,SRDI Caspiymunaygas,same_entity,Legal-form variant,
+org-bad63eca896b1731,JSC “Standard Investment Company”,Standard Investment Company,Standard Investment Company,legal_form_variant,Legal-form and quotation cleanup,
+org-1fb70fb8583b9894,Stonelab,StoneLab,StoneLab,same_entity,Capitalization variant,
+org-a10afc3d14b10776,StoneLab Inc,StoneLab,StoneLab,same_entity,Legal-form variant,
+org-b19e9d200b86531c,SDU,Suleyman Demirel University (SDU),SDU,same_entity,Acronym,
+org-b9d77e02f9a202dc,SDU Technopark,Suleyman Demirel University (SDU),SDU,parent_organization,University technology park,https://sdu.edu.kz/
+org-3735c9c6471606f2,SDU University,Suleyman Demirel University (SDU),SDU,same_entity,Brand variant,
+org-9f1b5a8821d486ca,Suleyman Demiral University,Suleyman Demirel University (SDU),SDU,same_entity,Typo variant,
+org-9595ff2914bacbb3,Suleyman Demirel University,Suleyman Demirel University (SDU),SDU,same_entity,Official name without acronym,
+org-c39fd9226404a9f9,"Suleyman Demirel University, Kazakhstan",Suleyman Demirel University (SDU),SDU,same_entity,Location suffix,
+org-3da6de126f6ec3cf,Summer STEM Institute (SSI),Summer STEM Institute,Summer STEM Institute,same_entity,Acronym suffix,
+org-53e45136cf793e94,JSC «Tau-Кen Samruk» National Mining Company,Tau-Ken Samruk,Tau-Ken Samruk,legal_form_variant,Legal-form and descriptor cleanup,
+org-bd54d2278299d3dd,Tavia Acquisition Corp,Tavia Acquisition,Tavia Acquisition,legal_form_variant,Legal-form cleanup,
+org-7b11447b2e365b80,Тенгизшевройл,Tengizchevroil,Tengizchevroil,multilingual_name,Russian company name,
+org-bb0d7ba862021016,"TETmedical, Inc",TETmedical,TETmedical,same_entity,Legal-form punctuation variant,
+org-e5c2ee751340a694,"TETmedical, Inc.",TETmedical,TETmedical,same_entity,Legal-form punctuation variant,
+org-a3bcd420ed9593ff,CUHK,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Common acronym,
+org-98e0a0fac9911b18,The Chinese University of Hong Kong,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Official name without acronym,
+org-24661dee676232e6,The London School of Economics and Political Science (LSE),The London School of Economics and Political Science (LSE),LSE,same_entity,Canonical display declaration,https://www.lse.ac.uk/
+org-c33096e3e18ca8d6,The Ohio State University,The Ohio State University,Ohio State University,same_entity,Canonical short display,https://www.osu.edu/
+org-d7d98098735d63eb,The University of British Columbia,The University of British Columbia,UBC,same_entity,Canonical display declaration,https://www.ubc.ca/
+org-58b6767200ea5798,ThinkCol Limited,ThinkCol,ThinkCol,legal_form_variant,Legal-form cleanup,
+org-e1bee67ecf214e73,Tulane University School of Public Health and Tropical Medicine,Tulane University,Tulane University,parent_organization,University school,
+org-68290a793776a65b,Typeser Inc,Typeser,Typeser,legal_form_variant,Legal-form cleanup,
+org-b3279d64f8603598,Statistical AI Lab,Ulsan National Institute of Science and Technology (UNIST),UNIST,parent_organization,Short name of the UNIST Statistical Artificial Intelligence Lab,https://news.unist.ac.kr/unist-wins-first-place-in-digital-curling-tournament/
+org-c796b5a677291eec,Statistical Artificial Intelligence Laboratory (SAIL),Ulsan National Institute of Science and Technology (UNIST),UNIST,parent_organization,Research laboratory at UNIST,https://news.unist.ac.kr/unist-wins-first-place-in-digital-curling-tournament/
+org-49ace9e90cb4d2e0,Ulsan National Insitute of Science and Technology,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Typo variant,
+org-674ecb4012a6af22,Ulsan National Institute of Science and Technology,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Official name without acronym,
+org-dd517a0bd8e8c29f,UNIST,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Acronym,
+org-2a98cad91d505c9f,UNIST Discrete Math,Ulsan National Institute of Science and Technology (UNIST),UNIST,parent_organization,University research group,
+org-25e6913c5ecdf069,울산과학기술원,Ulsan National Institute of Science and Technology (UNIST),UNIST,multilingual_name,Korean name,
+org-6347733801b598d1,NDA,Undisclosed employer,Undisclosed employer,same_entity,Disclosure-status abbreviation,
+org-9a69bb7d0468fa5c,Some Company,Undisclosed employer,Undisclosed employer,placeholder_name,Public profile uses a placeholder rather than disclosing the employer,
+org-f107d72b84f76796,Hausdorff Center for Mathematics,University of Bonn,University of Bonn,parent_organization,University of Bonn cluster of excellence,https://www.uni-bonn.de/en/university/working-at-the-university/job-opportunities/w2-professorships-bonn-junior-fellows
+org-28098cf8b37d7de1,Rheinische Friedrich-Wilhelms-Universität Bonn,University of Bonn,University of Bonn,translated_name,Official German legal name,
+org-32bf92cfcd18cadb,The University of Bonn,University of Bonn,University of Bonn,same_entity,Leading-article variant,
+org-696eb8933d5e5f04,Berkeley Artificial Intelligence Research,"University of California, Berkeley",UC Berkeley,parent_organization,University research laboratory,
+org-7c19571a21133bd7,UC Berkeley,"University of California, Berkeley",UC Berkeley,same_entity,Common short name,
+org-ff661e5dceb8bb46,UC Berkeley Electrical Engineering & Computer Sciences (EECS),"University of California, Berkeley",UC Berkeley,parent_organization,University department,
+org-8b3c92efde945da5,University of California Berkeley,"University of California, Berkeley",UC Berkeley,same_entity,Punctuation variant,
+org-6abcfaa66547e033,University of California Davis,"University of California, Davis",UC Davis,same_entity,Punctuation variant,
+org-ee177673a62c1364,Institute for Pure and Applied Mathematics,"University of California, Los Angeles (UCLA)",UCLA,parent_organization,University institute,
+org-e5e362fbd63a0e6c,"Institute for Pure and Applied Mathematics, UCLA","University of California, Los Angeles (UCLA)",UCLA,parent_organization,University institute,
+org-42693b41b5ac4af5,"University of California, Los Angeles","University of California, Los Angeles (UCLA)",UCLA,same_entity,Official name without acronym,
+org-25761a19847d1b03,Cambridge University,University of Cambridge,University of Cambridge,same_entity,Informal name,
+org-c5ee3f17a4496870,Harris School of Public Policy at the University of Chicago,University of Chicago,University of Chicago,parent_organization,University school,
+org-2fdc3189c3f0c4b6,Debreceni Egyetem,University of Debrecen,University of Debrecen,multilingual_name,Hungarian name,
+org-2aabf202eceac140,HKU,University of Hong Kong,University of Hong Kong,same_entity,Common acronym,
+org-f676743426ce5ad1,The University of Hong Kong,University of Hong Kong,University of Hong Kong,same_entity,Leading-article variant,
+org-4c4666c3ee495e03,University of Hong Kong,University of Hong Kong,University of Hong Kong,same_entity,Official name,
+org-3349bccfd00dafda,University of Lille 1 Sciences and Technology,University of Lille,University of Lille,former_name,Lille 1 merged into the University of Lille in 2018,https://www.univ-lille.fr/universite/fiche-didentite
+org-9ec5ce29e5ca2ffa,University of London International Programmes,University of London,University of London,former_name,Public-facing program name changed to University of London,https://www.london.ac.uk/sites/default/files/leaflets/rebrand-leaflet-2018.pdf
+org-bb4f16196171fb6b,Alliance Manchester Business School,University of Manchester,University of Manchester,parent_organization,University business school,
+org-25e4f9c45791da91,The University of Manchester,University of Manchester,University of Manchester,same_entity,Leading-article variant,
+org-f8fbe44f767b5174,University of Michigan - Stephen M. Ross School of Business,University of Michigan,University of Michigan,parent_organization,University school,
+org-74246aebff0a91e9,University of Minnesota-Twin Cities,University of Minnesota,University of Minnesota,same_entity,Campus-name variant,
+org-136d09e3cdcd0ac1,UNC Chapel Hill,University of North Carolina at Chapel Hill,UNC Chapel Hill,same_entity,Common campus name,
+org-cd6b762ba622be87,Università degli Studi di Padova (UNIPD) / University of Padua,University of Padua,University of Padua,multilingual_name,Bilingual source label,
+org-db998b25964d1687,Università di Padova,University of Padua,University of Padua,multilingual_name,Italian short name,
+org-d9419f61f5b751fd,The University of Texas at Brownsville,University of Texas at Brownsville,University of Texas at Brownsville,same_entity,Leading-article variant,
+org-51c8c68f865c77ee,Atyrau Oil&Gas Institute,Utebayev Atyrau Oil and Gas University,Atyrau Oil and Gas University,former_name,Former institute name for the current university,
+org-a2c85bdd610298c6,VACANTE LLP,VACANTE,VACANTE,same_entity,Legal-form variant,
+org-3e21b8dab14d458d,vacante.kz,VACANTE,VACANTE,same_entity,Domain-style brand variant,
+org-5400a7902abc7402,Wand,Wand AI,Wand AI,same_entity,Short public brand used by Wand AI,https://wand.ai/
+org-7173b0ca068d2f0e,Wand.ai,Wand AI,Wand AI,same_entity,Domain-style brand variant,https://wand.ai/
+org-4231a992ea3e313f,Washington University School of Medicine in St. Louis,Washington University in St. Louis,Washington University in St. Louis,parent_organization,University school,
+org-0695481704fca89c,元智大學,Yuan Ze University,Yuan Ze University,multilingual_name,Official Chinese name,
+org-d442a93279b665aa,Ecole Nationale Supérieure de Géologie,École Nationale Supérieure de Géologie (ENSG),ENSG,diacritic_variant,ASCII-leading source name normalized to the official French name,https://ensg.univ-lorraine.fr/lecole/presentation/
+org-312edc848a9a268e,École Nationale Supérieure de Géologie,École Nationale Supérieure de Géologie (ENSG),ENSG,same_entity,Official name without acronym,https://ensg.univ-lorraine.fr/lecole/presentation/
+org-c25970605d44df89,Ecole normale superieure,École normale supérieure (ENS),ENS,transliterated_name,ASCII spelling,
+org-7f6577b9284ce292,ENS,École normale supérieure (ENS),ENS,same_entity,Common acronym,
+org-19fec30719cc62df,École normale supérieure,École normale supérieure (ENS),ENS,same_entity,Official name without acronym,
+org-037ebf891e920293,Ecole Polytechnique,École Polytechnique,École Polytechnique,transliterated_name,ASCII spelling,
+org-3586da23ff91eb54,École Polytechnique,École Polytechnique,École Polytechnique,same_entity,Official name,

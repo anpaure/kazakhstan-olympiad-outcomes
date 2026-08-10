@@ -38,6 +38,14 @@ class OrganizationNormalizationTest(unittest.TestCase):
             canonicalize_organization("University of California, Berkeley"),
             "University of California, Berkeley",
         )
+        self.assertEqual(
+            canonicalize_organization("University of Pennsylvania"),
+            "University of Pennsylvania",
+        )
+        self.assertEqual(
+            canonicalize_organization("Pennsylvania State University"),
+            "Pennsylvania State University",
+        )
 
     def test_aliases_remain_available_for_search(self):
         aliases = organization_aliases_for("Khan Group")
@@ -63,6 +71,12 @@ class OrganizationNormalizationTest(unittest.TestCase):
             "Kcell АО": "Kcell",
             "AO Home Credit Bank Kazakhstan": "Home Credit Bank",
             "Bloomberg LP": "Bloomberg",
+            "Kumtor Operating Company": "Kumtor Gold Company",
+            "Kaspi Bank JSC": "Kaspi.kz",
+            "Wand": "Wand AI",
+            "Alem": "Alem Research",
+            "Centerra Gold Inc": "Centerra Gold",
+            "Platonus, LLP": "Platonus",
         }
         for value, canonical in expected.items():
             with self.subTest(value=value):
@@ -86,6 +100,19 @@ class OrganizationNormalizationTest(unittest.TestCase):
                 "University of Chicago"
             ),
             "Mechanobiology Institute": "National University of Singapore",
+            "OIYaI": "Joint Institute for Nuclear Research",
+            "Computing Center of RAS": "Dorodnitsyn Computing Centre",
+            "SoftSec Lab": "Korea Advanced Institute of Science and Technology (KAIST)",
+            "Statistical AI Lab": (
+                "Ulsan National Institute of Science and Technology (UNIST)"
+            ),
+            "Hausdorff Center for Mathematics": "University of Bonn",
+            "Tokyo Institute of Technology": "Institute of Science Tokyo",
+            "University of Lille 1 Sciences and Technology": "University of Lille",
+            "University of London International Programmes": "University of London",
+            "Thompson Lab": "Princeton University",
+            "Kazakh-Turkish High-School": "Kazakh-Turkish High School",
+            "NURORDA High School": "Nurorda High School",
         }
         for value, canonical in expected.items():
             with self.subTest(value=value):
@@ -96,6 +123,20 @@ class OrganizationNormalizationTest(unittest.TestCase):
         self.assertTrue(aliases)
         self.assertTrue(displays)
         self.assertTrue(reverse)
+
+    def test_reviewed_display_names_are_compact(self):
+        self.assertEqual(
+            display_organization("Institute of Theoretical and Applied Mechanics"),
+            "ITAM SB RAS",
+        )
+        self.assertEqual(
+            display_organization(
+                "National Research Nuclear University MEPhI "
+                "(Moscow Engineering Physics Institute)"
+            ),
+            "MEPhI",
+        )
+        self.assertEqual(display_organization("The University of British Columbia"), "UBC")
 
     def test_audit_key_collapses_only_low_risk_surface_variants(self):
         self.assertEqual(

@@ -96,6 +96,7 @@ AUDIT_ORGANIZATION_ALIAS_FIELDS = [
     "display_name",
     "merge_type",
     "rationale",
+    "evidence_url",
 ]
 
 
@@ -945,7 +946,12 @@ def build_audit_organization_aliases(
                 "organization_alias_id": stable_id(
                     "org", row.get("alias", ""), row.get("canonical_name", "")
                 ),
-                **row,
+                "alias": clean_text(row.get("alias")),
+                "canonical_name": clean_text(row.get("canonical_name")),
+                "display_name": clean_text(row.get("display_name")),
+                "merge_type": clean_text(row.get("merge_type")),
+                "rationale": clean_text(row.get("rationale")),
+                "evidence_url": clean_text(row.get("evidence_url")),
             }
             for row in aliases
         ],

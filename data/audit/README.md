@@ -15,8 +15,9 @@ source URL used for review.
    discarded matches.
 6. Filter `affiliations.csv` for sourced past jobs, schools, and the selected
    alma maters; filter `locations.csv` for the sourced outcome-country claim.
-7. Use `organization_aliases.csv` to audit every canonical-name merge and its
-   rationale; the original source wording remains in `evidence_text`.
+7. Use `organization_aliases.csv` to audit every canonical-name merge, its
+   rationale, and the direct `evidence_url` for nontrivial entity relationships;
+   the original source wording remains in `evidence_text`.
 8. Use `organization_sectors.csv` to audit organization type and sector assignments.
 9. Use `destination_reviews.csv` to inspect any source-level correction that filled or superseded the earlier displayed destination.
 
@@ -34,7 +35,9 @@ source URL used for review.
   usually follows public profile/role location, with reviewed overrides for
   stale profile headers; it is not legal residence or citizenship.
 - `organization_aliases.csv`: reviewed alias-to-canonical mappings for legal
-  names, acronyms, multilingual labels, campuses, and parent organizations.
+  names, acronyms, multilingual labels, campuses, and parent organizations;
+  source-backed parent, former-name, and successor mappings include a direct
+  `evidence_url`.
 - `organization_sectors.csv`: reviewed type and sector for every displayed
   non-educational destination.
 - `destination_reviews.csv`: reviewed final organization, role, dates, direct

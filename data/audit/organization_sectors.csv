@@ -3,7 +3,6 @@ sector-88a78b3d3bd39f9b,Abbott,company,Healthcare & Life Sciences,Reviewed core 
 sector-3dbd9e2bae24481c,Adriel,company,Technology & Software,Reviewed core activity is advertising software and analytics.
 sector-396f519e0425ac52,AGP Holding,company,Industrial & Manufacturing,Reviewed core activity is industrial construction and oilfield services.
 sector-e6d1865215f76ba3,Agregator,company,Independent & Other,Reviewed profile identifies a private owner-operated business without a narrower public classification.
-sector-c98a3c9f7b42da5d,AIFC Green Finance Centre,nonprofit,Finance & Insurance,Reviewed core activity is green and sustainable finance.
 sector-96c934e1bce4a135,Alem Entertainment,company,Consumer & Media,Reviewed core activity is entertainment and media.
 sector-d8105efc2a529c85,AlliedYoung FBC,company,Consumer & Media,Reviewed core activity is beverage distribution.
 sector-88cfdd827fa04845,Altbridge,company,Technology & Software,Reviewed core activity is AI-driven data and investment software.
@@ -12,6 +11,7 @@ sector-49d2dc07acd9eff5,Amazon,company,Technology & Software,Reviewed core activ
 sector-c65b60e850ea8f26,AnyMind Group,company,Technology & Software,Reviewed core activity is marketing and commerce technology.
 sector-3e908df5beadcc80,Armeta,company,Technology & Software,Reviewed core activity is artificial intelligence software.
 sector-e6226c677ef67b03,Association for the Conservation of Biodiversity of Kazakhstan,nonprofit,Environment & Nonprofit,Reviewed core activity is biodiversity conservation.
+sector-f4a81c7d5e7063e1,Astana International Financial Centre,government,Finance & Insurance,Reviewed organization is Kazakhstan's statutory international financial centre and includes the Green Finance Centre destination.
 sector-0bc4da79a9b59730,Augment Code,company,Technology & Software,Reviewed core activity is AI software development tooling.
 sector-59d466820d86172a,Axiom,company,Technology & Software,Reviewed core activity is blockchain and zero-knowledge software.
 sector-095299c1224222c8,Ayar Labs,company,Technology & Software,Reviewed core activity is optical semiconductor interconnect technology.
@@ -62,7 +62,7 @@ sector-2edd22eb111b268b,HUMAIN,company,Technology & Software,Reviewed core activ
 sector-fe00edd8f79b8d74,Impala Partners,company,Finance & Insurance,Reviewed core activity is investment management.
 sector-5505720f19964d65,Insilico Medicine,company,Healthcare & Life Sciences,Reviewed core activity is AI-enabled drug discovery.
 sector-5e28929224141843,Intel Corporation,company,Technology & Software,Reviewed core activity is semiconductor technology.
-sector-a31f6df3ca0107e4,ios_flutter,company,Technology & Software,Reviewed core activity is mobile software development.
+sector-b288c35eeecfae63,iOS/Flutter,company,Technology & Software,Reviewed core activity is mobile software development.
 sector-79bab30d3f57461d,Jane Street,company,Finance & Insurance,Reviewed core activity is quantitative trading.
 sector-6e6ce675ecaea0f9,Jump Trading,company,Finance & Insurance,Reviewed core activity is quantitative trading.
 sector-ff6edff87dd81b9e,Kashgari Dictionary,company,Education & Research,Reviewed core activity is language-learning technology.

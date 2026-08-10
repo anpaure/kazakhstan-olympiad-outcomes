@@ -63,9 +63,9 @@ def selected_alma_maters(
 
 def alma_degree_rank(role: object) -> int:
     value = str(role or "").casefold()
-    if re.search(r"\b(?:associate|bachelor|bsc|bs\b|beng|undergraduate|medical student)", value):
+    if re.search(r"\b(?:associate|bachelor|bsc|bs\b|beng|undergraduate|medical student|бакалавр)", value):
         return 1
-    if re.search(r"\b(?:master|msc|ms\b|meng|mba|mph)", value):
+    if re.search(r"\b(?:master|msc|ms\b|meng|mba|mph|specialist|магистр|специалист)", value):
         return 2
     if re.search(r"\b(?:ph\.?d|doctor|graduate student)", value):
         return 3

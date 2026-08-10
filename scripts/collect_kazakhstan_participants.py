@@ -498,7 +498,10 @@ def parse_ioi(html: str, source_url: str) -> list[Participant]:
                 award=trailing_values[-1] if trailing_values else "",
                 rank=trailing_values[-3] if len(trailing_values) >= 3 else "",
                 score=trailing_values[-5] if len(trailing_values) >= 5 else "",
-                person_url=urljoin(source_url, person_link["href"]),
+                person_url=urljoin(
+                    source_url,
+                    f"/{str(person_link['href']).lstrip('/')}",
+                ),
                 source_url=source_url,
             )
         )

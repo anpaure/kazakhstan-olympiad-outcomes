@@ -1,9 +1,25 @@
 import unittest
 
-from scripts.build_audit_bundle import build_bundle
+from scripts.build_audit_bundle import build_audit_organization_aliases, build_bundle
 
 
 class AuditBundleTest(unittest.TestCase):
+    def test_organization_alias_audit_preserves_normalization_source(self):
+        rows = build_audit_organization_aliases(
+            [
+                {
+                    "alias": "Example Lab",
+                    "canonical_name": "Example University",
+                    "display_name": "Example University",
+                    "merge_type": "parent_organization",
+                    "rationale": "University laboratory",
+                    "evidence_url": "https://example.test/lab",
+                }
+            ]
+        )
+
+        self.assertEqual(rows[0]["evidence_url"], "https://example.test/lab")
+
     def test_final_outcome_traces_to_sources_and_rejection_stays_rejected(self):
         person_id = "kaz-test"
         participants = [

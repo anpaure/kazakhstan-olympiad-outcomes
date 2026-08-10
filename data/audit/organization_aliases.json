@@ -1,11 +1,30 @@
 [
   {
+    "organization_alias_id": "org-86e77b97e1c7305a",
+    "alias": "3TECH Engineering Limited",
+    "canonical_name": "3TECH Engineering",
+    "display_name": "3TECH Engineering",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
     "organization_alias_id": "org-6994e06341ff8092",
     "alias": "Казахский национальный педагогический университет имени Абая",
     "canonical_name": "Abai Kazakh National Pedagogical University",
     "display_name": "Abai Kazakh National Pedagogical University",
     "merge_type": "multilingual_name",
-    "rationale": "Russian university name"
+    "rationale": "Russian university name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-362f7e070f06da87",
+    "alias": "Age of Learning, Inc. / ABCmouse.com",
+    "canonical_name": "Age of Learning",
+    "display_name": "Age of Learning",
+    "merge_type": "parent_organization",
+    "rationale": "Product and legal-form suffix cleanup",
+    "evidence_url": "https://www.ageoflearning.com/"
   },
   {
     "organization_alias_id": "org-769df70c1898529a",
@@ -13,7 +32,17 @@
     "canonical_name": "AGP Holding",
     "display_name": "AGP Holding",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-0c7dc004aec88e97",
+    "alias": "AIJKO GmbH",
+    "canonical_name": "AIJKO",
+    "display_name": "AIJKO",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-4c3f71cd5cb3ea1b",
@@ -21,7 +50,8 @@
     "canonical_name": "Airlangga University",
     "display_name": "Airlangga University",
     "merge_type": "translated_name",
-    "rationale": "Official English name"
+    "rationale": "Official English name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-38dfeae5b20d7ca2",
@@ -29,7 +59,17 @@
     "canonical_name": "Akhmet Yassawi International Kazakh-Turkish University",
     "display_name": "Akhmet Yassawi University",
     "merge_type": "same_entity",
-    "rationale": "Short university name"
+    "rationale": "Short university name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-9e9f9fce00e3d354",
+    "alias": "«Aksaigasservice» JSC",
+    "canonical_name": "Aksaigasservice",
+    "display_name": "Aksaigasservice",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form and quotation cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-d387e298d8921ade",
@@ -37,7 +77,8 @@
     "canonical_name": "Al-Farabi Kazakh National University",
     "display_name": "Al-Farabi KazNU",
     "merge_type": "transliterated_name",
-    "rationale": "Transliterated Russian name"
+    "rationale": "Transliterated Russian name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-52d7d7658cebefe4",
@@ -45,7 +86,8 @@
     "canonical_name": "Al-Farabi Kazakh National University",
     "display_name": "Al-Farabi KazNU",
     "merge_type": "same_entity",
-    "rationale": "Common short name"
+    "rationale": "Common short name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-76aa2ced5655708d",
@@ -53,7 +95,17 @@
     "canonical_name": "Al-Farabi Kazakh National University",
     "display_name": "Al-Farabi KazNU",
     "merge_type": "same_entity",
-    "rationale": "Translated official name"
+    "rationale": "Translated official name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-d7a9ae1cca0c1a02",
+    "alias": "Казахский национальный университет имени аль-Фараби",
+    "canonical_name": "Al-Farabi Kazakh National University",
+    "display_name": "Al-Farabi KazNU",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian full name without parenthetical acronym",
+    "evidence_url": "https://www.kaznu.kz/en"
   },
   {
     "organization_alias_id": "org-4172ef0c9e401a9b",
@@ -61,7 +113,17 @@
     "canonical_name": "Al-Farabi Kazakh National University",
     "display_name": "Al-Farabi KazNU",
     "merge_type": "multilingual_name",
-    "rationale": "Russian name"
+    "rationale": "Russian name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-9d58183a60569cb2",
+    "alias": "КазНУ им. аль-Фараби",
+    "canonical_name": "Al-Farabi Kazakh National University",
+    "display_name": "Al-Farabi KazNU",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian abbreviated name",
+    "evidence_url": "https://www.kaznu.kz/en"
   },
   {
     "organization_alias_id": "org-122d12e11e1d6ede",
@@ -69,7 +131,26 @@
     "canonical_name": "Ala-Too International University",
     "display_name": "Ala-Too International University",
     "merge_type": "same_entity",
-    "rationale": "English brand spelling variant"
+    "rationale": "English brand spelling variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-11ef96e8df9a2269",
+    "alias": "Alan Tech LLC",
+    "canonical_name": "Alan Tech",
+    "display_name": "Alan Tech",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-e2b8b32405afc2be",
+    "alias": "Alanza LLC",
+    "canonical_name": "Alanza",
+    "display_name": "Alanza",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-0978a3b8e6680bd8",
@@ -77,7 +158,8 @@
     "canonical_name": "Alem Entertainment",
     "display_name": "Alem Entertainment",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-ed4f7ac0686a535a",
@@ -85,7 +167,35 @@
     "canonical_name": "Alem Entertainment",
     "display_name": "Alem Entertainment",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-15e6e66909102f96",
+    "alias": "Alem",
+    "canonical_name": "Alem Research",
+    "display_name": "Alem Research",
+    "merge_type": "same_entity",
+    "rationale": "Truncated employer label duplicated with the full name on one profile",
+    "evidence_url": "https://www.goszakup.gov.kz/ru/registry/show_supplier/69217"
+  },
+  {
+    "organization_alias_id": "org-ece38bb8275d3a29",
+    "alias": "Alem Research LLP",
+    "canonical_name": "Alem Research",
+    "display_name": "Alem Research",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant",
+    "evidence_url": "https://www.goszakup.gov.kz/ru/registry/show_supplier/69217"
+  },
+  {
+    "organization_alias_id": "org-25122324c972a9c4",
+    "alias": "Alemcard LLP",
+    "canonical_name": "Alemcard",
+    "display_name": "Alemcard",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-4126e79821602202",
@@ -93,7 +203,8 @@
     "canonical_name": "AlliedYoung FBC",
     "display_name": "AlliedYoung FBC",
     "merge_type": "multilingual_name",
-    "rationale": "English and Korean combined label"
+    "rationale": "English and Korean combined label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-fe8b2174c8b7d1d4",
@@ -101,7 +212,8 @@
     "canonical_name": "Alma Mater Studiorum – Università di Bologna",
     "display_name": "University of Bologna",
     "merge_type": "punctuation_variant",
-    "rationale": "ASCII-hyphen variant"
+    "rationale": "ASCII-hyphen variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-20136c97de560451",
@@ -109,7 +221,8 @@
     "canonical_name": "Alma Mater Studiorum – Università di Bologna",
     "display_name": "University of Bologna",
     "merge_type": "same_entity",
-    "rationale": "Official university name and English display declaration"
+    "rationale": "Official university name and English display declaration",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-2fb375128942664f",
@@ -117,7 +230,8 @@
     "canonical_name": "Alma Mater Studiorum – Università di Bologna",
     "display_name": "University of Bologna",
     "merge_type": "translated_name",
-    "rationale": "English name"
+    "rationale": "English name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-d01c58a6e1af101f",
@@ -125,7 +239,8 @@
     "canonical_name": "Alma Mater Studiorum – Università di Bologna",
     "display_name": "University of Bologna",
     "merge_type": "same_entity",
-    "rationale": "Short Italian name"
+    "rationale": "Short Italian name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-b6ba66535effce0a",
@@ -133,7 +248,8 @@
     "canonical_name": "Amazon",
     "display_name": "Amazon",
     "merge_type": "parent_organization",
-    "rationale": "Amazon business unit"
+    "rationale": "Amazon business unit",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-91c37305bd0a28d6",
@@ -141,7 +257,8 @@
     "canonical_name": "Amazon",
     "display_name": "Amazon",
     "merge_type": "parent_organization",
-    "rationale": "AWS is an Amazon business"
+    "rationale": "AWS is an Amazon business",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-551c505dc4e7689f",
@@ -149,7 +266,8 @@
     "canonical_name": "Amazon",
     "display_name": "Amazon",
     "merge_type": "parent_organization",
-    "rationale": "AWS is an Amazon business"
+    "rationale": "AWS is an Amazon business",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a73e40fdb639b67f",
@@ -157,7 +275,8 @@
     "canonical_name": "Amazon",
     "display_name": "Amazon",
     "merge_type": "same_entity",
-    "rationale": "Corporate name variant"
+    "rationale": "Corporate name variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-f36d9115b6482aba",
@@ -165,7 +284,44 @@
     "canonical_name": "Amazon",
     "display_name": "Amazon",
     "merge_type": "parent_organization",
-    "rationale": "Amazon research unit"
+    "rationale": "Amazon research unit",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-798838c550dd721d",
+    "alias": "Ames Laboratory",
+    "canonical_name": "Ames National Laboratory",
+    "display_name": "Ames National Laboratory",
+    "merge_type": "former_name",
+    "rationale": "Former laboratory name",
+    "evidence_url": "https://www.ameslab.gov/news/ames-laboratory-is-now-ames-national-laboratory"
+  },
+  {
+    "organization_alias_id": "org-ceb4f94e56442676",
+    "alias": "Ames Laboratory / Iowa State University",
+    "canonical_name": "Ames National Laboratory",
+    "display_name": "Ames National Laboratory",
+    "merge_type": "former_name",
+    "rationale": "Ames Laboratory adopted its current national-laboratory name in 2022",
+    "evidence_url": "https://www.ameslab.gov/news/ames-laboratory-is-now-ames-national-laboratory"
+  },
+  {
+    "organization_alias_id": "org-69aaba4616d535eb",
+    "alias": "AOE GmbH",
+    "canonical_name": "AOE",
+    "display_name": "AOE",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-ba1a00b612295905",
+    "alias": "aramco",
+    "canonical_name": "Aramco",
+    "display_name": "Aramco",
+    "merge_type": "capitalization_variant",
+    "rationale": "Official brand capitalization",
+    "evidence_url": "https://www.aramco.com/"
   },
   {
     "organization_alias_id": "org-a43e697951b2b961",
@@ -173,7 +329,8 @@
     "canonical_name": "Arizona State University",
     "display_name": "Arizona State University",
     "merge_type": "same_entity",
-    "rationale": "Canonical display declaration"
+    "rationale": "Canonical display declaration",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-98a4bf0760fba898",
@@ -181,7 +338,8 @@
     "canonical_name": "Arizona State University",
     "display_name": "Arizona State University",
     "merge_type": "same_entity",
-    "rationale": "Acronym corroborated by the same person's full affiliation"
+    "rationale": "Acronym corroborated by the same person's full affiliation",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-d13db05f900f5735",
@@ -189,7 +347,8 @@
     "canonical_name": "Asfendiyarov Kazakh National Medical University",
     "display_name": "Asfendiyarov KazNMU",
     "merge_type": "same_entity",
-    "rationale": "Initials variant"
+    "rationale": "Initials variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-b7a4b3e81390978e",
@@ -197,7 +356,35 @@
     "canonical_name": "Astana International Financial Centre",
     "display_name": "AIFC",
     "merge_type": "same_entity",
-    "rationale": "Acronym-first variant"
+    "rationale": "Acronym-first variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-60776ba73f5e1299",
+    "alias": "AIFC Green Finance Centre",
+    "canonical_name": "Astana International Financial Centre",
+    "display_name": "AIFC",
+    "merge_type": "parent_organization",
+    "rationale": "Green Finance Centre is an AIFC subsidiary",
+    "evidence_url": "https://aifc.kz/news/aifc-green-finance-centre-to-open-a-branch-in-bishkek/"
+  },
+  {
+    "organization_alias_id": "org-adc7df264d6a8a56",
+    "alias": "AIFC Green Finance Centre Ltd",
+    "canonical_name": "Astana International Financial Centre",
+    "display_name": "AIFC",
+    "merge_type": "parent_organization",
+    "rationale": "Legal name of the AIFC subsidiary",
+    "evidence_url": "https://aifc.kz/wp-content/uploads/2024/06/aifc_ar2020_eng.pdf"
+  },
+  {
+    "organization_alias_id": "org-749db96589b950d7",
+    "alias": "Atyrau Refinery Llp",
+    "canonical_name": "Atyrau Refinery",
+    "display_name": "Atyrau Refinery",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form and capitalization cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-97b90c3033c30a33",
@@ -205,7 +392,8 @@
     "canonical_name": "Barcelona School of Economics (BSE)",
     "display_name": "Barcelona School of Economics",
     "merge_type": "former_name",
-    "rationale": "University adopted the Barcelona School of Economics brand in 2021"
+    "rationale": "University adopted the Barcelona School of Economics brand in 2021",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-5713ad437c7ca9e4",
@@ -213,7 +401,8 @@
     "canonical_name": "BestYs",
     "display_name": "BestYs",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-4dd7db4104433b78",
@@ -221,7 +410,8 @@
     "canonical_name": "Beyond Curriculum PF",
     "display_name": "Beyond Curriculum",
     "merge_type": "same_entity",
-    "rationale": "Spacing variant"
+    "rationale": "Spacing variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-df70189f42617291",
@@ -229,7 +419,8 @@
     "canonical_name": "Beyond Curriculum PF",
     "display_name": "Beyond Curriculum",
     "merge_type": "name_order",
-    "rationale": "Legal-form word-order variant"
+    "rationale": "Legal-form word-order variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-dd4f02caa6d84ecc",
@@ -237,7 +428,8 @@
     "canonical_name": "BI Group",
     "display_name": "BI Group",
     "merge_type": "same_entity",
-    "rationale": "Descriptor suffix and capitalization variant"
+    "rationale": "Descriptor suffix and capitalization variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-ab03c6c2763324e7",
@@ -245,7 +437,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Campus label"
+    "rationale": "Campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-1b48fcff6103f4f1",
@@ -253,7 +446,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Former KTL campus label"
+    "rationale": "Former KTL campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-1a504dedf2a62d37",
@@ -261,7 +455,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Former KTL campus label"
+    "rationale": "Former KTL campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-beb314d32e580bee",
@@ -269,7 +464,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Former KTL name for an Almaty BIL campus"
+    "rationale": "Former KTL name for an Almaty BIL campus",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-e56295925be3f7c9",
@@ -277,7 +473,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Spacing variant of an Almaty campus in the BIL network"
+    "rationale": "Spacing variant of an Almaty campus in the BIL network",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-14c665d771579972",
@@ -285,7 +482,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Campus label"
+    "rationale": "Campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-e2c055c0aa1293b4",
@@ -293,7 +491,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Campus capitalization variant"
+    "rationale": "Campus capitalization variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-9b4c87c28546ae3b",
@@ -301,7 +500,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Campus label"
+    "rationale": "Campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-56db226ccd5775d9",
@@ -309,7 +509,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Campus label"
+    "rationale": "Campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-3658865abaa0df98",
@@ -317,7 +518,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Network foundation label"
+    "rationale": "Network foundation label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-984e47e8f98eef6e",
@@ -325,7 +527,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Campus label"
+    "rationale": "Campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a3d57bcae75ed36e",
@@ -333,7 +536,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Campus label"
+    "rationale": "Campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-119b615bd71a623e",
@@ -341,7 +545,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Former network name"
+    "rationale": "Former network name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-0b476d027628fae0",
@@ -349,7 +554,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Former network name"
+    "rationale": "Former network name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-1aee4fa84006531a",
@@ -357,7 +563,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Campus label"
+    "rationale": "Campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-9370c72d300cb151",
@@ -365,7 +572,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Campus label"
+    "rationale": "Campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6ef68b58861d38f0",
@@ -373,7 +581,8 @@
     "canonical_name": "Bilim-Innovation Lyceums (BIL)",
     "display_name": "BIL",
     "merge_type": "parent_organization",
-    "rationale": "Campus label"
+    "rationale": "Campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-00bc7566dfb15a28",
@@ -381,7 +590,8 @@
     "canonical_name": "BINUS University",
     "display_name": "BINUS University",
     "merge_type": "parent_organization",
-    "rationale": "International campus label"
+    "rationale": "International campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-1dbac3e9366e676c",
@@ -389,7 +599,8 @@
     "canonical_name": "BIOCAD",
     "display_name": "BIOCAD",
     "merge_type": "same_entity",
-    "rationale": "Location suffix"
+    "rationale": "Location suffix",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-97708d2775819944",
@@ -397,7 +608,8 @@
     "canonical_name": "Bloomberg",
     "display_name": "Bloomberg",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-9a84dc7c01856133",
@@ -405,7 +617,26 @@
     "canonical_name": "Bocconi University",
     "display_name": "Bocconi University",
     "merge_type": "same_entity",
-    "rationale": "Common short name"
+    "rationale": "Common short name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-dfc09aa2831d875f",
+    "alias": "Bocconi AI & Neuroscience Student Association",
+    "canonical_name": "Bocconi University",
+    "display_name": "Bocconi University",
+    "merge_type": "parent_organization",
+    "rationale": "Bocconi student association",
+    "evidence_url": "https://www.unibocconi.it/"
+  },
+  {
+    "organization_alias_id": "org-a23e9062624435ab",
+    "alias": "Bocconi Statistics and Data Science Student Association",
+    "canonical_name": "Bocconi University",
+    "display_name": "Bocconi University",
+    "merge_type": "parent_organization",
+    "rationale": "Bocconi student association",
+    "evidence_url": "https://www.unibocconi.it/"
   },
   {
     "organization_alias_id": "org-42a07b51b552eeca",
@@ -413,7 +644,44 @@
     "canonical_name": "Bocconi University",
     "display_name": "Bocconi University",
     "merge_type": "multilingual_name",
-    "rationale": "Italian name"
+    "rationale": "Italian name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-d12a01eb2e8adaf1",
+    "alias": "Boreskov Institute of catalysis",
+    "canonical_name": "Boreskov Institute of Catalysis",
+    "display_name": "Boreskov Institute of Catalysis",
+    "merge_type": "capitalization_variant",
+    "rationale": "Capitalization correction",
+    "evidence_url": "https://catalysis.ru/"
+  },
+  {
+    "organization_alias_id": "org-94d09c4e0004cd14",
+    "alias": "Boston University School of Medicine",
+    "canonical_name": "Boston University",
+    "display_name": "Boston University",
+    "merge_type": "parent_organization",
+    "rationale": "Former name of a Boston University school",
+    "evidence_url": "https://www.bu.edu/brand/guidelines/editorial-style/schools-colleges-and-departments/"
+  },
+  {
+    "organization_alias_id": "org-c94295522ef9b0f6",
+    "alias": "Chobanian & Avedisian School of Medicine",
+    "canonical_name": "Boston University",
+    "display_name": "Boston University",
+    "merge_type": "parent_organization",
+    "rationale": "Current Boston University medical-school name",
+    "evidence_url": "https://www.bu.edu/brand/guidelines/editorial-style/schools-colleges-and-departments/"
+  },
+  {
+    "organization_alias_id": "org-021c9fe05e7ca038",
+    "alias": "Buzachi Operating LTD",
+    "canonical_name": "Buzachi Operating",
+    "display_name": "Buzachi Operating",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-4b898f87824a7625",
@@ -421,7 +689,8 @@
     "canonical_name": "California Institute of Technology (Caltech)",
     "display_name": "Caltech",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-7a15daf168dd4f66",
@@ -429,7 +698,8 @@
     "canonical_name": "California Institute of Technology (Caltech)",
     "display_name": "Caltech",
     "merge_type": "same_entity",
-    "rationale": "Common short name"
+    "rationale": "Common short name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-e9953f482f174b0e",
@@ -437,7 +707,53 @@
     "canonical_name": "California Institute of Technology (Caltech)",
     "display_name": "Caltech",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory"
+    "rationale": "University laboratory",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-dc49b5d63d8caa8b",
+    "alias": "stoltz group",
+    "canonical_name": "California Institute of Technology (Caltech)",
+    "display_name": "Caltech",
+    "merge_type": "parent_organization",
+    "rationale": "Stoltz research group at Caltech",
+    "evidence_url": "https://www.stoltz.caltech.edu/"
+  },
+  {
+    "organization_alias_id": "org-1cab57cb9a732cb8",
+    "alias": "Stoltz Group",
+    "canonical_name": "California Institute of Technology (Caltech)",
+    "display_name": "Caltech",
+    "merge_type": "parent_organization",
+    "rationale": "Capitalization variant of the Caltech research group",
+    "evidence_url": "https://www.stoltz.caltech.edu/"
+  },
+  {
+    "organization_alias_id": "org-4ed4273aeb9da4a7",
+    "alias": "JSC \"CAUSTIC\"",
+    "canonical_name": "Caustic",
+    "display_name": "Caustic",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form and quotation cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-3b119f8aba13311c",
+    "alias": "Centerra Gold Inc",
+    "canonical_name": "Centerra Gold",
+    "display_name": "Centerra Gold",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-df9f582d5876ca3c",
+    "alias": "Chain Lightning Co., Ltd",
+    "canonical_name": "Chain Lightning",
+    "display_name": "Chain Lightning",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-8d890708c6536167",
@@ -445,7 +761,35 @@
     "canonical_name": "Constructor University",
     "display_name": "Constructor University",
     "merge_type": "former_name",
-    "rationale": "University adopted the Constructor University name in 2022"
+    "rationale": "University adopted the Constructor University name in 2022",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-4c6c6e962ffb1f02",
+    "alias": "Cornami, Inc",
+    "canonical_name": "Cornami",
+    "display_name": "Cornami",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-6665a5d47e019bcb",
+    "alias": "Weill Cornell Medicine",
+    "canonical_name": "Cornell University",
+    "display_name": "Cornell University",
+    "merge_type": "parent_organization",
+    "rationale": "Medical college of Cornell University",
+    "evidence_url": "https://weill.cornell.edu/our-story/history"
+  },
+  {
+    "organization_alias_id": "org-80e37a928356526f",
+    "alias": "Crabel Capital Management, LLC",
+    "canonical_name": "Crabel Capital Management",
+    "display_name": "Crabel Capital Management",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-485be888e14d892a",
@@ -453,7 +797,17 @@
     "canonical_name": "Crazing Lab",
     "display_name": "Crazing Lab",
     "merge_type": "same_entity",
-    "rationale": "Capitalization variant"
+    "rationale": "Capitalization variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-cfc0826f941ea4cb",
+    "alias": "Cummins Inc",
+    "canonical_name": "Cummins",
+    "display_name": "Cummins",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-834432b29d6e6357",
@@ -461,7 +815,35 @@
     "canonical_name": "D. Serikbayev East Kazakhstan Technical University",
     "display_name": "D. Serikbayev EKTU",
     "merge_type": "former_name",
-    "rationale": "Former university name"
+    "rationale": "Former university name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-26f73c83a237a1d0",
+    "alias": "Damu Enterpreneurship Development Fund",
+    "canonical_name": "Damu Entrepreneurship Development Fund",
+    "display_name": "Damu Entrepreneurship Development Fund",
+    "merge_type": "spelling_variant",
+    "rationale": "Quotation and spelling cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-6904ec850a398931",
+    "alias": "Dartmouth Blockchain",
+    "canonical_name": "Dartmouth College",
+    "display_name": "Dartmouth College",
+    "merge_type": "parent_organization",
+    "rationale": "Dartmouth student organization",
+    "evidence_url": "https://home.dartmouth.edu/"
+  },
+  {
+    "organization_alias_id": "org-dd7b0560b0554b9c",
+    "alias": "Dartmouth Formula Racing",
+    "canonical_name": "Dartmouth College",
+    "display_name": "Dartmouth College",
+    "merge_type": "parent_organization",
+    "rationale": "Dartmouth student engineering team",
+    "evidence_url": "https://home.dartmouth.edu/"
   },
   {
     "organization_alias_id": "org-423b34ce0ecb3bac",
@@ -469,7 +851,8 @@
     "canonical_name": "Dartmouth College",
     "display_name": "Dartmouth College",
     "merge_type": "parent_organization",
-    "rationale": "University school"
+    "rationale": "University school",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-7e0da8e2ac499930",
@@ -477,7 +860,8 @@
     "canonical_name": "DashDevs",
     "display_name": "DashDevs",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-0b63819d9976f098",
@@ -485,7 +869,8 @@
     "canonical_name": "Deep Infra",
     "display_name": "Deep Infra",
     "merge_type": "same_entity",
-    "rationale": "Legal-form punctuation variant"
+    "rationale": "Legal-form punctuation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-9760c54ebd9118e5",
@@ -493,7 +878,8 @@
     "canonical_name": "Deep Infra",
     "display_name": "Deep Infra",
     "merge_type": "same_entity",
-    "rationale": "Legal-form punctuation variant"
+    "rationale": "Legal-form punctuation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-1b5d4acf03e08942",
@@ -501,7 +887,44 @@
     "canonical_name": "Deutsches Elektronen-Synchrotron DESY",
     "display_name": "DESY",
     "merge_type": "same_entity",
-    "rationale": "Spelling variant"
+    "rationale": "Spelling variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-a39cef6f0a5b1bad",
+    "alias": "Diamant LLC",
+    "canonical_name": "Diamant",
+    "display_name": "Diamant",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-99a7283ebe896453",
+    "alias": "Computing Center",
+    "canonical_name": "Dorodnitsyn Computing Centre",
+    "display_name": "Dorodnitsyn Computing Centre",
+    "merge_type": "former_name",
+    "rationale": "Short former label for the RAS computing centre",
+    "evidence_url": "https://en.wikipedia.org/wiki/Dorodnitsyn_Computing_Centre"
+  },
+  {
+    "organization_alias_id": "org-4372337743797e95",
+    "alias": "Computing Center of RAS",
+    "canonical_name": "Dorodnitsyn Computing Centre",
+    "display_name": "Dorodnitsyn Computing Centre",
+    "merge_type": "former_name",
+    "rationale": "Former English name of the Dorodnitsyn centre",
+    "evidence_url": "https://en.wikipedia.org/wiki/Dorodnitsyn_Computing_Centre"
+  },
+  {
+    "organization_alias_id": "org-2776e5bd17ffc095",
+    "alias": "Computing Centre of the Russian Academy of Sciences",
+    "canonical_name": "Dorodnitsyn Computing Centre",
+    "display_name": "Dorodnitsyn Computing Centre",
+    "merge_type": "former_name",
+    "rationale": "Expanded former English name",
+    "evidence_url": "https://en.wikipedia.org/wiki/Dorodnitsyn_Computing_Centre"
   },
   {
     "organization_alias_id": "org-6d8604bd143e10c8",
@@ -509,7 +932,8 @@
     "canonical_name": "Embassy of Kazakhstan in the Republic of Korea",
     "display_name": "Embassy of Kazakhstan in South Korea",
     "merge_type": "same_entity",
-    "rationale": "Typo and preposition variant"
+    "rationale": "Typo and preposition variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-9c2e03101c64d9b8",
@@ -517,7 +941,8 @@
     "canonical_name": "EPFL",
     "display_name": "EPFL",
     "merge_type": "same_entity",
-    "rationale": "Acronym with expanded name"
+    "rationale": "Acronym with expanded name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a5f91476e4dc8464",
@@ -525,7 +950,8 @@
     "canonical_name": "ETH Zurich",
     "display_name": "ETH Zurich",
     "merge_type": "same_entity",
-    "rationale": "Diacritic variant"
+    "rationale": "Diacritic variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-0c8ce773ddb67da6",
@@ -533,7 +959,8 @@
     "canonical_name": "European Molecular Biology Laboratory (EMBL)",
     "display_name": "EMBL",
     "merge_type": "acronym_expansion",
-    "rationale": "Official laboratory acronym"
+    "rationale": "Official laboratory acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-4cf2e5cc9aa08d7c",
@@ -541,7 +968,8 @@
     "canonical_name": "European Molecular Biology Laboratory (EMBL)",
     "display_name": "EMBL",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-1c0aa453df7bd2b8",
@@ -549,7 +977,17 @@
     "canonical_name": "Fatih University",
     "display_name": "Fatih University",
     "merge_type": "translated_name",
-    "rationale": "Turkish university name"
+    "rationale": "Turkish university name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-90ce0db8cfbd1ec5",
+    "alias": "Fonte Capital LTD",
+    "canonical_name": "Fonte Capital",
+    "display_name": "Fonte Capital",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-78e7e6b2a4abe9ec",
@@ -557,7 +995,8 @@
     "canonical_name": "Freedom Horizons",
     "display_name": "Freedom Horizons",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-7984cc94992ae4a4",
@@ -565,7 +1004,8 @@
     "canonical_name": "Freedom Telecom",
     "display_name": "Freedom Telecom",
     "merge_type": "same_entity",
-    "rationale": "Country-suffix variant"
+    "rationale": "Country-suffix variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-bf8e0c3d12a281c6",
@@ -573,7 +1013,8 @@
     "canonical_name": "Genie",
     "display_name": "Genie",
     "merge_type": "same_entity",
-    "rationale": "Legal-form punctuation variant"
+    "rationale": "Legal-form punctuation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6e5152ad2301e66c",
@@ -581,7 +1022,17 @@
     "canonical_name": "Genie",
     "display_name": "Genie",
     "merge_type": "same_entity",
-    "rationale": "Legal-form punctuation variant"
+    "rationale": "Legal-form punctuation variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-990c20b7d1cf5e4d",
+    "alias": "The George Washington University",
+    "canonical_name": "George Washington University",
+    "display_name": "George Washington University",
+    "merge_type": "same_entity",
+    "rationale": "Leading-article variant",
+    "evidence_url": "https://www.gwu.edu/"
   },
   {
     "organization_alias_id": "org-4e075c5ced0129a6",
@@ -589,7 +1040,8 @@
     "canonical_name": "Google",
     "display_name": "Google",
     "merge_type": "parent_organization",
-    "rationale": "Google DeepMind is a combined Google AI research unit"
+    "rationale": "Google DeepMind is a combined Google AI research unit",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a4de49f86606d496",
@@ -597,7 +1049,8 @@
     "canonical_name": "Graviton Research Capital",
     "display_name": "Graviton Research Capital",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-afed4f94b89f26b6",
@@ -605,7 +1058,8 @@
     "canonical_name": "Harbour.Space University",
     "display_name": "Harbour.Space",
     "merge_type": "same_entity",
-    "rationale": "Capitalization variant"
+    "rationale": "Capitalization variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-0ee0364b3655ee89",
@@ -613,7 +1067,8 @@
     "canonical_name": "Harbour.Space University",
     "display_name": "Harbour.Space",
     "merge_type": "parent_organization",
-    "rationale": "Campus label"
+    "rationale": "Campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-04b3b88b38bbbc1f",
@@ -621,7 +1076,17 @@
     "canonical_name": "Harvard University",
     "display_name": "Harvard University",
     "merge_type": "parent_organization",
-    "rationale": "University school"
+    "rationale": "University school",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-295c1178439899aa",
+    "alias": "The HEINEKEN Company",
+    "canonical_name": "HEINEKEN",
+    "display_name": "HEINEKEN",
+    "merge_type": "same_entity",
+    "rationale": "Public brand name",
+    "evidence_url": "https://www.theheinekencompany.com/"
   },
   {
     "organization_alias_id": "org-e96c81c30cfc1fbc",
@@ -629,7 +1094,8 @@
     "canonical_name": "HITS",
     "display_name": "HITS",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-368b2a57c29b9763",
@@ -637,7 +1103,8 @@
     "canonical_name": "Home Credit Bank",
     "display_name": "Home Credit Bank",
     "merge_type": "same_entity",
-    "rationale": "Former Kazakhstan legal-name variant"
+    "rationale": "Former Kazakhstan legal-name variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-32b467b6d9dcce11",
@@ -645,7 +1112,8 @@
     "canonical_name": "Home Credit Bank",
     "display_name": "Home Credit Bank",
     "merge_type": "same_entity",
-    "rationale": "Country-suffix variant"
+    "rationale": "Country-suffix variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-fc3808ce27a71ce4",
@@ -653,7 +1121,8 @@
     "canonical_name": "Hong Kong University of Science and Technology (HKUST)",
     "display_name": "HKUST",
     "merge_type": "same_entity",
-    "rationale": "Acronym"
+    "rationale": "Acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-8ebedea815a5cc66",
@@ -661,7 +1130,8 @@
     "canonical_name": "Hong Kong University of Science and Technology (HKUST)",
     "display_name": "HKUST",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-bef7625e65b73e38",
@@ -669,7 +1139,8 @@
     "canonical_name": "Hong Kong University of Science and Technology (HKUST)",
     "display_name": "HKUST",
     "merge_type": "same_entity",
-    "rationale": "Leading-article variant"
+    "rationale": "Leading-article variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-057fe3f78bbc6cc8",
@@ -677,7 +1148,8 @@
     "canonical_name": "Hong Kong University of Science and Technology (HKUST)",
     "display_name": "HKUST",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory"
+    "rationale": "University laboratory",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-88872ef027d1afdd",
@@ -685,7 +1157,8 @@
     "canonical_name": "HSE University",
     "display_name": "HSE University",
     "merge_type": "same_entity",
-    "rationale": "Former English brand"
+    "rationale": "Former English brand",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6e8348fc26daa5bc",
@@ -693,7 +1166,8 @@
     "canonical_name": "HSE University",
     "display_name": "HSE University",
     "merge_type": "multilingual_name",
-    "rationale": "Russian name"
+    "rationale": "Russian name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-974c28baccdc4ac8",
@@ -701,7 +1175,8 @@
     "canonical_name": "Huawei",
     "display_name": "Huawei",
     "merge_type": "parent_organization",
-    "rationale": "Huawei research unit"
+    "rationale": "Huawei research unit",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-f049cf2eecf4aa83",
@@ -709,7 +1184,8 @@
     "canonical_name": "Huawei",
     "display_name": "Huawei",
     "merge_type": "parent_organization",
-    "rationale": "Huawei research unit"
+    "rationale": "Huawei research unit",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-cf143e4123dd376a",
@@ -717,7 +1193,8 @@
     "canonical_name": "Huawei",
     "display_name": "Huawei",
     "merge_type": "parent_organization",
-    "rationale": "Huawei national subsidiary"
+    "rationale": "Huawei national subsidiary",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-05f61f7cdc304453",
@@ -725,7 +1202,8 @@
     "canonical_name": "Huawei",
     "display_name": "Huawei",
     "merge_type": "parent_organization",
-    "rationale": "Huawei research subsidiary"
+    "rationale": "Huawei research subsidiary",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-73a9588126c8c08a",
@@ -733,7 +1211,8 @@
     "canonical_name": "Humboldt University of Berlin",
     "display_name": "Humboldt University of Berlin",
     "merge_type": "translated_name",
-    "rationale": "Official English name"
+    "rationale": "Official English name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-5bd261f8f6cedff2",
@@ -741,7 +1220,17 @@
     "canonical_name": "Imperial College London",
     "display_name": "Imperial College London",
     "merge_type": "same_entity",
-    "rationale": "Common short name"
+    "rationale": "Common short name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-6b2e2a032874f2bd",
+    "alias": "IBS Data Science Group",
+    "canonical_name": "Institute for Basic Science (IBS)",
+    "display_name": "Institute for Basic Science",
+    "merge_type": "parent_organization",
+    "rationale": "Data Science Group is an IBS research group",
+    "evidence_url": "https://www.ibs.re.kr/cop/bbs/BBSMSTR_000000000739/selectBoardArticle.do?nttId=24424"
   },
   {
     "organization_alias_id": "org-710aace3877a7b5b",
@@ -749,7 +1238,8 @@
     "canonical_name": "Institute for Basic Science (IBS)",
     "display_name": "Institute for Basic Science",
     "merge_type": "same_entity",
-    "rationale": "Capitalization variant"
+    "rationale": "Capitalization variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-f51d11acaeca5ec9",
@@ -757,7 +1247,8 @@
     "canonical_name": "Institute of Science and Technology Austria",
     "display_name": "ISTA",
     "merge_type": "same_entity",
-    "rationale": "Canonical display declaration"
+    "rationale": "Canonical display declaration",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-017b74a9f6d28253",
@@ -765,7 +1256,26 @@
     "canonical_name": "Institute of Science and Technology Austria",
     "display_name": "ISTA",
     "merge_type": "same_entity",
-    "rationale": "Former short brand"
+    "rationale": "Former short brand",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-ceb969825feb6323",
+    "alias": "Tokyo Institute of Technology",
+    "canonical_name": "Institute of Science Tokyo",
+    "display_name": "Science Tokyo",
+    "merge_type": "former_name",
+    "rationale": "Tokyo Tech merged into Institute of Science Tokyo in 2024",
+    "evidence_url": "https://www.isct.ac.jp/en/news/fqsr7lxwvnbe"
+  },
+  {
+    "organization_alias_id": "org-c0afc19b4a6f9780",
+    "alias": "Tokyo Tech",
+    "canonical_name": "Institute of Science Tokyo",
+    "display_name": "Science Tokyo",
+    "merge_type": "former_name",
+    "rationale": "Short former brand of Institute of Science Tokyo",
+    "evidence_url": "https://www.isct.ac.jp/en/news/fqsr7lxwvnbe"
   },
   {
     "organization_alias_id": "org-a4b2a20471e060a2",
@@ -773,7 +1283,8 @@
     "canonical_name": "Intel Corporation",
     "display_name": "Intel",
     "merge_type": "parent_organization",
-    "rationale": "Intel research organization"
+    "rationale": "Intel research organization",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6ffbb29e23c15b2d",
@@ -781,7 +1292,8 @@
     "canonical_name": "International Information Technology University (IITU)",
     "display_name": "IITU",
     "merge_type": "same_entity",
-    "rationale": "Location and acronym variant"
+    "rationale": "Location and acronym variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-d04ff6b530c96efd",
@@ -789,7 +1301,8 @@
     "canonical_name": "International Information Technology University (IITU)",
     "display_name": "IITU",
     "merge_type": "same_entity",
-    "rationale": "Acronym"
+    "rationale": "Acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-0ab0b1a7ea174d35",
@@ -797,7 +1310,8 @@
     "canonical_name": "International Information Technology University (IITU)",
     "display_name": "IITU",
     "merge_type": "same_entity",
-    "rationale": "Plural variant"
+    "rationale": "Plural variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-dc03cdcc3853884e",
@@ -805,7 +1319,8 @@
     "canonical_name": "International Information Technology University (IITU)",
     "display_name": "IITU",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-b036db504106c3b5",
@@ -813,15 +1328,35 @@
     "canonical_name": "International Information Technology University (IITU)",
     "display_name": "IITU",
     "merge_type": "same_entity",
-    "rationale": "Short name"
+    "rationale": "Short name",
+    "evidence_url": ""
   },
   {
-    "organization_alias_id": "org-36a0366aa1e97466",
+    "organization_alias_id": "org-e9de831c294a67b2",
+    "alias": "ios_flutter",
+    "canonical_name": "iOS/Flutter",
+    "display_name": "iOS/Flutter",
+    "merge_type": "capitalization_variant",
+    "rationale": "Normalized capitalization of the source employer label",
+    "evidence_url": "https://kz.linkedin.com/in/azamat-aidanov-64046076"
+  },
+  {
+    "organization_alias_id": "org-3a82c1992e209ebb",
     "alias": "IoS_Flutter company",
-    "canonical_name": "ios_flutter",
-    "display_name": "ios_flutter",
+    "canonical_name": "iOS/Flutter",
+    "display_name": "iOS/Flutter",
     "merge_type": "same_entity",
-    "rationale": "Capitalization and suffix variant"
+    "rationale": "Source employer label with generic company suffix",
+    "evidence_url": "https://kz.linkedin.com/in/azamat-aidanov-64046076"
+  },
+  {
+    "organization_alias_id": "org-4233dfc4c745cfad",
+    "alias": "It service & solution GmbH & Co. KG",
+    "canonical_name": "IT Service & Solution",
+    "display_name": "IT Service & Solution",
+    "merge_type": "legal_form_variant",
+    "rationale": "Capitalization and legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-06541bd14c58d118",
@@ -829,7 +1364,35 @@
     "canonical_name": "Johns Hopkins University",
     "display_name": "Johns Hopkins University",
     "merge_type": "parent_organization",
-    "rationale": "University school"
+    "rationale": "University school",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-b5aee2cb70fe091e",
+    "alias": "Joint Institute for Nuclear Research",
+    "canonical_name": "Joint Institute for Nuclear Research",
+    "display_name": "JINR",
+    "merge_type": "same_entity",
+    "rationale": "Canonical display declaration",
+    "evidence_url": "https://ugrk.jinr.ru/contacts/requisites.php"
+  },
+  {
+    "organization_alias_id": "org-faa72095c90daf7d",
+    "alias": "OIYaI",
+    "canonical_name": "Joint Institute for Nuclear Research",
+    "display_name": "JINR",
+    "merge_type": "transliterated_name",
+    "rationale": "Transliteration of the Russian abbreviation OIYaI",
+    "evidence_url": "https://ugrk.jinr.ru/contacts/requisites.php"
+  },
+  {
+    "organization_alias_id": "org-229a272196f47306",
+    "alias": "ОИЯИ",
+    "canonical_name": "Joint Institute for Nuclear Research",
+    "display_name": "JINR",
+    "merge_type": "multilingual_name",
+    "rationale": "Official Russian abbreviation",
+    "evidence_url": "https://ugrk.jinr.ru/contacts/requisites.php"
   },
   {
     "organization_alias_id": "org-c3d99ae80673cea7",
@@ -837,7 +1400,8 @@
     "canonical_name": "JPMorgan Chase",
     "display_name": "JPMorgan Chase",
     "merge_type": "same_entity",
-    "rationale": "Brand and punctuation variant"
+    "rationale": "Brand and punctuation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-7a4fef434ec612cb",
@@ -845,7 +1409,8 @@
     "canonical_name": "Jump Trading",
     "display_name": "Jump Trading",
     "merge_type": "same_entity",
-    "rationale": "Corporate-name variant"
+    "rationale": "Corporate-name variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a31b39be861f1cfd",
@@ -853,7 +1418,8 @@
     "canonical_name": "Karlsruhe Institute of Technology (KIT)",
     "display_name": "KIT",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-66710c370cf8b372",
@@ -861,7 +1427,35 @@
     "canonical_name": "Karlsruhe Institute of Technology (KIT)",
     "display_name": "KIT",
     "merge_type": "parent_organization",
-    "rationale": "University institute"
+    "rationale": "University institute",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-5561ab400387346a",
+    "alias": "kaspi bank",
+    "canonical_name": "Kaspi.kz",
+    "display_name": "Kaspi.kz",
+    "merge_type": "parent_organization",
+    "rationale": "Capitalization variant of the Kaspi.kz banking subsidiary",
+    "evidence_url": "https://ir.kaspi.kz/media/EX-8.1_List_of_subsidiaries_of_the_Registrant.pdf"
+  },
+  {
+    "organization_alias_id": "org-dbe79c2e24b057fb",
+    "alias": "Kaspi Bank",
+    "canonical_name": "Kaspi.kz",
+    "display_name": "Kaspi.kz",
+    "merge_type": "parent_organization",
+    "rationale": "Kaspi Bank is a Kaspi.kz subsidiary",
+    "evidence_url": "https://ir.kaspi.kz/media/EX-8.1_List_of_subsidiaries_of_the_Registrant.pdf"
+  },
+  {
+    "organization_alias_id": "org-d287ea3cb7aeb2c7",
+    "alias": "Kaspi Bank JSC",
+    "canonical_name": "Kaspi.kz",
+    "display_name": "Kaspi.kz",
+    "merge_type": "parent_organization",
+    "rationale": "Legal name of the Kaspi.kz banking subsidiary",
+    "evidence_url": "https://ir.kaspi.kz/media/EX-8.1_List_of_subsidiaries_of_the_Registrant.pdf"
   },
   {
     "organization_alias_id": "org-1e67d09116cb0665",
@@ -869,7 +1463,8 @@
     "canonical_name": "KAZ Minerals",
     "display_name": "KAZ Minerals",
     "merge_type": "parent_organization",
-    "rationale": "KAZ Minerals management entity"
+    "rationale": "KAZ Minerals management entity",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-f44e5bb99803c5f5",
@@ -877,7 +1472,8 @@
     "canonical_name": "Kazaeronavigatsia",
     "display_name": "Kazaeronavigatsia",
     "merge_type": "same_entity",
-    "rationale": "Legal-form prefix variant"
+    "rationale": "Legal-form prefix variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-8b1047944b248538",
@@ -885,7 +1481,8 @@
     "canonical_name": "Kazakh-British Technical University (KBTU)",
     "display_name": "KBTU",
     "merge_type": "same_entity",
-    "rationale": "Hyphen variant"
+    "rationale": "Hyphen variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-9686eb314e43df67",
@@ -893,7 +1490,8 @@
     "canonical_name": "Kazakh-British Technical University (KBTU)",
     "display_name": "KBTU",
     "merge_type": "same_entity",
-    "rationale": "Typo variant"
+    "rationale": "Typo variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-068171823f1bdb7b",
@@ -901,7 +1499,8 @@
     "canonical_name": "Kazakh-British Technical University (KBTU)",
     "display_name": "KBTU",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-d2d8fb364e5de92f",
@@ -909,7 +1508,8 @@
     "canonical_name": "Kazakh-British Technical University (KBTU)",
     "display_name": "KBTU",
     "merge_type": "same_entity",
-    "rationale": "Acronym"
+    "rationale": "Acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a7c8e1c4561339ed",
@@ -917,7 +1517,17 @@
     "canonical_name": "Kazakh-British Technical University (KBTU)",
     "display_name": "KBTU",
     "merge_type": "same_entity",
-    "rationale": "Acronym-first full-name variant"
+    "rationale": "Acronym-first full-name variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-81b597d539929fa0",
+    "alias": "Kazakh-Turkish High-School",
+    "canonical_name": "Kazakh-Turkish High School",
+    "display_name": "Kazakh-Turkish High School",
+    "merge_type": "punctuation_variant",
+    "rationale": "Hyphenation variant in a public education profile",
+    "evidence_url": "https://www.linkedin.com/in/askarbek-orakov/"
   },
   {
     "organization_alias_id": "org-3afe146dce1c67ff",
@@ -925,7 +1535,8 @@
     "canonical_name": "Kazakhmys",
     "display_name": "Kazakhmys",
     "merge_type": "same_entity",
-    "rationale": "Corporate-name variant"
+    "rationale": "Corporate-name variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-d12853861a9863b9",
@@ -933,7 +1544,26 @@
     "canonical_name": "Kazakhmys",
     "display_name": "Kazakhmys",
     "merge_type": "parent_organization",
-    "rationale": "Kazakhmys corporate-services unit"
+    "rationale": "Kazakhmys corporate-services unit",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-2048ec7886ca597b",
+    "alias": "KAZAKHSTAN ASELSAN ENGINEERING (KAE) LLP",
+    "canonical_name": "Kazakhstan Aselsan Engineering (KAE)",
+    "display_name": "Kazakhstan Aselsan Engineering",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form and capitalization cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-64a44b152ff13010",
+    "alias": "Kazakhstan Petrochemical Industries Inc. Liability Limited Partnership",
+    "canonical_name": "Kazakhstan Petrochemical Industries (KPI)",
+    "display_name": "Kazakhstan Petrochemical Industries",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-name cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-96fc5894e2d92fd4",
@@ -941,7 +1571,8 @@
     "canonical_name": "Kazakhstan Temir Zholy",
     "display_name": "Kazakhstan Temir Zholy",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-34ce33f5c1092d42",
@@ -949,7 +1580,8 @@
     "canonical_name": "Kazakhstan Temir Zholy",
     "display_name": "Kazakhstan Temir Zholy",
     "merge_type": "multilingual_name",
-    "rationale": "Cyrillic acronym"
+    "rationale": "Cyrillic acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-c2b0af534c670302",
@@ -957,7 +1589,8 @@
     "canonical_name": "Kazkomnet",
     "display_name": "Kazkomnet",
     "merge_type": "multilingual_name",
-    "rationale": "Cyrillic capitalization variant"
+    "rationale": "Cyrillic capitalization variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-9ead6127817556c6",
@@ -965,7 +1598,26 @@
     "canonical_name": "KazMunayGas",
     "display_name": "KazMunayGas",
     "merge_type": "same_entity",
-    "rationale": "Location suffix"
+    "rationale": "Location suffix",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-0312dbacd7b31ab2",
+    "alias": "KAZPHOSPHATE LLC (ALMATY, TARAZ)",
+    "canonical_name": "Kazphosphate",
+    "display_name": "Kazphosphate",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form location and capitalization cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-1cf4b3f595903c37",
+    "alias": "KBR, Inc",
+    "canonical_name": "KBR",
+    "display_name": "KBR",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-e7261f5516de30f9",
@@ -973,7 +1625,8 @@
     "canonical_name": "Kcell",
     "display_name": "Kcell",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-13d132b38e232122",
@@ -981,7 +1634,17 @@
     "canonical_name": "Kcell",
     "display_name": "Kcell",
     "merge_type": "multilingual_name",
-    "rationale": "Russian legal-form variant"
+    "rationale": "Russian legal-form variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-a4d4c6b30feb2065",
+    "alias": "Khabar Agency JSC",
+    "canonical_name": "Khabar Agency",
+    "display_name": "Khabar Agency",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6cc74eb49362be0f",
@@ -989,7 +1652,8 @@
     "canonical_name": "Khan Group",
     "display_name": "Khan Group",
     "merge_type": "same_entity",
-    "rationale": "Public handle corroborated by a second Khan Group affiliation"
+    "rationale": "Public handle corroborated by a second Khan Group affiliation",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-d11fdc22db7122f6",
@@ -997,7 +1661,26 @@
     "canonical_name": "Khan Group",
     "display_name": "Khan Group",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-6e92bd4ca208172c",
+    "alias": "Institute of Theoretical and Applied Mechanics",
+    "canonical_name": "Khristianovich Institute of Theoretical and Applied Mechanics (ITAM SB RAS)",
+    "display_name": "ITAM SB RAS",
+    "merge_type": "same_entity",
+    "rationale": "Expanded official institute name",
+    "evidence_url": "https://www.sbras.ru/en/org_soran/list"
+  },
+  {
+    "organization_alias_id": "org-5032ad1f8aee499e",
+    "alias": "Khristianovich Institute of Theoretical and Applied Mechanics",
+    "canonical_name": "Khristianovich Institute of Theoretical and Applied Mechanics (ITAM SB RAS)",
+    "display_name": "ITAM SB RAS",
+    "merge_type": "same_entity",
+    "rationale": "Official short name without parent acronym",
+    "evidence_url": "https://www.sbras.ru/en/org_soran/list"
   },
   {
     "organization_alias_id": "org-05e93d903e6886c7",
@@ -1005,7 +1688,8 @@
     "canonical_name": "King Abdullah University of Science and Technology (KAUST)",
     "display_name": "KAUST",
     "merge_type": "same_entity",
-    "rationale": "Acronym"
+    "rationale": "Acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-f524fa89838b083c",
@@ -1013,7 +1697,8 @@
     "canonical_name": "King Abdullah University of Science and Technology (KAUST)",
     "display_name": "KAUST",
     "merge_type": "same_entity",
-    "rationale": "Reversed acronym label"
+    "rationale": "Reversed acronym label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-998745fa7b0b1777",
@@ -1021,7 +1706,8 @@
     "canonical_name": "King Abdullah University of Science and Technology (KAUST)",
     "display_name": "KAUST",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6b59421a55d78137",
@@ -1029,7 +1715,8 @@
     "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
     "display_name": "KAIST",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory"
+    "rationale": "University laboratory",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-5b67c49c9a1acb1b",
@@ -1037,7 +1724,8 @@
     "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
     "display_name": "KAIST",
     "merge_type": "parent_organization",
-    "rationale": "University research center"
+    "rationale": "University research center",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-94667313775fe61d",
@@ -1045,7 +1733,8 @@
     "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
     "display_name": "KAIST",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory"
+    "rationale": "University laboratory",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a93769ab931f713c",
@@ -1053,7 +1742,8 @@
     "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
     "display_name": "KAIST",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory"
+    "rationale": "University laboratory",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-40f63b759dad48fa",
@@ -1061,7 +1751,8 @@
     "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
     "display_name": "KAIST",
     "merge_type": "same_entity",
-    "rationale": "Acronym"
+    "rationale": "Acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-513efb2e9a3a738d",
@@ -1069,7 +1760,8 @@
     "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
     "display_name": "KAIST",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory"
+    "rationale": "University laboratory",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-b6695746138b3a24",
@@ -1077,7 +1769,8 @@
     "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
     "display_name": "KAIST",
     "merge_type": "parent_organization",
-    "rationale": "University graduate school"
+    "rationale": "University graduate school",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-70223ec6628195fd",
@@ -1085,7 +1778,17 @@
     "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
     "display_name": "KAIST",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-4f034d160e09d6fd",
+    "alias": "Nano/2D Materials Laboratory",
+    "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "display_name": "KAIST",
+    "merge_type": "parent_organization",
+    "rationale": "Materials laboratory is a KAIST unit",
+    "evidence_url": "https://mse.kaist.ac.kr/?mid=mse_lab_en"
   },
   {
     "organization_alias_id": "org-7ddfab30cb37c4fe",
@@ -1093,7 +1796,17 @@
     "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
     "display_name": "KAIST",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory"
+    "rationale": "University laboratory",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-9f663fe448940fc6",
+    "alias": "SoftSec Lab",
+    "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "display_name": "KAIST",
+    "merge_type": "parent_organization",
+    "rationale": "Software Security Research Lab is at KAIST",
+    "evidence_url": "https://softsec.kaist.ac.kr/"
   },
   {
     "organization_alias_id": "org-4baa1bc1a2144b04",
@@ -1101,7 +1814,8 @@
     "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
     "display_name": "KAIST",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory"
+    "rationale": "University laboratory",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-db023e91aaa4baaa",
@@ -1109,7 +1823,35 @@
     "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
     "display_name": "KAIST",
     "merge_type": "multilingual_name",
-    "rationale": "Korean name"
+    "rationale": "Korean name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-4ec0d134f1edfe97",
+    "alias": "Korea Institute of Science and Technology",
+    "canonical_name": "Korea Institute of Science and Technology",
+    "display_name": "KIST",
+    "merge_type": "same_entity",
+    "rationale": "Canonical display declaration",
+    "evidence_url": "https://www.kist.re.kr/eng/"
+  },
+  {
+    "organization_alias_id": "org-d1f8224115724b28",
+    "alias": "Kumtor Gold Company",
+    "canonical_name": "Kumtor Gold Company",
+    "display_name": "Kumtor Gold",
+    "merge_type": "same_entity",
+    "rationale": "Canonical display declaration",
+    "evidence_url": "https://www.kumtor.kg/en/deposit/history/"
+  },
+  {
+    "organization_alias_id": "org-b926aa88e794646d",
+    "alias": "Kumtor Operating Company",
+    "canonical_name": "Kumtor Gold Company",
+    "display_name": "Kumtor Gold",
+    "merge_type": "former_name",
+    "rationale": "Operations transferred from KOC to KGC in 2014",
+    "evidence_url": "https://www.kumtor.kg/en/deposit/history/"
   },
   {
     "organization_alias_id": "org-e218f419cd9bc9f5",
@@ -1117,7 +1859,8 @@
     "canonical_name": "L.N. Gumilyov Eurasian National University",
     "display_name": "L.N. Gumilyov ENU",
     "merge_type": "same_entity",
-    "rationale": "Punctuation variant"
+    "rationale": "Punctuation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-7dbf860147a8102a",
@@ -1125,7 +1868,8 @@
     "canonical_name": "L.N. Gumilyov Eurasian National University",
     "display_name": "L.N. Gumilyov ENU",
     "merge_type": "same_entity",
-    "rationale": "Punctuation variant"
+    "rationale": "Punctuation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-7c1b1945ed58dd30",
@@ -1133,7 +1877,8 @@
     "canonical_name": "L.N. Gumilyov Eurasian National University",
     "display_name": "L.N. Gumilyov ENU",
     "merge_type": "same_entity",
-    "rationale": "Spacing variant"
+    "rationale": "Spacing variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-c21c857d6bb459e0",
@@ -1141,7 +1886,8 @@
     "canonical_name": "L.N. Gumilyov Eurasian National University",
     "display_name": "L.N. Gumilyov ENU",
     "merge_type": "multilingual_name",
-    "rationale": "Russian name"
+    "rationale": "Russian name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-7c8a20dbc077b69b",
@@ -1149,7 +1895,8 @@
     "canonical_name": "Laminar",
     "display_name": "Laminar",
     "merge_type": "same_entity",
-    "rationale": "Accelerator suffix"
+    "rationale": "Accelerator suffix",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-55c4cc5cdc82ae45",
@@ -1157,7 +1904,8 @@
     "canonical_name": "Lindström",
     "display_name": "Lindström",
     "merge_type": "same_entity",
-    "rationale": "Diacritic variant of official brand"
+    "rationale": "Diacritic variant of official brand",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-0185ddf72bc4aaa3",
@@ -1165,7 +1913,17 @@
     "canonical_name": "Linköping University",
     "display_name": "Linköping University",
     "merge_type": "diacritic_variant",
-    "rationale": "ASCII spelling"
+    "rationale": "ASCII spelling",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-8ecce89fbfa5d319",
+    "alias": "Locu, Inc",
+    "canonical_name": "Locu",
+    "display_name": "Locu",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-30ee8d6d7f1c3ffa",
@@ -1173,7 +1931,8 @@
     "canonical_name": "Lomonosov Moscow State University (MSU)",
     "display_name": "Moscow State University",
     "merge_type": "parent_organization",
-    "rationale": "University branch campus"
+    "rationale": "University branch campus",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-472f7744dc56a5fb",
@@ -1181,7 +1940,8 @@
     "canonical_name": "Lomonosov Moscow State University (MSU)",
     "display_name": "Moscow State University",
     "merge_type": "acronym_expansion",
-    "rationale": "Kazakhstan branch acronym"
+    "rationale": "Kazakhstan branch acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-95b43bf890f0a472",
@@ -1189,7 +1949,8 @@
     "canonical_name": "Lomonosov Moscow State University (MSU)",
     "display_name": "Moscow State University",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-5ab0cf63144c4e2c",
@@ -1197,7 +1958,17 @@
     "canonical_name": "Lomonosov Moscow State University (MSU)",
     "display_name": "Moscow State University",
     "merge_type": "same_entity",
-    "rationale": "Common short name"
+    "rationale": "Common short name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-dcd615017c7dd6e5",
+    "alias": "Lowe's Companies, Inc",
+    "canonical_name": "Lowe's",
+    "display_name": "Lowe's",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-432a6187f2bcb598",
@@ -1205,7 +1976,8 @@
     "canonical_name": "Massachusetts Institute of Technology (MIT)",
     "display_name": "MIT",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-96f0809e353e09c0",
@@ -1213,7 +1985,8 @@
     "canonical_name": "Massachusetts Institute of Technology (MIT)",
     "display_name": "MIT",
     "merge_type": "same_entity",
-    "rationale": "Acronym"
+    "rationale": "Acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6ca5ce81bc1cb02f",
@@ -1221,7 +1994,8 @@
     "canonical_name": "Massachusetts Institute of Technology (MIT)",
     "display_name": "MIT",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory"
+    "rationale": "University laboratory",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-409f2029f95c8b9b",
@@ -1229,7 +2003,8 @@
     "canonical_name": "Massachusetts Institute of Technology (MIT)",
     "display_name": "MIT",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory acronym"
+    "rationale": "University laboratory acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-94447549216ecdbb",
@@ -1237,7 +2012,8 @@
     "canonical_name": "Massachusetts Institute of Technology (MIT)",
     "display_name": "MIT",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory"
+    "rationale": "University laboratory",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-76c13b8f5652824f",
@@ -1245,7 +2021,17 @@
     "canonical_name": "Massachusetts Institute of Technology (MIT)",
     "display_name": "MIT",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory"
+    "rationale": "University laboratory",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-b9a41b1f5567f969",
+    "alias": "Memorial Sloan-Kettering Cancer Center",
+    "canonical_name": "Memorial Sloan Kettering Cancer Center",
+    "display_name": "Memorial Sloan Kettering Cancer Center",
+    "merge_type": "punctuation_variant",
+    "rationale": "Current institution spelling omits the hyphen",
+    "evidence_url": "https://www.mskcc.org/"
   },
   {
     "organization_alias_id": "org-e891fd3384351af8",
@@ -1253,7 +2039,8 @@
     "canonical_name": "Meta",
     "display_name": "Meta",
     "merge_type": "same_entity",
-    "rationale": "Former corporate name before the Meta rebrand"
+    "rationale": "Former corporate name before the Meta rebrand",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-84a8d93587d6ef52",
@@ -1261,7 +2048,8 @@
     "canonical_name": "Meta",
     "display_name": "Meta",
     "merge_type": "parent_organization",
-    "rationale": "Instagram is a Meta business"
+    "rationale": "Instagram is a Meta business",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-360bc84e09469317",
@@ -1269,7 +2057,35 @@
     "canonical_name": "Meta",
     "display_name": "Meta",
     "merge_type": "same_entity",
-    "rationale": "Corporate-name variant"
+    "rationale": "Corporate-name variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-e40b1dfee4c0117a",
+    "alias": "Miaplaza, Inc",
+    "canonical_name": "Miaplaza",
+    "display_name": "Miaplaza",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-25ae1a2442e4d8a2",
+    "alias": "Michigan State University Center for Quantum Computing (MSU-Q)",
+    "canonical_name": "Michigan State University",
+    "display_name": "Michigan State University",
+    "merge_type": "parent_organization",
+    "rationale": "MSU-Q is Michigan State University's quantum-computing center",
+    "evidence_url": "https://msuq.msu.edu/"
+  },
+  {
+    "organization_alias_id": "org-19c907b30a4cdb86",
+    "alias": "MSU-Q",
+    "canonical_name": "Michigan State University",
+    "display_name": "Michigan State University",
+    "merge_type": "parent_organization",
+    "rationale": "University center acronym",
+    "evidence_url": "https://msuq.msu.edu/"
   },
   {
     "organization_alias_id": "org-79f30cb76f23e83c",
@@ -1277,7 +2093,8 @@
     "canonical_name": "Microsoft",
     "display_name": "Microsoft",
     "merge_type": "same_entity",
-    "rationale": "Corporate-name variant"
+    "rationale": "Corporate-name variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-3f6112d21a4a55ad",
@@ -1285,7 +2102,8 @@
     "canonical_name": "Microsoft",
     "display_name": "Microsoft",
     "merge_type": "parent_organization",
-    "rationale": "Microsoft research organization"
+    "rationale": "Microsoft research organization",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-43b9d65d3ca0250b",
@@ -1293,7 +2111,8 @@
     "canonical_name": "Middle East Technical University",
     "display_name": "Middle East Technical University",
     "merge_type": "multilingual_name",
-    "rationale": "Turkish and English combined label"
+    "rationale": "Turkish and English combined label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-94724bcee0c7eb72",
@@ -1301,7 +2120,8 @@
     "canonical_name": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
     "display_name": "MBZUAI",
     "merge_type": "name_order",
-    "rationale": "Acronym-first source label"
+    "rationale": "Acronym-first source label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-2692fcf72aa4541c",
@@ -1309,7 +2129,8 @@
     "canonical_name": "Montana State University",
     "display_name": "Montana State University",
     "merge_type": "same_entity",
-    "rationale": "Campus suffix"
+    "rationale": "Campus suffix",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-66c10f4de0d2d29a",
@@ -1317,7 +2138,8 @@
     "canonical_name": "Moscow Institute of Physics and Technology (MIPT)",
     "display_name": "MIPT",
     "merge_type": "same_entity",
-    "rationale": "Acronym variant"
+    "rationale": "Acronym variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-57633474d70e44a3",
@@ -1325,7 +2147,8 @@
     "canonical_name": "Moscow Institute of Physics and Technology (MIPT)",
     "display_name": "MIPT",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-8fce8c5aa5721687",
@@ -1333,7 +2156,17 @@
     "canonical_name": "Moscow Institute of Physics and Technology (MIPT)",
     "display_name": "MIPT",
     "merge_type": "same_entity",
-    "rationale": "Former legal-name variant"
+    "rationale": "Former legal-name variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-1652ee0e8e840a63",
+    "alias": "MoveAWheeL, Inc",
+    "canonical_name": "MoveAWheeL",
+    "display_name": "MoveAWheeL",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-47af585a5c2017c2",
@@ -1341,7 +2174,8 @@
     "canonical_name": "Nanyang Technological University (NTU)",
     "display_name": "NTU",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-9111e167822b0bf0",
@@ -1349,7 +2183,26 @@
     "canonical_name": "Nanyang Technological University (NTU)",
     "display_name": "NTU",
     "merge_type": "same_entity",
-    "rationale": "Location suffix"
+    "rationale": "Location suffix",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-d8a3f9793ed5e614",
+    "alias": "SCELSE",
+    "canonical_name": "Nanyang Technological University (NTU)",
+    "display_name": "NTU",
+    "merge_type": "parent_organization",
+    "rationale": "Research-institute acronym",
+    "evidence_url": "https://www.ntu.edu.sg/research/research-capabilities/research-centres-of-excellence"
+  },
+  {
+    "organization_alias_id": "org-bcaf04feeaddebb3",
+    "alias": "Singapore Centre for Environmental Life Sciences Engineering",
+    "canonical_name": "Nanyang Technological University (NTU)",
+    "display_name": "NTU",
+    "merge_type": "parent_organization",
+    "rationale": "SCELSE is an NTU university research institute",
+    "evidence_url": "https://www.ntu.edu.sg/research/research-capabilities/research-centres-of-excellence"
   },
   {
     "organization_alias_id": "org-19459a724a89d07c",
@@ -1357,7 +2210,8 @@
     "canonical_name": "National Center for Biotechnology Information (NCBI)",
     "display_name": "NCBI",
     "merge_type": "same_entity",
-    "rationale": "Corrects the institution acronym while preserving the NIH parent context in source evidence"
+    "rationale": "Corrects the institution acronym while preserving the NIH parent context in source evidence",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-0bf91fe25e6be27f",
@@ -1365,7 +2219,8 @@
     "canonical_name": "National Environment Agency Singapore",
     "display_name": "National Environment Agency",
     "merge_type": "same_entity",
-    "rationale": "Country context omitted in source label"
+    "rationale": "Country context omitted in source label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-c34f0ecd2720b5d5",
@@ -1373,7 +2228,8 @@
     "canonical_name": "National Information Technologies JSC (NITEC)",
     "display_name": "NITEC",
     "merge_type": "same_entity",
-    "rationale": "Canonical display declaration"
+    "rationale": "Canonical display declaration",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-d40b12ea1978ebbe",
@@ -1381,7 +2237,8 @@
     "canonical_name": "National Information Technologies JSC (NITEC)",
     "display_name": "NITEC",
     "merge_type": "same_entity",
-    "rationale": "Acronym"
+    "rationale": "Acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-30f94beecff48ba7",
@@ -1389,7 +2246,8 @@
     "canonical_name": "National Investment Corporation of the National Bank of Kazakhstan",
     "display_name": "National Investment Corporation (NIC)",
     "merge_type": "same_entity",
-    "rationale": "Definite-article variant"
+    "rationale": "Definite-article variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6a6ee2ec38ad0fc3",
@@ -1397,7 +2255,8 @@
     "canonical_name": "National Investment Corporation of the National Bank of Kazakhstan",
     "display_name": "National Investment Corporation (NIC)",
     "merge_type": "same_entity",
-    "rationale": "Acronym variant"
+    "rationale": "Acronym variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-23deaf7b6257b8fa",
@@ -1405,7 +2264,17 @@
     "canonical_name": "National Investment Corporation of the National Bank of Kazakhstan",
     "display_name": "National Investment Corporation (NIC)",
     "merge_type": "acronym_expansion",
-    "rationale": "Parent-bank acronym variant"
+    "rationale": "Parent-bank acronym variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-1e488fa9ca52a344",
+    "alias": "National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)",
+    "canonical_name": "National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)",
+    "display_name": "MEPhI",
+    "merge_type": "same_entity",
+    "rationale": "Canonical display declaration",
+    "evidence_url": "https://mephi.ru/"
   },
   {
     "organization_alias_id": "org-148d791416d455ad",
@@ -1413,7 +2282,8 @@
     "canonical_name": "National University of Singapore",
     "display_name": "NUS",
     "merge_type": "parent_organization",
-    "rationale": "NUS Research Centre of Excellence"
+    "rationale": "NUS Research Centre of Excellence",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-5fcaf3e326918ced",
@@ -1421,7 +2291,35 @@
     "canonical_name": "National University of Singapore",
     "display_name": "NUS",
     "merge_type": "parent_organization",
-    "rationale": "University institute"
+    "rationale": "University institute",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-3428ec5fd8b78d77",
+    "alias": "NAVER Corp",
+    "canonical_name": "NAVER",
+    "display_name": "NAVER",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-1f45ffb950d52b62",
+    "alias": "NAVER WEBTOON CORP",
+    "canonical_name": "NAVER WEBTOON",
+    "display_name": "NAVER WEBTOON",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-625e5a4e0a63e7d3",
+    "alias": "ТОО Navus",
+    "canonical_name": "Navus",
+    "display_name": "Navus",
+    "merge_type": "multilingual_name",
+    "rationale": "Cyrillic legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-f76a839d4e5571c5",
@@ -1429,7 +2327,8 @@
     "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
     "display_name": "NIS",
     "merge_type": "parent_organization",
-    "rationale": "Official network name without acronym"
+    "rationale": "Official network name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-d4c532d7f385e184",
@@ -1437,7 +2336,8 @@
     "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
     "display_name": "NIS",
     "merge_type": "parent_organization",
-    "rationale": "Campus label"
+    "rationale": "Campus label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-66d043dcc1b47640",
@@ -1445,7 +2345,8 @@
     "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
     "display_name": "NIS",
     "merge_type": "multilingual_name",
-    "rationale": "Russian name"
+    "rationale": "Russian name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-bdd6357eab5cc7c4",
@@ -1453,7 +2354,8 @@
     "canonical_name": "Nazarbayev University",
     "display_name": "Nazarbayev University",
     "merge_type": "parent_organization",
-    "rationale": "Nazarbayev University innovation campus"
+    "rationale": "Nazarbayev University innovation campus",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-b04d1a985e486e11",
@@ -1461,7 +2363,8 @@
     "canonical_name": "Nazarbayev University",
     "display_name": "Nazarbayev University",
     "merge_type": "parent_organization",
-    "rationale": "University institute"
+    "rationale": "University institute",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-f14482d632ff05d3",
@@ -1469,7 +2372,8 @@
     "canonical_name": "Nazarbayev University",
     "display_name": "Nazarbayev University",
     "merge_type": "parent_organization",
-    "rationale": "Nazarbayev University research center"
+    "rationale": "Nazarbayev University research center",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-aae1ec8b193ad29e",
@@ -1477,7 +2381,8 @@
     "canonical_name": "Nazarbayev University",
     "display_name": "Nazarbayev University",
     "merge_type": "same_entity",
-    "rationale": "Truncated public-profile school label linked to the university"
+    "rationale": "Truncated public-profile school label linked to the university",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-fa4c923af55987ff",
@@ -1485,7 +2390,8 @@
     "canonical_name": "Nazarbayev University",
     "display_name": "Nazarbayev University",
     "merge_type": "parent_organization",
-    "rationale": "University school"
+    "rationale": "University school",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-dffe5325b0c9fe50",
@@ -1493,7 +2399,8 @@
     "canonical_name": "Nazarbayev University",
     "display_name": "Nazarbayev University",
     "merge_type": "parent_organization",
-    "rationale": "University research system"
+    "rationale": "University research system",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-c10ceb5a4fdc74ca",
@@ -1501,7 +2408,8 @@
     "canonical_name": "Nazarbayev University",
     "display_name": "Nazarbayev University",
     "merge_type": "parent_organization",
-    "rationale": "University school"
+    "rationale": "University school",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-f5f5ffd82b06ee4b",
@@ -1509,7 +2417,26 @@
     "canonical_name": "Nazarbayev University",
     "display_name": "Nazarbayev University",
     "merge_type": "multilingual_name",
-    "rationale": "Russian name"
+    "rationale": "Russian name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-dbb74489a889d8cd",
+    "alias": "NetCracker",
+    "canonical_name": "Netcracker Technology",
+    "display_name": "Netcracker",
+    "merge_type": "same_entity",
+    "rationale": "Current public company brand",
+    "evidence_url": "https://www.netcracker.com/"
+  },
+  {
+    "organization_alias_id": "org-b68d8a34b31a73a4",
+    "alias": "Networks Energy LLP",
+    "canonical_name": "Networks Energy",
+    "display_name": "Networks Energy",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-078c367ed8685b8b",
@@ -1517,7 +2444,8 @@
     "canonical_name": "New York University",
     "display_name": "New York University",
     "merge_type": "parent_organization",
-    "rationale": "University campus"
+    "rationale": "University campus",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-1ce40bd7d6b83978",
@@ -1525,7 +2453,8 @@
     "canonical_name": "New York University",
     "display_name": "New York University",
     "merge_type": "parent_organization",
-    "rationale": "University school"
+    "rationale": "University school",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-35c3e45924a921ca",
@@ -1533,7 +2462,8 @@
     "canonical_name": "North American University",
     "display_name": "North American University",
     "merge_type": "same_entity",
-    "rationale": "Acronym suffix"
+    "rationale": "Acronym suffix",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-3574c4eeacc347b8",
@@ -1541,7 +2471,8 @@
     "canonical_name": "North Caspian Operating Company (NCOC)",
     "display_name": "NCOC",
     "merge_type": "same_entity",
-    "rationale": "Acronym"
+    "rationale": "Acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-cb818ac2f5d9b50e",
@@ -1549,7 +2480,8 @@
     "canonical_name": "North Caspian Operating Company (NCOC)",
     "display_name": "NCOC",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-cc26a521b8c0d6af",
@@ -1557,7 +2489,8 @@
     "canonical_name": "North Caspian Operating Company (NCOC)",
     "display_name": "NCOC",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6b68a2076c97d854",
@@ -1565,7 +2498,44 @@
     "canonical_name": "Northwest A&F University",
     "display_name": "Northwest A&F University",
     "merge_type": "acronym_expansion",
-    "rationale": "Official university acronym"
+    "rationale": "Official university acronym",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-90f1660619996003",
+    "alias": "Novosibirsk State University (NSU)",
+    "canonical_name": "Novosibirsk State University (NSU)",
+    "display_name": "NSU",
+    "merge_type": "same_entity",
+    "rationale": "Canonical display declaration",
+    "evidence_url": "https://english.nsu.ru/"
+  },
+  {
+    "organization_alias_id": "org-0bbed4d0cca2dfa5",
+    "alias": "NTP Ltd",
+    "canonical_name": "NTP",
+    "display_name": "NTP",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-55257ac6e7068ef3",
+    "alias": "NURORDA High School",
+    "canonical_name": "Nurorda High School",
+    "display_name": "Nurorda High School",
+    "merge_type": "capitalization_variant",
+    "rationale": "Capitalization variant in a public education profile",
+    "evidence_url": "https://hk.linkedin.com/in/amanzholkuantay"
+  },
+  {
+    "organization_alias_id": "org-8481815c12edd059",
+    "alias": "NURORDA INTERNATIONAL SCHOOLS",
+    "canonical_name": "Nurorda International Schools",
+    "display_name": "Nurorda International Schools",
+    "merge_type": "capitalization_variant",
+    "rationale": "Capitalization cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-adb6fafbffab9665",
@@ -1573,7 +2543,17 @@
     "canonical_name": "OnPoint Analytics",
     "display_name": "OnPoint Analytics",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-c28645300b56e558",
+    "alias": "Opt-AI Inc",
+    "canonical_name": "Opt-AI",
+    "display_name": "Opt-AI",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-f21d3b7c0c53ea62",
@@ -1581,7 +2561,8 @@
     "canonical_name": "Pennsylvania State University",
     "display_name": "Penn State",
     "merge_type": "same_entity",
-    "rationale": "Common short name"
+    "rationale": "Common short name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-5c5562ba3596d016",
@@ -1589,7 +2570,35 @@
     "canonical_name": "Pennsylvania State University",
     "display_name": "Penn State",
     "merge_type": "parent_organization",
-    "rationale": "University laboratory"
+    "rationale": "University laboratory",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-c7265886d7c6894b",
+    "alias": "Platonus, LLP",
+    "canonical_name": "Platonus",
+    "display_name": "Platonus",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-e47393fc5bcb6d7b",
+    "alias": "Predictive Oncology Inc",
+    "canonical_name": "Predictive Oncology",
+    "display_name": "Predictive Oncology",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-95cc1ca59821ab30",
+    "alias": "Thompson Lab",
+    "canonical_name": "Princeton University",
+    "display_name": "Princeton University",
+    "merge_type": "parent_organization",
+    "rationale": "Jeff Thompson's Princeton research laboratory",
+    "evidence_url": "https://ece.princeton.edu/people/jeff-thompson"
   },
   {
     "organization_alias_id": "org-557fa04d8980c101",
@@ -1597,7 +2606,8 @@
     "canonical_name": "Private hedge fund",
     "display_name": "Private hedge fund",
     "merge_type": "same_entity",
-    "rationale": "Article variant"
+    "rationale": "Article variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6f4cfafe9630db98",
@@ -1605,7 +2615,8 @@
     "canonical_name": "Pro Wheel XR",
     "display_name": "Pro Wheel XR",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-2a71d318101a63c3",
@@ -1613,7 +2624,8 @@
     "canonical_name": "Purdue University",
     "display_name": "Purdue University",
     "merge_type": "parent_organization",
-    "rationale": "University department"
+    "rationale": "University department",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-81d9036ce3c13135",
@@ -1621,7 +2633,8 @@
     "canonical_name": "Purdue University",
     "display_name": "Purdue University",
     "merge_type": "parent_organization",
-    "rationale": "System label"
+    "rationale": "System label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-7a041dcd8a846e95",
@@ -1629,7 +2642,44 @@
     "canonical_name": "Purdue University",
     "display_name": "Purdue University",
     "merge_type": "parent_organization",
-    "rationale": "Main campus label"
+    "rationale": "Main campus label",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-c4cf30fc8f179763",
+    "alias": "Q Capital Ltd",
+    "canonical_name": "Q Capital",
+    "display_name": "Q Capital",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-d0c665792464a4ee",
+    "alias": "Quadrat educational center",
+    "canonical_name": "Quadrat Educational Center",
+    "display_name": "Quadrat Educational Center",
+    "merge_type": "capitalization_variant",
+    "rationale": "Quotation and capitalization cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-bfd184c945652952",
+    "alias": "Qwerky Inc",
+    "canonical_name": "Qwerky",
+    "display_name": "Qwerky",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-3b8d7cd71ccb91a1",
+    "alias": "Ratio Global Inc",
+    "canonical_name": "Ratio Global",
+    "display_name": "Ratio Global",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-3d8fd8dc3aa5232f",
@@ -1637,7 +2687,8 @@
     "canonical_name": "Republican Physics and Mathematics School (RFMS)",
     "display_name": "RFMS",
     "merge_type": "same_entity",
-    "rationale": "English brand variant"
+    "rationale": "English brand variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6fbed550061ec5bd",
@@ -1645,7 +2696,8 @@
     "canonical_name": "Republican Physics and Mathematics School (RFMS)",
     "display_name": "RFMS",
     "merge_type": "same_entity",
-    "rationale": "English acronym variant"
+    "rationale": "English acronym variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-017a190c5724d617",
@@ -1653,7 +2705,8 @@
     "canonical_name": "Republican Physics and Mathematics School (RFMS)",
     "display_name": "RFMS",
     "merge_type": "multilingual_name",
-    "rationale": "Cyrillic acronym variant"
+    "rationale": "Cyrillic acronym variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-d9fc32901daf8674",
@@ -1661,7 +2714,8 @@
     "canonical_name": "Republican Physics and Mathematics School (RFMS)",
     "display_name": "RFMS",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-e2f2ffc8c0b81cef",
@@ -1669,7 +2723,17 @@
     "canonical_name": "Republican Scientific and Practical Center Daryn",
     "display_name": "RSPC Daryn",
     "merge_type": "parser_normalization",
-    "rationale": "Source employer label includes the position prefix"
+    "rationale": "Source employer label includes the position prefix",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-317e3445914f4e0f",
+    "alias": "Ministry of Education and Science of the Republic of Kazakhstan (Center Daryn)",
+    "canonical_name": "Republican Scientific and Practical Center Daryn",
+    "display_name": "RSPC Daryn",
+    "merge_type": "parent_organization",
+    "rationale": "Source label identifies Center Daryn within the ministry",
+    "evidence_url": "https://www.gov.kz/memleket/entities/daryn"
   },
   {
     "organization_alias_id": "org-ec078809cdb574ca",
@@ -1677,7 +2741,8 @@
     "canonical_name": "Republican Scientific and Practical Center Daryn",
     "display_name": "RSPC Daryn",
     "merge_type": "same_entity",
-    "rationale": "Capitalization and quotation variant"
+    "rationale": "Capitalization and quotation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a70f9fcda2254caf",
@@ -1685,7 +2750,17 @@
     "canonical_name": "Republican Scientific and Practical Center Daryn",
     "display_name": "RSPC Daryn",
     "merge_type": "acronym_expansion",
-    "rationale": "Common acronym"
+    "rationale": "Common acronym",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-8a8156803a1cc9ff",
+    "alias": "Rocket Fuel Inc",
+    "canonical_name": "Rocket Fuel",
+    "display_name": "Rocket Fuel",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6f1bdfc567b9014f",
@@ -1693,7 +2768,8 @@
     "canonical_name": "S. Seifullin Kazakh Agrotechnical Research University",
     "display_name": "S. Seifullin Kazakh Agrotechnical Research University",
     "merge_type": "former_name",
-    "rationale": "Former university name"
+    "rationale": "Former university name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a69f4b0553b3abcd",
@@ -1701,7 +2777,44 @@
     "canonical_name": "Saarland University",
     "display_name": "Saarland University",
     "merge_type": "translated_name",
-    "rationale": "Official English name"
+    "rationale": "Official English name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-f3f5631dd8cbbe24",
+    "alias": "Saint-Petersburg State University",
+    "canonical_name": "Saint Petersburg State University",
+    "display_name": "Saint Petersburg State University",
+    "merge_type": "punctuation_variant",
+    "rationale": "Hyphenated public-profile spelling",
+    "evidence_url": "https://www.linkedin.com/in/viktor-passichenko/"
+  },
+  {
+    "organization_alias_id": "org-0b297b687bcaf800",
+    "alias": "SAMRUK-KAZYNA",
+    "canonical_name": "Samruk-Kazyna",
+    "display_name": "Samruk-Kazyna",
+    "merge_type": "capitalization_variant",
+    "rationale": "Capitalization cleanup",
+    "evidence_url": "https://sk.kz/"
+  },
+  {
+    "organization_alias_id": "org-efe653dee124f5c4",
+    "alias": "«SOVEREIGN WEALTH FUND «SAMRUK-KAZYNA» JSC",
+    "canonical_name": "Samruk-Kazyna",
+    "display_name": "Samruk-Kazyna",
+    "merge_type": "legal_form_variant",
+    "rationale": "Expanded legal-name variant",
+    "evidence_url": "https://sk.kz/"
+  },
+  {
+    "organization_alias_id": "org-b14f04d53f928741",
+    "alias": "Samruk-Kazyna Corporate University",
+    "canonical_name": "Samruk-Kazyna Corporate University",
+    "display_name": "Samruk-Kazyna Corporate University",
+    "merge_type": "punctuation_variant",
+    "rationale": "Quotation cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-4f5b0284472c4443",
@@ -1709,7 +2822,44 @@
     "canonical_name": "Sarsen Amanzholov East Kazakhstan University",
     "display_name": "Sarsen Amanzholov EKU",
     "merge_type": "former_name",
-    "rationale": "Former university name"
+    "rationale": "Former university name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-5652292751da7116",
+    "alias": "Institute of Physics and Technology at Satbayev University",
+    "canonical_name": "Satbayev University",
+    "display_name": "Satbayev University",
+    "merge_type": "parent_organization",
+    "rationale": "University institute",
+    "evidence_url": "https://satbayev.university/"
+  },
+  {
+    "organization_alias_id": "org-2dda77894dbb0e63",
+    "alias": "Satbayev University, Institute of Physics and Technology",
+    "canonical_name": "Satbayev University",
+    "display_name": "Satbayev University",
+    "merge_type": "parent_organization",
+    "rationale": "University institute",
+    "evidence_url": "https://satbayev.university/"
+  },
+  {
+    "organization_alias_id": "org-e73abcaf36f55458",
+    "alias": "казнту",
+    "canonical_name": "Satbayev University",
+    "display_name": "Satbayev University",
+    "merge_type": "former_name",
+    "rationale": "The KazNTU abbreviation refers to the university now branded Satbayev University",
+    "evidence_url": "https://official.satbayev.university/en/university/osnovnye-polozheniya-"
+  },
+  {
+    "organization_alias_id": "org-44c4a8dd3cbd3410",
+    "alias": "SDAIA | سدايا",
+    "canonical_name": "Saudi Data and AI Authority (SDAIA)",
+    "display_name": "SDAIA",
+    "merge_type": "multilingual_name",
+    "rationale": "English and Arabic brand label",
+    "evidence_url": "https://sdaia.gov.sa/"
   },
   {
     "organization_alias_id": "org-816608c2dc5abe41",
@@ -1717,7 +2867,8 @@
     "canonical_name": "Self-employed",
     "display_name": "Self-employed",
     "merge_type": "category_normalization",
-    "rationale": "Independent-work label"
+    "rationale": "Independent-work label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-3ea84e64d16ad576",
@@ -1725,7 +2876,8 @@
     "canonical_name": "Self-employed",
     "display_name": "Self-employed",
     "merge_type": "placeholder_name",
-    "rationale": "Profile used no employer for an independent open-source project"
+    "rationale": "Profile used no employer for an independent open-source project",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-159669d20ffe1411",
@@ -1733,7 +2885,8 @@
     "canonical_name": "Self-employed",
     "display_name": "Self-employed",
     "merge_type": "category_normalization",
-    "rationale": "Generic remote-work label predates the Remote company and describes independent work"
+    "rationale": "Generic remote-work label predates the Remote company and describes independent work",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-40167509d393f8d1",
@@ -1741,7 +2894,8 @@
     "canonical_name": "Self-employed",
     "display_name": "Self-employed",
     "merge_type": "same_entity",
-    "rationale": "Capitalization variant"
+    "rationale": "Capitalization variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-45595550b2a00d36",
@@ -1749,7 +2903,8 @@
     "canonical_name": "Self-employed",
     "display_name": "Self-employed",
     "merge_type": "translated_name",
-    "rationale": "Russian label"
+    "rationale": "Russian label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-62e003bd6816f01e",
@@ -1757,7 +2912,17 @@
     "canonical_name": "Self-employed",
     "display_name": "Self-employed",
     "merge_type": "translated_name",
-    "rationale": "Russian independent-work label"
+    "rationale": "Russian independent-work label",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-0355b45213a5ddfe",
+    "alias": "Senimdi Kurylys LLP (Bechtel-Enka JV)",
+    "canonical_name": "Senimdi Kurylys (Bechtel-Enka JV)",
+    "display_name": "Senimdi Kurylys",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-8d2823660992ad01",
@@ -1765,7 +2930,8 @@
     "canonical_name": "Sifa University",
     "display_name": "Sifa University",
     "merge_type": "translated_name",
-    "rationale": "Turkish university name"
+    "rationale": "Turkish university name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-8bf943769104cc45",
@@ -1773,7 +2939,8 @@
     "canonical_name": "Silleno",
     "display_name": "Silleno",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-c6f1304d5207aa1d",
@@ -1781,7 +2948,8 @@
     "canonical_name": "Silleno",
     "display_name": "Silleno",
     "merge_type": "same_entity",
-    "rationale": "Zero-width character and legal-form variant"
+    "rationale": "Zero-width character and legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-752808c71f0605fd",
@@ -1789,7 +2957,8 @@
     "canonical_name": "Skoltech",
     "display_name": "Skoltech",
     "merge_type": "same_entity",
-    "rationale": "Official name"
+    "rationale": "Official name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-da3b87227b73983c",
@@ -1797,7 +2966,26 @@
     "canonical_name": "SLB",
     "display_name": "SLB",
     "merge_type": "same_entity",
-    "rationale": "Former brand before the SLB rebrand"
+    "rationale": "Former brand before the SLB rebrand",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-310d86d1003d98b2",
+    "alias": "Smart Remont Ltd",
+    "canonical_name": "Smart Remont",
+    "display_name": "Smart Remont",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-3d5d482493c02933",
+    "alias": "SmarTestPrep Ltd",
+    "canonical_name": "SmarTestPrep",
+    "display_name": "SmarTestPrep",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-d1fdeb4b7b8d301e",
@@ -1805,7 +2993,8 @@
     "canonical_name": "Snap",
     "display_name": "Snap",
     "merge_type": "same_entity",
-    "rationale": "Legal-form punctuation variant"
+    "rationale": "Legal-form punctuation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-09615f7d377d2232",
@@ -1813,7 +3002,17 @@
     "canonical_name": "Snap",
     "display_name": "Snap",
     "merge_type": "same_entity",
-    "rationale": "Legal-form punctuation variant"
+    "rationale": "Legal-form punctuation variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-38ccb096a9b42841",
+    "alias": "Societe Generale",
+    "canonical_name": "Société Générale",
+    "display_name": "Société Générale",
+    "merge_type": "diacritic_variant",
+    "rationale": "Official French brand spelling",
+    "evidence_url": "https://www.societegenerale.com/"
   },
   {
     "organization_alias_id": "org-74d36916c93c9b68",
@@ -1821,7 +3020,8 @@
     "canonical_name": "Solai",
     "display_name": "Solai",
     "merge_type": "same_entity",
-    "rationale": "Legal-form punctuation variant"
+    "rationale": "Legal-form punctuation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-5eb865983eb37f65",
@@ -1829,7 +3029,44 @@
     "canonical_name": "Solai",
     "display_name": "Solai",
     "merge_type": "same_entity",
-    "rationale": "Legal-form punctuation variant"
+    "rationale": "Legal-form punctuation variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-05141f082d391251",
+    "alias": "Sovenok olympiad group for high-school students",
+    "canonical_name": "Sovenok Olympiad Group",
+    "display_name": "Sovenok Olympiad Group",
+    "merge_type": "descriptor_cleanup",
+    "rationale": "Quotation and descriptor cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-e2cb0dc7e38e579f",
+    "alias": "SESC NSU — ( СУНЦ НГУ \\ ФМШ )",
+    "canonical_name": "Specialized Educational Scientific Center of Novosibirsk State University (SESC NSU)",
+    "display_name": "SESC NSU",
+    "merge_type": "multilingual_name",
+    "rationale": "Bilingual school label normalized to its expanded English name",
+    "evidence_url": "https://sesc.nsu.ru/"
+  },
+  {
+    "organization_alias_id": "org-6e88701618d8d127",
+    "alias": "Sprint Squads - Top 1% of software engineers and data scientists of Central Asia",
+    "canonical_name": "Sprint Squads",
+    "display_name": "Sprint Squads",
+    "merge_type": "descriptor_cleanup",
+    "rationale": "Marketing descriptor cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-c037e9b8e6e3ad64",
+    "alias": "SPS Inc",
+    "canonical_name": "SPS",
+    "display_name": "SPS",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6a5212c48ab6600f",
@@ -1837,7 +3074,8 @@
     "canonical_name": "Squarepoint Capital",
     "display_name": "Squarepoint Capital",
     "merge_type": "same_entity",
-    "rationale": "Short brand name"
+    "rationale": "Short brand name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-3cd4a533172c690c",
@@ -1845,7 +3083,8 @@
     "canonical_name": "SRDI Caspiymunaygas",
     "display_name": "SRDI Caspiymunaygas",
     "merge_type": "same_entity",
-    "rationale": "Expanded institute-name variant"
+    "rationale": "Expanded institute-name variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a77ad1155acde3fc",
@@ -1853,7 +3092,8 @@
     "canonical_name": "SRDI Caspiymunaygas",
     "display_name": "SRDI Caspiymunaygas",
     "merge_type": "same_entity",
-    "rationale": "Quoted legal-name variant"
+    "rationale": "Quoted legal-name variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-af701ac9a56e6d60",
@@ -1861,7 +3101,17 @@
     "canonical_name": "SRDI Caspiymunaygas",
     "display_name": "SRDI Caspiymunaygas",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-bad63eca896b1731",
+    "alias": "JSC “Standard Investment Company”",
+    "canonical_name": "Standard Investment Company",
+    "display_name": "Standard Investment Company",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form and quotation cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-1fb70fb8583b9894",
@@ -1869,7 +3119,8 @@
     "canonical_name": "StoneLab",
     "display_name": "StoneLab",
     "merge_type": "same_entity",
-    "rationale": "Capitalization variant"
+    "rationale": "Capitalization variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a10afc3d14b10776",
@@ -1877,7 +3128,8 @@
     "canonical_name": "StoneLab",
     "display_name": "StoneLab",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-b19e9d200b86531c",
@@ -1885,7 +3137,17 @@
     "canonical_name": "Suleyman Demirel University (SDU)",
     "display_name": "SDU",
     "merge_type": "same_entity",
-    "rationale": "Acronym"
+    "rationale": "Acronym",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-b9d77e02f9a202dc",
+    "alias": "SDU Technopark",
+    "canonical_name": "Suleyman Demirel University (SDU)",
+    "display_name": "SDU",
+    "merge_type": "parent_organization",
+    "rationale": "University technology park",
+    "evidence_url": "https://sdu.edu.kz/"
   },
   {
     "organization_alias_id": "org-3735c9c6471606f2",
@@ -1893,7 +3155,8 @@
     "canonical_name": "Suleyman Demirel University (SDU)",
     "display_name": "SDU",
     "merge_type": "same_entity",
-    "rationale": "Brand variant"
+    "rationale": "Brand variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-9f1b5a8821d486ca",
@@ -1901,7 +3164,8 @@
     "canonical_name": "Suleyman Demirel University (SDU)",
     "display_name": "SDU",
     "merge_type": "same_entity",
-    "rationale": "Typo variant"
+    "rationale": "Typo variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-9595ff2914bacbb3",
@@ -1909,7 +3173,8 @@
     "canonical_name": "Suleyman Demirel University (SDU)",
     "display_name": "SDU",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-c39fd9226404a9f9",
@@ -1917,7 +3182,8 @@
     "canonical_name": "Suleyman Demirel University (SDU)",
     "display_name": "SDU",
     "merge_type": "same_entity",
-    "rationale": "Location suffix"
+    "rationale": "Location suffix",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-3da6de126f6ec3cf",
@@ -1925,7 +3191,26 @@
     "canonical_name": "Summer STEM Institute",
     "display_name": "Summer STEM Institute",
     "merge_type": "same_entity",
-    "rationale": "Acronym suffix"
+    "rationale": "Acronym suffix",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-53e45136cf793e94",
+    "alias": "JSC «Tau-Кen Samruk» National Mining Company",
+    "canonical_name": "Tau-Ken Samruk",
+    "display_name": "Tau-Ken Samruk",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form and descriptor cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-bd54d2278299d3dd",
+    "alias": "Tavia Acquisition Corp",
+    "canonical_name": "Tavia Acquisition",
+    "display_name": "Tavia Acquisition",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-7b11447b2e365b80",
@@ -1933,7 +3218,8 @@
     "canonical_name": "Tengizchevroil",
     "display_name": "Tengizchevroil",
     "merge_type": "multilingual_name",
-    "rationale": "Russian company name"
+    "rationale": "Russian company name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-bb0d7ba862021016",
@@ -1941,7 +3227,8 @@
     "canonical_name": "TETmedical",
     "display_name": "TETmedical",
     "merge_type": "same_entity",
-    "rationale": "Legal-form punctuation variant"
+    "rationale": "Legal-form punctuation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-e5c2ee751340a694",
@@ -1949,7 +3236,8 @@
     "canonical_name": "TETmedical",
     "display_name": "TETmedical",
     "merge_type": "same_entity",
-    "rationale": "Legal-form punctuation variant"
+    "rationale": "Legal-form punctuation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a3bcd420ed9593ff",
@@ -1957,7 +3245,8 @@
     "canonical_name": "The Chinese University of Hong Kong (CUHK)",
     "display_name": "CUHK",
     "merge_type": "same_entity",
-    "rationale": "Common acronym"
+    "rationale": "Common acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-98e0a0fac9911b18",
@@ -1965,7 +3254,44 @@
     "canonical_name": "The Chinese University of Hong Kong (CUHK)",
     "display_name": "CUHK",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-24661dee676232e6",
+    "alias": "The London School of Economics and Political Science (LSE)",
+    "canonical_name": "The London School of Economics and Political Science (LSE)",
+    "display_name": "LSE",
+    "merge_type": "same_entity",
+    "rationale": "Canonical display declaration",
+    "evidence_url": "https://www.lse.ac.uk/"
+  },
+  {
+    "organization_alias_id": "org-c33096e3e18ca8d6",
+    "alias": "The Ohio State University",
+    "canonical_name": "The Ohio State University",
+    "display_name": "Ohio State University",
+    "merge_type": "same_entity",
+    "rationale": "Canonical short display",
+    "evidence_url": "https://www.osu.edu/"
+  },
+  {
+    "organization_alias_id": "org-d7d98098735d63eb",
+    "alias": "The University of British Columbia",
+    "canonical_name": "The University of British Columbia",
+    "display_name": "UBC",
+    "merge_type": "same_entity",
+    "rationale": "Canonical display declaration",
+    "evidence_url": "https://www.ubc.ca/"
+  },
+  {
+    "organization_alias_id": "org-58b6767200ea5798",
+    "alias": "ThinkCol Limited",
+    "canonical_name": "ThinkCol",
+    "display_name": "ThinkCol",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-e1bee67ecf214e73",
@@ -1973,7 +3299,35 @@
     "canonical_name": "Tulane University",
     "display_name": "Tulane University",
     "merge_type": "parent_organization",
-    "rationale": "University school"
+    "rationale": "University school",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-68290a793776a65b",
+    "alias": "Typeser Inc",
+    "canonical_name": "Typeser",
+    "display_name": "Typeser",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form cleanup",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-b3279d64f8603598",
+    "alias": "Statistical AI Lab",
+    "canonical_name": "Ulsan National Institute of Science and Technology (UNIST)",
+    "display_name": "UNIST",
+    "merge_type": "parent_organization",
+    "rationale": "Short name of the UNIST Statistical Artificial Intelligence Lab",
+    "evidence_url": "https://news.unist.ac.kr/unist-wins-first-place-in-digital-curling-tournament/"
+  },
+  {
+    "organization_alias_id": "org-c796b5a677291eec",
+    "alias": "Statistical Artificial Intelligence Laboratory (SAIL)",
+    "canonical_name": "Ulsan National Institute of Science and Technology (UNIST)",
+    "display_name": "UNIST",
+    "merge_type": "parent_organization",
+    "rationale": "Research laboratory at UNIST",
+    "evidence_url": "https://news.unist.ac.kr/unist-wins-first-place-in-digital-curling-tournament/"
   },
   {
     "organization_alias_id": "org-49ace9e90cb4d2e0",
@@ -1981,7 +3335,8 @@
     "canonical_name": "Ulsan National Institute of Science and Technology (UNIST)",
     "display_name": "UNIST",
     "merge_type": "same_entity",
-    "rationale": "Typo variant"
+    "rationale": "Typo variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-674ecb4012a6af22",
@@ -1989,7 +3344,8 @@
     "canonical_name": "Ulsan National Institute of Science and Technology (UNIST)",
     "display_name": "UNIST",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-dd517a0bd8e8c29f",
@@ -1997,7 +3353,8 @@
     "canonical_name": "Ulsan National Institute of Science and Technology (UNIST)",
     "display_name": "UNIST",
     "merge_type": "same_entity",
-    "rationale": "Acronym"
+    "rationale": "Acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-2a98cad91d505c9f",
@@ -2005,7 +3362,8 @@
     "canonical_name": "Ulsan National Institute of Science and Technology (UNIST)",
     "display_name": "UNIST",
     "merge_type": "parent_organization",
-    "rationale": "University research group"
+    "rationale": "University research group",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-25e6913c5ecdf069",
@@ -2013,7 +3371,8 @@
     "canonical_name": "Ulsan National Institute of Science and Technology (UNIST)",
     "display_name": "UNIST",
     "merge_type": "multilingual_name",
-    "rationale": "Korean name"
+    "rationale": "Korean name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6347733801b598d1",
@@ -2021,7 +3380,8 @@
     "canonical_name": "Undisclosed employer",
     "display_name": "Undisclosed employer",
     "merge_type": "same_entity",
-    "rationale": "Disclosure-status abbreviation"
+    "rationale": "Disclosure-status abbreviation",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-9a69bb7d0468fa5c",
@@ -2029,7 +3389,17 @@
     "canonical_name": "Undisclosed employer",
     "display_name": "Undisclosed employer",
     "merge_type": "placeholder_name",
-    "rationale": "Public profile uses a placeholder rather than disclosing the employer"
+    "rationale": "Public profile uses a placeholder rather than disclosing the employer",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-f107d72b84f76796",
+    "alias": "Hausdorff Center for Mathematics",
+    "canonical_name": "University of Bonn",
+    "display_name": "University of Bonn",
+    "merge_type": "parent_organization",
+    "rationale": "University of Bonn cluster of excellence",
+    "evidence_url": "https://www.uni-bonn.de/en/university/working-at-the-university/job-opportunities/w2-professorships-bonn-junior-fellows"
   },
   {
     "organization_alias_id": "org-28098cf8b37d7de1",
@@ -2037,7 +3407,8 @@
     "canonical_name": "University of Bonn",
     "display_name": "University of Bonn",
     "merge_type": "translated_name",
-    "rationale": "Official German legal name"
+    "rationale": "Official German legal name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-32bf92cfcd18cadb",
@@ -2045,7 +3416,8 @@
     "canonical_name": "University of Bonn",
     "display_name": "University of Bonn",
     "merge_type": "same_entity",
-    "rationale": "Leading-article variant"
+    "rationale": "Leading-article variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-696eb8933d5e5f04",
@@ -2053,7 +3425,8 @@
     "canonical_name": "University of California, Berkeley",
     "display_name": "UC Berkeley",
     "merge_type": "parent_organization",
-    "rationale": "University research laboratory"
+    "rationale": "University research laboratory",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-7c19571a21133bd7",
@@ -2061,7 +3434,8 @@
     "canonical_name": "University of California, Berkeley",
     "display_name": "UC Berkeley",
     "merge_type": "same_entity",
-    "rationale": "Common short name"
+    "rationale": "Common short name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-ff661e5dceb8bb46",
@@ -2069,7 +3443,8 @@
     "canonical_name": "University of California, Berkeley",
     "display_name": "UC Berkeley",
     "merge_type": "parent_organization",
-    "rationale": "University department"
+    "rationale": "University department",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-8b3c92efde945da5",
@@ -2077,7 +3452,8 @@
     "canonical_name": "University of California, Berkeley",
     "display_name": "UC Berkeley",
     "merge_type": "same_entity",
-    "rationale": "Punctuation variant"
+    "rationale": "Punctuation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-6abcfaa66547e033",
@@ -2085,7 +3461,8 @@
     "canonical_name": "University of California, Davis",
     "display_name": "UC Davis",
     "merge_type": "same_entity",
-    "rationale": "Punctuation variant"
+    "rationale": "Punctuation variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-ee177673a62c1364",
@@ -2093,7 +3470,8 @@
     "canonical_name": "University of California, Los Angeles (UCLA)",
     "display_name": "UCLA",
     "merge_type": "parent_organization",
-    "rationale": "University institute"
+    "rationale": "University institute",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-e5e362fbd63a0e6c",
@@ -2101,7 +3479,8 @@
     "canonical_name": "University of California, Los Angeles (UCLA)",
     "display_name": "UCLA",
     "merge_type": "parent_organization",
-    "rationale": "University institute"
+    "rationale": "University institute",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-42693b41b5ac4af5",
@@ -2109,7 +3488,8 @@
     "canonical_name": "University of California, Los Angeles (UCLA)",
     "display_name": "UCLA",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-25761a19847d1b03",
@@ -2117,7 +3497,8 @@
     "canonical_name": "University of Cambridge",
     "display_name": "University of Cambridge",
     "merge_type": "same_entity",
-    "rationale": "Informal name"
+    "rationale": "Informal name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-c5ee3f17a4496870",
@@ -2125,7 +3506,8 @@
     "canonical_name": "University of Chicago",
     "display_name": "University of Chicago",
     "merge_type": "parent_organization",
-    "rationale": "University school"
+    "rationale": "University school",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-2fdc3189c3f0c4b6",
@@ -2133,7 +3515,8 @@
     "canonical_name": "University of Debrecen",
     "display_name": "University of Debrecen",
     "merge_type": "multilingual_name",
-    "rationale": "Hungarian name"
+    "rationale": "Hungarian name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-2aabf202eceac140",
@@ -2141,7 +3524,8 @@
     "canonical_name": "University of Hong Kong",
     "display_name": "University of Hong Kong",
     "merge_type": "same_entity",
-    "rationale": "Common acronym"
+    "rationale": "Common acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-f676743426ce5ad1",
@@ -2149,7 +3533,8 @@
     "canonical_name": "University of Hong Kong",
     "display_name": "University of Hong Kong",
     "merge_type": "same_entity",
-    "rationale": "Leading-article variant"
+    "rationale": "Leading-article variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-4c4666c3ee495e03",
@@ -2157,7 +3542,26 @@
     "canonical_name": "University of Hong Kong",
     "display_name": "University of Hong Kong",
     "merge_type": "same_entity",
-    "rationale": "Official name"
+    "rationale": "Official name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-3349bccfd00dafda",
+    "alias": "University of Lille 1 Sciences and Technology",
+    "canonical_name": "University of Lille",
+    "display_name": "University of Lille",
+    "merge_type": "former_name",
+    "rationale": "Lille 1 merged into the University of Lille in 2018",
+    "evidence_url": "https://www.univ-lille.fr/universite/fiche-didentite"
+  },
+  {
+    "organization_alias_id": "org-9ec5ce29e5ca2ffa",
+    "alias": "University of London International Programmes",
+    "canonical_name": "University of London",
+    "display_name": "University of London",
+    "merge_type": "former_name",
+    "rationale": "Public-facing program name changed to University of London",
+    "evidence_url": "https://www.london.ac.uk/sites/default/files/leaflets/rebrand-leaflet-2018.pdf"
   },
   {
     "organization_alias_id": "org-bb4f16196171fb6b",
@@ -2165,7 +3569,8 @@
     "canonical_name": "University of Manchester",
     "display_name": "University of Manchester",
     "merge_type": "parent_organization",
-    "rationale": "University business school"
+    "rationale": "University business school",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-25e4f9c45791da91",
@@ -2173,7 +3578,8 @@
     "canonical_name": "University of Manchester",
     "display_name": "University of Manchester",
     "merge_type": "same_entity",
-    "rationale": "Leading-article variant"
+    "rationale": "Leading-article variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-f8fbe44f767b5174",
@@ -2181,7 +3587,8 @@
     "canonical_name": "University of Michigan",
     "display_name": "University of Michigan",
     "merge_type": "parent_organization",
-    "rationale": "University school"
+    "rationale": "University school",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-74246aebff0a91e9",
@@ -2189,7 +3596,8 @@
     "canonical_name": "University of Minnesota",
     "display_name": "University of Minnesota",
     "merge_type": "same_entity",
-    "rationale": "Campus-name variant"
+    "rationale": "Campus-name variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-136d09e3cdcd0ac1",
@@ -2197,7 +3605,8 @@
     "canonical_name": "University of North Carolina at Chapel Hill",
     "display_name": "UNC Chapel Hill",
     "merge_type": "same_entity",
-    "rationale": "Common campus name"
+    "rationale": "Common campus name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-cd6b762ba622be87",
@@ -2205,7 +3614,8 @@
     "canonical_name": "University of Padua",
     "display_name": "University of Padua",
     "merge_type": "multilingual_name",
-    "rationale": "Bilingual source label"
+    "rationale": "Bilingual source label",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-db998b25964d1687",
@@ -2213,7 +3623,8 @@
     "canonical_name": "University of Padua",
     "display_name": "University of Padua",
     "merge_type": "multilingual_name",
-    "rationale": "Italian short name"
+    "rationale": "Italian short name",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-d9419f61f5b751fd",
@@ -2221,7 +3632,8 @@
     "canonical_name": "University of Texas at Brownsville",
     "display_name": "University of Texas at Brownsville",
     "merge_type": "same_entity",
-    "rationale": "Leading-article variant"
+    "rationale": "Leading-article variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-51c8c68f865c77ee",
@@ -2229,7 +3641,8 @@
     "canonical_name": "Utebayev Atyrau Oil and Gas University",
     "display_name": "Atyrau Oil and Gas University",
     "merge_type": "former_name",
-    "rationale": "Former institute name for the current university"
+    "rationale": "Former institute name for the current university",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-a2c85bdd610298c6",
@@ -2237,7 +3650,8 @@
     "canonical_name": "VACANTE",
     "display_name": "VACANTE",
     "merge_type": "same_entity",
-    "rationale": "Legal-form variant"
+    "rationale": "Legal-form variant",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-3e21b8dab14d458d",
@@ -2245,7 +3659,26 @@
     "canonical_name": "VACANTE",
     "display_name": "VACANTE",
     "merge_type": "same_entity",
-    "rationale": "Domain-style brand variant"
+    "rationale": "Domain-style brand variant",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-5400a7902abc7402",
+    "alias": "Wand",
+    "canonical_name": "Wand AI",
+    "display_name": "Wand AI",
+    "merge_type": "same_entity",
+    "rationale": "Short public brand used by Wand AI",
+    "evidence_url": "https://wand.ai/"
+  },
+  {
+    "organization_alias_id": "org-7173b0ca068d2f0e",
+    "alias": "Wand.ai",
+    "canonical_name": "Wand AI",
+    "display_name": "Wand AI",
+    "merge_type": "same_entity",
+    "rationale": "Domain-style brand variant",
+    "evidence_url": "https://wand.ai/"
   },
   {
     "organization_alias_id": "org-4231a992ea3e313f",
@@ -2253,7 +3686,8 @@
     "canonical_name": "Washington University in St. Louis",
     "display_name": "Washington University in St. Louis",
     "merge_type": "parent_organization",
-    "rationale": "University school"
+    "rationale": "University school",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-0695481704fca89c",
@@ -2261,7 +3695,26 @@
     "canonical_name": "Yuan Ze University",
     "display_name": "Yuan Ze University",
     "merge_type": "multilingual_name",
-    "rationale": "Official Chinese name"
+    "rationale": "Official Chinese name",
+    "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-d442a93279b665aa",
+    "alias": "Ecole Nationale Supérieure de Géologie",
+    "canonical_name": "École Nationale Supérieure de Géologie (ENSG)",
+    "display_name": "ENSG",
+    "merge_type": "diacritic_variant",
+    "rationale": "ASCII-leading source name normalized to the official French name",
+    "evidence_url": "https://ensg.univ-lorraine.fr/lecole/presentation/"
+  },
+  {
+    "organization_alias_id": "org-312edc848a9a268e",
+    "alias": "École Nationale Supérieure de Géologie",
+    "canonical_name": "École Nationale Supérieure de Géologie (ENSG)",
+    "display_name": "ENSG",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym",
+    "evidence_url": "https://ensg.univ-lorraine.fr/lecole/presentation/"
   },
   {
     "organization_alias_id": "org-c25970605d44df89",
@@ -2269,7 +3722,8 @@
     "canonical_name": "École normale supérieure (ENS)",
     "display_name": "ENS",
     "merge_type": "transliterated_name",
-    "rationale": "ASCII spelling"
+    "rationale": "ASCII spelling",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-7f6577b9284ce292",
@@ -2277,7 +3731,8 @@
     "canonical_name": "École normale supérieure (ENS)",
     "display_name": "ENS",
     "merge_type": "same_entity",
-    "rationale": "Common acronym"
+    "rationale": "Common acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-19fec30719cc62df",
@@ -2285,7 +3740,8 @@
     "canonical_name": "École normale supérieure (ENS)",
     "display_name": "ENS",
     "merge_type": "same_entity",
-    "rationale": "Official name without acronym"
+    "rationale": "Official name without acronym",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-037ebf891e920293",
@@ -2293,7 +3749,8 @@
     "canonical_name": "École Polytechnique",
     "display_name": "École Polytechnique",
     "merge_type": "transliterated_name",
-    "rationale": "ASCII spelling"
+    "rationale": "ASCII spelling",
+    "evidence_url": ""
   },
   {
     "organization_alias_id": "org-3586da23ff91eb54",
@@ -2301,6 +3758,7 @@
     "canonical_name": "École Polytechnique",
     "display_name": "École Polytechnique",
     "merge_type": "same_entity",
-    "rationale": "Official name"
+    "rationale": "Official name",
+    "evidence_url": ""
   }
 ]

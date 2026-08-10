@@ -78,12 +78,20 @@ LINKED_EDUCATION_PATTERN = re.compile(
     re.IGNORECASE,
 )
 PLAIN_EDUCATION_PATTERN = re.compile(
-    r"^(?P<role>(?:bachelor|b\.?\s*sc\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|master|m\.?\s*sc\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|ph\.?d|doctor|degree|diploma).{0,140}?)"
+    r"^(?P<role>(?:associate|bachelors?|b\.?\s*sc\.?|b\.?\s*s\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|masters?|m\.?\s*sc\.?|m\.?\s*s\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|ph\.?d|doctor|specialist|degree|diploma|бакалавр|магистр|специалист).{0,140}?)"
     r"\s+at\s+(?P<organization>.{2,160}?)"
     r"(?=\s+(?:(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+)?(?:19|20)\d{2}\s*-|\s+\.{3}|$)",
     re.IGNORECASE,
 )
-LINK_ONLY_PATTERN = re.compile(r"^\[(?P<organization>[^\]]{2,160})\]\([^)]+\)")
+SECTION_EDUCATION_PATTERN = re.compile(
+    r"^(?P<role>.{2,140}?)\s+at\s+(?P<organization>.{2,160}?)"
+    r"(?=\s+(?:(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+)?(?:19|20)\d{2}\s*-|\s+\.{3}|$)",
+    re.IGNORECASE,
+)
+LINK_ONLY_PATTERN = re.compile(
+    r"^(?:at\s+)?\[(?P<organization>[^\]]{2,160})\]\([^)]+\)",
+    re.IGNORECASE,
+)
 DATE_RANGE_PATTERN = re.compile(
     r"(?:(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+)?"
     r"(?P<start>(?:19|20)\d{2})\s*-\s*"
@@ -100,13 +108,13 @@ EXCLUDED_ROLE_PATTERN = re.compile(
     re.IGNORECASE,
 )
 EDUCATION_TERMS = re.compile(
-    r"\b(?:bachelor|b\.?\s*sc\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|master|m\.?\s*sc\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|ph\.?d|doctor|student|graduate|degree|diploma|school|education)\b",
+    r"\b(?:associate|bachelors?|b\.?\s*sc\.?|b\.?\s*s\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|masters?|m\.?\s*sc\.?|m\.?\s*s\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|ph\.?d|doctor|specialist|student|graduate|degree|diploma|school|education|бакалавр|магистр|специалист)\b",
     re.IGNORECASE,
 )
 POSTSECONDARY_ROLE_PATTERN = re.compile(
-    r"\b(?:associate(?:'s)?|bachelor|b\.?\s*sc\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|"
-    r"master|m\.?\s*sc\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|mba\b|mph\b|"
-    r"ph\.?d|doctor(?:ate)?|undergraduate|graduate student|medical student)\b",
+    r"\b(?:associate(?:'s)?|bachelors?|b\.?\s*sc\.?|b\.?\s*s\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|"
+    r"masters?|m\.?\s*sc\.?|m\.?\s*s\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|mba\b|mph\b|"
+    r"ph\.?d|doctor(?:ate)?|specialist|undergraduate|graduate student|medical student|бакалавр|магистр|специалист)\b",
     re.IGNORECASE,
 )
 POSTSECONDARY_INSTITUTION_PATTERN = re.compile(
@@ -116,12 +124,12 @@ POSTSECONDARY_INSTITUTION_PATTERN = re.compile(
 )
 SECONDARY_INSTITUTION_PATTERN = re.compile(
     r"\b(?:high school|secondary school|lyceum|gymnasium|intellectual schools?|"
-    r"physics and mathematics school|boarding school|haileybury)\b|\b(?:rfms|fizmat|bil)\b",
+    r"physics and mathematics school|boarding school|berufskolleg|haileybury)\b|\b(?:rfms|fizmat|bil)\b",
     re.IGNORECASE,
 )
 NON_ALMA_ROLE_PATTERN = re.compile(
     r"\b(?:research|teaching) assistants?\b|\binstructors?\b|\b(?:acting )?deans?\b|"
-    r"\b(?:intern|fellow|visiting|exchange|summer (?:research )?school|certificate|"
+    r"\b(?:intern|fellow|visiting|exchange|summer (?:research )?(?:school|semester)|certificate|"
     r"short course|participant)\b",
     re.IGNORECASE,
 )
@@ -265,10 +273,19 @@ def parse_experience(segment: str, organization: str = "") -> dict[str, object] 
     )
 
 
-def parse_education(segment: str) -> dict[str, object] | None:
-    match = LINKED_EDUCATION_PATTERN.match(segment) or PLAIN_EDUCATION_PATTERN.match(segment)
+def parse_education(
+    segment: str,
+    *,
+    trusted_section: bool = False,
+    heading_title: str = "",
+) -> dict[str, object] | None:
+    match = (
+        LINKED_EDUCATION_PATTERN.match(segment)
+        or PLAIN_EDUCATION_PATTERN.match(segment)
+        or (SECTION_EDUCATION_PATTERN.match(segment) if trusted_section else None)
+    )
     if match:
-        if not EDUCATION_TERMS.search(match.group("role")):
+        if not trusted_section and not EDUCATION_TERMS.search(match.group("role")):
             return None
         return make_entry(
             match.group("organization"),
@@ -277,16 +294,30 @@ def parse_education(segment: str) -> dict[str, object] | None:
             segment,
         )
     match = LINK_ONLY_PATTERN.match(segment)
-    if not match:
-        return None
-    role = segment[match.end() :]
-    role = ROLE_STOP_PATTERN.sub("", role)
-    return make_entry(
-        match.group("organization"),
-        role if EDUCATION_TERMS.search(role) else "",
-        "education",
-        segment,
-    )
+    if match:
+        heading_match = LINK_ONLY_PATTERN.match(heading_title)
+        role = (
+            heading_title[heading_match.end() :]
+            if trusted_section and heading_match
+            else segment[match.end() :]
+        )
+        role = ROLE_STOP_PATTERN.sub("", role)
+        return make_entry(
+            match.group("organization"),
+            role if EDUCATION_TERMS.search(role) else "",
+            "education",
+            segment,
+        )
+    if trusted_section and heading_title:
+        organization = strip_markdown(heading_title)
+        canonical = canonicalize_organization(organization)
+        if (
+            POSTSECONDARY_INSTITUTION_PATTERN.search(canonical)
+            or SECONDARY_INSTITUTION_PATTERN.search(canonical)
+            or INSTITUTION_TERMS.search(canonical)
+        ):
+            return make_entry(canonical, "", "education", segment)
+    return None
 
 
 def extract_affiliations(highlights: str) -> list[dict[str, object]]:
@@ -334,7 +365,11 @@ def extract_affiliations(highlights: str) -> list[dict[str, object]]:
             else:
                 grouped_organization = ""
                 grouped_type = ""
-                entry = parse_education(segment)
+                entry = parse_education(
+                    segment,
+                    trusted_section=True,
+                    heading_title=heading_title,
+                )
         elif level == 3 and section == "experience":
             entry = parse_experience(segment)
             if not entry:
@@ -454,9 +489,9 @@ def education_score(
     degree_rank = 0
     if re.search(r"\b(?:ph\.?d|doctor)", role):
         degree_rank = 4
-    elif re.search(r"\b(?:master|msc|ms\b)", role):
+    elif re.search(r"\b(?:master|msc|ms\b|specialist|магистр|специалист)", role):
         degree_rank = 3
-    elif re.search(r"\b(?:bachelor|bsc|bs\b|beng\b|b\.?\s*eng\.?|undergraduate)", role):
+    elif re.search(r"\b(?:bachelor|bsc|bs\b|beng\b|b\.?\s*eng\.?|undergraduate|бакалавр)", role):
         degree_rank = 2
     elif "school" not in organization:
         degree_rank = 1
@@ -472,7 +507,8 @@ def education_score(
 def is_postsecondary_education(row: dict[str, object]) -> bool:
     role = clean_text(row.get("role"))
     organization = clean_text(row.get("organization"))
-    if NON_ALMA_ROLE_PATTERN.search(role):
+    evidence_text = clean_text(row.get("evidence_text"))
+    if NON_ALMA_ROLE_PATTERN.search(f"{role} {evidence_text}"):
         return False
     if POSTSECONDARY_ROLE_PATTERN.search(role):
         return True

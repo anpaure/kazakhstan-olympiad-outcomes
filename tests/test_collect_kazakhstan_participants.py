@@ -5,6 +5,7 @@ from scripts.collect_kazakhstan_participants import (
     parse_ibo_pdf,
     parse_ibo_row,
     parse_imo,
+    parse_ioi,
 )
 
 
@@ -100,6 +101,35 @@ class ImoResultsParsingTest(unittest.TestCase):
         self.assertEqual(
             participants[0].person_url,
             "https://www.imo-official.org/results/contestant/36189/",
+        )
+
+
+class IoiResultsParsingTest(unittest.TestCase):
+    def test_person_link_is_resolved_from_site_root(self):
+        html = """
+        <table>
+          <thead>
+            <tr><th>Year</th><th>Contestant</th><th>Country</th><th>Score</th><th>Rank</th><th>Award</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="olympiads/2000">2000</a></td>
+              <td><a href="people/1516">Example Contestant</a></td>
+              <td>Kazakhstan</td><td>100</td><td>10</td><td>Silver</td>
+            </tr>
+          </tbody>
+        </table>
+        """
+
+        participants = parse_ioi(
+            html,
+            "https://stats.ioinformatics.org/results/KAZ",
+        )
+
+        self.assertEqual(len(participants), 1)
+        self.assertEqual(
+            participants[0].person_url,
+            "https://stats.ioinformatics.org/people/1516",
         )
 
 

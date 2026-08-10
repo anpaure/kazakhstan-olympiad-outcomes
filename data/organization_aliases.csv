@@ -1,4 +1,4 @@
-alias,canonical_name,display_name,merge_type,rationale
+alias,canonical_name,display_name,merge_type,rationale,evidence_url
 UC Berkeley,"University of California, Berkeley",UC Berkeley,same_entity,Common short name
 University of California Berkeley,"University of California, Berkeley",UC Berkeley,same_entity,Punctuation variant
 University of Minnesota-Twin Cities,University of Minnesota,University of Minnesota,same_entity,Campus-name variant
@@ -17,7 +17,7 @@ Graviton Research Capital LLP,Graviton Research Capital,Graviton Research Capita
 HITS Inc,HITS,HITS,same_entity,Legal-form variant
 Huawei Noah's Ark Lab,Huawei,Huawei,parent_organization,Huawei research unit
 Huawei Switzerland,Huawei,Huawei,parent_organization,Huawei national subsidiary
-IoS_Flutter company,ios_flutter,ios_flutter,same_entity,Capitalization and suffix variant
+IoS_Flutter company,iOS/Flutter,iOS/Flutter,same_entity,Source employer label with generic company suffix,https://kz.linkedin.com/in/azamat-aidanov-64046076
 KAZ Minerals Management LLP,KAZ Minerals,KAZ Minerals,parent_organization,KAZ Minerals management entity
 Khan Group LLP,Khan Group,Khan Group,same_entity,Legal-form variant
 @khangroupkz,Khan Group,Khan Group,same_entity,Public handle corroborated by a second Khan Group affiliation
@@ -287,3 +287,133 @@ Barcelona Graduate School of Economics,Barcelona School of Economics (BSE),Barce
 Jacobs University Bremen,Constructor University,Constructor University,former_name,University adopted the Constructor University name in 2022
 MBZUAI (Mohamed bin Zayed University of Artificial Intelligence),Mohamed bin Zayed University of Artificial Intelligence (MBZUAI),MBZUAI,name_order,Acronym-first source label
 Atyrau Oil&Gas Institute,Utebayev Atyrau Oil and Gas University,Atyrau Oil and Gas University,former_name,Former institute name for the current university
+ios_flutter,iOS/Flutter,iOS/Flutter,capitalization_variant,Normalized capitalization of the source employer label,https://kz.linkedin.com/in/azamat-aidanov-64046076
+AIFC Green Finance Centre,Astana International Financial Centre,AIFC,parent_organization,Green Finance Centre is an AIFC subsidiary,https://aifc.kz/news/aifc-green-finance-centre-to-open-a-branch-in-bishkek/
+AIFC Green Finance Centre Ltd,Astana International Financial Centre,AIFC,parent_organization,Legal name of the AIFC subsidiary,https://aifc.kz/wp-content/uploads/2024/06/aifc_ar2020_eng.pdf
+Kumtor Operating Company,Kumtor Gold Company,Kumtor Gold,former_name,Operations transferred from KOC to KGC in 2014,https://www.kumtor.kg/en/deposit/history/
+Kumtor Gold Company,Kumtor Gold Company,Kumtor Gold,same_entity,Canonical display declaration,https://www.kumtor.kg/en/deposit/history/
+OIYaI,Joint Institute for Nuclear Research,JINR,transliterated_name,Transliteration of the Russian abbreviation OIYaI,https://ugrk.jinr.ru/contacts/requisites.php
+ОИЯИ,Joint Institute for Nuclear Research,JINR,multilingual_name,Official Russian abbreviation,https://ugrk.jinr.ru/contacts/requisites.php
+Joint Institute for Nuclear Research,Joint Institute for Nuclear Research,JINR,same_entity,Canonical display declaration,https://ugrk.jinr.ru/contacts/requisites.php
+Computing Center,Dorodnitsyn Computing Centre,Dorodnitsyn Computing Centre,former_name,Short former label for the RAS computing centre,https://en.wikipedia.org/wiki/Dorodnitsyn_Computing_Centre
+Computing Center of RAS,Dorodnitsyn Computing Centre,Dorodnitsyn Computing Centre,former_name,Former English name of the Dorodnitsyn centre,https://en.wikipedia.org/wiki/Dorodnitsyn_Computing_Centre
+Computing Centre of the Russian Academy of Sciences,Dorodnitsyn Computing Centre,Dorodnitsyn Computing Centre,former_name,Expanded former English name,https://en.wikipedia.org/wiki/Dorodnitsyn_Computing_Centre
+Alem,Alem Research,Alem Research,same_entity,Truncated employer label duplicated with the full name on one profile,https://www.goszakup.gov.kz/ru/registry/show_supplier/69217
+Alem Research LLP,Alem Research,Alem Research,same_entity,Legal-form variant,https://www.goszakup.gov.kz/ru/registry/show_supplier/69217
+Wand,Wand AI,Wand AI,same_entity,Short public brand used by Wand AI,https://wand.ai/
+Wand.ai,Wand AI,Wand AI,same_entity,Domain-style brand variant,https://wand.ai/
+kaspi bank,Kaspi.kz,Kaspi.kz,parent_organization,Capitalization variant of the Kaspi.kz banking subsidiary,https://ir.kaspi.kz/media/EX-8.1_List_of_subsidiaries_of_the_Registrant.pdf
+Kaspi Bank,Kaspi.kz,Kaspi.kz,parent_organization,Kaspi Bank is a Kaspi.kz subsidiary,https://ir.kaspi.kz/media/EX-8.1_List_of_subsidiaries_of_the_Registrant.pdf
+Kaspi Bank JSC,Kaspi.kz,Kaspi.kz,parent_organization,Legal name of the Kaspi.kz banking subsidiary,https://ir.kaspi.kz/media/EX-8.1_List_of_subsidiaries_of_the_Registrant.pdf
+Ministry of Education and Science of the Republic of Kazakhstan (Center Daryn),Republican Scientific and Practical Center Daryn,RSPC Daryn,parent_organization,Source label identifies Center Daryn within the ministry,https://www.gov.kz/memleket/entities/daryn
+IBS Data Science Group,Institute for Basic Science (IBS),Institute for Basic Science,parent_organization,Data Science Group is an IBS research group,https://www.ibs.re.kr/cop/bbs/BBSMSTR_000000000739/selectBoardArticle.do?nttId=24424
+SoftSec Lab,"Korea Advanced Institute of Science and Technology (KAIST)",KAIST,parent_organization,Software Security Research Lab is at KAIST,https://softsec.kaist.ac.kr/
+Nano/2D Materials Laboratory,"Korea Advanced Institute of Science and Technology (KAIST)",KAIST,parent_organization,Materials laboratory is a KAIST unit,https://mse.kaist.ac.kr/?mid=mse_lab_en
+Statistical AI Lab,Ulsan National Institute of Science and Technology (UNIST),UNIST,parent_organization,Short name of the UNIST Statistical Artificial Intelligence Lab,https://news.unist.ac.kr/unist-wins-first-place-in-digital-curling-tournament/
+Statistical Artificial Intelligence Laboratory (SAIL),Ulsan National Institute of Science and Technology (UNIST),UNIST,parent_organization,Research laboratory at UNIST,https://news.unist.ac.kr/unist-wins-first-place-in-digital-curling-tournament/
+Hausdorff Center for Mathematics,University of Bonn,University of Bonn,parent_organization,University of Bonn cluster of excellence,https://www.uni-bonn.de/en/university/working-at-the-university/job-opportunities/w2-professorships-bonn-junior-fellows
+Michigan State University Center for Quantum Computing (MSU-Q),Michigan State University,Michigan State University,parent_organization,MSU-Q is Michigan State University's quantum-computing center,https://msuq.msu.edu/
+MSU-Q,Michigan State University,Michigan State University,parent_organization,University center acronym,https://msuq.msu.edu/
+Boston University School of Medicine,Boston University,Boston University,parent_organization,Former name of a Boston University school,https://www.bu.edu/brand/guidelines/editorial-style/schools-colleges-and-departments/
+Chobanian & Avedisian School of Medicine,Boston University,Boston University,parent_organization,Current Boston University medical-school name,https://www.bu.edu/brand/guidelines/editorial-style/schools-colleges-and-departments/
+Singapore Centre for Environmental Life Sciences Engineering,Nanyang Technological University (NTU),NTU,parent_organization,SCELSE is an NTU university research institute,https://www.ntu.edu.sg/research/research-capabilities/research-centres-of-excellence
+SCELSE,Nanyang Technological University (NTU),NTU,parent_organization,Research-institute acronym,https://www.ntu.edu.sg/research/research-capabilities/research-centres-of-excellence
+Bocconi AI & Neuroscience Student Association,Bocconi University,Bocconi University,parent_organization,Bocconi student association,https://www.unibocconi.it/
+Bocconi Statistics and Data Science Student Association,Bocconi University,Bocconi University,parent_organization,Bocconi student association,https://www.unibocconi.it/
+Dartmouth Blockchain,Dartmouth College,Dartmouth College,parent_organization,Dartmouth student organization,https://home.dartmouth.edu/
+Dartmouth Formula Racing,Dartmouth College,Dartmouth College,parent_organization,Dartmouth student engineering team,https://home.dartmouth.edu/
+"Satbayev University, Institute of Physics and Technology",Satbayev University,Satbayev University,parent_organization,University institute,https://satbayev.university/
+Institute of Physics and Technology at Satbayev University,Satbayev University,Satbayev University,parent_organization,University institute,https://satbayev.university/
+SDU Technopark,Suleyman Demirel University (SDU),SDU,parent_organization,University technology park,https://sdu.edu.kz/
+Thompson Lab,Princeton University,Princeton University,parent_organization,Jeff Thompson's Princeton research laboratory,https://ece.princeton.edu/people/jeff-thompson
+stoltz group,California Institute of Technology (Caltech),Caltech,parent_organization,Stoltz research group at Caltech,https://www.stoltz.caltech.edu/
+Stoltz Group,California Institute of Technology (Caltech),Caltech,parent_organization,Capitalization variant of the Caltech research group,https://www.stoltz.caltech.edu/
+Weill Cornell Medicine,Cornell University,Cornell University,parent_organization,Medical college of Cornell University,https://weill.cornell.edu/our-story/history
+University of Lille 1 Sciences and Technology,University of Lille,University of Lille,former_name,Lille 1 merged into the University of Lille in 2018,https://www.univ-lille.fr/universite/fiche-didentite
+Tokyo Institute of Technology,Institute of Science Tokyo,Science Tokyo,former_name,Tokyo Tech merged into Institute of Science Tokyo in 2024,https://www.isct.ac.jp/en/news/fqsr7lxwvnbe
+Tokyo Tech,Institute of Science Tokyo,Science Tokyo,former_name,Short former brand of Institute of Science Tokyo,https://www.isct.ac.jp/en/news/fqsr7lxwvnbe
+Ames Laboratory / Iowa State University,Ames National Laboratory,Ames National Laboratory,former_name,Ames Laboratory adopted its current national-laboratory name in 2022,https://www.ameslab.gov/news/ames-laboratory-is-now-ames-national-laboratory
+Ames Laboratory,Ames National Laboratory,Ames National Laboratory,former_name,Former laboratory name,https://www.ameslab.gov/news/ames-laboratory-is-now-ames-national-laboratory
+University of London International Programmes,University of London,University of London,former_name,Public-facing program name changed to University of London,https://www.london.ac.uk/sites/default/files/leaflets/rebrand-leaflet-2018.pdf
+Ecole Nationale Supérieure de Géologie,École Nationale Supérieure de Géologie (ENSG),ENSG,diacritic_variant,ASCII-leading source name normalized to the official French name,https://ensg.univ-lorraine.fr/lecole/presentation/
+École Nationale Supérieure de Géologie,École Nationale Supérieure de Géologie (ENSG),ENSG,same_entity,Official name without acronym,https://ensg.univ-lorraine.fr/lecole/presentation/
+Memorial Sloan-Kettering Cancer Center,Memorial Sloan Kettering Cancer Center,Memorial Sloan Kettering Cancer Center,punctuation_variant,Current institution spelling omits the hyphen,https://www.mskcc.org/
+Institute of Theoretical and Applied Mechanics,Khristianovich Institute of Theoretical and Applied Mechanics (ITAM SB RAS),ITAM SB RAS,same_entity,Expanded official institute name,https://www.sbras.ru/en/org_soran/list
+Khristianovich Institute of Theoretical and Applied Mechanics,Khristianovich Institute of Theoretical and Applied Mechanics (ITAM SB RAS),ITAM SB RAS,same_entity,Official short name without parent acronym,https://www.sbras.ru/en/org_soran/list
+National Research Nuclear University MEPhI (Moscow Engineering Physics Institute),National Research Nuclear University MEPhI (Moscow Engineering Physics Institute),MEPhI,same_entity,Canonical display declaration,https://mephi.ru/
+The London School of Economics and Political Science (LSE),The London School of Economics and Political Science (LSE),LSE,same_entity,Canonical display declaration,https://www.lse.ac.uk/
+The University of British Columbia,The University of British Columbia,UBC,same_entity,Canonical display declaration,https://www.ubc.ca/
+Korea Institute of Science and Technology,Korea Institute of Science and Technology,KIST,same_entity,Canonical display declaration,https://www.kist.re.kr/eng/
+Novosibirsk State University (NSU),Novosibirsk State University (NSU),NSU,same_entity,Canonical display declaration,https://english.nsu.ru/
+The George Washington University,George Washington University,George Washington University,same_entity,Leading-article variant,https://www.gwu.edu/
+The Ohio State University,The Ohio State University,Ohio State University,same_entity,Canonical short display,https://www.osu.edu/
+SDAIA | سدايا,Saudi Data and AI Authority (SDAIA),SDAIA,multilingual_name,English and Arabic brand label,https://sdaia.gov.sa/
+SESC NSU — ( СУНЦ НГУ \ ФМШ ),Specialized Educational Scientific Center of Novosibirsk State University (SESC NSU),SESC NSU,multilingual_name,Bilingual school label normalized to its expanded English name,https://sesc.nsu.ru/
+Boreskov Institute of catalysis,Boreskov Institute of Catalysis,Boreskov Institute of Catalysis,capitalization_variant,Capitalization correction,https://catalysis.ru/
+Societe Generale,Société Générale,Société Générale,diacritic_variant,Official French brand spelling,https://www.societegenerale.com/
+aramco,Aramco,Aramco,capitalization_variant,Official brand capitalization,https://www.aramco.com/
+The HEINEKEN Company,HEINEKEN,HEINEKEN,same_entity,Public brand name,https://www.theheinekencompany.com/
+NetCracker,Netcracker Technology,Netcracker,same_entity,Current public company brand,https://www.netcracker.com/
+3TECH Engineering Limited,3TECH Engineering,3TECH Engineering,legal_form_variant,Legal-form cleanup,
+Centerra Gold Inc,Centerra Gold,Centerra Gold,legal_form_variant,Legal-form cleanup,
+Networks Energy LLP,Networks Energy,Networks Energy,legal_form_variant,Legal-form cleanup,
+"Platonus, LLP",Platonus,Platonus,legal_form_variant,Legal-form cleanup,
+"Damu" Enterpreneurship Development Fund,Damu Entrepreneurship Development Fund,Damu Entrepreneurship Development Fund,spelling_variant,Quotation and spelling cleanup,
+Kazakhstan Petrochemical Industries Inc. Liability Limited Partnership,Kazakhstan Petrochemical Industries (KPI),Kazakhstan Petrochemical Industries,legal_form_variant,Legal-name cleanup,
+"Quadrat" educational center,Quadrat Educational Center,Quadrat Educational Center,capitalization_variant,Quotation and capitalization cleanup,
+"Samruk-Kazyna" Corporate University,Samruk-Kazyna Corporate University,Samruk-Kazyna Corporate University,punctuation_variant,Quotation cleanup,
+"Sovenok" olympiad group for high-school students,Sovenok Olympiad Group,Sovenok Olympiad Group,descriptor_cleanup,Quotation and descriptor cleanup,
+"Age of Learning, Inc. / ABCmouse.com",Age of Learning,Age of Learning,parent_organization,Product and legal-form suffix cleanup,https://www.ageoflearning.com/
+AIJKO GmbH,AIJKO,AIJKO,legal_form_variant,Legal-form cleanup,
+Alan Tech LLC,Alan Tech,Alan Tech,legal_form_variant,Legal-form cleanup,
+Alanza LLC,Alanza,Alanza,legal_form_variant,Legal-form cleanup,
+Alemcard LLP,Alemcard,Alemcard,legal_form_variant,Legal-form cleanup,
+AOE GmbH,AOE,AOE,legal_form_variant,Legal-form cleanup,
+Atyrau Refinery Llp,Atyrau Refinery,Atyrau Refinery,legal_form_variant,Legal-form and capitalization cleanup,
+Buzachi Operating LTD,Buzachi Operating,Buzachi Operating,legal_form_variant,Legal-form cleanup,
+"Chain Lightning Co., Ltd",Chain Lightning,Chain Lightning,legal_form_variant,Legal-form cleanup,
+"Cornami, Inc",Cornami,Cornami,legal_form_variant,Legal-form cleanup,
+"Crabel Capital Management, LLC",Crabel Capital Management,Crabel Capital Management,legal_form_variant,Legal-form cleanup,
+Cummins Inc,Cummins,Cummins,legal_form_variant,Legal-form cleanup,
+Diamant LLC,Diamant,Diamant,legal_form_variant,Legal-form cleanup,
+Fonte Capital LTD,Fonte Capital,Fonte Capital,legal_form_variant,Legal-form cleanup,
+It service & solution GmbH & Co. KG,IT Service & Solution,IT Service & Solution,legal_form_variant,Capitalization and legal-form cleanup,
+JSC "CAUSTIC",Caustic,Caustic,legal_form_variant,Legal-form and quotation cleanup,
+JSC «Tau-Кen Samruk» National Mining Company,Tau-Ken Samruk,Tau-Ken Samruk,legal_form_variant,Legal-form and descriptor cleanup,
+JSC “Standard Investment Company”,Standard Investment Company,Standard Investment Company,legal_form_variant,Legal-form and quotation cleanup,
+"KAZPHOSPHATE LLC (ALMATY, TARAZ)",Kazphosphate,Kazphosphate,legal_form_variant,Legal-form location and capitalization cleanup,
+KAZAKHSTAN ASELSAN ENGINEERING (KAE) LLP,Kazakhstan Aselsan Engineering (KAE),Kazakhstan Aselsan Engineering,legal_form_variant,Legal-form and capitalization cleanup,
+"KBR, Inc",KBR,KBR,legal_form_variant,Legal-form cleanup,
+Khabar Agency JSC,Khabar Agency,Khabar Agency,legal_form_variant,Legal-form cleanup,
+"Locu, Inc",Locu,Locu,legal_form_variant,Legal-form cleanup,
+"Lowe's Companies, Inc",Lowe's,Lowe's,legal_form_variant,Legal-form cleanup,
+"Miaplaza, Inc",Miaplaza,Miaplaza,legal_form_variant,Legal-form cleanup,
+"MoveAWheeL, Inc",MoveAWheeL,MoveAWheeL,legal_form_variant,Legal-form cleanup,
+NAVER Corp,NAVER,NAVER,legal_form_variant,Legal-form cleanup,
+NAVER WEBTOON CORP,NAVER WEBTOON,NAVER WEBTOON,legal_form_variant,Legal-form cleanup,
+NTP Ltd,NTP,NTP,legal_form_variant,Legal-form cleanup,
+NURORDA INTERNATIONAL SCHOOLS,Nurorda International Schools,Nurorda International Schools,capitalization_variant,Capitalization cleanup,
+Opt-AI Inc,Opt-AI,Opt-AI,legal_form_variant,Legal-form cleanup,
+Predictive Oncology Inc,Predictive Oncology,Predictive Oncology,legal_form_variant,Legal-form cleanup,
+Q Capital Ltd,Q Capital,Q Capital,legal_form_variant,Legal-form cleanup,
+Qwerky Inc,Qwerky,Qwerky,legal_form_variant,Legal-form cleanup,
+Ratio Global Inc,Ratio Global,Ratio Global,legal_form_variant,Legal-form cleanup,
+Rocket Fuel Inc,Rocket Fuel,Rocket Fuel,legal_form_variant,Legal-form cleanup,
+SAMRUK-KAZYNA,Samruk-Kazyna,Samruk-Kazyna,capitalization_variant,Capitalization cleanup,https://sk.kz/
+Senimdi Kurylys LLP (Bechtel-Enka JV),Senimdi Kurylys (Bechtel-Enka JV),Senimdi Kurylys,legal_form_variant,Legal-form cleanup,
+Smart Remont Ltd,Smart Remont,Smart Remont,legal_form_variant,Legal-form cleanup,
+SmarTestPrep Ltd,SmarTestPrep,SmarTestPrep,legal_form_variant,Legal-form cleanup,
+Sprint Squads - Top 1% of software engineers and data scientists of Central Asia,Sprint Squads,Sprint Squads,descriptor_cleanup,Marketing descriptor cleanup,
+SPS Inc,SPS,SPS,legal_form_variant,Legal-form cleanup,
+Tavia Acquisition Corp,Tavia Acquisition,Tavia Acquisition,legal_form_variant,Legal-form cleanup,
+ThinkCol Limited,ThinkCol,ThinkCol,legal_form_variant,Legal-form cleanup,
+Typeser Inc,Typeser,Typeser,legal_form_variant,Legal-form cleanup,
+«Aksaigasservice» JSC,Aksaigasservice,Aksaigasservice,legal_form_variant,Legal-form and quotation cleanup,
+«SOVEREIGN WEALTH FUND «SAMRUK-KAZYNA» JSC,Samruk-Kazyna,Samruk-Kazyna,legal_form_variant,Expanded legal-name variant,https://sk.kz/
+ТОО Navus,Navus,Navus,multilingual_name,Cyrillic legal-form cleanup,
+Saint-Petersburg State University,Saint Petersburg State University,Saint Petersburg State University,punctuation_variant,Hyphenated public-profile spelling,https://www.linkedin.com/in/viktor-passichenko/
+казнту,Satbayev University,Satbayev University,former_name,The KazNTU abbreviation refers to the university now branded Satbayev University,https://official.satbayev.university/en/university/osnovnye-polozheniya-
+Казахский национальный университет имени аль-Фараби,Al-Farabi Kazakh National University,Al-Farabi KazNU,multilingual_name,Russian full name without parenthetical acronym,https://www.kaznu.kz/en
+КазНУ им. аль-Фараби,Al-Farabi Kazakh National University,Al-Farabi KazNU,multilingual_name,Russian abbreviated name,https://www.kaznu.kz/en
+Kazakh-Turkish High-School,Kazakh-Turkish High School,Kazakh-Turkish High School,punctuation_variant,Hyphenation variant in a public education profile,https://www.linkedin.com/in/askarbek-orakov/
+NURORDA High School,Nurorda High School,Nurorda High School,capitalization_variant,Capitalization variant in a public education profile,https://hk.linkedin.com/in/amanzholkuantay

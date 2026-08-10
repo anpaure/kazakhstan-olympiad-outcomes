@@ -28,13 +28,6 @@
     "rationale": "Reviewed profile identifies a private owner-operated business without a narrower public classification."
   },
   {
-    "organization_sector_id": "sector-c98a3c9f7b42da5d",
-    "canonical_name": "AIFC Green Finance Centre",
-    "organization_type": "nonprofit",
-    "sector": "Finance & Insurance",
-    "rationale": "Reviewed core activity is green and sustainable finance."
-  },
-  {
     "organization_sector_id": "sector-96c934e1bce4a135",
     "canonical_name": "Alem Entertainment",
     "organization_type": "company",
@@ -89,6 +82,13 @@
     "organization_type": "nonprofit",
     "sector": "Environment & Nonprofit",
     "rationale": "Reviewed core activity is biodiversity conservation."
+  },
+  {
+    "organization_sector_id": "sector-f4a81c7d5e7063e1",
+    "canonical_name": "Astana International Financial Centre",
+    "organization_type": "government",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed organization is Kazakhstan's statutory international financial centre and includes the Green Finance Centre destination."
   },
   {
     "organization_sector_id": "sector-0bc4da79a9b59730",
@@ -441,8 +441,8 @@
     "rationale": "Reviewed core activity is semiconductor technology."
   },
   {
-    "organization_sector_id": "sector-a31f6df3ca0107e4",
-    "canonical_name": "ios_flutter",
+    "organization_sector_id": "sector-b288c35eeecfae63",
+    "canonical_name": "iOS/Flutter",
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is mobile software development."

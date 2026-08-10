@@ -144,6 +144,18 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             "participant file contains unsupported olympiads: "
             + ", ".join(invalid_participant_olympiads)
         )
+    broken_ioi_person_urls = sorted(
+        {
+            row.get("person_url", "").strip()
+            for row in participants
+            if "/results/people/" in row.get("person_url", "")
+        }
+    )
+    if broken_ioi_person_urls:
+        errors.append(
+            "participant file contains noncanonical IOI person URLs: "
+            + ", ".join(broken_ioi_person_urls[:8])
+        )
 
     people_by_id = {row["person_id"]: row for row in people}
     researched_by_id = {row["person_id"]: row for row in researched}
@@ -432,6 +444,23 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
                 for person_id, organization in duplicate_alma[:8]
             )
         )
+    people_with_alma = {
+        row.get("person_id", "")
+        for row in affiliations
+        if row.get("selected_as_alma_mater", "").casefold() == "true"
+    }
+    accepted_linkedin_people = {
+        row.get("person_id", "")
+        for row in researched
+        if row.get("confidence", "") in {"probable", "confirmed"}
+        and "linkedin.com/in/" in row.get("linkedin_url", "").casefold()
+    }
+    missing_linkedin_alma = sorted(accepted_linkedin_people - people_with_alma)
+    if missing_linkedin_alma:
+        errors.append(
+            "accepted LinkedIn profiles have no selected alma mater: "
+            + ", ".join(missing_linkedin_alma[:8])
+        )
     for row in affiliations:
         person_id = row.get("person_id", "")
         if not row.get("organization", ""):
@@ -514,27 +543,40 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     if len(audit_organization_aliases) != len(organization_aliases):
         errors.append("audit organization aliases do not match the source registry")
     source_alias_rows = {
-        tuple(row.get(field, "") for field in (
+        tuple(row.get(field, "") or "" for field in (
             "alias",
             "canonical_name",
             "display_name",
             "merge_type",
             "rationale",
+            "evidence_url",
         ))
         for row in organization_aliases
     }
     audit_alias_rows = {
-        tuple(row.get(field, "") for field in (
+        tuple(row.get(field, "") or "" for field in (
             "alias",
             "canonical_name",
             "display_name",
             "merge_type",
             "rationale",
+            "evidence_url",
         ))
         for row in audit_organization_aliases
     }
     if source_alias_rows != audit_alias_rows:
         errors.append("audit organization aliases differ from the source registry")
+    invalid_alias_sources = sorted(
+        row.get("evidence_url", "")
+        for row in organization_aliases
+        if row.get("evidence_url", "")
+        and not row.get("evidence_url", "").startswith(("http://", "https://"))
+    )
+    if invalid_alias_sources:
+        errors.append(
+            "organization aliases contain invalid evidence URLs: "
+            + ", ".join(invalid_alias_sources[:8])
+        )
 
     try:
         load_organization_sectors(required["organization_sectors"])
