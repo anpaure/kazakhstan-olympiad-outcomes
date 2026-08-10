@@ -51,6 +51,15 @@ class LocationExtractionTest(unittest.TestCase):
         self.assertEqual(country_from_location("Hillsboro, Oregon"), "US")
         self.assertEqual(country_from_location("Hwaseong"), "KR")
 
+    def test_hungary_profile_location_is_supported(self):
+        result = extract_location(
+            "# Example Person\n\nStudent at Debreceni Egyetem\n\n"
+            "Debrecen, Hajdú-Bihar, Hungary (HU)\n\n3 connections"
+        )
+
+        self.assertEqual(result["country_code"], "HU")
+        self.assertEqual(result["country_name"], "Hungary")
+
 
 if __name__ == "__main__":
     unittest.main()

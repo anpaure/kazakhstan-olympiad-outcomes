@@ -385,6 +385,20 @@
     "rationale": "Reviewed core activity is internet software and cloud technology."
   },
   {
+    "organization_sector_id": "sector-1b1862415f2d9eef",
+    "canonical_name": "Google DeepMind",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is artificial intelligence research and software."
+  },
+  {
+    "organization_sector_id": "sector-6ad05f5b3d95d338",
+    "canonical_name": "GrapheneOS Foundation",
+    "organization_type": "nonprofit",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is privacy and security-focused mobile operating-system development."
+  },
+  {
     "organization_sector_id": "sector-62908d63ac2589c8",
     "canonical_name": "Graviton Research Capital",
     "organization_type": "company",

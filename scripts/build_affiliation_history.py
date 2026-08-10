@@ -120,7 +120,7 @@ SECONDARY_INSTITUTION_PATTERN = re.compile(
     re.IGNORECASE,
 )
 NON_ALMA_ROLE_PATTERN = re.compile(
-    r"\b(?:research|teaching) assistants?\b|\b(?:intern|fellow|visiting|exchange|"
+    r"\b(?:research|teaching) assistants?\b|\binstructors?\b|\b(?:intern|fellow|visiting|exchange|"
     r"summer school|certificate|short course|participant)\b",
     re.IGNORECASE,
 )
@@ -460,10 +460,10 @@ def education_score(
 def is_postsecondary_education(row: dict[str, object]) -> bool:
     role = clean_text(row.get("role"))
     organization = clean_text(row.get("organization"))
-    if POSTSECONDARY_ROLE_PATTERN.search(role):
-        return True
     if NON_ALMA_ROLE_PATTERN.search(role):
         return False
+    if POSTSECONDARY_ROLE_PATTERN.search(role):
+        return True
     if SECONDARY_INSTITUTION_PATTERN.search(organization):
         return False
     return bool(POSTSECONDARY_INSTITUTION_PATTERN.search(organization))

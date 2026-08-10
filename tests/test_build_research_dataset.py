@@ -186,6 +186,16 @@ class OrganizationCategoryTest(unittest.TestCase):
             "Leadership",
         )
 
+    def test_quantitative_research_is_classified_as_finance(self):
+        self.assertEqual(
+            role_category(
+                "Quantitative Research Analyst",
+                "Qube Research & Technologies",
+                "employment",
+            ),
+            "Economics & Finance",
+        )
+
 
 class DestinationNormalizationTest(unittest.TestCase):
     def test_destination_uses_canonical_organization_name(self):

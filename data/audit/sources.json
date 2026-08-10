@@ -15,6 +15,21 @@
     "source_adapters": "accepted_linkedin_profile;linkedin;public_profile_location"
   },
   {
+    "source_id": "src-12639f21bce4",
+    "source_url": "https://25amosaic.ust.hk/giving/benefited-projects/aef-exchange-scholarships-and-bursaries-students",
+    "source_host": "25amosaic.ust.hk",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "institutional_profile"
+  },
+  {
     "source_id": "src-9f759e04b53a",
     "source_url": "https://academy.edufo.ru/%D0%B7%D0%B0%D0%B3%D1%80%D0%B8%D0%B1%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B1-%D0%B0/",
     "source_host": "academy.edufo.ru",
@@ -2730,6 +2745,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-36a4355d21ef",
+    "source_url": "https://fondation.ens.psl.eu/en/pi-day-olympic-scholarships-2025/",
+    "source_host": "fondation.ens.psl.eu",
+    "source_kind": "web_page",
+    "evidence_rows": 4,
+    "people_count": 1,
+    "accepted_rows": 2,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "career_source_location;manual;manual_review"
+  },
+  {
     "source_id": "src-13a78b4c75c3",
     "source_url": "https://galaxy.edu.kz/en/staff/index/2",
     "source_host": "galaxy.edu.kz",
@@ -5055,6 +5085,36 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-b8e95ec25f72",
+    "source_url": "https://hk.linkedin.com/in/alibek-orazalin-3020011a9",
+    "source_host": "hk.linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 11,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 10,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual"
+  },
+  {
+    "source_id": "src-77462812b45f",
+    "source_url": "https://hk.linkedin.com/in/alikhan-zhumagaleyev",
+    "source_host": "hk.linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 5,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 4,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "accepted_linkedin_profile;linkedin;manual;manual_public_profile_location;manual_review"
+  },
+  {
     "source_id": "src-86db04d185b7",
     "source_url": "https://hk.linkedin.com/in/amanzholkuantay",
     "source_host": "hk.linkedin.com",
@@ -5145,6 +5205,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-b21cc72fd265",
+    "source_url": "https://hu.linkedin.com/in/yerassyl-muratov-21a223214",
+    "source_host": "hu.linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 4,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 3,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "linkedin;manual;manual_public_profile_location;manual_review"
+  },
+  {
     "source_id": "src-3df7b3ac03de",
     "source_url": "https://ie.linkedin.com/in/rauanrakhmet",
     "source_host": "ie.linkedin.com",
@@ -5224,9 +5299,9 @@
     "source_url": "https://ipho-unofficial.org/countries/KAZ/individual",
     "source_host": "ipho-unofficial.org",
     "source_kind": "web_page",
-    "evidence_rows": 148,
+    "evidence_rows": 149,
     "people_count": 89,
-    "accepted_rows": 143,
+    "accepted_rows": 144,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 5,
@@ -5310,6 +5385,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-ca47aff72d50",
+    "source_url": "https://ised-isde.canada.ca/cc/lgcy/fdrlCrpDtls.html?corpId=14857577&crpNm=grapheneos&p=0",
+    "source_host": "ised-isde.canada.ca",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "career_source_location;manual;manual_review"
+  },
+  {
     "source_id": "src-eaf77a1769f8",
     "source_url": "https://ist.ac.at/wp-content/uploads/2023/09/cv_alpichshev_010923.pdf",
     "source_host": "ist.ac.at",
@@ -5323,6 +5413,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-796ae3caad4c",
+    "source_url": "https://it.linkedin.com/in/aigerim-turuspekova",
+    "source_host": "it.linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 5,
+    "people_count": 1,
+    "accepted_rows": 2,
+    "supporting_rows": 3,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "linkedin;manual;manual_public_profile_location;manual_review"
   },
   {
     "source_id": "src-f644e3d3cbd4",
@@ -7560,6 +7665,21 @@
     "source_adapters": "accepted_linkedin_profile;linkedin;manual;public_profile_location"
   },
   {
+    "source_id": "src-d0b07553e456",
+    "source_url": "https://linkedin.com/in/gaukhar-alina",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 11,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 10,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual"
+  },
+  {
     "source_id": "src-c268e8712390",
     "source_url": "https://linkedin.com/in/guldana-abdualiyeva-9a681080",
     "source_host": "linkedin.com",
@@ -8173,6 +8293,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
     "source_adapters": "accepted_linkedin_profile;linkedin;manual;public_profile_location"
+  },
+  {
+    "source_id": "src-97e9f44ca141",
+    "source_url": "https://linkedin.com/in/raiymbek-akshulakov",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 15,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 15,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "accepted_linkedin_profile;linkedin;manual_public_profile_location"
   },
   {
     "source_id": "src-f65bd7204073",
@@ -14250,6 +14385,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-22cd3150780e",
+    "source_url": "https://statistics.berkeley.edu/people/danat-duisenbekov",
+    "source_host": "statistics.berkeley.edu",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "career_source_location;manual;manual_review"
+  },
+  {
     "source_id": "src-9119ea53d652",
     "source_url": "https://stats.ioinformatics.org/people/5942",
     "source_host": "stats.ioinformatics.org",
@@ -15330,6 +15480,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-4d21221835b6",
+    "source_url": "https://sundong.kim/members/",
+    "source_host": "sundong.kim",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "manual"
+  },
+  {
     "source_id": "src-5b05c3aeb86e",
     "source_url": "https://theorg.com/org/augment-code/offices/hq",
     "source_host": "theorg.com",
@@ -15675,6 +15840,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-1f99e3323987",
+    "source_url": "https://www.armeta.ai/company/team/",
+    "source_host": "armeta.ai",
+    "source_kind": "web_page",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review"
+  },
+  {
     "source_id": "src-a79584fd2fbb",
     "source_url": "https://www.bankofcanada.ca/profile/iskander-karibzhanov/",
     "source_host": "bankofcanada.ca",
@@ -15859,15 +16039,15 @@
     "source_url": "https://www.ibo-info.org/files/downloads/results-reports/final-reports/IBO-2024%20Report.pdf",
     "source_host": "ibo-info.org",
     "source_kind": "pdf",
-    "evidence_rows": 4,
-    "people_count": 2,
-    "accepted_rows": 2,
-    "supporting_rows": 2,
+    "evidence_rows": 10,
+    "people_count": 5,
+    "accepted_rows": 6,
+    "supporting_rows": 4,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;manual_review",
-    "source_adapters": "manual;manual_review"
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "affiliation_country;manual;manual_review"
   },
   {
     "source_id": "src-e8ec659c8f52",
@@ -16893,16 +17073,16 @@
     "source_id": "src-fbccc1b23bfb",
     "source_url": "https://www.imo-official.org/results/contestant/26684/",
     "source_host": "imo-official.org",
-    "source_kind": "html",
-    "evidence_rows": 1,
+    "source_kind": "web_page",
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 2,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IMO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IMO;manual"
   },
   {
     "source_id": "src-b327cef07366",
@@ -16998,16 +17178,16 @@
     "source_id": "src-0036f31c05ac",
     "source_url": "https://www.imo-official.org/results/contestant/29349/",
     "source_host": "imo-official.org",
-    "source_kind": "html",
-    "evidence_rows": 1,
+    "source_kind": "web_page",
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 2,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IMO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IMO;manual"
   },
   {
     "source_id": "src-b55a4ec14f4b",
@@ -17028,16 +17208,16 @@
     "source_id": "src-1879b7e98a3b",
     "source_url": "https://www.imo-official.org/results/contestant/29352/",
     "source_host": "imo-official.org",
-    "source_kind": "html",
-    "evidence_rows": 3,
+    "source_kind": "web_page",
+    "evidence_rows": 4,
     "people_count": 1,
-    "accepted_rows": 3,
+    "accepted_rows": 4,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IMO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IMO;manual"
   },
   {
     "source_id": "src-f16dcfdd175f",
@@ -19155,6 +19335,36 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-2b42306b6d8a",
+    "source_url": "https://www.math.hkust.edu.hk/intranet/ug/Epsilon/2022/awardee2022.pdf",
+    "source_host": "math.hkust.edu.hk",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "institutional_profile"
+  },
+  {
+    "source_id": "src-52b1211247ed",
+    "source_url": "https://www.math.hkust.edu.hk/ug/competition/previous/2024/photos/",
+    "source_host": "math.hkust.edu.hk",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "institutional_profile"
+  },
+  {
     "source_id": "src-3bb8653b2b1a",
     "source_url": "https://www.math.ucdavis.edu/people/grads",
     "source_host": "math.ucdavis.edu",
@@ -20473,5 +20683,20 @@
     "rejected_rows": 0,
     "provenances": "manual_review",
     "source_adapters": "manual"
+  },
+  {
+    "source_id": "src-0a4dee991a37",
+    "source_url": "https://yessenovfoundation.org/en/halyikbek-elshibekov/",
+    "source_host": "yessenovfoundation.org",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "institutional_biography"
   }
 ]

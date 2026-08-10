@@ -26,6 +26,8 @@ org-119b615bd71a623e,Kazakh-Turkish High Schools,Bilim-Innovation Lyceums (BIL),
 org-0b476d027628fae0,Kazakh-Turkish lyceum for gifted students,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former network name
 org-1aee4fa84006531a,Oral Bilim Innovation High School,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
 org-00bc7566dfb15a28,BINUS International,BINUS University,BINUS University,parent_organization,International campus label
+org-9a84dc7c01856133,Bocconi,Bocconi University,Bocconi University,same_entity,Common short name
+org-42a07b51b552eeca,Università Bocconi,Bocconi University,Bocconi University,multilingual_name,Italian name
 org-4b898f87824a7625,California Institute of Technology,California Institute of Technology (Caltech),Caltech,same_entity,Official name without acronym
 org-7a15daf168dd4f66,Caltech,California Institute of Technology (Caltech),Caltech,same_entity,Common short name
 org-0b63819d9976f098,Deep Infra Inc,Deep Infra,Deep Infra,same_entity,Legal-form punctuation variant
@@ -36,6 +38,7 @@ org-a5f91476e4dc8464,ETH Zürich,ETH Zurich,ETH Zurich,same_entity,Diacritic var
 org-78e7e6b2a4abe9ec,Freedom Horizons Corp.,Freedom Horizons,Freedom Horizons,same_entity,Legal-form variant
 org-bf8e0c3d12a281c6,"Genie, Inc",Genie,Genie,same_entity,Legal-form punctuation variant
 org-6e5152ad2301e66c,"Genie, Inc.",Genie,Genie,same_entity,Legal-form punctuation variant
+org-5c3141578f013764,Google Deepmind,Google DeepMind,Google DeepMind,same_entity,Capitalization variant
 org-a4de49f86606d496,Graviton Research Capital LLP,Graviton Research Capital,Graviton Research Capital,same_entity,Legal-form variant
 org-afed4f94b89f26b6,HARBOUR.SPACE,Harbour.Space University,Harbour.Space,same_entity,Capitalization variant
 org-0ee0364b3655ee89,Harbour.Space University - Barcelona Campus,Harbour.Space University,Harbour.Space,parent_organization,Campus label
@@ -131,6 +134,8 @@ org-9595ff2914bacbb3,Suleyman Demirel University,Suleyman Demirel University (SD
 org-c39fd9226404a9f9,"Suleyman Demirel University, Kazakhstan",Suleyman Demirel University (SDU),SDU,same_entity,Location suffix
 org-bb0d7ba862021016,"TETmedical, Inc",TETmedical,TETmedical,same_entity,Legal-form punctuation variant
 org-e5c2ee751340a694,"TETmedical, Inc.",TETmedical,TETmedical,same_entity,Legal-form punctuation variant
+org-a3bcd420ed9593ff,CUHK,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Common acronym
+org-98e0a0fac9911b18,The Chinese University of Hong Kong,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Official name without acronym
 org-49ace9e90cb4d2e0,Ulsan National Insitute of Science and Technology,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Typo variant
 org-674ecb4012a6af22,Ulsan National Institute of Science and Technology,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Official name without acronym
 org-dd517a0bd8e8c29f,UNIST,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Acronym
@@ -141,9 +146,13 @@ org-8b3c92efde945da5,University of California Berkeley,"University of California
 org-6abcfaa66547e033,University of California Davis,"University of California, Davis",UC Davis,same_entity,Punctuation variant
 org-e5e362fbd63a0e6c,"Institute for Pure and Applied Mathematics, UCLA","University of California, Los Angeles (UCLA)",UCLA,parent_organization,University institute
 org-42693b41b5ac4af5,"University of California, Los Angeles","University of California, Los Angeles (UCLA)",UCLA,same_entity,Official name without acronym
+org-2fdc3189c3f0c4b6,Debreceni Egyetem,University of Debrecen,University of Debrecen,multilingual_name,Hungarian name
 org-f676743426ce5ad1,The University of Hong Kong,University of Hong Kong,University of Hong Kong,same_entity,Leading-article variant
 org-f8fbe44f767b5174,University of Michigan - Stephen M. Ross School of Business,University of Michigan,University of Michigan,parent_organization,University school
 org-74246aebff0a91e9,University of Minnesota-Twin Cities,University of Minnesota,University of Minnesota,same_entity,Campus-name variant
 org-d9419f61f5b751fd,The University of Texas at Brownsville,University of Texas at Brownsville,University of Texas at Brownsville,same_entity,Leading-article variant
 org-a2c85bdd610298c6,VACANTE LLP,VACANTE,VACANTE,same_entity,Legal-form variant
 org-3e21b8dab14d458d,vacante.kz,VACANTE,VACANTE,same_entity,Domain-style brand variant
+org-c25970605d44df89,Ecole normale superieure,École normale supérieure (ENS),ENS,transliterated_name,ASCII spelling
+org-7f6577b9284ce292,ENS,École normale supérieure (ENS),ENS,same_entity,Common acronym
+org-19fec30719cc62df,École normale supérieure,École normale supérieure (ENS),ENS,same_entity,Official name without acronym

@@ -196,6 +196,20 @@
     "review_reason": "Country code is exposed in the accepted public profile location."
   },
   {
+    "location_id": "loc-f506784ea735ad1c",
+    "evidence_id": "ev-5fae5333e6bcd85d",
+    "source_id": "src-796ae3caad4c",
+    "person_id": "kaz-1b79632fc187",
+    "name": "Aigerim Turuspekova",
+    "country_code": "IT",
+    "country_name": "Italy",
+    "location_label": "Milan, Lombardy, Italy",
+    "evidence_url": "https://it.linkedin.com/in/aigerim-turuspekova",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile exposes Milan Lombardy Italy as Aigerim Turuspekova's location."
+  },
+  {
     "location_id": "loc-8f1fb77449e8494e",
     "evidence_id": "ev-f10535bfb7727880",
     "source_id": "src-562c3d14545e",
@@ -364,6 +378,20 @@
     "review_reason": "The reviewed public LinkedIn profile exposes Berkeley, California, United States as its location."
   },
   {
+    "location_id": "loc-c318e7f40a800b2e",
+    "evidence_id": "ev-90644176733c063a",
+    "source_id": "src-b8e95ec25f72",
+    "person_id": "kaz-3b19b5bc5f6d",
+    "name": "Alibek Orazalin",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong, Hong Kong SAR",
+    "evidence_url": "https://hk.linkedin.com/in/alibek-orazalin-3020011a9",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile places Alibek Orazalin's current Qube Research and Technologies role in Hong Kong."
+  },
+  {
     "location_id": "loc-2f76a670072f6b57",
     "evidence_id": "ev-c40365c2c3e5cd6b",
     "source_id": "src-c3c03d59d598",
@@ -390,6 +418,34 @@
     "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location."
+  },
+  {
+    "location_id": "loc-0ee5c2cee62fcbac",
+    "evidence_id": "ev-8ea0a7ee9e9f5274",
+    "source_id": "src-77462812b45f",
+    "person_id": "kaz-61c6139b5eb9",
+    "name": "Alikhan Zhumagaleyev",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong, Hong Kong SAR",
+    "evidence_url": "https://hk.linkedin.com/in/alikhan-zhumagaleyev",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile exposes Hong Kong as Alikhan Zhumagaleyev's location and identifies his CUHK student role."
+  },
+  {
+    "location_id": "loc-3593f7112d303db1",
+    "evidence_id": "ev-f3f50f2f3c242742",
+    "source_id": "src-d0b07553e456",
+    "person_id": "kaz-ceec4f816e2c",
+    "name": "Alina Gaukhartas",
+    "country_code": "CH",
+    "country_name": "Switzerland",
+    "location_label": "Zurich, Switzerland",
+    "evidence_url": "https://linkedin.com/in/gaukhar-alina",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile places the current Google DeepMind software-engineering role in Zurich Switzerland."
   },
   {
     "location_id": "loc-046850e70c61a217",
@@ -1008,6 +1064,20 @@
     "review_reason": "Country code is exposed in the accepted public profile location."
   },
   {
+    "location_id": "loc-226586d953c16e25",
+    "evidence_id": "ev-4ff7d850783056f9",
+    "source_id": "src-22cd3150780e",
+    "person_id": "kaz-d3e4616882fd",
+    "name": "Danat Duisenbekov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Berkeley, California, United States",
+    "evidence_url": "https://statistics.berkeley.edu/people/danat-duisenbekov",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "The accepted probable exact-name match is listed in UC Berkeley's Statistics PhD program and the department address is in Berkeley California."
+  },
+  {
     "location_id": "loc-f01aa6dc16aa9ada",
     "evidence_id": "ev-cf4fe9e78bca037f",
     "source_id": "src-ffe96a0a662d",
@@ -1580,6 +1650,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role."
+  },
+  {
+    "location_id": "loc-96092489d0b91dc6",
+    "evidence_id": "ev-5f98cccd9992b047",
+    "source_id": "src-ca47aff72d50",
+    "person_id": "kaz-5ead16bef384",
+    "name": "Khalykbek Yelshibekov",
+    "country_code": "CA",
+    "country_name": "Canada",
+    "location_label": "Toronto, Ontario, Canada",
+    "evidence_url": "https://ised-isde.canada.ca/cc/lgcy/fdrlCrpDtls.html?corpId=14857577&crpNm=grapheneos&p=0",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Canada's official corporate registry lists the accepted probable exact-name GrapheneOS Foundation director at a Toronto Ontario address."
   },
   {
     "location_id": "loc-bc73f2473243ca32",
@@ -2170,6 +2254,20 @@
     "review_reason": "Country code is exposed in the accepted public profile location."
   },
   {
+    "location_id": "loc-1a1d104ba49972b0",
+    "evidence_id": "ev-39a07ad4215cea92",
+    "source_id": "src-97e9f44ca141",
+    "person_id": "kaz-3bb636937f0d",
+    "name": "Raiymbek Akshulakov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Mountain View, California, United States",
+    "evidence_url": "https://linkedin.com/in/raiymbek-akshulakov",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted self-authored LinkedIn profile exposes Mountain View California as Raiymbek Akshulakov's location."
+  },
+  {
     "location_id": "loc-e2bd33bfd3bbd05c",
     "evidence_id": "ev-c4e6d8c49cbfe726",
     "source_id": "src-f65bd7204073",
@@ -2576,6 +2674,20 @@
     "review_reason": "Country code is exposed in the accepted public profile location."
   },
   {
+    "location_id": "loc-3ee4aa7e325168a2",
+    "evidence_id": "ev-fd276bc0be0c77f3",
+    "source_id": "src-36a4355d21ef",
+    "person_id": "kaz-11ab68f6f611",
+    "name": "Tair Satubaldin",
+    "country_code": "FR",
+    "country_name": "France",
+    "location_label": "Paris, France",
+    "evidence_url": "https://fondation.ens.psl.eu/en/pi-day-olympic-scholarships-2025/",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The ENS Foundation identifies Tair Satubaldin as a mathematics student who joined École normale supérieure in Paris in September 2024."
+  },
+  {
     "location_id": "loc-05ac269660e6c075",
     "evidence_id": "ev-28d47a2549d1252f",
     "source_id": "src-81f64cf96666",
@@ -2854,6 +2966,34 @@
     "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location."
+  },
+  {
+    "location_id": "loc-16379b29b7966ff9",
+    "evidence_id": "ev-82bf8de62abc441e",
+    "source_id": "src-b21cc72fd265",
+    "person_id": "kaz-279f8d67af01",
+    "name": "Yerassyl Muratov",
+    "country_code": "HU",
+    "country_name": "Hungary",
+    "location_label": "Debrecen, Hungary",
+    "evidence_url": "https://hu.linkedin.com/in/yerassyl-muratov-21a223214",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile exposes Debrecen Hungary as Yerassyl Muratov's location and identifies his University of Debrecen medical program."
+  },
+  {
+    "location_id": "loc-58f6ee90fb5a8122",
+    "evidence_id": "ev-23470f2e4a16da42",
+    "source_id": "src-00ba24842cca",
+    "person_id": "kaz-a07bb87cf2c6",
+    "name": "Yerassyl Temirbekov",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong",
+    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/final-reports/IBO-2024%20Report.pdf",
+    "evidence_kind": "affiliation_country",
+    "confidence": "confirmed",
+    "review_reason": "The official IBO report identifies Yerassyl Temirbekov as an HKUST undergraduate in Hong Kong and independently joins that affiliation to his 2022 IBO silver medal."
   },
   {
     "location_id": "loc-a6f966c45bedd738",

@@ -216,6 +216,22 @@
     "rationale": "International campus label"
   },
   {
+    "organization_alias_id": "org-9a84dc7c01856133",
+    "alias": "Bocconi",
+    "canonical_name": "Bocconi University",
+    "display_name": "Bocconi University",
+    "merge_type": "same_entity",
+    "rationale": "Common short name"
+  },
+  {
+    "organization_alias_id": "org-42a07b51b552eeca",
+    "alias": "Università Bocconi",
+    "canonical_name": "Bocconi University",
+    "display_name": "Bocconi University",
+    "merge_type": "multilingual_name",
+    "rationale": "Italian name"
+  },
+  {
     "organization_alias_id": "org-4b898f87824a7625",
     "alias": "California Institute of Technology",
     "canonical_name": "California Institute of Technology (Caltech)",
@@ -294,6 +310,14 @@
     "display_name": "Genie",
     "merge_type": "same_entity",
     "rationale": "Legal-form punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-5c3141578f013764",
+    "alias": "Google Deepmind",
+    "canonical_name": "Google DeepMind",
+    "display_name": "Google DeepMind",
+    "merge_type": "same_entity",
+    "rationale": "Capitalization variant"
   },
   {
     "organization_alias_id": "org-a4de49f86606d496",
@@ -1056,6 +1080,22 @@
     "rationale": "Legal-form punctuation variant"
   },
   {
+    "organization_alias_id": "org-a3bcd420ed9593ff",
+    "alias": "CUHK",
+    "canonical_name": "The Chinese University of Hong Kong (CUHK)",
+    "display_name": "CUHK",
+    "merge_type": "same_entity",
+    "rationale": "Common acronym"
+  },
+  {
+    "organization_alias_id": "org-98e0a0fac9911b18",
+    "alias": "The Chinese University of Hong Kong",
+    "canonical_name": "The Chinese University of Hong Kong (CUHK)",
+    "display_name": "CUHK",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
     "organization_alias_id": "org-49ace9e90cb4d2e0",
     "alias": "Ulsan National Insitute of Science and Technology",
     "canonical_name": "Ulsan National Institute of Science and Technology (UNIST)",
@@ -1136,6 +1176,14 @@
     "rationale": "Official name without acronym"
   },
   {
+    "organization_alias_id": "org-2fdc3189c3f0c4b6",
+    "alias": "Debreceni Egyetem",
+    "canonical_name": "University of Debrecen",
+    "display_name": "University of Debrecen",
+    "merge_type": "multilingual_name",
+    "rationale": "Hungarian name"
+  },
+  {
     "organization_alias_id": "org-f676743426ce5ad1",
     "alias": "The University of Hong Kong",
     "canonical_name": "University of Hong Kong",
@@ -1182,5 +1230,29 @@
     "display_name": "VACANTE",
     "merge_type": "same_entity",
     "rationale": "Domain-style brand variant"
+  },
+  {
+    "organization_alias_id": "org-c25970605d44df89",
+    "alias": "Ecole normale superieure",
+    "canonical_name": "École normale supérieure (ENS)",
+    "display_name": "ENS",
+    "merge_type": "transliterated_name",
+    "rationale": "ASCII spelling"
+  },
+  {
+    "organization_alias_id": "org-7f6577b9284ce292",
+    "alias": "ENS",
+    "canonical_name": "École normale supérieure (ENS)",
+    "display_name": "ENS",
+    "merge_type": "same_entity",
+    "rationale": "Common acronym"
+  },
+  {
+    "organization_alias_id": "org-19fec30719cc62df",
+    "alias": "École normale supérieure",
+    "canonical_name": "École normale supérieure (ENS)",
+    "display_name": "ENS",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
   }
 ]

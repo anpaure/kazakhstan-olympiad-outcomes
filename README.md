@@ -12,15 +12,15 @@ The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
 - 456 canonical people after 30 reviewed name merges
-- 308 researched people, all classified as probable or confirmed
-- 254 confirmed and 54 probable identity, education, or career outcomes
-- 277 manually reviewed outcomes backed by public evidence
-- 266 researched people with one resolved destination and 230 with a public LinkedIn URL
-- 2,049 sourced employment/education history rows, including 344 selected alma-mater records across 224 people
+- 318 researched people, all classified as probable or confirmed
+- 262 confirmed and 56 probable identity, education, or career outcomes
+- 287 manually reviewed outcomes backed by public evidence
+- 275 researched people with one resolved destination and 236 with a public LinkedIn URL
+- 2,092 sourced employment/education history rows, including 354 selected alma-mater records across 234 people
 - 37 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
-- 148 reviewed organization aliases collapsed into canonical employers and universities
-- 148 reviewed sector classifications covering every displayed non-educational destination
-- 226 sourced outcome-country records across 20 countries
+- 157 reviewed organization aliases collapsed into canonical employers and universities
+- 150 reviewed sector classifications covering every displayed non-educational destination
+- 236 sourced outcome-country records across 22 countries
 - 3 additional people with candidate-only evidence retained for audit but no accepted outcome
 - 112 rejected identity sources retained with review reasons and supporting links
 
@@ -193,10 +193,10 @@ highlights. The JSON also records input count, searched count, successful and
 failed counts, and coverage percentage.
 
 Current Exa search coverage: 456 of 456 canonical people, 456 successful searches,
-zero errors, and 2,280 ranked result rows. Total recorded search cost is $3.192.
-The exact-URL hydration audit covers all 230 accepted LinkedIn profiles: 225
+zero errors, and 2,330 ranked result rows. Total recorded search cost is $3.192.
+The exact-URL hydration audit covers all 236 accepted LinkedIn profiles: 231
 retrievals succeeded and 5 explicit `ENTITY_NOT_FOUND` errors remain logged, at
-$0.225 recorded cost.
+$0.231 recorded cost.
 
 Outputs:
 

@@ -180,7 +180,7 @@ def role_category(role: str, organization: str, affiliation_type: str) -> str:
         return "Student"
     if any(term in text for term in ["software", "developer", "machine learning", " ai ", "computer science"]):
         return "Software & AI"
-    if any(term in text for term in ["economist", "finance", "bank"]):
+    if any(term in text for term in ["economist", "finance", "bank", "quantitative"]):
         return "Economics & Finance"
     if any(term in text for term in ["professor", "research", "scientist", "postdoc", "phd"]):
         return "Research & Academia"

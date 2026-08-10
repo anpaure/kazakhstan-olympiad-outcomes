@@ -147,3 +147,12 @@ Purdue University System,Purdue University,Purdue University,parent_organization
 Purdue University West Lafayette,Purdue University,Purdue University,parent_organization,Main campus label
 University of Michigan - Stephen M. Ross School of Business,University of Michigan,University of Michigan,parent_organization,University school
 ктж,Kazakhstan Temir Zholy JSC,Kazakhstan Temir Zholy,multilingual_name,Cyrillic acronym
+The Chinese University of Hong Kong,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Official name without acronym
+CUHK,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Common acronym
+Debreceni Egyetem,University of Debrecen,University of Debrecen,multilingual_name,Hungarian name
+Università Bocconi,Bocconi University,Bocconi University,multilingual_name,Italian name
+Bocconi,Bocconi University,Bocconi University,same_entity,Common short name
+École normale supérieure,École normale supérieure (ENS),ENS,same_entity,Official name without acronym
+Ecole normale superieure,École normale supérieure (ENS),ENS,transliterated_name,ASCII spelling
+ENS,École normale supérieure (ENS),ENS,same_entity,Common acronym
+Google Deepmind,Google DeepMind,Google DeepMind,same_entity,Capitalization variant
