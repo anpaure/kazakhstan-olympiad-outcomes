@@ -98,6 +98,24 @@ AUDIT_ORGANIZATION_ALIAS_FIELDS = [
     "rationale",
 ]
 
+
+def alma_mater_sort_key(row: dict[str, str]) -> tuple[int, int, str]:
+    role = row.get("role", "").casefold()
+    if re.search(r"\b(?:associate|bachelor|bsc|bs\b|beng|undergraduate|medical student)", role):
+        degree_rank = 1
+    elif re.search(r"\b(?:master|msc|ms\b|meng|mba|mph)", role):
+        degree_rank = 2
+    elif re.search(r"\b(?:ph\.?d|doctor|graduate student)", role):
+        degree_rank = 3
+    else:
+        degree_rank = 4
+    start_year = (
+        int(row.get("start_year", "0"))
+        if row.get("start_year", "").isdigit()
+        else 9999
+    )
+    return degree_rank, start_year, row.get("organization", "").casefold()
+
 AUDIT_ORGANIZATION_SECTOR_FIELDS = [
     "organization_sector_id",
     "canonical_name",
@@ -621,11 +639,10 @@ def build_audit_people(
     locations_by_person = {
         row["person_id"]: row for row in locations or [] if row.get("person_id")
     }
-    alma_by_person = {
-        row["person_id"]: row
-        for row in affiliation_history or []
-        if row.get("selected_as_alma_mater", "").casefold() == "true"
-    }
+    alma_by_person: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for alma_row in affiliation_history or []:
+        if alma_row.get("selected_as_alma_mater", "").casefold() == "true":
+            alma_by_person[alma_row["person_id"]].append(alma_row)
 
     output: list[dict[str, object]] = []
     for row in researched:
@@ -651,7 +668,10 @@ def build_audit_people(
         else:
             traceability = "participation_only"
         location = locations_by_person.get(row["person_id"], {})
-        alma = alma_by_person.get(row["person_id"], {})
+        alma_rows = sorted(
+            alma_by_person.get(row["person_id"], []),
+            key=alma_mater_sort_key,
+        )
         output.append(
             {
                 "person_id": row["person_id"],
@@ -672,8 +692,12 @@ def build_audit_people(
                 "role_category": row["role_category"],
                 "destination_status": row.get("destination_status", ""),
                 "destination_note": row.get("destination_note", ""),
-                "alma_mater": alma.get("organization", ""),
-                "alma_mater_source_url": alma.get("evidence_url", ""),
+                "alma_mater": "; ".join(
+                    dict.fromkeys(item.get("organization", "") for item in alma_rows)
+                ),
+                "alma_mater_source_url": "; ".join(
+                    dict.fromkeys(item.get("evidence_url", "") for item in alma_rows)
+                ),
                 "outcome_country_code": location.get("country_code", ""),
                 "outcome_country_name": location.get("country_name", ""),
                 "outcome_location_label": location.get("location_label", ""),

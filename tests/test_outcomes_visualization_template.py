@@ -16,11 +16,13 @@ class OrganizationSplitTest(unittest.TestCase):
         self.assertIn('class="iso-ranked-scroll"', self.template)
         self.assertIn('overflow: auto', self.template)
 
-    def test_rankings_use_reviewed_organization_type(self):
+    def test_company_ranking_uses_destination_and_education_uses_alma_maters(self):
         self.assertIn(
-            "(person.organizationType === 'education') === education",
+            "person.organizationType !== 'education' ? [person.organization] : []",
             self.template,
         )
+        self.assertIn("...(person.almaMaters || []).map(alma => alma.organization)", self.template)
+        self.assertIn("personHasOrganization(person, state.selectedOrganization)", self.template)
         self.assertNotIn('data-control="companies-only"', self.template)
 
 

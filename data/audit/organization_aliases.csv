@@ -136,11 +136,14 @@ org-674ecb4012a6af22,Ulsan National Institute of Science and Technology,Ulsan Na
 org-dd517a0bd8e8c29f,UNIST,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Acronym
 org-25e6913c5ecdf069,울산과학기술원,Ulsan National Institute of Science and Technology (UNIST),UNIST,multilingual_name,Korean name
 org-6347733801b598d1,NDA,Undisclosed employer,Undisclosed employer,same_entity,Disclosure-status abbreviation
+org-7c19571a21133bd7,UC Berkeley,"University of California, Berkeley",UC Berkeley,same_entity,Common short name
+org-8b3c92efde945da5,University of California Berkeley,"University of California, Berkeley",UC Berkeley,same_entity,Punctuation variant
 org-6abcfaa66547e033,University of California Davis,"University of California, Davis",UC Davis,same_entity,Punctuation variant
 org-e5e362fbd63a0e6c,"Institute for Pure and Applied Mathematics, UCLA","University of California, Los Angeles (UCLA)",UCLA,parent_organization,University institute
 org-42693b41b5ac4af5,"University of California, Los Angeles","University of California, Los Angeles (UCLA)",UCLA,same_entity,Official name without acronym
 org-f676743426ce5ad1,The University of Hong Kong,University of Hong Kong,University of Hong Kong,same_entity,Leading-article variant
 org-f8fbe44f767b5174,University of Michigan - Stephen M. Ross School of Business,University of Michigan,University of Michigan,parent_organization,University school
+org-74246aebff0a91e9,University of Minnesota-Twin Cities,University of Minnesota,University of Minnesota,same_entity,Campus-name variant
 org-d9419f61f5b751fd,The University of Texas at Brownsville,University of Texas at Brownsville,University of Texas at Brownsville,same_entity,Leading-article variant
 org-a2c85bdd610298c6,VACANTE LLP,VACANTE,VACANTE,same_entity,Legal-form variant
 org-3e21b8dab14d458d,vacante.kz,VACANTE,VACANTE,same_entity,Domain-style brand variant

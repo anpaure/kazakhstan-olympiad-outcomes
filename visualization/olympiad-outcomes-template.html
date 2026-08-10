@@ -748,6 +748,17 @@
     return terms.every(term => haystack.includes(term));
   }
 
+  function educationalOrganizations(person) {
+    return [...new Set([
+      ...(person.almaMaters || []).map(alma => alma.organization),
+      ...(person.organization && person.organizationType === 'education' ? [person.organization] : [])
+    ].filter(Boolean))];
+  }
+
+  function personHasOrganization(person, organization) {
+    return person.organization === organization || educationalOrganizations(person).includes(organization);
+  }
+
   function filteredPeople({ ignoreSelection = false, ignoreConfidence = false } = {}) {
     const query = state.search.trim();
     return people.filter(person => {
@@ -757,18 +768,22 @@
       if (!['all', 'unknown'].includes(state.country) && person.countryCode !== state.country) return false;
       if (state.sector !== 'all' && person.sector !== state.sector) return false;
       if (!matchesSearch(person, query)) return false;
-      if (!ignoreSelection && state.selectedOrganization && person.organization !== state.selectedOrganization) return false;
+      if (!ignoreSelection && state.selectedOrganization && !personHasOrganization(person, state.selectedOrganization)) return false;
       return true;
     });
   }
 
   function organizationRanking(education) {
-    const values = filteredPeople({ ignoreSelection: true })
-      .filter(person => person.organization && (person.organizationType === 'education') === education);
+    const values = filteredPeople({ ignoreSelection: true }).flatMap(person => {
+      const organizations = education
+        ? educationalOrganizations(person)
+        : person.organization && person.organizationType !== 'education' ? [person.organization] : [];
+      return organizations.map(label => ({ label, person }));
+    });
     return d3.rollups(values, group => ({
       count: group.length,
-      people: group.map(person => person.name)
-    }), person => person.organization)
+      people: group.map(item => item.person.name)
+    }), item => item.label)
       .map(([label, payload]) => ({ label, ...payload }))
       .sort((a, b) => d3.descending(a.count, b.count) || d3.ascending(a.label, b.label));
   }
@@ -788,11 +803,13 @@
       .attr('aria-label', `${education ? 'Educational institutions' : 'Companies and organizations'} ranked by matched alumni`);
     svg.selectAll('*').remove();
     svg.append('title').text(education ? 'Educational institutions' : 'Companies and organizations');
-    svg.append('desc').text('Horizontal bars show destination organizations for the currently filtered alumni.');
+    svg.append('desc').text(education
+      ? 'Horizontal bars show alma maters and current educational destinations for the currently filtered alumni.'
+      : 'Horizontal bars show current non-educational destinations for the currently filtered alumni.');
 
     if (!data.length) {
       svg.append('text').attr('x', width / 2).attr('y', height / 2).attr('text-anchor', 'middle')
-        .attr('class', 'muted-label').text(education ? 'No educational destinations' : 'No company destinations');
+        .attr('class', 'muted-label').text(education ? 'No educational institutions' : 'No company destinations');
       return;
     }
 
@@ -1030,7 +1047,7 @@
     const body = root.querySelector('[data-people-table]');
     body.replaceChildren(...rows.map(person => {
       const tr = document.createElement('tr');
-      if (state.selectedOrganization && person.organization === state.selectedOrganization) tr.classList.add('is-highlighted');
+      if (state.selectedOrganization && personHasOrganization(person, state.selectedOrganization)) tr.classList.add('is-highlighted');
       const nameCell = document.createElement('td');
       nameCell.dataset.label = 'Alumnus';
       const link = person.linkedin || person.profile;

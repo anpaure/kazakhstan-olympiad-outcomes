@@ -318,7 +318,15 @@ class VisualizationOrganizationAliasTest(unittest.TestCase):
                 "organization": "Example University",
                 "role": "BSc",
                 "selected_as_alma_mater": True,
+                "start_year": "2017",
                 "evidence_url": "https://linkedin.com/in/test",
+            },
+            {
+                "organization": "Graduate University",
+                "role": "MSc",
+                "selected_as_alma_mater": True,
+                "start_year": "2021",
+                "evidence_url": "https://example.test/graduate",
             },
             {
                 "organization": "Past Co",
@@ -337,10 +345,69 @@ class VisualizationOrganizationAliasTest(unittest.TestCase):
 
         compact = compact_person(row, location, affiliations)
 
-        self.assertEqual(compact["almaMater"], "Example University")
+        self.assertEqual(
+            compact["almaMater"],
+            "Example University; Graduate University",
+        )
+        self.assertEqual(
+            [item["organization"] for item in compact["almaMaters"]],
+            ["Example University", "Graduate University"],
+        )
         self.assertIn("Past Co", compact["historyTerms"])
         self.assertEqual(compact["country"], "Switzerland")
         self.assertTrue(compact["sources"])
+
+    def test_compact_person_shows_only_one_olympiad_source(self):
+        row = {
+            "person_id": "kaz-test",
+            "name": "Test Person",
+            "aliases": "Test Person",
+            "olympiads": "IMO",
+            "first_year": "2018",
+            "last_year": "2018",
+            "awards": "Silver",
+            "confidence": "confirmed",
+            "organization": "Current Co",
+            "role": "Engineer",
+            "organization_category": "Industry",
+            "role_category": "Engineering",
+            "destination_status": "latest_employment",
+            "profile_url": "https://www.imo-official.org/country_individual_r.aspx?code=KAZ",
+            "linkedin_url": "",
+            "evidence_urls": ";".join(
+                [
+                    "https://www.imo-official.org/results/contestant/12345/",
+                    "https://www.imo-official.org/country_individual_r.aspx?code=KAZ",
+                ]
+            ),
+            "research_scope": "career",
+        }
+        evidence = [
+            {
+                "claim_type": "olympiad_participation",
+                "review_status": "accepted",
+                "source_url": "https://www.imo-official.org/results/contestant/12345/",
+            },
+            {
+                "claim_type": "identity_review",
+                "review_status": "supporting",
+                "source_url": "https://www.imo-official.org/country_individual_r.aspx?code=KAZ",
+            },
+        ]
+
+        compact = compact_person(row, audit_evidence=evidence)
+        olympiad_sources = [
+            source for source in compact["sources"] if source["kind"] == "olympiad"
+        ]
+
+        self.assertEqual(len(olympiad_sources), 1)
+        self.assertEqual(
+            olympiad_sources[0]["url"],
+            "https://www.imo-official.org/results/contestant/12345/",
+        )
+        self.assertFalse(
+            any(source["kind"] == "evidence" for source in compact["sources"])
+        )
 
 
 if __name__ == "__main__":

@@ -1,4 +1,7 @@
 alias,canonical_name,display_name,merge_type,rationale
+UC Berkeley,"University of California, Berkeley",UC Berkeley,same_entity,Common short name
+University of California Berkeley,"University of California, Berkeley",UC Berkeley,same_entity,Punctuation variant
+University of Minnesota-Twin Cities,University of Minnesota,University of Minnesota,same_entity,Campus-name variant
 Alem Entertainment GP,Alem Entertainment,Alem Entertainment,same_entity,Legal-form variant
 Alem Entertainment Ltd.,Alem Entertainment,Alem Entertainment,same_entity,Legal-form variant
 Amazon Web Services,Amazon,Amazon,parent_organization,AWS is an Amazon business

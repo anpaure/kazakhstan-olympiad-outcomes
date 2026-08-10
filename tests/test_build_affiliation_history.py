@@ -28,6 +28,23 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
         self.assertEqual(rows[2]["organization"], "Nazarbayev University")
         self.assertEqual(rows[2]["affiliation_type"], "education")
 
+    def test_extracts_beng_linked_education_heading(self):
+        rows = extract_affiliations(
+            "## Education "
+            "### BEng in Computer Science + AI at "
+            "[The Hong Kong University of Science and Technology]"
+            "(https://www.linkedin.com/school/hkust) "
+            "2023 - 2027 (4 years) in Kowloon, Hong Kong"
+        )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(
+            rows[0]["organization"],
+            "Hong Kong University of Science and Technology (HKUST)",
+        )
+        self.assertEqual(rows[0]["role"], "BEng in Computer Science + AI")
+        self.assertEqual(rows[0]["affiliation_type"], "education")
+
     def test_extracts_grouped_employer_roles(self):
         rows = extract_affiliations(
             "## Experience "
@@ -197,6 +214,105 @@ class AlmaMaterSelectionTest(unittest.TestCase):
         self.assertGreater(
             education_score(prior, "MIT", True, 2026),
             education_score(current, "MIT", True, 2026),
+        )
+
+    def test_selects_undergraduate_and_postgraduate_institutions(self):
+        people = [
+            {
+                "person_id": "person-1",
+                "name": "Example Person",
+                "confidence": "confirmed",
+                "profile_url": "https://example.com/profile",
+                "linkedin_url": "",
+                "organization": "Current Co",
+                "affiliation_type": "employment",
+            }
+        ]
+        manual = [
+            {
+                "person_id": "person-1",
+                "organization": "Example High School",
+                "role": "",
+                "affiliation_type": "education",
+                "start_year": "2014",
+                "end_year": "2018",
+                "is_current": "false",
+                "evidence_url": "https://example.com/profile",
+                "confidence": "confirmed",
+            },
+            {
+                "person_id": "person-1",
+                "organization": "Example University",
+                "role": "Bachelor of Science",
+                "affiliation_type": "education",
+                "start_year": "2018",
+                "end_year": "2022",
+                "is_current": "false",
+                "evidence_url": "https://example.com/profile",
+                "confidence": "confirmed",
+            },
+            {
+                "person_id": "person-1",
+                "organization": "Graduate University",
+                "role": "Master of Science",
+                "affiliation_type": "education",
+                "start_year": "2022",
+                "end_year": "2024",
+                "is_current": "false",
+                "evidence_url": "https://example.com/profile",
+                "confidence": "confirmed",
+            },
+        ]
+
+        rows = build_rows(people, [], [], [], [], manual, [], 2026)
+        selected = {
+            row["organization"]
+            for row in rows
+            if row["selected_as_alma_mater"]
+        }
+
+        self.assertEqual(
+            selected,
+            {"Example University", "Graduate University"},
+        )
+
+    def test_keeps_only_one_secondary_school_when_no_university_is_known(self):
+        people = [
+            {
+                "person_id": "person-1",
+                "name": "Example Person",
+                "confidence": "confirmed",
+                "profile_url": "https://example.com/profile",
+                "organization": "",
+                "affiliation_type": "",
+            }
+        ]
+        manual = [
+            {
+                "person_id": "person-1",
+                "organization": "First High School",
+                "role": "",
+                "affiliation_type": "education",
+                "start_year": "2018",
+                "end_year": "2020",
+                "evidence_url": "https://example.com/profile",
+            },
+            {
+                "person_id": "person-1",
+                "organization": "Second High School",
+                "role": "",
+                "affiliation_type": "education",
+                "start_year": "2020",
+                "end_year": "2022",
+                "evidence_url": "https://example.com/profile",
+            },
+        ]
+
+        rows = build_rows(people, [], [], [], [], manual, [], 2026)
+
+        self.assertEqual(
+            sum(bool(row["selected_as_alma_mater"]) for row in rows),
+            1,
         )
 
 

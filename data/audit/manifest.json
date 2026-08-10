@@ -31,12 +31,12 @@
   "counts": {
     "people": 456,
     "participations": 680,
-    "affiliations": 2047,
+    "affiliations": 2049,
     "locations": 226,
-    "organization_aliases": 145,
+    "organization_aliases": 148,
     "organization_sectors": 148,
     "destination_reviews": 37,
-    "evidence_rows": 4854,
+    "evidence_rows": 4855,
     "sources": 1365,
     "rejections": 112,
     "complete_outcomes": 308

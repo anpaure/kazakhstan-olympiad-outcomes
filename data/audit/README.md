@@ -14,7 +14,7 @@ source URL used for review.
 5. Review any `candidate`, `superseded`, or `rejected` rows for contrary or
    discarded matches.
 6. Filter `affiliations.csv` for sourced past jobs, schools, and the selected
-   alma mater; filter `locations.csv` for the sourced outcome-country claim.
+   alma maters; filter `locations.csv` for the sourced outcome-country claim.
 7. Use `organization_aliases.csv` to audit every canonical-name merge and its
    rationale; the original source wording remains in `evidence_text`.
 8. Use `organization_sectors.csv` to audit organization type and sector assignments.
@@ -27,8 +27,9 @@ source URL used for review.
 - `participations.csv`: one row per Olympiad appearance, joined to `person_id`
   and its evidence record.
 - `affiliations.csv`: accepted employment and education history. Every row
-  joins to evidence/source IDs; at most one education row per person has
-  `selected_as_alma_mater=true`.
+  joins to evidence/source IDs; each distinct higher-education institution has
+  `selected_as_alma_mater=true`, with one secondary-school fallback only when
+  no higher education is known.
 - `locations.csv`: one sourced outcome-country claim per covered person. It
   usually follows public profile/role location, with reviewed overrides for
   stale profile headers; it is not legal residence or citizenship.

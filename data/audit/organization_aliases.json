@@ -1096,6 +1096,22 @@
     "rationale": "Disclosure-status abbreviation"
   },
   {
+    "organization_alias_id": "org-7c19571a21133bd7",
+    "alias": "UC Berkeley",
+    "canonical_name": "University of California, Berkeley",
+    "display_name": "UC Berkeley",
+    "merge_type": "same_entity",
+    "rationale": "Common short name"
+  },
+  {
+    "organization_alias_id": "org-8b3c92efde945da5",
+    "alias": "University of California Berkeley",
+    "canonical_name": "University of California, Berkeley",
+    "display_name": "UC Berkeley",
+    "merge_type": "same_entity",
+    "rationale": "Punctuation variant"
+  },
+  {
     "organization_alias_id": "org-6abcfaa66547e033",
     "alias": "University of California Davis",
     "canonical_name": "University of California, Davis",
@@ -1134,6 +1150,14 @@
     "display_name": "University of Michigan",
     "merge_type": "parent_organization",
     "rationale": "University school"
+  },
+  {
+    "organization_alias_id": "org-74246aebff0a91e9",
+    "alias": "University of Minnesota-Twin Cities",
+    "canonical_name": "University of Minnesota",
+    "display_name": "University of Minnesota",
+    "merge_type": "same_entity",
+    "rationale": "Campus-name variant"
   },
   {
     "organization_alias_id": "org-d9419f61f5b751fd",

@@ -16,9 +16,9 @@ The checked-in data currently contains:
 - 254 confirmed and 54 probable identity, education, or career outcomes
 - 277 manually reviewed outcomes backed by public evidence
 - 266 researched people with one resolved destination and 230 with a public LinkedIn URL
-- 2,047 sourced employment/education history rows, including 224 selected alma-mater records
+- 2,049 sourced employment/education history rows, including 344 selected alma-mater records across 224 people
 - 37 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
-- 145 reviewed organization aliases collapsed into canonical employers and universities
+- 148 reviewed organization aliases collapsed into canonical employers and universities
 - 148 reviewed sector classifications covering every displayed non-educational destination
 - 226 sourced outcome-country records across 20 countries
 - 3 additional people with candidate-only evidence retained for audit but no accepted outcome
@@ -133,7 +133,7 @@ python scripts/validate_research.py
 
 The two apply scripts merge the auditable Exa review overlays before assembly. `data/exa_outcome_integrations.csv` records accepted career updates with their direct evidence URLs, while `data/exa_identity_rejections.csv` records newly identified namesakes. Both merges reject duplicate overlay keys and are safe to rerun. `data/exa_identity_review_decisions.csv` and `data/exa_outcome_review_decisions.csv` retain explicit reasons and supporting links for profiles that are supporting, deferred, rejected, or intentionally not used as the current outcome.
 
-`scripts/hydrate_linkedin_profiles_with_exa.py` retrieves every accepted LinkedIn URL directly through Exa, checkpointing successes and errors without persisting the API key. This avoids losing education or location data when a name search returns only namesakes. `scripts/build_affiliation_history.py` extracts employment and education headings only from accepted profiles, reviewed manual transcriptions, and structured records. It writes a source URL on every history row and selects at most one display alma mater per person. `scripts/build_location_evidence.py` uses explicit profile/role location, reviewed stale-profile overrides, and structured affiliation country.
+`scripts/hydrate_linkedin_profiles_with_exa.py` retrieves every accepted LinkedIn URL directly through Exa, checkpointing successes and errors without persisting the API key. This avoids losing education or location data when a name search returns only namesakes. `scripts/build_affiliation_history.py` extracts employment and education headings only from accepted profiles, reviewed manual transcriptions, and structured records. It writes a source URL on every history row and selects every distinct higher-education institution as an alma mater, falling back to one secondary school only when no university-level record is known. `scripts/build_location_evidence.py` uses explicit profile/role location, reviewed stale-profile overrides, and structured affiliation country.
 
 `data/organization_aliases.csv` is the reviewed organization registry shared by the research assembler, history builder, Exa reconciliation, audit bundle, and visualization. It records the canonical/display name, merge type, and rationale for legal-name, acronym, multilingual, campus, and parent-organization variants. Source text is retained in the evidence ledger, while destination and affiliation tables use canonical names.
 
@@ -141,7 +141,7 @@ The two apply scripts merge the auditable Exa review overlays before assembly. `
 
 `scripts/build_audit_bundle.py` then creates normalized audit tables under `data/audit/`. The final people, affiliation-history, location, and destination-review tables join to a row-level evidence ledger; evidence joins to a deduplicated source registry through `source_id`; every evidence row retains its direct `source_url`. Accepted, supporting, candidate, superseded, and rejected claims remain visible instead of being collapsed into one compound URL field. See `data/audit/README.md` for the audit procedure and data dictionary.
 
-The validation step checks participant-row conservation, unique person IDs, confidence/evidence rules, timeline conflicts, recent-competitor exclusions, strict destination statuses, canonical organization names, one selected alma mater per person, sourced country codes, exact publication of every accepted Exa outcome and destination-review decision, preservation of superseded history, rejection-ledger leakage, audit-table joins, direct HTTP(S) source links, and complete traceability for every probable or confirmed outcome.
+The validation step checks participant-row conservation, unique person IDs, confidence/evidence rules, timeline conflicts, recent-competitor exclusions, strict destination statuses, canonical organization names, distinct selected alma-mater organizations, sourced country codes, exact publication of every accepted Exa outcome and destination-review decision, preservation of superseded history, rejection-ledger leakage, audit-table joins, direct HTTP(S) source links, and complete traceability for every probable or confirmed outcome.
 
 Outputs:
 

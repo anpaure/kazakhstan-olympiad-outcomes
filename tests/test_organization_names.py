@@ -43,6 +43,16 @@ class OrganizationNormalizationTest(unittest.TestCase):
         self.assertIn("@khangroupkz", aliases)
         self.assertIn("Khan Group LLP", aliases)
 
+    def test_common_university_aliases_merge(self):
+        self.assertEqual(
+            canonicalize_organization("UC Berkeley"),
+            "University of California, Berkeley",
+        )
+        self.assertEqual(
+            canonicalize_organization("University of Minnesota-Twin Cities"),
+            "University of Minnesota",
+        )
+
     def test_alias_registry_has_no_conflicts(self):
         aliases, displays, reverse = load_organization_aliases()
         self.assertTrue(aliases)

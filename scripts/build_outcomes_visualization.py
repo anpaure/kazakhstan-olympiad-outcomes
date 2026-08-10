@@ -35,6 +35,43 @@ def split_values(value: object) -> list[str]:
     return [item for item in str(value or "").split(";") if item]
 
 
+def selected_alma_maters(
+    affiliations: list[dict[str, object]],
+) -> list[dict[str, object]]:
+    selected: dict[str, dict[str, object]] = {}
+    for item in affiliations:
+        if not item.get("selected_as_alma_mater"):
+            continue
+        organization = canonicalize_organization(item.get("organization"))
+        key = organization.casefold()
+        if organization and key not in selected:
+            selected[key] = item
+    return sorted(
+        selected.values(),
+        key=lambda item: (
+            alma_degree_rank(item.get("role")),
+            int(str(item.get("start_year") or "0"))
+            if str(item.get("start_year") or "").isdigit()
+            else 9999,
+            int(str(item.get("end_year") or "0"))
+            if str(item.get("end_year") or "").isdigit()
+            else 9999,
+            canonicalize_organization(item.get("organization")).casefold(),
+        ),
+    )
+
+
+def alma_degree_rank(role: object) -> int:
+    value = str(role or "").casefold()
+    if re.search(r"\b(?:associate|bachelor|bsc|bs\b|beng|undergraduate|medical student)", value):
+        return 1
+    if re.search(r"\b(?:master|msc|ms\b|meng|mba|mph)", value):
+        return 2
+    if re.search(r"\b(?:ph\.?d|doctor|graduate student)", value):
+        return 3
+    return 4
+
+
 def compact_sources(
     row: dict[str, object],
     location: dict[str, object],
@@ -47,7 +84,11 @@ def compact_sources(
     def add(url: object, kind: str, label: str, icon: str) -> None:
         value = str(url or "").strip()
         key = value.rstrip("/").casefold()
-        if not value.startswith(("http://", "https://")) or key in seen:
+        if (
+            not value.startswith(("http://", "https://"))
+            or key in seen
+            or (kind != "olympiad" and OLYMPIAD_SOURCE_PATTERN.search(value))
+        ):
             return
         seen.add(key)
         sources.append({"url": value, "kind": kind, "label": label, "icon": icon})
@@ -69,6 +110,9 @@ def compact_sources(
     olympiad_sources.extend(
         url for url in split_values(row.get("evidence_urls")) if OLYMPIAD_SOURCE_PATTERN.search(url)
     )
+    if OLYMPIAD_SOURCE_PATTERN.search(str(row.get("profile_url") or "")):
+        olympiad_sources.append(row.get("profile_url"))
+
     def olympiad_source_rank(url: object) -> tuple[int, str]:
         value = str(url or "")
         if re.search(r"/(?:contestant|participant|profile)[_/]", value, re.IGNORECASE):
@@ -84,10 +128,7 @@ def compact_sources(
         )
         add(best_olympiad_source, "olympiad", "Official Olympiad result", "medal")
 
-    alma = next(
-        (item for item in affiliations if item.get("selected_as_alma_mater")), None
-    )
-    if alma:
+    for alma in selected_alma_maters(affiliations):
         add(alma.get("evidence_url"), "education", "Alma mater source", "graduation-cap")
     add(location.get("evidence_url"), "location", "Outcome country source", "map-pin")
 
@@ -115,9 +156,16 @@ def compact_person(
     organization_classification = organization_metadata(
         organization, row.get("organization_category", "")
     )
-    alma = next(
-        (item for item in affiliations if item.get("selected_as_alma_mater")), {}
-    )
+    alma_rows = selected_alma_maters(affiliations)
+    alma_maters = [
+        {
+            "organization": display_organization(
+                canonicalize_organization(item.get("organization"))
+            ),
+            "role": str(item.get("role") or ""),
+        }
+        for item in alma_rows
+    ]
     history_terms: list[str] = []
     for item in affiliations:
         affiliation_organization = canonicalize_organization(item.get("organization"))
@@ -149,8 +197,13 @@ def compact_person(
         "sector": organization_classification["sector"],
         "roleCategory": row["role_category"],
         "destinationStatus": row.get("destination_status", ""),
-        "almaMater": display_organization(alma.get("organization", "")),
-        "almaMaterRole": alma.get("role", ""),
+        "almaMater": "; ".join(item["organization"] for item in alma_maters),
+        "almaMaterRole": "; ".join(
+            f'{item["organization"]}: {item["role"]}'
+            for item in alma_maters
+            if item["role"]
+        ),
+        "almaMaters": alma_maters,
         "historyTerms": history_terms,
         "countryCode": location.get("country_code", ""),
         "country": location.get("country_name", ""),

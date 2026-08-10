@@ -409,13 +409,22 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             f"{len(missing_manual_affiliations)} manual affiliation rows were not published"
         )
     alma_counts = Counter(
-        row.get("person_id", "")
+        (
+            row.get("person_id", ""),
+            row.get("organization", "").casefold(),
+        )
         for row in affiliations
         if row.get("selected_as_alma_mater", "").casefold() == "true"
     )
-    duplicate_alma = sorted(person_id for person_id, count in alma_counts.items() if count > 1)
+    duplicate_alma = sorted(key for key, count in alma_counts.items() if count > 1)
     if duplicate_alma:
-        errors.append("people have multiple selected alma maters: " + ", ".join(duplicate_alma[:8]))
+        errors.append(
+            "people have duplicate selected alma-mater organizations: "
+            + ", ".join(
+                f"{person_id}/{organization}"
+                for person_id, organization in duplicate_alma[:8]
+            )
+        )
     for row in affiliations:
         person_id = row.get("person_id", "")
         if not row.get("organization", ""):

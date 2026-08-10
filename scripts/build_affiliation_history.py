@@ -78,7 +78,7 @@ LINKED_EDUCATION_PATTERN = re.compile(
     re.IGNORECASE,
 )
 PLAIN_EDUCATION_PATTERN = re.compile(
-    r"^(?P<role>(?:bachelor|b\.?\s*sc\.?|bs\b|b\.?\s*a\.?|master|m\.?\s*sc\.?|ms\b|m\.?\s*a\.?|ph\.?d|doctor|degree|diploma).{0,140}?)"
+    r"^(?P<role>(?:bachelor|b\.?\s*sc\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|master|m\.?\s*sc\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|ph\.?d|doctor|degree|diploma).{0,140}?)"
     r"\s+at\s+(?P<organization>.{2,160}?)"
     r"(?=\s+(?:(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+)?(?:19|20)\d{2}\s*-|\s+\.{3}|$)",
     re.IGNORECASE,
@@ -100,7 +100,28 @@ EXCLUDED_ROLE_PATTERN = re.compile(
     re.IGNORECASE,
 )
 EDUCATION_TERMS = re.compile(
-    r"\b(?:bachelor|b\.?\s*sc\.?|bs\b|b\.?\s*a\.?|master|m\.?\s*sc\.?|ms\b|m\.?\s*a\.?|ph\.?d|doctor|student|graduate|degree|diploma|school|education)\b",
+    r"\b(?:bachelor|b\.?\s*sc\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|master|m\.?\s*sc\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|ph\.?d|doctor|student|graduate|degree|diploma|school|education)\b",
+    re.IGNORECASE,
+)
+POSTSECONDARY_ROLE_PATTERN = re.compile(
+    r"\b(?:associate(?:'s)?|bachelor|b\.?\s*sc\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|"
+    r"master|m\.?\s*sc\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|mba\b|mph\b|"
+    r"ph\.?d|doctor(?:ate)?|undergraduate|graduate student|medical student)\b",
+    re.IGNORECASE,
+)
+POSTSECONDARY_INSTITUTION_PATTERN = re.compile(
+    r"\b(?:university|college|polytechnic|institute of technology|technical institute|"
+    r"school of (?:economics|engineering|medicine|business)|école normale|graduate school)\b",
+    re.IGNORECASE,
+)
+SECONDARY_INSTITUTION_PATTERN = re.compile(
+    r"\b(?:high school|secondary school|lyceum|gymnasium|intellectual schools?|"
+    r"physics and mathematics school|boarding school|haileybury)\b|\b(?:rfms|fizmat|bil)\b",
+    re.IGNORECASE,
+)
+NON_ALMA_ROLE_PATTERN = re.compile(
+    r"\b(?:research|teaching) assistants?\b|\b(?:intern|fellow|visiting|exchange|"
+    r"summer school|certificate|short course|participant)\b",
     re.IGNORECASE,
 )
 EMPLOYMENT_ROLE_TERMS = re.compile(
@@ -423,7 +444,7 @@ def education_score(
         degree_rank = 4
     elif re.search(r"\b(?:master|msc|ms\b)", role):
         degree_rank = 3
-    elif re.search(r"\b(?:bachelor|bsc|bs\b|undergraduate)", role):
+    elif re.search(r"\b(?:bachelor|bsc|bs\b|beng\b|b\.?\s*eng\.?|undergraduate)", role):
         degree_rank = 2
     elif "school" not in organization:
         degree_rank = 1
@@ -434,6 +455,18 @@ def education_score(
         end_year,
         start_year,
     )
+
+
+def is_postsecondary_education(row: dict[str, object]) -> bool:
+    role = clean_text(row.get("role"))
+    organization = clean_text(row.get("organization"))
+    if POSTSECONDARY_ROLE_PATTERN.search(role):
+        return True
+    if NON_ALMA_ROLE_PATTERN.search(role):
+        return False
+    if SECONDARY_INSTITUTION_PATTERN.search(organization):
+        return False
+    return bool(POSTSECONDARY_INSTITUTION_PATTERN.search(organization))
 
 
 def build_rows(
@@ -684,16 +717,41 @@ def build_rows(
             education_by_person[clean_text(row.get("person_id"))].append(row)
     for person_id, education_rows in education_by_person.items():
         person = people_by_id[person_id]
-        selected = max(
-            education_rows,
-            key=lambda row: education_score(
+        postsecondary_rows = [
+            row for row in education_rows if is_postsecondary_education(row)
+        ]
+        if not postsecondary_rows:
+            selected = max(
+                education_rows,
+                key=lambda row: education_score(
+                    row,
+                    clean_text(person.get("organization")),
+                    clean_text(person.get("affiliation_type")) == "education",
+                    as_of_year,
+                ),
+            )
+            selected["selected_as_alma_mater"] = True
+            continue
+        candidates = postsecondary_rows
+        selected_by_organization: dict[str, dict[str, object]] = {}
+        for row in candidates:
+            organization_key = clean_text(row.get("organization")).casefold()
+            existing = selected_by_organization.get(organization_key)
+            score = education_score(
                 row,
                 clean_text(person.get("organization")),
                 clean_text(person.get("affiliation_type")) == "education",
                 as_of_year,
-            ),
-        )
-        selected["selected_as_alma_mater"] = True
+            )
+            if existing is None or score > education_score(
+                existing,
+                clean_text(person.get("organization")),
+                clean_text(person.get("affiliation_type")) == "education",
+                as_of_year,
+            ):
+                selected_by_organization[organization_key] = row
+        for selected in selected_by_organization.values():
+            selected["selected_as_alma_mater"] = True
 
     return sorted(
         rows,
