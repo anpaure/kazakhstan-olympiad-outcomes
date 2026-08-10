@@ -1,5 +1,19 @@
 [
   {
+    "location_id": "loc-9408cf9ddc3685e1",
+    "evidence_id": "ev-5a56bbe85883320c",
+    "source_id": "src-957082b534f0",
+    "person_id": "kaz-0a21069b5b5d",
+    "name": "Abilmansur Kali",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1260137",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The Ministry of Education places Abilmansur's active NIS Astana-Nura student affiliation in Astana."
+  },
+  {
     "location_id": "loc-da2e9f1ae8e1bd1e",
     "evidence_id": "ev-7d804a7f83198217",
     "source_id": "src-563d84ac5d22",
@@ -266,6 +280,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Synergy Partners Law Firm. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-d04ddcf3349c5f12",
+    "evidence_id": "ev-50e6f5019ac6af9b",
+    "source_id": "src-cf0e9c93132d",
+    "person_id": "kaz-796f13ed0022",
+    "name": "Ali Yerkebulanuly",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1261409",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The Ministry of Education places Ali's active Nurorda School-Lyceum student affiliation in Almaty."
+  },
+  {
     "location_id": "loc-25d5f8bd91c0a1ba",
     "evidence_id": "ev-c41f399262910279",
     "source_id": "src-92f9a6edc4d6",
@@ -320,6 +348,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at National Information Technologies JSC (NITEC). The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-3d49b48d4c71aa02",
+    "evidence_id": "ev-59a9c1f5c3f92d6a",
+    "source_id": "src-b0e881e125aa",
+    "person_id": "kaz-a916225fee26",
+    "name": "Alikhan Ashirkhanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://qazinform.com/news/kazakhstans-young-biologists-win-4-medals-at-ibo-2026-df82a7",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Qazinform's Ministry of Education report places Alikhan's active Bilim-Innovation student affiliation in Almaty."
   },
   {
     "location_id": "loc-5d7652e6fffcee82",
@@ -658,6 +700,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Amazon. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-0e1ac29ddd612ce0",
+    "evidence_id": "ev-6eea6fd64cbf6bd1",
+    "source_id": "src-957082b534f0",
+    "person_id": "kaz-7dd0181a5ee2",
+    "name": "Ansar Zhaksylykov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1260137",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The Ministry of Education places Ansar's active Spectrum International School affiliation in Astana."
+  },
+  {
     "location_id": "loc-8135b9b3fef1a6bb",
     "evidence_id": "ev-d9658c71d0c1434f",
     "source_id": "src-fabb69b48028",
@@ -938,6 +994,20 @@
     "review_reason": "Country follows the accepted active student affiliation at Airlangga University; the linked official institution source establishes the campus location. Airlangga University's official site identifies its Surabaya campuses."
   },
   {
+    "location_id": "loc-8f0b5887e6d2c37f",
+    "evidence_id": "ev-edf9d8e4c4c5d4f3",
+    "source_id": "src-cf0e9c93132d",
+    "person_id": "kaz-81ce5fa84827",
+    "name": "Batyrkhan Beiganov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1261409",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The Ministry of Education identifies Batyrkhan as an active RFMS student representing Kazakhstan; the source does not specify a campus city."
+  },
+  {
     "location_id": "loc-620bf855354839d8",
     "evidence_id": "ev-f5cb1820fe3af0f3",
     "source_id": "src-1bb3bb586d66",
@@ -978,6 +1048,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Republican Physics and Mathematics School (RFMS). The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-675e9c8c67cd76ea",
+    "evidence_id": "ev-71b9606d66e5fd33",
+    "source_id": "src-5afcdf2b8991",
+    "person_id": "kaz-694369c06874",
+    "name": "Baurzhan Urgunshbayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://pk.uchet.kz/search/iin/860504300028",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "The exact-name Kazakhstan registry record places Baurzhan Suleimenovich Urgunshbayev in Almaty and its encoded 1986 birth date is compatible with the Olympiad entrant's 2003 grade-11 record; the accepted current profile independently places him in Kazakhstan."
   },
   {
     "location_id": "loc-55dcf2572613291a",
@@ -1076,6 +1160,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at HITS. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-fb3301a2cce47c5f",
+    "evidence_id": "ev-9766f69bde159420",
+    "source_id": "src-957082b534f0",
+    "person_id": "kaz-8e557ae5dc19",
+    "name": "Danil Poletayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1260137",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The Ministry of Education places Danil's active Lyceum No. 134 student affiliation in Almaty."
   },
   {
     "location_id": "loc-50c676fb7a999f11",
@@ -2548,6 +2646,20 @@
     "review_reason": "RFMS Almaty's official best-teachers page lists Andrey Sidorenko as its 2025 physics teacher."
   },
   {
+    "location_id": "loc-99d2260a43df4310",
+    "evidence_id": "ev-7aeac3b5d278334a",
+    "source_id": "src-b0e881e125aa",
+    "person_id": "kaz-330d52d38c3b",
+    "name": "Sofya Zheltova",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://qazinform.com/news/kazakhstans-young-biologists-win-4-medals-at-ibo-2026-df82a7",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Qazinform's Ministry of Education report places Sofya's active NIS Almaty-Medeu student affiliation in Almaty."
+  },
+  {
     "location_id": "loc-6734549152abd77f",
     "evidence_id": "ev-0d0d7aaf89cb89da",
     "source_id": "src-b01d8ec6ba7c",
@@ -2910,6 +3022,20 @@
     "evidence_kind": "career_source_location",
     "confidence": "confirmed",
     "review_reason": "The Institute of Gene Biology's current staff page places his laboratory role at its Moscow institute."
+  },
+  {
+    "location_id": "loc-5920b2edb87d63b3",
+    "evidence_id": "ev-022920c035e89eb8",
+    "source_id": "src-b0e881e125aa",
+    "person_id": "kaz-532ae28f1d07",
+    "name": "Yersultan Kairken",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Pavlodar Region, Kazakhstan",
+    "evidence_url": "https://qazinform.com/news/kazakhstans-young-biologists-win-4-medals-at-ibo-2026-df82a7",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Qazinform's Ministry of Education report places Yersultan's active Bilim-Innovation student affiliation in Pavlodar Region."
   },
   {
     "location_id": "loc-eb616ad459ea675e",

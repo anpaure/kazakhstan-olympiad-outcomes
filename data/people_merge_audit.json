@@ -506,5 +506,39 @@
     "review_reason": "Contemporary reporting uses Kurman and Kurmanov for the same member of Kazakhstan's five-person 2026 IPhO gold-medal team.",
     "evidence_url": "https://dsml.kz/en/news/d9dd125d-a1cb-47ab-bf49-85c420248f0f",
     "canonical_person_id": "kaz-e9cd35b41255"
+  },
+  {
+    "left": "Yersultan Kairken",
+    "right": "Yersultan Kairken",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2025,
+      2026
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The official IBO result uses Kairken while Qazinform's Ministry of Education report uses Kaiyrken for the same repeat Kazakhstan biology medalist.",
+    "evidence_url": "https://qazinform.com/news/kazakhstans-young-biologists-win-4-medals-at-ibo-2026-df82a7",
+    "canonical_person_id": "kaz-532ae28f1d07"
+  },
+  {
+    "left": "Baurzhan Urgunshbayev",
+    "right": "Baurzhan Urgunshbayev",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IMO"
+    ],
+    "left_years": [
+      2002,
+      2003
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The official IMO record uses Baurzhan Urgunshbayev while Kazakhstan's 2003 school-Olympiad record uses the reverse-order Ургуншбаев Бауржан for the exact-name grade-11 Aktobe KTL student.",
+    "evidence_url": "https://matol.kz/results/235",
+    "canonical_person_id": "kaz-694369c06874"
   }
 ]

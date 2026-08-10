@@ -304,6 +304,32 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(location["country_code"], "KZ")
         self.assertEqual(location["location_label"], "Astana, Kazakhstan")
 
+    def test_2026_silver_medalists_have_sourced_school_destinations(self):
+        expected = {
+            "kaz-0a21069b5b5d": ("Nazarbayev Intellectual Schools (NIS)", "Astana, Kazakhstan"),
+            "kaz-796f13ed0022": ("Nurorda School-Lyceum", "Almaty, Kazakhstan"),
+            "kaz-a916225fee26": ("Bilim-Innovation Lyceums (BIL)", "Almaty, Kazakhstan"),
+            "kaz-7dd0181a5ee2": ("Spectrum International School", "Astana, Kazakhstan"),
+            "kaz-81ce5fa84827": ("Republican Physics and Mathematics School (RFMS)", "Kazakhstan"),
+            "kaz-8e557ae5dc19": ("Lyceum No. 134", "Almaty, Kazakhstan"),
+            "kaz-330d52d38c3b": ("Nazarbayev Intellectual Schools (NIS)", "Almaty, Kazakhstan"),
+            "kaz-532ae28f1d07": ("Bilim-Innovation Lyceums (BIL)", "Pavlodar Region, Kazakhstan"),
+        }
+
+        for person_id, (organization, location_label) in expected.items():
+            with self.subTest(person_id=person_id):
+                person = self.people[person_id]
+                location = self.locations[person_id]
+                self.assertEqual(person["organization"], organization)
+                self.assertEqual(person["role"], "High School Student")
+                self.assertEqual(person["confidence"], "confirmed")
+                self.assertEqual(location["country_code"], "KZ")
+                self.assertEqual(location["location_label"], location_label)
+
+        self.assertIn(
+            "Yersultan Kaiyrken", self.people["kaz-532ae28f1d07"]["aliases"]
+        )
+
     def test_older_gold_medalists_are_not_forced_to_namesakes(self):
         for person_id in ("kaz-dbcaf30d53de", "kaz-1e390288b2cc"):
             with self.subTest(person_id=person_id):
@@ -311,6 +337,21 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                 self.assertEqual(person["confidence"], "unmatched")
                 self.assertEqual(person["organization"], "")
                 self.assertEqual(person["role"], "")
+
+    def test_baurzhan_urgunshbayev_probable_metaphora_outcome(self):
+        person = self.people["kaz-694369c06874"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "METAPHORA")
+        self.assertEqual(person["role"], "Technical Lead")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://kz.linkedin.com/in/baurzhan-urgunshbayev-143a68104",
+        )
+        self.assertIn("Urgunshbayev Baurzhan", person["aliases"])
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
 
 
 if __name__ == "__main__":

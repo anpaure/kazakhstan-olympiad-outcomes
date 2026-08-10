@@ -1,5 +1,20 @@
 [
   {
+    "person_id": "kaz-0a21069b5b5d",
+    "name": "Abilmansur Kali",
+    "organization": "Nazarbayev Intellectual Schools (NIS)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2026",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1260137",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "The Kazakhstan Ministry of Education identifies Abilmansur Kali as an 11th-grade NIS Astana-Nura student and a 2026 IChO silver medalist; the official IChO registry independently confirms the exact-name Kazakhstan award."
+  },
+  {
     "person_id": "kaz-d8dac02b5a92",
     "name": "Abilmansur Muzhubayev",
     "organization": "Nazarbayev Intellectual Schools (NIS)",
@@ -3180,6 +3195,21 @@
     "confidence": "probable"
   },
   {
+    "person_id": "kaz-796f13ed0022",
+    "name": "Ali Yerkebulanuly",
+    "organization": "Nurorda School-Lyceum",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2026",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1261409",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "The Kazakhstan Ministry of Education identifies Ali Yerkebulanuly as an 11th-grade Nurorda School-Lyceum student in Almaty and a 2026 IMO silver medalist; the official IMO contestant record independently confirms the exact-name Kazakhstan award."
+  },
+  {
     "person_id": "kaz-f4ec7f952510",
     "name": "Ali-Amir Aldan",
     "organization": "Massachusetts Institute of Technology (MIT)",
@@ -3883,6 +3913,21 @@
     "evidence_url": "https://kz.linkedin.com/in/alibek-sailanbayev",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-a916225fee26",
+    "name": "Alikhan Ashirkhanov",
+    "organization": "Bilim-Innovation Lyceums (BIL)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2028",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://qazinform.com/news/kazakhstans-young-biologists-win-4-medals-at-ibo-2026-df82a7",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "Qazinform's Ministry of Education report identifies Alikhan Ashirkhanov as a ninth-grade Almaty Bilim-Innovation boarding-lyceum student on Kazakhstan's medal-winning 2026 IBO team; the official IBO result independently confirms his silver medal."
   },
   {
     "person_id": "kaz-477ae2fd5dbc",
@@ -5627,7 +5672,7 @@
   {
     "person_id": "kaz-95803b7b2c5f",
     "name": "Amanzhol Kuantay",
-    "organization": "Nurorda High School",
+    "organization": "Nurorda School-Lyceum",
     "role": "",
     "affiliation_type": "education",
     "start_year": "2014",
@@ -6883,6 +6928,21 @@
     "evidence_kind": "manual_review",
     "confidence": "probable",
     "evidence_text": "Qazinform identifies the rare exact-name Pavlodar student as Kazakhstan's 2016 IBO bronze medalist; OSME's 2018 account identifies Anna Zavalishina as a Pavlodar undergraduate ornithology volunteer, and its 2023 raptor paper affiliates her with ACBK, but no source explicitly joins the later researcher to the IBO contestant"
+  },
+  {
+    "person_id": "kaz-7dd0181a5ee2",
+    "name": "Ansar Zhaksylykov",
+    "organization": "Spectrum International School",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2026",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1260137",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "The Kazakhstan Ministry of Education identifies Ansar Zhaksylykov as an 11th-grade Spectrum International School student in Astana and a 2026 IChO silver medalist; the official IChO registry independently confirms his 2025 and 2026 silver medals."
   },
   {
     "person_id": "kaz-b76707715f6b",
@@ -10545,6 +10605,21 @@
     "confidence": "probable"
   },
   {
+    "person_id": "kaz-81ce5fa84827",
+    "name": "Batyrkhan Beiganov",
+    "organization": "Republican Physics and Mathematics School (RFMS)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2027",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1261409",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "The Kazakhstan Ministry of Education identifies Batyrkhan Beiganov as a tenth-grade RFMS student and a 2026 IMO silver medalist; the official IMO contestant record independently confirms the exact-name Kazakhstan award."
+  },
+  {
     "person_id": "kaz-4357b3307079",
     "name": "Batyrkhan Orynkul",
     "organization": "Nazarbayev University",
@@ -11248,6 +11323,51 @@
     "evidence_url": "https://linkedin.com/in/bauyrzhan-smailov-74a55390",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-694369c06874",
+    "name": "Baurzhan Urgunshbayev",
+    "organization": "Bilim-Innovation Lyceums (BIL)",
+    "role": "Secondary school",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2003",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://matol.kz/results/235",
+    "evidence_kind": "olympiad_school_record",
+    "confidence": "confirmed",
+    "evidence_text": "Kazakhstan's 2003 Asia-Pacific Mathematics Olympiad results identify Ургуншбаев Бауржан as a grade-11 student at Aktobe KTL; KTL is the former name of the Bilim-Innovation Lyceum network."
+  },
+  {
+    "person_id": "kaz-694369c06874",
+    "name": "Baurzhan Urgunshbayev",
+    "organization": "METAPHORA",
+    "role": "Technical Lead",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "is_current": true,
+    "evidence_text": "Technical Lead - [METAPHORA](https://www.linkedin.com/company/metaphora) (Current) Department: Engineering and Technical • Level: Head METAPHORA is a Business Consulting and Services company. Metaphora is a consulting company that specializes in change management and transformation support. METAPHORA has 1-10 employees and has annual revenue in the under $1M range, founded in 1994. Headquartered in France, with offices in La Defense and Paris. Its workforce is distributed across France, Russia,",
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://kz.linkedin.com/in/baurzhan-urgunshbayev-143a68104",
+    "evidence_kind": "accepted_linkedin_profile",
+    "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-694369c06874",
+    "name": "Baurzhan Urgunshbayev",
+    "organization": "METAPHORA",
+    "role": "Technical Lead",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "is_current": true,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://pk.uchet.kz/search/iin/860504300028",
+    "evidence_kind": "manual_review",
+    "confidence": "probable",
+    "evidence_text": "The official IMO record identifies Kazakhstan's 2002-2003 medalist; an exact reverse-order school record places Ургуншбаев Бауржан in grade 11 at Aktobe KTL in 2003, and the rare exact-name Kazakhstan profile lists a current Technical Lead role at METAPHORA. A Kazakhstan registry record for the same full name has an age-compatible 1986 birth date, but no source explicitly joins the Olympiad and career profiles."
   },
   {
     "person_id": "kaz-b82a97fb3f53",
@@ -12298,6 +12418,21 @@
     "evidence_url": "https://www.linkedin.com/in/daniil-shatokhin-9a69b7297",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-8e557ae5dc19",
+    "name": "Danil Poletayev",
+    "organization": "Lyceum No. 134",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2026",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1260137",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "The Kazakhstan Ministry of Education identifies Danil Poletayev as an 11th-grade Lyceum No. 134 student in Almaty and a 2026 IChO silver medalist; the official IChO registry independently confirms the exact-name Kazakhstan award."
   },
   {
     "person_id": "kaz-f8f0e6bb7675",
@@ -15917,7 +16052,7 @@
   {
     "person_id": "kaz-4c524655befe",
     "name": "Guldana Abduali",
-    "organization": "Nurorda High School",
+    "organization": "Nurorda School-Lyceum",
     "role": "Science, 5.00/5.00",
     "affiliation_type": "education",
     "start_year": "2017",
@@ -22772,7 +22907,7 @@
   {
     "person_id": "kaz-92adb8a08f0e",
     "name": "Nurgul Yegenbergenova",
-    "organization": "Nurorda International Schools",
+    "organization": "Nurorda School-Lyceum",
     "role": "",
     "affiliation_type": "education",
     "start_year": "",
@@ -22824,6 +22959,21 @@
     "end_year": "2020",
     "is_current": false,
     "evidence_text": "[Skolkovo Institute of Science and Technology](https://www.linkedin.com/school/skolkovo-institute-of-science-and-technology) 2018 - 2020 (2 years) in Moscow, Moscow Oblast, Russian Federation Skolkovo Institute of Science and Technology is a higher education institution. Skolkovo institute of science and technology offers education, msc programs, professional education, and thesis defenses. Skolkovo Institute of Science and Technology has 400-500 employees (+2-3% YoY) and has annual revenue in t",
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://linkedin.com/in/nurislam-tursynbek-0a8620ab",
+    "evidence_kind": "accepted_linkedin_profile",
+    "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-2732f0e135fa",
+    "name": "Nurislam Tursynbek",
+    "organization": "Skoltech",
+    "role": "",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "",
+    "is_current": false,
+    "evidence_text": "[Skolkovo Institute of Science and Technology](https ... Skolkovo Institute of Science and Technology is a higher education institution. Skolkovo institute of science and technology offers education, msc programs, professional education, and thesis defenses. Skolkovo Institute of Science and Technology has 400-500 employees (+2-3% YoY) and has annual revenue in the RUB8B-RUB9B range, founded in 2011. Headquartered in Moscow, Moscow Oblast, Russia. Its workforce is distributed across 35 countries",
     "selected_as_alma_mater": false,
     "evidence_url": "https://linkedin.com/in/nurislam-tursynbek-0a8620ab",
     "evidence_kind": "accepted_linkedin_profile",
@@ -28845,6 +28995,21 @@
     "evidence_text": "Kazakhstan's 2008 ministerial order identifies Andrey Sidorenko as an 11th-grade Semey KTL student on the IPhO team; Farabi University identifies the current national-team leader as an international physics Olympiad prize-winner and RFMS lists him as a current physics teacher."
   },
   {
+    "person_id": "kaz-330d52d38c3b",
+    "name": "Sofya Zheltova",
+    "organization": "Nazarbayev Intellectual Schools (NIS)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2026",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://qazinform.com/news/kazakhstans-young-biologists-win-4-medals-at-ibo-2026-df82a7",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "Qazinform's Ministry of Education report identifies Sofya Zheltova as an 11th-grade NIS Almaty-Medeu student on Kazakhstan's medal-winning 2026 IBO team; the official IBO result independently confirms her silver medal."
+  },
+  {
     "person_id": "kaz-b48f403765ac",
     "name": "Sossin Viktor",
     "organization": "Nazarbayev Intellectual Schools (NIS)",
@@ -32192,7 +32357,7 @@
   {
     "person_id": "kaz-dd50209a641b",
     "name": "Vyacheslav Li",
-    "organization": "Nurorda International Schools",
+    "organization": "Nurorda School-Lyceum",
     "role": "Physics Teacher Olympiad Coach",
     "affiliation_type": "employment",
     "start_year": "2016",
@@ -33838,6 +34003,21 @@
     "evidence_kind": "official_dissertation_record",
     "confidence": "confirmed",
     "evidence_text": "The institute's official dissertation record states that Maxim Erokhin worked at the Institute of Gene Biology from 2005 and became a leading researcher in 2023."
+  },
+  {
+    "person_id": "kaz-532ae28f1d07",
+    "name": "Yersultan Kairken",
+    "organization": "Bilim-Innovation Lyceums (BIL)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2026",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://qazinform.com/news/kazakhstans-young-biologists-win-4-medals-at-ibo-2026-df82a7",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "Qazinform's Ministry of Education report identifies Yersultan Kaiyrken as an 11th-grade Pavlodar-region Bilim-Innovation boarding-lyceum student on Kazakhstan's medal-winning 2026 IBO team; the official IBO result confirms the Kairken spelling and silver medal."
   },
   {
     "person_id": "kaz-1725a7f689f9",

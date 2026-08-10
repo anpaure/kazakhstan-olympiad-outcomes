@@ -2,16 +2,16 @@
   "provider": "Exa with reviewed public-profile supplements",
   "endpoint": "https://api.exa.ai/contents",
   "fallback_endpoint": "https://api.exa.ai/search",
-  "generated_at": "2026-08-10T22:59:34+00:00",
+  "generated_at": "2026-08-10T23:23:44+00:00",
   "input_path": "data/researched_people.csv",
   "input_people_count": 456,
-  "accepted_linkedin_count": 276,
-  "profile_count": 276,
-  "successful_profile_count": 241,
+  "accepted_linkedin_count": 277,
+  "profile_count": 277,
+  "successful_profile_count": 242,
   "cached_search_profile_count": 19,
   "manual_public_profile_count": 6,
   "error_profile_count": 10,
-  "total_cost_usd": 0.241,
+  "total_cost_usd": 0.242,
   "key_persisted": false,
   "requests": [
     {
@@ -103,6 +103,12 @@
       "retrieved_at": "2026-08-10T21:20:05+00:00",
       "requested_profile_count": 3,
       "cost_usd": 0.003
+    },
+    {
+      "request_id": "6fc25a1e3cfe668ccd9f7b3d85f05ae9",
+      "retrieved_at": "2026-08-10T23:23:44+00:00",
+      "requested_profile_count": 1,
+      "cost_usd": 0.001
     }
   ],
   "profiles": [
@@ -1295,6 +1301,20 @@
       "content_characters": 985,
       "source_endpoint": "https://api.exa.ai/search",
       "text": "Biology teacher and Instructor of Olympian preparation teams ... Almaty, Kazakhstan (KZ) ... Biology teacher and Instructor of Olympian preparation teams ... ### Учитель биологии - НАО \"Республиканская физико-математическая школа\" (Current) ... Oct 2017 - Present (8 years and 9 months) in Алматы ... Учитель биологии, курса AP Biology и тренер по подготовке к олимпиадам по биологии ... : Education • Level ... ### Тренер по подготовке к олимпиаде по биологии - Назарбаев Интеллектуальная школа физико-математического направления (Current) ... Oct 2017 - Present (7 years and 11 months) in Алматы ... Преподаватель курса A-level Biology для старших классов и тренер подготовки к олимпиадам по биологии ... ### Научный сотрудник - Институт биологии и биотехнологии растений ... ### Doctor of Philosophy (Ph.D.), Биотехнологии at Казахский Национальный университет им. аль-Фараби ... ### Master of Engineering Sciences, Biotechnology at Казахский Национальный университет им. аль-Фараби"
+    },
+    {
+      "person_id": "kaz-694369c06874",
+      "name": "Baurzhan Urgunshbayev",
+      "linkedin_url": "https://kz.linkedin.com/in/baurzhan-urgunshbayev-143a68104",
+      "status": "success",
+      "error": "",
+      "request_id": "6fc25a1e3cfe668ccd9f7b3d85f05ae9",
+      "retrieved_at": "2026-08-10T23:23:44+00:00",
+      "title": "Baurzhan Urgunshbayev",
+      "resolved_url": "https://kz.linkedin.com/in/baurzhan-urgunshbayev-143a68104",
+      "content_characters": 740,
+      "source_endpoint": "https://api.exa.ai/contents",
+      "text": "# Baurzhan Urgunshbayev\n\nTechnical Lead at METAPHORA\n\nKazakhstan (KZ)\n\n11 connections • 11 followers\n\n## About\n\nTechnical Lead at METAPHORA\n\n## Experience\n\n### Technical Lead - [METAPHORA](https://www.linkedin.com/company/metaphora) (Current)\n\nDepartment: Engineering and Technical • Level: Head\n\nMETAPHORA is a Business Consulting and Services company. Metaphora is a consulting company that specializes in change management and transformation support. METAPHORA has 1-10 employees and has annual revenue in the under $1M range, founded in 1994. Headquartered in France, with offices in La Defense and Paris. Its workforce is distributed across France, Russia, Georgia, and Italy.\n\n## Skills\n\nleadership • technical skills • technical lead"
     },
     {
       "person_id": "kaz-b82a97fb3f53",

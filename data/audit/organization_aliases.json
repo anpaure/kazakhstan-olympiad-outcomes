@@ -2151,6 +2151,33 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-02c10c3c072808c6",
+    "alias": "KSU Lyceum No. 134",
+    "canonical_name": "Lyceum No. 134",
+    "display_name": "Lyceum No. 134",
+    "merge_type": "legal_form_variant",
+    "rationale": "English legal-form expansion normalized to the school name.",
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1260137"
+  },
+  {
+    "organization_alias_id": "org-0fabb49906c837a8",
+    "alias": "Lyceum No.134",
+    "canonical_name": "Lyceum No. 134",
+    "display_name": "Lyceum No. 134",
+    "merge_type": "punctuation_variant",
+    "rationale": "Spacing variant of the Almaty school name.",
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1260137"
+  },
+  {
+    "organization_alias_id": "org-b6fd27c51c7dddfa",
+    "alias": "Лицей №134",
+    "canonical_name": "Lyceum No. 134",
+    "display_name": "Lyceum No. 134",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian school name normalized to English.",
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1260137"
+  },
+  {
     "organization_alias_id": "org-9a58fffca7fd5cf9",
     "alias": "Kazakh Humanitarian Law University",
     "canonical_name": "Maqsut Narikbayev University (MNU)",
@@ -2763,22 +2790,40 @@
     "evidence_url": ""
   },
   {
-    "organization_alias_id": "org-55257ac6e7068ef3",
-    "alias": "NURORDA High School",
-    "canonical_name": "Nurorda High School",
-    "display_name": "Nurorda High School",
-    "merge_type": "capitalization_variant",
-    "rationale": "Capitalization variant in a public education profile",
-    "evidence_url": "https://hk.linkedin.com/in/amanzholkuantay"
+    "organization_alias_id": "org-d6e040371bd99e75",
+    "alias": "NURORDA Almaty",
+    "canonical_name": "Nurorda School-Lyceum",
+    "display_name": "Nurorda School-Lyceum",
+    "merge_type": "parent_organization",
+    "rationale": "Almaty campus label normalized to the Nurorda School-Lyceum network.",
+    "evidence_url": "https://nurordaalmaty.kz/"
   },
   {
-    "organization_alias_id": "org-8481815c12edd059",
+    "organization_alias_id": "org-0623e342e6cb86b8",
+    "alias": "NURORDA High School",
+    "canonical_name": "Nurorda School-Lyceum",
+    "display_name": "Nurorda School-Lyceum",
+    "merge_type": "brand_variant",
+    "rationale": "The public-profile high-school label refers to the Nurorda School-Lyceum network.",
+    "evidence_url": "https://nurorda.edu.kz/en"
+  },
+  {
+    "organization_alias_id": "org-fe1a940880b1c5a7",
     "alias": "NURORDA INTERNATIONAL SCHOOLS",
-    "canonical_name": "Nurorda International Schools",
-    "display_name": "Nurorda International Schools",
+    "canonical_name": "Nurorda School-Lyceum",
+    "display_name": "Nurorda School-Lyceum",
+    "merge_type": "brand_variant",
+    "rationale": "The public-profile company label refers to the Nurorda School-Lyceum network.",
+    "evidence_url": "https://nurorda.edu.kz/en"
+  },
+  {
+    "organization_alias_id": "org-c5605baf40109e9d",
+    "alias": "NURORDA SCHOOL-LYCEUM",
+    "canonical_name": "Nurorda School-Lyceum",
+    "display_name": "Nurorda School-Lyceum",
     "merge_type": "capitalization_variant",
-    "rationale": "Capitalization cleanup",
-    "evidence_url": ""
+    "rationale": "Capitalization cleanup of the official institution name.",
+    "evidence_url": "https://nurorda.edu.kz/en"
   },
   {
     "organization_alias_id": "org-adb6fafbffab9665",

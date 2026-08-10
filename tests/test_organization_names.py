@@ -112,7 +112,7 @@ class OrganizationNormalizationTest(unittest.TestCase):
             "University of London International Programmes": "University of London",
             "Thompson Lab": "Princeton University",
             "Kazakh-Turkish High-School": "Kazakh-Turkish High School",
-            "NURORDA High School": "Nurorda High School",
+            "NURORDA High School": "Nurorda School-Lyceum",
         }
         for value, canonical in expected.items():
             with self.subTest(value=value):

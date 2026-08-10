@@ -392,7 +392,7 @@ Khabar Agency JSC,Khabar Agency,Khabar Agency,legal_form_variant,Legal-form clea
 NAVER Corp,NAVER,NAVER,legal_form_variant,Legal-form cleanup,
 NAVER WEBTOON CORP,NAVER WEBTOON,NAVER WEBTOON,legal_form_variant,Legal-form cleanup,
 NTP Ltd,NTP,NTP,legal_form_variant,Legal-form cleanup,
-NURORDA INTERNATIONAL SCHOOLS,Nurorda International Schools,Nurorda International Schools,capitalization_variant,Capitalization cleanup,
+NURORDA INTERNATIONAL SCHOOLS,Nurorda School-Lyceum,Nurorda School-Lyceum,brand_variant,The public-profile company label refers to the Nurorda School-Lyceum network.,https://nurorda.edu.kz/en
 Opt-AI Inc,Opt-AI,Opt-AI,legal_form_variant,Legal-form cleanup,
 Predictive Oncology Inc,Predictive Oncology,Predictive Oncology,legal_form_variant,Legal-form cleanup,
 Q Capital Ltd,Q Capital,Q Capital,legal_form_variant,Legal-form cleanup,
@@ -416,7 +416,7 @@ Saint-Petersburg State University,Saint Petersburg State University,Saint Peters
 Казахский национальный университет имени аль-Фараби,Al-Farabi Kazakh National University,Al-Farabi KazNU,multilingual_name,Russian full name without parenthetical acronym,https://www.kaznu.kz/en
 КазНУ им. аль-Фараби,Al-Farabi Kazakh National University,Al-Farabi KazNU,multilingual_name,Russian abbreviated name,https://www.kaznu.kz/en
 Kazakh-Turkish High-School,Kazakh-Turkish High School,Kazakh-Turkish High School,punctuation_variant,Hyphenation variant in a public education profile,https://www.linkedin.com/in/askarbek-orakov/
-NURORDA High School,Nurorda High School,Nurorda High School,capitalization_variant,Capitalization variant in a public education profile,https://hk.linkedin.com/in/amanzholkuantay
+NURORDA High School,Nurorda School-Lyceum,Nurorda School-Lyceum,brand_variant,The public-profile high-school label refers to the Nurorda School-Lyceum network.,https://nurorda.edu.kz/en
 Hacettepe Üniversitesi,Hacettepe University,Hacettepe University,multilingual_name,Turkish public name normalized to the university's English name,https://www.hacettepe.edu.tr/
 Institute of Gene Biology RAS,"Institute of Gene Biology, Russian Academy of Sciences",Institute of Gene Biology RAS,acronym_expansion,Common English short name for the institute,https://www.genebiology.ru/en/
 Институт биологии гена Российской академии наук,"Institute of Gene Biology, Russian Academy of Sciences",Institute of Gene Biology RAS,multilingual_name,Russian official name normalized to the English institutional name,https://www.genebiology.ru/
@@ -464,3 +464,8 @@ Futurewei Technologies Inc,Futurewei Technologies,Futurewei Technologies,same_en
 AlmaU,Almaty Management University (AlmaU),AlmaU,acronym_expansion,The university's current public brand is AlmaU.,https://almau.edu.kz/en/
 Almaty Management University,Almaty Management University (AlmaU),AlmaU,same_entity,Official English name without the parenthetical brand.,https://almau.edu.kz/en/
 Алматы Менеджмент Университет,Almaty Management University (AlmaU),AlmaU,multilingual_name,Official Russian name normalized to English.,https://gsb.almau.edu.kz/wp-content/uploads/2022/10/%D0%A1%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA-%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9-%D0%9C%D0%92%D0%90-2016.pdf
+NURORDA Almaty,Nurorda School-Lyceum,Nurorda School-Lyceum,parent_organization,Almaty campus label normalized to the Nurorda School-Lyceum network.,https://nurordaalmaty.kz/
+NURORDA SCHOOL-LYCEUM,Nurorda School-Lyceum,Nurorda School-Lyceum,capitalization_variant,Capitalization cleanup of the official institution name.,https://nurorda.edu.kz/en
+KSU Lyceum No. 134,Lyceum No. 134,Lyceum No. 134,legal_form_variant,English legal-form expansion normalized to the school name.,https://www.gov.kz/memleket/entities/edu/press/news/details/1260137
+Lyceum No.134,Lyceum No. 134,Lyceum No. 134,punctuation_variant,Spacing variant of the Almaty school name.,https://www.gov.kz/memleket/entities/edu/press/news/details/1260137
+Лицей №134,Lyceum No. 134,Lyceum No. 134,multilingual_name,Russian school name normalized to English.,https://www.gov.kz/memleket/entities/edu/press/news/details/1260137

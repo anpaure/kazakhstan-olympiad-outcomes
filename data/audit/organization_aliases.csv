@@ -238,6 +238,9 @@ org-472f7744dc56a5fb,KB MSU,Lomonosov Moscow State University (MSU),Moscow State
 org-95b43bf890f0a472,Lomonosov Moscow State University,Lomonosov Moscow State University (MSU),Moscow State University,same_entity,Official name without acronym,
 org-5ab0cf63144c4e2c,Moscow State University,Lomonosov Moscow State University (MSU),Moscow State University,same_entity,Common short name,
 org-dcd615017c7dd6e5,"Lowe's Companies, Inc",Lowe's,Lowe's,legal_form_variant,Legal-form cleanup,
+org-02c10c3c072808c6,KSU Lyceum No. 134,Lyceum No. 134,Lyceum No. 134,legal_form_variant,English legal-form expansion normalized to the school name.,https://www.gov.kz/memleket/entities/edu/press/news/details/1260137
+org-0fabb49906c837a8,Lyceum No.134,Lyceum No. 134,Lyceum No. 134,punctuation_variant,Spacing variant of the Almaty school name.,https://www.gov.kz/memleket/entities/edu/press/news/details/1260137
+org-b6fd27c51c7dddfa,Лицей №134,Lyceum No. 134,Lyceum No. 134,multilingual_name,Russian school name normalized to English.,https://www.gov.kz/memleket/entities/edu/press/news/details/1260137
 org-9a58fffca7fd5cf9,Kazakh Humanitarian Law University,Maqsut Narikbayev University (MNU),MNU,historical_name,Hyphenless historical English name of the university now named MNU,https://lp.kazguu.kz/unversityhystory-eng
 org-8b7948d8886cd774,Kazakh Humanitarian-Law University,Maqsut Narikbayev University (MNU),MNU,historical_name,Historical English name of the university now named MNU,https://lp.kazguu.kz/unversityhystory-eng
 org-432a6187f2bcb598,Massachusetts Institute of Technology,Massachusetts Institute of Technology (MIT),MIT,same_entity,Official name without acronym,
@@ -306,8 +309,10 @@ org-cc26a521b8c0d6af,North Caspian Operating Company N.V. (NCOC),North Caspian O
 org-6b68a2076c97d854,NWAFU,Northwest A&F University,Northwest A&F University,acronym_expansion,Official university acronym,
 org-90f1660619996003,Novosibirsk State University (NSU),Novosibirsk State University (NSU),NSU,same_entity,Canonical display declaration,https://english.nsu.ru/
 org-0bbed4d0cca2dfa5,NTP Ltd,NTP,NTP,legal_form_variant,Legal-form cleanup,
-org-55257ac6e7068ef3,NURORDA High School,Nurorda High School,Nurorda High School,capitalization_variant,Capitalization variant in a public education profile,https://hk.linkedin.com/in/amanzholkuantay
-org-8481815c12edd059,NURORDA INTERNATIONAL SCHOOLS,Nurorda International Schools,Nurorda International Schools,capitalization_variant,Capitalization cleanup,
+org-d6e040371bd99e75,NURORDA Almaty,Nurorda School-Lyceum,Nurorda School-Lyceum,parent_organization,Almaty campus label normalized to the Nurorda School-Lyceum network.,https://nurordaalmaty.kz/
+org-0623e342e6cb86b8,NURORDA High School,Nurorda School-Lyceum,Nurorda School-Lyceum,brand_variant,The public-profile high-school label refers to the Nurorda School-Lyceum network.,https://nurorda.edu.kz/en
+org-fe1a940880b1c5a7,NURORDA INTERNATIONAL SCHOOLS,Nurorda School-Lyceum,Nurorda School-Lyceum,brand_variant,The public-profile company label refers to the Nurorda School-Lyceum network.,https://nurorda.edu.kz/en
+org-c5605baf40109e9d,NURORDA SCHOOL-LYCEUM,Nurorda School-Lyceum,Nurorda School-Lyceum,capitalization_variant,Capitalization cleanup of the official institution name.,https://nurorda.edu.kz/en
 org-adb6fafbffab9665,"OnPoint Analytics, Inc.",OnPoint Analytics,OnPoint Analytics,same_entity,Legal-form variant,
 org-c28645300b56e558,Opt-AI Inc,Opt-AI,Opt-AI,legal_form_variant,Legal-form cleanup,
 org-f21d3b7c0c53ea62,Penn State University,Pennsylvania State University,Penn State,same_entity,Common short name,
