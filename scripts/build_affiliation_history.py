@@ -407,6 +407,17 @@ def normalized_type(value: str, role: str = "") -> str:
     return "employment"
 
 
+def is_current_affiliation(
+    end_year: str, affiliation_type: str, as_of_year: int
+) -> bool:
+    """Treat education through its stated graduation year as current."""
+    return not end_year or (
+        affiliation_type == "education"
+        and end_year.isdigit()
+        and int(end_year) >= as_of_year
+    )
+
+
 def row_key(row: dict[str, object]) -> tuple[str, ...]:
     return (
         clean_text(row.get("person_id")),
@@ -572,7 +583,9 @@ def build_rows(
                 "affiliation_type": affiliation_type,
                 "start_year": clean_text(affiliation.get("start_year")),
                 "end_year": end_year,
-                "is_current": not bool(end_year),
+                "is_current": is_current_affiliation(
+                    end_year, affiliation_type, as_of_year
+                ),
                 "selected_as_alma_mater": False,
                 "evidence_url": clean_text(affiliation.get("evidence_url")),
                 "evidence_kind": f"accepted_{clean_text(affiliation.get('source')) or 'structured'}",
@@ -600,7 +613,9 @@ def build_rows(
                 "affiliation_type": affiliation_type,
                 "start_year": clean_text(manual.get("start_year")),
                 "end_year": end_year,
-                "is_current": not bool(end_year),
+                "is_current": is_current_affiliation(
+                    end_year, affiliation_type, as_of_year
+                ),
                 "selected_as_alma_mater": False,
                 "evidence_url": clean_text(manual.get("career_evidence_url")),
                 "evidence_kind": "manual_review",
@@ -627,7 +642,11 @@ def build_rows(
             continue
         end_year = clean_text(manual.get("end_year"))
         current_value = clean_text(manual.get("is_current")).casefold()
-        is_current = current_value == "true" if current_value else not bool(end_year)
+        is_current = (
+            current_value == "true"
+            if current_value
+            else is_current_affiliation(end_year, affiliation_type, as_of_year)
+        )
         rows.append(
             {
                 "person_id": person_id,
@@ -664,11 +683,7 @@ def build_rows(
         ):
             continue
         end_year = clean_text(review.get("end_year"))
-        is_current = not end_year or (
-            affiliation_type == "education"
-            and end_year.isdigit()
-            and int(end_year) >= as_of_year
-        )
+        is_current = is_current_affiliation(end_year, affiliation_type, as_of_year)
         rows.append(
             {
                 "person_id": person_id,

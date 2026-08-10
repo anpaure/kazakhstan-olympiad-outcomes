@@ -156,3 +156,9 @@ Bocconi,Bocconi University,Bocconi University,same_entity,Common short name
 Ecole normale superieure,École normale supérieure (ENS),ENS,transliterated_name,ASCII spelling
 ENS,École normale supérieure (ENS),ENS,same_entity,Common acronym
 Google Deepmind,Google DeepMind,Google DeepMind,same_entity,Capitalization variant
+Cambridge University,University of Cambridge,University of Cambridge,same_entity,Informal name
+Imperial College,Imperial College London,Imperial College London,same_entity,Common short name
+Ecole Polytechnique,École Polytechnique,École Polytechnique,transliterated_name,ASCII spelling
+École Polytechnique,École Polytechnique,École Polytechnique,same_entity,Official name
+University of Hong Kong,University of Hong Kong,University of Hong Kong,same_entity,Official name
+HKU,University of Hong Kong,University of Hong Kong,same_entity,Common acronym

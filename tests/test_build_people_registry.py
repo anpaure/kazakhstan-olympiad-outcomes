@@ -76,6 +76,46 @@ class StablePersonIdTest(unittest.TestCase):
         self.assertEqual(people[0].olympiads, "IMO;IPhO")
         self.assertEqual(merge_audit[-1]["reason"], "reviewed_cross_olympiad_merge")
 
+    def test_reviewed_merge_can_publish_sourced_display_spelling(self):
+        rows = [
+            {
+                "olympiad": "IBO",
+                "year": "2023",
+                "name": "Baktybai Galymzhan",
+                "award": "Bronze",
+                "source_url": "https://example.test/ibo-2023",
+            },
+            {
+                "olympiad": "IBO",
+                "year": "2024",
+                "name": "Galymzhan Baktybay",
+                "award": "Bronze",
+                "source_url": "https://example.test/ibo-2024",
+            },
+        ]
+        reviewed = [
+            {
+                "canonical_person_id": "kaz-reviewed",
+                "canonical_name": "Galymzhan Baktybai",
+                "aliases": (
+                    "Baktybai Galymzhan",
+                    "Galymzhan Baktybay",
+                    "Galymzhan Baktybai",
+                ),
+                "reason": "The self-authored profile supplies the preferred spelling.",
+                "evidence_url": "https://linkedin.com/in/example",
+            }
+        ]
+
+        people, _ = build_registry(rows, manual_merges=reviewed)
+
+        self.assertEqual(len(people), 1)
+        self.assertEqual(people[0].canonical_name, "Galymzhan Baktybai")
+        self.assertEqual(
+            set(people[0].aliases.split(";")),
+            {"Baktybai Galymzhan", "Galymzhan Baktybay", "Galymzhan Baktybai"},
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

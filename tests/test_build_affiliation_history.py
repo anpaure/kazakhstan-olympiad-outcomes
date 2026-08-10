@@ -428,6 +428,63 @@ class ManualAffiliationTest(unittest.TestCase):
         self.assertEqual(rows[0]["evidence_kind"], "destination_source_review")
         self.assertTrue(rows[0]["is_current"])
 
+    def test_verified_education_with_future_graduation_is_current(self):
+        people = [
+            {
+                "person_id": "person-1",
+                "name": "Example Person",
+                "confidence": "confirmed",
+                "organization": "MIT",
+                "affiliation_type": "education",
+            }
+        ]
+        verified = [
+            {
+                "person_id": "person-1",
+                "organization": "MIT",
+                "role": "Undergraduate Student",
+                "affiliation_type": "education",
+                "start_year": "2023",
+                "end_year": "2029",
+                "career_evidence_url": "https://example.com/profile",
+                "confidence": "confirmed",
+            }
+        ]
+
+        rows = build_rows(people, [], [], [], verified, [], [], 2026)
+
+        self.assertEqual(len(rows), 1)
+        self.assertTrue(rows[0]["is_current"])
+
+    def test_explicit_manual_past_flag_overrides_graduation_year(self):
+        people = [
+            {
+                "person_id": "person-1",
+                "name": "Example Person",
+                "confidence": "confirmed",
+                "organization": "ENS",
+                "affiliation_type": "education",
+            }
+        ]
+        manual = [
+            {
+                "person_id": "person-1",
+                "organization": "HKUST",
+                "role": "Undergraduate Student",
+                "affiliation_type": "education",
+                "start_year": "2025",
+                "end_year": "2026",
+                "is_current": "false",
+                "evidence_url": "https://example.com/profile",
+                "confidence": "confirmed",
+            }
+        ]
+
+        rows = build_rows(people, [], [], [], [], manual, [], 2026)
+
+        self.assertEqual(len(rows), 1)
+        self.assertFalse(rows[0]["is_current"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -209,6 +209,17 @@
     "evidence_url": "https://kz.linkedin.com/in/404akhan"
   },
   {
+    "person_id": "kaz-275559ab7cdd",
+    "name": "Akhmet Issa",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong, Hong Kong SAR",
+    "evidence_url": "https://hk.linkedin.com/in/akhmetissa7",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile exposes Hong Kong as Akhmet Issa's location."
+  },
+  {
     "person_id": "kaz-6ff2bc2176bd",
     "name": "Alen Abdrakhmanov",
     "country_code": "KZ",
@@ -363,6 +374,17 @@
     "evidence_url": "https://uk.linkedin.com/in/alishertortay"
   },
   {
+    "person_id": "kaz-1877dd6f71f9",
+    "name": "Alisher Yerkebayev",
+    "country_code": "FR",
+    "country_name": "France",
+    "location_label": "Paris, France",
+    "evidence_url": "https://www.ens.psl.eu/sites/default/files/admis-et-lc-bo2026_signe.pdf",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "Outcome country follows the accepted probable exact-name admission to ENS physics in Paris."
+  },
+  {
     "person_id": "kaz-8282f3ec5f44",
     "name": "Almas Rymov",
     "country_code": "CA",
@@ -405,6 +427,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://linkedin.com/in/almaz-rakhmetov-a2451223"
+  },
+  {
+    "person_id": "kaz-6b502ce47b9f",
+    "name": "Almira Nurlanova",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Cambridge, Massachusetts, United States",
+    "evidence_url": "https://www.linkedin.com/in/almira-nurlanova-a6777727a",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile exposes Cambridge Massachusetts as Almira Nurlanova's location."
   },
   {
     "person_id": "kaz-e97b6a989458",
@@ -451,6 +484,17 @@
     "evidence_url": "https://hk.linkedin.com/in/amanzholkuantay"
   },
   {
+    "person_id": "kaz-449a09030208",
+    "name": "Amina Tynarbay",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://www.researchgate.net/institution/Nazarbayev-University/members/77",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "Outcome country follows the accepted probable exact-name biology affiliation at Nazarbayev University in Astana."
+  },
+  {
     "person_id": "kaz-380ff32a092b",
     "name": "Amir Bralin",
     "country_code": "US",
@@ -471,6 +515,28 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://kz.linkedin.com/in/amir-mokhammed-ali-4a4218151"
+  },
+  {
+    "person_id": "kaz-6bd1daf828d9",
+    "name": "Amir Pshenbayev",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "London, United Kingdom",
+    "evidence_url": "https://www.globtalent.org/gtf-big-talent-scholars-bios/amir-pshenbayev",
+    "evidence_kind": "affiliation_country",
+    "confidence": "confirmed",
+    "review_reason": "The Global Talent Fund biography explicitly places Amir Pshenbayev's current physics education at Imperial College London."
+  },
+  {
+    "person_id": "kaz-64e130a742d3",
+    "name": "Amir Sakhipov",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong, Hong Kong SAR",
+    "evidence_url": "https://hk.linkedin.com/in/amir-sakhipov-91a8893a2",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile exposes Hong Kong as Amir Sakhipov's location and identifies his current HKUST education."
   },
   {
     "person_id": "kaz-b695dee1b41c",
@@ -770,6 +836,17 @@
     "evidence_url": "https://linkedin.com/in/baizaq"
   },
   {
+    "person_id": "kaz-8309d6e00897",
+    "name": "Bakdaulet Yernazarov",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Daejeon, South Korea",
+    "evidence_url": "https://kz.linkedin.com/in/bakdaulet-yernazarov-308431353",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "The active 2025-2029 KAIST affiliation is used instead of the profile's stale Kazakhstan header."
+  },
+  {
     "person_id": "kaz-da119ef48a6d",
     "name": "Batyr Sardarbekov",
     "country_code": "KZ",
@@ -790,6 +867,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://www.linkedin.com/in/batyrkhan-orynkul-68a45817b"
+  },
+  {
+    "person_id": "kaz-cb653a13b10b",
+    "name": "Batyrkhan Sakenov",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong, Hong Kong SAR",
+    "evidence_url": "https://www.math.hkust.edu.hk/ug/chern_class/",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "Outcome country follows the accepted probable exact-name current HKUST mathematics affiliation."
   },
   {
     "person_id": "kaz-fae12779c8ad",
@@ -1023,6 +1111,17 @@
     "evidence_url": "https://linkedin.com/in/dias-suleimenov-23888828b"
   },
   {
+    "person_id": "kaz-319ba97c86aa",
+    "name": "Dinmukhamed Rakhimzhanov",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "Cambridge, England, United Kingdom",
+    "evidence_url": "https://uk.linkedin.com/in/dinmukhamed-rakhimzhanov-93a2b8302",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile exposes Cambridge England as Dinmukhamed Rakhimzhanov's location."
+  },
+  {
     "person_id": "kaz-2fe78cfd647b",
     "name": "Dinmukhammed Nurbek",
     "country_code": "KZ",
@@ -1032,6 +1131,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://linkedin.com/in/dinmukhammed-nurbek"
+  },
+  {
+    "person_id": "kaz-bdb3a76b4430",
+    "name": "Dinmukhammed Omar",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/final-reports/IBO-2024%20Report.pdf",
+    "evidence_kind": "affiliation_country",
+    "confidence": "confirmed",
+    "review_reason": "The official IBO report identifies Dinmukhammed Omar as an NTU undergraduate in Singapore."
   },
   {
     "person_id": "kaz-4e3828c7955c",
@@ -1065,6 +1175,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://linkedin.com/in/dmitriy-dolzhnikov-7a874037"
+  },
+  {
+    "person_id": "kaz-9ad9420e5768",
+    "name": "Doszhan Bissimbi",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong, Hong Kong SAR",
+    "evidence_url": "https://hk.linkedin.com/in/doszhan-bissimbi-a15621291",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile exposes Hong Kong as Doszhan Bissimbi's location and identifies his current HKUST education."
   },
   {
     "person_id": "kaz-5354c12725ae",
@@ -1109,6 +1230,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://www.linkedin.com/in/furkatmukhtarov"
+  },
+  {
+    "person_id": "kaz-213b92028ecf",
+    "name": "Galymzhan Baktybai",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Daejeon, South Korea",
+    "evidence_url": "https://kr.linkedin.com/in/galymzhnb",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile exposes Daejeon South Korea as Galymzhan Baktybai's location and identifies his current KAIST education."
   },
   {
     "person_id": "kaz-44c1e8dd8198",
@@ -1406,6 +1538,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://ae.linkedin.com/in/marat-shotanov"
+  },
+  {
+    "person_id": "kaz-c8b296e6cadb",
+    "name": "Margulan Sharel",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "London, United Kingdom",
+    "evidence_url": "https://www.linkedin.com/posts/spectrum-international-school_huge-congratulations-to-our-student-margulan-activity-7445314253726830592-wCy6",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "Outcome country follows the accepted exact-name Imperial College London admission."
   },
   {
     "person_id": "kaz-3dd740673c5d",
@@ -2286,6 +2429,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://linkedin.com/in/vladimir-dolzhnikov-95684017b"
+  },
+  {
+    "person_id": "kaz-e684e28ea593",
+    "name": "Vladimir Rogovskiy",
+    "country_code": "FR",
+    "country_name": "France",
+    "location_label": "Palaiseau, France",
+    "evidence_url": "https://www.globtalent.org/gtf-big-talent-scholars-bios/vladimir-rogovskiy",
+    "evidence_kind": "affiliation_country",
+    "confidence": "confirmed",
+    "review_reason": "The Global Talent Fund biography explicitly places Vladimir Rogovskiy's current mathematics education at École Polytechnique in France."
   },
   {
     "person_id": "kaz-ba8a6f8bb8aa",

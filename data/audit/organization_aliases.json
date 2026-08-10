@@ -416,6 +416,14 @@
     "rationale": "Huawei national subsidiary"
   },
   {
+    "organization_alias_id": "org-5bd261f8f6cedff2",
+    "alias": "Imperial College",
+    "canonical_name": "Imperial College London",
+    "display_name": "Imperial College London",
+    "merge_type": "same_entity",
+    "rationale": "Common short name"
+  },
+  {
     "organization_alias_id": "org-710aace3877a7b5b",
     "alias": "Institute for basic science (IBS)",
     "canonical_name": "Institute for Basic Science (IBS)",
@@ -1176,6 +1184,14 @@
     "rationale": "Official name without acronym"
   },
   {
+    "organization_alias_id": "org-25761a19847d1b03",
+    "alias": "Cambridge University",
+    "canonical_name": "University of Cambridge",
+    "display_name": "University of Cambridge",
+    "merge_type": "same_entity",
+    "rationale": "Informal name"
+  },
+  {
     "organization_alias_id": "org-2fdc3189c3f0c4b6",
     "alias": "Debreceni Egyetem",
     "canonical_name": "University of Debrecen",
@@ -1184,12 +1200,28 @@
     "rationale": "Hungarian name"
   },
   {
+    "organization_alias_id": "org-2aabf202eceac140",
+    "alias": "HKU",
+    "canonical_name": "University of Hong Kong",
+    "display_name": "University of Hong Kong",
+    "merge_type": "same_entity",
+    "rationale": "Common acronym"
+  },
+  {
     "organization_alias_id": "org-f676743426ce5ad1",
     "alias": "The University of Hong Kong",
     "canonical_name": "University of Hong Kong",
     "display_name": "University of Hong Kong",
     "merge_type": "same_entity",
     "rationale": "Leading-article variant"
+  },
+  {
+    "organization_alias_id": "org-4c4666c3ee495e03",
+    "alias": "University of Hong Kong",
+    "canonical_name": "University of Hong Kong",
+    "display_name": "University of Hong Kong",
+    "merge_type": "same_entity",
+    "rationale": "Official name"
   },
   {
     "organization_alias_id": "org-f8fbe44f767b5174",
@@ -1254,5 +1286,21 @@
     "display_name": "ENS",
     "merge_type": "same_entity",
     "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-037ebf891e920293",
+    "alias": "Ecole Polytechnique",
+    "canonical_name": "École Polytechnique",
+    "display_name": "École Polytechnique",
+    "merge_type": "transliterated_name",
+    "rationale": "ASCII spelling"
+  },
+  {
+    "organization_alias_id": "org-3586da23ff91eb54",
+    "alias": "École Polytechnique",
+    "canonical_name": "École Polytechnique",
+    "display_name": "École Polytechnique",
+    "merge_type": "same_entity",
+    "rationale": "Official name"
   }
 ]

@@ -331,6 +331,11 @@ def build_registry(
         else:
             research_scope = "recent_competitor"
 
+        published_aliases = sorted(
+            set(aliases)
+            | (set(reviewed_merge["aliases"]) if reviewed_merge else set()),
+            key=str.casefold,
+        )
         people.append(
             Person(
                 person_id=person_id,
@@ -339,7 +344,7 @@ def build_registry(
                     if reviewed_merge
                     else canonical_alias(aliases, row_counts, latest_year)
                 ),
-                aliases=";".join(aliases),
+                aliases=";".join(published_aliases),
                 olympiads=";".join(olympiads),
                 years=";".join(str(year) for year in years),
                 first_year=first_year,

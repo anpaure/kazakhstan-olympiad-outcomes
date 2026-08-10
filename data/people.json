@@ -5925,6 +5925,21 @@
     "source_urls": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2022"
   },
   {
+    "person_id": "kaz-6b502ce47b9f",
+    "canonical_name": "Almira Nurlanova",
+    "aliases": "Almira Nurlanova;Nurlanova Almira",
+    "olympiads": "IChO",
+    "years": "2022;2023",
+    "first_year": 2022,
+    "last_year": 2023,
+    "estimated_birth_year_min": 2003,
+    "estimated_birth_year_max": 2007,
+    "awards": "Silver",
+    "participant_rows": 2,
+    "research_scope": "early_career_or_university",
+    "source_urls": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2022;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2023"
+  },
+  {
     "person_id": "kaz-3be79cb80aa3",
     "canonical_name": "Daniil Shatokhin",
     "aliases": "Daniil Shatokhin",
@@ -5940,6 +5955,21 @@
     "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
   },
   {
+    "person_id": "kaz-bdb3a76b4430",
+    "canonical_name": "Dinmukhammed Omar",
+    "aliases": "Dinmukhammed Omar;Omar Dinmukhammed",
+    "olympiads": "IBO",
+    "years": "2022;2023",
+    "first_year": 2022,
+    "last_year": 2023,
+    "estimated_birth_year_min": 2003,
+    "estimated_birth_year_max": 2007,
+    "awards": "Silver",
+    "participant_rows": 2,
+    "research_scope": "early_career_or_university",
+    "source_urls": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2022;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2023"
+  },
+  {
     "person_id": "kaz-69bda00903cf",
     "canonical_name": "Miron Yurkevich",
     "aliases": "Miron Yurkevich",
@@ -5953,36 +5983,6 @@
     "participant_rows": 4,
     "research_scope": "early_career_or_university",
     "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
-  },
-  {
-    "person_id": "kaz-6b502ce47b9f",
-    "canonical_name": "Nurlanova Almira",
-    "aliases": "Almira Nurlanova;Nurlanova Almira",
-    "olympiads": "IChO",
-    "years": "2022;2023",
-    "first_year": 2022,
-    "last_year": 2023,
-    "estimated_birth_year_min": 2003,
-    "estimated_birth_year_max": 2007,
-    "awards": "Silver",
-    "participant_rows": 2,
-    "research_scope": "early_career_or_university",
-    "source_urls": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2022;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2023"
-  },
-  {
-    "person_id": "kaz-bdb3a76b4430",
-    "canonical_name": "Omar Dinmukhammed",
-    "aliases": "Dinmukhammed Omar;Omar Dinmukhammed",
-    "olympiads": "IBO",
-    "years": "2022;2023",
-    "first_year": 2022,
-    "last_year": 2023,
-    "estimated_birth_year_min": 2003,
-    "estimated_birth_year_max": 2007,
-    "awards": "Silver",
-    "participant_rows": 2,
-    "research_scope": "early_career_or_university",
-    "source_urls": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2022;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2023"
   },
   {
     "person_id": "kaz-2c30c8a4a543",
@@ -6060,21 +6060,6 @@
     "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
   },
   {
-    "person_id": "kaz-213b92028ecf",
-    "canonical_name": "Baktybai Galymzhan",
-    "aliases": "Baktybai Galymzhan;Galymzhan Baktybay",
-    "olympiads": "IBO",
-    "years": "2023;2024",
-    "first_year": 2023,
-    "last_year": 2024,
-    "estimated_birth_year_min": 2004,
-    "estimated_birth_year_max": 2008,
-    "awards": "Bronze",
-    "participant_rows": 2,
-    "research_scope": "recent_competitor",
-    "source_urls": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2023;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2024"
-  },
-  {
     "person_id": "kaz-cb653a13b10b",
     "canonical_name": "Batyrkhan Sakenov",
     "aliases": "Batyrkhan Sakenov",
@@ -6090,21 +6075,6 @@
     "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
   },
   {
-    "person_id": "kaz-9ad9420e5768",
-    "canonical_name": "Bissimbi Doszhan",
-    "aliases": "Bissimbi Doszhan;Doszhan Bissimbi",
-    "olympiads": "IPhO",
-    "years": "2023;2024",
-    "first_year": 2023,
-    "last_year": 2024,
-    "estimated_birth_year_min": 2004,
-    "estimated_birth_year_max": 2008,
-    "awards": "Silver Medal",
-    "participant_rows": 2,
-    "research_scope": "recent_competitor",
-    "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
-  },
-  {
     "person_id": "kaz-4a80af9daaab",
     "canonical_name": "Dair Nurtayev",
     "aliases": "Dair Nurtayev",
@@ -6118,6 +6088,36 @@
     "participant_rows": 1,
     "research_scope": "recent_competitor",
     "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-9ad9420e5768",
+    "canonical_name": "Doszhan Bissimbi",
+    "aliases": "Bissimbi Doszhan;Doszhan Bissimbi",
+    "olympiads": "IPhO",
+    "years": "2023;2024",
+    "first_year": 2023,
+    "last_year": 2024,
+    "estimated_birth_year_min": 2004,
+    "estimated_birth_year_max": 2008,
+    "awards": "Silver Medal",
+    "participant_rows": 2,
+    "research_scope": "recent_competitor",
+    "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-213b92028ecf",
+    "canonical_name": "Galymzhan Baktybai",
+    "aliases": "Baktybai Galymzhan;Galymzhan Baktybai;Galymzhan Baktybay",
+    "olympiads": "IBO",
+    "years": "2023;2024",
+    "first_year": 2023,
+    "last_year": 2024,
+    "estimated_birth_year_min": 2004,
+    "estimated_birth_year_max": 2008,
+    "awards": "Bronze",
+    "participant_rows": 2,
+    "research_scope": "recent_competitor",
+    "source_urls": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2023;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2024"
   },
   {
     "person_id": "kaz-be04ddfb5a42",

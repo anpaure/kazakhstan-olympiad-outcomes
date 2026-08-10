@@ -51,6 +51,7 @@ org-88872ef027d1afdd,Higher School of Economics,HSE University,HSE University,sa
 org-6e8348fc26daa5bc,Высшая Школа Экономики,HSE University,HSE University,multilingual_name,Russian name
 org-f049cf2eecf4aa83,Huawei Noah's Ark Lab,Huawei,Huawei,parent_organization,Huawei research unit
 org-cf143e4123dd376a,Huawei Switzerland,Huawei,Huawei,parent_organization,Huawei national subsidiary
+org-5bd261f8f6cedff2,Imperial College,Imperial College London,Imperial College London,same_entity,Common short name
 org-710aace3877a7b5b,Institute for basic science (IBS),Institute for Basic Science (IBS),Institute for Basic Science,same_entity,Capitalization variant
 org-6ffbb29e23c15b2d,Almaty IITU,International Information Technology University (IITU),IITU,same_entity,Location and acronym variant
 org-d04ff6b530c96efd,IITU,International Information Technology University (IITU),IITU,same_entity,Acronym
@@ -146,8 +147,11 @@ org-8b3c92efde945da5,University of California Berkeley,"University of California
 org-6abcfaa66547e033,University of California Davis,"University of California, Davis",UC Davis,same_entity,Punctuation variant
 org-e5e362fbd63a0e6c,"Institute for Pure and Applied Mathematics, UCLA","University of California, Los Angeles (UCLA)",UCLA,parent_organization,University institute
 org-42693b41b5ac4af5,"University of California, Los Angeles","University of California, Los Angeles (UCLA)",UCLA,same_entity,Official name without acronym
+org-25761a19847d1b03,Cambridge University,University of Cambridge,University of Cambridge,same_entity,Informal name
 org-2fdc3189c3f0c4b6,Debreceni Egyetem,University of Debrecen,University of Debrecen,multilingual_name,Hungarian name
+org-2aabf202eceac140,HKU,University of Hong Kong,University of Hong Kong,same_entity,Common acronym
 org-f676743426ce5ad1,The University of Hong Kong,University of Hong Kong,University of Hong Kong,same_entity,Leading-article variant
+org-4c4666c3ee495e03,University of Hong Kong,University of Hong Kong,University of Hong Kong,same_entity,Official name
 org-f8fbe44f767b5174,University of Michigan - Stephen M. Ross School of Business,University of Michigan,University of Michigan,parent_organization,University school
 org-74246aebff0a91e9,University of Minnesota-Twin Cities,University of Minnesota,University of Minnesota,same_entity,Campus-name variant
 org-d9419f61f5b751fd,The University of Texas at Brownsville,University of Texas at Brownsville,University of Texas at Brownsville,same_entity,Leading-article variant
@@ -156,3 +160,5 @@ org-3e21b8dab14d458d,vacante.kz,VACANTE,VACANTE,same_entity,Domain-style brand v
 org-c25970605d44df89,Ecole normale superieure,École normale supérieure (ENS),ENS,transliterated_name,ASCII spelling
 org-7f6577b9284ce292,ENS,École normale supérieure (ENS),ENS,same_entity,Common acronym
 org-19fec30719cc62df,École normale supérieure,École normale supérieure (ENS),ENS,same_entity,Official name without acronym
+org-037ebf891e920293,Ecole Polytechnique,École Polytechnique,École Polytechnique,transliterated_name,ASCII spelling
+org-3586da23ff91eb54,École Polytechnique,École Polytechnique,École Polytechnique,same_entity,Official name
