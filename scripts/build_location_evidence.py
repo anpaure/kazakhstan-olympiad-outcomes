@@ -212,6 +212,7 @@ TRUSTED_OVERRIDE_KINDS = {
     "career_source_location",
     "current_role_location",
 }
+PRIORITY_OVERRIDE_KINDS = {"current_role_location"}
 
 OUTPUT_FIELDS = [
     "person_id",
@@ -601,6 +602,15 @@ def build_rows(
         if clean_text(person.get("confidence")) not in {"probable", "confirmed"}:
             continue
         person_id = clean_text(person.get("person_id"))
+
+        override = overrides.get(person_id)
+        # A reviewed role location overrides conflicting automated extraction.
+        if override and override.get("evidence_kind") in PRIORITY_OVERRIDE_KINDS:
+            row = dict(override)
+            row["name"] = clean_text(person.get("name"))
+            output.append(row)
+            continue
+
         education_location = current_education_location(
             person, organization_locations
         )
@@ -628,7 +638,6 @@ def build_rows(
             )
             continue
 
-        override = overrides.get(person_id)
         if override and override.get("evidence_kind") in TRUSTED_OVERRIDE_KINDS:
             row = dict(override)
             row["name"] = clean_text(person.get("name"))

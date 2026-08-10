@@ -123,6 +123,8 @@ org-1c0aa453df7bd2b8,Fatih Üniversitesi,Fatih University,Fatih University,trans
 org-90ce0db8cfbd1ec5,Fonte Capital LTD,Fonte Capital,Fonte Capital,legal_form_variant,Legal-form cleanup,
 org-78e7e6b2a4abe9ec,Freedom Horizons Corp.,Freedom Horizons,Freedom Horizons,same_entity,Legal-form variant,
 org-7984cc94992ae4a4,Freedom Telecom Kazakhstan,Freedom Telecom,Freedom Telecom,same_entity,Country-suffix variant,
+org-c8ba8dc6a5a3b421,Futurewei Inc,Futurewei Technologies,Futurewei Technologies,same_entity,Short company form used in the TeDiO paper's internship note.,https://arxiv.org/abs/2605.14136
+org-15b756c08aa9f05e,Futurewei Technologies Inc,Futurewei Technologies,Futurewei Technologies,same_entity,Legal-form variant used in the TeDiO paper.,https://arxiv.org/abs/2605.14136
 org-affec3f144745668,Galaxy International School,Galaxy International School Almaty,Galaxy International School,same_entity,Short-form employer name on the accepted public profile matches the Almaty school's official staff record,https://galaxy.edu.kz/en/staff/163
 org-bf8e0c3d12a281c6,"Genie, Inc",Genie,Genie,same_entity,Legal-form punctuation variant,
 org-6e5152ad2301e66c,"Genie, Inc.",Genie,Genie,same_entity,Legal-form punctuation variant,

@@ -86,7 +86,7 @@ class ManualEvidenceConfidenceTest(unittest.TestCase):
                 "affiliation_type": "employment",
                 "start_year": "2025",
                 "end_year": "",
-                "evidence_url": "https://linkedin.com/in/test",
+                "evidence_url": "https://linkedin.com/posts/test-current-role",
                 "reviewed_at": "2026-08-10",
                 "review_reason": "The cited profile gives the current title.",
             }
@@ -97,8 +97,10 @@ class ManualEvidenceConfidenceTest(unittest.TestCase):
         self.assertEqual(row.organization, "Current Co")
         self.assertEqual(row.role, "Software Engineer")
         self.assertEqual(row.start_year, "2025")
+        self.assertEqual(row.linkedin_url, "https://linkedin.com/in/test")
         self.assertIn("Destination review", row.verification_basis)
         self.assertIn("https://linkedin.com/in/test", row.evidence_urls)
+        self.assertIn("https://linkedin.com/posts/test-current-role", row.evidence_urls)
 
 
 class RejectedCandidateTest(unittest.TestCase):

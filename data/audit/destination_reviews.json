@@ -270,6 +270,21 @@
     "review_reason": "The accepted profile lists Software Engineer at Google as current from June 2016."
   },
   {
+    "destination_review_id": "dest-review-0d03bf766c396324",
+    "evidence_id": "ev-674106ddbeeee8aa",
+    "source_id": "src-81efe84f49fb",
+    "person_id": "kaz-c792c9bfcef4",
+    "name": "Madi Baltagulov",
+    "organization": "NutraLens",
+    "role": "Co-founder",
+    "affiliation_type": "employment",
+    "start_year": "2025",
+    "end_year": "",
+    "evidence_url": "https://www.linkedin.com/posts/madi-baltagulov-509bbb18b_entrepreneurship-publichealth-digitalhealth-activity-7383501897166385153-8i4q",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "Madi Baltagulov's self-authored post says he is founding NutraLens with two co-founders; his public profile lists NutraLens as his current experience after completing his Yale MPH."
+  },
+  {
     "destination_review_id": "dest-review-67756224c6af2238",
     "evidence_id": "ev-bec10b05dc06ba5f",
     "source_id": "src-5d4f272facdc",

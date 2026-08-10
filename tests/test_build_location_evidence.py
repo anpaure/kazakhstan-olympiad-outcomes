@@ -189,6 +189,55 @@ class LocationExtractionTest(unittest.TestCase):
 
         self.assertEqual(build_rows(people, searches, {}), [])
 
+    def test_reviewed_override_supersedes_automatic_role_location(self):
+        people = [
+            {
+                "person_id": "kaz-remote-worker",
+                "name": "Remote Worker",
+                "confidence": "confirmed",
+                "linkedin_url": "https://linkedin.com/in/remote-worker",
+                "organization": "Distributed Company",
+                "role": "Engineer",
+                "affiliation_type": "employment",
+                "destination_status": "latest_employment",
+            }
+        ]
+        searches = [
+            {
+                "results": [
+                    {
+                        "url": "https://linkedin.com/in/remote-worker",
+                        "highlights": [
+                            "# Remote Worker Astana, Kazakhstan (KZ) 20 connections "
+                            "### Engineer - Distributed Company (Current) "
+                            "Jan 2025 - Present in San Francisco, United States"
+                        ],
+                    }
+                ]
+            }
+        ]
+        overrides = {
+            "kaz-remote-worker": {
+                "person_id": "kaz-remote-worker",
+                "name": "Remote Worker",
+                "country_code": "KZ",
+                "country_name": "Kazakhstan",
+                "location_label": "Astana, Kazakhstan",
+                "evidence_url": "https://linkedin.com/in/remote-worker",
+                "evidence_kind": "current_role_location",
+                "confidence": "confirmed",
+                "review_reason": "Reviewed remote-work location.",
+            }
+        }
+
+        rows = build_rows(people, searches, overrides)
+
+        self.assertEqual(rows[0]["country_code"], "KZ")
+        self.assertEqual(rows[0]["location_label"], "Astana, Kazakhstan")
+        self.assertEqual(
+            rows[0]["evidence_kind"], "current_role_location"
+        )
+
     def test_organization_location_loader_rejects_duplicate_canonical_names(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "locations.csv"

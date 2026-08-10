@@ -392,6 +392,13 @@
     "rationale": "Reviewed core activity is telecommunications."
   },
   {
+    "organization_sector_id": "sector-1f8272499a4af552",
+    "canonical_name": "Futurewei Technologies",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is information and communications technology research."
+  },
+  {
     "organization_sector_id": "sector-7085e9db19dcb486",
     "canonical_name": "Generate:Biomedicines",
     "organization_type": "company",
@@ -733,6 +740,13 @@
     "organization_type": "company",
     "sector": "Healthcare & Life Sciences",
     "rationale": "Reviewed core activity is pharmaceuticals."
+  },
+  {
+    "organization_sector_id": "sector-99989ffacd548356",
+    "canonical_name": "NutraLens",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed core activity is AI-assisted nutrition and digital health."
   },
   {
     "organization_sector_id": "sector-0890f456684a70f1",

@@ -1116,6 +1116,24 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-c8ba8dc6a5a3b421",
+    "alias": "Futurewei Inc",
+    "canonical_name": "Futurewei Technologies",
+    "display_name": "Futurewei Technologies",
+    "merge_type": "same_entity",
+    "rationale": "Short company form used in the TeDiO paper's internship note.",
+    "evidence_url": "https://arxiv.org/abs/2605.14136"
+  },
+  {
+    "organization_alias_id": "org-15b756c08aa9f05e",
+    "alias": "Futurewei Technologies Inc",
+    "canonical_name": "Futurewei Technologies",
+    "display_name": "Futurewei Technologies",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant used in the TeDiO paper.",
+    "evidence_url": "https://arxiv.org/abs/2605.14136"
+  },
+  {
     "organization_alias_id": "org-affec3f144745668",
     "alias": "Galaxy International School",
     "canonical_name": "Galaxy International School Almaty",

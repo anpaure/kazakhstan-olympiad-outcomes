@@ -198,6 +198,65 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         )
         self.assertEqual(location["country_code"], "KZ")
 
+    def test_zeinul_kazhkenov_latest_career_is_in_kazakhstan(self):
+        person = self.people["kaz-36fb8d2c335b"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Polymer Production")
+        self.assertEqual(person["role"], "Financial Director")
+        self.assertIn("Cornell University", self.alma_maters(person["person_id"]))
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Kazakhstan")
+        self.assertNotEqual(location["country_code"], "US")
+
+    def test_alexandr_shakiyev_remote_armeta_role_is_in_kazakhstan(self):
+        person = self.people["kaz-0260225556fe"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Armeta")
+        self.assertEqual(person["role"], "R&D and ML Engineer")
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Astana, Kazakhstan")
+        self.assertEqual(
+            location["evidence_kind"], "current_role_location"
+        )
+
+    def test_madi_baltagulov_profile_destination_and_two_degrees(self):
+        person = self.people["kaz-c792c9bfcef4"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "NutraLens")
+        self.assertEqual(person["role"], "Co-founder")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://www.linkedin.com/in/madi-baltagulov-509bbb18b",
+        )
+        self.assertIn("Vanderbilt University", self.alma_maters(person["person_id"]))
+        self.assertIn("Yale University", self.alma_maters(person["person_id"]))
+        self.assertEqual(location["country_code"], "US")
+        self.assertEqual(
+            location["location_label"],
+            "New Haven, Connecticut, United States",
+        )
+
+    def test_nurislam_tursynbek_current_unc_role_and_actual_degrees(self):
+        person = self.people["kaz-2732f0e135fa"]
+        location = self.locations[person["person_id"]]
+        alma_maters = self.alma_maters(person["person_id"])
+
+        self.assertEqual(
+            person["organization"], "University of North Carolina at Chapel Hill"
+        )
+        self.assertEqual(person["role"], "Graduate Student in Computer Science")
+        self.assertIn("University of North Carolina at Chapel Hill", alma_maters)
+        self.assertIn("Skoltech", alma_maters)
+        self.assertIn("Nazarbayev University", alma_maters)
+        self.assertEqual(location["country_code"], "US")
+        self.assertEqual(
+            location["location_label"],
+            "Chapel Hill, North Carolina, United States",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

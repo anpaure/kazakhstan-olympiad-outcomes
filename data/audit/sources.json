@@ -210,6 +210,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-6f8a279ee993",
+    "source_url": "https://arxiv.org/abs/2605.14136",
+    "source_host": "arxiv.org",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "publication_affiliation_note"
+  },
+  {
     "source_id": "src-cd1fac53fc4b",
     "source_url": "https://aspirantura.lebedev.ru/wp-content/uploads/2022/04/%D0%90%D1%80%D1%85%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%D0%90%D1%81%D0%BF%D0%B8%D1%80_2018_4.pdf",
     "source_host": "aspirantura.lebedev.ru",
@@ -403,6 +418,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "accepted_linkedin_profile;linkedin;manual;manual_review"
+  },
+  {
+    "source_id": "src-1275eed05e72",
+    "source_url": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/7/2024/05/10220209/2024_VU_Commencement_Program_digital_1.pdf",
+    "source_host": "cdn.vanderbilt.edu",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_commencement_program"
   },
   {
     "source_id": "src-83affba46114",
@@ -2683,6 +2713,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-4ac8560d9547",
+    "source_url": "https://cseweb.ucsd.edu/~mniethammer/author/nurislam-tursynbek/",
+    "source_host": "cseweb.ucsd.edu",
+    "source_kind": "web_page",
+    "evidence_rows": 4,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 3,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review;research_group_biography"
   },
   {
     "source_id": "src-79c1ef46a3fc",
@@ -6949,15 +6994,15 @@
     "source_url": "https://kz.linkedin.com/in/zeinul-gabiden-kazhkenov-23203052",
     "source_host": "kz.linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 12,
+    "evidence_rows": 13,
     "people_count": 1,
     "accepted_rows": 2,
-    "supporting_rows": 10,
+    "supporting_rows": 11,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;manual_destination_reconciliation;manual_review",
-    "source_adapters": "accepted_linkedin_profile;destination_review;destination_source_review;linkedin;manual;manual_review"
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review",
+    "source_adapters": "accepted_linkedin_profile;career_source_location;destination_review;destination_source_review;linkedin;manual;manual_review"
   },
   {
     "source_id": "src-ddca308d3171",
@@ -9109,15 +9154,15 @@
     "source_url": "https://linkedin.com/in/nurislam-tursynbek-0a8620ab",
     "source_host": "linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 4,
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
-    "supporting_rows": 3,
+    "accepted_rows": 0,
+    "supporting_rows": 2,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
-    "source_adapters": "accepted_linkedin_profile;linkedin;manual;manual_review"
+    "source_adapters": "accepted_linkedin_profile;linkedin"
   },
   {
     "source_id": "src-707c04c8fe92",
@@ -15036,10 +15081,10 @@
     "source_kind": "web_page",
     "evidence_rows": 6,
     "people_count": 4,
-    "accepted_rows": 6,
+    "accepted_rows": 5,
     "supporting_rows": 0,
     "candidate_rows": 0,
-    "superseded_rows": 0,
+    "superseded_rows": 1,
     "rejected_rows": 0,
     "provenances": "manual_review;participant_registry",
     "source_adapters": "IBO;manual"
@@ -21225,6 +21270,21 @@
     "source_adapters": "accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review"
   },
   {
+    "source_id": "src-ddbc5ce03a6a",
+    "source_url": "https://www.linkedin.com/in/madi-baltagulov-509bbb18b",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 5,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 5,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin"
+  },
+  {
     "source_id": "src-d04fea7c0484",
     "source_url": "https://www.linkedin.com/in/meiirbek-baimuratov/",
     "source_host": "linkedin.com",
@@ -21523,6 +21583,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-81efe84f49fb",
+    "source_url": "https://www.linkedin.com/posts/madi-baltagulov-509bbb18b_entrepreneurship-publichealth-digitalhealth-activity-7383501897166385153-8i4q",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_destination_reconciliation",
+    "source_adapters": "destination_review;destination_source_review"
   },
   {
     "source_id": "src-dd197e864c8e",
@@ -23325,21 +23400,6 @@
     "source_adapters": "wikidata"
   },
   {
-    "source_id": "src-65a486e32fc7",
-    "source_url": "https://www.yale.edu/about-yale/visit-campus",
-    "source_host": "yale.edu",
-    "source_kind": "web_page",
-    "evidence_rows": 1,
-    "people_count": 1,
-    "accepted_rows": 0,
-    "supporting_rows": 1,
-    "candidate_rows": 0,
-    "superseded_rows": 0,
-    "rejected_rows": 0,
-    "provenances": "accepted_location_evidence",
-    "source_adapters": "current_education_location"
-  },
-  {
     "source_id": "src-c56c54fc9c55",
     "source_url": "https://www.youtube.com/watch?v=4jVNkJkrmRQ",
     "source_host": "youtube.com",
@@ -23383,6 +23443,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
     "source_adapters": "career_source_location;manual;manual_review"
+  },
+  {
+    "source_id": "src-6594eb1e88be",
+    "source_url": "https://yale2026.yale.edu/candidates-degree/school-of-public-health/",
+    "source_host": "yale2026.yale.edu",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_degree_list"
   },
   {
     "source_id": "src-3c2e953bbe7d",

@@ -74,8 +74,14 @@ def load_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
-def is_linkedin(url: str) -> bool:
-    return "linkedin.com/" in url.casefold()
+def is_linkedin_profile(url: str) -> bool:
+    return bool(
+        re.match(
+            r"^https?://(?:[a-z0-9-]+\.)?linkedin\.com/in/[^/?#]+/?(?:[?#].*)?$",
+            clean_text(url),
+            re.IGNORECASE,
+        )
+    )
 
 
 def identity_sort_key(row: dict[str, str]) -> tuple[int, float, int]:
@@ -311,9 +317,9 @@ def best_linkedin(rows: list[dict[str, str]], minimum_confidence: str) -> str:
         if CONFIDENCE_RANK.get(row.get("confidence", "candidate"), 0) < minimum_rank:
             continue
         for url in clean_text(row.get("outbound_urls")).split(";"):
-            if is_linkedin(url):
+            if is_linkedin_profile(url):
                 return url
-        if is_linkedin(clean_text(row.get("profile_url"))):
+        if is_linkedin_profile(clean_text(row.get("profile_url"))):
             return clean_text(row.get("profile_url"))
     return ""
 
@@ -483,7 +489,7 @@ def build_rows(
             review_url = clean_text(destination_review.get("evidence_url"))
             if review_url:
                 profile_url = review_url
-                if is_linkedin(review_url):
+                if is_linkedin_profile(review_url):
                     linkedin_url = review_url
                 manual_urls.append(review_url)
             review_reason = clean_text(destination_review.get("review_reason"))

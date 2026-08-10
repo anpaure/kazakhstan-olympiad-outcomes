@@ -108,6 +108,8 @@ Adapters use:
 - OpenAlex author records and linked ORCID identities
 - Batched Wikidata entity and claim lookup for notable people, occupations, employers, and education
 
+Stable, direct Google Scholar author profiles may be retained as reviewed supporting evidence. Scholar search-result URLs are not treated as proof, and Scholar is not an automated adapter because it does not provide a suitable public API and commonly challenges scripted requests.
+
 Name-only matches remain `candidate`. Contextual Kazakhstan, olympiad, timeline, profile-link, and cross-source signals are needed for `probable` or `confirmed` confidence. Wikidata name matches are deliberately excluded from cross-source confidence boosts because common-name collisions are frequent. Requests are cached under `data/cache/enrichment/`, so interrupted or rate-limited runs can resume. If OpenAlex exhausts its anonymous daily allowance, the run skips only uncached people and still replays all later cached records; rerun later or set `OPENALEX_API_KEY` to fill the remaining gaps.
 
 Outputs:

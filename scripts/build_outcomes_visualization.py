@@ -72,6 +72,46 @@ def alma_degree_rank(role: object) -> int:
     return 4
 
 
+def preferred_alma_source(
+    alma: dict[str, object], affiliations: list[dict[str, object]]
+) -> dict[str, object]:
+    organization = canonicalize_organization(alma.get("organization"))
+    candidates = [
+        item
+        for item in affiliations
+        if canonicalize_organization(item.get("organization")) == organization
+        and str(item.get("affiliation_type") or "").casefold() == "education"
+        and str(item.get("evidence_url") or "").startswith(("http://", "https://"))
+    ]
+    if not candidates:
+        return alma
+
+    def source_rank(item: dict[str, object]) -> tuple[int, int, int, str]:
+        evidence_kind = str(item.get("evidence_kind") or "").casefold()
+        source_quality = 0
+        if evidence_kind.startswith("official_"):
+            source_quality = 4
+        elif evidence_kind in {
+            "institutional_profile",
+            "publication_affiliation",
+            "research_group_biography",
+        }:
+            source_quality = 3
+        elif evidence_kind.startswith("accepted_orcid") or evidence_kind.startswith(
+            "accepted_openalex"
+        ):
+            source_quality = 2
+        elif evidence_kind != "accepted_linkedin_profile":
+            source_quality = 1
+        confidence = {"confirmed": 2, "probable": 1}.get(
+            str(item.get("confidence") or "").casefold(), 0
+        )
+        url = str(item.get("evidence_url") or "")
+        return source_quality, confidence, int("linkedin.com" not in url.casefold()), url
+
+    return max(candidates, key=source_rank)
+
+
 def compact_sources(
     row: dict[str, object],
     location: dict[str, object],
@@ -129,7 +169,8 @@ def compact_sources(
         add(best_olympiad_source, "olympiad", "Official Olympiad result", "medal")
 
     for alma in selected_alma_maters(affiliations):
-        add(alma.get("evidence_url"), "education", "Alma mater source", "graduation-cap")
+        source = preferred_alma_source(alma, affiliations)
+        add(source.get("evidence_url"), "education", "Alma mater source", "graduation-cap")
     add(location.get("evidence_url"), "location", "Outcome country source", "map-pin")
 
     for evidence in audit_evidence:

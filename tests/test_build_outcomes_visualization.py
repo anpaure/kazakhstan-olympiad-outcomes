@@ -63,6 +63,61 @@ class CompactVisualizationDataTest(unittest.TestCase):
         self.assertEqual(len(olympiad_sources), 1)
         self.assertIn("contestant", olympiad_sources[0]["url"])
 
+    def test_alma_icons_prefer_official_sources_over_profile_rows(self):
+        row = {
+            "linkedin_url": "https://linkedin.com/in/example",
+            "profile_url": "https://linkedin.com/in/example",
+            "organization": "Example Co",
+            "evidence_urls": "",
+        }
+        affiliations = [
+            {
+                "organization": "Vanderbilt University",
+                "affiliation_type": "education",
+                "selected_as_alma_mater": True,
+                "evidence_url": "https://linkedin.com/in/example",
+                "evidence_kind": "accepted_linkedin_profile",
+                "confidence": "probable",
+            },
+            {
+                "organization": "Vanderbilt University",
+                "affiliation_type": "education",
+                "selected_as_alma_mater": False,
+                "evidence_url": "https://vanderbilt.edu/commencement.pdf",
+                "evidence_kind": "official_commencement_program",
+                "confidence": "confirmed",
+            },
+            {
+                "organization": "Yale University",
+                "affiliation_type": "education",
+                "selected_as_alma_mater": True,
+                "evidence_url": "https://linkedin.com/in/example",
+                "evidence_kind": "accepted_linkedin_profile",
+                "confidence": "probable",
+            },
+            {
+                "organization": "Yale University",
+                "affiliation_type": "education",
+                "selected_as_alma_mater": False,
+                "evidence_url": "https://yale.edu/degree-list",
+                "evidence_kind": "official_degree_list",
+                "confidence": "confirmed",
+            },
+        ]
+
+        sources = compact_sources(row, {}, affiliations, [])
+        education_urls = {
+            source["url"] for source in sources if source["kind"] == "education"
+        }
+
+        self.assertEqual(
+            education_urls,
+            {
+                "https://vanderbilt.edu/commencement.pdf",
+                "https://yale.edu/degree-list",
+            },
+        )
+
     def test_published_talgat_record_uses_honeywell_uae_location(self):
         html = Path("docs/index.html").read_text(encoding="utf-8")
         match = re.search(

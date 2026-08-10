@@ -170,21 +170,21 @@
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://www.linkedin.com/in/alexander-averyanov",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at VELES TRUST. The profile header points to Russia, but it conflicts with the active-role location and is not used.",
-    "evidence_url": "https://www.linkedin.com/in/alexander-averyanov"
+    "review_reason": "The accepted profile places the ongoing VELES TRUST CFO/CIO role in Almaty Kazakhstan; its conflicting Russia header is not used."
   },
   {
     "person_id": "kaz-0260225556fe",
     "name": "Alexandr Shakiyev",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "San Francisco, United States",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/supertorex",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at Armeta. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
-    "evidence_url": "https://kz.linkedin.com/in/supertorex"
+    "review_reason": "The reviewed profile places Alexandr's ongoing Armeta R&D and machine-learning role in Kazakhstan and identifies his primary location as Astana; the conflicting San Francisco tag in the cached extraction is not used."
   },
   {
     "person_id": "kaz-0622dfe9a63f",
@@ -224,11 +224,11 @@
     "name": "Alibek Orazalin",
     "country_code": "HK",
     "country_name": "Hong Kong",
-    "location_label": "Hong Kong SAR",
+    "location_label": "Hong Kong, Hong Kong SAR",
+    "evidence_url": "https://hk.linkedin.com/in/alibek-orazalin-3020011a9",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at Qube Research & Technologies. The public profile header independently agrees.",
-    "evidence_url": "https://hk.linkedin.com/in/alibek-orazalin-3020011a9"
+    "review_reason": "The accepted LinkedIn profile places Alibek Orazalin's current Qube Research and Technologies role in Hong Kong."
   },
   {
     "person_id": "kaz-15c5ca0ee628",
@@ -258,10 +258,10 @@
     "country_code": "CH",
     "country_name": "Switzerland",
     "location_label": "Zurich, Switzerland",
+    "evidence_url": "https://linkedin.com/in/gaukhar-alina",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees.",
-    "evidence_url": "https://linkedin.com/in/gaukhar-alina"
+    "review_reason": "The accepted LinkedIn profile places the current Google DeepMind software-engineering role in Zurich Switzerland."
   },
   {
     "person_id": "kaz-6c98b70e785e",
@@ -1336,10 +1336,10 @@
     "country_code": "US",
     "country_name": "United States",
     "location_label": "New Haven, Connecticut, United States",
-    "evidence_url": "https://www.yale.edu/about-yale/visit-campus",
-    "evidence_kind": "current_education_location",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Yale University; the linked official institution source establishes the campus location. Yale's official visitor page identifies its New Haven campus."
+    "review_reason": "Country follows the location attached to the accepted current role at NutraLens.",
+    "evidence_url": "https://www.linkedin.com/in/madi-baltagulov-509bbb18b"
   },
   {
     "person_id": "kaz-0bab17661adc",
@@ -2319,6 +2319,17 @@
     "evidence_kind": "current_education_location",
     "confidence": "probable",
     "review_reason": "Country follows the accepted active student affiliation at Iowa State University; the linked official institution source establishes the campus location. Iowa State University's official campus page identifies its campus and community in Ames."
+  },
+  {
+    "person_id": "kaz-36fb8d2c335b",
+    "name": "Zeinul-Gabiden Kazhkenov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/zeinul-gabiden-kazhkenov-23203052",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile's primary location is Kazakhstan and its latest disclosed Polymer Production role is explicitly located in Kazakhstan; the older Cornell and Memorial Sloan Kettering records are historical education and research affiliations and do not determine the outcome country."
   },
   {
     "person_id": "kaz-b22287fe1ff1",
