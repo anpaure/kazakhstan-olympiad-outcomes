@@ -1,4 +1,7 @@
+import json
+import re
 import unittest
+from pathlib import Path
 
 from scripts.build_outcomes_visualization import compact_person, compact_sources
 
@@ -59,6 +62,20 @@ class CompactVisualizationDataTest(unittest.TestCase):
         olympiad_sources = [source for source in sources if source["kind"] == "olympiad"]
         self.assertEqual(len(olympiad_sources), 1)
         self.assertIn("contestant", olympiad_sources[0]["url"])
+
+    def test_published_talgat_record_uses_honeywell_uae_location(self):
+        html = Path("docs/index.html").read_text(encoding="utf-8")
+        match = re.search(
+            r'\{"id":"kaz-7907a5491483".*?"scope":"career"\}',
+            html,
+        )
+
+        self.assertIsNotNone(match)
+        person = json.loads(match.group(0))
+        self.assertEqual(person["organization"], "Honeywell")
+        self.assertEqual(person["countryCode"], "AE")
+        self.assertEqual(person["country"], "United Arab Emirates")
+        self.assertIn("Abu Dhabi", person["location"])
 
 
 if __name__ == "__main__":
