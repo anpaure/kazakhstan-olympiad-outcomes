@@ -409,5 +409,22 @@
       1995
     ],
     "reason": "manual_transliteration"
+  },
+  {
+    "left": "Temirlan Amangeldin",
+    "right": "Temirlan Amangeldinov",
+    "token_similarity": 0.95,
+    "shared_olympiads": [],
+    "left_years": [
+      2015,
+      2016
+    ],
+    "right_years": [
+      2017
+    ],
+    "reason": "reviewed_cross_olympiad_merge",
+    "review_reason": "The IMO and IPhO records resolve to the same rare-name profile and the same 2017-2021 UNIST education timeline.",
+    "evidence_url": "https://linkedin.com/in/temirlan-amangeldinov",
+    "canonical_person_id": "kaz-dcb24ecb815a"
   }
 ]

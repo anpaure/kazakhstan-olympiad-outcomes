@@ -1,0 +1,1162 @@
+[
+  {
+    "organization_alias_id": "org-d387e298d8921ade",
+    "alias": "Kazahskij Nacionalnij Universitet im. Al Farabi",
+    "canonical_name": "Al-Farabi Kazakh National University",
+    "display_name": "Al-Farabi KazNU",
+    "merge_type": "transliterated_name",
+    "rationale": "Transliterated Russian name"
+  },
+  {
+    "organization_alias_id": "org-52d7d7658cebefe4",
+    "alias": "Kazakh National University",
+    "canonical_name": "Al-Farabi Kazakh National University",
+    "display_name": "Al-Farabi KazNU",
+    "merge_type": "same_entity",
+    "rationale": "Common short name"
+  },
+  {
+    "organization_alias_id": "org-76aa2ced5655708d",
+    "alias": "Kazakh National University named after al-Farabi",
+    "canonical_name": "Al-Farabi Kazakh National University",
+    "display_name": "Al-Farabi KazNU",
+    "merge_type": "same_entity",
+    "rationale": "Translated official name"
+  },
+  {
+    "organization_alias_id": "org-4172ef0c9e401a9b",
+    "alias": "Казахский национальный университет имени аль-Фараби (КазНУ)",
+    "canonical_name": "Al-Farabi Kazakh National University",
+    "display_name": "Al-Farabi KazNU",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian name"
+  },
+  {
+    "organization_alias_id": "org-0978a3b8e6680bd8",
+    "alias": "Alem Entertainment GP",
+    "canonical_name": "Alem Entertainment",
+    "display_name": "Alem Entertainment",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant"
+  },
+  {
+    "organization_alias_id": "org-ed4f7ac0686a535a",
+    "alias": "Alem Entertainment Ltd.",
+    "canonical_name": "Alem Entertainment",
+    "display_name": "Alem Entertainment",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant"
+  },
+  {
+    "organization_alias_id": "org-4126e79821602202",
+    "alias": "AlliedYoung FBC / 아영FBC",
+    "canonical_name": "AlliedYoung FBC",
+    "display_name": "AlliedYoung FBC",
+    "merge_type": "multilingual_name",
+    "rationale": "English and Korean combined label"
+  },
+  {
+    "organization_alias_id": "org-91c37305bd0a28d6",
+    "alias": "Amazon Web Services",
+    "canonical_name": "Amazon",
+    "display_name": "Amazon",
+    "merge_type": "parent_organization",
+    "rationale": "AWS is an Amazon business"
+  },
+  {
+    "organization_alias_id": "org-551c505dc4e7689f",
+    "alias": "Amazon Web Services (AWS)",
+    "canonical_name": "Amazon",
+    "display_name": "Amazon",
+    "merge_type": "parent_organization",
+    "rationale": "AWS is an Amazon business"
+  },
+  {
+    "organization_alias_id": "org-a73e40fdb639b67f",
+    "alias": "Amazon.com",
+    "canonical_name": "Amazon",
+    "display_name": "Amazon",
+    "merge_type": "same_entity",
+    "rationale": "Corporate name variant"
+  },
+  {
+    "organization_alias_id": "org-f36d9115b6482aba",
+    "alias": "AWS Center for Quantum Computing at Amazon",
+    "canonical_name": "Amazon",
+    "display_name": "Amazon",
+    "merge_type": "parent_organization",
+    "rationale": "Amazon research unit"
+  },
+  {
+    "organization_alias_id": "org-a43e697951b2b961",
+    "alias": "Arizona State University",
+    "canonical_name": "Arizona State University",
+    "display_name": "Arizona State University",
+    "merge_type": "same_entity",
+    "rationale": "Canonical display declaration"
+  },
+  {
+    "organization_alias_id": "org-98a4bf0760fba898",
+    "alias": "ASU",
+    "canonical_name": "Arizona State University",
+    "display_name": "Arizona State University",
+    "merge_type": "same_entity",
+    "rationale": "Acronym corroborated by the same person's full affiliation"
+  },
+  {
+    "organization_alias_id": "org-d13db05f900f5735",
+    "alias": "S D Asfendiyarov Kazakh National Medical University",
+    "canonical_name": "Asfendiyarov Kazakh National Medical University",
+    "display_name": "Asfendiyarov KazNMU",
+    "merge_type": "same_entity",
+    "rationale": "Initials variant"
+  },
+  {
+    "organization_alias_id": "org-ab03c6c2763324e7",
+    "alias": "Aktau BIL",
+    "canonical_name": "Bilim-Innovation Lyceums (BIL)",
+    "display_name": "BIL",
+    "merge_type": "parent_organization",
+    "rationale": "Campus label"
+  },
+  {
+    "organization_alias_id": "org-1b48fcff6103f4f1",
+    "alias": "Aktau KTL",
+    "canonical_name": "Bilim-Innovation Lyceums (BIL)",
+    "display_name": "BIL",
+    "merge_type": "parent_organization",
+    "rationale": "Former KTL campus label"
+  },
+  {
+    "organization_alias_id": "org-1a504dedf2a62d37",
+    "alias": "Aktobe KTL",
+    "canonical_name": "Bilim-Innovation Lyceums (BIL)",
+    "display_name": "BIL",
+    "merge_type": "parent_organization",
+    "rationale": "Former KTL campus label"
+  },
+  {
+    "organization_alias_id": "org-beb314d32e580bee",
+    "alias": "Almaty KTL",
+    "canonical_name": "Bilim-Innovation Lyceums (BIL)",
+    "display_name": "BIL",
+    "merge_type": "parent_organization",
+    "rationale": "Former KTL name for an Almaty BIL campus"
+  },
+  {
+    "organization_alias_id": "org-e56295925be3f7c9",
+    "alias": "AlmatyKTL",
+    "canonical_name": "Bilim-Innovation Lyceums (BIL)",
+    "display_name": "BIL",
+    "merge_type": "parent_organization",
+    "rationale": "Spacing variant of an Almaty campus in the BIL network"
+  },
+  {
+    "organization_alias_id": "org-9b4c87c28546ae3b",
+    "alias": "Atyrau, \"Bilim-Innovation\" Lyceum",
+    "canonical_name": "Bilim-Innovation Lyceums (BIL)",
+    "display_name": "BIL",
+    "merge_type": "parent_organization",
+    "rationale": "Campus label"
+  },
+  {
+    "organization_alias_id": "org-56db226ccd5775d9",
+    "alias": "Bilim-Innovation Boarding Lyceum for Gifted Girls, Astana",
+    "canonical_name": "Bilim-Innovation Lyceums (BIL)",
+    "display_name": "BIL",
+    "merge_type": "parent_organization",
+    "rationale": "Campus label"
+  },
+  {
+    "organization_alias_id": "org-984e47e8f98eef6e",
+    "alias": "Bilim-Innovation Lyceum No. 1, Karaganda",
+    "canonical_name": "Bilim-Innovation Lyceums (BIL)",
+    "display_name": "BIL",
+    "merge_type": "parent_organization",
+    "rationale": "Campus label"
+  },
+  {
+    "organization_alias_id": "org-a3d57bcae75ed36e",
+    "alias": "Bilim-Innovation Specialized Boarding Lyceum, North Kazakhstan",
+    "canonical_name": "Bilim-Innovation Lyceums (BIL)",
+    "display_name": "BIL",
+    "merge_type": "parent_organization",
+    "rationale": "Campus label"
+  },
+  {
+    "organization_alias_id": "org-119b615bd71a623e",
+    "alias": "Kazakh-Turkish High Schools",
+    "canonical_name": "Bilim-Innovation Lyceums (BIL)",
+    "display_name": "BIL",
+    "merge_type": "parent_organization",
+    "rationale": "Former network name"
+  },
+  {
+    "organization_alias_id": "org-0b476d027628fae0",
+    "alias": "Kazakh-Turkish lyceum for gifted students",
+    "canonical_name": "Bilim-Innovation Lyceums (BIL)",
+    "display_name": "BIL",
+    "merge_type": "parent_organization",
+    "rationale": "Former network name"
+  },
+  {
+    "organization_alias_id": "org-1aee4fa84006531a",
+    "alias": "Oral Bilim Innovation High School",
+    "canonical_name": "Bilim-Innovation Lyceums (BIL)",
+    "display_name": "BIL",
+    "merge_type": "parent_organization",
+    "rationale": "Campus label"
+  },
+  {
+    "organization_alias_id": "org-00bc7566dfb15a28",
+    "alias": "BINUS International",
+    "canonical_name": "BINUS University",
+    "display_name": "BINUS University",
+    "merge_type": "parent_organization",
+    "rationale": "International campus label"
+  },
+  {
+    "organization_alias_id": "org-4b898f87824a7625",
+    "alias": "California Institute of Technology",
+    "canonical_name": "California Institute of Technology (Caltech)",
+    "display_name": "Caltech",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-7a15daf168dd4f66",
+    "alias": "Caltech",
+    "canonical_name": "California Institute of Technology (Caltech)",
+    "display_name": "Caltech",
+    "merge_type": "same_entity",
+    "rationale": "Common short name"
+  },
+  {
+    "organization_alias_id": "org-0b63819d9976f098",
+    "alias": "Deep Infra Inc",
+    "canonical_name": "Deep Infra",
+    "display_name": "Deep Infra",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-9760c54ebd9118e5",
+    "alias": "Deep Infra Inc.",
+    "canonical_name": "Deep Infra",
+    "display_name": "Deep Infra",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-1b5d4acf03e08942",
+    "alias": "Deutsche Elektronen-Synchrotron DESY",
+    "canonical_name": "Deutsches Elektronen-Synchrotron DESY",
+    "display_name": "DESY",
+    "merge_type": "same_entity",
+    "rationale": "Spelling variant"
+  },
+  {
+    "organization_alias_id": "org-6d8604bd143e10c8",
+    "alias": "Embassy of Kazkhstan to the Republic of Korea",
+    "canonical_name": "Embassy of Kazakhstan in the Republic of Korea",
+    "display_name": "Embassy of Kazakhstan in South Korea",
+    "merge_type": "same_entity",
+    "rationale": "Typo and preposition variant"
+  },
+  {
+    "organization_alias_id": "org-a5f91476e4dc8464",
+    "alias": "ETH Zürich",
+    "canonical_name": "ETH Zurich",
+    "display_name": "ETH Zurich",
+    "merge_type": "same_entity",
+    "rationale": "Diacritic variant"
+  },
+  {
+    "organization_alias_id": "org-78e7e6b2a4abe9ec",
+    "alias": "Freedom Horizons Corp.",
+    "canonical_name": "Freedom Horizons",
+    "display_name": "Freedom Horizons",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant"
+  },
+  {
+    "organization_alias_id": "org-bf8e0c3d12a281c6",
+    "alias": "Genie, Inc",
+    "canonical_name": "Genie",
+    "display_name": "Genie",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-6e5152ad2301e66c",
+    "alias": "Genie, Inc.",
+    "canonical_name": "Genie",
+    "display_name": "Genie",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-a4de49f86606d496",
+    "alias": "Graviton Research Capital LLP",
+    "canonical_name": "Graviton Research Capital",
+    "display_name": "Graviton Research Capital",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant"
+  },
+  {
+    "organization_alias_id": "org-afed4f94b89f26b6",
+    "alias": "HARBOUR.SPACE",
+    "canonical_name": "Harbour.Space University",
+    "display_name": "Harbour.Space",
+    "merge_type": "same_entity",
+    "rationale": "Capitalization variant"
+  },
+  {
+    "organization_alias_id": "org-0ee0364b3655ee89",
+    "alias": "Harbour.Space University - Barcelona Campus",
+    "canonical_name": "Harbour.Space University",
+    "display_name": "Harbour.Space",
+    "merge_type": "parent_organization",
+    "rationale": "Campus label"
+  },
+  {
+    "organization_alias_id": "org-04b3b88b38bbbc1f",
+    "alias": "Harvard T.H. Chan School of Public Health",
+    "canonical_name": "Harvard University",
+    "display_name": "Harvard University",
+    "merge_type": "parent_organization",
+    "rationale": "University school"
+  },
+  {
+    "organization_alias_id": "org-e96c81c30cfc1fbc",
+    "alias": "HITS Inc",
+    "canonical_name": "HITS",
+    "display_name": "HITS",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant"
+  },
+  {
+    "organization_alias_id": "org-fc3808ce27a71ce4",
+    "alias": "HKUST",
+    "canonical_name": "Hong Kong University of Science and Technology (HKUST)",
+    "display_name": "HKUST",
+    "merge_type": "same_entity",
+    "rationale": "Acronym"
+  },
+  {
+    "organization_alias_id": "org-8ebedea815a5cc66",
+    "alias": "Hong Kong University of Science and Technology",
+    "canonical_name": "Hong Kong University of Science and Technology (HKUST)",
+    "display_name": "HKUST",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-bef7625e65b73e38",
+    "alias": "The Hong Kong University of Science and Technology",
+    "canonical_name": "Hong Kong University of Science and Technology (HKUST)",
+    "display_name": "HKUST",
+    "merge_type": "same_entity",
+    "rationale": "Leading-article variant"
+  },
+  {
+    "organization_alias_id": "org-88872ef027d1afdd",
+    "alias": "Higher School of Economics",
+    "canonical_name": "HSE University",
+    "display_name": "HSE University",
+    "merge_type": "same_entity",
+    "rationale": "Former English brand"
+  },
+  {
+    "organization_alias_id": "org-6e8348fc26daa5bc",
+    "alias": "Высшая Школа Экономики",
+    "canonical_name": "HSE University",
+    "display_name": "HSE University",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian name"
+  },
+  {
+    "organization_alias_id": "org-f049cf2eecf4aa83",
+    "alias": "Huawei Noah's Ark Lab",
+    "canonical_name": "Huawei",
+    "display_name": "Huawei",
+    "merge_type": "parent_organization",
+    "rationale": "Huawei research unit"
+  },
+  {
+    "organization_alias_id": "org-cf143e4123dd376a",
+    "alias": "Huawei Switzerland",
+    "canonical_name": "Huawei",
+    "display_name": "Huawei",
+    "merge_type": "parent_organization",
+    "rationale": "Huawei national subsidiary"
+  },
+  {
+    "organization_alias_id": "org-710aace3877a7b5b",
+    "alias": "Institute for basic science (IBS)",
+    "canonical_name": "Institute for Basic Science (IBS)",
+    "display_name": "Institute for Basic Science",
+    "merge_type": "same_entity",
+    "rationale": "Capitalization variant"
+  },
+  {
+    "organization_alias_id": "org-6ffbb29e23c15b2d",
+    "alias": "Almaty IITU",
+    "canonical_name": "International Information Technology University (IITU)",
+    "display_name": "IITU",
+    "merge_type": "same_entity",
+    "rationale": "Location and acronym variant"
+  },
+  {
+    "organization_alias_id": "org-d04ff6b530c96efd",
+    "alias": "IITU",
+    "canonical_name": "International Information Technology University (IITU)",
+    "display_name": "IITU",
+    "merge_type": "same_entity",
+    "rationale": "Acronym"
+  },
+  {
+    "organization_alias_id": "org-0ab0b1a7ea174d35",
+    "alias": "International Information Technologies University",
+    "canonical_name": "International Information Technology University (IITU)",
+    "display_name": "IITU",
+    "merge_type": "same_entity",
+    "rationale": "Plural variant"
+  },
+  {
+    "organization_alias_id": "org-dc03cdcc3853884e",
+    "alias": "International Information Technology University",
+    "canonical_name": "International Information Technology University (IITU)",
+    "display_name": "IITU",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-b036db504106c3b5",
+    "alias": "International IT University",
+    "canonical_name": "International Information Technology University (IITU)",
+    "display_name": "IITU",
+    "merge_type": "same_entity",
+    "rationale": "Short name"
+  },
+  {
+    "organization_alias_id": "org-36a0366aa1e97466",
+    "alias": "IoS_Flutter company",
+    "canonical_name": "ios_flutter",
+    "display_name": "ios_flutter",
+    "merge_type": "same_entity",
+    "rationale": "Capitalization and suffix variant"
+  },
+  {
+    "organization_alias_id": "org-a31b39be861f1cfd",
+    "alias": "Karlsruhe Institute of Technology",
+    "canonical_name": "Karlsruhe Institute of Technology (KIT)",
+    "display_name": "KIT",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-66710c370cf8b372",
+    "alias": "wbk - Institute of Production Science",
+    "canonical_name": "Karlsruhe Institute of Technology (KIT)",
+    "display_name": "KIT",
+    "merge_type": "parent_organization",
+    "rationale": "University institute"
+  },
+  {
+    "organization_alias_id": "org-1e67d09116cb0665",
+    "alias": "KAZ Minerals Management LLP",
+    "canonical_name": "KAZ Minerals",
+    "display_name": "KAZ Minerals",
+    "merge_type": "parent_organization",
+    "rationale": "KAZ Minerals management entity"
+  },
+  {
+    "organization_alias_id": "org-8b1047944b248538",
+    "alias": "Kazakh British Technical University",
+    "canonical_name": "Kazakh-British Technical University (KBTU)",
+    "display_name": "KBTU",
+    "merge_type": "same_entity",
+    "rationale": "Hyphen variant"
+  },
+  {
+    "organization_alias_id": "org-9686eb314e43df67",
+    "alias": "Kazakh-British Techincal University",
+    "canonical_name": "Kazakh-British Technical University (KBTU)",
+    "display_name": "KBTU",
+    "merge_type": "same_entity",
+    "rationale": "Typo variant"
+  },
+  {
+    "organization_alias_id": "org-068171823f1bdb7b",
+    "alias": "Kazakh-British Technical University",
+    "canonical_name": "Kazakh-British Technical University (KBTU)",
+    "display_name": "KBTU",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-d2d8fb364e5de92f",
+    "alias": "KBTU",
+    "canonical_name": "Kazakh-British Technical University (KBTU)",
+    "display_name": "KBTU",
+    "merge_type": "same_entity",
+    "rationale": "Acronym"
+  },
+  {
+    "organization_alias_id": "org-4a2045658a617ed9",
+    "alias": "ктж",
+    "canonical_name": "Kazakhstan Temir Zholy JSC",
+    "display_name": "Kazakhstan Temir Zholy",
+    "merge_type": "multilingual_name",
+    "rationale": "Cyrillic acronym"
+  },
+  {
+    "organization_alias_id": "org-c2b0af534c670302",
+    "alias": "казкомнет",
+    "canonical_name": "Kazkomnet",
+    "display_name": "Kazkomnet",
+    "merge_type": "multilingual_name",
+    "rationale": "Cyrillic capitalization variant"
+  },
+  {
+    "organization_alias_id": "org-9ead6127817556c6",
+    "alias": "KazMunayGas (Kazakhstan)",
+    "canonical_name": "KazMunayGas",
+    "display_name": "KazMunayGas",
+    "merge_type": "same_entity",
+    "rationale": "Location suffix"
+  },
+  {
+    "organization_alias_id": "org-6cc74eb49362be0f",
+    "alias": "@khangroupkz",
+    "canonical_name": "Khan Group",
+    "display_name": "Khan Group",
+    "merge_type": "same_entity",
+    "rationale": "Public handle corroborated by a second Khan Group affiliation"
+  },
+  {
+    "organization_alias_id": "org-d11fdc22db7122f6",
+    "alias": "Khan Group LLP",
+    "canonical_name": "Khan Group",
+    "display_name": "Khan Group",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant"
+  },
+  {
+    "organization_alias_id": "org-05e93d903e6886c7",
+    "alias": "KAUST",
+    "canonical_name": "King Abdullah University of Science and Technology (KAUST)",
+    "display_name": "KAUST",
+    "merge_type": "same_entity",
+    "rationale": "Acronym"
+  },
+  {
+    "organization_alias_id": "org-f524fa89838b083c",
+    "alias": "KAUST (King Abdullah University of Science and Technology)",
+    "canonical_name": "King Abdullah University of Science and Technology (KAUST)",
+    "display_name": "KAUST",
+    "merge_type": "same_entity",
+    "rationale": "Reversed acronym label"
+  },
+  {
+    "organization_alias_id": "org-40f63b759dad48fa",
+    "alias": "KAIST",
+    "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "display_name": "KAIST",
+    "merge_type": "same_entity",
+    "rationale": "Acronym"
+  },
+  {
+    "organization_alias_id": "org-70223ec6628195fd",
+    "alias": "Korea Advanced Institute of Science and Technology",
+    "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "display_name": "KAIST",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-db023e91aaa4baaa",
+    "alias": "한국과학기술원(KAIST)",
+    "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "display_name": "KAIST",
+    "merge_type": "multilingual_name",
+    "rationale": "Korean name"
+  },
+  {
+    "organization_alias_id": "org-e218f419cd9bc9f5",
+    "alias": "L N Gumilyov Eurasian National University",
+    "canonical_name": "L.N. Gumilyov Eurasian National University",
+    "display_name": "L.N. Gumilyov ENU",
+    "merge_type": "same_entity",
+    "rationale": "Punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-7dbf860147a8102a",
+    "alias": "L. N. Gumilyov Eurasian National University",
+    "canonical_name": "L.N. Gumilyov Eurasian National University",
+    "display_name": "L.N. Gumilyov ENU",
+    "merge_type": "same_entity",
+    "rationale": "Punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-7c1b1945ed58dd30",
+    "alias": "L.N.Gumilyov Eurasian National University",
+    "canonical_name": "L.N. Gumilyov Eurasian National University",
+    "display_name": "L.N. Gumilyov ENU",
+    "merge_type": "same_entity",
+    "rationale": "Spacing variant"
+  },
+  {
+    "organization_alias_id": "org-c21c857d6bb459e0",
+    "alias": "Евразийский национальный университет имени Л. Н. Гумилёва",
+    "canonical_name": "L.N. Gumilyov Eurasian National University",
+    "display_name": "L.N. Gumilyov ENU",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian name"
+  },
+  {
+    "organization_alias_id": "org-7c8a20dbc077b69b",
+    "alias": "Laminar (YC S24)",
+    "canonical_name": "Laminar",
+    "display_name": "Laminar",
+    "merge_type": "same_entity",
+    "rationale": "Accelerator suffix"
+  },
+  {
+    "organization_alias_id": "org-55c4cc5cdc82ae45",
+    "alias": "Lindstrom",
+    "canonical_name": "Lindström",
+    "display_name": "Lindström",
+    "merge_type": "same_entity",
+    "rationale": "Diacritic variant of official brand"
+  },
+  {
+    "organization_alias_id": "org-95b43bf890f0a472",
+    "alias": "Lomonosov Moscow State University",
+    "canonical_name": "Lomonosov Moscow State University (MSU)",
+    "display_name": "Moscow State University",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-5ab0cf63144c4e2c",
+    "alias": "Moscow State University",
+    "canonical_name": "Lomonosov Moscow State University (MSU)",
+    "display_name": "Moscow State University",
+    "merge_type": "same_entity",
+    "rationale": "Common short name"
+  },
+  {
+    "organization_alias_id": "org-432a6187f2bcb598",
+    "alias": "Massachusetts Institute of Technology",
+    "canonical_name": "Massachusetts Institute of Technology (MIT)",
+    "display_name": "MIT",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-96f0809e353e09c0",
+    "alias": "MIT",
+    "canonical_name": "Massachusetts Institute of Technology (MIT)",
+    "display_name": "MIT",
+    "merge_type": "same_entity",
+    "rationale": "Acronym"
+  },
+  {
+    "organization_alias_id": "org-6ca5ce81bc1cb02f",
+    "alias": "MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)",
+    "canonical_name": "Massachusetts Institute of Technology (MIT)",
+    "display_name": "MIT",
+    "merge_type": "parent_organization",
+    "rationale": "University laboratory"
+  },
+  {
+    "organization_alias_id": "org-409f2029f95c8b9b",
+    "alias": "MIT CSAIL",
+    "canonical_name": "Massachusetts Institute of Technology (MIT)",
+    "display_name": "MIT",
+    "merge_type": "parent_organization",
+    "rationale": "University laboratory acronym"
+  },
+  {
+    "organization_alias_id": "org-76c13b8f5652824f",
+    "alias": "Research Laboratory of Electronics at MIT",
+    "canonical_name": "Massachusetts Institute of Technology (MIT)",
+    "display_name": "MIT",
+    "merge_type": "parent_organization",
+    "rationale": "University laboratory"
+  },
+  {
+    "organization_alias_id": "org-43b9d65d3ca0250b",
+    "alias": "Orta Doğu Teknik Üniversitesi / Middle East Technical University",
+    "canonical_name": "Middle East Technical University",
+    "display_name": "Middle East Technical University",
+    "merge_type": "multilingual_name",
+    "rationale": "Turkish and English combined label"
+  },
+  {
+    "organization_alias_id": "org-66c10f4de0d2d29a",
+    "alias": "MIPT (SU)",
+    "canonical_name": "Moscow Institute of Physics and Technology (MIPT)",
+    "display_name": "MIPT",
+    "merge_type": "same_entity",
+    "rationale": "Acronym variant"
+  },
+  {
+    "organization_alias_id": "org-57633474d70e44a3",
+    "alias": "Moscow Institute of Physics and Technology",
+    "canonical_name": "Moscow Institute of Physics and Technology (MIPT)",
+    "display_name": "MIPT",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-8fce8c5aa5721687",
+    "alias": "Moscow Institute of Physics and Technology (State University) (MIPT)",
+    "canonical_name": "Moscow Institute of Physics and Technology (MIPT)",
+    "display_name": "MIPT",
+    "merge_type": "same_entity",
+    "rationale": "Former legal-name variant"
+  },
+  {
+    "organization_alias_id": "org-47af585a5c2017c2",
+    "alias": "Nanyang Technological University",
+    "canonical_name": "Nanyang Technological University (NTU)",
+    "display_name": "NTU",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-9111e167822b0bf0",
+    "alias": "Nanyang Technological University Singapore",
+    "canonical_name": "Nanyang Technological University (NTU)",
+    "display_name": "NTU",
+    "merge_type": "same_entity",
+    "rationale": "Location suffix"
+  },
+  {
+    "organization_alias_id": "org-c34f0ecd2720b5d5",
+    "alias": "National Information Technologies JSC (NITEC)",
+    "canonical_name": "National Information Technologies JSC (NITEC)",
+    "display_name": "NITEC",
+    "merge_type": "same_entity",
+    "rationale": "Canonical display declaration"
+  },
+  {
+    "organization_alias_id": "org-d40b12ea1978ebbe",
+    "alias": "NITEC",
+    "canonical_name": "National Information Technologies JSC (NITEC)",
+    "display_name": "NITEC",
+    "merge_type": "same_entity",
+    "rationale": "Acronym"
+  },
+  {
+    "organization_alias_id": "org-5fcaf3e326918ced",
+    "alias": "Mechanobiology Institute, National University of Singapore",
+    "canonical_name": "National University of Singapore",
+    "display_name": "NUS",
+    "merge_type": "parent_organization",
+    "rationale": "University institute"
+  },
+  {
+    "organization_alias_id": "org-f76a839d4e5571c5",
+    "alias": "Nazarbayev Intellectual Schools",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "parent_organization",
+    "rationale": "Official network name without acronym"
+  },
+  {
+    "organization_alias_id": "org-d4c532d7f385e184",
+    "alias": "NIS Medeu (NIS PhM Almaty)",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "parent_organization",
+    "rationale": "Campus label"
+  },
+  {
+    "organization_alias_id": "org-66d043dcc1b47640",
+    "alias": "Назарбаев Интеллектуальные школы",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian name"
+  },
+  {
+    "organization_alias_id": "org-aae1ec8b193ad29e",
+    "alias": "Nazarbayev",
+    "canonical_name": "Nazarbayev University",
+    "display_name": "Nazarbayev University",
+    "merge_type": "same_entity",
+    "rationale": "Truncated public-profile school label linked to the university"
+  },
+  {
+    "organization_alias_id": "org-fa4c923af55987ff",
+    "alias": "Nazarbayev University Graduate School of Education",
+    "canonical_name": "Nazarbayev University",
+    "display_name": "Nazarbayev University",
+    "merge_type": "parent_organization",
+    "rationale": "University school"
+  },
+  {
+    "organization_alias_id": "org-dffe5325b0c9fe50",
+    "alias": "Nazarbayev University Research and Innovation System",
+    "canonical_name": "Nazarbayev University",
+    "display_name": "Nazarbayev University",
+    "merge_type": "parent_organization",
+    "rationale": "University research system"
+  },
+  {
+    "organization_alias_id": "org-c10ceb5a4fdc74ca",
+    "alias": "Nazarbayev University School of Medicine",
+    "canonical_name": "Nazarbayev University",
+    "display_name": "Nazarbayev University",
+    "merge_type": "parent_organization",
+    "rationale": "University school"
+  },
+  {
+    "organization_alias_id": "org-f5f5ffd82b06ee4b",
+    "alias": "Назарбаев Университет",
+    "canonical_name": "Nazarbayev University",
+    "display_name": "Nazarbayev University",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian name"
+  },
+  {
+    "organization_alias_id": "org-3574c4eeacc347b8",
+    "alias": "NCOC",
+    "canonical_name": "North Caspian Operating Company (NCOC)",
+    "display_name": "NCOC",
+    "merge_type": "same_entity",
+    "rationale": "Acronym"
+  },
+  {
+    "organization_alias_id": "org-cb818ac2f5d9b50e",
+    "alias": "North Caspian Operating Company N.V. (NCOC N.V.)",
+    "canonical_name": "North Caspian Operating Company (NCOC)",
+    "display_name": "NCOC",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant"
+  },
+  {
+    "organization_alias_id": "org-cc26a521b8c0d6af",
+    "alias": "North Caspian Operating Company N.V. (NCOC)",
+    "canonical_name": "North Caspian Operating Company (NCOC)",
+    "display_name": "NCOC",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant"
+  },
+  {
+    "organization_alias_id": "org-adb6fafbffab9665",
+    "alias": "OnPoint Analytics, Inc.",
+    "canonical_name": "OnPoint Analytics",
+    "display_name": "OnPoint Analytics",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant"
+  },
+  {
+    "organization_alias_id": "org-f21d3b7c0c53ea62",
+    "alias": "Penn State University",
+    "canonical_name": "Pennsylvania State University",
+    "display_name": "Penn State",
+    "merge_type": "same_entity",
+    "rationale": "Common short name"
+  },
+  {
+    "organization_alias_id": "org-557fa04d8980c101",
+    "alias": "a private hedge fund",
+    "canonical_name": "Private hedge fund",
+    "display_name": "Private hedge fund",
+    "merge_type": "same_entity",
+    "rationale": "Article variant"
+  },
+  {
+    "organization_alias_id": "org-81d9036ce3c13135",
+    "alias": "Purdue University System",
+    "canonical_name": "Purdue University",
+    "display_name": "Purdue University",
+    "merge_type": "parent_organization",
+    "rationale": "System label"
+  },
+  {
+    "organization_alias_id": "org-7a041dcd8a846e95",
+    "alias": "Purdue University West Lafayette",
+    "canonical_name": "Purdue University",
+    "display_name": "Purdue University",
+    "merge_type": "parent_organization",
+    "rationale": "Main campus label"
+  },
+  {
+    "organization_alias_id": "org-3d8fd8dc3aa5232f",
+    "alias": "National School of Physics & Math (FIZMAT)",
+    "canonical_name": "Republican Physics and Mathematics School (RFMS)",
+    "display_name": "RFMS",
+    "merge_type": "same_entity",
+    "rationale": "English brand variant"
+  },
+  {
+    "organization_alias_id": "org-6fbed550061ec5bd",
+    "alias": "National School of Physics & Math (RFMS)",
+    "canonical_name": "Republican Physics and Mathematics School (RFMS)",
+    "display_name": "RFMS",
+    "merge_type": "same_entity",
+    "rationale": "English acronym variant"
+  },
+  {
+    "organization_alias_id": "org-d9fc32901daf8674",
+    "alias": "Republican Physics and Mathematics School",
+    "canonical_name": "Republican Physics and Mathematics School (RFMS)",
+    "display_name": "RFMS",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-159669d20ffe1411",
+    "alias": "Remote",
+    "canonical_name": "Self-employed",
+    "display_name": "Self-employed",
+    "merge_type": "category_normalization",
+    "rationale": "Generic remote-work label predates the Remote company and describes independent work"
+  },
+  {
+    "organization_alias_id": "org-40167509d393f8d1",
+    "alias": "Self-Employed",
+    "canonical_name": "Self-employed",
+    "display_name": "Self-employed",
+    "merge_type": "same_entity",
+    "rationale": "Capitalization variant"
+  },
+  {
+    "organization_alias_id": "org-45595550b2a00d36",
+    "alias": "Предприниматель",
+    "canonical_name": "Self-employed",
+    "display_name": "Self-employed",
+    "merge_type": "translated_name",
+    "rationale": "Russian label"
+  },
+  {
+    "organization_alias_id": "org-8bf943769104cc45",
+    "alias": "Silleno LLP",
+    "canonical_name": "Silleno",
+    "display_name": "Silleno",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant"
+  },
+  {
+    "organization_alias_id": "org-c6f1304d5207aa1d",
+    "alias": "Silleno​ LLP",
+    "canonical_name": "Silleno",
+    "display_name": "Silleno",
+    "merge_type": "same_entity",
+    "rationale": "Zero-width character and legal-form variant"
+  },
+  {
+    "organization_alias_id": "org-752808c71f0605fd",
+    "alias": "Skolkovo Institute of Science and Technology",
+    "canonical_name": "Skoltech",
+    "display_name": "Skoltech",
+    "merge_type": "same_entity",
+    "rationale": "Official name"
+  },
+  {
+    "organization_alias_id": "org-d1fdeb4b7b8d301e",
+    "alias": "Snap Inc",
+    "canonical_name": "Snap",
+    "display_name": "Snap",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-09615f7d377d2232",
+    "alias": "Snap Inc.",
+    "canonical_name": "Snap",
+    "display_name": "Snap",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-74d36916c93c9b68",
+    "alias": "Solai Inc",
+    "canonical_name": "Solai",
+    "display_name": "Solai",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-5eb865983eb37f65",
+    "alias": "Solai Inc.",
+    "canonical_name": "Solai",
+    "display_name": "Solai",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-6a5212c48ab6600f",
+    "alias": "Squarepoint",
+    "canonical_name": "Squarepoint Capital",
+    "display_name": "Squarepoint Capital",
+    "merge_type": "same_entity",
+    "rationale": "Short brand name"
+  },
+  {
+    "organization_alias_id": "org-b19e9d200b86531c",
+    "alias": "SDU",
+    "canonical_name": "Suleyman Demirel University (SDU)",
+    "display_name": "SDU",
+    "merge_type": "same_entity",
+    "rationale": "Acronym"
+  },
+  {
+    "organization_alias_id": "org-3735c9c6471606f2",
+    "alias": "SDU University",
+    "canonical_name": "Suleyman Demirel University (SDU)",
+    "display_name": "SDU",
+    "merge_type": "same_entity",
+    "rationale": "Brand variant"
+  },
+  {
+    "organization_alias_id": "org-9f1b5a8821d486ca",
+    "alias": "Suleyman Demiral University",
+    "canonical_name": "Suleyman Demirel University (SDU)",
+    "display_name": "SDU",
+    "merge_type": "same_entity",
+    "rationale": "Typo variant"
+  },
+  {
+    "organization_alias_id": "org-9595ff2914bacbb3",
+    "alias": "Suleyman Demirel University",
+    "canonical_name": "Suleyman Demirel University (SDU)",
+    "display_name": "SDU",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-c39fd9226404a9f9",
+    "alias": "Suleyman Demirel University, Kazakhstan",
+    "canonical_name": "Suleyman Demirel University (SDU)",
+    "display_name": "SDU",
+    "merge_type": "same_entity",
+    "rationale": "Location suffix"
+  },
+  {
+    "organization_alias_id": "org-bb0d7ba862021016",
+    "alias": "TETmedical, Inc",
+    "canonical_name": "TETmedical",
+    "display_name": "TETmedical",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-e5c2ee751340a694",
+    "alias": "TETmedical, Inc.",
+    "canonical_name": "TETmedical",
+    "display_name": "TETmedical",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-49ace9e90cb4d2e0",
+    "alias": "Ulsan National Insitute of Science and Technology",
+    "canonical_name": "Ulsan National Institute of Science and Technology (UNIST)",
+    "display_name": "UNIST",
+    "merge_type": "same_entity",
+    "rationale": "Typo variant"
+  },
+  {
+    "organization_alias_id": "org-674ecb4012a6af22",
+    "alias": "Ulsan National Institute of Science and Technology",
+    "canonical_name": "Ulsan National Institute of Science and Technology (UNIST)",
+    "display_name": "UNIST",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-dd517a0bd8e8c29f",
+    "alias": "UNIST",
+    "canonical_name": "Ulsan National Institute of Science and Technology (UNIST)",
+    "display_name": "UNIST",
+    "merge_type": "same_entity",
+    "rationale": "Acronym"
+  },
+  {
+    "organization_alias_id": "org-25e6913c5ecdf069",
+    "alias": "울산과학기술원",
+    "canonical_name": "Ulsan National Institute of Science and Technology (UNIST)",
+    "display_name": "UNIST",
+    "merge_type": "multilingual_name",
+    "rationale": "Korean name"
+  },
+  {
+    "organization_alias_id": "org-6347733801b598d1",
+    "alias": "NDA",
+    "canonical_name": "Undisclosed employer",
+    "display_name": "Undisclosed employer",
+    "merge_type": "same_entity",
+    "rationale": "Disclosure-status abbreviation"
+  },
+  {
+    "organization_alias_id": "org-6abcfaa66547e033",
+    "alias": "University of California Davis",
+    "canonical_name": "University of California, Davis",
+    "display_name": "UC Davis",
+    "merge_type": "same_entity",
+    "rationale": "Punctuation variant"
+  },
+  {
+    "organization_alias_id": "org-e5e362fbd63a0e6c",
+    "alias": "Institute for Pure and Applied Mathematics, UCLA",
+    "canonical_name": "University of California, Los Angeles (UCLA)",
+    "display_name": "UCLA",
+    "merge_type": "parent_organization",
+    "rationale": "University institute"
+  },
+  {
+    "organization_alias_id": "org-42693b41b5ac4af5",
+    "alias": "University of California, Los Angeles",
+    "canonical_name": "University of California, Los Angeles (UCLA)",
+    "display_name": "UCLA",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym"
+  },
+  {
+    "organization_alias_id": "org-f676743426ce5ad1",
+    "alias": "The University of Hong Kong",
+    "canonical_name": "University of Hong Kong",
+    "display_name": "University of Hong Kong",
+    "merge_type": "same_entity",
+    "rationale": "Leading-article variant"
+  },
+  {
+    "organization_alias_id": "org-f8fbe44f767b5174",
+    "alias": "University of Michigan - Stephen M. Ross School of Business",
+    "canonical_name": "University of Michigan",
+    "display_name": "University of Michigan",
+    "merge_type": "parent_organization",
+    "rationale": "University school"
+  },
+  {
+    "organization_alias_id": "org-d9419f61f5b751fd",
+    "alias": "The University of Texas at Brownsville",
+    "canonical_name": "University of Texas at Brownsville",
+    "display_name": "University of Texas at Brownsville",
+    "merge_type": "same_entity",
+    "rationale": "Leading-article variant"
+  },
+  {
+    "organization_alias_id": "org-a2c85bdd610298c6",
+    "alias": "VACANTE LLP",
+    "canonical_name": "VACANTE",
+    "display_name": "VACANTE",
+    "merge_type": "same_entity",
+    "rationale": "Legal-form variant"
+  },
+  {
+    "organization_alias_id": "org-3e21b8dab14d458d",
+    "alias": "vacante.kz",
+    "canonical_name": "VACANTE",
+    "display_name": "VACANTE",
+    "merge_type": "same_entity",
+    "rationale": "Domain-style brand variant"
+  }
+]

@@ -11,12 +11,15 @@ from pathlib import Path
 
 try:
     from scripts.build_exa_review_queue import canonical_url
+    from scripts.hydrate_linkedin_profiles_with_exa import profile_search_records
 except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
     from build_exa_review_queue import canonical_url
+    from hydrate_linkedin_profiles_with_exa import profile_search_records
 
 
 DEFAULT_PEOPLE = Path("data/researched_people.json")
 DEFAULT_EXA_AUDIT = Path("data/exa_linkedin_search_audit.json")
+DEFAULT_EXA_PROFILES = Path("data/exa_linkedin_profile_audit.json")
 DEFAULT_OVERRIDES = Path("data/location_overrides.csv")
 DEFAULT_CSV = Path("data/person_locations.csv")
 DEFAULT_JSON = Path("data/person_locations.json")
@@ -324,6 +327,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--people", type=Path, default=DEFAULT_PEOPLE)
     parser.add_argument("--exa-audit", type=Path, default=DEFAULT_EXA_AUDIT)
+    parser.add_argument("--exa-profiles", type=Path, default=DEFAULT_EXA_PROFILES)
     parser.add_argument("--overrides", type=Path, default=DEFAULT_OVERRIDES)
     parser.add_argument("--output-csv", type=Path, default=DEFAULT_CSV)
     parser.add_argument("--output-json", type=Path, default=DEFAULT_JSON)
@@ -331,7 +335,15 @@ def main() -> int:
 
     people = json.loads(args.people.read_text(encoding="utf-8"))
     audit = json.loads(args.exa_audit.read_text(encoding="utf-8"))
-    rows = build_rows(people, audit.get("searches", []), load_overrides(args.overrides))
+    profile_audit = (
+        json.loads(args.exa_profiles.read_text(encoding="utf-8"))
+        if args.exa_profiles.exists()
+        else {"profiles": []}
+    )
+    searches = audit.get("searches", []) + profile_search_records(
+        profile_audit.get("profiles", [])
+    )
+    rows = build_rows(people, searches, load_overrides(args.overrides))
     write_outputs(rows, args.output_csv, args.output_json)
     counts: dict[str, int] = {}
     for row in rows:

@@ -397,6 +397,16 @@ def main() -> int:
         return 1
 
     existing = load_existing(args.output_json)
+    valid_person_ids = {
+        clean_text(person.get("person_id"))
+        for person in people
+        if clean_text(person.get("person_id"))
+    }
+    existing = [
+        item
+        for item in existing
+        if clean_text(item.get("person_id")) in valid_person_ids
+    ]
     by_person = {clean_text(item.get("person_id")): item for item in existing}
     client = ExaClient(api_key)
     searched = 0

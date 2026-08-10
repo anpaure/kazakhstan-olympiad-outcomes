@@ -4,6 +4,7 @@ from scripts.build_research_dataset import (
     build_rows,
     normalize_destination,
     organization_category,
+    role_category,
 )
 from scripts.build_outcomes_visualization import compact_person
 
@@ -45,6 +46,59 @@ class ManualEvidenceConfidenceTest(unittest.TestCase):
         self.assertEqual(row.confidence, "probable")
         self.assertEqual(row.identity_source, "verified")
         self.assertEqual(row.name, "Person Test")
+
+    def test_destination_review_supersedes_stale_manual_summary(self):
+        people = [
+            {
+                "person_id": "kaz-test",
+                "canonical_name": "Test Person",
+                "aliases": "Test Person",
+                "olympiads": "IMO",
+                "years": "2010",
+                "first_year": "2010",
+                "last_year": "2010",
+                "awards": "Silver",
+                "research_scope": "career",
+            }
+        ]
+        verified = [
+            {
+                "person_id": "kaz-test",
+                "name": "Test Person",
+                "organization": "Old Co",
+                "role": "Founder",
+                "affiliation_type": "employment",
+                "start_year": "",
+                "end_year": "",
+                "olympiad_evidence_url": "https://example.test/olympiad",
+                "career_evidence_url": "https://example.test/profile",
+                "linkedin_url": "https://linkedin.com/in/test",
+                "confidence": "confirmed",
+                "verification_basis": "Previously reviewed summary.",
+            }
+        ]
+        reviews = [
+            {
+                "person_id": "kaz-test",
+                "name": "Test Person",
+                "organization": "Current Co",
+                "role": "Software Engineer",
+                "affiliation_type": "employment",
+                "start_year": "2025",
+                "end_year": "",
+                "evidence_url": "https://linkedin.com/in/test",
+                "reviewed_at": "2026-08-10",
+                "review_reason": "The cited profile gives the current title.",
+            }
+        ]
+
+        [row] = build_rows(people, [], [], verified, [], reviews)
+
+        self.assertEqual(row.organization, "Current Co")
+        self.assertEqual(row.role, "Software Engineer")
+        self.assertEqual(row.start_year, "2025")
+        self.assertIn("Destination review", row.verification_basis)
+        self.assertIn("https://linkedin.com/in/test", row.evidence_urls)
 
 
 class RejectedCandidateTest(unittest.TestCase):
@@ -122,8 +176,26 @@ class OrganizationCategoryTest(unittest.TestCase):
                     organization_category(organization, "employment"), "Academia"
                 )
 
+    def test_principal_is_classified_as_leadership(self):
+        self.assertEqual(
+            role_category(
+                "Principal, Chemistry Teacher and Olympiad Coach",
+                "Bilim-Innovation Lyceum No. 1, Karaganda",
+                "employment",
+            ),
+            "Leadership",
+        )
+
 
 class DestinationNormalizationTest(unittest.TestCase):
+    def test_destination_uses_canonical_organization_name(self):
+        normalized = normalize_destination(
+            "Amazon Web Services (AWS)", "Software Engineer", "employment", "2024", ""
+        )
+
+        self.assertEqual(normalized[0], "Amazon")
+        self.assertEqual(normalized[3], "latest_employment")
+
     def test_completed_degree_is_history_not_destination(self):
         normalized = normalize_destination(
             "Example University", "BSc Graduate", "education", "2018", "2022"
@@ -196,6 +268,30 @@ class VisualizationOrganizationAliasTest(unittest.TestCase):
         self.assertEqual(compact["aliases"], ["Test Person", "Person Test"])
         self.assertEqual(compact["lastYear"], 2019)
         self.assertEqual(compact["awards"], ["Bronze", "Silver"])
+
+    def test_parent_organization_keeps_aliases_searchable(self):
+        row = {
+            "person_id": "kaz-test",
+            "name": "Test Person",
+            "aliases": "Test Person",
+            "olympiads": "IMO",
+            "first_year": "2018",
+            "last_year": "2018",
+            "awards": "Silver",
+            "confidence": "confirmed",
+            "organization": "Amazon",
+            "role": "Software Engineer",
+            "organization_category": "Industry",
+            "role_category": "Software & AI",
+            "profile_url": "https://example.test/profile",
+            "linkedin_url": "",
+            "research_scope": "career",
+        }
+
+        compact = compact_person(row)
+
+        self.assertEqual(compact["organization"], "Amazon")
+        self.assertIn("Amazon Web Services (AWS)", compact["historyTerms"])
 
     def test_compact_person_exposes_alma_mater_history_and_country(self):
         row = {

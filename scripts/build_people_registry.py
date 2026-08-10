@@ -25,6 +25,8 @@ CANONICAL_NAME_OVERRIDES = {
     "kemel nurdaulet": "Nurdaulet Kemel",
 }
 
+DEFAULT_MANUAL_MERGES = Path("data/person_merges.csv")
+
 
 @dataclass(frozen=True)
 class Person:
@@ -78,6 +80,49 @@ def token_key(value: str) -> str:
 def load_rows(path: Path) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8") as handle:
         return list(csv.DictReader(handle))
+
+
+def load_manual_merges(path: Path) -> list[dict[str, object]]:
+    if not path.exists():
+        return []
+    merges: list[dict[str, object]] = []
+    claimed_aliases: dict[str, str] = {}
+    for index, row in enumerate(load_rows(path), start=2):
+        person_id = clean_text(row.get("canonical_person_id"))
+        canonical_name = clean_text(row.get("canonical_name"))
+        aliases = tuple(
+            dict.fromkeys(
+                clean_text(alias)
+                for alias in clean_text(row.get("aliases")).split(";")
+                if clean_text(alias)
+            )
+        )
+        reason = clean_text(row.get("reason"))
+        evidence_url = clean_text(row.get("evidence_url"))
+        if not person_id or not canonical_name or len(aliases) < 2 or not reason:
+            raise ValueError(f"Incomplete manual person merge at row {index}")
+        if canonical_name not in aliases:
+            raise ValueError(
+                f"Canonical name is not an alias in manual person merge row {index}"
+            )
+        if not evidence_url.startswith(("http://", "https://")):
+            raise ValueError(f"Manual person merge row {index} has no direct source URL")
+        for alias in aliases:
+            key = normalize_name(alias)
+            prior = claimed_aliases.get(key)
+            if prior and prior != person_id:
+                raise ValueError(f"Manual person alias belongs to multiple people: {alias}")
+            claimed_aliases[key] = person_id
+        merges.append(
+            {
+                "canonical_person_id": person_id,
+                "canonical_name": canonical_name,
+                "aliases": aliases,
+                "reason": reason,
+                "evidence_url": evidence_url,
+            }
+        )
+    return merges
 
 
 def load_existing_person_ids(path: Path) -> dict[str, str]:
@@ -152,8 +197,10 @@ def person_id_for(aliases: list[str]) -> str:
 def build_registry(
     rows: list[dict[str, str]],
     existing_person_ids: dict[str, str] | None = None,
+    manual_merges: list[dict[str, object]] | None = None,
 ) -> tuple[list[Person], list[dict[str, object]]]:
     existing_person_ids = existing_person_ids or {}
+    manual_merges = manual_merges or []
     metadata: dict[str, dict[str, object]] = defaultdict(
         lambda: {"olympiads": set(), "years": set(), "rows": []}
     )
@@ -215,6 +262,32 @@ def build_registry(
                 }
             )
 
+    for merge in manual_merges:
+        present = [alias for alias in merge["aliases"] if alias in metadata]
+        for left, right in zip(present, present[1:]):
+            if union_find.find(left) == union_find.find(right):
+                continue
+            union_find.union(left, right)
+            merge_evidence.append(
+                {
+                    "left": left,
+                    "right": right,
+                    "token_similarity": round(
+                        SequenceMatcher(None, token_key(left), token_key(right)).ratio(),
+                        3,
+                    ),
+                    "shared_olympiads": sorted(
+                        metadata[left]["olympiads"] & metadata[right]["olympiads"]
+                    ),
+                    "left_years": sorted(metadata[left]["years"]),
+                    "right_years": sorted(metadata[right]["years"]),
+                    "reason": "reviewed_cross_olympiad_merge",
+                    "review_reason": merge["reason"],
+                    "evidence_url": merge["evidence_url"],
+                    "canonical_person_id": merge["canonical_person_id"],
+                }
+            )
+
     groups: dict[str, list[str]] = defaultdict(list)
     for name in names:
         groups[union_find.find(name)].append(name)
@@ -222,12 +295,26 @@ def build_registry(
     people: list[Person] = []
     for aliases in groups.values():
         aliases = sorted(aliases, key=str.casefold)
+        reviewed_merges = [
+            merge
+            for merge in manual_merges
+            if len(set(merge["aliases"]) & set(aliases)) >= 2
+        ]
+        if len(reviewed_merges) > 1:
+            raise ValueError(f"Multiple reviewed merges match aliases: {aliases}")
         prior_ids = {
             existing_person_ids[key]
             for alias in aliases
             if (key := token_key(alias)) in existing_person_ids
         }
-        person_id = next(iter(prior_ids)) if len(prior_ids) == 1 else person_id_for(aliases)
+        reviewed_merge = reviewed_merges[0] if reviewed_merges else None
+        person_id = (
+            str(reviewed_merge["canonical_person_id"])
+            if reviewed_merge
+            else next(iter(prior_ids))
+            if len(prior_ids) == 1
+            else person_id_for(aliases)
+        )
         group_rows = [row for alias in aliases for row in metadata[alias]["rows"]]
         years = sorted({int(row["year"]) for row in group_rows})
         olympiads = sorted({clean_text(row.get("olympiad")) for row in group_rows if row.get("olympiad")})
@@ -247,7 +334,11 @@ def build_registry(
         people.append(
             Person(
                 person_id=person_id,
-                canonical_name=canonical_alias(aliases, row_counts, latest_year),
+                canonical_name=(
+                    str(reviewed_merge["canonical_name"])
+                    if reviewed_merge
+                    else canonical_alias(aliases, row_counts, latest_year)
+                ),
                 aliases=";".join(aliases),
                 olympiads=";".join(olympiads),
                 years=";".join(str(year) for year in years),
@@ -293,6 +384,7 @@ def main() -> int:
     parser.add_argument("--out-csv", default="data/people.csv")
     parser.add_argument("--out-json", default="data/people.json")
     parser.add_argument("--merge-audit", default="data/people_merge_audit.json")
+    parser.add_argument("--manual-merges", default=str(DEFAULT_MANUAL_MERGES))
     parser.add_argument(
         "--existing-people-csv",
         default="data/researched_people.csv",
@@ -302,7 +394,11 @@ def main() -> int:
 
     rows = load_rows(Path(args.input_csv))
     existing_person_ids = load_existing_person_ids(Path(args.existing_people_csv))
-    people, merge_evidence = build_registry(rows, existing_person_ids)
+    people, merge_evidence = build_registry(
+        rows,
+        existing_person_ids,
+        load_manual_merges(Path(args.manual_merges)),
+    )
     write_outputs(
         people,
         merge_evidence,

@@ -4516,18 +4516,18 @@
   },
   {
     "person_id": "kaz-dcb24ecb815a",
-    "canonical_name": "Temirlan Amangeldin",
-    "aliases": "Temirlan Amangeldin",
-    "olympiads": "IMO",
-    "years": "2015;2016",
+    "canonical_name": "Temirlan Amangeldinov",
+    "aliases": "Temirlan Amangeldin;Temirlan Amangeldinov",
+    "olympiads": "IMO;IPhO",
+    "years": "2015;2016;2017",
     "first_year": 2015,
-    "last_year": 2016,
+    "last_year": 2017,
     "estimated_birth_year_min": 1996,
     "estimated_birth_year_max": 2000,
-    "awards": "Bronze medal;Honourable mention",
-    "participant_rows": 2,
+    "awards": "Bronze medal;Honourable mention;Silver Medal",
+    "participant_rows": 3,
     "research_scope": "career",
-    "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
+    "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://www.imo-official.org/results/individual/country/KAZ/"
   },
   {
     "person_id": "kaz-07461cbee89d",
@@ -4963,21 +4963,6 @@
     "participant_rows": 3,
     "research_scope": "career",
     "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
-  },
-  {
-    "person_id": "kaz-4cae7d810c63",
-    "canonical_name": "Temirlan Amangeldinov",
-    "aliases": "Temirlan Amangeldinov",
-    "olympiads": "IPhO",
-    "years": "2017",
-    "first_year": 2017,
-    "last_year": 2017,
-    "estimated_birth_year_min": 1998,
-    "estimated_birth_year_max": 2002,
-    "awards": "Silver Medal",
-    "participant_rows": 1,
-    "research_scope": "career",
-    "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
   },
   {
     "person_id": "kaz-926301b5ef4a",

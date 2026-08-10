@@ -9,10 +9,20 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-
-ORGANIZATION_DISPLAY_ALIASES = {
-    "Ulsan National Institute of Science and Technology": "UNIST",
-}
+try:
+    from scripts.organization_names import (
+        canonicalize_organization,
+        display_organization,
+        organization_aliases_for,
+    )
+    from scripts.organization_sectors import organization_metadata
+except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
+    from organization_names import (
+        canonicalize_organization,
+        display_organization,
+        organization_aliases_for,
+    )
+    from organization_sectors import organization_metadata
 
 
 OLYMPIAD_SOURCE_PATTERN = re.compile(
@@ -59,18 +69,32 @@ def compact_sources(
     olympiad_sources.extend(
         url for url in split_values(row.get("evidence_urls")) if OLYMPIAD_SOURCE_PATTERN.search(url)
     )
+    def olympiad_source_rank(url: object) -> tuple[int, str]:
+        value = str(url or "")
+        if re.search(r"/(?:contestant|participant|profile)[_/]", value, re.IGNORECASE):
+            return 0, value.casefold()
+        if re.search(r"(?:team_|country|individual)", value, re.IGNORECASE):
+            return 1, value.casefold()
+        return 2, value.casefold()
+
     if olympiad_sources:
-        add(olympiad_sources[0], "olympiad", "Official Olympiad result", "medal")
+        best_olympiad_source = min(
+            dict.fromkeys(str(url) for url in olympiad_sources if url),
+            key=olympiad_source_rank,
+        )
+        add(best_olympiad_source, "olympiad", "Official Olympiad result", "medal")
 
     alma = next(
         (item for item in affiliations if item.get("selected_as_alma_mater")), None
     )
     if alma:
         add(alma.get("evidence_url"), "education", "Alma mater source", "graduation-cap")
-    add(location.get("evidence_url"), "location", "Current country source", "map-pin")
+    add(location.get("evidence_url"), "location", "Outcome country source", "map-pin")
 
     for evidence in audit_evidence:
         if evidence.get("review_status") not in {"accepted", "supporting"}:
+            continue
+        if evidence.get("claim_type") == "olympiad_participation":
             continue
         add(evidence.get("source_url"), "evidence", "Additional reviewed evidence", "file-search-2")
         if len(sources) >= 5:
@@ -87,18 +111,28 @@ def compact_person(
     location = location or {}
     affiliations = affiliations or []
     audit_evidence = audit_evidence or []
-    organization = str(row["organization"])
+    organization = canonicalize_organization(row["organization"])
+    organization_classification = organization_metadata(
+        organization, row.get("organization_category", "")
+    )
     alma = next(
         (item for item in affiliations if item.get("selected_as_alma_mater")), {}
     )
-    history_terms = list(
-        dict.fromkeys(
+    history_terms: list[str] = []
+    for item in affiliations:
+        affiliation_organization = canonicalize_organization(item.get("organization"))
+        history_terms.extend(
             value
-            for item in affiliations
-            for value in (str(item.get("organization") or ""), str(item.get("role") or ""))
+            for value in (
+                affiliation_organization,
+                display_organization(affiliation_organization),
+                *organization_aliases_for(affiliation_organization),
+                str(item.get("role") or ""),
+            )
             if value
         )
-    )
+    history_terms.extend(organization_aliases_for(organization))
+    history_terms = list(dict.fromkeys(history_terms))
     return {
         "id": row["person_id"],
         "name": row["name"],
@@ -108,12 +142,14 @@ def compact_person(
         "lastYear": int(row.get("last_year") or row["first_year"]),
         "awards": [value for value in str(row.get("awards", "")).split(";") if value],
         "confidence": row["confidence"],
-        "organization": ORGANIZATION_DISPLAY_ALIASES.get(organization, organization),
+        "organization": display_organization(organization),
         "role": row["role"],
         "organizationCategory": row["organization_category"],
+        "organizationType": organization_classification["organization_type"],
+        "sector": organization_classification["sector"],
         "roleCategory": row["role_category"],
         "destinationStatus": row.get("destination_status", ""),
-        "almaMater": alma.get("organization", ""),
+        "almaMater": display_organization(alma.get("organization", "")),
         "almaMaterRole": alma.get("role", ""),
         "historyTerms": history_terms,
         "countryCode": location.get("country_code", ""),

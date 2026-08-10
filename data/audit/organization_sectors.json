@@ -1,0 +1,1038 @@
+[
+  {
+    "organization_sector_id": "sector-88a78b3d3bd39f9b",
+    "canonical_name": "Abbott",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed core activity is medical devices and diagnostics."
+  },
+  {
+    "organization_sector_id": "sector-3dbd9e2bae24481c",
+    "canonical_name": "Adriel",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is advertising software and analytics."
+  },
+  {
+    "organization_sector_id": "sector-3174b5fb6dc6674a",
+    "canonical_name": "AGP Holding LLP",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is industrial construction and oilfield services."
+  },
+  {
+    "organization_sector_id": "sector-e6d1865215f76ba3",
+    "canonical_name": "Agregator",
+    "organization_type": "company",
+    "sector": "Independent & Other",
+    "rationale": "Reviewed profile identifies a private owner-operated business without a narrower public classification."
+  },
+  {
+    "organization_sector_id": "sector-c98a3c9f7b42da5d",
+    "canonical_name": "AIFC Green Finance Centre",
+    "organization_type": "nonprofit",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is green and sustainable finance."
+  },
+  {
+    "organization_sector_id": "sector-96c934e1bce4a135",
+    "canonical_name": "Alem Entertainment",
+    "organization_type": "company",
+    "sector": "Consumer & Media",
+    "rationale": "Reviewed core activity is entertainment and media."
+  },
+  {
+    "organization_sector_id": "sector-d8105efc2a529c85",
+    "canonical_name": "AlliedYoung FBC",
+    "organization_type": "company",
+    "sector": "Consumer & Media",
+    "rationale": "Reviewed core activity is beverage distribution."
+  },
+  {
+    "organization_sector_id": "sector-88cfdd827fa04845",
+    "canonical_name": "Altbridge",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is AI-driven data and investment software."
+  },
+  {
+    "organization_sector_id": "sector-65ccac7ddbcae0fc",
+    "canonical_name": "Altyn Bank",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is commercial banking."
+  },
+  {
+    "organization_sector_id": "sector-49d2dc07acd9eff5",
+    "canonical_name": "Amazon",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity includes cloud computing and technology services."
+  },
+  {
+    "organization_sector_id": "sector-c65b60e850ea8f26",
+    "canonical_name": "AnyMind Group",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is marketing and commerce technology."
+  },
+  {
+    "organization_sector_id": "sector-608eee6bc4b749e8",
+    "canonical_name": "AO Home Credit Bank Kazakhstan",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is consumer banking."
+  },
+  {
+    "organization_sector_id": "sector-3e908df5beadcc80",
+    "canonical_name": "Armeta",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is artificial intelligence software."
+  },
+  {
+    "organization_sector_id": "sector-e6226c677ef67b03",
+    "canonical_name": "Association for the Conservation of Biodiversity of Kazakhstan",
+    "organization_type": "nonprofit",
+    "sector": "Environment & Nonprofit",
+    "rationale": "Reviewed core activity is biodiversity conservation."
+  },
+  {
+    "organization_sector_id": "sector-4d292f62f296afa1",
+    "canonical_name": "Astana Business Campus",
+    "organization_type": "nonprofit",
+    "sector": "Education & Research",
+    "rationale": "Reviewed core activity is university-linked innovation and research commercialization."
+  },
+  {
+    "organization_sector_id": "sector-0bc4da79a9b59730",
+    "canonical_name": "Augment Code",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is AI software development tooling."
+  },
+  {
+    "organization_sector_id": "sector-59d466820d86172a",
+    "canonical_name": "Axiom",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is blockchain and zero-knowledge software."
+  },
+  {
+    "organization_sector_id": "sector-095299c1224222c8",
+    "canonical_name": "Ayar Labs",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is optical semiconductor interconnect technology."
+  },
+  {
+    "organization_sector_id": "sector-aaeea9eba407cfe4",
+    "canonical_name": "Bank of Canada",
+    "organization_type": "government",
+    "sector": "Government & Public Sector",
+    "rationale": "Reviewed organization is Canada's central bank."
+  },
+  {
+    "organization_sector_id": "sector-e1fe11f69a5ed555",
+    "canonical_name": "BestYs Pte Ltd",
+    "organization_type": "company",
+    "sector": "Education & Research",
+    "rationale": "Reviewed core activity is olympiad and education technology."
+  },
+  {
+    "organization_sector_id": "sector-295ab1d6a82acc96",
+    "canonical_name": "BI Group",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is construction and property development."
+  },
+  {
+    "organization_sector_id": "sector-4d1ce4a4e1450822",
+    "canonical_name": "BIOVECTRA",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed core activity is biopharmaceutical manufacturing."
+  },
+  {
+    "organization_sector_id": "sector-49566270eff6b9a8",
+    "canonical_name": "Bloomberg",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is financial data and information services."
+  },
+  {
+    "organization_sector_id": "sector-837958bd9433f906",
+    "canonical_name": "Boston Consulting Group (BCG)",
+    "organization_type": "company",
+    "sector": "Consulting & Professional Services",
+    "rationale": "Reviewed core activity is management consulting."
+  },
+  {
+    "organization_sector_id": "sector-270aa9da16851660",
+    "canonical_name": "Brandkamp",
+    "organization_type": "company",
+    "sector": "Consulting & Professional Services",
+    "rationale": "Reviewed core activity is brand and marketing consulting."
+  },
+  {
+    "organization_sector_id": "sector-3f664344f34d39c9",
+    "canonical_name": "BTC.KZ",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is computing and data-center infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-d3a16c9186eaca3c",
+    "canonical_name": "Canadian provincial government",
+    "organization_type": "government",
+    "sector": "Government & Public Sector",
+    "rationale": "Reviewed organization is a provincial public administration."
+  },
+  {
+    "organization_sector_id": "sector-6d99a4356292a9ed",
+    "canonical_name": "chem.kz",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is chemicals and industrial materials."
+  },
+  {
+    "organization_sector_id": "sector-7ed10242d37f6512",
+    "canonical_name": "ChooSmart",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is commerce software."
+  },
+  {
+    "organization_sector_id": "sector-2188e3dc1ed3c59f",
+    "canonical_name": "Citadel Securities",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is securities trading and market making."
+  },
+  {
+    "organization_sector_id": "sector-683193f1447874ad",
+    "canonical_name": "CoBALT",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is AI sales and lead-management software."
+  },
+  {
+    "organization_sector_id": "sector-ae13386bb0a31683",
+    "canonical_name": "Dalip.kz",
+    "organization_type": "independent",
+    "sector": "Consulting & Professional Services",
+    "rationale": "Reviewed core activity is business and investment education and consulting."
+  },
+  {
+    "organization_sector_id": "sector-05763e11ff887dda",
+    "canonical_name": "DashDevs LLC",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is software development."
+  },
+  {
+    "organization_sector_id": "sector-d3d83494b51da5e9",
+    "canonical_name": "Deep Infra",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is AI model infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-fe1f80884c446939",
+    "canonical_name": "Depop",
+    "organization_type": "company",
+    "sector": "Consumer & Media",
+    "rationale": "Reviewed core activity is a consumer marketplace."
+  },
+  {
+    "organization_sector_id": "sector-5324d0e0a8a9a060",
+    "canonical_name": "Desargues AI",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is artificial intelligence software."
+  },
+  {
+    "organization_sector_id": "sector-538b15b97d3270c2",
+    "canonical_name": "Deutsche Bank",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is banking and financial services."
+  },
+  {
+    "organization_sector_id": "sector-64be73229f88cac9",
+    "canonical_name": "Deutsches Elektronen-Synchrotron DESY",
+    "organization_type": "nonprofit",
+    "sector": "Education & Research",
+    "rationale": "Reviewed organization is a publicly funded scientific research center."
+  },
+  {
+    "organization_sector_id": "sector-f6f193d615ec248c",
+    "canonical_name": "DFlow",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is blockchain trading infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-bb090d4cc6a01ecd",
+    "canonical_name": "Drizzle",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is software products."
+  },
+  {
+    "organization_sector_id": "sector-91268016fe6765ef",
+    "canonical_name": "ElevenLabs",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is AI audio software."
+  },
+  {
+    "organization_sector_id": "sector-c4f106ca6cc7424d",
+    "canonical_name": "Embassy of Kazakhstan in the Republic of Korea",
+    "organization_type": "government",
+    "sector": "Government & Public Sector",
+    "rationale": "Reviewed organization is a diplomatic mission."
+  },
+  {
+    "organization_sector_id": "sector-6a8de45365a150ba",
+    "canonical_name": "ENERGY Insights & Analytics",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is energy analytics."
+  },
+  {
+    "organization_sector_id": "sector-62569a074ce303ee",
+    "canonical_name": "EPAM Systems",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is software engineering and digital services."
+  },
+  {
+    "organization_sector_id": "sector-6c33c6aa7030b536",
+    "canonical_name": "Eurasian Resources Group",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is mining and natural resources."
+  },
+  {
+    "organization_sector_id": "sector-9020e09edde8529c",
+    "canonical_name": "eXpace",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is mobility and automotive software."
+  },
+  {
+    "organization_sector_id": "sector-9271a063dc6626b2",
+    "canonical_name": "FINCRAFT Investment House",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is investment services."
+  },
+  {
+    "organization_sector_id": "sector-aa30a05a8af564d9",
+    "canonical_name": "Fitch Ratings",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is credit ratings and financial information."
+  },
+  {
+    "organization_sector_id": "sector-6e50be7fee60b3fb",
+    "canonical_name": "Fourier",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is robotics and industrial technology."
+  },
+  {
+    "organization_sector_id": "sector-78694f0ebcd40fec",
+    "canonical_name": "Freedom Horizons",
+    "organization_type": "company",
+    "sector": "Consulting & Professional Services",
+    "rationale": "Reviewed core activity is markets and policy consulting."
+  },
+  {
+    "organization_sector_id": "sector-c86dc86bbb3438a9",
+    "canonical_name": "Freedom Telecom",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is telecommunications."
+  },
+  {
+    "organization_sector_id": "sector-7085e9db19dcb486",
+    "canonical_name": "Generate:Biomedicines",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed core activity is biotechnology and drug discovery."
+  },
+  {
+    "organization_sector_id": "sector-5880f8f5c6e10321",
+    "canonical_name": "Genesis Molecular AI",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed core activity is molecular AI and drug discovery."
+  },
+  {
+    "organization_sector_id": "sector-bc8359eb1335ec65",
+    "canonical_name": "Genie",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is AI agent software and infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-ce770667e5f9b0d8",
+    "canonical_name": "Google",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is internet software and cloud technology."
+  },
+  {
+    "organization_sector_id": "sector-62908d63ac2589c8",
+    "canonical_name": "Graviton Research Capital",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is quantitative investment management."
+  },
+  {
+    "organization_sector_id": "sector-cda285a15b31ddac",
+    "canonical_name": "Higgsfield AI",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is generative AI software."
+  },
+  {
+    "organization_sector_id": "sector-7a23266ba6f58eb2",
+    "canonical_name": "Honeywell",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is industrial engineering and manufacturing."
+  },
+  {
+    "organization_sector_id": "sector-df853f864c74fa85",
+    "canonical_name": "Huawei",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is telecommunications and computing technology."
+  },
+  {
+    "organization_sector_id": "sector-2edd22eb111b268b",
+    "canonical_name": "HUMAIN",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is artificial intelligence infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-fe00edd8f79b8d74",
+    "canonical_name": "Impala Partners",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is investment management."
+  },
+  {
+    "organization_sector_id": "sector-5505720f19964d65",
+    "canonical_name": "Insilico Medicine",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed core activity is AI-enabled drug discovery."
+  },
+  {
+    "organization_sector_id": "sector-bad57ef7837c8e6b",
+    "canonical_name": "Instagram",
+    "organization_type": "company",
+    "sector": "Consumer & Media",
+    "rationale": "Reviewed core activity is consumer social media."
+  },
+  {
+    "organization_sector_id": "sector-5e28929224141843",
+    "canonical_name": "Intel Corporation",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is semiconductor technology."
+  },
+  {
+    "organization_sector_id": "sector-a31f6df3ca0107e4",
+    "canonical_name": "ios_flutter",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is mobile software development."
+  },
+  {
+    "organization_sector_id": "sector-79bab30d3f57461d",
+    "canonical_name": "Jane Street",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is quantitative trading."
+  },
+  {
+    "organization_sector_id": "sector-6e6ce675ecaea0f9",
+    "canonical_name": "Jump Trading",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is quantitative trading."
+  },
+  {
+    "organization_sector_id": "sector-ff6edff87dd81b9e",
+    "canonical_name": "Kashgari Dictionary",
+    "organization_type": "company",
+    "sector": "Education & Research",
+    "rationale": "Reviewed core activity is language-learning technology."
+  },
+  {
+    "organization_sector_id": "sector-8ed4019ab02787c7",
+    "canonical_name": "KAZ Minerals",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is mining and natural resources."
+  },
+  {
+    "organization_sector_id": "sector-79e5c0f3de707fa6",
+    "canonical_name": "Kazakhstan Deposit Insurance Fund",
+    "organization_type": "government",
+    "sector": "Government & Public Sector",
+    "rationale": "Reviewed organization performs a statutory financial-stability function."
+  },
+  {
+    "organization_sector_id": "sector-60ec0638afb17d2d",
+    "canonical_name": "Kazakhstan Temir Zholy JSC",
+    "organization_type": "government",
+    "sector": "Transportation & Infrastructure",
+    "rationale": "Reviewed organization operates Kazakhstan's national railway infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-4114428bd7f9bf47",
+    "canonical_name": "Kazkomnet",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is telecommunications and network services."
+  },
+  {
+    "organization_sector_id": "sector-13d03e652871229b",
+    "canonical_name": "Kcell JSC",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is telecommunications."
+  },
+  {
+    "organization_sector_id": "sector-67184fc521d3400d",
+    "canonical_name": "Khan Group",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is IT services and technology consulting."
+  },
+  {
+    "organization_sector_id": "sector-c81a95e77ebcb4ac",
+    "canonical_name": "Kuwait Oil Company (KOC)",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is oil and gas."
+  },
+  {
+    "organization_sector_id": "sector-1a2d2a5b075e22fb",
+    "canonical_name": "Laminar",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is AI software infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-092a73f79b0650c2",
+    "canonical_name": "Leap Tools",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is visualization software."
+  },
+  {
+    "organization_sector_id": "sector-9a5db215c7ece108",
+    "canonical_name": "Lindström",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is industrial textile and facility services."
+  },
+  {
+    "organization_sector_id": "sector-f4995074f8e1dfac",
+    "canonical_name": "Listly",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is software services."
+  },
+  {
+    "organization_sector_id": "sector-d54c3d06f0dfb623",
+    "canonical_name": "Lunar Energy",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is energy storage and power systems."
+  },
+  {
+    "organization_sector_id": "sector-6c6bb0a51a20223e",
+    "canonical_name": "Marble",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is data and software infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-4f749de7c24fe967",
+    "canonical_name": "Meta",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is internet platforms and artificial intelligence."
+  },
+  {
+    "organization_sector_id": "sector-d742a3769e6e9418",
+    "canonical_name": "Micron Technology",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is semiconductor technology."
+  },
+  {
+    "organization_sector_id": "sector-c7bac46904be785c",
+    "canonical_name": "Microsoft",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is software and cloud technology."
+  },
+  {
+    "organization_sector_id": "sector-a06173c5db263e5e",
+    "canonical_name": "Mirendil",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is AI systems for scientific research."
+  },
+  {
+    "organization_sector_id": "sector-7ceb9313cd29ba1d",
+    "canonical_name": "Nace AI",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is artificial intelligence software."
+  },
+  {
+    "organization_sector_id": "sector-dea7e0a2715220d0",
+    "canonical_name": "National Center for Biotechnology Information (NIH)",
+    "organization_type": "government",
+    "sector": "Government & Public Sector",
+    "rationale": "Reviewed organization is a United States government biomedical information center."
+  },
+  {
+    "organization_sector_id": "sector-268d1df847324616",
+    "canonical_name": "National Environment Agency Singapore",
+    "organization_type": "government",
+    "sector": "Government & Public Sector",
+    "rationale": "Reviewed organization is Singapore's environmental public agency."
+  },
+  {
+    "organization_sector_id": "sector-71c32b7bea699708",
+    "canonical_name": "National Information Technologies JSC (NITEC)",
+    "organization_type": "government",
+    "sector": "Government & Public Sector",
+    "rationale": "Reviewed organization operates Kazakhstan's digital-government infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-f79c67c0d6dee4fc",
+    "canonical_name": "Nethermind",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is blockchain software and infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-0003f538c6b8a74b",
+    "canonical_name": "NKM Capital",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is investment management."
+  },
+  {
+    "organization_sector_id": "sector-32744b2ac406c843",
+    "canonical_name": "North Caspian Operating Company (NCOC)",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is oil and gas operations."
+  },
+  {
+    "organization_sector_id": "sector-5e48e99c9debaf26",
+    "canonical_name": "Novartis",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed core activity is pharmaceuticals."
+  },
+  {
+    "organization_sector_id": "sector-0890f456684a70f1",
+    "canonical_name": "NVIDIA",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is semiconductor and AI computing technology."
+  },
+  {
+    "organization_sector_id": "sector-f98123233c7ee438",
+    "canonical_name": "OnPoint Analytics",
+    "organization_type": "company",
+    "sector": "Consulting & Professional Services",
+    "rationale": "Reviewed core activity is economic and litigation consulting."
+  },
+  {
+    "organization_sector_id": "sector-3507fe207a5df589",
+    "canonical_name": "Optiver",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is quantitative trading and market making."
+  },
+  {
+    "organization_sector_id": "sector-c7edad00f88dbd49",
+    "canonical_name": "Paradigm Shift",
+    "organization_type": "company",
+    "sector": "Consulting & Professional Services",
+    "rationale": "Reviewed core activity is education consulting and impact investment."
+  },
+  {
+    "organization_sector_id": "sector-3626c9cda5037e7b",
+    "canonical_name": "PATRIOT",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed role and profile describe coatings and raw-material technical services."
+  },
+  {
+    "organization_sector_id": "sector-8e7241b80807e030",
+    "canonical_name": "Pediatric Associates",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed core activity is healthcare delivery."
+  },
+  {
+    "organization_sector_id": "sector-f394cc2a6da7dfd6",
+    "canonical_name": "Perplexity",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is AI search software."
+  },
+  {
+    "organization_sector_id": "sector-8a45590e8e81f2fe",
+    "canonical_name": "Pika",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is generative AI software."
+  },
+  {
+    "organization_sector_id": "sector-2e08ad0cb0a79246",
+    "canonical_name": "Polymer Production",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is polymer manufacturing."
+  },
+  {
+    "organization_sector_id": "sector-9fac43178b937037",
+    "canonical_name": "Private hedge fund",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed organization is an investment fund."
+  },
+  {
+    "organization_sector_id": "sector-4543d14a45a5ea16",
+    "canonical_name": "Pro Wheel XR Limited",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is extended-reality technology."
+  },
+  {
+    "organization_sector_id": "sector-5f9896dcc61775e0",
+    "canonical_name": "Prog.AI",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is artificial intelligence software."
+  },
+  {
+    "organization_sector_id": "sector-5987374c052c7e50",
+    "canonical_name": "Pulsar",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is crypto financial services and quantitative trading."
+  },
+  {
+    "organization_sector_id": "sector-c469a8fcef3b20c7",
+    "canonical_name": "Quantum Management Company",
+    "organization_type": "company",
+    "sector": "Education & Research",
+    "rationale": "Reviewed core activity is education administration and school management."
+  },
+  {
+    "organization_sector_id": "sector-e934cb982183e40f",
+    "canonical_name": "Qube Research & Technologies",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is quantitative investment management."
+  },
+  {
+    "organization_sector_id": "sector-d7b1b10db25f9591",
+    "canonical_name": "Rominserv",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is energy engineering and industrial services."
+  },
+  {
+    "organization_sector_id": "sector-e5e6cc2c4b3165a3",
+    "canonical_name": "RSE Kazaeronavigatsia",
+    "organization_type": "government",
+    "sector": "Transportation & Infrastructure",
+    "rationale": "Reviewed organization operates national air-navigation infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-f37cf319b81b96eb",
+    "canonical_name": "Samsung Electronics",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is electronics and semiconductor technology."
+  },
+  {
+    "organization_sector_id": "sector-384acd39a3de4731",
+    "canonical_name": "Self-employed",
+    "organization_type": "independent",
+    "sector": "Independent & Other",
+    "rationale": "Reviewed destination is independent work rather than a named employer."
+  },
+  {
+    "organization_sector_id": "sector-32e97dee12c076b8",
+    "canonical_name": "Seoul Robotics",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is autonomous-mobility software."
+  },
+  {
+    "organization_sector_id": "sector-86297065ef92f13d",
+    "canonical_name": "Siemens Energy",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is energy systems and infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-a01c6b28c9be9239",
+    "canonical_name": "Siemens Healthineers",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed core activity is medical technology."
+  },
+  {
+    "organization_sector_id": "sector-b2b94b06a0073d0d",
+    "canonical_name": "Silleno",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is petrochemicals."
+  },
+  {
+    "organization_sector_id": "sector-59bde72b615b1278",
+    "canonical_name": "SLB",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is oilfield technology and services."
+  },
+  {
+    "organization_sector_id": "sector-e054a44dfbc8b1fc",
+    "canonical_name": "Smart Global (IIoT)",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is industrial internet-of-things software."
+  },
+  {
+    "organization_sector_id": "sector-98df9a59f0641d0c",
+    "canonical_name": "Snap",
+    "organization_type": "company",
+    "sector": "Consumer & Media",
+    "rationale": "Reviewed core activity is consumer social media."
+  },
+  {
+    "organization_sector_id": "sector-68986d9c34680c2a",
+    "canonical_name": "Solai",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is artificial intelligence software."
+  },
+  {
+    "organization_sector_id": "sector-d94e29779262049c",
+    "canonical_name": "Spark AI",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is artificial intelligence software."
+  },
+  {
+    "organization_sector_id": "sector-c11092bc0861591e",
+    "canonical_name": "Square",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is payments and financial technology."
+  },
+  {
+    "organization_sector_id": "sector-a36990220d9833d5",
+    "canonical_name": "Squarepoint Capital",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is quantitative investment management."
+  },
+  {
+    "organization_sector_id": "sector-c479dc610920cea5",
+    "canonical_name": "Statkraft",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is renewable power generation."
+  },
+  {
+    "organization_sector_id": "sector-ebe29e0397cfcb43",
+    "canonical_name": "Stealth Startup",
+    "organization_type": "independent",
+    "sector": "Independent & Other",
+    "rationale": "Public evidence does not disclose the employer or operating sector."
+  },
+  {
+    "organization_sector_id": "sector-2ab656b52d27d253",
+    "canonical_name": "STEMICQ AI/Multiomics Ventures",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed core activity is multiomics and life-science ventures."
+  },
+  {
+    "organization_sector_id": "sector-70a0872fe2bfe76b",
+    "canonical_name": "Sulzer Chemtech",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is chemical-process engineering and manufacturing."
+  },
+  {
+    "organization_sector_id": "sector-cda93fe6f1ff7983",
+    "canonical_name": "Sun Life Financial",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is insurance and financial services."
+  },
+  {
+    "organization_sector_id": "sector-f03755f5d4cf8a4e",
+    "canonical_name": "Synergy Partners Law Firm",
+    "organization_type": "company",
+    "sector": "Consulting & Professional Services",
+    "rationale": "Reviewed core activity is legal services."
+  },
+  {
+    "organization_sector_id": "sector-5f21f219a3487d08",
+    "canonical_name": "Tansar Capital",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is investment management."
+  },
+  {
+    "organization_sector_id": "sector-a7444f7b87182779",
+    "canonical_name": "Tele2 Kazakhstan",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is telecommunications."
+  },
+  {
+    "organization_sector_id": "sector-14c3454cc3c1f5d5",
+    "canonical_name": "Tengizchevroil",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is oil and gas."
+  },
+  {
+    "organization_sector_id": "sector-bc3e22891fd0138e",
+    "canonical_name": "TETmedical",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed core activity is medical technology."
+  },
+  {
+    "organization_sector_id": "sector-905ec27ad955bf8a",
+    "canonical_name": "Texas Oil and Gas Consulting",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is oil-and-gas consulting."
+  },
+  {
+    "organization_sector_id": "sector-df5d1fe03155e41b",
+    "canonical_name": "The Trade Desk",
+    "organization_type": "company",
+    "sector": "Consumer & Media",
+    "rationale": "Reviewed core activity is advertising technology and media buying."
+  },
+  {
+    "organization_sector_id": "sector-ead925d1ecdaf089",
+    "canonical_name": "The Voleon Group",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is quantitative investment management."
+  },
+  {
+    "organization_sector_id": "sector-7ea6a9f0192c169a",
+    "canonical_name": "Tzafon",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is autonomous-agent AI systems."
+  },
+  {
+    "organization_sector_id": "sector-e42479b2b86da0c7",
+    "canonical_name": "UBS",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is banking and wealth management."
+  },
+  {
+    "organization_sector_id": "sector-cbc72fffbd3f8718",
+    "canonical_name": "Undisclosed employer",
+    "organization_type": "independent",
+    "sector": "Independent & Other",
+    "rationale": "Public evidence intentionally withholds the employer and sector."
+  },
+  {
+    "organization_sector_id": "sector-db146b1379c7f12e",
+    "canonical_name": "Undisclosed prop trading firm",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed destination is proprietary trading."
+  },
+  {
+    "organization_sector_id": "sector-e93b8f0bff97e20d",
+    "canonical_name": "VACANTE",
+    "organization_type": "company",
+    "sector": "Consulting & Professional Services",
+    "rationale": "Reviewed core activity is recruitment and staffing services."
+  },
+  {
+    "organization_sector_id": "sector-808587fd0054c2ad",
+    "canonical_name": "VELES TRUST",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is investment and trust services."
+  },
+  {
+    "organization_sector_id": "sector-4e06970e2bbaee76",
+    "canonical_name": "Virtu Financial",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is electronic trading and market making."
+  },
+  {
+    "organization_sector_id": "sector-0d68b7245812b2c7",
+    "canonical_name": "Vitol",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is energy and commodities trading."
+  },
+  {
+    "organization_sector_id": "sector-3c41733beae90092",
+    "canonical_name": "VoltaGrid",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is distributed power and energy services."
+  },
+  {
+    "organization_sector_id": "sector-9c52a11b1892acad",
+    "canonical_name": "WeGlobal.ai",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is artificial intelligence software."
+  },
+  {
+    "organization_sector_id": "sector-e0a9d8bac8c0492b",
+    "canonical_name": "ZEISS Group",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is optics and precision manufacturing."
+  },
+  {
+    "organization_sector_id": "sector-b9b2a7b2459b9e96",
+    "canonical_name": "ZINE",
+    "organization_type": "company",
+    "sector": "Consumer & Media",
+    "rationale": "Reviewed core activity is influencer-marketing media services."
+  }
+]

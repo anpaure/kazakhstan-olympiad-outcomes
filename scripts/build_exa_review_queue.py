@@ -11,6 +11,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
+try:
+    from scripts.organization_names import canonicalize_organization
+except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
+    from organization_names import canonicalize_organization
+
 
 DEFAULT_PEOPLE = Path("data/researched_people.csv")
 DEFAULT_EXA_AUDIT = Path("data/exa_linkedin_search_audit.json")
@@ -41,18 +46,6 @@ CURRENT_AFFILIATION_PATTERN = re.compile(
     r"\s+\(Current\)",
     re.IGNORECASE,
 )
-
-ORGANIZATION_ALIASES = {
-    "amazon web services aws": "amazon quantum computing",
-    "aws center for quantum computing at amazon": "amazon quantum computing",
-    "harvard t h chan school of public health": "harvard university",
-    "kazakh british technical university": "kbtu",
-    "karlsruhe institute of technology": "kit production science",
-    "korea advanced institute of science and technology": "kaist",
-    "nda": "undisclosed employer",
-    "ulsan national institute of science and technology": "unist",
-    "wbk institute of production science": "kit production science",
-}
 
 CSV_FIELDS = [
     "person_id",
@@ -133,12 +126,13 @@ def extract_current_affiliation(text: str) -> tuple[str, str]:
 
 
 def normalize_organization(value: str) -> str:
-    normalized = re.sub(r"[^a-z0-9]+", " ", value.casefold()).strip()
+    canonical = canonicalize_organization(value)
+    normalized = re.sub(r"[^a-z0-9]+", " ", canonical.casefold()).strip()
     normalized = re.sub(
         r"\b(?:inc|llc|ltd|limited|corp|corporation|company|jsc)\b", "", normalized
     )
     normalized = clean_text(normalized)
-    return ORGANIZATION_ALIASES.get(normalized, normalized)
+    return normalized
 
 
 def classify_outcome_alignment(current: str, candidate: str) -> str:

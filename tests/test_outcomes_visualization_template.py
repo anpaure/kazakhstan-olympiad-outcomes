@@ -5,45 +5,41 @@ from pathlib import Path
 TEMPLATE = Path(__file__).resolve().parents[1] / "visualization" / "olympiad-outcomes-template.html"
 
 
-class OrganizationTypeFilterTest(unittest.TestCase):
+class OrganizationSplitTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.template = TEMPLATE.read_text(encoding="utf-8")
 
-    def test_companies_only_control_is_an_accessible_toggle(self):
-        self.assertIn('data-control="companies-only"', self.template)
-        self.assertIn('aria-pressed="false"', self.template)
-        self.assertIn('aria-label="Show companies only"', self.template)
-        self.assertIn('Companies only', self.template)
+    def test_company_and_education_rankings_are_separate_and_scrollable(self):
+        self.assertIn('data-chart="companies"', self.template)
+        self.assertIn('data-chart="education"', self.template)
+        self.assertIn('class="iso-ranked-scroll"', self.template)
+        self.assertIn('overflow: auto', self.template)
 
-    def test_companies_only_excludes_non_industry_organizations(self):
+    def test_rankings_use_reviewed_organization_type(self):
         self.assertIn(
-            "state.companiesOnly && person.organizationCategory !== 'Industry'",
+            "(person.organizationType === 'education') === education",
             self.template,
         )
-        self.assertIn(
-            "controls.companiesOnly.setAttribute('aria-pressed', String(state.companiesOnly))",
-            self.template,
-        )
+        self.assertNotIn('data-control="companies-only"', self.template)
 
 
-class DestinationExpansionTest(unittest.TestCase):
+class DistributionChartTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.template = TEMPLATE.read_text(encoding="utf-8")
 
-    def test_destination_chart_has_an_accessible_expand_control(self):
-        self.assertIn('data-control="destination-expand"', self.template)
-        self.assertIn('aria-expanded="false"', self.template)
-        self.assertIn("const collapsedDestinationCount = 12", self.template)
-        self.assertIn("const expandedDestinationCount = 30", self.template)
+    def test_sector_and_country_pies_are_available(self):
+        self.assertIn('data-control="sector"', self.template)
+        self.assertIn('data-chart="sectors"', self.template)
+        self.assertIn('data-chart="countries"', self.template)
+        self.assertIn("drawDistribution('sectors', 'sector')", self.template)
+        self.assertIn("drawDistribution('countries', 'country')", self.template)
 
-    def test_expansion_uses_the_current_filtered_destination_data(self):
-        self.assertIn("const allData = allDestinationData()", self.template)
-        self.assertIn("const data = allData.slice(0, limit)", self.template)
-        self.assertIn(
-            "state.destinationsExpanded = !state.destinationsExpanded", self.template
-        )
+    def test_rankings_and_pies_use_current_filtered_people(self):
+        self.assertIn("filteredPeople({ ignoreSelection: true })", self.template)
+        self.assertIn("state.sector !== 'all' && person.sector !== state.sector", self.template)
+        self.assertIn("state.selectedOrganization", self.template)
 
 
 class PeopleSortTest(unittest.TestCase):
@@ -57,6 +53,8 @@ class PeopleSortTest(unittest.TestCase):
         self.assertIn('value="year-desc"', self.template)
         self.assertIn('value="destination-asc"', self.template)
         self.assertIn('value="destination-desc"', self.template)
+        self.assertIn('data-sort-header="year"', self.template)
+        self.assertIn('data-sort-header="destination"', self.template)
 
     def test_year_and_destination_sort_keys_are_explicit(self):
         self.assertIn("d3.ascending(a.firstYear, b.firstYear)", self.template)
@@ -73,11 +71,11 @@ class CountryAndHistoryTest(unittest.TestCase):
     def setUpClass(cls):
         cls.template = TEMPLATE.read_text(encoding="utf-8")
 
-    def test_country_filter_and_ranking_are_available(self):
+    def test_country_filter_and_distribution_are_available(self):
         self.assertIn('data-control="country"', self.template)
-        self.assertIn('value="country"', self.template)
         self.assertIn("person.countryCode !== state.country", self.template)
-        self.assertIn("country: 'Current countries'", self.template)
+        self.assertIn('Outcome-country distribution', self.template)
+        self.assertIn("kind === 'sector' ? person.sector : person.countryCode", self.template)
 
     def test_search_includes_alma_mater_and_history(self):
         self.assertIn("person.almaMater", self.template)

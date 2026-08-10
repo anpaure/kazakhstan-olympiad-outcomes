@@ -14,8 +14,11 @@ source URL used for review.
 5. Review any `candidate`, `superseded`, or `rejected` rows for contrary or
    discarded matches.
 6. Filter `affiliations.csv` for sourced past jobs, schools, and the selected
-   alma mater; filter `locations.csv` for the public-profile/current-role
-   country claim.
+   alma mater; filter `locations.csv` for the sourced outcome-country claim.
+7. Use `organization_aliases.csv` to audit every canonical-name merge and its
+   rationale; the original source wording remains in `evidence_text`.
+8. Use `organization_sectors.csv` to audit organization type and sector assignments.
+9. Use `destination_reviews.csv` to inspect any source-level correction that filled or superseded the earlier displayed destination.
 
 ## Tables
 
@@ -26,8 +29,15 @@ source URL used for review.
 - `affiliations.csv`: accepted employment and education history. Every row
   joins to evidence/source IDs; at most one education row per person has
   `selected_as_alma_mater=true`.
-- `locations.csv`: one sourced current-country claim per covered person. This
-  is public profile/current-role location, not legal residence or citizenship.
+- `locations.csv`: one sourced outcome-country claim per covered person. It
+  usually follows public profile/role location, with reviewed overrides for
+  stale profile headers; it is not legal residence or citizenship.
+- `organization_aliases.csv`: reviewed alias-to-canonical mappings for legal
+  names, acronyms, multilingual labels, campuses, and parent organizations.
+- `organization_sectors.csv`: reviewed type and sector for every displayed
+  non-educational destination.
+- `destination_reviews.csv`: reviewed final organization, role, dates, direct
+  source, review date, and rationale for every source-to-row reconciliation.
 - `evidence.csv`: one row per person-source-claim relationship. This is the main
   audit ledger.
 - `sources.csv`: one row per deduplicated URL with usage and review-status
@@ -44,7 +54,8 @@ JSON equivalents are generated beside every CSV table.
   identity, education, or career outcome.
 - `supporting`: useful corroboration, such as a reviewed public profile.
 - `candidate`: automatically discovered but not selected as final evidence.
-- `superseded`: an automated candidate replaced by stronger manual evidence.
+- `superseded`: an automated candidate or earlier manual summary replaced by
+  stronger source-level review.
 - `rejected`: explicitly reviewed and excluded from final outcomes.
 
 `traceability_status=complete` means a probable or confirmed person has both
@@ -55,7 +66,7 @@ accepted participation evidence and accepted or supporting outcome evidence.
 The complete exact-name LinkedIn review trail remains in the parent `data/`
 directory rather than being flattened into the final-outcome tables:
 
-- `exa_linkedin_review_queue.csv`: all 326 exact-name profile results and their
+- `exa_linkedin_review_queue.csv`: all 325 exact-name profile results and their
   deterministic review and outcome statuses.
 - `exa_outcome_integrations.csv`: 55 accepted career updates with direct
   Olympiad and career evidence links.
@@ -72,6 +83,7 @@ directory rather than being flattened into the final-outcome tables:
 python scripts/apply_exa_identity_rejections.py
 python scripts/apply_exa_outcome_integrations.py
 python scripts/build_research_dataset.py
+python scripts/hydrate_linkedin_profiles_with_exa.py
 python scripts/build_affiliation_history.py
 python scripts/build_location_evidence.py
 python scripts/build_audit_bundle.py

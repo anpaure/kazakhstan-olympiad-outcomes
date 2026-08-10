@@ -10,9 +10,23 @@ from collections import Counter
 from pathlib import Path
 
 try:
+    from scripts.build_exa_review_queue import canonical_url
     from scripts.build_location_evidence import COUNTRY_NAMES
+    from scripts.destination_reviews import load_destination_reviews
+    from scripts.organization_names import (
+        canonicalize_organization,
+        load_organization_aliases,
+    )
+    from scripts.organization_sectors import (
+        load_organization_sectors,
+        organization_metadata,
+    )
 except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
+    from build_exa_review_queue import canonical_url
     from build_location_evidence import COUNTRY_NAMES
+    from destination_reviews import load_destination_reviews
+    from organization_names import canonicalize_organization, load_organization_aliases
+    from organization_sectors import load_organization_sectors, organization_metadata
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -44,14 +58,23 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "people": data_dir / "people.csv",
         "researched": data_dir / "researched_people.csv",
         "verified": data_dir / "verified_evidence.csv",
+        "manual_affiliations": data_dir / "manual_affiliations.csv",
+        "destination_reviews": data_dir / "destination_reviews.csv",
+        "person_merges": data_dir / "person_merges.csv",
         "exa_outcomes": data_dir / "exa_outcome_integrations.csv",
+        "exa_profiles": data_dir / "exa_linkedin_profile_audit.json",
         "locations": data_dir / "person_locations.csv",
         "affiliations": data_dir / "person_affiliations.csv",
+        "organization_aliases": data_dir / "organization_aliases.csv",
+        "organization_sectors": data_dir / "organization_sectors.csv",
         "rejections": data_dir / "rejected_identity_candidates.csv",
         "audit_people": data_dir / "audit" / "people.csv",
         "audit_participations": data_dir / "audit" / "participations.csv",
         "audit_affiliations": data_dir / "audit" / "affiliations.csv",
         "audit_locations": data_dir / "audit" / "locations.csv",
+        "audit_organization_aliases": data_dir / "audit" / "organization_aliases.csv",
+        "audit_organization_sectors": data_dir / "audit" / "organization_sectors.csv",
+        "audit_destination_reviews": data_dir / "audit" / "destination_reviews.csv",
         "audit_evidence": data_dir / "audit" / "evidence.csv",
         "audit_sources": data_dir / "audit" / "sources.csv",
         "audit_rejections": data_dir / "audit" / "rejections.csv",
@@ -65,14 +88,23 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     people = read_csv(required["people"])
     researched = read_csv(required["researched"])
     verified = read_csv(required["verified"])
+    manual_affiliations = read_csv(required["manual_affiliations"])
+    destination_reviews = read_csv(required["destination_reviews"])
+    person_merges = read_csv(required["person_merges"])
     exa_outcomes = read_csv(required["exa_outcomes"])
+    exa_profiles = json.loads(required["exa_profiles"].read_text(encoding="utf-8"))
     locations = read_csv(required["locations"])
     affiliations = read_csv(required["affiliations"])
+    organization_aliases = read_csv(required["organization_aliases"])
+    organization_sectors = read_csv(required["organization_sectors"])
     rejections = read_csv(required["rejections"])
     audit_people = read_csv(required["audit_people"])
     audit_participations = read_csv(required["audit_participations"])
     audit_affiliations = read_csv(required["audit_affiliations"])
     audit_locations = read_csv(required["audit_locations"])
+    audit_organization_aliases = read_csv(required["audit_organization_aliases"])
+    audit_organization_sectors = read_csv(required["audit_organization_sectors"])
+    audit_destination_reviews = read_csv(required["audit_destination_reviews"])
     audit_evidence = read_csv(required["audit_evidence"])
     audit_sources = read_csv(required["audit_sources"])
     audit_rejections = read_csv(required["audit_rejections"])
@@ -87,6 +119,7 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     duplicate_ids(people, "people.csv")
     duplicate_ids(researched, "researched_people.csv")
     duplicate_ids(verified, "verified_evidence.csv")
+    duplicate_ids(destination_reviews, "destination_reviews.csv")
     duplicate_ids(exa_outcomes, "exa_outcome_integrations.csv")
     duplicate_ids(locations, "person_locations.csv")
 
@@ -108,6 +141,9 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     people_by_id = {row["person_id"]: row for row in people}
     researched_by_id = {row["person_id"]: row for row in researched}
     verified_by_id = {row["person_id"]: row for row in verified}
+    destination_reviews_by_id = {
+        row["person_id"]: row for row in destination_reviews
+    }
     exa_outcomes_by_id = {row["person_id"]: row for row in exa_outcomes}
     affiliations_by_person: dict[str, list[dict[str, str]]] = {}
     for row in affiliations:
@@ -128,6 +164,21 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     )
     duplicate_field(audit_affiliations, "affiliation_id", "audit/affiliations.csv")
     duplicate_field(audit_locations, "location_id", "audit/locations.csv")
+    duplicate_field(
+        audit_organization_aliases,
+        "organization_alias_id",
+        "audit/organization_aliases.csv",
+    )
+    duplicate_field(
+        audit_organization_sectors,
+        "organization_sector_id",
+        "audit/organization_sectors.csv",
+    )
+    duplicate_field(
+        audit_destination_reviews,
+        "destination_review_id",
+        "audit/destination_reviews.csv",
+    )
     duplicate_field(audit_evidence, "evidence_id", "audit/evidence.csv")
     duplicate_field(audit_sources, "source_id", "audit/sources.csv")
 
@@ -175,6 +226,96 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     if unknown_verified:
         errors.append(f"verified evidence has unknown people: {', '.join(unknown_verified)}")
 
+    unknown_manual_affiliations = sorted(
+        {
+            row.get("person_id", "")
+            for row in manual_affiliations
+            if row.get("person_id")
+        }
+        - set(people_by_id)
+    )
+    if unknown_manual_affiliations:
+        errors.append(
+            "manual affiliation history has unknown people: "
+            + ", ".join(unknown_manual_affiliations[:8])
+        )
+
+    try:
+        load_destination_reviews(required["destination_reviews"])
+    except ValueError as error:
+        errors.append(f"destination review registry is invalid: {error}")
+    unknown_destination_reviews = sorted(
+        set(destination_reviews_by_id) - set(people_by_id)
+    )
+    if unknown_destination_reviews:
+        errors.append(
+            "destination reviews have unknown people: "
+            + ", ".join(unknown_destination_reviews[:8])
+        )
+    for person_id, review in destination_reviews_by_id.items():
+        final = researched_by_id.get(person_id)
+        if not final:
+            continue
+        if review.get("name", "").strip() != final.get("name", "").strip():
+            errors.append(f"destination review name disagrees for {person_id}")
+        expected_fields = {
+            "organization": canonicalize_organization(review.get("organization", "")),
+            "role": review.get("role", "").strip(),
+            "affiliation_type": review.get("affiliation_type", "").strip(),
+            "start_year": review.get("start_year", "").strip(),
+            "end_year": review.get("end_year", "").strip(),
+        }
+        for field, expected in expected_fields.items():
+            if final.get(field, "").strip() != expected:
+                errors.append(
+                    f"destination review {field} was not published for {person_id}"
+                )
+        evidence_url = review.get("evidence_url", "").strip()
+        accepted_urls = split_values(final.get("evidence_urls", "")) | {
+            final.get("profile_url", "").strip(),
+            final.get("linkedin_url", "").strip(),
+        }
+        if evidence_url not in accepted_urls:
+            errors.append(
+                f"destination review source is not linked from the final row for {person_id}"
+            )
+        matching_history = any(
+            row.get("organization", "").strip() == expected_fields["organization"]
+            and row.get("role", "").strip() == expected_fields["role"]
+            and row.get("affiliation_type", "").strip()
+            == expected_fields["affiliation_type"]
+            and row.get("start_year", "").strip() == expected_fields["start_year"]
+            and row.get("end_year", "").strip() == expected_fields["end_year"]
+            and row.get("evidence_url", "").strip().rstrip("/")
+            == evidence_url.rstrip("/")
+            for row in affiliations_by_person.get(person_id, [])
+        )
+        if not matching_history:
+            errors.append(
+                f"destination review is missing from affiliation history for {person_id}"
+            )
+
+    merge_ids = [row.get("canonical_person_id", "") for row in person_merges]
+    if len({person_id for person_id in merge_ids if person_id}) != len(
+        [person_id for person_id in merge_ids if person_id]
+    ):
+        errors.append("person merge registry contains duplicate canonical person IDs")
+    for index, row in enumerate(person_merges, start=2):
+        person_id = row.get("canonical_person_id", "")
+        person = people_by_id.get(person_id)
+        aliases = split_values(row.get("aliases", ""))
+        if not person:
+            errors.append(f"person merge row {index} has unknown canonical person ID")
+            continue
+        if person.get("canonical_name") != row.get("canonical_name"):
+            errors.append(f"person merge row {index} canonical name was not published")
+        if not aliases or not aliases <= split_values(person.get("aliases", "")):
+            errors.append(f"person merge row {index} aliases were not merged")
+        if not row.get("reason", "").strip():
+            errors.append(f"person merge row {index} has no rationale")
+        if not row.get("evidence_url", "").startswith(("http://", "https://")):
+            errors.append(f"person merge row {index} has no direct HTTP(S) source")
+
     unknown_exa_outcomes = sorted(set(exa_outcomes_by_id) - set(people_by_id))
     if unknown_exa_outcomes:
         errors.append(
@@ -192,6 +333,41 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         errors.append(
             "affiliation history has unknown people: " + ", ".join(unknown_affiliations[:8])
         )
+
+    manual_affiliation_keys = []
+    for index, row in enumerate(manual_affiliations, start=2):
+        person_id = row.get("person_id", "")
+        affiliation_type = row.get("affiliation_type", "").casefold()
+        organization = canonicalize_organization(row.get("organization", ""))
+        evidence_url = row.get("evidence_url", "")
+        if affiliation_type not in {"employment", "education"}:
+            errors.append(
+                f"manual affiliation row {index} has invalid type: {affiliation_type!r}"
+            )
+        if not organization:
+            errors.append(f"manual affiliation row {index} has no organization")
+        if not evidence_url.startswith(("http://", "https://")):
+            errors.append(f"manual affiliation row {index} has no direct HTTP(S) source")
+        if row.get("confidence", "") not in {"probable", "confirmed"}:
+            errors.append(f"manual affiliation row {index} has invalid confidence")
+        manual_affiliation_keys.append(
+            (
+                person_id,
+                affiliation_type,
+                organization.casefold(),
+                row.get("role", "").casefold(),
+                row.get("start_year", ""),
+                row.get("end_year", ""),
+                evidence_url.rstrip("/").casefold(),
+            )
+        )
+    duplicate_manual_affiliations = [
+        key
+        for key, count in Counter(manual_affiliation_keys).items()
+        if key[0] and count > 1
+    ]
+    if duplicate_manual_affiliations:
+        errors.append("manual affiliation history contains duplicate sourced records")
 
     for row in locations:
         person_id = row.get("person_id", "")
@@ -227,6 +403,11 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     ]
     if duplicate_affiliations:
         errors.append("affiliation history contains duplicate sourced records")
+    missing_manual_affiliations = sorted(set(manual_affiliation_keys) - set(affiliation_keys))
+    if missing_manual_affiliations:
+        errors.append(
+            f"{len(missing_manual_affiliations)} manual affiliation rows were not published"
+        )
     alma_counts = Counter(
         row.get("person_id", "")
         for row in affiliations
@@ -246,6 +427,160 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             and row.get("affiliation_type") != "education"
         ):
             errors.append(f"selected alma mater is not education for {person_id}")
+        organization = row.get("organization", "")
+        if organization and canonicalize_organization(organization) != organization:
+            errors.append(
+                f"affiliation history retains noncanonical organization for {person_id}: "
+                f"{organization}"
+            )
+
+    try:
+        load_organization_aliases()
+    except ValueError as error:
+        errors.append(f"organization alias registry is invalid: {error}")
+    if len(audit_organization_aliases) != len(organization_aliases):
+        errors.append("audit organization aliases do not match the source registry")
+    source_alias_rows = {
+        tuple(row.get(field, "") for field in (
+            "alias",
+            "canonical_name",
+            "display_name",
+            "merge_type",
+            "rationale",
+        ))
+        for row in organization_aliases
+    }
+    audit_alias_rows = {
+        tuple(row.get(field, "") for field in (
+            "alias",
+            "canonical_name",
+            "display_name",
+            "merge_type",
+            "rationale",
+        ))
+        for row in audit_organization_aliases
+    }
+    if source_alias_rows != audit_alias_rows:
+        errors.append("audit organization aliases differ from the source registry")
+
+    try:
+        load_organization_sectors(required["organization_sectors"])
+    except ValueError as error:
+        errors.append(f"organization sector registry is invalid: {error}")
+    if len(audit_organization_sectors) != len(organization_sectors):
+        errors.append("audit organization sectors do not match the source registry")
+    sector_fields = (
+        "canonical_name",
+        "organization_type",
+        "sector",
+        "rationale",
+    )
+    source_sector_rows = {
+        tuple(row.get(field, "") for field in sector_fields)
+        for row in organization_sectors
+    }
+    audit_sector_rows = {
+        tuple(row.get(field, "") for field in sector_fields)
+        for row in audit_organization_sectors
+    }
+    if source_sector_rows != audit_sector_rows:
+        errors.append("audit organization sectors differ from the source registry")
+    if len(audit_destination_reviews) != len(destination_reviews):
+        errors.append("audit destination reviews do not match the source registry")
+    destination_review_fields = (
+        "person_id",
+        "name",
+        "organization",
+        "role",
+        "affiliation_type",
+        "start_year",
+        "end_year",
+        "evidence_url",
+        "reviewed_at",
+        "review_reason",
+    )
+    source_destination_reviews = {
+        tuple(
+            canonicalize_organization(row.get(field, ""))
+            if field == "organization"
+            else row.get(field, "")
+            for field in destination_review_fields
+        )
+        for row in destination_reviews
+    }
+    audit_destination_review_rows = {
+        tuple(row.get(field, "") for field in destination_review_fields)
+        for row in audit_destination_reviews
+    }
+    if source_destination_reviews != audit_destination_review_rows:
+        errors.append("audit destination reviews differ from the source registry")
+    for row in audit_destination_reviews:
+        evidence = audit_evidence_by_id.get(row.get("evidence_id", ""))
+        source = audit_sources_by_id.get(row.get("source_id", ""))
+        if not evidence or evidence.get("claim_type") != "destination_source_review":
+            errors.append(
+                f"destination review {row.get('destination_review_id')} has no review evidence"
+            )
+        elif evidence.get("supports_final_outcome") != "True":
+            errors.append(
+                f"destination review {row.get('destination_review_id')} does not support the final outcome"
+            )
+        if not source or source.get("source_url", "").strip() != row.get(
+            "evidence_url", ""
+        ).strip():
+            errors.append(
+                f"destination review {row.get('destination_review_id')} has no matching source"
+            )
+    for person_id, row in researched_by_id.items():
+        organization = row.get("organization", "")
+        if not organization:
+            continue
+        metadata = organization_metadata(
+            organization, row.get("organization_category", "")
+        )
+        if not metadata.get("organization_type") or not metadata.get("sector"):
+            errors.append(
+                f"{person_id} has an unclassified destination organization: {organization}"
+            )
+
+    accepted_linkedin = {
+        row["person_id"]: row.get("linkedin_url", "")
+        for row in researched
+        if row.get("confidence") in {"probable", "confirmed"}
+        and row.get("linkedin_url", "")
+    }
+    hydrated_profiles = {
+        row.get("person_id", ""): row
+        for row in exa_profiles.get("profiles", [])
+        if row.get("person_id")
+    }
+    if set(hydrated_profiles) != set(accepted_linkedin):
+        missing_profiles = sorted(set(accepted_linkedin) - set(hydrated_profiles))
+        unknown_profiles = sorted(set(hydrated_profiles) - set(accepted_linkedin))
+        if missing_profiles:
+            errors.append(
+                f"Exa direct-profile audit is missing {len(missing_profiles)} accepted LinkedIn profiles"
+            )
+        if unknown_profiles:
+            errors.append(
+                f"Exa direct-profile audit has {len(unknown_profiles)} unaccepted profiles"
+            )
+    if exa_profiles.get("key_persisted") is not False:
+        errors.append("Exa direct-profile audit does not declare key_persisted=false")
+    if exa_profiles.get("accepted_linkedin_count") != len(accepted_linkedin):
+        errors.append("Exa direct-profile audit accepted count is stale")
+    if exa_profiles.get("profile_count") != len(hydrated_profiles):
+        errors.append("Exa direct-profile audit profile count is stale")
+    for person_id, profile in hydrated_profiles.items():
+        if canonical_url(profile.get("linkedin_url", "")) != canonical_url(
+            accepted_linkedin.get(person_id, "")
+        ):
+            errors.append(f"Exa direct-profile URL disagrees for {person_id}")
+        status = profile.get("status")
+        if status not in {"success", "error"}:
+            errors.append(f"Exa direct-profile audit has invalid status for {person_id}")
+        if status == "success" and not profile.get("text", "").strip():
+            errors.append(f"Exa direct-profile audit has empty successful content for {person_id}")
 
     for person_id, expected in exa_outcomes_by_id.items():
         merged = verified_by_id.get(person_id)
@@ -271,7 +606,11 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             "verification_basis": "verification_basis",
         }
         for expected_field, final_field in final_field_map.items():
+            if person_id in destination_reviews_by_id:
+                continue
             expected_value = expected.get(expected_field, "").strip()
+            if expected_field == "organization":
+                expected_value = canonicalize_organization(expected_value)
             if final is not None and final.get(final_field, "").strip() != expected_value:
                 errors.append(
                     f"Exa outcome integration {expected_field} was not published for {person_id}"
@@ -385,9 +724,9 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             errors.append(
                 f"audit location {row.get('location_id')} has unknown person {person_id}"
             )
-        if not evidence or evidence.get("claim_type") != "current_country":
+        if not evidence or evidence.get("claim_type") != "outcome_country":
             errors.append(
-                f"audit location {row.get('location_id')} has no current-country evidence"
+                f"audit location {row.get('location_id')} has no outcome-country evidence"
             )
         if not source:
             errors.append(f"audit location {row.get('location_id')} has no source row")
@@ -445,6 +784,9 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "participations": len(audit_participations),
         "affiliations": len(audit_affiliations),
         "locations": len(audit_locations),
+        "organization_aliases": len(audit_organization_aliases),
+        "organization_sectors": len(audit_organization_sectors),
+        "destination_reviews": len(audit_destination_reviews),
         "evidence_rows": len(audit_evidence),
         "sources": len(audit_sources),
         "rejections": len(audit_rejections),
@@ -469,6 +811,11 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
                 errors.append(f"{person_id} is {confidence} without an evidence URL")
             if "timeline_conflict" in row.get("verification_basis", ""):
                 errors.append(f"{person_id} is {confidence} despite a timeline conflict")
+        organization = row.get("organization", "")
+        if organization and canonicalize_organization(organization) != organization:
+            errors.append(
+                f"{person_id} retains noncanonical destination organization: {organization}"
+            )
         destination_status = row.get("destination_status", "")
         if destination_status not in {
             "none",
@@ -519,11 +866,27 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
                 f"manual evidence for {person_id} did not preserve "
                 f"{expected_confidence} confidence"
             )
+        if person_id in destination_reviews_by_id:
+            history_rows = affiliations_by_person.get(person_id, [])
+            preserved_in_history = any(
+                row.get("organization", "").strip()
+                == canonicalize_organization(verified_row.get("organization", ""))
+                and row.get("role", "").strip()
+                == verified_row.get("role", "").strip()
+                and row.get("evidence_url", "").strip().rstrip("/")
+                == verified_row.get("career_evidence_url", "").strip().rstrip("/")
+                for row in history_rows
+            )
+            if not preserved_in_history:
+                errors.append(
+                    f"superseded manual evidence was not preserved for {person_id}"
+                )
+            continue
         if final_row.get("destination_status") == "history_only":
             history_rows = affiliations_by_person.get(person_id, [])
             preserved_in_history = any(
                 row.get("organization", "").strip()
-                == verified_row.get("organization", "").strip()
+                == canonicalize_organization(verified_row.get("organization", ""))
                 and row.get("role", "").strip() == verified_row.get("role", "").strip()
                 and row.get("evidence_url", "").strip().rstrip("/")
                 == verified_row.get("career_evidence_url", "").strip().rstrip("/")
@@ -534,6 +897,8 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             continue
         for field in ("organization", "role"):
             expected = verified_row.get(field, "").strip()
+            if field == "organization":
+                expected = canonicalize_organization(expected)
             if expected and final_row.get(field, "").strip() != expected:
                 errors.append(f"manual {field} was not preserved for {person_id}")
 
@@ -565,6 +930,8 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "rejected_identity_candidates": len(rejections),
         "audit_evidence_rows": len(audit_evidence),
         "audit_sources": len(audit_sources),
+        "organization_sectors": len(organization_sectors),
+        "destination_reviews": len(destination_reviews),
     }
     return errors, summary
 

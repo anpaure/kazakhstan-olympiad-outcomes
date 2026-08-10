@@ -1,0 +1,146 @@
+alias,canonical_name,display_name,merge_type,rationale
+Alem Entertainment GP,Alem Entertainment,Alem Entertainment,same_entity,Legal-form variant
+Alem Entertainment Ltd.,Alem Entertainment,Alem Entertainment,same_entity,Legal-form variant
+Amazon Web Services,Amazon,Amazon,parent_organization,AWS is an Amazon business
+Amazon Web Services (AWS),Amazon,Amazon,parent_organization,AWS is an Amazon business
+AWS Center for Quantum Computing at Amazon,Amazon,Amazon,parent_organization,Amazon research unit
+Amazon.com,Amazon,Amazon,same_entity,Corporate name variant
+Deep Infra Inc,Deep Infra,Deep Infra,same_entity,Legal-form punctuation variant
+Deep Infra Inc.,Deep Infra,Deep Infra,same_entity,Legal-form punctuation variant
+Freedom Horizons Corp.,Freedom Horizons,Freedom Horizons,same_entity,Legal-form variant
+"Genie, Inc",Genie,Genie,same_entity,Legal-form punctuation variant
+"Genie, Inc.",Genie,Genie,same_entity,Legal-form punctuation variant
+Graviton Research Capital LLP,Graviton Research Capital,Graviton Research Capital,same_entity,Legal-form variant
+HITS Inc,HITS,HITS,same_entity,Legal-form variant
+Huawei Noah's Ark Lab,Huawei,Huawei,parent_organization,Huawei research unit
+Huawei Switzerland,Huawei,Huawei,parent_organization,Huawei national subsidiary
+IoS_Flutter company,ios_flutter,ios_flutter,same_entity,Capitalization and suffix variant
+KAZ Minerals Management LLP,KAZ Minerals,KAZ Minerals,parent_organization,KAZ Minerals management entity
+Khan Group LLP,Khan Group,Khan Group,same_entity,Legal-form variant
+@khangroupkz,Khan Group,Khan Group,same_entity,Public handle corroborated by a second Khan Group affiliation
+Laminar (YC S24),Laminar,Laminar,same_entity,Accelerator suffix
+Lindstrom,Lindström,Lindström,same_entity,Diacritic variant of official brand
+NCOC,North Caspian Operating Company (NCOC),NCOC,same_entity,Acronym
+North Caspian Operating Company N.V. (NCOC),North Caspian Operating Company (NCOC),NCOC,same_entity,Legal-form variant
+North Caspian Operating Company N.V. (NCOC N.V.),North Caspian Operating Company (NCOC),NCOC,same_entity,Legal-form variant
+"OnPoint Analytics, Inc.",OnPoint Analytics,OnPoint Analytics,same_entity,Legal-form variant
+a private hedge fund,Private hedge fund,Private hedge fund,same_entity,Article variant
+Silleno LLP,Silleno,Silleno,same_entity,Legal-form variant
+Silleno​ LLP,Silleno,Silleno,same_entity,Zero-width character and legal-form variant
+Snap Inc,Snap,Snap,same_entity,Legal-form punctuation variant
+Snap Inc.,Snap,Snap,same_entity,Legal-form punctuation variant
+Solai Inc,Solai,Solai,same_entity,Legal-form punctuation variant
+Solai Inc.,Solai,Solai,same_entity,Legal-form punctuation variant
+Squarepoint,Squarepoint Capital,Squarepoint Capital,same_entity,Short brand name
+"TETmedical, Inc",TETmedical,TETmedical,same_entity,Legal-form punctuation variant
+"TETmedical, Inc.",TETmedical,TETmedical,same_entity,Legal-form punctuation variant
+VACANTE LLP,VACANTE,VACANTE,same_entity,Legal-form variant
+vacante.kz,VACANTE,VACANTE,same_entity,Domain-style brand variant
+Self-Employed,Self-employed,Self-employed,same_entity,Capitalization variant
+Предприниматель,Self-employed,Self-employed,translated_name,Russian label
+Remote,Self-employed,Self-employed,category_normalization,Generic remote-work label predates the Remote company and describes independent work
+NDA,Undisclosed employer,Undisclosed employer,same_entity,Disclosure-status abbreviation
+AlliedYoung FBC / 아영FBC,AlliedYoung FBC,AlliedYoung FBC,multilingual_name,English and Korean combined label
+Embassy of Kazkhstan to the Republic of Korea,Embassy of Kazakhstan in the Republic of Korea,Embassy of Kazakhstan in South Korea,same_entity,Typo and preposition variant
+казкомнет,Kazkomnet,Kazkomnet,multilingual_name,Cyrillic capitalization variant
+Caltech,California Institute of Technology (Caltech),Caltech,same_entity,Common short name
+California Institute of Technology,California Institute of Technology (Caltech),Caltech,same_entity,Official name without acronym
+ETH Zürich,ETH Zurich,ETH Zurich,same_entity,Diacritic variant
+HKUST,Hong Kong University of Science and Technology (HKUST),HKUST,same_entity,Acronym
+Hong Kong University of Science and Technology,Hong Kong University of Science and Technology (HKUST),HKUST,same_entity,Official name without acronym
+The Hong Kong University of Science and Technology,Hong Kong University of Science and Technology (HKUST),HKUST,same_entity,Leading-article variant
+Institute for basic science (IBS),Institute for Basic Science (IBS),Institute for Basic Science,same_entity,Capitalization variant
+Karlsruhe Institute of Technology,Karlsruhe Institute of Technology (KIT),KIT,same_entity,Official name without acronym
+KAUST,King Abdullah University of Science and Technology (KAUST),KAUST,same_entity,Acronym
+KAUST (King Abdullah University of Science and Technology),King Abdullah University of Science and Technology (KAUST),KAUST,same_entity,Reversed acronym label
+Kazakh British Technical University,Kazakh-British Technical University (KBTU),KBTU,same_entity,Hyphen variant
+Kazakh-British Techincal University,Kazakh-British Technical University (KBTU),KBTU,same_entity,Typo variant
+Kazakh-British Technical University,Kazakh-British Technical University (KBTU),KBTU,same_entity,Official name without acronym
+KBTU,Kazakh-British Technical University (KBTU),KBTU,same_entity,Acronym
+Korea Advanced Institute of Science and Technology,Korea Advanced Institute of Science and Technology (KAIST),KAIST,same_entity,Official name without acronym
+KAIST,Korea Advanced Institute of Science and Technology (KAIST),KAIST,same_entity,Acronym
+한국과학기술원(KAIST),Korea Advanced Institute of Science and Technology (KAIST),KAIST,multilingual_name,Korean name
+L N Gumilyov Eurasian National University,L.N. Gumilyov Eurasian National University,L.N. Gumilyov ENU,same_entity,Punctuation variant
+L. N. Gumilyov Eurasian National University,L.N. Gumilyov Eurasian National University,L.N. Gumilyov ENU,same_entity,Punctuation variant
+L.N.Gumilyov Eurasian National University,L.N. Gumilyov Eurasian National University,L.N. Gumilyov ENU,same_entity,Spacing variant
+Евразийский национальный университет имени Л. Н. Гумилёва,L.N. Gumilyov Eurasian National University,L.N. Gumilyov ENU,multilingual_name,Russian name
+Lomonosov Moscow State University,Lomonosov Moscow State University (MSU),Moscow State University,same_entity,Official name without acronym
+Moscow State University,Lomonosov Moscow State University (MSU),Moscow State University,same_entity,Common short name
+Massachusetts Institute of Technology,Massachusetts Institute of Technology (MIT),MIT,same_entity,Official name without acronym
+MIT,Massachusetts Institute of Technology (MIT),MIT,same_entity,Acronym
+MIT CSAIL,Massachusetts Institute of Technology (MIT),MIT,parent_organization,University laboratory acronym
+MIT Computer Science and Artificial Intelligence Laboratory (CSAIL),Massachusetts Institute of Technology (MIT),MIT,parent_organization,University laboratory
+MIPT (SU),Moscow Institute of Physics and Technology (MIPT),MIPT,same_entity,Acronym variant
+Moscow Institute of Physics and Technology,Moscow Institute of Physics and Technology (MIPT),MIPT,same_entity,Official name without acronym
+Moscow Institute of Physics and Technology (State University) (MIPT),Moscow Institute of Physics and Technology (MIPT),MIPT,same_entity,Former legal-name variant
+Nanyang Technological University,Nanyang Technological University (NTU),NTU,same_entity,Official name without acronym
+Nanyang Technological University Singapore,Nanyang Technological University (NTU),NTU,same_entity,Location suffix
+National School of Physics & Math (FIZMAT),Republican Physics and Mathematics School (RFMS),RFMS,same_entity,English brand variant
+National School of Physics & Math (RFMS),Republican Physics and Mathematics School (RFMS),RFMS,same_entity,English acronym variant
+Republican Physics and Mathematics School,Republican Physics and Mathematics School (RFMS),RFMS,same_entity,Official name without acronym
+SDU,Suleyman Demirel University (SDU),SDU,same_entity,Acronym
+SDU University,Suleyman Demirel University (SDU),SDU,same_entity,Brand variant
+Suleyman Demiral University,Suleyman Demirel University (SDU),SDU,same_entity,Typo variant
+Suleyman Demirel University,Suleyman Demirel University (SDU),SDU,same_entity,Official name without acronym
+"Suleyman Demirel University, Kazakhstan",Suleyman Demirel University (SDU),SDU,same_entity,Location suffix
+Ulsan National Insitute of Science and Technology,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Typo variant
+Ulsan National Institute of Science and Technology,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Official name without acronym
+UNIST,Ulsan National Institute of Science and Technology (UNIST),UNIST,same_entity,Acronym
+울산과학기술원,Ulsan National Institute of Science and Technology (UNIST),UNIST,multilingual_name,Korean name
+University of California Davis,"University of California, Davis",UC Davis,same_entity,Punctuation variant
+"University of California, Los Angeles","University of California, Los Angeles (UCLA)",UCLA,same_entity,Official name without acronym
+The University of Hong Kong,University of Hong Kong,University of Hong Kong,same_entity,Leading-article variant
+The University of Texas at Brownsville,University of Texas at Brownsville,University of Texas at Brownsville,same_entity,Leading-article variant
+Penn State University,Pennsylvania State University,Penn State,same_entity,Common short name
+Nazarbayev,Nazarbayev University,Nazarbayev University,same_entity,Truncated public-profile school label linked to the university
+Nazarbayev University School of Medicine,Nazarbayev University,Nazarbayev University,parent_organization,University school
+Nazarbayev University Graduate School of Education,Nazarbayev University,Nazarbayev University,parent_organization,University school
+Nazarbayev University Research and Innovation System,Nazarbayev University,Nazarbayev University,parent_organization,University research system
+Назарбаев Университет,Nazarbayev University,Nazarbayev University,multilingual_name,Russian name
+Kazahskij Nacionalnij Universitet im. Al Farabi,Al-Farabi Kazakh National University,Al-Farabi KazNU,transliterated_name,Transliterated Russian name
+Kazakh National University,Al-Farabi Kazakh National University,Al-Farabi KazNU,same_entity,Common short name
+Kazakh National University named after al-Farabi,Al-Farabi Kazakh National University,Al-Farabi KazNU,same_entity,Translated official name
+Казахский национальный университет имени аль-Фараби (КазНУ),Al-Farabi Kazakh National University,Al-Farabi KazNU,multilingual_name,Russian name
+Almaty IITU,International Information Technology University (IITU),IITU,same_entity,Location and acronym variant
+IITU,International Information Technology University (IITU),IITU,same_entity,Acronym
+International Information Technologies University,International Information Technology University (IITU),IITU,same_entity,Plural variant
+International Information Technology University,International Information Technology University (IITU),IITU,same_entity,Official name without acronym
+International IT University,International Information Technology University (IITU),IITU,same_entity,Short name
+HARBOUR.SPACE,Harbour.Space University,Harbour.Space,same_entity,Capitalization variant
+Harbour.Space University - Barcelona Campus,Harbour.Space University,Harbour.Space,parent_organization,Campus label
+BINUS International,BINUS University,BINUS University,parent_organization,International campus label
+Higher School of Economics,HSE University,HSE University,same_entity,Former English brand
+Высшая Школа Экономики,HSE University,HSE University,multilingual_name,Russian name
+Skolkovo Institute of Science and Technology,Skoltech,Skoltech,same_entity,Official name
+Orta Doğu Teknik Üniversitesi / Middle East Technical University,Middle East Technical University,Middle East Technical University,multilingual_name,Turkish and English combined label
+S D Asfendiyarov Kazakh National Medical University,Asfendiyarov Kazakh National Medical University,Asfendiyarov KazNMU,same_entity,Initials variant
+Deutsche Elektronen-Synchrotron DESY,Deutsches Elektronen-Synchrotron DESY,DESY,same_entity,Spelling variant
+National Information Technologies JSC (NITEC),National Information Technologies JSC (NITEC),NITEC,same_entity,Canonical display declaration
+NITEC,National Information Technologies JSC (NITEC),NITEC,same_entity,Acronym
+Arizona State University,Arizona State University,Arizona State University,same_entity,Canonical display declaration
+ASU,Arizona State University,Arizona State University,same_entity,Acronym corroborated by the same person's full affiliation
+KazMunayGas (Kazakhstan),KazMunayGas,KazMunayGas,same_entity,Location suffix
+AlmatyKTL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Spacing variant of an Almaty campus in the BIL network
+Almaty KTL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former KTL name for an Almaty BIL campus
+Aktau BIL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
+Aktau KTL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former KTL campus label
+Aktobe KTL,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former KTL campus label
+"Atyrau, ""Bilim-Innovation"" Lyceum",Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
+"Bilim-Innovation Boarding Lyceum for Gifted Girls, Astana",Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
+"Bilim-Innovation Lyceum No. 1, Karaganda",Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
+"Bilim-Innovation Specialized Boarding Lyceum, North Kazakhstan",Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
+Kazakh-Turkish High Schools,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former network name
+Kazakh-Turkish lyceum for gifted students,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Former network name
+Oral Bilim Innovation High School,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
+Nazarbayev Intellectual Schools,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Official network name without acronym
+NIS Medeu (NIS PhM Almaty),Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Campus label
+Назарбаев Интеллектуальные школы,Nazarbayev Intellectual Schools (NIS),NIS,multilingual_name,Russian name
+Harvard T.H. Chan School of Public Health,Harvard University,Harvard University,parent_organization,University school
+"Mechanobiology Institute, National University of Singapore",National University of Singapore,NUS,parent_organization,University institute
+"Institute for Pure and Applied Mathematics, UCLA","University of California, Los Angeles (UCLA)",UCLA,parent_organization,University institute
+Research Laboratory of Electronics at MIT,Massachusetts Institute of Technology (MIT),MIT,parent_organization,University laboratory
+wbk - Institute of Production Science,Karlsruhe Institute of Technology (KIT),KIT,parent_organization,University institute
+Purdue University System,Purdue University,Purdue University,parent_organization,System label
+Purdue University West Lafayette,Purdue University,Purdue University,parent_organization,Main campus label
+University of Michigan - Stephen M. Ross School of Business,University of Michigan,University of Michigan,parent_organization,University school
+ктж,Kazakhstan Temir Zholy JSC,Kazakhstan Temir Zholy,multilingual_name,Cyrillic acronym

@@ -11,6 +11,13 @@ from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
+try:
+    from scripts.destination_reviews import load_destination_reviews
+    from scripts.organization_names import canonicalize_organization
+except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
+    from destination_reviews import load_destination_reviews
+    from organization_names import canonicalize_organization
+
 
 CONFIDENCE_RANK = {"unmatched": -1, "candidate": 0, "probable": 1, "confirmed": 2}
 SOURCE_RANK = {
@@ -105,7 +112,7 @@ def affiliation_sort_key(row: dict[str, str]) -> tuple[int, int, int, int, int]:
 
 
 def organization_category(organization: str, affiliation_type: str) -> str:
-    normalized_organization = clean_text(organization).casefold()
+    normalized_organization = canonicalize_organization(organization).casefold()
     word_text = re.sub(r"[^\w]+", " ", normalized_organization).replace("_", " ")
     text = f" {clean_text(word_text)} "
     affiliation_type = clean_text(affiliation_type).casefold()
@@ -115,10 +122,14 @@ def organization_category(organization: str, affiliation_type: str) -> str:
         term in text
         for term in [
             " university ",
+            " universities ",
             " institute ",
+            " institutes ",
             " school ",
+            " schools ",
             " college ",
             " lyceum ",
+            " lyceums ",
             " gymnasium ",
             " education ",
             " akadem",
@@ -160,7 +171,10 @@ def organization_category(organization: str, affiliation_type: str) -> str:
 
 
 def role_category(role: str, organization: str, affiliation_type: str) -> str:
-    text = f" {clean_text(role).casefold()} {clean_text(organization).casefold()} "
+    text = (
+        f" {clean_text(role).casefold()} "
+        f"{canonicalize_organization(organization).casefold()} "
+    )
     affiliation_type = clean_text(affiliation_type).casefold()
     if any(term in text for term in ["student", "candidate", "bachelor", "master", "phd graduate"]):
         return "Student"
@@ -172,7 +186,7 @@ def role_category(role: str, organization: str, affiliation_type: str) -> str:
         return "Research & Academia"
     if any(term in text for term in ["engineer", "engineering"]):
         return "Engineering"
-    if any(term in text for term in ["head", "manager", "founder", "director", "coordinator"]):
+    if any(term in text for term in ["head", "manager", "founder", "director", "principal", "coordinator"]):
         return "Leadership"
     if affiliation_type == "education":
         return "Student"
@@ -187,7 +201,7 @@ def normalize_destination(
     end_year: str,
     as_of_year: int = 2026,
 ) -> tuple[str, str, str, str, str, str, str]:
-    organization = clean_text(organization)
+    organization = canonicalize_organization(organization)
     role = clean_text(role)
     affiliation_type = clean_text(affiliation_type)
     start_year = clean_text(start_year)
@@ -348,6 +362,7 @@ def build_rows(
     affiliations: list[dict[str, str]],
     verified: list[dict[str, str]],
     rejections: list[dict[str, str]] | None = None,
+    destination_reviews: list[dict[str, str]] | None = None,
 ) -> list[ResearchedPerson]:
     rejected_urls = {
         (
@@ -360,6 +375,12 @@ def build_rows(
     identities_by_person: dict[str, list[dict[str, str]]] = defaultdict(list)
     affiliations_by_person: dict[str, list[dict[str, str]]] = defaultdict(list)
     verified_by_person = {row["person_id"]: row for row in verified}
+    destination_review_by_person: dict[str, dict[str, str]] = {}
+    for review in destination_reviews or []:
+        person_id = clean_text(review.get("person_id"))
+        if person_id in destination_review_by_person:
+            raise ValueError(f"duplicate destination review for {person_id}")
+        destination_review_by_person[person_id] = review
     for row in identities:
         if rejected_candidate(row, rejected_urls):
             continue
@@ -437,6 +458,27 @@ def build_rows(
                 dict.fromkeys(part for part in verification_parts if clean_text(part))
             )
             manual_urls = []
+
+        destination_review = destination_review_by_person.get(person_id)
+        if destination_review:
+            organization = destination_review["organization"]
+            role = destination_review["role"]
+            affiliation_type = destination_review["affiliation_type"]
+            start_year = destination_review["start_year"]
+            end_year = destination_review["end_year"]
+            review_url = clean_text(destination_review.get("evidence_url"))
+            if review_url:
+                profile_url = review_url
+                if is_linkedin(review_url):
+                    linkedin_url = review_url
+                manual_urls.append(review_url)
+            review_reason = clean_text(destination_review.get("review_reason"))
+            if review_reason:
+                verification_basis = "; ".join(
+                    part
+                    for part in [verification_basis, f"Destination review: {review_reason}"]
+                    if part
+                )
 
         (
             organization,
@@ -524,6 +566,9 @@ def main() -> int:
     parser.add_argument(
         "--rejections-csv", default="data/rejected_identity_candidates.csv"
     )
+    parser.add_argument(
+        "--destination-reviews-csv", default="data/destination_reviews.csv"
+    )
     parser.add_argument("--out-csv", default="data/researched_people.csv")
     parser.add_argument("--out-json", default="data/researched_people.json")
     args = parser.parse_args()
@@ -534,6 +579,7 @@ def main() -> int:
         load_csv(Path(args.affiliation_csv)),
         load_csv(Path(args.verified_csv)),
         load_csv(Path(args.rejections_csv)),
+        load_destination_reviews(Path(args.destination_reviews_csv)),
     )
     write_outputs(rows, Path(args.out_csv), Path(args.out_json))
     confidence_counts = Counter(row.confidence for row in rows)

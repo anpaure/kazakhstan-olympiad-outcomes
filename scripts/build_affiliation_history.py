@@ -12,27 +12,36 @@ from pathlib import Path
 
 try:
     from scripts.build_exa_review_queue import canonical_url
+    from scripts.destination_reviews import load_destination_reviews
+    from scripts.hydrate_linkedin_profiles_with_exa import profile_search_records
     from scripts.build_research_dataset import (
         CONFIDENCE_RANK,
         affiliation_supported_by_identity,
         identity_sort_key,
         identity_urls,
     )
+    from scripts.organization_names import canonicalize_organization
 except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
     from build_exa_review_queue import canonical_url
+    from destination_reviews import load_destination_reviews
+    from hydrate_linkedin_profiles_with_exa import profile_search_records
     from build_research_dataset import (
         CONFIDENCE_RANK,
         affiliation_supported_by_identity,
         identity_sort_key,
         identity_urls,
     )
+    from organization_names import canonicalize_organization
 
 
 DEFAULT_PEOPLE = Path("data/researched_people.json")
 DEFAULT_EXA_AUDIT = Path("data/exa_linkedin_search_audit.json")
+DEFAULT_EXA_PROFILES = Path("data/exa_linkedin_profile_audit.json")
 DEFAULT_IDENTITIES = Path("data/identity_candidates.json")
 DEFAULT_AFFILIATIONS = Path("data/affiliation_candidates.json")
 DEFAULT_VERIFIED = Path("data/verified_evidence.csv")
+DEFAULT_MANUAL_AFFILIATIONS = Path("data/manual_affiliations.csv")
+DEFAULT_DESTINATION_REVIEWS = Path("data/destination_reviews.csv")
 DEFAULT_REJECTIONS = Path("data/rejected_identity_candidates.csv")
 DEFAULT_CSV = Path("data/person_affiliations.csv")
 DEFAULT_JSON = Path("data/person_affiliations.json")
@@ -103,6 +112,22 @@ INSTITUTION_TERMS = re.compile(
     re.IGNORECASE,
 )
 DATE_DURATION_PATTERN = re.compile(r"^(?:19|20)\d{2}\s*\(")
+LEADING_YEAR_RANGE_PATTERN = re.compile(
+    r"^(?:19|20)\d{2}\s*[-–]\s*(?:19|20)\d{2}\s*,\s*"
+)
+MONTH_DURATION_PATTERN = re.compile(
+    r"^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+"
+    r"(?:19|20)\d{2}(?:\s*\(|\b)",
+    re.IGNORECASE,
+)
+INCOMPLETE_INSTITUTION_PATTERN = re.compile(
+    r"\b(?:university|institute|school|college)\s+(?:of|for|at)$",
+    re.IGNORECASE,
+)
+ONE_OFF_ROLE_PATTERN = re.compile(
+    r"\b(?:(?:19|20)\d{2}\s+participant|summer school|summer intern(?:ship)?)\b",
+    re.IGNORECASE,
+)
 
 
 def clean_text(value: object) -> str:
@@ -133,6 +158,10 @@ def valid_affiliation(organization: str, role: str) -> bool:
         return False
     if DATE_DURATION_PATTERN.match(organization):
         return False
+    if MONTH_DURATION_PATTERN.match(organization):
+        return False
+    if INCOMPLETE_INSTITUTION_PATTERN.search(organization):
+        return False
     if EXCLUDED_ROLE_PATTERN.search(f"{role} {organization}"):
         return False
     if "..." in organization or "http" in organization.casefold():
@@ -148,14 +177,18 @@ def make_entry(
     affiliation_type: str,
     segment: str,
 ) -> dict[str, object] | None:
-    organization = strip_markdown(organization)
+    organization = LEADING_YEAR_RANGE_PATTERN.sub("", strip_markdown(organization))
     role = strip_markdown(role)
     role = clean_text(ROLE_STOP_PATTERN.sub("", role)).strip(" .,-")
     if affiliation_type == "education" and "olympiad" in organization.casefold():
         return None
     if not valid_affiliation(organization, role):
         return None
+    organization = canonicalize_organization(organization)
     start_year, end_year, is_current = years_from_text(segment)
+    if is_current and start_year and ONE_OFF_ROLE_PATTERN.search(role):
+        end_year = start_year
+        is_current = False
     return {
         "organization": organization,
         "role": role,
@@ -163,7 +196,7 @@ def make_entry(
         "start_year": start_year,
         "end_year": end_year,
         "is_current": is_current,
-        "evidence_text": clean_text(segment)[:500],
+        "evidence_text": clean_text(segment)[:500].rstrip(),
     }
 
 
@@ -235,24 +268,32 @@ def parse_education(segment: str) -> dict[str, object] | None:
 
 
 def extract_affiliations(highlights: str) -> list[dict[str, object]]:
-    text = clean_text(highlights)
+    text = str(highlights or "").replace("\xa0", " ")
     headings = list(HEADING_PATTERN.finditer(text))
     entries: list[dict[str, object]] = []
     section = ""
-    grouped_employer = ""
+    grouped_organization = ""
+    grouped_type = ""
 
     for index, heading in enumerate(headings):
         level = len(heading.group("marker"))
         end = headings[index + 1].start() if index + 1 < len(headings) else len(text)
-        segment = clean_text(text[heading.end() : end])
+        raw_segment = text[heading.end() : end]
+        segment = clean_text(raw_segment)
         if not segment:
             continue
+        heading_title = clean_text(
+            next((line for line in raw_segment.splitlines() if clean_text(line)), segment)
+        )
         if level == 2:
             label = segment.casefold()
             section = "experience" if label.startswith("experience") else (
-                "education" if label.startswith("education") else ""
+                "education" if label.startswith("education") else "ignore"
             )
-            grouped_employer = ""
+            grouped_organization = ""
+            grouped_type = ""
+            continue
+        if section == "ignore":
             continue
 
         entry = None
@@ -262,26 +303,50 @@ def extract_affiliations(highlights: str) -> list[dict[str, object]]:
             else 0
         )
         if level == 3 and section == "education":
-            entry = parse_education(segment)
+            organization_match = LINK_ONLY_PATTERN.match(segment)
+            if organization_match and next_level == 4:
+                grouped_organization = strip_markdown(
+                    organization_match.group("organization")
+                )
+                grouped_type = "education"
+            else:
+                grouped_organization = ""
+                grouped_type = ""
+                entry = parse_education(segment)
         elif level == 3 and section == "experience":
             entry = parse_experience(segment)
             if not entry:
                 employer_match = LINK_ONLY_PATTERN.match(segment)
-                grouped_employer = (
+                grouped_organization = (
                     strip_markdown(employer_match.group("organization"))
                     if employer_match
                     else ""
                 )
+                grouped_type = "employment" if grouped_organization else ""
             else:
-                grouped_employer = ""
-        elif level == 4 and grouped_employer:
-            entry = parse_experience(segment, grouped_employer)
+                grouped_organization = ""
+                grouped_type = ""
+        elif level == 4 and grouped_organization:
+            entry = (
+                make_entry(
+                    grouped_organization,
+                    heading_title,
+                    "education",
+                    segment,
+                )
+                if grouped_type == "education"
+                else parse_experience(segment, grouped_organization)
+            )
         elif level == 3:
             employer_match = LINK_ONLY_PATTERN.match(segment)
             if employer_match and next_level == 4:
-                grouped_employer = strip_markdown(employer_match.group("organization"))
+                grouped_organization = strip_markdown(
+                    employer_match.group("organization")
+                )
+                grouped_type = ""
             else:
-                grouped_employer = ""
+                grouped_organization = ""
+                grouped_type = ""
                 entry = parse_education(segment)
                 if not entry and ("(Current)" in segment or DATE_RANGE_PATTERN.search(segment)):
                     entry = parse_experience(segment)
@@ -377,8 +442,10 @@ def build_rows(
     identities: list[dict[str, str]],
     affiliations: list[dict[str, str]],
     verified: list[dict[str, str]],
+    manual_affiliations: list[dict[str, str]],
     rejections: list[dict[str, str]],
     as_of_year: int,
+    destination_reviews: list[dict[str, str]] | None = None,
 ) -> list[dict[str, object]]:
     people_by_id = {
         clean_text(person.get("person_id")): person
@@ -398,8 +465,8 @@ def build_rows(
             url_key = canonical_url(clean_text(result.get("url")))
             if url_key not in accepted_profiles:
                 continue
-            text = clean_text(" ".join(result.get("highlights", [])))
-            if text:
+            text = "\n".join(str(item) for item in result.get("highlights", []) if item)
+            if clean_text(text):
                 result_texts[url_key].add(text)
 
     rows: list[dict[str, object]] = []
@@ -460,6 +527,7 @@ def build_rows(
             continue
         if not valid_affiliation(organization, role):
             continue
+        organization = canonicalize_organization(organization)
         person = people_by_id[person_id]
         end_year = clean_text(affiliation.get("end_year"))
         rows.append(
@@ -476,7 +544,7 @@ def build_rows(
                 "evidence_url": clean_text(affiliation.get("evidence_url")),
                 "evidence_kind": f"accepted_{clean_text(affiliation.get('source')) or 'structured'}",
                 "confidence": clean_text(affiliation.get("confidence")),
-                "evidence_text": clean_text(affiliation.get("evidence_text"))[:500],
+                "evidence_text": clean_text(affiliation.get("evidence_text"))[:500].rstrip(),
             }
         )
 
@@ -494,7 +562,7 @@ def build_rows(
             {
                 "person_id": person_id,
                 "name": clean_text(people_by_id[person_id].get("name")),
-                "organization": clean_text(manual.get("organization")),
+                "organization": canonicalize_organization(manual.get("organization")),
                 "role": clean_text(manual.get("role")),
                 "affiliation_type": affiliation_type,
                 "start_year": clean_text(manual.get("start_year")),
@@ -504,7 +572,86 @@ def build_rows(
                 "evidence_url": clean_text(manual.get("career_evidence_url")),
                 "evidence_kind": "manual_review",
                 "confidence": clean_text(manual.get("confidence")) or "confirmed",
-                "evidence_text": clean_text(manual.get("verification_basis"))[:500],
+                "evidence_text": clean_text(manual.get("verification_basis"))[:500].rstrip(),
+            }
+        )
+
+    for manual in manual_affiliations:
+        person_id = clean_text(manual.get("person_id"))
+        if person_id not in people_by_id:
+            continue
+        role = clean_text(manual.get("role"))
+        affiliation_type = normalized_type(
+            clean_text(manual.get("affiliation_type")), role
+        )
+        organization = canonicalize_organization(manual.get("organization"))
+        evidence_url = clean_text(manual.get("evidence_url"))
+        if (
+            affiliation_type not in {"employment", "education"}
+            or not valid_affiliation(organization, role)
+            or not evidence_url
+        ):
+            continue
+        end_year = clean_text(manual.get("end_year"))
+        current_value = clean_text(manual.get("is_current")).casefold()
+        is_current = current_value == "true" if current_value else not bool(end_year)
+        rows.append(
+            {
+                "person_id": person_id,
+                "name": clean_text(people_by_id[person_id].get("name")),
+                "organization": organization,
+                "role": role,
+                "affiliation_type": affiliation_type,
+                "start_year": clean_text(manual.get("start_year")),
+                "end_year": end_year,
+                "is_current": is_current,
+                "selected_as_alma_mater": False,
+                "evidence_url": evidence_url,
+                "evidence_kind": clean_text(manual.get("evidence_kind"))
+                or "manual_profile_transcription",
+                "confidence": clean_text(manual.get("confidence")) or "confirmed",
+                "evidence_text": clean_text(manual.get("evidence_text"))[:500].rstrip(),
+            }
+        )
+
+    for review in destination_reviews or []:
+        person_id = clean_text(review.get("person_id"))
+        if person_id not in people_by_id:
+            continue
+        organization = canonicalize_organization(review.get("organization"))
+        role = clean_text(review.get("role"))
+        affiliation_type = normalized_type(
+            clean_text(review.get("affiliation_type")), role
+        )
+        evidence_url = clean_text(review.get("evidence_url"))
+        if (
+            affiliation_type not in {"employment", "education"}
+            or not valid_affiliation(organization, role)
+            or not evidence_url
+        ):
+            continue
+        end_year = clean_text(review.get("end_year"))
+        is_current = not end_year or (
+            affiliation_type == "education"
+            and end_year.isdigit()
+            and int(end_year) >= as_of_year
+        )
+        rows.append(
+            {
+                "person_id": person_id,
+                "name": clean_text(people_by_id[person_id].get("name")),
+                "organization": organization,
+                "role": role,
+                "affiliation_type": affiliation_type,
+                "start_year": clean_text(review.get("start_year")),
+                "end_year": end_year,
+                "is_current": is_current,
+                "selected_as_alma_mater": False,
+                "evidence_url": evidence_url,
+                "evidence_kind": "destination_source_review",
+                "confidence": clean_text(people_by_id[person_id].get("confidence"))
+                or "confirmed",
+                "evidence_text": clean_text(review.get("review_reason"))[:500].rstrip(),
             }
         )
 
@@ -514,8 +661,19 @@ def build_rows(
             continue
         key = row_key(row)
         existing = deduplicated.get(key)
-        if not existing or len(clean_text(row.get("evidence_text"))) > len(
-            clean_text(existing.get("evidence_text"))
+        row_is_review = row.get("evidence_kind") == "destination_source_review"
+        existing_is_review = bool(
+            existing
+            and existing.get("evidence_kind") == "destination_source_review"
+        )
+        if (
+            not existing
+            or (row_is_review and not existing_is_review)
+            or (
+                row_is_review == existing_is_review
+                and len(clean_text(row.get("evidence_text")))
+                > len(clean_text(existing.get("evidence_text")))
+            )
         ):
             deduplicated[key] = row
     rows = list(deduplicated.values())
@@ -574,9 +732,20 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--people", type=Path, default=DEFAULT_PEOPLE)
     parser.add_argument("--exa-audit", type=Path, default=DEFAULT_EXA_AUDIT)
+    parser.add_argument("--exa-profiles", type=Path, default=DEFAULT_EXA_PROFILES)
     parser.add_argument("--identities", type=Path, default=DEFAULT_IDENTITIES)
     parser.add_argument("--affiliations", type=Path, default=DEFAULT_AFFILIATIONS)
     parser.add_argument("--verified", type=Path, default=DEFAULT_VERIFIED)
+    parser.add_argument(
+        "--manual-affiliations",
+        type=Path,
+        default=DEFAULT_MANUAL_AFFILIATIONS,
+    )
+    parser.add_argument(
+        "--destination-reviews",
+        type=Path,
+        default=DEFAULT_DESTINATION_REVIEWS,
+    )
     parser.add_argument("--rejections", type=Path, default=DEFAULT_REJECTIONS)
     parser.add_argument("--output-csv", type=Path, default=DEFAULT_CSV)
     parser.add_argument("--output-json", type=Path, default=DEFAULT_JSON)
@@ -584,14 +753,22 @@ def main() -> int:
     args = parser.parse_args()
 
     audit = json.loads(args.exa_audit.read_text(encoding="utf-8"))
+    profile_audit = (
+        json.loads(args.exa_profiles.read_text(encoding="utf-8"))
+        if args.exa_profiles.exists()
+        else {"profiles": []}
+    )
     rows = build_rows(
         json.loads(args.people.read_text(encoding="utf-8")),
-        audit.get("searches", []),
+        audit.get("searches", [])
+        + profile_search_records(profile_audit.get("profiles", [])),
         json.loads(args.identities.read_text(encoding="utf-8")),
         json.loads(args.affiliations.read_text(encoding="utf-8")),
         load_csv(args.verified),
+        load_csv(args.manual_affiliations),
         load_csv(args.rejections),
         args.as_of_year,
+        load_destination_reviews(args.destination_reviews),
     )
     write_outputs(rows, args.output_csv, args.output_json)
     print(

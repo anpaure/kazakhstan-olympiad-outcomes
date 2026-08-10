@@ -11,6 +11,17 @@
     "evidence_url": "https://linkedin.com/in/abilmuzhubayev"
   },
   {
+    "person_id": "kaz-408aa9ea598e",
+    "name": "Abylay Samatov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Karaganda, Kazakhstan",
+    "evidence_url": "https://inkaraganda.kz/novosti/obshhestvo/pedagog-po-himii-iz-karagandy-podgotovil-bolee-10-pobeditelej-mezhdunarodnyh-intellektualnyh-sorevnovanij/",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The cited role profile places BIL No. 1 and Samatov's principal and teaching work in Karaganda Kazakhstan."
+  },
+  {
     "person_id": "kaz-c898d5674745",
     "name": "Adil Baiguzhin",
     "country_code": "KZ",
@@ -77,6 +88,28 @@
     "evidence_url": "https://www.linkedin.com/in/adilkhan-sarsen-b62749140/"
   },
   {
+    "person_id": "kaz-96fed62edd90",
+    "name": "Adilzhan Ismailov",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://uk.linkedin.com/in/adilzhanismailov"
+  },
+  {
+    "person_id": "kaz-af55ed678a4e",
+    "name": "Aibek Myrzatay",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/eyebaek/"
+  },
+  {
     "person_id": "kaz-845e316f4e10",
     "name": "Aibek Umbetalin",
     "country_code": "KZ",
@@ -97,6 +130,50 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://www.linkedin.com/in/aidarzhetessov"
+  },
+  {
+    "person_id": "kaz-66f479eb4560",
+    "name": "Aidos Kuatov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/aidoskuatov"
+  },
+  {
+    "person_id": "kaz-dd3a643dd7b7",
+    "name": "Aiganym Baltashova",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "South Korea",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/aiganym-baltashova"
+  },
+  {
+    "person_id": "kaz-f3a805a1727a",
+    "name": "Aivar Abrashuly",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/aivar-abrashuly-754163156"
+  },
+  {
+    "person_id": "kaz-3c4d427574a2",
+    "name": "Aizana Turmukhametova",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/aizana-turmukhametova-95b31b19"
   },
   {
     "person_id": "kaz-ec80d9fc8daf",
@@ -121,6 +198,28 @@
     "evidence_url": "https://kz.linkedin.com/in/404akhan"
   },
   {
+    "person_id": "kaz-6ff2bc2176bd",
+    "name": "Alen Abdrakhmanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://kz.linkedin.com/in/alen-abdrakhmanov"
+  },
+  {
+    "person_id": "kaz-b045af74dc39",
+    "name": "Alen Bayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/alen-bayev-1402012bb"
+  },
+  {
     "person_id": "kaz-094a17bb49f6",
     "name": "Alexander Averjanov",
     "country_code": "RU",
@@ -141,6 +240,50 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://kz.linkedin.com/in/supertorex"
+  },
+  {
+    "person_id": "kaz-e2c1785c3b0f",
+    "name": "Alexey Tsekhovoy",
+    "country_code": "DE",
+    "country_name": "Germany",
+    "location_label": "Germany",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://de.linkedin.com/in/alexey-tsekhovoy-7a75b4257"
+  },
+  {
+    "person_id": "kaz-0622dfe9a63f",
+    "name": "Ali Dautalinov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/ali-dautalinov"
+  },
+  {
+    "person_id": "kaz-f4ec7f952510",
+    "name": "Ali-Amir Aldan",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/ali-amir-aldan-a2b81b46"
+  },
+  {
+    "person_id": "kaz-abe907ea7b16",
+    "name": "Alibek Aldangarov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Berkeley, California, United States",
+    "evidence_url": "https://www.linkedin.com/in/alibek-a-124731244/",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed public LinkedIn profile exposes Berkeley, California, United States as its location."
   },
   {
     "person_id": "kaz-15c5ca0ee628",
@@ -231,6 +374,17 @@
     "evidence_url": "https://linkedin.com/in/fracta1l"
   },
   {
+    "person_id": "kaz-6e64602de321",
+    "name": "Aman Sariyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/aman-sariyev"
+  },
+  {
     "person_id": "kaz-f0c3ebfd6e9a",
     "name": "Aman Zhumekeshov",
     "country_code": "KZ",
@@ -240,6 +394,28 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://kz.linkedin.com/in/aman-zhumekeshov-a9156630"
+  },
+  {
+    "person_id": "kaz-95803b7b2c5f",
+    "name": "Amanzhol Kuantay",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://hk.linkedin.com/in/amanzholkuantay"
+  },
+  {
+    "person_id": "kaz-380ff32a092b",
+    "name": "Amir Bralin",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/amirbralin"
   },
   {
     "person_id": "kaz-67db791fca33",
@@ -297,6 +473,17 @@
     "review_reason": "Country comes from the accepted structured affiliation record."
   },
   {
+    "person_id": "kaz-5b00b5124ff5",
+    "name": "Andrey Kim",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/kimandrik"
+  },
+  {
     "person_id": "kaz-f9ab6cbeaa06",
     "name": "Andrey Sapronov",
     "country_code": "DE",
@@ -319,6 +506,39 @@
     "evidence_url": "https://de.linkedin.com/in/anel-orazgaliyeva"
   },
   {
+    "person_id": "kaz-310c08212560",
+    "name": "Anton Morgunov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/anmorgunov"
+  },
+  {
+    "person_id": "kaz-c9401ed42eb0",
+    "name": "Anuar Nurtazin",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://kz.linkedin.com/in/anuarnurtazin01"
+  },
+  {
+    "person_id": "kaz-2b2d1a08a130",
+    "name": "Arnat Balabiyev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/arnat-balabiyev"
+  },
+  {
     "person_id": "kaz-8bfc979cedef",
     "name": "Arnur Makenov",
     "country_code": "CH",
@@ -328,6 +548,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://ch.linkedin.com/in/makenov"
+  },
+  {
+    "person_id": "kaz-4fe09b624ebf",
+    "name": "Artur Kim",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/artur-kim-983558282"
   },
   {
     "person_id": "kaz-32bc606217ec",
@@ -396,6 +627,17 @@
     "evidence_url": "https://linkedin.com/in/ayansegizbay"
   },
   {
+    "person_id": "kaz-e252a91b0399",
+    "name": "Ayat Tassanov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/ayattasanov"
+  },
+  {
     "person_id": "kaz-8fe9da4c845a",
     "name": "Azamat Abilkhanov",
     "country_code": "KZ",
@@ -462,6 +704,28 @@
     "evidence_url": "https://uk.linkedin.com/in/azamat-ukpegaziyev-868b1947"
   },
   {
+    "person_id": "kaz-c1c692af0296",
+    "name": "Azizkhan Almakhan",
+    "country_code": "CH",
+    "country_name": "Switzerland",
+    "location_label": "Switzerland",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/azizkhan-almakhan-1652b952"
+  },
+  {
+    "person_id": "kaz-ce11e3134fa1",
+    "name": "Baizak Kudaibergenov",
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "location_label": "United Arab Emirates",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/baizaq"
+  },
+  {
     "person_id": "kaz-da119ef48a6d",
     "name": "Batyr Sardarbekov",
     "country_code": "KZ",
@@ -495,6 +759,28 @@
     "evidence_url": "https://kz.linkedin.com/in/bbektemir"
   },
   {
+    "person_id": "kaz-674fe7c75a81",
+    "name": "Bekzhan Bekbolatuly",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/bekzhan29"
+  },
+  {
+    "person_id": "kaz-12d9dc922ba8",
+    "name": "Bogdan Zagribelnyy",
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "location_label": "United Arab Emirates",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/bogdanzagribelnyy"
+  },
+  {
     "person_id": "kaz-679b5f1e598a",
     "name": "Bulat Biizhanov",
     "country_code": "KZ",
@@ -515,6 +801,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://linkedin.com/in/daniilmel"
+  },
+  {
+    "person_id": "kaz-3be79cb80aa3",
+    "name": "Daniil Shatokhin",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/daniil-shatokhin-9a69b7297"
   },
   {
     "person_id": "kaz-f8f0e6bb7675",
@@ -548,6 +845,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://kz.linkedin.com/in/daniyar-frm"
+  },
+  {
+    "person_id": "kaz-c1c8ab962b25",
+    "name": "Daniyar Zakarin",
+    "country_code": "IT",
+    "country_name": "Italy",
+    "location_label": "Italy",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/daniyarzt"
   },
   {
     "person_id": "kaz-f721e7240925",
@@ -627,6 +935,39 @@
     "evidence_url": "https://linkedin.com/in/dauren-muratov-1a114676"
   },
   {
+    "person_id": "kaz-ac8d11f139c6",
+    "name": "David Li",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Russia",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://ru.linkedin.com/in/david-li-ab07b332b"
+  },
+  {
+    "person_id": "kaz-462ea4363511",
+    "name": "Denis Ovchinnikov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/denis-ovchinnikov-math"
+  },
+  {
+    "person_id": "kaz-c5f47f6f2526",
+    "name": "Dias Suleimenov",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/dias-suleimenov-23888828b"
+  },
+  {
     "person_id": "kaz-2fe78cfd647b",
     "name": "Dinmukhammed Nurbek",
     "country_code": "KZ",
@@ -636,6 +977,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://linkedin.com/in/dinmukhammed-nurbek"
+  },
+  {
+    "person_id": "kaz-4e3828c7955c",
+    "name": "Diyar Mailepessov",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/diyar-mailepessov-5828b722"
   },
   {
     "person_id": "kaz-49e2c68e6afb",
@@ -682,6 +1034,17 @@
     "evidence_url": "https://linkedin.com/in/yeldos-samalov-396a1666"
   },
   {
+    "person_id": "kaz-087d239f6acf",
+    "name": "Fetullakh Sam",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/fetullakh-sam-108a08225"
+  },
+  {
     "person_id": "kaz-6ea5dd0e4291",
     "name": "Furkat Mukhtarov",
     "country_code": "US",
@@ -713,6 +1076,39 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://www.linkedin.com/in/gani-nazirov"
+  },
+  {
+    "person_id": "kaz-4c524655befe",
+    "name": "Guldana Abduali",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "South Korea",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://kr.linkedin.com/in/guldana-abduali"
+  },
+  {
+    "person_id": "kaz-afd3a80b5994",
+    "name": "Igor Ganichev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/igor-ganichev-067bba16"
+  },
+  {
+    "person_id": "kaz-3007575deed1",
+    "name": "Igor Stassiy",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/istassiy"
   },
   {
     "person_id": "kaz-9dadae71693b",
@@ -770,6 +1166,17 @@
     "evidence_url": "https://linkedin.com/in/kairat-zhubayev-150785174"
   },
   {
+    "person_id": "kaz-e266aa85e93e",
+    "name": "Kaisarbek Omirzakhov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/kaisarbek"
+  },
+  {
     "person_id": "kaz-b60a544a248a",
     "name": "Kanat Satylkhanov",
     "country_code": "KZ",
@@ -779,6 +1186,28 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://linkedin.com/in/kanat-satylkhanov-bb205080"
+  },
+  {
+    "person_id": "kaz-492c4144387e",
+    "name": "Kassym Mukhanbetiyar",
+    "country_code": "IT",
+    "country_name": "Italy",
+    "location_label": "Italy",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/kassymm/"
+  },
+  {
+    "person_id": "kaz-a875a18e20f1",
+    "name": "Kazhymurat Aknazar",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_url": "https://www.thecrimson.com/article/2021/11/30/aknazar-remembered-as-kind-and-brilliant/",
+    "evidence_kind": "affiliation_country",
+    "confidence": "confirmed",
+    "review_reason": "Outcome country follows the reviewed Harvard affiliation; the LinkedIn header predates Harvard and still exposes the former Kazakhstan school location."
   },
   {
     "person_id": "kaz-2d9952af7ca2",
@@ -792,6 +1221,17 @@
     "evidence_url": "https://linkedin.com/in/khafiz-zhumadil-8130571a6"
   },
   {
+    "person_id": "kaz-9dc89c027c6a",
+    "name": "Khaidar Kairbek",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/khaidar-kairbek"
+  },
+  {
     "person_id": "kaz-22487c0da1b1",
     "name": "Khairosh Yerzhan",
     "country_code": "QA",
@@ -801,6 +1241,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://linkedin.com/in/khairosh"
+  },
+  {
+    "person_id": "kaz-8d1b7be09dcf",
+    "name": "Kibriyanur Abdugafarova",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "South Korea",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://kr.linkedin.com/in/kibriyanur-abdugafarova"
   },
   {
     "person_id": "kaz-79f187c010c6",
@@ -825,6 +1276,28 @@
     "evidence_url": "https://linkedin.com/in/kuandyk-altynkhanov-9b591ba9"
   },
   {
+    "person_id": "kaz-6a1491f166e0",
+    "name": "Kuat Yessenov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/kuat-yessenov-b1b188b3"
+  },
+  {
+    "person_id": "kaz-74fe1fe53ea1",
+    "name": "Madi Khamitbekov",
+    "country_code": "CA",
+    "country_name": "Canada",
+    "location_label": "Canada",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/khmadi"
+  },
+  {
     "person_id": "kaz-0bab17661adc",
     "name": "Madiyar Aitbayev",
     "country_code": "GB",
@@ -834,6 +1307,39 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://linkedin.com/in/aitbayev"
+  },
+  {
+    "person_id": "kaz-776ae509d19e",
+    "name": "Mansur Mukimbekov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/mansurmukimbekov"
+  },
+  {
+    "person_id": "kaz-b32bd2df1cfe",
+    "name": "Mansur Taimas",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "South Korea",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/mansur-taimas"
+  },
+  {
+    "person_id": "kaz-a125f99f4940",
+    "name": "Marat Shotanov",
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "location_label": "United Arab Emirates",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://ae.linkedin.com/in/marat-shotanov"
   },
   {
     "person_id": "kaz-3dd740673c5d",
@@ -847,6 +1353,17 @@
     "evidence_url": "https://kz.linkedin.com/in/maxat-aipanov-192903a3"
   },
   {
+    "person_id": "kaz-be6c0520f71e",
+    "name": "Maxim Shpilkin",
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "location_label": "United Arab Emirates",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/maxim-shpilkin"
+  },
+  {
     "person_id": "kaz-c97c1b9e1718",
     "name": "Medet Zhanbulatuly",
     "country_code": "SG",
@@ -856,6 +1373,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://sg.linkedin.com/in/medet-zhanbulatuly-0b009884"
+  },
+  {
+    "person_id": "kaz-2523ce5463b9",
+    "name": "Meiirbek Baimuratov",
+    "country_code": "IT",
+    "country_name": "Italy",
+    "location_label": "Italy",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/meiirbek-baimuratov/"
   },
   {
     "person_id": "kaz-8b4bb46b3041",
@@ -913,6 +1441,28 @@
     "evidence_url": "https://kz.linkedin.com/in/miras-bekbergenov-73b54a231"
   },
   {
+    "person_id": "kaz-a8612d505db7",
+    "name": "Miras Myrzakerey",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/miras-myrzakerey-b37529101"
+  },
+  {
+    "person_id": "kaz-69f40396a2e9",
+    "name": "Mukhammadarif Sakhmoldin",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://hk.linkedin.com/in/mukhammadarifsakhmoldin"
+  },
+  {
     "person_id": "kaz-b2785ae44f62",
     "name": "Murat Zhaksylykovich Shagirov",
     "country_code": "SG",
@@ -946,6 +1496,17 @@
     "evidence_url": "https://kz.linkedin.com/in/nazar-serazitdinov-2030a229b"
   },
   {
+    "person_id": "kaz-ce2eeb5d3d04",
+    "name": "Nazarbek Altybay",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://uk.linkedin.com/in/nazarbek"
+  },
+  {
     "person_id": "kaz-999af747a5a2",
     "name": "Nurassyl Serik",
     "country_code": "KZ",
@@ -968,6 +1529,28 @@
     "evidence_url": "https://kz.linkedin.com/in/nurbol-duisenbayev"
   },
   {
+    "person_id": "kaz-7bc4b3d48a29",
+    "name": "Nurdaulet Kemel",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://hk.linkedin.com/in/nurdauletkemel"
+  },
+  {
+    "person_id": "kaz-b788eb650e7a",
+    "name": "Nurgali Arystanov",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "South Korea",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/nurgali-arystanov-07548042"
+  },
+  {
     "person_id": "kaz-92adb8a08f0e",
     "name": "Nurgul Yegenbergenova",
     "country_code": "KZ",
@@ -977,6 +1560,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://linkedin.com/in/nurgul-yegenbergenova-395548347"
+  },
+  {
+    "person_id": "kaz-2732f0e135fa",
+    "name": "Nurislam Tursynbek",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/nurislam-tursynbek-0a8620ab"
   },
   {
     "person_id": "kaz-633cb9726092",
@@ -1034,6 +1628,17 @@
     "evidence_url": "https://kz.linkedin.com/in/nurtas-shyntas-54b850199"
   },
   {
+    "person_id": "kaz-d1a89ad778a3",
+    "name": "Nurzhan Bakibayev",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/hypuk"
+  },
+  {
     "person_id": "kaz-64365e0c312d",
     "name": "Nurzhan Nagashbekov",
     "country_code": "KZ",
@@ -1043,6 +1648,17 @@
     "evidence_kind": "affiliation_country",
     "confidence": "probable",
     "review_reason": "Country comes from the accepted structured affiliation record."
+  },
+  {
+    "person_id": "kaz-f2b0c2f36f45",
+    "name": "Nurzhan Ustemirov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/nurzhan"
   },
   {
     "person_id": "kaz-ef4bc11dbc64",
@@ -1078,6 +1694,28 @@
     "evidence_url": "https://linkedin.com/in/pkyzyrkanov"
   },
   {
+    "person_id": "kaz-01957a6accca",
+    "name": "Pavel Levchenko",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://kz.linkedin.com/in/pavel-levchenko-a315041a7"
+  },
+  {
+    "person_id": "kaz-8db1b6d8afd7",
+    "name": "Raiymbek Baishuak",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/raiymbek-baishuak-6a1892245"
+  },
+  {
     "person_id": "kaz-07372798186f",
     "name": "Rakhim Baimurzin",
     "country_code": "KZ",
@@ -1111,6 +1749,17 @@
     "evidence_url": "https://linkedin.com/in/rashidamirov"
   },
   {
+    "person_id": "kaz-b596c2a8a5f9",
+    "name": "Rassul Karabalin",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "http://www.linkedin.com/in/rassul"
+  },
+  {
     "person_id": "kaz-a7e23606a27b",
     "name": "Rassul Magauin",
     "country_code": "KZ",
@@ -1120,6 +1769,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://kz.linkedin.com/in/rassul-magauin"
+  },
+  {
+    "person_id": "kaz-2d3646888fa9",
+    "name": "Rauan Kaldybayev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/rkaldybayev"
   },
   {
     "person_id": "kaz-264dfb257029",
@@ -1133,6 +1793,17 @@
     "evidence_url": "https://ie.linkedin.com/in/rauanrakhmet"
   },
   {
+    "person_id": "kaz-a2011ec03297",
+    "name": "Renat Bekbolatov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/bekbolatov"
+  },
+  {
     "person_id": "kaz-07b1a7ba2159",
     "name": "Renat Shaimardanov",
     "country_code": "KZ",
@@ -1142,6 +1813,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://linkedin.com/in/renatshaimardanov"
+  },
+  {
+    "person_id": "kaz-166b996bb739",
+    "name": "Rinat Ilyussizov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/rinat-ilyussizov-4b1b9b290"
   },
   {
     "person_id": "kaz-5529282c441f",
@@ -1210,6 +1892,17 @@
     "evidence_url": "https://kz.linkedin.com/in/sanzhar-bissenali-323103260"
   },
   {
+    "person_id": "kaz-62d816e1ec2d",
+    "name": "Sanzhar Karatayev",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://sg.linkedin.com/in/sanzharedu"
+  },
+  {
     "person_id": "kaz-2c30c8a4a543",
     "name": "Sanzhar Nurgaliyev",
     "country_code": "KZ",
@@ -1230,6 +1923,17 @@
     "evidence_kind": "affiliation_country",
     "confidence": "probable",
     "review_reason": "Country comes from the accepted structured affiliation record."
+  },
+  {
+    "person_id": "kaz-32373fc425de",
+    "name": "Sergazy Kalmurzayev",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://uk.linkedin.com/in/sergazy-kalmurzayev-2ba468231"
   },
   {
     "person_id": "kaz-0f9baaef8ac0",
@@ -1254,6 +1958,17 @@
     "evidence_url": "https://www.linkedin.com/in/shaikhitdin"
   },
   {
+    "person_id": "kaz-e894ef915410",
+    "name": "Shyngys Aitkazinov",
+    "country_code": "CH",
+    "country_name": "Switzerland",
+    "location_label": "Switzerland",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://ch.linkedin.com/in/shyngys-aitkazinov-00496b193"
+  },
+  {
     "person_id": "kaz-84b6c6673e87",
     "name": "Shyngys Bilyalov",
     "country_code": "SG",
@@ -1263,6 +1978,28 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://sg.linkedin.com/in/shyngys-bilyalov-23b6b819b"
+  },
+  {
+    "person_id": "kaz-2a649bf1de05",
+    "name": "Sultan Aitekenov",
+    "country_code": "CA",
+    "country_name": "Canada",
+    "location_label": "Canada",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://ca.linkedin.com/in/sultan-aitekenov"
+  },
+  {
+    "person_id": "kaz-c884dd65cdc8",
+    "name": "Sultan Dalipov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://kz.linkedin.com/in/sultan-dalipov-620ba924"
   },
   {
     "person_id": "kaz-40d2fa33ec3e",
@@ -1276,6 +2013,17 @@
     "evidence_url": "https://kz.linkedin.com/in/syrymbet-iskakov-42335a20"
   },
   {
+    "person_id": "kaz-bda0b6a1ab68",
+    "name": "Taimas Korganbayev",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/taimas-korganbayev-a19b75211"
+  },
+  {
     "person_id": "kaz-7907a5491483",
     "name": "Talgat Ismukhamedov",
     "country_code": "KZ",
@@ -1285,6 +2033,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://ae.linkedin.com/in/talgat-ismukhamedov-a7b77323"
+  },
+  {
+    "person_id": "kaz-7b9ddf320af6",
+    "name": "Talgat Sailov",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://sg.linkedin.com/in/talgat-sailov-75552947"
   },
   {
     "person_id": "kaz-135e810b92e0",
@@ -1310,7 +2069,7 @@
   },
   {
     "person_id": "kaz-dcb24ecb815a",
-    "name": "Temirlan Amangeldin",
+    "name": "Temirlan Amangeldinov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Kazakhstan",
@@ -1320,15 +2079,26 @@
     "evidence_url": "https://linkedin.com/in/temirlan-amangeldinov"
   },
   {
-    "person_id": "kaz-4cae7d810c63",
-    "name": "Temirlan Amangeldinov",
+    "person_id": "kaz-c6c074aef2cf",
+    "name": "Temirlan Baibolov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Kazakhstan",
     "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
-    "evidence_url": "https://kz.linkedin.com/in/temirlan-amangeldinov"
+    "evidence_url": "https://linkedin.com/in/bthero"
+  },
+  {
+    "person_id": "kaz-c91345744362",
+    "name": "Temirlan Ismagulov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://kz.linkedin.com/in/temirlan-ismagulov-766740206"
   },
   {
     "person_id": "kaz-d19956e64f90",
@@ -1364,6 +2134,28 @@
     "evidence_url": "https://kz.linkedin.com/in/timur-murat-2a1735333"
   },
   {
+    "person_id": "kaz-47297d0b8770",
+    "name": "Tolebi Sailauov",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://uk.linkedin.com/in/tolebi-sailauov-phd"
+  },
+  {
+    "person_id": "kaz-36f5d4e0f896",
+    "name": "Van Li",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "South Korea",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/van-li-972a8a2b8"
+  },
+  {
     "person_id": "kaz-e7f80acbcb7b",
     "name": "Viktor Passichenko",
     "country_code": "US",
@@ -1384,6 +2176,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://tr.linkedin.com/in/vitaliy-tsvayer"
+  },
+  {
+    "person_id": "kaz-fe0afafbd5f3",
+    "name": "Vladimir Bychkov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/vladimir-bychkov-98954252"
   },
   {
     "person_id": "kaz-de970224e20f",
@@ -1419,6 +2222,28 @@
     "evidence_url": "https://www.linkedin.com/in/vladislav-kamysbayev-83bb81181"
   },
   {
+    "person_id": "kaz-dd50209a641b",
+    "name": "Vyacheslav Li",
+    "country_code": "NL",
+    "country_name": "Netherlands",
+    "location_label": "Netherlands",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://nl.linkedin.com/in/vyacheslav-li"
+  },
+  {
+    "person_id": "kaz-41f531ed3520",
+    "name": "Yegor Klochkov",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://uk.linkedin.com/in/yegor-klochkov-1a06a093"
+  },
+  {
     "person_id": "kaz-a93118601e76",
     "name": "Yerdos Ordabayev",
     "country_code": "US",
@@ -1452,6 +2277,17 @@
     "evidence_url": "https://sa.linkedin.com/in/yermek-kaipov-50525632"
   },
   {
+    "person_id": "kaz-77d19cd54c33",
+    "name": "Yernar Batyrzhanov",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "South Korea",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/yernar-batyrzhanov-166028228"
+  },
+  {
     "person_id": "kaz-59b5ec3d2687",
     "name": "Yernaz Satybaldiyev",
     "country_code": "KZ",
@@ -1463,6 +2299,17 @@
     "evidence_url": "https://kz.linkedin.com/in/yernaz-satybaldiyev"
   },
   {
+    "person_id": "kaz-518d651456c7",
+    "name": "Yerniyaz Nurgabylov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/yerniyaz-nurgabylov-701b83121"
+  },
+  {
     "person_id": "kaz-26886bea5396",
     "name": "Yernur Rysmagambetov",
     "country_code": "KZ",
@@ -1472,6 +2319,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://kz.linkedin.com/in/yernur-rysmagambetov"
+  },
+  {
+    "person_id": "kaz-1725a7f689f9",
+    "name": "Yersultan Pitebay",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://linkedin.com/in/yersultan-pitebay-81bb9a2bb"
   },
   {
     "person_id": "kaz-28588384ab57",
@@ -1516,6 +2374,17 @@
     "evidence_kind": "career_source_location",
     "confidence": "confirmed",
     "review_reason": "NSTU's current faculty roster places the accepted professor in Novosibirsk Russia."
+  },
+  {
+    "person_id": "kaz-3357e6338568",
+    "name": "Yevgeniy Zagayevskiy",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://www.linkedin.com/in/yevgeniy-zagayevskiy"
   },
   {
     "person_id": "kaz-36fb8d2c335b",
@@ -1582,6 +2451,28 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://linkedin.com/in/zdatbayev"
+  },
+  {
+    "person_id": "kaz-c412a21c7fc6",
+    "name": "Zhanibek Kaimuldenov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://kz.linkedin.com/in/zhanibek-kaimuldenov-5567b7124"
+  },
+  {
+    "person_id": "kaz-d7f55daeca5c",
+    "name": "Zhanybek Alpichshev",
+    "country_code": "AT",
+    "country_name": "Austria",
+    "location_label": "Austria",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Country code is exposed in the accepted public profile location.",
+    "evidence_url": "https://at.linkedin.com/in/zhanybek-alpichshev-41bb4b207"
   },
   {
     "person_id": "kaz-f67b534425a5",

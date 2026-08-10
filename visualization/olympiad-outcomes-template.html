@@ -58,17 +58,14 @@
         <option value="IChO">IChO</option>
       </select>
     </label>
-    <label class="form-label">Current country
+    <label class="form-label">Outcome country
       <select class="form-select" data-control="country">
         <option value="all">All countries</option>
       </select>
     </label>
-    <label class="form-label">Rank destinations by
-      <select class="form-select" data-control="metric">
-        <option value="organization">Organization</option>
-        <option value="roleCategory">Role family</option>
-        <option value="organizationCategory">Sector</option>
-        <option value="country">Current country</option>
+    <label class="form-label">Sector
+      <select class="form-select" data-control="sector">
+        <option value="all">All sectors</option>
       </select>
     </label>
     <label class="form-label">Sort people by
@@ -83,19 +80,33 @@
     <label class="form-label">Find a person
       <input class="form-control" data-control="search" type="search" placeholder="Name, job, school, year">
     </label>
-    <div class="form-label">
-      <span>Organization type</span>
-      <button class="iso-filter-toggle" data-control="companies-only" type="button" aria-pressed="false" aria-label="Show companies only">Companies only</button>
-    </div>
   </div>
 
-  <div class="iso-chart-grid">
+  <div class="iso-ranking-grid">
     <section>
-      <h3 data-chart-title>Top destinations</h3>
-      <div class="iso-bar-chart" data-chart="destinations"></div>
-      <button class="iso-chart-toggle" data-control="destination-expand" type="button" aria-expanded="false" hidden>Show more organizations</button>
+      <h3>Companies &amp; organizations</h3>
+      <div class="iso-ranked-scroll" tabindex="0" aria-label="Ranked companies and organizations">
+        <div class="iso-bar-chart" data-chart="companies"></div>
+      </div>
     </section>
     <section>
+      <h3>Educational institutions</h3>
+      <div class="iso-ranked-scroll" tabindex="0" aria-label="Ranked educational institutions">
+        <div class="iso-bar-chart" data-chart="education"></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="iso-analysis-grid">
+    <section>
+      <h3>Sector distribution</h3>
+      <div class="iso-pie-chart" data-chart="sectors"></div>
+    </section>
+    <section>
+      <h3>Outcome-country distribution</h3>
+      <div class="iso-pie-chart" data-chart="countries"></div>
+    </section>
+    <section class="iso-coverage-panel">
       <h3>Research coverage by olympiad</h3>
       <div class="iso-coverage-chart" data-chart="coverage"></div>
     </section>
@@ -108,8 +119,20 @@
       <thead>
         <tr>
           <th>Alumnus</th>
-          <th>Olympiad</th>
-          <th>Destination</th>
+          <th>
+            <span class="iso-th-label">Olympiad
+              <button class="iso-sort-button" data-sort-header="year" type="button" aria-label="Sort by Olympiad year" title="Sort by Olympiad year">
+                <i data-lucide="arrow-up-down"></i>
+              </button>
+            </span>
+          </th>
+          <th>
+            <span class="iso-th-label">Destination
+              <button class="iso-sort-button" data-sort-header="destination" type="button" aria-label="Sort by destination" title="Sort by destination">
+                <i data-lucide="arrow-up-down"></i>
+              </button>
+            </span>
+          </th>
           <th>Role</th>
           <th>Alma mater</th>
           <th>Country</th>
@@ -232,8 +255,7 @@
       minmax(0, 1fr)
       minmax(0, 1.1fr)
       minmax(0, 1.25fr)
-      minmax(0, 1.1fr)
-      minmax(0, 1fr);
+      minmax(0, 1.1fr);
     gap: 12px;
     align-items: end;
     margin-bottom: 24px;
@@ -249,8 +271,7 @@
     font-weight: 600;
   }
   #iso-outcomes-viz .form-select,
-  #iso-outcomes-viz .form-control,
-  #iso-outcomes-viz .iso-filter-toggle {
+  #iso-outcomes-viz .form-control {
     width: 100%;
     height: 38px;
     padding: 0 10px;
@@ -262,65 +283,48 @@
     font-size: 14px;
   }
   #iso-outcomes-viz .form-select:focus,
-  #iso-outcomes-viz .form-control:focus,
-  #iso-outcomes-viz .iso-filter-toggle:focus-visible {
+  #iso-outcomes-viz .form-control:focus {
     border-color: var(--iso-ring);
     outline: 2px solid color-mix(in srgb, var(--iso-ring) 25%, transparent);
     outline-offset: 1px;
   }
-  #iso-outcomes-viz .iso-filter-toggle {
-    cursor: pointer;
-    font-weight: 650;
-    text-align: center;
-  }
-  #iso-outcomes-viz .iso-filter-toggle[aria-pressed="true"] {
-    border-color: var(--iso-primary);
-    color: #ffffff;
-    background: var(--iso-primary);
-  }
-  #iso-outcomes-viz .iso-chart-toggle {
-    display: block;
-    min-height: 36px;
-    margin: 8px auto 0;
-    padding: 6px 12px;
-    border: 1px solid var(--iso-border);
-    border-radius: 4px;
-    color: var(--iso-primary);
-    background: var(--iso-surface);
-    cursor: pointer;
-    font: inherit;
-    font-size: 13px;
-    font-weight: 650;
-  }
-  #iso-outcomes-viz .iso-chart-toggle:hover {
-    border-color: var(--iso-primary);
-    background: color-mix(in srgb, var(--iso-accent) 45%, var(--iso-surface));
-  }
-  #iso-outcomes-viz .iso-chart-toggle:focus-visible {
-    outline: 2px solid var(--iso-ring);
-    outline-offset: 2px;
-  }
-  #iso-outcomes-viz .iso-chart-toggle[hidden] {
-    display: none;
-  }
-  #iso-outcomes-viz .iso-chart-grid {
+  #iso-outcomes-viz .iso-ranking-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.9fr);
-    gap: 28px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
     align-items: start;
   }
-  #iso-outcomes-viz .iso-chart-grid section {
+  #iso-outcomes-viz .iso-analysis-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 0.9fr) minmax(320px, 1.2fr);
+    gap: 18px;
+    align-items: stretch;
+    margin-top: 18px;
+  }
+  #iso-outcomes-viz .iso-ranking-grid section,
+  #iso-outcomes-viz .iso-analysis-grid section {
     min-width: 0;
     padding: 16px;
     border: 1px solid var(--iso-border);
     border-radius: 6px;
     background: var(--iso-surface);
   }
-  #iso-outcomes-viz .iso-bar-chart,
+  #iso-outcomes-viz .iso-ranked-scroll {
+    height: 390px;
+    overflow: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+  #iso-outcomes-viz .iso-ranked-scroll:focus-visible {
+    outline: 2px solid var(--iso-ring);
+    outline-offset: 2px;
+  }
+  #iso-outcomes-viz .iso-pie-chart,
   #iso-outcomes-viz .iso-coverage-chart {
     min-height: 330px;
   }
   #iso-outcomes-viz .iso-bar-chart svg,
+  #iso-outcomes-viz .iso-pie-chart svg,
   #iso-outcomes-viz .iso-coverage-chart svg {
     display: block;
     width: 100%;
@@ -331,10 +335,12 @@
     margin-block: 18px 8px;
   }
   #iso-outcomes-viz .iso-bar-chart .bar,
+  #iso-outcomes-viz .iso-pie-chart .slice,
   #iso-outcomes-viz .iso-coverage-chart .segment {
     cursor: pointer;
   }
   #iso-outcomes-viz .iso-bar-chart .bar:focus,
+  #iso-outcomes-viz .iso-pie-chart .slice:focus,
   #iso-outcomes-viz .iso-coverage-chart .segment:focus {
     outline: 2px solid var(--iso-ring);
     outline-offset: 2px;
@@ -390,6 +396,38 @@
     font-weight: 700;
     text-transform: uppercase;
   }
+  #iso-outcomes-viz .iso-th-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  #iso-outcomes-viz .iso-sort-button {
+    display: inline-flex;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: var(--iso-muted-foreground);
+    background: transparent;
+    cursor: pointer;
+  }
+  #iso-outcomes-viz .iso-sort-button:hover,
+  #iso-outcomes-viz .iso-sort-button.is-active {
+    border-color: var(--iso-border);
+    color: var(--iso-primary);
+    background: var(--iso-surface);
+  }
+  #iso-outcomes-viz .iso-sort-button:focus-visible {
+    outline: 2px solid var(--iso-ring);
+    outline-offset: 1px;
+  }
+  #iso-outcomes-viz .iso-sort-button svg {
+    width: 14px;
+    height: 14px;
+  }
   #iso-outcomes-viz .table th:nth-child(1) { width: 16%; }
   #iso-outcomes-viz .table th:nth-child(2) { width: 9%; }
   #iso-outcomes-viz .table th:nth-child(3) { width: 18%; }
@@ -438,6 +476,11 @@
   #iso-outcomes-viz .iso-confidence-cell {
     text-align: center;
   }
+  #iso-outcomes-viz .iso-cell-meta {
+    margin-top: 2px;
+    color: var(--iso-muted-foreground);
+    font-size: 11px;
+  }
   #iso-outcomes-viz .iso-confidence-dot {
     display: inline-block;
     width: 10px;
@@ -471,7 +514,8 @@
     }
   }
   @media (max-width: 900px) {
-    #iso-outcomes-viz .iso-chart-grid {
+    #iso-outcomes-viz .iso-ranking-grid,
+    #iso-outcomes-viz .iso-analysis-grid {
       grid-template-columns: 1fr;
       gap: 18px;
     }
@@ -500,10 +544,14 @@
     #iso-outcomes-viz .iso-controls {
       grid-template-columns: 1fr 1fr;
     }
-    #iso-outcomes-viz .iso-chart-grid section {
+    #iso-outcomes-viz .iso-ranking-grid section,
+    #iso-outcomes-viz .iso-analysis-grid section {
       padding: 12px 8px;
     }
-    #iso-outcomes-viz .iso-bar-chart,
+    #iso-outcomes-viz .iso-ranked-scroll {
+      height: 340px;
+    }
+    #iso-outcomes-viz .iso-pie-chart,
     #iso-outcomes-viz .iso-coverage-chart {
       min-height: 300px;
     }
@@ -574,35 +622,45 @@
   const root = document.getElementById('iso-outcomes-viz');
   const people = /*__DATA__*/[];
   const confidenceRank = { unmatched: 0, candidate: 1, probable: 2, confirmed: 3 };
-  const collapsedDestinationCount = 12;
-  const expandedDestinationCount = 30;
   const confidenceColors = {
     confirmed: 'var(--iso-series-1)',
     probable: 'var(--iso-series-2)',
     candidate: 'var(--iso-series-4)',
     unmatched: 'var(--iso-muted-series)'
   };
+  const sectorColors = new Map([
+    ['Technology & Software', '#0f766e'],
+    ['Finance & Insurance', '#2563eb'],
+    ['Consulting & Professional Services', '#7c3aed'],
+    ['Energy & Natural Resources', '#d97706'],
+    ['Healthcare & Life Sciences', '#be123c'],
+    ['Government & Public Sector', '#475569'],
+    ['Industrial & Manufacturing', '#0891b2'],
+    ['Consumer & Media', '#db2777'],
+    ['Transportation & Infrastructure', '#65a30d'],
+    ['Environment & Nonprofit', '#16a34a'],
+    ['Education & Research', '#9333ea'],
+    ['Independent & Other', '#94a3b8']
+  ]);
   const state = {
     confidence: 'high',
     olympiad: 'all',
     country: 'all',
-    metric: 'organization',
+    sector: 'all',
     sort: 'confidence',
     search: '',
-    companiesOnly: false,
-    destinationsExpanded: false,
-    selectedValue: ''
+    selectedOrganization: ''
   };
 
   const controls = {
     confidence: root.querySelector('[data-control="confidence"]'),
     olympiad: root.querySelector('[data-control="olympiad"]'),
     country: root.querySelector('[data-control="country"]'),
-    metric: root.querySelector('[data-control="metric"]'),
+    sector: root.querySelector('[data-control="sector"]'),
     sort: root.querySelector('[data-control="sort"]'),
     search: root.querySelector('[data-control="search"]'),
-    companiesOnly: root.querySelector('[data-control="companies-only"]'),
-    destinationExpand: root.querySelector('[data-control="destination-expand"]')
+    yearSort: root.querySelector('[data-sort-header="year"]'),
+    destinationSort: root.querySelector('[data-sort-header="destination"]')
   };
 
   if (!people.some(person => person.confidence === 'candidate')) {
@@ -627,6 +685,15 @@
     option.textContent = 'Unknown / not found';
     controls.country.append(option);
   }
+
+  [...new Set(people.map(person => person.sector).filter(Boolean))]
+    .sort(d3.ascending)
+    .forEach(sector => {
+      const option = document.createElement('option');
+      option.value = sector;
+      option.textContent = sector;
+      controls.sector.append(option);
+    });
 
   root.querySelector('[data-stat="canonical"]').textContent = people.length;
   root.querySelector('[data-stat="high-confidence"]').textContent = people.filter(d => confidenceRank[d.confidence] >= 2).length;
@@ -673,6 +740,8 @@
       person.country,
       person.location,
       person.organizationCategory,
+      person.organizationType,
+      person.sector,
       person.roleCategory,
       person.confidence
     ].join(' '));
@@ -686,53 +755,29 @@
       if (state.olympiad !== 'all' && !person.olympiads.includes(state.olympiad)) return false;
       if (state.country === 'unknown' && person.countryCode) return false;
       if (!['all', 'unknown'].includes(state.country) && person.countryCode !== state.country) return false;
-      if (state.companiesOnly && person.organizationCategory !== 'Industry') return false;
+      if (state.sector !== 'all' && person.sector !== state.sector) return false;
       if (!matchesSearch(person, query)) return false;
-      if (!ignoreSelection && state.selectedValue && person[state.metric] !== state.selectedValue) return false;
+      if (!ignoreSelection && state.selectedOrganization && person.organization !== state.selectedOrganization) return false;
       return true;
     });
   }
 
-  function allDestinationData() {
+  function organizationRanking(education) {
     const values = filteredPeople({ ignoreSelection: true })
-      .filter(person => person[state.metric] && person[state.metric] !== 'Unknown');
+      .filter(person => person.organization && (person.organizationType === 'education') === education);
     return d3.rollups(values, group => ({
       count: group.length,
-      people: group.map(person => person.name),
-      category: group[0].organizationCategory
-    }), person => person[state.metric])
+      people: group.map(person => person.name)
+    }), person => person.organization)
       .map(([label, payload]) => ({ label, ...payload }))
       .sort((a, b) => d3.descending(a.count, b.count) || d3.ascending(a.label, b.label));
   }
 
-  function updateDestinationExpand(total) {
-    const button = controls.destinationExpand;
-    const visibleCount = Math.min(
-      state.destinationsExpanded ? expandedDestinationCount : collapsedDestinationCount,
-      total
-    );
-    button.hidden = total <= collapsedDestinationCount;
-    button.setAttribute('aria-expanded', String(state.destinationsExpanded));
-    const additionalCount = Math.min(expandedDestinationCount, total) - visibleCount;
-    const nouns = {
-      organization: state.companiesOnly ? ['company', 'companies'] : ['organization', 'organizations'],
-      roleCategory: ['role family', 'role families'],
-      organizationCategory: ['sector', 'sectors'],
-      country: ['country', 'countries']
-    }[state.metric];
-    button.textContent = state.destinationsExpanded
-      ? `Show fewer ${nouns[1]}`
-      : `Show ${additionalCount} more ${additionalCount === 1 ? nouns[0] : nouns[1]}`;
-  }
-
-  function drawDestinations() {
-    const container = root.querySelector('[data-chart="destinations"]');
-    const allData = allDestinationData();
-    const limit = state.destinationsExpanded ? expandedDestinationCount : collapsedDestinationCount;
-    const data = allData.slice(0, limit);
-    updateDestinationExpand(allData.length);
-    const width = Math.max(320, container.clientWidth || 560);
-    const margin = { top: 12, right: 42, bottom: 34, left: width < 460 ? 130 : 200 };
+  function drawOrganizationRanking(chartName, education) {
+    const container = root.querySelector(`[data-chart="${chartName}"]`);
+    const data = organizationRanking(education);
+    const width = Math.max(300, container.clientWidth || 560);
+    const margin = { top: 10, right: 38, bottom: 30, left: width < 460 ? 132 : 190 };
     const rowHeight = width < 460 ? 27 : 29;
     const height = Math.max(300, margin.top + margin.bottom + Math.max(data.length, 1) * rowHeight);
     const innerWidth = width - margin.left - margin.right;
@@ -740,14 +785,14 @@
     const svg = d3.select(container).selectAll('svg').data([null]).join('svg')
       .attr('viewBox', `0 0 ${width} ${height}`)
       .attr('role', 'img')
-      .attr('aria-label', 'Top alumni destinations ranked by number of matched people');
+      .attr('aria-label', `${education ? 'Educational institutions' : 'Companies and organizations'} ranked by matched alumni`);
     svg.selectAll('*').remove();
-    svg.append('title').text('Top alumni destinations');
-    svg.append('desc').text('Horizontal bars show the organizations, role families, or sectors with the most matched alumni.');
+    svg.append('title').text(education ? 'Educational institutions' : 'Companies and organizations');
+    svg.append('desc').text('Horizontal bars show destination organizations for the currently filtered alumni.');
 
     if (!data.length) {
       svg.append('text').attr('x', width / 2).attr('y', height / 2).attr('text-anchor', 'middle')
-        .attr('class', 'muted-label').text('No destination data for this filter');
+        .attr('class', 'muted-label').text(education ? 'No educational destinations' : 'No company destinations');
       return;
     }
 
@@ -765,13 +810,15 @@
       .attr('aria-label', d => `${d.label}: ${personCount(d.count)}`)
       .attr('x', 0).attr('y', d => y(d.label)).attr('height', y.bandwidth())
       .attr('width', d => x(d.count))
-      .attr('fill', d => state.selectedValue === d.label ? 'var(--iso-primary)' : 'var(--iso-series-1)')
-      .attr('fill-opacity', d => state.selectedValue && state.selectedValue !== d.label ? 0.28 : 0.82)
-      .attr('data-tooltip', d => `${d.label}: ${d.count} — ${d.people.slice(0, 8).join(', ')}${d.people.length > 8 ? '…' : ''}`)
+      .attr('fill', d => state.selectedOrganization === d.label
+        ? 'var(--iso-primary)'
+        : education ? '#d97706' : 'var(--iso-series-1)')
+      .attr('fill-opacity', d => state.selectedOrganization && state.selectedOrganization !== d.label ? 0.28 : 0.82)
+      .attr('data-tooltip', d => `${d.label}: ${d.count}; ${d.people.slice(0, 8).join(', ')}${d.people.length > 8 ? '…' : ''}`)
       .on('click keydown', (event, d) => {
         if (event.type === 'keydown' && !['Enter', ' '].includes(event.key)) return;
         event.preventDefault();
-        state.selectedValue = state.selectedValue === d.label ? '' : d.label;
+        state.selectedOrganization = state.selectedOrganization === d.label ? '' : d.label;
         render();
       });
     chart.selectAll('.category-label').data(data).join('text')
@@ -786,6 +833,99 @@
     svg.append('text').attr('class', 'axis-title').attr('data-axis', 'x')
       .attr('x', margin.left + innerWidth / 2).attr('y', height - 6).attr('text-anchor', 'middle')
       .text('Matched alumni (people)');
+  }
+
+  function distributionData(kind) {
+    const values = filteredPeople({ ignoreSelection: true }).filter(person => {
+      if (!person.organization) return false;
+      return kind === 'sector' ? Boolean(person.sector) : Boolean(person.countryCode);
+    });
+    let data = d3.rollups(
+      values,
+      group => ({ count: group.length, label: kind === 'sector' ? group[0].sector : group[0].country }),
+      person => kind === 'sector' ? person.sector : person.countryCode
+    ).map(([key, payload]) => ({ key, ...payload }))
+      .sort((a, b) => d3.descending(a.count, b.count) || d3.ascending(a.label, b.label));
+    if (kind === 'country' && data.length > 9) {
+      const retained = data.slice(0, 8);
+      const remainder = data.slice(8);
+      retained.push({
+        key: '__other__',
+        label: 'Other countries',
+        count: d3.sum(remainder, item => item.count)
+      });
+      data = retained;
+    }
+    return data;
+  }
+
+  function drawDistribution(chartName, kind) {
+    const container = root.querySelector(`[data-chart="${chartName}"]`);
+    const data = distributionData(kind);
+    const width = Math.max(280, container.clientWidth || 360);
+    const columns = width >= 390 ? 2 : 1;
+    const legendRows = Math.ceil(Math.max(data.length, 1) / columns);
+    const height = Math.max(320, 220 + legendRows * 22);
+    const radius = Math.min(88, width * 0.28);
+    const centerX = width / 2;
+    const centerY = 102;
+    const color = kind === 'sector'
+      ? value => sectorColors.get(value) || '#94a3b8'
+      : d3.scaleOrdinal(data.map(item => item.key), d3.schemeTableau10);
+    const svg = d3.select(container).selectAll('svg').data([null]).join('svg')
+      .attr('viewBox', `0 0 ${width} ${height}`)
+      .attr('role', 'img')
+      .attr('aria-label', `${kind === 'sector' ? 'Sector' : 'Outcome-country'} distribution for filtered alumni`);
+    svg.selectAll('*').remove();
+    svg.append('title').text(kind === 'sector' ? 'Sector distribution' : 'Outcome-country distribution');
+    svg.append('desc').text('Pie slices show the share of filtered alumni with each destination classification.');
+
+    if (!data.length) {
+      svg.append('text').attr('x', width / 2).attr('y', height / 2).attr('text-anchor', 'middle')
+        .attr('class', 'muted-label').text('No destination data for this filter');
+      return;
+    }
+
+    const total = d3.sum(data, item => item.count);
+    const pie = d3.pie().sort(null).value(item => item.count)(data);
+    const arc = d3.arc().innerRadius(0).outerRadius(radius);
+    const chart = svg.append('g').attr('transform', `translate(${centerX},${centerY})`);
+    chart.selectAll('.slice').data(pie).join('path')
+      .attr('class', 'slice')
+      .attr('tabindex', item => item.data.key === '__other__' ? -1 : 0)
+      .attr('d', arc)
+      .attr('fill', item => color(kind === 'sector' ? item.data.label : item.data.key))
+      .attr('stroke', 'var(--iso-surface)')
+      .attr('stroke-width', 1.5)
+      .attr('aria-label', item => `${item.data.label}: ${personCount(item.data.count)}`)
+      .attr('data-tooltip', item => `${item.data.label}: ${item.data.count} (${d3.format('.0%')(item.data.count / total)})`)
+      .on('click keydown', (event, item) => {
+        if (item.data.key === '__other__') return;
+        if (event.type === 'keydown' && !['Enter', ' '].includes(event.key)) return;
+        event.preventDefault();
+        if (kind === 'sector') {
+          state.sector = state.sector === item.data.key ? 'all' : item.data.key;
+          controls.sector.value = state.sector;
+        } else {
+          state.country = state.country === item.data.key ? 'all' : item.data.key;
+          controls.country.value = state.country;
+        }
+        state.selectedOrganization = '';
+        render();
+      });
+
+    const legendTop = 210;
+    const columnWidth = width / columns;
+    data.forEach((item, index) => {
+      const column = index % columns;
+      const row = Math.floor(index / columns);
+      const group = svg.append('g').attr('transform', `translate(${column * columnWidth},${legendTop + row * 22})`);
+      group.append('rect').attr('width', 10).attr('height', 10).attr('y', -8)
+        .attr('fill', color(kind === 'sector' ? item.label : item.key));
+      const maxLength = columns === 1 ? 36 : 20;
+      const label = item.label.length > maxLength ? `${item.label.slice(0, maxLength - 1)}…` : item.label;
+      group.append('text').attr('x', 15).text(`${label} ${item.count}`);
+    });
   }
 
   function drawCoverage() {
@@ -890,7 +1030,7 @@
     const body = root.querySelector('[data-people-table]');
     body.replaceChildren(...rows.map(person => {
       const tr = document.createElement('tr');
-      if (state.selectedValue && person[state.metric] === state.selectedValue) tr.classList.add('is-highlighted');
+      if (state.selectedOrganization && person.organization === state.selectedOrganization) tr.classList.add('is-highlighted');
       const nameCell = document.createElement('td');
       nameCell.dataset.label = 'Alumnus';
       const link = person.linkedin || person.profile;
@@ -913,9 +1053,15 @@
       const destinationCell = document.createElement('td');
       destinationCell.dataset.label = 'Destination';
       destinationCell.textContent = person.organization || '—';
+      if (person.organization && person.sector) {
+        const sector = document.createElement('div');
+        sector.className = 'iso-cell-meta';
+        sector.textContent = person.sector;
+        destinationCell.append(sector);
+      }
       const roleCell = document.createElement('td');
       roleCell.dataset.label = 'Role';
-      roleCell.textContent = person.role || (person.roleCategory !== 'Other' ? person.roleCategory : '—');
+      roleCell.textContent = person.role || 'Role not publicly stated';
       const almaCell = document.createElement('td');
       almaCell.dataset.label = 'Alma mater';
       almaCell.textContent = person.almaMater || '—';
@@ -958,39 +1104,66 @@
     root.querySelector('[data-table-note]').textContent = matchCount(rows.length, 'the current filters');
   }
 
+  function updateSortHeaders() {
+    const yearActive = state.sort === 'year-asc' || state.sort === 'year-desc';
+    const destinationActive = state.sort === 'destination-asc' || state.sort === 'destination-desc';
+    controls.yearSort.classList.toggle('is-active', yearActive);
+    controls.destinationSort.classList.toggle('is-active', destinationActive);
+    controls.yearSort.closest('th').setAttribute(
+      'aria-sort',
+      state.sort === 'year-asc' ? 'ascending' : state.sort === 'year-desc' ? 'descending' : 'none'
+    );
+    controls.destinationSort.closest('th').setAttribute(
+      'aria-sort',
+      state.sort === 'destination-asc' ? 'ascending' : state.sort === 'destination-desc' ? 'descending' : 'none'
+    );
+    controls.yearSort.title = state.sort === 'year-asc'
+      ? 'Sort by Olympiad year, newest first'
+      : 'Sort by Olympiad year, oldest first';
+    controls.destinationSort.title = state.sort === 'destination-asc'
+      ? 'Sort by destination, Z–A'
+      : 'Sort by destination, A–Z';
+  }
+
   function render() {
-    root.querySelector('[data-chart-title]').textContent = {
-      organization: 'Top organizations',
-      roleCategory: 'Role families',
-      organizationCategory: 'Destination sectors',
-      country: 'Current countries'
-    }[state.metric];
-    const selected = state.selectedValue ? ` Selected: ${state.selectedValue}.` : '';
+    const selected = state.selectedOrganization ? ` Selected: ${state.selectedOrganization}.` : '';
     root.querySelector('[data-selection]').textContent = `${matchCount(filteredPeople().length, 'the filters')}${selected}`;
-    drawDestinations();
+    drawOrganizationRanking('companies', false);
+    drawOrganizationRanking('education', true);
+    drawDistribution('sectors', 'sector');
+    drawDistribution('countries', 'country');
     drawCoverage();
+    updateSortHeaders();
     renderTable();
   }
 
-  controls.confidence.addEventListener('change', event => { state.confidence = event.target.value; state.selectedValue = ''; render(); });
-  controls.olympiad.addEventListener('change', event => { state.olympiad = event.target.value; state.selectedValue = ''; render(); });
-  controls.country.addEventListener('change', event => { state.country = event.target.value; state.selectedValue = ''; render(); });
-  controls.metric.addEventListener('change', event => { state.metric = event.target.value; state.selectedValue = ''; render(); });
-  controls.sort.addEventListener('change', event => { state.sort = event.target.value; renderTable(); });
+  controls.confidence.addEventListener('change', event => { state.confidence = event.target.value; state.selectedOrganization = ''; render(); });
+  controls.olympiad.addEventListener('change', event => { state.olympiad = event.target.value; state.selectedOrganization = ''; render(); });
+  controls.country.addEventListener('change', event => { state.country = event.target.value; state.selectedOrganization = ''; render(); });
+  controls.sector.addEventListener('change', event => { state.sector = event.target.value; state.selectedOrganization = ''; render(); });
+  controls.sort.addEventListener('change', event => { state.sort = event.target.value; updateSortHeaders(); renderTable(); });
   controls.search.addEventListener('input', event => { state.search = event.target.value; render(); });
-  controls.companiesOnly.addEventListener('click', () => {
-    state.companiesOnly = !state.companiesOnly;
-    state.selectedValue = '';
-    controls.companiesOnly.setAttribute('aria-pressed', String(state.companiesOnly));
-    render();
+  controls.yearSort.addEventListener('click', () => {
+    state.sort = state.sort === 'year-asc' ? 'year-desc' : 'year-asc';
+    controls.sort.value = state.sort;
+    updateSortHeaders();
+    renderTable();
   });
-  controls.destinationExpand.addEventListener('click', () => {
-    state.destinationsExpanded = !state.destinationsExpanded;
-    drawDestinations();
+  controls.destinationSort.addEventListener('click', () => {
+    state.sort = state.sort === 'destination-asc' ? 'destination-desc' : 'destination-asc';
+    controls.sort.value = state.sort;
+    updateSortHeaders();
+    renderTable();
   });
 
-  const observer = new ResizeObserver(() => { drawDestinations(); drawCoverage(); });
-  observer.observe(root.querySelector('.iso-chart-grid'));
+  const observer = new ResizeObserver(() => {
+    drawOrganizationRanking('companies', false);
+    drawOrganizationRanking('education', true);
+    drawDistribution('sectors', 'sector');
+    drawDistribution('countries', 'country');
+    drawCoverage();
+  });
+  observer.observe(root.querySelector('.iso-ranking-grid'));
   render();
 })();
 </script>
