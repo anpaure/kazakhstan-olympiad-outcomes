@@ -1,0 +1,413 @@
+[
+  {
+    "left": "Adil Kabilda",
+    "right": "Adil Kabylda",
+    "token_similarity": 0.917,
+    "shared_olympiads": [
+      "IChO"
+    ],
+    "left_years": [
+      2014
+    ],
+    "right_years": [
+      2015
+    ]
+  },
+  {
+    "left": "Adlet Turtemir",
+    "right": "Turtemir Adilet",
+    "token_similarity": 0.966,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2019
+    ],
+    "right_years": [
+      2018
+    ]
+  },
+  {
+    "left": "Akram Mahmudov",
+    "right": "Ekrem Mahmudov",
+    "token_similarity": 0.857,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      1994
+    ],
+    "right_years": [
+      1995
+    ]
+  },
+  {
+    "left": "Alexey Dudnik",
+    "right": "Dudnik Alexey",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2005
+    ],
+    "right_years": [
+      2003
+    ]
+  },
+  {
+    "left": "Almas Ordabayev",
+    "right": "Almas Yerkinovich Ordabayev",
+    "token_similarity": 0.714,
+    "shared_olympiads": [
+      "IChO"
+    ],
+    "left_years": [
+      2005
+    ],
+    "right_years": [
+      2006
+    ]
+  },
+  {
+    "left": "Almira Nurlanova",
+    "right": "Nurlanova Almira",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IChO"
+    ],
+    "left_years": [
+      2022
+    ],
+    "right_years": [
+      2023
+    ]
+  },
+  {
+    "left": "Amir Pshenbayev",
+    "right": "Pshenvayev Amir",
+    "token_similarity": 0.933,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2025
+    ],
+    "right_years": [
+      2024
+    ]
+  },
+  {
+    "left": "Arnat Balabiyer",
+    "right": "Arnat Balabiyev",
+    "token_similarity": 0.933,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2007
+    ],
+    "right_years": [
+      2008
+    ]
+  },
+  {
+    "left": "Artur Kim",
+    "right": "Kim Artur",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2025
+    ],
+    "right_years": [
+      2024
+    ]
+  },
+  {
+    "left": "Aslan Kuan",
+    "right": "Kuan Aslan",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2013
+    ],
+    "right_years": [
+      2012
+    ]
+  },
+  {
+    "left": "Bakdaulet Ernazarov",
+    "right": "Bakdaulet Yernazarov",
+    "token_similarity": 0.974,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2021
+    ],
+    "right_years": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "left": "Baktybai Galymzhan",
+    "right": "Galymzhan Baktybay",
+    "token_similarity": 0.944,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2024
+    ],
+    "right_years": [
+      2023
+    ]
+  },
+  {
+    "left": "Berezhnoi Nikolay",
+    "right": "Berezhnoy Nikolay",
+    "token_similarity": 0.941,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2001
+    ],
+    "right_years": [
+      2002
+    ]
+  },
+  {
+    "left": "Binazar Zhassulan",
+    "right": "Zhassulan Binazar",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IChO"
+    ],
+    "left_years": [
+      2014
+    ],
+    "right_years": [
+      2013
+    ]
+  },
+  {
+    "left": "Bissenali Sanzhar",
+    "right": "Sanzhar Bissenali",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IChO"
+    ],
+    "left_years": [
+      2023
+    ],
+    "right_years": [
+      2021,
+      2022
+    ]
+  },
+  {
+    "left": "Bissimbi Doszhan",
+    "right": "Doszhan Bissimbi",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2024
+    ],
+    "right_years": [
+      2023
+    ]
+  },
+  {
+    "left": "Dinmukhammed Omar",
+    "right": "Omar Dinmukhammed",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2022
+    ],
+    "right_years": [
+      2023
+    ]
+  },
+  {
+    "left": "Iliyas Kazymbek",
+    "right": "Kazymbek Iliyas",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2026
+    ],
+    "right_years": [
+      2024
+    ]
+  },
+  {
+    "left": "Kim Kirill",
+    "right": "Kirill Kim",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IChO"
+    ],
+    "left_years": [
+      2024
+    ],
+    "right_years": [
+      2025
+    ]
+  },
+  {
+    "left": "Kuanysh Yergalivey",
+    "right": "Kuanysh Yergaliyev",
+    "token_similarity": 0.889,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2000
+    ],
+    "right_years": [
+      1999
+    ]
+  },
+  {
+    "left": "Kuat Mukambetkazievich Usseingazin",
+    "right": "Kuat Usseingazin",
+    "token_similarity": 0.64,
+    "shared_olympiads": [
+      "IChO"
+    ],
+    "left_years": [
+      2006
+    ],
+    "right_years": [
+      2005
+    ]
+  },
+  {
+    "left": "Margulan Nursagatov",
+    "right": "Nursagatov Margulan",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2023
+    ],
+    "right_years": [
+      2024
+    ]
+  },
+  {
+    "left": "Obukhov Oleg",
+    "right": "Oleg Obukhov",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2006
+    ],
+    "right_years": [
+      2007
+    ]
+  },
+  {
+    "left": "Ruslan Kalizhan",
+    "right": "Ruslan Vladimirovich Kalizhan",
+    "token_similarity": 0.682,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2008
+    ],
+    "right_years": [
+      2009
+    ]
+  },
+  {
+    "left": "Saken Serhanov",
+    "right": "Saken Sherhanov",
+    "token_similarity": 0.966,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      1996
+    ],
+    "right_years": [
+      1995
+    ]
+  },
+  {
+    "left": "Saken Sherhandy",
+    "right": "Saken Sherhanov",
+    "token_similarity": 0.867,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      1994
+    ],
+    "right_years": [
+      1995
+    ]
+  },
+  {
+    "left": "Zhanbolat Zholgeldiev",
+    "right": "Zhanbolat Zholgeldiyev",
+    "token_similarity": 0.977,
+    "shared_olympiads": [
+      "IChO"
+    ],
+    "left_years": [
+      2008
+    ],
+    "right_years": [
+      2007
+    ]
+  },
+  {
+    "left": "Nourbol Silliedev",
+    "right": "Nurbol Sihimbayev",
+    "token_similarity": 0.706,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      1994
+    ],
+    "right_years": [
+      1995,
+      1996
+    ],
+    "reason": "manual_transliteration"
+  },
+  {
+    "left": "Bakhytjan Bakhaotdinov",
+    "right": "Bakitkan Bahautdinov",
+    "token_similarity": 0.81,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      1994
+    ],
+    "right_years": [
+      1995
+    ],
+    "reason": "manual_transliteration"
+  }
+]

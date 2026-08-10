@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "primary_key": {
+    "people": "person_id",
+    "evidence": "evidence_id",
+    "sources": "source_id"
+  },
+  "joins": [
+    "people.person_id = evidence.person_id",
+    "evidence.source_id = sources.source_id",
+    "participations.evidence_id = evidence.evidence_id"
+  ],
+  "review_statuses": [
+    "accepted",
+    "supporting",
+    "candidate",
+    "superseded",
+    "rejected"
+  ],
+  "counts": {
+    "people": 457,
+    "participations": 680,
+    "evidence_rows": 2563,
+    "sources": 1298,
+    "rejections": 85,
+    "complete_outcomes": 305
+  }
+}

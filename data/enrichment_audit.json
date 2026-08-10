@@ -1,0 +1,75 @@
+{
+  "people_loaded": 404,
+  "scopes": [
+    "career",
+    "early_career_or_university"
+  ],
+  "sources": [
+    "codeforces",
+    "cphof",
+    "github",
+    "orcid",
+    "openalex",
+    "wikidata"
+  ],
+  "codeforces": {
+    "rated_users": 966274,
+    "named_users": 210326,
+    "matched_people": 61,
+    "identity_candidates": 70
+  },
+  "cphof": {
+    "people_searched": 62,
+    "alias_searches": 62,
+    "profile_pages": 62,
+    "matched_people": 62,
+    "identity_candidates": 62,
+    "errors": []
+  },
+  "github": {
+    "aliases_searched": 427,
+    "matched_people": 106,
+    "identity_candidates": 153,
+    "errors": []
+  },
+  "openalex": {
+    "people_searched": 404,
+    "people_attempted": 99,
+    "matched_people": 34,
+    "identity_candidates": 47,
+    "orcid_records": 213,
+    "rate_limit_retry_after_seconds": "79628",
+    "uncached_skipped_after_rate_limit": 305,
+    "errors": [
+      "Bakitkan Bahautdinov: https://api.openalex.org/authors rate limit exhausted; retry after 79628 seconds"
+    ]
+  },
+  "orcid": {
+    "people_searched": 404,
+    "alias_searches": 427,
+    "matched_people": 92,
+    "identity_candidates": 213,
+    "records_read": 213,
+    "errors": []
+  },
+  "wikidata": {
+    "people_searched": 404,
+    "aliases_searched": 427,
+    "search_batches_attempted": 11,
+    "entities_loaded": 63,
+    "matched_people": 32,
+    "identity_candidates": 63,
+    "rate_limit_retry_after_seconds": "",
+    "errors": []
+  },
+  "output": {
+    "identity_candidates": 608,
+    "affiliation_candidates": 556,
+    "matched_people": 215,
+    "confidence_counts": {
+      "confirmed": 110,
+      "probable": 96,
+      "candidate": 402
+    }
+  }
+}

@@ -1,0 +1,682 @@
+[
+  {
+    "person_id": "kaz-21cc95b51c33",
+    "person_name": "Yaroslav Alexandrov",
+    "source_id": "src-5a74d4d495d9",
+    "evidence_url": "https://orcid.org/0000-0002-1944-562X",
+    "reason": "Empty name-only ORCID record with no country education employment or Olympiad evidence",
+    "review_evidence_url": "https://orcid.org/0000-0002-1944-562X"
+  },
+  {
+    "person_id": "kaz-21cc95b51c33",
+    "person_name": "Yaroslav Alexandrov",
+    "source_id": "src-bc1407881e67",
+    "evidence_url": "https://openalex.org/A5036903906",
+    "reason": "Exact-name publication record has no Kazakhstan or Olympiad bridge and cannot distinguish the common-name author",
+    "review_evidence_url": "https://openalex.org/A5036903906"
+  },
+  {
+    "person_id": "kaz-21cc95b51c33",
+    "person_name": "Yaroslav Alexandrov",
+    "source_id": "src-71252791bff6",
+    "evidence_url": "https://openalex.org/A5056460773",
+    "reason": "Exact-name publication record has no Kazakhstan or Olympiad bridge and its single blended work record is not reliable identity evidence",
+    "review_evidence_url": "https://openalex.org/A5056460773"
+  },
+  {
+    "person_id": "kaz-21cc95b51c33",
+    "person_name": "Yaroslav Alexandrov",
+    "source_id": "src-cfb666df45df",
+    "evidence_url": "https://openalex.org/A5037933693",
+    "reason": "Exact-name musicology record has no Kazakhstan physics or Olympiad bridge",
+    "review_evidence_url": "https://openalex.org/A5037933693"
+  },
+  {
+    "person_id": "kaz-197ec90e92c1",
+    "person_name": "Yuriy Kudryavtsev",
+    "source_id": "src-aa0cc9330e3a",
+    "evidence_url": "https://openalex.org/A5112934830",
+    "reason": "OpenAlex record blends unrelated works and affiliations across Mexico Canada and Ukraine and has no Kazakhstan or Olympiad bridge",
+    "review_evidence_url": "https://openalex.org/A5112934830"
+  },
+  {
+    "person_id": "kaz-32cf54f8673f",
+    "person_name": "Oleg Obukhov",
+    "source_id": "src-e7214523be1a",
+    "evidence_url": "https://orcid.org/0000-0002-9535-1764",
+    "reason": "Empty name-only ORCID record with no country education employment or Olympiad evidence",
+    "review_evidence_url": "https://orcid.org/0000-0002-9535-1764"
+  },
+  {
+    "person_id": "kaz-32cf54f8673f",
+    "person_name": "Oleg Obukhov",
+    "source_id": "src-68e6911de189",
+    "evidence_url": "https://github.com/oobukhov-intellective",
+    "reason": "Exact-name GitHub profile has no location education biography or Olympiad evidence linking it to the Kazakhstan competitor",
+    "review_evidence_url": "https://github.com/oobukhov-intellective"
+  },
+  {
+    "person_id": "kaz-32cf54f8673f",
+    "person_name": "Oleg Obukhov",
+    "source_id": "src-446800990642",
+    "evidence_url": "https://github.com/scarykidus",
+    "reason": "Exact-name GitHub profile has no public context linking it to the Kazakhstan competitor",
+    "review_evidence_url": "https://github.com/scarykidus"
+  },
+  {
+    "person_id": "kaz-32cf54f8673f",
+    "person_name": "Oleg Obukhov",
+    "source_id": "src-db065eef13ef",
+    "evidence_url": "https://www.wikidata.org/wiki/Q4330060",
+    "reason": "Russian physician record has a decisive age and timeline conflict with a 2006 school Olympiad participant",
+    "review_evidence_url": "https://www.wikidata.org/wiki/Q4330060"
+  },
+  {
+    "person_id": "kaz-6ff2bc2176bd",
+    "person_name": "Alen Abdrakhmanov",
+    "source_id": "src-36c8bb1d2e04",
+    "evidence_url": "https://linkedin.com/in/alen-abdrakhmanov-b2638b1a0",
+    "reason": "Exact-name Edge Health data-engineering profile follows a different Haileybury and Queen Mary education timeline and does not contain the 2015 IMO medal listed by the confirmed Huawei profile",
+    "review_evidence_url": "https://kz.linkedin.com/in/alen-abdrakhmanov"
+  },
+  {
+    "person_id": "kaz-2c30c8a4a543",
+    "person_name": "Sanzhar Nurgaliyev",
+    "source_id": "src-46a86b0227b9",
+    "evidence_url": "https://linkedin.com/in/sanzhar-nurgaliyev-299437b0",
+    "reason": "Exact-name petroleum engineer has a mature oil-and-gas career and University of Calgary master's timeline incompatible with the accepted 2022 school IChO medalist",
+    "review_evidence_url": "https://linkedin.com/in/sanzhar-nurgaliyev-b277762b8"
+  },
+  {
+    "person_id": "kaz-2c30c8a4a543",
+    "person_name": "Sanzhar Nurgaliyev",
+    "source_id": "src-b1ba532a1660",
+    "evidence_url": "https://linkedin.com/in/sanzhar-nurgaliyev-442491378",
+    "reason": "Exact-name high-school profile covering 2021-2026 has no Olympiad bridge and conflicts with the accepted medalist's Nazarbayev University chemistry degree beginning in 2022",
+    "review_evidence_url": "https://linkedin.com/in/sanzhar-nurgaliyev-b277762b8"
+  },
+  {
+    "person_id": "kaz-32bc606217ec",
+    "person_name": "Aruzhan Amanbayeva",
+    "source_id": "src-d1b0ce9ec325",
+    "evidence_url": "https://linkedin.com/in/aruzhan-amanbayeva-8a4b3a154",
+    "reason": "Exact-name Freedom Bank profile has an unrelated 2016-2020 language-university education and no IMO FIZMAT MIT or EPFL evidence",
+    "review_evidence_url": "https://linkedin.com/in/aaruzhan"
+  },
+  {
+    "person_id": "kaz-32bc606217ec",
+    "person_name": "Aruzhan Amanbayeva",
+    "source_id": "src-9403e8f8a3f8",
+    "evidence_url": "https://linkedin.com/in/aruzhan-amanbayeva01",
+    "reason": "Exact-name Air Astana profile has a 2019-2023 petroleum degree and no IMO FIZMAT MIT or EPFL evidence",
+    "review_evidence_url": "https://linkedin.com/in/aaruzhan"
+  },
+  {
+    "person_id": "kaz-c056b8e8822d",
+    "person_name": "Aslan Kuan",
+    "source_id": "src-e183f02bf01c",
+    "evidence_url": "https://linkedin.com/in/aslan-kuanbayev-860990347",
+    "reason": "Profile belongs to a 2014-2026 International Baccalaureate student and contains no biology-Olympiad evidence; both the age timeline and surname differ from the 2012-2013 IBO competitor",
+    "review_evidence_url": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2012"
+  },
+  {
+    "person_id": "kaz-4c524655befe",
+    "person_name": "Guldana Abduali",
+    "source_id": "src-c268e8712390",
+    "evidence_url": "https://linkedin.com/in/guldana-abdualiyeva-9a681080",
+    "reason": "Exact-name lawyer completed university and a master's by 2013 and therefore cannot be the 2021 school IBO entrant",
+    "review_evidence_url": "https://kr.linkedin.com/in/guldana-abduali"
+  },
+  {
+    "person_id": "kaz-cc4a2f7877ce",
+    "person_name": "Timur Murat",
+    "source_id": "src-c37749850679",
+    "evidence_url": "https://linkedin.com/in/timur-murat-3206b399",
+    "reason": "Exact-name company director completed university by 2013 and has an adult career beginning in 2014 incompatible with the 2026 Haileybury IMO student",
+    "review_evidence_url": "https://kz.linkedin.com/in/timur-murat-2a1735333"
+  },
+  {
+    "person_id": "kaz-618279226751",
+    "person_name": "Maxim Tsoy",
+    "source_id": "src-e60167ccaf89",
+    "evidence_url": "https://linkedin.com/in/tsoy-maxim",
+    "reason": "Exact-name Nazarbayev University graduate completed a 2020-2024 bachelor's degree and cannot be the secondary-school contestant at IOI 2024 and 2025",
+    "review_evidence_url": "https://stats.ioinformatics.org/people/8348"
+  },
+  {
+    "person_id": "kaz-618279226751",
+    "person_name": "Maxim Tsoy",
+    "source_id": "src-8766dc0fdded",
+    "evidence_url": "https://linkedin.com/in/maxim-tsoy-138046135",
+    "reason": "Exact-name senior software engineer had an established professional career by 2021 and cannot be the secondary-school contestant at IOI 2024 and 2025",
+    "review_evidence_url": "https://stats.ioinformatics.org/people/8348"
+  },
+  {
+    "person_id": "kaz-618279226751",
+    "person_name": "Maxim Tsoy",
+    "source_id": "src-88c258f507b9",
+    "evidence_url": "https://linkedin.com/in/maxim-tsoy-4b000a61",
+    "reason": "Exact-name KTZ Express manager completed university in 2014 and began management in 2015 and cannot be the secondary-school contestant at IOI 2024 and 2025",
+    "review_evidence_url": "https://stats.ioinformatics.org/people/8348"
+  },
+  {
+    "person_id": "kaz-be04ddfb5a42",
+    "person_name": "Islam Amangeldi",
+    "source_id": "src-209f3fb95a65",
+    "evidence_url": "https://linkedin.com/in/iamangeldi",
+    "reason": "Exact-name finance lecturer and KPMG consultant was already judging physics olympiads before the 2023 school IBO appearance and has an unrelated finance education",
+    "review_evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2023.pdf"
+  },
+  {
+    "person_id": "kaz-be04ddfb5a42",
+    "person_name": "Islam Amangeldi",
+    "source_id": "src-020a35c48f52",
+    "evidence_url": "https://linkedin.com/in/islam-amangeldi-258928210",
+    "reason": "Exact-name data engineer completed a 2018-2022 automation degree and began a professional career before the 2023 school IBO appearance",
+    "review_evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2023.pdf"
+  },
+  {
+    "person_id": "kaz-e9cd35b41255",
+    "person_name": "Damir Kurman",
+    "source_id": "src-c7f9ef011150",
+    "evidence_url": "https://linkedin.com/in/damir-kurmanguzhin-b02726235",
+    "reason": "Profile is Damir Kurmanguzhin rather than Damir Kurman and completed a 2020-2024 IT degree before a senior engineering career",
+    "review_evidence_url": "https://sdu.edu.kz/en/sdu-university-professor-led-kazakhstans-historic-victory-at-the-international-physics-olympiad/"
+  },
+  {
+    "person_id": "kaz-9bdeb2eedd97",
+    "person_name": "Zhan Dautov",
+    "source_id": "src-3e0cda3b46cf",
+    "evidence_url": "https://linkedin.com/in/avutzhan-dautov",
+    "reason": "Profile is Avutzhan Dautov rather than Zhan Dautov and completed university in 2015 before a long software career incompatible with the 2023-2024 school IMO entrant",
+    "review_evidence_url": "https://www.imo-official.org/results/individual/country/KAZ/"
+  },
+  {
+    "person_id": "kaz-8d648f29d1e0",
+    "person_name": "Yuriy Ten",
+    "source_id": "src-1b77cbe8b1eb",
+    "evidence_url": "https://linkedin.com/in/ysten",
+    "reason": "Exact-name telecom sales director held management roles from 2018 and is too old to be the 2020-2022 school IMO entrant",
+    "review_evidence_url": "https://www.imo-official.org/results/individual/country/KAZ/"
+  },
+  {
+    "person_id": "kaz-8d648f29d1e0",
+    "person_name": "Yuriy Ten",
+    "source_id": "src-606542305e23",
+    "evidence_url": "https://linkedin.com/in/yuriy-ten-862119125",
+    "reason": "Exact-name analyst completed a 2007-2015 economics degree and is too old to be the 2020-2022 school IMO entrant",
+    "review_evidence_url": "https://www.imo-official.org/results/individual/country/KAZ/"
+  },
+  {
+    "person_id": "kaz-8d648f29d1e0",
+    "person_name": "Yuriy Ten",
+    "source_id": "src-5a120272ae3e",
+    "evidence_url": "https://linkedin.com/in/iurii-ten92",
+    "reason": "Exact-name consultant completed postgraduate engineering study by 2019 and is too old to be the 2020-2022 school IMO entrant",
+    "review_evidence_url": "https://www.imo-official.org/results/individual/country/KAZ/"
+  },
+  {
+    "person_id": "kaz-b8e3ad83d883",
+    "person_name": "Andrey Drobakh",
+    "source_id": "src-e5f994dcf744",
+    "evidence_url": "https://linkedin.com/in/andrey-drobakha-25812a111",
+    "reason": "Profile is Andrey Drobakha rather than Andrey Drobakh and completed maritime education in Odessa from 1997 to 2004 before a shipping career incompatible with the 2011 school IMO entrant",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/20770/"
+  },
+  {
+    "person_id": "kaz-9bcf8f03ca96",
+    "person_name": "Andrey Jigalov",
+    "source_id": "src-8e1cd3407f0e",
+    "evidence_url": "https://linkedin.com/in/andrey-jigalov-256b7a39",
+    "reason": "Exact-name actor had a professional stage and film career beginning in 1991 and therefore cannot be the 1997-1998 school IBO entrant",
+    "review_evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO1998.pdf"
+  },
+  {
+    "person_id": "kaz-32cf54f8673f",
+    "person_name": "Oleg Obukhov",
+    "source_id": "src-3755a765f48e",
+    "evidence_url": "https://linkedin.com/in/oleg-obukhovich-aa3a4a256",
+    "reason": "Profile is Oleg Obukhovich rather than Oleg Obukhov and completed a road-engineering degree in 2005 before the 2006-2007 school IBO appearances",
+    "review_evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2007.pdf"
+  },
+  {
+    "person_id": "kaz-197ec90e92c1",
+    "person_name": "Yuriy Kudryavtsev",
+    "source_id": "src-b12a09dd8f88",
+    "evidence_url": "https://linkedin.com/in/yuriy-kudryavtsev-990a33b8",
+    "reason": "Common-name Russian shipping-director profile contains no Kazakhstan chemistry education or 2000 IChO identity evidence",
+    "review_evidence_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan"
+  },
+  {
+    "person_id": "kaz-17b78d6e8c0f",
+    "person_name": "Yernar Tursynbay",
+    "source_id": "src-0acf3b612472",
+    "evidence_url": "https://linkedin.com/in/yernar-tursynbayev-a74556251",
+    "reason": "Profile has a different surname and a 2019-2023 engineering degree incompatible with the 2010-2011 school IBO entrant; the official Nazarbayev University roster instead places Yernar Tursynbay in Biological Sciences by 2016",
+    "review_evidence_url": "https://registrar.nu.edu.kz/graduation-2016"
+  },
+  {
+    "person_id": "kaz-00408ca19291",
+    "person_name": "Rashid Amirov",
+    "source_id": "src-e9aefbf44ea4",
+    "evidence_url": "https://linkedin.com/in/rashid-amirov-400b1b",
+    "reason": "Exact-name Moscow IT manager completed university from 1983 to 1988 and is too old to be the 2001 school IChO entrant",
+    "review_evidence_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan"
+  },
+  {
+    "person_id": "kaz-00408ca19291",
+    "person_name": "Rashid Amirov",
+    "source_id": "src-006a4dbcc14c",
+    "evidence_url": "https://linkedin.com/in/rashid-amirov-6b8031250",
+    "reason": "Exact-name Azerbaijan student began university in 2018 and is too young to be the 2001 school IChO entrant",
+    "review_evidence_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan"
+  },
+  {
+    "person_id": "kaz-00408ca19291",
+    "person_name": "Rashid Amirov",
+    "source_id": "src-5778bd3ad78d",
+    "evidence_url": "https://linkedin.com/in/rashid-amirov-97a6402a6",
+    "reason": "Exact-name Uzbekistan profile began university in 2018 and is too young to be the 2001 school IChO entrant",
+    "review_evidence_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan"
+  },
+  {
+    "person_id": "kaz-21cc95b51c33",
+    "person_name": "Yaroslav Alexandrov",
+    "source_id": "src-b8d00bcb8c4f",
+    "evidence_url": "https://linkedin.com/in/yaroslav-aleksandrov",
+    "reason": "Common-name Kyiv-education profile contains no Kazakhstan physics or 1999 IPhO identity evidence",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-21cc95b51c33",
+    "person_name": "Yaroslav Alexandrov",
+    "source_id": "src-18e5444f4d42",
+    "evidence_url": "https://linkedin.com/in/yaroslav-alexandrov-4b1262145",
+    "reason": "Common-name Sweden-only profile contains no Kazakhstan physics or 1999 IPhO identity evidence",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-07b1a7ba2159",
+    "person_name": "Renat Shaimardanov",
+    "source_id": "src-960107149c9d",
+    "evidence_url": "https://linkedin.com/in/shaimardanov-renat-b412a17a",
+    "reason": "Exact-name Germany profile began an ITMO degree in 1999 and has no Kazakhstan or 1998 IOI bridge; the selected Kazakhstan profile instead begins KazNU computer science in the IOI year and matches the Agregator identity",
+    "review_evidence_url": "https://linkedin.com/in/renatshaimardanov"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-48bfcd5e30a3",
+    "evidence_url": "https://codeforces.com/profile/zamazan4ik",
+    "reason": "Profile identifies a Belarus competitor from Brest Lyceum and contains no Kazakhstan or 1996 IMO bridge",
+    "review_evidence_url": "https://www.imo-official.org/results/individual/country/KAZ/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-08365a29b2a0",
+    "evidence_url": "https://github.com/zamazan4ik",
+    "reason": "GitHub profile is linked to the rejected Belarus and Brest Lyceum competitive-programming identity rather than the 1996 Kazakhstan IMO entrant",
+    "review_evidence_url": "https://www.imo-official.org/results/individual/country/KAZ/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-678e7a7048b6",
+    "evidence_url": "https://linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80-%D0%B7%D0%B0%D0%B9%D1%86%D0%B5%D0%B2-98b05014b",
+    "reason": "Common-name Kazakhstan industrial-sales profile contains no mathematics education or 1996 IMO identity evidence",
+    "review_evidence_url": "https://www.imo-official.org/results/individual/country/KAZ/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-bbc90d7f72df",
+    "evidence_url": "https://linkedin.com/in/zaitsev-alexander-nullptr",
+    "reason": "Common-name QA profile contains no Kazakhstan school mathematics or 1996 IMO identity evidence",
+    "review_evidence_url": "https://www.imo-official.org/results/individual/country/KAZ/"
+  },
+  {
+    "person_id": "kaz-42f3a5145199",
+    "person_name": "Denis Utkin",
+    "source_id": "src-87c14f7c7b4a",
+    "evidence_url": "https://orcid.org/0000-0002-5903-7700",
+    "reason": "Official Saratov University biography shows this microbiologist graduated in 1996 and worked at the Microbe institute from 1996 so he cannot be the 2003-2004 school IPhO entrant",
+    "review_evidence_url": "https://old.sgu.ru/person/utkin-denis-valerevich"
+  },
+  {
+    "person_id": "kaz-42f3a5145199",
+    "person_name": "Denis Utkin",
+    "source_id": "src-0ff7dbf1804e",
+    "evidence_url": "https://www.wikidata.org/wiki/Q86774060",
+    "reason": "Wikidata record is the same Denis Valeryevich Utkin microbiologist who graduated and began his career in 1996 before the 2003-2004 school IPhO appearances",
+    "review_evidence_url": "https://old.sgu.ru/person/utkin-denis-valerevich"
+  },
+  {
+    "person_id": "kaz-42f3a5145199",
+    "person_name": "Denis Utkin",
+    "source_id": "src-50507731aa2a",
+    "evidence_url": "https://linkedin.com/in/denis-utkin-32682384",
+    "reason": "Common-name Nizhny Novgorod IT profile has a 2004-2006 vocational-computing and 2008-2013 university timeline with no Kazakhstan physics or IPhO bridge",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-42f3a5145199",
+    "person_name": "Denis Utkin",
+    "source_id": "src-6088aa688877",
+    "evidence_url": "https://linkedin.com/in/denis-utkin-1449b9200",
+    "reason": "Common-name Germany software profile has a 2007-2010 Moscow economics-computing education and no Kazakhstan physics or IPhO bridge",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-5b00b5124ff5",
+    "person_name": "Andrey Kim",
+    "source_id": "src-fcb6acf0b2ef",
+    "evidence_url": "https://orcid.org/0000-0002-6739-672X",
+    "reason": "ORCID belongs to a Far Eastern economics researcher with 2014-2020 Vladivostok affiliations that conflict with the verified MSU and SNU cryptography path",
+    "review_evidence_url": "https://www.linkedin.com/in/kimandrik"
+  },
+  {
+    "person_id": "kaz-5b00b5124ff5",
+    "person_name": "Andrey Kim",
+    "source_id": "src-16413d568664",
+    "evidence_url": "https://openalex.org/A5048344015",
+    "reason": "OpenAlex record conflates the verified cryptographer's SNU and Samsung works with unrelated Kumoh and Far Eastern Russia affiliations and a different ORCID",
+    "review_evidence_url": "https://www.linkedin.com/in/kimandrik"
+  },
+  {
+    "person_id": "kaz-5b00b5124ff5",
+    "person_name": "Andrey Kim",
+    "source_id": "src-a0134633f432",
+    "evidence_url": "https://linkedin.com/in/andrey-kim-21777011a",
+    "reason": "Unrelated Kazakhstan banking and operations profile contains no MSU SNU CKKS or 2004-2006 IMO identity evidence",
+    "review_evidence_url": "https://www.linkedin.com/in/kimandrik"
+  },
+  {
+    "person_id": "kaz-5b00b5124ff5",
+    "person_name": "Andrey Kim",
+    "source_id": "src-c7cd9749a2e5",
+    "evidence_url": "https://linkedin.com/in/erel3",
+    "reason": "Unrelated Almaty programming-coach profile contains no MSU SNU CKKS or 2004-2006 IMO identity evidence and conflicts with the selected Altbridge profile",
+    "review_evidence_url": "https://www.linkedin.com/in/kimandrik"
+  },
+  {
+    "person_id": "kaz-5b00b5124ff5",
+    "person_name": "Andrey Kim",
+    "source_id": "src-30d367b6d12e",
+    "evidence_url": "https://linkedin.com/in/andreykim",
+    "reason": "Profile began a KazNTU degree in 1999 and therefore cannot be the school contestant at the 2004-2006 IMOs",
+    "review_evidence_url": "https://www.linkedin.com/in/kimandrik"
+  },
+  {
+    "person_id": "kaz-5b00b5124ff5",
+    "person_name": "Andrey Kim",
+    "source_id": "src-c83e341898ed",
+    "evidence_url": "https://linkedin.com/in/akart-dev",
+    "reason": "Modern Satbayev University frontend profile contains no MSU SNU CKKS or 2004-2006 IMO identity evidence",
+    "review_evidence_url": "https://www.linkedin.com/in/kimandrik"
+  },
+  {
+    "person_id": "kaz-5b00b5124ff5",
+    "person_name": "Andrey Kim",
+    "source_id": "src-d99539f90af2",
+    "evidence_url": "https://linkedin.com/in/andrey-kim-220946112",
+    "reason": "Profile's 2007-2013 AUES automation education conflicts with the verified 2006-2011 MSU and 2014-2019 SNU cryptography path",
+    "review_evidence_url": "https://www.linkedin.com/in/kimandrik"
+  },
+  {
+    "person_id": "kaz-2457951c5496",
+    "person_name": "Almaz Rakhmetov",
+    "source_id": "src-28981a768d52",
+    "evidence_url": "https://linkedin.com/in/almaz-rakhmetov-2097151ab",
+    "reason": "Exact-name Pavlodar student began university in 2021 and is too young to be the school contestant at IOI 2004; the selected profile instead documents Kazakhstan programming placements in 2005-2006",
+    "review_evidence_url": "https://linkedin.com/in/almaz-rakhmetov-a2451223"
+  },
+  {
+    "person_id": "kaz-dc3a6a35b589",
+    "person_name": "Dauren Muratov",
+    "source_id": "src-e8339b2cc4c8",
+    "evidence_url": "https://linkedin.com/in/dauren-muratov-abiroy-428994253",
+    "reason": "Exact-name legal and human-resources profile has no informatics or 2012 IOI bridge and conflicts with the selected Nazarbayev University software profile",
+    "review_evidence_url": "https://linkedin.com/in/dauren-muratov-1a114676"
+  },
+  {
+    "person_id": "kaz-dc3a6a35b589",
+    "person_name": "Dauren Muratov",
+    "source_id": "src-24834a682237",
+    "evidence_url": "https://linkedin.com/in/dauren-muratov-28760a209",
+    "reason": "Exact-name Atyrau procurement profile has no informatics education or 2012 IOI bridge and conflicts with the selected Nazarbayev University software profile",
+    "review_evidence_url": "https://linkedin.com/in/dauren-muratov-1a114676"
+  },
+  {
+    "person_id": "kaz-a55fa73a7d5f",
+    "person_name": "Anna Zavalishina",
+    "source_id": "src-41778e6aa650",
+    "evidence_url": "https://linkedin.com/in/anna-zavalishina",
+    "reason": "Exact-name business-development profile follows journalism education and contains no Pavlodar biology conservation or 2016 IBO identity evidence",
+    "review_evidence_url": "https://qazinform.com/news/pavlodar-school-student-won-bronze-medal-at-ibo-in-vietnam_a2929085/"
+  },
+  {
+    "person_id": "kaz-a55fa73a7d5f",
+    "person_name": "Anna Zavalishina",
+    "source_id": "src-5b9bc0d7d5fd",
+    "evidence_url": "https://linkedin.com/in/anna-zavalishina-65a2511a1",
+    "reason": "Exact-name translator began a professional career in 2011 and is too old to be the 2016 school IBO entrant",
+    "review_evidence_url": "https://qazinform.com/news/pavlodar-school-student-won-bronze-medal-at-ibo-in-vietnam_a2929085/"
+  },
+  {
+    "person_id": "kaz-1deffa0c0a86",
+    "person_name": "Vadim Murzin",
+    "source_id": "src-33f5fb36ce0a",
+    "evidence_url": "https://linkedin.com/in/vadim-murzin",
+    "reason": "Exact-name Sberbank profile follows an MSU mathematics and banking path and conflicts with the chemistry doctorate and DESY spectroscopy record linked to the Balkhash chemistry contestant",
+    "review_evidence_url": "https://photon-science.desy.de/facilities/petra_iii/beamlines/p64_advanced_xafs/contact__staff/index_eng.html"
+  },
+  {
+    "person_id": "kaz-9208d8d1b297",
+    "person_name": "Vladimir Lim",
+    "source_id": "src-734e2fee933b",
+    "evidence_url": "https://linkedin.com/in/vladimir-lim-94a1bb18a",
+    "reason": "Adult finance and NLMK management profile is incompatible with the 2022 Pavlodar school physics contestant and contains no MIPT or Olympiad evidence",
+    "review_evidence_url": "https://izho.kz/contest/results-izho-2022/"
+  },
+  {
+    "person_id": "kaz-ac8d11f139c6",
+    "person_name": "David Li",
+    "source_id": "src-6aac80988ce7",
+    "evidence_url": "https://linkedin.com/in/davidli12",
+    "reason": "Purdue degree began in 2018 and the United States Google career conflicts with the selected Kazakhstan RFMS-to-MIPT-to-Huawei chronology",
+    "review_evidence_url": "https://ru.linkedin.com/in/david-li-ab07b332b"
+  },
+  {
+    "person_id": "kaz-ac8d11f139c6",
+    "person_name": "David Li",
+    "source_id": "src-ddae4121885e",
+    "evidence_url": "https://linkedin.com/in/david-li-6a3472249",
+    "reason": "Heidelberg student profile contains no Kazakhstan RFMS MIPT Skoltech Huawei or 2019 IPhO bridge and conflicts with the selected profile",
+    "review_evidence_url": "https://ru.linkedin.com/in/david-li-ab07b332b"
+  },
+  {
+    "person_id": "kaz-ac8d11f139c6",
+    "person_name": "David Li",
+    "source_id": "src-710ca74e048a",
+    "evidence_url": "https://linkedin.com/in/davidshuenli",
+    "reason": "United States biomechanics professor and University of Texas doctorate are incompatible with the young 2019 Kazakhstan IPhO contestant and selected MIPT timeline",
+    "review_evidence_url": "https://ru.linkedin.com/in/david-li-ab07b332b"
+  },
+  {
+    "person_id": "kaz-ac8d11f139c6",
+    "person_name": "David Li",
+    "source_id": "src-e9ff70ad1332",
+    "evidence_url": "https://linkedin.com/in/0314davidli",
+    "reason": "Current Toronto undergraduate profile is too young and contains no Kazakhstan RFMS MIPT or 2019 IPhO evidence",
+    "review_evidence_url": "https://ru.linkedin.com/in/david-li-ab07b332b"
+  },
+  {
+    "person_id": "kaz-ac8d11f139c6",
+    "person_name": "David Li",
+    "source_id": "src-ac76ff069fd2",
+    "evidence_url": "https://linkedin.com/in/david-li-berkeley",
+    "reason": "Berkeley 2021-2025 profile conflicts with the selected MIPT and Skoltech education and contains no Kazakhstan or 2019 IPhO evidence",
+    "review_evidence_url": "https://ru.linkedin.com/in/david-li-ab07b332b"
+  },
+  {
+    "person_id": "kaz-96fed62edd90",
+    "person_name": "Adilzhan Ismailov",
+    "source_id": "src-722f3715645a",
+    "evidence_url": "https://linkedin.com/in/adilzhan-ismailov",
+    "reason": "Kazakhstan quality-assurance profile contains no 2007 IMO Barcelona economics doctorate or Depop data-science bridge and conflicts with the selected profile",
+    "review_evidence_url": "https://uk.linkedin.com/in/adilzhanismailov"
+  },
+  {
+    "person_id": "kaz-f9ab6cbeaa06",
+    "person_name": "Andrey Sapronov",
+    "source_id": "src-d13c8a3909a6",
+    "evidence_url": "https://linkedin.com/in/andrey-sapronov-48a8713a",
+    "reason": "Journalism career beginning in 2007 contains no MIPT JINR physics Daryn or 1999 IPhO evidence and conflicts with the documented researcher",
+    "review_evidence_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/%D2%B0%D0%9B%D0%AB%D0%9C%D0%94%D0%AB_%D0%A2%D0%90%D0%9D%D0%A3.pdf"
+  },
+  {
+    "person_id": "kaz-bfdcf65f4a6e",
+    "person_name": "Anton Vassilyev",
+    "source_id": "src-8b71958a5fbf",
+    "evidence_url": "https://linkedin.com/in/anton-vassilyev-009ab911b",
+    "reason": "Rudny College education in 2010-2013 makes this developer too young to be the 2003 school IMO contestant and conflicts with the MSU mathematics professor",
+    "review_evidence_url": "https://www.msu.kz/ru/information/kafedry/detail.php?ELEMENT_ID=8321"
+  },
+  {
+    "person_id": "kaz-bfdcf65f4a6e",
+    "person_name": "Anton Vassilyev",
+    "source_id": "src-1fd2269caaaa",
+    "evidence_url": "https://openalex.org/A5026802548",
+    "reason": "Single-work Astana Medical attribution conflicts with the official MSU Kazakhstan faculty roster and is not reliable current-affiliation evidence for Anton Nikolaevich Vassilyev",
+    "review_evidence_url": "https://www.msu.kz/ru/information/kafedry/detail.php?ELEMENT_ID=8321"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-baa54d34b07c",
+    "evidence_url": "https://openalex.org/A5047480355",
+    "reason": "Automated exact-name match to an Omsk railway-repair author contains no Kazakhstan mathematics or 1998 IMO bridge and is insufficient for a probable outcome",
+    "review_evidence_url": "https://izvestia-transsiba.ru/images/journal_pdf/2018-4%2836%29.pdf"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-b728d31dc777",
+    "evidence_url": "https://orcid.org/0000-0001-6068-035X",
+    "reason": "Bare exact-name ORCID resolves to the unsupported Omsk railway-repair author and contains no Kazakhstan mathematics or 1998 IMO identity evidence",
+    "review_evidence_url": "https://izvestia-transsiba.ru/images/journal_pdf/2018-4%2836%29.pdf"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-04708fd565c9",
+    "evidence_url": "https://orcid.org/0009-0001-2641-2121",
+    "reason": "Bare exact-name ORCID contains no affiliation timeline Kazakhstan mathematics or 1998 IMO identity evidence",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1998"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-4d26eb797bd3",
+    "evidence_url": "https://openalex.org/A5047394178",
+    "reason": "Single magnetic-alloys paper at a Russian university contains no Kazakhstan mathematics or 1998 IMO identity bridge",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1998"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-083ea69be11a",
+    "evidence_url": "https://openalex.org/A5117167709",
+    "reason": "Lipetsk physical-education author record contains no Kazakhstan mathematics or 1998 IMO identity bridge",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1998"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-c87dbbbaa00f",
+    "evidence_url": "https://github.com/keruhaPanov",
+    "reason": "Moscow full-stack developer profile contains no Kazakhstan mathematics or 1998 IMO identity evidence",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1998"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-35405887825d",
+    "evidence_url": "https://github.com/kirillpanov",
+    "reason": "Minsk profile contains no Kazakhstan mathematics or 1998 IMO identity evidence",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1998"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-441d61e420e7",
+    "evidence_url": "https://github.com/kirpa1986",
+    "reason": "Username indicates a 1986 birth year making this profile too young for the 1998 school IMO and it contains no Kazakhstan evidence",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1998"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-7f003f84ca74",
+    "evidence_url": "https://linkedin.com/in/kirill-panov-b7664b162",
+    "reason": "Ural State University education from 1994 to 1999 means this CANCOM database administrator was already a university student during the 1998 school IMO",
+    "review_evidence_url": "https://www.xing.com/profile/Kirill_Panov"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-98aae065ff7f",
+    "evidence_url": "https://linkedin.com/in/kirillpan0v",
+    "reason": "University education beginning in 2013 makes this Auckland chemical-engineering researcher too young to be the 1998 school IMO contestant",
+    "review_evidence_url": "https://nz.linkedin.com/in/kirillpan0v"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-2afd23c63a22",
+    "evidence_url": "https://linkedin.com/in/kirill-panov-0a491a83",
+    "reason": "Moscow finance and customs education in 2006-2010 makes this Rusagro project manager too young to be the 1998 school IMO contestant",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1998"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-4b2416db03f9",
+    "evidence_url": "https://linkedin.com/in/kirill-panov-b4716415b",
+    "reason": "Mariupol university education beginning in 2017 makes this profile too young to be the 1998 school IMO contestant",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1998"
+  },
+  {
+    "person_id": "kaz-01957a6accca",
+    "person_name": "Pavel Levchenko",
+    "source_id": "src-82c454158009",
+    "evidence_url": "https://linkedin.com/in/pavel-levchenko-it",
+    "reason": "ITMO graduation in 2009 and a 16-year Russia IT career contain no Kazakhstan physics or 2006 IPhO bridge and conflict with the selected Atyrau profile",
+    "review_evidence_url": "https://kz.linkedin.com/in/pavel-levchenko-a315041a7"
+  },
+  {
+    "person_id": "kaz-01957a6accca",
+    "person_name": "Pavel Levchenko",
+    "source_id": "src-f8125c94a93a",
+    "evidence_url": "https://linkedin.com/in/pavel-levchenko",
+    "reason": "Belarus commercial-management profile contains no Kazakhstan physics oil-production or 2006 IPhO bridge and conflicts with the selected Atyrau profile",
+    "review_evidence_url": "https://kz.linkedin.com/in/pavel-levchenko-a315041a7"
+  },
+  {
+    "person_id": "kaz-01957a6accca",
+    "person_name": "Pavel Levchenko",
+    "source_id": "src-07c8e61db69e",
+    "evidence_url": "https://linkedin.com/in/pavel-levchenko-ecologist",
+    "reason": "Botany and ecology career contains no physics oil-production Kazakhstan-team or 2006 IPhO evidence and conflicts with the selected profile",
+    "review_evidence_url": "https://kz.linkedin.com/in/pavel-levchenko-a315041a7"
+  },
+  {
+    "person_id": "kaz-01957a6accca",
+    "person_name": "Pavel Levchenko",
+    "source_id": "src-457c58e071b0",
+    "evidence_url": "https://linkedin.com/in/pavel-levchenko-b1058835b",
+    "reason": "Moscow Sberbank project-management profile contains no Kazakhstan physics oil-production or 2006 IPhO bridge and conflicts with the selected Atyrau profile",
+    "review_evidence_url": "https://kz.linkedin.com/in/pavel-levchenko-a315041a7"
+  }
+]

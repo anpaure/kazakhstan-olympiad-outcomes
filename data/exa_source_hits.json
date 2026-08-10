@@ -1,0 +1,17 @@
+{
+  "IMO": {
+    "error": "402 Client Error: Payment Required for url: https://api.exa.ai/search"
+  },
+  "IOI": {
+    "error": "402 Client Error: Payment Required for url: https://api.exa.ai/search"
+  },
+  "IPhO": {
+    "error": "402 Client Error: Payment Required for url: https://api.exa.ai/search"
+  },
+  "IBO": {
+    "error": "402 Client Error: Payment Required for url: https://api.exa.ai/search"
+  },
+  "IChO": {
+    "error": "402 Client Error: Payment Required for url: https://api.exa.ai/search"
+  }
+}

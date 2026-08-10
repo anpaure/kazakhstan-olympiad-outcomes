@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Auditable research on where Kazakhstan's international science olympiad alumni studied and worked.">
+<title>ISO Futures: Kazakhstan Olympiad Alumni</title>
+<link rel="icon" href="data:,">
+</head>
+<body>
+<div id="iso-outcomes-viz">
+  <header class="iso-page-header">
+    <div>
+      <h1>Where Kazakhstan's Olympiad alumni went</h1>
+      <p>IMO, IOI, IPhO, IBO, and IChO participants, joined to reviewed public career and education evidence.</p>
+    </div>
+    <nav class="iso-page-links" aria-label="Project resources">
+      <a href="kazakhstan_olympiad_outcomes_audit.xlsx" download>Audit workbook</a>
+      <a href="https://github.com/anpaure/kazakhstan-olympiad-outcomes/tree/main/data/audit">Source data</a>
+      <a href="https://github.com/anpaure/kazakhstan-olympiad-outcomes">Method and code</a>
+    </nav>
+  </header>
+
+  <div class="viz-grid iso-summary" aria-label="Research summary">
+    <div class="card viz-stat">
+      <div class="text-muted">Canonical alumni</div>
+      <div class="viz-stat-value" data-stat="canonical">0</div>
+      <div class="text-small text-muted">deduplicated across five olympiads</div>
+    </div>
+    <div class="card viz-stat">
+      <div class="text-muted">Probable or confirmed</div>
+      <div class="viz-stat-value" data-stat="high-confidence">0</div>
+      <div class="text-small text-muted">supported by contextual evidence</div>
+    </div>
+    <div class="card viz-stat">
+      <div class="text-muted">LinkedIn profiles found</div>
+      <div class="viz-stat-value" data-stat="linkedin">0</div>
+      <div class="text-small text-muted">mostly through published profile links</div>
+    </div>
+  </div>
+
+  <div class="viz-controls iso-controls" aria-label="Visualization filters">
+    <label class="form-label">Confidence
+      <select class="form-select" data-control="confidence">
+        <option value="high">Confirmed + probable</option>
+        <option value="confirmed">Confirmed only</option>
+        <option value="candidate">Include candidates</option>
+        <option value="all">All alumni</option>
+      </select>
+    </label>
+    <label class="form-label">Olympiad
+      <select class="form-select" data-control="olympiad">
+        <option value="all">All five</option>
+        <option value="IMO">IMO</option>
+        <option value="IOI">IOI</option>
+        <option value="IPhO">IPhO</option>
+        <option value="IBO">IBO</option>
+        <option value="IChO">IChO</option>
+      </select>
+    </label>
+    <label class="form-label">Rank destinations by
+      <select class="form-select" data-control="metric">
+        <option value="organization">Organization</option>
+        <option value="roleCategory">Role family</option>
+        <option value="organizationCategory">Sector</option>
+      </select>
+    </label>
+    <label class="form-label">Find a person
+      <input class="form-control" data-control="search" type="search" placeholder="Name or organization">
+    </label>
+  </div>
+
+  <div class="iso-chart-grid">
+    <section>
+      <h3 data-chart-title>Top destinations</h3>
+      <div class="iso-bar-chart" data-chart="destinations"></div>
+    </section>
+    <section>
+      <h3>Research coverage by olympiad</h3>
+      <div class="iso-coverage-chart" data-chart="coverage"></div>
+    </section>
+  </div>
+
+  <div class="iso-selection text-small text-muted" data-selection>Showing probable and confirmed outcomes.</div>
+
+  <div class="table-responsive">
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th>Alumnus</th>
+          <th>Olympiad</th>
+          <th>Destination</th>
+          <th>Role</th>
+          <th>Confidence</th>
+        </tr>
+      </thead>
+      <tbody data-people-table></tbody>
+    </table>
+  </div>
+  <div class="text-small text-muted" data-table-note></div>
+</div>
+
+<style>
+  html,
+  body {
+    min-height: 100%;
+    margin: 0;
+    background: #f6f8fb;
+  }
+  #iso-outcomes-viz {
+    --iso-background: var(--background, #f6f8fb);
+    --iso-surface: var(--card, #ffffff);
+    --iso-foreground: var(--foreground, #172033);
+    --iso-muted-foreground: var(--muted-foreground, #64748b);
+    --iso-border: var(--border, #d8e0e9);
+    --iso-ring: var(--ring, #0f766e);
+    --iso-primary: var(--primary, #0f766e);
+    --iso-accent: var(--accent, #dbeafe);
+    --iso-series-1: var(--viz-series-1, #0f766e);
+    --iso-series-2: var(--viz-series-2, #d97706);
+    --iso-series-4: var(--viz-series-4, #be123c);
+    --iso-muted-series: var(--muted, #94a3b8);
+    width: 100%;
+    max-width: 1500px;
+    margin-inline: auto;
+    padding: 24px;
+    box-sizing: border-box;
+    color: var(--iso-foreground);
+    background: var(--iso-background);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.45;
+  }
+  #iso-outcomes-viz *,
+  #iso-outcomes-viz *::before,
+  #iso-outcomes-viz *::after {
+    box-sizing: border-box;
+  }
+  #iso-outcomes-viz h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 650;
+    letter-spacing: 0;
+  }
+  #iso-outcomes-viz .iso-page-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: end;
+  }
+  #iso-outcomes-viz .iso-page-header p {
+    max-width: 760px;
+    margin: 6px 0 0;
+    color: var(--iso-muted-foreground);
+    font-size: 14px;
+  }
+  #iso-outcomes-viz .iso-page-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px 16px;
+    font-size: 13px;
+  }
+  #iso-outcomes-viz h3 {
+    margin: 0 0 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--iso-border);
+    font-size: 15px;
+    font-weight: 650;
+    letter-spacing: 0;
+  }
+  #iso-outcomes-viz .iso-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-block: 16px 20px;
+  }
+  #iso-outcomes-viz .card.viz-stat {
+    min-height: 108px;
+    padding: 16px 18px;
+    border: 1px solid var(--iso-border);
+    border-top: 3px solid var(--iso-series-1);
+    border-radius: 6px;
+    background: var(--iso-surface);
+    box-shadow: 0 1px 2px rgb(15 23 42 / 0.05);
+  }
+  #iso-outcomes-viz .card.viz-stat:nth-child(2) {
+    border-top-color: #2563eb;
+  }
+  #iso-outcomes-viz .card.viz-stat:nth-child(3) {
+    border-top-color: #c2410c;
+  }
+  #iso-outcomes-viz .viz-stat-value {
+    margin-block: 4px 2px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  #iso-outcomes-viz .text-muted {
+    color: var(--iso-muted-foreground);
+  }
+  #iso-outcomes-viz .text-small {
+    font-size: 12px;
+  }
+  #iso-outcomes-viz .iso-controls {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 12px;
+    align-items: end;
+    margin-bottom: 24px;
+    padding-block: 14px;
+    border-block: 1px solid var(--iso-border);
+  }
+  #iso-outcomes-viz .iso-controls .form-label {
+    display: grid;
+    min-width: 0;
+    gap: 6px;
+    color: var(--iso-muted-foreground);
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #iso-outcomes-viz .form-select,
+  #iso-outcomes-viz .form-control {
+    width: 100%;
+    height: 38px;
+    padding: 0 10px;
+    border: 1px solid var(--iso-border);
+    border-radius: 4px;
+    color: var(--iso-foreground);
+    background: var(--iso-surface);
+    font: inherit;
+    font-size: 14px;
+  }
+  #iso-outcomes-viz .form-select:focus,
+  #iso-outcomes-viz .form-control:focus {
+    border-color: var(--iso-ring);
+    outline: 2px solid color-mix(in srgb, var(--iso-ring) 25%, transparent);
+    outline-offset: 1px;
+  }
+  #iso-outcomes-viz .iso-chart-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.9fr);
+    gap: 28px;
+    align-items: start;
+  }
+  #iso-outcomes-viz .iso-chart-grid section {
+    min-width: 0;
+    padding: 16px;
+    border: 1px solid var(--iso-border);
+    border-radius: 6px;
+    background: var(--iso-surface);
+  }
+  #iso-outcomes-viz .iso-bar-chart,
+  #iso-outcomes-viz .iso-coverage-chart {
+    min-height: 330px;
+  }
+  #iso-outcomes-viz .iso-bar-chart svg,
+  #iso-outcomes-viz .iso-coverage-chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  #iso-outcomes-viz .iso-selection {
+    min-height: 22px;
+    margin-block: 18px 8px;
+  }
+  #iso-outcomes-viz .iso-bar-chart .bar,
+  #iso-outcomes-viz .iso-coverage-chart .segment {
+    cursor: pointer;
+  }
+  #iso-outcomes-viz .iso-bar-chart .bar:focus,
+  #iso-outcomes-viz .iso-coverage-chart .segment:focus {
+    outline: 2px solid var(--iso-ring);
+    outline-offset: 2px;
+  }
+  #iso-outcomes-viz svg text {
+    fill: var(--iso-foreground);
+    font-size: 12px;
+  }
+  #iso-outcomes-viz svg .muted-label {
+    fill: var(--iso-muted-foreground);
+  }
+  #iso-outcomes-viz svg .frame,
+  #iso-outcomes-viz svg .grid-line {
+    stroke: var(--iso-border);
+    fill: none;
+  }
+  #iso-outcomes-viz svg .grid-line {
+    stroke-opacity: 0.55;
+  }
+  #iso-outcomes-viz tbody tr.is-highlighted {
+    background: color-mix(in srgb, var(--iso-accent) 55%, transparent);
+  }
+  #iso-outcomes-viz .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--iso-border);
+    border-radius: 6px;
+    background: var(--iso-surface);
+  }
+  #iso-outcomes-viz .table {
+    width: 100%;
+    min-width: 860px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 13px;
+  }
+  #iso-outcomes-viz .table th,
+  #iso-outcomes-viz .table td {
+    padding: 9px 11px;
+    border-bottom: 1px solid var(--iso-border);
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+  }
+  #iso-outcomes-viz .table th {
+    background: #e8eef4;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  #iso-outcomes-viz .table th:nth-child(1) { width: 19%; }
+  #iso-outcomes-viz .table th:nth-child(2) { width: 12%; }
+  #iso-outcomes-viz .table th:nth-child(3) { width: 27%; }
+  #iso-outcomes-viz .table th:nth-child(4) { width: 31%; }
+  #iso-outcomes-viz .table th:nth-child(5) { width: 11%; }
+  #iso-outcomes-viz .table tbody tr:last-child td {
+    border-bottom: 0;
+  }
+  #iso-outcomes-viz .table tbody tr:hover {
+    background: color-mix(in srgb, var(--iso-accent) 35%, transparent);
+  }
+  #iso-outcomes-viz .table td:last-child {
+    font-weight: 650;
+    text-transform: capitalize;
+  }
+  #iso-outcomes-viz a {
+    color: var(--iso-primary);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  #iso-outcomes-viz [data-table-note] {
+    margin-top: 8px;
+  }
+  @media (max-width: 900px) {
+    #iso-outcomes-viz .iso-chart-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+  }
+  @media (max-width: 700px) {
+    #iso-outcomes-viz {
+      padding: 16px 12px;
+    }
+    #iso-outcomes-viz h1 {
+      font-size: 24px;
+    }
+    #iso-outcomes-viz .iso-page-header {
+      display: grid;
+      align-items: start;
+      gap: 12px;
+    }
+    #iso-outcomes-viz .iso-page-links {
+      justify-content: flex-start;
+    }
+    #iso-outcomes-viz .iso-summary {
+      grid-template-columns: 1fr;
+    }
+    #iso-outcomes-viz .card.viz-stat {
+      min-height: 92px;
+    }
+    #iso-outcomes-viz .iso-controls {
+      grid-template-columns: 1fr 1fr;
+    }
+    #iso-outcomes-viz .iso-chart-grid section {
+      padding: 12px 8px;
+    }
+    #iso-outcomes-viz .iso-bar-chart,
+    #iso-outcomes-viz .iso-coverage-chart {
+      min-height: 300px;
+    }
+    #iso-outcomes-viz .table-responsive {
+      overflow-x: visible;
+    }
+    #iso-outcomes-viz .table {
+      min-width: 0;
+      table-layout: auto;
+    }
+    #iso-outcomes-viz .table thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    #iso-outcomes-viz .table tbody,
+    #iso-outcomes-viz .table tr,
+    #iso-outcomes-viz .table td {
+      display: block;
+      width: 100%;
+    }
+    #iso-outcomes-viz .table tbody tr {
+      padding: 12px;
+      border-bottom: 1px solid var(--iso-border);
+    }
+    #iso-outcomes-viz .table tbody tr:last-child {
+      border-bottom: 0;
+    }
+    #iso-outcomes-viz .table td {
+      display: grid;
+      grid-template-columns: 82px minmax(0, 1fr);
+      gap: 10px;
+      padding: 3px 0;
+      border-bottom: 0;
+    }
+    #iso-outcomes-viz .table td::before {
+      content: attr(data-label);
+      color: var(--iso-muted-foreground);
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    #iso-outcomes-viz .table td:last-child {
+      text-align: left;
+    }
+  }
+  @media (max-width: 430px) {
+    #iso-outcomes-viz .iso-controls {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(() => {
+  const root = document.getElementById('iso-outcomes-viz');
+  const people = /*__DATA__*/[];
+  const confidenceRank = { unmatched: 0, candidate: 1, probable: 2, confirmed: 3 };
+  const confidenceColors = {
+    confirmed: 'var(--iso-series-1)',
+    probable: 'var(--iso-series-2)',
+    candidate: 'var(--iso-series-4)',
+    unmatched: 'var(--iso-muted-series)'
+  };
+  const state = {
+    confidence: 'high',
+    olympiad: 'all',
+    metric: 'organization',
+    search: '',
+    selectedValue: ''
+  };
+
+  const controls = {
+    confidence: root.querySelector('[data-control="confidence"]'),
+    olympiad: root.querySelector('[data-control="olympiad"]'),
+    metric: root.querySelector('[data-control="metric"]'),
+    search: root.querySelector('[data-control="search"]')
+  };
+
+  if (!people.some(person => person.confidence === 'candidate')) {
+    controls.confidence.querySelector('option[value="candidate"]')?.remove();
+  }
+
+  root.querySelector('[data-stat="canonical"]').textContent = people.length;
+  root.querySelector('[data-stat="high-confidence"]').textContent = people.filter(d => confidenceRank[d.confidence] >= 2).length;
+  root.querySelector('[data-stat="linkedin"]').textContent = people.filter(d => d.linkedin).length;
+
+  function personCount(count) {
+    return `${count} ${count === 1 ? 'person' : 'people'}`;
+  }
+
+  function matchCount(count, target) {
+    return `${personCount(count)} ${count === 1 ? 'matches' : 'match'} ${target}.`;
+  }
+
+  function confidenceAllowed(value) {
+    if (state.confidence === 'confirmed') return value === 'confirmed';
+    if (state.confidence === 'high') return confidenceRank[value] >= 2;
+    if (state.confidence === 'candidate') return confidenceRank[value] >= 1;
+    return true;
+  }
+
+  function filteredPeople({ ignoreSelection = false, ignoreConfidence = false } = {}) {
+    const query = state.search.trim().toLowerCase();
+    return people.filter(person => {
+      if (!ignoreConfidence && !confidenceAllowed(person.confidence)) return false;
+      if (state.olympiad !== 'all' && !person.olympiads.includes(state.olympiad)) return false;
+      if (query && !`${person.name} ${person.organization} ${person.role}`.toLowerCase().includes(query)) return false;
+      if (!ignoreSelection && state.selectedValue && person[state.metric] !== state.selectedValue) return false;
+      return true;
+    });
+  }
+
+  function destinationData() {
+    const values = filteredPeople({ ignoreSelection: true })
+      .filter(person => person[state.metric] && person[state.metric] !== 'Unknown');
+    return d3.rollups(values, group => ({
+      count: group.length,
+      people: group.map(person => person.name),
+      category: group[0].organizationCategory
+    }), person => person[state.metric])
+      .map(([label, payload]) => ({ label, ...payload }))
+      .sort((a, b) => d3.descending(a.count, b.count) || d3.ascending(a.label, b.label))
+      .slice(0, 12);
+  }
+
+  function drawDestinations() {
+    const container = root.querySelector('[data-chart="destinations"]');
+    const data = destinationData();
+    const width = Math.max(320, container.clientWidth || 560);
+    const margin = { top: 12, right: 42, bottom: 34, left: width < 460 ? 118 : 200 };
+    const rowHeight = width < 460 ? 27 : 29;
+    const height = Math.max(300, margin.top + margin.bottom + Math.max(data.length, 1) * rowHeight);
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+    const svg = d3.select(container).selectAll('svg').data([null]).join('svg')
+      .attr('viewBox', `0 0 ${width} ${height}`)
+      .attr('role', 'img')
+      .attr('aria-label', 'Top alumni destinations ranked by number of matched people');
+    svg.selectAll('*').remove();
+    svg.append('title').text('Top alumni destinations');
+    svg.append('desc').text('Horizontal bars show the organizations, role families, or sectors with the most matched alumni.');
+
+    if (!data.length) {
+      svg.append('text').attr('x', width / 2).attr('y', height / 2).attr('text-anchor', 'middle')
+        .attr('class', 'muted-label').text('No destination data for this filter');
+      return;
+    }
+
+    const x = d3.scaleLinear().domain([0, d3.max(data, d => d.count)]).nice().range([0, innerWidth]);
+    const y = d3.scaleBand().domain(data.map(d => d.label)).range([0, innerHeight]).padding(0.22);
+    const chart = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+    const ticks = x.ticks(width < 460 ? 3 : 5);
+    chart.selectAll('.grid-line').data(ticks).join('line').attr('class', 'grid-line')
+      .attr('x1', d => x(d)).attr('x2', d => x(d)).attr('y1', 0).attr('y2', innerHeight);
+    chart.append('rect').attr('class', 'frame').attr('width', innerWidth).attr('height', innerHeight);
+
+    chart.selectAll('.bar').data(data, d => d.label).join('rect')
+      .attr('class', 'bar')
+      .attr('tabindex', 0)
+      .attr('aria-label', d => `${d.label}: ${personCount(d.count)}`)
+      .attr('x', 0).attr('y', d => y(d.label)).attr('height', y.bandwidth())
+      .attr('width', d => x(d.count))
+      .attr('fill', d => state.selectedValue === d.label ? 'var(--iso-primary)' : 'var(--iso-series-1)')
+      .attr('fill-opacity', d => state.selectedValue && state.selectedValue !== d.label ? 0.28 : 0.82)
+      .attr('data-tooltip', d => `${d.label}: ${d.count} — ${d.people.slice(0, 8).join(', ')}${d.people.length > 8 ? '…' : ''}`)
+      .on('click keydown', (event, d) => {
+        if (event.type === 'keydown' && !['Enter', ' '].includes(event.key)) return;
+        event.preventDefault();
+        state.selectedValue = state.selectedValue === d.label ? '' : d.label;
+        render();
+      });
+    chart.selectAll('.category-label').data(data).join('text')
+      .attr('x', -8).attr('y', d => y(d.label) + y.bandwidth() / 2 + 4)
+      .attr('text-anchor', 'end')
+      .text(d => d.label.length > (width < 460 ? 17 : 26) ? `${d.label.slice(0, width < 460 ? 16 : 25)}…` : d.label);
+    chart.selectAll('.value-label').data(data).join('text')
+      .attr('x', d => Math.min(innerWidth - 4, x(d.count) + 6))
+      .attr('y', d => y(d.label) + y.bandwidth() / 2 + 4)
+      .attr('text-anchor', d => x(d.count) > innerWidth - 24 ? 'end' : 'start')
+      .text(d => d.count);
+    svg.append('text').attr('class', 'axis-title').attr('data-axis', 'x')
+      .attr('x', margin.left + innerWidth / 2).attr('y', height - 6).attr('text-anchor', 'middle')
+      .text('Matched alumni (people)');
+  }
+
+  function drawCoverage() {
+    const container = root.querySelector('[data-chart="coverage"]');
+    const olympiads = ['IMO', 'IOI', 'IPhO', 'IBO', 'IChO'];
+    const statuses = ['confirmed', 'probable', 'candidate', 'unmatched']
+      .filter(status => people.some(person => person.confidence === status));
+    const data = olympiads.map(olympiad => {
+      const relevant = filteredPeople({ ignoreSelection: true, ignoreConfidence: true })
+        .filter(person => person.olympiads.includes(olympiad));
+      return { olympiad, counts: Object.fromEntries(statuses.map(status => [status, relevant.filter(d => d.confidence === status).length])) };
+    });
+    const width = Math.max(300, container.clientWidth || 390);
+    const isNarrow = width < 420;
+    const height = isNarrow ? 370 : 330;
+    const margin = { top: 16, right: 18, bottom: isNarrow ? 100 : 72, left: 52 };
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+    const x = d3.scaleBand().domain(olympiads).range([0, innerWidth]).padding(0.22);
+    const totals = data.map(d => d3.sum(statuses, status => d.counts[status]));
+    const maxTotal = d3.max(totals) || 1;
+    const y = d3.scaleLinear().domain([0, maxTotal]).nice().range([innerHeight, 0]);
+    const svg = d3.select(container).selectAll('svg').data([null]).join('svg')
+      .attr('viewBox', `0 0 ${width} ${height}`)
+      .attr('role', 'img')
+      .attr('aria-label', 'Research confidence coverage for each olympiad');
+    svg.selectAll('*').remove();
+    svg.append('title').text('Research coverage by olympiad');
+    svg.append('desc').text('Stacked bars show confirmed, probable, candidate, and unmatched alumni for each olympiad.');
+    const chart = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+    chart.append('rect').attr('class', 'frame').attr('width', innerWidth).attr('height', innerHeight);
+    chart.call(d3.axisLeft(y).ticks(Math.min(4, maxTotal)).tickSize(-innerWidth).tickFormat(d3.format('d')))
+      .call(group => group.select('.domain').remove())
+      .call(group => group.selectAll('.tick line').attr('class', 'grid-line'));
+    chart.append('g').attr('transform', `translate(0,${innerHeight})`).call(d3.axisBottom(x).tickSize(0))
+      .call(group => group.select('.domain').remove());
+
+    const stackInput = data.map(d => ({ olympiad: d.olympiad, ...d.counts }));
+    const stacked = d3.stack().keys(statuses)(stackInput);
+    chart.selectAll('.coverage-series').data(stacked).join('g')
+      .attr('class', 'coverage-series')
+      .attr('fill', series => confidenceColors[series.key])
+      .selectAll('.segment').data(series => series.map(value => ({ value, status: series.key, data: value.data })))
+      .join('rect').attr('class', 'segment').attr('tabindex', 0)
+      .attr('x', d => x(d.data.olympiad)).attr('width', x.bandwidth())
+      .attr('y', d => y(d.value[1])).attr('height', d => Math.max(0, y(d.value[0]) - y(d.value[1])))
+      .attr('data-tooltip', d => `${d.data.olympiad} — ${d.status}: ${d.data[d.status]}`)
+      .attr('aria-label', d => `${d.data.olympiad}, ${d.status}, ${personCount(d.data[d.status])}`)
+      .on('click keydown', (event, d) => {
+        if (event.type === 'keydown' && !['Enter', ' '].includes(event.key)) return;
+        event.preventDefault();
+        state.olympiad = d.data.olympiad;
+        controls.olympiad.value = state.olympiad;
+        render();
+      });
+    svg.append('text').attr('class', 'axis-title').attr('data-axis', 'x')
+      .attr('x', margin.left + innerWidth / 2)
+      .attr('y', margin.top + innerHeight + (isNarrow ? 32 : 34))
+      .attr('text-anchor', 'middle')
+      .text('Olympiad');
+    svg.append('text').attr('class', 'axis-title').attr('data-axis', 'y')
+      .attr('transform', `translate(14,${margin.top + innerHeight / 2}) rotate(-90)`).attr('text-anchor', 'middle')
+      .text('Alumni (people)');
+
+    const legend = svg.append('g').attr('transform', `translate(${margin.left},${isNarrow ? height - 27 : height - 7})`);
+    let offset = 0;
+    let row = 0;
+    const itemWidths = { confirmed: 82, probable: 74, candidate: 82, unmatched: 92 };
+    statuses.forEach(status => {
+      const itemWidth = itemWidths[status];
+      if (isNarrow && offset && offset + itemWidth > innerWidth) {
+        offset = 0;
+        row += 1;
+      }
+      const item = legend.append('g').attr('transform', `translate(${offset},${row * 18})`);
+      item.append('rect').attr('width', 9).attr('height', 9).attr('y', -8).attr('fill', confidenceColors[status]);
+      item.append('text').attr('x', 13).text(status[0].toUpperCase() + status.slice(1));
+      offset += itemWidth;
+    });
+  }
+
+  function renderTable() {
+    const rows = filteredPeople().sort((a, b) =>
+      d3.descending(confidenceRank[a.confidence], confidenceRank[b.confidence]) || d3.ascending(a.name, b.name));
+    const visible = rows.slice(0, 28);
+    const body = root.querySelector('[data-people-table]');
+    body.replaceChildren(...visible.map(person => {
+      const tr = document.createElement('tr');
+      if (state.selectedValue && person[state.metric] === state.selectedValue) tr.classList.add('is-highlighted');
+      const nameCell = document.createElement('td');
+      nameCell.dataset.label = 'Alumnus';
+      const link = person.linkedin || person.profile;
+      if (link) {
+        const anchor = document.createElement('a');
+        anchor.href = link;
+        anchor.textContent = person.name;
+        nameCell.append(anchor);
+      } else {
+        nameCell.textContent = person.name;
+      }
+      const olympiadCell = document.createElement('td');
+      olympiadCell.dataset.label = 'Olympiad';
+      olympiadCell.textContent = `${person.olympiads.join(', ')} · ${person.firstYear}`;
+      const destinationCell = document.createElement('td');
+      destinationCell.dataset.label = 'Destination';
+      destinationCell.textContent = person.organization || '—';
+      const roleCell = document.createElement('td');
+      roleCell.dataset.label = 'Role';
+      roleCell.textContent = person.role || (person.roleCategory !== 'Other' ? person.roleCategory : '—');
+      const confidenceCell = document.createElement('td');
+      confidenceCell.dataset.label = 'Confidence';
+      confidenceCell.textContent = person.confidence;
+      tr.append(nameCell, olympiadCell, destinationCell, roleCell, confidenceCell);
+      return tr;
+    }));
+    root.querySelector('[data-table-note]').textContent = rows.length > visible.length
+      ? `Showing 28 of ${rows.length} filtered people.`
+      : matchCount(rows.length, 'the current filters');
+  }
+
+  function render() {
+    root.querySelector('[data-chart-title]').textContent = {
+      organization: 'Top organizations',
+      roleCategory: 'Role families',
+      organizationCategory: 'Destination sectors'
+    }[state.metric];
+    const selected = state.selectedValue ? ` Selected: ${state.selectedValue}.` : '';
+    root.querySelector('[data-selection]').textContent = `${matchCount(filteredPeople().length, 'the filters')}${selected}`;
+    drawDestinations();
+    drawCoverage();
+    renderTable();
+  }
+
+  controls.confidence.addEventListener('change', event => { state.confidence = event.target.value; state.selectedValue = ''; render(); });
+  controls.olympiad.addEventListener('change', event => { state.olympiad = event.target.value; state.selectedValue = ''; render(); });
+  controls.metric.addEventListener('change', event => { state.metric = event.target.value; state.selectedValue = ''; render(); });
+  controls.search.addEventListener('input', event => { state.search = event.target.value; render(); });
+
+  const observer = new ResizeObserver(() => { drawDestinations(); drawCoverage(); });
+  observer.observe(root.querySelector('.iso-chart-grid'));
+  render();
+})();
+</script>
+</body>
+</html>

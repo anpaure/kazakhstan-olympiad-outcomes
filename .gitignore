@@ -1,0 +1,14 @@
+.DS_Store
+.venv/
+.playwright-cli/
+.tmp/
+__pycache__/
+*.py[cod]
+
+# Rebuildable source caches and local QA output.
+data/cache/
+output/
+outputs/
+
+# Spreadsheet inspection sidecars.
+*.inspect.ndjson
