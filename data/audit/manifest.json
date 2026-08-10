@@ -31,14 +31,14 @@
   "counts": {
     "people": 456,
     "participations": 680,
-    "affiliations": 2306,
-    "locations": 268,
-    "organization_aliases": 424,
-    "organization_sectors": 152,
+    "affiliations": 2359,
+    "locations": 280,
+    "organization_aliases": 443,
+    "organization_sectors": 162,
     "destination_reviews": 37,
-    "evidence_rows": 5258,
-    "sources": 1452,
-    "rejections": 114,
-    "complete_outcomes": 352
+    "evidence_rows": 5373,
+    "sources": 1500,
+    "rejections": 128,
+    "complete_outcomes": 364
   }
 }

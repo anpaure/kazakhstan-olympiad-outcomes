@@ -473,6 +473,13 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         ):
             errors.append(f"selected alma mater is not education for {person_id}")
         organization = row.get("organization", "")
+        if row.get("selected_as_alma_mater", "").casefold() == "true":
+            metadata = organization_metadata(organization)
+            if metadata.get("sector") and metadata.get("sector") != "Education & Research":
+                errors.append(
+                    f"selected alma mater is classified outside education for {person_id}: "
+                    f"{organization}"
+                )
         if organization and canonicalize_organization(organization) != organization:
             errors.append(
                 f"affiliation history retains noncanonical organization for {person_id}: "
@@ -692,9 +699,11 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         ):
             errors.append(f"Exa profile URL disagrees for {person_id}")
         status = profile.get("status")
-        if status not in {"success", "search_cache", "error"}:
+        if status not in {"success", "search_cache", "manual_public_profile", "error"}:
             errors.append(f"Exa profile audit has invalid status for {person_id}")
-        if status in {"success", "search_cache"} and not profile.get("text", "").strip():
+        if status in {"success", "search_cache", "manual_public_profile"} and not profile.get(
+            "text", ""
+        ).strip():
             errors.append(f"Exa profile audit has empty successful content for {person_id}")
 
     for person_id, expected in exa_outcomes_by_id.items():

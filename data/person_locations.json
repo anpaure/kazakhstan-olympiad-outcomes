@@ -671,6 +671,17 @@
     "evidence_url": "https://kz.linkedin.com/in/anuarnurtazin01"
   },
   {
+    "person_id": "kaz-070fb0fd555d",
+    "name": "Arman Bissembayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/skeeu",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted public profile exposes Astana Kazakhstan as Arman Bisembaev's location and places both university and current employment there."
+  },
+  {
     "person_id": "kaz-2b2d1a08a130",
     "name": "Arnat Balabiyev",
     "country_code": "US",
@@ -713,6 +724,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://linkedin.com/in/aaruzhan"
+  },
+  {
+    "person_id": "kaz-c5022eefe384",
+    "name": "Asan Zholdassov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/assan-zholdassov-5290639",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile and Pifagor's official biography place the founder and school in Almaty."
   },
   {
     "person_id": "kaz-61a74e788b9b",
@@ -935,6 +957,17 @@
     "evidence_url": "https://kz.linkedin.com/in/bbektemir"
   },
   {
+    "person_id": "kaz-add07caaba9e",
+    "name": "Baurzhan Smailov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://almaty.fizmat.kz/ru/teachers/smaylov-b-b/",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "RFMS's current teacher biography places Bauyrzhan Smailov at its Almaty campus."
+  },
+  {
     "person_id": "kaz-b82a97fb3f53",
     "name": "Bauyrzhan Sainov",
     "country_code": "KZ",
@@ -977,6 +1010,17 @@
     "evidence_kind": "career_source_location",
     "confidence": "confirmed",
     "review_reason": "Galaxy International School's current staff page places Binazar Zhassulan's Academic Principal role at its Almaty campus."
+  },
+  {
+    "person_id": "kaz-ebbffad91290",
+    "name": "Birzhan Muldagaliyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/birzhan-moldagaliyev",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted public profile exposes Almaty Kazakhstan as Birzhan Moldagaliyev's location."
   },
   {
     "person_id": "kaz-12d9dc922ba8",
@@ -1408,6 +1452,17 @@
     "evidence_url": "https://www.linkedin.com/in/ilya-vilkoviskiy"
   },
   {
+    "person_id": "kaz-4e81a93b6baa",
+    "name": "Ivan Senyushkin",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Pavlodar, Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/senivaser",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted public profile exposes Pavlodar Kazakhstan as Ivan Senyushkin's location."
+  },
+  {
     "person_id": "kaz-9f8b5c60daf2",
     "name": "Kairat Akhmetov",
     "country_code": "KZ",
@@ -1571,6 +1626,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://linkedin.com/in/kirill-kim-4bb3a8346"
+  },
+  {
+    "person_id": "kaz-f29c25aa7066",
+    "name": "Kirill Mayerle",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Moscow, Russia",
+    "evidence_url": "https://linkedin.com/in/kirillmaerle",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted public profile places Kirill Maerle's Skoltech role in Moscow Russia."
   },
   {
     "person_id": "kaz-5a5848e42390",
@@ -1892,6 +1958,17 @@
     "evidence_url": "https://kz.linkedin.com/in/nurbol-duisenbayev"
   },
   {
+    "person_id": "kaz-0647e630efc7",
+    "name": "Nurbol Kisembaev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/nurbol-kissembayev-44017720",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted public profile exposes Kazakhstan as Nurbol Kissembayev's location."
+  },
+  {
     "person_id": "kaz-7bc4b3d48a29",
     "name": "Nurdaulet Kemel",
     "country_code": "HK",
@@ -1934,6 +2011,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://linkedin.com/in/nurislam-tursynbek-0a8620ab"
+  },
+  {
+    "person_id": "kaz-253b9dc2b33d",
+    "name": "Nurlan Algashev",
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "location_label": "Denmark",
+    "evidence_url": "https://linkedin.com/in/nurlan-algashov",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted public profile exposes Denmark as Nurlan Algashov's location."
   },
   {
     "person_id": "kaz-633cb9726092",
@@ -2211,6 +2299,17 @@
     "evidence_url": "https://kz.linkedin.com/in/roman-cheremnov-a02b8a341"
   },
   {
+    "person_id": "kaz-c41cd38943e8",
+    "name": "Rustam Timirbekov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/%D1%80%D1%83%D1%81%D1%82%D0%B0%D0%BC-%D1%82%D0%B5%D0%BC%D0%B8%D1%80%D0%B1%D0%B5%D0%BA%D0%BE%D0%B2-65269287",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted public profile exposes Kazakhstan as Rustam Temirbekov's location."
+  },
+  {
     "person_id": "kaz-5da1ec7d4068",
     "name": "Rustem Takhanov",
     "country_code": "KZ",
@@ -2376,6 +2475,17 @@
     "evidence_url": "https://sg.linkedin.com/in/shyngys-bilyalov-23b6b819b"
   },
   {
+    "person_id": "kaz-1165d71f2850",
+    "name": "Sidorenko Andrey",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://almaty.fizmat.kz/ru/muzey/luchshie-uchitelya/",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "RFMS Almaty's official best-teachers page lists Andrey Sidorenko as its 2025 physics teacher."
+  },
+  {
     "person_id": "kaz-b48f403765ac",
     "name": "Sossin Viktor",
     "country_code": "KZ",
@@ -2473,6 +2583,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://de.linkedin.com/in/tbeka"
+  },
+  {
+    "person_id": "kaz-c83291856fc0",
+    "name": "Tamirlan Seidakhmetov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "San Francisco Bay Area",
+    "evidence_url": "https://www.linkedin.com/in/tamirlan",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted public profile exposes San Francisco Bay Area as Tamirlan Seidakhmetov's location."
   },
   {
     "person_id": "kaz-aec3847e43a0",
@@ -2803,6 +2924,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://kz.linkedin.com/in/yerzhan-imanmalik"
+  },
+  {
+    "person_id": "kaz-209930256d24",
+    "name": "Yerzhigit Tolebekov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/yerzhigit-tulebekov-6096b180",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted public profile places Yerzhigit Tulebekov's founder role in Almaty Kazakhstan."
   },
   {
     "person_id": "kaz-3fc7579c7a89",

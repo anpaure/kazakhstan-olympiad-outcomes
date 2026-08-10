@@ -423,3 +423,22 @@ Institute of Gene Biology RAS,"Institute of Gene Biology, Russian Academy of Sci
 Nazarbayev Intellectual School of Physics and Mathematics in Taldykorgan,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Taldykorgan campus normalized to the national NIS network,https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404
 Nazarbayev Intellectual School of physics and mathematics in Taldykorgan,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Capitalization variant of the Taldykorgan NIS campus,https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404
 Synapse.kz,synapse.kz,synapse.kz,capitalization_variant,Capitalization variant of the education community's public domain name,https://synapse.kz/
+Galaxy International School,Galaxy International School Almaty,Galaxy International School,same_entity,Short-form employer name on the accepted public profile matches the Almaty school's official staff record,https://galaxy.edu.kz/en/staff/163
+Orta Doğu Teknik Üniversitesi,Middle East Technical University,Middle East Technical University,multilingual_name,Turkish institution name normalized to its standard English name,https://www.metu.edu.tr/
+Группа компаний Пифагор,Pifagor School,Pifagor School,multilingual_name,Russian employer label normalized to the school's public English label,https://pifagor.kz/high/kz
+Школа Пифагор,Pifagor School,Pifagor School,multilingual_name,Russian school name normalized to its public English label,https://pifagor.kz/high/kz
+Pifagor company,Pifagor School,Pifagor School,brand_variant,English press variant of the education organization,https://pifagor.kz/high/kz
+"НАО ""Республиканская физико-математическая школа""",Republican Physics and Mathematics School (RFMS),RFMS,multilingual_name,Russian legal name of RFMS,https://almaty.fizmat.kz/
+WTT Solutions LLC,WTT Solutions,WTT Solutions,legal_form_variant,Employer legal-form suffix removed,https://wtt-solutions.com/
+Kazakh Humanitarian-Law University,Maqsut Narikbayev University (MNU),MNU,historical_name,Historical English name of the university now named MNU,https://lp.kazguu.kz/unversityhystory-eng
+Kazakh Humanitarian Law University,Maqsut Narikbayev University (MNU),MNU,historical_name,Hyphenless historical English name of the university now named MNU,https://lp.kazguu.kz/unversityhystory-eng
+KMG PetroChem LLP,KMG PetroChem,KMG PetroChem,legal_form_variant,Employer legal-form suffix removed,https://kmgpetrochem.kz/
+"LLP “KMG PetroChem”",KMG PetroChem,KMG PetroChem,legal_form_variant,Quoted legal-form variant normalized to the public company name,https://kmgpetrochem.kz/
+Astana- Motors,Astana Motors,Astana Motors,punctuation_variant,Spacing and punctuation variant of the automotive company's name,https://astana-motors.kz/
+MUSAB LLP / CONTROLS LLP,MUSAB / CONTROLS,MUSAB / CONTROLS,legal_form_variant,Combined public-profile label normalized without legal-form suffixes,http://www.musab.pro
+Premix Pro LLP,Premix Pro,Premix Pro,legal_form_variant,Employer legal-form suffix removed,https://farabi.university/storage/files/280775433965e7f8a0376b3254557968_%D0%BA%D0%B0%D0%B1%D1%83%D0%BB%D0%BE%D0%B2%20%D0%B0%D0%BD%D0%B3.pdf
+A.N.Nesmeyanov Institute of Organoelement RAS,"A.N. Nesmeyanov Institute of Organoelement Compounds, Russian Academy of Sciences",Nesmeyanov Institute,name_expansion,Public-profile abbreviation expanded to the institute's full English name,https://ineos.ac.ru/en/
+Казахский Национальный университет им. аль-Фараби,Al-Farabi Kazakh National University,Al-Farabi KazNU,multilingual_name,Russian abbreviated institution name normalized to the standard English name,https://www.kaznu.kz/en
+Beeline Kazakhstan,Beeline,Beeline,location_suffix,Kazakhstan operating-company label normalized to the parent brand,https://beeline.kz/
+Rekassa,re:Kassa,re:Kassa,punctuation_variant,Public-profile capitalization and punctuation variant,https://rekassa.kz/
+reKassa,re:Kassa,re:Kassa,punctuation_variant,Compact product-name variant,https://rekassa.kz/

@@ -9,6 +9,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-7cda7889ed0f7ed4",
+    "alias": "A.N.Nesmeyanov Institute of Organoelement RAS",
+    "canonical_name": "A.N. Nesmeyanov Institute of Organoelement Compounds, Russian Academy of Sciences",
+    "display_name": "Nesmeyanov Institute",
+    "merge_type": "name_expansion",
+    "rationale": "Public-profile abbreviation expanded to the institute's full English name",
+    "evidence_url": "https://ineos.ac.ru/en/"
+  },
+  {
     "organization_alias_id": "org-6994e06341ff8092",
     "alias": "Казахский национальный педагогический университет имени Абая",
     "canonical_name": "Abai Kazakh National Pedagogical University",
@@ -97,6 +106,15 @@
     "merge_type": "same_entity",
     "rationale": "Translated official name",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-30522a44ed20392d",
+    "alias": "Казахский Национальный университет им. аль-Фараби",
+    "canonical_name": "Al-Farabi Kazakh National University",
+    "display_name": "Al-Farabi KazNU",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian abbreviated institution name normalized to the standard English name",
+    "evidence_url": "https://www.kaznu.kz/en"
   },
   {
     "organization_alias_id": "org-d7a9ae1cca0c1a02",
@@ -378,6 +396,15 @@
     "evidence_url": "https://aifc.kz/wp-content/uploads/2024/06/aifc_ar2020_eng.pdf"
   },
   {
+    "organization_alias_id": "org-6734c42b5baf317f",
+    "alias": "Astana- Motors",
+    "canonical_name": "Astana Motors",
+    "display_name": "Astana Motors",
+    "merge_type": "punctuation_variant",
+    "rationale": "Spacing and punctuation variant of the automotive company's name",
+    "evidence_url": "https://astana-motors.kz/"
+  },
+  {
     "organization_alias_id": "org-749db96589b950d7",
     "alias": "Atyrau Refinery Llp",
     "canonical_name": "Atyrau Refinery",
@@ -394,6 +421,15 @@
     "merge_type": "former_name",
     "rationale": "University adopted the Barcelona School of Economics brand in 2021",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-877a3dfb8f44887c",
+    "alias": "Beeline Kazakhstan",
+    "canonical_name": "Beeline",
+    "display_name": "Beeline",
+    "merge_type": "location_suffix",
+    "rationale": "Kazakhstan operating-company label normalized to the parent brand",
+    "evidence_url": "https://beeline.kz/"
   },
   {
     "organization_alias_id": "org-5713ad437c7ca9e4",
@@ -1006,6 +1042,15 @@
     "merge_type": "same_entity",
     "rationale": "Country-suffix variant",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-affec3f144745668",
+    "alias": "Galaxy International School",
+    "canonical_name": "Galaxy International School Almaty",
+    "display_name": "Galaxy International School",
+    "merge_type": "same_entity",
+    "rationale": "Short-form employer name on the accepted public profile matches the Almaty school's official staff record",
+    "evidence_url": "https://galaxy.edu.kz/en/staff/163"
   },
   {
     "organization_alias_id": "org-bf8e0c3d12a281c6",
@@ -1737,6 +1782,24 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-8d9c3199fc2535fc",
+    "alias": "KMG PetroChem LLP",
+    "canonical_name": "KMG PetroChem",
+    "display_name": "KMG PetroChem",
+    "merge_type": "legal_form_variant",
+    "rationale": "Employer legal-form suffix removed",
+    "evidence_url": "https://kmgpetrochem.kz/"
+  },
+  {
+    "organization_alias_id": "org-749a58ff8876cd6d",
+    "alias": "LLP “KMG PetroChem”",
+    "canonical_name": "KMG PetroChem",
+    "display_name": "KMG PetroChem",
+    "merge_type": "legal_form_variant",
+    "rationale": "Quoted legal-form variant normalized to the public company name",
+    "evidence_url": "https://kmgpetrochem.kz/"
+  },
+  {
     "organization_alias_id": "org-6b59421a55d78137",
     "alias": "3D Integrated Opto-Electronic Device Lab, KAIST",
     "canonical_name": "Korea Advanced Institute of Science and Technology (KAIST)",
@@ -1998,6 +2061,24 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-9a58fffca7fd5cf9",
+    "alias": "Kazakh Humanitarian Law University",
+    "canonical_name": "Maqsut Narikbayev University (MNU)",
+    "display_name": "MNU",
+    "merge_type": "historical_name",
+    "rationale": "Hyphenless historical English name of the university now named MNU",
+    "evidence_url": "https://lp.kazguu.kz/unversityhystory-eng"
+  },
+  {
+    "organization_alias_id": "org-8b7948d8886cd774",
+    "alias": "Kazakh Humanitarian-Law University",
+    "canonical_name": "Maqsut Narikbayev University (MNU)",
+    "display_name": "MNU",
+    "merge_type": "historical_name",
+    "rationale": "Historical English name of the university now named MNU",
+    "evidence_url": "https://lp.kazguu.kz/unversityhystory-eng"
+  },
+  {
     "organization_alias_id": "org-432a6187f2bcb598",
     "alias": "Massachusetts Institute of Technology",
     "canonical_name": "Massachusetts Institute of Technology (MIT)",
@@ -2133,6 +2214,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-5ecdd7936777ceb8",
+    "alias": "Orta Doğu Teknik Üniversitesi",
+    "canonical_name": "Middle East Technical University",
+    "display_name": "Middle East Technical University",
+    "merge_type": "multilingual_name",
+    "rationale": "Turkish institution name normalized to its standard English name",
+    "evidence_url": "https://www.metu.edu.tr/"
+  },
+  {
     "organization_alias_id": "org-43b9d65d3ca0250b",
     "alias": "Orta Doğu Teknik Üniversitesi / Middle East Technical University",
     "canonical_name": "Middle East Technical University",
@@ -2194,6 +2284,15 @@
     "merge_type": "legal_form_variant",
     "rationale": "Legal-form cleanup",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-4fcf40cba2d27835",
+    "alias": "MUSAB LLP / CONTROLS LLP",
+    "canonical_name": "MUSAB / CONTROLS",
+    "display_name": "MUSAB / CONTROLS",
+    "merge_type": "legal_form_variant",
+    "rationale": "Combined public-profile label normalized without legal-form suffixes",
+    "evidence_url": "http://www.musab.pro"
   },
   {
     "organization_alias_id": "org-47af585a5c2017c2",
@@ -2619,6 +2718,33 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-ff34c97159178985",
+    "alias": "Pifagor company",
+    "canonical_name": "Pifagor School",
+    "display_name": "Pifagor School",
+    "merge_type": "brand_variant",
+    "rationale": "English press variant of the education organization",
+    "evidence_url": "https://pifagor.kz/high/kz"
+  },
+  {
+    "organization_alias_id": "org-f653dd45108d726c",
+    "alias": "Группа компаний Пифагор",
+    "canonical_name": "Pifagor School",
+    "display_name": "Pifagor School",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian employer label normalized to the school's public English label",
+    "evidence_url": "https://pifagor.kz/high/kz"
+  },
+  {
+    "organization_alias_id": "org-91f8bef51b3d0920",
+    "alias": "Школа Пифагор",
+    "canonical_name": "Pifagor School",
+    "display_name": "Pifagor School",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian school name normalized to its public English label",
+    "evidence_url": "https://pifagor.kz/high/kz"
+  },
+  {
     "organization_alias_id": "org-c7265886d7c6894b",
     "alias": "Platonus, LLP",
     "canonical_name": "Platonus",
@@ -2635,6 +2761,15 @@
     "merge_type": "legal_form_variant",
     "rationale": "Legal-form cleanup",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-0f882fce8dbb13c4",
+    "alias": "Premix Pro LLP",
+    "canonical_name": "Premix Pro",
+    "display_name": "Premix Pro",
+    "merge_type": "legal_form_variant",
+    "rationale": "Employer legal-form suffix removed",
+    "evidence_url": "https://farabi.university/storage/files/280775433965e7f8a0376b3254557968_%D0%BA%D0%B0%D0%B1%D1%83%D0%BB%D0%BE%D0%B2%20%D0%B0%D0%BD%D0%B3.pdf"
   },
   {
     "organization_alias_id": "org-95cc1ca59821ab30",
@@ -2727,6 +2862,24 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-8ad711903bd2ef3b",
+    "alias": "Rekassa",
+    "canonical_name": "re:Kassa",
+    "display_name": "re:Kassa",
+    "merge_type": "punctuation_variant",
+    "rationale": "Public-profile capitalization and punctuation variant",
+    "evidence_url": "https://rekassa.kz/"
+  },
+  {
+    "organization_alias_id": "org-82e227456cecab8e",
+    "alias": "reKassa",
+    "canonical_name": "re:Kassa",
+    "display_name": "re:Kassa",
+    "merge_type": "punctuation_variant",
+    "rationale": "Compact product-name variant",
+    "evidence_url": "https://rekassa.kz/"
+  },
+  {
     "organization_alias_id": "org-3d8fd8dc3aa5232f",
     "alias": "National School of Physics & Math (FIZMAT)",
     "canonical_name": "Republican Physics and Mathematics School (RFMS)",
@@ -2761,6 +2914,15 @@
     "merge_type": "same_entity",
     "rationale": "Official name without acronym",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-4eaf0400f9740e1d",
+    "alias": "НАО \"Республиканская физико-математическая школа\"",
+    "canonical_name": "Republican Physics and Mathematics School (RFMS)",
+    "display_name": "RFMS",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian legal name of RFMS",
+    "evidence_url": "https://almaty.fizmat.kz/"
   },
   {
     "organization_alias_id": "org-e2f2ffc8c0b81cef",
@@ -3742,6 +3904,15 @@
     "merge_type": "parent_organization",
     "rationale": "University school",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-8937ea73fd82998a",
+    "alias": "WTT Solutions LLC",
+    "canonical_name": "WTT Solutions",
+    "display_name": "WTT Solutions",
+    "merge_type": "legal_form_variant",
+    "rationale": "Employer legal-form suffix removed",
+    "evidence_url": "https://wtt-solutions.com/"
   },
   {
     "organization_alias_id": "org-0695481704fca89c",

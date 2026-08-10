@@ -14,10 +14,12 @@ sector-21008d721504d84c,Applied Materials,company,Industrial & Manufacturing,Rev
 sector-3e908df5beadcc80,Armeta,company,Technology & Software,Reviewed core activity is artificial intelligence software.
 sector-e6226c677ef67b03,Association for the Conservation of Biodiversity of Kazakhstan,nonprofit,Environment & Nonprofit,Reviewed core activity is biodiversity conservation.
 sector-f4a81c7d5e7063e1,Astana International Financial Centre,government,Finance & Insurance,Reviewed organization is Kazakhstan's statutory international financial centre and includes the Green Finance Centre destination.
+sector-19aa8e0ca6a1b944,Astana Motors,company,Industrial & Manufacturing,Reviewed core activity is automotive distribution and manufacturing.
 sector-0bc4da79a9b59730,Augment Code,company,Technology & Software,Reviewed core activity is AI software development tooling.
 sector-59d466820d86172a,Axiom,company,Technology & Software,Reviewed core activity is blockchain and zero-knowledge software.
 sector-095299c1224222c8,Ayar Labs,company,Technology & Software,Reviewed core activity is optical semiconductor interconnect technology.
 sector-aaeea9eba407cfe4,Bank of Canada,government,Government & Public Sector,Reviewed organization is Canada's central bank.
+sector-4a9fd724c053652c,Beeline,company,Technology & Software,Reviewed core activity is telecommunications.
 sector-dcb446541cf4dcd7,BestYs,company,Education & Research,Reviewed core activity is olympiad and education technology.
 sector-295ab1d6a82acc96,BI Group,company,Industrial & Manufacturing,Reviewed core activity is construction and property development.
 sector-4d1ce4a4e1450822,BIOVECTRA,company,Healthcare & Life Sciences,Reviewed core activity is biopharmaceutical manufacturing.
@@ -56,6 +58,7 @@ sector-5880f8f5c6e10321,Genesis Molecular AI,company,Healthcare & Life Sciences,
 sector-bc8359eb1335ec65,Genie,company,Technology & Software,Reviewed core activity is AI agent software and infrastructure.
 sector-ce770667e5f9b0d8,Google,company,Technology & Software,Reviewed core activity is internet software and cloud technology.
 sector-6ad05f5b3d95d338,GrapheneOS Foundation,nonprofit,Technology & Software,Reviewed core activity is privacy and security-focused mobile operating-system development.
+sector-cd365ddfbaaa161c,GRATA International,company,Consulting & Professional Services,Reviewed core activity is legal services.
 sector-62908d63ac2589c8,Graviton Research Capital,company,Finance & Insurance,Reviewed core activity is quantitative investment management.
 sector-cda285a15b31ddac,Higgsfield AI,company,Technology & Software,Reviewed core activity is generative AI software.
 sector-1a41a2e61a1d3e4b,Home Credit Bank,company,Finance & Insurance,Reviewed core activity is consumer banking.
@@ -77,6 +80,7 @@ sector-0d0a2e0ad4e7f46e,Kazakhstan Temir Zholy,government,Transportation & Infra
 sector-4114428bd7f9bf47,Kazkomnet,company,Technology & Software,Reviewed core activity is telecommunications and network services.
 sector-499e5f72ee9264ee,Kcell,company,Technology & Software,Reviewed core activity is telecommunications.
 sector-67184fc521d3400d,Khan Group,company,Technology & Software,Reviewed core activity is IT services and technology consulting.
+sector-fd08a23ae028836e,KMG PetroChem,company,Energy & Natural Resources,Reviewed core activity is petrochemical development.
 sector-c81a95e77ebcb4ac,Kuwait Oil Company (KOC),company,Energy & Natural Resources,Reviewed core activity is oil and gas.
 sector-1a2d2a5b075e22fb,Laminar,company,Technology & Software,Reviewed core activity is AI software infrastructure.
 sector-092a73f79b0650c2,Leap Tools,company,Technology & Software,Reviewed core activity is visualization software.
@@ -88,6 +92,7 @@ sector-4f749de7c24fe967,Meta,company,Technology & Software,Reviewed core activit
 sector-d742a3769e6e9418,Micron Technology,company,Technology & Software,Reviewed core activity is semiconductor technology.
 sector-c7bac46904be785c,Microsoft,company,Technology & Software,Reviewed core activity is software and cloud technology.
 sector-a06173c5db263e5e,Mirendil,company,Technology & Software,Reviewed core activity is AI systems for scientific research.
+sector-d78e67174b29a6b9,MUSAB / CONTROLS,company,Industrial & Manufacturing,Reviewed public profile describes industrial flooring chemicals technical support and laboratory services.
 sector-7ceb9313cd29ba1d,Nace AI,company,Technology & Software,Reviewed core activity is artificial intelligence software.
 sector-226f5b9d4d6a0dd8,National Center for Biotechnology Information (NCBI),government,Government & Public Sector,Reviewed organization is a United States government biomedical information center.
 sector-268d1df847324616,National Environment Agency Singapore,government,Government & Public Sector,Reviewed organization is Singapore's environmental public agency.
@@ -105,12 +110,14 @@ sector-8e7241b80807e030,Pediatric Associates,company,Healthcare & Life Sciences,
 sector-f394cc2a6da7dfd6,Perplexity,company,Technology & Software,Reviewed core activity is AI search software.
 sector-8a45590e8e81f2fe,Pika,company,Technology & Software,Reviewed core activity is generative AI software.
 sector-2e08ad0cb0a79246,Polymer Production,company,Industrial & Manufacturing,Reviewed core activity is polymer manufacturing.
+sector-38d2c9ab69c19db5,Premix Pro,company,Industrial & Manufacturing,Reviewed core activity is chemical and pharmaceutical manufacturing services.
 sector-9fac43178b937037,Private hedge fund,company,Finance & Insurance,Reviewed organization is an investment fund.
 sector-c3a6c0d54124d098,Pro Wheel XR,company,Technology & Software,Reviewed core activity is extended-reality technology.
 sector-5f9896dcc61775e0,Prog.AI,company,Technology & Software,Reviewed core activity is artificial intelligence software.
 sector-5987374c052c7e50,Pulsar,company,Finance & Insurance,Reviewed core activity is crypto financial services and quantitative trading.
 sector-c469a8fcef3b20c7,Quantum Management Company,company,Education & Research,Reviewed core activity is education administration and school management.
 sector-e934cb982183e40f,Qube Research & Technologies,company,Finance & Insurance,Reviewed core activity is quantitative investment management.
+sector-434b7a1248f5272a,re:Kassa,company,Technology & Software,Reviewed core activity is cloud point-of-sale and business-management software.
 sector-d7b1b10db25f9591,Rominserv,company,Energy & Natural Resources,Reviewed core activity is energy engineering and industrial services.
 sector-f37cf319b81b96eb,Samsung Electronics,company,Technology & Software,Reviewed core activity is electronics and semiconductor technology.
 sector-384acd39a3de4731,Self-employed,independent,Independent & Other,Reviewed destination is independent work rather than a named employer.
@@ -118,6 +125,7 @@ sector-32e97dee12c076b8,Seoul Robotics,company,Technology & Software,Reviewed co
 sector-86297065ef92f13d,Siemens Energy,company,Energy & Natural Resources,Reviewed core activity is energy systems and infrastructure.
 sector-a01c6b28c9be9239,Siemens Healthineers,company,Healthcare & Life Sciences,Reviewed core activity is medical technology.
 sector-b2b94b06a0073d0d,Silleno,company,Energy & Natural Resources,Reviewed core activity is petrochemicals.
+sector-a83a403aa39134e9,Skoltech,nonprofit,Education & Research,Reviewed organization is a graduate research university focused on science and technology.
 sector-59bde72b615b1278,SLB,company,Energy & Natural Resources,Reviewed core activity is oilfield technology and services.
 sector-e054a44dfbc8b1fc,Smart Global (IIoT),company,Technology & Software,Reviewed core activity is industrial internet-of-things software.
 sector-98df9a59f0641d0c,Snap,company,Consumer & Media,Reviewed core activity is consumer social media.
@@ -149,5 +157,7 @@ sector-4e06970e2bbaee76,Virtu Financial,company,Finance & Insurance,Reviewed cor
 sector-0d68b7245812b2c7,Vitol,company,Energy & Natural Resources,Reviewed core activity is energy and commodities trading.
 sector-3c41733beae90092,VoltaGrid,company,Energy & Natural Resources,Reviewed core activity is distributed power and energy services.
 sector-9c52a11b1892acad,WeGlobal.ai,company,Technology & Software,Reviewed core activity is artificial intelligence software.
+sector-9916a218af23f367,WHO Regional Office for Europe,nonprofit,Government & Public Sector,Reviewed organization is a regional office of the World Health Organization.
+sector-682d1ccd32c4dcb3,WTT Solutions,company,Technology & Software,Reviewed core activity is custom software development.
 sector-e0a9d8bac8c0492b,ZEISS Group,company,Industrial & Manufacturing,Reviewed core activity is optics and precision manufacturing.
 sector-b9b2a7b2459b9e96,ZINE,company,Consumer & Media,Reviewed core activity is influencer-marketing media services.

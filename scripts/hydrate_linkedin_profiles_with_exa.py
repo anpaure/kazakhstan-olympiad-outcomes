@@ -30,8 +30,10 @@ EXA_CONTENTS_URL = "https://api.exa.ai/contents"
 EXA_SEARCH_URL = "https://api.exa.ai/search"
 DEFAULT_INPUT = Path("data/researched_people.csv")
 DEFAULT_SEARCH_AUDIT = Path("data/exa_linkedin_search_audit.json")
+DEFAULT_MANUAL_PROFILES = Path("data/manual_linkedin_profiles.csv")
 DEFAULT_JSON_OUTPUT = Path("data/exa_linkedin_profile_audit.json")
 DEFAULT_CSV_OUTPUT = Path("data/exa_linkedin_profile_audit.csv")
+MANUAL_PROFILE_STATUS = "manual_public_profile"
 
 CSV_FIELDS = [
     "person_id",
@@ -194,7 +196,11 @@ def normalize_batch(
 def profile_search_records(profiles: list[dict[str, object]]) -> list[dict[str, object]]:
     records = []
     for profile in profiles:
-        if clean_text(profile.get("status")) not in {"success", "search_cache"}:
+        if clean_text(profile.get("status")) not in {
+            "success",
+            "search_cache",
+            MANUAL_PROFILE_STATUS,
+        }:
             continue
         text = str(profile.get("text") or "")
         url = clean_text(profile.get("resolved_url") or profile.get("linkedin_url"))
@@ -257,6 +263,40 @@ def cached_profiles_from_search(
     return profiles
 
 
+def normalize_manual_profiles(rows: list[dict[str, str]]) -> list[dict[str, object]]:
+    profiles = []
+    for row in rows:
+        person_id = clean_text(row.get("person_id"))
+        linkedin_url = clean_text(row.get("linkedin_url"))
+        text = str(row.get("text") or "").strip()
+        if not person_id or not linkedin_url or not text:
+            continue
+        profiles.append(
+            {
+                "person_id": person_id,
+                "name": clean_text(row.get("name")),
+                "linkedin_url": linkedin_url,
+                "status": MANUAL_PROFILE_STATUS,
+                "error": "",
+                "request_id": "",
+                "retrieved_at": clean_text(row.get("reviewed_at")),
+                "title": clean_text(row.get("title")),
+                "resolved_url": linkedin_url,
+                "content_characters": len(text),
+                "source_endpoint": clean_text(row.get("evidence_url")) or linkedin_url,
+                "text": text,
+            }
+        )
+    return profiles
+
+
+def load_manual_profiles(path: Path) -> list[dict[str, object]]:
+    if not path.exists():
+        return []
+    with path.open(newline="", encoding="utf-8") as handle:
+        return normalize_manual_profiles(list(csv.DictReader(handle)))
+
+
 def load_existing(path: Path) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     if not path.exists():
         return [], []
@@ -278,14 +318,18 @@ def write_outputs(
 ) -> None:
     for profile in profiles:
         if not clean_text(profile.get("source_endpoint")):
-            profile["source_endpoint"] = (
-                EXA_SEARCH_URL
-                if clean_text(profile.get("status")) == "search_cache"
-                else EXA_CONTENTS_URL
-            )
+            status = clean_text(profile.get("status"))
+            if status == "search_cache":
+                profile["source_endpoint"] = EXA_SEARCH_URL
+            elif status == MANUAL_PROFILE_STATUS:
+                profile["source_endpoint"] = clean_text(
+                    profile.get("resolved_url") or profile.get("linkedin_url")
+                )
+            else:
+                profile["source_endpoint"] = EXA_CONTENTS_URL
     profiles.sort(key=lambda row: (clean_text(row.get("name")).casefold(), clean_text(row.get("person_id"))))
     payload = {
-        "provider": "Exa",
+        "provider": "Exa with reviewed public-profile supplements",
         "endpoint": EXA_CONTENTS_URL,
         "fallback_endpoint": EXA_SEARCH_URL,
         "generated_at": utc_now(),
@@ -296,6 +340,9 @@ def write_outputs(
         "successful_profile_count": sum(row.get("status") == "success" for row in profiles),
         "cached_search_profile_count": sum(
             row.get("status") == "search_cache" for row in profiles
+        ),
+        "manual_public_profile_count": sum(
+            row.get("status") == MANUAL_PROFILE_STATUS for row in profiles
         ),
         "error_profile_count": sum(row.get("status") == "error" for row in profiles),
         "total_cost_usd": round(
@@ -329,6 +376,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--search-audit", type=Path, default=DEFAULT_SEARCH_AUDIT)
+    parser.add_argument("--manual-profiles", type=Path, default=DEFAULT_MANUAL_PROFILES)
     parser.add_argument("--output-json", type=Path, default=DEFAULT_JSON_OUTPUT)
     parser.add_argument("--output-csv", type=Path, default=DEFAULT_CSV_OUTPUT)
     parser.add_argument("--person-id", action="append", default=[])
@@ -380,6 +428,24 @@ def main() -> int:
         if clean_text(row.get("person_id")) in accepted_person_ids
     ]
     by_person = {clean_text(row.get("person_id")): row for row in existing_profiles}
+    accepted_by_person = {row["person_id"]: row for row in all_profiles}
+    for profile in load_manual_profiles(args.manual_profiles):
+        person_id = clean_text(profile.get("person_id"))
+        accepted = accepted_by_person.get(person_id)
+        if not accepted:
+            continue
+        if canonical_url(clean_text(profile.get("linkedin_url"))) != canonical_url(
+            accepted["linkedin_url"]
+        ):
+            raise SystemExit(
+                f"Manual public profile URL disagrees with accepted LinkedIn URL for {person_id}"
+            )
+        previous = by_person.get(person_id)
+        if previous is None or clean_text(previous.get("status")) in {
+            "error",
+            MANUAL_PROFILE_STATUS,
+        }:
+            by_person[person_id] = profile
 
     if args.from_search_cache:
         searches_payload = json.loads(args.search_audit.read_text(encoding="utf-8"))

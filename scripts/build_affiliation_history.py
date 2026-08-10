@@ -108,33 +108,57 @@ EXCLUDED_ROLE_PATTERN = re.compile(
     re.IGNORECASE,
 )
 EDUCATION_TERMS = re.compile(
-    r"\b(?:associate|bachelors?|b\.?\s*sc\.?|b\.?\s*s\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|masters?|m\.?\s*sc\.?|m\.?\s*s\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|ph\.?d|doctor|specialist|student|graduate|degree|diploma|school|education|бакалавр|магистр|специалист)\b",
+    r"\b(?:associate|bachelors?|b\.?\s*sc\.?|b\.?\s*s\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|masters?|m\.?\s*sc\.?|m\.?\s*s\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|ph\.?d|doctor|specialist|student|undergraduate|postgraduate|graduate|degree|diploma|school|education|бакалавр|магистр|специалист)\b",
     re.IGNORECASE,
 )
 POSTSECONDARY_ROLE_PATTERN = re.compile(
-    r"\b(?:associate(?:'s)?|bachelors?|b\.?\s*sc\.?|b\.?\s*s\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|"
+    r"\b(?:bachelors?|b\.?\s*sc\.?|b\.?\s*s\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|"
     r"masters?|m\.?\s*sc\.?|m\.?\s*s\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|mba\b|mph\b|"
     r"ph\.?d|doctor(?:ate)?|specialist|undergraduate|graduate (?:student|studies)|medical student|бакалавр|магистр|специалист)\b",
     re.IGNORECASE,
 )
 POSTSECONDARY_INSTITUTION_PATTERN = re.compile(
     r"\b(?:university|college|polytechnic|institute of technology|technical institute|"
+    r"institute of physics and technology|"
     r"school of (?:economics|engineering|medicine|business)|école normale|graduate school)\b",
     re.IGNORECASE,
 )
 SECONDARY_INSTITUTION_PATTERN = re.compile(
-    r"\b(?:high school|secondary school|lyceum|gymnasium|intellectual schools?|"
+    r"\b(?:high school|secondary school|international school|lyceum|gymnasium|intellectual schools?|"
     r"physics and mathematics school|boarding school|berufskolleg|haileybury)\b|\b(?:rfms|fizmat|bil)\b",
     re.IGNORECASE,
 )
 NON_ALMA_ROLE_PATTERN = re.compile(
     r"\b(?:research|teaching) assistants?\b|\binstructors?\b|\b(?:acting )?deans?\b|"
     r"\b(?:intern|fellow|visiting|exchange|summer (?:research )?(?:school|semester)|certificate|"
-    r"short course|participant)\b",
+    r"short course|participant|director|manager|founder|co-?founder|chief|officer|partner|"
+    r"analyst|consultant|developer|architect|president|head|lead|owner|advisor|"
+    r"adviser|administrator|coordinator|research author)\b",
     re.IGNORECASE,
 )
 EMPLOYMENT_ROLE_TERMS = re.compile(
     r"\b(?:researcher|research assistant|fellow|scientist|engineer|professor|lecturer|teacher)\b",
+    re.IGNORECASE,
+)
+STRONG_EMPLOYMENT_ROLE_TERMS = re.compile(
+    r"\b(?:director|manager|founder|co-?founder|chief|officer|partner|analyst|"
+    r"consultant|developer|architect|president|head|lead|owner|"
+    r"advisor|adviser|administrator|coordinator|(?:senior\s+)?specialist\s+of)\b",
+    re.IGNORECASE,
+)
+SPECIALIST_ROLE_PATTERN = re.compile(r"\bspecialist\b", re.IGNORECASE)
+SPECIALIST_DEGREE_PATTERN = re.compile(
+    r"^\s*specialist(?:\s+degree)?(?=$|[\s,;(])"
+    r"(?!\s+(?:of|at|for|with|in)\b)",
+    re.IGNORECASE,
+)
+ASSOCIATE_EMPLOYMENT_PATTERN = re.compile(
+    r"\b(?:postdoctoral(?:\s+research)?|senior)\s+associate\b",
+    re.IGNORECASE,
+)
+ASSOCIATE_ROLE_PATTERN = re.compile(r"\bassociate\b", re.IGNORECASE)
+ASSOCIATE_DEGREE_PATTERN = re.compile(
+    r"^\s*associate(?:'s)?(?:\s+degree|\s+of\b|(?=\s*[,;(]|$))",
     re.IGNORECASE,
 )
 INSTITUTION_TERMS = re.compile(
@@ -163,6 +187,22 @@ ONE_OFF_ROLE_PATTERN = re.compile(
 def clean_text(value: object) -> str:
     text = "" if value is None else str(value)
     return re.sub(r"\s+", " ", text.replace("\xa0", " ")).strip()
+
+
+def is_strong_employment_role(role: object) -> bool:
+    role_text = clean_text(role)
+    if STRONG_EMPLOYMENT_ROLE_TERMS.search(role_text):
+        return True
+    if ASSOCIATE_EMPLOYMENT_PATTERN.search(role_text):
+        return True
+    if ASSOCIATE_ROLE_PATTERN.search(role_text) and not ASSOCIATE_DEGREE_PATTERN.match(
+        role_text
+    ):
+        return True
+    return bool(
+        SPECIALIST_ROLE_PATTERN.search(role_text)
+        and not SPECIALIST_DEGREE_PATTERN.match(role_text)
+    )
 
 
 def strip_markdown(value: str) -> str:
@@ -235,7 +275,9 @@ def parse_experience(segment: str, organization: str = "") -> dict[str, object] 
         role = ROLE_STOP_PATTERN.sub("", segment)
         affiliation_type = (
             "education"
-            if EDUCATION_TERMS.search(role) and not EMPLOYMENT_ROLE_TERMS.search(role)
+            if EDUCATION_TERMS.search(role)
+            and not EMPLOYMENT_ROLE_TERMS.search(role)
+            and not is_strong_employment_role(role)
             else "employment"
         )
         return make_entry(organization, role, affiliation_type, segment)
@@ -262,7 +304,9 @@ def parse_experience(segment: str, organization: str = "") -> dict[str, object] 
         )
     affiliation_type = (
         "education"
-        if EDUCATION_TERMS.search(role) and not EMPLOYMENT_ROLE_TERMS.search(role)
+        if EDUCATION_TERMS.search(role)
+        and not EMPLOYMENT_ROLE_TERMS.search(role)
+        and not is_strong_employment_role(role)
         else "employment"
     )
     return make_entry(
@@ -437,7 +481,10 @@ def normalized_type(value: str, role: str = "") -> str:
     value = clean_text(value).casefold()
     if value in {"education", "qualification"}:
         role_text = clean_text(role).casefold()
-        if re.search(r"\b(?:research(?:er| author)?|professor|lecturer|engineer)\b", role_text) and not EDUCATION_TERMS.search(role_text):
+        if is_strong_employment_role(role_text) or (
+            EMPLOYMENT_ROLE_TERMS.search(role_text)
+            and not EDUCATION_TERMS.search(role_text)
+        ):
             return "employment"
         return "education"
     return "employment"
@@ -508,9 +555,17 @@ def is_postsecondary_education(row: dict[str, object]) -> bool:
     role = clean_text(row.get("role"))
     organization = clean_text(row.get("organization"))
     evidence_text = clean_text(row.get("evidence_text"))
-    if NON_ALMA_ROLE_PATTERN.search(f"{role} {evidence_text}"):
+    if is_strong_employment_role(role):
         return False
-    if POSTSECONDARY_ROLE_PATTERN.search(role):
+    if NON_ALMA_ROLE_PATTERN.search(role):
+        return False
+    role_is_degree = bool(
+        ASSOCIATE_DEGREE_PATTERN.match(role)
+        or POSTSECONDARY_ROLE_PATTERN.search(role)
+    )
+    if not role_is_degree and NON_ALMA_ROLE_PATTERN.search(evidence_text):
+        return False
+    if role_is_degree:
         return True
     if SECONDARY_INSTITUTION_PATTERN.search(organization):
         return False
@@ -773,8 +828,21 @@ def build_rows(
             row for row in education_rows if is_postsecondary_education(row)
         ]
         if not postsecondary_rows:
+            secondary_rows = [
+                row
+                for row in education_rows
+                if SECONDARY_INSTITUTION_PATTERN.search(
+                    clean_text(row.get("organization"))
+                )
+                and not is_strong_employment_role(row.get("role"))
+                and not NON_ALMA_ROLE_PATTERN.search(
+                    f"{clean_text(row.get('role'))} {clean_text(row.get('evidence_text'))}"
+                )
+            ]
+            if not secondary_rows:
+                continue
             selected = max(
-                education_rows,
+                secondary_rows,
                 key=lambda row: education_score(
                     row,
                     clean_text(person.get("organization")),

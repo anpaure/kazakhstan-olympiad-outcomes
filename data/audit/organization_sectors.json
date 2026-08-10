@@ -105,6 +105,13 @@
     "rationale": "Reviewed organization is Kazakhstan's statutory international financial centre and includes the Green Finance Centre destination."
   },
   {
+    "organization_sector_id": "sector-19aa8e0ca6a1b944",
+    "canonical_name": "Astana Motors",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is automotive distribution and manufacturing."
+  },
+  {
     "organization_sector_id": "sector-0bc4da79a9b59730",
     "canonical_name": "Augment Code",
     "organization_type": "company",
@@ -131,6 +138,13 @@
     "organization_type": "government",
     "sector": "Government & Public Sector",
     "rationale": "Reviewed organization is Canada's central bank."
+  },
+  {
+    "organization_sector_id": "sector-4a9fd724c053652c",
+    "canonical_name": "Beeline",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is telecommunications."
   },
   {
     "organization_sector_id": "sector-dcb446541cf4dcd7",
@@ -399,6 +413,13 @@
     "rationale": "Reviewed core activity is privacy and security-focused mobile operating-system development."
   },
   {
+    "organization_sector_id": "sector-cd365ddfbaaa161c",
+    "canonical_name": "GRATA International",
+    "organization_type": "company",
+    "sector": "Consulting & Professional Services",
+    "rationale": "Reviewed core activity is legal services."
+  },
+  {
     "organization_sector_id": "sector-62908d63ac2589c8",
     "canonical_name": "Graviton Research Capital",
     "organization_type": "company",
@@ -546,6 +567,13 @@
     "rationale": "Reviewed core activity is IT services and technology consulting."
   },
   {
+    "organization_sector_id": "sector-fd08a23ae028836e",
+    "canonical_name": "KMG PetroChem",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is petrochemical development."
+  },
+  {
     "organization_sector_id": "sector-c81a95e77ebcb4ac",
     "canonical_name": "Kuwait Oil Company (KOC)",
     "organization_type": "company",
@@ -621,6 +649,13 @@
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is AI systems for scientific research."
+  },
+  {
+    "organization_sector_id": "sector-d78e67174b29a6b9",
+    "canonical_name": "MUSAB / CONTROLS",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed public profile describes industrial flooring chemicals technical support and laboratory services."
   },
   {
     "organization_sector_id": "sector-7ceb9313cd29ba1d",
@@ -742,6 +777,13 @@
     "rationale": "Reviewed core activity is polymer manufacturing."
   },
   {
+    "organization_sector_id": "sector-38d2c9ab69c19db5",
+    "canonical_name": "Premix Pro",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is chemical and pharmaceutical manufacturing services."
+  },
+  {
     "organization_sector_id": "sector-9fac43178b937037",
     "canonical_name": "Private hedge fund",
     "organization_type": "company",
@@ -782,6 +824,13 @@
     "organization_type": "company",
     "sector": "Finance & Insurance",
     "rationale": "Reviewed core activity is quantitative investment management."
+  },
+  {
+    "organization_sector_id": "sector-434b7a1248f5272a",
+    "canonical_name": "re:Kassa",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is cloud point-of-sale and business-management software."
   },
   {
     "organization_sector_id": "sector-d7b1b10db25f9591",
@@ -831,6 +880,13 @@
     "organization_type": "company",
     "sector": "Energy & Natural Resources",
     "rationale": "Reviewed core activity is petrochemicals."
+  },
+  {
+    "organization_sector_id": "sector-a83a403aa39134e9",
+    "canonical_name": "Skoltech",
+    "organization_type": "nonprofit",
+    "sector": "Education & Research",
+    "rationale": "Reviewed organization is a graduate research university focused on science and technology."
   },
   {
     "organization_sector_id": "sector-59bde72b615b1278",
@@ -1048,6 +1104,20 @@
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is artificial intelligence software."
+  },
+  {
+    "organization_sector_id": "sector-9916a218af23f367",
+    "canonical_name": "WHO Regional Office for Europe",
+    "organization_type": "nonprofit",
+    "sector": "Government & Public Sector",
+    "rationale": "Reviewed organization is a regional office of the World Health Organization."
+  },
+  {
+    "organization_sector_id": "sector-682d1ccd32c4dcb3",
+    "canonical_name": "WTT Solutions",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is custom software development."
   },
   {
     "organization_sector_id": "sector-e0a9d8bac8c0492b",

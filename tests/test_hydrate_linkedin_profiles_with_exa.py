@@ -2,9 +2,11 @@ import unittest
 
 from scripts.hydrate_linkedin_profiles_with_exa import (
     EXA_SEARCH_URL,
+    MANUAL_PROFILE_STATUS,
     cached_profiles_from_search,
     csv_value,
     normalize_batch,
+    normalize_manual_profiles,
     profile_search_records,
     select_profiles,
 )
@@ -132,6 +134,28 @@ class ExaProfileHydrationTest(unittest.TestCase):
         self.assertEqual(len(profiles), 1)
         self.assertEqual(profiles[0]["status"], "search_cache")
         self.assertEqual(profiles[0]["source_endpoint"], EXA_SEARCH_URL)
+        self.assertEqual(len(profile_search_records(profiles)), 1)
+
+    def test_manual_public_profile_becomes_audited_parser_input(self):
+        profiles = normalize_manual_profiles(
+            [
+                {
+                    "person_id": "person-1",
+                    "name": "Reviewed Person",
+                    "linkedin_url": "https://www.linkedin.com/in/reviewed",
+                    "title": "Reviewed Person",
+                    "reviewed_at": "2026-08-11T00:00:00+00:00",
+                    "evidence_url": "https://www.linkedin.com/in/reviewed",
+                    "text": "## Education\n\n### Stanford University",
+                }
+            ]
+        )
+
+        self.assertEqual(profiles[0]["status"], MANUAL_PROFILE_STATUS)
+        self.assertEqual(
+            profiles[0]["source_endpoint"],
+            "https://www.linkedin.com/in/reviewed",
+        )
         self.assertEqual(len(profile_search_records(profiles)), 1)
 
 

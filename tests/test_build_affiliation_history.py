@@ -5,6 +5,7 @@ from scripts.build_affiliation_history import (
     education_score,
     extract_affiliations,
     is_postsecondary_education,
+    normalized_type,
 )
 
 
@@ -88,6 +89,73 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
             "Massachusetts Institute of Technology (MIT)",
         )
         self.assertEqual(rows[0]["affiliation_type"], "education")
+
+    def test_distance_education_department_specialist_is_employment(self):
+        rows = extract_affiliations(
+            "## Experience "
+            "### Senior specialist of Distance Education Department - "
+            "[Kaspi Bank](https://linkedin.com/company/kaspi-kz) "
+            "Jan 2008 - Jan 2009"
+        )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["organization"], "Kaspi.kz")
+        self.assertEqual(rows[0]["affiliation_type"], "employment")
+
+    def test_specialist_jobs_and_degrees_are_distinguished(self):
+        self.assertEqual(
+            normalized_type("education", "Finance Specialist"),
+            "employment",
+        )
+        self.assertEqual(
+            normalized_type("education", "Postdoctoral Associate II"),
+            "employment",
+        )
+        self.assertEqual(
+            normalized_type("education", "Specialist Mathematics & Computer Science"),
+            "education",
+        )
+        self.assertEqual(
+            normalized_type("education", "Investment Associate"),
+            "employment",
+        )
+        self.assertEqual(
+            normalized_type("education", "Associate's degree, Computer Science"),
+            "education",
+        )
+
+    def test_research_affiliation_is_not_postsecondary_education(self):
+        self.assertFalse(
+            is_postsecondary_education(
+                {
+                    "organization": "Example University",
+                    "role": "Research author",
+                    "evidence_text": "Research author at Example University",
+                }
+            )
+        )
+
+    def test_degree_is_not_rejected_by_assistant_detail(self):
+        self.assertTrue(
+            is_postsecondary_education(
+                {
+                    "organization": "Iowa State University",
+                    "role": "M.S. Computer Science Economics",
+                    "evidence_text": "Research and teaching assistant duties.",
+                }
+            )
+        )
+
+    def test_physics_and_technology_institute_is_postsecondary(self):
+        self.assertTrue(
+            is_postsecondary_education(
+                {
+                    "organization": "Moscow Institute of Physics and Technology (MIPT)",
+                    "role": "",
+                    "evidence_text": "",
+                }
+            )
+        )
 
     def test_extracts_grouped_degrees_inside_education_section(self):
         rows = extract_affiliations(
@@ -195,6 +263,28 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["organization"], "Google")
         self.assertEqual(rows[0]["affiliation_type"], "employment")
+
+    def test_leadership_title_with_school_name_is_employment(self):
+        rows = extract_affiliations(
+            "### [Nazarbayev University](https://linkedin.com/company/nu) "
+            "#### Executive Director, School of Medicine "
+            "Jan 2015 - Dec 2017 in Astana, Kazakhstan"
+        )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["organization"], "Nazarbayev University")
+        self.assertEqual(rows[0]["affiliation_type"], "employment")
+
+    def test_recovers_undergraduate_degree_without_education_section(self):
+        rows = extract_affiliations(
+            "### Undergraduate, Chemistry at "
+            "[Orta Doğu Teknik Üniversitesi](https://linkedin.com/school/metu) "
+            "2014 - 2019 (5 years) in Ankara, Türkiye"
+        )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["organization"], "Middle East Technical University")
+        self.assertEqual(rows[0]["affiliation_type"], "education")
 
     def test_recovers_specialist_degree_inside_education_section(self):
         rows = extract_affiliations(
