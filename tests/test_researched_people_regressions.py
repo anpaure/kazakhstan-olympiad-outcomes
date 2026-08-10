@@ -29,6 +29,11 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             if row["person_id"] == person_id and row["selected_as_alma_mater"]
         }
 
+    def affiliations_for(self, person_id):
+        return [
+            row for row in self.affiliations if row["person_id"] == person_id
+        ]
+
     def test_anton_draganchuk_outcome_and_mipt_alma_mater(self):
         person = self.people["kaz-b76707715f6b"]
 
@@ -337,6 +342,108 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                 self.assertEqual(person["confidence"], "unmatched")
                 self.assertEqual(person["organization"], "")
                 self.assertEqual(person["role"], "")
+
+    def test_askar_amangeldy_singapore_coaching_and_both_degrees(self):
+        person = self.people["kaz-7f627c03e4ca"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(
+            person["organization"],
+            "Singapore National Physics and Mathematics Olympiad Teams",
+        )
+        self.assertEqual(person["role"], "Physics and Mathematics Olympiad Coach")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {
+                "Nanyang Technological University (NTU)",
+                "National University of Singapore",
+            },
+        )
+        self.assertEqual(location["country_code"], "SG")
+        self.assertEqual(location["location_label"], "Singapore")
+
+    def test_adilet_turtemir_pittsburgh_phd_and_unist_bachelors(self):
+        person = self.people["kaz-1f5957f35c2c"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["name"], "Adilet Turtemir")
+        self.assertIn("Adlet Turtemir", person["aliases"])
+        self.assertEqual(
+            person["organization"], "University of Pittsburgh School of Medicine"
+        )
+        self.assertEqual(person["role"], "PhD Student in Molecular Pharmacology")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://www.linkedin.com/in/adilet-turtemir-891b911b0/",
+        )
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {
+                "University of Pittsburgh School of Medicine",
+                "Ulsan National Institute of Science and Technology (UNIST)",
+            },
+        )
+        self.assertEqual(location["country_code"], "US")
+        self.assertEqual(
+            location["location_label"],
+            "Pittsburgh, Pennsylvania, United States",
+        )
+
+    def test_zhassulan_shaikhygali_indrive_and_unist(self):
+        person = self.people["kaz-0e1075c1b53e"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "inDrive")
+        self.assertEqual(person["role"], "Data Engineer")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(person["profile_url"], "https://github.com/shaikhzhas")
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"Ulsan National Institute of Science and Technology (UNIST)"},
+        )
+        self.assertEqual(location["country_code"], "KZ")
+
+    def test_bekassyl_yelubay_current_nazarbayev_university_student(self):
+        person = self.people["kaz-d2813a8e7e70"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Nazarbayev University")
+        self.assertEqual(
+            person["role"],
+            "Undergraduate Student, School of Sciences and Humanities",
+        )
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertIn("Nazarbayev University", self.alma_maters(person["person_id"]))
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Astana, Kazakhstan")
+
+    def test_mansur_mamadakhunov_current_bil_student(self):
+        person = self.people["kaz-ec0591e8ac95"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Bilim-Innovation Lyceums (BIL)")
+        self.assertEqual(person["role"], "High School Student")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Kyzylorda Region, Kazakhstan")
+
+    def test_stale_school_records_remain_history_only(self):
+        expected_alma_maters = {
+            "kaz-618279226751": "Republican Physics and Mathematics School (RFMS)",
+            "kaz-822bb4ee42e0": "Nazarbayev Intellectual Schools (NIS)",
+            "kaz-eebfbe6a6de9": "Nazarbayev Intellectual Schools (NIS)",
+            "kaz-6d8ff9e71d31": "Suleyman Demirel University (SDU)",
+        }
+
+        for person_id, alma_mater in expected_alma_maters.items():
+            with self.subTest(person_id=person_id):
+                person = self.people[person_id]
+                self.assertEqual(person["confidence"], "unmatched")
+                self.assertEqual(person["organization"], "")
+                self.assertEqual(person["role"], "")
+                self.assertIn(alma_mater, self.alma_maters(person_id))
+                self.assertTrue(self.affiliations_for(person_id))
 
     def test_baurzhan_urgunshbayev_probable_metaphora_outcome(self):
         person = self.people["kaz-694369c06874"]

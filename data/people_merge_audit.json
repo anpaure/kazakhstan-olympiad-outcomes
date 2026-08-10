@@ -540,5 +540,38 @@
     "review_reason": "The official IMO record uses Baurzhan Urgunshbayev while Kazakhstan's 2003 school-Olympiad record uses the reverse-order Ургуншбаев Бауржан for the exact-name grade-11 Aktobe KTL student.",
     "evidence_url": "https://matol.kz/results/235",
     "canonical_person_id": "kaz-694369c06874"
+  },
+  {
+    "left": "Maxim Tsoy",
+    "right": "Maxim Tsoy",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IOI"
+    ],
+    "left_years": [
+      2024,
+      2025
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The IOI registry uses Maxim Tsoy while Kazakhstan's Ministry of Education reporting uses Maksim Tsoy for the same repeat Kazakhstan informatics medalist.",
+    "evidence_url": "https://oq.gov.kz/en/qazalemnews/1113",
+    "canonical_person_id": "kaz-618279226751"
+  },
+  {
+    "left": "Akezhan Askar",
+    "right": "Akezhan Askar",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IOI"
+    ],
+    "left_years": [
+      2025
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The IOI registry uses Akezhan Askar while Kazakhstan's Ministry of Education reporting uses Akzhan Askar for the same 2025 contestant from NIS Semey.",
+    "evidence_url": "https://oq.gov.kz/en/qazalemnews/1113",
+    "canonical_person_id": "kaz-822bb4ee42e0"
   }
 ]

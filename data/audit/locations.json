@@ -84,6 +84,20 @@
     "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
+    "location_id": "loc-1cbb3183242fe1a5",
+    "evidence_id": "ev-9d9fb716ef1b3349",
+    "source_id": "src-ee14a510b3f7",
+    "person_id": "kaz-1f5957f35c2c",
+    "name": "Adilet Turtemir",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Pittsburgh, Pennsylvania, United States",
+    "evidence_url": "https://www.linkedin.com/in/adilet-turtemir-891b911b0/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Adilet's ongoing University of Pittsburgh School of Medicine graduate role in Pittsburgh Pennsylvania."
+  },
+  {
     "location_id": "loc-4d46a1ad0bd86088",
     "evidence_id": "ev-82303b22d710fe00",
     "source_id": "src-73d0d5014956",
@@ -109,20 +123,6 @@
     "evidence_url": "https://www.unist.ac.kr/campus-life/directions/",
     "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
-  },
-  {
-    "location_id": "loc-86fddb978168388e",
-    "evidence_id": "ev-65701e8dd6ac07b4",
-    "source_id": "src-73d0d5014956",
-    "person_id": "kaz-1f5957f35c2c",
-    "name": "Adlet Turtemir",
-    "country_code": "KR",
-    "country_name": "South Korea",
-    "location_label": "Ulsan, South Korea",
-    "evidence_url": "https://www.unist.ac.kr/campus-life/directions/",
-    "evidence_kind": "current_education_location",
-    "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
@@ -812,6 +812,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Pifagor School. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-e15d6df948f2339a",
+    "evidence_id": "ev-756dc6cd2fdd1dde",
+    "source_id": "src-66a9e0df7885",
+    "person_id": "kaz-7f627c03e4ca",
+    "name": "Askar Amangeldy",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_url": "https://bilimdinews.kz/?p=240829",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed interview says Askar had lived in Singapore for thirteen years by 2023 and coaches Singapore's national physics and mathematics Olympiad teams there."
+  },
+  {
     "location_id": "loc-4697aa9984759a45",
     "evidence_id": "ev-7c9296ae17322ebd",
     "source_id": "src-9b88ab9ace30",
@@ -1076,6 +1090,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "The reviewed current employment profile places Bauyrzhan Sainov's Tengizchevroil role in Atyrau Kazakhstan and his LinkedIn header confirms Kazakhstan."
+  },
+  {
+    "location_id": "loc-5fd81762cb162471",
+    "evidence_id": "ev-06360d8e3cbdfea9",
+    "source_id": "src-ef8fbe838ecc",
+    "person_id": "kaz-d2813a8e7e70",
+    "name": "Bekassyl Yelubay",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://nu.edu.kz/news-kk/memleket-basshysy-nu-dyng-toert-stwdentin-zhetistikterimen-quttyqtady-2/",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Nazarbayev University's official report identifies Bekassyl as a current student; the university's sourced campus location is Astana Kazakhstan."
   },
   {
     "location_id": "loc-2c0835307c39446f",
@@ -1888,6 +1916,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "Country follows the location attached to the accepted current role at University of Technology Sydney."
+  },
+  {
+    "location_id": "loc-7306a87336f3b0b5",
+    "evidence_id": "ev-29e85d43e2eef4cf",
+    "source_id": "src-20f35760de40",
+    "person_id": "kaz-ec0591e8ac95",
+    "name": "Mansur Mamadakhunov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kyzylorda Region, Kazakhstan",
+    "evidence_url": "https://codeforces.com/profile/wansur?locale=en&mobile=false",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Mansur's active exact-name Codeforces profile lists Qyzylorda Bilim-Innovation and Kyzyl-Orda Kazakhstan alongside his 2026 IOI team record."
   },
   {
     "location_id": "loc-aaaf9b275f27b1a2",
@@ -3260,5 +3302,19 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Cornell University; the linked official institution source establishes the campus location. Cornell's official visitor page identifies its Ithaca campus."
+  },
+  {
+    "location_id": "loc-831bd6ca0e4d5078",
+    "evidence_id": "ev-0013b42506ab05bf",
+    "source_id": "src-67ba98ca6b1b",
+    "person_id": "kaz-0e1075c1b53e",
+    "name": "Zhassulan Shaikhygali",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://github.com/shaikhzhas",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted current GitHub profile lists both inDrive and Kazakhstan alongside the Data Engineer role."
   }
 ]

@@ -1368,6 +1368,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-5db8c14388e97170",
+    "alias": "InDrive",
+    "canonical_name": "inDrive",
+    "display_name": "inDrive",
+    "merge_type": "capitalization_variant",
+    "rationale": "Official brand capitalization uses a lowercase initial letter.",
+    "evidence_url": "https://indrive.com/"
+  },
+  {
     "organization_alias_id": "org-6b2e2a032874f2bd",
     "alias": "IBS Data Science Group",
     "canonical_name": "Institute for Basic Science (IBS)",

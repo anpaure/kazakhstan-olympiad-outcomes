@@ -66,6 +66,17 @@
     "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
+    "person_id": "kaz-1f5957f35c2c",
+    "name": "Adilet Turtemir",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Pittsburgh, Pennsylvania, United States",
+    "evidence_url": "https://www.linkedin.com/in/adilet-turtemir-891b911b0/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Adilet's ongoing University of Pittsburgh School of Medicine graduate role in Pittsburgh Pennsylvania."
+  },
+  {
     "person_id": "kaz-59a056858c02",
     "name": "Adilet Zauytkhan",
     "country_code": "KR",
@@ -85,17 +96,6 @@
     "evidence_url": "https://www.unist.ac.kr/campus-life/directions/",
     "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
-  },
-  {
-    "person_id": "kaz-1f5957f35c2c",
-    "name": "Adlet Turtemir",
-    "country_code": "KR",
-    "country_name": "South Korea",
-    "location_label": "Ulsan, South Korea",
-    "evidence_url": "https://www.unist.ac.kr/campus-life/directions/",
-    "evidence_kind": "current_education_location",
-    "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
@@ -638,6 +638,17 @@
     "evidence_url": "https://linkedin.com/in/assan-zholdassov-5290639"
   },
   {
+    "person_id": "kaz-7f627c03e4ca",
+    "name": "Askar Amangeldy",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_url": "https://bilimdinews.kz/?p=240829",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed interview says Askar had lived in Singapore for thirteen years by 2023 and coaches Singapore's national physics and mathematics Olympiad teams there."
+  },
+  {
     "person_id": "kaz-61a74e788b9b",
     "name": "Askarbek Orakov",
     "country_code": "US",
@@ -845,6 +856,17 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "The reviewed current employment profile places Bauyrzhan Sainov's Tengizchevroil role in Atyrau Kazakhstan and his LinkedIn header confirms Kazakhstan."
+  },
+  {
+    "person_id": "kaz-d2813a8e7e70",
+    "name": "Bekassyl Yelubay",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://nu.edu.kz/news-kk/memleket-basshysy-nu-dyng-toert-stwdentin-zhetistikterimen-quttyqtady-2/",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Nazarbayev University's official report identifies Bekassyl as a current student; the university's sourced campus location is Astana Kazakhstan."
   },
   {
     "person_id": "kaz-861bd0bfc9f2",
@@ -1483,6 +1505,17 @@
     "confidence": "probable",
     "review_reason": "Country follows the location attached to the accepted current role at University of Technology Sydney.",
     "evidence_url": "https://linkedin.com/in/angsar-manatuly-7409bb2b9"
+  },
+  {
+    "person_id": "kaz-ec0591e8ac95",
+    "name": "Mansur Mamadakhunov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kyzylorda Region, Kazakhstan",
+    "evidence_url": "https://codeforces.com/profile/wansur?locale=en&mobile=false",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Mansur's active exact-name Codeforces profile lists Qyzylorda Bilim-Innovation and Kyzyl-Orda Kazakhstan alongside his 2026 IOI team record."
   },
   {
     "person_id": "kaz-776ae509d19e",
@@ -2561,5 +2594,16 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Cornell University; the linked official institution source establishes the campus location. Cornell's official visitor page identifies its Ithaca campus."
+  },
+  {
+    "person_id": "kaz-0e1075c1b53e",
+    "name": "Zhassulan Shaikhygali",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://github.com/shaikhzhas",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted current GitHub profile lists both inDrive and Kazakhstan alongside the Data Engineer role."
   }
 ]

@@ -490,6 +490,13 @@
     "rationale": "Reviewed core activity is investment management."
   },
   {
+    "organization_sector_id": "sector-3478318400e64a2e",
+    "canonical_name": "inDrive",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is a technology platform for mobility and urban services."
+  },
+  {
     "organization_sector_id": "sector-5505720f19964d65",
     "canonical_name": "Insilico Medicine",
     "organization_type": "company",
@@ -950,6 +957,13 @@
     "organization_type": "company",
     "sector": "Education & Research",
     "rationale": "Reviewed core activity is organizing and delivering international academic competitions and training."
+  },
+  {
+    "organization_sector_id": "sector-ad0171e49f3db50d",
+    "canonical_name": "Singapore National Physics and Mathematics Olympiad Teams",
+    "organization_type": "independent",
+    "sector": "Education & Research",
+    "rationale": "Reviewed activity is preparing Singapore's national physics and mathematics Olympiad teams."
   },
   {
     "organization_sector_id": "sector-a83a403aa39134e9",

@@ -593,6 +593,11 @@ def build_rows(
     as_of_year: int,
     destination_reviews: list[dict[str, str]] | None = None,
 ) -> list[dict[str, object]]:
+    all_people_by_id = {
+        clean_text(person.get("person_id")): person
+        for person in people
+        if clean_text(person.get("person_id"))
+    }
     people_by_id = {
         clean_text(person.get("person_id")): person
         for person in people
@@ -728,7 +733,7 @@ def build_rows(
 
     for manual in manual_affiliations:
         person_id = clean_text(manual.get("person_id"))
-        if person_id not in people_by_id:
+        if person_id not in all_people_by_id:
             continue
         role = clean_text(manual.get("role"))
         affiliation_type = normalized_type(
@@ -752,7 +757,7 @@ def build_rows(
         rows.append(
             {
                 "person_id": person_id,
-                "name": clean_text(people_by_id[person_id].get("name")),
+                "name": clean_text(all_people_by_id[person_id].get("name")),
                 "organization": organization,
                 "role": role,
                 "affiliation_type": affiliation_type,
@@ -833,7 +838,7 @@ def build_rows(
         if row["affiliation_type"] == "education":
             education_by_person[clean_text(row.get("person_id"))].append(row)
     for person_id, education_rows in education_by_person.items():
-        person = people_by_id[person_id]
+        person = all_people_by_id[person_id]
         postsecondary_rows = [
             row for row in education_rows if is_postsecondary_education(row)
         ]
