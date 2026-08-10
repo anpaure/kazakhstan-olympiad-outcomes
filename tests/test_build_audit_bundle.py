@@ -174,6 +174,10 @@ class AuditBundleTest(unittest.TestCase):
             },
         )
         self.assertEqual(bundle["rejections"][0]["reason"], "Name-only collision")
+        self.assertEqual(bundle["manifest"]["counts"]["confirmed_outcomes"], 0)
+        self.assertEqual(bundle["manifest"]["counts"]["probable_outcomes"], 1)
+        self.assertEqual(bundle["manifest"]["counts"]["candidate_only_people"], 0)
+        self.assertEqual(bundle["manifest"]["counts"]["unmatched_people"], 0)
 
 
 if __name__ == "__main__":

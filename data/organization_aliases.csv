@@ -442,3 +442,12 @@ A.N.Nesmeyanov Institute of Organoelement RAS,"A.N. Nesmeyanov Institute of Orga
 Beeline Kazakhstan,Beeline,Beeline,location_suffix,Kazakhstan operating-company label normalized to the parent brand,https://beeline.kz/
 Rekassa,re:Kassa,re:Kassa,punctuation_variant,Public-profile capitalization and punctuation variant,https://rekassa.kz/
 reKassa,re:Kassa,re:Kassa,punctuation_variant,Compact product-name variant,https://rekassa.kz/
+SIMCC,Singapore International Math Contests Centre (SIMCC),SIMCC,acronym_expansion,Official acronym used by the organization,https://simcc.org/
+Singapore International Math Contests Centre,Singapore International Math Contests Centre (SIMCC),SIMCC,same_entity,Official name without acronym,https://simcc.org/
+Singapore International Mastery Contests Centre,Singapore International Math Contests Centre (SIMCC),SIMCC,former_name,The organization has used both Math Contests Centre and Mastery Contests Centre with the same SIMCC identity,https://simcc.org/
+Kazakh State Academy of Management,Narxoz University,Narxoz University,historical_name,Narxoz's official history identifies the Kazakh State Academy of Management as its 1993-2001 institutional name,https://en.narxoz.kz/about-us/history/
+Al-Farabi Kazakh State University,Al-Farabi Kazakh National University,Al-Farabi KazNU,historical_name,KazNU's official history records the Kazakh State University and KazNU naming sequence,https://welcome.kaznu.kz/en/17322/page
+Chevron Group,Chevron,Chevron,group_name,Corporate-group wording normalized to the parent company name,https://www.kmg.kz/en/press-center/press-releases/karabaev/
+SHB Finance,SHBFinance,SHBFinance,spacing_variant,Spaced corporate-name variant normalized to the current SHBFinance brand,https://www.shbfinance.com.vn/about-us/board-of-management
+First Heartland Securities,United Group Alatau,United Group Alatau,former_name,The company states that First Heartland Securities was renamed United Group Alatau on February 27 2026,https://unitedgroupalatau.kz/en/notification-on-state-re-registration-of-the-company-due-to-name-change/
+First Heartland Securities JSC,United Group Alatau,United Group Alatau,former_name,Legal-form variant of the company's name before its February 2026 re-registration,https://unitedgroupalatau.kz/en/notification-on-state-re-registration-of-the-company-due-to-name-change/

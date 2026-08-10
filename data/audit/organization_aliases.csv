@@ -8,6 +8,7 @@ org-0c7dc004aec88e97,AIJKO GmbH,AIJKO,AIJKO,legal_form_variant,Legal-form cleanu
 org-4c3f71cd5cb3ea1b,Universitas Airlangga,Airlangga University,Airlangga University,translated_name,Official English name,
 org-38dfeae5b20d7ca2,Akhmet Yassawi University,Akhmet Yassawi International Kazakh-Turkish University,Akhmet Yassawi University,same_entity,Short university name,
 org-9e9f9fce00e3d354,«Aksaigasservice» JSC,Aksaigasservice,Aksaigasservice,legal_form_variant,Legal-form and quotation cleanup,
+org-da9bb63422c3ce9e,Al-Farabi Kazakh State University,Al-Farabi Kazakh National University,Al-Farabi KazNU,historical_name,KazNU's official history records the Kazakh State University and KazNU naming sequence,https://welcome.kaznu.kz/en/17322/page
 org-d387e298d8921ade,Kazahskij Nacionalnij Universitet im. Al Farabi,Al-Farabi Kazakh National University,Al-Farabi KazNU,transliterated_name,Transliterated Russian name,
 org-52d7d7658cebefe4,Kazakh National University,Al-Farabi Kazakh National University,Al-Farabi KazNU,same_entity,Common short name,
 org-76aa2ced5655708d,Kazakh National University named after al-Farabi,Al-Farabi Kazakh National University,Al-Farabi KazNU,same_entity,Translated official name,
@@ -87,6 +88,7 @@ org-1cab57cb9a732cb8,Stoltz Group,California Institute of Technology (Caltech),C
 org-4ed4273aeb9da4a7,"JSC ""CAUSTIC""",Caustic,Caustic,legal_form_variant,Legal-form and quotation cleanup,
 org-3b119f8aba13311c,Centerra Gold Inc,Centerra Gold,Centerra Gold,legal_form_variant,Legal-form cleanup,
 org-df9f582d5876ca3c,"Chain Lightning Co., Ltd",Chain Lightning,Chain Lightning,legal_form_variant,Legal-form cleanup,
+org-2aa4e3425da9a523,Chevron Group,Chevron,Chevron,group_name,Corporate-group wording normalized to the parent company name,https://www.kmg.kz/en/press-center/press-releases/karabaev/
 org-8d890708c6536167,Jacobs University Bremen,Constructor University,Constructor University,former_name,University adopted the Constructor University name in 2022,
 org-4c6c6e962ffb1f02,"Cornami, Inc",Cornami,Cornami,legal_form_variant,Legal-form cleanup,
 org-6665a5d47e019bcb,Weill Cornell Medicine,Cornell University,Cornell University,parent_organization,Medical college of Cornell University,https://weill.cornell.edu/our-story/history
@@ -258,6 +260,7 @@ org-47af585a5c2017c2,Nanyang Technological University,Nanyang Technological Univ
 org-9111e167822b0bf0,Nanyang Technological University Singapore,Nanyang Technological University (NTU),NTU,same_entity,Location suffix,
 org-d8a3f9793ed5e614,SCELSE,Nanyang Technological University (NTU),NTU,parent_organization,Research-institute acronym,https://www.ntu.edu.sg/research/research-capabilities/research-centres-of-excellence
 org-bcaf04feeaddebb3,Singapore Centre for Environmental Life Sciences Engineering,Nanyang Technological University (NTU),NTU,parent_organization,SCELSE is an NTU university research institute,https://www.ntu.edu.sg/research/research-capabilities/research-centres-of-excellence
+org-1ef0f9c9feff1257,Kazakh State Academy of Management,Narxoz University,Narxoz University,historical_name,Narxoz's official history identifies the Kazakh State Academy of Management as its 1993-2001 institutional name,https://en.narxoz.kz/about-us/history/
 org-19459a724a89d07c,National Center for Biotechnology Information (NIH),National Center for Biotechnology Information (NCBI),NCBI,same_entity,Corrects the institution acronym while preserving the NIH parent context in source evidence,
 org-0bf91fe25e6be27f,National Environment Agency,National Environment Agency Singapore,National Environment Agency,same_entity,Country context omitted in source label,
 org-c34f0ecd2720b5d5,National Information Technologies JSC (NITEC),National Information Technologies JSC (NITEC),NITEC,same_entity,Canonical display declaration,
@@ -347,9 +350,13 @@ org-40167509d393f8d1,Self-Employed,Self-employed,Self-employed,same_entity,Capit
 org-45595550b2a00d36,Предприниматель,Self-employed,Self-employed,translated_name,Russian label,
 org-62e003bd6816f01e,Фриланс,Self-employed,Self-employed,translated_name,Russian independent-work label,
 org-0355b45213a5ddfe,Senimdi Kurylys LLP (Bechtel-Enka JV),Senimdi Kurylys (Bechtel-Enka JV),Senimdi Kurylys,legal_form_variant,Legal-form cleanup,
+org-aed91b86ff5a5df0,SHB Finance,SHBFinance,SHBFinance,spacing_variant,Spaced corporate-name variant normalized to the current SHBFinance brand,https://www.shbfinance.com.vn/about-us/board-of-management
 org-8d2823660992ad01,Şifa Üniversitesi,Sifa University,Sifa University,translated_name,Turkish university name,
 org-8bf943769104cc45,Silleno LLP,Silleno,Silleno,same_entity,Legal-form variant,
 org-c6f1304d5207aa1d,Silleno​ LLP,Silleno,Silleno,same_entity,Zero-width character and legal-form variant,
+org-e24ffd3446452c90,SIMCC,Singapore International Math Contests Centre (SIMCC),SIMCC,acronym_expansion,Official acronym used by the organization,https://simcc.org/
+org-4c621d366139654e,Singapore International Mastery Contests Centre,Singapore International Math Contests Centre (SIMCC),SIMCC,former_name,The organization has used both Math Contests Centre and Mastery Contests Centre with the same SIMCC identity,https://simcc.org/
+org-31e56ead2b373e7d,Singapore International Math Contests Centre,Singapore International Math Contests Centre (SIMCC),SIMCC,same_entity,Official name without acronym,https://simcc.org/
 org-752808c71f0605fd,Skolkovo Institute of Science and Technology,Skoltech,Skoltech,same_entity,Official name,
 org-da3b87227b73983c,Schlumberger,SLB,SLB,same_entity,Former brand before the SLB rebrand,
 org-310d86d1003d98b2,Smart Remont Ltd,Smart Remont,Smart Remont,legal_form_variant,Legal-form cleanup,
@@ -400,6 +407,8 @@ org-2a98cad91d505c9f,UNIST Discrete Math,Ulsan National Institute of Science and
 org-25e6913c5ecdf069,울산과학기술원,Ulsan National Institute of Science and Technology (UNIST),UNIST,multilingual_name,Korean name,
 org-6347733801b598d1,NDA,Undisclosed employer,Undisclosed employer,same_entity,Disclosure-status abbreviation,
 org-9a69bb7d0468fa5c,Some Company,Undisclosed employer,Undisclosed employer,placeholder_name,Public profile uses a placeholder rather than disclosing the employer,
+org-41e8fc67b2cc136e,First Heartland Securities,United Group Alatau,United Group Alatau,former_name,The company states that First Heartland Securities was renamed United Group Alatau on February 27 2026,https://unitedgroupalatau.kz/en/notification-on-state-re-registration-of-the-company-due-to-name-change/
+org-eb9cf234ad71e0b8,First Heartland Securities JSC,United Group Alatau,United Group Alatau,former_name,Legal-form variant of the company's name before its February 2026 re-registration,https://unitedgroupalatau.kz/en/notification-on-state-re-registration-of-the-company-due-to-name-change/
 org-f107d72b84f76796,Hausdorff Center for Mathematics,University of Bonn,University of Bonn,parent_organization,University of Bonn cluster of excellence,https://www.uni-bonn.de/en/university/working-at-the-university/job-opportunities/w2-professorships-bonn-junior-fellows
 org-28098cf8b37d7de1,Rheinische Friedrich-Wilhelms-Universität Bonn,University of Bonn,University of Bonn,translated_name,Official German legal name,
 org-32bf92cfcd18cadb,The University of Bonn,University of Bonn,University of Bonn,same_entity,Leading-article variant,

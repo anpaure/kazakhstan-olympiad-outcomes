@@ -363,6 +363,17 @@
     "evidence_url": "https://linkedin.com/in/fracta1l"
   },
   {
+    "person_id": "kaz-bd1a5011816e",
+    "name": "Altynay Narmanova",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "New York, New York, United States",
+    "evidence_url": "https://www.linkedin.com/in/altynay-narmanova-36507b65",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The current profile header places Altynay in New York and the ongoing Mount Sinai affiliation is consistent with both that location and her immediately preceding New York role at the same health system."
+  },
+  {
     "person_id": "kaz-6e64602de321",
     "name": "Aman Sariyev",
     "country_code": "KZ",
@@ -891,6 +902,17 @@
     "evidence_url": "https://linkedin.com/in/daulet-toibazar-54118b174"
   },
   {
+    "person_id": "kaz-76ccb7b42a10",
+    "name": "Dauren Karabayev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "San Ramon, California, United States",
+    "evidence_url": "https://www.petroleumjournal.kz/index.php?aid1=162&aid2=895&id=2105&outlang=3&p=article",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Petroleum Journal reports that Dauren Karabayev began a five-year Chevron assignment in San Ramon California in 2023; KMG independently confirms the transfer to Chevron."
+  },
+  {
     "person_id": "kaz-dc3a6a35b589",
     "name": "Dauren Muratov",
     "country_code": "KZ",
@@ -1010,6 +1032,17 @@
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev University. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/dulat-azhibek-31417557"
+  },
+  {
+    "person_id": "kaz-7720cc1cbeae",
+    "name": "Erke Nurkenov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://unitedgroupalatau.kz/en/contacts/",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Country follows Erke Nurkenov's current United Group Alatau executive role; the company's official contact page identifies its legal and actual address in Almaty Kazakhstan."
   },
   {
     "person_id": "kaz-087d239f6acf",
@@ -2101,6 +2134,17 @@
     "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
+    "person_id": "kaz-8ad6d5a1915d",
+    "name": "Yerbolat Ablemetov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Nur-Sultan, Kazakhstan",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Republican Scientific and Practical Center Daryn. The public profile header independently agrees.",
+    "evidence_url": "https://www.linkedin.com/in/yerbolat-ablemetov-393b47206"
+  },
+  {
     "person_id": "kaz-a93118601e76",
     "name": "Yerdos Ordabayev",
     "country_code": "US",
@@ -2121,6 +2165,17 @@
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Square. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/yerkebulant"
+  },
+  {
+    "person_id": "kaz-5eaeaf0aebf3",
+    "name": "Yerken Tussupbekov",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "London, England, United Kingdom",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at The Trade Desk. The public profile header independently agrees.",
+    "evidence_url": "https://www.linkedin.com/in/yerken"
   },
   {
     "person_id": "kaz-47c266b2b44f",
@@ -2220,6 +2275,28 @@
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at VoltaGrid. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/yevgeniy-zagayevskiy"
+  },
+  {
+    "person_id": "kaz-8d648f29d1e0",
+    "name": "Yuriy Ten",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Ames, Iowa, United States",
+    "evidence_url": "https://www.iastate.edu/life-at-iowa-state/campus-and-ames",
+    "evidence_kind": "current_education_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the accepted active student affiliation at Iowa State University; the linked official institution source establishes the campus location. Iowa State University's official campus page identifies its campus and community in Ames."
+  },
+  {
+    "person_id": "kaz-b22287fe1ff1",
+    "name": "Zhaidarzhan Zatayev",
+    "country_code": "VN",
+    "country_name": "Vietnam",
+    "location_label": "Vietnam",
+    "evidence_url": "https://www.shbfinance.com.vn/about-us/board-of-management",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Country follows Zhaidarzhan Zatayev's ongoing SHBFinance executive role and his concurrent Coteccons board role; both current organizations and the 2025 annual report place this career in Vietnam without establishing a precise residence."
   },
   {
     "person_id": "kaz-73232d09a9cf",

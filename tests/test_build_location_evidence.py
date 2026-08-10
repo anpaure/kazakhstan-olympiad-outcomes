@@ -70,6 +70,7 @@ class LocationExtractionTest(unittest.TestCase):
     def test_city_only_current_role_location_uses_reviewed_city_map(self):
         self.assertEqual(country_from_location("Hillsboro, Oregon"), "US")
         self.assertEqual(country_from_location("Hwaseong"), "KR")
+        self.assertEqual(country_from_location("Hanoi, Vietnam"), "VN")
 
     def test_hungary_profile_location_is_supported(self):
         result = extract_location(

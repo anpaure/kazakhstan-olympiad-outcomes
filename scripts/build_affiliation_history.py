@@ -130,7 +130,8 @@ SECONDARY_INSTITUTION_PATTERN = re.compile(
 )
 NON_ALMA_ROLE_PATTERN = re.compile(
     r"\b(?:research|teaching) assistants?\b|\binstructors?\b|\b(?:acting )?deans?\b|"
-    r"\b(?:intern|fellow|visiting|exchange|summer (?:research )?(?:school|semester)|certificate|"
+    r"\b(?:intern|fellow|visiting|exchange (?:student|program|semester|study|studies)|"
+    r"summer (?:research )?(?:school|semester)|certificate|"
     r"short course|participant|director|manager|founder|co-?founder|chief|officer|partner|"
     r"analyst|consultant|developer|architect|president|head|lead|owner|advisor|"
     r"adviser|administrator|coordinator|research author)\b",
@@ -520,7 +521,7 @@ def education_score(
     destination_organization: str,
     destination_is_education: bool,
     as_of_year: int,
-) -> tuple[int, int, int, int, int]:
+) -> tuple[int, int, int, int, int, int]:
     role = clean_text(row.get("role")).casefold()
     organization = clean_text(row.get("organization")).casefold()
     end_text = clean_text(row.get("end_year"))
@@ -542,9 +543,18 @@ def education_score(
         degree_rank = 2
     elif "school" not in organization:
         degree_rank = 1
+    degree_levels = sum(
+        bool(pattern.search(role))
+        for pattern in (
+            re.compile(r"\b(?:bachelor|bsc|bs\b|beng\b|b\.?\s*eng\.?|undergraduate|бакалавр)"),
+            re.compile(r"\b(?:master|msc|ms\b|specialist|магистр|специалист)"),
+            re.compile(r"\b(?:ph\.?d|doctor)"),
+        )
+    )
     return (
         different_from_current_school,
         degree_rank,
+        degree_levels,
         completed,
         end_year,
         start_year,

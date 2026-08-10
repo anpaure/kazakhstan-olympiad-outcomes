@@ -76,6 +76,7 @@ COUNTRY_NAMES = {
     "AE": "United Arab Emirates",
     "US": "United States",
     "UZ": "Uzbekistan",
+    "VN": "Vietnam",
     "KG": "Kyrgyzstan",
 }
 
@@ -125,6 +126,7 @@ COUNTRY_ALIASES = {
     "united states": "US",
     "united states of america": "US",
     "uzbekistan": "UZ",
+    "vietnam": "VN",
     "kyrgyzstan": "KG",
     "бельгия": "BE",
     "казахстан": "KZ",

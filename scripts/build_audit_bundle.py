@@ -1059,6 +1059,18 @@ def build_bundle(
             "complete_outcomes": sum(
                 row["traceability_status"] == "complete" for row in audit_people
             ),
+            "confirmed_outcomes": sum(
+                row.get("confidence") == "confirmed" for row in researched
+            ),
+            "probable_outcomes": sum(
+                row.get("confidence") == "probable" for row in researched
+            ),
+            "candidate_only_people": sum(
+                row.get("confidence") == "candidate" for row in researched
+            ),
+            "unmatched_people": sum(
+                row.get("confidence") == "unmatched" for row in researched
+            ),
         },
     }
     return {

@@ -468,19 +468,25 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             final.get("profile_url", ""),
             final.get("linkedin_url", ""),
         }
+        accepted_urls.update(
+            affiliation.get("evidence_url", "")
+            for affiliation in affiliations_by_person.get(person_id, [])
+            if affiliation.get("evidence_url", "")
+        )
         organization_location = organization_locations.get(
             organization_key(
                 canonicalize_organization(final.get("organization", ""))
             )
         )
-        is_current_education_location = (
-            row.get("evidence_kind") == "current_education_location"
+        is_destination_organization_location = (
+            final.get("destination_status") in {"current_education", "latest_employment"}
             and organization_location
             and row.get("evidence_url") == organization_location.get("evidence_url")
+            and row.get("country_code") == organization_location.get("country_code")
         )
         if (
             row.get("evidence_url", "") not in accepted_urls
-            and not is_current_education_location
+            and not is_destination_organization_location
         ):
             errors.append(f"location source is not linked to accepted evidence for {person_id}")
 
@@ -1021,6 +1027,18 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "rejections": len(audit_rejections),
         "complete_outcomes": sum(
             row.get("traceability_status") == "complete" for row in audit_people
+        ),
+        "confirmed_outcomes": sum(
+            row.get("confidence") == "confirmed" for row in researched
+        ),
+        "probable_outcomes": sum(
+            row.get("confidence") == "probable" for row in researched
+        ),
+        "candidate_only_people": sum(
+            row.get("confidence") == "candidate" for row in researched
+        ),
+        "unmatched_people": sum(
+            row.get("confidence") == "unmatched" for row in researched
         ),
     }
     if manifest_counts != expected_manifest_counts:

@@ -81,6 +81,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-da9bb63422c3ce9e",
+    "alias": "Al-Farabi Kazakh State University",
+    "canonical_name": "Al-Farabi Kazakh National University",
+    "display_name": "Al-Farabi KazNU",
+    "merge_type": "historical_name",
+    "rationale": "KazNU's official history records the Kazakh State University and KazNU naming sequence",
+    "evidence_url": "https://welcome.kaznu.kz/en/17322/page"
+  },
+  {
     "organization_alias_id": "org-d387e298d8921ade",
     "alias": "Kazahskij Nacionalnij Universitet im. Al Farabi",
     "canonical_name": "Al-Farabi Kazakh National University",
@@ -790,6 +799,15 @@
     "merge_type": "legal_form_variant",
     "rationale": "Legal-form cleanup",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-2aa4e3425da9a523",
+    "alias": "Chevron Group",
+    "canonical_name": "Chevron",
+    "display_name": "Chevron",
+    "merge_type": "group_name",
+    "rationale": "Corporate-group wording normalized to the parent company name",
+    "evidence_url": "https://www.kmg.kz/en/press-center/press-releases/karabaev/"
   },
   {
     "organization_alias_id": "org-8d890708c6536167",
@@ -2331,6 +2349,15 @@
     "evidence_url": "https://www.ntu.edu.sg/research/research-capabilities/research-centres-of-excellence"
   },
   {
+    "organization_alias_id": "org-1ef0f9c9feff1257",
+    "alias": "Kazakh State Academy of Management",
+    "canonical_name": "Narxoz University",
+    "display_name": "Narxoz University",
+    "merge_type": "historical_name",
+    "rationale": "Narxoz's official history identifies the Kazakh State Academy of Management as its 1993-2001 institutional name",
+    "evidence_url": "https://en.narxoz.kz/about-us/history/"
+  },
+  {
     "organization_alias_id": "org-19459a724a89d07c",
     "alias": "National Center for Biotechnology Information (NIH)",
     "canonical_name": "National Center for Biotechnology Information (NCBI)",
@@ -3132,6 +3159,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-aed91b86ff5a5df0",
+    "alias": "SHB Finance",
+    "canonical_name": "SHBFinance",
+    "display_name": "SHBFinance",
+    "merge_type": "spacing_variant",
+    "rationale": "Spaced corporate-name variant normalized to the current SHBFinance brand",
+    "evidence_url": "https://www.shbfinance.com.vn/about-us/board-of-management"
+  },
+  {
     "organization_alias_id": "org-8d2823660992ad01",
     "alias": "Şifa Üniversitesi",
     "canonical_name": "Sifa University",
@@ -3157,6 +3193,33 @@
     "merge_type": "same_entity",
     "rationale": "Zero-width character and legal-form variant",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-e24ffd3446452c90",
+    "alias": "SIMCC",
+    "canonical_name": "Singapore International Math Contests Centre (SIMCC)",
+    "display_name": "SIMCC",
+    "merge_type": "acronym_expansion",
+    "rationale": "Official acronym used by the organization",
+    "evidence_url": "https://simcc.org/"
+  },
+  {
+    "organization_alias_id": "org-4c621d366139654e",
+    "alias": "Singapore International Mastery Contests Centre",
+    "canonical_name": "Singapore International Math Contests Centre (SIMCC)",
+    "display_name": "SIMCC",
+    "merge_type": "former_name",
+    "rationale": "The organization has used both Math Contests Centre and Mastery Contests Centre with the same SIMCC identity",
+    "evidence_url": "https://simcc.org/"
+  },
+  {
+    "organization_alias_id": "org-31e56ead2b373e7d",
+    "alias": "Singapore International Math Contests Centre",
+    "canonical_name": "Singapore International Math Contests Centre (SIMCC)",
+    "display_name": "SIMCC",
+    "merge_type": "same_entity",
+    "rationale": "Official name without acronym",
+    "evidence_url": "https://simcc.org/"
   },
   {
     "organization_alias_id": "org-752808c71f0605fd",
@@ -3607,6 +3670,24 @@
     "merge_type": "placeholder_name",
     "rationale": "Public profile uses a placeholder rather than disclosing the employer",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-41e8fc67b2cc136e",
+    "alias": "First Heartland Securities",
+    "canonical_name": "United Group Alatau",
+    "display_name": "United Group Alatau",
+    "merge_type": "former_name",
+    "rationale": "The company states that First Heartland Securities was renamed United Group Alatau on February 27 2026",
+    "evidence_url": "https://unitedgroupalatau.kz/en/notification-on-state-re-registration-of-the-company-due-to-name-change/"
+  },
+  {
+    "organization_alias_id": "org-eb9cf234ad71e0b8",
+    "alias": "First Heartland Securities JSC",
+    "canonical_name": "United Group Alatau",
+    "display_name": "United Group Alatau",
+    "merge_type": "former_name",
+    "rationale": "Legal-form variant of the company's name before its February 2026 re-registration",
+    "evidence_url": "https://unitedgroupalatau.kz/en/notification-on-state-re-registration-of-the-company-due-to-name-change/"
   },
   {
     "organization_alias_id": "org-f107d72b84f76796",

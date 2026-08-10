@@ -2715,6 +2715,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-ba5a76f97d23",
+    "source_url": "https://daryn.kz/blog/2022/08/02/%D0%BB%D0%B8%D0%BD%D0%B3%D0%B2%D0%B8%D1%81%D1%82%D1%8B-%D0%BE%D0%BF%D1%80%D0%B0%D0%B2%D0%B4%D0%B0%D0%BB%D0%B8-%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D1%8B-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%8B/",
+    "source_host": "daryn.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review"
+  },
+  {
     "source_id": "src-882e5aa7a1e1",
     "source_url": "https://de.linkedin.com/in/alexey-tsekhovoy-7a75b4257",
     "source_host": "de.linkedin.com",
@@ -5880,6 +5895,21 @@
     "source_adapters": "institutional_profile"
   },
   {
+    "source_id": "src-e69b56da2aec",
+    "source_url": "https://kaz.inform.kz/news/halykaralyk-pan-olimpiadalarynyn-tarbielik-mani-zor-maman_a3969819/",
+    "source_host": "kaz.inform.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "manual"
+  },
+  {
     "source_id": "src-99f2cffb2800",
     "source_url": "https://kazpravda.kz/n/uchebnik-s-avtografom/",
     "source_host": "kazpravda.kz",
@@ -6868,6 +6898,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_destination_reconciliation;manual_review",
     "source_adapters": "accepted_linkedin_profile;destination_review;destination_source_review;linkedin;manual;manual_review"
+  },
+  {
+    "source_id": "src-0ee0194de1a9",
+    "source_url": "https://kz.linkedin.com/in/yuriy-ten",
+    "source_host": "kz.linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 1,
+    "provenances": "review_rejection",
+    "source_adapters": "manual"
   },
   {
     "source_id": "src-028c4c525a09",
@@ -10288,6 +10333,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history",
     "source_adapters": "journal_affiliation"
+  },
+  {
+    "source_id": "src-519b60a11ad7",
+    "source_url": "https://old.kase.kz/files/emitters/FHJI/fhji_af_3_2024.pdf",
+    "source_host": "old.kase.kz",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "regulated_issuer_disclosure"
   },
   {
     "source_id": "src-b80105ebcc7f",
@@ -14374,15 +14434,15 @@
     "source_url": "https://prg.kz/document/?doc_id=30205702",
     "source_host": "prg.kz",
     "source_kind": "web_page",
-    "evidence_rows": 1,
-    "people_count": 1,
+    "evidence_rows": 2,
+    "people_count": 2,
     "accepted_rows": 1,
-    "supporting_rows": 0,
+    "supporting_rows": 1,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "manual_review",
-    "source_adapters": "manual"
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;official_ministry_team_order"
   },
   {
     "source_id": "src-8dbb8cab8311",
@@ -15585,6 +15645,36 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-6f0216be6a90",
+    "source_url": "https://simcc.org/training-new/",
+    "source_host": "simcc.org",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 2,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-c965e4de0605",
+    "source_url": "https://simcc.org/wp-content/uploads/2025/03/2019-SASMO-G10.pdf",
+    "source_host": "simcc.org",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_employer_biography"
+  },
+  {
     "source_id": "src-f988994e6af3",
     "source_url": "https://sites.google.com/nes.ru/evgenyyakovlev/home",
     "source_host": "sites.google.com",
@@ -16740,6 +16830,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-ec1f7e2c7945",
+    "source_url": "https://stemolympiads.kz/en/team/anton-draganchuk-2/",
+    "source_host": "stemolympiads.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 4,
+    "people_count": 1,
+    "accepted_rows": 2,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review;official_team_profile"
+  },
+  {
     "source_id": "src-f5281d37866d",
     "source_url": "https://steppeolymp.kz/",
     "source_host": "steppeolymp.kz",
@@ -16783,6 +16888,36 @@
     "rejected_rows": 0,
     "provenances": "manual_review",
     "source_adapters": "manual"
+  },
+  {
+    "source_id": "src-b5cfbc2e37fe",
+    "source_url": "https://t.me/s/qazcho?before=87",
+    "source_host": "t.me",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "manual"
+  },
+  {
+    "source_id": "src-a4eed41f7c48",
+    "source_url": "https://tehranconvention.org/system/files/kazakhstan/kmg_2016.pdf",
+    "source_host": "tehranconvention.org",
+    "source_kind": "pdf",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_employer_annual_report"
   },
   {
     "source_id": "src-5b05c3aeb86e",
@@ -17085,6 +17220,36 @@
     "source_adapters": "current_education_location"
   },
   {
+    "source_id": "src-037d1f84686c",
+    "source_url": "https://unitedgroupalatau.kz/en/contacts/",
+    "source_host": "unitedgroupalatau.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_location_evidence",
+    "source_adapters": "career_source_location"
+  },
+  {
+    "source_id": "src-4c54edbce37d",
+    "source_url": "https://unitedgroupalatau.kz/en/management/",
+    "source_host": "unitedgroupalatau.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review;official_employer_biography"
+  },
+  {
     "source_id": "src-621c5447c99e",
     "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/%D2%B0%D0%9B%D0%AB%D0%9C%D0%94%D0%AB_%D0%A2%D0%90%D0%9D%D0%A3.pdf",
     "source_host": "upload.wikimedia.org",
@@ -17370,6 +17535,21 @@
     "source_adapters": "current_education_location"
   },
   {
+    "source_id": "src-509037217209",
+    "source_url": "https://www.coteccons.vn/wp-content/uploads/2025/10/CTD_BCTN-2025_ENG.pdf",
+    "source_host": "coteccons.vn",
+    "source_kind": "pdf",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_company_annual_report"
+  },
+  {
     "source_id": "src-9f294bb0ccba",
     "source_url": "https://www.cs.cmu.edu/~yangp/icpc/20260202ECFinal.pdf",
     "source_host": "cs.cmu.edu",
@@ -17550,6 +17730,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-b3245c96f2db",
+    "source_url": "https://www.gov.kz/memleket/entities/ardfm/press/news/details/859007",
+    "source_host": "gov.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "government_regulator_appointment"
+  },
+  {
     "source_id": "src-5a1c49e54448",
     "source_url": "https://www.gov.kz/memleket/entities/transport/press/news/details/882464?lang=ru",
     "source_host": "gov.kz",
@@ -17625,6 +17820,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-07f001838ebe",
+    "source_url": "https://www.iastate.edu/life-at-iowa-state/campus-and-ames",
+    "source_host": "iastate.edu",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_location_evidence",
+    "source_adapters": "current_education_location"
+  },
+  {
     "source_id": "src-1083be0de75f",
     "source_url": "https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Ffinal-reports%2FIBO-2002+report.pdf",
     "source_host": "ibo-info.org",
@@ -17653,6 +17863,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-dbc39453d9e6",
+    "source_url": "https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Fresults%2FIBO2011_Ranking_total_final.pdf",
+    "source_host": "ibo-info.org",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "manual"
   },
   {
     "source_id": "src-00ba24842cca",
@@ -18228,16 +18453,16 @@
     "source_id": "src-9ef37ab7cd59",
     "source_url": "https://www.imo-official.org/results/contestant/17822/",
     "source_host": "imo-official.org",
-    "source_kind": "html",
-    "evidence_rows": 1,
+    "source_kind": "web_page",
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 2,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IMO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IMO;manual"
   },
   {
     "source_id": "src-fc6cfaa949d5",
@@ -19473,16 +19698,16 @@
     "source_id": "src-7fba1d49651b",
     "source_url": "https://www.imo-official.org/results/contestant/4109/",
     "source_host": "imo-official.org",
-    "source_kind": "html",
-    "evidence_rows": 1,
+    "source_kind": "web_page",
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 2,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IMO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IMO;manual"
   },
   {
     "source_id": "src-b10c9e6434c6",
@@ -19503,16 +19728,16 @@
     "source_id": "src-0bcf7b26bfa1",
     "source_url": "https://www.imo-official.org/results/contestant/4152/",
     "source_host": "imo-official.org",
-    "source_kind": "html",
-    "evidence_rows": 1,
+    "source_kind": "web_page",
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 2,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IMO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IMO;manual"
   },
   {
     "source_id": "src-e27e48877882",
@@ -19578,16 +19803,16 @@
     "source_id": "src-226113d5e21c",
     "source_url": "https://www.imo-official.org/results/contestant/4573/",
     "source_host": "imo-official.org",
-    "source_kind": "html",
-    "evidence_rows": 1,
+    "source_kind": "web_page",
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 2,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IMO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IMO;manual"
   },
   {
     "source_id": "src-3494218fe96c",
@@ -20340,6 +20565,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-325bd8f7c98f",
+    "source_url": "https://www.kmg.kz/en/press-center/press-releases/karabaev/",
+    "source_host": "kmg.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review;official_employer_transition_announcement"
+  },
+  {
     "source_id": "src-1d7c09980b67",
     "source_url": "https://www.ku.ac.ae/college-people/ahsan-habib-khandoker",
     "source_host": "ku.ac.ae",
@@ -20518,6 +20758,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "accepted_linkedin_profile;linkedin;manual;manual_review"
+  },
+  {
+    "source_id": "src-87349f5171ee",
+    "source_url": "https://www.linkedin.com/in/altynay-narmanova-36507b65",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 13,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 12,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual;manual_review"
   },
   {
     "source_id": "src-99cafe4eae19",
@@ -21060,6 +21315,21 @@
     "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review"
   },
   {
+    "source_id": "src-973c5f3d11ea",
+    "source_url": "https://www.linkedin.com/in/yerbolat-ablemetov-393b47206",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 8,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 8,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin"
+  },
+  {
     "source_id": "src-5c7ec693c02b",
     "source_url": "https://www.linkedin.com/in/yerkebulant",
     "source_host": "linkedin.com",
@@ -21073,6 +21343,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
     "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review"
+  },
+  {
+    "source_id": "src-bf8966f74138",
+    "source_url": "https://www.linkedin.com/in/yerken",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 10,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 9,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual"
   },
   {
     "source_id": "src-b7e1c10447a9",
@@ -21109,15 +21394,15 @@
     "source_url": "https://www.linkedin.com/in/yuriy-ten-169535355",
     "source_host": "linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 1,
+    "evidence_rows": 2,
     "people_count": 1,
     "accepted_rows": 0,
-    "supporting_rows": 0,
+    "supporting_rows": 2,
     "candidate_rows": 0,
     "superseded_rows": 0,
-    "rejected_rows": 1,
-    "provenances": "review_rejection",
-    "source_adapters": "manual"
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "accepted_linkedin_profile;linkedin"
   },
   {
     "source_id": "src-6f72ff896f7d",
@@ -21540,6 +21825,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-18b7271d597d",
+    "source_url": "https://www.petroleumjournal.kz/index.php?aid1=162&aid2=895&id=2105&outlang=3&p=article",
+    "source_host": "petroleumjournal.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence",
+    "source_adapters": "career_source_location;industry_journal_assignment_report"
+  },
+  {
     "source_id": "src-e02c469da426",
     "source_url": "https://www.polytechnique.edu/en/campus/access-campus",
     "source_host": "polytechnique.edu",
@@ -21568,6 +21868,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_location_evidence",
     "source_adapters": "current_education_location"
+  },
+  {
+    "source_id": "src-dc0caf92b5b2",
+    "source_url": "https://www.registrar.iastate.edu/media/932/file/Spring%202025%20Dean%27s%20List",
+    "source_host": "registrar.iastate.edu",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review;official_university_record"
   },
   {
     "source_id": "src-b6b1a128ae8e",
@@ -21628,6 +21943,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-38c3d0317fb4",
+    "source_url": "https://www.shbfinance.com.vn/about-us/board-of-management",
+    "source_host": "shbfinance.com.vn",
+    "source_kind": "web_page",
+    "evidence_rows": 4,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 3,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "career_source_location;manual;manual_review;official_employer_biography"
   },
   {
     "source_id": "src-8db940a3516d",

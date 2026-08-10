@@ -210,6 +210,13 @@
     "rationale": "Reviewed core activity is chemicals and industrial materials."
   },
   {
+    "organization_sector_id": "sector-c9143fa62a68387d",
+    "canonical_name": "Chevron",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is integrated energy and petroleum operations."
+  },
+  {
     "organization_sector_id": "sector-7ed10242d37f6512",
     "canonical_name": "ChooSmart",
     "organization_type": "company",
@@ -651,6 +658,13 @@
     "rationale": "Reviewed core activity is AI systems for scientific research."
   },
   {
+    "organization_sector_id": "sector-3038426692327240",
+    "canonical_name": "Mount Sinai Health System",
+    "organization_type": "nonprofit",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "Reviewed organization is an integrated nonprofit healthcare and medical-research system."
+  },
+  {
     "organization_sector_id": "sector-d78e67174b29a6b9",
     "canonical_name": "MUSAB / CONTROLS",
     "organization_type": "company",
@@ -833,6 +847,13 @@
     "rationale": "Reviewed core activity is cloud point-of-sale and business-management software."
   },
   {
+    "organization_sector_id": "sector-8848b3db72540215",
+    "canonical_name": "Republican Scientific and Practical Center Daryn",
+    "organization_type": "government",
+    "sector": "Education & Research",
+    "rationale": "Reviewed organization is Kazakhstan's national public center for academic competitions and gifted education."
+  },
+  {
     "organization_sector_id": "sector-d7b1b10db25f9591",
     "canonical_name": "Rominserv",
     "organization_type": "company",
@@ -861,6 +882,13 @@
     "rationale": "Reviewed core activity is autonomous-mobility software."
   },
   {
+    "organization_sector_id": "sector-f1532abab7752a87",
+    "canonical_name": "SHBFinance",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is consumer finance and lending."
+  },
+  {
     "organization_sector_id": "sector-86297065ef92f13d",
     "canonical_name": "Siemens Energy",
     "organization_type": "company",
@@ -880,6 +908,13 @@
     "organization_type": "company",
     "sector": "Energy & Natural Resources",
     "rationale": "Reviewed core activity is petrochemicals."
+  },
+  {
+    "organization_sector_id": "sector-cff6ee72182eb4aa",
+    "canonical_name": "Singapore International Math Contests Centre (SIMCC)",
+    "organization_type": "company",
+    "sector": "Education & Research",
+    "rationale": "Reviewed core activity is organizing and delivering international academic competitions and training."
   },
   {
     "organization_sector_id": "sector-a83a403aa39134e9",
@@ -950,6 +985,13 @@
     "organization_type": "independent",
     "sector": "Independent & Other",
     "rationale": "Public evidence does not disclose the employer or operating sector."
+  },
+  {
+    "organization_sector_id": "sector-fcbfefa6719af476",
+    "canonical_name": "STEM Olympiads",
+    "organization_type": "nonprofit",
+    "sector": "Education & Research",
+    "rationale": "The organization's official site describes a nonprofit platform providing science-olympiad instruction and preparation."
   },
   {
     "organization_sector_id": "sector-2ab656b52d27d253",
@@ -1062,6 +1104,13 @@
     "organization_type": "company",
     "sector": "Finance & Insurance",
     "rationale": "Reviewed destination is proprietary trading."
+  },
+  {
+    "organization_sector_id": "sector-95e10d64033789bf",
+    "canonical_name": "United Group Alatau",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is securities brokerage and investment services."
   },
   {
     "organization_sector_id": "sector-e93b8f0bff97e20d",

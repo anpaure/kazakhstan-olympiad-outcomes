@@ -146,6 +146,17 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
             )
         )
 
+    def test_foreign_exchange_finance_degree_is_an_alma_mater(self):
+        self.assertTrue(
+            is_postsecondary_education(
+                {
+                    "organization": "Narxoz University",
+                    "role": "Bachelor's degree, International Finance and Foreign Exchange",
+                    "evidence_text": "Bachelor's degree at the Kazakh State Academy of Management.",
+                }
+            )
+        )
+
     def test_physics_and_technology_institute_is_postsecondary(self):
         self.assertTrue(
             is_postsecondary_education(
@@ -379,6 +390,25 @@ class AlmaMaterSelectionTest(unittest.TestCase):
         self.assertGreater(
             education_score(prior, "MIT", True, 2026),
             education_score(current, "MIT", True, 2026),
+        )
+
+    def test_combined_degree_record_beats_single_degree_at_same_school(self):
+        combined = {
+            "organization": "KBTU",
+            "role": "Bachelor's degree; Master's degree",
+            "start_year": "",
+            "end_year": "",
+        }
+        masters_only = {
+            "organization": "KBTU",
+            "role": "Master's degree",
+            "start_year": "",
+            "end_year": "",
+        }
+
+        self.assertGreater(
+            education_score(combined, "Current Co", False, 2026),
+            education_score(masters_only, "Current Co", False, 2026),
         )
 
     def test_selects_undergraduate_and_postgraduate_institutions(self):
