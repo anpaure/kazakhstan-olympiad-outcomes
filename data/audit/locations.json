@@ -2478,18 +2478,18 @@
     "review_reason": "Country follows the accepted active student affiliation at École normale supérieure (ENS); the linked official institution source establishes the campus location. ENS's official contact page identifies its Paris campus."
   },
   {
-    "location_id": "loc-05ac269660e6c075",
-    "evidence_id": "ev-28d47a2549d1252f",
+    "location_id": "loc-18c9d457564456db",
+    "evidence_id": "ev-d355ca62ff01953b",
     "source_id": "src-81f64cf96666",
     "person_id": "kaz-7907a5491483",
     "name": "Talgat Ismukhamedov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "location_label": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
     "evidence_url": "https://ae.linkedin.com/in/talgat-ismukhamedov-a7b77323",
-    "evidence_kind": "current_role_location",
+    "evidence_kind": "active_affiliation_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at Honeywell. The profile header points to United Arab Emirates, but it conflicts with the active-role location and is not used."
+    "review_reason": "The accepted profile places Talgat in Abu Dhabi and identifies his ongoing role as Cyber Security Consultant for Honeywell Middle East in EMEA. Kazakhstan appears only as one project location in the job description and is not used as his primary outcome country."
   },
   {
     "location_id": "loc-98795ba5e27d31f1",

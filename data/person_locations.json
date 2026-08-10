@@ -1949,13 +1949,13 @@
   {
     "person_id": "kaz-7907a5491483",
     "name": "Talgat Ismukhamedov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_kind": "current_role_location",
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "location_label": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
+    "evidence_url": "https://ae.linkedin.com/in/talgat-ismukhamedov-a7b77323",
+    "evidence_kind": "active_affiliation_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at Honeywell. The profile header points to United Arab Emirates, but it conflicts with the active-role location and is not used.",
-    "evidence_url": "https://ae.linkedin.com/in/talgat-ismukhamedov-a7b77323"
+    "review_reason": "The accepted profile places Talgat in Abu Dhabi and identifies his ongoing role as Cyber Security Consultant for Honeywell Middle East in EMEA. Kazakhstan appears only as one project location in the job description and is not used as his primary outcome country."
   },
   {
     "person_id": "kaz-7b9ddf320af6",

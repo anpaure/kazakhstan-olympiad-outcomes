@@ -205,6 +205,7 @@ EMPLOYER_DESCRIPTION_PATTERN = re.compile(
     re.IGNORECASE,
 )
 TRUSTED_OVERRIDE_KINDS = {
+    "active_affiliation_profile_location",
     "affiliation_country",
     "career_source_location",
     "current_role_location",
@@ -282,35 +283,48 @@ def role_heading_parts(header: str) -> tuple[str, str]:
 
 
 def structured_role_location(body: str) -> tuple[str, str]:
-    for raw_line in body.replace("\r\n", "\n").splitlines():
-        line = clean_text(raw_line)
-        if not line:
-            continue
-        if line.casefold().startswith(("department:", "level:")):
-            break
-        match = re.search(r"\s(?:in|в)\s+(?P<location>.+)$", line, re.IGNORECASE)
-        if not match:
-            continue
-        prefix = line[: match.start()].casefold()
-        if not re.search(r"\bpresent\b|настоящ|\b20\d{2}\b", prefix):
-            continue
-        location = clean_location_label(match.group("location"))
-        code = country_from_location(location)
-        if code:
-            return location, code
+    date_line = next(
+        (
+            clean_text(raw_line)
+            for raw_line in body.replace("\r\n", "\n").splitlines()
+            if clean_text(raw_line)
+        ),
+        "",
+    )
+    match = re.search(r"\s(?:in|в)\s+(?P<location>.+)$", date_line, re.IGNORECASE)
+    if not match:
+        return "", ""
+    prefix = date_line[: match.start()].casefold()
+    if not re.search(r"\bpresent\b|настоящ|\b20\d{2}\b", prefix):
+        return "", ""
+    location = clean_location_label(match.group("location"))
+    code = country_from_location(location)
+    if code:
+        return location, code
     return "", ""
 
 
 def compact_role_location(body: str) -> tuple[str, str]:
     description_match = EMPLOYER_DESCRIPTION_PATTERN.search(body)
     role_metadata = body[: description_match.start()] if description_match else body
-    for current_match in ROLE_LOCATION_PATTERN.finditer(role_metadata):
-        location = clean_location_label(current_match.group("location"))
-        if ". " in location:
-            continue
-        code = country_from_location(location)
-        if code:
-            return location, code
+    role_metadata = role_metadata[:360]
+    current_match = ROLE_LOCATION_PATTERN.search(role_metadata)
+    if not current_match:
+        return "", ""
+    prefix = role_metadata[: current_match.start()].casefold()
+    present_at = prefix.rfind("present")
+    if present_at < 0:
+        return "", ""
+    gap = prefix[present_at + len("present") :]
+    gap = re.sub(r"\b(?:and|months?|years?)\b|\d+", "", gap)
+    if re.search(r"\w", gap):
+        return "", ""
+    location = clean_location_label(current_match.group("location"))
+    if ". " in location:
+        return "", ""
+    code = country_from_location(location)
+    if code:
+        return location, code
     return "", ""
 
 

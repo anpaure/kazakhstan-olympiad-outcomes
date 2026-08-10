@@ -72,7 +72,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual"
+    "source_adapters": "accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual"
   },
   {
     "source_id": "src-52d9dede15eb",

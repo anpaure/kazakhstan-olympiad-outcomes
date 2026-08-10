@@ -6,6 +6,7 @@ from pathlib import Path
 from scripts.build_location_evidence import (
     build_rows,
     country_from_location,
+    extract_current_roles,
     extract_location,
     load_organization_locations,
 )
@@ -16,7 +17,8 @@ class LocationExtractionTest(unittest.TestCase):
     def test_current_role_location_is_preferred_over_profile_header(self):
         result = extract_location(
             "# Person CTO at Example Singapore (SG) 57 connections "
-            "## Experience ### CTO - Example (Current) in Kazakhstan"
+            "## Experience ### CTO - Example (Current) "
+            "Jan 2025 - Present in Kazakhstan"
         )
 
         self.assertEqual(result["country_code"], "KZ")
@@ -54,6 +56,16 @@ class LocationExtractionTest(unittest.TestCase):
                 "in Central Asia and Kazakhstan. University has 1,000 employees."
             )
         )
+
+    def test_project_country_is_not_mistaken_for_current_role_location(self):
+        roles = extract_current_roles(
+            "### Cyber Security Consultant - Honeywell (Current) ... "
+            "Jan 2020 - Present in EMEA ... Acting as a member of a project "
+            "team in Kazakhstan."
+        )
+
+        self.assertEqual(roles[0]["location_label"], "")
+        self.assertEqual(roles[0]["country_code"], "")
 
     def test_city_only_current_role_location_uses_reviewed_city_map(self):
         self.assertEqual(country_from_location("Hillsboro, Oregon"), "US")
@@ -208,6 +220,24 @@ class LocationExtractionTest(unittest.TestCase):
         )
 
         self.assertEqual(missing, [])
+
+    def test_talgat_uses_primary_honeywell_location_not_project_country(self):
+        locations = {
+            row["person_id"]: row
+            for row in json.loads(
+                Path("data/person_locations.json").read_text(encoding="utf-8")
+            )
+        }
+        talgat = locations["kaz-7907a5491483"]
+
+        self.assertEqual(talgat["country_code"], "AE")
+        self.assertEqual(
+            talgat["location_label"],
+            "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
+        )
+        self.assertEqual(
+            talgat["evidence_kind"], "active_affiliation_profile_location"
+        )
 
 
 if __name__ == "__main__":
