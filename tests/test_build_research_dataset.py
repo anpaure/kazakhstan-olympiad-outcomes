@@ -1,6 +1,6 @@
 import unittest
 
-from scripts.build_research_dataset import build_rows
+from scripts.build_research_dataset import build_rows, organization_category
 from scripts.build_outcomes_visualization import compact_person
 
 
@@ -103,13 +103,39 @@ class RejectedCandidateTest(unittest.TestCase):
         self.assertEqual(row.evidence_urls, "")
 
 
+class OrganizationCategoryTest(unittest.TestCase):
+    def test_school_employers_are_not_classified_as_industry(self):
+        organizations = [
+            "Bilim-Innovation Specialized Boarding Lyceum, North Kazakhstan",
+            "Almaty KTL",
+            "NIS Medeu (NIS PhM Almaty)",
+            "Astana/Almaty Physics Battles Tournament",
+        ]
+
+        for organization in organizations:
+            with self.subTest(organization=organization):
+                self.assertEqual(
+                    organization_category(organization, "employment"), "Academia"
+                )
+
+    def test_university_abbreviations_are_not_classified_as_industry(self):
+        for organization in ["MIT", "HKUST", "KAIST", "UNIST"]:
+            with self.subTest(organization=organization):
+                self.assertEqual(
+                    organization_category(organization, "organization"), "Academia"
+                )
+
+
 class VisualizationOrganizationAliasTest(unittest.TestCase):
     def test_unist_long_name_uses_one_display_label(self):
         row = {
             "person_id": "kaz-test",
             "name": "Test Person",
+            "aliases": "Test Person;Person Test",
             "olympiads": "IBO",
             "first_year": "2018",
+            "last_year": "2019",
+            "awards": "Bronze;Silver",
             "confidence": "confirmed",
             "organization": "Ulsan National Institute of Science and Technology",
             "role": "PhD Student",
@@ -123,6 +149,9 @@ class VisualizationOrganizationAliasTest(unittest.TestCase):
         compact = compact_person(row)
 
         self.assertEqual(compact["organization"], "UNIST")
+        self.assertEqual(compact["aliases"], ["Test Person", "Person Test"])
+        self.assertEqual(compact["lastYear"], 2019)
+        self.assertEqual(compact["awards"], ["Bronze", "Silver"])
 
 
 if __name__ == "__main__":

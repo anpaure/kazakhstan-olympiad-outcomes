@@ -12,12 +12,12 @@ The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
 - 457 canonical people after 29 reviewed name merges
-- 305 researched people, all classified as probable or confirmed
-- 252 confirmed and 53 probable education or career outcomes
-- 242 manually reviewed outcomes backed by public evidence
-- 283 researched people with a resolved organization and 185 with a public LinkedIn URL
-- 2 additional people with candidate-only evidence retained for audit but no accepted outcome
-- 85 rejected identity sources retained with review reasons and supporting links
+- 304 researched people, all classified as probable or confirmed
+- 252 confirmed and 52 probable education or career outcomes
+- 272 manually reviewed outcomes backed by public evidence
+- 285 researched people with a resolved organization and 227 with a public LinkedIn URL
+- 3 additional people with candidate-only evidence retained for audit but no accepted outcome
+- 112 rejected identity sources retained with review reasons and supporting links
 
 The current first step is implemented in `scripts/collect_kazakhstan_participants.py`. It collects Kazakhstan competitors from:
 
@@ -112,6 +112,8 @@ Outputs:
 ## Assemble and Validate Outcomes
 
 ```bash
+python scripts/apply_exa_identity_rejections.py
+python scripts/apply_exa_outcome_integrations.py
 python scripts/build_research_dataset.py
 python scripts/build_audit_bundle.py
 python scripts/validate_research.py
@@ -119,9 +121,11 @@ python scripts/validate_research.py
 
 `data/verified_evidence.csv` contains reviewed public evidence and overrides lower-confidence inferred affiliations. `data/rejected_identity_candidates.csv` records reviewed false or unsupported namesakes by person and evidence URL; the assembler excludes those identities and their derived affiliations while allowing a different future source for the same person to surface.
 
+The two apply scripts merge the auditable Exa review overlays before assembly. `data/exa_outcome_integrations.csv` records accepted career updates with their direct evidence URLs, while `data/exa_identity_rejections.csv` records newly identified namesakes. Both merges reject duplicate overlay keys and are safe to rerun. `data/exa_identity_review_decisions.csv` and `data/exa_outcome_review_decisions.csv` retain explicit reasons and supporting links for profiles that are supporting, deferred, rejected, or intentionally not used as the current outcome.
+
 `scripts/build_audit_bundle.py` then creates normalized audit tables under `data/audit/`. The final people table joins to a row-level evidence ledger through `person_id`; evidence joins to a deduplicated source registry through `source_id`; every evidence row retains its direct `source_url`. Accepted, supporting, candidate, superseded, and rejected claims remain visible instead of being collapsed into one compound URL field. See `data/audit/README.md` for the audit procedure and data dictionary.
 
-The validation step checks participant-row conservation, unique person IDs, confidence/evidence rules, timeline conflicts, recent-competitor exclusions, preservation of manual evidence, rejection-ledger leakage, audit-table joins, direct HTTP(S) source links, and complete traceability for every probable or confirmed outcome.
+The validation step checks participant-row conservation, unique person IDs, confidence/evidence rules, timeline conflicts, recent-competitor exclusions, exact publication of every accepted Exa outcome overlay, preservation of manual evidence, rejection-ledger leakage, audit-table joins, direct HTTP(S) source links, and complete traceability for every probable or confirmed outcome.
 
 Outputs:
 
@@ -185,11 +189,13 @@ The queue joins the current research status to exact-name LinkedIn profiles and
 separately flags the expected Olympiad, participant-year overlap, award language,
 and current-affiliation language. Its priority score orders unresolved explicit
 identity bridges first without treating a name match alone as proof. Every row has
-a deterministic `review_status` of `selected`, `rejected`, or `unreviewed`, matched
+a deterministic `review_status` of `selected`, `supporting`, `deferred`, or `rejected`, matched
 against the accepted evidence and rejection ledger after LinkedIn URL
 canonicalization. The current queue contains 106 people with an explicit
-expected-Olympiad bridge; none remain unmatched or probable. Across all exact-name
-results, 2 unresolved people still have at least one unreviewed profile candidate.
+expected-Olympiad bridge; none remain unmatched or probable, and none need an
+outcome decision. Across all 326 exact-name profile results, 200 are selected, 5
+are supporting duplicate profiles, 31 are explicitly deferred with review reasons,
+and 90 are rejected. No result remains silently unreviewed.
 
 Review-queue outputs:
 

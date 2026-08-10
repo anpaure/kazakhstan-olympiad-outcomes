@@ -1,0 +1,3 @@
+person_id,candidate_url,decision,reason,review_evidence_url
+kaz-310c08212560,https://www.linkedin.com/in/anmorgunov,retain_published_newer_evidence,Yale's July 2026 graduate profile documents the move to Genesis Molecular AI after the LinkedIn PhD entry; retain the newer dated destination,https://chem.yale.edu/posts/2026-07-01-chemistry-phd-graduate-profiles
+kaz-bcd45c045c97,https://linkedin.com/in/kairat-zhubayev-150785174,retain_published_ambiguous_current_roles,The same profile has an Altyn Bank current headline and an overlapping Otbasy Bank entry marked current; it does not establish that the older-dated Otbasy entry replaced the headline role,https://linkedin.com/in/kairat-zhubayev-150785174

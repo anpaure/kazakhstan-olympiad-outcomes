@@ -66,8 +66,12 @@
       </select>
     </label>
     <label class="form-label">Find a person
-      <input class="form-control" data-control="search" type="search" placeholder="Name or organization">
+      <input class="form-control" data-control="search" type="search" placeholder="Name, role, organization, or year">
     </label>
+    <div class="form-label">
+      <span>Organization type</span>
+      <button class="iso-filter-toggle" data-control="companies-only" type="button" aria-pressed="false" aria-label="Show companies only">Companies only</button>
+    </div>
   </div>
 
   <div class="iso-chart-grid">
@@ -83,7 +87,7 @@
 
   <div class="iso-selection text-small text-muted" data-selection>Showing probable and confirmed outcomes.</div>
 
-  <div class="table-responsive">
+  <div class="table-responsive" tabindex="0" aria-label="Filtered alumni results">
     <table class="table table-sm">
       <thead>
         <tr>
@@ -203,7 +207,7 @@
   }
   #iso-outcomes-viz .iso-controls {
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 12px;
     align-items: end;
     margin-bottom: 24px;
@@ -219,7 +223,8 @@
     font-weight: 600;
   }
   #iso-outcomes-viz .form-select,
-  #iso-outcomes-viz .form-control {
+  #iso-outcomes-viz .form-control,
+  #iso-outcomes-viz .iso-filter-toggle {
     width: 100%;
     height: 38px;
     padding: 0 10px;
@@ -231,10 +236,21 @@
     font-size: 14px;
   }
   #iso-outcomes-viz .form-select:focus,
-  #iso-outcomes-viz .form-control:focus {
+  #iso-outcomes-viz .form-control:focus,
+  #iso-outcomes-viz .iso-filter-toggle:focus-visible {
     border-color: var(--iso-ring);
     outline: 2px solid color-mix(in srgb, var(--iso-ring) 25%, transparent);
     outline-offset: 1px;
+  }
+  #iso-outcomes-viz .iso-filter-toggle {
+    cursor: pointer;
+    font-weight: 650;
+    text-align: center;
+  }
+  #iso-outcomes-viz .iso-filter-toggle[aria-pressed="true"] {
+    border-color: var(--iso-primary);
+    color: #ffffff;
+    background: var(--iso-primary);
   }
   #iso-outcomes-viz .iso-chart-grid {
     display: grid;
@@ -292,7 +308,9 @@
   }
   #iso-outcomes-viz .table-responsive {
     width: 100%;
-    overflow-x: auto;
+    max-height: clamp(380px, 68vh, 760px);
+    overflow: auto;
+    overscroll-behavior: contain;
     border: 1px solid var(--iso-border);
     border-radius: 6px;
     background: var(--iso-surface);
@@ -313,6 +331,9 @@
     overflow-wrap: anywhere;
   }
   #iso-outcomes-viz .table th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     background: #e8eef4;
     font-size: 11px;
     font-weight: 700;
@@ -342,6 +363,9 @@
     margin-top: 8px;
   }
   @media (max-width: 900px) {
+    #iso-outcomes-viz .iso-controls {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
     #iso-outcomes-viz .iso-chart-grid {
       grid-template-columns: 1fr;
       gap: 18px;
@@ -379,7 +403,8 @@
       min-height: 300px;
     }
     #iso-outcomes-viz .table-responsive {
-      overflow-x: visible;
+      max-height: 72vh;
+      overflow: auto;
     }
     #iso-outcomes-viz .table {
       min-width: 0;
@@ -451,6 +476,7 @@
     olympiad: 'all',
     metric: 'organization',
     search: '',
+    companiesOnly: false,
     selectedValue: ''
   };
 
@@ -458,7 +484,8 @@
     confidence: root.querySelector('[data-control="confidence"]'),
     olympiad: root.querySelector('[data-control="olympiad"]'),
     metric: root.querySelector('[data-control="metric"]'),
-    search: root.querySelector('[data-control="search"]')
+    search: root.querySelector('[data-control="search"]'),
+    companiesOnly: root.querySelector('[data-control="companies-only"]')
   };
 
   if (!people.some(person => person.confidence === 'candidate')) {
@@ -484,12 +511,40 @@
     return true;
   }
 
+  function normalizeSearch(value) {
+    return String(value ?? '')
+      .normalize('NFKD')
+      .replace(/\p{M}/gu, '')
+      .toLocaleLowerCase()
+      .replace(/[’'`]/g, '');
+  }
+
+  function matchesSearch(person, query) {
+    const terms = normalizeSearch(query).split(/\s+/).filter(Boolean);
+    if (!terms.length) return true;
+    const haystack = normalizeSearch([
+      person.name,
+      ...(person.aliases || []),
+      ...(person.olympiads || []),
+      ...(person.awards || []),
+      person.firstYear,
+      person.lastYear,
+      person.organization,
+      person.role,
+      person.organizationCategory,
+      person.roleCategory,
+      person.confidence
+    ].join(' '));
+    return terms.every(term => haystack.includes(term));
+  }
+
   function filteredPeople({ ignoreSelection = false, ignoreConfidence = false } = {}) {
-    const query = state.search.trim().toLowerCase();
+    const query = state.search.trim();
     return people.filter(person => {
       if (!ignoreConfidence && !confidenceAllowed(person.confidence)) return false;
       if (state.olympiad !== 'all' && !person.olympiads.includes(state.olympiad)) return false;
-      if (query && !`${person.name} ${person.organization} ${person.role}`.toLowerCase().includes(query)) return false;
+      if (state.companiesOnly && person.organizationCategory !== 'Industry') return false;
+      if (!matchesSearch(person, query)) return false;
       if (!ignoreSelection && state.selectedValue && person[state.metric] !== state.selectedValue) return false;
       return true;
     });
@@ -650,9 +705,8 @@
   function renderTable() {
     const rows = filteredPeople().sort((a, b) =>
       d3.descending(confidenceRank[a.confidence], confidenceRank[b.confidence]) || d3.ascending(a.name, b.name));
-    const visible = rows.slice(0, 28);
     const body = root.querySelector('[data-people-table]');
-    body.replaceChildren(...visible.map(person => {
+    body.replaceChildren(...rows.map(person => {
       const tr = document.createElement('tr');
       if (state.selectedValue && person[state.metric] === state.selectedValue) tr.classList.add('is-highlighted');
       const nameCell = document.createElement('td');
@@ -681,9 +735,7 @@
       tr.append(nameCell, olympiadCell, destinationCell, roleCell, confidenceCell);
       return tr;
     }));
-    root.querySelector('[data-table-note]').textContent = rows.length > visible.length
-      ? `Showing 28 of ${rows.length} filtered people.`
-      : matchCount(rows.length, 'the current filters');
+    root.querySelector('[data-table-note]').textContent = matchCount(rows.length, 'the current filters');
   }
 
   function render() {
@@ -703,6 +755,12 @@
   controls.olympiad.addEventListener('change', event => { state.olympiad = event.target.value; state.selectedValue = ''; render(); });
   controls.metric.addEventListener('change', event => { state.metric = event.target.value; state.selectedValue = ''; render(); });
   controls.search.addEventListener('input', event => { state.search = event.target.value; render(); });
+  controls.companiesOnly.addEventListener('click', () => {
+    state.companiesOnly = !state.companiesOnly;
+    state.selectedValue = '';
+    controls.companiesOnly.setAttribute('aria-pressed', String(state.companiesOnly));
+    render();
+  });
 
   const observer = new ResizeObserver(() => { drawDestinations(); drawCoverage(); });
   observer.observe(root.querySelector('.iso-chart-grid'));

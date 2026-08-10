@@ -18,8 +18,11 @@ def compact_person(row: dict[str, object]) -> dict[str, object]:
     return {
         "id": row["person_id"],
         "name": row["name"],
+        "aliases": [value for value in str(row.get("aliases", "")).split(";") if value],
         "olympiads": [value for value in str(row["olympiads"]).split(";") if value],
         "firstYear": int(row["first_year"]),
+        "lastYear": int(row.get("last_year") or row["first_year"]),
+        "awards": [value for value in str(row.get("awards", "")).split(";") if value],
         "confidence": row["confidence"],
         "organization": ORGANIZATION_DISPLAY_ALIASES.get(organization, organization),
         "role": row["role"],

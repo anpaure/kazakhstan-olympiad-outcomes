@@ -103,7 +103,9 @@ def affiliation_sort_key(row: dict[str, str]) -> tuple[int, int, int, int, int]:
 
 
 def organization_category(organization: str, affiliation_type: str) -> str:
-    text = f" {clean_text(organization).casefold()} "
+    normalized_organization = clean_text(organization).casefold()
+    word_text = re.sub(r"[^\w]+", " ", normalized_organization).replace("_", " ")
+    text = f" {clean_text(word_text)} "
     affiliation_type = clean_text(affiliation_type).casefold()
     if affiliation_type == "education":
         return "Education"
@@ -114,11 +116,30 @@ def organization_category(organization: str, affiliation_type: str) -> str:
             " institute ",
             " school ",
             " college ",
+            " lyceum ",
+            " gymnasium ",
+            " education ",
             " akadem",
             " universität",
             " universidade",
+            " olympiad team ",
+            " olympic training ",
+            " physics battles ",
         ]
-    ):
+    ) or normalized_organization in {
+        "almaty ktl",
+        "beyond curriculum pf",
+        "binus international",
+        "harbour.space",
+        "hits",
+        "hkust",
+        "kaist",
+        "mit",
+        "nis medeu (nis phm almaty)",
+        "qazcho",
+        "rfms",
+        "unist",
+    }:
         return "Academia"
     if any(
         term in text

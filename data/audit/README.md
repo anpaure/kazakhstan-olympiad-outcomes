@@ -42,9 +42,28 @@ JSON equivalents are generated beside every CSV table.
 `traceability_status=complete` means a probable or confirmed person has both
 accepted participation evidence and accepted or supporting outcome evidence.
 
+## Exa Review Trail
+
+The complete exact-name LinkedIn review trail remains in the parent `data/`
+directory rather than being flattened into the final-outcome tables:
+
+- `exa_linkedin_review_queue.csv`: all 326 exact-name profile results and their
+  deterministic review and outcome statuses.
+- `exa_outcome_integrations.csv`: 52 accepted career updates with direct
+  Olympiad and career evidence links.
+- `exa_identity_review_decisions.csv`: supporting, deferred, and rejected
+  decisions for secondary profiles, each with a reason and review link.
+- `exa_identity_rejections.csv`: namesakes promoted into the rejection ledger.
+- `exa_outcome_review_decisions.csv`: explicit reasons for retaining a
+  published outcome when an Exa profile exposes stale or conflicting current
+  roles.
+
 ## Regenerate
 
 ```bash
+python scripts/apply_exa_identity_rejections.py
+python scripts/apply_exa_outcome_integrations.py
+python scripts/build_research_dataset.py
 python scripts/build_audit_bundle.py
 python scripts/validate_research.py
 ```

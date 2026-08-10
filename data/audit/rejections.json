@@ -678,5 +678,221 @@
     "evidence_url": "https://linkedin.com/in/pavel-levchenko-b1058835b",
     "reason": "Moscow Sberbank project-management profile contains no Kazakhstan physics oil-production or 2006 IPhO bridge and conflicts with the selected Atyrau profile",
     "review_evidence_url": "https://kz.linkedin.com/in/pavel-levchenko-a315041a7"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-551e11992b48",
+    "evidence_url": "https://linkedin.com/in/kirill-panov-64b394206",
+    "reason": "Warsaw and Belarus software profile contains no Kazakhstan school mathematics or 1998 IMO bridge and remains an unsupported common-name result",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1998"
+  },
+  {
+    "person_id": "kaz-21cc95b51c33",
+    "person_name": "Yaroslav Alexandrov",
+    "source_id": "src-e81a36d6888a",
+    "evidence_url": "https://linkedin.com/in/yaroslav-alexandrov-31394b87",
+    "reason": "Moscow enterprise-product profile contains no Kazakhstan physics school or 1999 IPhO bridge and its Russian higher-education history does not identify the contestant",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-514026a01ba3",
+    "person_name": "Yerlan Jumabayev",
+    "source_id": "src-44ca2e0f4ee3",
+    "evidence_url": "https://linkedin.com/in/thevarp",
+    "reason": "University study in 2021-2025 makes this frontend developer far too young to be Kazakhstan's 1997 school IMO contestant",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1997"
+  },
+  {
+    "person_id": "kaz-514026a01ba3",
+    "person_name": "Yerlan Jumabayev",
+    "source_id": "src-9022710f24a5",
+    "evidence_url": "https://github.com/thevarp19",
+    "reason": "The linked 2021-2025 undergraduate profile proves this GitHub identity is too young to be the 1997 school IMO contestant",
+    "review_evidence_url": "https://linkedin.com/in/thevarp"
+  },
+  {
+    "person_id": "kaz-7bc4b3d48a29",
+    "person_name": "Nurdaulet Kemel",
+    "source_id": "src-d11a8bf6a3b1",
+    "evidence_url": "https://linkedin.com/in/nurdaulet-og",
+    "reason": "Home Credit DevOps profile contains no Kazakhstan olympiad or Hong Kong education bridge and conflicts with the selected IOI-medalist profile",
+    "review_evidence_url": "https://linkedin.com/in/nurdauletkemel"
+  },
+  {
+    "person_id": "kaz-6e64602de321",
+    "person_name": "Aman Sariyev",
+    "source_id": "src-0d775af43697",
+    "evidence_url": "https://linkedin.com/in/aman-sariyev-49158475",
+    "reason": "Drilling-engineering study in 2002-2006 and seismic work from 2012 make this mechanic too old to be the 2012-2013 school IOI contestant",
+    "review_evidence_url": "https://linkedin.com/in/aman-sariyev"
+  },
+  {
+    "person_id": "kaz-79f187c010c6",
+    "person_name": "Kirill Kim",
+    "source_id": "src-105708d2dd74",
+    "evidence_url": "https://linkedin.com/in/kirill-kim-9541a72a0",
+    "reason": "NIS graduation listed for 2027 conflicts with the selected contestant's 2025 MIT enrollment and the profile contains no IChO bridge",
+    "review_evidence_url": "https://linkedin.com/in/kirill-kim-4bb3a8346"
+  },
+  {
+    "person_id": "kaz-79f187c010c6",
+    "person_name": "Kirill Kim",
+    "source_id": "src-2945ebce5743",
+    "evidence_url": "https://linkedin.com/in/kirill-kim-67b160317",
+    "reason": "Kainar University study in 2023-2027 conflicts with the selected contestant's 2025 MIT enrollment and contains no chemistry olympiad evidence",
+    "review_evidence_url": "https://linkedin.com/in/kirill-kim-4bb3a8346"
+  },
+  {
+    "person_id": "kaz-a2f029eab00c",
+    "person_name": "Amir Tulegenov",
+    "source_id": "src-1f1bc5003ecf",
+    "evidence_url": "https://linkedin.com/in/damir-tulegenov-3a2706185",
+    "reason": "The profile is named Damir and its 2009-2013 university timeline conflicts with Amir Tulegenov's 2009 school IOI appearance",
+    "review_evidence_url": "https://stats.ioinformatics.org/results/KAZ"
+  },
+  {
+    "person_id": "kaz-a2f029eab00c",
+    "person_name": "Amir Tulegenov",
+    "source_id": "src-5b93715c63c3",
+    "evidence_url": "https://linkedin.com/in/amir-tulegenov",
+    "reason": "FIZMAT study in 2019-2023 makes this Warwick undergraduate too young to be the 2009 school IOI contestant",
+    "review_evidence_url": "https://stats.ioinformatics.org/results/KAZ"
+  },
+  {
+    "person_id": "kaz-bb641e236bb0",
+    "person_name": "Danil Kravtsov",
+    "source_id": "src-ea6470e56232",
+    "evidence_url": "https://linkedin.com/in/danil-kravtsov",
+    "reason": "Siberian Federal University study in 2019-2024 makes this product manager too young to be the 1999-2000 school IOI contestant",
+    "review_evidence_url": "https://stats.ioinformatics.org/results/KAZ"
+  },
+  {
+    "person_id": "kaz-e0511f92fe0d",
+    "person_name": "Almas Serikov",
+    "source_id": "src-c935cef410f3",
+    "evidence_url": "https://linkedin.com/in/almas-serikov-703604160",
+    "reason": "Hydrogeology profile contains no Kazakhstan biology olympiad or Korean research bridge and conflicts with the selected KIST researcher identity",
+    "review_evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2005.pdf"
+  },
+  {
+    "person_id": "kaz-ae7bbfa79815",
+    "person_name": "Azamat Smagulov",
+    "source_id": "src-19cd529dcd27",
+    "evidence_url": "https://linkedin.com/in/azamat-smagulov-184a97214",
+    "reason": "Kazakhstan Java-developer profile contains no chemistry olympiad or KAIST bridge and conflicts with the selected IChO-medalist profile",
+    "review_evidence_url": "https://linkedin.com/in/azamatsmagulov"
+  },
+  {
+    "person_id": "kaz-8a1e18c44a89",
+    "person_name": "Daniil Melnichenko",
+    "source_id": "src-7d7081d294e2",
+    "evidence_url": "https://linkedin.com/in/daniil-melnichenko-637776251",
+    "reason": "Unrelated student profile contains no Kazakhstan chemistry olympiad KAIST or HITS bridge and conflicts with the selected researcher profile",
+    "review_evidence_url": "https://linkedin.com/in/daniilmel"
+  },
+  {
+    "person_id": "kaz-c1c8ab962b25",
+    "person_name": "Daniyar Zakarin",
+    "source_id": "src-3d8ec66081bd",
+    "evidence_url": "https://linkedin.com/in/daniyar-zakarin-33b45899",
+    "reason": "Tax career beginning in 2014 makes this professional too old to be the 2018-2019 school IOI contestant",
+    "review_evidence_url": "https://linkedin.com/in/daniyarzt"
+  },
+  {
+    "person_id": "kaz-ba8a6f8bb8aa",
+    "person_name": "Vladislav Cherdantsev",
+    "source_id": "src-0252feb91051",
+    "evidence_url": "https://linkedin.com/in/vladislav-cherdantsev-830a28214",
+    "reason": "Voronezh and advertising-technology profile contains no Kazakhstan chemistry olympiad or MIT bridge and conflicts with the selected IChO-medalist profile",
+    "review_evidence_url": "https://linkedin.com/in/vladcherd"
+  },
+  {
+    "person_id": "kaz-c5f47f6f2526",
+    "person_name": "Dias Suleimenov",
+    "source_id": "src-b94b19114985",
+    "evidence_url": "https://linkedin.com/in/diass24",
+    "reason": "Senior-lawyer profile contains no 2024 IBO or HKUST mathematics bridge and conflicts with the selected recent-medalist profile",
+    "review_evidence_url": "https://linkedin.com/in/dias-suleimenov-23888828b"
+  },
+  {
+    "person_id": "kaz-36f5d4e0f896",
+    "person_name": "Van Li",
+    "source_id": "src-d9a5c7fcb92a",
+    "evidence_url": "https://linkedin.com/in/van-li-238bba52",
+    "reason": "Digital-marketing profile contains no Kazakhstan informatics olympiad or UNIST bridge and conflicts with the selected recent IOI profile",
+    "review_evidence_url": "https://linkedin.com/in/van-li-972a8a2b8"
+  },
+  {
+    "person_id": "kaz-dd50209a641b",
+    "person_name": "Vyacheslav Li",
+    "source_id": "src-f106b4d7d740",
+    "evidence_url": "https://linkedin.com/in/vyacheslav-li-21a93a260",
+    "reason": "Rope-access technician profile contains no Kazakhstan physics olympiad quantitative-finance or ISTA bridge and conflicts with the selected profile",
+    "review_evidence_url": "https://nl.linkedin.com/in/vyacheslav-li"
+  },
+  {
+    "person_id": "kaz-eda797e5a5c1",
+    "person_name": "Roman Kogay",
+    "source_id": "src-dacba67a5fa3",
+    "evidence_url": "https://linkedin.com/in/roman-kogay-43566a204",
+    "reason": "Kazakhstan bank data-engineering profile contains no biology genomics or NIH bridge and conflicts with the selected researcher identity",
+    "review_evidence_url": "https://www.ncbi.nlm.nih.gov/research/groups/kogay/"
+  },
+  {
+    "person_id": "kaz-eda797e5a5c1",
+    "person_name": "Roman Kogay",
+    "source_id": "src-b54ad0fdbee4",
+    "evidence_url": "https://linkedin.com/in/roman-kogay-b981a913b",
+    "reason": "Game-studio art-director profile contains no biology genomics or NIH bridge and conflicts with the selected researcher identity",
+    "review_evidence_url": "https://www.ncbi.nlm.nih.gov/research/groups/kogay/"
+  },
+  {
+    "person_id": "kaz-462ea4363511",
+    "person_name": "Denis Ovchinnikov",
+    "source_id": "src-169d05685d13",
+    "evidence_url": "https://linkedin.com/in/denis-ovchinnikov-36011016b",
+    "reason": "Sberlogistics business-analysis profile contains no mathematics deep-learning or NVIDIA bridge and conflicts with the selected olympiad-linked profile",
+    "review_evidence_url": "https://linkedin.com/in/denis-ovchinnikov-math"
+  },
+  {
+    "person_id": "kaz-462ea4363511",
+    "person_name": "Denis Ovchinnikov",
+    "source_id": "src-cb7194b8586a",
+    "evidence_url": "https://linkedin.com/in/denis-ovchinnikov-412250304",
+    "reason": "AUES student-programmer profile contains no mathematics olympiad or NVIDIA bridge and conflicts with the selected profile",
+    "review_evidence_url": "https://linkedin.com/in/denis-ovchinnikov-math"
+  },
+  {
+    "person_id": "kaz-462ea4363511",
+    "person_name": "Denis Ovchinnikov",
+    "source_id": "src-e16192c668cb",
+    "evidence_url": "https://linkedin.com/in/denis-ovchinnikov",
+    "reason": "Auriga DevOps profile contains no mathematics olympiad or NVIDIA research bridge and conflicts with the selected profile",
+    "review_evidence_url": "https://linkedin.com/in/denis-ovchinnikov-math"
+  },
+  {
+    "person_id": "kaz-462ea4363511",
+    "person_name": "Denis Ovchinnikov",
+    "source_id": "src-6eec726d9f1c",
+    "evidence_url": "https://linkedin.com/in/denis-ovchinnikov-827181187",
+    "reason": "Railway electromechanic profile contains no mathematics olympiad or NVIDIA research bridge and conflicts with the selected profile",
+    "review_evidence_url": "https://linkedin.com/in/denis-ovchinnikov-math"
+  },
+  {
+    "person_id": "kaz-fe0afafbd5f3",
+    "person_name": "Vladimir Bychkov",
+    "source_id": "src-6968f94d7205",
+    "evidence_url": "https://linkedin.com/in/vladimir-bychkov-28519b13b",
+    "reason": "Belarusian spectroscopy profile contains no Kazakhstan physics olympiad or Micron computer-vision bridge and conflicts with the selected profile",
+    "review_evidence_url": "https://linkedin.com/in/vladimir-bychkov-98954252"
+  },
+  {
+    "person_id": "kaz-fe0afafbd5f3",
+    "person_name": "Vladimir Bychkov",
+    "source_id": "src-0212e8754028",
+    "evidence_url": "https://linkedin.com/in/bychkovvv",
+    "reason": "Immigration-foundation adviser profile contains no Kazakhstan physics olympiad or Micron computer-vision bridge and conflicts with the selected profile",
+    "review_evidence_url": "https://linkedin.com/in/vladimir-bychkov-98954252"
   }
 ]

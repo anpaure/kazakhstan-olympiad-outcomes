@@ -39,6 +39,7 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "people": data_dir / "people.csv",
         "researched": data_dir / "researched_people.csv",
         "verified": data_dir / "verified_evidence.csv",
+        "exa_outcomes": data_dir / "exa_outcome_integrations.csv",
         "rejections": data_dir / "rejected_identity_candidates.csv",
         "audit_people": data_dir / "audit" / "people.csv",
         "audit_participations": data_dir / "audit" / "participations.csv",
@@ -55,6 +56,7 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     people = read_csv(required["people"])
     researched = read_csv(required["researched"])
     verified = read_csv(required["verified"])
+    exa_outcomes = read_csv(required["exa_outcomes"])
     rejections = read_csv(required["rejections"])
     audit_people = read_csv(required["audit_people"])
     audit_participations = read_csv(required["audit_participations"])
@@ -72,6 +74,7 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     duplicate_ids(people, "people.csv")
     duplicate_ids(researched, "researched_people.csv")
     duplicate_ids(verified, "verified_evidence.csv")
+    duplicate_ids(exa_outcomes, "exa_outcome_integrations.csv")
 
     participant_rows = sum(int(row.get("participant_rows") or 0) for row in people)
     if participant_rows != len(participants):
@@ -91,6 +94,7 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     people_by_id = {row["person_id"]: row for row in people}
     researched_by_id = {row["person_id"]: row for row in researched}
     verified_by_id = {row["person_id"]: row for row in verified}
+    exa_outcomes_by_id = {row["person_id"]: row for row in exa_outcomes}
     audit_people_by_id = {row["person_id"]: row for row in audit_people}
     audit_evidence_by_id = {row["evidence_id"]: row for row in audit_evidence}
     audit_sources_by_id = {row["source_id"]: row for row in audit_sources}
@@ -151,6 +155,50 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     unknown_verified = sorted(set(verified_by_id) - set(people_by_id))
     if unknown_verified:
         errors.append(f"verified evidence has unknown people: {', '.join(unknown_verified)}")
+
+    unknown_exa_outcomes = sorted(set(exa_outcomes_by_id) - set(people_by_id))
+    if unknown_exa_outcomes:
+        errors.append(
+            "Exa outcome integrations have unknown people: "
+            + ", ".join(unknown_exa_outcomes)
+        )
+
+    for person_id, expected in exa_outcomes_by_id.items():
+        merged = verified_by_id.get(person_id)
+        final = researched_by_id.get(person_id)
+        if merged is None:
+            errors.append(f"Exa outcome integration was not merged for {person_id}")
+            continue
+        for field in expected:
+            expected_value = expected.get(field, "").strip()
+            if merged.get(field, "").strip() != expected_value:
+                errors.append(
+                    f"Exa outcome integration {field} was not merged for {person_id}"
+                )
+        final_field_map = {
+            "organization": "organization",
+            "role": "role",
+            "affiliation_type": "affiliation_type",
+            "start_year": "start_year",
+            "end_year": "end_year",
+            "career_evidence_url": "profile_url",
+            "linkedin_url": "linkedin_url",
+            "confidence": "confidence",
+            "verification_basis": "verification_basis",
+        }
+        for expected_field, final_field in final_field_map.items():
+            expected_value = expected.get(expected_field, "").strip()
+            if final is not None and final.get(final_field, "").strip() != expected_value:
+                errors.append(
+                    f"Exa outcome integration {expected_field} was not published for {person_id}"
+                )
+        final_urls = split_values(final.get("evidence_urls", "")) if final else set()
+        for field in ("olympiad_evidence_url", "career_evidence_url"):
+            expected_url = expected.get(field, "").strip()
+            if expected_url and expected_url not in final_urls:
+                errors.append(
+                    f"Exa outcome integration {field} is not traceable for {person_id}"
+                )
 
     if set(audit_people_by_id) != set(people_by_id):
         errors.append("audit people do not match the canonical people registry")
@@ -341,6 +389,7 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "candidate_only_people": confidence_counts["candidate"],
         "high_confidence_people": high_confidence_people,
         "manually_verified_people": len(verified),
+        "integrated_exa_outcomes": len(exa_outcomes),
         "rejected_identity_candidates": len(rejections),
         "audit_evidence_rows": len(audit_evidence),
         "audit_sources": len(audit_sources),
