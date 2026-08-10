@@ -264,6 +264,29 @@ def build_registry(
 
     for merge in manual_merges:
         present = [alias for alias in merge["aliases"] if alias in metadata]
+        if len(present) == 1:
+            recorded = present[0]
+            merge_evidence.append(
+                {
+                    "left": recorded,
+                    "right": merge["canonical_name"],
+                    "token_similarity": round(
+                        SequenceMatcher(
+                            None,
+                            token_key(recorded),
+                            token_key(str(merge["canonical_name"])),
+                        ).ratio(),
+                        3,
+                    ),
+                    "shared_olympiads": sorted(metadata[recorded]["olympiads"]),
+                    "left_years": sorted(metadata[recorded]["years"]),
+                    "right_years": [],
+                    "reason": "reviewed_alias_augmentation",
+                    "review_reason": merge["reason"],
+                    "evidence_url": merge["evidence_url"],
+                    "canonical_person_id": merge["canonical_person_id"],
+                }
+            )
         for left, right in zip(present, present[1:]):
             if union_find.find(left) == union_find.find(right):
                 continue
@@ -298,7 +321,7 @@ def build_registry(
         reviewed_merges = [
             merge
             for merge in manual_merges
-            if len(set(merge["aliases"]) & set(aliases)) >= 2
+            if set(merge["aliases"]) & set(aliases)
         ]
         if len(reviewed_merges) > 1:
             raise ValueError(f"Multiple reviewed merges match aliases: {aliases}")

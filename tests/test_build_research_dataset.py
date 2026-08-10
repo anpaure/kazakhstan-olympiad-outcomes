@@ -187,6 +187,24 @@ class OrganizationCategoryTest(unittest.TestCase):
             "Leadership",
         )
 
+    def test_security_council_is_government(self):
+        self.assertEqual(
+            organization_category(
+                "Security Council of the Republic of Kazakhstan", "employment"
+            ),
+            "Government",
+        )
+
+    def test_deputy_secretary_is_classified_as_leadership(self):
+        self.assertEqual(
+            role_category(
+                "Deputy Secretary",
+                "Security Council of the Republic of Kazakhstan",
+                "employment",
+            ),
+            "Leadership",
+        )
+
     def test_quantitative_research_is_classified_as_finance(self):
         self.assertEqual(
             role_category(

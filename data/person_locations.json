@@ -539,6 +539,17 @@
     "evidence_url": "https://ch.linkedin.com/in/makenov"
   },
   {
+    "person_id": "kaz-5f05301e71f7",
+    "name": "Arnur Tokhtabayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://tlab.kz/en/",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "tLab's current site lists Arnur Tokhtabayev as CEO and gives the company's active address in Astana Kazakhstan."
+  },
+  {
     "person_id": "kaz-4fe09b624ebf",
     "name": "Artur Kim",
     "country_code": "SG",
@@ -900,6 +911,17 @@
     "confidence": "probable",
     "review_reason": "Country follows the location attached to the accepted current role at HUMAIN. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/daulet-toibazar-54118b174"
+  },
+  {
+    "person_id": "kaz-1d6bad0a9a90",
+    "name": "Daulet Turetayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/daulet-turetayev-73ba8314b",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted current profile places Daulet in Kazakhstan while listing his ongoing CPTDC business-development role; CPTDC independently maintains a Kazakhstan representation and no conflicting active affiliation is present."
   },
   {
     "person_id": "kaz-76ccb7b42a10",
@@ -1637,6 +1659,17 @@
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Jane Street. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/hypuk"
+  },
+  {
+    "person_id": "kaz-55cdb586d884",
+    "name": "Nurzhan Kadzhiakbarov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://mirror.akorda.kz/ru/executive_office/executive_office_stucture",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Akorda's current structure lists Nurzhan Kadzhiakbarov as Deputy Secretary of Kazakhstan's Security Council and identifies the presidency's location as Astana."
   },
   {
     "person_id": "kaz-64365e0c312d",

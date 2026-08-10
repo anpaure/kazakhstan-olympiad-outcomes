@@ -196,7 +196,7 @@ src-fcfca15a4ba9,https://events.crugroup.com/middleeastsulphur/speakers-2022,eve
 src-9a95ba72b55f,https://farabi.university/news/96744?lang=en,farabi.university,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_team_roster
 src-dfdbaca401f5,https://farabi.university/storage/files/280775433965e7f8a0376b3254557968_%D0%BA%D0%B0%D0%B1%D1%83%D0%BB%D0%BE%D0%B2%20%D0%B0%D0%BD%D0%B3.pdf,farabi.university,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-bc3f70fcd2a1,https://find-and-update.company-information.service.gov.uk/officers/my8HsHrIuqw_No-TeaKB_nIPPZk/appointments,find-and-update.company-information.service.gov.uk,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
-src-f73f624fafe8,https://fizmat.kz/ru/luchshie-ucheniki/,fizmat.kz,web_page,2,2,2,0,0,0,0,manual_review,manual
+src-f73f624fafe8,https://fizmat.kz/ru/luchshie-ucheniki/,fizmat.kz,web_page,5,5,5,0,0,0,0,manual_review,manual
 src-36a4355d21ef,https://fondation.ens.psl.eu/en/pi-day-olympic-scholarships-2025/,fondation.ens.psl.eu,web_page,3,1,2,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-3a4a8a4b5e8b,https://galaxy.edu.kz/en/staff/163,galaxy.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-13a78b4c75c3,https://galaxy.edu.kz/en/staff/index/2,galaxy.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -355,6 +355,7 @@ src-8fb5a515a2ed,https://github.com/yerzhanimanmalik,github.com,structured_profi
 src-08365a29b2a0,https://github.com/zamazan4ik,github.com,structured_profile,3,1,0,0,0,0,3,review_rejection;structured_affiliation;structured_identity,github;manual
 src-de0ef0e5a6df,https://github.com/zamerzan,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-b6643306d9ff,https://graduate.dartmouth.edu/eees/people/alumni,graduate.dartmouth.edu,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-51b6be0f2376,https://gsb.almau.edu.kz/wp-content/uploads/2022/10/%D0%A1%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA-%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9-%D1%81%D0%BB%D1%83%D1%88%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%9C%D0%92%D0%90-2016.pdf,gsb.almau.edu.kz,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_program_publication
 src-1cbe8b9038eb,https://hk.linkedin.com/in/akhmetissa7,hk.linkedin.com,linkedin,2,1,1,1,0,0,0,manual_review,linkedin;manual
 src-b8e95ec25f72,https://hk.linkedin.com/in/alibek-orazalin-3020011a9,hk.linkedin.com,linkedin,11,1,1,10,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
 src-77462812b45f,https://hk.linkedin.com/in/alikhan-zhumagaleyev,hk.linkedin.com,linkedin,4,1,1,3,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin;manual;manual_review
@@ -431,6 +432,7 @@ src-961152fc1f47,https://kz.linkedin.com/in/daniyar-frm,kz.linkedin.com,linkedin
 src-7c276adfc207,https://kz.linkedin.com/in/daniyar-kamal-91b041118,kz.linkedin.com,linkedin,11,1,1,10,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
 src-556808850d76,https://kz.linkedin.com/in/darkhan-akzholov-b0399151,kz.linkedin.com,linkedin,9,1,2,7,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review
 src-0709a49f934d,https://kz.linkedin.com/in/daulet-kurmantayev-41912a176,kz.linkedin.com,linkedin,6,1,1,5,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin
+src-bdc10c8f3e48,https://kz.linkedin.com/in/daulet-turetayev-73ba8314b,kz.linkedin.com,linkedin,4,1,1,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;linkedin;manual;manual_review
 src-1a46a21093d1,https://kz.linkedin.com/in/ilya-skripin-a9a31552,kz.linkedin.com,linkedin,12,1,1,11,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
 src-a5f14f146816,https://kz.linkedin.com/in/kairatakhmetov,kz.linkedin.com,linkedin,3,1,0,3,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin
 src-5d4f272facdc,https://kz.linkedin.com/in/maxat-aipanov-192903a3,kz.linkedin.com,linkedin,17,1,2,15,0,0,0,accepted_affiliation_history;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;destination_review;destination_source_review;linkedin;manual
@@ -678,6 +680,7 @@ src-4fdd06d1f4cd,https://linkedin.com/in/zhassulan-binazar-294bb7146,linkedin.co
 src-ce5c57c7c3c3,https://mbzuai.ac.ae/about/contact/,mbzuai.ac.ae,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
 src-01b1f15392e4,https://medium.com/%40tima103/how-to-get-more-paying-users-with-user-friendly-paywall-part-ii-8e09766f62eb,medium.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-b55d24b5ee78,https://microelectronics.tudelft.nl/~ilke/research.html,microelectronics.tudelft.nl,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,academic_collaborator_profile
+src-2a9d696f5c9f,https://mirror.akorda.kz/ru/executive_office/executive_office_stucture,mirror.akorda.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
 src-0628a26e79ca,https://nazymaltbridge.substack.com/p/welcome-to-altbridge,nazymaltbridge.substack.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-7ddc1d02cbec,https://news.itmo.ru/ru/archive/news/5089/,news.itmo.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_student_profile
 src-b5db9260f656,https://nfactorialai.com/,nfactorialai.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -975,6 +978,7 @@ src-6e7135c9faa5,https://registrar.nu.edu.kz/graduation-2016,registrar.nu.edu.kz
 src-0a9bf849aaef,https://research.nu.edu.kz/en/persons/kuanysh-yergaliyev,research.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-2d44d50b614b,https://research.nu.edu.kz/en/persons/meiram-murzabulatov/,research.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-f33bb7a68ec2,https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/,research.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-c4f8fcc141d4,https://research.utwente.nl/en/publications/nondeterminism-in-stochastic-modeling/,research.utwente.nl,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_research_record
 src-d8b3f3b80991,https://ru.linkedin.com/in/david-li-ab07b332b,ru.linkedin.com,linkedin,9,1,1,8,0,0,0,accepted_affiliation_history;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;destination_review;destination_source_review;linkedin
 src-9a4331ccb368,https://ru.linkedin.com/in/kirillmaerle,ru.linkedin.com,linkedin,1,1,0,1,0,0,0,accepted_affiliation_history,manual_public_profile
 src-44bb12ca61c5,https://ru.linkedin.com/posts/armansu_%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-imo-ioi-ipho-icho-activity-7333479882347143169-f6Y2,ru.linkedin.com,linkedin,1,1,0,0,0,1,0,manual_review,manual
@@ -1044,6 +1048,7 @@ src-20eff41c48fe,https://shoqanschool.kz/genuineadmin/news/view?id=109,shoqansch
 src-4d0af93ec6c1,https://silkwaytv.kz/en/kazakh-startup-weglobal-ai-enters-foreign-markets_63472,silkwaytv.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-6f0216be6a90,https://simcc.org/training-new/,simcc.org,web_page,3,1,2,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-c965e4de0605,https://simcc.org/wp-content/uploads/2025/03/2019-SASMO-G10.pdf,simcc.org,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,official_employer_biography
+src-831cbca3f2b0,https://sites.google.com/binghamton.edu/ciac/research/publications,sites.google.com,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_research_record
 src-f988994e6af3,https://sites.google.com/nes.ru/evgenyyakovlev/home,sites.google.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-0ff77346fadb,https://sites.google.com/site/ntumathcompetitions/home/ntu-2007,sites.google.com,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-c6465f65735a,https://sites.google.com/view/birzhanm/home,sites.google.com,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,self_authored_profile
@@ -1132,6 +1137,7 @@ src-fe8270247075,https://theorg.com/org/biovectra/org-chart/alexey-dudnik,theorg
 src-5ce7ec2505c3,https://theorg.com/org/depop/teams/engineering-team,theorg.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-a54752c93706,https://theorg.com/org/eurasian-resources-group/org-chart/dauren-auzhani,theorg.com,web_page,4,1,1,3,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review;public_career_profile
 src-e8d4ce13b782,https://theorg.com/org/kcell-jsc/org-chart/birzhan-moldagaliyev,theorg.com,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,professional_directory
+src-b73a90b9ce40,https://tlab.kz/en/,tlab.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
 src-b1e3b3948566,https://tr.linkedin.com/in/vitaliy-tsvayer,tr.linkedin.com,linkedin,17,1,1,16,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
 src-67eabe03783f,https://uk.linkedin.com/in/adilzhanismailov,uk.linkedin.com,linkedin,3,1,0,3,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin
 src-279f878454d5,https://uk.linkedin.com/in/alishertortay,uk.linkedin.com,linkedin,8,1,1,7,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
@@ -1368,6 +1374,7 @@ src-b12f5d981515,https://www.imo-official.org/team_r.aspx?code=KAZ&year=2000,imo
 src-681ec8bee7aa,https://www.imo-official.org/team_r.aspx?code=KAZ&year=2012,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-5deec4b2750b,https://www.imo-official.org/team_r.aspx?code=KAZ&year=2015,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-4c57ba95b381,https://www.imperial.ac.uk/visit/campuses/,imperial.ac.uk,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
+src-1de92d5f7853,https://www.inform.kz/person/nurzhan-khazhimuratuly-kadzhiakbarov-1736839590,inform.kz,web_page,8,1,0,8,0,0,0,accepted_affiliation_history,official_news_agency_biography
 src-28ff4753b51f,https://www.kaist.ac.kr/en/html/kaist/011501.html,kaist.ac.kr,web_page,6,6,0,6,0,0,0,accepted_location_evidence,current_education_location
 src-b03112a30707,https://www.karabalin.com/,karabalin.com,web_page,3,1,2,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-325bd8f7c98f,https://www.kmg.kz/en/press-center/press-releases/karabaev/,kmg.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review;official_employer_transition_announcement
@@ -1447,6 +1454,7 @@ src-af62a280a294,https://www.nfactorial.school/newest_blog/%D0%B0-%D0%B2%D1%8B-%
 src-6806f9f45154,https://www.nis.edu.kz/storage/files/01JSKCF66NTSVQAB3HC9QDMGEP.pdf,nis.edu.kz,pdf,1,1,1,0,0,0,0,manual_review,manual
 src-8615a8c71bef,https://www.nis.edu.kz/storage/files/01JSKD3FB0SVR0VQAXEE8BCGCY.pdf,nis.edu.kz,pdf,1,1,1,0,0,0,0,manual_review,manual
 src-1884c2ae8f46,https://www.northwestern.edu/about/visit/campuses.html,northwestern.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
+src-6bd45cfae6db,https://www.nss.ece.vt.edu/angelos/resume/cv_stavrou_latest.html,nss.ece.vt.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_faculty_cv
 src-2a3bbc6c0ffe,https://www.ntu.edu.sg/about-us/visit-us,ntu.edu.sg,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-6798116035bf,https://www.nuin.northwestern.edu/current-students/student-profiles.html?page=3,nuin.northwestern.edu,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-50f3e9d07dfc,https://www.nyu.edu/footer/map.html,nyu.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location

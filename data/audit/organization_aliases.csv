@@ -29,6 +29,9 @@ org-fe8b2174c8b7d1d4,Alma Mater Studiorum - Università di Bologna,Alma Mater St
 org-20136c97de560451,Alma Mater Studiorum – Università di Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,same_entity,Official university name and English display declaration,
 org-2fb375128942664f,University of Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,translated_name,English name,
 org-d01c58a6e1af101f,Università di Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,same_entity,Short Italian name,
+org-f21e2b6cbcc97c40,Almaty Management University,Almaty Management University (AlmaU),AlmaU,same_entity,Official English name without the parenthetical brand.,https://almau.edu.kz/en/
+org-8249b9628018b7a7,AlmaU,Almaty Management University (AlmaU),AlmaU,acronym_expansion,The university's current public brand is AlmaU.,https://almau.edu.kz/en/
+org-c8ab8ddd52c11aa5,Алматы Менеджмент Университет,Almaty Management University (AlmaU),AlmaU,multilingual_name,Official Russian name normalized to English.,https://gsb.almau.edu.kz/wp-content/uploads/2022/10/%D0%A1%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA-%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9-%D0%9C%D0%92%D0%90-2016.pdf
 org-b6ba66535effce0a,Amazon Music,Amazon,Amazon,parent_organization,Amazon business unit,
 org-91c37305bd0a28d6,Amazon Web Services,Amazon,Amazon,parent_organization,AWS is an Amazon business,
 org-551c505dc4e7689f,Amazon Web Services (AWS),Amazon,Amazon,parent_organization,AWS is an Amazon business,
@@ -89,6 +92,9 @@ org-4ed4273aeb9da4a7,"JSC ""CAUSTIC""",Caustic,Caustic,legal_form_variant,Legal-
 org-3b119f8aba13311c,Centerra Gold Inc,Centerra Gold,Centerra Gold,legal_form_variant,Legal-form cleanup,
 org-df9f582d5876ca3c,"Chain Lightning Co., Ltd",Chain Lightning,Chain Lightning,legal_form_variant,Legal-form cleanup,
 org-2aa4e3425da9a523,Chevron Group,Chevron,Chevron,group_name,Corporate-group wording normalized to the parent company name,https://www.kmg.kz/en/press-center/press-releases/karabaev/
+org-812333ea321b0967,China Petroleum Technology & Development Corporation,China Petroleum Technology & Development Corporation (CPTDC),CPTDC,same_entity,Official company name without the parenthetical acronym.,https://www.cnpc.com.cn/en/xhtml/pdf/5-CNPC%20Technology.pdf
+org-5f90a660be71f2f6,China Petroleum Technology and Development Corporation,China Petroleum Technology & Development Corporation (CPTDC),CPTDC,punctuation_variant,The and-sign and written-and variants refer to the same CPTDC company.,https://kioge.kz/en/press-center/news/news-blog/1674-china-petroleum-technology-and-development-corporation-cptdc
+org-5abcb9d4a54fe17f,CPTDC,China Petroleum Technology & Development Corporation (CPTDC),CPTDC,acronym_expansion,CNPC's official company profile expands CPTDC to China Petroleum Technology and Development Corporation.,https://www.cnpc.com.cn/en/xhtml/pdf/5-CNPC%20Technology.pdf
 org-8d890708c6536167,Jacobs University Bremen,Constructor University,Constructor University,former_name,University adopted the Constructor University name in 2022,
 org-4c6c6e962ffb1f02,"Cornami, Inc",Cornami,Cornami,legal_form_variant,Legal-form cleanup,
 org-6665a5d47e019bcb,Weill Cornell Medicine,Cornell University,Cornell University,parent_organization,Medical college of Cornell University,https://weill.cornell.edu/our-story/history
@@ -343,6 +349,8 @@ org-5652292751da7116,Institute of Physics and Technology at Satbayev University,
 org-2dda77894dbb0e63,"Satbayev University, Institute of Physics and Technology",Satbayev University,Satbayev University,parent_organization,University institute,https://satbayev.university/
 org-e73abcaf36f55458,казнту,Satbayev University,Satbayev University,former_name,The KazNTU abbreviation refers to the university now branded Satbayev University,https://official.satbayev.university/en/university/osnovnye-polozheniya-
 org-44c4a8dd3cbd3410,SDAIA | سدايا,Saudi Data and AI Authority (SDAIA),SDAIA,multilingual_name,English and Arabic brand label,https://sdaia.gov.sa/
+org-6c5bd566360f536d,Security Council of Kazakhstan,Security Council of the Republic of Kazakhstan,Security Council of Kazakhstan,short_name,Short English form of Kazakhstan's presidential Security Council.,https://mirror.akorda.kz/ru/executive_office/executive_office_stucture
+org-5b6f5fd91ea2c449,Совет Безопасности Республики Казахстан,Security Council of the Republic of Kazakhstan,Security Council of Kazakhstan,multilingual_name,Official Russian name normalized to English.,https://mirror.akorda.kz/ru/executive_office/executive_office_stucture
 org-816608c2dc5abe41,Freelance,Self-employed,Self-employed,category_normalization,Independent-work label,
 org-3ea84e64d16ad576,none,Self-employed,Self-employed,placeholder_name,Profile used no employer for an independent open-source project,
 org-159669d20ffe1411,Remote,Self-employed,Self-employed,category_normalization,Generic remote-work label predates the Remote company and describes independent work,
@@ -396,6 +404,9 @@ org-24661dee676232e6,The London School of Economics and Political Science (LSE),
 org-c33096e3e18ca8d6,The Ohio State University,The Ohio State University,Ohio State University,same_entity,Canonical short display,https://www.osu.edu/
 org-d7d98098735d63eb,The University of British Columbia,The University of British Columbia,UBC,same_entity,Canonical display declaration,https://www.ubc.ca/
 org-58b6767200ea5798,ThinkCol Limited,ThinkCol,ThinkCol,legal_form_variant,Legal-form cleanup,
+org-8c2c9db558095385,T&T Security,tLab Technologies,tLab Technologies,former_name,The former and current company sites share the same founder cybersecurity products address and contact details; the current operation uses tLab Technologies.,https://tlab.kz/en/
+org-3311399e6d3d8bcc,T&T Security LLP,tLab Technologies,tLab Technologies,legal_form_variant,Legal-form variant of the company's former T&T Security name.,https://tntsecure.kz/en/about.html
+org-ec22422abb262770,tLabTechnologies,tLab Technologies,tLab Technologies,spacing_variant,Compact spelling used in the Kazakhstan IT association's company listing.,https://www.itk.kz/ru/117
 org-e1bee67ecf214e73,Tulane University School of Public Health and Tropical Medicine,Tulane University,Tulane University,parent_organization,University school,
 org-68290a793776a65b,Typeser Inc,Typeser,Typeser,legal_form_variant,Legal-form cleanup,
 org-b3279d64f8603598,Statistical AI Lab,Ulsan National Institute of Science and Technology (UNIST),UNIST,parent_organization,Short name of the UNIST Statistical Artificial Intelligence Lab,https://news.unist.ac.kr/unist-wins-first-place-in-digital-curling-tournament/

@@ -686,6 +686,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Meta. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-6f5d91ffdc29a516",
+    "evidence_id": "ev-85f7c780bede42ee",
+    "source_id": "src-b73a90b9ce40",
+    "person_id": "kaz-5f05301e71f7",
+    "name": "Arnur Tokhtabayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://tlab.kz/en/",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "tLab's current site lists Arnur Tokhtabayev as CEO and gives the company's active address in Astana Kazakhstan."
+  },
+  {
     "location_id": "loc-bdf8011dbc2ff85a",
     "evidence_id": "ev-15a9f63b8736d274",
     "source_id": "src-2a3bbc6c0ffe",
@@ -1146,6 +1160,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "Country follows the location attached to the accepted current role at HUMAIN. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-92c9f11868897bf8",
+    "evidence_id": "ev-4e658814c84d626a",
+    "source_id": "src-bdc10c8f3e48",
+    "person_id": "kaz-1d6bad0a9a90",
+    "name": "Daulet Turetayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/daulet-turetayev-73ba8314b",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted current profile places Daulet in Kazakhstan while listing his ongoing CPTDC business-development role; CPTDC independently maintains a Kazakhstan representation and no conflicting active affiliation is present."
   },
   {
     "location_id": "loc-8281f9577a31598d",
@@ -2084,6 +2112,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Jane Street. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-e781c61487ddd661",
+    "evidence_id": "ev-33627dd2b3d4cae4",
+    "source_id": "src-2a9d696f5c9f",
+    "person_id": "kaz-55cdb586d884",
+    "name": "Nurzhan Kadzhiakbarov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://mirror.akorda.kz/ru/executive_office/executive_office_stucture",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Akorda's current structure lists Nurzhan Kadzhiakbarov as Deputy Secretary of Kazakhstan's Security Council and identifies the presidency's location as Astana."
   },
   {
     "location_id": "loc-0e6e8cfb3936be96",

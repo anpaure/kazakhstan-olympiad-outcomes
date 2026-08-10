@@ -150,6 +150,54 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(location["country_code"], "KZ")
         self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
 
+    def test_daulet_turetayev_cptdc_and_kazakhstan(self):
+        person = self.people["kaz-1d6bad0a9a90"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["name"], "Daulet Turetayev")
+        self.assertEqual(
+            person["organization"],
+            "China Petroleum Technology & Development Corporation (CPTDC)",
+        )
+        self.assertEqual(person["role"], "Business Development Manager (BDM)")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertIn(
+            "Almaty Management University (AlmaU)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertEqual(location["country_code"], "KZ")
+
+    def test_arnur_tokhtabayev_tlab_and_astana(self):
+        person = self.people["kaz-5f05301e71f7"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["name"], "Arnur Tokhtabayev")
+        self.assertEqual(person["organization"], "tLab Technologies")
+        self.assertEqual(person["role"], "Founder & CEO")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Astana, Kazakhstan")
+
+    def test_nurzhan_kadzhiakbarov_security_council_and_two_degrees(self):
+        person = self.people["kaz-55cdb586d884"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["name"], "Nurzhan Kadzhiakbarov")
+        self.assertEqual(
+            person["organization"],
+            "Security Council of the Republic of Kazakhstan",
+        )
+        self.assertEqual(person["role"], "Deputy Secretary")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertEqual(person["organization_category"], "Government")
+        self.assertEqual(person["role_category"], "Leadership")
+        self.assertIn("Narxoz University", self.alma_maters(person["person_id"]))
+        self.assertIn(
+            "Diplomatic Academy of the Ministry of Foreign Affairs of Russia",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertEqual(location["country_code"], "KZ")
+
 
 if __name__ == "__main__":
     unittest.main()

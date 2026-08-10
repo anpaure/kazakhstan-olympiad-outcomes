@@ -164,6 +164,7 @@ def organization_category(organization: str, affiliation_type: str) -> str:
             "ministry",
             "government",
             "national laboratory",
+            "security council",
         ]
     ):
         return "Government"
@@ -188,7 +189,18 @@ def role_category(role: str, organization: str, affiliation_type: str) -> str:
         return "Research & Academia"
     if any(term in text for term in ["engineer", "engineering"]):
         return "Engineering"
-    if any(term in text for term in ["head", "manager", "founder", "director", "principal", "coordinator"]):
+    if any(
+        term in text
+        for term in [
+            "head",
+            "manager",
+            "founder",
+            "director",
+            "principal",
+            "coordinator",
+            "deputy secretary",
+        ]
+    ):
         return "Leadership"
     if affiliation_type == "education":
         return "Student"

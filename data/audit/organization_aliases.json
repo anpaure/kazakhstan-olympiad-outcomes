@@ -270,6 +270,33 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-f21e2b6cbcc97c40",
+    "alias": "Almaty Management University",
+    "canonical_name": "Almaty Management University (AlmaU)",
+    "display_name": "AlmaU",
+    "merge_type": "same_entity",
+    "rationale": "Official English name without the parenthetical brand.",
+    "evidence_url": "https://almau.edu.kz/en/"
+  },
+  {
+    "organization_alias_id": "org-8249b9628018b7a7",
+    "alias": "AlmaU",
+    "canonical_name": "Almaty Management University (AlmaU)",
+    "display_name": "AlmaU",
+    "merge_type": "acronym_expansion",
+    "rationale": "The university's current public brand is AlmaU.",
+    "evidence_url": "https://almau.edu.kz/en/"
+  },
+  {
+    "organization_alias_id": "org-c8ab8ddd52c11aa5",
+    "alias": "Алматы Менеджмент Университет",
+    "canonical_name": "Almaty Management University (AlmaU)",
+    "display_name": "AlmaU",
+    "merge_type": "multilingual_name",
+    "rationale": "Official Russian name normalized to English.",
+    "evidence_url": "https://gsb.almau.edu.kz/wp-content/uploads/2022/10/%D0%A1%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA-%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9-%D0%9C%D0%92%D0%90-2016.pdf"
+  },
+  {
     "organization_alias_id": "org-b6ba66535effce0a",
     "alias": "Amazon Music",
     "canonical_name": "Amazon",
@@ -808,6 +835,33 @@
     "merge_type": "group_name",
     "rationale": "Corporate-group wording normalized to the parent company name",
     "evidence_url": "https://www.kmg.kz/en/press-center/press-releases/karabaev/"
+  },
+  {
+    "organization_alias_id": "org-812333ea321b0967",
+    "alias": "China Petroleum Technology & Development Corporation",
+    "canonical_name": "China Petroleum Technology & Development Corporation (CPTDC)",
+    "display_name": "CPTDC",
+    "merge_type": "same_entity",
+    "rationale": "Official company name without the parenthetical acronym.",
+    "evidence_url": "https://www.cnpc.com.cn/en/xhtml/pdf/5-CNPC%20Technology.pdf"
+  },
+  {
+    "organization_alias_id": "org-5f90a660be71f2f6",
+    "alias": "China Petroleum Technology and Development Corporation",
+    "canonical_name": "China Petroleum Technology & Development Corporation (CPTDC)",
+    "display_name": "CPTDC",
+    "merge_type": "punctuation_variant",
+    "rationale": "The and-sign and written-and variants refer to the same CPTDC company.",
+    "evidence_url": "https://kioge.kz/en/press-center/news/news-blog/1674-china-petroleum-technology-and-development-corporation-cptdc"
+  },
+  {
+    "organization_alias_id": "org-5abcb9d4a54fe17f",
+    "alias": "CPTDC",
+    "canonical_name": "China Petroleum Technology & Development Corporation (CPTDC)",
+    "display_name": "CPTDC",
+    "merge_type": "acronym_expansion",
+    "rationale": "CNPC's official company profile expands CPTDC to China Petroleum Technology and Development Corporation.",
+    "evidence_url": "https://www.cnpc.com.cn/en/xhtml/pdf/5-CNPC%20Technology.pdf"
   },
   {
     "organization_alias_id": "org-8d890708c6536167",
@@ -3096,6 +3150,24 @@
     "evidence_url": "https://sdaia.gov.sa/"
   },
   {
+    "organization_alias_id": "org-6c5bd566360f536d",
+    "alias": "Security Council of Kazakhstan",
+    "canonical_name": "Security Council of the Republic of Kazakhstan",
+    "display_name": "Security Council of Kazakhstan",
+    "merge_type": "short_name",
+    "rationale": "Short English form of Kazakhstan's presidential Security Council.",
+    "evidence_url": "https://mirror.akorda.kz/ru/executive_office/executive_office_stucture"
+  },
+  {
+    "organization_alias_id": "org-5b6f5fd91ea2c449",
+    "alias": "Совет Безопасности Республики Казахстан",
+    "canonical_name": "Security Council of the Republic of Kazakhstan",
+    "display_name": "Security Council of Kazakhstan",
+    "merge_type": "multilingual_name",
+    "rationale": "Official Russian name normalized to English.",
+    "evidence_url": "https://mirror.akorda.kz/ru/executive_office/executive_office_stucture"
+  },
+  {
     "organization_alias_id": "org-816608c2dc5abe41",
     "alias": "Freelance",
     "canonical_name": "Self-employed",
@@ -3571,6 +3643,33 @@
     "merge_type": "legal_form_variant",
     "rationale": "Legal-form cleanup",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-8c2c9db558095385",
+    "alias": "T&T Security",
+    "canonical_name": "tLab Technologies",
+    "display_name": "tLab Technologies",
+    "merge_type": "former_name",
+    "rationale": "The former and current company sites share the same founder cybersecurity products address and contact details; the current operation uses tLab Technologies.",
+    "evidence_url": "https://tlab.kz/en/"
+  },
+  {
+    "organization_alias_id": "org-3311399e6d3d8bcc",
+    "alias": "T&T Security LLP",
+    "canonical_name": "tLab Technologies",
+    "display_name": "tLab Technologies",
+    "merge_type": "legal_form_variant",
+    "rationale": "Legal-form variant of the company's former T&T Security name.",
+    "evidence_url": "https://tntsecure.kz/en/about.html"
+  },
+  {
+    "organization_alias_id": "org-ec22422abb262770",
+    "alias": "tLabTechnologies",
+    "canonical_name": "tLab Technologies",
+    "display_name": "tLab Technologies",
+    "merge_type": "spacing_variant",
+    "rationale": "Compact spelling used in the Kazakhstan IT association's company listing.",
+    "evidence_url": "https://www.itk.kz/ru/117"
   },
   {
     "organization_alias_id": "org-e1bee67ecf214e73",

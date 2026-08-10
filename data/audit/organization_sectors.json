@@ -217,6 +217,13 @@
     "rationale": "Reviewed core activity is integrated energy and petroleum operations."
   },
   {
+    "organization_sector_id": "sector-1531bab0016d7826",
+    "canonical_name": "China Petroleum Technology & Development Corporation (CPTDC)",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed core activity is international petroleum and petrochemical equipment and energy-service supply."
+  },
+  {
     "organization_sector_id": "sector-7ed10242d37f6512",
     "canonical_name": "ChooSmart",
     "organization_type": "company",
@@ -868,6 +875,13 @@
     "rationale": "Reviewed core activity is electronics and semiconductor technology."
   },
   {
+    "organization_sector_id": "sector-e220b57c78138ad6",
+    "canonical_name": "Security Council of the Republic of Kazakhstan",
+    "organization_type": "government",
+    "sector": "Government & Public Sector",
+    "rationale": "Reviewed organization is Kazakhstan's presidential national-security coordinating body."
+  },
+  {
     "organization_sector_id": "sector-384acd39a3de4731",
     "canonical_name": "Self-employed",
     "organization_type": "independent",
@@ -1076,6 +1090,13 @@
     "organization_type": "company",
     "sector": "Finance & Insurance",
     "rationale": "Reviewed core activity is quantitative investment management."
+  },
+  {
+    "organization_sector_id": "sector-478aa6abea8b303c",
+    "canonical_name": "tLab Technologies",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is cybersecurity and anti-malware software."
   },
   {
     "organization_sector_id": "sector-7ea6a9f0192c169a",

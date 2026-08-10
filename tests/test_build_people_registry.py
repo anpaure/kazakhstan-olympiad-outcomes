@@ -116,6 +116,41 @@ class StablePersonIdTest(unittest.TestCase):
             {"Baktybai Galymzhan", "Galymzhan Baktybay", "Galymzhan Baktybai"},
         )
 
+    def test_reviewed_merge_can_augment_one_recorded_spelling(self):
+        rows = [
+            {
+                "olympiad": "IMO",
+                "year": "1993",
+                "name": "Daulet Turetaev",
+                "award": "",
+                "source_url": "https://example.test/imo-1993",
+            }
+        ]
+        reviewed = [
+            {
+                "canonical_person_id": "kaz-reviewed",
+                "canonical_name": "Daulet Turetayev",
+                "aliases": ("Daulet Turetaev", "Daulet Turetayev"),
+                "reason": "A sourced modern transliteration supplies the preferred spelling.",
+                "evidence_url": "https://example.test/research-record",
+            }
+        ]
+
+        people, merge_audit = build_registry(
+            rows,
+            {token_key("Daulet Turetaev"): "kaz-reviewed"},
+            reviewed,
+        )
+
+        self.assertEqual(len(people), 1)
+        self.assertEqual(people[0].person_id, "kaz-reviewed")
+        self.assertEqual(people[0].canonical_name, "Daulet Turetayev")
+        self.assertEqual(
+            set(people[0].aliases.split(";")),
+            {"Daulet Turetaev", "Daulet Turetayev"},
+        )
+        self.assertEqual(merge_audit[-1]["reason"], "reviewed_alias_augmentation")
+
 
 if __name__ == "__main__":
     unittest.main()

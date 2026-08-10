@@ -426,5 +426,53 @@
     "review_reason": "The IMO and IPhO records resolve to the same rare-name profile and the same 2017-2021 UNIST education timeline.",
     "evidence_url": "https://linkedin.com/in/temirlan-amangeldinov",
     "canonical_person_id": "kaz-dcb24ecb815a"
+  },
+  {
+    "left": "Daulet Turetaev",
+    "right": "Daulet Turetayev",
+    "token_similarity": 0.968,
+    "shared_olympiads": [
+      "IMO"
+    ],
+    "left_years": [
+      1993
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The Turetaev and Turetayev spellings represent the same rare name across the Kazakhstan IMO record and the subsequent University of Twente research record.",
+    "evidence_url": "https://research.utwente.nl/en/publications/nondeterminism-in-stochastic-modeling/",
+    "canonical_person_id": "kaz-1d6bad0a9a90"
+  },
+  {
+    "left": "Arnur Toktabayev",
+    "right": "Arnur Tokhtabayev",
+    "token_similarity": 0.97,
+    "shared_olympiads": [
+      "IMO"
+    ],
+    "left_years": [
+      1996
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The former company biography uses Tokhtabayev and Tokhtabaev for the same founder while RFMS records the Toktabayev transliteration for its 1996 IMO participant.",
+    "evidence_url": "https://tntsecure.kz/en/about.html",
+    "canonical_person_id": "kaz-5f05301e71f7"
+  },
+  {
+    "left": "Nurzhan Kajikabarov",
+    "right": "Nurzhan Kadzhiakbarov",
+    "token_similarity": 0.85,
+    "shared_olympiads": [
+      "IMO"
+    ],
+    "left_years": [
+      1996
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The current official biography uses Kadzhiakbarov for the same rare name that the IMO registry transliterates as Kajikabarov and RFMS records in Cyrillic.",
+    "evidence_url": "https://www.inform.kz/person/nurzhan-khazhimuratuly-kadzhiakbarov-1736839590",
+    "canonical_person_id": "kaz-55cdb586d884"
   }
 ]

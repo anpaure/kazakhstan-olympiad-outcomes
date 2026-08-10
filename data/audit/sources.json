@@ -2959,9 +2959,9 @@
     "source_url": "https://fizmat.kz/ru/luchshie-ucheniki/",
     "source_host": "fizmat.kz",
     "source_kind": "web_page",
-    "evidence_rows": 2,
-    "people_count": 2,
-    "accepted_rows": 2,
+    "evidence_rows": 5,
+    "people_count": 5,
+    "accepted_rows": 5,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
@@ -5340,6 +5340,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-51b6be0f2376",
+    "source_url": "https://gsb.almau.edu.kz/wp-content/uploads/2022/10/%D0%A1%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA-%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9-%D1%81%D0%BB%D1%83%D1%88%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%9C%D0%92%D0%90-2016.pdf",
+    "source_host": "gsb.almau.edu.kz",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_program_publication"
+  },
+  {
     "source_id": "src-1cbe8b9038eb",
     "source_url": "https://hk.linkedin.com/in/akhmetissa7",
     "source_host": "hk.linkedin.com",
@@ -6478,6 +6493,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review",
     "source_adapters": "accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin"
+  },
+  {
+    "source_id": "src-bdc10c8f3e48",
+    "source_url": "https://kz.linkedin.com/in/daulet-turetayev-73ba8314b",
+    "source_host": "kz.linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 4,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 3,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "active_affiliation_profile_location;linkedin;manual;manual_review"
   },
   {
     "source_id": "src-1a46a21093d1",
@@ -10183,6 +10213,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history",
     "source_adapters": "academic_collaborator_profile"
+  },
+  {
+    "source_id": "src-2a9d696f5c9f",
+    "source_url": "https://mirror.akorda.kz/ru/executive_office/executive_office_stucture",
+    "source_host": "mirror.akorda.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "career_source_location;manual;manual_review"
   },
   {
     "source_id": "src-0628a26e79ca",
@@ -14640,6 +14685,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-c4f8fcc141d4",
+    "source_url": "https://research.utwente.nl/en/publications/nondeterminism-in-stochastic-modeling/",
+    "source_host": "research.utwente.nl",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_research_record"
+  },
+  {
     "source_id": "src-d8b3f3b80991",
     "source_url": "https://ru.linkedin.com/in/david-li-ab07b332b",
     "source_host": "ru.linkedin.com",
@@ -15673,6 +15733,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history",
     "source_adapters": "official_employer_biography"
+  },
+  {
+    "source_id": "src-831cbca3f2b0",
+    "source_url": "https://sites.google.com/binghamton.edu/ciac/research/publications",
+    "source_host": "sites.google.com",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_research_record"
   },
   {
     "source_id": "src-f988994e6af3",
@@ -16993,6 +17068,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history",
     "source_adapters": "professional_directory"
+  },
+  {
+    "source_id": "src-b73a90b9ce40",
+    "source_url": "https://tlab.kz/en/",
+    "source_host": "tlab.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "career_source_location;manual;manual_review"
   },
   {
     "source_id": "src-b1e3b3948566",
@@ -20535,6 +20625,21 @@
     "source_adapters": "current_education_location"
   },
   {
+    "source_id": "src-1de92d5f7853",
+    "source_url": "https://www.inform.kz/person/nurzhan-khazhimuratuly-kadzhiakbarov-1736839590",
+    "source_host": "inform.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 8,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 8,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_news_agency_biography"
+  },
+  {
     "source_id": "src-28ff4753b51f",
     "source_url": "https://www.kaist.ac.kr/en/html/kaist/011501.html",
     "source_host": "kaist.ac.kr",
@@ -21718,6 +21823,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_location_evidence",
     "source_adapters": "current_education_location"
+  },
+  {
+    "source_id": "src-6bd45cfae6db",
+    "source_url": "https://www.nss.ece.vt.edu/angelos/resume/cv_stavrou_latest.html",
+    "source_host": "nss.ece.vt.edu",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_faculty_cv"
   },
   {
     "source_id": "src-2a3bbc6c0ffe",
