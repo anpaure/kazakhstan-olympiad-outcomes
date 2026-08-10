@@ -13,6 +13,26 @@ from pathlib import Path
 
 DEFAULT_ALIASES = Path(__file__).resolve().parents[1] / "data/organization_aliases.csv"
 ZERO_WIDTH = dict.fromkeys(map(ord, "\u200b\u200c\u200d\ufeff"), None)
+AUDIT_LEGAL_FORM_TERMS = {
+    "ao",
+    "co",
+    "company",
+    "corp",
+    "corporation",
+    "inc",
+    "incorporated",
+    "jsc",
+    "limited",
+    "llc",
+    "llp",
+    "ltd",
+    "nv",
+    "plc",
+    "pte",
+    "the",
+    "ао",
+    "тоо",
+}
 
 
 def clean_organization(value: object) -> str:
@@ -24,6 +44,24 @@ def clean_organization(value: object) -> str:
 def organization_key(value: object) -> str:
     text = clean_organization(value).casefold()
     return re.sub(r"[^\w]+", " ", text, flags=re.UNICODE).strip()
+
+
+def organization_audit_key(value: object) -> str:
+    """Collapse only low-risk surface variation for duplicate detection."""
+    text = unicodedata.normalize("NFKD", clean_organization(value))
+    text = "".join(char for char in text if not unicodedata.combining(char))
+    text = re.sub(
+        r"\(([^)]*)\)",
+        lambda match: (
+            " "
+            if 2 <= len(re.sub(r"\W", "", match.group(1))) <= 12
+            and re.sub(r"\W", "", match.group(1)).isupper()
+            else f" {match.group(1)} "
+        ),
+        text,
+    ).casefold()
+    tokens = re.findall(r"\w+", text, flags=re.UNICODE)
+    return " ".join(token for token in tokens if token not in AUDIT_LEGAL_FORM_TERMS)
 
 
 @lru_cache(maxsize=None)

@@ -14,8 +14,8 @@
     "rationale": "Reviewed core activity is advertising software and analytics."
   },
   {
-    "organization_sector_id": "sector-3174b5fb6dc6674a",
-    "canonical_name": "AGP Holding LLP",
+    "organization_sector_id": "sector-396f519e0425ac52",
+    "canonical_name": "AGP Holding",
     "organization_type": "company",
     "sector": "Industrial & Manufacturing",
     "rationale": "Reviewed core activity is industrial construction and oilfield services."
@@ -77,13 +77,6 @@
     "rationale": "Reviewed core activity is marketing and commerce technology."
   },
   {
-    "organization_sector_id": "sector-608eee6bc4b749e8",
-    "canonical_name": "AO Home Credit Bank Kazakhstan",
-    "organization_type": "company",
-    "sector": "Finance & Insurance",
-    "rationale": "Reviewed core activity is consumer banking."
-  },
-  {
     "organization_sector_id": "sector-3e908df5beadcc80",
     "canonical_name": "Armeta",
     "organization_type": "company",
@@ -96,13 +89,6 @@
     "organization_type": "nonprofit",
     "sector": "Environment & Nonprofit",
     "rationale": "Reviewed core activity is biodiversity conservation."
-  },
-  {
-    "organization_sector_id": "sector-4d292f62f296afa1",
-    "canonical_name": "Astana Business Campus",
-    "organization_type": "nonprofit",
-    "sector": "Education & Research",
-    "rationale": "Reviewed core activity is university-linked innovation and research commercialization."
   },
   {
     "organization_sector_id": "sector-0bc4da79a9b59730",
@@ -133,8 +119,8 @@
     "rationale": "Reviewed organization is Canada's central bank."
   },
   {
-    "organization_sector_id": "sector-e1fe11f69a5ed555",
-    "canonical_name": "BestYs Pte Ltd",
+    "organization_sector_id": "sector-dcb446541cf4dcd7",
+    "canonical_name": "BestYs",
     "organization_type": "company",
     "sector": "Education & Research",
     "rationale": "Reviewed core activity is olympiad and education technology."
@@ -224,8 +210,8 @@
     "rationale": "Reviewed core activity is business and investment education and consulting."
   },
   {
-    "organization_sector_id": "sector-05763e11ff887dda",
-    "canonical_name": "DashDevs LLC",
+    "organization_sector_id": "sector-56c6ef534726bc40",
+    "canonical_name": "DashDevs",
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is software development."
@@ -385,13 +371,6 @@
     "rationale": "Reviewed core activity is internet software and cloud technology."
   },
   {
-    "organization_sector_id": "sector-1b1862415f2d9eef",
-    "canonical_name": "Google DeepMind",
-    "organization_type": "company",
-    "sector": "Technology & Software",
-    "rationale": "Reviewed core activity is artificial intelligence research and software."
-  },
-  {
     "organization_sector_id": "sector-6ad05f5b3d95d338",
     "canonical_name": "GrapheneOS Foundation",
     "organization_type": "nonprofit",
@@ -411,6 +390,13 @@
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is generative AI software."
+  },
+  {
+    "organization_sector_id": "sector-1a41a2e61a1d3e4b",
+    "canonical_name": "Home Credit Bank",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed core activity is consumer banking."
   },
   {
     "organization_sector_id": "sector-7a23266ba6f58eb2",
@@ -446,13 +432,6 @@
     "organization_type": "company",
     "sector": "Healthcare & Life Sciences",
     "rationale": "Reviewed core activity is AI-enabled drug discovery."
-  },
-  {
-    "organization_sector_id": "sector-bad57ef7837c8e6b",
-    "canonical_name": "Instagram",
-    "organization_type": "company",
-    "sector": "Consumer & Media",
-    "rationale": "Reviewed core activity is consumer social media."
   },
   {
     "organization_sector_id": "sector-5e28929224141843",
@@ -497,6 +476,13 @@
     "rationale": "Reviewed core activity is mining and natural resources."
   },
   {
+    "organization_sector_id": "sector-4a13a75d07c94e6b",
+    "canonical_name": "Kazaeronavigatsia",
+    "organization_type": "government",
+    "sector": "Transportation & Infrastructure",
+    "rationale": "Reviewed organization operates national air-navigation infrastructure."
+  },
+  {
     "organization_sector_id": "sector-79e5c0f3de707fa6",
     "canonical_name": "Kazakhstan Deposit Insurance Fund",
     "organization_type": "government",
@@ -504,8 +490,8 @@
     "rationale": "Reviewed organization performs a statutory financial-stability function."
   },
   {
-    "organization_sector_id": "sector-60ec0638afb17d2d",
-    "canonical_name": "Kazakhstan Temir Zholy JSC",
+    "organization_sector_id": "sector-0d0a2e0ad4e7f46e",
+    "canonical_name": "Kazakhstan Temir Zholy",
     "organization_type": "government",
     "sector": "Transportation & Infrastructure",
     "rationale": "Reviewed organization operates Kazakhstan's national railway infrastructure."
@@ -518,8 +504,8 @@
     "rationale": "Reviewed core activity is telecommunications and network services."
   },
   {
-    "organization_sector_id": "sector-13d03e652871229b",
-    "canonical_name": "Kcell JSC",
+    "organization_sector_id": "sector-499e5f72ee9264ee",
+    "canonical_name": "Kcell",
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is telecommunications."
@@ -616,8 +602,8 @@
     "rationale": "Reviewed core activity is artificial intelligence software."
   },
   {
-    "organization_sector_id": "sector-dea7e0a2715220d0",
-    "canonical_name": "National Center for Biotechnology Information (NIH)",
+    "organization_sector_id": "sector-226f5b9d4d6a0dd8",
+    "canonical_name": "National Center for Biotechnology Information (NCBI)",
     "organization_type": "government",
     "sector": "Government & Public Sector",
     "rationale": "Reviewed organization is a United States government biomedical information center."
@@ -735,8 +721,8 @@
     "rationale": "Reviewed organization is an investment fund."
   },
   {
-    "organization_sector_id": "sector-4543d14a45a5ea16",
-    "canonical_name": "Pro Wheel XR Limited",
+    "organization_sector_id": "sector-c3a6c0d54124d098",
+    "canonical_name": "Pro Wheel XR",
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is extended-reality technology."
@@ -775,13 +761,6 @@
     "organization_type": "company",
     "sector": "Energy & Natural Resources",
     "rationale": "Reviewed core activity is energy engineering and industrial services."
-  },
-  {
-    "organization_sector_id": "sector-e5e6cc2c4b3165a3",
-    "canonical_name": "RSE Kazaeronavigatsia",
-    "organization_type": "government",
-    "sector": "Transportation & Infrastructure",
-    "rationale": "Reviewed organization operates national air-navigation infrastructure."
   },
   {
     "organization_sector_id": "sector-f37cf319b81b96eb",

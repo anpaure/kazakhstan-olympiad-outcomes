@@ -356,6 +356,56 @@ class AlmaMaterSelectionTest(unittest.TestCase):
 
         self.assertEqual(selected, {"Example University"})
 
+    def test_short_program_and_employment_title_are_not_alma_maters(self):
+        people = [
+            {
+                "person_id": "person-1",
+                "name": "Example Person",
+                "confidence": "confirmed",
+                "profile_url": "https://example.com/profile",
+                "organization": "Current Co",
+                "affiliation_type": "employment",
+            }
+        ]
+        manual = [
+            {
+                "person_id": "person-1",
+                "organization": "Degree University",
+                "role": "Master of Science",
+                "affiliation_type": "education",
+                "start_year": "2022",
+                "end_year": "2024",
+                "evidence_url": "https://example.com/profile",
+            },
+            {
+                "person_id": "person-1",
+                "organization": "Summer University",
+                "role": "Summer Research School",
+                "affiliation_type": "education",
+                "start_year": "2023",
+                "end_year": "2023",
+                "evidence_url": "https://example.com/profile",
+            },
+            {
+                "person_id": "person-1",
+                "organization": "Employer University",
+                "role": "Acting Dean of Research School",
+                "affiliation_type": "education",
+                "start_year": "2024",
+                "end_year": "2025",
+                "evidence_url": "https://example.com/profile",
+            },
+        ]
+
+        rows = build_rows(people, [], [], [], [], manual, [], 2026)
+        selected = {
+            row["organization"]
+            for row in rows
+            if row["selected_as_alma_mater"]
+        }
+
+        self.assertEqual(selected, {"Degree University"})
+
 
 class ManualAffiliationTest(unittest.TestCase):
     def test_includes_sourced_manual_history_and_selects_alma_mater(self):

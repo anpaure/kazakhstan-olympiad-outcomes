@@ -12,17 +12,17 @@ The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
 - 456 canonical people after 30 reviewed name merges
-- 332 researched people, all classified as probable or confirmed
-- 271 confirmed and 61 probable identity, education, or career outcomes
-- 301 manually reviewed outcomes backed by public evidence
-- 289 researched people with one resolved destination and 244 with a public LinkedIn URL
-- 2,118 sourced employment/education history rows, including 369 selected alma-mater records across 248 people
+- 344 researched people, all classified as probable or confirmed
+- 275 confirmed and 69 probable identity, education, or career outcomes
+- 313 manually reviewed outcomes backed by public evidence
+- 298 researched people with one resolved destination and 248 with a public LinkedIn URL
+- 2,151 sourced employment/education history rows, including 379 selected alma-mater records across 259 people
 - 37 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
-- 163 reviewed organization aliases collapsed into canonical employers and universities
-- 150 reviewed sector classifications covering every displayed non-educational destination
-- 250 sourced outcome-country records across 22 countries
+- 288 reviewed organization aliases collapsed into canonical employers and universities
+- 147 reviewed sector classifications covering every displayed non-educational destination
+- 260 sourced outcome-country records across 22 countries
 - 3 additional people with candidate-only evidence retained for audit but no accepted outcome
-- 112 rejected identity sources retained with review reasons and supporting links
+- 113 rejected identity sources retained with review reasons and supporting links
 
 The current first step is implemented in `scripts/collect_kazakhstan_participants.py`. It collects Kazakhstan competitors from:
 
@@ -135,7 +135,7 @@ The two apply scripts merge the auditable Exa review overlays before assembly. `
 
 `scripts/hydrate_linkedin_profiles_with_exa.py` retrieves every accepted LinkedIn URL directly through Exa, checkpointing successes and errors without persisting the API key. This avoids losing education or location data when a name search returns only namesakes. `scripts/build_affiliation_history.py` extracts employment and education headings only from accepted profiles, reviewed manual transcriptions, and structured records. It writes a source URL on every history row and selects every distinct higher-education institution as an alma mater, falling back to one secondary school only when no university-level record is known. `scripts/build_location_evidence.py` uses explicit profile/role location, reviewed stale-profile overrides, and structured affiliation country.
 
-`data/organization_aliases.csv` is the reviewed organization registry shared by the research assembler, history builder, Exa reconciliation, audit bundle, and visualization. It records the canonical/display name, merge type, and rationale for legal-name, acronym, multilingual, campus, and parent-organization variants. Source text is retained in the evidence ledger, while destination and affiliation tables use canonical names.
+`data/organization_aliases.csv` is the reviewed organization registry shared by the research assembler, history builder, Exa reconciliation, audit bundle, and visualization. It records the canonical/display name, merge type, and rationale for legal-name, acronym, multilingual, former-name, campus, and parent-organization variants. Source text is retained in the evidence ledger, while destination and affiliation tables use canonical names. Validation rejects low-risk duplicate variants, canonical-name alias chains, and display labels shared by different canonical organizations.
 
 `data/organization_sectors.csv` assigns every displayed non-educational destination a reviewed organization type and sector. Educational and research institutions are classified separately. Validation fails when a destination lacks a sector.
 
@@ -194,9 +194,9 @@ failed counts, and coverage percentage.
 
 Current Exa search coverage: 456 of 456 canonical people, 456 successful searches,
 zero errors, and 2,330 ranked result rows. Total recorded search cost is $3.192.
-The exact-URL hydration audit covers all 244 accepted LinkedIn profiles: 235
-retrievals succeeded and 9 explicit `ENTITY_NOT_FOUND` errors remain logged, at
-$0.235 recorded cost.
+The exact-URL hydration audit covers all 248 accepted LinkedIn profiles: 238
+retrievals succeeded and 10 explicit `ENTITY_NOT_FOUND` errors remain logged, at
+$0.238 recorded cost.
 
 Outputs:
 

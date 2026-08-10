@@ -11,6 +11,17 @@
     "evidence_url": "https://linkedin.com/in/abilmuzhubayev"
   },
   {
+    "person_id": "kaz-00a1687b2b23",
+    "name": "Abylay Kabdulkhadyr",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/abylay-kabdulkhadyr-2b527a331",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted self-authored LinkedIn profile exposes Astana Kazakhstan as Abylay Kabdulkhadyr's location."
+  },
+  {
     "person_id": "kaz-408aa9ea598e",
     "name": "Abylay Samatov",
     "country_code": "KZ",
@@ -97,6 +108,28 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://uk.linkedin.com/in/adilzhanismailov"
+  },
+  {
+    "person_id": "kaz-a93521357d27",
+    "name": "Adilzhan Moldagul",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Ulsan, South Korea",
+    "evidence_url": "https://www.linkedin.com/company/gettoijso",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "Outcome country follows the reviewed GETTOIJSO post's current UNIST affiliation."
+  },
+  {
+    "person_id": "kaz-d36d7bbcbacc",
+    "name": "Aibek A. Mukhamediyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/aibek-mukhamediyev-a20b3420",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted rare-name public profile exposes Kazakhstan as Aibek Mukhamediyev's location."
   },
   {
     "person_id": "kaz-af55ed678a4e",
@@ -836,6 +869,17 @@
     "evidence_url": "https://linkedin.com/in/baizaq"
   },
   {
+    "person_id": "kaz-e592924f7a04",
+    "name": "Bakdaulet Seisenkul",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "College Station, Texas, United States",
+    "evidence_url": "https://linkedin.com/in/bakdaulet-seisenkul-8ab00b230",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted exact-name public profile exposes College Station Texas as Bakdaulet Seisenkul's location and the current Texas A&M lab roster corroborates it."
+  },
+  {
     "person_id": "kaz-8309d6e00897",
     "name": "Bakdaulet Yernazarov",
     "country_code": "KR",
@@ -891,6 +935,28 @@
     "evidence_url": "https://kz.linkedin.com/in/bbektemir"
   },
   {
+    "person_id": "kaz-b82a97fb3f53",
+    "name": "Bauyrzhan Sainov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Atyrau, Kazakhstan",
+    "evidence_url": "https://www.signalhire.com/profiles/bauyrzhan-sainov/240078956",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed current employment profile places Bauyrzhan Sainov's Tengizchevroil role in Atyrau Kazakhstan and his LinkedIn header confirms Kazakhstan."
+  },
+  {
+    "person_id": "kaz-861bd0bfc9f2",
+    "name": "Bekbolat Mamyrbekov",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Ulsan, South Korea",
+    "evidence_url": "https://cmcm.ibs.re.kr/cmcm/?MM=02&SM=01",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "Outcome country follows the accepted current undergraduate affiliation at the Institute for Basic Science center hosted at UNIST in Ulsan."
+  },
+  {
     "person_id": "kaz-674fe7c75a81",
     "name": "Bekzhan Bekbolatuly",
     "country_code": "GB",
@@ -900,6 +966,17 @@
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location.",
     "evidence_url": "https://linkedin.com/in/bekzhan29"
+  },
+  {
+    "person_id": "kaz-ef33110ee8b0",
+    "name": "Binazar Zhassulan",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://galaxy.edu.kz/en/staff/163",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Galaxy International School's current staff page places Binazar Zhassulan's Academic Principal role at its Almaty campus."
   },
   {
     "person_id": "kaz-12d9dc922ba8",
@@ -1120,6 +1197,17 @@
     "evidence_kind": "manual_public_profile_location",
     "confidence": "confirmed",
     "review_reason": "The accepted LinkedIn profile exposes Cambridge England as Dinmukhamed Rakhimzhanov's location."
+  },
+  {
+    "person_id": "kaz-8263929a366c",
+    "name": "Dinmukhamed Yegeubayev",
+    "country_code": "AT",
+    "country_name": "Austria",
+    "location_label": "St. Gilgen, Salzburg, Austria",
+    "evidence_url": "https://www.math.aau.at/OeMO/Ergebnisse/GWF/west/2026",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "Austria's official 2026 Mathematics Olympiad results place Dinmukhamed Yegeubayev at St. Gilgen International School."
   },
   {
     "person_id": "kaz-2fe78cfd647b",
@@ -1661,6 +1749,17 @@
     "evidence_url": "https://linkedin.com/in/miras-myrzakerey-b37529101"
   },
   {
+    "person_id": "kaz-69bda00903cf",
+    "name": "Miron Yurkevich",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "Cambridge, England, United Kingdom",
+    "evidence_url": "https://www.globtalent.org/gtf-big-talent-scholars-bios/miron-yurkevich",
+    "evidence_kind": "affiliation_country",
+    "confidence": "confirmed",
+    "review_reason": "The Global Talent Fund biography places Miron Yurkevich's current mathematics education at Trinity College at the University of Cambridge."
+  },
+  {
     "person_id": "kaz-69f40396a2e9",
     "name": "Mukhammadarif Sakhmoldin",
     "country_code": "HK",
@@ -2165,6 +2264,17 @@
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role.",
     "evidence_url": "https://www.linkedin.com/in/sergey-umentayev"
+  },
+  {
+    "person_id": "kaz-08fb4ba7d2f0",
+    "name": "Serikzhan Yermekov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://events.crugroup.com/middleeastsulphur/speakers-2022",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "Country follows the reviewed current Process Engineer role at Kazakhstan-based Tengizchevroil; the source does not publish a more precise residence."
   },
   {
     "person_id": "kaz-663572d0d26e",

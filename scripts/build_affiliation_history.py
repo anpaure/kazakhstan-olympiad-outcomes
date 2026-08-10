@@ -120,8 +120,9 @@ SECONDARY_INSTITUTION_PATTERN = re.compile(
     re.IGNORECASE,
 )
 NON_ALMA_ROLE_PATTERN = re.compile(
-    r"\b(?:research|teaching) assistants?\b|\binstructors?\b|\b(?:intern|fellow|visiting|exchange|"
-    r"summer school|certificate|short course|participant)\b",
+    r"\b(?:research|teaching) assistants?\b|\binstructors?\b|\b(?:acting )?deans?\b|"
+    r"\b(?:intern|fellow|visiting|exchange|summer (?:research )?school|certificate|"
+    r"short course|participant)\b",
     re.IGNORECASE,
 )
 EMPLOYMENT_ROLE_TERMS = re.compile(

@@ -4,6 +4,7 @@ from scripts.organization_names import (
     canonicalize_organization,
     display_organization,
     load_organization_aliases,
+    organization_audit_key,
     organization_aliases_for,
 )
 
@@ -53,11 +54,58 @@ class OrganizationNormalizationTest(unittest.TestCase):
             "University of Minnesota",
         )
 
+    def test_reviewed_organization_pass_merges_company_variants(self):
+        expected = {
+            "Google DeepMind": "Google",
+            "Instagram": "Meta",
+            "Microsoft Research": "Microsoft",
+            "Schlumberger": "SLB",
+            "Kcell АО": "Kcell",
+            "AO Home Credit Bank Kazakhstan": "Home Credit Bank",
+            "Bloomberg LP": "Bloomberg",
+        }
+        for value, canonical in expected.items():
+            with self.subTest(value=value):
+                self.assertEqual(canonicalize_organization(value), canonical)
+
+    def test_reviewed_organization_pass_merges_institution_variants(self):
+        expected = {
+            "KBTU Kazakh British Technical University": (
+                "Kazakh-British Technical University (KBTU)"
+            ),
+            "Università di Bologna": "Alma Mater Studiorum – Università di Bologna",
+            "Rheinische Friedrich-Wilhelms-Universität Bonn": "University of Bonn",
+            "North American University (NAU)": "North American University",
+            "NWAFU": "Northwest A&F University",
+            "元智大學": "Yuan Ze University",
+            "Jacobs University Bremen": "Constructor University",
+            "Barcelona Graduate School of Economics": (
+                "Barcelona School of Economics (BSE)"
+            ),
+            "Harris School of Public Policy at the University of Chicago": (
+                "University of Chicago"
+            ),
+            "Mechanobiology Institute": "National University of Singapore",
+        }
+        for value, canonical in expected.items():
+            with self.subTest(value=value):
+                self.assertEqual(canonicalize_organization(value), canonical)
+
     def test_alias_registry_has_no_conflicts(self):
         aliases, displays, reverse = load_organization_aliases()
         self.assertTrue(aliases)
         self.assertTrue(displays)
         self.assertTrue(reverse)
+
+    def test_audit_key_collapses_only_low_risk_surface_variants(self):
+        self.assertEqual(
+            organization_audit_key("Linkoping University, Inc."),
+            organization_audit_key("Linköping University"),
+        )
+        self.assertNotEqual(
+            organization_audit_key("University of California, Berkeley"),
+            organization_audit_key("University of California, Davis"),
+        )
 
 
 if __name__ == "__main__":

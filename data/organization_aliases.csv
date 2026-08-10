@@ -146,7 +146,7 @@ wbk - Institute of Production Science,Karlsruhe Institute of Technology (KIT),KI
 Purdue University System,Purdue University,Purdue University,parent_organization,System label
 Purdue University West Lafayette,Purdue University,Purdue University,parent_organization,Main campus label
 University of Michigan - Stephen M. Ross School of Business,University of Michigan,University of Michigan,parent_organization,University school
-ктж,Kazakhstan Temir Zholy JSC,Kazakhstan Temir Zholy,multilingual_name,Cyrillic acronym
+ктж,Kazakhstan Temir Zholy,Kazakhstan Temir Zholy,multilingual_name,Cyrillic acronym
 The Chinese University of Hong Kong,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Official name without acronym
 CUHK,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Common acronym
 Debreceni Egyetem,University of Debrecen,University of Debrecen,multilingual_name,Hungarian name
@@ -155,10 +155,135 @@ Bocconi,Bocconi University,Bocconi University,same_entity,Common short name
 École normale supérieure,École normale supérieure (ENS),ENS,same_entity,Official name without acronym
 Ecole normale superieure,École normale supérieure (ENS),ENS,transliterated_name,ASCII spelling
 ENS,École normale supérieure (ENS),ENS,same_entity,Common acronym
-Google Deepmind,Google DeepMind,Google DeepMind,same_entity,Capitalization variant
+Google Deepmind,Google,Google,parent_organization,Google DeepMind is a combined Google AI research unit
 Cambridge University,University of Cambridge,University of Cambridge,same_entity,Informal name
 Imperial College,Imperial College London,Imperial College London,same_entity,Common short name
 Ecole Polytechnique,École Polytechnique,École Polytechnique,transliterated_name,ASCII spelling
 École Polytechnique,École Polytechnique,École Polytechnique,same_entity,Official name
 University of Hong Kong,University of Hong Kong,University of Hong Kong,same_entity,Official name
 HKU,University of Hong Kong,University of Hong Kong,same_entity,Common acronym
+Тенгизшевройл,Tengizchevroil,Tengizchevroil,multilingual_name,Russian company name
+Some Company,Undisclosed employer,Undisclosed employer,placeholder_name,Public profile uses a placeholder rather than disclosing the employer
+AGP Holding LLP,AGP Holding,AGP Holding,same_entity,Legal-form variant
+BestYs Pte Ltd,BestYs,BestYs,same_entity,Legal-form variant
+DashDevs LLC,DashDevs,DashDevs,same_entity,Legal-form variant
+Pro Wheel XR Limited,Pro Wheel XR,Pro Wheel XR,same_entity,Legal-form variant
+RSE Kazaeronavigatsia,Kazaeronavigatsia,Kazaeronavigatsia,same_entity,Legal-form prefix variant
+Kazakhstan Temir Zholy JSC,Kazakhstan Temir Zholy,Kazakhstan Temir Zholy,same_entity,Legal-form variant
+Kcell JSC,Kcell,Kcell,same_entity,Legal-form variant
+Kcell АО,Kcell,Kcell,multilingual_name,Russian legal-form variant
+AO Home Credit Bank Kazakhstan,Home Credit Bank,Home Credit Bank,same_entity,Former Kazakhstan legal-name variant
+Home Credit Bank Kazakhstan,Home Credit Bank,Home Credit Bank,same_entity,Country-suffix variant
+National Center for Biotechnology Information (NIH),National Center for Biotechnology Information (NCBI),NCBI,same_entity,Corrects the institution acronym while preserving the NIH parent context in source evidence
+AIFC (Astana International Financial Centre),Astana International Financial Centre,AIFC,same_entity,Acronym-first variant
+BeyondCurriculum,Beyond Curriculum PF,Beyond Curriculum,same_entity,Spacing variant
+PF Beyond Curriculum,Beyond Curriculum PF,Beyond Curriculum,name_order,Legal-form word-order variant
+BI GROUP (Development & Construction & Engineering & Road Construction),BI Group,BI Group,same_entity,Descriptor suffix and capitalization variant
+BIOCAD (Russia),BIOCAD,BIOCAD,same_entity,Location suffix
+Bloomberg LP,Bloomberg,Bloomberg,same_entity,Legal-form variant
+Crazing lab,Crazing Lab,Crazing Lab,same_entity,Capitalization variant
+Freedom Telecom Kazakhstan,Freedom Telecom,Freedom Telecom,same_entity,Country-suffix variant
+Freelance,Self-employed,Self-employed,category_normalization,Independent-work label
+Фриланс,Self-employed,Self-employed,translated_name,Russian independent-work label
+none,Self-employed,Self-employed,placeholder_name,Profile used no employer for an independent open-source project
+Facebook,Meta,Meta,same_entity,Former corporate name before the Meta rebrand
+Instagram,Meta,Meta,parent_organization,Instagram is a Meta business
+Meta Platforms,Meta,Meta,same_entity,Corporate-name variant
+Amazon Music,Amazon,Amazon,parent_organization,Amazon business unit
+Huawei Hong Kong Research Center(HKRC),Huawei,Huawei,parent_organization,Huawei research unit
+Huawei Technologies Research & Development (UK) Ltd,Huawei,Huawei,parent_organization,Huawei research subsidiary
+Intel Labs,Intel Corporation,Intel,parent_organization,Intel research organization
+Microsoft Corporation,Microsoft,Microsoft,same_entity,Corporate-name variant
+Microsoft Research,Microsoft,Microsoft,parent_organization,Microsoft research organization
+J.P. Morgan,JPMorgan Chase,JPMorgan Chase,same_entity,Brand and punctuation variant
+Jump Trading Group,Jump Trading,Jump Trading,same_entity,Corporate-name variant
+Kazakhmys Corporation,Kazakhmys,Kazakhmys,same_entity,Corporate-name variant
+Kazakhmys Services Limited / Corporate Development Center (CDC) LLP,Kazakhmys,Kazakhmys,parent_organization,Kazakhmys corporate-services unit
+National Environment Agency,National Environment Agency Singapore,National Environment Agency,same_entity,Country context omitted in source label
+National Investment Corporation of National Bank of Kazakhstan,National Investment Corporation of the National Bank of Kazakhstan,National Investment Corporation (NIC),same_entity,Definite-article variant
+National Investment Corporation of National Bank of Kazakhstan (NIC),National Investment Corporation of the National Bank of Kazakhstan,National Investment Corporation (NIC),same_entity,Acronym variant
+National Investment Corporation of NBK,National Investment Corporation of the National Bank of Kazakhstan,National Investment Corporation (NIC),acronym_expansion,Parent-bank acronym variant
+Schlumberger,SLB,SLB,same_entity,Former brand before the SLB rebrand
+Caspimunaygas Scientific Research Institute,SRDI Caspiymunaygas,SRDI Caspiymunaygas,same_entity,Expanded institute-name variant
+SRDI "Caspiymunaygas" JSC,SRDI Caspiymunaygas,SRDI Caspiymunaygas,same_entity,Quoted legal-name variant
+SRDI Caspiymunaygas JSC,SRDI Caspiymunaygas,SRDI Caspiymunaygas,same_entity,Legal-form variant
+Stonelab,StoneLab,StoneLab,same_entity,Capitalization variant
+StoneLab Inc,StoneLab,StoneLab,same_entity,Legal-form variant
+Summer STEM Institute (SSI),Summer STEM Institute,Summer STEM Institute,same_entity,Acronym suffix
+RSPC Daryn,Republican Scientific and Practical Center Daryn,RSPC Daryn,acronym_expansion,Common acronym
+Republican Scientific and Practical center "Daryn",Republican Scientific and Practical Center Daryn,RSPC Daryn,same_entity,Capitalization and quotation variant
+Jury Member - RSPC Daryn,Republican Scientific and Practical Center Daryn,RSPC Daryn,parser_normalization,Source employer label includes the position prefix
+KBTU Kazakh British Technical University,Kazakh-British Technical University (KBTU),KBTU,same_entity,Acronym-first full-name variant
+Alma Mater Studiorum – Università di Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,same_entity,Official university name and English display declaration
+Alma Mater Studiorum - Università di Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,punctuation_variant,ASCII-hyphen variant
+Università di Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,same_entity,Short Italian name
+University of Bologna,Alma Mater Studiorum – Università di Bologna,University of Bologna,translated_name,English name
+Università degli Studi di Padova (UNIPD) / University of Padua,University of Padua,University of Padua,multilingual_name,Bilingual source label
+Università di Padova,University of Padua,University of Padua,multilingual_name,Italian short name
+元智大學,Yuan Ze University,Yuan Ze University,multilingual_name,Official Chinese name
+NWAFU,Northwest A&F University,Northwest A&F University,acronym_expansion,Official university acronym
+UNC Chapel Hill,University of North Carolina at Chapel Hill,UNC Chapel Hill,same_entity,Common campus name
+North American University (NAU),North American University,North American University,same_entity,Acronym suffix
+Rheinische Friedrich-Wilhelms-Universität Bonn,University of Bonn,University of Bonn,translated_name,Official German legal name
+The University of Bonn,University of Bonn,University of Bonn,same_entity,Leading-article variant
+Universität des Saarlandes,Saarland University,Saarland University,translated_name,Official English name
+Humboldt-Universität zu Berlin,Humboldt University of Berlin,Humboldt University of Berlin,translated_name,Official English name
+Montana State University-Bozeman,Montana State University,Montana State University,same_entity,Campus suffix
+International Alatoo University,Ala-Too International University,Ala-Too International University,same_entity,English brand spelling variant
+Akhmet Yassawi University,Akhmet Yassawi International Kazakh-Turkish University,Akhmet Yassawi University,same_entity,Short university name
+East Kazakhstan State Technical University,D. Serikbayev East Kazakhstan Technical University,D. Serikbayev EKTU,former_name,Former university name
+East Kazakhstan State University,Sarsen Amanzholov East Kazakhstan University,Sarsen Amanzholov EKU,former_name,Former university name
+S.Seifullin Kazakh Agro Technical University,S. Seifullin Kazakh Agrotechnical Research University,S. Seifullin Kazakh Agrotechnical Research University,former_name,Former university name
+Fatih Üniversitesi,Fatih University,Fatih University,translated_name,Turkish university name
+Şifa Üniversitesi,Sifa University,Sifa University,translated_name,Turkish university name
+Universitas Airlangga,Airlangga University,Airlangga University,translated_name,Official English name
+Alliance Manchester Business School,University of Manchester,University of Manchester,parent_organization,University business school
+The University of Manchester,University of Manchester,University of Manchester,same_entity,Leading-article variant
+Harris School of Public Policy at the University of Chicago,University of Chicago,University of Chicago,parent_organization,University school
+The Johns Hopkins University - Paul H. Nitze School of Advanced International Studies (SAIS),Johns Hopkins University,Johns Hopkins University,parent_organization,University school
+Tulane University School of Public Health and Tropical Medicine,Tulane University,Tulane University,parent_organization,University school
+Washington University School of Medicine in St. Louis,Washington University in St. Louis,Washington University in St. Louis,parent_organization,University school
+Thayer School of Engineering at Dartmouth,Dartmouth College,Dartmouth College,parent_organization,University school
+NYU Tandon School of Engineering,New York University,New York University,parent_organization,University school
+New York University Abu Dhabi,New York University,New York University,parent_organization,University campus
+Kazakhstan Branch of Lomonosov Moscow State University,Lomonosov Moscow State University (MSU),Moscow State University,parent_organization,University branch campus
+KB MSU,Lomonosov Moscow State University (MSU),Moscow State University,acronym_expansion,Kazakhstan branch acronym
+Astana Business Campus,Nazarbayev University,Nazarbayev University,parent_organization,Nazarbayev University innovation campus
+Institute of Smart Systems and Artificial Intelligence - Nazarbayev University,Nazarbayev University,Nazarbayev University,parent_organization,University institute
+National Laboratory Astana,Nazarbayev University,Nazarbayev University,parent_organization,Nazarbayev University research center
+EPFL (École polytechnique fédérale de Lausanne),EPFL,EPFL,same_entity,Acronym with expanded name
+EMBL,European Molecular Biology Laboratory (EMBL),EMBL,acronym_expansion,Official laboratory acronym
+European Molecular Biology Laboratory,European Molecular Biology Laboratory (EMBL),EMBL,same_entity,Official name without acronym
+King Abdullah University of Science and Technology,King Abdullah University of Science and Technology (KAUST),KAUST,same_entity,Official name without acronym
+IST Austria,Institute of Science and Technology Austria,ISTA,same_entity,Former short brand
+Institute of Science and Technology Austria,Institute of Science and Technology Austria,ISTA,same_entity,Canonical display declaration
+Mechanobiology Institute,National University of Singapore,NUS,parent_organization,NUS Research Centre of Excellence
+MIT Media Lab,Massachusetts Institute of Technology (MIT),MIT,parent_organization,University laboratory
+DNA Lab (Caltech),California Institute of Technology (Caltech),Caltech,parent_organization,University laboratory
+Berkeley Artificial Intelligence Research,"University of California, Berkeley",UC Berkeley,parent_organization,University research laboratory
+UC Berkeley Electrical Engineering & Computer Sciences (EECS),"University of California, Berkeley",UC Berkeley,parent_organization,University department
+Pennsylvania State University Applied Research Laboratory,Pennsylvania State University,Penn State,parent_organization,University laboratory
+Purdue Physics and Astronomy,Purdue University,Purdue University,parent_organization,University department
+Institute for Pure and Applied Mathematics,"University of California, Los Angeles (UCLA)",UCLA,parent_organization,University institute
+"3D Integrated Opto-Electronic Device Lab, KAIST","Korea Advanced Institute of Science and Technology (KAIST)",KAIST,parent_organization,University laboratory
+"Center for Cell-Encapsulation Research, KAIST","Korea Advanced Institute of Science and Technology (KAIST)",KAIST,parent_organization,University research center
+Data & AI Systems in Organizations Lab (KAIST),"Korea Advanced Institute of Science and Technology (KAIST)",KAIST,parent_organization,University laboratory
+High Dimensional Statistics Lab at KAIST,"Korea Advanced Institute of Science and Technology (KAIST)",KAIST,parent_organization,University laboratory
+KAIST Computational Media Lab,"Korea Advanced Institute of Science and Technology (KAIST)",KAIST,parent_organization,University laboratory
+KAIST Graduate School of Medical Science and Engineering,"Korea Advanced Institute of Science and Technology (KAIST)",KAIST,parent_organization,University graduate school
+"Smart and Mobile Systems Lab, KAIST","Korea Advanced Institute of Science and Technology (KAIST)",KAIST,parent_organization,University laboratory
+"Young Laboratory of Quantitative and Computational Biology, KAIST","Korea Advanced Institute of Science and Technology (KAIST)",KAIST,parent_organization,University laboratory
+Visual Intelligence Lab @ HKUST,Hong Kong University of Science and Technology (HKUST),HKUST,parent_organization,University laboratory
+UNIST Discrete Math,Ulsan National Institute of Science and Technology (UNIST),UNIST,parent_organization,University research group
+Astana Bilim Innovation Lyceum,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
+Astana BILIM-INNOVATION lyceum,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus capitalization variant
+Pavlodar Bilim Innovation Lyceum,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
+Turkistan Bilim-Innovation Lyceum,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Campus label
+BILIM-INNOVATION International Social Foundation,Bilim-Innovation Lyceums (BIL),BIL,parent_organization,Network foundation label
+National School of Physics & Math (РФМШ),Republican Physics and Mathematics School (RFMS),RFMS,multilingual_name,Cyrillic acronym variant
+Казахский национальный педагогический университет имени Абая,Abai Kazakh National Pedagogical University,Abai Kazakh National Pedagogical University,multilingual_name,Russian university name
+Linkoping University,Linköping University,Linköping University,diacritic_variant,ASCII spelling
+Barcelona Graduate School of Economics,Barcelona School of Economics (BSE),Barcelona School of Economics,former_name,University adopted the Barcelona School of Economics brand in 2021
+Jacobs University Bremen,Constructor University,Constructor University,former_name,University adopted the Constructor University name in 2022
+MBZUAI (Mohamed bin Zayed University of Artificial Intelligence),Mohamed bin Zayed University of Artificial Intelligence (MBZUAI),MBZUAI,name_order,Acronym-first source label
+Atyrau Oil&Gas Institute,Utebayev Atyrau Oil and Gas University,Atyrau Oil and Gas University,former_name,Former institute name for the current university

@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 try:
@@ -15,7 +15,9 @@ try:
     from scripts.destination_reviews import load_destination_reviews
     from scripts.organization_names import (
         canonicalize_organization,
+        display_organization,
         load_organization_aliases,
+        organization_audit_key,
     )
     from scripts.organization_sectors import (
         load_organization_sectors,
@@ -25,7 +27,12 @@ except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path
     from build_exa_review_queue import canonical_url
     from build_location_evidence import COUNTRY_NAMES
     from destination_reviews import load_destination_reviews
-    from organization_names import canonicalize_organization, load_organization_aliases
+    from organization_names import (
+        canonicalize_organization,
+        display_organization,
+        load_organization_aliases,
+        organization_audit_key,
+    )
     from organization_sectors import load_organization_sectors, organization_metadata
 
 
@@ -447,6 +454,63 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         load_organization_aliases()
     except ValueError as error:
         errors.append(f"organization alias registry is invalid: {error}")
+    organization_values = {
+        row.get("organization", "").strip()
+        for row in affiliations + researched
+        if row.get("organization", "").strip()
+    }
+    organizations_by_audit_key: dict[str, set[str]] = defaultdict(set)
+    organizations_by_display: dict[str, set[str]] = defaultdict(set)
+    for organization in organization_values:
+        canonical = canonicalize_organization(organization)
+        audit_key = organization_audit_key(canonical)
+        if audit_key:
+            organizations_by_audit_key[audit_key].add(canonical)
+        organizations_by_display[display_organization(canonical).casefold()].add(
+            canonical
+        )
+    duplicate_organization_clusters = sorted(
+        tuple(sorted(values))
+        for values in organizations_by_audit_key.values()
+        if len(values) > 1
+    )
+    if duplicate_organization_clusters:
+        errors.append(
+            "canonical organization names retain low-risk duplicate variants: "
+            + "; ".join(
+                " / ".join(sorted(values))
+                for values in duplicate_organization_clusters[:8]
+            )
+        )
+    display_collisions = sorted(
+        tuple(sorted(values))
+        for values in organizations_by_display.values()
+        if len(values) > 1
+    )
+    if display_collisions:
+        errors.append(
+            "canonical organizations have colliding display names: "
+            + "; ".join(
+                " / ".join(sorted(values)) for values in display_collisions[:8]
+            )
+        )
+    alias_chains = sorted(
+        {
+            (
+                row.get("canonical_name", ""),
+                canonicalize_organization(row.get("canonical_name", "")),
+            )
+            for row in organization_aliases
+            if row.get("canonical_name", "")
+            and canonicalize_organization(row.get("canonical_name", ""))
+            != row.get("canonical_name", "")
+        }
+    )
+    if alias_chains:
+        errors.append(
+            "organization alias registry contains canonical-name chains: "
+            + "; ".join(f"{source} -> {target}" for source, target in alias_chains[:8])
+        )
     if len(audit_organization_aliases) != len(organization_aliases):
         errors.append("audit organization aliases do not match the source registry")
     source_alias_rows = {

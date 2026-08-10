@@ -894,5 +894,13 @@
     "evidence_url": "https://linkedin.com/in/bychkovvv",
     "reason": "Immigration-foundation adviser profile contains no Kazakhstan physics olympiad or Micron computer-vision bridge and conflicts with the selected profile",
     "review_evidence_url": "https://linkedin.com/in/vladimir-bychkov-98954252"
+  },
+  {
+    "person_id": "kaz-8d648f29d1e0",
+    "person_name": "Yuriy Ten",
+    "source_id": "src-eadfdd27fb55",
+    "evidence_url": "https://www.linkedin.com/in/yuriy-ten-169535355",
+    "reason": "Iowa State attendance from 2018 through 2022 conflicts with the alumnus competing as a school student at IMO in both 2020 and 2022; this exact-name profile is a namesake",
+    "review_evidence_url": "https://www.imo-official.org/results/individual/country/KAZ/"
   }
 ]

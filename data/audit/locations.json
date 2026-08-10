@@ -14,6 +14,20 @@
     "review_reason": "Country is derived from the location attached to the accepted current role."
   },
   {
+    "location_id": "loc-2d329469035eff97",
+    "evidence_id": "ev-cdf12c72d90162b4",
+    "source_id": "src-df89d5c6c05c",
+    "person_id": "kaz-00a1687b2b23",
+    "name": "Abylay Kabdulkhadyr",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/abylay-kabdulkhadyr-2b527a331",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted self-authored LinkedIn profile exposes Astana Kazakhstan as Abylay Kabdulkhadyr's location."
+  },
+  {
     "location_id": "loc-22b33e45cc49ffc5",
     "evidence_id": "ev-f3d18a1ac218dad6",
     "source_id": "src-41ec886f7a55",
@@ -124,6 +138,34 @@
     "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location."
+  },
+  {
+    "location_id": "loc-e0915d5a404de116",
+    "evidence_id": "ev-da813c9cf83d1746",
+    "source_id": "src-e7316931e3dc",
+    "person_id": "kaz-a93521357d27",
+    "name": "Adilzhan Moldagul",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Ulsan, South Korea",
+    "evidence_url": "https://www.linkedin.com/company/gettoijso",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "Outcome country follows the reviewed GETTOIJSO post's current UNIST affiliation."
+  },
+  {
+    "location_id": "loc-1f84e49de87b59dc",
+    "evidence_id": "ev-2c173ae3c403b5e6",
+    "source_id": "src-2dc274f62231",
+    "person_id": "kaz-d36d7bbcbacc",
+    "name": "Aibek A. Mukhamediyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/aibek-mukhamediyev-a20b3420",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted rare-name public profile exposes Kazakhstan as Aibek Mukhamediyev's location."
   },
   {
     "location_id": "loc-9ecf07255b8b42bf",
@@ -1064,6 +1106,20 @@
     "review_reason": "Country code is exposed in the accepted public profile location."
   },
   {
+    "location_id": "loc-c2ae28162579b3b1",
+    "evidence_id": "ev-cd4a5000bc6cd2e0",
+    "source_id": "src-de42580da731",
+    "person_id": "kaz-e592924f7a04",
+    "name": "Bakdaulet Seisenkul",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "College Station, Texas, United States",
+    "evidence_url": "https://linkedin.com/in/bakdaulet-seisenkul-8ab00b230",
+    "evidence_kind": "manual_public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted exact-name public profile exposes College Station Texas as Bakdaulet Seisenkul's location and the current Texas A&M lab roster corroborates it."
+  },
+  {
     "location_id": "loc-3f96ac7e6881742d",
     "evidence_id": "ev-845863462f492065",
     "source_id": "src-418653a6a3a5",
@@ -1134,6 +1190,34 @@
     "review_reason": "Country code is exposed in the accepted public profile location."
   },
   {
+    "location_id": "loc-55dcf2572613291a",
+    "evidence_id": "ev-8f99f4cc44ede35a",
+    "source_id": "src-a6fef248db48",
+    "person_id": "kaz-b82a97fb3f53",
+    "name": "Bauyrzhan Sainov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Atyrau, Kazakhstan",
+    "evidence_url": "https://www.signalhire.com/profiles/bauyrzhan-sainov/240078956",
+    "evidence_kind": "public_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed current employment profile places Bauyrzhan Sainov's Tengizchevroil role in Atyrau Kazakhstan and his LinkedIn header confirms Kazakhstan."
+  },
+  {
+    "location_id": "loc-0590add6c243b472",
+    "evidence_id": "ev-0d8f63c6b57b820d",
+    "source_id": "src-f061b2cf1e61",
+    "person_id": "kaz-861bd0bfc9f2",
+    "name": "Bekbolat Mamyrbekov",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Ulsan, South Korea",
+    "evidence_url": "https://cmcm.ibs.re.kr/cmcm/?MM=02&SM=01",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "Outcome country follows the accepted current undergraduate affiliation at the Institute for Basic Science center hosted at UNIST in Ulsan."
+  },
+  {
     "location_id": "loc-8b872202fb5ecdb1",
     "evidence_id": "ev-dd855336c392cced",
     "source_id": "src-1b0451c4878f",
@@ -1146,6 +1230,20 @@
     "evidence_kind": "public_profile_location",
     "confidence": "confirmed",
     "review_reason": "Country code is exposed in the accepted public profile location."
+  },
+  {
+    "location_id": "loc-f685c4e4a872b2e5",
+    "evidence_id": "ev-ed1195b7e94c24c0",
+    "source_id": "src-3a4a8a4b5e8b",
+    "person_id": "kaz-ef33110ee8b0",
+    "name": "Binazar Zhassulan",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://galaxy.edu.kz/en/staff/163",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Galaxy International School's current staff page places Binazar Zhassulan's Academic Principal role at its Almaty campus."
   },
   {
     "location_id": "loc-4e9cf4745ec392ed",
@@ -1426,6 +1524,20 @@
     "evidence_kind": "manual_public_profile_location",
     "confidence": "confirmed",
     "review_reason": "The accepted LinkedIn profile exposes Cambridge England as Dinmukhamed Rakhimzhanov's location."
+  },
+  {
+    "location_id": "loc-eef174d160601d94",
+    "evidence_id": "ev-eb3cfb2e3d6f38b5",
+    "source_id": "src-93516df76c1c",
+    "person_id": "kaz-8263929a366c",
+    "name": "Dinmukhamed Yegeubayev",
+    "country_code": "AT",
+    "country_name": "Austria",
+    "location_label": "St. Gilgen, Salzburg, Austria",
+    "evidence_url": "https://www.math.aau.at/OeMO/Ergebnisse/GWF/west/2026",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "Austria's official 2026 Mathematics Olympiad results place Dinmukhamed Yegeubayev at St. Gilgen International School."
   },
   {
     "location_id": "loc-c1262110063b0b6b",
@@ -2114,6 +2226,20 @@
     "review_reason": "Country code is exposed in the accepted public profile location."
   },
   {
+    "location_id": "loc-d1e0686a37eef737",
+    "evidence_id": "ev-bb85fda2cd59f358",
+    "source_id": "src-ed9325aa6a0a",
+    "person_id": "kaz-69bda00903cf",
+    "name": "Miron Yurkevich",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "Cambridge, England, United Kingdom",
+    "evidence_url": "https://www.globtalent.org/gtf-big-talent-scholars-bios/miron-yurkevich",
+    "evidence_kind": "affiliation_country",
+    "confidence": "confirmed",
+    "review_reason": "The Global Talent Fund biography places Miron Yurkevich's current mathematics education at Trinity College at the University of Cambridge."
+  },
+  {
     "location_id": "loc-a06fad1db8b7bde1",
     "evidence_id": "ev-2afe48367ac76da2",
     "source_id": "src-e64e95dda380",
@@ -2756,6 +2882,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "Country is derived from the location attached to the accepted current role."
+  },
+  {
+    "location_id": "loc-59c24fe0fa157057",
+    "evidence_id": "ev-053f9729455c8ded",
+    "source_id": "src-fcfca15a4ba9",
+    "person_id": "kaz-08fb4ba7d2f0",
+    "name": "Serikzhan Yermekov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://events.crugroup.com/middleeastsulphur/speakers-2022",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "Country follows the reviewed current Process Engineer role at Kazakhstan-based Tengizchevroil; the source does not publish a more precise residence."
   },
   {
     "location_id": "loc-e41f21001ef99438",
