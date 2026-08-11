@@ -446,7 +446,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         expected_alma_maters = {
             "kaz-618279226751": "Republican Physics and Mathematics School (RFMS)",
             "kaz-822bb4ee42e0": "Nazarbayev Intellectual Schools (NIS)",
-            "kaz-6d8ff9e71d31": "Suleyman Demirel University (SDU)",
+            "kaz-6d8ff9e71d31": "Suleyman Demirel University (Turkey)",
         }
 
         for person_id, alma_mater in expected_alma_maters.items():
@@ -699,7 +699,6 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         aslan = self.people["kaz-c056b8e8822d"]
         aigerim = self.people["kaz-4cad451e9620"]
         olzhas = self.people["kaz-208576016cfd"]
-        islam = self.people["kaz-be04ddfb5a42"]
 
         self.assertEqual(aslan["destination_status"], "none")
         self.assertIn(
@@ -724,11 +723,30 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                 for row in self.affiliations_for(olzhas["person_id"])
             )
         )
-        self.assertEqual(islam["destination_status"], "none")
-        self.assertIn(
-            "Galaxy International School Almaty",
-            self.alma_maters(islam["person_id"]),
+
+    def test_islam_amangeldi_probable_turan_student_outcome(self):
+        person = self.people["kaz-be04ddfb5a42"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Turan University")
+        self.assertEqual(person["role"], "University Student")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://kz.linkedin.com/in/islam-amangeldi-10932336b",
         )
+        self.assertIn("Turan University", self.alma_maters(person["person_id"]))
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+
+    def test_nurislam_yeshenkulov_turkish_medical_schools_are_distinct(self):
+        person = self.people["kaz-6d8ff9e71d31"]
+        alma_maters = self.alma_maters(person["person_id"])
+
+        self.assertEqual(person["destination_status"], "none")
+        self.assertIn("Sifa University", alma_maters)
+        self.assertIn("Suleyman Demirel University (Turkey)", alma_maters)
+        self.assertNotIn("Suleyman Demirel University (SDU)", alma_maters)
 
 
 if __name__ == "__main__":

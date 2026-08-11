@@ -6795,6 +6795,21 @@
     "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual"
   },
   {
+    "source_id": "src-ae22b0d0ff06",
+    "source_url": "https://kz.linkedin.com/in/islam-amangeldi-10932336b",
+    "source_host": "kz.linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 4,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 3,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "accepted_linkedin_profile;linkedin;manual;manual_review"
+  },
+  {
     "source_id": "src-a5f14f146816",
     "source_url": "https://kz.linkedin.com/in/kairatakhmetov",
     "source_host": "kz.linkedin.com",
@@ -10783,6 +10798,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history",
     "source_adapters": "journal_affiliation"
+  },
+  {
+    "source_id": "src-568c323e7467",
+    "source_url": "https://oidb.isparta.edu.tr/assets/uploads/sites/73/files/2016-guz-kurumlar-arasi-yatay-gecis.pdf",
+    "source_host": "oidb.isparta.edu.tr",
+    "source_kind": "pdf",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_transfer_record"
   },
   {
     "source_id": "src-519b60a11ad7",
@@ -17715,6 +17745,21 @@
     "source_adapters": "official_school_profile"
   },
   {
+    "source_id": "src-29c1a7d75da0",
+    "source_url": "https://turan.edu.kz/en/contacts",
+    "source_host": "turan.edu.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_location_evidence",
+    "source_adapters": "current_education_location"
+  },
+  {
     "source_id": "src-67eabe03783f",
     "source_url": "https://uk.linkedin.com/in/adilzhanismailov",
     "source_host": "uk.linkedin.com",
@@ -18949,9 +18994,9 @@
     "source_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2023.pdf",
     "source_host": "ibo-info.org",
     "source_kind": "pdf",
-    "evidence_rows": 1,
-    "people_count": 1,
-    "accepted_rows": 1,
+    "evidence_rows": 2,
+    "people_count": 2,
+    "accepted_rows": 2,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,

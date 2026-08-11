@@ -3708,6 +3708,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-7d50880e7b6c3a6c",
+    "alias": "Süleyman Demirel University",
+    "canonical_name": "Suleyman Demirel University (Turkey)",
+    "display_name": "Suleyman Demirel University (Turkey)",
+    "merge_type": "multilingual_name",
+    "rationale": "The accented official name denotes the public university in Isparta, Turkey, and must not be merged with SDU University in Kaskelen, Kazakhstan.",
+    "evidence_url": "https://yos.sdu.edu.tr/en/about-us/sdu-at-a-glance-8694s.html"
+  },
+  {
     "organization_alias_id": "org-3da6de126f6ec3cf",
     "alias": "Summer STEM Institute (SSI)",
     "canonical_name": "Summer STEM Institute",
@@ -3895,6 +3904,33 @@
     "merge_type": "parent_organization",
     "rationale": "University school",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-b0478ed74116a6b2",
+    "alias": "Тұран университеті",
+    "canonical_name": "Turan University",
+    "display_name": "Turan University",
+    "merge_type": "multilingual_name",
+    "rationale": "Kazakh official name normalized to the university's official English name.",
+    "evidence_url": "https://turan.edu.kz/en/contacts"
+  },
+  {
+    "organization_alias_id": "org-9f76a14ef1565420",
+    "alias": "Университет «Туран»",
+    "canonical_name": "Turan University",
+    "display_name": "Turan University",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian official name normalized to the university's official English name.",
+    "evidence_url": "https://turan.edu.kz/en/contacts"
+  },
+  {
+    "organization_alias_id": "org-a87f95c011d92905",
+    "alias": "Университет Туран",
+    "canonical_name": "Turan University",
+    "display_name": "Turan University",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian profile label normalized to the university's official English name.",
+    "evidence_url": "https://turan.edu.kz/en/contacts"
   },
   {
     "organization_alias_id": "org-68290a793776a65b",

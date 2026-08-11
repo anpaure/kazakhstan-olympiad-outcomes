@@ -31,6 +31,14 @@ class OrganizationNormalizationTest(unittest.TestCase):
 
     def test_distinct_similar_universities_do_not_merge(self):
         self.assertEqual(
+            canonicalize_organization("Süleyman Demirel University"),
+            "Suleyman Demirel University (Turkey)",
+        )
+        self.assertEqual(
+            canonicalize_organization("Suleyman Demirel University"),
+            "Suleyman Demirel University (SDU)",
+        )
+        self.assertEqual(
             canonicalize_organization("Korea Institute of Science and Technology"),
             "Korea Institute of Science and Technology",
         )
@@ -113,6 +121,8 @@ class OrganizationNormalizationTest(unittest.TestCase):
             "Thompson Lab": "Princeton University",
             "Kazakh-Turkish High-School": "Kazakh-Turkish High School",
             "NURORDA High School": "Nurorda School-Lyceum",
+            "Университет Туран": "Turan University",
+            "Тұран университеті": "Turan University",
         }
         for value, canonical in expected.items():
             with self.subTest(value=value):

@@ -1331,6 +1331,17 @@
     "evidence_url": "https://www.linkedin.com/in/ilya-vilkoviskiy"
   },
   {
+    "person_id": "kaz-be04ddfb5a42",
+    "name": "Islam Amangeldi",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://turan.edu.kz/en/contacts",
+    "evidence_kind": "current_education_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the accepted active student affiliation at Turan University; the linked official institution source establishes the campus location. Turan University's official contact page identifies its main campus in Almaty Kazakhstan."
+  },
+  {
     "person_id": "kaz-4e81a93b6baa",
     "name": "Ivan Senyushkin",
     "country_code": "KZ",

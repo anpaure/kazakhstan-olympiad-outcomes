@@ -1694,6 +1694,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Princeton University. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-89e8f6346679c8d7",
+    "evidence_id": "ev-3af1f5127213509e",
+    "source_id": "src-29c1a7d75da0",
+    "person_id": "kaz-be04ddfb5a42",
+    "name": "Islam Amangeldi",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://turan.edu.kz/en/contacts",
+    "evidence_kind": "current_education_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the accepted active student affiliation at Turan University; the linked official institution source establishes the campus location. Turan University's official contact page identifies its main campus in Almaty Kazakhstan."
+  },
+  {
     "location_id": "loc-bc948f1a10f177b7",
     "evidence_id": "ev-97f3cdb81ad2205d",
     "source_id": "src-5062d4aa1b63",

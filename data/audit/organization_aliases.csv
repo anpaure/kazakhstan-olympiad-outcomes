@@ -411,6 +411,7 @@ org-3735c9c6471606f2,SDU University,Suleyman Demirel University (SDU),SDU,same_e
 org-9f1b5a8821d486ca,Suleyman Demiral University,Suleyman Demirel University (SDU),SDU,same_entity,Typo variant,
 org-9595ff2914bacbb3,Suleyman Demirel University,Suleyman Demirel University (SDU),SDU,same_entity,Official name without acronym,
 org-c39fd9226404a9f9,"Suleyman Demirel University, Kazakhstan",Suleyman Demirel University (SDU),SDU,same_entity,Location suffix,
+org-7d50880e7b6c3a6c,Süleyman Demirel University,Suleyman Demirel University (Turkey),Suleyman Demirel University (Turkey),multilingual_name,"The accented official name denotes the public university in Isparta, Turkey, and must not be merged with SDU University in Kaskelen, Kazakhstan.",https://yos.sdu.edu.tr/en/about-us/sdu-at-a-glance-8694s.html
 org-3da6de126f6ec3cf,Summer STEM Institute (SSI),Summer STEM Institute,Summer STEM Institute,same_entity,Acronym suffix,
 org-212094f0683163fa,Synapse.kz,synapse.kz,synapse.kz,capitalization_variant,Capitalization variant of the education community's public domain name,https://synapse.kz/
 org-53e45136cf793e94,JSC «Tau-Кen Samruk» National Mining Company,Tau-Ken Samruk,Tau-Ken Samruk,legal_form_variant,Legal-form and descriptor cleanup,
@@ -432,6 +433,9 @@ org-8c2c9db558095385,T&T Security,tLab Technologies,tLab Technologies,former_nam
 org-3311399e6d3d8bcc,T&T Security LLP,tLab Technologies,tLab Technologies,legal_form_variant,Legal-form variant of the company's former T&T Security name.,https://tntsecure.kz/en/about.html
 org-ec22422abb262770,tLabTechnologies,tLab Technologies,tLab Technologies,spacing_variant,Compact spelling used in the Kazakhstan IT association's company listing.,https://www.itk.kz/ru/117
 org-e1bee67ecf214e73,Tulane University School of Public Health and Tropical Medicine,Tulane University,Tulane University,parent_organization,University school,
+org-b0478ed74116a6b2,Тұран университеті,Turan University,Turan University,multilingual_name,Kazakh official name normalized to the university's official English name.,https://turan.edu.kz/en/contacts
+org-9f76a14ef1565420,Университет «Туран»,Turan University,Turan University,multilingual_name,Russian official name normalized to the university's official English name.,https://turan.edu.kz/en/contacts
+org-a87f95c011d92905,Университет Туран,Turan University,Turan University,multilingual_name,Russian profile label normalized to the university's official English name.,https://turan.edu.kz/en/contacts
 org-68290a793776a65b,Typeser Inc,Typeser,Typeser,legal_form_variant,Legal-form cleanup,
 org-b3279d64f8603598,Statistical AI Lab,Ulsan National Institute of Science and Technology (UNIST),UNIST,parent_organization,Short name of the UNIST Statistical Artificial Intelligence Lab,https://news.unist.ac.kr/unist-wins-first-place-in-digital-curling-tournament/
 org-c796b5a677291eec,Statistical Artificial Intelligence Laboratory (SAIL),Ulsan National Institute of Science and Technology (UNIST),UNIST,parent_organization,Research laboratory at UNIST,https://news.unist.ac.kr/unist-wins-first-place-in-digital-curling-tournament/
