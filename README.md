@@ -12,17 +12,17 @@ The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
 - 456 canonical people with 46 reviewed alias pairs
-- 429 researched people, all classified as probable or confirmed
-- 310 confirmed and 119 probable identity, education, or career outcomes
-- 413 manually reviewed outcomes backed by public evidence
-- 399 researched people with one resolved destination and 293 with a public LinkedIn URL
-- 2,720 sourced employment/education history rows, including 556 selected alma-mater records across 369 people
+- 434 researched people, all classified as probable or confirmed
+- 311 confirmed and 123 probable identity, education, or career outcomes
+- 418 manually reviewed outcomes backed by public evidence
+- 400 researched people with one resolved destination and 294 with a public LinkedIn URL
+- 2,725 sourced employment/education history rows, including 557 selected alma-mater records across 370 people
 - 65 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
-- 512 reviewed organization aliases collapsed into canonical employers and universities
-- 203 reviewed sector classifications covering every displayed non-educational destination
+- 514 reviewed organization aliases collapsed into canonical employers and universities
+- 204 reviewed sector classifications covering every displayed non-educational destination
 - 456 sourced country records across 36 countries; 36 rows are visibly labeled as historical latest-known locations
 - 1 additional person with candidate-only evidence retained for audit but no accepted outcome
-- 154 rejected identity sources retained with review reasons and supporting links
+- 155 rejected identity sources retained with review reasons and supporting links
 
 The current first step is implemented in `scripts/collect_kazakhstan_participants.py`. It collects Kazakhstan competitors from:
 
@@ -196,9 +196,9 @@ failed counts, and coverage percentage.
 
 Current Exa search coverage: 456 of 456 canonical people, 456 successful searches,
 zero errors, and 2,445 ranked result rows. Total recorded search cost is $3.232.
-The profile audit covers all 293 accepted LinkedIn profiles: 272 full-content
+The profile audit covers all 294 accepted LinkedIn profiles: 273 full-content
 retrievals succeeded, 11 are reviewed manual public-profile transcriptions, and
-10 retrieval errors remain logged, at $0.273 recorded hydration cost.
+10 retrieval errors remain logged, at $0.274 recorded hydration cost.
 
 Outputs:
 

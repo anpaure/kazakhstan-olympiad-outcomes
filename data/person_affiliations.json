@@ -27055,9 +27055,9 @@
     "is_current": true,
     "selected_as_alma_mater": true,
     "evidence_url": "https://www.researchgate.net/profile/Olzhas-Kadyrakunov",
-    "evidence_kind": "public_research_profile",
+    "evidence_kind": "manual_review",
     "confidence": "probable",
-    "evidence_text": "The rare exact-name ResearchGate profile labels KTH Royal Institute of Technology as Olzhas Kadyrakunov's current institution and places him in the Department of Media Technology and Interaction Design in Stockholm. The page does not establish whether he is a student or staff member, so no destination role is inferred."
+    "evidence_text": "The official IMO record identifies Kazakhstan's rare exact-name 2015 silver medalist. The exact-name ResearchGate profile currently affiliates Olzhas Kadyrakunov with KTH's Department of Media Technology and Interaction Design in Stockholm, and an exact-name GitHub project from 2017 supports an age-compatible software trajectory. No source explicitly joins the research profile to the IMO or establishes whether he is a student or staff member, so the identity remains probable and KTH is retained"
   },
   {
     "person_id": "kaz-6b2d94581317",
@@ -29428,6 +29428,36 @@
     "evidence_kind": "manual_review",
     "confidence": "confirmed",
     "evidence_text": "Nazarbayev University's official faculty archive connects his undergraduate genetics thesis to a Dartmouth PhD and Dartmouth's alumni directory identifies him as a 2023 graduate and NCBI evolutionary-genomics postdoctoral fellow; his ORCID and NCBI publications preserve the same research identity"
+  },
+  {
+    "person_id": "kaz-78ad0418eb0b",
+    "name": "Roman Kriven",
+    "organization": "Toraighyrov University",
+    "role": "Applied Mathematics Student",
+    "affiliation_type": "education",
+    "start_year": "1993",
+    "end_year": "1998",
+    "is_current": false,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://linkedin.com/in/roman-kriven-33a97085",
+    "evidence_kind": "manual_review",
+    "confidence": "probable",
+    "evidence_text": "Pavlodar Lyceum No. 8 identifies Roman Kriven among its earliest mathematics Olympiad alumni. The rare exact-name profile is located in Kazakhstan and records applied mathematics at the local Pavlodar State University from 1993 through 1998, beginning in his IMO year; the university's official history confirms that Pavlodar State University is today's Toraighyrov University. No source explicitly names the IMO on the professional profile, so the completed education match remains probable and hist"
+  },
+  {
+    "person_id": "kaz-78ad0418eb0b",
+    "name": "Roman Kriven",
+    "organization": "Toraighyrov University",
+    "role": "Прикладная математика",
+    "affiliation_type": "education",
+    "start_year": "1993",
+    "end_year": "1998",
+    "is_current": false,
+    "evidence_text": "Прикладная математика at Павлодарский Государственный Университет 1993 - 1998 (5 years)",
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://linkedin.com/in/roman-kriven-33a97085",
+    "evidence_kind": "accepted_linkedin_profile",
+    "confidence": "probable"
   },
   {
     "person_id": "kaz-0cc4d473da7f",
@@ -37980,6 +38010,21 @@
     "confidence": "probable"
   },
   {
+    "person_id": "kaz-5af905ca2550",
+    "name": "Yerulan Sabyrgali",
+    "organization": "Heriot-Watt University",
+    "role": "Research Coauthor (affiliation relationship not stated)",
+    "affiliation_type": "education",
+    "start_year": "2015",
+    "end_year": "2015",
+    "is_current": false,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://www.searchanddiscovery.com/documents/2016/41779vasconez/ndx_vasconez.pdf",
+    "evidence_kind": "manual_review",
+    "confidence": "probable",
+    "evidence_text": "A reviewed Kazakhstan chemistry-Olympiad history table directly identifies Yerulan Sabyrgali as the 2004 IChO participant from Almaty School No. 162 and records a later university destination in Manchester, England, without naming the institution. A 2015 AAPG presentation then lists the same rare exact name with Heriot-Watt University in Edinburgh on ion-exchange modelling for low-salinity waterflooding. The direct Olympiad-to-UK education bridge, chemistry continuity, and chronology make the la"
+  },
+  {
     "person_id": "kaz-28588384ab57",
     "name": "Yerzhan Imanmalik",
     "organization": "Nazarbayev University",
@@ -39066,9 +39111,24 @@
     "role": "Undergraduate Chemistry Student",
     "affiliation_type": "education",
     "start_year": "2000",
-    "end_year": "",
+    "end_year": "2000",
     "is_current": false,
     "selected_as_alma_mater": true,
+    "evidence_url": "https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "A reviewed Kazakhstan chemistry-Olympiad history table directly identifies exact-name 2000 IChO participant Yuriy Kudryavtsev and records Moscow State University's Faculty of Chemistry as the university where he enrolled. The 2000 end bound is the latest documented year, not a claim that the degree ended that year; no current occupation was found."
+  },
+  {
+    "person_id": "kaz-197ec90e92c1",
+    "name": "Yuriy Kudryavtsev",
+    "organization": "Lomonosov Moscow State University (MSU)",
+    "role": "Undergraduate Chemistry Student",
+    "affiliation_type": "education",
+    "start_year": "2000",
+    "end_year": "",
+    "is_current": false,
+    "selected_as_alma_mater": false,
     "evidence_url": "https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf",
     "evidence_kind": "reviewed_olympiad_destination_table",
     "confidence": "confirmed",
@@ -40573,6 +40633,21 @@
     "evidence_url": "https://at.linkedin.com/in/zhanybek-alpichshev-41bb4b207",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-dc581aaabaee",
+    "name": "Zharas Bajdelʻdinov",
+    "organization": "Corvus Technologies",
+    "role": "Company Representative (title not stated)",
+    "affiliation_type": "employment",
+    "start_year": "2022",
+    "end_year": "2022",
+    "is_current": false,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://axoftglobal.com/reviews",
+    "evidence_kind": "manual_review",
+    "confidence": "probable",
+    "evidence_text": "RFMS identifies rare exact-name Zharas Baideldinov as its 1993 IMO bronze medalist. Kazakhstan's dissertation registry names Zharas Bakhytovich Baideldinov in securities-market research in 2002, consistent with contemporary records of the same full-name Central Securities Depository executive, and Axoft's dated 2022 testimonial identifies him with Corvus Technologies in Almaty. No reviewed source explicitly joins the company record to the IMO, so the identity remains probable; Company Representa"
   },
   {
     "person_id": "kaz-f67b534425a5",

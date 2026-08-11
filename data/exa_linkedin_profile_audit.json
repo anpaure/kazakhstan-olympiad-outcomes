@@ -2,16 +2,16 @@
   "provider": "Exa with reviewed public-profile supplements",
   "endpoint": "https://api.exa.ai/contents",
   "fallback_endpoint": "https://api.exa.ai/search",
-  "generated_at": "2026-08-11T17:57:38+00:00",
+  "generated_at": "2026-08-11T18:36:15+00:00",
   "input_path": "data/researched_people.csv",
   "input_people_count": 456,
-  "accepted_linkedin_count": 293,
-  "profile_count": 293,
-  "successful_profile_count": 272,
+  "accepted_linkedin_count": 294,
+  "profile_count": 294,
+  "successful_profile_count": 273,
   "cached_search_profile_count": 0,
   "manual_public_profile_count": 11,
   "error_profile_count": 10,
-  "total_cost_usd": 0.273,
+  "total_cost_usd": 0.274,
   "key_persisted": false,
   "requests": [
     {
@@ -157,6 +157,12 @@
       "retrieved_at": "2026-08-11T17:55:58+00:00",
       "requested_profile_count": 7,
       "cost_usd": 0.007
+    },
+    {
+      "request_id": "13de03bc8a18131c36d6fb5e70430f99",
+      "retrieved_at": "2026-08-11T18:36:15+00:00",
+      "requested_profile_count": 1,
+      "cost_usd": 0.001
     }
   ],
   "profiles": [
@@ -3155,6 +3161,20 @@
       "content_characters": 5464,
       "text": "# Roman Cheremnov\n\nStudent at Miras International School\n\nAlmaty, Kazakhstan (KZ)\n\n353 connections • 353 followers\n\n## About\n\nStudent at Miras International School\n\nTotal Experience: 2 years and 8 months\n\n## Experience\n\n### Head of Department - [Astana/Almaty Physics Battles Tournament](https://www.linkedin.com/company/astphb) (Current)\n\nFeb 2025 - Present (1 year and 5 months) in Almaty, Kazakhstan\n\nLead academic planning and organization for an international physics competition, including creating problems, developing solutions, and ensuring high academic standards.\n\nDepartment: General Management • Level: Head\n\nAstana/Almaty Physics Battles Tournament is a nonprofit organization. Almaty Physics Battles is a II tournament for physical battles in Central Asia. It combines a unique format of team competitions for students in solving Olympic Physics tasks. The tournament is organized exclusively for students and students, with a focus on solving challenging tasks. The tournament is the first tournament in Kazakhstan and Central Asia. Astana/Almaty Physics Battles Tournament has 1-10 employees (+20% YoY), founded in 2023. Headquartered in Almaty, Kazakhstan.\n\n### Physics Tutor - Kazakhstan IJSO Team\n\nJun 2024 - Aug 2025 (1 year and 2 months)\n\nPrepared and mentored the national team for the International Junior Science Olympiad through intensive 3-hour daily training sessions, enhancing problem-solving skills and competition readiness.\n\nDepartment: Education\n\n### Physics Tutor - Kyrgyzstan IJSO Team\n\nOct 2024 - Dec 2024 (2 months)\n\nDepartment: Education\n\n### Physics Tutor - [Olscience Circles](https://www.linkedin.com/company/olscience-circles)\n\nNov 2023 - Apr 2024 (5 months)\n\nDepartment: Education\n\nOlscience Circles is a nonprofit organization. Olscience Circles has 1-10 employees (+50% YoY), founded in 2023. Headquartered in Almaty, Almaty, Kazakhstan.\n\n### Problems Setter - Quadrat Olympiad\n\nJan 2024 - Jan 2024\n\n### Jury Member - [Astana/Almaty Physics Battles Tournament](https://www.linkedin.com/company/astphb)\n\nJun 2023 - Aug 2023 (2 months)\n\nDepartment: Other\n\n## Education\n\n### Miras International School\n\n2024 - 2026 (2 years)\n\n### Summer School at Quantum Computing\n\n2024 - 2024\n\nIntensive 6-week program led by Abay Zhakenov (PhD candidate, Rutgers University), including 4 hours of weekly lectures and a 20-hour mini-project in quantum computing.\n\n## Skills\n\nacademic planning • department lead • leadership • mentoring • organization • physics • physics tutor • planning • problem-solving • setter • training • tutor\n\n## Projects\n\n### Research Project on GRB Afterglow\n\nJul 2024 - Jul 2024\n\nConducted a research project on Gamma-Ray Burst (GRB) afterglows under the mentorship of Dr. Abdikamalov, using the Vegas Afterglow framework. Committed 4 hours weekly over 4 weeks to data analysis and model simulations.\n\n## Honors & Awards\n\n### Silver medal\n\nIssued by: International Scientific Physics Olympiad (ISPhO), (Khanty-Mansiysk, Russia)\n\nJul 2025\n\n### Silver medal\n\nIssued by: European Physics Olympiad (EuPhO), (Sofia, Bulgaria)\n\nJun 2025\n\n### Bronze medal\n\nIssued by: Asian Physics Olympiad (APhO), (Dhahran, Saudi Arabia)\n\nMay 2025\n\n### Gold Medal\n\nIssued by: National Olympiad in Physics (Astana, Kazakhstan)\n\nMar 2025\n\n### Gold Medal\n\nIssued by: International Zhautykov Olympiad (Astana, Kazakhstan)\n\nJan 2025\n\n### Full scholarship recipient covering 100% of tuition.\n\nIssued by: Miras International School\n\nAug 2024\n\n### Gold medal\n\nIssued by: National Olympiad in Physics (Astana, Kazakhstan)\n\nMar 2024\n\n### Silver medal\n\nIssued by: International Zhautykov Olympiad (Almaty, Kazakhstan)\n\nJan 2024\n\n## Social\n\n### Linkedin\n\n- [2026-01-13 · Roman Cheremnov liked this] [Things that helped me get accepted to NYUAD 🎓 • IELTS: 8.5 • SAT...](https://www.linkedin.com/posts/nadira-ryskulova-96978723b_things-that-helped-me-get-accepted-to-nyuad-activity-7416793989976068096-dZmW): Things that helped me get accepted to NYUAD 🎓 • IELTS: 8.5 • SAT: 1520 • GPA: I completed a dual diploma, so 5.0/5.0 and 93/100 What really strengthened my application was the unity and multifacete...\n\n- [2025-12-03 · Roman Cheremnov liked this] [Celebrating the Success of the National Science Battles 2025! 🚀 I'm...](https://www.linkedin.com/posts/arsen-anarbek_nationalsciencebattles-nsb2025-scienceolympiad-activity-7402024653575225346-gLB9): Celebrating the Success of the National Science Battles 2025! 🚀 I'm incredibly proud to share the remarkable success of the latest National Science Battles! This event marks a personal milestone fo...\n\n- [2025-12-02 · Roman Cheremnov liked this] [Is it… finally over? Starting from July 2025, me and 13 other...](https://www.linkedin.com/posts/ilshatrozy-akhmulayev-282953302_is-it-finally-over-starting-from-july-activity-7401582565369049090-20Na): Is it… finally over? Starting from July 2025, me and 13 other science enthusiasts started working on National Science Battles 2025; however, ironically enough, it grew into something more than “nat...\n\n- [2025-11-26 · Roman Cheremnov liked this] [Scheduling is one of those behind-the-scenes educator superpowers...](https://www.linkedin.com/posts/building-wings-co_education-specialeducation-literacy-activity-7399511447111675904-vi1J): Scheduling is one of those behind-the-scenes educator superpowers that doesn’t get enough credit. It looks simple on paper—blocks of time, neat rows, a tidy flow to the day—but anyone who’s built (...",
       "source_endpoint": "https://api.exa.ai/contents"
+    },
+    {
+      "person_id": "kaz-78ad0418eb0b",
+      "name": "Roman Kriven",
+      "linkedin_url": "https://linkedin.com/in/roman-kriven-33a97085",
+      "status": "success",
+      "error": "",
+      "request_id": "13de03bc8a18131c36d6fb5e70430f99",
+      "retrieved_at": "2026-08-11T18:36:15+00:00",
+      "title": "Roman Kriven",
+      "resolved_url": "https://linkedin.com/in/roman-kriven-33a97085",
+      "content_characters": 1580,
+      "source_endpoint": "https://api.exa.ai/contents",
+      "text": "# Roman Kriven\n\nKazakhstan (KZ)\n\n1 connections • 1 followers\n\n## Education\n\n### Прикладная математика at Павлодарский Государственный Университет\n\n1993 - 1998 (5 years)\n\n## Licenses & Certifications\n\n### Natural Language Processing by [Coursera](https://linkedin.com/company/coursera)\n\nIssued: May 2013\n\n[View Certificate](https://coursera.org/course/nlangp?trk=public_profile_certification-title)\n\n### Calculus: Single Variable by [Coursera](https://linkedin.com/company/coursera)\n\nIssued: Apr 2013\n\n[View Certificate](https://coursera.org/course/calcsing?trk=public_profile_certification-title)\n\n### Learn to Program: Crafting Quality Code by [Coursera](https://linkedin.com/company/coursera)\n\nIssued: Apr 2013\n\n[View Certificate](https://coursera.org/course/programming2?trk=public_profile_certification-title)\n\n### Cryptography I by [Coursera](https://linkedin.com/company/coursera)\n\nIssued: Feb 2013\n\n[View Certificate](https://coursera.org/course/crypto?trk=public_profile_certification-title)\n\n### Game Theory by [Coursera](https://linkedin.com/company/coursera)\n\nIssued: Feb 2013\n\n[View Certificate](https://coursera.org/course/gametheory?trk=public_profile_certification-title)\n\n### Algorithms: Design and Analysis, Part 2 by [Coursera](https://linkedin.com/company/coursera)\n\nIssued: Jan 2013\n\n[View Certificate](https://coursera.org/course/algo2?trk=public_profile_certification-title)\n\n### Machine Learning by [Coursera](https://linkedin.com/company/coursera)\n\nIssued: Jul 2012\n\n[View Certificate](https://coursera.org/course/ml?trk=public_profile_certification-title)"
     },
     {
       "person_id": "kaz-0cc4d473da7f",

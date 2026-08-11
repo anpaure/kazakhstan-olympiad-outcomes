@@ -23,7 +23,7 @@ src-4a0e630a2504,https://at.linkedin.com/in/assylbek-olzhabayev-b8b94a190,at.lin
 src-17be1eb03127,https://at.linkedin.com/in/zhanybek-alpichshev-41bb4b207,at.linkedin.com,linkedin,7,1,0,7,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;active_affiliation_profile_location;linkedin
 src-09c1108e1f7b,https://au.linkedin.com/in/angsar-manatuly-7409bb2b9,au.linkedin.com,linkedin,1,1,1,0,0,0,0,manual_review,manual
 src-84de7ee3d5ed,https://av.kaznu.kz/ru/25163,av.kaznu.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
-src-abcdc408092d,https://axoftglobal.com/reviews,axoftglobal.com,web_page,1,1,0,1,0,0,0,accepted_location_evidence,career_source_location
+src-abcdc408092d,https://axoftglobal.com/reviews,axoftglobal.com,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
 src-0f527014597e,https://ba.prg.kz/231010000-atyrau/071040017099-too-agp-kholding/,ba.prg.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_legal_entity_location;manual;manual_review
 src-0d673387bda4,https://ba.prg.kz/710000000-astana/221140001702-too-vacante/,ba.prg.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-e394293e818c,https://ba.prg.kz/750000000-almaty/200340023883-too-quantum-management-company/,ba.prg.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -496,6 +496,7 @@ src-d43f017d0c8c,https://kz.linkedin.com/in/temirlan-amangeldinov,kz.linkedin.co
 src-3b023f2fbef8,https://kz.linkedin.com/in/temirlan-ismagulov-766740206,kz.linkedin.com,linkedin,1,1,0,1,0,0,0,manual_review,linkedin
 src-2391528c5292,https://kz.linkedin.com/in/temirlan-izmailov-caia-cfa-485bab89,kz.linkedin.com,linkedin,11,1,1,10,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual
 src-7c7237d85884,https://kz.linkedin.com/in/timur-murat-2a1735333,kz.linkedin.com,linkedin,5,1,1,4,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;career_source_location;linkedin;manual;manual_review
+src-1aa81550359e,https://kz.linkedin.com/in/yerlan-zhumabayev-307a8161,kz.linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-49996a80de1e,https://kz.linkedin.com/in/yernaz-satybaldiyev,kz.linkedin.com,linkedin,10,1,1,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual
 src-329144bb0c6f,https://kz.linkedin.com/in/yernur-rysmagambetov,kz.linkedin.com,linkedin,16,1,0,16,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin
 src-6482cf58fb25,https://kz.linkedin.com/in/yerzhan-imanmalik,kz.linkedin.com,linkedin,18,1,1,17,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
@@ -672,7 +673,7 @@ src-8eb438fcd76e,https://linkedin.com/in/renatshaimardanov,linkedin.com,linkedin
 src-1b216dff1032,https://linkedin.com/in/rinat-ilyussizov-4b1b9b290,linkedin.com,linkedin,11,1,2,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual
 src-dacba67a5fa3,https://linkedin.com/in/roman-kogay-43566a204,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-b54ad0fdbee4,https://linkedin.com/in/roman-kogay-b981a913b,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
-src-d68ed6ab07b2,https://linkedin.com/in/roman-kriven-33a97085,linkedin.com,linkedin,1,1,0,1,0,0,0,accepted_location_evidence,historical_latest_known_location
+src-d68ed6ab07b2,https://linkedin.com/in/roman-kriven-33a97085,linkedin.com,linkedin,5,1,1,4,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;historical_latest_known_location;linkedin;manual;manual_review
 src-9dd4e99835a7,https://linkedin.com/in/roman-langolf,linkedin.com,linkedin,11,1,1,10,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual
 src-44d1551bbd41,https://linkedin.com/in/rustem-takhanov-7907149,linkedin.com,linkedin,10,1,1,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
 src-edb669ac7360,https://linkedin.com/in/saken-dushayev-30095b204,linkedin.com,linkedin,13,1,1,12,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual
@@ -1052,7 +1053,7 @@ src-0a9bf849aaef,https://research.nu.edu.kz/en/persons/kuanysh-yergaliyev,resear
 src-2d44d50b614b,https://research.nu.edu.kz/en/persons/meiram-murzabulatov/,research.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-f33bb7a68ec2,https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/,research.nu.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-c4f8fcc141d4,https://research.utwente.nl/en/publications/nondeterminism-in-stochastic-modeling/,research.utwente.nl,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_research_record
-src-37ad3b1b2b31,https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf,rmebrk.kz,pdf,5,4,1,4,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,historical_latest_known_location;manual;reviewed_olympiad_destination_table
+src-37ad3b1b2b31,https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf,rmebrk.kz,pdf,7,5,3,4,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,historical_latest_known_location;manual;manual_review;reviewed_olympiad_destination_table
 src-793801568f9d,https://rs.linkedin.com/in/temirlan-rakhimov,rs.linkedin.com,linkedin,9,1,2,7,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual
 src-86b5f0ac633c,https://rsp.gov.kz/kz/rsp?page=57304,rsp.gov.kz,web_page,4,1,2,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,current_role_location;destination_review;destination_source_review;manual
 src-d8b3f3b80991,https://ru.linkedin.com/in/david-li-ab07b332b,ru.linkedin.com,linkedin,9,1,1,8,0,0,0,accepted_affiliation_history;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;destination_review;destination_source_review;linkedin
@@ -1331,7 +1332,7 @@ src-09b854f13b30,https://www.ibo-info.org/files/downloads/results-reports/result
 src-0373f20f8689,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2023.pdf,ibo-info.org,pdf,2,2,2,0,0,0,0,manual_review,manual
 src-de6837f0122e,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2025%20Ranking.pdf,ibo-info.org,pdf,4,4,4,0,0,0,0,participant_registry,IBO
 src-7ab5eaf6b98a,https://www.ibo-info.org/files/downloads/results-reports/results/IBO_2026_Individual_Results_Final.pdf,ibo-info.org,pdf,8,4,8,0,0,0,0,manual_review;participant_registry,IBO;manual
-src-a99f07f5f774,https://www.icho-official.org/results/country_info.php?country=Kazakhstan,icho-official.org,html,75,46,69,2,0,4,0,accepted_location_evidence;manual_review;participant_registry,IChO;historical_latest_known_location;manual
+src-a99f07f5f774,https://www.icho-official.org/results/country_info.php?country=Kazakhstan,icho-official.org,html,75,46,70,1,0,4,0,accepted_location_evidence;manual_review;participant_registry,IChO;historical_latest_known_location;manual
 src-9c080dac45dd,https://www.icho-official.org/results/results.php?id=38&year=2006,icho-official.org,web_page,2,2,2,0,0,0,0,manual_review,manual
 src-530412d8f9ea,https://www.icho-official.org/results/results.php?id=39&year=2007,icho-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-76b64419479c,https://www.igps.uni-hannover.de/en/research/main-research-areas/phytomedicine/publications,igps.uni-hannover.de,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -1339,8 +1340,11 @@ src-07dcec04ee8a,https://www.imo-official.org/country_individual_r.aspx?code=KAZ
 src-66ed7c0a4f6a,https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=name&order=desc,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-7a626f46f1c7,https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=year&order=desc&gender=hide&nameform=western,imo-official.org,web_page,3,3,1,0,0,2,0,manual_review,manual
 src-5a2f1d310aa1,https://www.imo-official.org/participant_r.aspx?id=25096,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-05cf1d39c4bf,https://www.imo-official.org/participant_r.aspx?id=26021,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-c18a37300e4d,https://www.imo-official.org/participant_r.aspx?id=33252,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-f57474aeeafb,https://www.imo-official.org/participant_r.aspx?id=3471,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-861452275fe6,https://www.imo-official.org/participant_r.aspx?id=35504,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-d67719cc659a,https://www.imo-official.org/participant_r.aspx?id=3658,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-0d210887a2ad,https://www.imo-official.org/participant_r.aspx?id=4924,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-4f477cae61e4,https://www.imo-official.org/participant_r.aspx?id=6950,imo-official.org,web_page,1,1,0,0,0,1,0,manual_review,manual
 src-ab2ebda9f22b,https://www.imo-official.org/results/contestant/15614/,imo-official.org,html,2,1,2,0,0,0,0,participant_registry,IMO
@@ -1612,10 +1616,11 @@ src-dc0caf92b5b2,https://www.registrar.iastate.edu/media/932/file/Spring%202025%
 src-b6b1a128ae8e,https://www.researchgate.net/institution/Nazarbayev-University/members/77,researchgate.net,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-c8690e05abcb,https://www.researchgate.net/institution/Ulsan_National_Institute_of_Science_and_Technology/members/28,researchgate.net,web_page,1,1,0,1,0,0,0,accepted_location_evidence,career_source_location
 src-a8fb0713dfd0,https://www.researchgate.net/profile/Nessipbek-Mynbayev,researchgate.net,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_research_affiliation_location;manual;manual_review
-src-0bb3a211c6bf,https://www.researchgate.net/profile/Olzhas-Kadyrakunov,researchgate.net,web_page,2,1,0,2,0,0,0,accepted_affiliation_history;accepted_location_evidence,current_research_affiliation_location;public_research_profile
+src-0bb3a211c6bf,https://www.researchgate.net/profile/Olzhas-Kadyrakunov,researchgate.net,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_research_affiliation_location;manual;manual_review
 src-cc316f38444f,https://www.researchgate.net/profile/Zhanat-Koshenov,researchgate.net,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-f9252d900f96,https://www.rns-pdf.londonstockexchange.com/rns/5004Y_-2010-12-23.pdf,rns-pdf.londonstockexchange.com,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-ce359d95bf1c,https://www.rominserv.com/en/who-we-are,rominserv.com,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
+src-8658e35ea994,https://www.searchanddiscovery.com/documents/2016/41779vasconez/ndx_vasconez.pdf,searchanddiscovery.com,pdf,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,historical_latest_known_location;manual;manual_review
 src-38c3d0317fb4,https://www.shbfinance.com.vn/about-us/board-of-management,shbfinance.com.vn,web_page,4,1,1,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review;official_employer_biography
 src-b20cca6dc90c,https://www.signalhire.com/companies/spark-yc-w24/employees,signalhire.com,web_page,1,1,0,1,0,0,0,accepted_location_evidence,active_affiliation_profile_location
 src-8db940a3516d,https://www.signalhire.com/profiles/adil-zhugralin%27s-email/151672289,signalhire.com,web_page,2,1,0,2,0,0,0,accepted_affiliation_history,public_profile_education

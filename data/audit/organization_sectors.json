@@ -287,6 +287,13 @@
     "rationale": "Reviewed core activity is AI sales and lead-management software."
   },
   {
+    "organization_sector_id": "sector-c4b673bd24c4fa8d",
+    "canonical_name": "Corvus Technologies",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is information technology and cybersecurity services."
+  },
+  {
     "organization_sector_id": "sector-ae13386bb0a31683",
     "canonical_name": "Dalip.kz",
     "organization_type": "independent",

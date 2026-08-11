@@ -364,15 +364,15 @@
     "source_url": "https://axoftglobal.com/reviews",
     "source_host": "axoftglobal.com",
     "source_kind": "web_page",
-    "evidence_rows": 1,
+    "evidence_rows": 3,
     "people_count": 1,
-    "accepted_rows": 0,
-    "supporting_rows": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence",
-    "source_adapters": "career_source_location"
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "career_source_location;manual;manual_review"
   },
   {
     "source_id": "src-0f527014597e",
@@ -7455,6 +7455,21 @@
     "source_adapters": "accepted_linkedin_profile;career_source_location;linkedin;manual;manual_review"
   },
   {
+    "source_id": "src-1aa81550359e",
+    "source_url": "https://kz.linkedin.com/in/yerlan-zhumabayev-307a8161",
+    "source_host": "kz.linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 1,
+    "provenances": "review_rejection",
+    "source_adapters": "manual"
+  },
+  {
     "source_id": "src-49996a80de1e",
     "source_url": "https://kz.linkedin.com/in/yernaz-satybaldiyev",
     "source_host": "kz.linkedin.com",
@@ -10099,15 +10114,15 @@
     "source_url": "https://linkedin.com/in/roman-kriven-33a97085",
     "source_host": "linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 1,
+    "evidence_rows": 5,
     "people_count": 1,
-    "accepted_rows": 0,
-    "supporting_rows": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 4,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location"
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "accepted_linkedin_profile;historical_latest_known_location;linkedin;manual;manual_review"
   },
   {
     "source_id": "src-9dd4e99835a7",
@@ -15799,15 +15814,15 @@
     "source_url": "https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf",
     "source_host": "rmebrk.kz",
     "source_kind": "pdf",
-    "evidence_rows": 5,
-    "people_count": 4,
-    "accepted_rows": 1,
+    "evidence_rows": 7,
+    "people_count": 5,
+    "accepted_rows": 3,
     "supporting_rows": 4,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "historical_latest_known_location;manual;reviewed_olympiad_destination_table"
+    "source_adapters": "historical_latest_known_location;manual;manual_review;reviewed_olympiad_destination_table"
   },
   {
     "source_id": "src-793801568f9d",
@@ -19986,8 +20001,8 @@
     "source_kind": "html",
     "evidence_rows": 75,
     "people_count": 46,
-    "accepted_rows": 69,
-    "supporting_rows": 2,
+    "accepted_rows": 70,
+    "supporting_rows": 1,
     "candidate_rows": 0,
     "superseded_rows": 4,
     "rejected_rows": 0,
@@ -20100,6 +20115,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-05cf1d39c4bf",
+    "source_url": "https://www.imo-official.org/participant_r.aspx?id=26021",
+    "source_host": "imo-official.org",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "manual"
+  },
+  {
     "source_id": "src-c18a37300e4d",
     "source_url": "https://www.imo-official.org/participant_r.aspx?id=33252",
     "source_host": "imo-official.org",
@@ -20115,8 +20145,38 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-f57474aeeafb",
+    "source_url": "https://www.imo-official.org/participant_r.aspx?id=3471",
+    "source_host": "imo-official.org",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "manual"
+  },
+  {
     "source_id": "src-861452275fe6",
     "source_url": "https://www.imo-official.org/participant_r.aspx?id=35504",
+    "source_host": "imo-official.org",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "manual"
+  },
+  {
+    "source_id": "src-d67719cc659a",
+    "source_url": "https://www.imo-official.org/participant_r.aspx?id=3658",
     "source_host": "imo-official.org",
     "source_kind": "web_page",
     "evidence_rows": 1,
@@ -24199,15 +24259,15 @@
     "source_url": "https://www.researchgate.net/profile/Olzhas-Kadyrakunov",
     "source_host": "researchgate.net",
     "source_kind": "web_page",
-    "evidence_rows": 2,
+    "evidence_rows": 3,
     "people_count": 1,
-    "accepted_rows": 0,
+    "accepted_rows": 1,
     "supporting_rows": 2,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;accepted_location_evidence",
-    "source_adapters": "current_research_affiliation_location;public_research_profile"
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "current_research_affiliation_location;manual;manual_review"
   },
   {
     "source_id": "src-cc316f38444f",
@@ -24253,6 +24313,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
     "source_adapters": "current_role_location;manual;manual_review"
+  },
+  {
+    "source_id": "src-8658e35ea994",
+    "source_url": "https://www.searchanddiscovery.com/documents/2016/41779vasconez/ndx_vasconez.pdf",
+    "source_host": "searchanddiscovery.com",
+    "source_kind": "pdf",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "historical_latest_known_location;manual;manual_review"
   },
   {
     "source_id": "src-38c3d0317fb4",

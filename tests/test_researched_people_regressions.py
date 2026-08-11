@@ -868,7 +868,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
     def test_olzhas_kadyrakunov_partial_institutional_lead_remains_history_only(self):
         olzhas = self.people["kaz-208576016cfd"]
 
-        self.assertEqual(olzhas["destination_status"], "none")
+        self.assertEqual(olzhas["destination_status"], "history_only")
         self.assertTrue(
             any(
                 row["organization"] == "KTH Royal Institute of Technology"
@@ -955,7 +955,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(location["country_code"], "KZ")
         self.assertEqual(location["location_label"], "Astana, Kazakhstan")
 
-    def test_scanned_chemistry_history_adds_msu_alma_maters_only(self):
+    def test_scanned_chemistry_history_adds_msu_history_only_outcome(self):
         person_ids = {
             "kaz-197ec90e92c1",
         }
@@ -963,8 +963,8 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         for person_id in person_ids:
             with self.subTest(person_id=person_id):
                 person = self.people[person_id]
-                self.assertEqual(person["destination_status"], "none")
-                self.assertEqual(person["confidence"], "unmatched")
+                self.assertEqual(person["destination_status"], "history_only")
+                self.assertEqual(person["confidence"], "confirmed")
                 self.assertIn(
                     "Lomonosov Moscow State University (MSU)",
                     self.alma_maters(person_id),

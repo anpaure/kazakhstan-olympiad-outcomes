@@ -4666,13 +4666,13 @@
   {
     "person_id": "kaz-5af905ca2550",
     "name": "Yerulan Sabyrgali",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 2004)",
-    "evidence_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "Edinburgh, United Kingdom (last verified in 2015)",
+    "evidence_url": "https://www.searchanddiscovery.com/documents/2016/41779vasconez/ndx_vasconez.pdf",
     "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 2004 IChO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+    "confidence": "probable",
+    "review_reason": "A 2015 AAPG presentation published in 2016 lists rare exact-name Yerulan Sabyrgali with Heriot-Watt University in Edinburgh. The chemistry-to-petroleum trajectory and chronology support a probable identity match. This is historical latest-known affiliation evidence only; no current residence is inferred."
   },
   {
     "person_id": "kaz-28588384ab57",

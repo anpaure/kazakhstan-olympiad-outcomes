@@ -4077,6 +4077,24 @@
     "evidence_url": "https://www.itk.kz/ru/117"
   },
   {
+    "organization_alias_id": "org-010fbe611ada820e",
+    "alias": "Pavlodar State University",
+    "canonical_name": "Toraighyrov University",
+    "display_name": "Toraighyrov University",
+    "merge_type": "former_name",
+    "rationale": "The university officially states that S. Toraighyrov Pavlodar State University was reorganized and renamed Toraighyrov University.",
+    "evidence_url": "https://tou.edu.kz/en/news/9537-psu-is-officially-renamed-into-toraighyrov-university"
+  },
+  {
+    "organization_alias_id": "org-6c40561b3b23172d",
+    "alias": "Павлодарский Государственный Университет",
+    "canonical_name": "Toraighyrov University",
+    "display_name": "Toraighyrov University",
+    "merge_type": "former_name",
+    "rationale": "The Russian former name on the reviewed profile is normalized to the university's current official name.",
+    "evidence_url": "https://tou.edu.kz/en/news/9537-psu-is-officially-renamed-into-toraighyrov-university"
+  },
+  {
     "organization_alias_id": "org-07d156da94b0e2ae",
     "alias": "Technische Universität Berlin",
     "canonical_name": "TU Berlin",

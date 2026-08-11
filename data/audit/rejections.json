@@ -1230,5 +1230,13 @@
     "evidence_url": "https://openalex.org/A5144353130",
     "reason": "This one-work common-name research-author record supplies no Kazakhstan physics IPhO age education or employment bridge and cannot support an identity match",
     "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-514026a01ba3",
+    "person_name": "Yerlan Jumabayev",
+    "source_id": "src-1aa81550359e",
+    "evidence_url": "https://kz.linkedin.com/in/yerlan-zhumabayev-307a8161",
+    "reason": "Environmental executive profile began university study in 1995 and was already a university student during Kazakhstan's school-level 1997 IMO; it is not the contestant",
+    "review_evidence_url": "https://almaty.fizmat.kz/ru/muzey/uchastniki-mezhdunarodnykh-olimpiad/"
   }
 ]
