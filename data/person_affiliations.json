@@ -15960,6 +15960,36 @@
     "confidence": "probable"
   },
   {
+    "person_id": "kaz-7923131239ad",
+    "name": "Demeu Shakhanov",
+    "organization": "Turan-Astana University",
+    "role": "Bachelor's Degree, Psychology",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2021",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://tau-edu.kz/media/docs/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0-17-%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%92%D1%8B%D0%BF%D1%81%D1%83%D0%BA%D0%B0-2021-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%281%29.pdf?_t=1635827739",
+    "evidence_kind": "official_graduation_roster",
+    "confidence": "probable",
+    "evidence_text": "Turan-Astana University's official 2021 degree roster lists full-name Demeu Temirbekovich Shakhanov in program 6B03101 Psychology. The rare full name and Astana continuity support the probable identity, but the roster does not mention the IBO."
+  },
+  {
+    "person_id": "kaz-7923131239ad",
+    "name": "Demeu Shakhanov",
+    "organization": "BSG",
+    "role": "Director",
+    "affiliation_type": "employment",
+    "start_year": "2022",
+    "end_year": "",
+    "is_current": true,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://statsnet.co/companies/kz/29048640",
+    "evidence_kind": "manual_review",
+    "confidence": "probable",
+    "evidence_text": "The official 2003 IBO report records surname-first Demeu Shakhanov for Kazakhstan. A rare exact-name LinkedIn result places an age-compatible Demeu Shakhanov in Astana, while Kazakhstan company records identify full-name Demeu Temirbekovich Shakhanov as BSG's current director from December 2022. A Turan-Astana graduation roster independently records the same full name in Astana. No reviewed source explicitly joins the adult records to the IBO result, so the identity and outcome remain probable."
+  },
+  {
     "person_id": "kaz-462ea4363511",
     "name": "Denis Ovchinnikov",
     "organization": "Novosibirsk State University (NSU)",
@@ -27388,6 +27418,21 @@
     "evidence_kind": "destination_source_review",
     "confidence": "probable",
     "evidence_text": "The accepted profile lists Reservoir Simulation Engineer at Tengizchevroil as current from September 2012."
+  },
+  {
+    "person_id": "kaz-7e2cf66f126f",
+    "name": "Rafael Mavlyukeyev",
+    "organization": "Self-employed",
+    "role": "Individual Entrepreneur",
+    "affiliation_type": "employment",
+    "start_year": "2011",
+    "end_year": "2019",
+    "is_current": false,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://checko.ru/entrepreneur/mavlyukeev-rafaehl-311774632700409",
+    "evidence_kind": "manual_review",
+    "confidence": "probable",
+    "evidence_text": "The official IPhO record identifies Kazakhstan's rare exact-name 2002 bronze medalist. A 2020 Moscow race result records exact-name Rafael Mavlyukeyev as born in 1984, exactly within the Olympiad-derived age range, and a Russian registry extract identifies full-name Rafael Rinatovich Mavlyukeyev as a Moscow individual entrepreneur from November 2011 through July 2019. No source explicitly joins the adult records to the IPhO result, so the match remains probable and the ended business is shown on"
   },
   {
     "person_id": "kaz-3bb636937f0d",

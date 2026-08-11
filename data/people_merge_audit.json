@@ -717,5 +717,37 @@
     "review_reason": "The IChO registry's Zhaxylykov spelling and Kazakhstan career sources' Zhaksylykov and Cyrillic spellings refer to the same rare-name MSU chemistry alumnus from Almaty; the current executive outcome remains probable because no source explicitly mentions the IChO result.",
     "evidence_url": "https://www.e-xecutive.ru/users/69833-askerbek-zhaksylykov",
     "canonical_person_id": "kaz-7774ad796e6c"
+  },
+  {
+    "left": "Shakhanov Demeu",
+    "right": "Demeu Shakhanov",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2003
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The official IBO report uses surname-first Shakhanov Demeu; the rare exact-name Astana profile and full-name Kazakhstan company and university records use Demeu Shakhanov and the Cyrillic full name. The adult identity bridge remains probable.",
+    "evidence_url": "https://kz.linkedin.com/in/demeu-shakhanov-472a15261",
+    "canonical_person_id": "kaz-7923131239ad"
+  },
+  {
+    "left": "Rafael Mavlyukeyev",
+    "right": "Rafael Mavlyukeyev",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2002
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The IPhO registry's Rafael Mavlyukeyev spelling and the age-compatible Moscow race and business records' Cyrillic spellings form a rare-name probable match; no adult source explicitly mentions the Olympiad.",
+    "evidence_url": "https://probeg.org/race/74199/",
+    "canonical_person_id": "kaz-7e2cf66f126f"
   }
 ]

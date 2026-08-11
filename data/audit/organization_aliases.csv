@@ -89,6 +89,7 @@ org-42a07b51b552eeca,Università Bocconi,Bocconi University,Bocconi University,m
 org-d12a01eb2e8adaf1,Boreskov Institute of catalysis,Boreskov Institute of Catalysis,Boreskov Institute of Catalysis,capitalization_variant,Capitalization correction,https://catalysis.ru/
 org-94d09c4e0004cd14,Boston University School of Medicine,Boston University,Boston University,parent_organization,Former name of a Boston University school,https://www.bu.edu/brand/guidelines/editorial-style/schools-colleges-and-departments/
 org-c94295522ef9b0f6,Chobanian & Avedisian School of Medicine,Boston University,Boston University,parent_organization,Current Boston University medical-school name,https://www.bu.edu/brand/guidelines/editorial-style/schools-colleges-and-departments/
+org-0ae560185249f283,"ТОО ""BSG""",BSG,BSG,legal_form,The Kazakhstan LLP legal name is normalized to the concise BSG organization label.,https://statsnet.co/companies/kz/29048640
 org-36eea6cad2414810,BINP,Budker Institute of Nuclear Physics,Budker Institute,acronym,Common English acronym normalized to the institute's canonical name.,https://www.inp.nsk.su/budker-institute-of-nuclear-physics
 org-5dcfd5fa0de4b676,Budker Institute of Nuclear Physics,Budker Institute of Nuclear Physics,Budker Institute,same_entity,Canonical display declaration.,https://www.inp.nsk.su/budker-institute-of-nuclear-physics
 org-6f549f63abc1a9d4,Budker Institute of Nuclear Physics SB RAS,Budker Institute of Nuclear Physics,Budker Institute,expanded_name,Russian Academy branch suffix normalized to the concise institute name.,https://www.inp.nsk.su/budker-institute-of-nuclear-physics
@@ -459,6 +460,7 @@ org-e1bee67ecf214e73,Tulane University School of Public Health and Tropical Medi
 org-b0478ed74116a6b2,Тұран университеті,Turan University,Turan University,multilingual_name,Kazakh official name normalized to the university's official English name.,https://turan.edu.kz/en/contacts
 org-9f76a14ef1565420,Университет «Туран»,Turan University,Turan University,multilingual_name,Russian official name normalized to the university's official English name.,https://turan.edu.kz/en/contacts
 org-a87f95c011d92905,Университет Туран,Turan University,Turan University,multilingual_name,Russian profile label normalized to the university's official English name.,https://turan.edu.kz/en/contacts
+org-1cf92ecfc0b451c0,Университет «Туран-Астана»,Turan-Astana University,Turan-Astana University,multilingual_name,Russian official name normalized to the university's English name.,https://tau-edu.kz/
 org-68290a793776a65b,Typeser Inc,Typeser,Typeser,legal_form_variant,Legal-form cleanup,
 org-b3279d64f8603598,Statistical AI Lab,Ulsan National Institute of Science and Technology (UNIST),UNIST,parent_organization,Short name of the UNIST Statistical Artificial Intelligence Lab,https://news.unist.ac.kr/unist-wins-first-place-in-digital-curling-tournament/
 org-c796b5a677291eec,Statistical Artificial Intelligence Laboratory (SAIL),Ulsan National Institute of Science and Technology (UNIST),UNIST,parent_organization,Research laboratory at UNIST,https://news.unist.ac.kr/unist-wins-first-place-in-digital-curling-tournament/

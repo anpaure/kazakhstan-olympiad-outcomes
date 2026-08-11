@@ -810,6 +810,15 @@
     "evidence_url": "https://www.bu.edu/brand/guidelines/editorial-style/schools-colleges-and-departments/"
   },
   {
+    "organization_alias_id": "org-0ae560185249f283",
+    "alias": "ТОО \"BSG\"",
+    "canonical_name": "BSG",
+    "display_name": "BSG",
+    "merge_type": "legal_form",
+    "rationale": "The Kazakhstan LLP legal name is normalized to the concise BSG organization label.",
+    "evidence_url": "https://statsnet.co/companies/kz/29048640"
+  },
+  {
     "organization_alias_id": "org-36eea6cad2414810",
     "alias": "BINP",
     "canonical_name": "Budker Institute of Nuclear Physics",
@@ -4138,6 +4147,15 @@
     "merge_type": "multilingual_name",
     "rationale": "Russian profile label normalized to the university's official English name.",
     "evidence_url": "https://turan.edu.kz/en/contacts"
+  },
+  {
+    "organization_alias_id": "org-1cf92ecfc0b451c0",
+    "alias": "Университет «Туран-Астана»",
+    "canonical_name": "Turan-Astana University",
+    "display_name": "Turan-Astana University",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian official name normalized to the university's English name.",
+    "evidence_url": "https://tau-edu.kz/"
   },
   {
     "organization_alias_id": "org-68290a793776a65b",

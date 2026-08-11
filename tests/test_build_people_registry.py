@@ -1,9 +1,13 @@
 import unittest
 
-from scripts.build_people_registry import build_registry, token_key
+from scripts.build_people_registry import build_registry, normalize_name, token_key
 
 
 class StablePersonIdTest(unittest.TestCase):
+    def test_normalize_name_preserves_cyrillic_and_folds_diacritics(self):
+        self.assertEqual(normalize_name("Шаханов Демеу"), "шаханов демеу")
+        self.assertEqual(normalize_name("Bajdeldínov"), "bajdeldinov")
+
     def test_reuses_id_when_source_reorders_name(self):
         rows = [
             {

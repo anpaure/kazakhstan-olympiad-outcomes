@@ -224,6 +224,13 @@
     "rationale": "Reviewed core activity is brand and marketing consulting."
   },
   {
+    "organization_sector_id": "sector-b5d43bc3d4b39bf0",
+    "canonical_name": "BSG",
+    "organization_type": "company",
+    "sector": "Consumer & Media",
+    "rationale": "Reviewed primary registered activity is retail trade outside stores."
+  },
+  {
     "organization_sector_id": "sector-3f664344f34d39c9",
     "canonical_name": "BTC.KZ",
     "organization_type": "company",

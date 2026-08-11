@@ -43,6 +43,7 @@ src-83affba46114,https://cemse.kaust.edu.sa/profiles/alibek-sailanbayev,cemse.ka
 src-e4a73071df0b,https://centrasia.org/newsA.php?st=1082953860,centrasia.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-4c831ea25f6e,https://ch.linkedin.com/in/makenov,ch.linkedin.com,linkedin,10,1,2,8,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review
 src-0e7536464307,https://ch.linkedin.com/in/shyngys-aitkazinov-00496b193,ch.linkedin.com,linkedin,19,1,2,17,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review
+src-f055292cae26,https://checko.ru/entrepreneur/mavlyukeev-rafaehl-311774632700409,checko.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-9ce4b9bf0a70,https://chem.yale.edu/posts/2026-07-01-chemistry-phd-graduate-profiles,chem.yale.edu,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-dfb079a07401,https://chemistry.dartmouth.edu/graduate/current-graduate-students/class-2022,chemistry.dartmouth.edu,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-f061b2cf1e61,https://cmcm.ibs.re.kr/cmcm/?MM=02&SM=01,cmcm.ibs.re.kr,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -407,7 +408,7 @@ src-5fcf30ecab4a,https://inp.nsk.su/images/pdf/journal/2009_05-6.pdf,inp.nsk.su,
 src-1ee5b8fce72b,https://inp.nsk.su/images/pdf/journal/2014_10.pdf,inp.nsk.su,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,official_institute_newsletter
 src-019b1989c484,https://international.binus.ac.id/binus-people/zhandos-yessenbayev-b-sc-m-sc-ph-d/,international.binus.ac.id,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-bb822569e353,https://ipbb.kz/eng/ap-09260382-superviser-sapakhova-z/,ipbb.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
-src-ad74ea491705,https://ipho-unofficial.org/countries/KAZ/individual,ipho-unofficial.org,web_page,170,89,159,4,0,7,0,accepted_location_evidence;manual_review;participant_registry,IPhO;historical_latest_known_location;manual
+src-ad74ea491705,https://ipho-unofficial.org/countries/KAZ/individual,ipho-unofficial.org,web_page,170,89,160,3,0,7,0,accepted_location_evidence;manual_review;participant_registry,IPhO;historical_latest_known_location;manual
 src-0684ad15873b,https://ipho-unofficial.org/timeline/2007/individual,ipho-unofficial.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-acb4f475b8fd,https://ipho-unofficial.org/timeline/2010/individual,ipho-unofficial.org,web_page,2,2,2,0,0,0,0,manual_review,manual
 src-961bc0297b2b,https://ipho-unofficial.org/timeline/2012/individual,ipho-unofficial.org,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -469,6 +470,7 @@ src-7c276adfc207,https://kz.linkedin.com/in/daniyar-kamal-91b041118,kz.linkedin.
 src-556808850d76,https://kz.linkedin.com/in/darkhan-akzholov-b0399151,kz.linkedin.com,linkedin,9,1,2,7,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review
 src-0709a49f934d,https://kz.linkedin.com/in/daulet-kurmantayev-41912a176,kz.linkedin.com,linkedin,6,1,1,5,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin
 src-bdc10c8f3e48,https://kz.linkedin.com/in/daulet-turetayev-73ba8314b,kz.linkedin.com,linkedin,4,1,1,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;linkedin;manual;manual_review
+src-2e0b688348fb,https://kz.linkedin.com/in/demeu-shakhanov-472a15261,kz.linkedin.com,linkedin,1,1,0,1,0,0,0,manual_review,linkedin
 src-5a10ed18c0f2,https://kz.linkedin.com/in/iliyas-kazymbek-77237a286,kz.linkedin.com,linkedin,4,1,1,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;linkedin;manual;manual_review
 src-1a46a21093d1,https://kz.linkedin.com/in/ilya-skripin-a9a31552,kz.linkedin.com,linkedin,12,1,1,11,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
 src-ae22b0d0ff06,https://kz.linkedin.com/in/islam-amangeldi-10932336b,kz.linkedin.com,linkedin,4,1,1,3,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin;manual;manual_review
@@ -1033,6 +1035,7 @@ src-46c265d49622,https://press.ucoz.kz/news/2009-07-11,press.ucoz.kz,web_page,1,
 src-0c9d0a10d91f,https://prg.kz/Document/?doc_id=31388745,prg.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
 src-604b60050d36,https://prg.kz/document/?doc_id=30205702,prg.kz,web_page,2,2,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;official_ministry_team_order
 src-8dbb8cab8311,https://pro.mytenge.kz/company/170540015039,pro.mytenge.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_legal_entity_location;manual;manual_review
+src-2d5b2185836c,https://probeg.org/race/74199/,probeg.org,web_page,1,1,0,1,0,0,0,accepted_location_evidence,historical_latest_known_location
 src-b4010b5ff104,https://proceedings.jacow.org/PAC2011/papers/PAC11_Guide.pdf,proceedings.jacow.org,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,conference_student_grant_roster
 src-8509acbae739,https://profi.kz/profile/NurmanovAE/,profi.kz,web_page,4,1,2,2,0,0,0,accepted_affiliation_history;manual_destination_reconciliation;manual_review,destination_review;destination_source_review;manual;verified_tutor_profile
 src-a3a580611a9d,https://profi.kz/profile/TaymanovAY/,profi.kz,web_page,4,1,1,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review;self_authored_service_profile
@@ -1213,11 +1216,13 @@ src-3fde99c6a84f,https://stats.ioinformatics.org/people/8348,stats.ioinformatics
 src-ad3725994ac6,https://stats.ioinformatics.org/people/8684,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
 src-4eecb4de1a18,https://stats.ioinformatics.org/people/8685,stats.ioinformatics.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IOI;manual
 src-ed6b003f49ea,https://stats.ioinformatics.org/results/KAZ,stats.ioinformatics.org,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-fc70a7c4b93c,https://statsnet.co/companies/kz/29048640,statsnet.co,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-ec1f7e2c7945,https://stemolympiads.kz/en/team/anton-draganchuk-2/,stemolympiads.kz,web_page,5,1,2,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review;official_team_profile
 src-f5281d37866d,https://steppeolymp.kz/,steppeolymp.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-4d21221835b6,https://sundong.kim/members/,sundong.kim,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-4be9192786e0,https://synapse.kz/,synapse.kz,web_page,4,3,3,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-b5cfbc2e37fe,https://t.me/s/qazcho?before=87,t.me,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-d9a896067eee,https://tau-edu.kz/media/docs/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0-17-%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%92%D1%8B%D0%BF%D1%81%D1%83%D0%BA%D0%B0-2021-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%281%29.pdf?_t=1635827739,tau-edu.kz,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,official_graduation_roster
 src-a4eed41f7c48,https://tehranconvention.org/system/files/kazakhstan/kmg_2016.pdf,tehranconvention.org,pdf,2,1,0,2,0,0,0,accepted_affiliation_history,official_employer_annual_report
 src-2c8eca349e3b,https://tengrinews.kz/kazakhstan_news/kaspikz-podderjivaet-sbornuyu-kazahstana-ii-gotovyat-604440/,tengrinews.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
 src-5b05c3aeb86e,https://theorg.com/org/augment-code/offices/hq,theorg.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -1308,6 +1313,7 @@ src-7c00a4b14ab9,https://www.hse.ru/news/edu/223610496.html,hse.ru,web_page,2,1,
 src-c4b2ab5396a9,https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov,hw.ac.uk,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-07f001838ebe,https://www.iastate.edu/life-at-iowa-state/campus-and-ames,iastate.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-1083be0de75f,https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Ffinal-reports%2FIBO-2002+report.pdf,ibo-info.org,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-7081446b05dc,https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Ffinal-reports%2FIBO-2003+report.pdf,ibo-info.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-570e67847cb2,https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Ffinal-reports%2FIBO-2024+Report.pdf,ibo-info.org,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-dbc39453d9e6,https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Fresults%2FIBO2011_Ranking_total_final.pdf,ibo-info.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-00ba24842cca,https://www.ibo-info.org/files/downloads/results-reports/final-reports/IBO-2024%20Report.pdf,ibo-info.org,pdf,9,6,6,3,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review;official_olympiad_biography
@@ -1320,7 +1326,7 @@ src-3d86087c6162,https://www.ibo-info.org/files/downloads/results-reports/result
 src-9d5c76973bb4,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2000.pdf,ibo-info.org,pdf,7,4,6,1,0,0,0,accepted_location_evidence;manual_review;participant_registry,IBO;historical_latest_known_location;manual
 src-ebd50f7c8a4c,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2001.pdf,ibo-info.org,pdf,4,4,4,0,0,0,0,participant_registry,IBO
 src-087b5bc0ff6f,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2002.pdf,ibo-info.org,pdf,7,4,7,0,0,0,0,manual_review;participant_registry,IBO;manual
-src-9e25d9425b57,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2003.pdf,ibo-info.org,pdf,8,4,7,1,0,0,0,accepted_location_evidence;manual_review;participant_registry,IBO;historical_latest_known_location;manual
+src-9e25d9425b57,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2003.pdf,ibo-info.org,pdf,7,4,7,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-41a4691d930f,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2005.pdf,ibo-info.org,pdf,4,3,4,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-c2a8f9eeb935,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2006.pdf,ibo-info.org,pdf,7,4,7,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-013eb6202c7a,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2007.pdf,ibo-info.org,pdf,4,4,4,0,0,0,0,participant_registry,IBO

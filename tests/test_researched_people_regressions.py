@@ -1276,6 +1276,49 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             person["evidence_urls"], "https://orcid.org/0000-0002-6272-1079"
         )
 
+    def test_demeu_shakhanov_probable_bsg_director_and_alma_mater(self):
+        person = self.people["kaz-7923131239ad"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["name"], "Demeu Shakhanov")
+        self.assertIn("Shakhanov Demeu", person["aliases"])
+        self.assertEqual(person["organization"], "BSG")
+        self.assertEqual(person["role"], "Director")
+        self.assertEqual(person["start_year"], "2022")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://kz.linkedin.com/in/demeu-shakhanov-472a15261",
+        )
+        self.assertIn(
+            "Turan-Astana University", self.alma_maters(person["person_id"])
+        )
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Astana, Kazakhstan")
+
+    def test_rafael_mavlyukeyev_probable_ended_business_and_location(self):
+        person = self.people["kaz-7e2cf66f126f"]
+        location = self.locations[person["person_id"]]
+        employment = next(
+            row
+            for row in self.affiliations_for(person["person_id"])
+            if row["organization"] == "Self-employed"
+        )
+
+        self.assertEqual(person["organization"], "Self-employed")
+        self.assertEqual(person["role"], "Individual Entrepreneur")
+        self.assertEqual(person["start_year"], "2011")
+        self.assertEqual(person["end_year"], "2019")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertFalse(employment["is_current"])
+        self.assertEqual(location["country_code"], "RU")
+        self.assertEqual(
+            location["location_label"], "Moscow, Russia (last verified in 2020)"
+        )
+        self.assertEqual(
+            location["evidence_kind"], "historical_latest_known_location"
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

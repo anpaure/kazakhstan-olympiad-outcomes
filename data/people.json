@@ -1517,7 +1517,7 @@
   {
     "person_id": "kaz-7e2cf66f126f",
     "canonical_name": "Rafael Mavlyukeyev",
-    "aliases": "Rafael Mavlyukeyev",
+    "aliases": "Mavlyukeyev Rafael;Rafael Mavlyukeyev;Мавлюкеев Рафаэль Ринатович;Рафаэль Мавлюкеев",
     "olympiads": "IPhO",
     "years": "2002",
     "first_year": 2002,
@@ -1665,6 +1665,21 @@
     "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
   },
   {
+    "person_id": "kaz-7923131239ad",
+    "canonical_name": "Demeu Shakhanov",
+    "aliases": "Demeu Shakhanov;Shakhanov Demeu;Шаханов Демеу;Шаханов Демеу Темирбекович",
+    "olympiads": "IBO",
+    "years": "2003",
+    "first_year": 2003,
+    "last_year": 2003,
+    "estimated_birth_year_min": 1984,
+    "estimated_birth_year_max": 1988,
+    "awards": "",
+    "participant_rows": 1,
+    "research_scope": "career",
+    "source_urls": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2003.pdf"
+  },
+  {
     "person_id": "kaz-42f3a5145199",
     "canonical_name": "Denis Utkin",
     "aliases": "Denis Utkin",
@@ -1738,21 +1753,6 @@
     "participant_rows": 1,
     "research_scope": "career",
     "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
-  },
-  {
-    "person_id": "kaz-7923131239ad",
-    "canonical_name": "Shakhanov Demeu",
-    "aliases": "Shakhanov Demeu",
-    "olympiads": "IBO",
-    "years": "2003",
-    "first_year": 2003,
-    "last_year": 2003,
-    "estimated_birth_year_min": 1984,
-    "estimated_birth_year_max": 1988,
-    "awards": "",
-    "participant_rows": 1,
-    "research_scope": "career",
-    "source_urls": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2003.pdf"
   },
   {
     "person_id": "kaz-c444a5fa2a99",

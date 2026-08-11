@@ -660,6 +660,21 @@
     "source_adapters": "accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review"
   },
   {
+    "source_id": "src-f055292cae26",
+    "source_url": "https://checko.ru/entrepreneur/mavlyukeev-rafaehl-311774632700409",
+    "source_host": "checko.ru",
+    "source_kind": "web_page",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review"
+  },
+  {
     "source_id": "src-9ce4b9bf0a70",
     "source_url": "https://chem.yale.edu/posts/2026-07-01-chemistry-phd-graduate-profiles",
     "source_host": "chem.yale.edu",
@@ -6126,8 +6141,8 @@
     "source_kind": "web_page",
     "evidence_rows": 170,
     "people_count": 89,
-    "accepted_rows": 159,
-    "supporting_rows": 4,
+    "accepted_rows": 160,
+    "supporting_rows": 3,
     "candidate_rows": 0,
     "superseded_rows": 7,
     "rejected_rows": 0,
@@ -7048,6 +7063,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
     "source_adapters": "active_affiliation_profile_location;linkedin;manual;manual_review"
+  },
+  {
+    "source_id": "src-2e0b688348fb",
+    "source_url": "https://kz.linkedin.com/in/demeu-shakhanov-472a15261",
+    "source_host": "kz.linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "linkedin"
   },
   {
     "source_id": "src-5a10ed18c0f2",
@@ -15510,6 +15540,21 @@
     "source_adapters": "active_affiliation_legal_entity_location;manual;manual_review"
   },
   {
+    "source_id": "src-2d5b2185836c",
+    "source_url": "https://probeg.org/race/74199/",
+    "source_host": "probeg.org",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_location_evidence",
+    "source_adapters": "historical_latest_known_location"
+  },
+  {
     "source_id": "src-b4010b5ff104",
     "source_url": "https://proceedings.jacow.org/PAC2011/papers/PAC11_Guide.pdf",
     "source_host": "proceedings.jacow.org",
@@ -18210,6 +18255,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-fc70a7c4b93c",
+    "source_url": "https://statsnet.co/companies/kz/29048640",
+    "source_host": "statsnet.co",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "current_role_location;manual;manual_review"
+  },
+  {
     "source_id": "src-ec1f7e2c7945",
     "source_url": "https://stemolympiads.kz/en/team/anton-draganchuk-2/",
     "source_host": "stemolympiads.kz",
@@ -18283,6 +18343,21 @@
     "rejected_rows": 0,
     "provenances": "manual_review",
     "source_adapters": "manual"
+  },
+  {
+    "source_id": "src-d9a896067eee",
+    "source_url": "https://tau-edu.kz/media/docs/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0-17-%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%92%D1%8B%D0%BF%D1%81%D1%83%D0%BA%D0%B0-2021-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%281%29.pdf?_t=1635827739",
+    "source_host": "tau-edu.kz",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_graduation_roster"
   },
   {
     "source_id": "src-a4eed41f7c48",
@@ -19635,6 +19710,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-7081446b05dc",
+    "source_url": "https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Ffinal-reports%2FIBO-2003+report.pdf",
+    "source_host": "ibo-info.org",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "manual"
+  },
+  {
     "source_id": "src-570e67847cb2",
     "source_url": "https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Ffinal-reports%2FIBO-2024+Report.pdf",
     "source_host": "ibo-info.org",
@@ -19819,15 +19909,15 @@
     "source_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2003.pdf",
     "source_host": "ibo-info.org",
     "source_kind": "pdf",
-    "evidence_rows": 8,
+    "evidence_rows": 7,
     "people_count": 4,
     "accepted_rows": 7,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;manual_review;participant_registry",
-    "source_adapters": "IBO;historical_latest_known_location;manual"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IBO;manual"
   },
   {
     "source_id": "src-41a4691d930f",

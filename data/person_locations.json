@@ -2024,6 +2024,17 @@
     "review_reason": "Country follows the accepted active student affiliation at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI); the linked official institution source establishes the campus location. MBZUAI's official contact page identifies its Abu Dhabi campus."
   },
   {
+    "person_id": "kaz-7923131239ad",
+    "name": "Demeu Shakhanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://statsnet.co/companies/kz/29048640",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "Kazakhstan company records place full-name Demeu Temirbekovich Shakhanov's current BSG director role in Astana. The identity bridge to the IBO entrant remains probable."
+  },
+  {
     "person_id": "kaz-9bc854d0232a",
     "name": "Denis Atrashenko",
     "country_code": "KZ",
@@ -3412,13 +3423,13 @@
   {
     "person_id": "kaz-7e2cf66f126f",
     "name": "Rafael Mavlyukeyev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 2002)",
-    "evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Moscow, Russia (last verified in 2020)",
+    "evidence_url": "https://probeg.org/race/74199/",
     "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The 2002 IPhO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+    "confidence": "probable",
+    "review_reason": "The age-compatible rare-name match appears in a dated 2020 Moscow race result with Moscow as his city and 1984 as his birth year. This is the latest verified location found and is not presented as current residence."
   },
   {
     "person_id": "kaz-3bb636937f0d",
@@ -3837,17 +3848,6 @@
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/shaikhitdin"
-  },
-  {
-    "person_id": "kaz-7923131239ad",
-    "name": "Shakhanov Demeu",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 2003)",
-    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2003.pdf",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 2003 IBO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "person_id": "kaz-c444a5fa2a99",

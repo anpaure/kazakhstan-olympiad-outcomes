@@ -8,6 +8,7 @@ import csv
 import hashlib
 import json
 import re
+import unicodedata
 from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass
 from difflib import SequenceMatcher
@@ -68,8 +69,12 @@ def clean_text(value: object) -> str:
 
 
 def normalize_name(value: str) -> str:
-    value = value.casefold()
-    value = re.sub(r"[^a-z0-9]+", " ", value)
+    value = unicodedata.normalize("NFKD", value.casefold())
+    value = "".join(
+        character if character.isalnum() else " "
+        for character in value
+        if not unicodedata.combining(character)
+    )
     return re.sub(r"\s+", " ", value).strip()
 
 
