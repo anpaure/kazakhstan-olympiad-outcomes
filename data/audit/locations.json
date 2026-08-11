@@ -2884,6 +2884,20 @@
     "review_reason": "Country follows the accepted active student affiliation at Northwestern University; the linked official institution source establishes the campus location. Northwestern's official campus page identifies its Evanston campus."
   },
   {
+    "location_id": "loc-774ce124d47b6f33",
+    "evidence_id": "ev-2eb23ea2c796edf9",
+    "source_id": "src-d6b6fccb53ed",
+    "person_id": "kaz-60a5906be728",
+    "name": "Sergey Gussak",
+    "country_code": "AU",
+    "country_name": "Australia",
+    "location_label": "Harrington Park, New South Wales, Australia",
+    "evidence_url": "https://www.dnb.com/business-directory/company-profiles.ceptah_solutions_pty_ltd.6d2cbb94973965a2a5a472d5d4547de2.html",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The accepted current company record names Sergey Gussak as Ceptah Solutions' director and places the company at Harrington Park in New South Wales. Ceptah's own site independently says the business operates in the Sydney area, while the identity bridge to the IChO entrant remains probable."
+  },
+  {
     "location_id": "loc-2cbe715b5f15429e",
     "evidence_id": "ev-5dc298045ef39ac6",
     "source_id": "src-a4f36fa11036",

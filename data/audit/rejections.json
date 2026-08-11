@@ -1054,5 +1054,37 @@
     "evidence_url": "https://linkedin.com/in/maximtsoy",
     "reason": "The profile's 2009-2012 chemical-engineering degree predates Maxim Tsoy's documented 2024-2025 school-level IOI participation",
     "review_evidence_url": "https://stats.ioinformatics.org/people/8348"
+  },
+  {
+    "person_id": "kaz-42f3a5145199",
+    "person_name": "Denis Utkin",
+    "source_id": "src-20a6baebe964",
+    "evidence_url": "https://github.com/dizirator",
+    "reason": "This common-name GitHub profile supplies no Kazakhstan physics IPhO age education or employment bridge and cannot support an identity match",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-42f3a5145199",
+    "person_name": "Denis Utkin",
+    "source_id": "src-abe6db8c484c",
+    "evidence_url": "https://openalex.org/A5134663196",
+    "reason": "This one-work common-name research-author record supplies no Kazakhstan physics IPhO age education or employment bridge and cannot support an identity match",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-42f3a5145199",
+    "person_name": "Denis Utkin",
+    "source_id": "src-14ace568f6d5",
+    "evidence_url": "https://openalex.org/A5144281248",
+    "reason": "This one-work common-name research-author record supplies no Kazakhstan physics IPhO age education or employment bridge and cannot support an identity match",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-42f3a5145199",
+    "person_name": "Denis Utkin",
+    "source_id": "src-297233e003ab",
+    "evidence_url": "https://openalex.org/A5144353130",
+    "reason": "This one-work common-name research-author record supplies no Kazakhstan physics IPhO age education or employment bridge and cannot support an identity match",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
   }
 ]

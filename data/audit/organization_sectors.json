@@ -210,6 +210,13 @@
     "rationale": "Reviewed organization is a provincial public administration."
   },
   {
+    "organization_sector_id": "sector-4fbbd8d0123ffccc",
+    "canonical_name": "Ceptah Solutions",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is project-management software and Jira integration tools."
+  },
+  {
     "organization_sector_id": "sector-6d99a4356292a9ed",
     "canonical_name": "chem.kz",
     "organization_type": "company",
@@ -693,6 +700,13 @@
     "rationale": "Reviewed core activity is semiconductor technology."
   },
   {
+    "organization_sector_id": "sector-6c0fd01e919c0cf7",
+    "canonical_name": "MicroPlus",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "The historical registry relationship began while the company was named Chekar Computers & Software Trade."
+  },
+  {
     "organization_sector_id": "sector-c7bac46904be785c",
     "canonical_name": "Microsoft",
     "organization_type": "company",
@@ -894,6 +908,13 @@
     "organization_type": "company",
     "sector": "Finance & Insurance",
     "rationale": "Reviewed core activity is crypto financial services and quantitative trading."
+  },
+  {
+    "organization_sector_id": "sector-6daf9c7074527dbb",
+    "canonical_name": "Quantstellation OÜ",
+    "organization_type": "company",
+    "sector": "Independent & Other",
+    "rationale": "The reviewed registry filings declare no operating activity or employees so a more specific sector would be speculative."
   },
   {
     "organization_sector_id": "sector-c469a8fcef3b20c7",

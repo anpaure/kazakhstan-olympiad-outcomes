@@ -240,6 +240,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-c2cb21cf0386",
+    "source_url": "https://ariregister.rik.ee/est/company/16568487/file/9011480944",
+    "source_host": "ariregister.rik.ee",
+    "source_kind": "web_page",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review"
+  },
+  {
     "source_id": "src-6f8a279ee993",
     "source_url": "https://arxiv.org/abs/2605.14136",
     "source_host": "arxiv.org",
@@ -4339,15 +4354,15 @@
     "source_url": "https://github.com/dizirator",
     "source_host": "github.com",
     "source_kind": "structured_profile",
-    "evidence_rows": 1,
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 0,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
-    "rejected_rows": 0,
-    "provenances": "structured_identity",
-    "source_adapters": "github"
+    "rejected_rows": 2,
+    "provenances": "review_rejection;structured_identity",
+    "source_adapters": "github;manual"
   },
   {
     "source_id": "src-a104fa5b6b80",
@@ -11584,15 +11599,15 @@
     "source_url": "https://openalex.org/A5134663196",
     "source_host": "openalex.org",
     "source_kind": "structured_profile",
-    "evidence_rows": 1,
+    "evidence_rows": 2,
     "people_count": 1,
     "accepted_rows": 0,
     "supporting_rows": 0,
-    "candidate_rows": 1,
+    "candidate_rows": 0,
     "superseded_rows": 0,
-    "rejected_rows": 0,
-    "provenances": "structured_identity",
-    "source_adapters": "openalex"
+    "rejected_rows": 2,
+    "provenances": "review_rejection;structured_identity",
+    "source_adapters": "manual;openalex"
   },
   {
     "source_id": "src-a1d858658381",
@@ -11629,30 +11644,30 @@
     "source_url": "https://openalex.org/A5144281248",
     "source_host": "openalex.org",
     "source_kind": "structured_profile",
-    "evidence_rows": 1,
+    "evidence_rows": 2,
     "people_count": 1,
     "accepted_rows": 0,
     "supporting_rows": 0,
-    "candidate_rows": 1,
+    "candidate_rows": 0,
     "superseded_rows": 0,
-    "rejected_rows": 0,
-    "provenances": "structured_identity",
-    "source_adapters": "openalex"
+    "rejected_rows": 2,
+    "provenances": "review_rejection;structured_identity",
+    "source_adapters": "manual;openalex"
   },
   {
     "source_id": "src-297233e003ab",
     "source_url": "https://openalex.org/A5144353130",
     "source_host": "openalex.org",
     "source_kind": "structured_profile",
-    "evidence_rows": 1,
+    "evidence_rows": 2,
     "people_count": 1,
     "accepted_rows": 0,
     "supporting_rows": 0,
-    "candidate_rows": 1,
+    "candidate_rows": 0,
     "superseded_rows": 0,
-    "rejected_rows": 0,
-    "provenances": "structured_identity",
-    "source_adapters": "openalex"
+    "rejected_rows": 2,
+    "provenances": "review_rejection;structured_identity",
+    "source_adapters": "manual;openalex"
   },
   {
     "source_id": "src-5370483fce0b",
@@ -15394,15 +15409,15 @@
     "source_url": "https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf",
     "source_host": "rmebrk.kz",
     "source_kind": "pdf",
-    "evidence_rows": 4,
-    "people_count": 4,
-    "accepted_rows": 0,
+    "evidence_rows": 5,
+    "people_count": 5,
+    "accepted_rows": 1,
     "supporting_rows": 4,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history",
-    "source_adapters": "reviewed_olympiad_destination_table"
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;reviewed_olympiad_destination_table"
   },
   {
     "source_id": "src-d8b3f3b80991",
@@ -18600,6 +18615,21 @@
     "source_adapters": "manual;manual_review;self_authored_portfolio"
   },
   {
+    "source_id": "src-d6b6fccb53ed",
+    "source_url": "https://www.dnb.com/business-directory/company-profiles.ceptah_solutions_pty_ltd.6d2cbb94973965a2a5a472d5d4547de2.html",
+    "source_host": "dnb.com",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "current_role_location;manual;manual_review"
+  },
+  {
     "source_id": "src-8db77efd68e9",
     "source_url": "https://www.e-xecutive.ru/users/69833-askerbek-zhaksylykov",
     "source_host": "e-xecutive.ru",
@@ -18658,6 +18688,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_location_evidence",
     "source_adapters": "current_education_location"
+  },
+  {
+    "source_id": "src-83910637c936",
+    "source_url": "https://www.finmag.cz/obchodni-rejstrik/25478192-microplus-s-r-o",
+    "source_host": "finmag.cz",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "company_registry_history"
   },
   {
     "source_id": "src-050153fb6f2a",
@@ -21658,6 +21703,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_location_evidence",
     "source_adapters": "current_education_location"
+  },
+  {
+    "source_id": "src-1bcd82e9003e",
+    "source_url": "https://www.inforegister.ee/en/2181368-ID/",
+    "source_host": "inforegister.ee",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "manual"
   },
   {
     "source_id": "src-1de92d5f7853",

@@ -1033,6 +1033,48 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(location["country_code"], "KZ")
         self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
 
+    def test_sergey_gussak_probable_ceptah_director_in_australia(self):
+        person = self.people["kaz-60a5906be728"]
+        location = self.locations[person["person_id"]]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["organization"], "Ceptah Solutions")
+        self.assertEqual(person["role"], "Director")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(location["country_code"], "AU")
+        self.assertEqual(
+            location["location_label"],
+            "Harrington Park, New South Wales, Australia",
+        )
+        self.assertTrue(
+            any(
+                row["organization"] == "MicroPlus"
+                and row["role"] == "Shareholder"
+                and row["start_year"] == "2003"
+                and row["end_year"] == "2008"
+                and not row["is_current"]
+                for row in affiliations
+            )
+        )
+
+    def test_yerbol_bekbayev_probable_ended_board_role_has_no_residence_guess(self):
+        person = self.people["kaz-8bd82bc015a6"]
+
+        self.assertEqual(person["organization"], "Quantstellation OÜ")
+        self.assertEqual(person["role"], "Management Board Member")
+        self.assertEqual(person["end_year"], "2024")
+        self.assertEqual(person["destination_status"], "latest_employment")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertNotIn(person["person_id"], self.locations)
+
+    def test_denis_utkin_name_only_candidates_are_rejected(self):
+        person = self.people["kaz-42f3a5145199"]
+
+        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["role"], "")
+        self.assertEqual(person["profile_url"], "")
+
 
 if __name__ == "__main__":
     unittest.main()
