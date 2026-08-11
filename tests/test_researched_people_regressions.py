@@ -964,7 +964,6 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
     def test_scanned_chemistry_history_adds_msu_alma_maters_only(self):
         person_ids = {
             "kaz-197ec90e92c1",
-            "kaz-cffe6b9ed25e",
         }
 
         for person_id in person_ids:
@@ -986,6 +985,37 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                         for row in self.affiliations_for(person_id)
                     )
                 )
+
+    def test_aldiyar_nurmanov_confirmed_tutor_and_sdu(self):
+        person = self.people["kaz-596f1ff9721d"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Self-employed")
+        self.assertEqual(person["role"], "Physics and Mathematics Tutor")
+        self.assertEqual(person["start_year"], "2026")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertIn(
+            "Suleyman Demirel University (SDU)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+
+    def test_nurzhan_abdrakhmanov_probable_baiken_u_researcher(self):
+        person = self.people["kaz-cffe6b9ed25e"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Baiken-U")
+        self.assertEqual(person["role"], "Uranium Well Recovery Researcher")
+        self.assertEqual(person["start_year"], "2022")
+        self.assertEqual(person["end_year"], "2024")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertIn(
+            "Lomonosov Moscow State University (MSU)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Kyzylorda, Kazakhstan")
 
     def test_dair_nurtayev_probable_mipt_undergraduate(self):
         person = self.people["kaz-4a80af9daaab"]

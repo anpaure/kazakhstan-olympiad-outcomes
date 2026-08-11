@@ -140,6 +140,13 @@
     "rationale": "Reviewed core activity is optical semiconductor interconnect technology."
   },
   {
+    "organization_sector_id": "sector-218610fdb0e15651",
+    "canonical_name": "Baiken-U",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "The reviewed publications identify Baiken-U as a uranium-mining company conducting borehole in-situ leaching research."
+  },
+  {
     "organization_sector_id": "sector-aaeea9eba407cfe4",
     "canonical_name": "Bank of Canada",
     "organization_type": "government",

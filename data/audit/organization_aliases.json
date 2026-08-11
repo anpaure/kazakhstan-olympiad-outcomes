@@ -477,6 +477,33 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-e75e9483c42d9e84",
+    "alias": "Baiken-U LLP",
+    "canonical_name": "Baiken-U",
+    "display_name": "Baiken-U",
+    "merge_type": "legal_suffix_variant",
+    "rationale": "English legal suffix normalized to the concise company name.",
+    "evidence_url": "https://www.nuclear.kz/download/files/NSK-61-62-2023.pdf"
+  },
+  {
+    "organization_alias_id": "org-774c51d02508627a",
+    "alias": "«Байкен-U» ЖШС",
+    "canonical_name": "Baiken-U",
+    "display_name": "Baiken-U",
+    "merge_type": "multilingual_name",
+    "rationale": "Kazakh legal-entity label normalized to the concise company name.",
+    "evidence_url": "https://www.nuclear.kz/download/files/NSK-61-62-2023.pdf"
+  },
+  {
+    "organization_alias_id": "org-fd58dfe0a067b4be",
+    "alias": "ТОО «Байкен-U»",
+    "canonical_name": "Baiken-U",
+    "display_name": "Baiken-U",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian legal-entity label normalized to the concise company name.",
+    "evidence_url": "https://www.nuclear.kz/download/files/NPK-17.pdf"
+  },
+  {
     "organization_alias_id": "org-97b90c3033c30a33",
     "alias": "Barcelona Graduate School of Economics",
     "canonical_name": "Barcelona School of Economics (BSE)",

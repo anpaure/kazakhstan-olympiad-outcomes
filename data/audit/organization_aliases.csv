@@ -52,6 +52,9 @@ org-60776ba73f5e1299,AIFC Green Finance Centre,Astana International Financial Ce
 org-adc7df264d6a8a56,AIFC Green Finance Centre Ltd,Astana International Financial Centre,AIFC,parent_organization,Legal name of the AIFC subsidiary,https://aifc.kz/wp-content/uploads/2024/06/aifc_ar2020_eng.pdf
 org-6734c42b5baf317f,Astana- Motors,Astana Motors,Astana Motors,punctuation_variant,Spacing and punctuation variant of the automotive company's name,https://astana-motors.kz/
 org-749db96589b950d7,Atyrau Refinery Llp,Atyrau Refinery,Atyrau Refinery,legal_form_variant,Legal-form and capitalization cleanup,
+org-e75e9483c42d9e84,Baiken-U LLP,Baiken-U,Baiken-U,legal_suffix_variant,English legal suffix normalized to the concise company name.,https://www.nuclear.kz/download/files/NSK-61-62-2023.pdf
+org-774c51d02508627a,«Байкен-U» ЖШС,Baiken-U,Baiken-U,multilingual_name,Kazakh legal-entity label normalized to the concise company name.,https://www.nuclear.kz/download/files/NSK-61-62-2023.pdf
+org-fd58dfe0a067b4be,ТОО «Байкен-U»,Baiken-U,Baiken-U,multilingual_name,Russian legal-entity label normalized to the concise company name.,https://www.nuclear.kz/download/files/NPK-17.pdf
 org-97b90c3033c30a33,Barcelona Graduate School of Economics,Barcelona School of Economics (BSE),Barcelona School of Economics,former_name,University adopted the Barcelona School of Economics brand in 2021,
 org-493fe1395c987793,BCC INVEST,BCC Invest,BCC Invest,capitalization_variant,Uppercase label on the reviewed historical executive profile normalized to the current brand styling.,https://www.e-xecutive.ru/users/389062-talap-akashev
 org-877a3dfb8f44887c,Beeline Kazakhstan,Beeline,Beeline,location_suffix,Kazakhstan operating-company label normalized to the parent brand,https://beeline.kz/

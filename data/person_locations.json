@@ -220,6 +220,17 @@
     "review_reason": "Country follows the accepted active student affiliation at University of Hong Kong; the linked official institution source establishes the campus location. HKU's official contact page identifies its Hong Kong campus."
   },
   {
+    "person_id": "kaz-596f1ff9721d",
+    "name": "Aldiyar Nurmanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://buki-kz.com/user-213733/",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Aldiyar's separate exact-name BUKI profile repeats his IPhO distinction and advertises current physics tutoring in Almaty, Kazakhstan, corroborating the Profi destination record."
+  },
+  {
     "person_id": "kaz-094a17bb49f6",
     "name": "Alexander Averjanov",
     "country_code": "KZ",
@@ -2011,6 +2022,17 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Asfendiyarov Kazakh National Medical University; the linked official institution source establishes the campus location. KazNMU's official journal contact page identifies the university in Almaty Kazakhstan."
+  },
+  {
+    "person_id": "kaz-cffe6b9ed25e",
+    "name": "Nurzhan Abdrakhmanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kyzylorda, Kazakhstan",
+    "evidence_url": "https://uranconference.kz/download/files/information/sbornik2024_5_rus.pdf",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "The latest reviewed Baiken-U publication affiliates N.N. Abdrakhmanov with the company in Kyzylorda, Kazakhstan in 2024. This is the latest sourced professional location, not a claim of residence or continuing employment after 2024."
   },
   {
     "person_id": "kaz-d1a89ad778a3",

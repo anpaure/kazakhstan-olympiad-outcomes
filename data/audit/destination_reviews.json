@@ -60,6 +60,21 @@
     "review_reason": "The accepted profile lists PhD Student and Research Assistant at UMass Dartmouth as current from September 2025."
   },
   {
+    "destination_review_id": "dest-review-d9366784e1654de0",
+    "evidence_id": "ev-644e0d2b4b3965a8",
+    "source_id": "src-8509acbae739",
+    "person_id": "kaz-596f1ff9721d",
+    "name": "Aldiyar Nurmanov",
+    "organization": "Self-employed",
+    "role": "Physics and Mathematics Tutor",
+    "affiliation_type": "employment",
+    "start_year": "2026",
+    "end_year": "",
+    "evidence_url": "https://profi.kz/profile/NurmanovAE/",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "The passport-verified profile explicitly says Aldiyar resumed teaching physics and mathematics at the beginning of 2026. Self-employed is used because the source advertises his individual tutoring services and does not name an employer."
+  },
+  {
     "destination_review_id": "dest-review-a56aa372c51641ce",
     "evidence_id": "ev-93ba97a48d79eb66",
     "source_id": "src-92f9a6edc4d6",
@@ -418,6 +433,21 @@
     "evidence_url": "https://hk.linkedin.com/in/nurdauletkemel",
     "reviewed_at": "2026-08-10",
     "review_reason": "The accepted profile lists Quantitative Researcher at an undisclosed proprietary trading firm as current from April 2024."
+  },
+  {
+    "destination_review_id": "dest-review-bf1f765e125106cf",
+    "evidence_id": "ev-f6caea7a6b782232",
+    "source_id": "src-9823a6711d77",
+    "person_id": "kaz-cffe6b9ed25e",
+    "name": "Nurzhan Abdrakhmanov",
+    "organization": "Baiken-U",
+    "role": "Uranium Well Recovery Researcher",
+    "affiliation_type": "employment",
+    "start_year": "2022",
+    "end_year": "2024",
+    "evidence_url": "https://uranconference.kz/download/files/information/sbornik2024_5_rus.pdf",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "Baiken-U research publications repeatedly affiliate N.N. Abdrakhmanov with the Kyzylorda company from 2022 through 2024 on uranium-well filtration and chemical recovery. The displayed role is descriptive rather than a formal title, the identity remains probable, and the affiliation is not presented as current after 2024."
   },
   {
     "destination_review_id": "dest-review-5618ed9594b6d313",

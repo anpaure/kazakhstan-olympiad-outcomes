@@ -495,6 +495,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-64e5df7efbde",
+    "source_url": "https://buki-kz.com/user-213733/",
+    "source_host": "buki-kz.com",
+    "source_kind": "web_page",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence",
+    "source_adapters": "active_affiliation_profile_location;verified_tutor_profile"
+  },
+  {
     "source_id": "src-573343768962",
     "source_url": "https://buki-kz.com/user-49146/",
     "source_host": "buki-kz.com",
@@ -5974,9 +5989,9 @@
     "source_url": "https://ipho-unofficial.org/countries/KAZ/individual",
     "source_host": "ipho-unofficial.org",
     "source_kind": "web_page",
-    "evidence_rows": 163,
+    "evidence_rows": 164,
     "people_count": 89,
-    "accepted_rows": 157,
+    "accepted_rows": 158,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 6,
@@ -15165,6 +15180,21 @@
     "source_adapters": "conference_student_grant_roster"
   },
   {
+    "source_id": "src-8509acbae739",
+    "source_url": "https://profi.kz/profile/NurmanovAE/",
+    "source_host": "profi.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 4,
+    "people_count": 1,
+    "accepted_rows": 2,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_destination_reconciliation;manual_review",
+    "source_adapters": "destination_review;destination_source_review;manual;verified_tutor_profile"
+  },
+  {
     "source_id": "src-a3a580611a9d",
     "source_url": "https://profi.kz/profile/TaymanovAY/",
     "source_host": "profi.kz",
@@ -18255,6 +18285,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-9823a6711d77",
+    "source_url": "https://uranconference.kz/download/files/information/sbornik2024_5_rus.pdf",
+    "source_host": "uranconference.kz",
+    "source_kind": "pdf",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation",
+    "source_adapters": "career_source_location;destination_review;destination_source_review"
+  },
+  {
     "source_id": "src-ee981958c2bf",
     "source_url": "https://vestnik-muiv.ru/upload/iblock/b2f/b2fa6535092643cf4ffd992e8b63e9fa.pdf",
     "source_host": "vestnik-muiv.ru",
@@ -19429,9 +19474,9 @@
     "source_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
     "source_host": "icho-official.org",
     "source_kind": "html",
-    "evidence_rows": 72,
+    "evidence_rows": 73,
     "people_count": 46,
-    "accepted_rows": 68,
+    "accepted_rows": 69,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 4,
@@ -23323,6 +23368,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_location_evidence",
     "source_adapters": "current_education_location"
+  },
+  {
+    "source_id": "src-6b74dd29dc3d",
+    "source_url": "https://www.nuclear.kz/download/files/NPK-17.pdf",
+    "source_host": "nuclear.kz",
+    "source_kind": "pdf",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review"
   },
   {
     "source_id": "src-6798116035bf",
