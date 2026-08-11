@@ -2775,21 +2775,6 @@
     "source_urls": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2008.pdf"
   },
   {
-    "person_id": "kaz-24cc764a8eaf",
-    "canonical_name": "Berdibek Shapagat",
-    "aliases": "Berdibek Shapagat",
-    "olympiads": "IPhO",
-    "years": "2008",
-    "first_year": 2008,
-    "last_year": 2008,
-    "estimated_birth_year_min": 1989,
-    "estimated_birth_year_max": 1993,
-    "awards": "Bronze Medal",
-    "participant_rows": 1,
-    "research_scope": "career",
-    "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
-  },
-  {
     "person_id": "kaz-016e33a136a1",
     "canonical_name": "Nursultan Khadjimuratov",
     "aliases": "Nursultan Khadjimuratov",
@@ -2848,6 +2833,21 @@
     "participant_rows": 2,
     "research_scope": "career",
     "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
+  },
+  {
+    "person_id": "kaz-24cc764a8eaf",
+    "canonical_name": "Shapagat Berdibek",
+    "aliases": "Berdibek Shapagat;Shapagat Berdibek",
+    "olympiads": "IPhO",
+    "years": "2008",
+    "first_year": 2008,
+    "last_year": 2008,
+    "estimated_birth_year_min": 1989,
+    "estimated_birth_year_max": 1993,
+    "awards": "Bronze Medal",
+    "participant_rows": 1,
+    "research_scope": "career",
+    "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
   },
   {
     "person_id": "kaz-1165d71f2850",

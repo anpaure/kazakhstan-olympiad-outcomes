@@ -34,6 +34,20 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             row for row in self.affiliations if row["person_id"] == person_id
         ]
 
+    def test_batyr_yerzhanuly_school_record_remains_history_only(self):
+        person = self.people["kaz-a4eaedad760e"]
+        nis = next(
+            row
+            for row in self.affiliations_for(person["person_id"])
+            if row["organization"] == "Nazarbayev Intellectual Schools (NIS)"
+        )
+
+        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["role"], "")
+        self.assertEqual(nis["role"], "High School Student")
+        self.assertFalse(nis["is_current"])
+
     def test_bakhytzhan_baizhikenov_meta_london_and_education(self):
         person = self.people["kaz-42eef016184c"]
         location = self.locations[person["person_id"]]
@@ -743,7 +757,15 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
     def test_shapagat_berdibek_mit_and_nu_alma_maters(self):
         person = self.people["kaz-24cc764a8eaf"]
 
-        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["name"], "Shapagat Berdibek")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["role"], "")
+        self.assertEqual(person["destination_status"], "history_only")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://www.linkedin.com/in/shapagatberdibek/",
+        )
         self.assertEqual(
             self.alma_maters(person["person_id"]),
             {
@@ -751,6 +773,24 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                 "Nazarbayev University",
             },
         )
+
+    def test_aigerim_shamshidin_porsche_germany_and_degrees(self):
+        person = self.people["kaz-4cad451e9620"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Porsche")
+        self.assertEqual(person["role"], "Software & Data Architect")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://www.linkedin.com/in/aigerimsh/",
+        )
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"TU Berlin", "Technische Universität Clausthal"},
+        )
+        self.assertEqual(location["country_code"], "DE")
+        self.assertEqual(location["location_label"], "Germany")
 
     def test_asset_mussagaliyev_confirmed_prosper_pay_outcome(self):
         person = self.people["kaz-c0f06a275839"]
@@ -792,24 +832,14 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             )
         )
 
-    def test_partial_institutional_leads_remain_history_only(self):
+    def test_unresolved_partial_institutional_leads_remain_history_only(self):
         aslan = self.people["kaz-c056b8e8822d"]
-        aigerim = self.people["kaz-4cad451e9620"]
         olzhas = self.people["kaz-208576016cfd"]
 
         self.assertEqual(aslan["destination_status"], "none")
         self.assertIn(
             "L.N. Gumilyov Eurasian National University",
             self.alma_maters(aslan["person_id"]),
-        )
-        self.assertEqual(aigerim["destination_status"], "none")
-        self.assertTrue(
-            {"TU Berlin", "Porsche"}.issubset(
-                {
-                    row["organization"]
-                    for row in self.affiliations_for(aigerim["person_id"])
-                }
-            )
         )
         self.assertEqual(olzhas["destination_status"], "none")
         self.assertTrue(

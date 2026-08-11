@@ -290,10 +290,16 @@ org-5fcaf3e326918ced,"Mechanobiology Institute, National University of Singapore
 org-3428ec5fd8b78d77,NAVER Corp,NAVER,NAVER,legal_form_variant,Legal-form cleanup,
 org-1f45ffb950d52b62,NAVER WEBTOON CORP,NAVER WEBTOON,NAVER WEBTOON,legal_form_variant,Legal-form cleanup,
 org-625e5a4e0a63e7d3,ТОО Navus,Navus,Navus,multilingual_name,Cyrillic legal-form cleanup,
+org-a939baa12ff712ea,Nazarbayev Intellectual School in Semey,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Semey campus label normalized to the national NIS network,https://trz.nis.edu.kz/en/school/nzm-semei/news/1856
+org-7c4fa5ba036ee1c0,Nazarbayev Intellectual School of Chemistry and Biology in Oskemen,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Official English campus name normalized to the national NIS network,https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy
+org-b5b0f2ce48446f16,Nazarbayev Intellectual School of Physics and Mathematics in Semey,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Official English campus name normalized to the national NIS network,https://trz.nis.edu.kz/en/school/nzm-semei/news/1358
 org-c4a5d35377cf8e17,Nazarbayev Intellectual School of Physics and Mathematics in Taldykorgan,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Taldykorgan campus normalized to the national NIS network,https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404
 org-7481c22305fa7e6c,Nazarbayev Intellectual School of physics and mathematics in Taldykorgan,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Capitalization variant of the Taldykorgan NIS campus,https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404
 org-f76a839d4e5571c5,Nazarbayev Intellectual Schools,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Official network name without acronym,
 org-d4c532d7f385e184,NIS Medeu (NIS PhM Almaty),Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Campus label,
+org-184ce750ba6178d1,NIS Oskemen,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Oskemen campus label normalized to the national NIS network,https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy
+org-5eee0f0d928d0af3,NIS Semey,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Semey campus label normalized to the national NIS network,https://trz.nis.edu.kz/en/school/nzm-semei/news/1856
+org-0bc1e64224f92e4c,NIS Ust-Kamenogorsk,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Ust-Kamenogorsk campus label normalized to the national NIS network,https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy
 org-66d043dcc1b47640,Назарбаев Интеллектуальные школы,Nazarbayev Intellectual Schools (NIS),NIS,multilingual_name,Russian name,
 org-bdd6357eab5cc7c4,Astana Business Campus,Nazarbayev University,Nazarbayev University,parent_organization,Nazarbayev University innovation campus,
 org-b04d1a985e486e11,Institute of Smart Systems and Artificial Intelligence - Nazarbayev University,Nazarbayev University,Nazarbayev University,parent_organization,University institute,
@@ -329,6 +335,7 @@ org-ff34c97159178985,Pifagor company,Pifagor School,Pifagor School,brand_variant
 org-f653dd45108d726c,Группа компаний Пифагор,Pifagor School,Pifagor School,multilingual_name,Russian employer label normalized to the school's public English label,https://pifagor.kz/high/kz
 org-91f8bef51b3d0920,Школа Пифагор,Pifagor School,Pifagor School,multilingual_name,Russian school name normalized to its public English label,https://pifagor.kz/high/kz
 org-c7265886d7c6894b,"Platonus, LLP",Platonus,Platonus,legal_form_variant,Legal-form cleanup,
+org-36955fe495c8fd8f,Porsche AG,Porsche,Porsche,same_entity,The German legal company name is normalized to the concise Porsche brand used by the existing project history.,https://www.linkedin.com/in/aigerimsh/
 org-e47393fc5bcb6d7b,Predictive Oncology Inc,Predictive Oncology,Predictive Oncology,legal_form_variant,Legal-form cleanup,
 org-0f882fce8dbb13c4,Premix Pro LLP,Premix Pro,Premix Pro,legal_form_variant,Employer legal-form suffix removed,https://farabi.university/storage/files/280775433965e7f8a0376b3254557968_%D0%BA%D0%B0%D0%B1%D1%83%D0%BB%D0%BE%D0%B2%20%D0%B0%D0%BD%D0%B3.pdf
 org-95cc1ca59821ab30,Thompson Lab,Princeton University,Princeton University,parent_organization,Jeff Thompson's Princeton research laboratory,https://ece.princeton.edu/people/jeff-thompson
@@ -375,6 +382,9 @@ org-45595550b2a00d36,Предприниматель,Self-employed,Self-employed,
 org-62e003bd6816f01e,Фриланс,Self-employed,Self-employed,translated_name,Russian independent-work label,
 org-0355b45213a5ddfe,Senimdi Kurylys LLP (Bechtel-Enka JV),Senimdi Kurylys (Bechtel-Enka JV),Senimdi Kurylys,legal_form_variant,Legal-form cleanup,
 org-aed91b86ff5a5df0,SHB Finance,SHBFinance,SHBFinance,spacing_variant,Spaced corporate-name variant normalized to the current SHBFinance brand,https://www.shbfinance.com.vn/about-us/board-of-management
+org-afb7a55054f0d10d,Siemens Corporation,Siemens,Siemens,same_entity,The country-specific corporate label is normalized to the concise Siemens parent brand.,https://www.linkedin.com/in/gani-nazirov
+org-00630fe4af65629b,Siemens Oil & Gas Offshore AS,Siemens,Siemens,parent_organization,The historical oil-and-gas subsidiary is normalized to its Siemens parent for affiliation search.,https://linkedin.com/in/khairosh
+org-ebb889b7b1d60eb0,Siemens WLL Qatar,Siemens,Siemens,parent_organization,The Qatar legal subsidiary is normalized to the Siemens parent used by the accepted profile link.,https://linkedin.com/in/khairosh
 org-8d2823660992ad01,Şifa Üniversitesi,Sifa University,Sifa University,translated_name,Turkish university name,
 org-8bf943769104cc45,Silleno LLP,Silleno,Silleno,same_entity,Legal-form variant,
 org-c6f1304d5207aa1d,Silleno​ LLP,Silleno,Silleno,same_entity,Zero-width character and legal-form variant,
@@ -432,6 +442,7 @@ org-58b6767200ea5798,ThinkCol Limited,ThinkCol,ThinkCol,legal_form_variant,Legal
 org-8c2c9db558095385,T&T Security,tLab Technologies,tLab Technologies,former_name,The former and current company sites share the same founder cybersecurity products address and contact details; the current operation uses tLab Technologies.,https://tlab.kz/en/
 org-3311399e6d3d8bcc,T&T Security LLP,tLab Technologies,tLab Technologies,legal_form_variant,Legal-form variant of the company's former T&T Security name.,https://tntsecure.kz/en/about.html
 org-ec22422abb262770,tLabTechnologies,tLab Technologies,tLab Technologies,spacing_variant,Compact spelling used in the Kazakhstan IT association's company listing.,https://www.itk.kz/ru/117
+org-07d156da94b0e2ae,Technische Universität Berlin,TU Berlin,TU Berlin,same_entity,The German full university name and the established TU Berlin short name identify the same institution.,https://www.linkedin.com/in/aigerimsh/
 org-e1bee67ecf214e73,Tulane University School of Public Health and Tropical Medicine,Tulane University,Tulane University,parent_organization,University school,
 org-b0478ed74116a6b2,Тұран университеті,Turan University,Turan University,multilingual_name,Kazakh official name normalized to the university's official English name.,https://turan.edu.kz/en/contacts
 org-9f76a14ef1565420,Университет «Туран»,Turan University,Turan University,multilingual_name,Russian official name normalized to the university's official English name.,https://turan.edu.kz/en/contacts

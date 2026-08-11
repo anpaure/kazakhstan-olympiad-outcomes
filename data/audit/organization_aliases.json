@@ -2619,6 +2619,33 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-a939baa12ff712ea",
+    "alias": "Nazarbayev Intellectual School in Semey",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "parent_organization",
+    "rationale": "Semey campus label normalized to the national NIS network",
+    "evidence_url": "https://trz.nis.edu.kz/en/school/nzm-semei/news/1856"
+  },
+  {
+    "organization_alias_id": "org-7c4fa5ba036ee1c0",
+    "alias": "Nazarbayev Intellectual School of Chemistry and Biology in Oskemen",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "parent_organization",
+    "rationale": "Official English campus name normalized to the national NIS network",
+    "evidence_url": "https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy"
+  },
+  {
+    "organization_alias_id": "org-b5b0f2ce48446f16",
+    "alias": "Nazarbayev Intellectual School of Physics and Mathematics in Semey",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "parent_organization",
+    "rationale": "Official English campus name normalized to the national NIS network",
+    "evidence_url": "https://trz.nis.edu.kz/en/school/nzm-semei/news/1358"
+  },
+  {
     "organization_alias_id": "org-c4a5d35377cf8e17",
     "alias": "Nazarbayev Intellectual School of Physics and Mathematics in Taldykorgan",
     "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
@@ -2653,6 +2680,33 @@
     "merge_type": "parent_organization",
     "rationale": "Campus label",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-184ce750ba6178d1",
+    "alias": "NIS Oskemen",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "parent_organization",
+    "rationale": "Oskemen campus label normalized to the national NIS network",
+    "evidence_url": "https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy"
+  },
+  {
+    "organization_alias_id": "org-5eee0f0d928d0af3",
+    "alias": "NIS Semey",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "parent_organization",
+    "rationale": "Semey campus label normalized to the national NIS network",
+    "evidence_url": "https://trz.nis.edu.kz/en/school/nzm-semei/news/1856"
+  },
+  {
+    "organization_alias_id": "org-0bc1e64224f92e4c",
+    "alias": "NIS Ust-Kamenogorsk",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "parent_organization",
+    "rationale": "Ust-Kamenogorsk campus label normalized to the national NIS network",
+    "evidence_url": "https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy"
   },
   {
     "organization_alias_id": "org-66d043dcc1b47640",
@@ -2968,6 +3022,15 @@
     "merge_type": "legal_form_variant",
     "rationale": "Legal-form cleanup",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-36955fe495c8fd8f",
+    "alias": "Porsche AG",
+    "canonical_name": "Porsche",
+    "display_name": "Porsche",
+    "merge_type": "same_entity",
+    "rationale": "The German legal company name is normalized to the concise Porsche brand used by the existing project history.",
+    "evidence_url": "https://www.linkedin.com/in/aigerimsh/"
   },
   {
     "organization_alias_id": "org-e47393fc5bcb6d7b",
@@ -3382,6 +3445,33 @@
     "merge_type": "spacing_variant",
     "rationale": "Spaced corporate-name variant normalized to the current SHBFinance brand",
     "evidence_url": "https://www.shbfinance.com.vn/about-us/board-of-management"
+  },
+  {
+    "organization_alias_id": "org-afb7a55054f0d10d",
+    "alias": "Siemens Corporation",
+    "canonical_name": "Siemens",
+    "display_name": "Siemens",
+    "merge_type": "same_entity",
+    "rationale": "The country-specific corporate label is normalized to the concise Siemens parent brand.",
+    "evidence_url": "https://www.linkedin.com/in/gani-nazirov"
+  },
+  {
+    "organization_alias_id": "org-00630fe4af65629b",
+    "alias": "Siemens Oil & Gas Offshore AS",
+    "canonical_name": "Siemens",
+    "display_name": "Siemens",
+    "merge_type": "parent_organization",
+    "rationale": "The historical oil-and-gas subsidiary is normalized to its Siemens parent for affiliation search.",
+    "evidence_url": "https://linkedin.com/in/khairosh"
+  },
+  {
+    "organization_alias_id": "org-ebb889b7b1d60eb0",
+    "alias": "Siemens WLL Qatar",
+    "canonical_name": "Siemens",
+    "display_name": "Siemens",
+    "merge_type": "parent_organization",
+    "rationale": "The Qatar legal subsidiary is normalized to the Siemens parent used by the accepted profile link.",
+    "evidence_url": "https://linkedin.com/in/khairosh"
   },
   {
     "organization_alias_id": "org-8d2823660992ad01",
@@ -3895,6 +3985,15 @@
     "merge_type": "spacing_variant",
     "rationale": "Compact spelling used in the Kazakhstan IT association's company listing.",
     "evidence_url": "https://www.itk.kz/ru/117"
+  },
+  {
+    "organization_alias_id": "org-07d156da94b0e2ae",
+    "alias": "Technische Universität Berlin",
+    "canonical_name": "TU Berlin",
+    "display_name": "TU Berlin",
+    "merge_type": "same_entity",
+    "rationale": "The German full university name and the established TU Berlin short name identify the same institution.",
+    "evidence_url": "https://www.linkedin.com/in/aigerimsh/"
   },
   {
     "organization_alias_id": "org-e1bee67ecf214e73",

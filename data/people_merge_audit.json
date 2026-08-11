@@ -411,6 +411,22 @@
     "reason": "manual_transliteration"
   },
   {
+    "left": "Berdibek Shapagat",
+    "right": "Shapagat Berdibek",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2008
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The official IPhO record uses surname-first Berdibek Shapagat while the exact LinkedIn profile and both university repositories use Shapagat Berdibek.",
+    "evidence_url": "https://www.linkedin.com/in/shapagatberdibek/",
+    "canonical_person_id": "kaz-24cc764a8eaf"
+  },
+  {
     "left": "Temirlan Amangeldin",
     "right": "Temirlan Amangeldinov",
     "token_similarity": 0.95,

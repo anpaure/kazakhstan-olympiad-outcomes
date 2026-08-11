@@ -1,4 +1,15 @@
 alias,canonical_name,display_name,merge_type,rationale,evidence_url
+Siemens Corporation,Siemens,Siemens,same_entity,The country-specific corporate label is normalized to the concise Siemens parent brand.,https://www.linkedin.com/in/gani-nazirov
+Siemens WLL Qatar,Siemens,Siemens,parent_organization,The Qatar legal subsidiary is normalized to the Siemens parent used by the accepted profile link.,https://linkedin.com/in/khairosh
+Siemens Oil & Gas Offshore AS,Siemens,Siemens,parent_organization,The historical oil-and-gas subsidiary is normalized to its Siemens parent for affiliation search.,https://linkedin.com/in/khairosh
+Porsche AG,Porsche,Porsche,same_entity,The German legal company name is normalized to the concise Porsche brand used by the existing project history.,https://www.linkedin.com/in/aigerimsh/
+Technische Universität Berlin,TU Berlin,TU Berlin,same_entity,The German full university name and the established TU Berlin short name identify the same institution.,https://www.linkedin.com/in/aigerimsh/
+NIS Semey,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Semey campus label normalized to the national NIS network,https://trz.nis.edu.kz/en/school/nzm-semei/news/1856
+Nazarbayev Intellectual School in Semey,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Semey campus label normalized to the national NIS network,https://trz.nis.edu.kz/en/school/nzm-semei/news/1856
+Nazarbayev Intellectual School of Physics and Mathematics in Semey,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Official English campus name normalized to the national NIS network,https://trz.nis.edu.kz/en/school/nzm-semei/news/1358
+NIS Oskemen,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Oskemen campus label normalized to the national NIS network,https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy
+NIS Ust-Kamenogorsk,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Ust-Kamenogorsk campus label normalized to the national NIS network,https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy
+Nazarbayev Intellectual School of Chemistry and Biology in Oskemen,Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Official English campus name normalized to the national NIS network,https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy
 UC Berkeley,"University of California, Berkeley",UC Berkeley,same_entity,Common short name
 University of California Berkeley,"University of California, Berkeley",UC Berkeley,same_entity,Punctuation variant
 University of Minnesota-Twin Cities,University of Minnesota,University of Minnesota,same_entity,Campus-name variant

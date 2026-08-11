@@ -165,6 +165,17 @@
     "review_reason": "Country follows the accepted active student affiliation at Massachusetts Institute of Technology (MIT); the linked official institution source establishes the campus location. MIT's official visitor page identifies its Cambridge campus."
   },
   {
+    "person_id": "kaz-4cad451e9620",
+    "name": "Aigerim Shamshidin",
+    "country_code": "DE",
+    "country_name": "Germany",
+    "location_label": "Germany",
+    "evidence_url": "https://www.linkedin.com/in/aigerimsh/",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile exposes Germany as Aigerim's location alongside her current full-time Porsche Software & Data Architect role; earlier independent Porsche and TU Berlin evidence corroborates the same Germany trajectory."
+  },
+  {
     "person_id": "kaz-f3a805a1727a",
     "name": "Aivar Abrashuly",
     "country_code": "US",

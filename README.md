@@ -11,16 +11,16 @@ The pipeline does not drive a browser across LinkedIn profiles. Discovery and ex
 The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
-- 456 canonical people with 42 reviewed alias pairs
-- 408 researched people, all classified as probable or confirmed
-- 312 confirmed and 96 probable identity, education, or career outcomes
-- 377 manually reviewed outcomes backed by public evidence
-- 362 researched people with one resolved destination and 282 with a public LinkedIn URL
-- 2,509 sourced employment/education history rows, including 522 selected alma-mater records across 351 people
-- 40 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
-- 491 reviewed organization aliases collapsed into canonical employers and universities
-- 180 reviewed sector classifications covering every displayed non-educational destination
-- 253 sourced outcome-country records across 30 countries
+- 456 canonical people with 43 reviewed alias pairs
+- 410 researched people, all classified as probable or confirmed
+- 312 confirmed and 98 probable identity, education, or career outcomes
+- 381 manually reviewed outcomes backed by public evidence
+- 367 researched people with one resolved destination and 286 with a public LinkedIn URL
+- 2,536 sourced employment/education history rows, including 530 selected alma-mater records across 355 people
+- 44 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
+- 502 reviewed organization aliases collapsed into canonical employers and universities
+- 182 reviewed sector classifications covering every displayed non-educational destination
+- 261 sourced outcome-country records across 30 countries
 - 3 additional people with candidate-only evidence retained for audit but no accepted outcome
 - 132 rejected identity sources retained with review reasons and supporting links
 
@@ -196,9 +196,9 @@ failed counts, and coverage percentage.
 
 Current Exa search coverage: 456 of 456 canonical people, 456 successful searches,
 zero errors, and 2,445 ranked result rows. Total recorded search cost is $3.232.
-The profile audit covers all 282 accepted LinkedIn profiles: 244 full-content
-retrievals succeeded, 20 are backed by cached Exa search results, 7 are reviewed
-manual public-profile transcriptions, and 11 retrieval errors remain logged, at
+The profile audit covers all 286 accepted LinkedIn profiles: 244 full-content
+retrievals succeeded, 21 are backed by cached Exa search results, 11 are reviewed
+manual public-profile transcriptions, and 10 retrieval errors remain logged, at
 $0.244 recorded hydration cost.
 
 Outputs:

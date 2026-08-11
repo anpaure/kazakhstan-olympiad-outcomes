@@ -840,6 +840,13 @@
     "rationale": "Reviewed core activity is polymer manufacturing."
   },
   {
+    "organization_sector_id": "sector-54ae780111d5f1c6",
+    "canonical_name": "Porsche",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is automotive design and manufacturing."
+  },
+  {
     "organization_sector_id": "sector-38d2c9ab69c19db5",
     "canonical_name": "Premix Pro",
     "organization_type": "company",
