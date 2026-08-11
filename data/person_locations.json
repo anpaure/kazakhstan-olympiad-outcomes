@@ -220,6 +220,17 @@
     "review_reason": "The reviewed profile places Alexandr's ongoing Armeta R&D and machine-learning role in Kazakhstan and identifies his primary location as Astana; the conflicting San Francisco tag in the cached extraction is not used."
   },
   {
+    "person_id": "kaz-69e7f14df70f",
+    "name": "Alexey Doktorovich",
+    "country_code": "IL",
+    "country_name": "Israel",
+    "location_label": "Israel",
+    "evidence_url": "https://www.linkedin.com/pub/dir/%2B/Doctorovich",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "LinkedIn's public directory places Alexey Doctorovich in Israel at Microsoft, consistent with the official IMO record showing that the same exact-name competitor represented Israel in 2000."
+  },
+  {
     "person_id": "kaz-0622dfe9a63f",
     "name": "Ali Dautalinov",
     "country_code": "KZ",
@@ -526,6 +537,17 @@
     "evidence_kind": "affiliation_country",
     "confidence": "probable",
     "review_reason": "Country comes from the accepted structured affiliation record."
+  },
+  {
+    "person_id": "kaz-9bcf8f03ca96",
+    "name": "Andrey Jigalov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://ipbb.kz/eng/ap-09260382-superviser-sapakhova-z/",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "The institute's official project page records Andrey Viktorovich Zhigalov in its Kazakhstan research group, and the institute's official contact page places it in Almaty. The affiliation is dated to 2021."
   },
   {
     "person_id": "kaz-5b00b5124ff5",
@@ -2022,6 +2044,17 @@
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Astana/Almaty Physics Battles Tournament. The public profile header independently agrees.",
     "evidence_url": "https://kz.linkedin.com/in/roman-cheremnov-a02b8a341"
+  },
+  {
+    "person_id": "kaz-eab69c3a4463",
+    "name": "Ruslan Manakhayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://www.spe-events.org/conference/SPE_Annual_Caspian_Technical_Conference_and_Exhibition_2025/technical-program/nbspinnovations-in-geoscience-3",
+    "evidence_kind": "affiliation_country",
+    "confidence": "probable",
+    "review_reason": "The official SPE program affiliates R. Manakhayev with Tengizchevroil on Tengiz geoscience work in Kazakhstan; no narrower current residence is asserted."
   },
   {
     "person_id": "kaz-c41cd38943e8",

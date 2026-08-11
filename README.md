@@ -11,18 +11,18 @@ The pipeline does not drive a browser across LinkedIn profiles. Discovery and ex
 The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
-- 456 canonical people after 30 reviewed name merges
-- 364 researched people, all classified as probable or confirmed
-- 281 confirmed and 83 probable identity, education, or career outcomes
-- 333 manually reviewed outcomes backed by public evidence
-- 318 researched people with one resolved destination and 268 with a public LinkedIn URL
-- 2,361 sourced employment/education history rows, including 460 selected alma-mater records across 301 people
-- 39 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
-- 443 reviewed organization aliases collapsed into canonical employers and universities
-- 162 reviewed sector classifications covering every displayed non-educational destination
-- 210 sourced outcome-country records across 28 countries
+- 456 canonical people with 42 reviewed alias pairs
+- 408 researched people, all classified as probable or confirmed
+- 312 confirmed and 96 probable identity, education, or career outcomes
+- 377 manually reviewed outcomes backed by public evidence
+- 362 researched people with one resolved destination and 282 with a public LinkedIn URL
+- 2,509 sourced employment/education history rows, including 522 selected alma-mater records across 351 people
+- 40 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
+- 491 reviewed organization aliases collapsed into canonical employers and universities
+- 180 reviewed sector classifications covering every displayed non-educational destination
+- 253 sourced outcome-country records across 30 countries
 - 3 additional people with candidate-only evidence retained for audit but no accepted outcome
-- 128 rejected identity sources retained with review reasons and supporting links
+- 132 rejected identity sources retained with review reasons and supporting links
 
 The current first step is implemented in `scripts/collect_kazakhstan_participants.py`. It collects Kazakhstan competitors from:
 
@@ -195,10 +195,11 @@ highlights. The JSON also records input count, searched count, successful and
 failed counts, and coverage percentage.
 
 Current Exa search coverage: 456 of 456 canonical people, 456 successful searches,
-zero errors, and 2,330 ranked result rows. Total recorded search cost is $3.192.
-The profile audit covers all 256 accepted LinkedIn profiles: 238 full-content
-retrievals succeeded, 8 are backed by cached Exa search results, and 10 explicit
-`ENTITY_NOT_FOUND` errors remain logged, at $0.238 recorded hydration cost.
+zero errors, and 2,445 ranked result rows. Total recorded search cost is $3.232.
+The profile audit covers all 282 accepted LinkedIn profiles: 244 full-content
+retrievals succeeded, 20 are backed by cached Exa search results, 7 are reviewed
+manual public-profile transcriptions, and 11 retrieval errors remain logged, at
+$0.244 recorded hydration cost.
 
 Outputs:
 

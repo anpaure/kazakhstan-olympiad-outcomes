@@ -504,6 +504,13 @@
     "rationale": "Reviewed core activity is AI-enabled drug discovery."
   },
   {
+    "organization_sector_id": "sector-84233a8c7c872f26",
+    "canonical_name": "Institute of Plant Biology and Biotechnology",
+    "organization_type": "nonprofit",
+    "sector": "Education & Research",
+    "rationale": "Reviewed organization is a public scientific institute for plant biology and biotechnology research."
+  },
+  {
     "organization_sector_id": "sector-5e28929224141843",
     "canonical_name": "Intel Corporation",
     "organization_type": "company",

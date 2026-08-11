@@ -5865,13 +5865,28 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-bb822569e353",
+    "source_url": "https://ipbb.kz/eng/ap-09260382-superviser-sapakhova-z/",
+    "source_host": "ipbb.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "career_source_location;manual;manual_review"
+  },
+  {
     "source_id": "src-ad74ea491705",
     "source_url": "https://ipho-unofficial.org/countries/KAZ/individual",
     "source_host": "ipho-unofficial.org",
     "source_kind": "web_page",
-    "evidence_rows": 157,
+    "evidence_rows": 158,
     "people_count": 89,
-    "accepted_rows": 151,
+    "accepted_rows": 152,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 6,
@@ -15225,6 +15240,21 @@
     "source_adapters": "official_university_research_record"
   },
   {
+    "source_id": "src-37ad3b1b2b31",
+    "source_url": "https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf",
+    "source_host": "rmebrk.kz",
+    "source_kind": "pdf",
+    "evidence_rows": 4,
+    "people_count": 4,
+    "accepted_rows": 0,
+    "supporting_rows": 4,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "reviewed_olympiad_destination_table"
+  },
+  {
     "source_id": "src-d8b3f3b80991",
     "source_url": "https://ru.linkedin.com/in/david-li-ab07b332b",
     "source_host": "ru.linkedin.com",
@@ -16393,6 +16423,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-c16a4a0b863d",
+    "source_url": "https://sourceforge.net/p/wix/mailman/wix-users/thread/9CF7B82676EC5941B28BE435CDDCF1B431C6686212%40EA-EXMSG-C330.europe.corp.microsoft.com/",
+    "source_host": "sourceforge.net",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "archived_corporate_mailing_list"
   },
   {
     "source_id": "src-3c8c0f6cc0ba",
@@ -18784,15 +18829,15 @@
     "source_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO1998.pdf",
     "source_host": "ibo-info.org",
     "source_kind": "pdf",
-    "evidence_rows": 4,
+    "evidence_rows": 5,
     "people_count": 4,
-    "accepted_rows": 4,
+    "accepted_rows": 5,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IBO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IBO;manual"
   },
   {
     "source_id": "src-3d86087c6162",
@@ -20823,16 +20868,16 @@
     "source_id": "src-f36671a86580",
     "source_url": "https://www.imo-official.org/results/contestant/5610/",
     "source_host": "imo-official.org",
-    "source_kind": "html",
-    "evidence_rows": 1,
+    "source_kind": "web_page",
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 2,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IMO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IMO;manual"
   },
   {
     "source_id": "src-1188c650c9f1",
@@ -22425,6 +22470,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-449b64a17e82",
+    "source_url": "https://www.linkedin.com/pub/dir/%2B/Doctorovich",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "active_affiliation_profile_location;manual;manual_review"
+  },
+  {
     "source_id": "src-93516df76c1c",
     "source_url": "https://www.math.aau.at/OeMO/Ergebnisse/GWF/west/2026",
     "source_host": "math.aau.at",
@@ -23098,6 +23158,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-2cd844d7e068",
+    "source_url": "https://www.spe-events.org/conference/SPE_Annual_Caspian_Technical_Conference_and_Exhibition_2025/technical-program/nbspinnovations-in-geoscience-3",
+    "source_host": "spe-events.org",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "affiliation_country;manual;manual_review"
   },
   {
     "source_id": "src-f98dbb4d28ac",

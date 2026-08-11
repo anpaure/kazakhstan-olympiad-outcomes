@@ -605,5 +605,21 @@
     "review_reason": "The IPhO registry uses Viatcheslav Muravev while the age-compatible rare-name physics profile and current ISSP publications use Viacheslav Muravev and the Russian Academy biography uses Вячеслав Муравьев.",
     "evidence_url": "https://poisknews.ru/wp-content/uploads/candidates/info/ran_b195b49d.pdf",
     "canonical_person_id": "kaz-2c50f8bc247c"
+  },
+  {
+    "left": "Alexey Doktorovich",
+    "right": "Alexey Doktorovich",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IMO"
+    ],
+    "left_years": [
+      1999
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "Official IMO records place exact-name Alexey Doktorovich on Kazakhstan's 1999 team and Israel's 2000 team; later Microsoft sources use the single-letter Doctorovich transliteration in Israel.",
+    "evidence_url": "https://www.imo-official.org/results/individual/country/ISR/",
+    "canonical_person_id": "kaz-69e7f14df70f"
   }
 ]

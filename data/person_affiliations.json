@@ -3090,6 +3090,36 @@
     "confidence": "probable"
   },
   {
+    "person_id": "kaz-69e7f14df70f",
+    "name": "Alexey Doktorovich",
+    "organization": "Microsoft",
+    "role": "Microsoft Employee",
+    "affiliation_type": "employment",
+    "start_year": "2009",
+    "end_year": "",
+    "is_current": true,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://www.linkedin.com/pub/dir/%2B/Doctorovich",
+    "evidence_kind": "manual_review",
+    "confidence": "probable",
+    "evidence_text": "Official IMO records identify Alexey Doktorovich as Kazakhstan's 1999 bronze medalist and Israel's exact-name 2000 bronze medalist. LinkedIn's public directory identifies the rare Doctorovich spelling in Israel at Microsoft, while an archived 2009 Microsoft corporate mailing-list post independently names Alexey Doctorovich. The sources do not expose a formal title or explicitly mention his Olympiad record, so the career match remains probable and the role is deliberately generic."
+  },
+  {
+    "person_id": "kaz-69e7f14df70f",
+    "name": "Alexey Doktorovich",
+    "organization": "Microsoft",
+    "role": "Microsoft Employee",
+    "affiliation_type": "employment",
+    "start_year": "2009",
+    "end_year": "2009",
+    "is_current": false,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://sourceforge.net/p/wix/mailman/wix-users/thread/9CF7B82676EC5941B28BE435CDDCF1B431C6686212%40EA-EXMSG-C330.europe.corp.microsoft.com/",
+    "evidence_kind": "archived_corporate_mailing_list",
+    "confidence": "probable",
+    "evidence_text": "A March 2009 WiX mailing-list thread preserves Alexey Doctorovich's full name and a Microsoft corporate email domain, independently documenting his Microsoft affiliation."
+  },
+  {
     "person_id": "kaz-3e91bdc28e40",
     "name": "Alexey Dudnik",
     "organization": "Constructor University",
@@ -6660,6 +6690,21 @@
     "evidence_text": "SDU University; Associate Professor; Information Systems"
   },
   {
+    "person_id": "kaz-9bcf8f03ca96",
+    "name": "Andrey Jigalov",
+    "organization": "Institute of Plant Biology and Biotechnology",
+    "role": "Molecular Biology Researcher",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "2021",
+    "is_current": false,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://ipbb.kz/eng/ap-09260382-superviser-sapakhova-z/",
+    "evidence_kind": "manual_review",
+    "confidence": "probable",
+    "evidence_text": "Official IBO reports identify Kazakhstan's exact-name 1997-1998 biology competitor. The Kazakhstan institute's 2021 project page identifies Andrey Viktorovich Zhigalov, a close transliteration variant in the same field and country, as a molecular-biology candidate of sciences with 15 years of research experience and a member of its project group. No source explicitly joins the Olympiad entrant to the researcher, so the latest known affiliation is dated 2021 and remains probable."
+  },
+  {
     "person_id": "kaz-5b00b5124ff5",
     "name": "Andrey Kim",
     "organization": "Lomonosov Moscow State University (MSU)",
@@ -8850,6 +8895,21 @@
     "confidence": "probable"
   },
   {
+    "person_id": "kaz-7774ad796e6c",
+    "name": "Askerbek Zhaxylykov",
+    "organization": "Lomonosov Moscow State University (MSU)",
+    "role": "Undergraduate Chemistry Student",
+    "affiliation_type": "education",
+    "start_year": "1998",
+    "end_year": "",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf",
+    "evidence_kind": "reviewed_olympiad_destination_table",
+    "confidence": "confirmed",
+    "evidence_text": "The 2016 Kazakhstan chemistry-Olympiad history table identifies exact-name 1998 IChO bronze medalist Askerbek Zhaxylykov and records Moscow State University Faculty of Chemistry under where the alumnus enrolled."
+  },
+  {
     "person_id": "kaz-c056b8e8822d",
     "name": "Aslan Kuan",
     "organization": "L.N. Gumilyov Eurasian National University",
@@ -9448,6 +9508,21 @@
     "evidence_url": "https://linkedin.com/in/ayansegizbay",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-954c1033020d",
+    "name": "Ayana Badrakova",
+    "organization": "Lomonosov Moscow State University (MSU)",
+    "role": "Undergraduate Chemistry Student",
+    "affiliation_type": "education",
+    "start_year": "2007",
+    "end_year": "",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf",
+    "evidence_kind": "reviewed_olympiad_destination_table",
+    "confidence": "confirmed",
+    "evidence_text": "The 2016 Kazakhstan chemistry-Olympiad history table identifies exact-name 2007 IChO bronze medalist Ayana Badrakova and records Moscow State University Faculty of Chemistry under where the alumna enrolled."
   },
   {
     "person_id": "kaz-e252a91b0399",
@@ -24150,6 +24225,21 @@
     "evidence_text": "Synapse's current team page identifies Nurtore Torekhanuly as both an IBO 2024 bronze medalist and a KazNMU student, directly joining the exact-name Olympiad and current education records; the audited IBO scoreboard independently confirms his result."
   },
   {
+    "person_id": "kaz-cffe6b9ed25e",
+    "name": "Nurzhan Abdrakhmanov",
+    "organization": "Lomonosov Moscow State University (MSU)",
+    "role": "Undergraduate Chemistry Student",
+    "affiliation_type": "education",
+    "start_year": "2005",
+    "end_year": "",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf",
+    "evidence_kind": "reviewed_olympiad_destination_table",
+    "confidence": "confirmed",
+    "evidence_text": "The 2016 Kazakhstan chemistry-Olympiad history table identifies exact-name 2005 IChO bronze medalist Nurzhan Abdrakhmanov and records Moscow State University Faculty of Chemistry under where the alumnus enrolled."
+  },
+  {
     "person_id": "kaz-d1a89ad778a3",
     "name": "Nurzhan Bakibayev",
     "organization": "Kazakh-British Technical University (KBTU)",
@@ -27223,6 +27313,21 @@
     "evidence_url": "https://linkedin.com/in/roman-langolf",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-eab69c3a4463",
+    "name": "Ruslan Manakhayev",
+    "organization": "Tengizchevroil",
+    "role": "Geoscientist",
+    "affiliation_type": "employment",
+    "start_year": "2012",
+    "end_year": "",
+    "is_current": true,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://www.spe-events.org/conference/SPE_Annual_Caspian_Technical_Conference_and_Exhibition_2025/technical-program/nbspinnovations-in-geoscience-3",
+    "evidence_kind": "manual_review",
+    "confidence": "probable",
+    "evidence_text": "The IPhO registry identifies Kazakhstan's rare exact-name 2004 bronze medalist. A continuous 2012-2026 Tengiz geoscience publication trail names Ruslan or R. Manakhayev, and official 2025 and 2026 SPE programs explicitly affiliate R. Manakhayev with Tengizchevroil. No reviewed source explicitly joins the Olympiad and professional records, so the identity remains probable."
   },
   {
     "person_id": "kaz-81bc0e8f5f5c",
@@ -35893,6 +35998,21 @@
     "evidence_kind": "manual_review",
     "confidence": "confirmed",
     "evidence_text": "NIS identifies Yevgeniya Mezhenina as its Karaganda student and Kazakhstan's 2026 IBO bronze medalist; the official IBO result independently confirms the exact-name award."
+  },
+  {
+    "person_id": "kaz-197ec90e92c1",
+    "name": "Yuriy Kudryavtsev",
+    "organization": "Lomonosov Moscow State University (MSU)",
+    "role": "Undergraduate Chemistry Student",
+    "affiliation_type": "education",
+    "start_year": "2000",
+    "end_year": "",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf",
+    "evidence_kind": "reviewed_olympiad_destination_table",
+    "confidence": "confirmed",
+    "evidence_text": "The 2016 Kazakhstan chemistry-Olympiad history table identifies exact-name 2000 IChO participant Yuriy Kudryavtsev and records Moscow State University Faculty of Chemistry under where the alumnus enrolled."
   },
   {
     "person_id": "kaz-8d648f29d1e0",

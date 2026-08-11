@@ -748,6 +748,67 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertIn("Suleyman Demirel University (Turkey)", alma_maters)
         self.assertNotIn("Suleyman Demirel University (SDU)", alma_maters)
 
+    def test_alexey_doktorovich_probable_microsoft_outcome_in_israel(self):
+        person = self.people["kaz-69e7f14df70f"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Microsoft")
+        self.assertEqual(person["role"], "Microsoft Employee")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertIn("Alexey Doctorovich", person["aliases"])
+        self.assertEqual(location["country_code"], "IL")
+        self.assertEqual(location["country_name"], "Israel")
+
+    def test_ruslan_manakhayev_probable_tengizchevroil_outcome(self):
+        person = self.people["kaz-eab69c3a4463"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Tengizchevroil")
+        self.assertEqual(person["role"], "Geoscientist")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(location["country_code"], "KZ")
+
+    def test_andrey_jigalov_dated_plant_biology_affiliation(self):
+        person = self.people["kaz-9bcf8f03ca96"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(
+            person["organization"], "Institute of Plant Biology and Biotechnology"
+        )
+        self.assertEqual(person["role"], "Molecular Biology Researcher")
+        self.assertEqual(person["end_year"], "2021")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+
+    def test_scanned_chemistry_history_adds_msu_alma_maters_only(self):
+        person_ids = {
+            "kaz-7774ad796e6c",
+            "kaz-197ec90e92c1",
+            "kaz-cffe6b9ed25e",
+            "kaz-954c1033020d",
+        }
+
+        for person_id in person_ids:
+            with self.subTest(person_id=person_id):
+                person = self.people[person_id]
+                self.assertEqual(person["destination_status"], "none")
+                self.assertEqual(person["confidence"], "unmatched")
+                self.assertIn(
+                    "Lomonosov Moscow State University (MSU)",
+                    self.alma_maters(person_id),
+                )
+                self.assertTrue(
+                    any(
+                        row["organization"]
+                        == "Lomonosov Moscow State University (MSU)"
+                        and row["role"] == "Undergraduate Chemistry Student"
+                        and row["evidence_kind"]
+                        == "reviewed_olympiad_destination_table"
+                        for row in self.affiliations_for(person_id)
+                    )
+                )
+
 
 if __name__ == "__main__":
     unittest.main()
