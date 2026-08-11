@@ -557,7 +557,7 @@
   {
     "person_id": "kaz-514026a01ba3",
     "canonical_name": "Yerlan Jumabayev",
-    "aliases": "Yerlan Jumabayev",
+    "aliases": "Yerlan Jumabayev;Жумабаев Ерлан",
     "olympiads": "IMO",
     "years": "1997",
     "first_year": 1997,
@@ -586,8 +586,8 @@
   },
   {
     "person_id": "kaz-51f03f3fb603",
-    "canonical_name": "Almas Sakhavyev",
-    "aliases": "Almas Sakhavyev",
+    "canonical_name": "Almas Sakhauyev",
+    "aliases": "Almas Sakhauyev;Almas Sakhavyev;Сахауев Алмас",
     "olympiads": "IMO",
     "years": "1998",
     "first_year": 1998,
@@ -1037,7 +1037,7 @@
   {
     "person_id": "kaz-1e390288b2cc",
     "canonical_name": "Danil Murtazin",
-    "aliases": "Danil Murtazin",
+    "aliases": "Danil Murtazin;Данил Муртазин",
     "olympiads": "IPhO",
     "years": "2000;2001",
     "first_year": 2000,
@@ -2402,7 +2402,7 @@
   {
     "person_id": "kaz-32cf54f8673f",
     "canonical_name": "Oleg Obukhov",
-    "aliases": "Obukhov Oleg;Oleg Obukhov",
+    "aliases": "Obukhov Oleg;Oleg Obukhov;Олег Обухов",
     "olympiads": "IBO",
     "years": "2006;2007",
     "first_year": 2006,
@@ -3497,7 +3497,7 @@
   {
     "person_id": "kaz-b8e3ad83d883",
     "canonical_name": "Andrey Drobakh",
-    "aliases": "Andrey Drobakh",
+    "aliases": "Andrei Drobakh;Andrey Drobakh;Дробах Андрей",
     "olympiads": "IMO",
     "years": "2011",
     "first_year": 2011,
@@ -4337,7 +4337,7 @@
   {
     "person_id": "kaz-e8eb1ebde919",
     "canonical_name": "Anton Sedletskiy",
-    "aliases": "Anton Sedletskiy",
+    "aliases": "Anton Sedletskiy;Седлецкий Антон",
     "olympiads": "IPhO",
     "years": "2015;2016",
     "first_year": 2015,

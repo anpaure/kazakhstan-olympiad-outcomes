@@ -749,5 +749,103 @@
     "review_reason": "The IPhO registry's Rafael Mavlyukeyev spelling and the age-compatible Moscow race and business records' Cyrillic spellings form a rare-name probable match; no adult source explicitly mentions the Olympiad.",
     "evidence_url": "https://probeg.org/race/74199/",
     "canonical_person_id": "kaz-7e2cf66f126f"
+  },
+  {
+    "left": "Almas Sakhavyev",
+    "right": "Almas Sakhauyev",
+    "token_similarity": 0.933,
+    "shared_olympiads": [
+      "IMO"
+    ],
+    "left_years": [
+      1998
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "RFMS's official international-Olympiad archive records Сахауев Алмас in mathematics in 1998 while the official IMO registry records Almas Sakhavyev for Kazakhstan in the same event and year; the rare exact identity establishes a transliteration variant.",
+    "evidence_url": "https://almaty.fizmat.kz/ru/muzey/uchastniki-mezhdunarodnykh-olimpiad/",
+    "canonical_person_id": "kaz-51f03f3fb603"
+  },
+  {
+    "left": "Yerlan Jumabayev",
+    "right": "Yerlan Jumabayev",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IMO"
+    ],
+    "left_years": [
+      1997
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "RFMS's official international-Olympiad archive records Жумабаев Ерлан in mathematics in 1997 while the official IMO registry records Yerlan Jumabayev for Kazakhstan in the same event and year.",
+    "evidence_url": "https://almaty.fizmat.kz/ru/muzey/uchastniki-mezhdunarodnykh-olimpiad/",
+    "canonical_person_id": "kaz-514026a01ba3"
+  },
+  {
+    "left": "Andrey Drobakh",
+    "right": "Andrey Drobakh",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IMO"
+    ],
+    "left_years": [
+      2011
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "Kazinform and Pavlodar school reporting use Andrei and Андрей Дробах for the same School-Lyceum No. 8 student later recorded as Andrey Drobakh in Kazakhstan's 2011 IMO team.",
+    "evidence_url": "https://www.inform.kz/ru/zoloto-i-serebro-mezhdunarodnyh-matematicheskih-olimpiad-zavoeval-pavlodarec-andrey-drobah_a2358809",
+    "canonical_person_id": "kaz-b8e3ad83d883"
+  },
+  {
+    "left": "Anton Sedletskiy",
+    "right": "Anton Sedletskiy",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2015,
+      2016
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "Kazakhstan's national science portal records Седлецкий Антон as the Pavlodar physics student whose school and 2016 Asian Physics Olympiad chronology align with Kazakhstan's IPhO silver medalist Anton Sedletskiy.",
+    "evidence_url": "https://nauka.kz/page.php?lang=1&news_id=6795&page_id=893",
+    "canonical_person_id": "kaz-e8eb1ebde919"
+  },
+  {
+    "left": "Oleg Obukhov",
+    "right": "Oleg Obukhov",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IBO"
+    ],
+    "left_years": [
+      2007
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The Kokshetau Kazakh-Turkish Lyceum archive records Олег Обухов as its 2006 IBO bronze medalist while the official IBO results record Oleg Obukhov for Kazakhstan in 2006 and 2007.",
+    "evidence_url": "https://k-t-l.narod.ru/we/success.html",
+    "canonical_person_id": "kaz-32cf54f8673f"
+  },
+  {
+    "left": "Danil Murtazin",
+    "right": "Danil Murtazin",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2000,
+      2001
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "A reviewed Kazakhstan Olympiad history explicitly identifies Данил Муртазин from Atyrau as the country's 2001 IPhO gold medalist recorded as Danil Murtazin in the international results.",
+    "evidence_url": "https://yvision.kz/post/obzor-vtoroy-ezhegodnoy-respublikanskoy-olimpiady-po-fizike-imeni-a-imambekova-2015-g-474804",
+    "canonical_person_id": "kaz-1e390288b2cc"
   }
 ]

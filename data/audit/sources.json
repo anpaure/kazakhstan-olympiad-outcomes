@@ -139,15 +139,15 @@
     "source_url": "https://almaty.fizmat.kz/ru/muzey/uchastniki-mezhdunarodnykh-olimpiad/",
     "source_host": "almaty.fizmat.kz",
     "source_kind": "web_page",
-    "evidence_rows": 1,
-    "people_count": 1,
+    "evidence_rows": 3,
+    "people_count": 3,
     "accepted_rows": 1,
-    "supporting_rows": 0,
+    "supporting_rows": 2,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "manual_review",
-    "source_adapters": "manual"
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;official_school_archive"
   },
   {
     "source_id": "src-e4d79ad13ff6",
@@ -6409,15 +6409,15 @@
     "source_url": "https://k-t-l.narod.ru/we/success.html",
     "source_host": "k-t-l.narod.ru",
     "source_kind": "web_page",
-    "evidence_rows": 1,
+    "evidence_rows": 2,
     "people_count": 1,
     "accepted_rows": 0,
-    "supporting_rows": 1,
+    "supporting_rows": 2,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location"
+    "provenances": "accepted_affiliation_history;accepted_location_evidence",
+    "source_adapters": "historical_latest_known_location;school_alumni_archive"
   },
   {
     "source_id": "src-21fd73d05ac2",
@@ -11074,15 +11074,15 @@
     "source_url": "https://nauka.kz/page.php?lang=1&news_id=6795&page_id=893",
     "source_host": "nauka.kz",
     "source_kind": "web_page",
-    "evidence_rows": 1,
+    "evidence_rows": 2,
     "people_count": 1,
     "accepted_rows": 0,
-    "supporting_rows": 1,
+    "supporting_rows": 2,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location"
+    "provenances": "accepted_affiliation_history;accepted_location_evidence",
+    "source_adapters": "historical_latest_known_location;institutional_student_report"
   },
   {
     "source_id": "src-0628a26e79ca",
@@ -22588,6 +22588,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history",
     "source_adapters": "institutional_student_report"
+  },
+  {
+    "source_id": "src-2da0dfca0914",
+    "source_url": "https://www.inform.kz/ru/zoloto-i-serebro-mezhdunarodnyh-matematicheskih-olimpiad-zavoeval-pavlodarec-andrey-drobah_a2358809",
+    "source_host": "inform.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "reported_school_biography"
   },
   {
     "source_id": "src-05419a46ff4d",

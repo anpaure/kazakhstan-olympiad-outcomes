@@ -214,7 +214,7 @@ highlights. The JSON also records input count, searched count, successful and
 failed counts, and coverage percentage.
 
 Current Exa search coverage: 456 of 456 canonical people, 456 successful searches,
-zero errors, and 2,445 ranked result rows. Total recorded search cost is $3.232.
+zero errors, and 2,590 ranked result rows. Total recorded search cost is $3.352.
 The profile audit covers all 294 accepted LinkedIn profiles: 273 full-content
 retrievals succeeded, 11 are reviewed manual public-profile transcriptions, and
 10 retrieval errors remain logged, at $0.274 recorded hydration cost.
@@ -238,12 +238,11 @@ and current-affiliation language. Its priority score orders unresolved explicit
 identity bridges first without treating a name match alone as proof. Every row has
 a deterministic `review_status` of `selected`, `supporting`, `deferred`, or `rejected`, matched
 against the accepted evidence and rejection ledger after LinkedIn URL
-canonicalization. The current queue contains 112 people with an explicit
+canonicalization. The current queue contains 113 people with an explicit
 expected-Olympiad bridge; none remain unmatched or probable, and none need an
-outcome decision. Across all 347 exact-name profile results, 211 are selected, 5
+outcome decision. Across all 346 exact-name profile results, 213 are selected, 5
 are supporting duplicate profiles, 31 are explicitly deferred with review reasons,
-and 91 are rejected. Nine exact-name-only candidates across three unresolved people
-remain unreviewed.
+and 97 are rejected. No exact-name candidates remain unreviewed.
 
 Review-queue outputs:
 

@@ -8,7 +8,7 @@ src-52d9dede15eb,https://aerotc.kz/en/,aerotc.kz,web_page,2,1,1,1,0,0,0,accepted
 src-124236445428,https://almaty.fizmat.kz/muzey/uchastniki-mezhdunarodnykh-olimpiad/,almaty.fizmat.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-2e3245d9349a,https://almaty.fizmat.kz/news/rezultaty-50-oy-mezhdunarodnoy-khimiches/,almaty.fizmat.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-26985711d018,https://almaty.fizmat.kz/ru/muzey/luchshie-uchitelya/,almaty.fizmat.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
-src-f236b4945420,https://almaty.fizmat.kz/ru/muzey/uchastniki-mezhdunarodnykh-olimpiad/,almaty.fizmat.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-f236b4945420,https://almaty.fizmat.kz/ru/muzey/uchastniki-mezhdunarodnykh-olimpiad/,almaty.fizmat.kz,web_page,3,3,1,2,0,0,0,accepted_affiliation_history;manual_review,manual;official_school_archive
 src-e4d79ad13ff6,https://almaty.fizmat.kz/ru/teachers/smaylov-b-b/,almaty.fizmat.kz,web_page,4,1,1,3,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review;official_employer_biography
 src-0a36a5b5c1cf,https://almaty.tv/news/obrazovanie-i-nauka/1703-almatinskie-shkolniki-zavoevali-medali-na-medgdunarodnoy-olimpiade,almaty.tv,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-45a624b9912f,https://app.qwoted.com/opportunities/event-12th-annual-summit-downstream-central-asia-and-caspian-2025,app.qwoted.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -426,7 +426,7 @@ src-f5729a60f72c,https://izdatelstvo-sk.kz/news/v-sko-sistemnaya-poddergka-talan
 src-424a1de8593c,https://izho.kz/contest/results-izho-2022/,izho.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-25439f5c3ac7,https://jeetain.wixsite.com/mittal-lab/news,jeetain.wixsite.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-f5be315e0d71,https://jeetain.wixsite.com/mittal-lab/people,jeetain.wixsite.com,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_profile
-src-9c64cc394107,https://k-t-l.narod.ru/we/success.html,k-t-l.narod.ru,web_page,1,1,0,1,0,0,0,accepted_location_evidence,historical_latest_known_location
+src-9c64cc394107,https://k-t-l.narod.ru/we/success.html,k-t-l.narod.ru,web_page,2,1,0,2,0,0,0,accepted_affiliation_history;accepted_location_evidence,historical_latest_known_location;school_alumni_archive
 src-21fd73d05ac2,https://kase.kz/files/emitters/BCCI/bccirbf7_2020.pdf,kase.kz,pdf,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation,destination_review;destination_source_review;historical_latest_known_location
 src-e69b56da2aec,https://kaz.inform.kz/news/halykaralyk-pan-olimpiadalarynyn-tarbielik-mani-zor-maman_a3969819/,kaz.inform.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-99f2cffb2800,https://kazpravda.kz/n/uchebnik-s-avtografom/,kazpravda.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -737,7 +737,7 @@ src-b55d24b5ee78,https://microelectronics.tudelft.nl/~ilke/research.html,microel
 src-8af499a8e84c,https://mipt.nagradion.ru/tournament27756/team/232497/players,mipt.nagradion.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_alumni_registry
 src-2a9d696f5c9f,https://mirror.akorda.kz/ru/executive_office/executive_office_stucture,mirror.akorda.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
 src-2fc2cbe341d2,https://nauchforum.ru/archive/studjournal/17%28153_3%29.pdf,nauchforum.ru,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,academic_author_affiliation
-src-70a1e44cef07,https://nauka.kz/page.php?lang=1&news_id=6795&page_id=893,nauka.kz,web_page,1,1,0,1,0,0,0,accepted_location_evidence,historical_latest_known_location
+src-70a1e44cef07,https://nauka.kz/page.php?lang=1&news_id=6795&page_id=893,nauka.kz,web_page,2,1,0,2,0,0,0,accepted_affiliation_history;accepted_location_evidence,historical_latest_known_location;institutional_student_report
 src-0628a26e79ca,https://nazymaltbridge.substack.com/p/welcome-to-altbridge,nazymaltbridge.substack.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-441b5ac90c72,https://neerc.ifmo.ru/school/io/archive/20080329/standings-20080329-individual.html,neerc.ifmo.ru,web_page,1,1,0,1,0,0,0,accepted_location_evidence,historical_latest_known_location
 src-7ddc1d02cbec,https://news.itmo.ru/ru/archive/news/5089/,news.itmo.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_student_profile
@@ -1505,6 +1505,7 @@ src-4c57ba95b381,https://www.imperial.ac.uk/visit/campuses/,imperial.ac.uk,web_p
 src-1bcd82e9003e,https://www.inforegister.ee/en/2181368-ID/,inforegister.ee,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-1de92d5f7853,https://www.inform.kz/person/nurzhan-khazhimuratuly-kadzhiakbarov-1736839590,inform.kz,web_page,8,1,0,8,0,0,0,accepted_affiliation_history,official_news_agency_biography
 src-4c799ce6963b,https://www.inform.kz/ru/kazahstanskie-shkolniki-zavoevali-chetire-medali-na-prestizhnoy-mezhdunarodnoy-olimpiade-029dda,inform.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_student_report
+src-2da0dfca0914,https://www.inform.kz/ru/zoloto-i-serebro-mezhdunarodnyh-matematicheskih-olimpiad-zavoeval-pavlodarec-andrey-drobah_a2358809,inform.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,reported_school_biography
 src-05419a46ff4d,https://www.inp.nsk.su/sobytia/konkursy-molodyh-uchenykh/konkursy-molodykh-uchenykh-2012goda,inp.nsk.su,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_postgraduate_roster
 src-18b4b417a4db,https://www.jkimlab.com/people,jkimlab.com,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation,current_research_affiliation_location;destination_review;destination_source_review
 src-28ff4753b51f,https://www.kaist.ac.kr/en/html/kaist/011501.html,kaist.ac.kr,web_page,8,8,0,8,0,0,0,accepted_location_evidence,current_education_location

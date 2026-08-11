@@ -1305,10 +1305,61 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(person["organization"], "")
         self.assertEqual(person["role"], "")
         self.assertEqual(person["profile_url"], "")
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"Republican Physics and Mathematics School (RFMS)"},
+        )
         self.assertEqual(location["country_code"], "KZ")
         self.assertEqual(
             location["evidence_kind"], "historical_latest_known_location"
         )
+
+    def test_rfms_archive_corrects_almas_sakhauyev_spelling(self):
+        person = self.people["kaz-51f03f3fb603"]
+
+        self.assertEqual(person["name"], "Almas Sakhauyev")
+        self.assertIn("Almas Sakhavyev", person["aliases"])
+        self.assertIn("Сахауев Алмас", person["aliases"])
+        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"Republican Physics and Mathematics School (RFMS)"},
+        )
+
+    def test_unmatched_pavlodar_medalists_retain_school_history(self):
+        expected_aliases = {
+            "kaz-b8e3ad83d883": "Дробах Андрей",
+            "kaz-e8eb1ebde919": "Седлецкий Антон",
+        }
+
+        for person_id, alias in expected_aliases.items():
+            with self.subTest(person_id=person_id):
+                person = self.people[person_id]
+                self.assertEqual(person["confidence"], "unmatched")
+                self.assertEqual(person["organization"], "")
+                self.assertIn(alias, person["aliases"])
+                self.assertEqual(
+                    self.alma_maters(person_id),
+                    {"Pavlodar School-Lyceum No. 8"},
+                )
+
+    def test_oleg_obukhov_kokshetau_school_history(self):
+        person = self.people["kaz-32cf54f8673f"]
+
+        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["organization"], "")
+        self.assertIn("Олег Обухов", person["aliases"])
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"Bilim-Innovation Lyceums (BIL)"},
+        )
+
+    def test_danil_murtazin_has_sourced_cyrillic_alias(self):
+        person = self.people["kaz-1e390288b2cc"]
+
+        self.assertEqual(person["confidence"], "unmatched")
+        self.assertIn("Данил Муртазин", person["aliases"])
 
     def test_alexander_zaitsev_retains_only_age_compatible_candidate(self):
         person = self.people["kaz-6c47e89eeff1"]

@@ -5742,6 +5742,24 @@
     "evidence_text": "RFMS's official alumni list identifies its rare exact-name 1992 IMO bronze medalist while Kazakhstan insurance records give the same full name and age-compatible 1975 birth year; a 2018 actuarial profile reports that he had worked at Sun Life Financial in Canada since 2011 but no source explicitly joins that career to the contestant"
   },
   {
+    "affiliation_id": "aff-a625ff88f113026e",
+    "evidence_id": "ev-021364ea39f67410",
+    "source_id": "src-f236b4945420",
+    "person_id": "kaz-51f03f3fb603",
+    "name": "Almas Sakhauyev",
+    "organization": "Republican Physics and Mathematics School (RFMS)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "1998",
+    "is_current": "false",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://almaty.fizmat.kz/ru/muzey/uchastniki-mezhdunarodnykh-olimpiad/",
+    "evidence_kind": "official_school_archive",
+    "confidence": "confirmed",
+    "evidence_text": "RFMS's official museum archive lists Almas Sakhauyev among the school's international mathematics Olympiad participants in 1998; this is historical school evidence and does not identify a later destination."
+  },
+  {
     "affiliation_id": "aff-4ae8d756bf428d05",
     "evidence_id": "ev-8aaa1e3d526100c3",
     "source_id": "src-e7b0d6ae6595",
@@ -5865,7 +5883,7 @@
     "evidence_url": "https://kz.linkedin.com/in/almas-ordabayev-04808078",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable",
-    "evidence_text": "Chief Executive Officer - Quantum Management Company (Current) Jan 2023 - Present (3 years and 6 months) in Астана, Казахстан Department: General Management • Level: C-Level"
+    "evidence_text": "Chief Executive Officer - Quantum Management Company (Current) ... Jan 2023 - Present (3 years and 7 months) in Астана, Казахстан ... Management Company is a ... Headquartered in Kazakhstan ..."
   },
   {
     "affiliation_id": "aff-a0f03d425a8ac55e",
@@ -8349,7 +8367,7 @@
     "evidence_url": "https://kz.linkedin.com/in/amirlan-amanzholov-482536305",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable",
-    "evidence_text": "Project Manager - [Beyond Curriculum PF](https://www.linkedin.com/company/beyondcurriculum) (Current) ... : Project Management • Level: Manager ... Beyond Curriculum PF is a nonprofit organization. ... a public foundation that ... to help students transition from school programs. Beyond Curriculum PF has 1-10 employees, founded in ... 2017. Headquartered in Taldykorgan ... Kazakhstan. Its workforce ... distributed across Kazakhstan, United States ... and Hong Kong ..."
+    "evidence_text": "Project Manager - [Beyond Curriculum PF](https://www.linkedin.com/company/beyondcurriculum) (Current) ... Department: Project Management • Level: Manager ... Beyond Curriculum PF is a nonprofit organization. ОФ Beyond Curriculum is a public foundation that aims to help students transition from school programs. Beyond Curriculum PF has 1-10 employees, founded in 2017. Headquartered in Taldykorgan, Kazakhstan. Its workforce is distributed across Kazakhstan, United States, and Hong Kong. ..."
   },
   {
     "affiliation_id": "aff-db08aef43789783a",
@@ -8440,6 +8458,24 @@
     "evidence_kind": "accepted_openalex_orcid",
     "confidence": "confirmed",
     "evidence_text": "SDU University; Associate Professor; Information Systems"
+  },
+  {
+    "affiliation_id": "aff-3fd62e022ef00fb4",
+    "evidence_id": "ev-a78ee8f642f9f443",
+    "source_id": "src-2da0dfca0914",
+    "person_id": "kaz-b8e3ad83d883",
+    "name": "Andrey Drobakh",
+    "organization": "Pavlodar School-Lyceum No. 8",
+    "role": "Grade 11 Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2011",
+    "is_current": "false",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://www.inform.kz/ru/zoloto-i-serebro-mezhdunarodnyh-matematicheskih-olimpiad-zavoeval-pavlodarec-andrey-drobah_a2358809",
+    "evidence_kind": "reported_school_biography",
+    "confidence": "confirmed",
+    "evidence_text": "Kazinform identifies Andrey Drobakh as a grade-11 student at Pavlodar School-Lyceum No. 8 in March 2011; this is historical school evidence and does not identify a later destination."
   },
   {
     "affiliation_id": "aff-8c6ffeef1e2cd86a",
@@ -9412,6 +9448,24 @@
     "evidence_kind": "accepted_orcid",
     "confidence": "probable",
     "evidence_text": "Yale University; Graduate Student; Chemistry; 2023; 2026"
+  },
+  {
+    "affiliation_id": "aff-01c8954f797aafd7",
+    "evidence_id": "ev-91e3f2ed2cbef4e3",
+    "source_id": "src-70a1e44cef07",
+    "person_id": "kaz-e8eb1ebde919",
+    "name": "Anton Sedletskiy",
+    "organization": "Pavlodar School-Lyceum No. 8",
+    "role": "Grade 11 Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2016",
+    "is_current": "false",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://nauka.kz/page.php?lang=1&news_id=6795&page_id=893",
+    "evidence_kind": "institutional_student_report",
+    "confidence": "confirmed",
+    "evidence_text": "Kazakhstan's national science portal identifies Anton Sedletskiy as a grade-11 student at Pavlodar School-Lyceum No. 8 for Gifted Children in May 2016; this is historical school evidence and does not identify a later destination."
   },
   {
     "affiliation_id": "aff-77b4e79219159bb7",
@@ -19455,7 +19509,7 @@
     "evidence_url": "https://linkedin.com/in/dias-suleimenov-23888828b",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable",
-    "evidence_text": "[Kazakh-Turkish lyceum for gifted students](https://www.linkedin.com/school/bilim) ... 2019 - 2024 (5 years) in Kazakhstan ... Kazakh-Turkish lyceum for gifted students is an educational institution. Kazakh-Turkish lyceum for gifted students has 1-10 employees (+40% YoY), founded in 1992. Headquartered in Kazakhstan. ..."
+    "evidence_text": "[Kazakh-Turkish lyceum for gifted students](https://www.linkedin.com/school/bilim) ... 2019 - 2024 ( ... years) in Kazakhstan ... Kazakh-Turkish lyceum for gifted students is an educational institution. Kazakh-Turkish lyceum for gifted students has 1-10 employees (+40% YoY), founded in 1992. Headquartered in Kazakhstan. ..."
   },
   {
     "affiliation_id": "aff-10b35b18af5d68e9",
@@ -19491,7 +19545,7 @@
     "evidence_url": "https://linkedin.com/in/dias-suleimenov-23888828b",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable",
-    "evidence_text": "Bachelor's degree Mathematics at [The Hong Kong University of Science and Technology](https://www.linkedin.com/school/hkust) ... The Hong Kong University ... Science and Technology is ... education institution. The Hong Kong University of Science and Technology (HKUST) is a top-ranked global university in Hong Kong recognized for cutting-edge research and innovation in science, medical science, engineering, business, and interdisciplinary education. The Hong Kong University of Science and Techno"
+    "evidence_text": "Bachelor's degree Mathematics at [The Hong Kong University of Science and Technology](https://www.linkedin.com/school/hkust) ... The Hong Kong University of Science and Technology is a higher education institution. The Hong Kong University of Science and Technology (HKUST) is a top-ranked global university in Hong Kong recognized for cutting-edge research and innovation in science, medical science, engineering, business, and interdisciplinary education. The Hong Kong University of Science and Te"
   },
   {
     "affiliation_id": "aff-47b90c6ebea937c2",
@@ -32562,6 +32616,24 @@
     "evidence_text": "The official IMO record and rare exact name align with a Kazakhstan press biography that explicitly mentions international mathematics Olympiads; Haileybury Almaty's institutional biography documents his MIT education and current NKM Capital role"
   },
   {
+    "affiliation_id": "aff-da282f08f8a36833",
+    "evidence_id": "ev-5512760a5a0e61d8",
+    "source_id": "src-9c64cc394107",
+    "person_id": "kaz-32cf54f8673f",
+    "name": "Oleg Obukhov",
+    "organization": "Bilim-Innovation Lyceums (BIL)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2006",
+    "is_current": "false",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://k-t-l.narod.ru/we/success.html",
+    "evidence_kind": "school_alumni_archive",
+    "confidence": "confirmed",
+    "evidence_text": "The Kokshetau Kazakh-Turkish Lyceum alumni archive identifies Oleg Obukhov as its 2006 IBO bronze medalist; the former KTL network is now normalized as Bilim-Innovation Lyceums and this record is historical education only."
+  },
+  {
     "affiliation_id": "aff-3d57e35576009909",
     "evidence_id": "ev-b8a38992c2164663",
     "source_id": "src-0bb3a211c6bf",
@@ -44764,6 +44836,24 @@
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable",
     "evidence_text": "Senior Software Engineer - [Nazarbayev Intellectual Schools](https://www.linkedin.com/school/nazarbayev-intellectual-schools) Mar 2015 - Nov 2019 (4 years and 8 months) in Kazakhstan The main responsibilities - implement distributed systems and integrate 3rd party platforms. I have worked in collaboration with strategic partners and successfully integrated distributed systems. Implemented the core components of a distributed system integrated with 3rd party online testing software along with a p"
+  },
+  {
+    "affiliation_id": "aff-f759042df13ebafa",
+    "evidence_id": "ev-a423cf8d6682e063",
+    "source_id": "src-f236b4945420",
+    "person_id": "kaz-514026a01ba3",
+    "name": "Yerlan Jumabayev",
+    "organization": "Republican Physics and Mathematics School (RFMS)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "1997",
+    "is_current": "false",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://almaty.fizmat.kz/ru/muzey/uchastniki-mezhdunarodnykh-olimpiad/",
+    "evidence_kind": "official_school_archive",
+    "confidence": "confirmed",
+    "evidence_text": "RFMS's official museum archive lists Yerlan Jumabayev among the school's international mathematics Olympiad participants in 1997; this is historical school evidence and does not identify a later destination."
   },
   {
     "affiliation_id": "aff-7bfdba34ff3b4220",
