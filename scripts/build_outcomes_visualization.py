@@ -172,8 +172,8 @@ def compact_sources(
         source = preferred_alma_source(alma, affiliations)
         add(source.get("evidence_url"), "education", "Alma mater source", "graduation-cap")
     location_label = (
-        "Last-known country source"
-        if location.get("evidence_kind") == "historical_latest_known_location"
+        "Historical outcome country source"
+        if location.get("evidence_kind") == "historical_outcome_location"
         else "Outcome country source"
     )
     add(location.get("evidence_url"), "location", location_label, "map-pin")

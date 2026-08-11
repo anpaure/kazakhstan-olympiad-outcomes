@@ -217,7 +217,7 @@ TRUSTED_OVERRIDE_KINDS = {
     "career_source_location",
     "current_research_affiliation_location",
     "current_role_location",
-    "historical_latest_known_location",
+    "historical_outcome_location",
 }
 PRIORITY_OVERRIDE_KINDS = {
     "active_affiliation_profile_location",
@@ -641,14 +641,11 @@ def build_rows(
         person_id = clean_text(person.get("person_id"))
         override = overrides.get(person_id)
 
-        # Unmatched identities remain ineligible for automated inference. A
-        # person-specific reviewed override may still document the last
-        # verifiable location without accepting a speculative identity match.
+        # Representing Kazakhstan or attending school there is participant
+        # history, not an outcome country. Unmatched identities therefore stay
+        # out of the country dataset even when that history has a sourced row
+        # in the override ledger.
         if clean_text(person.get("confidence")) not in {"probable", "confirmed"}:
-            if override and override.get("evidence_kind") in TRUSTED_OVERRIDE_KINDS:
-                row = dict(override)
-                row["name"] = clean_text(person.get("name"))
-                output.append(row)
             continue
 
         # A reviewed role location overrides conflicting automated extraction.

@@ -1,3 +1,4 @@
+import csv
 import json
 import tempfile
 import unittest
@@ -414,7 +415,62 @@ class LocationExtractionTest(unittest.TestCase):
             rows[0]["evidence_kind"], "current_research_affiliation_location"
         )
 
-    def test_reviewed_historical_location_is_allowed_for_unmatched_identity(self):
+    def test_participant_history_is_not_an_outcome_country(self):
+        people = [
+            {
+                "person_id": "kaz-confirmed",
+                "name": "Confirmed Alumnus",
+                "confidence": "confirmed",
+                "destination_status": "none",
+            }
+        ]
+        overrides = {
+            "kaz-confirmed": {
+                "person_id": "kaz-confirmed",
+                "name": "Confirmed Alumnus",
+                "country_code": "KZ",
+                "country_name": "Kazakhstan",
+                "location_label": "Kazakhstan (last verified in 1998)",
+                "evidence_url": "https://example.org/olympiad-result",
+                "evidence_kind": "participant_history_location",
+                "confidence": "confirmed",
+                "review_reason": "The source records Olympiad participation only.",
+            }
+        }
+
+        self.assertEqual(build_rows(people, [], overrides), [])
+
+    def test_historical_adult_outcome_can_supply_country(self):
+        people = [
+            {
+                "person_id": "kaz-alumnus",
+                "name": "Reviewed Alumnus",
+                "confidence": "probable",
+                "destination_status": "history_only",
+            }
+        ]
+        overrides = {
+            "kaz-alumnus": {
+                "person_id": "kaz-alumnus",
+                "name": "Reviewed Alumnus",
+                "country_code": "GB",
+                "country_name": "United Kingdom",
+                "location_label": "London, United Kingdom (last verified in 2015)",
+                "evidence_url": "https://example.org/university-alumni-profile",
+                "evidence_kind": "historical_outcome_location",
+                "confidence": "probable",
+                "review_reason": "A reviewed post-secondary outcome places the alumnus in London.",
+            }
+        }
+
+        rows = build_rows(people, [], overrides)
+
+        self.assertEqual(rows[0]["country_code"], "GB")
+        self.assertEqual(
+            rows[0]["evidence_kind"], "historical_outcome_location"
+        )
+
+    def test_unmatched_identity_stays_excluded_even_with_override(self):
         people = [
             {
                 "person_id": "kaz-unmatched",
@@ -428,34 +484,15 @@ class LocationExtractionTest(unittest.TestCase):
                 "name": "Unmatched Alumnus",
                 "country_code": "KZ",
                 "country_name": "Kazakhstan",
-                "location_label": "Kazakhstan (last verified in 1998)",
-                "evidence_url": "https://example.org/olympiad-result",
-                "evidence_kind": "historical_latest_known_location",
-                "confidence": "confirmed",
-                "review_reason": (
-                    "The Olympiad record is the latest verified location; no "
-                    "current residence is inferred."
-                ),
+                "location_label": "Almaty, Kazakhstan",
+                "evidence_url": "https://example.org/profile",
+                "evidence_kind": "current_role_location",
+                "confidence": "probable",
+                "review_reason": "The profile is not accepted as the Olympiad alumnus.",
             }
         }
 
-        rows = build_rows(people, [], overrides)
-
-        self.assertEqual(rows[0]["country_code"], "KZ")
-        self.assertEqual(
-            rows[0]["evidence_kind"], "historical_latest_known_location"
-        )
-
-    def test_unmatched_identity_without_reviewed_location_stays_excluded(self):
-        people = [
-            {
-                "person_id": "kaz-unmatched",
-                "name": "Unmatched Alumnus",
-                "confidence": "unmatched",
-            }
-        ]
-
-        self.assertEqual(build_rows(people, [], {}), [])
+        self.assertEqual(build_rows(people, [], overrides), [])
 
     def test_current_role_location_beats_legal_entity_fallback(self):
         people = [
@@ -559,7 +596,7 @@ class LocationExtractionTest(unittest.TestCase):
             country_from_location("Sepang, Selangor, Malaysia"), "MY"
         )
 
-    def test_every_alumnus_has_a_reviewed_country(self):
+    def test_only_participant_history_rows_have_unknown_country(self):
         people = json.loads(
             Path("data/researched_people.json").read_text(encoding="utf-8")
         )
@@ -571,13 +608,21 @@ class LocationExtractionTest(unittest.TestCase):
             if row.get("country_code")
         }
 
-        missing = sorted(
-            person["name"]
+        missing = {
+            person["person_id"]
             for person in people
             if person["person_id"] not in locations
-        )
+        }
+        with Path("data/location_overrides.csv").open(
+            newline="", encoding="utf-8"
+        ) as handle:
+            participant_history = {
+                row["person_id"]
+                for row in csv.DictReader(handle)
+                if row["evidence_kind"] == "participant_history_location"
+            }
 
-        self.assertEqual(missing, [])
+        self.assertEqual(missing, participant_history)
 
 
 if __name__ == "__main__":

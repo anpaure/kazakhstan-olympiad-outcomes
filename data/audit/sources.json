@@ -252,7 +252,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "historical_latest_known_location;manual;manual_review"
+    "source_adapters": "historical_outcome_location;manual;manual_review"
   },
   {
     "source_id": "src-6f8a279ee993",
@@ -979,15 +979,15 @@
     "source_url": "https://codeforces.com/profile/LeMieux",
     "source_host": "codeforces.com",
     "source_kind": "structured_profile",
-    "evidence_rows": 4,
+    "evidence_rows": 3,
     "people_count": 1,
     "accepted_rows": 0,
-    "supporting_rows": 2,
+    "supporting_rows": 1,
     "candidate_rows": 2,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;accepted_location_evidence;structured_affiliation;structured_identity",
-    "source_adapters": "accepted_cphof_codeforces;career_source_location;codeforces"
+    "provenances": "accepted_affiliation_history;structured_affiliation;structured_identity",
+    "source_adapters": "accepted_cphof_codeforces;codeforces"
   },
   {
     "source_id": "src-0c75db6d22f1",
@@ -6154,15 +6154,15 @@
     "source_url": "https://ipho-unofficial.org/countries/KAZ/individual",
     "source_host": "ipho-unofficial.org",
     "source_kind": "web_page",
-    "evidence_rows": 170,
+    "evidence_rows": 167,
     "people_count": 89,
     "accepted_rows": 160,
-    "supporting_rows": 3,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 7,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;manual_review;participant_registry",
-    "source_adapters": "IPhO;historical_latest_known_location;manual"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IPhO;manual"
   },
   {
     "source_id": "src-0684ad15873b",
@@ -6409,15 +6409,15 @@
     "source_url": "https://k-t-l.narod.ru/we/success.html",
     "source_host": "k-t-l.narod.ru",
     "source_kind": "web_page",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 0,
-    "supporting_rows": 2,
+    "supporting_rows": 1,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location;school_alumni_archive"
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "school_alumni_archive"
   },
   {
     "source_id": "src-21fd73d05ac2",
@@ -6432,7 +6432,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation",
-    "source_adapters": "destination_review;destination_source_review;historical_latest_known_location"
+    "source_adapters": "destination_review;destination_source_review;historical_outcome_location"
   },
   {
     "source_id": "src-e69b56da2aec",
@@ -7489,15 +7489,15 @@
     "source_url": "https://kz.linkedin.com/in/timur-murat-2a1735333",
     "source_host": "kz.linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 5,
+    "evidence_rows": 4,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 4,
+    "supporting_rows": 3,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "accepted_linkedin_profile;career_source_location;linkedin;manual;manual_review"
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "accepted_linkedin_profile;linkedin;manual;manual_review"
   },
   {
     "source_id": "src-1aa81550359e",
@@ -10167,7 +10167,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "accepted_linkedin_profile;historical_latest_known_location;linkedin;manual;manual_review"
+    "source_adapters": "accepted_linkedin_profile;historical_outcome_location;linkedin;manual;manual_review"
   },
   {
     "source_id": "src-9dd4e99835a7",
@@ -11074,15 +11074,15 @@
     "source_url": "https://nauka.kz/page.php?lang=1&news_id=6795&page_id=893",
     "source_host": "nauka.kz",
     "source_kind": "web_page",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 0,
-    "supporting_rows": 2,
+    "supporting_rows": 1,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location;institutional_student_report"
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "institutional_student_report"
   },
   {
     "source_id": "src-0628a26e79ca",
@@ -11098,21 +11098,6 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
-  },
-  {
-    "source_id": "src-441b5ac90c72",
-    "source_url": "https://neerc.ifmo.ru/school/io/archive/20080329/standings-20080329-individual.html",
-    "source_host": "neerc.ifmo.ru",
-    "source_kind": "web_page",
-    "evidence_rows": 1,
-    "people_count": 1,
-    "accepted_rows": 0,
-    "supporting_rows": 1,
-    "candidate_rows": 0,
-    "superseded_rows": 0,
-    "rejected_rows": 0,
-    "provenances": "accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location"
   },
   {
     "source_id": "src-7ddc1d02cbec",
@@ -11367,7 +11352,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location"
+    "source_adapters": "historical_outcome_location"
   },
   {
     "source_id": "src-b80105ebcc7f",
@@ -15582,7 +15567,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location"
+    "source_adapters": "historical_outcome_location"
   },
   {
     "source_id": "src-b4010b5ff104",
@@ -15897,7 +15882,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "historical_latest_known_location;manual;manual_review;reviewed_olympiad_destination_table"
+    "source_adapters": "historical_outcome_location;manual;manual_review;reviewed_olympiad_destination_table"
   },
   {
     "source_id": "src-793801568f9d",
@@ -17187,7 +17172,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review",
-    "source_adapters": "destination_review;destination_source_review;historical_latest_known_location;manual"
+    "source_adapters": "destination_review;destination_source_review;historical_outcome_location;manual"
   },
   {
     "source_id": "src-3c8c0f6cc0ba",
@@ -17779,15 +17764,15 @@
     "source_url": "https://stats.ioinformatics.org/people/4957",
     "source_host": "stats.ioinformatics.org",
     "source_kind": "html",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;participant_registry",
-    "source_adapters": "IOI;historical_latest_known_location"
+    "provenances": "participant_registry",
+    "source_adapters": "IOI"
   },
   {
     "source_id": "src-0b1f827d1c08",
@@ -17854,15 +17839,15 @@
     "source_url": "https://stats.ioinformatics.org/people/5480",
     "source_host": "stats.ioinformatics.org",
     "source_kind": "html",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;participant_registry",
-    "source_adapters": "IOI;historical_latest_known_location"
+    "provenances": "participant_registry",
+    "source_adapters": "IOI"
   },
   {
     "source_id": "src-052c9c5bbc04",
@@ -18507,7 +18492,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "historical_latest_known_location;manual;manual_review"
+    "source_adapters": "historical_outcome_location;manual;manual_review"
   },
   {
     "source_id": "src-b73a90b9ce40",
@@ -18559,15 +18544,15 @@
     "source_url": "https://trz.nis.edu.kz/en/school/nzm-semei/news/1782",
     "source_host": "trz.nis.edu.kz",
     "source_kind": "web_page",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 0,
-    "supporting_rows": 2,
+    "supporting_rows": 1,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location;official_school_profile"
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_school_profile"
   },
   {
     "source_id": "src-29c1a7d75da0",
@@ -19152,7 +19137,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location"
+    "source_adapters": "historical_outcome_location"
   },
   {
     "source_id": "src-19b5bc0b1ae1",
@@ -19647,7 +19632,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "historical_latest_known_location;manual;manual_review"
+    "source_adapters": "historical_outcome_location;manual;manual_review"
   },
   {
     "source_id": "src-5fe835c08081",
@@ -19834,45 +19819,45 @@
     "source_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO1995.pdf",
     "source_host": "ibo-info.org",
     "source_kind": "pdf",
-    "evidence_rows": 6,
+    "evidence_rows": 5,
     "people_count": 4,
     "accepted_rows": 5,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;manual_review;participant_registry",
-    "source_adapters": "IBO;historical_latest_known_location;manual"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IBO;manual"
   },
   {
     "source_id": "src-36eaa5d19d9c",
     "source_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO1996.pdf",
     "source_host": "ibo-info.org",
     "source_kind": "pdf",
-    "evidence_rows": 5,
+    "evidence_rows": 4,
     "people_count": 3,
     "accepted_rows": 4,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;manual_review;participant_registry",
-    "source_adapters": "IBO;historical_latest_known_location;manual"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IBO;manual"
   },
   {
     "source_id": "src-9e59db73fee1",
     "source_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO1997.pdf",
     "source_host": "ibo-info.org",
     "source_kind": "pdf",
-    "evidence_rows": 6,
+    "evidence_rows": 5,
     "people_count": 4,
     "accepted_rows": 5,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;manual_review;participant_registry",
-    "source_adapters": "IBO;historical_latest_known_location;manual"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IBO;manual"
   },
   {
     "source_id": "src-fea8545b6cac",
@@ -19909,15 +19894,15 @@
     "source_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2000.pdf",
     "source_host": "ibo-info.org",
     "source_kind": "pdf",
-    "evidence_rows": 7,
+    "evidence_rows": 6,
     "people_count": 4,
     "accepted_rows": 6,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;manual_review;participant_registry",
-    "source_adapters": "IBO;historical_latest_known_location;manual"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IBO;manual"
   },
   {
     "source_id": "src-ebd50f7c8a4c",
@@ -20134,15 +20119,15 @@
     "source_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
     "source_host": "icho-official.org",
     "source_kind": "html",
-    "evidence_rows": 75,
+    "evidence_rows": 74,
     "people_count": 46,
     "accepted_rows": 70,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 4,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;manual_review;participant_registry",
-    "source_adapters": "IChO;historical_latest_known_location;manual"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IChO;manual"
   },
   {
     "source_id": "src-9c080dac45dd",
@@ -20614,15 +20599,15 @@
     "source_url": "https://www.imo-official.org/results/contestant/20770/",
     "source_host": "imo-official.org",
     "source_kind": "html",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;participant_registry",
-    "source_adapters": "IMO;historical_latest_known_location"
+    "provenances": "participant_registry",
+    "source_adapters": "IMO"
   },
   {
     "source_id": "src-f1cf79bf3cd0",
@@ -21769,15 +21754,15 @@
     "source_url": "https://www.imo-official.org/results/contestant/4547/",
     "source_host": "imo-official.org",
     "source_kind": "html",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;participant_registry",
-    "source_adapters": "IMO;historical_latest_known_location"
+    "provenances": "participant_registry",
+    "source_adapters": "IMO"
   },
   {
     "source_id": "src-a313df95c130",
@@ -21814,15 +21799,15 @@
     "source_url": "https://www.imo-official.org/results/contestant/4590/",
     "source_host": "imo-official.org",
     "source_kind": "html",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;participant_registry",
-    "source_adapters": "IMO;historical_latest_known_location"
+    "provenances": "participant_registry",
+    "source_adapters": "IMO"
   },
   {
     "source_id": "src-4fccbce452c9",
@@ -21859,15 +21844,15 @@
     "source_url": "https://www.imo-official.org/results/contestant/4857/",
     "source_host": "imo-official.org",
     "source_kind": "html",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;participant_registry",
-    "source_adapters": "IMO;historical_latest_known_location"
+    "provenances": "participant_registry",
+    "source_adapters": "IMO"
   },
   {
     "source_id": "src-658146618d58",
@@ -21934,15 +21919,15 @@
     "source_url": "https://www.imo-official.org/results/contestant/5288/",
     "source_host": "imo-official.org",
     "source_kind": "html",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;participant_registry",
-    "source_adapters": "IMO;historical_latest_known_location"
+    "provenances": "participant_registry",
+    "source_adapters": "IMO"
   },
   {
     "source_id": "src-b4e34c218c67",
@@ -21964,15 +21949,15 @@
     "source_url": "https://www.imo-official.org/results/contestant/5374/",
     "source_host": "imo-official.org",
     "source_kind": "html",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;participant_registry",
-    "source_adapters": "IMO;historical_latest_known_location"
+    "provenances": "participant_registry",
+    "source_adapters": "IMO"
   },
   {
     "source_id": "src-f36671a86580",
@@ -22665,21 +22650,6 @@
     "source_adapters": "manual;manual_review"
   },
   {
-    "source_id": "src-3c3f5965ae52",
-    "source_url": "https://www.kbtu.kz/en/events/5144-kbtu-open-spring-2026-eng",
-    "source_host": "kbtu.kz",
-    "source_kind": "web_page",
-    "evidence_rows": 1,
-    "people_count": 1,
-    "accepted_rows": 0,
-    "supporting_rows": 1,
-    "candidate_rows": 0,
-    "superseded_rows": 0,
-    "rejected_rows": 0,
-    "provenances": "accepted_location_evidence",
-    "source_adapters": "career_source_location"
-  },
-  {
     "source_id": "src-735006b3c010",
     "source_url": "https://www.kbtu.kz/ru/shkoly/shkola-informatsionnykh-tekhnologij-i-inzhenerii/prepodavatelskij-sostav-shkoly-informatsionnykh-tekhnologij",
     "source_host": "kbtu.kz",
@@ -22729,15 +22699,15 @@
     "source_url": "https://www.lada.kz/sms_news/6463-otkrytoe-pismo-roditeley-shkoly-gimnazii-4.html",
     "source_host": "lada.kz",
     "source_kind": "web_page",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 0,
-    "supporting_rows": 2,
+    "supporting_rows": 1,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location;reported_school_history"
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "reported_school_history"
   },
   {
     "source_id": "src-e7316931e3dc",
@@ -24094,15 +24064,15 @@
     "source_url": "https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy",
     "source_host": "nis.edu.kz",
     "source_kind": "web_page",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 0,
-    "supporting_rows": 2,
+    "supporting_rows": 1,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location;institutional_student_report"
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "institutional_student_report"
   },
   {
     "source_id": "src-2d4b0555309f",
@@ -24507,7 +24477,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "historical_latest_known_location;manual;manual_review"
+    "source_adapters": "historical_outcome_location;manual;manual_review"
   },
   {
     "source_id": "src-38c3d0317fb4",

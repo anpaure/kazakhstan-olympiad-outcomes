@@ -121,7 +121,8 @@ class CountryAndHistoryTest(unittest.TestCase):
     def test_country_filter_and_distribution_are_available(self):
         self.assertIn('data-control="country"', self.template)
         self.assertIn("person.countryCode !== state.country", self.template)
-        self.assertIn("historical_latest_known_location", self.template)
+        self.assertIn("historical_outcome_location", self.template)
+        self.assertNotIn("historical_latest_known_location", self.template)
         self.assertIn("last known", self.template)
         self.assertIn('Country distribution', self.template)
         self.assertIn("kind === 'sector' ? person.sector : person.countryCode", self.template)

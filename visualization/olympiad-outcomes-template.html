@@ -1054,7 +1054,7 @@
     'Official Olympiad result': 'sourceOlympiad',
     'Alma mater source': 'sourceEducation',
     'Outcome country source': 'sourceCountry',
-    'Last-known country source': 'sourceLastCountry',
+    'Historical outcome country source': 'sourceLastCountry',
     'Additional reviewed evidence': 'sourceAdditional'
   };
   Object.assign(translations.en, {
@@ -1641,7 +1641,7 @@
       if (person.almaMaterRole) almaCell.title = person.almaMaterRole;
       const countryCell = document.createElement('td');
       countryCell.dataset.label = t('country');
-      const isHistoricalLocation = person.locationEvidenceKind === 'historical_latest_known_location';
+      const isHistoricalLocation = person.locationEvidenceKind === 'historical_outcome_location';
       countryCell.textContent = person.country
         ? `${displayCountry(person.countryCode, person.country)}${isHistoricalLocation ? ` · ${t('lastKnown')}` : ''}`
         : '—';

@@ -467,6 +467,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                 self.assertEqual(person["confidence"], "unmatched")
                 self.assertEqual(person["organization"], "")
                 self.assertEqual(person["role"], "")
+                self.assertNotIn(person_id, self.locations)
 
     def test_askar_amangeldy_singapore_coaching_and_both_degrees(self):
         person = self.people["kaz-7f627c03e4ca"]
@@ -1136,7 +1137,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(person["confidence"], "probable")
         self.assertEqual(location["country_code"], "EE")
         self.assertEqual(
-            location["evidence_kind"], "historical_latest_known_location"
+            location["evidence_kind"], "historical_outcome_location"
         )
         self.assertIn("last verified in 2024", location["location_label"])
 
@@ -1163,7 +1164,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         )
         self.assertEqual(location["country_code"], "GB")
         self.assertEqual(
-            location["evidence_kind"], "historical_latest_known_location"
+            location["evidence_kind"], "historical_outcome_location"
         )
         self.assertIn("last verified in 2015", location["location_label"])
 
@@ -1178,7 +1179,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(person["end_year"], "2020")
         self.assertEqual(location["country_code"], "KZ")
         self.assertEqual(
-            location["evidence_kind"], "historical_latest_known_location"
+            location["evidence_kind"], "historical_outcome_location"
         )
         self.assertIn("last verified in 2020", location["location_label"])
 
@@ -1231,7 +1232,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         )
         self.assertEqual(location["country_code"], "RU")
         self.assertEqual(
-            location["evidence_kind"], "historical_latest_known_location"
+            location["evidence_kind"], "historical_outcome_location"
         )
         self.assertIn("last verified in 2020", location["location_label"])
 
@@ -1293,13 +1294,12 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         )
         self.assertEqual(location["country_code"], "TR")
         self.assertEqual(
-            location["evidence_kind"], "historical_latest_known_location"
+            location["evidence_kind"], "historical_outcome_location"
         )
         self.assertIn("last verified in 2020", location["location_label"])
 
     def test_yerlan_jumabayev_name_only_candidates_are_rejected(self):
         person = self.people["kaz-514026a01ba3"]
-        location = self.locations[person["person_id"]]
 
         self.assertEqual(person["confidence"], "unmatched")
         self.assertEqual(person["organization"], "")
@@ -1309,10 +1309,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             self.alma_maters(person["person_id"]),
             {"Republican Physics and Mathematics School (RFMS)"},
         )
-        self.assertEqual(location["country_code"], "KZ")
-        self.assertEqual(
-            location["evidence_kind"], "historical_latest_known_location"
-        )
+        self.assertNotIn(person["person_id"], self.locations)
 
     def test_rfms_archive_corrects_almas_sakhauyev_spelling(self):
         person = self.people["kaz-51f03f3fb603"]
@@ -1366,7 +1363,6 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
 
     def test_danil_murtazin_retains_sourced_aktau_school_history(self):
         person = self.people["kaz-1e390288b2cc"]
-        location = self.locations[person["person_id"]]
 
         self.assertEqual(person["confidence"], "unmatched")
         self.assertIn("Данил Муртазин", person["aliases"])
@@ -1375,11 +1371,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             self.alma_maters(person["person_id"]),
             {"School-Gymnasium No. 4 (Aktau)"},
         )
-        self.assertEqual(location["country_code"], "KZ")
-        self.assertEqual(
-            location["location_label"],
-            "Aktau, Kazakhstan (school affiliation in 2001)",
-        )
+        self.assertNotIn(person["person_id"], self.locations)
 
     def test_alexander_zaitsev_retains_only_age_compatible_candidate(self):
         person = self.people["kaz-6c47e89eeff1"]
@@ -1432,7 +1424,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             location["location_label"], "Moscow, Russia (last verified in 2020)"
         )
         self.assertEqual(
-            location["evidence_kind"], "historical_latest_known_location"
+            location["evidence_kind"], "historical_outcome_location"
         )
 
 

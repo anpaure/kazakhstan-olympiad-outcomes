@@ -341,17 +341,6 @@
     "review_reason": "The accepted profile places Akezhan in Kazakhstan alongside the current BCG consultant role corroborated by BCG's public post."
   },
   {
-    "person_id": "kaz-822bb4ee42e0",
-    "name": "Akezhan Askar",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Semey, Kazakhstan (last verified in 2026)",
-    "evidence_url": "https://trz.nis.edu.kz/en/school/nzm-semei/news/1782",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "NIS Semey's official profile identifies Akezhan as its grade 12 student through the 2025-2026 school year. This is the latest verified location; no post-graduation residence is inferred."
-  },
-  {
     "person_id": "kaz-d3e9cb1dd495",
     "name": "Akhan Ismailov",
     "country_code": "GB",
@@ -369,7 +358,7 @@
     "country_name": "Russia",
     "location_label": "Moscow, Russia (last verified in 2020)",
     "evidence_url": "https://spark-interfax.ru/moskva-perovo/ooo-nbparts-inn-7720746557-ogrn-1127746252072-5bcd223ce9c747d1ae4842ee62558963",
-    "evidence_kind": "historical_latest_known_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
     "review_reason": "The reviewed 2012-2020 NBPARTS directorship was at the Moscow company. This is historical latest-known evidence only; no current residence is inferred, and the identity remains probable."
   },
@@ -438,17 +427,6 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "The accepted profile places the ongoing VELES TRUST CFO/CIO role in Almaty Kazakhstan; its conflicting Russia header is not used."
-  },
-  {
-    "person_id": "kaz-6c47e89eeff1",
-    "name": "Alexander Zaitsev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 1996)",
-    "evidence_url": "https://www.imo-official.org/results/contestant/4547/",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 1996 IMO record is retained because the Russian ORCID researcher remains only a candidate identity match. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "person_id": "kaz-0260225556fe",
@@ -594,17 +572,6 @@
     "review_reason": "Country follows the accepted active student affiliation at The Chinese University of Hong Kong (CUHK); the linked official institution source establishes the campus location. CUHK's official campus page identifies its Hong Kong campus."
   },
   {
-    "person_id": "kaz-fcb382e0caae",
-    "name": "Alikhan Zimanov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Almaty, Kazakhstan",
-    "evidence_url": "https://www.kbtu.kz/en/events/5144-kbtu-open-spring-2026-eng",
-    "evidence_kind": "career_source_location",
-    "confidence": "probable",
-    "review_reason": "KBTU's 2026 event report names exact-name Alikhan Zimanov as an active contestant in Almaty after his accepted Kazakhstan Olympiad history; this supports only a latest-known Kazakhstan location, not an employer or legal residence."
-  },
-  {
     "person_id": "kaz-ceec4f816e2c",
     "name": "Alina Gaukhartas",
     "country_code": "CH",
@@ -658,17 +625,6 @@
     "evidence_kind": "career_source_location",
     "confidence": "probable",
     "review_reason": "The accepted career source places him at Sun Life Financial in Canada."
-  },
-  {
-    "person_id": "kaz-51f03f3fb603",
-    "name": "Almas Sakhauyev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 1998)",
-    "evidence_url": "https://www.imo-official.org/results/contestant/5288/",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 1998 IMO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "person_id": "kaz-e0511f92fe0d",
@@ -836,17 +792,6 @@
     "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
-    "person_id": "kaz-a2f029eab00c",
-    "name": "Amir Tulegenov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Almaty, Kazakhstan (last verified in 2009)",
-    "evidence_url": "https://neerc.ifmo.ru/school/io/archive/20080329/standings-20080329-individual.html",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The reviewed contest record places exact-handle Amir Tulegenov in Almaty shortly before his 2009 IOI appearance. His later accepted GitHub profile exposes no country, so this is historical latest-known evidence only."
-  },
-  {
     "person_id": "kaz-b695dee1b41c",
     "name": "Amirbek Azatbekov",
     "country_code": "US",
@@ -889,17 +834,6 @@
     "evidence_kind": "affiliation_country",
     "confidence": "probable",
     "review_reason": "Country comes from the accepted structured affiliation record."
-  },
-  {
-    "person_id": "kaz-b8e3ad83d883",
-    "name": "Andrey Drobakh",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Pavlodar, Kazakhstan (last verified in 2011)",
-    "evidence_url": "https://www.imo-official.org/results/contestant/20770/",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 2011 IMO record and reviewed school history place Andrey in Kazakhstan; no later source supplies a country. This is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "person_id": "kaz-9bcf8f03ca96",
@@ -1001,37 +935,15 @@
     "review_reason": "The accepted profile places Anton in the United States alongside his 2026 move from Yale to Genesis Molecular AI."
   },
   {
-    "person_id": "kaz-326e69980428",
-    "name": "Anton Nesveldin",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 2000)",
-    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2000.pdf",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 2000 IBO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
-  },
-  {
     "person_id": "kaz-49e795089f9c",
     "name": "Anton Nikolayev",
     "country_code": "RU",
     "country_name": "Russia",
     "location_label": "Novosibirsk, Russia (last verified from 2003)",
     "evidence_url": "https://www.caravan.kz/news/pavlodarskijj-shkolnik-stal-bronzovym-prizerom-mezhdunarodnojj-olimpiady-po-informatike-188192/",
-    "evidence_kind": "historical_latest_known_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "confirmed",
     "review_reason": "The contemporary report identifies IOI medalist Anton Nikolayev and says he entered the Siberian State University of Telecommunications and Informatics in Novosibirsk in 2003. This is historical latest-known evidence only."
-  },
-  {
-    "person_id": "kaz-e8eb1ebde919",
-    "name": "Anton Sedletskiy",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Pavlodar, Kazakhstan (last verified in 2016)",
-    "evidence_url": "https://nauka.kz/page.php?lang=1&news_id=6795&page_id=893",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The reviewed 2016 Olympiad report identifies Anton Sedletskiy as a Pavlodar Lyceum No. 8 student. This is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "person_id": "kaz-bfdcf65f4a6e",
@@ -1188,17 +1100,6 @@
     "evidence_url": "https://linkedin.com/in/assan-zholdassov-5290639"
   },
   {
-    "person_id": "kaz-fc88fa90b799",
-    "name": "Aset Iskakov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 2003)",
-    "evidence_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 2003 IChO record is retained because the OpenAlex candidate does not establish a current location or an explicit identity bridge. Kazakhstan is historical latest-known evidence only."
-  },
-  {
     "person_id": "kaz-7f627c03e4ca",
     "name": "Askar Amangeldy",
     "country_code": "SG",
@@ -1337,7 +1238,7 @@
     "country_name": "United Kingdom",
     "location_label": "London, United Kingdom (last verified in 2015)",
     "evidence_url": "https://www.hec.edu/en/master-s-programs/profiles/ayana-badrakova",
-    "evidence_kind": "historical_latest_known_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
     "review_reason": "HEC's 2015 UBS analyst outcome is independently located in London by a reviewed professional directory. This is historical latest-known evidence only; no current residence is inferred, and the identity remains probable."
   },
@@ -1527,17 +1428,6 @@
     "confidence": "confirmed",
     "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Nethermind.",
     "evidence_url": "https://linkedin.com/in/998batrr"
-  },
-  {
-    "person_id": "kaz-a4eaedad760e",
-    "name": "Batyr Yerzhanuly",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Oskemen, Kazakhstan (last verified in 2026)",
-    "evidence_url": "https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "NIS identifies Batyr Yerzhanuly as its Oskemen biology student in the 2025 IBO cohort and subsequent school reporting. This is the latest verified location; no post-school residence is inferred."
   },
   {
     "person_id": "kaz-81ce5fa84827",
@@ -1793,17 +1683,6 @@
     "review_reason": "The exact-name Improvado co-founder profile places Daniel Kravtsov in San Francisco; independent interviews identify him as a Temirtau-born programmer of the age implied by the 1999-2000 IOI record. The identity bridge remains probable."
   },
   {
-    "person_id": "kaz-1e390288b2cc",
-    "name": "Danil Murtazin",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Aktau, Kazakhstan (school affiliation in 2001)",
-    "evidence_url": "https://www.lada.kz/sms_news/6463-otkrytoe-pismo-roditeley-shkoly-gimnazii-4.html",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The Aktau school community's retrospective identifies School-Gymnasium No. 4's 2001 international physics gold medalist as Murtazin Daniil. This supports a historical Aktau school affiliation only; no current residence is inferred."
-  },
-  {
     "person_id": "kaz-8e557ae5dc19",
     "name": "Danil Poletayev",
     "country_code": "KZ",
@@ -1848,17 +1727,6 @@
     "review_reason": "AIFC's reviewed report identifies Daniyar's board chairmanship at the Astana International Financial Centre in Astana; the identity remains probable."
   },
   {
-    "person_id": "kaz-7e3271c82f49",
-    "name": "Daniyar Maminov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Almaty, Kazakhstan",
-    "evidence_url": "https://codeforces.com/profile/LeMieux",
-    "evidence_kind": "career_source_location",
-    "confidence": "confirmed",
-    "review_reason": "The accepted IOI-linked profile places Daniyar at Almaty KTL in Kazakhstan; no newer role is asserted."
-  },
-  {
     "person_id": "kaz-f20d8c3abb87",
     "name": "Daniyar Otarbayev",
     "country_code": "KR",
@@ -1898,7 +1766,7 @@
     "country_name": "Russia",
     "location_label": "Moscow, Russia (last verified in 2019)",
     "evidence_url": "https://olymp.hse.ru/data/2019/04/30/1181018499/370New.pdf",
-    "evidence_kind": "historical_latest_known_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "confirmed",
     "review_reason": "An HSE record explicitly lists Moscow as Darkhan's 2019 place of residence. His newer confirmed Google software-engineering role does not expose an office, so Russia is shown only as the last verified country, not current residence."
   },
@@ -2035,28 +1903,6 @@
     "review_reason": "Kazakhstan company records place full-name Demeu Temirbekovich Shakhanov's current BSG director role in Astana. The identity bridge to the IBO entrant remains probable."
   },
   {
-    "person_id": "kaz-9bc854d0232a",
-    "name": "Denis Atrashenko",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 2001)",
-    "evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The 2001 IPhO record is retained because the reviewed Moscow chemistry researcher began university in 2010 and lacks a Kazakhstan identity bridge. Kazakhstan is historical latest-known evidence only."
-  },
-  {
-    "person_id": "kaz-58dea61d1101",
-    "name": "Denis Ivanov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 2001)",
-    "evidence_url": "https://stats.ioinformatics.org/people/4957",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 2001 IOI record is retained because the reviewed current profiles are unresolved common-name candidates. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
-  },
-  {
     "person_id": "kaz-462ea4363511",
     "name": "Denis Ovchinnikov",
     "country_code": "CA",
@@ -2068,17 +1914,6 @@
     "evidence_url": "https://www.linkedin.com/in/denis-ovchinnikov-math"
   },
   {
-    "person_id": "kaz-42f3a5145199",
-    "name": "Denis Utkin",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 2004)",
-    "evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The 2004 IPhO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
-  },
-  {
     "person_id": "kaz-c5f47f6f2526",
     "name": "Dias Suleimenov",
     "country_code": "HK",
@@ -2088,17 +1923,6 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
-  },
-  {
-    "person_id": "kaz-6baf22bf0570",
-    "name": "Dimitry Dzyabayev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 1996)",
-    "evidence_url": "https://www.imo-official.org/results/contestant/4590/",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 1996 IMO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "person_id": "kaz-319ba97c86aa",
@@ -2178,17 +2002,6 @@
     "evidence_url": "https://linkedin.com/in/dmitriy-dolzhnikov-7a874037"
   },
   {
-    "person_id": "kaz-1d49feff22fe",
-    "name": "Dmitriy Gorbachev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 1999)",
-    "evidence_url": "https://stats.ioinformatics.org/people/5480",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 1999 IOI record is retained because the reviewed professional profiles are unresolved common-name candidates. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
-  },
-  {
     "person_id": "kaz-9ad9420e5768",
     "name": "Doszhan Bissimbi",
     "country_code": "HK",
@@ -2209,17 +2022,6 @@
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev University. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/dulat-azhibek-31417557"
-  },
-  {
-    "person_id": "kaz-1e83de167408",
-    "name": "Ekrem Mahmudov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 1995)",
-    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO1995.pdf",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 1995 IBO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "person_id": "kaz-39523361f70b",
@@ -2319,17 +2121,6 @@
     "evidence_kind": "current_education_location",
     "confidence": "probable",
     "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
-  },
-  {
-    "person_id": "kaz-952a451859f7",
-    "name": "Guljanar Kalmaganbetova",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 1997)",
-    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO1997.pdf",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 1997 IBO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "person_id": "kaz-afd3a80b5994",
@@ -2616,17 +2407,6 @@
     "confidence": "probable",
     "review_reason": "Country follows the location attached to the accepted current role at Skoltech. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/kirillmaerle"
-  },
-  {
-    "person_id": "kaz-b41761cae333",
-    "name": "Kirill Panov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 1998)",
-    "evidence_url": "https://www.imo-official.org/results/contestant/5374/",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 1998 IMO record is retained because the reviewed Germany profile was already a university student in 1998 and is not the Olympiad alumnus. Kazakhstan is historical latest-known evidence only."
   },
   {
     "person_id": "kaz-5a5848e42390",
@@ -3102,17 +2882,6 @@
     "review_reason": "The accepted profile places Nurbol in Kazakhstan alongside the current KMG PetroChem contracts-director role corroborated by the employer's 2024 release."
   },
   {
-    "person_id": "kaz-dbcaf30d53de",
-    "name": "Nurbol Sihimbayev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 1996)",
-    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO1996.pdf",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 1996 IBO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
-  },
-  {
     "person_id": "kaz-7bc4b3d48a29",
     "name": "Nurdaulet Kemel",
     "country_code": "HK",
@@ -3163,7 +2932,7 @@
     "country_name": "Türkiye",
     "location_label": "Isparta, Türkiye (last verified in 2020)",
     "evidence_url": "https://tip.sdu.edu.tr/assets/uploads/sites/101/files/2019-2020-danisma-atama-listesi-17102019.pdf",
-    "evidence_kind": "historical_latest_known_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
     "review_reason": "Nurislam's latest accepted affiliation is the 2019-2020 medicine roster at Suleyman Demirel University in Isparta, Türkiye. This is historical latest-known evidence only; no current residence or degree completion is inferred."
   },
@@ -3366,17 +3135,6 @@
     "review_reason": "Nurzhas's current investor profile places him and NKM Capital in the United States; inconsistent city labels across public directories are not asserted."
   },
   {
-    "person_id": "kaz-32cf54f8673f",
-    "name": "Oleg Obukhov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kokshetau, Kazakhstan (last verified in 2007)",
-    "evidence_url": "https://k-t-l.narod.ru/we/success.html",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The school achievements page identifies Oleg Obukhov as its international biology Olympiad student in Kokshetau. This is historical latest-known evidence only; no current residence is inferred."
-  },
-  {
     "person_id": "kaz-208576016cfd",
     "name": "Olzhas Kadyrakunov",
     "country_code": "SE",
@@ -3427,7 +3185,7 @@
     "country_name": "Russia",
     "location_label": "Moscow, Russia (last verified in 2020)",
     "evidence_url": "https://probeg.org/race/74199/",
-    "evidence_kind": "historical_latest_known_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
     "review_reason": "The age-compatible rare-name match appears in a dated 2020 Moscow race result with Moscow as his city and 1984 as his birth year. This is the latest verified location found and is not presented as current residence."
   },
@@ -3603,7 +3361,7 @@
     "country_name": "Kazakhstan",
     "location_label": "Pavlodar, Kazakhstan (last verified in 1998)",
     "evidence_url": "https://linkedin.com/in/roman-kriven-33a97085",
-    "evidence_kind": "historical_latest_known_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
     "review_reason": "The rare exact-name profile places Roman at Pavlodar State University from 1993 through 1998 and is consistent with his official 1993 IMO record and Pavlodar school history. This is the latest verified location, not a current residence claim."
   },
@@ -4010,7 +3768,7 @@
     "country_name": "Kazakhstan",
     "location_label": "Kazakhstan (last verified in 2020)",
     "evidence_url": "https://kase.kz/files/emitters/BCCI/bccirbf7_2020.pdf",
-    "evidence_kind": "historical_latest_known_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
     "review_reason": "The bounded latest reviewed role was at Kazakhstan brokerage BCC Invest through 2020. This is historical latest-known evidence only; no current residence is inferred."
   },
@@ -4167,17 +3925,6 @@
     "evidence_kind": "active_affiliation_profile_location",
     "confidence": "confirmed",
     "review_reason": "Gelu AI's current founder profile identifies Timur Abishev in New York and documents his JetBrains, Twitter, and Baseten engineering history; the official TopCoder program explicitly joins TokarR to Kazakhstan's Timur Abishev."
-  },
-  {
-    "person_id": "kaz-cc4a2f7877ce",
-    "name": "Timur Murat",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Almaty, Kazakhstan",
-    "evidence_url": "https://kz.linkedin.com/in/timur-murat-2a1735333",
-    "evidence_kind": "career_source_location",
-    "confidence": "confirmed",
-    "review_reason": "Timur's accepted profile dates his Haileybury Almaty education through 2026 and places it in Almaty Kazakhstan; the country follows that latest education evidence."
   },
   {
     "person_id": "kaz-56660a53cf0d",
@@ -4389,17 +4136,6 @@
     "evidence_url": "https://nl.linkedin.com/in/vyacheslav-li"
   },
   {
-    "person_id": "kaz-21cc95b51c33",
-    "name": "Yaroslav Alexandrov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 1999)",
-    "evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The 1999 IPhO record is retained because the reviewed Russia product profile has no Kazakhstan or physics identity bridge. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
-  },
-  {
     "person_id": "kaz-41f531ed3520",
     "name": "Yegor Klochkov",
     "country_code": "GB",
@@ -4483,7 +4219,7 @@
     "country_name": "Estonia",
     "location_label": "Tallinn, Estonia (last verified in 2024)",
     "evidence_url": "https://ariregister.rik.ee/est/company/16568487/file/9011480944",
-    "evidence_kind": "historical_latest_known_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
     "review_reason": "Estonia's registry places Yerbol's bounded 2022-2024 Quantstellation board role at the Tallinn company. This is historical latest-known evidence only; no current residence is inferred, and the identity remains probable."
   },
@@ -4552,17 +4288,6 @@
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev Intellectual Schools (NIS). The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/yerlan-b-887a4336"
-  },
-  {
-    "person_id": "kaz-514026a01ba3",
-    "name": "Yerlan Jumabayev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 1997)",
-    "evidence_url": "https://www.imo-official.org/results/contestant/4857/",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 1997 IMO record is retained because the reviewed LinkedIn result is a name-only candidate without an Olympiad identity bridge. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "person_id": "kaz-47c266b2b44f",
@@ -4670,7 +4395,7 @@
     "country_name": "United Kingdom",
     "location_label": "Edinburgh, United Kingdom (last verified in 2015)",
     "evidence_url": "https://www.searchanddiscovery.com/documents/2016/41779vasconez/ndx_vasconez.pdf",
-    "evidence_kind": "historical_latest_known_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
     "review_reason": "A 2015 AAPG presentation published in 2016 lists rare exact-name Yerulan Sabyrgali with Heriot-Watt University in Edinburgh. The chemistry-to-petroleum trajectory and chronology support a probable identity match. This is historical latest-known affiliation evidence only; no current residence is inferred."
   },
@@ -4769,7 +4494,7 @@
     "country_name": "Russia",
     "location_label": "Moscow, Russia (last verified from 2000)",
     "evidence_url": "https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf",
-    "evidence_kind": "historical_latest_known_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "confirmed",
     "review_reason": "The reviewed Olympiad destination table places Yuriy Kudryavtsev in undergraduate chemistry at Moscow State University beginning in 2000. This is historical latest-known evidence only; no current residence is inferred."
   },
