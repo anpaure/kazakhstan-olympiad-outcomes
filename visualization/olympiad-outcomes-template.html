@@ -71,14 +71,6 @@
         <option value="all" data-i18n="allSectors">All sectors</option>
       </select>
     </label>
-    <label class="form-label"><span data-i18n="sortPeople">Sort people by</span>
-      <select class="form-select" data-control="sort">
-        <option value="year-desc" data-i18n="sortYearDesc">Olympiad year, newest first</option>
-        <option value="year-asc" data-i18n="sortYearAsc">Olympiad year, oldest first</option>
-        <option value="destination-asc" data-i18n="sortDestinationAsc">Destination, A–Z</option>
-        <option value="destination-desc" data-i18n="sortDestinationDesc">Destination, Z–A</option>
-      </select>
-    </label>
     <label class="form-label"><span data-i18n="findPerson">Find a person</span>
       <input class="form-control" data-control="search" type="search" placeholder="Name, job, school, year" data-i18n-placeholder="searchPlaceholder">
     </label>
@@ -116,7 +108,13 @@
     <table class="table table-sm">
       <thead>
         <tr>
-          <th data-i18n="alumnus">Alumnus</th>
+          <th>
+            <span class="iso-th-label"><span data-i18n="alumnus">Alumnus</span>
+              <button class="iso-sort-button" data-sort-header="name" type="button" aria-label="Sort by alumnus" title="Sort by alumnus" data-i18n-aria="sortByAlumnus" data-i18n-title="sortByAlumnus">
+                <i data-lucide="arrow-up-down"></i>
+              </button>
+            </span>
+          </th>
           <th>
             <span class="iso-th-label"><span data-i18n="olympiad">Olympiad</span>
               <button class="iso-sort-button" data-sort-header="year" type="button" aria-label="Sort by Olympiad year" title="Sort by Olympiad year" data-i18n-aria="sortByOlympiadYear" data-i18n-title="sortByOlympiadYear">
@@ -132,15 +130,26 @@
             </span>
           </th>
           <th data-i18n="role">Role</th>
-          <th data-i18n="almaMater">Alma mater</th>
-          <th data-i18n="country">Country</th>
+          <th>
+            <span class="iso-th-label"><span data-i18n="almaMater">Alma mater</span>
+              <button class="iso-sort-button" data-sort-header="alma" type="button" aria-label="Sort by alma mater" title="Sort by alma mater" data-i18n-aria="sortByAlmaMater" data-i18n-title="sortByAlmaMater">
+                <i data-lucide="arrow-up-down"></i>
+              </button>
+            </span>
+          </th>
+          <th>
+            <span class="iso-th-label"><span data-i18n="country">Country</span>
+              <button class="iso-sort-button" data-sort-header="country" type="button" aria-label="Sort by country" title="Sort by country" data-i18n-aria="sortByCountry" data-i18n-title="sortByCountry">
+                <i data-lucide="arrow-up-down"></i>
+              </button>
+            </span>
+          </th>
           <th data-i18n="sources">Sources</th>
         </tr>
       </thead>
       <tbody data-people-table></tbody>
     </table>
   </div>
-  <div class="text-small text-muted" data-table-note></div>
 </div>
 
 <style>
@@ -188,7 +197,7 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    align-items: end;
+    align-items: flex-start;
   }
   #iso-outcomes-viz .iso-page-header p {
     max-width: 760px;
@@ -213,6 +222,7 @@
   #iso-outcomes-viz .iso-header-tools {
     display: grid;
     min-width: max-content;
+    align-self: flex-start;
     justify-items: end;
     gap: 9px;
   }
@@ -310,8 +320,7 @@
       minmax(0, 0.8fr)
       minmax(0, 1fr)
       minmax(0, 1.1fr)
-      minmax(0, 1.25fr)
-      minmax(0, 1.25fr);
+      minmax(0, 1.4fr);
     gap: 12px;
     align-items: end;
     margin: 16px 0 24px;
@@ -377,12 +386,87 @@
   }
   #iso-outcomes-viz .iso-pie-chart {
     min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-top: 4px;
   }
-  #iso-outcomes-viz .iso-bar-chart svg,
-  #iso-outcomes-viz .iso-pie-chart svg {
+  #iso-outcomes-viz .iso-bar-chart svg {
     display: block;
     width: 100%;
     height: auto;
+  }
+  #iso-outcomes-viz .iso-pie-chart .iso-pie-plot {
+    display: block;
+    width: min(100%, 240px);
+    height: auto;
+    flex: 0 0 auto;
+  }
+  #iso-outcomes-viz .iso-pie-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    gap: 6px 20px;
+    margin-inline: auto;
+  }
+  #iso-outcomes-viz [data-chart="sectors"] .iso-pie-legend {
+    max-width: 880px;
+  }
+  #iso-outcomes-viz [data-chart="countries"] .iso-pie-legend {
+    max-width: 620px;
+  }
+  #iso-outcomes-viz .iso-pie-legend-item {
+    display: grid;
+    grid-template-columns: 12px minmax(0, 1fr) auto;
+    align-items: start;
+    gap: 8px;
+    flex: 1 1 260px;
+    max-width: 420px;
+    min-width: 0;
+    padding: 5px 6px;
+    border: 0;
+    border-radius: 4px;
+    color: var(--iso-foreground);
+    background: transparent;
+    font: inherit;
+    font-size: 13px;
+    line-height: 1.3;
+    text-align: left;
+  }
+  #iso-outcomes-viz [data-chart="countries"] .iso-pie-legend-item {
+    flex-basis: 240px;
+    max-width: 290px;
+  }
+  #iso-outcomes-viz .iso-pie-legend-item:not(:disabled) {
+    cursor: pointer;
+  }
+  #iso-outcomes-viz .iso-pie-legend-item:not(:disabled):hover,
+  #iso-outcomes-viz .iso-pie-legend-item.is-active {
+    background: color-mix(in srgb, var(--iso-accent) 55%, transparent);
+  }
+  #iso-outcomes-viz .iso-pie-legend-item:focus-visible {
+    outline: 2px solid var(--iso-ring);
+    outline-offset: 1px;
+  }
+  #iso-outcomes-viz .iso-pie-legend-item:disabled {
+    opacity: 1;
+  }
+  #iso-outcomes-viz .iso-pie-legend-swatch {
+    width: 12px;
+    height: 12px;
+    margin-top: 2px;
+  }
+  #iso-outcomes-viz .iso-pie-legend-label {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  #iso-outcomes-viz .iso-pie-legend-count {
+    font-weight: 650;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
   }
   #iso-outcomes-viz .iso-selection {
     min-height: 22px;
@@ -546,9 +630,6 @@
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
   }
-  #iso-outcomes-viz [data-table-note] {
-    margin-top: 8px;
-  }
   @media (max-width: 1250px) {
     #iso-outcomes-viz .iso-controls {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -596,6 +677,14 @@
     }
     #iso-outcomes-viz .iso-pie-chart {
       min-height: 300px;
+    }
+    #iso-outcomes-viz .iso-pie-legend {
+      gap: 4px;
+    }
+    #iso-outcomes-viz .iso-pie-legend-item,
+    #iso-outcomes-viz [data-chart="countries"] .iso-pie-legend-item {
+      flex-basis: 100%;
+      max-width: none;
     }
     #iso-outcomes-viz .table-responsive {
       max-height: 72vh;
@@ -685,11 +774,6 @@
       unknownCountry: 'Unknown / not found',
       sector: 'Sector',
       allSectors: 'All sectors',
-      sortPeople: 'Sort people by',
-      sortYearAsc: 'Olympiad year, oldest first',
-      sortYearDesc: 'Olympiad year, newest first',
-      sortDestinationAsc: 'Destination, A–Z',
-      sortDestinationDesc: 'Destination, Z–A',
       findPerson: 'Find a person',
       searchPlaceholder: 'Name, job, school, year',
       companiesOrganizations: 'Companies & organizations',
@@ -705,12 +789,21 @@
       almaMater: 'Alma mater',
       country: 'Country',
       sources: 'Sources',
+      sortByAlumnus: 'Sort by alumnus',
       sortByOlympiadYear: 'Sort by Olympiad year',
       sortByDestination: 'Sort by destination',
+      sortByAlmaMater: 'Sort by alma mater',
+      sortByCountry: 'Sort by country',
+      sortNameNextAsc: 'Sort by alumnus, A–Z',
+      sortNameNextDesc: 'Sort by alumnus, Z–A',
       sortYearNextAsc: 'Sort by Olympiad year, oldest first',
       sortYearNextDesc: 'Sort by Olympiad year, newest first',
       sortDestinationNextAsc: 'Sort by destination, A–Z',
       sortDestinationNextDesc: 'Sort by destination, Z–A',
+      sortAlmaMaterNextAsc: 'Sort by alma mater, A–Z',
+      sortAlmaMaterNextDesc: 'Sort by alma mater, Z–A',
+      sortCountryNextAsc: 'Sort by country, A–Z',
+      sortCountryNextDesc: 'Sort by country, Z–A',
       companiesChartTitle: 'Companies and organizations',
       educationChartTitle: 'Educational institutions',
       companiesChartAria: 'Companies and organizations ranked by matched alumni',
@@ -729,7 +822,6 @@
       roleNotPublic: 'Role not publicly stated',
       lastKnown: 'last known',
       filtersTarget: 'the filters',
-      currentFiltersTarget: 'the current filters',
       selected: 'Selected'
     },
     ru: {
@@ -756,11 +848,6 @@
       unknownCountry: 'Неизвестно / не найдено',
       sector: 'Сектор',
       allSectors: 'Все секторы',
-      sortPeople: 'Сортировка списка',
-      sortYearAsc: 'Год олимпиады, сначала ранние',
-      sortYearDesc: 'Год олимпиады, сначала новые',
-      sortDestinationAsc: 'Назначение, А–Я',
-      sortDestinationDesc: 'Назначение, Я–А',
       findPerson: 'Найти человека',
       searchPlaceholder: 'Имя, работа, вуз, год',
       companiesOrganizations: 'Компании и организации',
@@ -776,12 +863,21 @@
       almaMater: 'Образование',
       country: 'Страна',
       sources: 'Источники',
+      sortByAlumnus: 'Сортировать по участнику',
       sortByOlympiadYear: 'Сортировать по году олимпиады',
       sortByDestination: 'Сортировать по назначению',
+      sortByAlmaMater: 'Сортировать по образованию',
+      sortByCountry: 'Сортировать по стране',
+      sortNameNextAsc: 'По участнику, А–Я',
+      sortNameNextDesc: 'По участнику, Я–А',
       sortYearNextAsc: 'По году олимпиады, сначала ранние',
       sortYearNextDesc: 'По году олимпиады, сначала новые',
       sortDestinationNextAsc: 'По назначению, А–Я',
       sortDestinationNextDesc: 'По назначению, Я–А',
+      sortAlmaMaterNextAsc: 'По образованию, А–Я',
+      sortAlmaMaterNextDesc: 'По образованию, Я–А',
+      sortCountryNextAsc: 'По стране, А–Я',
+      sortCountryNextDesc: 'По стране, Я–А',
       companiesChartTitle: 'Компании и организации',
       educationChartTitle: 'Учебные заведения',
       companiesChartAria: 'Компании и организации по числу найденных участников',
@@ -800,7 +896,6 @@
       roleNotPublic: 'Роль не указана в открытых источниках',
       lastKnown: 'последняя известная',
       filtersTarget: 'фильтрам',
-      currentFiltersTarget: 'текущим фильтрам',
       selected: 'Выбрано'
     },
     kk: {
@@ -827,11 +922,6 @@
       unknownCountry: 'Белгісіз / табылмады',
       sector: 'Сала',
       allSectors: 'Барлық салалар',
-      sortPeople: 'Тізімді сұрыптау',
-      sortYearAsc: 'Олимпиада жылы, ескіден жаңаға',
-      sortYearDesc: 'Олимпиада жылы, жаңадан ескіге',
-      sortDestinationAsc: 'Бағыт, А–Я',
-      sortDestinationDesc: 'Бағыт, Я–А',
       findPerson: 'Адамды іздеу',
       searchPlaceholder: 'Аты, жұмыс, оқу, жыл',
       companiesOrganizations: 'Компаниялар мен ұйымдар',
@@ -847,12 +937,21 @@
       almaMater: 'Білімі',
       country: 'Ел',
       sources: 'Дереккөздер',
+      sortByAlumnus: 'Қатысушы бойынша сұрыптау',
       sortByOlympiadYear: 'Олимпиада жылы бойынша сұрыптау',
       sortByDestination: 'Бағыт бойынша сұрыптау',
+      sortByAlmaMater: 'Білім бойынша сұрыптау',
+      sortByCountry: 'Ел бойынша сұрыптау',
+      sortNameNextAsc: 'Қатысушы бойынша, А–Я',
+      sortNameNextDesc: 'Қатысушы бойынша, Я–А',
       sortYearNextAsc: 'Олимпиада жылы, ескіден жаңаға',
       sortYearNextDesc: 'Олимпиада жылы, жаңадан ескіге',
       sortDestinationNextAsc: 'Бағыт бойынша, А–Я',
       sortDestinationNextDesc: 'Бағыт бойынша, Я–А',
+      sortAlmaMaterNextAsc: 'Білім бойынша, А–Я',
+      sortAlmaMaterNextDesc: 'Білім бойынша, Я–А',
+      sortCountryNextAsc: 'Ел бойынша, А–Я',
+      sortCountryNextDesc: 'Ел бойынша, Я–А',
       companiesChartTitle: 'Компаниялар мен ұйымдар',
       educationChartTitle: 'Білім беру ұйымдары',
       companiesChartAria: 'Табылған қатысушылар саны бойынша компаниялар мен ұйымдар',
@@ -871,7 +970,6 @@
       roleNotPublic: 'Рөл ашық деректерде көрсетілмеген',
       lastKnown: 'соңғы белгілі',
       filtersTarget: 'сүзгілерге',
-      currentFiltersTarget: 'ағымдағы сүзгілерге',
       selected: 'Таңдалды'
     }
   };
@@ -1026,10 +1124,12 @@
     olympiad: root.querySelector('[data-control="olympiad"]'),
     country: root.querySelector('[data-control="country"]'),
     sector: root.querySelector('[data-control="sector"]'),
-    sort: root.querySelector('[data-control="sort"]'),
     search: root.querySelector('[data-control="search"]'),
+    nameSort: root.querySelector('[data-sort-header="name"]'),
     yearSort: root.querySelector('[data-sort-header="year"]'),
     destinationSort: root.querySelector('[data-sort-header="destination"]'),
+    almaSort: root.querySelector('[data-sort-header="alma"]'),
+    countrySort: root.querySelector('[data-sort-header="country"]'),
     languageButtons: [...root.querySelectorAll('[data-language]')],
     share: root.querySelector('[data-share]'),
     shareLabel: root.querySelector('[data-share-label]'),
@@ -1156,6 +1256,25 @@
     return `${count} ${count === 1 ? 'person' : 'people'}`;
   }
 
+  const chartTextMeasure = document.createElement('canvas').getContext('2d');
+  function chartTextWidth(value) {
+    chartTextMeasure.font = `12px ${getComputedStyle(root).fontFamily}`;
+    return chartTextMeasure.measureText(String(value)).width;
+  }
+
+  function fitChartLabel(value, maxWidth) {
+    const label = String(value);
+    if (chartTextWidth(label) <= maxWidth) return label;
+    let low = 0;
+    let high = label.length;
+    while (low < high) {
+      const middle = Math.ceil((low + high) / 2);
+      if (chartTextWidth(`${label.slice(0, middle)}…`) <= maxWidth) low = middle;
+      else high = middle - 1;
+    }
+    return `${label.slice(0, low)}…`;
+  }
+
   function matchCount(count, targetKey) {
     if (currentLanguage === 'kk') return `${personCount(count)} ${t(targetKey)} сәйкес келеді.`;
     if (currentLanguage === 'ru') return `${personCount(count)} ${count === 1 ? 'соответствует' : 'соответствуют'} ${t(targetKey)}.`;
@@ -1238,7 +1357,14 @@
     const container = root.querySelector(`[data-chart="${chartName}"]`);
     const data = organizationRanking(education);
     const width = Math.max(300, container.clientWidth || 560);
-    const margin = { top: 10, right: 38, bottom: 30, left: width < 460 ? 132 : 190 };
+    const longestLabelWidth = d3.max(data, item => chartTextWidth(item.label)) || 0;
+    const minimumLabelMargin = width < 460 ? 104 : 112;
+    const maximumLabelMargin = width < 460 ? Math.min(146, width * 0.44) : Math.min(220, width * 0.3);
+    const labelMargin = Math.round(Math.max(
+      minimumLabelMargin,
+      Math.min(maximumLabelMargin, longestLabelWidth + 18)
+    ));
+    const margin = { top: 10, right: 38, bottom: 30, left: labelMargin };
     const rowHeight = width < 460 ? 27 : 29;
     const height = Math.max(300, margin.top + margin.bottom + Math.max(data.length, 1) * rowHeight);
     const innerWidth = width - margin.left - margin.right;
@@ -1291,11 +1417,12 @@
     chart.selectAll('.category-label').data(data).join('text')
       .attr('x', -8).attr('y', d => y(d.label) + y.bandwidth() / 2 + 4)
       .attr('text-anchor', 'end')
-      .text(d => d.label.length > (width < 460 ? 17 : 26) ? `${d.label.slice(0, width < 460 ? 16 : 25)}…` : d.label);
+      .text(d => fitChartLabel(d.label, margin.left - 14));
+    const valueLabelInside = d => innerWidth - x(d.count) < Math.max(34, chartTextWidth(d.count) + 16);
     chart.selectAll('.value-label').data(data).join('text')
-      .attr('x', d => Math.min(innerWidth - 4, x(d.count) + 6))
+      .attr('x', d => valueLabelInside(d) ? x(d.count) - 9 : x(d.count) + 8)
       .attr('y', d => y(d.label) + y.bandwidth() / 2 + 4)
-      .attr('text-anchor', d => x(d.count) > innerWidth - 24 ? 'end' : 'start')
+      .attr('text-anchor', d => valueLabelInside(d) ? 'end' : 'start')
       .text(d => d.count);
     svg.append('text').attr('class', 'axis-title').attr('data-axis', 'x')
       .attr('x', margin.left + innerWidth / 2).attr('y', height - 6).attr('text-anchor', 'middle')
@@ -1331,24 +1458,48 @@
     return data;
   }
 
+  function distributionFilterIsActive(kind, key) {
+    return kind === 'sector' ? state.sector === key : state.country === key;
+  }
+
+  function applyDistributionFilter(kind, item) {
+    if (item.key === '__other__') return;
+    const active = distributionFilterIsActive(kind, item.key);
+    const action = active ? 'clear' : 'select';
+    if (kind === 'sector') {
+      state.sector = active ? 'all' : item.key;
+      controls.sector.value = state.sector;
+    } else {
+      state.country = active ? 'all' : item.key;
+      controls.country.value = state.country;
+    }
+    state.selectedOrganization = '';
+    render();
+    trackAnalyticsEvent('chart_filter', {
+      chart_type: kind,
+      category: item.key,
+      action,
+      results_count: filteredPeople().length
+    });
+  }
+
   function drawDistribution(chartName, kind) {
     const container = root.querySelector(`[data-chart="${chartName}"]`);
     const data = distributionData(kind);
-    const width = Math.max(280, container.clientWidth || 360);
-    const columns = width >= 390 ? 2 : 1;
-    const legendRows = Math.ceil(Math.max(data.length, 1) / columns);
-    const height = Math.max(320, 220 + legendRows * 22);
-    const radius = Math.min(88, width * 0.28);
+    const width = 240;
+    const height = 200;
+    const radius = 88;
     const centerX = width / 2;
-    const centerY = 102;
+    const centerY = 96;
     const color = kind === 'sector'
       ? value => sectorColors.get(value) || '#94a3b8'
       : d3.scaleOrdinal(data.map(item => item.key), d3.schemeTableau10);
-    const svg = d3.select(container).selectAll('svg').data([null]).join('svg')
+    container.replaceChildren();
+    const svg = d3.select(container).append('svg')
+      .attr('class', 'iso-pie-plot')
       .attr('viewBox', `0 0 ${width} ${height}`)
       .attr('role', 'img')
       .attr('aria-label', t(kind === 'sector' ? 'sectorChartAria' : 'countryChartAria'));
-    svg.selectAll('*').remove();
     svg.append('title').text(t(kind === 'sector' ? 'sectorDistribution' : 'countryDistribution'));
     svg.append('desc').text(t(kind === 'sector' ? 'sectorChartDesc' : 'countryChartDesc'));
 
@@ -1372,46 +1523,44 @@
       .attr('aria-label', item => `${item.data.label}: ${personCount(item.data.count)}`)
       .attr('data-tooltip', item => `${item.data.label}: ${item.data.count} (${d3.format('.0%')(item.data.count / total)})`)
       .on('click keydown', (event, item) => {
-        if (item.data.key === '__other__') return;
         if (event.type === 'keydown' && !['Enter', ' '].includes(event.key)) return;
         event.preventDefault();
-        let action = 'select';
-        if (kind === 'sector') {
-          action = state.sector === item.data.key ? 'clear' : 'select';
-          state.sector = state.sector === item.data.key ? 'all' : item.data.key;
-          controls.sector.value = state.sector;
-        } else {
-          action = state.country === item.data.key ? 'clear' : 'select';
-          state.country = state.country === item.data.key ? 'all' : item.data.key;
-          controls.country.value = state.country;
-        }
-        state.selectedOrganization = '';
-        render();
-        trackAnalyticsEvent('chart_filter', {
-          chart_type: kind,
-          category: item.data.key,
-          action,
-          results_count: filteredPeople().length
-        });
+        applyDistributionFilter(kind, item.data);
       });
 
-    const legendTop = 210;
-    const columnWidth = width / columns;
-    data.forEach((item, index) => {
-      const column = index % columns;
-      const row = Math.floor(index / columns);
-      const group = svg.append('g').attr('transform', `translate(${column * columnWidth},${legendTop + row * 22})`);
-      group.append('rect').attr('width', 10).attr('height', 10).attr('y', -8)
-        .attr('fill', color(item.key));
-      const maxLength = columns === 1 ? 36 : 20;
-      const label = item.label.length > maxLength ? `${item.label.slice(0, maxLength - 1)}…` : item.label;
-      group.append('text').attr('x', 15).text(`${label} ${item.count}`);
-    });
+    const legend = d3.select(container).append('div')
+      .attr('class', 'iso-pie-legend')
+      .attr('role', 'group')
+      .attr('aria-label', t(kind === 'sector' ? 'sectorDistribution' : 'countryDistribution'));
+    const legendItems = legend.selectAll('.iso-pie-legend-item').data(data).join('button')
+      .attr('class', item => `iso-pie-legend-item${distributionFilterIsActive(kind, item.key) ? ' is-active' : ''}`)
+      .attr('type', 'button')
+      .attr('title', item => `${item.label}: ${personCount(item.count)}`)
+      .attr('aria-label', item => `${item.label}: ${personCount(item.count)}`)
+      .attr('aria-pressed', item => item.key === '__other__' ? null : String(distributionFilterIsActive(kind, item.key)))
+      .property('disabled', item => item.key === '__other__')
+      .on('click', (event, item) => applyDistributionFilter(kind, item));
+    legendItems.append('span')
+      .attr('class', 'iso-pie-legend-swatch')
+      .style('background-color', item => color(item.key));
+    legendItems.append('span')
+      .attr('class', 'iso-pie-legend-label')
+      .text(item => item.label);
+    legendItems.append('span')
+      .attr('class', 'iso-pie-legend-count')
+      .text(item => item.count);
   }
 
   function sortPeople(rows) {
     const collator = new Intl.Collator(localeByLanguage[currentLanguage], { sensitivity: 'base', numeric: true });
     const byName = (a, b) => collator.compare(a.name, b.name);
+    const byOptionalText = (a, b, selector, direction) => {
+      const first = selector(a).trim();
+      const second = selector(b).trim();
+      if (!first && second) return 1;
+      if (first && !second) return -1;
+      return direction * collator.compare(first, second) || byName(a, b);
+    };
     const destinationKey = value => value.replace(/^[^\p{L}\p{N}]+/u, '');
     const byDestination = (a, b, direction) => {
       if (!a.organization && b.organization) return 1;
@@ -1421,8 +1570,18 @@
     return rows.slice().sort((a, b) => {
       if (state.sort === 'year-asc') return d3.ascending(a.firstYear, b.firstYear) || byName(a, b);
       if (state.sort === 'year-desc') return d3.descending(a.lastYear, b.lastYear) || byName(a, b);
+      if (state.sort === 'name-asc') return byName(a, b);
+      if (state.sort === 'name-desc') return -byName(a, b);
       if (state.sort === 'destination-asc') return byDestination(a, b, 1);
       if (state.sort === 'destination-desc') return byDestination(a, b, -1);
+      if (state.sort === 'alma-asc') return byOptionalText(a, b, person => person.almaMater || '', 1);
+      if (state.sort === 'alma-desc') return byOptionalText(a, b, person => person.almaMater || '', -1);
+      if (state.sort === 'country-asc') {
+        return byOptionalText(a, b, person => displayCountry(person.countryCode, person.country || ''), 1);
+      }
+      if (state.sort === 'country-desc') {
+        return byOptionalText(a, b, person => displayCountry(person.countryCode, person.country || ''), -1);
+      }
       return byName(a, b);
     });
   }
@@ -1506,28 +1665,35 @@
       return tr;
     }));
     if (window.lucide) window.lucide.createIcons({ attrs: { 'aria-hidden': 'true' } });
-    root.querySelector('[data-table-note]').textContent = matchCount(rows.length, 'currentFiltersTarget');
   }
 
+  const sortHeaders = [
+    { control: controls.nameSort, ascending: 'name-asc', descending: 'name-desc', nextAscending: 'sortNameNextAsc', nextDescending: 'sortNameNextDesc' },
+    { control: controls.yearSort, ascending: 'year-asc', descending: 'year-desc', nextAscending: 'sortYearNextAsc', nextDescending: 'sortYearNextDesc' },
+    { control: controls.destinationSort, ascending: 'destination-asc', descending: 'destination-desc', nextAscending: 'sortDestinationNextAsc', nextDescending: 'sortDestinationNextDesc' },
+    { control: controls.almaSort, ascending: 'alma-asc', descending: 'alma-desc', nextAscending: 'sortAlmaMaterNextAsc', nextDescending: 'sortAlmaMaterNextDesc' },
+    { control: controls.countrySort, ascending: 'country-asc', descending: 'country-desc', nextAscending: 'sortCountryNextAsc', nextDescending: 'sortCountryNextDesc' }
+  ];
+
   function updateSortHeaders() {
-    const yearActive = state.sort === 'year-asc' || state.sort === 'year-desc';
-    const destinationActive = state.sort === 'destination-asc' || state.sort === 'destination-desc';
-    controls.yearSort.classList.toggle('is-active', yearActive);
-    controls.destinationSort.classList.toggle('is-active', destinationActive);
-    controls.yearSort.closest('th').setAttribute(
-      'aria-sort',
-      state.sort === 'year-asc' ? 'ascending' : state.sort === 'year-desc' ? 'descending' : 'none'
-    );
-    controls.destinationSort.closest('th').setAttribute(
-      'aria-sort',
-      state.sort === 'destination-asc' ? 'ascending' : state.sort === 'destination-desc' ? 'descending' : 'none'
-    );
-    const yearTitle = t(state.sort === 'year-asc' ? 'sortYearNextDesc' : 'sortYearNextAsc');
-    const destinationTitle = t(state.sort === 'destination-asc' ? 'sortDestinationNextDesc' : 'sortDestinationNextAsc');
-    controls.yearSort.title = yearTitle;
-    controls.yearSort.setAttribute('aria-label', yearTitle);
-    controls.destinationSort.title = destinationTitle;
-    controls.destinationSort.setAttribute('aria-label', destinationTitle);
+    sortHeaders.forEach(header => {
+      const active = state.sort === header.ascending || state.sort === header.descending;
+      const direction = state.sort === header.ascending
+        ? 'ascending'
+        : state.sort === header.descending ? 'descending' : 'none';
+      const title = t(state.sort === header.ascending ? header.nextDescending : header.nextAscending);
+      header.control.classList.toggle('is-active', active);
+      header.control.closest('th').setAttribute('aria-sort', direction);
+      header.control.title = title;
+      header.control.setAttribute('aria-label', title);
+    });
+  }
+
+  function toggleHeaderSort(header) {
+    state.sort = state.sort === header.ascending ? header.descending : header.ascending;
+    updateSortHeaders();
+    renderTable();
+    trackAnalyticsEvent('sort_change', { sort_mode: state.sort, control_origin: 'table_header' });
   }
 
   function render() {
@@ -1610,12 +1776,6 @@
   controls.olympiad.addEventListener('change', event => updateFilter('olympiad', event.target.value));
   controls.country.addEventListener('change', event => updateFilter('country', event.target.value));
   controls.sector.addEventListener('change', event => updateFilter('sector', event.target.value));
-  controls.sort.addEventListener('change', event => {
-    state.sort = event.target.value;
-    updateSortHeaders();
-    renderTable();
-    trackAnalyticsEvent('sort_change', { sort_mode: state.sort, control_origin: 'select' });
-  });
   let searchUseTracked = false;
   controls.search.addEventListener('input', event => {
     state.search = event.target.value;
@@ -1625,19 +1785,8 @@
       trackAnalyticsEvent('search_used', { results_count: filteredPeople().length });
     }
   });
-  controls.yearSort.addEventListener('click', () => {
-    state.sort = state.sort === 'year-asc' ? 'year-desc' : 'year-asc';
-    controls.sort.value = state.sort;
-    updateSortHeaders();
-    renderTable();
-    trackAnalyticsEvent('sort_change', { sort_mode: state.sort, control_origin: 'table_header' });
-  });
-  controls.destinationSort.addEventListener('click', () => {
-    state.sort = state.sort === 'destination-asc' ? 'destination-desc' : 'destination-asc';
-    controls.sort.value = state.sort;
-    updateSortHeaders();
-    renderTable();
-    trackAnalyticsEvent('sort_change', { sort_mode: state.sort, control_origin: 'table_header' });
+  sortHeaders.forEach(header => {
+    header.control.addEventListener('click', () => toggleHeaderSort(header));
   });
   controls.languageButtons.forEach(button => {
     button.addEventListener('click', () => {

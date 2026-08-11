@@ -43,28 +43,41 @@ class DistributionChartTest(unittest.TestCase):
         self.assertIn("state.sector !== 'all' && person.sector !== state.sector", self.template)
         self.assertIn("state.selectedOrganization", self.template)
 
+    def test_pie_legends_keep_full_labels_and_center_in_html(self):
+        self.assertIn(".attr('class', 'iso-pie-legend')", self.template)
+        self.assertIn(".attr('class', 'iso-pie-legend-label')", self.template)
+        self.assertIn(".text(item => item.label)", self.template)
+        self.assertIn("justify-content: center", self.template)
+        self.assertNotIn("const maxLength = columns", self.template)
+        self.assertNotIn("item.label.slice", self.template)
+
 
 class PeopleSortTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.template = TEMPLATE.read_text(encoding="utf-8")
 
-    def test_people_table_exposes_year_and_destination_sorts(self):
-        self.assertIn('data-control="sort"', self.template)
-        self.assertIn('value="year-asc"', self.template)
-        self.assertIn('value="year-desc"', self.template)
-        self.assertIn('value="destination-asc"', self.template)
-        self.assertIn('value="destination-desc"', self.template)
+    def test_people_table_exposes_requested_header_sorts_without_a_top_menu(self):
+        self.assertNotIn('data-control="sort"', self.template)
+        self.assertIn('data-sort-header="name"', self.template)
         self.assertIn('data-sort-header="year"', self.template)
         self.assertIn('data-sort-header="destination"', self.template)
+        self.assertIn('data-sort-header="alma"', self.template)
+        self.assertIn('data-sort-header="country"', self.template)
 
-    def test_year_and_destination_sort_keys_are_explicit(self):
+    def test_requested_sort_keys_are_explicit(self):
+        self.assertIn("state.sort === 'name-asc'", self.template)
+        self.assertIn("state.sort === 'name-desc'", self.template)
         self.assertIn("d3.ascending(a.firstYear, b.firstYear)", self.template)
         self.assertIn("d3.descending(a.lastYear, b.lastYear)", self.template)
         self.assertIn(
             "collator.compare(destinationKey(a.organization), destinationKey(b.organization))",
             self.template,
         )
+        self.assertIn("state.sort === 'alma-asc'", self.template)
+        self.assertIn("state.sort === 'alma-desc'", self.template)
+        self.assertIn("state.sort === 'country-asc'", self.template)
+        self.assertIn("state.sort === 'country-desc'", self.template)
         self.assertIn("`${person.firstYear}-${person.lastYear}`", self.template)
 
     def test_sortable_olympiad_header_stays_on_one_line(self):
@@ -74,6 +87,27 @@ class PeopleSortTest(unittest.TestCase):
             "#iso-outcomes-viz .table th:nth-child(2) { width: 10%; }",
             self.template,
         )
+
+    def test_only_one_filter_match_summary_is_rendered(self):
+        self.assertIn('data-selection', self.template)
+        self.assertNotIn('data-table-note', self.template)
+
+
+class LayoutPolishTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.template = TEMPLATE.read_text(encoding="utf-8")
+
+    def test_header_tools_align_to_the_top_right_on_desktop(self):
+        self.assertIn("#iso-outcomes-viz .iso-page-header", self.template)
+        self.assertIn("align-items: flex-start", self.template)
+        self.assertIn("align-self: flex-start", self.template)
+
+    def test_bar_charts_adapt_label_space_and_inset_edge_values(self):
+        self.assertIn("const longestLabelWidth", self.template)
+        self.assertIn("fitChartLabel(d.label, margin.left - 14)", self.template)
+        self.assertIn("const valueLabelInside", self.template)
+        self.assertIn("x(d.count) - 9", self.template)
 
 
 class CountryAndHistoryTest(unittest.TestCase):
@@ -93,7 +127,7 @@ class CountryAndHistoryTest(unittest.TestCase):
     def test_search_includes_alma_mater_and_history(self):
         self.assertIn("person.almaMater", self.template)
         self.assertIn("...(person.historyTerms || [])", self.template)
-        self.assertIn('<th data-i18n="almaMater">Alma mater</th>', self.template)
+        self.assertIn('<span data-i18n="almaMater">Alma mater</span>', self.template)
 
 
 class SourceDisplayTest(unittest.TestCase):
