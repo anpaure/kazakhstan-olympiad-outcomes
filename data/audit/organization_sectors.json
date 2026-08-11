@@ -777,6 +777,13 @@
     "rationale": "Reviewed organization operates Kazakhstan's digital-government infrastructure."
   },
   {
+    "organization_sector_id": "sector-3f1b1b9d69e5e0cf",
+    "canonical_name": "NBPARTS",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "The reviewed company registry describes wholesale trade in computers peripheral equipment and software as its principal activity."
+  },
+  {
     "organization_sector_id": "sector-f79c67c0d6dee4fc",
     "canonical_name": "Nethermind",
     "organization_type": "company",
@@ -992,6 +999,13 @@
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is autonomous-mobility software."
+  },
+  {
+    "organization_sector_id": "sector-4623e58184866872",
+    "canonical_name": "SG Beton",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "SG Holding identifies SG Beton as its concrete manufacturing plant."
   },
   {
     "organization_sector_id": "sector-f1532abab7752a87",

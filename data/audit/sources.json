@@ -585,6 +585,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-e4a73071df0b",
+    "source_url": "https://centrasia.org/newsA.php?st=1082953860",
+    "source_host": "centrasia.org",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "manual"
+  },
+  {
     "source_id": "src-4c831ea25f6e",
     "source_url": "https://ch.linkedin.com/in/makenov",
     "source_host": "ch.linkedin.com",
@@ -10710,6 +10725,21 @@
     "source_adapters": "academic_collaborator_profile"
   },
   {
+    "source_id": "src-8af499a8e84c",
+    "source_url": "https://mipt.nagradion.ru/tournament27756/team/232497/players",
+    "source_host": "mipt.nagradion.ru",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_alumni_registry"
+  },
+  {
     "source_id": "src-2a9d696f5c9f",
     "source_url": "https://mirror.akorda.kz/ru/executive_office/executive_office_stucture",
     "source_host": "mirror.akorda.kz",
@@ -16470,6 +16500,21 @@
     "source_adapters": "linkedin;manual_profile_transcription"
   },
   {
+    "source_id": "src-2c76ef838133",
+    "source_url": "https://sgholding.kz/kz/sotrudniki/",
+    "source_host": "sgholding.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 4,
+    "people_count": 1,
+    "accepted_rows": 2,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review",
+    "source_adapters": "current_role_location;destination_review;destination_source_review;manual"
+  },
+  {
     "source_id": "src-20eff41c48fe",
     "source_url": "https://shoqanschool.kz/genuineadmin/news/view?id=109",
     "source_host": "shoqanschool.kz",
@@ -16648,6 +16693,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history",
     "source_adapters": "archived_corporate_mailing_list"
+  },
+  {
+    "source_id": "src-c35503f0cf34",
+    "source_url": "https://spark-interfax.ru/moskva-perovo/ooo-nbparts-inn-7720746557-ogrn-1127746252072-5bcd223ce9c747d1ae4842ee62558963",
+    "source_host": "spark-interfax.ru",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 2,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_destination_reconciliation;manual_review",
+    "source_adapters": "destination_review;destination_source_review;manual"
   },
   {
     "source_id": "src-3c8c0f6cc0ba",
@@ -18328,6 +18388,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_location_evidence",
     "source_adapters": "current_education_location"
+  },
+  {
+    "source_id": "src-4094cd47e821",
+    "source_url": "https://web.itu.edu.tr/~ugur/staj.html",
+    "source_host": "web.itu.edu.tr",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_internship_roster"
   },
   {
     "source_id": "src-75150c32f93e",
@@ -21378,16 +21453,16 @@
     "source_id": "src-4b70f6427afe",
     "source_url": "https://www.imo-official.org/results/contestant/6134/",
     "source_host": "imo-official.org",
-    "source_kind": "html",
-    "evidence_rows": 1,
+    "source_kind": "web_page",
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 2,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IMO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IMO;manual"
   },
   {
     "source_id": "src-0a32b42e61bc",

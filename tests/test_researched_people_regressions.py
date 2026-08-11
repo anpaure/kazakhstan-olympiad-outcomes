@@ -1128,6 +1128,54 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(person["end_year"], "2020")
         self.assertNotIn(person["person_id"], self.locations)
 
+    def test_anuar_kaumbayev_probable_sg_beton_outcome_and_itu_history(self):
+        person = self.people["kaz-1c91927cfc70"]
+        location = self.locations[person["person_id"]]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["organization"], "SG Beton")
+        self.assertEqual(person["role"], "Acting Plant Director")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertIn(
+            "Istanbul Technical University",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertTrue(
+            any(
+                row["organization"] == "Istanbul Technical University"
+                and row["role"] == "Petroleum and Natural Gas Engineering Student"
+                and row["start_year"] == "2006"
+                and row["end_year"] == "2006"
+                and not row["is_current"]
+                for row in affiliations
+            )
+        )
+
+    def test_akhmed_saidaliyev_probable_historical_nbparts_and_mipt(self):
+        person = self.people["kaz-5520c02c8f31"]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["organization"], "NBPARTS")
+        self.assertEqual(person["role"], "General Director and Sole Owner")
+        self.assertEqual(person["start_year"], "2012")
+        self.assertEqual(person["end_year"], "2020")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertIn(
+            "Moscow Institute of Physics and Technology (MIPT)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertTrue(
+            any(
+                row["organization"]
+                == "Moscow Institute of Physics and Technology (MIPT)"
+                and row["role"] == "FIVT Graduate (degree title not stated)"
+                and not row["is_current"]
+                for row in affiliations
+            )
+        )
+        self.assertNotIn(person["person_id"], self.locations)
+
     def test_yerlan_jumabayev_name_only_candidates_are_rejected(self):
         person = self.people["kaz-514026a01ba3"]
 

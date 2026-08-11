@@ -638,6 +638,17 @@
     "review_reason": "The Ministry of Education places Ansar's active Spectrum International School affiliation in Astana."
   },
   {
+    "person_id": "kaz-1c91927cfc70",
+    "name": "Anuar Kaumbayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://sgholding.kz/kz/sotrudniki/",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "SG Holding's current staff page places Anuar Nurlanovich Kaumbayev in the Kazakhstan-based SG Beton leadership role. Only the country is asserted because the plant registry is in Akmola Region while the group's staff page uses its Astana contact address."
+  },
+  {
     "person_id": "kaz-070fb0fd555d",
     "name": "Arman Bissembayev",
     "country_code": "KZ",

@@ -60,6 +60,21 @@
     "review_reason": "The accepted profile lists PhD Student and Research Assistant at UMass Dartmouth as current from September 2025."
   },
   {
+    "destination_review_id": "dest-review-88a635bbc991a9bb",
+    "evidence_id": "ev-9cce22409088b79b",
+    "source_id": "src-c35503f0cf34",
+    "person_id": "kaz-5520c02c8f31",
+    "name": "Akhmed Saidaliyev",
+    "organization": "NBPARTS",
+    "role": "General Director and Sole Owner",
+    "affiliation_type": "employment",
+    "start_year": "2012",
+    "end_year": "2020",
+    "evidence_url": "https://spark-interfax.ru/moskva-perovo/ooo-nbparts-inn-7720746557-ogrn-1127746252072-5bcd223ce9c747d1ae4842ee62558963",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "Interfax's SPARK registry names Akhmed Alisultanovich Saidaliyev as NBPARTS' general director and sole owner, dates registration to 6 April 2012, and dates liquidation to 6 August 2020. The role is retained as the latest reviewed historical outcome and is not presented as current."
+  },
+  {
     "destination_review_id": "dest-review-d9366784e1654de0",
     "evidence_id": "ev-644e0d2b4b3965a8",
     "source_id": "src-8509acbae739",
@@ -118,6 +133,21 @@
     "evidence_url": "https://www.linkedin.com/in/amirbek-azatbekov-34b313386/",
     "reviewed_at": "2026-08-11",
     "review_reason": "The accepted profile lists a 2026-2030 Bachelor of Science in Mathematics at Caltech and identifies Amirbek as Math at Caltech '30."
+  },
+  {
+    "destination_review_id": "dest-review-11aae50f49ede1f0",
+    "evidence_id": "ev-7505e27e80cd414c",
+    "source_id": "src-2c76ef838133",
+    "person_id": "kaz-1c91927cfc70",
+    "name": "Anuar Kaumbayev",
+    "organization": "SG Beton",
+    "role": "Acting Plant Director",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://sgholding.kz/kz/sotrudniki/",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "SG Holding's current staff page explicitly lists Anuar Nurlanovich Kaumbayev as Acting Director of the SG Beton plant. SG Beton is used as the single displayed destination; the separate SG Sand Quarry registry directorship remains supporting corporate evidence rather than a second destination."
   },
   {
     "destination_review_id": "dest-review-91ab07c7549792d3",
