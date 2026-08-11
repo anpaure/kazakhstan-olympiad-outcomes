@@ -103,11 +103,14 @@ class LayoutPolishTest(unittest.TestCase):
         self.assertIn("align-items: flex-start", self.template)
         self.assertIn("align-self: flex-start", self.template)
 
-    def test_bar_charts_adapt_label_space_and_inset_edge_values(self):
+    def test_bar_charts_adapt_label_space_and_reserve_value_gutter(self):
         self.assertIn("const longestLabelWidth", self.template)
         self.assertIn("fitChartLabel(d.label, margin.left - 14)", self.template)
-        self.assertIn("const valueLabelInside", self.template)
-        self.assertIn("x(d.count) - 9", self.template)
+        self.assertIn("const valueGutter", self.template)
+        self.assertIn("innerWidth - valueGutter", self.template)
+        self.assertIn(".attr('class', 'value-label')", self.template)
+        self.assertIn("x(d.count) + 8", self.template)
+        self.assertNotIn("valueLabelInside", self.template)
 
 
 class CountryAndHistoryTest(unittest.TestCase):

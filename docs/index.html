@@ -485,6 +485,10 @@
     fill: var(--iso-foreground);
     font-size: 12px;
   }
+  #iso-outcomes-viz .iso-bar-chart .value-label {
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+  }
   #iso-outcomes-viz svg .muted-label {
     fill: var(--iso-muted-foreground);
   }
@@ -1364,7 +1368,7 @@
       minimumLabelMargin,
       Math.min(maximumLabelMargin, longestLabelWidth + 18)
     ));
-    const margin = { top: 10, right: 38, bottom: 30, left: labelMargin };
+    const margin = { top: 10, right: 12, bottom: 30, left: labelMargin };
     const rowHeight = width < 460 ? 27 : 29;
     const height = Math.max(300, margin.top + margin.bottom + Math.max(data.length, 1) * rowHeight);
     const innerWidth = width - margin.left - margin.right;
@@ -1383,7 +1387,10 @@
       return;
     }
 
-    const x = d3.scaleLinear().domain([0, d3.max(data, d => d.count)]).nice().range([0, innerWidth]);
+    const maxCount = d3.max(data, d => d.count);
+    const valueGutter = Math.ceil(chartTextWidth(maxCount) + 20);
+    const plotWidth = Math.max(80, innerWidth - valueGutter);
+    const x = d3.scaleLinear().domain([0, maxCount]).nice().range([0, plotWidth]);
     const y = d3.scaleBand().domain(data.map(d => d.label)).range([0, innerHeight]).padding(0.22);
     const chart = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
     const ticks = x.ticks(width < 460 ? 3 : 5);
@@ -1418,14 +1425,14 @@
       .attr('x', -8).attr('y', d => y(d.label) + y.bandwidth() / 2 + 4)
       .attr('text-anchor', 'end')
       .text(d => fitChartLabel(d.label, margin.left - 14));
-    const valueLabelInside = d => innerWidth - x(d.count) < Math.max(34, chartTextWidth(d.count) + 16);
     chart.selectAll('.value-label').data(data).join('text')
-      .attr('x', d => valueLabelInside(d) ? x(d.count) - 9 : x(d.count) + 8)
+      .attr('class', 'value-label')
+      .attr('x', d => x(d.count) + 8)
       .attr('y', d => y(d.label) + y.bandwidth() / 2 + 4)
-      .attr('text-anchor', d => valueLabelInside(d) ? 'end' : 'start')
+      .attr('text-anchor', 'start')
       .text(d => d.count);
     svg.append('text').attr('class', 'axis-title').attr('data-axis', 'x')
-      .attr('x', margin.left + innerWidth / 2).attr('y', height - 6).attr('text-anchor', 'middle')
+      .attr('x', margin.left + plotWidth / 2).attr('y', height - 6).attr('text-anchor', 'middle')
       .text(t('matchedAlumni'));
   }
 
