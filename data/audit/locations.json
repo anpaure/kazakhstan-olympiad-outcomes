@@ -56,6 +56,34 @@
     "review_reason": "The cited role profile places BIL No. 1 and Samatov's principal and teaching work in Karaganda Kazakhstan."
   },
   {
+    "location_id": "loc-38719494c356a470",
+    "evidence_id": "ev-d8e8f8b715581dcc",
+    "source_id": "src-330c893d8386",
+    "person_id": "kaz-01654d909e91",
+    "name": "Abylay Shakhizadayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://nur.nu.edu.kz/items/8090871a-9f4d-492d-9232-0ee28a046e58",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Abylay's latest accepted affiliation is his 2018 Nazarbayev University economics master's work in Astana; this is a historical latest-known location."
+  },
+  {
+    "location_id": "loc-e860294c50364136",
+    "evidence_id": "ev-af49c152374a6262",
+    "source_id": "src-135cfd39ecee",
+    "person_id": "kaz-438a79d3a6d5",
+    "name": "Abzal Daribaev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://www.ncste.kz/kz/daribaev-abzal-amankeldievich",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted government science-council profile places Abzal's current Nazarbayev University innovation role at Astana Business Campus."
+  },
+  {
     "location_id": "loc-01e3743878e757d9",
     "evidence_id": "ev-882d012fb0468ac0",
     "source_id": "src-a3a580611a9d",
@@ -98,6 +126,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at University of Luxembourg. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-da04dfc5a629785f",
+    "evidence_id": "ev-abd76d4938aa435b",
+    "source_id": "src-235c922f55c8",
+    "person_id": "kaz-c81d0e9f9556",
+    "name": "Adil Zhugralin",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Greater Boston, United States",
+    "evidence_url": "https://www.linkedin.com/in/adil-zhugralin-9bb1b03",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Adil in Greater Boston alongside the reviewed ongoing Novartis patent-attorney role and US bar admissions."
+  },
+  {
     "location_id": "loc-49464189a47ed6e8",
     "evidence_id": "ev-a32827f3a552825a",
     "source_id": "src-73d0d5014956",
@@ -126,6 +168,20 @@
     "review_reason": "The accepted profile places Adilet's ongoing University of Pittsburgh School of Medicine graduate role in Pittsburgh Pennsylvania."
   },
   {
+    "location_id": "loc-577ba4a610f55ab2",
+    "evidence_id": "ev-144a1c2eb7011de6",
+    "source_id": "src-c54c3027f964",
+    "person_id": "kaz-07461cbee89d",
+    "name": "Adilet Uvaliyev",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Tai Po, Hong Kong",
+    "evidence_url": "https://www.myprivatetutor.hk/teacher/29733/adilet-u-experienced-physics-tutor-with-a-bsc-from-hku",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Adilet's active exact-identity tutoring listing explicitly places his physics-tutor role in Tai Po Hong Kong."
+  },
+  {
     "location_id": "loc-4d46a1ad0bd86088",
     "evidence_id": "ev-82303b22d710fe00",
     "source_id": "src-73d0d5014956",
@@ -140,6 +196,34 @@
     "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
+    "location_id": "loc-bcda3d8aeee51d53",
+    "evidence_id": "ev-d7d6d27f5bfe40e1",
+    "source_id": "src-8e56e9361d20",
+    "person_id": "kaz-cfbf52394abd",
+    "name": "Adilkhan Sarsen",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://www.linkedin.com/in/adilkhan-sarsen-b62749140/",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Higgsfield AI."
+  },
+  {
+    "location_id": "loc-99411626e295ad45",
+    "evidence_id": "ev-9d3b8978cbac12eb",
+    "source_id": "src-67eabe03783f",
+    "person_id": "kaz-96fed62edd90",
+    "name": "Adilzhan Ismailov",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_url": "https://uk.linkedin.com/in/adilzhanismailov",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places Adilzhan in the United Kingdom alongside the reviewed current Depop lead data-scientist role; the identity remains probable."
+  },
+  {
     "location_id": "loc-91fe5b79415177f1",
     "evidence_id": "ev-455afc9f60b209e2",
     "source_id": "src-73d0d5014956",
@@ -152,6 +236,48 @@
     "evidence_kind": "current_education_location",
     "confidence": "probable",
     "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
+  },
+  {
+    "location_id": "loc-019c8b6f31948c9d",
+    "evidence_id": "ev-e18fb78312894039",
+    "source_id": "src-91960c812ee7",
+    "person_id": "kaz-674cd62ab22c",
+    "name": "Aibatyr Zhumagulov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://ipv4.kdif.kz/ru/corporate-management",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Kazakhstan Deposit Insurance Fund's current corporate-governance page identifies Aibatyr's independent-director role at the Kazakhstan statutory fund."
+  },
+  {
+    "location_id": "loc-1f84e49de87b59dc",
+    "evidence_id": "ev-2c173ae3c403b5e6",
+    "source_id": "src-2dc274f62231",
+    "person_id": "kaz-d36d7bbcbacc",
+    "name": "Aibek A. Mukhamediyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/aibek-mukhamediyev-a20b3420",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Undisclosed employer."
+  },
+  {
+    "location_id": "loc-b2f7924d7ce0c5fb",
+    "evidence_id": "ev-ad9f6151e8add877",
+    "source_id": "src-6fa5f5092ef6",
+    "person_id": "kaz-af55ed678a4e",
+    "name": "Aibek Myrzatay",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Moscow, Russia",
+    "evidence_url": "https://www.linkedin.com/in/eyebaek/",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Aibek's latest dated accepted affiliation is his 2021-2025 HSE degree in Moscow after a 2023 Yandex internship there; the Atyrau header is not used as an active-affiliation location."
   },
   {
     "location_id": "loc-c3f1bfb10354a8a9",
@@ -224,6 +350,34 @@
     "review_reason": "The accepted profile exposes Germany as Aigerim's location alongside her current full-time Porsche Software & Data Architect role; earlier independent Porsche and TU Berlin evidence corroborates the same Germany trajectory."
   },
   {
+    "location_id": "loc-f506784ea735ad1c",
+    "evidence_id": "ev-5fae5333e6bcd85d",
+    "source_id": "src-796ae3caad4c",
+    "person_id": "kaz-1b79632fc187",
+    "name": "Aigerim Turuspekova",
+    "country_code": "IT",
+    "country_name": "Italy",
+    "location_label": "Milan, Italy",
+    "evidence_url": "https://it.linkedin.com/in/aigerim-turuspekova",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Aigerim's accepted profile places her Bocconi degree and 2025-2026 Minerva Investment Management Society analyst activity in Milan; Italy is retained as the latest-known country after graduation."
+  },
+  {
+    "location_id": "loc-dfc5e475fe274ec2",
+    "evidence_id": "ev-22e41adcad1bfaef",
+    "source_id": "src-69f1d3174ce1",
+    "person_id": "kaz-bb70c982f38a",
+    "name": "Aituov Baurzhan",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://bolashak.gov.kz/o-stipendii/istorii-uspeha/ajtuov-bauyrzhan-abdugalievich",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Bolashak's official profile identifies geneticist Bauyrzhan Aituov as the Kazakhstan founder and scientific director of InnoDent; the rare name, field, and age-compatible education support the IBO match, which remains probable."
+  },
+  {
     "location_id": "loc-8f1fb77449e8494e",
     "evidence_id": "ev-f10535bfb7727880",
     "source_id": "src-562c3d14545e",
@@ -236,6 +390,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Ayar Labs. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-cfea2b66091c31f2",
+    "evidence_id": "ev-364f87a2ba4a6800",
+    "source_id": "src-92ca0a127a4f",
+    "person_id": "kaz-3c4d427574a2",
+    "name": "Aizana Turmukhametova",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_url": "https://linkedin.com/in/aizana-turmukhametova-95b31b19",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places the person in United States and independently lists the matched current role at Google."
   },
   {
     "location_id": "loc-12231c48d6709af4",
@@ -252,6 +420,34 @@
     "review_reason": "The official NIS article identifies Aizere as a current student at its Ust-Kamenogorsk school."
   },
   {
+    "location_id": "loc-73b8c6f3ee1d1a27",
+    "evidence_id": "ev-0180dca4fca51c33",
+    "source_id": "src-11ffbc6a8dd8",
+    "person_id": "kaz-ec80d9fc8daf",
+    "name": "Akezhan Amankeldi",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/akezhan-amankeldi",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Akezhan in Kazakhstan alongside the current BCG consultant role corroborated by BCG's public post."
+  },
+  {
+    "location_id": "loc-59a034d1f66e5f28",
+    "evidence_id": "ev-9b81ac17ff41f83a",
+    "source_id": "src-7799795f81b0",
+    "person_id": "kaz-822bb4ee42e0",
+    "name": "Akezhan Askar",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Semey, Kazakhstan (last verified in 2026)",
+    "evidence_url": "https://trz.nis.edu.kz/en/school/nzm-semei/news/1782",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "NIS Semey's official profile identifies Akezhan as its grade 12 student through the 2025-2026 school year. This is the latest verified location; no post-graduation residence is inferred."
+  },
+  {
     "location_id": "loc-a8a2528874638d8c",
     "evidence_id": "ev-6b831e29bc15de8e",
     "source_id": "src-dc4cc4d4170d",
@@ -264,6 +460,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Squarepoint Capital. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used."
+  },
+  {
+    "location_id": "loc-b621ed0d09b34ba4",
+    "evidence_id": "ev-65155a03b17af3c8",
+    "source_id": "src-c35503f0cf34",
+    "person_id": "kaz-5520c02c8f31",
+    "name": "Akhmed Saidaliyev",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Moscow, Russia (last verified in 2020)",
+    "evidence_url": "https://spark-interfax.ru/moskva-perovo/ooo-nbparts-inn-7720746557-ogrn-1127746252072-5bcd223ce9c747d1ae4842ee62558963",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "probable",
+    "review_reason": "The reviewed 2012-2020 NBPARTS directorship was at the Moscow company. This is historical latest-known evidence only; no current residence is inferred, and the identity remains probable."
   },
   {
     "location_id": "loc-edaa49010a46dc2b",
@@ -280,6 +490,20 @@
     "review_reason": "Country follows the accepted active student affiliation at University of Hong Kong; the linked official institution source establishes the campus location. HKU's official contact page identifies its Hong Kong campus."
   },
   {
+    "location_id": "loc-9b64c10691137599",
+    "evidence_id": "ev-593ced6377857c7d",
+    "source_id": "src-62aa82ed417f",
+    "person_id": "kaz-561024988d4c",
+    "name": "Akhyn Zhagsalag",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://kebab.eportfolio.kz/ru/portfolio/?pane=public&school=108",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The current public education portfolio places Akhyn's physics teaching and Olympiad-training role at the Astana Bilim-Innovation boarding lyceum."
+  },
+  {
     "location_id": "loc-907b6fb0729aa17e",
     "evidence_id": "ev-cf797f3bc5128d1f",
     "source_id": "src-64e5df7efbde",
@@ -294,6 +518,34 @@
     "review_reason": "Aldiyar's separate exact-name BUKI profile repeats his IPhO distinction and advertises current physics tutoring in Almaty, Kazakhstan, corroborating the Profi destination record."
   },
   {
+    "location_id": "loc-f06253b3ea5a532c",
+    "evidence_id": "ev-38fb3e8417b60df3",
+    "source_id": "src-20dc755fb644",
+    "person_id": "kaz-6ff2bc2176bd",
+    "name": "Alen Abdrakhmanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/alen-abdrakhmanov",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Huawei."
+  },
+  {
+    "location_id": "loc-5de609e0be9b28ce",
+    "evidence_id": "ev-95526bddc81a7e40",
+    "source_id": "src-70ebdc29ae88",
+    "person_id": "kaz-b045af74dc39",
+    "name": "Alen Bayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/alen-bayev-1402012bb",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Higgsfield AI."
+  },
+  {
     "location_id": "loc-32a50a0c4096e926",
     "evidence_id": "ev-3ba53f5d1d26bb8a",
     "source_id": "src-9bbc96ec08a8",
@@ -306,6 +558,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "The accepted profile places the ongoing VELES TRUST CFO/CIO role in Almaty Kazakhstan; its conflicting Russia header is not used."
+  },
+  {
+    "location_id": "loc-3b5ad0925f275b2b",
+    "evidence_id": "ev-727560f00b5f5355",
+    "source_id": "src-a3871395fe7b",
+    "person_id": "kaz-6c47e89eeff1",
+    "name": "Alexander Zaitsev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 1996)",
+    "evidence_url": "https://www.imo-official.org/results/contestant/4547/",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 1996 IMO record is retained because the Russian ORCID researcher remains only a candidate identity match. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "location_id": "loc-40149eba5019c3d5",
@@ -334,6 +600,34 @@
     "evidence_kind": "active_affiliation_profile_location",
     "confidence": "probable",
     "review_reason": "LinkedIn's public directory places Alexey Doctorovich in Israel at Microsoft, consistent with the official IMO record showing that the same exact-name competitor represented Israel in 2000."
+  },
+  {
+    "location_id": "loc-e6b15863c9b7d402",
+    "evidence_id": "ev-acc60008628b4cff",
+    "source_id": "src-fe8270247075",
+    "person_id": "kaz-3e91bdc28e40",
+    "name": "Alexey Dudnik",
+    "country_code": "CA",
+    "country_name": "Canada",
+    "location_label": "Charlottetown, Prince Edward Island, Canada",
+    "evidence_url": "https://theorg.com/org/biovectra/org-chart/alexey-dudnik",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "BIOVECTRA's reviewed current principal-scientist record is tied to its biologics operation in Charlottetown Prince Edward Island; the identity remains probable."
+  },
+  {
+    "location_id": "loc-cfd21816895c164f",
+    "evidence_id": "ev-b68ccd7365eb9414",
+    "source_id": "src-882e5aa7a1e1",
+    "person_id": "kaz-e2c1785c3b0f",
+    "name": "Alexey Tsekhovoy",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Moscow, Russia",
+    "evidence_url": "https://de.linkedin.com/in/alexey-tsekhovoy-7a75b4257",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Alexey's latest dated accepted affiliation is his 2018-2023 HSE education in Moscow; the unsupported Germany header is not treated as an active-affiliation location."
   },
   {
     "location_id": "loc-16a317377996f4d0",
@@ -434,6 +728,20 @@
     "review_reason": "Qazinform's Ministry of Education report places Alikhan's active Bilim-Innovation student affiliation in Almaty."
   },
   {
+    "location_id": "loc-91d1f071f5dec45f",
+    "evidence_id": "ev-f574daff462d14e1",
+    "source_id": "src-fbda2ffac964",
+    "person_id": "kaz-477ae2fd5dbc",
+    "name": "Alikhan Kudaibergenov",
+    "country_code": "CA",
+    "country_name": "Canada",
+    "location_label": "Waterloo, Ontario, Canada",
+    "evidence_url": "https://linkedin.com/in/alikhan-kudaibergenov-27726a154",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Alikhan's accepted profile dates his University of Waterloo affiliation through 2026 and places it in Waterloo Ontario; the country follows that latest education evidence."
+  },
+  {
     "location_id": "loc-5d7652e6fffcee82",
     "evidence_id": "ev-060608b30ae1b3c0",
     "source_id": "src-0e7c72f6eeaf",
@@ -446,6 +754,20 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at The Chinese University of Hong Kong (CUHK); the linked official institution source establishes the campus location. CUHK's official campus page identifies its Hong Kong campus."
+  },
+  {
+    "location_id": "loc-e0731ec559385dd3",
+    "evidence_id": "ev-6ebfb3381e2fa082",
+    "source_id": "src-3c3f5965ae52",
+    "person_id": "kaz-fcb382e0caae",
+    "name": "Alikhan Zimanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://www.kbtu.kz/en/events/5144-kbtu-open-spring-2026-eng",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "KBTU's 2026 event report names exact-name Alikhan Zimanov as an active contestant in Almaty after his accepted Kazakhstan Olympiad history; this supports only a latest-known Kazakhstan location, not an employer or legal residence."
   },
   {
     "location_id": "loc-3593f7112d303db1",
@@ -516,6 +838,34 @@
     "evidence_kind": "career_source_location",
     "confidence": "probable",
     "review_reason": "The accepted career source places him at Sun Life Financial in Canada."
+  },
+  {
+    "location_id": "loc-5eb5b9c15f8f8cde",
+    "evidence_id": "ev-e24877c6842a9ff4",
+    "source_id": "src-95ba59dfa1bf",
+    "person_id": "kaz-51f03f3fb603",
+    "name": "Almas Sakhavyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 1998)",
+    "evidence_url": "https://www.imo-official.org/results/contestant/5288/",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 1998 IMO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
+    "location_id": "loc-00ca61fbf8e9875b",
+    "evidence_id": "ev-72be27d38b86a165",
+    "source_id": "src-18b4b417a4db",
+    "person_id": "kaz-e0511f92fe0d",
+    "name": "Almas Serikov",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Seoul, South Korea",
+    "evidence_url": "https://www.jkimlab.com/people",
+    "evidence_kind": "current_research_affiliation_location",
+    "confidence": "confirmed",
+    "review_reason": "The current KIST laboratory roster places Almas's ongoing research internship at the Brain Science Institute in Seoul South Korea."
   },
   {
     "location_id": "loc-b1bd3d087f69e57a",
@@ -630,6 +980,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at ENERGY Insights & Analytics. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-becd6962ee17f7b0",
+    "evidence_id": "ev-287fd8b04ac73698",
+    "source_id": "src-86db04d185b7",
+    "person_id": "kaz-95803b7b2c5f",
+    "name": "Amanzhol Kuantay",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong",
+    "evidence_url": "https://hk.linkedin.com/in/amanzholkuantay",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Hong Kong and independently lists the matched current role at UBS."
+  },
+  {
     "location_id": "loc-7be7922310d2f06c",
     "evidence_id": "ev-31ff797c09817514",
     "source_id": "src-1b06af578c08",
@@ -700,6 +1064,20 @@
     "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
+    "location_id": "loc-c880cd39597e20c2",
+    "evidence_id": "ev-3c6a98cc3afdadfb",
+    "source_id": "src-441b5ac90c72",
+    "person_id": "kaz-a2f029eab00c",
+    "name": "Amir Tulegenov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan (last verified in 2009)",
+    "evidence_url": "https://neerc.ifmo.ru/school/io/archive/20080329/standings-20080329-individual.html",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed contest record places exact-handle Amir Tulegenov in Almaty shortly before his 2009 IOI appearance. His later accepted GitHub profile exposes no country, so this is historical latest-known evidence only."
+  },
+  {
     "location_id": "loc-e965b71d9b93cf51",
     "evidence_id": "ev-340acba62d70365b",
     "source_id": "src-385c85371c70",
@@ -728,6 +1106,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Pulsar. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-a0bb7add3276f32c",
+    "evidence_id": "ev-9d9370e064cdc620",
+    "source_id": "src-a38da0ce1b27",
+    "person_id": "kaz-1a21d28a2426",
+    "name": "Amirlan Amanzholov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/amirlan-amanzholov-482536305",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Beyond Curriculum PF."
+  },
+  {
     "location_id": "loc-2b77769ee4fdc4df",
     "evidence_id": "ev-75ba956bbd81b291",
     "source_id": "src-d64fa3785376",
@@ -740,6 +1132,20 @@
     "evidence_kind": "affiliation_country",
     "confidence": "probable",
     "review_reason": "Country comes from the accepted structured affiliation record."
+  },
+  {
+    "location_id": "loc-04f69845623d2b3c",
+    "evidence_id": "ev-6ac3f672777d9f24",
+    "source_id": "src-a0283f0cbde2",
+    "person_id": "kaz-b8e3ad83d883",
+    "name": "Andrey Drobakh",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Pavlodar, Kazakhstan (last verified in 2011)",
+    "evidence_url": "https://www.imo-official.org/results/contestant/20770/",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 2011 IMO record and reviewed school history place Andrey in Kazakhstan; no later source supplies a country. This is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "location_id": "loc-e03119c921db56f1",
@@ -798,6 +1204,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Amazon. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-bd38a7697412d947",
+    "evidence_id": "ev-46b4fefb851f7327",
+    "source_id": "src-dcb7de058191",
+    "person_id": "kaz-a55fa73a7d5f",
+    "name": "Anna Zavalishina",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://osme.org/wp-content/uploads/2023/07/Raptor-inventory-of-the-Karatau-State-Nature-Reserve-southern-Kazakhstan.pdf",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "The 2023 paper places Anna's latest reviewed conservation affiliation at the Association for the Conservation of Biodiversity of Kazakhstan; the identity remains probable."
+  },
+  {
     "location_id": "loc-0e1ac29ddd612ce0",
     "evidence_id": "ev-6eea6fd64cbf6bd1",
     "source_id": "src-957082b534f0",
@@ -810,6 +1230,118 @@
     "evidence_kind": "active_affiliation_profile_location",
     "confidence": "confirmed",
     "review_reason": "The Ministry of Education places Ansar's active Spectrum International School affiliation in Astana."
+  },
+  {
+    "location_id": "loc-3c92c10acecd07c6",
+    "evidence_id": "ev-3a8749ebf37cfabc",
+    "source_id": "src-ec1f7e2c7945",
+    "person_id": "kaz-b76707715f6b",
+    "name": "Anton Draganchuk",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://stemolympiads.kz/en/team/anton-draganchuk-2/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "STEM Olympiads' current Kazakhstan team page places Anton's physics-tutor role in the Kazakhstan organization."
+  },
+  {
+    "location_id": "loc-37119938a4193b7f",
+    "evidence_id": "ev-f0254bdb8e10e129",
+    "source_id": "src-44240814faf2",
+    "person_id": "kaz-caf5fa5b20bf",
+    "name": "Anton Khvan",
+    "country_code": "DE",
+    "country_name": "Germany",
+    "location_label": "Rostock, Germany",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/41742061/",
+    "evidence_kind": "current_research_affiliation_location",
+    "confidence": "probable",
+    "review_reason": "The 2026 publication places Anton's latest reviewed cardiology research affiliation at the University of Rostock in Germany; the identity remains probable."
+  },
+  {
+    "location_id": "loc-83253173e818690a",
+    "evidence_id": "ev-3e578d5abe08dc96",
+    "source_id": "src-99cafe4eae19",
+    "person_id": "kaz-310c08212560",
+    "name": "Anton Morgunov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_url": "https://www.linkedin.com/in/anmorgunov",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Anton in the United States alongside his 2026 move from Yale to Genesis Molecular AI."
+  },
+  {
+    "location_id": "loc-24d8cf25d9428310",
+    "evidence_id": "ev-ce19f148913a5eb5",
+    "source_id": "src-9d5c76973bb4",
+    "person_id": "kaz-326e69980428",
+    "name": "Anton Nesveldin",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2000)",
+    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2000.pdf",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 2000 IBO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
+    "location_id": "loc-616073d7ffbe72f5",
+    "evidence_id": "ev-66c63b3f5b8f0662",
+    "source_id": "src-d78c63eeaee4",
+    "person_id": "kaz-49e795089f9c",
+    "name": "Anton Nikolayev",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Novosibirsk, Russia (last verified from 2003)",
+    "evidence_url": "https://www.caravan.kz/news/pavlodarskijj-shkolnik-stal-bronzovym-prizerom-mezhdunarodnojj-olimpiady-po-informatike-188192/",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The contemporary report identifies IOI medalist Anton Nikolayev and says he entered the Siberian State University of Telecommunications and Informatics in Novosibirsk in 2003. This is historical latest-known evidence only."
+  },
+  {
+    "location_id": "loc-c6d4b13525c733cd",
+    "evidence_id": "ev-b2a773cc71540cd0",
+    "source_id": "src-70a1e44cef07",
+    "person_id": "kaz-e8eb1ebde919",
+    "name": "Anton Sedletskiy",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Pavlodar, Kazakhstan (last verified in 2016)",
+    "evidence_url": "https://nauka.kz/page.php?lang=1&news_id=6795&page_id=893",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed 2016 Olympiad report identifies Anton Sedletskiy as a Pavlodar Lyceum No. 8 student. This is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
+    "location_id": "loc-13a2b98adb347963",
+    "evidence_id": "ev-5cd5faa33c391e70",
+    "source_id": "src-929039b2a6c7",
+    "person_id": "kaz-bfdcf65f4a6e",
+    "name": "Anton Vassilyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://www.msu.kz/ru/information/kafedry/detail.php?ELEMENT_ID=8321",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The current MSU Kazakhstan branch roster places Anton's associate-professor role at the branch in Astana; the identity bridge remains probable."
+  },
+  {
+    "location_id": "loc-8a817aef1c00be7a",
+    "evidence_id": "ev-a066cc3e9ba1b400",
+    "source_id": "src-6d009e75ec10",
+    "person_id": "kaz-a5c7de0d34ee",
+    "name": "Anuar Bitanof",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (latest role verified in 2025)",
+    "evidence_url": "https://www.qazaqgaz.kz/ru/novosti-kompanii/qazaqgaz-basshylyy-ramynda-zgerister-oryn-aldy",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "QazaqGaz's official executive notice and annual-report biography identify the rare exact-name Anuar Bitanov in Kazakhstan leadership, with an age-compatible 1980 birth year. The identity bridge to the 1997 IPhO entrant remains probable."
   },
   {
     "location_id": "loc-31c47408ead013e3",
@@ -826,6 +1358,20 @@
     "review_reason": "SG Holding's current staff page places Anuar Nurlanovich Kaumbayev in the Kazakhstan-based SG Beton leadership role. Only the country is asserted because the plant registry is in Akmola Region while the group's staff page uses its Astana contact address."
   },
   {
+    "location_id": "loc-1370585f9535cd97",
+    "evidence_id": "ev-b6647e5455c482aa",
+    "source_id": "src-9d48468a5736",
+    "person_id": "kaz-c9401ed42eb0",
+    "name": "Anuar Nurtazin",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/anuarnurtazin01",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at SOE Centre for Olympic Training in Wrestling."
+  },
+  {
     "location_id": "loc-8135b9b3fef1a6bb",
     "evidence_id": "ev-d9658c71d0c1434f",
     "source_id": "src-fabb69b48028",
@@ -838,6 +1384,48 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "Country follows the location attached to the accepted current role at re:Kassa. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-b75d40d8a5c83667",
+    "evidence_id": "ev-2d26c1a34306de6c",
+    "source_id": "src-e96f6dd56ad5",
+    "person_id": "kaz-a1eb0da72f42",
+    "name": "Arman Diyarov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2007)",
+    "evidence_url": "https://www.imo-official.org/results/contestant/15619/",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 2007 IMO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
+    "location_id": "loc-09b04e1daee14fc5",
+    "evidence_id": "ev-90b9eb5e95a94692",
+    "source_id": "src-884256e3ec3e",
+    "person_id": "kaz-590493685dc4",
+    "name": "Arman Prashev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Hallandale Beach, Florida, United States",
+    "evidence_url": "https://www.flcompanyregistry.com/companies/mli-trading-llc/",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The reviewed active company record places rare exact-name Arman Prashev's MLI Trading authorized-member role in Hallandale Beach Florida; the identity bridge remains probable."
+  },
+  {
+    "location_id": "loc-e632ecc6f9220e02",
+    "evidence_id": "ev-33c73af0ec5f6425",
+    "source_id": "src-84663dbfae07",
+    "person_id": "kaz-863407f79649",
+    "name": "Arman Yesenamanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://codeforces.com/profile/rmn",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted IOI-linked competitive-programming profile gives KBTU as Arman's latest reviewed affiliation in Kazakhstan; no legal residence or newer role is asserted."
   },
   {
     "location_id": "loc-eecf2664995f7c30",
@@ -924,6 +1512,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Pifagor School. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-2e7dbf5d9e2acef9",
+    "evidence_id": "ev-0a9e5a67cede31fd",
+    "source_id": "src-a99f07f5f774",
+    "person_id": "kaz-fc88fa90b799",
+    "name": "Aset Iskakov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2003)",
+    "evidence_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 2003 IChO record is retained because the OpenAlex candidate does not establish a current location or an explicit identity bridge. Kazakhstan is historical latest-known evidence only."
+  },
+  {
     "location_id": "loc-e15d6df948f2339a",
     "evidence_id": "ev-756dc6cd2fdd1dde",
     "source_id": "src-66a9e0df7885",
@@ -952,6 +1554,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Harvard University. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-4ee6bb98f2818b45",
+    "evidence_id": "ev-a882fe74c928c97c",
+    "source_id": "src-e5e1f84b7614",
+    "person_id": "kaz-5e6bd77516c5",
+    "name": "Askarbek Zadauly",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/askarbek-zadauly-264b8662",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at ZINE."
+  },
+  {
     "location_id": "loc-d365f3b41c17acaf",
     "evidence_id": "ev-a61c582f98f77fec",
     "source_id": "src-8a1678abc4e5",
@@ -964,6 +1580,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "The current company-registry record names Askerbek Bolatovich Zhaksylykov as head of Almaty-registered KAZGEOSERVICE, while his exact-name career profile independently says he lives and works in Almaty; the identity match remains probable."
+  },
+  {
+    "location_id": "loc-97b27d01429aef9b",
+    "evidence_id": "ev-4e6b26c267e4244f",
+    "source_id": "src-330037276552",
+    "person_id": "kaz-5c429c277917",
+    "name": "Askhat Zhalgasov",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong",
+    "evidence_url": "https://www.signalhire.com/profiles/askhat-zhalgasov/249914809",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The reviewed current professional record explicitly places Askhat's Tower Research Capital quantitative-developer role in Hong Kong SAR; the identity bridge remains probable."
   },
   {
     "location_id": "loc-89f2ef132f74e466",
@@ -1022,6 +1652,34 @@
     "review_reason": "The reviewed accepted profile explicitly places Asset Mussagaliyev's ongoing Prosper Pay CFO role in Almaty, Kazakhstan; the current-role location is used instead of the broader profile header."
   },
   {
+    "location_id": "loc-61db5d77f3c0ffe6",
+    "evidence_id": "ev-975d285d4e9773b8",
+    "source_id": "src-4a0e630a2504",
+    "person_id": "kaz-8c6b4dfb5df9",
+    "name": "Assylbek Olzhabayev",
+    "country_code": "AT",
+    "country_name": "Austria",
+    "location_label": "Klosterneuburg, Austria",
+    "evidence_url": "https://at.linkedin.com/in/assylbek-olzhabayev-b8b94a190",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile lists Assylbek's ongoing mathematics PhD and research affiliation at ISTA in Klosterneuburg Austria."
+  },
+  {
+    "location_id": "loc-b0f62b829df5959b",
+    "evidence_id": "ev-80055817ce24b676",
+    "source_id": "src-c4b2ab5396a9",
+    "person_id": "kaz-6617107a61a9",
+    "name": "Asylbek Nurgabdeshov",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "Edinburgh, Scotland, United Kingdom",
+    "evidence_url": "https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Heriot-Watt University's current profile explicitly lists Asylbek's campus as Edinburgh in the United Kingdom."
+  },
+  {
     "location_id": "loc-8a2f0419f2a6c2b1",
     "evidence_id": "ev-5b1b3cb9c11060e6",
     "source_id": "src-9157318b486a",
@@ -1036,6 +1694,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Self-employed. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-6eb7bed20eaa6952",
+    "evidence_id": "ev-c9af59a4ff77e4eb",
+    "source_id": "src-b34cd7c55bea",
+    "person_id": "kaz-954c1033020d",
+    "name": "Ayana Badrakova",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "London, United Kingdom (last verified in 2015)",
+    "evidence_url": "https://www.hec.edu/en/master-s-programs/profiles/ayana-badrakova",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "probable",
+    "review_reason": "HEC's 2015 UBS analyst outcome is independently located in London by a reviewed professional directory. This is historical latest-known evidence only; no current residence is inferred, and the identity remains probable."
+  },
+  {
     "location_id": "loc-c791e3ca273aa4c4",
     "evidence_id": "ev-08891aeb7cea85c3",
     "source_id": "src-d6d314499f52",
@@ -1048,6 +1720,20 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Pennsylvania State University; the linked official institution source establishes the campus location. Penn State's official visitor page identifies its University Park campus."
+  },
+  {
+    "location_id": "loc-c4baf8302a036cc6",
+    "evidence_id": "ev-cbe157b6e513c70d",
+    "source_id": "src-ce359d95bf1c",
+    "person_id": "kaz-8fe9da4c845a",
+    "name": "Azamat Abilkhanov",
+    "country_code": "RO",
+    "country_name": "Romania",
+    "location_label": "Romania",
+    "evidence_url": "https://www.rominserv.com/en/who-we-are",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Rominserv's current leadership page names Azamat as acting general manager and identifies Rominserv as a Romanian company with its contact address in Bucharest."
   },
   {
     "location_id": "loc-c774ec5d99fdfc71",
@@ -1078,6 +1764,34 @@
     "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev University. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-604b7b8ec74cb422",
+    "evidence_id": "ev-ba9666b48b1ba6bd",
+    "source_id": "src-0c9d0a10d91f",
+    "person_id": "kaz-790df21958f8",
+    "name": "Azamat Duysenbaev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://prg.kz/Document/?doc_id=31388745",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The 2013 Ministry of Education order places Azamat's latest reviewed mathematics-teacher role at Kazakhstan's Republican Physics and Mathematics School."
+  },
+  {
+    "location_id": "loc-2b463cea140d7fa5",
+    "evidence_id": "ev-93913b8b11c3affe",
+    "source_id": "src-ba95216056e5",
+    "person_id": "kaz-e4459aeba14c",
+    "name": "Azamat Sarsembaev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "San Francisco Bay Area",
+    "evidence_url": "https://www.linkedin.com/in/azzy-polymath",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Azamat in the San Francisco Bay Area and its current headline identifies the same STEMICQ AI/Multiomics Ventures CEO and CFO role used as his destination."
+  },
+  {
     "location_id": "loc-30ad78cc6e259e7c",
     "evidence_id": "ev-72e94b269d829654",
     "source_id": "src-c11143451cc8",
@@ -1104,6 +1818,34 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "Country follows the location attached to the accepted current role at Vitol. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-24e229a104a6434a",
+    "evidence_id": "ev-27c1b9d2e3fa10ab",
+    "source_id": "src-e9a79a441bc3",
+    "person_id": "kaz-6fd6f0f7d5f7",
+    "name": "Azim Amanzholov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kazpravda.kz/n/znak-uvazheniya-molodym-talantam/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Current Kazakhstan coverage identifies Azim as the trainer preparing the country's chemistry Olympiad students."
+  },
+  {
+    "location_id": "loc-ebc83810a48051fb",
+    "evidence_id": "ev-b334bf297948aedd",
+    "source_id": "src-5508a72e71ab",
+    "person_id": "kaz-c1c692af0296",
+    "name": "Azizkhan Almakhan",
+    "country_code": "CH",
+    "country_name": "Switzerland",
+    "location_label": "Switzerland",
+    "evidence_url": "https://linkedin.com/in/azizkhan-almakhan-1652b952",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Switzerland and independently lists the matched current role at Google."
   },
   {
     "location_id": "loc-353fac63366fb43a",
@@ -1176,6 +1918,48 @@
     "review_reason": "The accepted profile places the ongoing Facebook/Meta role in London and its London header agrees; Kazakhstan's 2026 digital ministry profile independently confirms the current senior Meta role."
   },
   {
+    "location_id": "loc-533ba3d31c5b1f38",
+    "evidence_id": "ev-74f57555d82b02d9",
+    "source_id": "src-bfce1c066c76",
+    "person_id": "kaz-2be498890319",
+    "name": "Bakitkan Bahautdinov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/bakytzhan-bakhautdin-77bb02ab",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The age-compatible exact-name biology profile uses a close transliteration variant and places the current Global Agri Products director role in Almaty. The career-to-IBO identity bridge remains probable."
+  },
+  {
+    "location_id": "loc-9cae4b3afd3f7206",
+    "evidence_id": "ev-242dc86d514c8b47",
+    "source_id": "src-75ae4d5fc23e",
+    "person_id": "kaz-da119ef48a6d",
+    "name": "Batyr Sardarbekov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/998batrr",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Nethermind."
+  },
+  {
+    "location_id": "loc-4e1e62a70cded08a",
+    "evidence_id": "ev-4d50f0b9ac51ad8a",
+    "source_id": "src-c5a8f9e3e814",
+    "person_id": "kaz-a4eaedad760e",
+    "name": "Batyr Yerzhanuly",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Oskemen, Kazakhstan (last verified in 2026)",
+    "evidence_url": "https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "NIS identifies Batyr Yerzhanuly as its Oskemen biology student in the 2025 IBO cohort and subsequent school reporting. This is the latest verified location; no post-school residence is inferred."
+  },
+  {
     "location_id": "loc-8f0b5887e6d2c37f",
     "evidence_id": "ev-edf9d8e4c4c5d4f3",
     "source_id": "src-cf0e9c93132d",
@@ -1218,6 +2002,20 @@
     "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
+    "location_id": "loc-6d3aa0d4710dda78",
+    "evidence_id": "ev-3e07e8627948081c",
+    "source_id": "src-a3d55fe6ce97",
+    "person_id": "kaz-fae12779c8ad",
+    "name": "Baurzhan Bektemirov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/bbektemir",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Freedom Horizons."
+  },
+  {
     "location_id": "loc-36bb33e3249189be",
     "evidence_id": "ev-5b948972dc80cfa4",
     "source_id": "src-180271f6cbcc",
@@ -1232,18 +2030,18 @@
     "review_reason": "Country follows the location attached to the accepted current role at Republican Physics and Mathematics School (RFMS). The public profile header independently agrees."
   },
   {
-    "location_id": "loc-675e9c8c67cd76ea",
-    "evidence_id": "ev-71b9606d66e5fd33",
-    "source_id": "src-5afcdf2b8991",
+    "location_id": "loc-8b15951bd39b48f8",
+    "evidence_id": "ev-bc52f43735efebb3",
+    "source_id": "src-dbff68d533db",
     "person_id": "kaz-694369c06874",
     "name": "Baurzhan Urgunshbayev",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Almaty, Kazakhstan",
-    "evidence_url": "https://pk.uchet.kz/search/iin/860504300028",
-    "evidence_kind": "career_source_location",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/baurzhan-urgunshbayev-143a68104",
+    "evidence_kind": "active_affiliation_profile_location",
     "confidence": "probable",
-    "review_reason": "The exact-name Kazakhstan registry record places Baurzhan Suleimenovich Urgunshbayev in Almaty and its encoded 1986 birth date is compatible with the Olympiad entrant's 2003 grade-11 record; the accepted current profile independently places him in Kazakhstan."
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at METAPHORA."
   },
   {
     "location_id": "loc-55dcf2572613291a",
@@ -1288,6 +2086,34 @@
     "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
   },
   {
+    "location_id": "loc-8ba095cbc63f3a53",
+    "evidence_id": "ev-7558cf1c7955e96d",
+    "source_id": "src-e58f15b0548d",
+    "person_id": "kaz-d6415e08acc5",
+    "name": "Beket Zhapbasbay",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://rcez.kz/departmentdirectorinformationsecurity",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The official Republican Center for Electronic Health profile identifies Beket Zhapbasbay as its current information-security department director in Kazakhstan; the rare exact name and reviewed programming record connect him to the IOI alumnus."
+  },
+  {
+    "location_id": "loc-8b872202fb5ecdb1",
+    "evidence_id": "ev-dd855336c392cced",
+    "source_id": "src-1b0451c4878f",
+    "person_id": "kaz-674fe7c75a81",
+    "name": "Bekzhan Bekbolatuly",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_url": "https://linkedin.com/in/bekzhan29",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in United Kingdom and independently lists the matched current role at Google."
+  },
+  {
     "location_id": "loc-a23f2f61e39affb0",
     "evidence_id": "ev-3d21648848967c42",
     "source_id": "src-4fdd06d1f4cd",
@@ -1299,7 +2125,7 @@
     "evidence_url": "https://linkedin.com/in/zhassulan-binazar-294bb7146",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country follows the location attached to the accepted current role at Galaxy International School Almaty."
+    "review_reason": "Country follows the location attached to the accepted current role at Galaxy International School Almaty. The public profile header independently agrees."
   },
   {
     "location_id": "loc-25e046877b3d4dca",
@@ -1314,6 +2140,34 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "Country follows the location attached to the accepted current role at Kcell. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-4e9cf4745ec392ed",
+    "evidence_id": "ev-684791c7349deed2",
+    "source_id": "src-ec97c4775ee6",
+    "person_id": "kaz-12d9dc922ba8",
+    "name": "Bogdan Zagribelnyy",
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "location_label": "United Arab Emirates",
+    "evidence_url": "https://linkedin.com/in/bogdanzagribelnyy",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in United Arab Emirates and independently lists the matched current role at Insilico Medicine."
+  },
+  {
+    "location_id": "loc-b5b1f30e382293a0",
+    "evidence_id": "ev-c25e2f9fc72cdf73",
+    "source_id": "src-c6e1320f0c36",
+    "person_id": "kaz-679b5f1e598a",
+    "name": "Bulat Biizhanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/bulat-biizhanov-b4051a30",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile explicitly places Bulat's current sales-director work in Almaty Kazakhstan; the identity match remains probable."
   },
   {
     "location_id": "loc-2194709f539fa9ec",
@@ -1414,6 +2268,34 @@
     "review_reason": "The accepted LinkedIn profile exposes Nashville Tennessee as Daniil's current location and lists Vanderbilt University alongside his ongoing Kashgari Dictionary role."
   },
   {
+    "location_id": "loc-6a99e367e9440eff",
+    "evidence_id": "ev-381b72b0e74817f4",
+    "source_id": "src-970a6ebc997c",
+    "person_id": "kaz-bb641e236bb0",
+    "name": "Danil Kravtsov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "San Francisco, California, United States",
+    "evidence_url": "https://www.linkedin.com/in/danielkravtsov",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The exact-name Improvado co-founder profile places Daniel Kravtsov in San Francisco; independent interviews identify him as a Temirtau-born programmer of the age implied by the 1999-2000 IOI record. The identity bridge remains probable."
+  },
+  {
+    "location_id": "loc-20e011b40eb2aef7",
+    "evidence_id": "ev-0c1192443fd9c73c",
+    "source_id": "src-8ebda05a7e9f",
+    "person_id": "kaz-1e390288b2cc",
+    "name": "Danil Murtazin",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Atyrau, Kazakhstan (last verified in 2001)",
+    "evidence_url": "https://yvision.kz/post/obzor-vtoroy-ezhegodnoy-respublikanskoy-olimpiady-po-fizike-imeni-a-imambekova-2015-g-474804",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed Olympiad history identifies IPhO gold medalist Danil Murtazin as being from Atyrau. This is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
     "location_id": "loc-fb3301a2cce47c5f",
     "evidence_id": "ev-9766f69bde159420",
     "source_id": "src-957082b534f0",
@@ -1456,6 +2338,34 @@
     "review_reason": "Country follows the location attached to the accepted current role at WeGlobal.ai. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-ebdda57e42473a0b",
+    "evidence_id": "ev-a37ef40b6329bc9f",
+    "source_id": "src-b0a99941680b",
+    "person_id": "kaz-612c627fb60c",
+    "name": "Daniyar Kelbetov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://gfc.aifc.kz/uploads/AIFC%20Analytics/State%20of%20Sustainable%20Finance%20in%20Central%20Asia/CA%20to%20publish%20ENG_compressed.pdf",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "AIFC's reviewed report identifies Daniyar's board chairmanship at the Astana International Financial Centre in Astana; the identity remains probable."
+  },
+  {
+    "location_id": "loc-2d2868e490682297",
+    "evidence_id": "ev-286652a04bfd7f16",
+    "source_id": "src-5f275d1cea55",
+    "person_id": "kaz-7e3271c82f49",
+    "name": "Daniyar Maminov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://codeforces.com/profile/LeMieux",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted IOI-linked profile places Daniyar at Almaty KTL in Kazakhstan; no newer role is asserted."
+  },
+  {
     "location_id": "loc-c61758409d4a118d",
     "evidence_id": "ev-de4b7b269c1c6e29",
     "source_id": "src-73d0d5014956",
@@ -1496,6 +2406,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Google. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used."
+  },
+  {
+    "location_id": "loc-31a62df32c110bee",
+    "evidence_id": "ev-929114278d70a2ac",
+    "source_id": "src-7c0fbcb50c64",
+    "person_id": "kaz-f5050685c728",
+    "name": "Darkhan Nurlybay",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Moscow, Russia (last verified in 2019)",
+    "evidence_url": "https://olymp.hse.ru/data/2019/04/30/1181018499/370New.pdf",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "An HSE record explicitly lists Moscow as Darkhan's 2019 place of residence. His newer confirmed Google software-engineering role does not expose an office, so Russia is shown only as the last verified country, not current residence."
   },
   {
     "location_id": "loc-c31a88100cf7da60",
@@ -1554,6 +2478,48 @@
     "review_reason": "The accepted current profile places Daulet in Kazakhstan while listing his ongoing CPTDC business-development role; CPTDC independently maintains a Kazakhstan representation and no conflicting active affiliation is present."
   },
   {
+    "location_id": "loc-3756a45c35e00071",
+    "evidence_id": "ev-243f4261660ae70c",
+    "source_id": "src-dc799ac605c0",
+    "person_id": "kaz-afe18421e5b7",
+    "name": "Daulet Zhanguzin",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_url": "https://www.linkedin.com/in/daulet-zhanguzin",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Daulet in the United States alongside the current NVIDIA senior staff software-engineering role."
+  },
+  {
+    "location_id": "loc-6058e84fa66fcf97",
+    "evidence_id": "ev-9ca08ea6b1140301",
+    "source_id": "src-50a7fe19d915",
+    "person_id": "kaz-3769a5a94566",
+    "name": "Dauren Auzhani",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/dauren-auzhani-44134222",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places Dauren in Kazakhstan alongside the current ERG investment-analysis leadership role; the identity remains probable."
+  },
+  {
+    "location_id": "loc-d2e8f4273e3f99e0",
+    "evidence_id": "ev-341390f0871d130a",
+    "source_id": "src-f5729a60f72c",
+    "person_id": "kaz-28f11085b34d",
+    "name": "Dauren Kaliyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "North Kazakhstan Region, Kazakhstan",
+    "evidence_url": "https://izdatelstvo-sk.kz/news/v-sko-sistemnaya-poddergka-talantlivih-i-odarennih-detei6902/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The current institutional profile identifies Dauren as director of a Bilim-Innovation Lyceum in North Kazakhstan Region."
+  },
+  {
     "location_id": "loc-8281f9577a31598d",
     "evidence_id": "ev-644c08d90bf32c35",
     "source_id": "src-18b7271d597d",
@@ -1610,6 +2576,34 @@
     "review_reason": "Country follows the accepted active student affiliation at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI); the linked official institution source establishes the campus location. MBZUAI's official contact page identifies its Abu Dhabi campus."
   },
   {
+    "location_id": "loc-342296b784f8a76c",
+    "evidence_id": "ev-09e01ece5fc0a4f4",
+    "source_id": "src-ad74ea491705",
+    "person_id": "kaz-9bc854d0232a",
+    "name": "Denis Atrashenko",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2001)",
+    "evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The 2001 IPhO record is retained because the reviewed Moscow chemistry researcher began university in 2010 and lacks a Kazakhstan identity bridge. Kazakhstan is historical latest-known evidence only."
+  },
+  {
+    "location_id": "loc-1e3dd495e51e2577",
+    "evidence_id": "ev-da700b5443139f9b",
+    "source_id": "src-5b46b0eb81b7",
+    "person_id": "kaz-58dea61d1101",
+    "name": "Denis Ivanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2001)",
+    "evidence_url": "https://stats.ioinformatics.org/people/4957",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 2001 IOI record is retained because the reviewed current profiles are unresolved common-name candidates. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
     "location_id": "loc-a35904eadc374645",
     "evidence_id": "ev-af714558c6a9d19f",
     "source_id": "src-9c7af01d1e51",
@@ -1624,6 +2618,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at NVIDIA. The profile header points to United States, but it conflicts with the active-role location and is not used."
   },
   {
+    "location_id": "loc-1f5a08f5081c8d5c",
+    "evidence_id": "ev-92559292574114c6",
+    "source_id": "src-ad74ea491705",
+    "person_id": "kaz-42f3a5145199",
+    "name": "Denis Utkin",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2004)",
+    "evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The 2004 IPhO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
     "location_id": "loc-b18a512e4ce9c04e",
     "evidence_id": "ev-3858de3e0425ef0d",
     "source_id": "src-516e4860170e",
@@ -1636,6 +2644,20 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+  },
+  {
+    "location_id": "loc-e7ec100bb2d07b5d",
+    "evidence_id": "ev-a24a0cf0ebc78ec3",
+    "source_id": "src-3494218fe96c",
+    "person_id": "kaz-6baf22bf0570",
+    "name": "Dimitry Dzyabayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 1996)",
+    "evidence_url": "https://www.imo-official.org/results/contestant/4590/",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 1996 IMO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "location_id": "loc-feba8a167e5cb20c",
@@ -1680,18 +2702,32 @@
     "review_reason": "Country follows the location attached to the accepted current role at EPAM Systems. The public profile header independently agrees."
   },
   {
-    "location_id": "loc-01ea39dbd514918f",
-    "evidence_id": "ev-d14edc2bdf283e6c",
-    "source_id": "src-00ba24842cca",
+    "location_id": "loc-5289a5b5c0ba214b",
+    "evidence_id": "ev-dbd25328e0085436",
+    "source_id": "src-86a5c359be93",
     "person_id": "kaz-bdb3a76b4430",
     "name": "Dinmukhammed Omar",
     "country_code": "SG",
     "country_name": "Singapore",
     "location_label": "Singapore",
-    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/final-reports/IBO-2024%20Report.pdf",
-    "evidence_kind": "affiliation_country",
+    "evidence_url": "https://linkedin.com/in/dinmukhammedomar",
+    "evidence_kind": "active_affiliation_profile_location",
     "confidence": "confirmed",
-    "review_reason": "The official IBO 2024 report identifies Dinmukhammed as an undergraduate at NTU in Singapore; his accepted LinkedIn profile independently exposes Singapore as his current location while he leads synapse.kz."
+    "review_reason": "The accepted profile places the person in Singapore and independently lists the matched current role at synapse.kz."
+  },
+  {
+    "location_id": "loc-77d8fb634e85336f",
+    "evidence_id": "ev-64831801abdf2c15",
+    "source_id": "src-d79e8dfce5c6",
+    "person_id": "kaz-4e3828c7955c",
+    "name": "Diyar Mailepessov",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_url": "https://linkedin.com/in/diyar-mailepessov-5828b722",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Singapore and independently lists the matched current role at National Environment Agency Singapore."
   },
   {
     "location_id": "loc-6d7abf5efcb32dff",
@@ -1722,6 +2758,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Intel Corporation. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-d21e8a86c0cbf90b",
+    "evidence_id": "ev-2a78489c2cfd6d91",
+    "source_id": "src-d3b4071b64fd",
+    "person_id": "kaz-1d49feff22fe",
+    "name": "Dmitriy Gorbachev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 1999)",
+    "evidence_url": "https://stats.ioinformatics.org/people/5480",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 1999 IOI record is retained because the reviewed professional profiles are unresolved common-name candidates. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
     "location_id": "loc-b0d2864469c16dd7",
     "evidence_id": "ev-d9ce3bd3dcea1772",
     "source_id": "src-516e4860170e",
@@ -1748,6 +2798,34 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev University. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-af3cc33f7207f6f7",
+    "evidence_id": "ev-1002ff5ad75787a8",
+    "source_id": "src-dfe9c0131285",
+    "person_id": "kaz-1e83de167408",
+    "name": "Ekrem Mahmudov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 1995)",
+    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO1995.pdf",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 1995 IBO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
+    "location_id": "loc-8af7428e2ceb9908",
+    "evidence_id": "ev-6dc985a29c4ece8a",
+    "source_id": "src-985e3b34249e",
+    "person_id": "kaz-39523361f70b",
+    "name": "Eldos Samalov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/yeldos-samalov-396a1666",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Kazkomnet."
   },
   {
     "location_id": "loc-48ad97d3f4cbb6ec",
@@ -1790,6 +2868,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at TETmedical. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-c622cd8089fe6d8b",
+    "evidence_id": "ev-6e5fd5d67cdea5bb",
+    "source_id": "src-6a3be5015a5c",
+    "person_id": "kaz-6fa4b627983f",
+    "name": "Gabit Bekakhmetov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://www.paradigms.kz/en",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Paradigm Shift's current Kazakhstan team page names Gabit as managing partner; no narrower personal location is asserted."
   },
   {
     "location_id": "loc-36e5140a6a55bc68",
@@ -1848,6 +2940,34 @@
     "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
   },
   {
+    "location_id": "loc-7f37ab870fbbeba3",
+    "evidence_id": "ev-38e2ce1f692e904e",
+    "source_id": "src-9e59db73fee1",
+    "person_id": "kaz-952a451859f7",
+    "name": "Guljanar Kalmaganbetova",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 1997)",
+    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO1997.pdf",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 1997 IBO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
+    "location_id": "loc-6619b595b12a1732",
+    "evidence_id": "ev-5d9ff2bcd5c71331",
+    "source_id": "src-b75e3364acf6",
+    "person_id": "kaz-afd3a80b5994",
+    "name": "Igor Ganichev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_url": "https://www.linkedin.com/in/igor-ganichev-067bba16",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in United States and independently lists the matched current role at Private hedge fund."
+  },
+  {
     "location_id": "loc-bde09502033a200b",
     "evidence_id": "ev-8eb21a6f9282d13c",
     "source_id": "src-b29dad529cee",
@@ -1904,6 +3024,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Princeton University. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-66e7052b8a3003bf",
+    "evidence_id": "ev-63ed3c161988755a",
+    "source_id": "src-a79584fd2fbb",
+    "person_id": "kaz-91962e6612b3",
+    "name": "Iskander Karibzhanov",
+    "country_code": "CA",
+    "country_name": "Canada",
+    "location_label": "Ottawa, Ontario, Canada",
+    "evidence_url": "https://www.bankofcanada.ca/profile/iskander-karibzhanov/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The Bank of Canada's current staff profile places Iskander's senior-economist role at the Canadian central bank in Ottawa."
+  },
+  {
     "location_id": "loc-89e8f6346679c8d7",
     "evidence_id": "ev-3af1f5127213509e",
     "source_id": "src-29c1a7d75da0",
@@ -1932,6 +3066,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at WTT Solutions. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-02833007ec4ef883",
+    "evidence_id": "ev-fce4b965bcb61bcf",
+    "source_id": "src-399bc2da7e8b",
+    "person_id": "kaz-9f8b5c60daf2",
+    "name": "Kairat Akhmetov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://www.apple-events.com/events/central-eurasian-venture-forum-2024",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed venture-forum biography identifies Kairat as chief executive of Kazakhstan telecommunications operator Freedom Telecom."
+  },
+  {
     "location_id": "loc-ba7ee3b9e37b0910",
     "evidence_id": "ev-b05effcc37aa775f",
     "source_id": "src-9cd441392daa",
@@ -1944,6 +3092,34 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Adriel. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-5fcc75fdf3e524ad",
+    "evidence_id": "ev-f574baaebe042bcf",
+    "source_id": "src-b20cca6dc90c",
+    "person_id": "kaz-ecb44be83ff0",
+    "name": "Kairat Ashim",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://www.signalhire.com/companies/spark-yc-w24/employees",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "A current Spark AI employee directory places Kairat in Kazakhstan alongside the employer's public new-hire announcement."
+  },
+  {
+    "location_id": "loc-483daa21523752e7",
+    "evidence_id": "ev-1c8973a59f50e16f",
+    "source_id": "src-9f94e44937d4",
+    "person_id": "kaz-bcd45c045c97",
+    "name": "Kairat Zhubayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/kairat-zhubayev-150785174",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Kairat in Almaty Kazakhstan alongside the reviewed Altyn Bank financial-risk leadership role."
   },
   {
     "location_id": "loc-e71c3f4c2d065bad",
@@ -1971,7 +3147,35 @@
     "evidence_url": "https://linkedin.com/in/yerkebulan-kambarov-b32aa160",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country follows the location attached to the accepted current role at Johnson & Johnson."
+    "review_reason": "Country follows the location attached to the accepted current role at Johnson & Johnson. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-10638211e6f62cc3",
+    "evidence_id": "ev-6b8857282ef677b3",
+    "source_id": "src-e2b5f6149abf",
+    "person_id": "kaz-b60a544a248a",
+    "name": "Kanat Satylkhanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://imojp.org/support/IMO2023_REPORT_jp.pdf",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The official IMO report identifies Kanat's latest reviewed deputy-leader role for Kazakhstan's national team; the role is dated to 2023."
+  },
+  {
+    "location_id": "loc-4ae00150df78cdf7",
+    "evidence_id": "ev-3710c339544ef7ce",
+    "source_id": "src-20eff41c48fe",
+    "person_id": "kaz-11782cb39ded",
+    "name": "Kanat Tyutenov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://shoqanschool.kz/genuineadmin/news/view?id=109",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Shoqan Walikhanov Private School's current schedule places Kanat's AP chemistry and Olympiad-coaching role at its Almaty school."
   },
   {
     "location_id": "loc-67af6088c6b04af3",
@@ -2013,7 +3217,7 @@
     "evidence_url": "https://linkedin.com/in/aidynkemeldinov",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at Applied Materials."
+    "review_reason": "Country follows the location attached to the accepted current role at Applied Materials. The public profile header independently agrees."
   },
   {
     "location_id": "loc-1ffef44ff42131a8",
@@ -2111,7 +3315,63 @@
     "evidence_url": "https://linkedin.com/in/kirillmaerle",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country follows the location attached to the accepted current role at Skoltech."
+    "review_reason": "Country follows the location attached to the accepted current role at Skoltech. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-e2d6044a8e69ca48",
+    "evidence_id": "ev-41542322bfe4c37e",
+    "source_id": "src-f54ef7bb9235",
+    "person_id": "kaz-b41761cae333",
+    "name": "Kirill Panov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 1998)",
+    "evidence_url": "https://www.imo-official.org/results/contestant/5374/",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 1998 IMO record is retained because the reviewed Germany profile was already a university student in 1998 and is not the Olympiad alumnus. Kazakhstan is historical latest-known evidence only."
+  },
+  {
+    "location_id": "loc-baf36ad199e78b5f",
+    "evidence_id": "ev-12dd971d656afa8f",
+    "source_id": "src-174c0fe4995a",
+    "person_id": "kaz-5a5848e42390",
+    "name": "Kuandyk Altynkhanov",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "South Korea",
+    "evidence_url": "https://leetcode.com/u/altynkhanov/",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Kuandyk's current exact-name programming profile places him in South Korea and is consistent with his accepted UNIST history; no employer or narrower city is asserted."
+  },
+  {
+    "location_id": "loc-267653c1a8d72e5f",
+    "evidence_id": "ev-272575f05148c32c",
+    "source_id": "src-0a9bf849aaef",
+    "person_id": "kaz-573a15d54faa",
+    "name": "Kuanysh Yergalivey",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://research.nu.edu.kz/en/persons/kuanysh-yergaliyev",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Nazarbayev University's current faculty profile places Kuanysh's School of Medicine appointment at its Astana campus."
+  },
+  {
+    "location_id": "loc-92c84a9a41e5b6d6",
+    "evidence_id": "ev-a46be3470d2fd623",
+    "source_id": "src-0f527014597e",
+    "person_id": "kaz-7faf2594f89e",
+    "name": "Kuat Mukambetkazievich Usseingazin",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Atyrau, Kazakhstan",
+    "evidence_url": "https://ba.prg.kz/231010000-atyrau/071040017099-too-agp-kholding/",
+    "evidence_kind": "active_affiliation_legal_entity_location",
+    "confidence": "confirmed",
+    "review_reason": "Kazakhstan's current company record names Kuat as director of Atyrau-registered AGP Holding."
   },
   {
     "location_id": "loc-fe115a4ce91fe19f",
@@ -2156,6 +3416,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at NutraLens."
   },
   {
+    "location_id": "loc-a43d05e522f3304a",
+    "evidence_id": "ev-40737d3e490fc85a",
+    "source_id": "src-732f0c0a55b4",
+    "person_id": "kaz-74fe1fe53ea1",
+    "name": "Madi Khamitbekov",
+    "country_code": "CA",
+    "country_name": "Canada",
+    "location_label": "Canada",
+    "evidence_url": "https://linkedin.com/in/khmadi",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Canada and independently lists the matched current role at Pika."
+  },
+  {
     "location_id": "loc-85726b2eea45ce62",
     "evidence_id": "ev-4eb628b477b6c886",
     "source_id": "src-21eb19135bdc",
@@ -2195,7 +3469,7 @@
     "evidence_url": "https://linkedin.com/in/angsar-manatuly-7409bb2b9",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country follows the location attached to the accepted current role at University of Technology Sydney."
+    "review_reason": "Country follows the location attached to the accepted current role at University of Technology Sydney. The public profile header independently agrees."
   },
   {
     "location_id": "loc-7306a87336f3b0b5",
@@ -2240,6 +3514,20 @@
     "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
   },
   {
+    "location_id": "loc-303d94124cf6f504",
+    "evidence_id": "ev-6f1e44e9af6fe04c",
+    "source_id": "src-ea15bc8392db",
+    "person_id": "kaz-a125f99f4940",
+    "name": "Marat Shotanov",
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "location_label": "United Arab Emirates",
+    "evidence_url": "https://ae.linkedin.com/in/marat-shotanov",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Marat in the United Arab Emirates alongside the ongoing eXpace founder and CEO role."
+  },
+  {
     "location_id": "loc-afd2cf90775aca16",
     "evidence_id": "ev-fd9737bddde1df97",
     "source_id": "src-4c57ba95b381",
@@ -2252,6 +3540,48 @@
     "evidence_kind": "current_education_location",
     "confidence": "probable",
     "review_reason": "Country follows the accepted active student affiliation at Imperial College London; the linked official institution source establishes the campus location. Imperial's official campus page identifies its London campuses."
+  },
+  {
+    "location_id": "loc-e367a3c1343fc03b",
+    "evidence_id": "ev-7ac39a59d59cda45",
+    "source_id": "src-5d4f272facdc",
+    "person_id": "kaz-3dd740673c5d",
+    "name": "Maxat Aipanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/maxat-aipanov-192903a3",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Kcell."
+  },
+  {
+    "location_id": "loc-a9c633ec2dc7639f",
+    "evidence_id": "ev-3ac15cc816b9da0c",
+    "source_id": "src-e4125667e26c",
+    "person_id": "kaz-be6c0520f71e",
+    "name": "Maxim Shpilkin",
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "location_label": "United Arab Emirates",
+    "evidence_url": "https://linkedin.com/in/maxim-shpilkin",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places the person in United Arab Emirates and independently lists the matched current role at Smart Global (IIoT)."
+  },
+  {
+    "location_id": "loc-5ef9dabd96f933ef",
+    "evidence_id": "ev-51e62c54dd8b4866",
+    "source_id": "src-c7dc16af354b",
+    "person_id": "kaz-618279226751",
+    "name": "Maxim Tsoy",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan (last verified in 2025)",
+    "evidence_url": "https://www.arirang.ru/archive/kore-ilbo/2025/31.KI.08.08.2025.pdf",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed 2025 graduate profile places IOI alumnus Maxim Tsoy at RFMS in Almaty through graduation. This is historical latest-known evidence only; no current university or residence is inferred."
   },
   {
     "location_id": "loc-ca4791e3079c7567",
@@ -2310,6 +3640,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Google. The profile header points to United Kingdom, but it conflicts with the active-role location and is not used."
   },
   {
+    "location_id": "loc-f149f6d82c2f1cd1",
+    "evidence_id": "ev-e4b4ba8af3d2e232",
+    "source_id": "src-6f0216be6a90",
+    "person_id": "kaz-1bea50762a08",
+    "name": "Merlan Nagidulin",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_url": "https://simcc.org/training-new/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "SIMCC's current page places Merlan's scientific-committee leadership role at the Singapore organization."
+  },
+  {
     "location_id": "loc-1e06433581d903fc",
     "evidence_id": "ev-f03ed8f0cac279c2",
     "source_id": "src-fe84f320f6d0",
@@ -2352,6 +3696,34 @@
     "review_reason": "Country follows the location attached to the accepted current role at VACANTE. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-aeadc312c6ba39a4",
+    "evidence_id": "ev-108c923698e2561c",
+    "source_id": "src-485953c1193d",
+    "person_id": "kaz-a8612d505db7",
+    "name": "Miras Myrzakerey",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_url": "https://linkedin.com/in/miras-myrzakerey-b37529101",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in United Kingdom and independently lists the matched current role at Bloomberg."
+  },
+  {
+    "location_id": "loc-baf7bcef8bacd851",
+    "evidence_id": "ev-2d24833ddf020dca",
+    "source_id": "src-050153fb6f2a",
+    "person_id": "kaz-8c7f0b059859",
+    "name": "Mirat Sadikov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://www.gasagroup.com/Files/Images/corporate_website/Young%20Plants/Catalogues/Brandkamp-Chrysanthemum.pdf",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Brandkamp's reviewed catalogue explicitly identifies Mirat as its Kazakhstan Sales Partner; no narrower location is asserted."
+  },
+  {
     "location_id": "loc-3821a6af9ce45faa",
     "evidence_id": "ev-3008c1d6aca0d789",
     "source_id": "src-f902c5259f1c",
@@ -2377,7 +3749,7 @@
     "evidence_url": "https://linkedin.com/in/maxim-mukashev-73a18827",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "Country follows the location attached to the accepted current role at AeroTransport Consultants."
+    "review_reason": "Country follows the location attached to the accepted current role at AeroTransport Consultants. The profile header points to Singapore, but it conflicts with the active-role location and is not used."
   },
   {
     "location_id": "loc-4c8c4abf9f8317bc",
@@ -2433,7 +3805,7 @@
     "evidence_url": "https://linkedin.com/in/nasharov-askar-bb397466",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at SLB."
+    "review_reason": "Country follows the location attached to the accepted current role at SLB. The public profile header independently agrees."
   },
   {
     "location_id": "loc-96fdc891b3cf0994",
@@ -2464,6 +3836,48 @@
     "review_reason": "Country follows the location attached to the accepted current role at Qube Research & Technologies. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-109ad27be2fb9d84",
+    "evidence_id": "ev-6131e9c4987354af",
+    "source_id": "src-85f0c4394a9d",
+    "person_id": "kaz-80e9320bcf5e",
+    "name": "Nazym Nurlanovna Bashkenova",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Winter Springs, Florida, United States",
+    "evidence_url": "https://www.pediatricassociates.com/pediatric-office/winter-springs-fl-town-center/pediatricians/nazym-bashkenova-md",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Pediatric Associates' current physician page places Nazym's pediatric practice in Winter Springs Florida."
+  },
+  {
+    "location_id": "loc-528f7edfb4c4b0e8",
+    "evidence_id": "ev-5086511c7475d1d1",
+    "source_id": "src-a8fb0713dfd0",
+    "person_id": "kaz-0d9cf667fe24",
+    "name": "Nessipbek Mynbayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://www.researchgate.net/profile/Nessipbek-Mynbayev",
+    "evidence_kind": "current_research_affiliation_location",
+    "confidence": "probable",
+    "review_reason": "The reviewed current research profile places Nessipbek at National Laboratory Astana and the linked nuclear-physics work affiliates him with Nazarbayev University in Astana; the identity bridge remains probable."
+  },
+  {
+    "location_id": "loc-c3f71e4591bcfdbe",
+    "evidence_id": "ev-3578d039dd0ae35d",
+    "source_id": "src-f33bb7a68ec2",
+    "person_id": "kaz-f4f08ec984b8",
+    "name": "Nikolay Berezhnoy",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Nazarbayev University's current researcher profile places Nikolay's bioengineering role at the university in Astana."
+  },
+  {
     "location_id": "loc-ee3e48772f928008",
     "evidence_id": "ev-1cf88032c559dd65",
     "source_id": "src-9b8d92f87ebf",
@@ -2476,6 +3890,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "Country follows the location attached to the accepted current role at North Caspian Operating Company (NCOC). The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-5db9ad694099c595",
+    "evidence_id": "ev-c9b4a7a0c8ea30bf",
+    "source_id": "src-334ea3ff1b27",
+    "person_id": "kaz-efdb0d38601b",
+    "name": "Nurbakyt Madibek",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://codeforces.com/profile/MadNick",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Nurbakyt's active exact-name Codeforces profile places him in Almaty Kazakhstan while his accepted GitHub and LinkedIn evidence identify the ongoing Nethermind developer role."
   },
   {
     "location_id": "loc-15efc9c995b17603",
@@ -2492,6 +3920,34 @@
     "review_reason": "Country follows the location attached to the accepted current role at Google. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used."
   },
   {
+    "location_id": "loc-51d29092a93e0d3d",
+    "evidence_id": "ev-0ed87fb9928faeaf",
+    "source_id": "src-5a9fd5a2de09",
+    "person_id": "kaz-0647e630efc7",
+    "name": "Nurbol Kisembaev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/nurbol-kissembayev-44017720",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places Nurbol in Kazakhstan alongside the current KMG PetroChem contracts-director role corroborated by the employer's 2024 release."
+  },
+  {
+    "location_id": "loc-83966ba9d0388a8c",
+    "evidence_id": "ev-a80bc725978e1485",
+    "source_id": "src-36eaa5d19d9c",
+    "person_id": "kaz-dbcaf30d53de",
+    "name": "Nurbol Sihimbayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 1996)",
+    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO1996.pdf",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 1996 IBO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
     "location_id": "loc-7ca5c5e6aac2ecc0",
     "evidence_id": "ev-4015c0ecb7c282e1",
     "source_id": "src-6be0102e4d2b",
@@ -2504,6 +3960,20 @@
     "evidence_kind": "active_affiliation_profile_location",
     "confidence": "confirmed",
     "review_reason": "The accepted profile identifies Hong Kong as Nurdaulet's current location; this is consistent with his ongoing quantitative-research role and continuous HKU, Hong Kong trading, and local internship trajectory."
+  },
+  {
+    "location_id": "loc-00ec2c2dfb2a3fba",
+    "evidence_id": "ev-2ace1f95da1f8016",
+    "source_id": "src-bfb125f656e5",
+    "person_id": "kaz-b788eb650e7a",
+    "name": "Nurgali Arystanov",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "South Korea",
+    "evidence_url": "https://linkedin.com/in/nurgali-arystanov-07548042",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in South Korea and independently lists the matched current role at Embassy of Kazakhstan in the Republic of Korea."
   },
   {
     "location_id": "loc-322228e1fe46606d",
@@ -2534,6 +4004,48 @@
     "review_reason": "Country follows the accepted active student affiliation at University of North Carolina at Chapel Hill; the linked official institution source establishes the campus location. UNC's official visitor page identifies its Chapel Hill campus."
   },
   {
+    "location_id": "loc-71d0b39c7c939361",
+    "evidence_id": "ev-1fe82f40dac0bb5c",
+    "source_id": "src-51ddd86eb5b5",
+    "person_id": "kaz-6d8ff9e71d31",
+    "name": "Nurislam Yeshenkulov",
+    "country_code": "TR",
+    "country_name": "Türkiye",
+    "location_label": "Isparta, Türkiye (last verified in 2020)",
+    "evidence_url": "https://tip.sdu.edu.tr/assets/uploads/sites/101/files/2019-2020-danisma-atama-listesi-17102019.pdf",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "probable",
+    "review_reason": "Nurislam's latest accepted affiliation is the 2019-2020 medicine roster at Suleyman Demirel University in Isparta, Türkiye. This is historical latest-known evidence only; no current residence or degree completion is inferred."
+  },
+  {
+    "location_id": "loc-6f25007901a8092c",
+    "evidence_id": "ev-0b5faf6c0a6d9c3e",
+    "source_id": "src-707c04c8fe92",
+    "person_id": "kaz-253b9dc2b33d",
+    "name": "Nurlan Algashev",
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "location_label": "Denmark",
+    "evidence_url": "https://linkedin.com/in/nurlan-algashov",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places Nurlan in Denmark alongside his ongoing WHO Regional Office for Europe technical-officer role; no conflicting current affiliation is present."
+  },
+  {
+    "location_id": "loc-e1c7d2031f95e0e1",
+    "evidence_id": "ev-9bc6e603c377081d",
+    "source_id": "src-2b2f0fcdcda3",
+    "person_id": "kaz-88a74ae3e050",
+    "name": "Nurlan Zhussipov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://codeforces.com/profile/NurlashKO",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted IOI-linked profile gives KBTU as Nurlan's latest reviewed affiliation in Kazakhstan; no newer role or narrower location is asserted."
+  },
+  {
     "location_id": "loc-8d7ba4040050b884",
     "evidence_id": "ev-83b0f1666bef3da2",
     "source_id": "src-310a514325e7",
@@ -2562,6 +4074,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Listly. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used."
   },
   {
+    "location_id": "loc-d6dc95d1adc7ec03",
+    "evidence_id": "ev-d9753ee1dc1c8c54",
+    "source_id": "src-5d40092494ab",
+    "person_id": "kaz-d9616cfe0fb5",
+    "name": "Nurlykhan Kopenov",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "South Korea",
+    "evidence_url": "https://kr.linkedin.com/in/nurlykhan-kopenov",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Nurlykhan in South Korea alongside CoBALT and his continuous KAIST trajectory."
+  },
+  {
     "location_id": "loc-007558ef93d76b9e",
     "evidence_id": "ev-ac22b130a4902acb",
     "source_id": "src-05040561425f",
@@ -2574,6 +4100,48 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Moscow Institute of Physics and Technology (MIPT); the linked official institution source establishes the campus location. MIPT's official contact page identifies its main campus in Dolgoprudny in the Moscow Region of Russia."
+  },
+  {
+    "location_id": "loc-a56516eeb4d65384",
+    "evidence_id": "ev-894f2dde9bd81299",
+    "source_id": "src-5a1c49e54448",
+    "person_id": "kaz-3437e4fc5bbd",
+    "name": "Nursultan Erkinovich Tompiyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://www.gov.kz/memleket/entities/transport/press/news/details/882464?lang=ru",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Kazakhstan's Ministry of Transport identifies Nursultan's current Kazaeronavigatsia specialist role in Astana."
+  },
+  {
+    "location_id": "loc-8d3c3594ff01cf53",
+    "evidence_id": "ev-be85c71fe5e0e8a6",
+    "source_id": "src-f5281d37866d",
+    "person_id": "kaz-016e33a136a1",
+    "name": "Nursultan Khadjimuratov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://steppeolymp.kz/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The current Steppe Olympiad profile places Nursultan's expert mathematics teaching and training role at NIS Medeu in Almaty."
+  },
+  {
+    "location_id": "loc-95860fff48ae04b1",
+    "evidence_id": "ev-57f46ef084bcfcd3",
+    "source_id": "src-bd8b7ccdbfa9",
+    "person_id": "kaz-a242fdf22bda",
+    "name": "Nursultan Pangsat",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Daejeon, South Korea",
+    "evidence_url": "https://linkedin.com/in/nursultan-pansat-6b0559210",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Nursultan's latest dated accepted affiliation is his 2018-2023 KAIST computer-science degree in Daejeon; the stale self-description and uncorroborated Almaty header are not treated as a current role."
   },
   {
     "location_id": "loc-1653c6acb7437c10",
@@ -2660,6 +4228,20 @@
     "review_reason": "Country comes from the accepted structured affiliation record."
   },
   {
+    "location_id": "loc-f66130b786248b6b",
+    "evidence_id": "ev-dc8d9ed1a366747f",
+    "source_id": "src-567c8bfa5c47",
+    "person_id": "kaz-f2b0c2f36f45",
+    "name": "Nurzhan Ustemirov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_url": "https://www.linkedin.com/in/nurzhan",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in United States and independently lists the matched current role at DFlow."
+  },
+  {
     "location_id": "loc-5c33a2d709b8787a",
     "evidence_id": "ev-3e1129311fdddc07",
     "source_id": "src-979479d45dae",
@@ -2672,6 +4254,48 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Solai. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used."
+  },
+  {
+    "location_id": "loc-e52b59216162ac8e",
+    "evidence_id": "ev-86efb8c954b9c3f4",
+    "source_id": "src-4368f40fe9d2",
+    "person_id": "kaz-f9d3ca151739",
+    "name": "Nurzhas Makishev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_url": "https://signal.nfx.com/investors/nurzhas-makishev",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Nurzhas's current investor profile places him and NKM Capital in the United States; inconsistent city labels across public directories are not asserted."
+  },
+  {
+    "location_id": "loc-fc0058a2b9c9608b",
+    "evidence_id": "ev-4326842e5df38c23",
+    "source_id": "src-9c64cc394107",
+    "person_id": "kaz-32cf54f8673f",
+    "name": "Oleg Obukhov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kokshetau, Kazakhstan (last verified in 2007)",
+    "evidence_url": "https://k-t-l.narod.ru/we/success.html",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The school achievements page identifies Oleg Obukhov as its international biology Olympiad student in Kokshetau. This is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
+    "location_id": "loc-9ddf44d9ec8cf9a3",
+    "evidence_id": "ev-4ae0e7dea10bdfcb",
+    "source_id": "src-0bb3a211c6bf",
+    "person_id": "kaz-208576016cfd",
+    "name": "Olzhas Kadyrakunov",
+    "country_code": "SE",
+    "country_name": "Sweden",
+    "location_label": "Stockholm, Sweden",
+    "evidence_url": "https://www.researchgate.net/profile/Olzhas-Kadyrakunov",
+    "evidence_kind": "current_research_affiliation_location",
+    "confidence": "probable",
+    "review_reason": "The exact-name research profile lists an active KTH Royal Institute of Technology affiliation in Stockholm. The relationship and identity bridge remain probable, and no legal residence is asserted."
   },
   {
     "location_id": "loc-d6c41b9409ffd566",
@@ -2688,6 +4312,62 @@
     "review_reason": "Country follows the location attached to the accepted current role at Laminar. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-6b92b3583b425ca9",
+    "evidence_id": "ev-144deb008ba5b153",
+    "source_id": "src-7f3b12a0c274",
+    "person_id": "kaz-f1194a0f246c",
+    "name": "Parassat Kyzyrkanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/pkyzyrkanov",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Undisclosed employer."
+  },
+  {
+    "location_id": "loc-6d704b6e32afc107",
+    "evidence_id": "ev-9da1a0d0885ffb06",
+    "source_id": "src-d91d31990eb4",
+    "person_id": "kaz-01957a6accca",
+    "name": "Pavel Levchenko",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/pavel-levchenko-a315041a7",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Tengizchevroil."
+  },
+  {
+    "location_id": "loc-7215e56cb1276623",
+    "evidence_id": "ev-51afd75f2194e56f",
+    "source_id": "src-ad74ea491705",
+    "person_id": "kaz-7e2cf66f126f",
+    "name": "Rafael Mavlyukeyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2002)",
+    "evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The 2002 IPhO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
+    "location_id": "loc-1a1d104ba49972b0",
+    "evidence_id": "ev-39a07ad4215cea92",
+    "source_id": "src-97e9f44ca141",
+    "person_id": "kaz-3bb636937f0d",
+    "name": "Raiymbek Akshulakov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Mountain View, California, United States",
+    "evidence_url": "https://linkedin.com/in/raiymbek-akshulakov",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Raiymbek in Mountain View, California, while Armeta's current team page identifies the same ML Engineer destination."
+  },
+  {
     "location_id": "loc-2594eff96619b04b",
     "evidence_id": "ev-5ab86b08c5983844",
     "source_id": "src-516e4860170e",
@@ -2700,6 +4380,20 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+  },
+  {
+    "location_id": "loc-f1ddfcb5669da510",
+    "evidence_id": "ev-9881f1025cfc433c",
+    "source_id": "src-3e7b2037000e",
+    "person_id": "kaz-07372798186f",
+    "name": "Rakhim Baimurzin",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/baimurzzin",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Rakhim in Kazakhstan and identifies Desargues AI in his current headline after a continuous Nazarbayev University trajectory."
   },
   {
     "location_id": "loc-6b12775b8e72f3fe",
@@ -2800,6 +4494,48 @@
     "review_reason": "Country follows the location attached to the accepted current role at Genie. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-740a6455f8d680e4",
+    "evidence_id": "ev-0156c9ceeb15637e",
+    "source_id": "src-8eb438fcd76e",
+    "person_id": "kaz-07b1a7ba2159",
+    "name": "Renat Shaimardanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/renatshaimardanov",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Agregator."
+  },
+  {
+    "location_id": "loc-879249b4124e033b",
+    "evidence_id": "ev-b0848b41b7959571",
+    "source_id": "src-1b216dff1032",
+    "person_id": "kaz-166b996bb739",
+    "name": "Rinat Ilyussizov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_url": "https://linkedin.com/in/rinat-ilyussizov-4b1b9b290",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in United States and independently lists the matched current role at Purdue University."
+  },
+  {
+    "location_id": "loc-ccfe0a044bbbd4f4",
+    "evidence_id": "ev-8d7f00c492163c9b",
+    "source_id": "src-c8690e05abcb",
+    "person_id": "kaz-f7400a612d63",
+    "name": "Rizabek Alpamys",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Ulsan, South Korea",
+    "evidence_url": "https://www.researchgate.net/institution/Ulsan_National_Institute_of_Science_and_Technology/members/28",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "The latest reviewed exact-name research profile lists Rizabek in UNIST's electrical-engineering department in Ulsan South Korea; the identity remains probable and no residence is asserted."
+  },
+  {
     "location_id": "loc-69edbdc71f4c1e3f",
     "evidence_id": "ev-7632d846f6b488bf",
     "source_id": "src-e8e14e92e20d",
@@ -2814,6 +4550,62 @@
     "review_reason": "Country follows the location attached to the accepted current role at Astana/Almaty Physics Battles Tournament. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-4d7324da52dc88cd",
+    "evidence_id": "ev-41f486969b9c3941",
+    "source_id": "src-b6643306d9ff",
+    "person_id": "kaz-eda797e5a5c1",
+    "name": "Roman Kogay",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Bethesda, Maryland, United States",
+    "evidence_url": "https://graduate.dartmouth.edu/eees/people/alumni",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Dartmouth's alumni directory places Roman's current evolutionary-genomics postdoctoral fellowship at the US National Center for Biotechnology Information in Bethesda Maryland."
+  },
+  {
+    "location_id": "loc-ba1daad94b687485",
+    "evidence_id": "ev-c9a55527fc43529f",
+    "source_id": "src-d68ed6ab07b2",
+    "person_id": "kaz-78ad0418eb0b",
+    "name": "Roman Kriven",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Pavlodar, Kazakhstan (last verified in 1998)",
+    "evidence_url": "https://linkedin.com/in/roman-kriven-33a97085",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "probable",
+    "review_reason": "The rare exact-name profile places Roman at Pavlodar State University from 1993 through 1998 and is consistent with his official 1993 IMO record and Pavlodar school history. This is the latest verified location, not a current residence claim."
+  },
+  {
+    "location_id": "loc-4ae0f911afd0dbcd",
+    "evidence_id": "ev-ee03355b41672696",
+    "source_id": "src-9dd4e99835a7",
+    "person_id": "kaz-0cc4d473da7f",
+    "name": "Roman Langolf",
+    "country_code": "VN",
+    "country_name": "Vietnam",
+    "location_label": "Vietnam",
+    "evidence_url": "https://linkedin.com/in/roman-langolf",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Vietnam and independently lists the matched current role at AnyMind Group."
+  },
+  {
+    "location_id": "loc-bf32356613aaf5d1",
+    "evidence_id": "ev-e8beaf2e2d43e23c",
+    "source_id": "src-8158ec8624be",
+    "person_id": "kaz-260600835e64",
+    "name": "Ruslan Kudubayev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "California, United States",
+    "evidence_url": "https://patents.justia.com/patent/20220053043",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Google patent records identify exact-name inventor Ruslan Kudubayev in Mountain View, California, while a 2024 YouTube Music launch post names him on the engineering team; Cambridge and GitHub evidence link the rare-name programmer to the IOI alumnus."
+  },
+  {
     "location_id": "loc-bdd693ed167541b9",
     "evidence_id": "ev-58f2d9da7f32658b",
     "source_id": "src-2cd844d7e068",
@@ -2826,6 +4618,20 @@
     "evidence_kind": "affiliation_country",
     "confidence": "probable",
     "review_reason": "The official SPE program affiliates R. Manakhayev with Tengizchevroil on Tengiz geoscience work in Kazakhstan; no narrower current residence is asserted."
+  },
+  {
+    "location_id": "loc-27fcbdbad4dd2def",
+    "evidence_id": "ev-3717bc11dde97c7f",
+    "source_id": "src-8dbb8cab8311",
+    "person_id": "kaz-81bc0e8f5f5c",
+    "name": "Ruslan Vladimirovich Kalizhan",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://pro.mytenge.kz/company/170540015039",
+    "evidence_kind": "active_affiliation_legal_entity_location",
+    "confidence": "confirmed",
+    "review_reason": "Kazakhstan's current business record names Ruslan as head of Texas Oil and Gas Consulting; only the country is asserted."
   },
   {
     "location_id": "loc-b3c34c916aa33bcd",
@@ -2856,6 +4662,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev University. The profile header points to Russia, but it conflicts with the active-role location and is not used."
   },
   {
+    "location_id": "loc-65dc6a9d20efa456",
+    "evidence_id": "ev-39844d985dd0746e",
+    "source_id": "src-edb669ac7360",
+    "person_id": "kaz-329a330cca14",
+    "name": "Saken Dushayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/saken-dushayev-30095b204",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Home Credit Bank."
+  },
+  {
     "location_id": "loc-63a6398f5319762a",
     "evidence_id": "ev-54dff9da65633d21",
     "source_id": "src-3316f5f1bea5",
@@ -2884,6 +4704,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at KAZ Minerals. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-ab7b7035fa72bfd2",
+    "evidence_id": "ev-df994a2e3276c987",
+    "source_id": "src-c48813f80609",
+    "person_id": "kaz-0869880ec7a7",
+    "name": "Sanzhar Bidaibek",
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "location_label": "Hong Kong",
+    "evidence_url": "https://ibjjf.com/events/2873/athletes-list-by-academy-teams",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The latest reviewed exact-name activity lists Sanzhar with Carpe Diem Jiu-Jitsu Hong Kong and is consistent with his accepted HKUST trajectory; this establishes Hong Kong as the latest-known country but not employment or legal residence."
+  },
+  {
     "location_id": "loc-10148aaa32aca47b",
     "evidence_id": "ev-5aa87901b86ebd75",
     "source_id": "src-385c85371c70",
@@ -2896,6 +4730,20 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at California Institute of Technology (Caltech); the linked official institution source establishes the campus location. Caltech's official visitor page identifies its Pasadena campus."
+  },
+  {
+    "location_id": "loc-b2b37348f2895939",
+    "evidence_id": "ev-3583a2fd9c28f246",
+    "source_id": "src-7c1270dffe5e",
+    "person_id": "kaz-62d816e1ec2d",
+    "name": "Sanzhar Karatayev",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_url": "https://sg.linkedin.com/in/sanzharedu",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Sanzhar in Singapore alongside the current BestYs co-founder and CEO role."
   },
   {
     "location_id": "loc-b8a39ef75d5a47f0",
@@ -2954,6 +4802,34 @@
     "review_reason": "Country follows the accepted active student affiliation at Northwestern University; the linked official institution source establishes the campus location. Northwestern's official campus page identifies its Evanston campus."
   },
   {
+    "location_id": "loc-ee2c198bd0cc532e",
+    "evidence_id": "ev-d82e5418da87bd3a",
+    "source_id": "src-a49eca59d084",
+    "person_id": "kaz-a9c48be9eff3",
+    "name": "Semen Shkilevich",
+    "country_code": "IL",
+    "country_name": "Israel",
+    "location_label": "Tel Aviv District, Israel",
+    "evidence_url": "https://il.linkedin.com/in/simonshkilevich",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the location attached to the accepted current role at Vi."
+  },
+  {
+    "location_id": "loc-614fd106d0610776",
+    "evidence_id": "ev-0b575d6b97ad59ad",
+    "source_id": "src-837adade5fb9",
+    "person_id": "kaz-32373fc425de",
+    "name": "Sergazy Kalmurzayev",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_url": "https://uk.linkedin.com/in/sergazy-kalmurzayev-2ba468231",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in United Kingdom and independently lists the matched current role at ElevenLabs."
+  },
+  {
     "location_id": "loc-774ce124d47b6f33",
     "evidence_id": "ev-2eb23ea2c796edf9",
     "source_id": "src-d6b6fccb53ed",
@@ -3008,6 +4884,48 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-534e9e58e19ca2d3",
+    "evidence_id": "ev-0a071b62a32e6cd1",
+    "source_id": "src-9e25d9425b57",
+    "person_id": "kaz-7923131239ad",
+    "name": "Shakhanov Demeu",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2003)",
+    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2003.pdf",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 2003 IBO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
+    "location_id": "loc-5a8dbe2c9f50b5f5",
+    "evidence_id": "ev-82bc8014dac51c53",
+    "source_id": "src-cf812b5a2a98",
+    "person_id": "kaz-c444a5fa2a99",
+    "name": "Shaninov Arman",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Oklahoma, United States",
+    "evidence_url": "https://www.linkedin.com/in/arman-shaninov-6950b7132",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted LinkedIn profile and public employer directory place his current Dove Science Academy teaching role in Oklahoma."
+  },
+  {
+    "location_id": "loc-909902084bb23872",
+    "evidence_id": "ev-f707849ea2c99f6c",
+    "source_id": "src-28c0b5907939",
+    "person_id": "kaz-24cc764a8eaf",
+    "name": "Shapagat Berdibek",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://nur.nu.edu.kz/items/85ec681a-74c3-4778-8625-0dd7b27b5ab1",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Shapagat's latest dated accepted affiliation is his 2017 Nazarbayev University physics master's work in Astana; this is a historical latest-known location rather than a current residence claim."
   },
   {
     "location_id": "loc-ee83cc67c80b0833",
@@ -3094,6 +5012,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev Intellectual Schools (NIS)."
   },
   {
+    "location_id": "loc-b8291a7632f14c81",
+    "evidence_id": "ev-2fb6bb94545f84b8",
+    "source_id": "src-a9a96badfaeb",
+    "person_id": "kaz-2a649bf1de05",
+    "name": "Sultan Aitekenov",
+    "country_code": "CA",
+    "country_name": "Canada",
+    "location_label": "Canada",
+    "evidence_url": "https://ca.linkedin.com/in/sultan-aitekenov",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile and its 2026 post place Sultan's current provincial-government work in Canada."
+  },
+  {
     "location_id": "loc-e6c8b59482382900",
     "evidence_id": "ev-fde71896b736f9fa",
     "source_id": "src-92c860c777a5",
@@ -3106,6 +5038,34 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Dalip.kz. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-0f3c04e698069c67",
+    "evidence_id": "ev-2ef4aa53f21829fd",
+    "source_id": "src-e63a88761d4e",
+    "person_id": "kaz-40d2fa33ec3e",
+    "name": "Syrymbet Iskakov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/syrymbet-iskakov-42335a20",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at BI Group."
+  },
+  {
+    "location_id": "loc-5fc0468e5b9fd6bf",
+    "evidence_id": "ev-7f82c622c3fd5c89",
+    "source_id": "src-cd1fac53fc4b",
+    "person_id": "kaz-f67bd98affb8",
+    "name": "Taiman Sabyrgaliyev",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Moscow, Russia",
+    "evidence_url": "https://aspirantura.lebedev.ru/wp-content/uploads/2022/04/%D0%90%D1%80%D1%85%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%D0%90%D1%81%D0%BF%D0%B8%D1%80_2018_4.pdf",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Taiman's latest accepted affiliation is his bounded 2018-2022 physics doctorate in Moscow; this is a historical latest-known location."
   },
   {
     "location_id": "loc-fee86a2b274882a5",
@@ -3134,6 +5094,34 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at École normale supérieure (ENS); the linked official institution source establishes the campus location. ENS's official contact page identifies its Paris campus."
+  },
+  {
+    "location_id": "loc-f9033d750fa7a954",
+    "evidence_id": "ev-72ca603074d972d6",
+    "source_id": "src-21fd73d05ac2",
+    "person_id": "kaz-68b763708761",
+    "name": "Talap Akashev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2020)",
+    "evidence_url": "https://kase.kz/files/emitters/BCCI/bccirbf7_2020.pdf",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "probable",
+    "review_reason": "The bounded latest reviewed role was at Kazakhstan brokerage BCC Invest through 2020. This is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
+    "location_id": "loc-b9d789cb4c6d12bf",
+    "evidence_id": "ev-9974500c17484372",
+    "source_id": "src-13a78b4c75c3",
+    "person_id": "kaz-21741893c5a2",
+    "name": "Talap Kossybakov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://galaxy.edu.kz/en/staff/index/2",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Galaxy International School's current staff page places Talap's science-teacher role at its Almaty campus."
   },
   {
     "location_id": "loc-18c9d457564456db",
@@ -3178,6 +5166,118 @@
     "review_reason": "Country follows the location attached to the accepted current role at Karlsruhe Institute of Technology (KIT). The public profile header independently agrees."
   },
   {
+    "location_id": "loc-01c3df85f2a0fd19",
+    "evidence_id": "ev-e270365add47a4ac",
+    "source_id": "src-b0c9a9b83363",
+    "person_id": "kaz-c83291856fc0",
+    "name": "Tamirlan Seidakhmetov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "San Francisco Bay Area",
+    "evidence_url": "https://www.linkedin.com/in/tamirlan",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Tamirlan in the San Francisco Bay Area and lists the same ongoing Meta data-scientist role corroborated by Nazarbayev University's alumni profile."
+  },
+  {
+    "location_id": "loc-2aaf66ebff702b2b",
+    "evidence_id": "ev-2ec740182e044273",
+    "source_id": "src-1b5da9afc371",
+    "person_id": "kaz-ff5c7ff39c9d",
+    "name": "Taskyn Shokanbay",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/jobs/view/area-sales-manager-at-sulzer-3944016935",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Taskyn's reviewed title covers Sulzer Chemtech's Caspian and Black Sea sales region; Sulzer's matching Chemtech sales posting locates that regional function in Kazakhstan. The country is therefore probable, and no city or residence is asserted."
+  },
+  {
+    "location_id": "loc-4234ae52ea590f3c",
+    "evidence_id": "ev-db9ae87c17d4450d",
+    "source_id": "src-fe2fa4083c4d",
+    "person_id": "kaz-aec3847e43a0",
+    "name": "Temirkhan Zimanov",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Moscow, Russia",
+    "evidence_url": "https://linkedin.com/in/hcps42",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Temirkhan's latest dated accepted affiliation is his 2020-2025 HSE education in Moscow; the conflicting Kazakhstan header is not used without an ongoing role."
+  },
+  {
+    "location_id": "loc-647538cf95edf251",
+    "evidence_id": "ev-a20ed12dfb9c0818",
+    "source_id": "src-d43f017d0c8c",
+    "person_id": "kaz-dcb24ecb815a",
+    "name": "Temirlan Amangeldinov",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Seoul, South Korea",
+    "evidence_url": "https://kz.linkedin.com/in/temirlan-amangeldinov",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn page explicitly places Temirlan's Seoul Robotics experience in Seoul South Korea; the stale Astana header is not used."
+  },
+  {
+    "location_id": "loc-7a45094d495adcb3",
+    "evidence_id": "ev-57b205867a9672c0",
+    "source_id": "src-41066d1b57e1",
+    "person_id": "kaz-c6c074aef2cf",
+    "name": "Temirlan Baibolov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/bthero",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Temirlan in Kazakhstan alongside the ongoing Harbour.Space frontend lead-developer role."
+  },
+  {
+    "location_id": "loc-212b3ce6caa49c7e",
+    "evidence_id": "ev-fde5dd9eaf35839a",
+    "source_id": "src-f9ee85d10955",
+    "person_id": "kaz-c91345744362",
+    "name": "Temirlan Ismagulov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://nur.nu.edu.kz/items/86a10e4c-8685-4d44-b3d3-7d8c00c39682",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Temirlan's latest accepted affiliation is his 2025 Nazarbayev University physics graduation in Astana; this is a historical latest-known location."
+  },
+  {
+    "location_id": "loc-ade75e6748aa3e40",
+    "evidence_id": "ev-f69a422533c40b88",
+    "source_id": "src-2391528c5292",
+    "person_id": "kaz-d19956e64f90",
+    "name": "Temirlan Izmailov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/temirlan-izmailov-caia-cfa-485bab89",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Tansar Capital."
+  },
+  {
+    "location_id": "loc-369ca9815130a9fe",
+    "evidence_id": "ev-61e3f9f6c8a226a5",
+    "source_id": "src-793801568f9d",
+    "person_id": "kaz-926301b5ef4a",
+    "name": "Temirlan Rakhimov",
+    "country_code": "PL",
+    "country_name": "Poland",
+    "location_label": "Warsaw, Poland",
+    "evidence_url": "https://rs.linkedin.com/in/temirlan-rakhimov",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The exact-name age-compatible Kazakhstan profile lists an active Allegro AI Engineer role in Poland and a Warsaw role in the same career history. Its Serbia header is not used; the identity bridge to the IChO entrant remains probable."
+  },
+  {
     "location_id": "loc-b1ef065ad0b09ee6",
     "evidence_id": "ev-459b323a2a2eaaf0",
     "source_id": "src-42b51031b87f",
@@ -3190,6 +5290,132 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Deep Infra. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-3088cf8f0c28008e",
+    "evidence_id": "ev-edeec94b54eaf7c7",
+    "source_id": "src-1dc68645d617",
+    "person_id": "kaz-26535589e436",
+    "name": "Timur Abishev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "New York, New York, United States",
+    "evidence_url": "https://gelu.ai/",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Gelu AI's current founder profile identifies Timur Abishev in New York and documents his JetBrains, Twitter, and Baseten engineering history; the official TopCoder program explicitly joins TokarR to Kazakhstan's Timur Abishev."
+  },
+  {
+    "location_id": "loc-a68629f9d166d2e3",
+    "evidence_id": "ev-123e47a6692de3de",
+    "source_id": "src-7c7237d85884",
+    "person_id": "kaz-cc4a2f7877ce",
+    "name": "Timur Murat",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/timur-murat-2a1735333",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Timur's accepted profile dates his Haileybury Almaty education through 2026 and places it in Almaty Kazakhstan; the country follows that latest education evidence."
+  },
+  {
+    "location_id": "loc-96645048ffa7d49a",
+    "evidence_id": "ev-0679715b2829c666",
+    "source_id": "src-bb9bc51e6e05",
+    "person_id": "kaz-56660a53cf0d",
+    "name": "Timur Ratnikov",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Moscow, Russia",
+    "evidence_url": "https://www.linkedin.com/in/timur-ratnikov-a3201524a/",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Timur's latest dated accepted affiliation is his 2021-2025 HSE education in Moscow; the uncorroborated Almaty header is not used because it conflicts with that dated affiliation."
+  },
+  {
+    "location_id": "loc-bc9c76c6f592544d",
+    "evidence_id": "ev-c62460ad7c01e199",
+    "source_id": "src-01b1f15392e4",
+    "person_id": "kaz-d272c7de9446",
+    "name": "Timur Zhiyentayev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Pasadena, California, United States",
+    "evidence_url": "https://medium.com/%40tima103/how-to-get-more-paying-users-with-user-friendly-paywall-part-ii-8e09766f62eb",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The self-authored 2017 Drizzle co-founder record belongs to the Pasadena California startup and is retained as a historical latest-known role rather than current employment."
+  },
+  {
+    "location_id": "loc-d75311b7d74fc847",
+    "evidence_id": "ev-e1cfc2c42270157a",
+    "source_id": "src-17d14017c679",
+    "person_id": "kaz-47297d0b8770",
+    "name": "Tolebi Sailauov",
+    "country_code": "MY",
+    "country_name": "Malaysia",
+    "location_label": "Sepang, Selangor, Malaysia",
+    "evidence_url": "https://ru.linkedin.com/posts/alisher-toiguliyev-962b688b_%D1%81%D0%BF%D1%83%D1%81%D1%82%D1%8F-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%BB%D0%B5%D1%82-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%82%D0%B8%D0%BB%D0%B8%D1%81%D1%8C-%D1%81-%D0%BE%D0%B4%D0%BD%D0%BE%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC-activity-6974344092897931264-ZlNu",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "A classmate's exact-identity post documents Tolebi's latest reviewed Senior Data Scientist role at AirAsia; the role was based with AirAsia's data team in Sepang Malaysia and ended in early 2024, so this is historical and the later unsupported United Kingdom profile header is not used."
+  },
+  {
+    "location_id": "loc-f5b55b1c8db303b3",
+    "evidence_id": "ev-07d846c32f1a25ed",
+    "source_id": "src-9c0684a2310c",
+    "person_id": "kaz-f3c66de0174f",
+    "name": "Ulan Mukashev",
+    "country_code": "KG",
+    "country_name": "Kyrgyzstan",
+    "location_label": "Иссык-Кульская область, Киргизия",
+    "evidence_url": "https://kg.linkedin.com/in/ulan-mukashev-59771a2b",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Kumtor Gold Company. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-709ff93685a002c6",
+    "evidence_id": "ev-ef615eba0c6a61a6",
+    "source_id": "src-f27874815044",
+    "person_id": "kaz-d1fb5b8f648d",
+    "name": "Ulan Usserkulov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Riverside, California, United States (latest known)",
+    "evidence_url": "https://www.linkedin.com/pub/dir/Ulan/%2B/us-0-United-States",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "The exact-name LinkedIn directory places Ulan in Riverside, California, consistent with his University of Arizona security certificate and accepted GitHub identity. This is a latest-known profile location, not a legal-residence claim."
+  },
+  {
+    "location_id": "loc-50496ce58a34c304",
+    "evidence_id": "ev-a06d332882ede788",
+    "source_id": "src-c7cfbc6a22de",
+    "person_id": "kaz-f394810a66fa",
+    "name": "Ulugbek Adilbekov",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "London, England, United Kingdom",
+    "evidence_url": "https://linkedin.com/in/ulugbek-adilbekov",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Two Sigma. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-d7ccdc7e05722ed6",
+    "evidence_id": "ev-122cd8305f0c1f1b",
+    "source_id": "src-4f59d4502bdb",
+    "person_id": "kaz-1deffa0c0a86",
+    "name": "Vadim Murzin",
+    "country_code": "DE",
+    "country_name": "Germany",
+    "location_label": "Hamburg, Germany",
+    "evidence_url": "https://photon-science.desy.de/facilities/petra_iii/beamlines/p64_advanced_xafs/contact__staff/index_eng.html",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "DESY's reviewed scientist alumni page places Vadim's latest known research affiliation at its Hamburg facility; it is not presented as current."
   },
   {
     "location_id": "loc-db222d5d7084b3fe",
@@ -3248,6 +5474,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Self-employed. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-3200c72318121329",
+    "evidence_id": "ev-2cd644b0ebbd3495",
+    "source_id": "src-6c6c2beb2621",
+    "person_id": "kaz-fe0afafbd5f3",
+    "name": "Vladimir Bychkov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_url": "https://www.linkedin.com/in/vladimir-bychkov-98954252",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in United States and independently lists the matched current role at Micron Technology."
+  },
+  {
     "location_id": "loc-22e1770089ab5598",
     "evidence_id": "ev-264eba45953fe0c6",
     "source_id": "src-64e095b8933a",
@@ -3260,6 +5500,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at PATRIOT. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used."
+  },
+  {
+    "location_id": "loc-21652d9aaca8dd6d",
+    "evidence_id": "ev-557dd3a8b1fadd06",
+    "source_id": "src-ae99defbec78",
+    "person_id": "kaz-9208d8d1b297",
+    "name": "Vladimir Lim",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Dolgoprudny, Moscow Region, Russia",
+    "evidence_url": "https://orcid.org/0009-0001-6746-8084",
+    "evidence_kind": "current_research_affiliation_location",
+    "confidence": "probable",
+    "review_reason": "Vladimir's verified ORCID places his current 2025-2026 research at MIPT in Russia; the identity remains probable."
   },
   {
     "location_id": "loc-8f7fcfec074a4840",
@@ -3304,6 +5558,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Intel Corporation. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-830df3b50045e53c",
+    "evidence_id": "ev-02b503df89529705",
+    "source_id": "src-d3e61c707858",
+    "person_id": "kaz-444dd6943eb0",
+    "name": "Vyacheslav Kim",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Boston, Massachusetts, United States",
+    "evidence_url": "https://cphof.org/profile/topcoder:imslavko",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted IOI-linked profile places Vyacheslav in Boston and gives MIT as his latest reviewed affiliation; no newer role or legal residence is asserted."
+  },
+  {
     "location_id": "loc-3db320f1c8c91073",
     "evidence_id": "ev-77509811b76a3eb4",
     "source_id": "src-806e948c98a1",
@@ -3316,6 +5584,48 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Statkraft. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-b869d5d2b5299309",
+    "evidence_id": "ev-07aac8832716ec0a",
+    "source_id": "src-ad74ea491705",
+    "person_id": "kaz-21cc95b51c33",
+    "name": "Yaroslav Alexandrov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 1999)",
+    "evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The 1999 IPhO record is retained because the reviewed Russia product profile has no Kazakhstan or physics identity bridge. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
+    "location_id": "loc-0076774fe4e94480",
+    "evidence_id": "ev-0ce00ca00940ab06",
+    "source_id": "src-fcc406487429",
+    "person_id": "kaz-41f531ed3520",
+    "name": "Yegor Klochkov",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "United Kingdom",
+    "evidence_url": "https://uk.linkedin.com/in/yegor-klochkov-1a06a093",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places the person in United Kingdom and independently lists the matched current role at The Voleon Group."
+  },
+  {
+    "location_id": "loc-a6ab458be2dad2c8",
+    "evidence_id": "ev-600eeeb9266ba05a",
+    "source_id": "src-54c82c32cc80",
+    "person_id": "kaz-ec29db418566",
+    "name": "Yelzhas Otynshiyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://sk.kz/press-center/news/79261/?lang=en",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Samruk-Kazyna's current appointment notice places Yelzhas at Kazakhstan Temir Zholy in Astana."
   },
   {
     "location_id": "loc-c879246e420e56a4",
@@ -3372,6 +5682,34 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+  },
+  {
+    "location_id": "loc-cd411d6d98e01b02",
+    "evidence_id": "ev-091056131af051ec",
+    "source_id": "src-d1ced10055ef",
+    "person_id": "kaz-84154f378216",
+    "name": "Yerbol Kurmangaliyev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Waltham, Massachusetts, United States",
+    "evidence_url": "https://www.brandeis.edu/biology/faculty/kurmangaliyev-yerbol.html",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Brandeis University's current biology faculty page places Yerbol's assistant professorship at its Waltham Massachusetts campus."
+  },
+  {
+    "location_id": "loc-7c9d328440af7cb3",
+    "evidence_id": "ev-4ebd0fa5af360753",
+    "source_id": "src-c2cb21cf0386",
+    "person_id": "kaz-8bd82bc015a6",
+    "name": "Yerbol Y. Bekbayev",
+    "country_code": "EE",
+    "country_name": "Estonia",
+    "location_label": "Tallinn, Estonia (last verified in 2024)",
+    "evidence_url": "https://ariregister.rik.ee/est/company/16568487/file/9011480944",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "probable",
+    "review_reason": "Estonia's registry places Yerbol's bounded 2022-2024 Quantstellation board role at the Tallinn company. This is historical latest-known evidence only; no current residence is inferred, and the identity remains probable."
   },
   {
     "location_id": "loc-aa4ada97c687ae19",
@@ -3444,6 +5782,34 @@
     "review_reason": "Country follows the location attached to the accepted current role at The Trade Desk. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-88ae8de176de319d",
+    "evidence_id": "ev-6008f00bf1c824e9",
+    "source_id": "src-1d2047318878",
+    "person_id": "kaz-0836a1c9d21b",
+    "name": "Yerlan Bissenov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/yerlan-b-887a4336",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev Intellectual Schools (NIS). The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-366b3942d52ecae9",
+    "evidence_id": "ev-41fbc179a6068d36",
+    "source_id": "src-e15eb31217e8",
+    "person_id": "kaz-514026a01ba3",
+    "name": "Yerlan Jumabayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 1997)",
+    "evidence_url": "https://www.imo-official.org/results/contestant/4857/",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 1997 IMO record is retained because the reviewed LinkedIn result is a name-only candidate without an Olympiad identity bridge. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
     "location_id": "loc-2bd28fefdca5872a",
     "evidence_id": "ev-f68ba118b2e4c2c6",
     "source_id": "src-841c19727c56",
@@ -3470,6 +5836,48 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Ulsan National Institute of Science and Technology (UNIST); the linked official institution source establishes the campus location. UNIST's official directions page identifies its Ulsan campus."
+  },
+  {
+    "location_id": "loc-ff4fc617f39c42e0",
+    "evidence_id": "ev-98f4fc8d2a7c41eb",
+    "source_id": "src-6e7135c9faa5",
+    "person_id": "kaz-17b78d6e8c0f",
+    "name": "Yernar Tursynbay",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://registrar.nu.edu.kz/graduation-2016",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Yernar's latest accepted affiliation is his 2016 Nazarbayev University biological-sciences graduation in Astana; this is a historical latest-known location."
+  },
+  {
+    "location_id": "loc-6d2563d7ff7736af",
+    "evidence_id": "ev-bcf24fa6a73fb112",
+    "source_id": "src-49996a80de1e",
+    "person_id": "kaz-59b5ec3d2687",
+    "name": "Yernaz Satybaldiyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/yernaz-satybaldiyev",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at North Caspian Operating Company (NCOC)."
+  },
+  {
+    "location_id": "loc-2c023072b0a58034",
+    "evidence_id": "ev-731d38a6f1e16063",
+    "source_id": "src-b7e1c10447a9",
+    "person_id": "kaz-518d651456c7",
+    "name": "Yerniyaz Nurgabylov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_url": "https://www.linkedin.com/in/yerniyaz-nurgabylov-701b83121",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in United States and independently lists the matched current role at Tzafon."
   },
   {
     "location_id": "loc-dc0f82b526ad301a",
@@ -3528,6 +5936,20 @@
     "review_reason": "Country follows the accepted active student affiliation at Massachusetts Institute of Technology (MIT); the linked official institution source establishes the campus location. MIT's official visitor page identifies its Cambridge campus."
   },
   {
+    "location_id": "loc-9357100642989ca5",
+    "evidence_id": "ev-6f5952797163bbbf",
+    "source_id": "src-a99f07f5f774",
+    "person_id": "kaz-5af905ca2550",
+    "name": "Yerulan Sabyrgali",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2004)",
+    "evidence_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The official 2004 IChO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+  },
+  {
     "location_id": "loc-c38131458ff63483",
     "evidence_id": "ev-45618a19bd19f1cb",
     "source_id": "src-6482cf58fb25",
@@ -3540,6 +5962,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at EPAM Systems. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-a6d61895a18e11ab",
+    "evidence_id": "ev-f2f80c8668792eaf",
+    "source_id": "src-d5ae4459d1a5",
+    "person_id": "kaz-209930256d24",
+    "name": "Yerzhigit Tolebekov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/yerzhigit-tulebekov-6096b180",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places Yerzhigit's current work in Almaty, Kazakhstan; this is consistent with the latest reviewed Kazakhstan process-engineering and chemistry trajectory."
   },
   {
     "location_id": "loc-8d4c1385bb0e455f",
@@ -3556,6 +5992,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at The Trade Desk. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-7105b24b8586696b",
+    "evidence_id": "ev-9d3ff34dc0ab2f3d",
+    "source_id": "src-0bbca965e155",
+    "person_id": "kaz-29109acd6898",
+    "name": "Yeskendr Bissenov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/yeskendir-bissenov-66569b37",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile places the person in Kazakhstan and independently lists the matched current role at Silleno."
+  },
+  {
     "location_id": "loc-3d4760c42be342b3",
     "evidence_id": "ev-6b12de2295d0b8b0",
     "source_id": "src-2e18b9f8dc5a",
@@ -3568,6 +6018,20 @@
     "evidence_kind": "career_source_location",
     "confidence": "confirmed",
     "review_reason": "NSTU's current faculty roster places the accepted professor in Novosibirsk Russia."
+  },
+  {
+    "location_id": "loc-88701f2053d7dcb0",
+    "evidence_id": "ev-c203f2b3b556dab5",
+    "source_id": "src-9a5c5ab43357",
+    "person_id": "kaz-49f853356dc6",
+    "name": "Yevgeni Yakovlev",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "Colchester, England, United Kingdom",
+    "evidence_url": "https://www.essex.ac.uk/people/yakov37409/evgeny-yakovlev",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The University of Essex's current staff profile places Evgeny Yakovlev's economics role at its Colchester campus in the United Kingdom."
   },
   {
     "location_id": "loc-209ebbf07665307a",
@@ -3596,6 +6060,20 @@
     "evidence_kind": "active_affiliation_profile_location",
     "confidence": "confirmed",
     "review_reason": "NIS identifies Yevgeniya as its Karaganda student in its July 2026 IBO report."
+  },
+  {
+    "location_id": "loc-03632a0c190389d5",
+    "evidence_id": "ev-0e60a2192acf1785",
+    "source_id": "src-37ad3b1b2b31",
+    "person_id": "kaz-197ec90e92c1",
+    "name": "Yuriy Kudryavtsev",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Moscow, Russia (last verified from 2000)",
+    "evidence_url": "https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf",
+    "evidence_kind": "historical_latest_known_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed Olympiad destination table places Yuriy Kudryavtsev in undergraduate chemistry at Moscow State University beginning in 2000. This is historical latest-known evidence only; no current residence is inferred."
   },
   {
     "location_id": "loc-085b0158853fb370",
@@ -3668,18 +6146,18 @@
     "review_reason": "Country follows the location attached to the accepted current role at Samsung Electronics. The public profile header independently agrees."
   },
   {
-    "location_id": "loc-fe417e10974c12ea",
-    "evidence_id": "ev-a7ebbb6875652b08",
-    "source_id": "src-1b06af578c08",
+    "location_id": "loc-483f38585cad9ba8",
+    "evidence_id": "ev-8ce8a28248448746",
+    "source_id": "src-5223be8e68fc",
     "person_id": "kaz-0f47bbbea1f0",
     "name": "Zhambyl Maksotov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Astana, Kazakhstan",
-    "evidence_url": "https://nu.edu.kz/en/about/contacts",
-    "evidence_kind": "current_education_location",
+    "evidence_url": "https://www.linkedin.com/in/zhambyl-maksotov/",
+    "evidence_kind": "active_affiliation_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Nazarbayev University; the linked official institution source establishes the campus location. Nazarbayev University's official contact page identifies its Astana campus."
+    "review_reason": "Zhambyl's user-reviewed profile identifies Huawei as his destination while the same accepted profile places his ongoing 2022-2027 Nazarbayev University education in Astana and exposes Kazakhstan as the profile country. The active education and profile location agree."
   },
   {
     "location_id": "loc-030267d7fd246064",
@@ -3724,6 +6202,48 @@
     "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-389998eaf45f3704",
+    "evidence_id": "ev-4b0b65943c88b19d",
+    "source_id": "src-7f82de8a062d",
+    "person_id": "kaz-0f8fdc911846",
+    "name": "Zhanar Abil",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Gainesville, Florida, United States",
+    "evidence_url": "https://biology.ufl.edu/zhanar-abil/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The University of Florida's current biology faculty page places Zhanar's assistant professorship in Gainesville Florida."
+  },
+  {
+    "location_id": "loc-65eb48b8b0ef9788",
+    "evidence_id": "ev-24b741caedafc1ee",
+    "source_id": "src-cc316f38444f",
+    "person_id": "kaz-52d80f40e62d",
+    "name": "Zhanat Koshenov",
+    "country_code": "AT",
+    "country_name": "Austria",
+    "location_label": "Graz, Austria",
+    "evidence_url": "https://www.researchgate.net/profile/Zhanat-Koshenov",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The verified current profile identifies Zhanat's Medical University of Graz assistant professorship in Graz Austria."
+  },
+  {
+    "location_id": "loc-9619dee1856349df",
+    "evidence_id": "ev-ec3bc00808715fc7",
+    "source_id": "src-f4743d117050",
+    "person_id": "kaz-273cfae90c97",
+    "name": "Zhanbolat Zholgeldiev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Oskemen, Kazakhstan",
+    "evidence_url": "https://edlightacademy.kz/trainers",
+    "evidence_kind": "career_source_location",
+    "confidence": "confirmed",
+    "review_reason": "Edlight Academy explicitly connects Zhanbolat's 2007-2008 IChO medals to his current chemistry teaching at BIL Oskemen; a 2025 university record independently places his chemistry activity in Oskemen."
+  },
+  {
     "location_id": "loc-960ed59461206372",
     "evidence_id": "ev-413550b36cb11ca7",
     "source_id": "src-41e346629e66",
@@ -3736,6 +6256,20 @@
     "evidence_kind": "current_research_affiliation_location",
     "confidence": "probable",
     "review_reason": "The INESS-2025 abstract affiliates Zhandos Seksembayev with Astana Business Campus at Nazarbayev University and gives an nu.edu.kz address. Astana is inferred from the active institutional research affiliation rather than asserted as a residence, and the identity remains probable."
+  },
+  {
+    "location_id": "loc-a0a2bf3ae5cdbe4a",
+    "evidence_id": "ev-82c8f83ad6b937ef",
+    "source_id": "src-019b1989c484",
+    "person_id": "kaz-fc8646c120d2",
+    "name": "Zhandos Yessenbayev",
+    "country_code": "ID",
+    "country_name": "Indonesia",
+    "location_label": "Jakarta, Indonesia",
+    "evidence_url": "https://international.binus.ac.id/binus-people/zhandos-yessenbayev-b-sc-m-sc-ph-d/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "BINUS University's current staff page places Zhandos's computer-science program role at the university in Jakarta Indonesia."
   },
   {
     "location_id": "loc-84e77a8a6e713b1b",
@@ -3764,6 +6298,48 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Nace AI. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-0c84917dea78f96c",
+    "evidence_id": "ev-c8b9b08a263c01c4",
+    "source_id": "src-ddca308d3171",
+    "person_id": "kaz-c412a21c7fc6",
+    "name": "Zhanibek Kaimuldenov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/zhanibek-kaimuldenov-5567b7124",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places Zhanibek in Kazakhstan alongside his ongoing Pro Wheel XR directorship; the UK incorporation record is not treated as residence."
+  },
+  {
+    "location_id": "loc-b6db48afc421bf11",
+    "evidence_id": "ev-12dac207c6fec3a3",
+    "source_id": "src-17be1eb03127",
+    "person_id": "kaz-d7f55daeca5c",
+    "name": "Zhanybek Alpichshev",
+    "country_code": "AT",
+    "country_name": "Austria",
+    "location_label": "Austria",
+    "evidence_url": "https://at.linkedin.com/in/zhanybek-alpichshev-41bb4b207",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the person in Austria and independently lists the matched current role at Institute of Science and Technology Austria."
+  },
+  {
+    "location_id": "loc-1cfe680397f5a120",
+    "evidence_id": "ev-ed1f73bb4b06f9cd",
+    "source_id": "src-abcdc408092d",
+    "person_id": "kaz-dc581aaabaee",
+    "name": "Zharas Bajdelʻdinov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan (last verified in 2022)",
+    "evidence_url": "https://axoftglobal.com/reviews",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "A 2022 business testimonial identifies exact full-name Zharas Bakhytovich Baideldinov of Corvus Technologies in Almaty, consistent with the rare-name 1993 IMO alumnus and his Kazakhstan dissertation record. This is latest-known evidence, not a current residence claim."
   },
   {
     "location_id": "loc-1d17f5120b8b2d47",

@@ -49,6 +49,13 @@
     "rationale": "Reviewed core activity is entertainment and media."
   },
   {
+    "organization_sector_id": "sector-7bea1592c002b3cf",
+    "canonical_name": "Allegro",
+    "organization_type": "company",
+    "sector": "Consumer & Media",
+    "rationale": "The reviewed destination operates a consumer e-commerce marketplace."
+  },
+  {
     "organization_sector_id": "sector-d8105efc2a529c85",
     "canonical_name": "AlliedYoung FBC",
     "organization_type": "company",
@@ -434,6 +441,13 @@
     "rationale": "Reviewed core activity is information and communications technology research."
   },
   {
+    "organization_sector_id": "sector-312c0d895df8ef8b",
+    "canonical_name": "Gelu AI",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "The reviewed destination develops artificial-intelligence software."
+  },
+  {
     "organization_sector_id": "sector-7085e9db19dcb486",
     "canonical_name": "Generate:Biomedicines",
     "organization_type": "company",
@@ -453,6 +467,13 @@
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is AI agent software and infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-29a612a28266dfc2",
+    "canonical_name": "Global Agri Products",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "The reviewed destination is an agricultural-products business."
   },
   {
     "organization_sector_id": "sector-ce770667e5f9b0d8",
@@ -525,11 +546,25 @@
     "rationale": "Reviewed core activity is investment management."
   },
   {
+    "organization_sector_id": "sector-e65e95ec71ac3e2b",
+    "canonical_name": "Improvado",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "The reviewed destination provides marketing data and analytics software."
+  },
+  {
     "organization_sector_id": "sector-3478318400e64a2e",
     "canonical_name": "inDrive",
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is a technology platform for mobility and urban services."
+  },
+  {
+    "organization_sector_id": "sector-784b3795c944c9a6",
+    "canonical_name": "InnoDent",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "The reviewed destination develops dental-regeneration biotechnology."
   },
   {
     "organization_sector_id": "sector-5505720f19964d65",
@@ -651,6 +686,13 @@
     "rationale": "Reviewed core activity is petrochemical development."
   },
   {
+    "organization_sector_id": "sector-c353c09aa55958d4",
+    "canonical_name": "Kumtor Gold Company",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "The accepted profile identifies Kumtor Gold Company as a Kyrgyzstan mining operator."
+  },
+  {
     "organization_sector_id": "sector-c81a95e77ebcb4ac",
     "canonical_name": "Kuwait Oil Company (KOC)",
     "organization_type": "company",
@@ -740,6 +782,13 @@
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is AI systems for scientific research."
+  },
+  {
+    "organization_sector_id": "sector-f8c9ffe27572f33c",
+    "canonical_name": "MLI Trading LLC",
+    "organization_type": "company",
+    "sector": "Independent & Other",
+    "rationale": "The reviewed registry identifies an active owner-managed Florida trading company but does not expose a more specific operating sector."
   },
   {
     "organization_sector_id": "sector-3038426692327240",
@@ -938,6 +987,13 @@
     "rationale": "Reviewed core activity is crypto financial services and quantitative trading."
   },
   {
+    "organization_sector_id": "sector-a8aad9e74f532e37",
+    "canonical_name": "QazaqGaz",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "The reviewed destination is Kazakhstan's national gas company."
+  },
+  {
     "organization_sector_id": "sector-6daf9c7074527dbb",
     "canonical_name": "Quantstellation OÜ",
     "organization_type": "company",
@@ -964,6 +1020,13 @@
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is cloud point-of-sale and business-management software."
+  },
+  {
+    "organization_sector_id": "sector-2ea9b3998e7b2708",
+    "canonical_name": "Republican Center for Electronic Health",
+    "organization_type": "government",
+    "sector": "Government & Public Sector",
+    "rationale": "The reviewed destination is Kazakhstan's public electronic-health information center."
   },
   {
     "organization_sector_id": "sector-8848b3db72540215",
@@ -1232,6 +1295,20 @@
     "rationale": "Reviewed core activity is cybersecurity and anti-malware software."
   },
   {
+    "organization_sector_id": "sector-8f0d1e92a13a25f7",
+    "canonical_name": "Tower Research Capital",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "The reviewed destination is the quantitative trading firm."
+  },
+  {
+    "organization_sector_id": "sector-2fcc106ff110996c",
+    "canonical_name": "Two Sigma",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "The reviewed destination is the quantitative investment and financial-technology firm."
+  },
+  {
     "organization_sector_id": "sector-7ea6a9f0192c169a",
     "canonical_name": "Tzafon",
     "organization_type": "company",
@@ -1279,6 +1356,13 @@
     "organization_type": "company",
     "sector": "Finance & Insurance",
     "rationale": "Reviewed core activity is investment and trust services."
+  },
+  {
+    "organization_sector_id": "sector-4ab924a2c4364b07",
+    "canonical_name": "Vi",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "The reviewed destination develops digital health and longevity technology."
   },
   {
     "organization_sector_id": "sector-4e06970e2bbaee76",

@@ -187,6 +187,7 @@ ONE_OFF_ROLE_PATTERN = re.compile(
 
 def clean_text(value: object) -> str:
     text = "" if value is None else str(value)
+    text = text.replace("\u00e2\u0080\u0099", "'")
     return re.sub(r"\s+", " ", text.replace("\xa0", " ")).strip()
 
 
@@ -573,6 +574,18 @@ def is_postsecondary_education(row: dict[str, object]) -> bool:
         ASSOCIATE_DEGREE_PATTERN.match(role)
         or POSTSECONDARY_ROLE_PATTERN.search(role)
     )
+    generic_graduate_role = bool(
+        re.fullmatch(r"(?:graduate|postgraduate) student", role, re.IGNORECASE)
+    )
+    experience_style_role = evidence_text.casefold().startswith(
+        f"{role.casefold()} - "
+    )
+    if (
+        generic_graduate_role
+        and experience_style_role
+        and not POSTSECONDARY_INSTITUTION_PATTERN.search(organization)
+    ):
+        return False
     if not role_is_degree and NON_ALMA_ROLE_PATTERN.search(evidence_text):
         return False
     if role_is_degree:

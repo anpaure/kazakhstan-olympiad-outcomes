@@ -4005,6 +4005,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-d8be51f7d4c43f8f",
+    "alias": "London School of Economics and Political Science",
+    "canonical_name": "The London School of Economics and Political Science (LSE)",
+    "display_name": "LSE",
+    "merge_type": "same_entity",
+    "rationale": "Official name without leading article or acronym",
+    "evidence_url": "https://www.lse.ac.uk/"
+  },
+  {
     "organization_alias_id": "org-24661dee676232e6",
     "alias": "The London School of Economics and Political Science (LSE)",
     "canonical_name": "The London School of Economics and Political Science (LSE)",

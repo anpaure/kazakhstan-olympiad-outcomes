@@ -171,7 +171,12 @@ def compact_sources(
     for alma in selected_alma_maters(affiliations):
         source = preferred_alma_source(alma, affiliations)
         add(source.get("evidence_url"), "education", "Alma mater source", "graduation-cap")
-    add(location.get("evidence_url"), "location", "Outcome country source", "map-pin")
+    location_label = (
+        "Last-known country source"
+        if location.get("evidence_kind") == "historical_latest_known_location"
+        else "Outcome country source"
+    )
+    add(location.get("evidence_url"), "location", location_label, "map-pin")
 
     for evidence in audit_evidence:
         if evidence.get("review_status") not in {"accepted", "supporting"}:
@@ -250,6 +255,7 @@ def compact_person(
         "country": location.get("country_name", ""),
         "location": location.get("location_label", ""),
         "locationConfidence": location.get("confidence", ""),
+        "locationEvidenceKind": location.get("evidence_kind", ""),
         "profile": row["profile_url"],
         "linkedin": row["linkedin_url"],
         "sources": compact_sources(row, location, affiliations, audit_evidence),

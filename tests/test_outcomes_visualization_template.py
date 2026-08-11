@@ -84,8 +84,11 @@ class CountryAndHistoryTest(unittest.TestCase):
     def test_country_filter_and_distribution_are_available(self):
         self.assertIn('data-control="country"', self.template)
         self.assertIn("person.countryCode !== state.country", self.template)
-        self.assertIn('Outcome-country distribution', self.template)
+        self.assertIn("historical_latest_known_location", self.template)
+        self.assertIn("last known", self.template)
+        self.assertIn('Country distribution', self.template)
         self.assertIn("kind === 'sector' ? person.sector : person.countryCode", self.template)
+        self.assertIn("Boolean(person.countryCode)", self.template)
 
     def test_search_includes_alma_mater_and_history(self):
         self.assertIn("person.almaMater", self.template)

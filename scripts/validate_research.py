@@ -13,6 +13,8 @@ try:
     from scripts.build_exa_review_queue import canonical_url
     from scripts.build_location_evidence import (
         COUNTRY_NAMES,
+        TRUSTED_OVERRIDE_KINDS,
+        load_overrides,
         load_organization_locations,
     )
     from scripts.destination_reviews import load_destination_reviews
@@ -29,7 +31,12 @@ try:
     )
 except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
     from build_exa_review_queue import canonical_url
-    from build_location_evidence import COUNTRY_NAMES, load_organization_locations
+    from build_location_evidence import (
+        COUNTRY_NAMES,
+        TRUSTED_OVERRIDE_KINDS,
+        load_overrides,
+        load_organization_locations,
+    )
     from destination_reviews import load_destination_reviews
     from organization_names import (
         canonicalize_organization,
@@ -114,6 +121,7 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "exa_outcomes": data_dir / "exa_outcome_integrations.csv",
         "exa_profiles": data_dir / "exa_linkedin_profile_audit.json",
         "locations": data_dir / "person_locations.csv",
+        "location_overrides": data_dir / "location_overrides.csv",
         "affiliations": data_dir / "person_affiliations.csv",
         "organization_aliases": data_dir / "organization_aliases.csv",
         "organization_locations": data_dir / "organization_locations.csv",
@@ -145,6 +153,7 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     exa_outcomes = read_csv(required["exa_outcomes"])
     exa_profiles = json.loads(required["exa_profiles"].read_text(encoding="utf-8"))
     locations = read_csv(required["locations"])
+    location_overrides = load_overrides(required["location_overrides"])
     affiliations = read_csv(required["affiliations"])
     organization_aliases = read_csv(required["organization_aliases"])
     organization_locations = load_organization_locations(
@@ -484,9 +493,24 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             and row.get("evidence_url") == organization_location.get("evidence_url")
             and row.get("country_code") == organization_location.get("country_code")
         )
+        reviewed_override = location_overrides.get(person_id, {})
+        is_reviewed_override = (
+            reviewed_override.get("evidence_kind") in TRUSTED_OVERRIDE_KINDS
+            and all(
+                row.get(field, "") == reviewed_override.get(field, "")
+                for field in (
+                    "country_code",
+                    "country_name",
+                    "location_label",
+                    "evidence_url",
+                    "evidence_kind",
+                )
+            )
+        )
         if (
             row.get("evidence_url", "") not in accepted_urls
             and not is_destination_organization_location
+            and not is_reviewed_override
         ):
             errors.append(f"location source is not linked to accepted evidence for {person_id}")
 
@@ -842,6 +866,13 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         }
         for expected_field, final_field in final_field_map.items():
             if person_id in destination_reviews_by_id:
+                continue
+            if (
+                final is not None
+                and final.get("destination_status") == "history_only"
+                and expected_field
+                in {"organization", "role", "affiliation_type", "start_year", "end_year"}
+            ):
                 continue
             expected_value = expected.get(expected_field, "").strip()
             if expected_field == "organization":

@@ -45,6 +45,7 @@ COUNTRY_NAMES = {
     "CZ": "Czechia",
     "DE": "Germany",
     "DK": "Denmark",
+    "EE": "Estonia",
     "ES": "Spain",
     "FI": "Finland",
     "FR": "France",
@@ -60,6 +61,7 @@ COUNTRY_NAMES = {
     "KR": "South Korea",
     "KZ": "Kazakhstan",
     "LU": "Luxembourg",
+    "MY": "Malaysia",
     "NL": "Netherlands",
     "NO": "Norway",
     "PL": "Poland",
@@ -89,6 +91,7 @@ COUNTRY_ALIASES = {
     "czech republic": "CZ",
     "czechia": "CZ",
     "denmark": "DK",
+    "estonia": "EE",
     "finland": "FI",
     "france": "FR",
     "germany": "DE",
@@ -103,6 +106,7 @@ COUNTRY_ALIASES = {
     "kazakhstan": "KZ",
     "kazakhstant": "KZ",
     "luxembourg": "LU",
+    "malaysia": "MY",
     "netherlands": "NL",
     "norway": "NO",
     "poland": "PL",
@@ -213,6 +217,7 @@ TRUSTED_OVERRIDE_KINDS = {
     "career_source_location",
     "current_research_affiliation_location",
     "current_role_location",
+    "historical_latest_known_location",
 }
 PRIORITY_OVERRIDE_KINDS = {
     "active_affiliation_profile_location",
@@ -419,6 +424,7 @@ def current_employment_location(
     destination_role = clean_text(person.get("role"))
     ranked_locations: list[tuple[int, int, int, dict[str, str]]] = []
     ranked_headers: list[tuple[int, dict[str, str]]] = []
+    ranked_profile_matches: list[tuple[int, int, int, dict[str, str]]] = []
     for candidate in candidates:
         text = "\n\n".join(
             str(item).strip()
@@ -431,12 +437,21 @@ def current_employment_location(
         if header:
             ranked_headers.append((len(text), header))
         for current_role in extract_current_roles(text):
-            if not current_role.get("country_code"):
-                continue
             score = current_role_match_score(
                 current_role, organization, destination_role
             )
             if not score:
+                continue
+            if header:
+                ranked_profile_matches.append(
+                    (
+                        score,
+                        1 if current_role.get("structured") == "true" else 0,
+                        len(text),
+                        header,
+                    )
+                )
+            if not current_role.get("country_code"):
                 continue
             ranked_locations.append(
                 (
@@ -447,22 +462,40 @@ def current_employment_location(
                 )
             )
 
-    if not ranked_locations:
-        return None
-    _, _, _, selected = max(ranked_locations, key=lambda item: item[:3])
-    code = selected["country_code"]
-    header = max(ranked_headers, key=lambda item: item[0])[1] if ranked_headers else None
-    reason = (
-        f"Country follows the location attached to the accepted current role at "
-        f"{organization}."
-    )
-    if header and header.get("country_code") == code:
-        reason += " The public profile header independently agrees."
-    elif header:
-        reason += (
-            f" The profile header points to {header['country_name']}, but it conflicts "
-            "with the active-role location and is not used."
+    if ranked_locations:
+        _, _, _, selected = max(ranked_locations, key=lambda item: item[:3])
+        code = selected["country_code"]
+        header = (
+            max(ranked_headers, key=lambda item: item[0])[1]
+            if ranked_headers
+            else None
         )
+        reason = (
+            f"Country follows the location attached to the accepted current role at "
+            f"{organization}."
+        )
+        if header and header.get("country_code") == code:
+            reason += " The public profile header independently agrees."
+        elif header:
+            reason += (
+                f" The profile header points to {header['country_name']}, but it conflicts "
+                "with the active-role location and is not used."
+            )
+        evidence_kind = "current_role_location"
+        location_label = selected["location_label"]
+    elif ranked_profile_matches:
+        _, _, _, selected = max(
+            ranked_profile_matches, key=lambda item: item[:3]
+        )
+        code = selected["country_code"]
+        location_label = selected["location_label"]
+        evidence_kind = "active_affiliation_profile_location"
+        reason = (
+            f"The accepted profile places the person in {selected['country_name']} "
+            f"and independently lists the matched current role at {organization}."
+        )
+    else:
+        return None
     confidence = (
         "confirmed"
         if clean_text(person.get("confidence")) == "confirmed"
@@ -471,8 +504,8 @@ def current_employment_location(
     return {
         "country_code": code,
         "country_name": COUNTRY_NAMES[code],
-        "location_label": selected["location_label"],
-        "evidence_kind": "current_role_location",
+        "location_label": location_label,
+        "evidence_kind": evidence_kind,
         "confidence": confidence,
         "review_reason": reason,
     }
@@ -605,11 +638,19 @@ def build_rows(
 
     output = []
     for person in people:
-        if clean_text(person.get("confidence")) not in {"probable", "confirmed"}:
-            continue
         person_id = clean_text(person.get("person_id"))
-
         override = overrides.get(person_id)
+
+        # Unmatched identities remain ineligible for automated inference. A
+        # person-specific reviewed override may still document the last
+        # verifiable location without accepting a speculative identity match.
+        if clean_text(person.get("confidence")) not in {"probable", "confirmed"}:
+            if override and override.get("evidence_kind") in TRUSTED_OVERRIDE_KINDS:
+                row = dict(override)
+                row["name"] = clean_text(person.get("name"))
+                output.append(row)
+            continue
+
         # A reviewed role location overrides conflicting automated extraction.
         if override and override.get("evidence_kind") in PRIORITY_OVERRIDE_KINDS:
             row = dict(override)

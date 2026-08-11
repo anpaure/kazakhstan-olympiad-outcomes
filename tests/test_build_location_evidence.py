@@ -231,6 +231,72 @@ class LocationExtractionTest(unittest.TestCase):
 
         self.assertEqual(build_rows(people, searches, {}), [])
 
+    def test_profile_location_is_used_when_same_profile_has_matched_current_role(self):
+        people = [
+            {
+                "person_id": "kaz-worker",
+                "name": "Example Worker",
+                "confidence": "confirmed",
+                "linkedin_url": "https://linkedin.com/in/example-worker",
+                "organization": "Global Company",
+                "role": "Engineer",
+                "affiliation_type": "employment",
+                "destination_status": "latest_employment",
+            }
+        ]
+        searches = [
+            {
+                "results": [
+                    {
+                        "url": "https://linkedin.com/in/example-worker",
+                        "highlights": [
+                            "# Example Worker Astana, Kazakhstan (KZ) 20 connections "
+                            "## Experience ### Engineer - Global Company (Current) "
+                            "Jan 2025 - Present"
+                        ],
+                    }
+                ]
+            }
+        ]
+
+        rows = build_rows(people, searches, {})
+
+        self.assertEqual(rows[0]["country_code"], "KZ")
+        self.assertEqual(
+            rows[0]["evidence_kind"], "active_affiliation_profile_location"
+        )
+        self.assertIn("matched current role", rows[0]["review_reason"])
+
+    def test_profile_location_is_not_used_for_nonmatching_current_role(self):
+        people = [
+            {
+                "person_id": "kaz-worker",
+                "name": "Example Worker",
+                "confidence": "confirmed",
+                "linkedin_url": "https://linkedin.com/in/example-worker",
+                "organization": "Expected Company",
+                "role": "Engineer",
+                "affiliation_type": "employment",
+                "destination_status": "latest_employment",
+            }
+        ]
+        searches = [
+            {
+                "results": [
+                    {
+                        "url": "https://linkedin.com/in/example-worker",
+                        "highlights": [
+                            "# Example Worker Astana, Kazakhstan (KZ) 20 connections "
+                            "## Experience ### Researcher - Different Company (Current) "
+                            "Jan 2025 - Present"
+                        ],
+                    }
+                ]
+            }
+        ]
+
+        self.assertEqual(build_rows(people, searches, {}), [])
+
     def test_reviewed_override_supersedes_automatic_role_location(self):
         people = [
             {
@@ -348,6 +414,49 @@ class LocationExtractionTest(unittest.TestCase):
             rows[0]["evidence_kind"], "current_research_affiliation_location"
         )
 
+    def test_reviewed_historical_location_is_allowed_for_unmatched_identity(self):
+        people = [
+            {
+                "person_id": "kaz-unmatched",
+                "name": "Unmatched Alumnus",
+                "confidence": "unmatched",
+            }
+        ]
+        overrides = {
+            "kaz-unmatched": {
+                "person_id": "kaz-unmatched",
+                "name": "Unmatched Alumnus",
+                "country_code": "KZ",
+                "country_name": "Kazakhstan",
+                "location_label": "Kazakhstan (last verified in 1998)",
+                "evidence_url": "https://example.org/olympiad-result",
+                "evidence_kind": "historical_latest_known_location",
+                "confidence": "confirmed",
+                "review_reason": (
+                    "The Olympiad record is the latest verified location; no "
+                    "current residence is inferred."
+                ),
+            }
+        }
+
+        rows = build_rows(people, [], overrides)
+
+        self.assertEqual(rows[0]["country_code"], "KZ")
+        self.assertEqual(
+            rows[0]["evidence_kind"], "historical_latest_known_location"
+        )
+
+    def test_unmatched_identity_without_reviewed_location_stays_excluded(self):
+        people = [
+            {
+                "person_id": "kaz-unmatched",
+                "name": "Unmatched Alumnus",
+                "confidence": "unmatched",
+            }
+        ]
+
+        self.assertEqual(build_rows(people, [], {}), [])
+
     def test_current_role_location_beats_legal_entity_fallback(self):
         people = [
             {
@@ -444,6 +553,31 @@ class LocationExtractionTest(unittest.TestCase):
         self.assertEqual(
             talgat["evidence_kind"], "active_affiliation_profile_location"
         )
+
+    def test_country_from_location_supports_malaysia(self):
+        self.assertEqual(
+            country_from_location("Sepang, Selangor, Malaysia"), "MY"
+        )
+
+    def test_every_alumnus_has_a_reviewed_country(self):
+        people = json.loads(
+            Path("data/researched_people.json").read_text(encoding="utf-8")
+        )
+        locations = {
+            row["person_id"]
+            for row in json.loads(
+                Path("data/person_locations.json").read_text(encoding="utf-8")
+            )
+            if row.get("country_code")
+        }
+
+        missing = sorted(
+            person["name"]
+            for person in people
+            if person["person_id"] not in locations
+        )
+
+        self.assertEqual(missing, [])
 
 
 if __name__ == "__main__":

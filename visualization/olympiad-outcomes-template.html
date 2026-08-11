@@ -103,7 +103,7 @@
       <div class="iso-pie-chart" data-chart="sectors"></div>
     </section>
     <section>
-      <h3>Outcome-country distribution</h3>
+      <h3>Country distribution</h3>
       <div class="iso-pie-chart" data-chart="countries"></div>
     </section>
     <section class="iso-coverage-panel">
@@ -855,8 +855,8 @@
 
   function distributionData(kind) {
     const values = filteredPeople({ ignoreSelection: true }).filter(person => {
-      if (!person.organization) return false;
-      return kind === 'sector' ? Boolean(person.sector) : Boolean(person.countryCode);
+      if (kind === 'sector') return Boolean(person.organization && person.sector);
+      return Boolean(person.countryCode);
     });
     let data = d3.rollups(
       values,
@@ -893,10 +893,14 @@
     const svg = d3.select(container).selectAll('svg').data([null]).join('svg')
       .attr('viewBox', `0 0 ${width} ${height}`)
       .attr('role', 'img')
-      .attr('aria-label', `${kind === 'sector' ? 'Sector' : 'Outcome-country'} distribution for filtered alumni`);
+      .attr('aria-label', `${kind === 'sector' ? 'Sector' : 'Country'} distribution for filtered alumni`);
     svg.selectAll('*').remove();
-    svg.append('title').text(kind === 'sector' ? 'Sector distribution' : 'Outcome-country distribution');
-    svg.append('desc').text('Pie slices show the share of filtered alumni with each destination classification.');
+    svg.append('title').text(kind === 'sector' ? 'Sector distribution' : 'Country distribution');
+    svg.append('desc').text(
+      kind === 'sector'
+        ? 'Pie slices show the share of filtered alumni with each destination sector.'
+        : 'Pie slices show the share of filtered alumni with each sourced country.'
+    );
 
     if (!data.length) {
       svg.append('text').attr('x', width / 2).attr('y', height / 2).attr('text-anchor', 'middle')
@@ -1086,7 +1090,10 @@
       if (person.almaMaterRole) almaCell.title = person.almaMaterRole;
       const countryCell = document.createElement('td');
       countryCell.dataset.label = 'Country';
-      countryCell.textContent = person.country || '—';
+      const isHistoricalLocation = person.locationEvidenceKind === 'historical_latest_known_location';
+      countryCell.textContent = person.country
+        ? `${person.country}${isHistoricalLocation ? ' · last known' : ''}`
+        : '—';
       if (person.location) countryCell.title = person.location;
       const sourcesCell = document.createElement('td');
       sourcesCell.dataset.label = 'Sources';

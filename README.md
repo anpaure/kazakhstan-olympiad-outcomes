@@ -12,17 +12,17 @@ The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
 - 456 canonical people with 46 reviewed alias pairs
-- 413 researched people, all classified as probable or confirmed
-- 313 confirmed and 100 probable identity, education, or career outcomes
-- 384 manually reviewed outcomes backed by public evidence
-- 370 researched people with one resolved destination and 286 with a public LinkedIn URL
-- 2,547 sourced employment/education history rows, including 534 selected alma-mater records across 358 people
-- 44 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
-- 507 reviewed organization aliases collapsed into canonical employers and universities
-- 182 reviewed sector classifications covering every displayed non-educational destination
-- 264 sourced outcome-country records across 30 countries
-- 3 additional people with candidate-only evidence retained for audit but no accepted outcome
-- 132 rejected identity sources retained with review reasons and supporting links
+- 429 researched people, all classified as probable or confirmed
+- 310 confirmed and 119 probable identity, education, or career outcomes
+- 413 manually reviewed outcomes backed by public evidence
+- 399 researched people with one resolved destination and 293 with a public LinkedIn URL
+- 2,720 sourced employment/education history rows, including 556 selected alma-mater records across 369 people
+- 65 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
+- 512 reviewed organization aliases collapsed into canonical employers and universities
+- 203 reviewed sector classifications covering every displayed non-educational destination
+- 456 sourced country records across 36 countries; 36 rows are visibly labeled as historical latest-known locations
+- 1 additional person with candidate-only evidence retained for audit but no accepted outcome
+- 154 rejected identity sources retained with review reasons and supporting links
 
 The current first step is implemented in `scripts/collect_kazakhstan_participants.py`. It collects Kazakhstan competitors from:
 
@@ -34,7 +34,7 @@ The current first step is implemented in `scripts/collect_kazakhstan_participant
 
 Exa is used as the source-discovery/audit layer when `EXA_API_KEY` is set. The collector still uses curated result URLs for parsing so the participant list is deterministic.
 
-Destination is deliberately narrow: one latest reviewed employment role, or one active student/PhD affiliation. Completed and undated education remains searchable as history or alma-mater evidence but does not enter destination rankings. `Outcome country` follows the location attached to the selected current role. For active students it follows the sourced campus country of the selected institution, so a stale LinkedIn header cannot override MIT, Oxford, UNIST, or another current degree. A profile header is corroboration only: when it conflicts with the active role it is rejected, and when no active-affiliation location is available the country is left unknown unless a reviewed career source or structured affiliation supplies it. The field is a best-supported current outcome location, not citizenship or verified legal residence.
+Destination is deliberately narrow: one latest reviewed employment role, or one active student/PhD affiliation. Completed and undated education remains searchable as history or alma-mater evidence but does not enter destination rankings. `Outcome country` follows the location attached to the selected current role. For active students it follows the sourced campus country of the selected institution, so a stale LinkedIn header cannot override MIT, Oxford, UNIST, or another current degree. A profile header is corroboration only and is rejected when it conflicts with a dated active affiliation. When no current location can be established, the country field uses a person-specific reviewed latest-known source and is visibly labeled `last known`; it is not presented as current residence. The field is never citizenship or verified legal residence.
 
 ## Setup
 
@@ -196,10 +196,9 @@ failed counts, and coverage percentage.
 
 Current Exa search coverage: 456 of 456 canonical people, 456 successful searches,
 zero errors, and 2,445 ranked result rows. Total recorded search cost is $3.232.
-The profile audit covers all 286 accepted LinkedIn profiles: 244 full-content
-retrievals succeeded, 21 are backed by cached Exa search results, 11 are reviewed
-manual public-profile transcriptions, and 10 retrieval errors remain logged, at
-$0.244 recorded hydration cost.
+The profile audit covers all 293 accepted LinkedIn profiles: 272 full-content
+retrievals succeeded, 11 are reviewed manual public-profile transcriptions, and
+10 retrieval errors remain logged, at $0.273 recorded hydration cost.
 
 Outputs:
 

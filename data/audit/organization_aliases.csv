@@ -444,6 +444,7 @@ org-bb0d7ba862021016,"TETmedical, Inc",TETmedical,TETmedical,same_entity,Legal-f
 org-e5c2ee751340a694,"TETmedical, Inc.",TETmedical,TETmedical,same_entity,Legal-form punctuation variant,
 org-a3bcd420ed9593ff,CUHK,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Common acronym,
 org-98e0a0fac9911b18,The Chinese University of Hong Kong,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Official name without acronym,
+org-d8be51f7d4c43f8f,London School of Economics and Political Science,The London School of Economics and Political Science (LSE),LSE,same_entity,Official name without leading article or acronym,https://www.lse.ac.uk/
 org-24661dee676232e6,The London School of Economics and Political Science (LSE),The London School of Economics and Political Science (LSE),LSE,same_entity,Canonical display declaration,https://www.lse.ac.uk/
 org-c33096e3e18ca8d6,The Ohio State University,The Ohio State University,Ohio State University,same_entity,Canonical short display,https://www.osu.edu/
 org-d7d98098735d63eb,The University of British Columbia,The University of British Columbia,UBC,same_entity,Canonical display declaration,https://www.ubc.ca/

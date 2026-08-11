@@ -129,6 +129,10 @@ class CompactVisualizationDataTest(unittest.TestCase):
         person = json.loads(match.group(0))
         self.assertEqual(person["organization"], "Honeywell")
         self.assertEqual(person["countryCode"], "AE")
+        self.assertEqual(
+            person["locationEvidenceKind"],
+            "active_affiliation_profile_location",
+        )
         self.assertEqual(person["country"], "United Arab Emirates")
         self.assertIn("Abu Dhabi", person["location"])
 
