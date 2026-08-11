@@ -1274,6 +1274,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at HITS. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-c9c1bd497dce8c5b",
+    "evidence_id": "ev-4eed73f585fdc853",
+    "source_id": "src-23f4e63a873d",
+    "person_id": "kaz-3be79cb80aa3",
+    "name": "Daniil Shatokhin",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Nashville, Tennessee, United States",
+    "evidence_url": "https://www.linkedin.com/in/daniil-shatokhin-9a69b7297",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted LinkedIn profile exposes Nashville Tennessee as Daniil's current location and lists Vanderbilt University alongside his ongoing Kashgari Dictionary role."
+  },
+  {
     "location_id": "loc-fb3301a2cce47c5f",
     "evidence_id": "ev-9766f69bde159420",
     "source_id": "src-957082b534f0",
@@ -1538,6 +1552,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at EPAM Systems. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-01ea39dbd514918f",
+    "evidence_id": "ev-d14edc2bdf283e6c",
+    "source_id": "src-00ba24842cca",
+    "person_id": "kaz-bdb3a76b4430",
+    "name": "Dinmukhammed Omar",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/final-reports/IBO-2024%20Report.pdf",
+    "evidence_kind": "affiliation_country",
+    "confidence": "confirmed",
+    "review_reason": "The official IBO 2024 report identifies Dinmukhammed as an undergraduate at NTU in Singapore; his accepted LinkedIn profile independently exposes Singapore as his current location while he leads synapse.kz."
   },
   {
     "location_id": "loc-6d7abf5efcb32dff",

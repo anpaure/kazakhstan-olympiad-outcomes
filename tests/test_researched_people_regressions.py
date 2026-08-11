@@ -34,6 +34,31 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             row for row in self.affiliations if row["person_id"] == person_id
         ]
 
+    def test_dinmukhammed_omar_singapore_location(self):
+        person = self.people["kaz-bdb3a76b4430"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "synapse.kz")
+        self.assertEqual(person["role"], "Chief Executive Officer")
+        self.assertIn(
+            "Nanyang Technological University (NTU)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertEqual(location["country_code"], "SG")
+        self.assertEqual(location["location_label"], "Singapore")
+
+    def test_daniil_shatokhin_nashville_location(self):
+        person = self.people["kaz-3be79cb80aa3"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Kashgari Dictionary")
+        self.assertEqual(person["role"], "Lead Software Engineer")
+        self.assertIn("Vanderbilt University", self.alma_maters(person["person_id"]))
+        self.assertEqual(location["country_code"], "US")
+        self.assertEqual(
+            location["location_label"], "Nashville, Tennessee, United States"
+        )
+
     def test_anton_draganchuk_outcome_and_mipt_alma_mater(self):
         person = self.people["kaz-b76707715f6b"]
 

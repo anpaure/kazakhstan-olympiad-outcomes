@@ -18724,15 +18724,15 @@
     "source_url": "https://www.ibo-info.org/files/downloads/results-reports/final-reports/IBO-2024%20Report.pdf",
     "source_host": "ibo-info.org",
     "source_kind": "pdf",
-    "evidence_rows": 9,
+    "evidence_rows": 10,
     "people_count": 6,
     "accepted_rows": 6,
-    "supporting_rows": 3,
+    "supporting_rows": 4,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;manual_review",
-    "source_adapters": "manual;manual_review;official_olympiad_biography"
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "affiliation_country;manual;manual_review;official_olympiad_biography"
   },
   {
     "source_id": "src-e8ec659c8f52",
@@ -21799,15 +21799,15 @@
     "source_url": "https://www.linkedin.com/in/daniil-shatokhin-9a69b7297",
     "source_host": "linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 5,
+    "evidence_rows": 6,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 4,
+    "supporting_rows": 5,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;manual_review",
-    "source_adapters": "accepted_linkedin_profile;linkedin;manual"
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual"
   },
   {
     "source_id": "src-ef1e4fcf6ceb",
