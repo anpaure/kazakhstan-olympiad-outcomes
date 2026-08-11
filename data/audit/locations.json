@@ -1358,6 +1358,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at DashDevs. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-47d2348d7a2ce6be",
+    "evidence_id": "ev-c3a903ccef3e7e48",
+    "source_id": "src-2c8eca349e3b",
+    "person_id": "kaz-2d51fec0f8cd",
+    "name": "Dauzhan Beketov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://tengrinews.kz/kazakhstan_news/kaspikz-podderjivaet-sbornuyu-kazahstana-ii-gotovyat-604440/",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The current national-team report identifies Dauzhan as an Almaty participant from 165 Gymnasium."
+  },
+  {
     "location_id": "loc-4ec073c78f0e1f3f",
     "evidence_id": "ev-a47db43cd3669df3",
     "source_id": "src-ce5c57c7c3c3",
@@ -2996,6 +3010,20 @@
     "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official visitor page identifies its Cambridge location."
   },
   {
+    "location_id": "loc-d3bb233b0384bc8a",
+    "evidence_id": "ev-225f0e27e115a890",
+    "source_id": "src-3b9f34f45f5f",
+    "person_id": "kaz-f63c5a4ed4de",
+    "name": "Yerassyl Altynbek",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1210415",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "The Ministry of Education identifies Yerassyl as an active grade-11 Nurorda student in Almaty in April 2026."
+  },
+  {
     "location_id": "loc-79c3d118ec720b70",
     "evidence_id": "ev-4b21edd60ace154a",
     "source_id": "src-44a6a96f2636",
@@ -3050,6 +3078,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Generate:Biomedicines. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-7d7b6d90077b45ec",
+    "evidence_id": "ev-9c6fa6f8562a5891",
+    "source_id": "src-3c8c0f6cc0ba",
+    "person_id": "kaz-ce04be5e3d55",
+    "name": "Yerkanat Kengshilik",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://ssh.nu.edu.kz/news/tpost/ysjink6u01-republican-mathematical-olympiad-2026-he",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "Nazarbayev University's April 2026 report identifies Yerkanat among its students and places the university event in Astana."
   },
   {
     "location_id": "loc-4f9b9bea62b5e410",
@@ -3218,6 +3260,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at VoltaGrid. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-ce07e4179f86533e",
+    "evidence_id": "ev-e0e49d76c1531c14",
+    "source_id": "src-2d4b0555309f",
+    "person_id": "kaz-e54a79a0c1b7",
+    "name": "Yevgeniya Mezhenina",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Karaganda, Kazakhstan",
+    "evidence_url": "https://www.nis.edu.kz/ru/news/ibo-2026-nis-oqusylary-alemnin-uzdik-zas-biologtary-qatarynan-korindi",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "NIS identifies Yevgeniya as its Karaganda student in its July 2026 IBO report."
   },
   {
     "location_id": "loc-085b0158853fb370",

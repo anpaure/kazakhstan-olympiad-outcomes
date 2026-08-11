@@ -16794,6 +16794,24 @@
     "evidence_text": "iOS App Developer - [Делимобиль](https://www.linkedin.com/company/delimobil) Nov 2018 - May 2020 (1 year and 6 months) in Москва, Россия Developed from scratch an app called “AnytimePrime” (4.3 stars on app store) - car-sharing service with premium cars, 6k daily users, in a team of 2 people. The app was built using MVC-N architecture. Developed and maintained “Delimobil” app (4.1 stars) - one of the largest car-sharing services in Moscow, 75k daily users, in a team of 3 people. Worked on car re"
   },
   {
+    "affiliation_id": "aff-45aae4a18445d281",
+    "evidence_id": "ev-3a0b77bec0d0b196",
+    "source_id": "src-2c8eca349e3b",
+    "person_id": "kaz-2d51fec0f8cd",
+    "name": "Dauzhan Beketov",
+    "organization": "Specialized Lyceum No. 165",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "",
+    "is_current": "true",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://tengrinews.kz/kazakhstan_news/kaspikz-podderjivaet-sbornuyu-kazahstana-ii-gotovyat-604440/",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "A current 2026 national-team report names Dauzhan Beketov among the schoolchildren in selection and identifies him with Almaty's 165 Gymnasium; the official IOI registry independently confirms his exact-name 2025 bronze medal for Kazakhstan."
+  },
+  {
     "affiliation_id": "aff-f1b59e1024e8a25a",
     "evidence_id": "ev-3cda4cd10ac97025",
     "source_id": "src-d8b3f3b80991",
@@ -39438,6 +39456,24 @@
     "evidence_text": "NIS Almaty-Nauryzbay identifies Yenlik Bakytbekova as a 2025 graduate and 2025 IChO silver medalist; the completed school record is not treated as a current destination."
   },
   {
+    "affiliation_id": "aff-5b668b2eb7a3d52b",
+    "evidence_id": "ev-5c4e7d95d4ae818b",
+    "source_id": "src-3b9f34f45f5f",
+    "person_id": "kaz-f63c5a4ed4de",
+    "name": "Yerassyl Altynbek",
+    "organization": "Nurorda School-Lyceum",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2026",
+    "is_current": "true",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1210415",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "The Kazakhstan Ministry of Education identifies Yerassyl Altynbek as an 11th-grade Nurorda student in Almaty in April 2026; the official IMO contestant record independently confirms his exact-name 2025 and 2026 bronze medals for Kazakhstan."
+  },
+  {
     "affiliation_id": "aff-c11e99a0c825d9a6",
     "evidence_id": "ev-21543d90b9b21fa5",
     "source_id": "src-b21cc72fd265",
@@ -39868,6 +39904,24 @@
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable",
     "evidence_text": "Senior Machine Learning Scientist I Jan 2024 - May 2025 (1 year and 4 months) Department: Research • Level: Senior"
+  },
+  {
+    "affiliation_id": "aff-1ac64432ddd2b295",
+    "evidence_id": "ev-68f5f15b5813c1a6",
+    "source_id": "src-3c8c0f6cc0ba",
+    "person_id": "kaz-ce04be5e3d55",
+    "name": "Yerkanat Kengshilik",
+    "organization": "Nazarbayev University",
+    "role": "University Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "",
+    "is_current": "true",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://ssh.nu.edu.kz/news/tpost/ysjink6u01-republican-mathematical-olympiad-2026-he",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "Nazarbayev University's April 2026 report names Yerkanat Kengshilik among its students in the university mathematics olympiad results; the official IMO contestant record independently confirms his exact-name 2025 bronze medal for Kazakhstan."
   },
   {
     "affiliation_id": "aff-3786ffbcfef3fe84",
@@ -42586,6 +42640,24 @@
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable",
     "evidence_text": "Summer Geomodeling Intern - [Husky Energy](https://www.linkedin.com/company/huskyenergy) May 2011 - Jul 2011 (2 months) in Calgary, Canada Area Modeled structural geologic surfaces and permeability field for Sunrise project. Performed upscaling of the geological models to match flow simulation modeling scale. Department: Other • Level: Intern Husky Energy (HSE.TO) is a Oil and Gas company. Husky Energy has 1,000-2,000 employees and has annual revenue in the CAD10B-CAD20B range. Headquartered in"
+  },
+  {
+    "affiliation_id": "aff-40fb0514bc54c6dc",
+    "evidence_id": "ev-c7696ca3fa83079b",
+    "source_id": "src-2d4b0555309f",
+    "person_id": "kaz-e54a79a0c1b7",
+    "name": "Yevgeniya Mezhenina",
+    "organization": "Nazarbayev Intellectual Schools (NIS)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2027",
+    "is_current": "true",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://www.nis.edu.kz/ru/news/ibo-2026-nis-oqusylary-alemnin-uzdik-zas-biologtary-qatarynan-korindi",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "NIS identifies Yevgeniya Mezhenina as its Karaganda student and Kazakhstan's 2026 IBO bronze medalist; the official IBO result independently confirms the exact-name award."
   },
   {
     "affiliation_id": "aff-30dbc1817a62c210",

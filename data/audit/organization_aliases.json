@@ -3528,6 +3528,42 @@
     "evidence_url": "https://sesc.nsu.ru/"
   },
   {
+    "organization_alias_id": "org-d3492d253f5f113e",
+    "alias": "165 Gymnasium",
+    "canonical_name": "Specialized Lyceum No. 165",
+    "display_name": "Specialized Lyceum No. 165",
+    "merge_type": "source_name_variant",
+    "rationale": "The current team report's school label normalized to the official Almaty education-authority name.",
+    "evidence_url": "https://tengrinews.kz/kazakhstan_news/kaspikz-podderjivaet-sbornuyu-kazahstana-ii-gotovyat-604440/"
+  },
+  {
+    "organization_alias_id": "org-e993bd07c72d13e9",
+    "alias": "Gymnasium No. 165",
+    "canonical_name": "Specialized Lyceum No. 165",
+    "display_name": "Specialized Lyceum No. 165",
+    "merge_type": "source_name_variant",
+    "rationale": "English word-order variant normalized to the official school name.",
+    "evidence_url": "https://www.gov.kz/memleket/entities/almaty-edu/press/news/details/1050256"
+  },
+  {
+    "organization_alias_id": "org-23cf5b51744ac41b",
+    "alias": "Specialized Lyceum No.165",
+    "canonical_name": "Specialized Lyceum No. 165",
+    "display_name": "Specialized Lyceum No. 165",
+    "merge_type": "punctuation_variant",
+    "rationale": "Spacing variant normalized to the official school name.",
+    "evidence_url": "https://www.gov.kz/memleket/entities/almaty-edu/press/news/details/1050256"
+  },
+  {
+    "organization_alias_id": "org-f2e5444ea47dd8c8",
+    "alias": "Специализированный лицей №165",
+    "canonical_name": "Specialized Lyceum No. 165",
+    "display_name": "Specialized Lyceum No. 165",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian school name normalized to English.",
+    "evidence_url": "https://www.gov.kz/memleket/entities/almaty-edu/press/news/details/1050256"
+  },
+  {
     "organization_alias_id": "org-6e88701618d8d127",
     "alias": "Sprint Squads - Top 1% of software engineers and data scientists of Central Asia",
     "canonical_name": "Sprint Squads",

@@ -391,6 +391,10 @@ org-74d36916c93c9b68,Solai Inc,Solai,Solai,same_entity,Legal-form punctuation va
 org-5eb865983eb37f65,Solai Inc.,Solai,Solai,same_entity,Legal-form punctuation variant,
 org-05141f082d391251,Sovenok olympiad group for high-school students,Sovenok Olympiad Group,Sovenok Olympiad Group,descriptor_cleanup,Quotation and descriptor cleanup,
 org-e2cb0dc7e38e579f,SESC NSU — ( СУНЦ НГУ \ ФМШ ),Specialized Educational Scientific Center of Novosibirsk State University (SESC NSU),SESC NSU,multilingual_name,Bilingual school label normalized to its expanded English name,https://sesc.nsu.ru/
+org-d3492d253f5f113e,165 Gymnasium,Specialized Lyceum No. 165,Specialized Lyceum No. 165,source_name_variant,The current team report's school label normalized to the official Almaty education-authority name.,https://tengrinews.kz/kazakhstan_news/kaspikz-podderjivaet-sbornuyu-kazahstana-ii-gotovyat-604440/
+org-e993bd07c72d13e9,Gymnasium No. 165,Specialized Lyceum No. 165,Specialized Lyceum No. 165,source_name_variant,English word-order variant normalized to the official school name.,https://www.gov.kz/memleket/entities/almaty-edu/press/news/details/1050256
+org-23cf5b51744ac41b,Specialized Lyceum No.165,Specialized Lyceum No. 165,Specialized Lyceum No. 165,punctuation_variant,Spacing variant normalized to the official school name.,https://www.gov.kz/memleket/entities/almaty-edu/press/news/details/1050256
+org-f2e5444ea47dd8c8,Специализированный лицей №165,Specialized Lyceum No. 165,Specialized Lyceum No. 165,multilingual_name,Russian school name normalized to English.,https://www.gov.kz/memleket/entities/almaty-edu/press/news/details/1050256
 org-6e88701618d8d127,Sprint Squads - Top 1% of software engineers and data scientists of Central Asia,Sprint Squads,Sprint Squads,descriptor_cleanup,Marketing descriptor cleanup,
 org-c037e9b8e6e3ad64,SPS Inc,SPS,SPS,legal_form_variant,Legal-form cleanup,
 org-6a5212c48ab6600f,Squarepoint,Squarepoint Capital,Squarepoint Capital,same_entity,Short brand name,

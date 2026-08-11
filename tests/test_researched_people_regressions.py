@@ -579,6 +579,41 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(location["country_code"], "KZ")
         self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
 
+    def test_recent_school_and_university_outcomes(self):
+        expected = {
+            "kaz-f63c5a4ed4de": (
+                "Nurorda School-Lyceum",
+                "High School Student",
+                "Almaty, Kazakhstan",
+            ),
+            "kaz-e54a79a0c1b7": (
+                "Nazarbayev Intellectual Schools (NIS)",
+                "High School Student",
+                "Karaganda, Kazakhstan",
+            ),
+            "kaz-ce04be5e3d55": (
+                "Nazarbayev University",
+                "University Student",
+                "Astana, Kazakhstan",
+            ),
+            "kaz-2d51fec0f8cd": (
+                "Specialized Lyceum No. 165",
+                "High School Student",
+                "Almaty, Kazakhstan",
+            ),
+        }
+
+        for person_id, (organization, role, location_label) in expected.items():
+            with self.subTest(person_id=person_id):
+                person = self.people[person_id]
+                location = self.locations[person_id]
+                self.assertEqual(person["organization"], organization)
+                self.assertEqual(person["role"], role)
+                self.assertEqual(person["confidence"], "confirmed")
+                self.assertIn(organization, self.alma_maters(person_id))
+                self.assertEqual(location["country_code"], "KZ")
+                self.assertEqual(location["location_label"], location_label)
+
 
 if __name__ == "__main__":
     unittest.main()

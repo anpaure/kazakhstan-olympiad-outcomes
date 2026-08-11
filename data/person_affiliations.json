@@ -13995,6 +13995,21 @@
     "confidence": "probable"
   },
   {
+    "person_id": "kaz-2d51fec0f8cd",
+    "name": "Dauzhan Beketov",
+    "organization": "Specialized Lyceum No. 165",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://tengrinews.kz/kazakhstan_news/kaspikz-podderjivaet-sbornuyu-kazahstana-ii-gotovyat-604440/",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "A current 2026 national-team report names Dauzhan Beketov among the schoolchildren in selection and identifies him with Almaty's 165 Gymnasium; the official IOI registry independently confirms his exact-name 2025 bronze medal for Kazakhstan."
+  },
+  {
     "person_id": "kaz-ac8d11f139c6",
     "name": "David Li",
     "organization": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
@@ -32865,6 +32880,21 @@
     "evidence_text": "NIS Almaty-Nauryzbay identifies Yenlik Bakytbekova as a 2025 graduate and 2025 IChO silver medalist; the completed school record is not treated as a current destination."
   },
   {
+    "person_id": "kaz-f63c5a4ed4de",
+    "name": "Yerassyl Altynbek",
+    "organization": "Nurorda School-Lyceum",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2026",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1210415",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "The Kazakhstan Ministry of Education identifies Yerassyl Altynbek as an 11th-grade Nurorda student in Almaty in April 2026; the official IMO contestant record independently confirms his exact-name 2025 and 2026 bronze medals for Kazakhstan."
+  },
+  {
     "person_id": "kaz-279f8d67af01",
     "name": "Yerassyl Muratov",
     "organization": "University of Debrecen",
@@ -33223,6 +33253,21 @@
     "evidence_url": "https://www.linkedin.com/in/ordabayevy",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-ce04be5e3d55",
+    "name": "Yerkanat Kengshilik",
+    "organization": "Nazarbayev University",
+    "role": "University Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://ssh.nu.edu.kz/news/tpost/ysjink6u01-republican-mathematical-olympiad-2026-he",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "Nazarbayev University's April 2026 report names Yerkanat Kengshilik among its students in the university mathematics olympiad results; the official IMO contestant record independently confirms his exact-name 2025 bronze medal for Kazakhstan."
   },
   {
     "person_id": "kaz-ccdb407317c8",
@@ -35488,6 +35533,21 @@
     "evidence_url": "https://www.linkedin.com/in/yevgeniy-zagayevskiy",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-e54a79a0c1b7",
+    "name": "Yevgeniya Mezhenina",
+    "organization": "Nazarbayev Intellectual Schools (NIS)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2027",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.nis.edu.kz/ru/news/ibo-2026-nis-oqusylary-alemnin-uzdik-zas-biologtary-qatarynan-korindi",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "NIS identifies Yevgeniya Mezhenina as its Karaganda student and Kazakhstan's 2026 IBO bronze medalist; the official IBO result independently confirms the exact-name award."
   },
   {
     "person_id": "kaz-8d648f29d1e0",

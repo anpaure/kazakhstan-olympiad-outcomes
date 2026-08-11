@@ -1077,6 +1077,7 @@ src-0ff77346fadb,https://sites.google.com/site/ntumathcompetitions/home/ntu-2007
 src-c6465f65735a,https://sites.google.com/view/birzhanm/home,sites.google.com,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,self_authored_profile
 src-902626608051,https://sites.northwestern.edu/weiss-lab/people/alumni/,sites.northwestern.edu,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-54c82c32cc80,https://sk.kz/press-center/news/79261/?lang=en,sk.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-3c8c0f6cc0ba,https://ssh.nu.edu.kz/news/tpost/ysjink6u01-republican-mathematical-olympiad-2026-he,ssh.nu.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
 src-10c02b1688b4,https://static.s123-cdn-static-d.com/uploads/4477293/secure/normal_656f04a4ec83d.pdf,static.s123-cdn-static-d.com,pdf,1,1,0,0,0,1,0,manual_review,manual
 src-22cd3150780e,https://statistics.berkeley.edu/people/danat-duisenbekov,statistics.berkeley.edu,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-fe8bd2b85109,https://stats.ioinformatics.org/people/134,stats.ioinformatics.org,html,3,1,3,0,0,0,0,participant_registry,IOI
@@ -1147,7 +1148,7 @@ src-ba976777d021,https://stats.ioinformatics.org/people/8346,stats.ioinformatics
 src-aff45f0eeb43,https://stats.ioinformatics.org/people/8347,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
 src-3fde99c6a84f,https://stats.ioinformatics.org/people/8348,stats.ioinformatics.org,html,2,1,2,0,0,0,0,participant_registry,IOI
 src-ad3725994ac6,https://stats.ioinformatics.org/people/8684,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
-src-4eecb4de1a18,https://stats.ioinformatics.org/people/8685,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
+src-4eecb4de1a18,https://stats.ioinformatics.org/people/8685,stats.ioinformatics.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IOI;manual
 src-ed6b003f49ea,https://stats.ioinformatics.org/results/KAZ,stats.ioinformatics.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-ec1f7e2c7945,https://stemolympiads.kz/en/team/anton-draganchuk-2/,stemolympiads.kz,web_page,4,1,2,2,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review;official_team_profile
 src-f5281d37866d,https://steppeolymp.kz/,steppeolymp.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -1155,6 +1156,7 @@ src-4d21221835b6,https://sundong.kim/members/,sundong.kim,web_page,1,1,1,0,0,0,0
 src-4be9192786e0,https://synapse.kz/,synapse.kz,web_page,4,3,3,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-b5cfbc2e37fe,https://t.me/s/qazcho?before=87,t.me,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-a4eed41f7c48,https://tehranconvention.org/system/files/kazakhstan/kmg_2016.pdf,tehranconvention.org,pdf,2,1,0,2,0,0,0,accepted_affiliation_history,official_employer_annual_report
+src-2c8eca349e3b,https://tengrinews.kz/kazakhstan_news/kaspikz-podderjivaet-sbornuyu-kazahstana-ii-gotovyat-604440/,tengrinews.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
 src-5b05c3aeb86e,https://theorg.com/org/augment-code/offices/hq,theorg.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-fe8270247075,https://theorg.com/org/biovectra/org-chart/alexey-dudnik,theorg.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-5ce7ec2505c3,https://theorg.com/org/depop/teams/engineering-team,theorg.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -1215,6 +1217,7 @@ src-ed9325aa6a0a,https://www.globtalent.org/gtf-big-talent-scholars-bios/miron-y
 src-920093ea6562,https://www.globtalent.org/gtf-big-talent-scholars-bios/nazar-serazitdinov,globtalent.org,web_page,3,1,2,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-e619276884ad,https://www.globtalent.org/gtf-big-talent-scholars-bios/vladimir-rogovskiy,globtalent.org,web_page,3,1,2,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-b3245c96f2db,https://www.gov.kz/memleket/entities/ardfm/press/news/details/859007,gov.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,government_regulator_appointment
+src-3b9f34f45f5f,https://www.gov.kz/memleket/entities/edu/press/news/details/1210415,gov.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
 src-957082b534f0,https://www.gov.kz/memleket/entities/edu/press/news/details/1260137,gov.kz,web_page,9,3,3,6,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
 src-cf0e9c93132d,https://www.gov.kz/memleket/entities/edu/press/news/details/1261409,gov.kz,web_page,6,2,2,4,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
 src-5a1c49e54448,https://www.gov.kz/memleket/entities/transport/press/news/details/882464?lang=ru,gov.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -1247,7 +1250,7 @@ src-2980cbcedd0f,https://www.ibo-info.org/files/downloads/results-reports/result
 src-09b854f13b30,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2019-IBO-Ranking_web.pdf,ibo-info.org,pdf,1,1,0,0,0,1,0,manual_review,manual
 src-0373f20f8689,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2023.pdf,ibo-info.org,pdf,1,1,1,0,0,0,0,manual_review,manual
 src-de6837f0122e,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2025%20Ranking.pdf,ibo-info.org,pdf,4,4,4,0,0,0,0,participant_registry,IBO
-src-7ab5eaf6b98a,https://www.ibo-info.org/files/downloads/results-reports/results/IBO_2026_Individual_Results_Final.pdf,ibo-info.org,pdf,7,4,7,0,0,0,0,manual_review;participant_registry,IBO;manual
+src-7ab5eaf6b98a,https://www.ibo-info.org/files/downloads/results-reports/results/IBO_2026_Individual_Results_Final.pdf,ibo-info.org,pdf,8,4,8,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-a99f07f5f774,https://www.icho-official.org/results/country_info.php?country=Kazakhstan,icho-official.org,html,71,46,67,0,0,4,0,manual_review;participant_registry,IChO;manual
 src-9c080dac45dd,https://www.icho-official.org/results/results.php?id=38&year=2006,icho-official.org,web_page,2,2,2,0,0,0,0,manual_review,manual
 src-76b64419479c,https://www.igps.uni-hannover.de/en/research/main-research-areas/phytomedicine/publications,igps.uni-hannover.de,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -1337,8 +1340,8 @@ src-632974475fd1,https://www.imo-official.org/results/contestant/34441/,imo-offi
 src-aa769700a66d,https://www.imo-official.org/results/contestant/34443/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
 src-50e0ddad48bb,https://www.imo-official.org/results/contestant/3452/,imo-official.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IMO;manual
 src-d29c1f46ba8a,https://www.imo-official.org/results/contestant/3471/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
-src-80920f2a81f8,https://www.imo-official.org/results/contestant/35205/,imo-official.org,html,2,1,2,0,0,0,0,participant_registry,IMO
-src-842f97b8b233,https://www.imo-official.org/results/contestant/35206/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
+src-80920f2a81f8,https://www.imo-official.org/results/contestant/35205/,imo-official.org,web_page,3,1,3,0,0,0,0,manual_review;participant_registry,IMO;manual
+src-842f97b8b233,https://www.imo-official.org/results/contestant/35206/,imo-official.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IMO;manual
 src-30e42a3aa0c2,https://www.imo-official.org/results/contestant/35207/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
 src-270157430b7c,https://www.imo-official.org/results/contestant/36186/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
 src-88d8e7ad00b4,https://www.imo-official.org/results/contestant/36187/,imo-official.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IMO;manual
@@ -1486,6 +1489,7 @@ src-fc9969eeb2f8,https://www.nauka.kz/page.php?lang=3&new=&news_id=7255&page_id=
 src-135cfd39ecee,https://www.ncste.kz/kz/daribaev-abzal-amankeldievich,ncste.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-901ef9d6adec,https://www.nfactorial.school/blog3/%D0%BA%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B5%D1%86-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9-%D0%BF%D1%80%D0%B8%D0%B4%D1%83%D0%BC%D0%B0%D0%BB-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D0%B2%D0%B8%D0%B4-%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F,nfactorial.school,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-af62a280a294,https://www.nfactorial.school/newest_blog/%D0%B0-%D0%B2%D1%8B-%D0%B7%D0%BD%D0%B0%D0%B5%D1%82%D0%B5-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B3%D0%BE-%D0%BA%D0%B0%D0%B7%D0%B0%D1%85%D0%B0-%D0%B2-caltech-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9-%D0%B2%D1%8B%D0%B8%D0%B3%D1%80%D0%B0%D0%BB-%D0%BF%D0%B5%D1%80%D0%B2%D1%83%D1%8E-%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D1%83%D1%8E-%D0%BC%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C-%D0%BA%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B0-%D0%BD%D0%B0-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9-%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D0%B5,nfactorial.school,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-2d4b0555309f,https://www.nis.edu.kz/ru/news/ibo-2026-nis-oqusylary-alemnin-uzdik-zas-biologtary-qatarynan-korindi,nis.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
 src-f761578728ca,https://www.nis.edu.kz/ru/news/icho-2026-nis-oqusylary-altyn-zane-kumis-medal-ensiledi,nis.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
 src-6806f9f45154,https://www.nis.edu.kz/storage/files/01JSKCF66NTSVQAB3HC9QDMGEP.pdf,nis.edu.kz,pdf,1,1,1,0,0,0,0,manual_review,manual
 src-8615a8c71bef,https://www.nis.edu.kz/storage/files/01JSKD3FB0SVR0VQAXEE8BCGCY.pdf,nis.edu.kz,pdf,1,1,1,0,0,0,0,manual_review,manual

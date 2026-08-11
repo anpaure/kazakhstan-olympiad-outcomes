@@ -16170,6 +16170,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-3c8c0f6cc0ba",
+    "source_url": "https://ssh.nu.edu.kz/news/tpost/ysjink6u01-republican-mathematical-olympiad-2026-he",
+    "source_host": "ssh.nu.edu.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "active_affiliation_profile_location;manual;manual_review"
+  },
+  {
     "source_id": "src-10c02b1688b4",
     "source_url": "https://static.s123-cdn-static-d.com/uploads/4477293/secure/normal_656f04a4ec83d.pdf",
     "source_host": "static.s123-cdn-static-d.com",
@@ -17223,16 +17238,16 @@
     "source_id": "src-4eecb4de1a18",
     "source_url": "https://stats.ioinformatics.org/people/8685",
     "source_host": "stats.ioinformatics.org",
-    "source_kind": "html",
-    "evidence_rows": 1,
+    "source_kind": "web_page",
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 2,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IOI"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IOI;manual"
   },
   {
     "source_id": "src-ed6b003f49ea",
@@ -17338,6 +17353,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history",
     "source_adapters": "official_employer_annual_report"
+  },
+  {
+    "source_id": "src-2c8eca349e3b",
+    "source_url": "https://tengrinews.kz/kazakhstan_news/kaspikz-podderjivaet-sbornuyu-kazahstana-ii-gotovyat-604440/",
+    "source_host": "tengrinews.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "active_affiliation_profile_location;manual;manual_review"
   },
   {
     "source_id": "src-5b05c3aeb86e",
@@ -18240,6 +18270,21 @@
     "source_adapters": "government_regulator_appointment"
   },
   {
+    "source_id": "src-3b9f34f45f5f",
+    "source_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1210415",
+    "source_host": "gov.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "active_affiliation_profile_location;manual;manual_review"
+  },
+  {
     "source_id": "src-957082b534f0",
     "source_url": "https://www.gov.kz/memleket/entities/edu/press/news/details/1260137",
     "source_host": "gov.kz",
@@ -18724,9 +18769,9 @@
     "source_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO_2026_Individual_Results_Final.pdf",
     "source_host": "ibo-info.org",
     "source_kind": "pdf",
-    "evidence_rows": 7,
+    "evidence_rows": 8,
     "people_count": 4,
-    "accepted_rows": 7,
+    "accepted_rows": 8,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
@@ -20073,7 +20118,22 @@
     "source_id": "src-80920f2a81f8",
     "source_url": "https://www.imo-official.org/results/contestant/35205/",
     "source_host": "imo-official.org",
-    "source_kind": "html",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 3,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IMO;manual"
+  },
+  {
+    "source_id": "src-842f97b8b233",
+    "source_url": "https://www.imo-official.org/results/contestant/35206/",
+    "source_host": "imo-official.org",
+    "source_kind": "web_page",
     "evidence_rows": 2,
     "people_count": 1,
     "accepted_rows": 2,
@@ -20081,23 +20141,8 @@
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IMO"
-  },
-  {
-    "source_id": "src-842f97b8b233",
-    "source_url": "https://www.imo-official.org/results/contestant/35206/",
-    "source_host": "imo-official.org",
-    "source_kind": "html",
-    "evidence_rows": 1,
-    "people_count": 1,
-    "accepted_rows": 1,
-    "supporting_rows": 0,
-    "candidate_rows": 0,
-    "superseded_rows": 0,
-    "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IMO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IMO;manual"
   },
   {
     "source_id": "src-30e42a3aa0c2",
@@ -22303,6 +22348,21 @@
     "rejected_rows": 0,
     "provenances": "manual_review",
     "source_adapters": "manual"
+  },
+  {
+    "source_id": "src-2d4b0555309f",
+    "source_url": "https://www.nis.edu.kz/ru/news/ibo-2026-nis-oqusylary-alemnin-uzdik-zas-biologtary-qatarynan-korindi",
+    "source_host": "nis.edu.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "active_affiliation_profile_location;manual;manual_review"
   },
   {
     "source_id": "src-f761578728ca",
