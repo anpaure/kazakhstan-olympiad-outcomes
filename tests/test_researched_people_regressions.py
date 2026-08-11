@@ -963,7 +963,6 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
 
     def test_scanned_chemistry_history_adds_msu_alma_maters_only(self):
         person_ids = {
-            "kaz-7774ad796e6c",
             "kaz-197ec90e92c1",
             "kaz-cffe6b9ed25e",
             "kaz-954c1033020d",
@@ -988,6 +987,51 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                         for row in self.affiliations_for(person_id)
                     )
                 )
+
+    def test_dair_nurtayev_probable_mipt_undergraduate(self):
+        person = self.people["kaz-4a80af9daaab"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(
+            person["organization"],
+            "Moscow Institute of Physics and Technology (MIPT)",
+        )
+        self.assertEqual(person["role"], "Undergraduate Student")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertIn("Dair Nurtaev", person["aliases"])
+        self.assertIn(person["organization"], self.alma_maters(person["person_id"]))
+        self.assertEqual(location["country_code"], "RU")
+        self.assertEqual(
+            location["location_label"],
+            "Dolgoprudny, Moscow Region, Russia",
+        )
+
+    def test_askerbek_zhaxylykov_probable_kazgeoservice_head(self):
+        person = self.people["kaz-7774ad796e6c"]
+        location = self.locations[person["person_id"]]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["organization"], "KAZGEOSERVICE")
+        self.assertEqual(person["role"], "Head")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertIn("Askerbek Zhaksylykov", person["aliases"])
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {
+                "Lomonosov Moscow State University (MSU)",
+                "Satbayev University",
+            },
+        )
+        self.assertTrue(
+            any(
+                row["organization"] == "Nefteprodukt Service"
+                and row["role"] == "Logistics Manager"
+                and not row["is_current"]
+                for row in affiliations
+            )
+        )
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
 
 
 if __name__ == "__main__":

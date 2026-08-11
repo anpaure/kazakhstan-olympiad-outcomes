@@ -685,5 +685,37 @@
     "review_reason": "The rare exact name, Kazakhstan physics field, and age-compatible 2006 school-Olympiad to 2010-2011 ENU student chronology support one identity. The IPhO record's unexplained Z. initial differs from the later Berikkaliyevich patronymic, so the match remains probable.",
     "evidence_url": "https://tuymaada.lensky-kray.ru/wp-content/uploads/2020/07/Tujmaada-25-years.pdf",
     "canonical_person_id": "kaz-8b1c1fe467bb"
+  },
+  {
+    "left": "Dair Nurtayev",
+    "right": "Dair Nurtayev",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2023
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The IPhO registry uses Dair Nurtayev while MIPT's first-year student roster uses the Russian surname-first form Нуртаев Даир in the immediately following academic year; the identity remains probable because neither source explicitly cross-references the other.",
+    "evidence_url": "https://lab.globaluni.ru/upload/%D0%9A%D0%B0%D1%84%D0%B5%D0%B4%D1%80%D0%B0%20%D0%BE%D0%B1%D1%89%D0%B5%D0%B9%20%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B8/%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D0%B0/%D0%A1%D0%A2%D0%9E_2024.pdf",
+    "canonical_person_id": "kaz-4a80af9daaab"
+  },
+  {
+    "left": "Askerbek Zhaxylykov",
+    "right": "Askerbek Zhaxylykov",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IChO"
+    ],
+    "left_years": [
+      1998
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The IChO registry's Zhaxylykov spelling and Kazakhstan career sources' Zhaksylykov and Cyrillic spellings refer to the same rare-name MSU chemistry alumnus from Almaty; the current executive outcome remains probable because no source explicitly mentions the IChO result.",
+    "evidence_url": "https://www.e-xecutive.ru/users/69833-askerbek-zhaksylykov",
+    "canonical_person_id": "kaz-7774ad796e6c"
   }
 ]

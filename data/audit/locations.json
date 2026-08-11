@@ -924,6 +924,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Harvard University. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-d365f3b41c17acaf",
+    "evidence_id": "ev-a61c582f98f77fec",
+    "source_id": "src-8a1678abc4e5",
+    "person_id": "kaz-7774ad796e6c",
+    "name": "Askerbek Zhaxylykov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://pk.adata.kz/counterparty/main/company/130240002623/basic-info",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The current company-registry record names Askerbek Bolatovich Zhaksylykov as head of Almaty-registered KAZGEOSERVICE, while his exact-name career profile independently says he lives and works in Almaty; the identity match remains probable."
+  },
+  {
     "location_id": "loc-fd0d7b7e0e81ec06",
     "evidence_id": "ev-ba10d61d317f79d9",
     "source_id": "src-516e4860170e",
@@ -1258,6 +1272,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "probable",
     "review_reason": "Country follows the location attached to the accepted current role at Kcell. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-2194709f539fa9ec",
+    "evidence_id": "ev-5e374b8c4e99bc56",
+    "source_id": "src-05040561425f",
+    "person_id": "kaz-4a80af9daaab",
+    "name": "Dair Nurtayev",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Dolgoprudny, Moscow Region, Russia",
+    "evidence_url": "https://old.mipt.ru/en/about/general/contacts/way.php",
+    "evidence_kind": "current_education_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the accepted active student affiliation at Moscow Institute of Physics and Technology (MIPT); the linked official institution source establishes the campus location. MIPT's official contact page identifies its main campus in Dolgoprudny in the Moscow Region of Russia."
   },
   {
     "location_id": "loc-034d46a911ec2acb",

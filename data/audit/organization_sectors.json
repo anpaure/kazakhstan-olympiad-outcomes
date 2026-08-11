@@ -588,6 +588,13 @@
     "rationale": "Reviewed organization operates Kazakhstan's national railway infrastructure."
   },
   {
+    "organization_sector_id": "sector-978a0c3b9b9badde",
+    "canonical_name": "KAZGEOSERVICE",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "Reviewed Kazakhstan registry activity is support services for oil and natural-gas extraction."
+  },
+  {
     "organization_sector_id": "sector-4114428bd7f9bf47",
     "canonical_name": "Kazkomnet",
     "organization_type": "company",
