@@ -167,7 +167,26 @@ Outputs:
 python scripts/build_outcomes_visualization.py
 ```
 
-The generator joins `data/researched_people.json`, sourced affiliation history, outcome-country evidence, organization sectors, and the normalized audit ledger into `docs/index.html`, the GitHub Pages site. Past jobs and schools participate in substring search but never destination ranking. Company and educational rankings are separate and scrollable; both rankings, the sector and country pies, coverage chart, and table recompute from the active filters. Use `--template` and `--out` to target another visualization workspace.
+The generator joins `data/researched_people.json`, sourced affiliation history, outcome-country evidence, organization sectors, and the normalized audit ledger into `docs/index.html`, the GitHub Pages site. Past jobs and schools participate in substring search but never destination ranking. Company and educational rankings are separate and scrollable; both rankings, the sector and country pies, and the table recompute from the active filters. Use `--template` and `--out` to target another visualization workspace.
+
+## Analytics
+
+The published page sends immediate pageviews to the GA4 stream
+`G-GPDVHJ29G6`, with Google Signals and advertising-personalization signals
+disabled. It also sends privacy-bounded custom events for filter and sort changes,
+first search use, language changes, chart filters, generic organization/profile/source
+opens, project-resource opens, sharing, and successful visualization startup. Custom
+event payloads contain fixed control categories and aggregate result counts; they do
+not contain search text, alumni names, organization names, profile URLs, or source
+URLs.
+
+For parameter-level reporting, register the relevant event-scoped custom dimensions
+in GA4, such as `control_name`, `control_value`, `chart_type`, `category`,
+`source_kind`, `resource_name`, `sort_mode`, and `interface_language`. GA4 Enhanced
+Measurement is configured separately in the web-stream settings. Its automatic
+Outbound clicks and File downloads events can include destination URLs, so disable
+those two toggles when the generic URL-free events above should be the only click
+telemetry.
 
 ## Optional LinkedIn Search Audit
 

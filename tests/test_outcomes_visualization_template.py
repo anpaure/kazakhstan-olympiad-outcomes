@@ -96,7 +96,7 @@ class CountryAndHistoryTest(unittest.TestCase):
         self.assertIn('<th data-i18n="almaMater">Alma mater</th>', self.template)
 
 
-class SourceAndConfidenceTest(unittest.TestCase):
+class SourceDisplayTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.template = TEMPLATE.read_text(encoding="utf-8")
@@ -108,11 +108,11 @@ class SourceAndConfidenceTest(unittest.TestCase):
         self.assertIn("anchor.setAttribute('aria-label', sourceLabel)", self.template)
         self.assertIn("icon.setAttribute('data-lucide', source.icon)", self.template)
 
-    def test_confidence_uses_an_accessible_color_dot(self):
-        self.assertIn("className = 'iso-confidence-dot'", self.template)
-        self.assertIn("translatedConfidence(person.confidence)", self.template)
-        self.assertIn("confidenceDot.setAttribute('aria-label', confidenceLabel)", self.template)
-        self.assertNotIn("confidenceCell.textContent = person.confidence", self.template)
+    def test_confidence_is_not_exposed_in_the_public_interface(self):
+        self.assertNotIn('data-control="confidence"', self.template)
+        self.assertNotIn("iso-confidence-dot", self.template)
+        self.assertNotIn('data-chart="coverage"', self.template)
+        self.assertNotIn('value="confidence"', self.template)
 
 
 class LocalizationAndShareTest(unittest.TestCase):
@@ -146,6 +146,68 @@ class LocalizationAndShareTest(unittest.TestCase):
         self.assertIn("navigator.clipboard?.writeText", self.template)
         self.assertIn("document.execCommand('copy')", self.template)
         self.assertIn("controls.share.addEventListener('click', sharePage)", self.template)
+
+
+class AnalyticsTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.template = TEMPLATE.read_text(encoding="utf-8")
+
+    def test_ga4_loads_immediately_with_advertising_signals_disabled(self):
+        self.assertIn(
+            'https://www.googletagmanager.com/gtag/js?id=G-GPDVHJ29G6',
+            self.template,
+        )
+        self.assertIn("gtag('config', 'G-GPDVHJ29G6'", self.template)
+        self.assertIn("allow_google_signals: false", self.template)
+        self.assertIn("allow_ad_personalization_signals: false", self.template)
+        self.assertNotIn("gtag('consent'", self.template)
+
+    def test_custom_events_cover_the_primary_interactions(self):
+        for event_name in (
+            "visualization_ready",
+            "filter_change",
+            "sort_change",
+            "search_used",
+            "language_change",
+            "organization_filter",
+            "chart_filter",
+            "profile_open",
+            "source_open",
+            "resource_open",
+            "page_share",
+        ):
+            self.assertIn(f"trackAnalyticsEvent('{event_name}'", self.template)
+
+    def test_custom_events_do_not_send_search_text_names_or_urls(self):
+        self.assertIn(
+            "trackAnalyticsEvent('search_used', { results_count: filteredPeople().length })",
+            self.template,
+        )
+        self.assertIn(
+            "trackAnalyticsEvent('source_open', { source_kind: source.kind })",
+            self.template,
+        )
+        self.assertNotIn("search_term:", self.template)
+        self.assertNotIn("person_name:", self.template)
+        self.assertNotIn("source_url:", self.template)
+
+
+class IntroCopyTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.template = TEMPLATE.read_text(encoding="utf-8")
+
+    def test_summary_number_cards_are_removed(self):
+        self.assertNotIn('class="viz-grid iso-summary"', self.template)
+        self.assertNotIn('data-stat="canonical"', self.template)
+        self.assertNotIn("canonicalAlumni", self.template)
+
+    def test_data_quality_disclaimer_is_localized(self):
+        self.assertIn('data-i18n="dataDisclaimer"', self.template)
+        self.assertIn("Public-source research may be incomplete", self.template)
+        self.assertIn("Данные из открытых источников могут быть неполными", self.template)
+        self.assertIn("мәліметтер толық емес", self.template)
 
 
 if __name__ == "__main__":
