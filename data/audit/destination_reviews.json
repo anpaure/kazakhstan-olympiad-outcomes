@@ -90,6 +90,21 @@
     "review_reason": "The accepted profile lists Software Engineer at UBS as current from June 2026."
   },
   {
+    "destination_review_id": "dest-review-3e2b9a8569c2fd07",
+    "evidence_id": "ev-29cf0932e978b52b",
+    "source_id": "src-f1f26f9fce25",
+    "person_id": "kaz-b695dee1b41c",
+    "name": "Amirbek Azatbekov",
+    "organization": "California Institute of Technology (Caltech)",
+    "role": "Undergraduate Student, Mathematics",
+    "affiliation_type": "education",
+    "start_year": "2026",
+    "end_year": "2030",
+    "evidence_url": "https://www.linkedin.com/in/amirbek-azatbekov-34b313386/",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "The accepted profile lists a 2026-2030 Bachelor of Science in Mathematics at Caltech and identifies Amirbek as Math at Caltech '30."
+  },
+  {
     "destination_review_id": "dest-review-91ab07c7549792d3",
     "evidence_id": "ev-8b9a3dcc6cb0a015",
     "source_id": "src-4c831ea25f6e",

@@ -391,7 +391,7 @@ src-56aea8ed1d8c,https://informburo.kz/amp/novosti/100-medalnyj-zachyot-pokazali
 src-41ec886f7a55,https://inkaraganda.kz/novosti/obshhestvo/pedagog-po-himii-iz-karagandy-podgotovil-bolee-10-pobeditelej-mezhdunarodnyh-intellektualnyh-sorevnovanij/,inkaraganda.kz,web_page,4,1,2,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,career_source_location;destination_review;destination_source_review;manual
 src-019b1989c484,https://international.binus.ac.id/binus-people/zhandos-yessenbayev-b-sc-m-sc-ph-d/,international.binus.ac.id,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-bb822569e353,https://ipbb.kz/eng/ap-09260382-superviser-sapakhova-z/,ipbb.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
-src-ad74ea491705,https://ipho-unofficial.org/countries/KAZ/individual,ipho-unofficial.org,web_page,158,89,152,0,0,6,0,manual_review;participant_registry,IPhO;manual
+src-ad74ea491705,https://ipho-unofficial.org/countries/KAZ/individual,ipho-unofficial.org,web_page,159,89,153,0,0,6,0,manual_review;participant_registry,IPhO;manual
 src-0684ad15873b,https://ipho-unofficial.org/timeline/2007/individual,ipho-unofficial.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-acb4f475b8fd,https://ipho-unofficial.org/timeline/2010/individual,ipho-unofficial.org,web_page,2,2,2,0,0,0,0,manual_review,manual
 src-961bc0297b2b,https://ipho-unofficial.org/timeline/2012/individual,ipho-unofficial.org,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -510,7 +510,6 @@ src-47e99e22d92c,https://linkedin.com/in/almaz-rakhmetov-a2451223,linkedin.com,l
 src-c20fd13991b7,https://linkedin.com/in/aman-sariyev,linkedin.com,linkedin,10,1,2,8,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin;manual;manual_review
 src-0d775af43697,https://linkedin.com/in/aman-sariyev-49158475,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-5b93715c63c3,https://linkedin.com/in/amir-tulegenov,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
-src-7bdb1d146810,https://linkedin.com/in/amirbek-azatbekov-34b313386,linkedin.com,linkedin,5,1,2,3,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin;manual;manual_review
 src-b9ed9d0ffd88,https://linkedin.com/in/amirbralin,linkedin.com,linkedin,8,1,1,7,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
 src-e5f994dcf744,https://linkedin.com/in/andrey-drobakha-25812a111,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-8e1cd3407f0e,https://linkedin.com/in/andrey-jigalov-256b7a39,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
@@ -1214,7 +1213,7 @@ src-1f99e3323987,https://www.armeta.ai/company/team/,armeta.ai,web_page,2,1,1,1,
 src-a79584fd2fbb,https://www.bankofcanada.ca/profile/iskander-karibzhanov/,bankofcanada.ca,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-bd7156e340c8,https://www.bc.edu/content/bc-web/schools/morrissey/departments/chemistry/research-labs/Hoveyda-research-group/people.html,bc.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_alumni_record
 src-d1ced10055ef,https://www.brandeis.edu/biology/faculty/kurmangaliyev-yerbol.html,brandeis.edu,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
-src-385c85371c70,https://www.caltech.edu/about/visit,caltech.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
+src-385c85371c70,https://www.caltech.edu/about/visit,caltech.edu,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
 src-f902c5259f1c,https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work/visiting-the-university,cam.ac.uk,web_page,3,3,0,3,0,0,0,accepted_location_evidence,current_education_location
 src-1a358d79c355,https://www.caravan.kz/gazeta/beregi-mozgi-smolodu-384231/,caravan.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-19b5bc0b1ae1,https://www.chem.msu.ru/rus/olimpiad/olimp001/silka5.htm,chem.msu.ru,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -1444,6 +1443,7 @@ src-92f9a6edc4d6,https://www.linkedin.com/in/ali-amir-aldan-a2b81b46,linkedin.co
 src-d3d38cd440ba,https://www.linkedin.com/in/alibek-a-124731244/,linkedin.com,linkedin,9,1,0,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;linkedin;manual_profile_transcription
 src-f9f57444847d,https://www.linkedin.com/in/almira-nurlanova-a6777727a,linkedin.com,linkedin,10,1,2,8,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin;manual;manual_review
 src-87349f5171ee,https://www.linkedin.com/in/altynay-narmanova-36507b65,linkedin.com,linkedin,13,1,1,12,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual;manual_review
+src-f1f26f9fce25,https://www.linkedin.com/in/amirbek-azatbekov-34b313386/,linkedin.com,linkedin,6,1,2,4,0,0,0,accepted_affiliation_history;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;destination_review;destination_source_review;linkedin;manual;manual_profile_transcription
 src-99cafe4eae19,https://www.linkedin.com/in/anmorgunov,linkedin.com,linkedin,15,1,0,15,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin
 src-cf812b5a2a98,https://www.linkedin.com/in/arman-shaninov-6950b7132,linkedin.com,linkedin,4,1,1,3,0,0,0,accepted_affiliation_history;manual_review,manual;manual_profile_transcription;manual_review
 src-9b88ab9ace30,https://www.linkedin.com/in/askarbek-orakov,linkedin.com,linkedin,13,1,0,13,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin

@@ -672,6 +672,20 @@
     "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
   },
   {
+    "location_id": "loc-e965b71d9b93cf51",
+    "evidence_id": "ev-340acba62d70365b",
+    "source_id": "src-385c85371c70",
+    "person_id": "kaz-b695dee1b41c",
+    "name": "Amirbek Azatbekov",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Pasadena, California, United States",
+    "evidence_url": "https://www.caltech.edu/about/visit",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at California Institute of Technology (Caltech); the linked official institution source establishes the campus location. Caltech's official visitor page identifies its Pasadena campus."
+  },
+  {
     "location_id": "loc-a877b3ea69c272ce",
     "evidence_id": "ev-1f99a32cd68aaff9",
     "source_id": "src-32da6b2ab604",

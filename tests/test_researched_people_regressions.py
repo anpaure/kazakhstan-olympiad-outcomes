@@ -528,6 +528,12 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
 
     def test_2024_medalists_current_university_destinations(self):
         expected = {
+            "kaz-b695dee1b41c": (
+                "California Institute of Technology (Caltech)",
+                "Undergraduate Student, Mathematics",
+                "US",
+                "Pasadena, California, United States",
+            ),
             "kaz-00a1687b2b23": (
                 "Korea Advanced Institute of Science and Technology (KAIST)",
                 "Undergraduate Student, Chemistry",
@@ -572,6 +578,10 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(
             self.people["kaz-00a1687b2b23"]["linkedin_url"],
             "https://www.linkedin.com/in/lonelylull/",
+        )
+        self.assertEqual(
+            self.people["kaz-b695dee1b41c"]["linkedin_url"],
+            "https://www.linkedin.com/in/amirbek-azatbekov-34b313386/",
         )
 
     def test_baurzhan_urgunshbayev_probable_metaphora_outcome(self):

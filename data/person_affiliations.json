@@ -6362,17 +6362,17 @@
   {
     "person_id": "kaz-b695dee1b41c",
     "name": "Amirbek Azatbekov",
-    "organization": "Nazarbayev Intellectual Schools (NIS)",
-    "role": "High School Graduate",
+    "organization": "California Institute of Technology (Caltech)",
+    "role": "Undergraduate Student, Mathematics",
     "affiliation_type": "education",
-    "start_year": "2020",
-    "end_year": "2026",
+    "start_year": "2026",
+    "end_year": "2030",
     "is_current": true,
-    "selected_as_alma_mater": false,
-    "evidence_url": "https://linkedin.com/in/amirbek-azatbekov-34b313386",
-    "evidence_kind": "manual_review",
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.linkedin.com/in/amirbek-azatbekov-34b313386/",
+    "evidence_kind": "destination_source_review",
     "confidence": "confirmed",
-    "evidence_text": "His self-authored exact-name Kazakhstan profile explicitly lists the July 2025 IPhO silver medal and a 2020-2026 Nazarbayev Intellectual Schools education; the official country record independently confirms his Kazakhstan IPhO participation"
+    "evidence_text": "The accepted profile lists a 2026-2030 Bachelor of Science in Mathematics at Caltech and identifies Amirbek as Math at Caltech '30."
   },
   {
     "person_id": "kaz-b695dee1b41c",
@@ -6384,10 +6384,25 @@
     "end_year": "2026",
     "is_current": false,
     "evidence_text": "[Nazarbayev Intellectual Schools](https://www.linkedin.com/school/nazarbayev-intellectual-schools) 2020 - 2026 (6 years) in Astana, Kazakhstan Nazarbayev Intellectual Schools is an educational institution. Nazarbayev Intellectual Schools has 300-400 employees (+10% YoY), founded in 2009. Headquartered in Astana, Kazakhstan. Its workforce is distributed across 18 countries (including Kazakhstan, United States, Philippines, United Kingdom, and China). Research output of 60-70 works, primarily in S",
-    "selected_as_alma_mater": true,
-    "evidence_url": "https://linkedin.com/in/amirbek-azatbekov-34b313386",
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://www.linkedin.com/in/amirbek-azatbekov-34b313386/",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-b695dee1b41c",
+    "name": "Amirbek Azatbekov",
+    "organization": "Nazarbayev Intellectual Schools (NIS)",
+    "role": "High School Graduate",
+    "affiliation_type": "education",
+    "start_year": "2020",
+    "end_year": "2026",
+    "is_current": false,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://www.linkedin.com/in/amirbek-azatbekov-34b313386/",
+    "evidence_kind": "manual_profile_transcription",
+    "confidence": "confirmed",
+    "evidence_text": "The accepted profile lists Nazarbayev Intellectual Schools from 2020 through 2026 before Amirbek's 2026-2030 Caltech mathematics degree."
   },
   {
     "person_id": "kaz-f85457929c5d",
