@@ -486,6 +486,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-493fe1395c987793",
+    "alias": "BCC INVEST",
+    "canonical_name": "BCC Invest",
+    "display_name": "BCC Invest",
+    "merge_type": "capitalization_variant",
+    "rationale": "Uppercase label on the reviewed historical executive profile normalized to the current brand styling.",
+    "evidence_url": "https://www.e-xecutive.ru/users/389062-talap-akashev"
+  },
+  {
     "organization_alias_id": "org-877a3dfb8f44887c",
     "alias": "Beeline Kazakhstan",
     "canonical_name": "Beeline",

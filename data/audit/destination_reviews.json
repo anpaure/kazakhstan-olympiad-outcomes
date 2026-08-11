@@ -555,6 +555,21 @@
     "review_reason": "The accepted profile lists the Russian title Director of Information Technology at BI Group as current from August 2025."
   },
   {
+    "destination_review_id": "dest-review-a6e86e00d6dfb2e1",
+    "evidence_id": "ev-f6cb70dc20a182b8",
+    "source_id": "src-21fd73d05ac2",
+    "person_id": "kaz-68b763708761",
+    "name": "Talap Akashev",
+    "organization": "BCC Invest",
+    "role": "Director, Trading Operations Department",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "2020",
+    "evidence_url": "https://kase.kz/files/emitters/BCCI/bccirbf7_2020.pdf",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "The exact-name executive profile supplies Talap's historical BCC Invest role, while BCC Invest's official staffing disclosure as of 1 December 2020 names a different director of trading operations. The displayed role is therefore bounded as ended by 2020 and is not treated as current."
+  },
+  {
     "destination_review_id": "dest-review-307114ae2fe5e1c6",
     "evidence_id": "ev-e08f18bd802121bc",
     "source_id": "src-fcc406487429",

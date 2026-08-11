@@ -147,6 +147,13 @@
     "rationale": "Reviewed organization is Canada's central bank."
   },
   {
+    "organization_sector_id": "sector-22c7248e7089e824",
+    "canonical_name": "BCC Invest",
+    "organization_type": "company",
+    "sector": "Finance & Insurance",
+    "rationale": "The reviewed profile describes a broker-dealer and investment-management business operating in Kazakhstan's securities market."
+  },
+  {
     "organization_sector_id": "sector-4a9fd724c053652c",
     "canonical_name": "Beeline",
     "organization_type": "company",

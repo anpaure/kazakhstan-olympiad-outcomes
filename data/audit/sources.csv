@@ -224,7 +224,7 @@ src-d46ca9078269,https://github.com/AdiletNZ,github.com,structured_profile,1,1,0
 src-616abbb8102a,https://github.com/AdilkhanSarsen,github.com,structured_profile,5,1,1,2,0,2,0,accepted_affiliation_history;manual_review;structured_affiliation;structured_identity,accepted_github;github;manual;manual_review
 src-8baa0b51fe24,https://github.com/AdilzhanIsmailov,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-21ddce4ad164,https://github.com/AibekMI,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
-src-dd086019f627,https://github.com/Alexander-S-Zaitsev,github.com,structured_profile,1,1,0,0,1,0,0,structured_identity,github
+src-dd086019f627,https://github.com/Alexander-S-Zaitsev,github.com,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,github;manual
 src-881ae63d51ea,https://github.com/AntonMorgunov,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-d5b46a6f3426,https://github.com/Ascarbek,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-1512709e4a68,https://github.com/Askarbek-orakov,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
@@ -263,7 +263,7 @@ src-c5408dc5bd34,https://github.com/Zhanadil,github.com,structured_profile,3,1,0
 src-cec121c789e8,https://github.com/adilzhan-ismailov-depop,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
 src-83ce6d683ede,https://github.com/adolkhan,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-f7b219e4d930,https://github.com/aismlv,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
-src-5130f51da336,https://github.com/akyzalax1,github.com,structured_profile,1,1,0,0,1,0,0,structured_identity,github
+src-5130f51da336,https://github.com/akyzalax1,github.com,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,github;manual
 src-163aebfbaf68,https://github.com/alihuuuntr,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
 src-059e373d75c8,https://github.com/allbackoff,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-e01d98e9eb80,https://github.com/amgenesis,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
@@ -281,7 +281,7 @@ src-0d195d78d910,https://github.com/chizhik,github.com,structured_profile,2,1,0,
 src-de65dda6f9bd,https://github.com/daniil-melnichenko,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
 src-9d38df492a16,https://github.com/daniilmelnichenko,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
 src-d74e7ce46b58,https://github.com/daniyarzt,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
-src-0d43024abc41,https://github.com/dankikot,github.com,structured_profile,1,1,0,0,1,0,0,structured_identity,github
+src-0d43024abc41,https://github.com/dankikot,github.com,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,github;manual
 src-c2643c1fb99c,https://github.com/daulet,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
 src-38311a8a7a8e,https://github.com/daulet-askarov,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-b566d1eb7d42,https://github.com/daulettoibazar,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
@@ -337,7 +337,7 @@ src-9cc84044f26c,https://github.com/ovchinnikov7,github.com,structured_profile,1
 src-26639d6d48bf,https://github.com/pcheliniy,github.com,structured_profile,1,1,0,0,1,0,0,structured_identity,github
 src-e167bd719423,https://github.com/persolok,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-3f18d616d6ef,https://github.com/rolang,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
-src-707a870642a5,https://github.com/rudy-it-front,github.com,structured_profile,1,1,0,0,1,0,0,structured_identity,github
+src-707a870642a5,https://github.com/rudy-it-front,github.com,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,github;manual
 src-d7fc262e5d45,https://github.com/sanzharkz,github.com,structured_profile,3,1,0,1,2,0,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_github;github
 src-54fa0f51436d,https://github.com/sanzharo,github.com,structured_profile,3,1,1,1,1,0,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_github;github
 src-446800990642,https://github.com/scarykidus,github.com,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,github;manual
@@ -414,6 +414,7 @@ src-f5729a60f72c,https://izdatelstvo-sk.kz/news/v-sko-sistemnaya-poddergka-talan
 src-424a1de8593c,https://izho.kz/contest/results-izho-2022/,izho.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-25439f5c3ac7,https://jeetain.wixsite.com/mittal-lab/news,jeetain.wixsite.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-f5be315e0d71,https://jeetain.wixsite.com/mittal-lab/people,jeetain.wixsite.com,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_profile
+src-21fd73d05ac2,https://kase.kz/files/emitters/BCCI/bccirbf7_2020.pdf,kase.kz,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_destination_reconciliation,destination_review;destination_source_review
 src-e69b56da2aec,https://kaz.inform.kz/news/halykaralyk-pan-olimpiadalarynyn-tarbielik-mani-zor-maman_a3969819/,kaz.inform.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-99f2cffb2800,https://kazpravda.kz/n/uchebnik-s-avtografom/,kazpravda.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-61e69434c22c,https://kazpravda.kz/n/v-tope-rezervistov/,kazpravda.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,biographical_profile
@@ -788,7 +789,7 @@ src-27715c3caaa6,https://orcid.org/0000-0001-5975-0322,orcid.org,structured_prof
 src-cbf93ae9df88,https://orcid.org/0000-0001-5996-2296,orcid.org,structured_profile,2,1,0,0,2,0,0,structured_affiliation;structured_identity,orcid
 src-b728d31dc777,https://orcid.org/0000-0001-6068-035X,orcid.org,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,manual;orcid
 src-026390429df2,https://orcid.org/0000-0001-6181-572X,orcid.org,structured_profile,1,1,0,0,0,1,0,structured_identity,orcid
-src-a7eee4d15149,https://orcid.org/0000-0001-6239-6782,orcid.org,structured_profile,1,1,0,0,1,0,0,structured_identity,orcid
+src-a7eee4d15149,https://orcid.org/0000-0001-6239-6782,orcid.org,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,manual;orcid
 src-83134338828e,https://orcid.org/0000-0001-6334-1441,orcid.org,structured_profile,1,1,0,0,0,1,0,structured_identity,orcid
 src-36444bec487a,https://orcid.org/0000-0001-6553-8133,orcid.org,structured_profile,1,1,0,0,1,0,0,structured_identity,orcid
 src-4865a6f69107,https://orcid.org/0000-0001-6563-802X,orcid.org,structured_profile,17,1,0,8,0,9,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_orcid;orcid
@@ -810,7 +811,7 @@ src-1547ee7d789d,https://orcid.org/0000-0001-7978-9558,orcid.org,structured_prof
 src-3b6fa05c2eea,https://orcid.org/0000-0001-8119-6831,orcid.org,structured_profile,2,1,0,0,2,0,0,structured_affiliation;structured_identity,orcid
 src-1b7ecef5924a,https://orcid.org/0000-0001-8206-2915,orcid.org,structured_profile,1,1,0,0,1,0,0,structured_identity,orcid
 src-13094a95b8aa,https://orcid.org/0000-0001-8228-872X,orcid.org,structured_profile,1,1,0,0,0,1,0,structured_identity,orcid
-src-a9535f70898a,https://orcid.org/0000-0001-8370-5556,orcid.org,structured_profile,3,1,0,0,3,0,0,structured_affiliation;structured_identity,orcid
+src-a9535f70898a,https://orcid.org/0000-0001-8370-5556,orcid.org,structured_profile,4,1,0,0,0,0,4,review_rejection;structured_affiliation;structured_identity,manual;orcid
 src-cba0f92095a3,https://orcid.org/0000-0001-8603-0136,orcid.org,structured_profile,5,1,0,2,0,3,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_openalex_orcid;openalex_orcid;orcid
 src-1c931842a8f1,https://orcid.org/0000-0001-8631-3515,orcid.org,structured_profile,1,1,0,0,0,1,0,structured_identity,orcid
 src-5495d397b322,https://orcid.org/0000-0001-8804-2333,orcid.org,structured_profile,1,1,0,0,1,0,0,structured_identity,orcid
@@ -844,9 +845,9 @@ src-8dfef48b44f2,https://orcid.org/0000-0002-3187-6190,orcid.org,structured_prof
 src-9a5501de414c,https://orcid.org/0000-0002-3215-3154,orcid.org,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,orcid
 src-e1817918d831,https://orcid.org/0000-0002-3422-5043,orcid.org,structured_profile,1,1,0,0,0,1,0,structured_identity,orcid
 src-03bfe738ed33,https://orcid.org/0000-0002-3563-2644,orcid.org,structured_profile,1,1,0,0,0,1,0,structured_identity,orcid
-src-aecc399ae8ad,https://orcid.org/0000-0002-3631-121X,orcid.org,structured_profile,2,1,0,0,2,0,0,structured_affiliation;structured_identity,orcid
+src-aecc399ae8ad,https://orcid.org/0000-0002-3631-121X,orcid.org,structured_profile,3,1,0,0,0,0,3,review_rejection;structured_affiliation;structured_identity,manual;orcid
 src-1a107860a04b,https://orcid.org/0000-0002-3893-2618,orcid.org,structured_profile,1,1,0,0,0,1,0,structured_identity,orcid
-src-409812b52867,https://orcid.org/0000-0002-4104-8276,orcid.org,structured_profile,1,1,0,0,1,0,0,structured_identity,orcid
+src-409812b52867,https://orcid.org/0000-0002-4104-8276,orcid.org,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,manual;orcid
 src-6635715920d3,https://orcid.org/0000-0002-4285-5598,orcid.org,structured_profile,9,1,0,0,0,9,0,structured_affiliation;structured_identity,orcid
 src-0a6a3e22dc5c,https://orcid.org/0000-0002-4450-8776,orcid.org,structured_profile,1,1,0,0,0,1,0,structured_identity,orcid
 src-d8b331fe09d4,https://orcid.org/0000-0002-4467-8038,orcid.org,structured_profile,1,1,0,0,0,1,0,structured_identity,orcid
@@ -881,7 +882,7 @@ src-115f80b4592b,https://orcid.org/0000-0002-7398-7630,orcid.org,structured_prof
 src-7b0f46d21212,https://orcid.org/0000-0002-7512-9672,orcid.org,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,orcid
 src-cd262917b0da,https://orcid.org/0000-0002-7684-2023,orcid.org,structured_profile,6,1,0,0,0,6,0,structured_affiliation;structured_identity,orcid
 src-be1f2599f4e9,https://orcid.org/0000-0002-7784-8961,orcid.org,structured_profile,1,1,0,0,0,1,0,structured_identity,orcid
-src-45f589345539,https://orcid.org/0000-0002-8196-3348,orcid.org,structured_profile,1,1,1,0,0,0,0,structured_identity,orcid
+src-45f589345539,https://orcid.org/0000-0002-8196-3348,orcid.org,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,manual;orcid
 src-2efaf583f082,https://orcid.org/0000-0002-8329-7481,orcid.org,structured_profile,3,1,0,1,0,2,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_openalex_orcid;openalex_orcid;orcid
 src-027487be89f5,https://orcid.org/0000-0002-8352-2597,orcid.org,structured_profile,13,1,0,6,0,7,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_openalex_orcid;openalex_orcid;orcid
 src-e944d2c5474d,https://orcid.org/0000-0002-8420-6166,orcid.org,structured_profile,1,1,0,0,0,1,0,structured_identity,orcid
@@ -969,7 +970,7 @@ src-08935c9e3ec3,https://orcid.org/0009-0006-8959-5339,orcid.org,structured_prof
 src-00cf358fe9f1,https://orcid.org/0009-0006-9829-4845,orcid.org,structured_profile,1,1,0,0,0,1,0,structured_identity,orcid
 src-d3eeda143494,https://orcid.org/0009-0007-2163-524X,orcid.org,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,orcid
 src-3540a4510946,https://orcid.org/0009-0007-2656-9739,orcid.org,structured_profile,4,1,2,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;structured_affiliation;structured_identity,accepted_orcid;affiliation_country;orcid
-src-d46cc39833f6,https://orcid.org/0009-0007-3813-2243,orcid.org,structured_profile,1,1,0,0,1,0,0,structured_identity,orcid
+src-d46cc39833f6,https://orcid.org/0009-0007-3813-2243,orcid.org,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,manual;orcid
 src-196202976b60,https://orcid.org/0009-0007-6708-1094,orcid.org,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,orcid
 src-7d10ebe9cbac,https://orcid.org/0009-0007-7163-4771,orcid.org,structured_profile,3,1,0,1,0,2,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_orcid;orcid
 src-c472fd90dbad,https://orcid.org/0009-0007-7624-3104,orcid.org,structured_profile,5,1,0,2,0,3,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_orcid;orcid
@@ -1026,7 +1027,7 @@ src-0a9bf849aaef,https://research.nu.edu.kz/en/persons/kuanysh-yergaliyev,resear
 src-2d44d50b614b,https://research.nu.edu.kz/en/persons/meiram-murzabulatov/,research.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-f33bb7a68ec2,https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/,research.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-c4f8fcc141d4,https://research.utwente.nl/en/publications/nondeterminism-in-stochastic-modeling/,research.utwente.nl,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_research_record
-src-37ad3b1b2b31,https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf,rmebrk.kz,pdf,5,5,1,4,0,0,0,accepted_affiliation_history;manual_review,manual;reviewed_olympiad_destination_table
+src-37ad3b1b2b31,https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf,rmebrk.kz,pdf,4,4,1,3,0,0,0,accepted_affiliation_history;manual_review,manual;reviewed_olympiad_destination_table
 src-d8b3f3b80991,https://ru.linkedin.com/in/david-li-ab07b332b,ru.linkedin.com,linkedin,9,1,1,8,0,0,0,accepted_affiliation_history;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;destination_review;destination_source_review;linkedin
 src-9a4331ccb368,https://ru.linkedin.com/in/kirillmaerle,ru.linkedin.com,linkedin,1,1,0,1,0,0,0,accepted_affiliation_history,manual_public_profile
 src-44bb12ca61c5,https://ru.linkedin.com/posts/armansu_%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-imo-ioi-ipho-icho-activity-7333479882347143169-f6Y2,ru.linkedin.com,linkedin,1,1,0,0,0,1,0,manual_review,manual
@@ -1241,7 +1242,9 @@ src-0e7c72f6eeaf,https://www.cuhk.edu.hk/english/campus/cuhk-campus.html,cuhk.ed
 src-f158d3388a7b,https://www.damir.xyz/,damir.xyz,web_page,4,1,1,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review;self_authored_academic_profile
 src-332912e0dde4,https://www.datacamp.com/portfolio/yerkekz,datacamp.com,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review;self_authored_portfolio
 src-d6b6fccb53ed,https://www.dnb.com/business-directory/company-profiles.ceptah_solutions_pty_ltd.6d2cbb94973965a2a5a472d5d4547de2.html,dnb.com,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
+src-acf8ebeb51bc,https://www.e-xecutive.ru/users/389062-talap-akashev,e-xecutive.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-8db77efd68e9,https://www.e-xecutive.ru/users/69833-askerbek-zhaksylykov,e-xecutive.ru,web_page,3,1,0,3,0,0,0,accepted_affiliation_history,self_authored_career_profile
+src-4a8afd906db6,https://www.econ.msu.ru/news/News.20120206_1235/,econ.msu.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_student_record
 src-f14b667aec2c,https://www.ens.psl.eu/en/contact,ens.psl.eu,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
 src-4c5e2a14907c,https://www.ens.psl.eu/sites/default/files/admis-et-lc-bo2026_signe.pdf,ens.psl.eu,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-4aa6dadbee40,https://www.epfl.ch/campus/visitors/coming-to-epfl/,epfl.ch,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
@@ -1259,6 +1262,8 @@ src-cf0e9c93132d,https://www.gov.kz/memleket/entities/edu/press/news/details/126
 src-8064153e41f4,https://www.gov.kz/memleket/entities/maidd/press/news/details/1189055?lang=ru,gov.kz,web_page,6,2,4,2,0,0,0,accepted_affiliation_history;manual_destination_reconciliation;manual_review,destination_review;destination_source_review;manual
 src-5a1c49e54448,https://www.gov.kz/memleket/entities/transport/press/news/details/882464?lang=ru,gov.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-3157f5b4c740,https://www.haileybury.kz/en/almaty/board-of-governors,haileybury.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-b34cd7c55bea,https://www.hec.edu/en/master-s-programs/profiles/ayana-badrakova,hec.edu,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-5fe835c08081,https://www.hec.edu/en/masters-programs/MSc-International-Finance/careers/alumni-profiles,hec.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_alumni_profile
 src-be8d30c8e695,https://www.hku.hk/visit/maps_contact.html,hku.hk,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-807ffbb9186d,https://www.hse.ru/edu/vkr/367645765,hse.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_thesis
 src-7c00a4b14ab9,https://www.hse.ru/news/edu/223610496.html,hse.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -1291,6 +1296,7 @@ src-de6837f0122e,https://www.ibo-info.org/files/downloads/results-reports/result
 src-7ab5eaf6b98a,https://www.ibo-info.org/files/downloads/results-reports/results/IBO_2026_Individual_Results_Final.pdf,ibo-info.org,pdf,8,4,8,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-a99f07f5f774,https://www.icho-official.org/results/country_info.php?country=Kazakhstan,icho-official.org,html,72,46,68,0,0,4,0,manual_review;participant_registry,IChO;manual
 src-9c080dac45dd,https://www.icho-official.org/results/results.php?id=38&year=2006,icho-official.org,web_page,2,2,2,0,0,0,0,manual_review,manual
+src-530412d8f9ea,https://www.icho-official.org/results/results.php?id=39&year=2007,icho-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-76b64419479c,https://www.igps.uni-hannover.de/en/research/main-research-areas/phytomedicine/publications,igps.uni-hannover.de,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-07dcec04ee8a,https://www.imo-official.org/country_individual_r.aspx?code=KAZ,imo-official.org,web_page,2,2,2,0,0,0,0,manual_review,manual
 src-66ed7c0a4f6a,https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=name&order=desc,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -1402,7 +1408,7 @@ src-4fccbce452c9,https://www.imo-official.org/results/contestant/4695/,imo-offic
 src-37b9f2c5ff1a,https://www.imo-official.org/results/contestant/4800/,imo-official.org,html,2,1,2,0,0,0,0,participant_registry,IMO
 src-e15eb31217e8,https://www.imo-official.org/results/contestant/4857/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
 src-658146618d58,https://www.imo-official.org/results/contestant/4858/,imo-official.org,html,3,1,3,0,0,0,0,participant_registry,IMO
-src-fd27ab95847c,https://www.imo-official.org/results/contestant/4896/,imo-official.org,html,2,1,2,0,0,0,0,participant_registry,IMO
+src-fd27ab95847c,https://www.imo-official.org/results/contestant/4896/,imo-official.org,web_page,3,1,3,0,0,0,0,manual_review;participant_registry,IMO;manual
 src-87808036b4c4,https://www.imo-official.org/results/contestant/4924/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
 src-4afc42ce0066,https://www.imo-official.org/results/contestant/4962/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
 src-95ba59dfa1bf,https://www.imo-official.org/results/contestant/5288/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
@@ -1592,7 +1598,7 @@ src-db7876148352,https://www.wikidata.org/wiki/Q102430205,wikidata.org,structure
 src-0e0876c0a56e,https://www.wikidata.org/wiki/Q102563456,wikidata.org,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,wikidata
 src-bf1e36f51723,https://www.wikidata.org/wiki/Q102796161,wikidata.org,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,wikidata
 src-825463c501e6,https://www.wikidata.org/wiki/Q103160537,wikidata.org,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,wikidata
-src-b195204b86fb,https://www.wikidata.org/wiki/Q105406312,wikidata.org,structured_profile,2,1,0,0,2,0,0,structured_affiliation;structured_identity,wikidata
+src-b195204b86fb,https://www.wikidata.org/wiki/Q105406312,wikidata.org,structured_profile,3,1,0,0,0,0,3,review_rejection;structured_affiliation;structured_identity,manual;wikidata
 src-f6511eb4efad,https://www.wikidata.org/wiki/Q105523474,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
 src-5112ee614ead,https://www.wikidata.org/wiki/Q107277515,wikidata.org,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,wikidata
 src-698628401f6b,https://www.wikidata.org/wiki/Q116196233,wikidata.org,structured_profile,3,1,0,0,0,3,0,structured_affiliation;structured_identity,wikidata
@@ -1603,7 +1609,7 @@ src-7c2161581ef7,https://www.wikidata.org/wiki/Q123244419,wikidata.org,structure
 src-5f596046614d,https://www.wikidata.org/wiki/Q123700015,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
 src-fba41c93f9b6,https://www.wikidata.org/wiki/Q12538435,wikidata.org,structured_profile,3,1,0,0,3,0,0,structured_affiliation;structured_identity,wikidata
 src-0def77ef32fc,https://www.wikidata.org/wiki/Q125906193,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
-src-9a9e89460085,https://www.wikidata.org/wiki/Q1339147,wikidata.org,structured_profile,1,1,0,0,1,0,0,structured_identity,wikidata
+src-9a9e89460085,https://www.wikidata.org/wiki/Q1339147,wikidata.org,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,manual;wikidata
 src-819350a2afee,https://www.wikidata.org/wiki/Q135258838,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
 src-d59e61a80eb3,https://www.wikidata.org/wiki/Q136616370,wikidata.org,structured_profile,1,1,0,0,1,0,0,structured_identity,wikidata
 src-50516994395b,https://www.wikidata.org/wiki/Q17617042,wikidata.org,structured_profile,3,1,0,0,0,3,0,structured_affiliation;structured_identity,wikidata
@@ -1611,7 +1617,7 @@ src-95dca7db750d,https://www.wikidata.org/wiki/Q18634139,wikidata.org,structured
 src-14f32dab5808,https://www.wikidata.org/wiki/Q21091867,wikidata.org,structured_profile,3,1,0,0,0,3,0,structured_affiliation;structured_identity,wikidata
 src-8469ab42ad9f,https://www.wikidata.org/wiki/Q24025801,wikidata.org,structured_profile,2,1,0,0,2,0,0,structured_affiliation;structured_identity,wikidata
 src-e6cf62f210eb,https://www.wikidata.org/wiki/Q25647148,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
-src-e6c235909a5c,https://www.wikidata.org/wiki/Q27534513,wikidata.org,structured_profile,1,1,0,0,1,0,0,structured_identity,wikidata
+src-e6c235909a5c,https://www.wikidata.org/wiki/Q27534513,wikidata.org,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,manual;wikidata
 src-a33f375689fe,https://www.wikidata.org/wiki/Q4101303,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
 src-ea6b0f396afa,https://www.wikidata.org/wiki/Q4101304,wikidata.org,structured_profile,4,1,0,0,0,4,0,structured_affiliation;structured_identity,wikidata
 src-e3cb89514f6b,https://www.wikidata.org/wiki/Q4320113,wikidata.org,structured_profile,1,1,0,0,1,0,0,structured_identity,wikidata
@@ -1623,19 +1629,19 @@ src-ed4e063782ab,https://www.wikidata.org/wiki/Q5236581,wikidata.org,structured_
 src-54566ecc818c,https://www.wikidata.org/wiki/Q5257292,wikidata.org,structured_profile,1,1,0,0,1,0,0,structured_identity,wikidata
 src-10a67d184981,https://www.wikidata.org/wiki/Q55653013,wikidata.org,structured_profile,1,1,0,0,1,0,0,structured_identity,wikidata
 src-1ceb1238b227,https://www.wikidata.org/wiki/Q57010419,wikidata.org,structured_profile,4,1,0,0,0,4,0,structured_affiliation;structured_identity,wikidata
-src-1e71be293c66,https://www.wikidata.org/wiki/Q57964706,wikidata.org,structured_profile,1,1,0,0,1,0,0,structured_identity,wikidata
+src-1e71be293c66,https://www.wikidata.org/wiki/Q57964706,wikidata.org,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,manual;wikidata
 src-23c904bb8074,https://www.wikidata.org/wiki/Q59315209,wikidata.org,structured_profile,1,1,0,0,1,0,0,structured_identity,wikidata
 src-6319a6be1fb4,https://www.wikidata.org/wiki/Q59662365,wikidata.org,structured_profile,3,1,0,0,0,3,0,structured_affiliation;structured_identity,wikidata
 src-16f5531ecc77,https://www.wikidata.org/wiki/Q59751301,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
-src-22a34956ab0c,https://www.wikidata.org/wiki/Q614069,wikidata.org,structured_profile,2,1,0,0,2,0,0,structured_affiliation;structured_identity,wikidata
+src-22a34956ab0c,https://www.wikidata.org/wiki/Q614069,wikidata.org,structured_profile,3,1,0,0,0,0,3,review_rejection;structured_affiliation;structured_identity,manual;wikidata
 src-840c5db00304,https://www.wikidata.org/wiki/Q62036345,wikidata.org,structured_profile,2,1,0,0,2,0,0,structured_affiliation;structured_identity,wikidata
 src-e8e92dc14ad8,https://www.wikidata.org/wiki/Q62626570,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
 src-e8feb66d6fb1,https://www.wikidata.org/wiki/Q64897135,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
 src-c62122e22ed0,https://www.wikidata.org/wiki/Q71317135,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
-src-20551c9b74eb,https://www.wikidata.org/wiki/Q85860396,wikidata.org,structured_profile,1,1,0,0,1,0,0,structured_identity,wikidata
+src-20551c9b74eb,https://www.wikidata.org/wiki/Q85860396,wikidata.org,structured_profile,2,1,0,0,0,0,2,review_rejection;structured_identity,manual;wikidata
 src-0ff7dbf1804e,https://www.wikidata.org/wiki/Q86774060,wikidata.org,structured_profile,4,1,0,0,0,0,4,review_rejection;structured_affiliation;structured_identity,manual;wikidata
 src-30d0612123d2,https://www.wikidata.org/wiki/Q87393898,wikidata.org,structured_profile,1,1,0,0,1,0,0,structured_identity,wikidata
-src-1f893f990e9d,https://www.wikidata.org/wiki/Q88011307,wikidata.org,structured_profile,2,1,0,0,2,0,0,structured_affiliation;structured_identity,wikidata
+src-1f893f990e9d,https://www.wikidata.org/wiki/Q88011307,wikidata.org,structured_profile,3,1,0,0,0,0,3,review_rejection;structured_affiliation;structured_identity,manual;wikidata
 src-e38d5c469e19,https://www.wikidata.org/wiki/Q88064254,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
 src-be61f3a1dc3e,https://www.wikidata.org/wiki/Q88184480,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
 src-6dfdef0df02c,https://www.wikidata.org/wiki/Q88653669,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
@@ -1644,7 +1650,7 @@ src-e63ffd7013a8,https://www.wikidata.org/wiki/Q90699472,wikidata.org,structured
 src-bf2004f5069f,https://www.wikidata.org/wiki/Q91117387,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
 src-4b388ae46786,https://www.wikidata.org/wiki/Q91946334,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
 src-f98909b0eda8,https://www.wikidata.org/wiki/Q95604376,wikidata.org,structured_profile,5,1,0,0,0,5,0,structured_affiliation;structured_identity,wikidata
-src-af8313db5bba,https://www.wikidata.org/wiki/Q956655,wikidata.org,structured_profile,2,1,0,0,2,0,0,structured_affiliation;structured_identity,wikidata
+src-af8313db5bba,https://www.wikidata.org/wiki/Q956655,wikidata.org,structured_profile,3,1,0,0,0,0,3,review_rejection;structured_affiliation;structured_identity,manual;wikidata
 src-a3090d3f5c6b,https://www.wikidata.org/wiki/Q96950210,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata
 src-a312be9b5d18,https://www.wikidata.org/wiki/Q97072273,wikidata.org,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,wikidata
 src-b134a85f98aa,https://www.wikidata.org/wiki/Q99675851,wikidata.org,structured_profile,1,1,0,0,0,1,0,structured_identity,wikidata

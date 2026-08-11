@@ -720,6 +720,150 @@
     "review_evidence_url": "https://linkedin.com/in/thevarp"
   },
   {
+    "person_id": "kaz-514026a01ba3",
+    "person_name": "Yerlan Jumabayev",
+    "source_id": "src-45f589345539",
+    "evidence_url": "https://orcid.org/0000-0002-8196-3348",
+    "reason": "Bare exact-name ORCID record has no affiliation country dates publications or Olympiad evidence and cannot distinguish the 1997 contestant",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4893/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-a9535f70898a",
+    "evidence_url": "https://orcid.org/0000-0001-8370-5556",
+    "reason": "Common-name chemistry and metallurgy researcher has no Kazakhstan school mathematics or 1996 IMO identity bridge",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-dd086019f627",
+    "evidence_url": "https://github.com/Alexander-S-Zaitsev",
+    "reason": "Name-only GitHub account exposes no affiliation location chronology or Olympiad evidence",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-5130f51da336",
+    "evidence_url": "https://github.com/akyzalax1",
+    "reason": "Name-only GitHub account exposes no affiliation location chronology or Olympiad evidence",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-0d43024abc41",
+    "evidence_url": "https://github.com/dankikot",
+    "reason": "GitHub profile identifies its location as Belarus and exposes no Kazakhstan or 1996 IMO bridge",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-707a870642a5",
+    "evidence_url": "https://github.com/rudy-it-front",
+    "reason": "Name-only GitHub account exposes no affiliation location chronology or Olympiad evidence",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-a7eee4d15149",
+    "evidence_url": "https://orcid.org/0000-0001-6239-6782",
+    "reason": "Bare common-name ORCID record has no affiliation chronology country or Olympiad evidence",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-aecc399ae8ad",
+    "evidence_url": "https://orcid.org/0000-0002-3631-121X",
+    "reason": "Common-name molecular-biology researcher has no Kazakhstan school mathematics or 1996 IMO identity bridge",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-409812b52867",
+    "evidence_url": "https://orcid.org/0000-0002-4104-8276",
+    "reason": "Bare common-name ORCID record has no affiliation chronology country or Olympiad evidence",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-d46cc39833f6",
+    "evidence_url": "https://orcid.org/0009-0007-3813-2243",
+    "reason": "Bare common-name ORCID record has no affiliation chronology country or Olympiad evidence",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-e6c235909a5c",
+    "evidence_url": "https://www.wikidata.org/wiki/Q27534513",
+    "reason": "Common-name Tula chess-player record has no Kazakhstan school or 1996 IMO bridge",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-20551c9b74eb",
+    "evidence_url": "https://www.wikidata.org/wiki/Q85860396",
+    "reason": "Russian musician born in 1973 was already an adult by the school-level 1996 IMO and is not the contestant",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-1f893f990e9d",
+    "evidence_url": "https://www.wikidata.org/wiki/Q88011307",
+    "reason": "Common-name researcher record exposes no Kazakhstan school chronology or 1996 IMO bridge",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-b195204b86fb",
+    "evidence_url": "https://www.wikidata.org/wiki/Q105406312",
+    "reason": "Belarusian businessperson record has no Kazakhstan school mathematics or 1996 IMO bridge",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-1e71be293c66",
+    "evidence_url": "https://www.wikidata.org/wiki/Q57964706",
+    "reason": "Russian professional cyclist record has no Kazakhstan school mathematics or 1996 IMO bridge",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-22a34956ab0c",
+    "evidence_url": "https://www.wikidata.org/wiki/Q614069",
+    "reason": "Astronomer born in 1945 is decades too old to be the school-level 1996 IMO contestant",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-9a9e89460085",
+    "evidence_url": "https://www.wikidata.org/wiki/Q1339147",
+    "reason": "Chess grandmaster who died in 1971 cannot be the 1996 IMO contestant",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-af8313db5bba",
+    "evidence_url": "https://www.wikidata.org/wiki/Q956655",
+    "reason": "Olympic figure skater born in 1952 is decades too old to be the school-level 1996 IMO contestant",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4547/"
+  },
+  {
     "person_id": "kaz-7bc4b3d48a29",
     "person_name": "Nurdaulet Kemel",
     "source_id": "src-d11a8bf6a3b1",

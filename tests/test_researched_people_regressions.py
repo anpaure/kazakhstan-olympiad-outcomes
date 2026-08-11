@@ -965,7 +965,6 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         person_ids = {
             "kaz-197ec90e92c1",
             "kaz-cffe6b9ed25e",
-            "kaz-954c1033020d",
         }
 
         for person_id in person_ids:
@@ -1074,6 +1073,49 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(person["organization"], "")
         self.assertEqual(person["role"], "")
         self.assertEqual(person["profile_url"], "")
+
+    def test_ayana_badrakova_probable_ubs_outcome_and_two_alma_maters(self):
+        person = self.people["kaz-954c1033020d"]
+
+        self.assertEqual(person["organization"], "UBS")
+        self.assertEqual(person["role"], "Investment Banking Analyst")
+        self.assertEqual(person["start_year"], "2015")
+        self.assertEqual(person["end_year"], "2015")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"Lomonosov Moscow State University (MSU)", "HEC Paris"},
+        )
+        self.assertNotIn(person["person_id"], self.locations)
+
+    def test_talap_akashev_probable_historical_bcc_invest_outcome(self):
+        person = self.people["kaz-68b763708761"]
+
+        self.assertEqual(person["organization"], "BCC Invest")
+        self.assertEqual(person["role"], "Director, Trading Operations Department")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(person["start_year"], "")
+        self.assertEqual(person["end_year"], "2020")
+        self.assertNotIn(person["person_id"], self.locations)
+
+    def test_yerlan_jumabayev_name_only_candidates_are_rejected(self):
+        person = self.people["kaz-514026a01ba3"]
+
+        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["role"], "")
+        self.assertEqual(person["profile_url"], "")
+
+    def test_alexander_zaitsev_retains_only_age_compatible_candidate(self):
+        person = self.people["kaz-6c47e89eeff1"]
+
+        self.assertEqual(person["confidence"], "candidate")
+        self.assertEqual(
+            person["profile_url"], "https://orcid.org/0000-0002-6272-1079"
+        )
+        self.assertEqual(
+            person["evidence_urls"], "https://orcid.org/0000-0002-6272-1079"
+        )
 
 
 if __name__ == "__main__":
