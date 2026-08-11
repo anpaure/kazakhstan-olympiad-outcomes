@@ -1,5 +1,35 @@
 [
   {
+    "source_id": "src-ddb4f0910be6",
+    "source_url": "http://mmf-old.nsu.ru/news/1835",
+    "source_host": "mmf-old.nsu.ru",
+    "source_kind": "web_page",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-cdc016004255",
+    "source_url": "http://programming.nsu.ru/sites/default/files/seminar_2017_1.pdf",
+    "source_host": "programming.nsu.ru",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_student_record"
+  },
+  {
     "source_id": "src-c3311adf79c7",
     "source_url": "http://www.linkedin.com/in/rassul",
     "source_host": "linkedin.com",
@@ -4215,6 +4245,21 @@
     "source_adapters": "github"
   },
   {
+    "source_id": "src-8db1efeab4a8",
+    "source_url": "https://github.com/asedletskii",
+    "source_host": "github.com",
+    "source_kind": "structured_profile",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 1,
+    "provenances": "review_rejection",
+    "source_adapters": "manual"
+  },
+  {
     "source_id": "src-d4f69b179c0e",
     "source_url": "https://github.com/assemzh",
     "source_host": "github.com",
@@ -5128,6 +5173,21 @@
     "rejected_rows": 3,
     "provenances": "review_rejection;structured_affiliation;structured_identity",
     "source_adapters": "github;manual"
+  },
+  {
+    "source_id": "src-482090dc6cef",
+    "source_url": "https://github.com/opencv/opencv/commit/cbb230fdfc0223a33cf2629963fe0253b91ca3eb",
+    "source_host": "github.com",
+    "source_kind": "structured_profile",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "source_code_commit"
   },
   {
     "source_id": "src-d59c81539e9f",
@@ -7093,6 +7153,21 @@
     "rejected_rows": 0,
     "provenances": "manual_review",
     "source_adapters": "linkedin"
+  },
+  {
+    "source_id": "src-62ce010407b8",
+    "source_url": "https://kz.linkedin.com/in/gulzhanar-kalmagambetova-79802375",
+    "source_host": "kz.linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 17,
+    "people_count": 1,
+    "accepted_rows": 2,
+    "supporting_rows": 15,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review",
+    "source_adapters": "accepted_linkedin_profile;accepted_public_profile;active_affiliation_profile_location;destination_review;destination_source_review;linkedin;manual"
   },
   {
     "source_id": "src-5a10ed18c0f2",
@@ -19909,9 +19984,9 @@
     "source_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO1997.pdf",
     "source_host": "ibo-info.org",
     "source_kind": "pdf",
-    "evidence_rows": 5,
+    "evidence_rows": 6,
     "people_count": 4,
-    "accepted_rows": 5,
+    "accepted_rows": 6,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
@@ -20688,16 +20763,16 @@
     "source_id": "src-a0283f0cbde2",
     "source_url": "https://www.imo-official.org/results/contestant/20770/",
     "source_host": "imo-official.org",
-    "source_kind": "html",
-    "evidence_rows": 1,
+    "source_kind": "web_page",
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 2,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IMO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IMO;manual"
   },
   {
     "source_id": "src-f1cf79bf3cd0",

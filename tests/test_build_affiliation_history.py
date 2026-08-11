@@ -123,6 +123,35 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
             normalized_type("education", "Associate's degree, Computer Science"),
             "education",
         )
+        self.assertEqual(
+            normalized_type("education", "специалист"),
+            "employment",
+        )
+        self.assertEqual(
+            normalized_type("education", "Специалист по маркетингу"),
+            "employment",
+        )
+        self.assertEqual(
+            normalized_type("education", "Специалист, Международные отношения"),
+            "education",
+        )
+
+    def test_russian_specialist_job_is_not_education(self):
+        rows = extract_affiliations(
+            "## Experience "
+            "### Специалист по маркетингу - ТОО «ТемирЗем» (Current) "
+            "Jul 2016 - Present "
+            "### специалист - КГУ \"Центр занятости\" "
+            "Sep 2011 - Jul 2014 "
+            "## Education "
+            "### Специалист, Международные отношения at КазНУ им. аль-Фараби "
+            "1998 - 2003"
+        )
+
+        self.assertEqual(len(rows), 3)
+        self.assertEqual(rows[0]["affiliation_type"], "employment")
+        self.assertEqual(rows[1]["affiliation_type"], "employment")
+        self.assertEqual(rows[2]["affiliation_type"], "education")
 
     def test_research_affiliation_is_not_postsecondary_education(self):
         self.assertFalse(

@@ -420,6 +420,21 @@
     "review_reason": "The accepted profile's current Microsoft title is Principal Software Engineer from October 2017."
   },
   {
+    "destination_review_id": "dest-review-256f39e6b6d392fe",
+    "evidence_id": "ev-994e63dca959ac78",
+    "source_id": "src-62ce010407b8",
+    "person_id": "kaz-952a451859f7",
+    "name": "Guljanar Kalmaganbetova",
+    "organization": "TemirZem",
+    "role": "Marketing Specialist",
+    "affiliation_type": "employment",
+    "start_year": "2016",
+    "end_year": "",
+    "evidence_url": "https://kz.linkedin.com/in/gulzhanar-kalmagambetova-79802375",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "The accepted probable profile lists a current TemirZem marketing-specialist role from July 2016. Marketing Specialist is the English normalization of the profile's Russian role title."
+  },
+  {
     "destination_review_id": "dest-review-b143bf60b5d3d7de",
     "evidence_id": "ev-51722c96774a72a5",
     "source_id": "src-b75e3364acf6",

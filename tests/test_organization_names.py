@@ -77,6 +77,7 @@ class OrganizationNormalizationTest(unittest.TestCase):
             "Microsoft Research": "Microsoft",
             "Schlumberger": "SLB",
             "Kcell АО": "Kcell",
+            'АО "Кселл"': "Kcell",
             "AO Home Credit Bank Kazakhstan": "Home Credit Bank",
             "Bloomberg LP": "Bloomberg",
             "Kumtor Operating Company": "Kumtor Gold Company",

@@ -1260,6 +1260,13 @@
     "rationale": "Reviewed core activity is telecommunications."
   },
   {
+    "organization_sector_id": "sector-ee1b1cb4d3fd0ea8",
+    "canonical_name": "TemirZem",
+    "organization_type": "company",
+    "sector": "Independent & Other",
+    "rationale": "The accepted profile establishes the company but no reviewed source identifies its core business precisely enough for a narrower sector."
+  },
+  {
     "organization_sector_id": "sector-14c3454cc3c1f5d5",
     "canonical_name": "Tengizchevroil",
     "organization_type": "company",
@@ -1426,6 +1433,13 @@
     "organization_type": "company",
     "sector": "Technology & Software",
     "rationale": "Reviewed core activity is custom software development."
+  },
+  {
+    "organization_sector_id": "sector-5c8f5f626d1ef44e",
+    "canonical_name": "Xperience AI",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "The company's official site describes computer-vision and deep-learning software consulting."
   },
   {
     "organization_sector_id": "sector-e0a9d8bac8c0492b",

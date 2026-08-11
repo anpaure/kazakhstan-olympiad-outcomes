@@ -1324,30 +1324,42 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             {"Republican Physics and Mathematics School (RFMS)"},
         )
 
-    def test_unmatched_pavlodar_medalists_retain_school_history(self):
-        expected_aliases = {
-            "kaz-b8e3ad83d883": "Дробах Андрей",
-            "kaz-e8eb1ebde919": "Седлецкий Антон",
-        }
+    def test_andrey_drobakh_probable_nsu_history_does_not_guess_country(self):
+        person = self.people["kaz-b8e3ad83d883"]
 
-        for person_id, alias in expected_aliases.items():
-            with self.subTest(person_id=person_id):
-                person = self.people[person_id]
-                self.assertEqual(person["confidence"], "unmatched")
-                self.assertEqual(person["organization"], "")
-                self.assertIn(alias, person["aliases"])
-                self.assertEqual(
-                    self.alma_maters(person_id),
-                    {"Pavlodar School-Lyceum No. 8"},
-                )
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["destination_status"], "history_only")
+        self.assertIn("Дробах Андрей", person["aliases"])
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"Novosibirsk State University (NSU)"},
+        )
+        self.assertNotIn(person["person_id"], self.locations)
 
+    def test_anton_sedletskiy_rejects_conflicting_nstu_namesake(self):
+        person = self.people["kaz-e8eb1ebde919"]
+
+        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["organization"], "")
+        self.assertIn("Седлецкий Антон", person["aliases"])
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"Pavlodar School-Lyceum No. 8"},
+        )
         self.assertIn(
             "Anton Vladimirovich Sedletskiy",
-            self.people["kaz-e8eb1ebde919"]["aliases"],
+            person["aliases"],
         )
         self.assertIn(
             "Седлецкий Антон Владимирович",
-            self.people["kaz-e8eb1ebde919"]["aliases"],
+            person["aliases"],
+        )
+        self.assertFalse(
+            any(
+                row["evidence_url"] == "https://github.com/asedletskii"
+                for row in self.affiliations_for(person["person_id"])
+            )
         )
 
     def test_oleg_obukhov_kokshetau_school_history(self):
@@ -1474,6 +1486,45 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         )
         self.assertFalse(
             any("A5112917287" in row["evidence_url"] for row in affiliations)
+        )
+        self.assertNotIn(person["person_id"], self.locations)
+
+    def test_guljanar_kalmaganbetova_current_role_country_and_alma_maters(self):
+        person = self.people["kaz-952a451859f7"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "TemirZem")
+        self.assertEqual(person["role"], "Marketing Specialist")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://kz.linkedin.com/in/gulzhanar-kalmagambetova-79802375",
+        )
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {
+                "Al-Farabi Kazakh National University",
+                "K. Zhubanov Aktobe Regional University",
+            },
+        )
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(
+            location["evidence_kind"], "active_affiliation_profile_location"
+        )
+
+    def test_amir_tulegenov_historical_company_does_not_guess_country(self):
+        person = self.people["kaz-a2f029eab00c"]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["destination_status"], "none")
+        self.assertTrue(
+            any(
+                row["organization"] == "Xperience AI"
+                and row["end_year"] == "2021"
+                and not row["is_current"]
+                for row in affiliations
+            )
         )
         self.assertNotIn(person["person_id"], self.locations)
 

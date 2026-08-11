@@ -2716,6 +2716,20 @@
     "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
   },
   {
+    "location_id": "loc-529dea9c01b050f4",
+    "evidence_id": "ev-765c101d622cb26d",
+    "source_id": "src-62ce010407b8",
+    "person_id": "kaz-952a451859f7",
+    "name": "Guljanar Kalmaganbetova",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://kz.linkedin.com/in/gulzhanar-kalmagambetova-79802375",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted probable profile exposes Kazakhstan alongside an ongoing TemirZem role and a continuous Kazakhstan employment and education history. The profile location is used because it is consistent with the active affiliation, not as an unsupported header-only inference."
+  },
+  {
     "location_id": "loc-6619b595b12a1732",
     "evidence_id": "ev-5d9ff2bcd5c71331",
     "source_id": "src-b75e3364acf6",

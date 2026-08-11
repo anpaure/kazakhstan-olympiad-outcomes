@@ -1,4 +1,6 @@
 source_id,source_url,source_host,source_kind,evidence_rows,people_count,accepted_rows,supporting_rows,candidate_rows,superseded_rows,rejected_rows,provenances,source_adapters
+src-ddb4f0910be6,http://mmf-old.nsu.ru/news/1835,mmf-old.nsu.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-cdc016004255,http://programming.nsu.ru/sites/default/files/seminar_2017_1.pdf,programming.nsu.ru,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_student_record
 src-c3311adf79c7,http://www.linkedin.com/in/rassul,linkedin.com,linkedin,9,1,0,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin
 src-12639f21bce4,https://25amosaic.ust.hk/giving/benefited-projects/aef-exchange-scholarships-and-bursaries-students,25amosaic.ust.hk,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_profile
 src-9f759e04b53a,https://academy.edufo.ru/%D0%B7%D0%B0%D0%B3%D1%80%D0%B8%D0%B1%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B1-%D0%B0/,academy.edufo.ru,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -280,6 +282,7 @@ src-ff5a3a6a74c4,https://github.com/amirbralin,github.com,structured_profile,1,1
 src-6c8176a27f90,https://github.com/amirtu,github.com,structured_profile,1,1,0,0,1,0,0,structured_identity,github
 src-45de3f3b7b5e,https://github.com/anmorgunov,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
 src-f30cea7914e4,https://github.com/ao1385,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
+src-8db1efeab4a8,https://github.com/asedletskii,github.com,structured_profile,1,1,0,0,0,0,1,review_rejection,manual
 src-d4f69b179c0e,https://github.com/assemzh,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-2484da9d748c,https://github.com/assylbekolzhabayev,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-de34d2a4952c,https://github.com/aza4k,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
@@ -341,6 +344,7 @@ src-fcb92f0a2eac,https://github.com/myrzakereyms,github.com,structured_profile,2
 src-9048b9d791bb,https://github.com/nustemirov,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-c2014f27ae66,https://github.com/olzhik11,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
 src-68e6911de189,https://github.com/oobukhov-intellective,github.com,structured_profile,3,1,0,0,0,0,3,review_rejection;structured_affiliation;structured_identity,github;manual
+src-482090dc6cef,https://github.com/opencv/opencv/commit/cbb230fdfc0223a33cf2629963fe0253b91ca3eb,github.com,structured_profile,1,1,0,1,0,0,0,accepted_affiliation_history,source_code_commit
 src-d59c81539e9f,https://github.com/ordabayevy,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
 src-9cc84044f26c,https://github.com/ovchinnikov7,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-26639d6d48bf,https://github.com/pcheliniy,github.com,structured_profile,1,1,0,0,1,0,0,structured_identity,github
@@ -472,6 +476,7 @@ src-556808850d76,https://kz.linkedin.com/in/darkhan-akzholov-b0399151,kz.linkedi
 src-0709a49f934d,https://kz.linkedin.com/in/daulet-kurmantayev-41912a176,kz.linkedin.com,linkedin,6,1,1,5,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin
 src-bdc10c8f3e48,https://kz.linkedin.com/in/daulet-turetayev-73ba8314b,kz.linkedin.com,linkedin,4,1,1,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;linkedin;manual;manual_review
 src-2e0b688348fb,https://kz.linkedin.com/in/demeu-shakhanov-472a15261,kz.linkedin.com,linkedin,1,1,0,1,0,0,0,manual_review,linkedin
+src-62ce010407b8,https://kz.linkedin.com/in/gulzhanar-kalmagambetova-79802375,kz.linkedin.com,linkedin,17,1,2,15,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;accepted_public_profile;active_affiliation_profile_location;destination_review;destination_source_review;linkedin;manual
 src-5a10ed18c0f2,https://kz.linkedin.com/in/iliyas-kazymbek-77237a286,kz.linkedin.com,linkedin,4,1,1,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;linkedin;manual;manual_review
 src-1a46a21093d1,https://kz.linkedin.com/in/ilya-skripin-a9a31552,kz.linkedin.com,linkedin,12,1,1,11,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
 src-ae22b0d0ff06,https://kz.linkedin.com/in/islam-amangeldi-10932336b,kz.linkedin.com,linkedin,4,1,1,3,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin;manual;manual_review
@@ -1326,7 +1331,7 @@ src-00ba24842cca,https://www.ibo-info.org/files/downloads/results-reports/final-
 src-e8ec659c8f52,https://www.ibo-info.org/files/downloads/results-reports/results/IBO1994.pdf,ibo-info.org,pdf,4,4,4,0,0,0,0,participant_registry,IBO
 src-dfe9c0131285,https://www.ibo-info.org/files/downloads/results-reports/results/IBO1995.pdf,ibo-info.org,pdf,5,4,5,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-36eaa5d19d9c,https://www.ibo-info.org/files/downloads/results-reports/results/IBO1996.pdf,ibo-info.org,pdf,4,3,4,0,0,0,0,manual_review;participant_registry,IBO;manual
-src-9e59db73fee1,https://www.ibo-info.org/files/downloads/results-reports/results/IBO1997.pdf,ibo-info.org,pdf,5,4,5,0,0,0,0,manual_review;participant_registry,IBO;manual
+src-9e59db73fee1,https://www.ibo-info.org/files/downloads/results-reports/results/IBO1997.pdf,ibo-info.org,pdf,6,4,6,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-fea8545b6cac,https://www.ibo-info.org/files/downloads/results-reports/results/IBO1998.pdf,ibo-info.org,pdf,5,4,5,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-3d86087c6162,https://www.ibo-info.org/files/downloads/results-reports/results/IBO1999.pdf,ibo-info.org,pdf,6,4,6,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-9d5c76973bb4,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2000.pdf,ibo-info.org,pdf,6,4,6,0,0,0,0,manual_review;participant_registry,IBO;manual
@@ -1378,7 +1383,7 @@ src-2c3caca8bb00,https://www.imo-official.org/results/contestant/19385/,imo-offi
 src-6064a50ea22f,https://www.imo-official.org/results/contestant/19414/,imo-official.org,html,2,1,2,0,0,0,0,participant_registry,IMO
 src-a36163f55e7b,https://www.imo-official.org/results/contestant/19457/,imo-official.org,html,2,1,2,0,0,0,0,participant_registry,IMO
 src-f497de3c1f2b,https://www.imo-official.org/results/contestant/19458/,imo-official.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IMO;manual
-src-a0283f0cbde2,https://www.imo-official.org/results/contestant/20770/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
+src-a0283f0cbde2,https://www.imo-official.org/results/contestant/20770/,imo-official.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IMO;manual
 src-f1cf79bf3cd0,https://www.imo-official.org/results/contestant/20771/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
 src-51b530640ea8,https://www.imo-official.org/results/contestant/20772/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
 src-3b673b99ce4d,https://www.imo-official.org/results/contestant/20773/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO

@@ -187,6 +187,7 @@ org-faa72095c90daf7d,OIYaI,Joint Institute for Nuclear Research,JINR,translitera
 org-229a272196f47306,ОИЯИ,Joint Institute for Nuclear Research,JINR,multilingual_name,Official Russian abbreviation,https://ugrk.jinr.ru/contacts/requisites.php
 org-c3d99ae80673cea7,J.P. Morgan,JPMorgan Chase,JPMorgan Chase,same_entity,Brand and punctuation variant,
 org-7a4fef434ec612cb,Jump Trading Group,Jump Trading,Jump Trading,same_entity,Corporate-name variant,
+org-c82e049808ccb251,АГУ им. К. Жубанова,K. Zhubanov Aktobe Regional University,K. Zhubanov University,historical_name,The Russian abbreviation on the accepted profile is normalized to the university's current English name.,https://zhubanov.edu.kz/en/
 org-a31b39be861f1cfd,Karlsruhe Institute of Technology,Karlsruhe Institute of Technology (KIT),KIT,same_entity,Official name without acronym,
 org-66710c370cf8b372,wbk - Institute of Production Science,Karlsruhe Institute of Technology (KIT),KIT,parent_organization,University institute,
 org-5561ab400387346a,kaspi bank,Kaspi.kz,Kaspi.kz,parent_organization,Capitalization variant of the Kaspi.kz banking subsidiary,https://ir.kaspi.kz/media/EX-8.1_List_of_subsidiaries_of_the_Registrant.pdf
@@ -212,6 +213,7 @@ org-0312dbacd7b31ab2,"KAZPHOSPHATE LLC (ALMATY, TARAZ)",Kazphosphate,Kazphosphat
 org-1cf4b3f595903c37,"KBR, Inc",KBR,KBR,legal_form_variant,Legal-form cleanup,
 org-e7261f5516de30f9,Kcell JSC,Kcell,Kcell,same_entity,Legal-form variant,
 org-13d132b38e232122,Kcell АО,Kcell,Kcell,multilingual_name,Russian legal-form variant,
+org-6ed6d43bb0c6631a,"АО ""Кселл""",Kcell,Kcell,multilingual_name,Russian legal-form and quoted-name variant on the accepted public profile.,https://kz.linkedin.com/in/gulzhanar-kalmagambetova-79802375
 org-a4d4c6b30feb2065,Khabar Agency JSC,Khabar Agency,Khabar Agency,legal_form_variant,Legal-form cleanup,
 org-6cc74eb49362be0f,@khangroupkz,Khan Group,Khan Group,same_entity,Public handle corroborated by a second Khan Group affiliation,
 org-d11fdc22db7122f6,Khan Group LLP,Khan Group,Khan Group,same_entity,Legal-form variant,
@@ -436,6 +438,7 @@ org-3da6de126f6ec3cf,Summer STEM Institute (SSI),Summer STEM Institute,Summer ST
 org-212094f0683163fa,Synapse.kz,synapse.kz,synapse.kz,capitalization_variant,Capitalization variant of the education community's public domain name,https://synapse.kz/
 org-53e45136cf793e94,JSC «Tau-Кen Samruk» National Mining Company,Tau-Ken Samruk,Tau-Ken Samruk,legal_form_variant,Legal-form and descriptor cleanup,
 org-bd54d2278299d3dd,Tavia Acquisition Corp,Tavia Acquisition,Tavia Acquisition,legal_form_variant,Legal-form cleanup,
+org-088aa247e006d32d,ТОО «ТемирЗем»,TemirZem,TemirZem,legal_form,The Kazakhstan LLP legal name on the accepted public profile is normalized to the concise organization label.,https://kz.linkedin.com/in/gulzhanar-kalmagambetova-79802375
 org-7b11447b2e365b80,Тенгизшевройл,Tengizchevroil,Tengizchevroil,multilingual_name,Russian company name,
 org-4d17ec9164c1ba59,Terasense Group Inc,TeraSense,TeraSense,legal_form_variant,LinkedIn company name without punctuation normalized to the official TeraSense brand.,https://terasense.com/company/
 org-1249cf9068a83a38,"Terasense Group, Inc",TeraSense,TeraSense,legal_form_variant,LinkedIn company name normalized to the official TeraSense brand.,https://terasense.com/company/

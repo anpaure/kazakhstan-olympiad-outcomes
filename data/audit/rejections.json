@@ -1,5 +1,13 @@
 [
   {
+    "person_id": "kaz-e8eb1ebde919",
+    "person_name": "Anton Sedletskiy",
+    "source_id": "src-8db1efeab4a8",
+    "evidence_url": "https://github.com/asedletskii",
+    "reason": "The GitHub account's NSTU student email and 2026 thesis identify its owner as Sedletskiy A. A.; the Olympiad alumnus is independently identified as Anton Vladimirovich Sedletskiy, so the patronymics conflict.",
+    "review_evidence_url": "https://elibrary.nstu.ru/source?id=199104"
+  },
+  {
     "person_id": "kaz-fc88fa90b799",
     "person_name": "Aset Iskakov",
     "source_id": "src-524332dda34d",

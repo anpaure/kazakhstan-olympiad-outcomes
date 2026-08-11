@@ -147,10 +147,15 @@ STRONG_EMPLOYMENT_ROLE_TERMS = re.compile(
     r"advisor|adviser|administrator|coordinator|(?:senior\s+)?specialist\s+of)\b",
     re.IGNORECASE,
 )
-SPECIALIST_ROLE_PATTERN = re.compile(r"\bspecialist\b", re.IGNORECASE)
+SPECIALIST_ROLE_PATTERN = re.compile(
+    r"\b(?:specialist|специалист)\b", re.IGNORECASE
+)
 SPECIALIST_DEGREE_PATTERN = re.compile(
-    r"^\s*specialist(?:\s+degree)?(?=$|[\s,;(])"
-    r"(?!\s+(?:of|at|for|with|in)\b)",
+    r"^\s*(?:"
+    r"specialist(?:\s+degree)?(?=$|[\s,;(])"
+    r"(?!\s+(?:of|at|for|with|in)\b)"
+    r"|специалист\s*[,;(]"
+    r")",
     re.IGNORECASE,
 )
 ASSOCIATE_EMPLOYMENT_PATTERN = re.compile(

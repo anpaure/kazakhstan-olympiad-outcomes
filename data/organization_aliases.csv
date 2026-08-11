@@ -1,4 +1,6 @@
 alias,canonical_name,display_name,merge_type,rationale,evidence_url
+ТОО «ТемирЗем»,TemirZem,TemirZem,legal_form,The Kazakhstan LLP legal name on the accepted public profile is normalized to the concise organization label.,https://kz.linkedin.com/in/gulzhanar-kalmagambetova-79802375
+АГУ им. К. Жубанова,K. Zhubanov Aktobe Regional University,K. Zhubanov University,historical_name,The Russian abbreviation on the accepted profile is normalized to the university's current English name.,https://zhubanov.edu.kz/en/
 Siemens Corporation,Siemens,Siemens,same_entity,The country-specific corporate label is normalized to the concise Siemens parent brand.,https://www.linkedin.com/in/gani-nazirov
 Siemens WLL Qatar,Siemens,Siemens,parent_organization,The Qatar legal subsidiary is normalized to the Siemens parent used by the accepted profile link.,https://linkedin.com/in/khairosh
 Siemens Oil & Gas Offshore AS,Siemens,Siemens,parent_organization,The historical oil-and-gas subsidiary is normalized to its Siemens parent for affiliation search.,https://linkedin.com/in/khairosh
@@ -183,6 +185,7 @@ RSE Kazaeronavigatsia,Kazaeronavigatsia,Kazaeronavigatsia,same_entity,Legal-form
 Kazakhstan Temir Zholy JSC,Kazakhstan Temir Zholy,Kazakhstan Temir Zholy,same_entity,Legal-form variant
 Kcell JSC,Kcell,Kcell,same_entity,Legal-form variant
 Kcell АО,Kcell,Kcell,multilingual_name,Russian legal-form variant
+"АО ""Кселл""",Kcell,Kcell,multilingual_name,Russian legal-form and quoted-name variant on the accepted public profile.,https://kz.linkedin.com/in/gulzhanar-kalmagambetova-79802375
 AO Home Credit Bank Kazakhstan,Home Credit Bank,Home Credit Bank,same_entity,Former Kazakhstan legal-name variant
 Home Credit Bank Kazakhstan,Home Credit Bank,Home Credit Bank,same_entity,Country-suffix variant
 National Center for Biotechnology Information (NIH),National Center for Biotechnology Information (NCBI),NCBI,same_entity,Corrects the institution acronym while preserving the NIH parent context in source evidence

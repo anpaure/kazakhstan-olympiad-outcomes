@@ -1692,6 +1692,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-c82e049808ccb251",
+    "alias": "АГУ им. К. Жубанова",
+    "canonical_name": "K. Zhubanov Aktobe Regional University",
+    "display_name": "K. Zhubanov University",
+    "merge_type": "historical_name",
+    "rationale": "The Russian abbreviation on the accepted profile is normalized to the university's current English name.",
+    "evidence_url": "https://zhubanov.edu.kz/en/"
+  },
+  {
     "organization_alias_id": "org-a31b39be861f1cfd",
     "alias": "Karlsruhe Institute of Technology",
     "canonical_name": "Karlsruhe Institute of Technology (KIT)",
@@ -1915,6 +1924,15 @@
     "merge_type": "multilingual_name",
     "rationale": "Russian legal-form variant",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-6ed6d43bb0c6631a",
+    "alias": "АО \"Кселл\"",
+    "canonical_name": "Kcell",
+    "display_name": "Kcell",
+    "merge_type": "multilingual_name",
+    "rationale": "Russian legal-form and quoted-name variant on the accepted public profile.",
+    "evidence_url": "https://kz.linkedin.com/in/gulzhanar-kalmagambetova-79802375"
   },
   {
     "organization_alias_id": "org-a4d4c6b30feb2065",
@@ -3931,6 +3949,15 @@
     "merge_type": "legal_form_variant",
     "rationale": "Legal-form cleanup",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-088aa247e006d32d",
+    "alias": "ТОО «ТемирЗем»",
+    "canonical_name": "TemirZem",
+    "display_name": "TemirZem",
+    "merge_type": "legal_form",
+    "rationale": "The Kazakhstan LLP legal name on the accepted public profile is normalized to the concise organization label.",
+    "evidence_url": "https://kz.linkedin.com/in/gulzhanar-kalmagambetova-79802375"
   },
   {
     "organization_alias_id": "org-7b11447b2e365b80",
