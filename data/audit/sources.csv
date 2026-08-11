@@ -194,6 +194,7 @@ src-abc7ac176d0b,https://de.linkedin.com/in/anel-orazgaliyeva,de.linkedin.com,li
 src-39782c67ee8e,https://de.linkedin.com/in/diyart,de.linkedin.com,linkedin,11,1,2,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review
 src-95e3a27c1ff1,https://de.linkedin.com/in/mussa-rajamov,de.linkedin.com,linkedin,11,1,2,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review
 src-515a69fef9d8,https://de.linkedin.com/in/tbeka,de.linkedin.com,linkedin,10,1,1,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
+src-ecf379dfab9b,https://dspace.mit.edu/server/api/core/items/5ce13076-f6ee-4514-bd98-4dc4805dc111,dspace.mit.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_repository
 src-f4dd23e6da54,https://e-journal.unair.ac.id/PROMKES/article/download/80754/35523/478461,e-journal.unair.ac.id,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-44a6a96f2636,https://edu.unideb.hu/page.php?id=64,edu.unideb.hu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-cfd02f602a3c,https://egemen.kz/amp/article/4007-matematikalyq-olimpiada-el-abyroyyna-abyroy-qosty,egemen.kz,web_page,1,1,0,0,0,1,0,manual_review,manual
@@ -201,6 +202,7 @@ src-91de9e7e40a4,https://egemen.kz/article/4115-aldynhghy-aghalar-senimin-aqtaym
 src-204782d7ad4c,https://eko.ut.ee/pdf/icho/icho1999r.pdf,eko.ut.ee,pdf,1,1,1,0,0,0,0,manual_review,manual
 src-8f7d278f328d,https://elevenlabs.io/blog/authors/sergazy-kalmurzayev,elevenlabs.io,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-fcfca15a4ba9,https://events.crugroup.com/middleeastsulphur/speakers-2022,events.crugroup.com,web_page,4,1,1,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,affiliation_country;conference_biography;manual;manual_review
+src-4f1accc77046,https://faio.kz/2024/,faio.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-9a95ba72b55f,https://farabi.university/news/96744?lang=en,farabi.university,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_team_roster
 src-dfdbaca401f5,https://farabi.university/storage/files/280775433965e7f8a0376b3254557968_%D0%BA%D0%B0%D0%B1%D1%83%D0%BB%D0%BE%D0%B2%20%D0%B0%D0%BD%D0%B3.pdf,farabi.university,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-bc3f70fcd2a1,https://find-and-update.company-information.service.gov.uk/officers/my8HsHrIuqw_No-TeaKB_nIPPZk/appointments,find-and-update.company-information.service.gov.uk,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -385,7 +387,7 @@ src-e2b5f6149abf,https://imojp.org/support/IMO2023_REPORT_jp.pdf,imojp.org,pdf,2
 src-56aea8ed1d8c,https://informburo.kz/amp/novosti/100-medalnyj-zachyot-pokazali-kazahstanskie-shkolniki-na-domashnej-olimpiade-ibo-2024,informburo.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-41ec886f7a55,https://inkaraganda.kz/novosti/obshhestvo/pedagog-po-himii-iz-karagandy-podgotovil-bolee-10-pobeditelej-mezhdunarodnyh-intellektualnyh-sorevnovanij/,inkaraganda.kz,web_page,4,1,2,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,career_source_location;destination_review;destination_source_review;manual
 src-019b1989c484,https://international.binus.ac.id/binus-people/zhandos-yessenbayev-b-sc-m-sc-ph-d/,international.binus.ac.id,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
-src-ad74ea491705,https://ipho-unofficial.org/countries/KAZ/individual,ipho-unofficial.org,web_page,156,89,150,0,0,6,0,manual_review;participant_registry,IPhO;manual
+src-ad74ea491705,https://ipho-unofficial.org/countries/KAZ/individual,ipho-unofficial.org,web_page,157,89,151,0,0,6,0,manual_review;participant_registry,IPhO;manual
 src-0684ad15873b,https://ipho-unofficial.org/timeline/2007/individual,ipho-unofficial.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-acb4f475b8fd,https://ipho-unofficial.org/timeline/2010/individual,ipho-unofficial.org,web_page,2,2,2,0,0,0,0,manual_review,manual
 src-961bc0297b2b,https://ipho-unofficial.org/timeline/2012/individual,ipho-unofficial.org,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -694,6 +696,7 @@ src-4fdd06d1f4cd,https://linkedin.com/in/zhassulan-binazar-294bb7146,linkedin.co
 src-f0aa41693d98,https://matol.kz/results/235,matol.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,olympiad_school_record
 src-ce5c57c7c3c3,https://mbzuai.ac.ae/about/contact/,mbzuai.ac.ae,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
 src-01b1f15392e4,https://medium.com/%40tima103/how-to-get-more-paying-users-with-user-friendly-paywall-part-ii-8e09766f62eb,medium.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-e0bc977f58a3,https://mephi.ru/content/news/1387/64172,mephi.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_record
 src-b55d24b5ee78,https://microelectronics.tudelft.nl/~ilke/research.html,microelectronics.tudelft.nl,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,academic_collaborator_profile
 src-2a9d696f5c9f,https://mirror.akorda.kz/ru/executive_office/executive_office_stucture,mirror.akorda.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
 src-0628a26e79ca,https://nazymaltbridge.substack.com/p/welcome-to-altbridge,nazymaltbridge.substack.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -704,6 +707,7 @@ src-806e948c98a1,https://nl.linkedin.com/in/vyacheslav-li,nl.linkedin.com,linked
 src-1b06af578c08,https://nu.edu.kz/en/about/contacts,nu.edu.kz,web_page,5,5,0,5,0,0,0,accepted_location_evidence,current_education_location
 src-ef8fbe838ecc,https://nu.edu.kz/news-kk/memleket-basshysy-nu-dyng-toert-stwdentin-zhetistikterimen-quttyqtady-2/,nu.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
 src-330c893d8386,https://nur.nu.edu.kz/items/8090871a-9f4d-492d-9232-0ee28a046e58,nur.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-28c0b5907939,https://nur.nu.edu.kz/items/85ec681a-74c3-4778-8625-0dd7b27b5ab1,nur.nu.edu.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_repository
 src-f9ee85d10955,https://nur.nu.edu.kz/items/86a10e4c-8685-4d44-b3d3-7d8c00c39682,nur.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-3e9e6eb11598,https://nurorda.edu.kz/en/about/media/news/slug-6ew3h0Z5g6YuO57YLLcEMjVYpFxgCABj,nurorda.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-3e381f3e3f4c,https://ogarev-online.ru/1071-2836/article/view/248844,ogarev-online.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,journal_affiliation
@@ -985,6 +989,7 @@ src-46c265d49622,https://press.ucoz.kz/news/2009-07-11,press.ucoz.kz,web_page,1,
 src-0c9d0a10d91f,https://prg.kz/Document/?doc_id=31388745,prg.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-604b60050d36,https://prg.kz/document/?doc_id=30205702,prg.kz,web_page,2,2,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;official_ministry_team_order
 src-8dbb8cab8311,https://pro.mytenge.kz/company/170540015039,pro.mytenge.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-a3a580611a9d,https://profi.kz/profile/TaymanovAY/,profi.kz,web_page,4,1,1,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review;self_authored_service_profile
 src-74b0e239b8e1,https://publicreg.myafsa.com/details/250640900594/,publicreg.myafsa.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-44240814faf2,https://pubmed.ncbi.nlm.nih.gov/41742061/,pubmed.ncbi.nlm.nih.gov,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-1382f27ad8bf,https://qazinform.com/amp/kazakh-students-won-one-silver-and-two-gold-medals-in-ipho-2009-mexico_a2186614/,qazinform.com,web_page,2,2,2,0,0,0,0,manual_review,manual
@@ -1026,7 +1031,7 @@ src-f7f401095d0c,https://scoreboard.bc-pf.org/en/results/biology/international_b
 src-400c61c0106e,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2017,scoreboard.bc-pf.org,web_page,6,4,5,0,0,1,0,manual_review;participant_registry,IBO;manual
 src-bb60cbeb8f7e,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2018,scoreboard.bc-pf.org,web_page,5,4,5,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-8c0f1e2885aa,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2019,scoreboard.bc-pf.org,web_page,5,4,4,0,0,1,0,manual_review;participant_registry,IBO;manual
-src-a202f0acccb2,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2020,scoreboard.bc-pf.org,web_page,3,3,3,0,0,0,0,participant_registry,IBO
+src-a202f0acccb2,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2020,scoreboard.bc-pf.org,web_page,4,3,4,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-c8dc8770b278,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2021,scoreboard.bc-pf.org,web_page,5,4,5,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-708da53ab4d8,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2022,scoreboard.bc-pf.org,web_page,4,4,4,0,0,0,0,participant_registry,IBO
 src-0104aded2f1f,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2023,scoreboard.bc-pf.org,web_page,4,4,4,0,0,0,0,participant_registry,IBO
@@ -1223,6 +1228,7 @@ src-cf0e9c93132d,https://www.gov.kz/memleket/entities/edu/press/news/details/126
 src-5a1c49e54448,https://www.gov.kz/memleket/entities/transport/press/news/details/882464?lang=ru,gov.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-3157f5b4c740,https://www.haileybury.kz/en/almaty/board-of-governors,haileybury.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-be8d30c8e695,https://www.hku.hk/visit/maps_contact.html,hku.hk,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
+src-807ffbb9186d,https://www.hse.ru/edu/vkr/367645765,hse.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_thesis
 src-7c00a4b14ab9,https://www.hse.ru/news/edu/223610496.html,hse.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-c4b2ab5396a9,https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov,hw.ac.uk,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-07f001838ebe,https://www.iastate.edu/life-at-iowa-state/campus-and-ames,iastate.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location

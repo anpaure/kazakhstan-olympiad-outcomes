@@ -2925,6 +2925,21 @@
     "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review"
   },
   {
+    "source_id": "src-ecf379dfab9b",
+    "source_url": "https://dspace.mit.edu/server/api/core/items/5ce13076-f6ee-4514-bd98-4dc4805dc111",
+    "source_host": "dspace.mit.edu",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_repository"
+  },
+  {
     "source_id": "src-f4dd23e6da54",
     "source_url": "https://e-journal.unair.ac.id/PROMKES/article/download/80754/35523/478461",
     "source_host": "e-journal.unair.ac.id",
@@ -3028,6 +3043,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
     "source_adapters": "affiliation_country;conference_biography;manual;manual_review"
+  },
+  {
+    "source_id": "src-4f1accc77046",
+    "source_url": "https://faio.kz/2024/",
+    "source_host": "faio.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review"
   },
   {
     "source_id": "src-9a95ba72b55f",
@@ -5794,9 +5824,9 @@
     "source_url": "https://ipho-unofficial.org/countries/KAZ/individual",
     "source_host": "ipho-unofficial.org",
     "source_kind": "web_page",
-    "evidence_rows": 156,
+    "evidence_rows": 157,
     "people_count": 89,
-    "accepted_rows": 150,
+    "accepted_rows": 151,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 6,
@@ -10425,6 +10455,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-e0bc977f58a3",
+    "source_url": "https://mephi.ru/content/news/1387/64172",
+    "source_host": "mephi.ru",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_record"
+  },
+  {
     "source_id": "src-b55d24b5ee78",
     "source_url": "https://microelectronics.tudelft.nl/~ilke/research.html",
     "source_host": "microelectronics.tudelft.nl",
@@ -10573,6 +10618,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-28c0b5907939",
+    "source_url": "https://nur.nu.edu.kz/items/85ec681a-74c3-4778-8625-0dd7b27b5ab1",
+    "source_host": "nur.nu.edu.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_repository"
   },
   {
     "source_id": "src-f9ee85d10955",
@@ -14790,6 +14850,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-a3a580611a9d",
+    "source_url": "https://profi.kz/profile/TaymanovAY/",
+    "source_host": "profi.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 4,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 3,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "career_source_location;manual;manual_review;self_authored_service_profile"
+  },
+  {
     "source_id": "src-74b0e239b8e1",
     "source_url": "https://publicreg.myafsa.com/details/250640900594/",
     "source_host": "publicreg.myafsa.com",
@@ -15409,15 +15484,15 @@
     "source_url": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2020",
     "source_host": "scoreboard.bc-pf.org",
     "source_kind": "web_page",
-    "evidence_rows": 3,
+    "evidence_rows": 4,
     "people_count": 3,
-    "accepted_rows": 3,
+    "accepted_rows": 4,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IBO"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IBO;manual"
   },
   {
     "source_id": "src-c8dc8770b278",
@@ -18358,6 +18433,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_location_evidence",
     "source_adapters": "current_education_location"
+  },
+  {
+    "source_id": "src-807ffbb9186d",
+    "source_url": "https://www.hse.ru/edu/vkr/367645765",
+    "source_host": "hse.ru",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_thesis"
   },
   {
     "source_id": "src-7c00a4b14ab9",

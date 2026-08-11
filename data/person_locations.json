@@ -33,6 +33,17 @@
     "review_reason": "The cited role profile places BIL No. 1 and Samatov's principal and teaching work in Karaganda Kazakhstan."
   },
   {
+    "person_id": "kaz-bd7725315da3",
+    "name": "Adam Taimanov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://profi.kz/profile/TaymanovAY/",
+    "evidence_kind": "career_source_location",
+    "confidence": "probable",
+    "review_reason": "Adam's exact-name tutoring profile places the latest reviewed public role in Almaty. The location is marked probable because the profile also says he was last online more than a year ago."
+  },
+  {
     "person_id": "kaz-c898d5674745",
     "name": "Adil Baiguzhin",
     "country_code": "KZ",

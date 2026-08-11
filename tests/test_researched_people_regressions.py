@@ -614,6 +614,47 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                 self.assertEqual(location["country_code"], "KZ")
                 self.assertEqual(location["location_label"], location_label)
 
+    def test_darkhan_nurlybay_google_and_education_history(self):
+        person = self.people["kaz-f5050685c728"]
+
+        self.assertEqual(person["organization"], "Google")
+        self.assertEqual(person["role"], "Software Engineer")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {
+                "HSE University",
+                "National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)",
+            },
+        )
+
+    def test_adam_taimanov_latest_tutoring_role(self):
+        person = self.people["kaz-bd7725315da3"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Self-employed")
+        self.assertEqual(person["role"], "Biology Tutor")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertIn(
+            "Galaxy International School Almaty",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+        self.assertEqual(location["confidence"], "probable")
+
+    def test_shapagat_berdibek_mit_and_nu_alma_maters(self):
+        person = self.people["kaz-24cc764a8eaf"]
+
+        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {
+                "Massachusetts Institute of Technology (MIT)",
+                "Nazarbayev University",
+            },
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
