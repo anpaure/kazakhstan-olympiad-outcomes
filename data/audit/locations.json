@@ -28,6 +28,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-2c25ed86eed1558e",
+    "evidence_id": "ev-376bc243ea02f804",
+    "source_id": "src-28ff4753b51f",
+    "person_id": "kaz-00a1687b2b23",
+    "name": "Abylay Kabdulkhadyr",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Daejeon, South Korea",
+    "evidence_url": "https://www.kaist.ac.kr/en/html/kaist/011501.html",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
+  },
+  {
     "location_id": "loc-22b33e45cc49ffc5",
     "evidence_id": "ev-f3d18a1ac218dad6",
     "source_id": "src-41ec886f7a55",

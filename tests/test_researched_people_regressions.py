@@ -528,6 +528,12 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
 
     def test_2024_medalists_current_university_destinations(self):
         expected = {
+            "kaz-00a1687b2b23": (
+                "Korea Advanced Institute of Science and Technology (KAIST)",
+                "Undergraduate Student, Chemistry",
+                "KR",
+                "Daejeon, South Korea",
+            ),
             "kaz-7461ed3854c5": (
                 "Moscow Institute of Physics and Technology (MIPT)",
                 "Undergraduate Student",
@@ -562,6 +568,10 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(
             self.people["kaz-9bdeb2eedd97"]["linkedin_url"],
             "https://www.linkedin.com/in/zhan-dautov-799921295",
+        )
+        self.assertEqual(
+            self.people["kaz-00a1687b2b23"]["linkedin_url"],
+            "https://www.linkedin.com/in/lonelylull/",
         )
 
     def test_baurzhan_urgunshbayev_probable_metaphora_outcome(self):

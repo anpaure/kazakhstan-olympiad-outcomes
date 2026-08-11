@@ -22,6 +22,17 @@
     "evidence_url": "https://linkedin.com/in/abilmuzhubayev"
   },
   {
+    "person_id": "kaz-00a1687b2b23",
+    "name": "Abylay Kabdulkhadyr",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Daejeon, South Korea",
+    "evidence_url": "https://www.kaist.ac.kr/en/html/kaist/011501.html",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
+  },
+  {
     "person_id": "kaz-408aa9ea598e",
     "name": "Abylay Samatov",
     "country_code": "KZ",

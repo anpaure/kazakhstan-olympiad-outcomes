@@ -1,5 +1,20 @@
 [
   {
+    "destination_review_id": "dest-review-e7cda0450c6df787",
+    "evidence_id": "ev-4b768dee21b770de",
+    "source_id": "src-88b00f38d2dd",
+    "person_id": "kaz-00a1687b2b23",
+    "name": "Abylay Kabdulkhadyr",
+    "organization": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "role": "Undergraduate Student, Chemistry",
+    "affiliation_type": "education",
+    "start_year": "2025",
+    "end_year": "",
+    "evidence_url": "https://www.linkedin.com/in/lonelylull/",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "The accepted profile lists an ongoing undergraduate chemistry program at KAIST beginning in August 2025."
+  },
+  {
     "destination_review_id": "dest-review-aae11a493dafe0d0",
     "evidence_id": "ev-e94b3a4e24401f1e",
     "source_id": "src-41ec886f7a55",

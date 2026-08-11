@@ -180,9 +180,27 @@
     "evidence_text": "Backend Developer Intern - [Yandex](https://www.linkedin.com/company/yandex) Jun 2023 - Oct 2023 (4 months) Worked on Yandex Direct Infrastructure. Department: Engineering and Technical • Level: Intern Yandex (YNDX) is a Technology, Information and Internet company. Yandex is a technology company that builds intelligent products and services powered by artificial intelligence. Their goal is to help consumers and businesses better navigate the online and offline world. Since 1997, they have deliv"
   },
   {
-    "affiliation_id": "aff-45f09a854b457b61",
-    "evidence_id": "ev-23250e45224b4239",
-    "source_id": "src-df89d5c6c05c",
+    "affiliation_id": "aff-95bf55c0ba31f4ef",
+    "evidence_id": "ev-fce88871a92ec333",
+    "source_id": "src-88b00f38d2dd",
+    "person_id": "kaz-00a1687b2b23",
+    "name": "Abylay Kabdulkhadyr",
+    "organization": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "role": "Undergraduate Student, Chemistry",
+    "affiliation_type": "education",
+    "start_year": "2025",
+    "end_year": "",
+    "is_current": "true",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://www.linkedin.com/in/lonelylull/",
+    "evidence_kind": "destination_source_review",
+    "confidence": "confirmed",
+    "evidence_text": "The accepted profile lists an ongoing undergraduate chemistry program at KAIST beginning in August 2025."
+  },
+  {
+    "affiliation_id": "aff-0712403c5a086ffc",
+    "evidence_id": "ev-266c90f7147c094a",
+    "source_id": "src-88b00f38d2dd",
     "person_id": "kaz-00a1687b2b23",
     "name": "Abylay Kabdulkhadyr",
     "organization": "Nazarbayev Intellectual Schools (NIS)",
@@ -191,11 +209,11 @@
     "start_year": "2019",
     "end_year": "2025",
     "is_current": "false",
-    "selected_as_alma_mater": "true",
-    "evidence_url": "https://kz.linkedin.com/in/abylay-kabdulkhadyr-2b527a331",
-    "evidence_kind": "manual_review",
+    "selected_as_alma_mater": "false",
+    "evidence_url": "https://www.linkedin.com/in/lonelylull/",
+    "evidence_kind": "manual_profile_transcription",
     "confidence": "confirmed",
-    "evidence_text": "His self-authored LinkedIn profile explicitly lists the 2024 IChO silver and 2025 IChO gold medals together with a 2019-2025 Nazarbayev Intellectual Schools education; no later university destination is publicly listed."
+    "evidence_text": "The accepted profile lists Nazarbayev Intellectual Schools from September 2019 through May 2025 before Abylay began his KAIST undergraduate chemistry program."
   },
   {
     "affiliation_id": "aff-44f2ec68a6c20804",
