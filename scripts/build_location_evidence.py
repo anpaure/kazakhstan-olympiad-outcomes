@@ -207,6 +207,7 @@ EMPLOYER_DESCRIPTION_PATTERN = re.compile(
     re.IGNORECASE,
 )
 TRUSTED_OVERRIDE_KINDS = {
+    "active_affiliation_legal_entity_location",
     "active_affiliation_profile_location",
     "affiliation_country",
     "career_source_location",

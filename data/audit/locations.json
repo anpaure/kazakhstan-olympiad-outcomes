@@ -882,6 +882,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Khan Group. The profile header points to Singapore, but it conflicts with the active-role location and is not used."
   },
   {
+    "location_id": "loc-892401d4435cf870",
+    "evidence_id": "ev-6dc2588511363bf4",
+    "source_id": "src-cd122ed7d705",
+    "person_id": "kaz-c0f06a275839",
+    "name": "Asset Mussagaliyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://www.linkedin.com/in/asset-mussagaliyev-713a1156",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed accepted profile explicitly places Asset Mussagaliyev's ongoing Prosper Pay CFO role in Almaty, Kazakhstan; the current-role location is used instead of the broader profile header."
+  },
+  {
     "location_id": "loc-8a2f0419f2a6c2b1",
     "evidence_id": "ev-5b1b3cb9c11060e6",
     "source_id": "src-9157318b486a",

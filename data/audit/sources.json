@@ -135,6 +135,21 @@
     "source_adapters": "career_source_location;manual;manual_review"
   },
   {
+    "source_id": "src-f236b4945420",
+    "source_url": "https://almaty.fizmat.kz/ru/muzey/uchastniki-mezhdunarodnykh-olimpiad/",
+    "source_host": "almaty.fizmat.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "manual"
+  },
+  {
     "source_id": "src-e4d79ad13ff6",
     "source_url": "https://almaty.fizmat.kz/ru/teachers/smaylov-b-b/",
     "source_host": "almaty.fizmat.kz",
@@ -193,6 +208,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review;official_university_alumni_profile"
+  },
+  {
+    "source_id": "src-564f97298a11",
+    "source_url": "https://aqshamnews.kz/kz/article/almatynyn-daryndy-oqushylary-bedeldi-halyqaralyq-ziiatkerlik-olimpiadalarga-belsendi-qatysady.html",
+    "source_host": "aqshamnews.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "reported_school_biography"
   },
   {
     "source_id": "src-00522c0b0993",
@@ -358,6 +388,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-4bcb9cd74810",
+    "source_url": "https://ba.prg.kz/750000000-almaty/251240038235-too-prosper-payment-solutions/",
+    "source_host": "ba.prg.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_company_registry"
   },
   {
     "source_id": "src-9190e29d6b36",
@@ -7440,6 +7485,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-3baeb13fd0b2",
+    "source_url": "https://linkedin.com/in/aldiyar-nurmanov-767422304",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 1,
+    "provenances": "review_rejection",
+    "source_adapters": "manual"
+  },
+  {
     "source_id": "src-36c8bb1d2e04",
     "source_url": "https://linkedin.com/in/alen-abdrakhmanov-b2638b1a0",
     "source_host": "linkedin.com",
@@ -9210,8 +9270,38 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-6cf4dee49771",
+    "source_url": "https://linkedin.com/in/maxim-tsoy-93a91321",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 1,
+    "provenances": "review_rejection",
+    "source_adapters": "manual"
+  },
+  {
     "source_id": "src-0038f53bc1e5",
     "source_url": "https://linkedin.com/in/maxim-yerokhin-b4881529",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 1,
+    "provenances": "review_rejection",
+    "source_adapters": "manual"
+  },
+  {
+    "source_id": "src-b8c158146362",
+    "source_url": "https://linkedin.com/in/maximtsoy",
     "source_host": "linkedin.com",
     "source_kind": "linkedin",
     "evidence_rows": 1,
@@ -10500,6 +10590,21 @@
     "source_adapters": "career_source_location;manual;manual_review"
   },
   {
+    "source_id": "src-2fc2cbe341d2",
+    "source_url": "https://nauchforum.ru/archive/studjournal/17%28153_3%29.pdf",
+    "source_host": "nauchforum.ru",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "academic_author_affiliation"
+  },
+  {
     "source_id": "src-0628a26e79ca",
     "source_url": "https://nazymaltbridge.substack.com/p/welcome-to-altbridge",
     "source_host": "nazymaltbridge.substack.com",
@@ -10723,6 +10828,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-f777b8592620",
+    "source_url": "https://opac.dbu.de/ab/DBU-Abschlussbericht-AZ-33891_01.pdf",
+    "source_host": "opac.dbu.de",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "project_report_affiliation"
   },
   {
     "source_id": "src-df38cdbd4745",
@@ -21540,6 +21660,21 @@
     "source_adapters": "manual_public_profile"
   },
   {
+    "source_id": "src-cd122ed7d705",
+    "source_url": "https://www.linkedin.com/in/asset-mussagaliyev-713a1156",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 10,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 9,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review"
+  },
+  {
     "source_id": "src-ba95216056e5",
     "source_url": "https://www.linkedin.com/in/azzy-polymath",
     "source_host": "linkedin.com",
@@ -22170,6 +22305,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-6a9f44348fe6",
+    "source_url": "https://www.linkedin.com/posts/circulartree_basf-motherson-porsche-circulartree-activity-6719171599662100480-jRH1",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "public_project_announcement"
+  },
+  {
     "source_id": "src-81efe84f49fb",
     "source_url": "https://www.linkedin.com/posts/madi-baltagulov-509bbb18b_entrepreneurship-publichealth-digitalhealth-activity-7383501897166385153-8i4q",
     "source_host": "linkedin.com",
@@ -22708,6 +22858,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-0bb3a211c6bf",
+    "source_url": "https://www.researchgate.net/profile/Olzhas-Kadyrakunov",
+    "source_host": "researchgate.net",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "public_research_profile"
   },
   {
     "source_id": "src-cc316f38444f",

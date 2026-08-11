@@ -693,6 +693,17 @@
     "evidence_url": "https://sg.linkedin.com/in/asset-daliyev-4ab6a532"
   },
   {
+    "person_id": "kaz-c0f06a275839",
+    "name": "Asset Mussagaliyev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://www.linkedin.com/in/asset-mussagaliyev-713a1156",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The reviewed accepted profile explicitly places Asset Mussagaliyev's ongoing Prosper Pay CFO role in Almaty, Kazakhstan; the current-role location is used instead of the broader profile header."
+  },
+  {
     "person_id": "kaz-19cbd524a6c0",
     "name": "Ayan Segizbay",
     "country_code": "KZ",

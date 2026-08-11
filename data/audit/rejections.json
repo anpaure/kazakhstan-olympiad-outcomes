@@ -1030,5 +1030,29 @@
     "evidence_url": "https://linkedin.com/in/daniyar-murtazin-47b177330",
     "reason": "The profile is Daniyar rather than Danil Murtazin and its 2020-2024 university timeline is incompatible with Kazakhstan's school-level 2000 and 2001 IPhO participant",
     "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-596f1ff9721d",
+    "person_name": "Aldiyar Nurmanov",
+    "source_id": "src-3baeb13fd0b2",
+    "evidence_url": "https://linkedin.com/in/aldiyar-nurmanov-767422304",
+    "reason": "The profile attended secondary school from 2020 through 2023 and is far too young to be Kazakhstan's school-level 2009 IPhO entrant",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-618279226751",
+    "person_name": "Maxim Tsoy",
+    "source_id": "src-6cf4dee49771",
+    "evidence_url": "https://linkedin.com/in/maxim-tsoy-93a91321",
+    "reason": "The profile has worked as an independent software consultant since 2010 and is far too old to be the 2024-2025 school-level IOI entrant",
+    "review_evidence_url": "https://stats.ioinformatics.org/people/8348"
+  },
+  {
+    "person_id": "kaz-618279226751",
+    "person_name": "Maxim Tsoy",
+    "source_id": "src-b8c158146362",
+    "evidence_url": "https://linkedin.com/in/maximtsoy",
+    "reason": "The profile's 2009-2012 chemical-engineering degree predates Maxim Tsoy's documented 2024-2025 school-level IOI participation",
+    "review_evidence_url": "https://stats.ioinformatics.org/people/8348"
   }
 ]

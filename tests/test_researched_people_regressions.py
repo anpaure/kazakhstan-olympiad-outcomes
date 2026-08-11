@@ -655,6 +655,81 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             },
         )
 
+    def test_asset_mussagaliyev_confirmed_prosper_pay_outcome(self):
+        person = self.people["kaz-c0f06a275839"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Prosper Pay")
+        self.assertEqual(person["role"], "Chief Financial Officer")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://www.linkedin.com/in/asset-mussagaliyev-713a1156",
+        )
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+        self.assertEqual(location["confidence"], "confirmed")
+        self.assertEqual(location["evidence_kind"], "current_role_location")
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"Nanyang Technological University (NTU)"},
+        )
+        self.assertTrue(
+            {
+                "Kazyna Capital Management",
+                "Ordabasy Group",
+                "Private Equity Holding",
+                "Qazaq National Parks",
+            }.issubset(
+                {
+                    row["organization"]
+                    for row in self.affiliations_for(person["person_id"])
+                }
+            )
+        )
+        self.assertTrue(
+            any(
+                row["organization"] == "Prosper Pay"
+                and row["role"] == "Head of Prosper Payment Solutions legal entity"
+                for row in self.affiliations_for(person["person_id"])
+            )
+        )
+
+    def test_partial_institutional_leads_remain_history_only(self):
+        aslan = self.people["kaz-c056b8e8822d"]
+        aigerim = self.people["kaz-4cad451e9620"]
+        olzhas = self.people["kaz-208576016cfd"]
+        islam = self.people["kaz-be04ddfb5a42"]
+
+        self.assertEqual(aslan["destination_status"], "none")
+        self.assertIn(
+            "L.N. Gumilyov Eurasian National University",
+            self.alma_maters(aslan["person_id"]),
+        )
+        self.assertEqual(aigerim["destination_status"], "none")
+        self.assertTrue(
+            {"TU Berlin", "Porsche"}.issubset(
+                {
+                    row["organization"]
+                    for row in self.affiliations_for(aigerim["person_id"])
+                }
+            )
+        )
+        self.assertEqual(olzhas["destination_status"], "none")
+        self.assertTrue(
+            any(
+                row["organization"] == "KTH Royal Institute of Technology"
+                and row["role"]
+                == "Current research-profile affiliation (relationship not stated)"
+                for row in self.affiliations_for(olzhas["person_id"])
+            )
+        )
+        self.assertEqual(islam["destination_status"], "none")
+        self.assertIn(
+            "Galaxy International School Almaty",
+            self.alma_maters(islam["person_id"]),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

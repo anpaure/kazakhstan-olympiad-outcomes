@@ -3015,6 +3015,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-9c65946b4b475a66",
+    "alias": "Prosper Payment Solutions",
+    "canonical_name": "Prosper Pay",
+    "display_name": "Prosper Pay",
+    "merge_type": "same_entity",
+    "rationale": "Reviewed Kazakhstan registry entity associated with the Prosper Pay destination",
+    "evidence_url": "https://ba.prg.kz/750000000-almaty/251240038235-too-prosper-payment-solutions/"
+  },
+  {
     "organization_alias_id": "org-2a71d318101a63c3",
     "alias": "Purdue Physics and Astronomy",
     "canonical_name": "Purdue University",

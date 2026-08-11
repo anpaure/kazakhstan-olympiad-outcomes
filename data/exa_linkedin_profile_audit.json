@@ -2,14 +2,14 @@
   "provider": "Exa with reviewed public-profile supplements",
   "endpoint": "https://api.exa.ai/contents",
   "fallback_endpoint": "https://api.exa.ai/search",
-  "generated_at": "2026-08-11T00:24:40+00:00",
+  "generated_at": "2026-08-11T01:33:10+00:00",
   "input_path": "data/researched_people.csv",
   "input_people_count": 456,
-  "accepted_linkedin_count": 280,
-  "profile_count": 280,
+  "accepted_linkedin_count": 281,
+  "profile_count": 281,
   "successful_profile_count": 243,
   "cached_search_profile_count": 20,
-  "manual_public_profile_count": 6,
+  "manual_public_profile_count": 7,
   "error_profile_count": 11,
   "total_cost_usd": 0.243,
   "key_persisted": false,
@@ -125,6 +125,12 @@
     {
       "request_id": "0c44f6663a74e16edf335bd29faadcf5",
       "retrieved_at": "2026-08-11T00:24:39+00:00",
+      "requested_profile_count": 1,
+      "cost_usd": 0.0
+    },
+    {
+      "request_id": "a8333fc5f7cb762e8e9b9fa23c905e8b",
+      "retrieved_at": "2026-08-11T01:26:19+00:00",
       "requested_profile_count": 1,
       "cost_usd": 0.0
     }
@@ -1081,6 +1087,20 @@
       "content_characters": 1769,
       "text": "# Asset Daliyev\n\nChief Technology Officer at Khan Group LLP\n\nSingapore (SG)\n\n57 connections • 69 followers\n\n## About\n\nChief Technology Officer at Khan Group LLP\n\nTotal Experience: 13 years and 2 months\n\n## Experience\n\n### Chief Technology Officer - Khan Group LLP (Current)\n\nJan 2017 - Present (9 years and 6 months) in Kazakhstan\n\nDepartment: Engineering and Technical • Level: C-Level\n\n### Chief Technology Officer - Mirkuponov.kz\n\nJan 2014 - Jan 2016 (2 years)\n\nDepartment: Engineering and Technical • Level: C-Level\n\n### Senior Software Developer - Mirkuponov.kz\n\nMay 2012 - Dec 2014 (2 years and 7 months)\n\nDepartment: Engineering and Technical • Level: Senior\n\n## Education\n\n### [Nanyang Technological University Singapore](https://www.linkedin.com/school/ntusg)\n\n2008 - 2012 (4 years) in Singapore, Singapore\n\nNanyang Technological University Singapore is a higher education institution. Nanyang Technological University is one of the top universities in Singapore offering undergraduate and postgraduate education in engineering, business, science, humanities, arts, social sciences, education and medicine. Nanyang Technological University Singapore has 6,000-7,000 employees (+9-10% YoY) and has annual revenue in the $1B-$2B range, founded in 1990. Headquartered in Singapore, Singapore, with offices in 11 Mandalay Road and 11 Slim Barracks Rise (off North Buona Vista Road). Its workforce is distributed across 56 countries (including Singapore, China, India, United States, and United Kingdom). Research output of 100,000-200,000 works, primarily in Engineering, Computer Science, and Materials Science. Funds research behind 3,000-4,000 works.\n\n## Skills\n\nchief technology officer • developer • senior software developer • software developer • technology",
       "source_endpoint": "https://api.exa.ai/contents"
+    },
+    {
+      "person_id": "kaz-c0f06a275839",
+      "name": "Asset Mussagaliyev",
+      "linkedin_url": "https://www.linkedin.com/in/asset-mussagaliyev-713a1156",
+      "status": "manual_public_profile",
+      "error": "",
+      "request_id": "",
+      "retrieved_at": "2026-08-11T06:30:37+05:00",
+      "title": "Asset Mussagaliyev",
+      "resolved_url": "https://www.linkedin.com/in/asset-mussagaliyev-713a1156",
+      "content_characters": 731,
+      "source_endpoint": "https://www.linkedin.com/in/asset-mussagaliyev-713a1156",
+      "text": "# Asset Mussagaliyev\n\nCorporate finance, fintech\n\nKazakhstan (KZ)\n\n## Experience\n\n### Chief Financial Officer - Prosper Pay (Current)\n\nSep 2022 - Present in Almaty, Kazakhstan\n\n### Chief Financial Officer - Qazaq National Parks\n\nSep 2022 - Sep 2023 in Almaty, Kazakhstan\n\n### Investment Associate - Private Equity Holding\n\nOct 2018 - Mar 2022 in Almaty, Kazakhstan\n\n### Analyst, Investment Analysis & Deals Structuring Department - Ordabasy Group\n\nJun 2018 - Sep 2018 in Almaty, Kazakhstan\n\n### Senior Manager - Kazyna Capital Management\n\nOct 2016 - Jun 2018 in Astana, Kazakhstan\n\n## Education\n\n### Nanyang Technological University Singapore\n\n2008 - 2012\n\n### High School at National School of Physics & Math (FIZMAT)\n\n2003 - 2007"
     },
     {
       "person_id": "kaz-8c6b4dfb5df9",

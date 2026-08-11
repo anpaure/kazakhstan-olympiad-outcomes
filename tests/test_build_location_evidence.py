@@ -280,6 +280,86 @@ class LocationExtractionTest(unittest.TestCase):
             rows[0]["evidence_kind"], "current_role_location"
         )
 
+    def test_legal_entity_location_is_a_trusted_fallback(self):
+        people = [
+            {
+                "person_id": "kaz-company-officer",
+                "name": "Company Officer",
+                "confidence": "probable",
+                "organization": "Example Company",
+                "role": "Chief Financial Officer",
+                "affiliation_type": "employment",
+                "destination_status": "latest_employment",
+            }
+        ]
+        overrides = {
+            "kaz-company-officer": {
+                "person_id": "kaz-company-officer",
+                "name": "Company Officer",
+                "country_code": "KZ",
+                "country_name": "Kazakhstan",
+                "location_label": "Almaty, Kazakhstan",
+                "evidence_url": "https://example.kz/company",
+                "evidence_kind": "active_affiliation_legal_entity_location",
+                "confidence": "probable",
+                "review_reason": "The active legal entity is registered in Almaty.",
+            }
+        }
+
+        rows = build_rows(people, [], overrides)
+
+        self.assertEqual(rows[0]["country_code"], "KZ")
+        self.assertEqual(
+            rows[0]["evidence_kind"],
+            "active_affiliation_legal_entity_location",
+        )
+
+    def test_current_role_location_beats_legal_entity_fallback(self):
+        people = [
+            {
+                "person_id": "kaz-company-officer",
+                "name": "Company Officer",
+                "confidence": "probable",
+                "linkedin_url": "https://linkedin.com/in/company-officer",
+                "organization": "Example Company",
+                "role": "Chief Financial Officer",
+                "affiliation_type": "employment",
+                "destination_status": "latest_employment",
+            }
+        ]
+        searches = [
+            {
+                "results": [
+                    {
+                        "url": "https://linkedin.com/in/company-officer",
+                        "highlights": [
+                            "# Company Officer Almaty, Kazakhstan (KZ) "
+                            "### Chief Financial Officer - Example Company (Current) "
+                            "Jan 2025 - Present in London, United Kingdom"
+                        ],
+                    }
+                ]
+            }
+        ]
+        overrides = {
+            "kaz-company-officer": {
+                "person_id": "kaz-company-officer",
+                "name": "Company Officer",
+                "country_code": "KZ",
+                "country_name": "Kazakhstan",
+                "location_label": "Almaty, Kazakhstan",
+                "evidence_url": "https://example.kz/company",
+                "evidence_kind": "active_affiliation_legal_entity_location",
+                "confidence": "probable",
+                "review_reason": "The active legal entity is registered in Almaty.",
+            }
+        }
+
+        rows = build_rows(people, searches, overrides)
+
+        self.assertEqual(rows[0]["country_code"], "GB")
+        self.assertEqual(rows[0]["evidence_kind"], "current_role_location")
+
     def test_organization_location_loader_rejects_duplicate_canonical_names(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "locations.csv"

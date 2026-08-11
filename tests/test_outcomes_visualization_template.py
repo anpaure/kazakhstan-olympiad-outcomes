@@ -67,6 +67,14 @@ class PeopleSortTest(unittest.TestCase):
         )
         self.assertIn("`${person.firstYear}-${person.lastYear}`", self.template)
 
+    def test_sortable_olympiad_header_stays_on_one_line(self):
+        self.assertIn("#iso-outcomes-viz .iso-th-label", self.template)
+        self.assertIn("white-space: nowrap", self.template)
+        self.assertIn(
+            "#iso-outcomes-viz .table th:nth-child(2) { width: 10%; }",
+            self.template,
+        )
+
 
 class CountryAndHistoryTest(unittest.TestCase):
     @classmethod
