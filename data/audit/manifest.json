@@ -31,18 +31,18 @@
   "counts": {
     "people": 456,
     "participations": 680,
-    "affiliations": 2569,
-    "locations": 270,
+    "affiliations": 2570,
+    "locations": 272,
     "organization_aliases": 511,
-    "organization_sectors": 190,
-    "destination_reviews": 49,
-    "evidence_rows": 5750,
-    "sources": 1672,
+    "organization_sectors": 191,
+    "destination_reviews": 51,
+    "evidence_rows": 5761,
+    "sources": 1674,
     "rejections": 154,
-    "complete_outcomes": 423,
+    "complete_outcomes": 426,
     "confirmed_outcomes": 314,
-    "probable_outcomes": 109,
+    "probable_outcomes": 112,
     "candidate_only_people": 1,
-    "unmatched_people": 32
+    "unmatched_people": 29
   }
 }

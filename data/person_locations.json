@@ -759,6 +759,17 @@
     "review_reason": "The current company-registry record names Askerbek Bolatovich Zhaksylykov as head of Almaty-registered KAZGEOSERVICE, while his exact-name career profile independently says he lives and works in Almaty; the identity match remains probable."
   },
   {
+    "person_id": "kaz-c056b8e8822d",
+    "name": "Aslan Kuan",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://rsp.gov.kz/kz/rsp?page=57304",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The accepted current sole-proprietor record is in Kazakhstan's government business-entities register. Only the country is asserted because the reviewed registry result does not state a city."
+  },
+  {
     "person_id": "kaz-53073a123482",
     "name": "Assem Zhunis",
     "country_code": "HK",
@@ -2286,6 +2297,17 @@
     "evidence_kind": "affiliation_country",
     "confidence": "probable",
     "review_reason": "Country comes from the accepted structured affiliation record."
+  },
+  {
+    "person_id": "kaz-4f8a3959755f",
+    "name": "Sanzhar Otey",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://niac.kz/221140009084",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The accepted current company record places Big Apple Esentai and its director in Almaty, Kazakhstan. The identity bridge to the IBO entrant remains probable."
   },
   {
     "person_id": "kaz-01091dcfd107",

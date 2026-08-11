@@ -9255,6 +9255,21 @@
     "evidence_text": "A 2021 student-journal article identifies the rare exact-name Aslan Kuan as a student at L.N. Gumilyov Eurasian National University in Nur-Sultan. The chronology is compatible with the 2012-2013 IBO entrant, but the source does not explicitly mention his Olympiad record or degree completion."
   },
   {
+    "person_id": "kaz-c056b8e8822d",
+    "name": "Aslan Kuan",
+    "organization": "Self-employed",
+    "role": "Education Support Services Sole Proprietor",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "is_current": true,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://rsp.gov.kz/kz/rsp?page=57304",
+    "evidence_kind": "destination_source_review",
+    "confidence": "probable",
+    "evidence_text": "Kazakhstan's current government business-entities register lists full-patronymic Aslan Erlanuly Kuan as a sole proprietor under OKED 85609, other education support activity. Self-employed is used as the single displayed destination because the registry does not expose a separate trading name."
+  },
+  {
     "person_id": "kaz-53073a123482",
     "name": "Assem Zhunis",
     "organization": "Hong Kong University of Science and Technology (HKUST)",
@@ -24303,31 +24318,16 @@
     "person_id": "kaz-6d8ff9e71d31",
     "name": "Nurislam Yeshenkulov",
     "organization": "Suleyman Demirel University (Turkey)",
-    "role": "Incoming Medical Student",
+    "role": "Medical Student (degree completion not established)",
     "affiliation_type": "education",
     "start_year": "2016",
-    "end_year": "2016",
-    "is_current": false,
-    "selected_as_alma_mater": false,
-    "evidence_url": "https://oidb.isparta.edu.tr/assets/uploads/sites/73/files/2016-guz-kurumlar-arasi-yatay-gecis.pdf",
-    "evidence_kind": "official_university_transfer_record",
-    "confidence": "confirmed",
-    "evidence_text": "Suleyman Demirel University's official 2016 inter-university transfer list identifies Nurislam Yeshenkulov as accepted into its Faculty of Medicine from Sifa University."
-  },
-  {
-    "person_id": "kaz-6d8ff9e71d31",
-    "name": "Nurislam Yeshenkulov",
-    "organization": "Suleyman Demirel University (Turkey)",
-    "role": "Medical Student in 2019-2020 (degree completion not established)",
-    "affiliation_type": "education",
-    "start_year": "2019",
     "end_year": "2020",
     "is_current": false,
     "selected_as_alma_mater": true,
     "evidence_url": "https://tip.sdu.edu.tr/assets/uploads/sites/101/files/2019-2020-danisma-atama-listesi-17102019.pdf",
-    "evidence_kind": "official_university_program_roster",
-    "confidence": "confirmed",
-    "evidence_text": "Suleyman Demirel University's official 2019-2020 Faculty of Medicine adviser roster identifies Nurislam Yeshenkulov as a student; the source does not establish degree completion."
+    "evidence_kind": "manual_review",
+    "confidence": "probable",
+    "evidence_text": "The IBO results identify Kazakhstan's rare exact-name silver medalist in 2012 and 2013. Turkish university records then identify exact-name Nurislam Yeshenkulov in a 2016 Faculty of Medicine transfer from Sifa University to Suleyman Demirel University and again on the official 2019-2020 Faculty of Medicine adviser roster. The rare name, age-compatible chronology, and biology-to-medicine continuity make the chain strong, but no reviewed source explicitly joins the university record to the Olympia"
   },
   {
     "person_id": "kaz-253b9dc2b33d",
@@ -29098,6 +29098,21 @@
     "evidence_kind": "accepted_codeforces",
     "confidence": "probable",
     "evidence_text": "handle=gh_ost; country=Kazakhstan; city=Aqtöbe; organization=Khan Group"
+  },
+  {
+    "person_id": "kaz-4f8a3959755f",
+    "name": "Sanzhar Otey",
+    "organization": "Big Apple Esentai",
+    "role": "Director",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "is_current": true,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://niac.kz/221140009084",
+    "evidence_kind": "destination_source_review",
+    "confidence": "probable",
+    "evidence_text": "The current Kazakhstan company record names full-patronymic Sanzhar Ermekqaliuly Otey as director of Big Apple Esentai, an Almaty restaurant operator registered in November 2022. Director is used as a direct translation of the registry's head-of-entity field."
   },
   {
     "person_id": "kaz-01091dcfd107",

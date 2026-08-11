@@ -182,6 +182,13 @@
     "rationale": "Reviewed core activity is construction and property development."
   },
   {
+    "organization_sector_id": "sector-134cbf4c58bbc339",
+    "canonical_name": "Big Apple Esentai",
+    "organization_type": "company",
+    "sector": "Consumer & Media",
+    "rationale": "The reviewed company registry classifies the destination as a restaurant and food-delivery operator."
+  },
+  {
     "organization_sector_id": "sector-4d1ce4a4e1450822",
     "canonical_name": "BIOVECTRA",
     "organization_type": "company",

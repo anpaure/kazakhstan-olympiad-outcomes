@@ -720,6 +720,7 @@ src-2fc2cbe341d2,https://nauchforum.ru/archive/studjournal/17%28153_3%29.pdf,nau
 src-0628a26e79ca,https://nazymaltbridge.substack.com/p/welcome-to-altbridge,nazymaltbridge.substack.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-7ddc1d02cbec,https://news.itmo.ru/ru/archive/news/5089/,news.itmo.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_student_profile
 src-b5db9260f656,https://nfactorialai.com/,nfactorialai.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-99d5fb588fbd,https://niac.kz/221140009084,niac.kz,web_page,4,1,2,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,current_role_location;destination_review;destination_source_review;manual
 src-60ec54143394,https://nitec.kz/index.php/en/kontakty/central-office,nitec.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-806e948c98a1,https://nl.linkedin.com/in/vyacheslav-li,nl.linkedin.com,linkedin,9,1,1,8,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
 src-1b06af578c08,https://nu.edu.kz/en/about/contacts,nu.edu.kz,web_page,5,5,0,5,0,0,0,accepted_location_evidence,current_education_location
@@ -729,7 +730,7 @@ src-28c0b5907939,https://nur.nu.edu.kz/items/85ec681a-74c3-4778-8625-0dd7b27b5ab
 src-f9ee85d10955,https://nur.nu.edu.kz/items/86a10e4c-8685-4d44-b3d3-7d8c00c39682,nur.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-3e9e6eb11598,https://nurorda.edu.kz/en/about/media/news/slug-6ew3h0Z5g6YuO57YLLcEMjVYpFxgCABj,nurorda.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-3e381f3e3f4c,https://ogarev-online.ru/1071-2836/article/view/248844,ogarev-online.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,journal_affiliation
-src-568c323e7467,https://oidb.isparta.edu.tr/assets/uploads/sites/73/files/2016-guz-kurumlar-arasi-yatay-gecis.pdf,oidb.isparta.edu.tr,pdf,2,1,0,2,0,0,0,accepted_affiliation_history,official_university_transfer_record
+src-568c323e7467,https://oidb.isparta.edu.tr/assets/uploads/sites/73/files/2016-guz-kurumlar-arasi-yatay-gecis.pdf,oidb.isparta.edu.tr,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_transfer_record
 src-519b60a11ad7,https://old.kase.kz/files/emitters/FHJI/fhji_af_3_2024.pdf,old.kase.kz,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,regulated_issuer_disclosure
 src-05040561425f,https://old.mipt.ru/en/about/general/contacts/way.php,old.mipt.ru,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
 src-b80105ebcc7f,https://onpointanalytics.com/staff/alibek-aldangarov/,onpointanalytics.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -1032,6 +1033,7 @@ src-2d44d50b614b,https://research.nu.edu.kz/en/persons/meiram-murzabulatov/,rese
 src-f33bb7a68ec2,https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/,research.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-c4f8fcc141d4,https://research.utwente.nl/en/publications/nondeterminism-in-stochastic-modeling/,research.utwente.nl,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_research_record
 src-37ad3b1b2b31,https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf,rmebrk.kz,pdf,4,4,1,3,0,0,0,accepted_affiliation_history;manual_review,manual;reviewed_olympiad_destination_table
+src-86b5f0ac633c,https://rsp.gov.kz/kz/rsp?page=57304,rsp.gov.kz,web_page,4,1,2,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,current_role_location;destination_review;destination_source_review;manual
 src-d8b3f3b80991,https://ru.linkedin.com/in/david-li-ab07b332b,ru.linkedin.com,linkedin,9,1,1,8,0,0,0,accepted_affiliation_history;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;destination_review;destination_source_review;linkedin
 src-9a4331ccb368,https://ru.linkedin.com/in/kirillmaerle,ru.linkedin.com,linkedin,1,1,0,1,0,0,0,accepted_affiliation_history,manual_public_profile
 src-44bb12ca61c5,https://ru.linkedin.com/posts/armansu_%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-imo-ioi-ipho-icho-activity-7333479882347143169-f6Y2,ru.linkedin.com,linkedin,1,1,0,0,0,1,0,manual_review,manual
@@ -1052,13 +1054,13 @@ src-9d88bca8644e,https://scoreboard.bc-pf.org/en/results/biology/international_b
 src-21b63bbcd102,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2010,scoreboard.bc-pf.org,web_page,4,4,4,0,0,0,0,participant_registry,IBO
 src-155dbbace69f,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2011,scoreboard.bc-pf.org,web_page,6,4,6,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-bf28dbbc9342,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2012,scoreboard.bc-pf.org,web_page,5,4,4,0,0,1,0,manual_review;participant_registry,IBO;manual
-src-86449e034441,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2013,scoreboard.bc-pf.org,web_page,4,4,4,0,0,0,0,participant_registry,IBO
+src-86449e034441,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2013,scoreboard.bc-pf.org,web_page,6,4,6,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-41a25fb6a1be,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2014,scoreboard.bc-pf.org,web_page,7,4,7,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-8b3a71df9504,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2015,scoreboard.bc-pf.org,web_page,5,4,5,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-f7f401095d0c,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2016,scoreboard.bc-pf.org,web_page,5,4,5,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-400c61c0106e,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2017,scoreboard.bc-pf.org,web_page,6,4,5,0,0,1,0,manual_review;participant_registry,IBO;manual
 src-bb60cbeb8f7e,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2018,scoreboard.bc-pf.org,web_page,5,4,5,0,0,0,0,manual_review;participant_registry,IBO;manual
-src-8c0f1e2885aa,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2019,scoreboard.bc-pf.org,web_page,5,4,4,0,0,1,0,manual_review;participant_registry,IBO;manual
+src-8c0f1e2885aa,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2019,scoreboard.bc-pf.org,web_page,6,4,5,0,0,1,0,manual_review;participant_registry,IBO;manual
 src-a202f0acccb2,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2020,scoreboard.bc-pf.org,web_page,4,3,4,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-c8dc8770b278,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2021,scoreboard.bc-pf.org,web_page,5,4,5,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-708da53ab4d8,https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2022,scoreboard.bc-pf.org,web_page,4,4,4,0,0,0,0,participant_registry,IBO
@@ -1198,7 +1200,7 @@ src-fe8270247075,https://theorg.com/org/biovectra/org-chart/alexey-dudnik,theorg
 src-5ce7ec2505c3,https://theorg.com/org/depop/teams/engineering-team,theorg.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-a54752c93706,https://theorg.com/org/eurasian-resources-group/org-chart/dauren-auzhani,theorg.com,web_page,4,1,1,3,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review;public_career_profile
 src-e8d4ce13b782,https://theorg.com/org/kcell-jsc/org-chart/birzhan-moldagaliyev,theorg.com,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,professional_directory
-src-51ddd86eb5b5,https://tip.sdu.edu.tr/assets/uploads/sites/101/files/2019-2020-danisma-atama-listesi-17102019.pdf,tip.sdu.edu.tr,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_program_roster
+src-51ddd86eb5b5,https://tip.sdu.edu.tr/assets/uploads/sites/101/files/2019-2020-danisma-atama-listesi-17102019.pdf,tip.sdu.edu.tr,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-b73a90b9ce40,https://tlab.kz/en/,tlab.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
 src-b1e3b3948566,https://tr.linkedin.com/in/vitaliy-tsvayer,tr.linkedin.com,linkedin,17,1,1,16,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
 src-6a81428d9c97,https://trz.nis.edu.kz/en/school/nzm-astana-nura/news/2406,trz.nis.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review

@@ -571,7 +571,6 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         expected_alma_maters = {
             "kaz-618279226751": "Republican Physics and Mathematics School (RFMS)",
             "kaz-822bb4ee42e0": "Nazarbayev Intellectual Schools (NIS)",
-            "kaz-6d8ff9e71d31": "Suleyman Demirel University (Turkey)",
         }
 
         for person_id, alma_mater in expected_alma_maters.items():
@@ -866,15 +865,9 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             )
         )
 
-    def test_unresolved_partial_institutional_leads_remain_history_only(self):
-        aslan = self.people["kaz-c056b8e8822d"]
+    def test_olzhas_kadyrakunov_partial_institutional_lead_remains_history_only(self):
         olzhas = self.people["kaz-208576016cfd"]
 
-        self.assertEqual(aslan["destination_status"], "none")
-        self.assertIn(
-            "L.N. Gumilyov Eurasian National University",
-            self.alma_maters(aslan["person_id"]),
-        )
         self.assertEqual(olzhas["destination_status"], "none")
         self.assertTrue(
             any(
@@ -904,7 +897,8 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         person = self.people["kaz-6d8ff9e71d31"]
         alma_maters = self.alma_maters(person["person_id"])
 
-        self.assertEqual(person["destination_status"], "none")
+        self.assertEqual(person["destination_status"], "history_only")
+        self.assertEqual(person["confidence"], "probable")
         self.assertIn("Sifa University", alma_maters)
         self.assertIn("Suleyman Demirel University (Turkey)", alma_maters)
         self.assertNotIn("Suleyman Demirel University (SDU)", alma_maters)
@@ -1173,6 +1167,63 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                 and not row["is_current"]
                 for row in affiliations
             )
+        )
+        self.assertNotIn(person["person_id"], self.locations)
+
+    def test_aslan_kuan_probable_education_services_outcome_and_enu_history(self):
+        person = self.people["kaz-c056b8e8822d"]
+        location = self.locations[person["person_id"]]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["organization"], "Self-employed")
+        self.assertEqual(
+            person["role"], "Education Support Services Sole Proprietor"
+        )
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertIn(
+            "L.N. Gumilyov Eurasian National University",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertTrue(
+            any(
+                row["organization"] == "Self-employed"
+                and row["role"] == "Education Support Services Sole Proprietor"
+                and row["is_current"]
+                for row in affiliations
+            )
+        )
+
+    def test_sanzhar_otey_probable_big_apple_directorship_in_almaty(self):
+        person = self.people["kaz-4f8a3959755f"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Big Apple Esentai")
+        self.assertEqual(person["role"], "Director")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+
+    def test_nurislam_yeshenkulov_probable_bounded_medical_education(self):
+        person = self.people["kaz-6d8ff9e71d31"]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["role"], "")
+        self.assertEqual(person["destination_status"], "history_only")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"Sifa University", "Suleyman Demirel University (Turkey)"},
+        )
+        self.assertEqual(
+            sum(
+                row["organization"] == "Suleyman Demirel University (Turkey)"
+                and row["role"]
+                == "Medical Student (degree completion not established)"
+                for row in affiliations
+            ),
+            1,
         )
         self.assertNotIn(person["person_id"], self.locations)
 

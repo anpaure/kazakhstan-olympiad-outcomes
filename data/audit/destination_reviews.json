@@ -165,6 +165,21 @@
     "review_reason": "The accepted profile lists Software Engineer at Meta as current from September 2025."
   },
   {
+    "destination_review_id": "dest-review-bfc5ad903b9b3751",
+    "evidence_id": "ev-cc367dbc8eac4bb7",
+    "source_id": "src-86b5f0ac633c",
+    "person_id": "kaz-c056b8e8822d",
+    "name": "Aslan Kuan",
+    "organization": "Self-employed",
+    "role": "Education Support Services Sole Proprietor",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://rsp.gov.kz/kz/rsp?page=57304",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "Kazakhstan's current government business-entities register lists full-patronymic Aslan Erlanuly Kuan as a sole proprietor under OKED 85609, other education support activity. Self-employed is used as the single displayed destination because the registry does not expose a separate trading name."
+  },
+  {
     "destination_review_id": "dest-review-9c2fca46d8018784",
     "evidence_id": "ev-592b8d6ed3d8cd36",
     "source_id": "src-8064153e41f4",
@@ -568,6 +583,21 @@
     "evidence_url": "https://www.linkedin.com/in/bekbolatov",
     "reviewed_at": "2026-08-10",
     "review_reason": "The accepted profile lists Software Developer at Genie from June 2025 and does not identify him as Genie's founder."
+  },
+  {
+    "destination_review_id": "dest-review-b4960fce3b14dd2d",
+    "evidence_id": "ev-3667be753935b774",
+    "source_id": "src-99d5fb588fbd",
+    "person_id": "kaz-4f8a3959755f",
+    "name": "Sanzhar Otey",
+    "organization": "Big Apple Esentai",
+    "role": "Director",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://niac.kz/221140009084",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "The current Kazakhstan company record names full-patronymic Sanzhar Ermekqaliuly Otey as director of Big Apple Esentai, an Almaty restaurant operator registered in November 2022. Director is used as a direct translation of the registry's head-of-entity field."
   },
   {
     "destination_review_id": "dest-review-4a06f3138a4ddca6",
