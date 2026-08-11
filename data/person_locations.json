@@ -1093,11 +1093,11 @@
     "name": "Arman Diyarov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan (last verified in 2007)",
-    "evidence_url": "https://www.imo-official.org/results/contestant/15619/",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The official 2007 IMO result is the latest person-specific country evidence found. Kazakhstan is historical latest-known evidence only; no current residence is inferred."
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://ba.prg.kz/amp/750000000-almaty/150840012448-too-trivella/",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The accepted current company record places TRIVELLA and its director Arman Nurkeyevich Diyarov in Almaty. The identity bridge from the company director to the 2007 IMO entrant remains probable."
   },
   {
     "person_id": "kaz-590493685dc4",
@@ -2818,13 +2818,13 @@
   {
     "person_id": "kaz-618279226751",
     "name": "Maxim Tsoy",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Almaty, Kazakhstan (last verified in 2025)",
-    "evidence_url": "https://www.arirang.ru/archive/kore-ilbo/2025/31.KI.08.08.2025.pdf",
-    "evidence_kind": "historical_latest_known_location",
-    "confidence": "confirmed",
-    "review_reason": "The reviewed 2025 graduate profile places IOI alumnus Maxim Tsoy at RFMS in Almaty through graduation. This is historical latest-known evidence only; no current university or residence is inferred."
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_url": "https://www.ntu.edu.sg/about-us/visit-us",
+    "evidence_kind": "current_education_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the accepted active student affiliation at Nanyang Technological University (NTU); the linked official institution source establishes the campus location. NTU's official visitor page identifies its Singapore campus."
   },
   {
     "person_id": "kaz-c97c1b9e1718",

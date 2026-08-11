@@ -435,6 +435,21 @@
     "source_adapters": "official_company_registry"
   },
   {
+    "source_id": "src-34529467ec95",
+    "source_url": "https://ba.prg.kz/amp/750000000-almaty/150840012448-too-trivella/",
+    "source_host": "ba.prg.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "current_role_location;manual;manual_review"
+  },
+  {
     "source_id": "src-9190e29d6b36",
     "source_url": "https://baq.kz/qazaqstanda-daryndy-oqushylarga-55-mln-tenge-beriletin-boldy-200000514/",
     "source_host": "baq.kz",
@@ -11325,6 +11340,21 @@
     "source_adapters": "current_education_location"
   },
   {
+    "source_id": "src-8de11717dada",
+    "source_url": "https://olymp-kz.narod.ru/math/last.html",
+    "source_host": "olymp-kz.narod.ru",
+    "source_kind": "web_page",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;olympiad_school_record"
+  },
+  {
     "source_id": "src-7c0fbcb50c64",
     "source_url": "https://olymp.hse.ru/data/2019/04/30/1181018499/370New.pdf",
     "source_host": "olymp.hse.ru",
@@ -18198,16 +18228,16 @@
     "source_id": "src-3fde99c6a84f",
     "source_url": "https://stats.ioinformatics.org/people/8348",
     "source_host": "stats.ioinformatics.org",
-    "source_kind": "html",
-    "evidence_rows": 2,
+    "source_kind": "web_page",
+    "evidence_rows": 3,
     "people_count": 1,
-    "accepted_rows": 2,
+    "accepted_rows": 3,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IOI"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IOI;manual"
   },
   {
     "source_id": "src-ad3725994ac6",
@@ -18885,6 +18915,21 @@
     "source_adapters": "official_university_internship_roster"
   },
   {
+    "source_id": "src-ab9e580cd97c",
+    "source_url": "https://weproject.media/articles/detail/kak-biznesmeny-kazakhstana-zarabatyvayut-dostavlyaya-tovar-iz-kitaya/?amp=y",
+    "source_host": "weproject.media",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "media_interview"
+  },
+  {
     "source_id": "src-75150c32f93e",
     "source_url": "https://weproject.media/articles/detail/madi-baltagulov-ob-uchebe-v-yale-kak-kazakhstanets-postupil-v-magistraturu-ligi-plyushcha-po-obshche/",
     "source_host": "weproject.media",
@@ -18979,15 +19024,15 @@
     "source_url": "https://www.arirang.ru/archive/kore-ilbo/2025/31.KI.08.08.2025.pdf",
     "source_host": "arirang.ru",
     "source_kind": "pdf",
-    "evidence_rows": 3,
+    "evidence_rows": 2,
     "people_count": 1,
     "accepted_rows": 0,
-    "supporting_rows": 3,
+    "supporting_rows": 2,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;accepted_location_evidence",
-    "source_adapters": "historical_latest_known_location;newspaper_alumni_profile"
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "newspaper_alumni_profile"
   },
   {
     "source_id": "src-1f99e3323987",
@@ -20374,15 +20419,15 @@
     "source_url": "https://www.imo-official.org/results/contestant/15619/",
     "source_host": "imo-official.org",
     "source_kind": "html",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 1,
+    "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence;participant_registry",
-    "source_adapters": "IMO;historical_latest_known_location"
+    "provenances": "participant_registry",
+    "source_adapters": "IMO"
   },
   {
     "source_id": "src-414f88c56c65",
@@ -23730,6 +23775,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-0349d4a05bb1",
+    "source_url": "https://www.linkedin.com/posts/spectrum-international-school_congratulations-to-maxim-tsoy-on-his-admission-activity-7427313268790202368-sOzG",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review"
+  },
+  {
     "source_id": "src-962bc7039782",
     "source_url": "https://www.linkedin.com/posts/spectrum-international-school_huge-congratulations-to-our-student-margulan-activity-7445314253726830592-wCy6",
     "source_host": "linkedin.com",
@@ -24109,10 +24169,10 @@
     "source_url": "https://www.ntu.edu.sg/about-us/visit-us",
     "source_host": "ntu.edu.sg",
     "source_kind": "web_page",
-    "evidence_rows": 1,
-    "people_count": 1,
+    "evidence_rows": 2,
+    "people_count": 2,
     "accepted_rows": 0,
-    "supporting_rows": 1,
+    "supporting_rows": 2,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,

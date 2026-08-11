@@ -567,20 +567,65 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(location["country_code"], "KZ")
         self.assertEqual(location["location_label"], "Kyzylorda Region, Kazakhstan")
 
-    def test_stale_school_records_remain_history_only(self):
-        expected_alma_maters = {
-            "kaz-618279226751": "Republican Physics and Mathematics School (RFMS)",
-            "kaz-822bb4ee42e0": "Nazarbayev Intellectual Schools (NIS)",
-        }
+    def test_maxim_tsoy_incoming_ntu_student(self):
+        person = self.people["kaz-618279226751"]
+        location = self.locations[person["person_id"]]
+        affiliations = self.affiliations_for(person["person_id"])
 
-        for person_id, alma_mater in expected_alma_maters.items():
-            with self.subTest(person_id=person_id):
-                person = self.people[person_id]
-                self.assertEqual(person["confidence"], "unmatched")
-                self.assertEqual(person["organization"], "")
-                self.assertEqual(person["role"], "")
-                self.assertIn(alma_mater, self.alma_maters(person_id))
-                self.assertTrue(self.affiliations_for(person_id))
+        self.assertEqual(
+            person["organization"], "Nanyang Technological University (NTU)"
+        )
+        self.assertEqual(person["role"], "Incoming Undergraduate Student")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"Nanyang Technological University (NTU)"},
+        )
+        self.assertEqual(location["country_code"], "SG")
+        self.assertTrue(
+            any(
+                row["organization"]
+                == "Republican Physics and Mathematics School (RFMS)"
+                and not row["is_current"]
+                for row in affiliations
+            )
+        )
+
+    def test_arman_diyarov_trivella_director(self):
+        person = self.people["kaz-a1eb0da72f42"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "TRIVELLA")
+        self.assertEqual(person["role"], "Director")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertIn(
+            "Bilim-Innovation Lyceums (BIL)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+
+    def test_zhambyl_maksotov_huawei_destination(self):
+        person = self.people["kaz-0f47bbbea1f0"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Huawei")
+        self.assertEqual(person["role"], "Intern")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertIn("Nazarbayev University", self.alma_maters(person["person_id"]))
+        self.assertEqual(location["country_code"], "KZ")
+
+    def test_stale_school_records_remain_history_only(self):
+        person_id = "kaz-822bb4ee42e0"
+        person = self.people[person_id]
+
+        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["role"], "")
+        self.assertIn(
+            "Nazarbayev Intellectual Schools (NIS)", self.alma_maters(person_id)
+        )
+        self.assertTrue(self.affiliations_for(person_id))
 
     def test_yenlik_bakytbekova_incoming_cambridge_student(self):
         person = self.people["kaz-eebfbe6a6de9"]

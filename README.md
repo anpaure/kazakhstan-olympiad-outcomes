@@ -12,15 +12,15 @@ The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
 - 456 canonical people with 50 reviewed alias pairs
-- 436 researched people, all classified as probable or confirmed
-- 311 confirmed and 125 probable identity, education, or career outcomes
-- 420 manually reviewed outcomes backed by public evidence
-- 402 researched people with one resolved destination and 295 with a public LinkedIn URL
-- 2,728 sourced employment/education history rows, including 558 selected alma-mater records across 371 people
+- 438 researched people, all classified as probable or confirmed
+- 311 confirmed and 127 probable identity, education, or career outcomes
+- 422 manually reviewed outcomes backed by public evidence
+- 404 researched people with one resolved destination and 295 with a public LinkedIn URL
+- 2,732 sourced employment/education history rows, including 559 selected alma-mater records across 372 people
 - 65 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
 - 516 reviewed organization aliases collapsed into canonical employers and universities
-- 205 reviewed sector classifications covering every displayed non-educational destination
-- 456 sourced country records across 36 countries; 35 rows are visibly labeled as historical latest-known locations
+- 206 reviewed sector classifications covering every displayed non-educational destination
+- 456 sourced country records across 36 countries; 33 rows are visibly labeled as historical latest-known locations
 - 1 additional person with candidate-only evidence retained for audit but no accepted outcome
 - 155 rejected identity sources retained with review reasons and supporting links
 

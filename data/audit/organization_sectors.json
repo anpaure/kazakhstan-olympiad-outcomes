@@ -1316,6 +1316,13 @@
     "rationale": "The reviewed destination is the quantitative trading firm."
   },
   {
+    "organization_sector_id": "sector-45f2773495fc27aa",
+    "canonical_name": "TRIVELLA",
+    "organization_type": "company",
+    "sector": "Consulting & Professional Services",
+    "rationale": "The reviewed company and interview evidence describe wholesale sourcing and business services for trade with China."
+  },
+  {
     "organization_sector_id": "sector-2fcc106ff110996c",
     "canonical_name": "Two Sigma",
     "organization_type": "company",

@@ -28,6 +28,7 @@ src-0f527014597e,https://ba.prg.kz/231010000-atyrau/071040017099-too-agp-kholdin
 src-0d673387bda4,https://ba.prg.kz/710000000-astana/221140001702-too-vacante/,ba.prg.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-e394293e818c,https://ba.prg.kz/750000000-almaty/200340023883-too-quantum-management-company/,ba.prg.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-4bcb9cd74810,https://ba.prg.kz/750000000-almaty/251240038235-too-prosper-payment-solutions/,ba.prg.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_company_registry
+src-34529467ec95,https://ba.prg.kz/amp/750000000-almaty/150840012448-too-trivella/,ba.prg.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-9190e29d6b36,https://baq.kz/qazaqstanda-daryndy-oqushylarga-55-mln-tenge-beriletin-boldy-200000514/,baq.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-d1d7c137e43c,https://be.linkedin.com/in/yerkebulan-kambarov-b32aa160,be.linkedin.com,linkedin,1,1,0,1,0,0,0,accepted_affiliation_history,manual_profile_transcription
 src-0ffe75318f46,https://bilimdinews.kz/?p=240825,bilimdinews.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -754,6 +755,7 @@ src-3e381f3e3f4c,https://ogarev-online.ru/1071-2836/article/view/248844,ogarev-o
 src-568c323e7467,https://oidb.isparta.edu.tr/assets/uploads/sites/73/files/2016-guz-kurumlar-arasi-yatay-gecis.pdf,oidb.isparta.edu.tr,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_transfer_record
 src-519b60a11ad7,https://old.kase.kz/files/emitters/FHJI/fhji_af_3_2024.pdf,old.kase.kz,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,regulated_issuer_disclosure
 src-05040561425f,https://old.mipt.ru/en/about/general/contacts/way.php,old.mipt.ru,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
+src-8de11717dada,https://olymp-kz.narod.ru/math/last.html,olymp-kz.narod.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;olympiad_school_record
 src-7c0fbcb50c64,https://olymp.hse.ru/data/2019/04/30/1181018499/370New.pdf,olymp.hse.ru,pdf,1,1,0,1,0,0,0,accepted_location_evidence,historical_latest_known_location
 src-b80105ebcc7f,https://onpointanalytics.com/staff/alibek-aldangarov/,onpointanalytics.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-f777b8592620,https://opac.dbu.de/ab/DBU-Abschlussbericht-AZ-33891_01.pdf,opac.dbu.de,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,project_report_affiliation
@@ -1212,7 +1214,7 @@ src-af171a185cf3,https://stats.ioinformatics.org/people/8082,stats.ioinformatics
 src-d9ee3e8b520f,https://stats.ioinformatics.org/people/8083,stats.ioinformatics.org,html,2,1,2,0,0,0,0,participant_registry,IOI
 src-ba976777d021,https://stats.ioinformatics.org/people/8346,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
 src-aff45f0eeb43,https://stats.ioinformatics.org/people/8347,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
-src-3fde99c6a84f,https://stats.ioinformatics.org/people/8348,stats.ioinformatics.org,html,2,1,2,0,0,0,0,participant_registry,IOI
+src-3fde99c6a84f,https://stats.ioinformatics.org/people/8348,stats.ioinformatics.org,web_page,3,1,3,0,0,0,0,manual_review;participant_registry,IOI;manual
 src-ad3725994ac6,https://stats.ioinformatics.org/people/8684,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
 src-4eecb4de1a18,https://stats.ioinformatics.org/people/8685,stats.ioinformatics.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IOI;manual
 src-ed6b003f49ea,https://stats.ioinformatics.org/results/KAZ,stats.ioinformatics.org,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -1258,13 +1260,14 @@ src-9823a6711d77,https://uranconference.kz/download/files/information/sbornik202
 src-ee981958c2bf,https://vestnik-muiv.ru/upload/iblock/b2f/b2fa6535092643cf4ffd992e8b63e9fa.pdf,vestnik-muiv.ru,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,academic_author_biography
 src-dea80d9f0944,https://visit.berkeley.edu/,visit.berkeley.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-4094cd47e821,https://web.itu.edu.tr/~ugur/staj.html,web.itu.edu.tr,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_internship_roster
+src-ab9e580cd97c,https://weproject.media/articles/detail/kak-biznesmeny-kazakhstana-zarabatyvayut-dostavlyaya-tovar-iz-kitaya/?amp=y,weproject.media,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,media_interview
 src-75150c32f93e,https://weproject.media/articles/detail/madi-baltagulov-ob-uchebe-v-yale-kak-kazakhstanets-postupil-v-magistraturu-ligi-plyushcha-po-obshche/,weproject.media,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-147de19b3436,https://wmnl.unist.ac.kr/alumni/,wmnl.unist.ac.kr,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-ffe8b0fa26d1,https://www.admissions.caltech.edu/explore-more/news/caltech-boasts-silver-medal-winners-34th-international-physics-olympiad-756,admissions.caltech.edu,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-4233637936fa,https://www.aict.info/2018/info/AICT2018-Conference-Program.pdf,aict.info,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,manual_web_evidence
 src-577b7218b39a,https://www.ans.kz/upload/userfiles/files/%D0%9E%D0%A7%D0%95%D0%A0%D0%95%D0%94%D0%AC%20%D0%BF%D0%BE%20%D0%B6%D0%B8%D0%BB%D1%8C%D1%8E%281%29.pdf,ans.kz,pdf,1,1,1,0,0,0,0,manual_review,manual
 src-399bc2da7e8b,https://www.apple-events.com/events/central-eurasian-venture-forum-2024,apple-events.com,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
-src-c7dc16af354b,https://www.arirang.ru/archive/kore-ilbo/2025/31.KI.08.08.2025.pdf,arirang.ru,pdf,3,1,0,3,0,0,0,accepted_affiliation_history;accepted_location_evidence,historical_latest_known_location;newspaper_alumni_profile
+src-c7dc16af354b,https://www.arirang.ru/archive/kore-ilbo/2025/31.KI.08.08.2025.pdf,arirang.ru,pdf,2,1,0,2,0,0,0,accepted_affiliation_history,newspaper_alumni_profile
 src-1f99e3323987,https://www.armeta.ai/company/team/,armeta.ai,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-a79584fd2fbb,https://www.bankofcanada.ca/profile/iskander-karibzhanov/,bankofcanada.ca,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-bd7156e340c8,https://www.bc.edu/content/bc-web/schools/morrissey/departments/chemistry/research-labs/Hoveyda-research-group/people.html,bc.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_alumni_record
@@ -1357,7 +1360,7 @@ src-ab2ebda9f22b,https://www.imo-official.org/results/contestant/15614/,imo-offi
 src-cea1b3d03ab4,https://www.imo-official.org/results/contestant/15615/,imo-official.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IMO;manual
 src-2814522042ff,https://www.imo-official.org/results/contestant/15617/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
 src-3a2c1646dbfc,https://www.imo-official.org/results/contestant/15618/,imo-official.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IMO;manual
-src-e96f6dd56ad5,https://www.imo-official.org/results/contestant/15619/,imo-official.org,html,2,1,1,1,0,0,0,accepted_location_evidence;participant_registry,IMO;historical_latest_known_location
+src-e96f6dd56ad5,https://www.imo-official.org/results/contestant/15619/,imo-official.org,html,1,1,1,0,0,0,0,participant_registry,IMO
 src-414f88c56c65,https://www.imo-official.org/results/contestant/17820/,imo-official.org,web_page,3,1,2,0,0,1,0,manual_review;participant_registry,IMO;manual
 src-9ef37ab7cd59,https://www.imo-official.org/results/contestant/17822/,imo-official.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IMO;manual
 src-fc6cfaa949d5,https://www.imo-official.org/results/contestant/17823/,imo-official.org,html,3,1,3,0,0,0,0,participant_registry,IMO
@@ -1581,6 +1584,7 @@ src-6f72ff896f7d,https://www.linkedin.com/posts/bahruzbabayev_kazakhstan-case-bo
 src-6a9f44348fe6,https://www.linkedin.com/posts/circulartree_basf-motherson-porsche-circulartree-activity-6719171599662100480-jRH1,linkedin.com,linkedin,1,1,0,1,0,0,0,accepted_affiliation_history,public_project_announcement
 src-81efe84f49fb,https://www.linkedin.com/posts/madi-baltagulov-509bbb18b_entrepreneurship-publichealth-digitalhealth-activity-7383501897166385153-8i4q,linkedin.com,linkedin,2,1,1,1,0,0,0,accepted_affiliation_history;manual_destination_reconciliation,destination_review;destination_source_review
 src-dd197e864c8e,https://www.linkedin.com/posts/nazarbayev-intellectual-schools_ipho-2026-nis-students-win-two-gold-activity-7482049655892258816-8AwT,linkedin.com,linkedin,1,1,1,0,0,0,0,manual_review,manual
+src-0349d4a05bb1,https://www.linkedin.com/posts/spectrum-international-school_congratulations-to-maxim-tsoy-on-his-admission-activity-7427313268790202368-sOzG,linkedin.com,linkedin,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-962bc7039782,https://www.linkedin.com/posts/spectrum-international-school_huge-congratulations-to-our-student-margulan-activity-7445314253726830592-wCy6,linkedin.com,linkedin,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-8facf56a03fb,https://www.linkedin.com/posts/wu-julia_lately-ive-been-filtering-for-one-trait-activity-7440019349970599937-zJXu,linkedin.com,linkedin,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-449b64a17e82,https://www.linkedin.com/pub/dir/%2B/Doctorovich,linkedin.com,linkedin,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
@@ -1606,7 +1610,7 @@ src-6806f9f45154,https://www.nis.edu.kz/storage/files/01JSKCF66NTSVQAB3HC9QDMGEP
 src-8615a8c71bef,https://www.nis.edu.kz/storage/files/01JSKD3FB0SVR0VQAXEE8BCGCY.pdf,nis.edu.kz,pdf,1,1,1,0,0,0,0,manual_review,manual
 src-1884c2ae8f46,https://www.northwestern.edu/about/visit/campuses.html,northwestern.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-6bd45cfae6db,https://www.nss.ece.vt.edu/angelos/resume/cv_stavrou_latest.html,nss.ece.vt.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_faculty_cv
-src-2a3bbc6c0ffe,https://www.ntu.edu.sg/about-us/visit-us,ntu.edu.sg,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
+src-2a3bbc6c0ffe,https://www.ntu.edu.sg/about-us/visit-us,ntu.edu.sg,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
 src-6b74dd29dc3d,https://www.nuclear.kz/download/files/NPK-17.pdf,nuclear.kz,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-6798116035bf,https://www.nuin.northwestern.edu/current-students/student-profiles.html?page=3,nuin.northwestern.edu,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-50f3e9d07dfc,https://www.nyu.edu/footer/map.html,nyu.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
