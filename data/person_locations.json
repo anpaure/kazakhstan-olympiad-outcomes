@@ -1793,6 +1793,17 @@
     "evidence_url": "https://kz.linkedin.com/in/nurlykhan"
   },
   {
+    "person_id": "kaz-7461ed3854c5",
+    "name": "Nursagatov Margulan",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Dolgoprudny, Moscow Region, Russia",
+    "evidence_url": "https://old.mipt.ru/en/about/general/contacts/way.php",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at Moscow Institute of Physics and Technology (MIPT); the linked official institution source establishes the campus location. MIPT's official contact page identifies its main campus in Dolgoprudny in the Moscow Region of Russia."
+  },
+  {
     "person_id": "kaz-49fee0c7373b",
     "name": "Nurtas Shyntas",
     "country_code": "US",
@@ -1802,6 +1813,17 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at New York University; the linked official institution source establishes the campus location. NYU's official campus map identifies its New York campus."
+  },
+  {
+    "person_id": "kaz-578a8517b344",
+    "name": "Nurtore Torekhanuly",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://cajmse.kaznmu.edu.kz/contacts/",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at Asfendiyarov Kazakh National Medical University; the linked official institution source establishes the campus location. KazNMU's official journal contact page identifies the university in Almaty Kazakhstan."
   },
   {
     "person_id": "kaz-d1a89ad778a3",
@@ -2572,6 +2594,17 @@
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the accepted active student affiliation at Nazarbayev University; the linked official institution source establishes the campus location. Nazarbayev University's official contact page identifies its Astana campus."
+  },
+  {
+    "person_id": "kaz-9bdeb2eedd97",
+    "name": "Zhan Dautov",
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "location_label": "Daejeon, South Korea",
+    "evidence_url": "https://www.kaist.ac.kr/en/html/kaist/011501.html",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at Korea Advanced Institute of Science and Technology (KAIST); the linked official institution source establishes the campus location. KAIST's official directions page identifies its Daejeon campus."
   },
   {
     "person_id": "kaz-7b9356cf00a8",

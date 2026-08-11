@@ -28296,6 +28296,24 @@
     "evidence_text": "Olympiad problem-setting records identify the same rare exact name as a KAIST student immediately after his 2019 IChO medal and his current profile preserves that KAIST timeline while listing CoBALT"
   },
   {
+    "affiliation_id": "aff-700c2e0232fa1daf",
+    "evidence_id": "ev-b4d06bf788990f56",
+    "source_id": "src-9190e29d6b36",
+    "person_id": "kaz-7461ed3854c5",
+    "name": "Nursagatov Margulan",
+    "organization": "Moscow Institute of Physics and Technology (MIPT)",
+    "role": "Undergraduate Student",
+    "affiliation_type": "education",
+    "start_year": "2024",
+    "end_year": "",
+    "is_current": "true",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://baq.kz/qazaqstanda-daryndy-oqushylarga-55-mln-tenge-beriletin-boldy-200000514/",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "The official IPhO registry records Kazakhstan's 2023 and 2024 silver medalist. A November 2024 education-ministry roster names Margulan Nursagatov as that IPhO medalist and explicitly identifies him as a first-year MIPT student, directly joining the Olympiad and university records."
+  },
+  {
     "affiliation_id": "aff-2ec1e32058f22a94",
     "evidence_id": "ev-c35794de258edd90",
     "source_id": "src-b97bd12da601",
@@ -28528,6 +28546,24 @@
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable",
     "evidence_text": "[New York University Abu Dhabi](https://www.linkedin.com/school/new-york-university-abu-dhabi) Abu Dhabi, Abu Dhabi, United Arab Emirates New York University Abu Dhabi is a higher education institution. New York University Abu Dhabi is a university located in Abu Dhabi, offering undergraduate and graduate academic programs, research opportunities, and careers. New York University Abu Dhabi has 1,000-2,000 employees (+7-8% YoY), founded in 2010. Headquartered in Abu Dhabi, Abu Dhabi, United Arab"
+  },
+  {
+    "affiliation_id": "aff-3dbbb032a23ecd9e",
+    "evidence_id": "ev-b1e953ffb00e8dad",
+    "source_id": "src-4be9192786e0",
+    "person_id": "kaz-578a8517b344",
+    "name": "Nurtore Torekhanuly",
+    "organization": "Asfendiyarov Kazakh National Medical University",
+    "role": "Medical Student",
+    "affiliation_type": "education",
+    "start_year": "2024",
+    "end_year": "",
+    "is_current": "true",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://synapse.kz/",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "Synapse's current team page identifies Nurtore Torekhanuly as both an IBO 2024 bronze medalist and a KazNMU student, directly joining the exact-name Olympiad and current education records; the audited IBO scoreboard independently confirms his result."
   },
   {
     "affiliation_id": "aff-37a2a65e4a92c7cd",
@@ -43216,6 +43252,24 @@
     "evidence_kind": "accepted_cphof_codeforces",
     "confidence": "confirmed",
     "evidence_text": "profile=codeforces:seduneon; country=Kazakhstan; contest=IOI; codeforces=seduneon; universities=Nazarbayev University; organization=Oral Bilim Innovation High School"
+  },
+  {
+    "affiliation_id": "aff-5ef031d0a029b815",
+    "evidence_id": "ev-a3b90c4f3ca3cd03",
+    "source_id": "src-6612e128e22b",
+    "person_id": "kaz-9bdeb2eedd97",
+    "name": "Zhan Dautov",
+    "organization": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "role": "Undergraduate Student",
+    "affiliation_type": "education",
+    "start_year": "2024",
+    "end_year": "2028",
+    "is_current": "true",
+    "selected_as_alma_mater": "true",
+    "evidence_url": "https://www.linkedin.com/in/zhan-dautov-799921295",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "Zhan Dautov's exact-name public profile explicitly lists his 2023 and 2024 IMO bronze medals and a 2024-2028 KAIST education; the official IMO country record independently confirms the same name, years, and awards."
   },
   {
     "affiliation_id": "aff-d33b3dec99460aa3",

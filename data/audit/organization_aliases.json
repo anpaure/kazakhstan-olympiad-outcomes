@@ -396,6 +396,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-13e4336567afa741",
+    "alias": "KazNMU",
+    "canonical_name": "Asfendiyarov Kazakh National Medical University",
+    "display_name": "Asfendiyarov KazNMU",
+    "merge_type": "acronym",
+    "rationale": "Common English acronym normalized to the university's canonical English name.",
+    "evidence_url": "https://kaznmu.edu.kz/"
+  },
+  {
     "organization_alias_id": "org-d13db05f900f5735",
     "alias": "S D Asfendiyarov Kazakh National Medical University",
     "canonical_name": "Asfendiyarov Kazakh National Medical University",
@@ -403,6 +412,24 @@
     "merge_type": "same_entity",
     "rationale": "Initials variant",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-12b1da54f467f469",
+    "alias": "КазHМУ",
+    "canonical_name": "Asfendiyarov Kazakh National Medical University",
+    "display_name": "Asfendiyarov KazNMU",
+    "merge_type": "transliteration_variant",
+    "rationale": "Mixed-script spelling used by the reviewed current-student source normalized to the university's canonical English name.",
+    "evidence_url": "https://synapse.kz/"
+  },
+  {
+    "organization_alias_id": "org-8329a19b83f4c127",
+    "alias": "КазНМУ",
+    "canonical_name": "Asfendiyarov Kazakh National Medical University",
+    "display_name": "Asfendiyarov KazNMU",
+    "merge_type": "multilingual_name",
+    "rationale": "Common Russian acronym normalized to the university's canonical English name.",
+    "evidence_url": "https://kaznmu.edu.kz/"
   },
   {
     "organization_alias_id": "org-b7a4b3e81390978e",

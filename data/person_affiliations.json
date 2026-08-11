@@ -23580,6 +23580,21 @@
     "evidence_text": "Olympiad problem-setting records identify the same rare exact name as a KAIST student immediately after his 2019 IChO medal and his current profile preserves that KAIST timeline while listing CoBALT"
   },
   {
+    "person_id": "kaz-7461ed3854c5",
+    "name": "Nursagatov Margulan",
+    "organization": "Moscow Institute of Physics and Technology (MIPT)",
+    "role": "Undergraduate Student",
+    "affiliation_type": "education",
+    "start_year": "2024",
+    "end_year": "",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://baq.kz/qazaqstanda-daryndy-oqushylarga-55-mln-tenge-beriletin-boldy-200000514/",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "The official IPhO registry records Kazakhstan's 2023 and 2024 silver medalist. A November 2024 education-ministry roster names Margulan Nursagatov as that IPhO medalist and explicitly identifies him as a first-year MIPT student, directly joining the Olympiad and university records."
+  },
+  {
     "person_id": "kaz-3437e4fc5bbd",
     "name": "Nursultan Erkinovich Tompiyev",
     "organization": "Civil Aviation Academy",
@@ -23773,6 +23788,21 @@
     "evidence_url": "https://kz.linkedin.com/in/nurtas-shyntas-54b850199",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-578a8517b344",
+    "name": "Nurtore Torekhanuly",
+    "organization": "Asfendiyarov Kazakh National Medical University",
+    "role": "Medical Student",
+    "affiliation_type": "education",
+    "start_year": "2024",
+    "end_year": "",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://synapse.kz/",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "Synapse's current team page identifies Nurtore Torekhanuly as both an IBO 2024 bronze medalist and a KazNMU student, directly joining the exact-name Olympiad and current education records; the audited IBO scoreboard independently confirms his result."
   },
   {
     "person_id": "kaz-d1a89ad778a3",
@@ -36013,6 +36043,21 @@
     "evidence_kind": "accepted_cphof_codeforces",
     "confidence": "confirmed",
     "evidence_text": "profile=codeforces:seduneon; country=Kazakhstan; contest=IOI; codeforces=seduneon; universities=Nazarbayev University; organization=Oral Bilim Innovation High School"
+  },
+  {
+    "person_id": "kaz-9bdeb2eedd97",
+    "name": "Zhan Dautov",
+    "organization": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "role": "Undergraduate Student",
+    "affiliation_type": "education",
+    "start_year": "2024",
+    "end_year": "2028",
+    "is_current": true,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.linkedin.com/in/zhan-dautov-799921295",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "Zhan Dautov's exact-name public profile explicitly lists his 2023 and 2024 IMO bronze medals and a 2024-2028 KAIST education; the official IMO country record independently confirms the same name, years, and awards."
   },
   {
     "person_id": "kaz-7b9356cf00a8",

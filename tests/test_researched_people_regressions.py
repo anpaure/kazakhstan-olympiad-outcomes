@@ -526,6 +526,44 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(location["country_code"], "US")
         self.assertEqual(location["location_label"], "United States")
 
+    def test_2024_medalists_current_university_destinations(self):
+        expected = {
+            "kaz-7461ed3854c5": (
+                "Moscow Institute of Physics and Technology (MIPT)",
+                "Undergraduate Student",
+                "RU",
+                "Dolgoprudny, Moscow Region, Russia",
+            ),
+            "kaz-9bdeb2eedd97": (
+                "Korea Advanced Institute of Science and Technology (KAIST)",
+                "Undergraduate Student",
+                "KR",
+                "Daejeon, South Korea",
+            ),
+            "kaz-578a8517b344": (
+                "Asfendiyarov Kazakh National Medical University",
+                "Medical Student",
+                "KZ",
+                "Almaty, Kazakhstan",
+            ),
+        }
+
+        for person_id, (organization, role, country_code, location_label) in expected.items():
+            with self.subTest(person_id=person_id):
+                person = self.people[person_id]
+                location = self.locations[person_id]
+                self.assertEqual(person["organization"], organization)
+                self.assertEqual(person["role"], role)
+                self.assertEqual(person["confidence"], "confirmed")
+                self.assertIn(organization, self.alma_maters(person_id))
+                self.assertEqual(location["country_code"], country_code)
+                self.assertEqual(location["location_label"], location_label)
+
+        self.assertEqual(
+            self.people["kaz-9bdeb2eedd97"]["linkedin_url"],
+            "https://www.linkedin.com/in/zhan-dautov-799921295",
+        )
+
     def test_baurzhan_urgunshbayev_probable_metaphora_outcome(self):
         person = self.people["kaz-694369c06874"]
         location = self.locations[person["person_id"]]

@@ -478,3 +478,6 @@ Terasense Group Inc,TeraSense,TeraSense,legal_form_variant,LinkedIn company name
 "Terasense Group, Inc",TeraSense,TeraSense,legal_form_variant,LinkedIn company name normalized to the official TeraSense brand.,https://terasense.com/company/
 "Terasense Group, Inc.",TeraSense,TeraSense,legal_form_variant,LinkedIn company name with punctuation normalized to the official TeraSense brand.,https://terasense.com/company/
 Terasense Inc.,TeraSense,TeraSense,legal_form_variant,Current official legal-form label normalized to the TeraSense brand.,https://terasense.com/company/
+KazNMU,Asfendiyarov Kazakh National Medical University,Asfendiyarov KazNMU,acronym,Common English acronym normalized to the university's canonical English name.,https://kaznmu.edu.kz/
+КазНМУ,Asfendiyarov Kazakh National Medical University,Asfendiyarov KazNMU,multilingual_name,Common Russian acronym normalized to the university's canonical English name.,https://kaznmu.edu.kz/
+КазHМУ,Asfendiyarov Kazakh National Medical University,Asfendiyarov KazNMU,transliteration_variant,Mixed-script spelling used by the reviewed current-student source normalized to the university's canonical English name.,https://synapse.kz/

@@ -43,7 +43,10 @@ org-69aaba4616d535eb,AOE GmbH,AOE,AOE,legal_form_variant,Legal-form cleanup,
 org-ba1a00b612295905,aramco,Aramco,Aramco,capitalization_variant,Official brand capitalization,https://www.aramco.com/
 org-a43e697951b2b961,Arizona State University,Arizona State University,Arizona State University,same_entity,Canonical display declaration,
 org-98a4bf0760fba898,ASU,Arizona State University,Arizona State University,same_entity,Acronym corroborated by the same person's full affiliation,
+org-13e4336567afa741,KazNMU,Asfendiyarov Kazakh National Medical University,Asfendiyarov KazNMU,acronym,Common English acronym normalized to the university's canonical English name.,https://kaznmu.edu.kz/
 org-d13db05f900f5735,S D Asfendiyarov Kazakh National Medical University,Asfendiyarov Kazakh National Medical University,Asfendiyarov KazNMU,same_entity,Initials variant,
+org-12b1da54f467f469,КазHМУ,Asfendiyarov Kazakh National Medical University,Asfendiyarov KazNMU,transliteration_variant,Mixed-script spelling used by the reviewed current-student source normalized to the university's canonical English name.,https://synapse.kz/
+org-8329a19b83f4c127,КазНМУ,Asfendiyarov Kazakh National Medical University,Asfendiyarov KazNMU,multilingual_name,Common Russian acronym normalized to the university's canonical English name.,https://kaznmu.edu.kz/
 org-b7a4b3e81390978e,AIFC (Astana International Financial Centre),Astana International Financial Centre,AIFC,same_entity,Acronym-first variant,
 org-60776ba73f5e1299,AIFC Green Finance Centre,Astana International Financial Centre,AIFC,parent_organization,Green Finance Centre is an AIFC subsidiary,https://aifc.kz/news/aifc-green-finance-centre-to-open-a-branch-in-bishkek/
 org-adc7df264d6a8a56,AIFC Green Finance Centre Ltd,Astana International Financial Centre,AIFC,parent_organization,Legal name of the AIFC subsidiary,https://aifc.kz/wp-content/uploads/2024/06/aifc_ar2020_eng.pdf
