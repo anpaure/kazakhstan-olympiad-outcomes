@@ -14415,6 +14415,21 @@
     "confidence": "probable"
   },
   {
+    "person_id": "kaz-1e390288b2cc",
+    "name": "Danil Murtazin",
+    "organization": "School-Gymnasium No. 4 (Aktau)",
+    "role": "High School Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2001",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.lada.kz/sms_news/6463-otkrytoe-pismo-roditeley-shkoly-gimnazii-4.html",
+    "evidence_kind": "reported_school_history",
+    "confidence": "confirmed",
+    "evidence_text": "The Aktau school community's retrospective identifies School-Gymnasium No. 4's 2001 international physics gold medalist as Murtazin Daniil; this is historical school evidence and does not identify a later destination."
+  },
+  {
     "person_id": "kaz-8e557ae5dc19",
     "name": "Danil Poletayev",
     "organization": "Lyceum No. 134",

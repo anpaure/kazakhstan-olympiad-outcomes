@@ -1344,6 +1344,15 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                     {"Pavlodar School-Lyceum No. 8"},
                 )
 
+        self.assertIn(
+            "Anton Vladimirovich Sedletskiy",
+            self.people["kaz-e8eb1ebde919"]["aliases"],
+        )
+        self.assertIn(
+            "Седлецкий Антон Владимирович",
+            self.people["kaz-e8eb1ebde919"]["aliases"],
+        )
+
     def test_oleg_obukhov_kokshetau_school_history(self):
         person = self.people["kaz-32cf54f8673f"]
 
@@ -1355,11 +1364,22 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             {"Bilim-Innovation Lyceums (BIL)"},
         )
 
-    def test_danil_murtazin_has_sourced_cyrillic_alias(self):
+    def test_danil_murtazin_retains_sourced_aktau_school_history(self):
         person = self.people["kaz-1e390288b2cc"]
+        location = self.locations[person["person_id"]]
 
         self.assertEqual(person["confidence"], "unmatched")
         self.assertIn("Данил Муртазин", person["aliases"])
+        self.assertIn("Даниил Муртазин", person["aliases"])
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"School-Gymnasium No. 4 (Aktau)"},
+        )
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(
+            location["location_label"],
+            "Aktau, Kazakhstan (school affiliation in 2001)",
+        )
 
     def test_alexander_zaitsev_retains_only_age_compatible_candidate(self):
         person = self.people["kaz-6c47e89eeff1"]
