@@ -5850,6 +5850,21 @@
     "source_adapters": "official_institute_participant_roster"
   },
   {
+    "source_id": "src-41e346629e66",
+    "source_url": "https://iness.kz/wp-content/uploads/2025/08/Abstract_Book_INESS25_Final_250806_095729.pdf",
+    "source_host": "iness.kz",
+    "source_kind": "pdf",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "current_research_affiliation_location;manual;manual_review"
+  },
+  {
     "source_id": "src-56aea8ed1d8c",
     "source_url": "https://informburo.kz/amp/novosti/100-medalnyj-zachyot-pokazali-kazahstanskie-shkolniki-na-domashnej-olimpiade-ibo-2024",
     "source_host": "informburo.kz",
@@ -5944,9 +5959,9 @@
     "source_url": "https://ipho-unofficial.org/countries/KAZ/individual",
     "source_host": "ipho-unofficial.org",
     "source_kind": "web_page",
-    "evidence_rows": 161,
+    "evidence_rows": 162,
     "people_count": 89,
-    "accepted_rows": 155,
+    "accepted_rows": 156,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 6,
@@ -15073,6 +15088,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
     "source_adapters": "manual;manual_review"
+  },
+  {
+    "source_id": "src-b4010b5ff104",
+    "source_url": "https://proceedings.jacow.org/PAC2011/papers/PAC11_Guide.pdf",
+    "source_host": "proceedings.jacow.org",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "conference_student_grant_roster"
   },
   {
     "source_id": "src-a3a580611a9d",

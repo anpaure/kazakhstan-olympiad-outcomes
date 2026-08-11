@@ -2838,6 +2838,17 @@
     "evidence_url": "https://linkedin.com/in/zhanadil"
   },
   {
+    "person_id": "kaz-8b1c1fe467bb",
+    "name": "Zhandos Seksembayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://iness.kz/wp-content/uploads/2025/08/Abstract_Book_INESS25_Final_250806_095729.pdf",
+    "evidence_kind": "current_research_affiliation_location",
+    "confidence": "probable",
+    "review_reason": "The INESS-2025 abstract affiliates Zhandos Seksembayev with Astana Business Campus at Nazarbayev University and gives an nu.edu.kz address. Astana is inferred from the active institutional research affiliation rather than asserted as a residence, and the identity remains probable."
+  },
+  {
     "person_id": "kaz-c03aa47c2122",
     "name": "Zhanibek Bekkhozhin",
     "country_code": "US",

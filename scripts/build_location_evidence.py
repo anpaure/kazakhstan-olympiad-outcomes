@@ -211,10 +211,12 @@ TRUSTED_OVERRIDE_KINDS = {
     "active_affiliation_profile_location",
     "affiliation_country",
     "career_source_location",
+    "current_research_affiliation_location",
     "current_role_location",
 }
 PRIORITY_OVERRIDE_KINDS = {
     "active_affiliation_profile_location",
+    "current_research_affiliation_location",
     "current_role_location",
 }
 

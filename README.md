@@ -11,16 +11,16 @@ The pipeline does not drive a browser across LinkedIn profiles. Discovery and ex
 The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
-- 456 canonical people with 45 reviewed alias pairs
-- 412 researched people, all classified as probable or confirmed
-- 313 confirmed and 99 probable identity, education, or career outcomes
-- 383 manually reviewed outcomes backed by public evidence
-- 369 researched people with one resolved destination and 286 with a public LinkedIn URL
-- 2,545 sourced employment/education history rows, including 533 selected alma-mater records across 357 people
+- 456 canonical people with 46 reviewed alias pairs
+- 413 researched people, all classified as probable or confirmed
+- 313 confirmed and 100 probable identity, education, or career outcomes
+- 384 manually reviewed outcomes backed by public evidence
+- 370 researched people with one resolved destination and 286 with a public LinkedIn URL
+- 2,547 sourced employment/education history rows, including 534 selected alma-mater records across 358 people
 - 44 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
 - 507 reviewed organization aliases collapsed into canonical employers and universities
 - 182 reviewed sector classifications covering every displayed non-educational destination
-- 263 sourced outcome-country records across 30 countries
+- 264 sourced outcome-country records across 30 countries
 - 3 additional people with candidate-only evidence retained for audit but no accepted outcome
 - 132 rejected identity sources retained with review reasons and supporting links
 

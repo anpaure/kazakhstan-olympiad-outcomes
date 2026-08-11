@@ -942,6 +942,25 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(location["country_code"], "KZ")
         self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
 
+    def test_zhandos_seksembayev_probable_nu_plasma_researcher(self):
+        person = self.people["kaz-8b1c1fe467bb"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["name"], "Zhandos Seksembayev")
+        self.assertIn("Zhandos Z. Seksembayev", person["aliases"])
+        self.assertIn(
+            "Zhandos Berikkaliyevich Seksembayev", person["aliases"]
+        )
+        self.assertEqual(person["organization"], "Nazarbayev University")
+        self.assertEqual(person["role"], "Plasma Physics Researcher")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertIn(
+            "L.N. Gumilyov Eurasian National University",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Astana, Kazakhstan")
+
     def test_scanned_chemistry_history_adds_msu_alma_maters_only(self):
         person_ids = {
             "kaz-7774ad796e6c",

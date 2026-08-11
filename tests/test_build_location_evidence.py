@@ -314,6 +314,40 @@ class LocationExtractionTest(unittest.TestCase):
             "active_affiliation_legal_entity_location",
         )
 
+    def test_current_research_affiliation_location_is_a_priority_override(self):
+        people = [
+            {
+                "person_id": "kaz-researcher",
+                "name": "Researcher",
+                "confidence": "probable",
+                "organization": "Example University",
+                "role": "Physics Researcher",
+                "affiliation_type": "employment",
+                "destination_status": "latest_employment",
+            }
+        ]
+        overrides = {
+            "kaz-researcher": {
+                "person_id": "kaz-researcher",
+                "name": "Researcher",
+                "country_code": "KZ",
+                "country_name": "Kazakhstan",
+                "location_label": "Astana, Kazakhstan",
+                "evidence_url": "https://example.edu/conference.pdf",
+                "evidence_kind": "current_research_affiliation_location",
+                "confidence": "probable",
+                "review_reason": "A current institutional abstract places the researcher in Astana.",
+            }
+        }
+
+        rows = build_rows(people, [], overrides)
+
+        self.assertEqual(rows[0]["country_code"], "KZ")
+        self.assertEqual(rows[0]["location_label"], "Astana, Kazakhstan")
+        self.assertEqual(
+            rows[0]["evidence_kind"], "current_research_affiliation_location"
+        )
+
     def test_current_role_location_beats_legal_entity_fallback(self):
         people = [
             {

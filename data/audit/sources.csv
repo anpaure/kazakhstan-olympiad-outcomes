@@ -389,13 +389,14 @@ src-3df7b3ac03de,https://ie.linkedin.com/in/rauanrakhmet,ie.linkedin.com,linkedi
 src-e2b5f6149abf,https://imojp.org/support/IMO2023_REPORT_jp.pdf,imojp.org,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-84e22985a0ca,https://indico.ihep.ac.cn/event/18572/?print=1,indico.ihep.ac.cn,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-3e209bd8c28b,https://indico.inp.nsk.su/event/140/registrations/participants,indico.inp.nsk.su,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_institute_participant_roster
+src-41e346629e66,https://iness.kz/wp-content/uploads/2025/08/Abstract_Book_INESS25_Final_250806_095729.pdf,iness.kz,pdf,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_research_affiliation_location;manual;manual_review
 src-56aea8ed1d8c,https://informburo.kz/amp/novosti/100-medalnyj-zachyot-pokazali-kazahstanskie-shkolniki-na-domashnej-olimpiade-ibo-2024,informburo.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-41ec886f7a55,https://inkaraganda.kz/novosti/obshhestvo/pedagog-po-himii-iz-karagandy-podgotovil-bolee-10-pobeditelej-mezhdunarodnyh-intellektualnyh-sorevnovanij/,inkaraganda.kz,web_page,4,1,2,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,career_source_location;destination_review;destination_source_review;manual
 src-5fcf30ecab4a,https://inp.nsk.su/images/pdf/journal/2009_05-6.pdf,inp.nsk.su,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,official_institute_newsletter
 src-1ee5b8fce72b,https://inp.nsk.su/images/pdf/journal/2014_10.pdf,inp.nsk.su,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,official_institute_newsletter
 src-019b1989c484,https://international.binus.ac.id/binus-people/zhandos-yessenbayev-b-sc-m-sc-ph-d/,international.binus.ac.id,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-bb822569e353,https://ipbb.kz/eng/ap-09260382-superviser-sapakhova-z/,ipbb.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
-src-ad74ea491705,https://ipho-unofficial.org/countries/KAZ/individual,ipho-unofficial.org,web_page,161,89,155,0,0,6,0,manual_review;participant_registry,IPhO;manual
+src-ad74ea491705,https://ipho-unofficial.org/countries/KAZ/individual,ipho-unofficial.org,web_page,162,89,156,0,0,6,0,manual_review;participant_registry,IPhO;manual
 src-0684ad15873b,https://ipho-unofficial.org/timeline/2007/individual,ipho-unofficial.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-acb4f475b8fd,https://ipho-unofficial.org/timeline/2010/individual,ipho-unofficial.org,web_page,2,2,2,0,0,0,0,manual_review,manual
 src-961bc0297b2b,https://ipho-unofficial.org/timeline/2012/individual,ipho-unofficial.org,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -1004,6 +1005,7 @@ src-46c265d49622,https://press.ucoz.kz/news/2009-07-11,press.ucoz.kz,web_page,1,
 src-0c9d0a10d91f,https://prg.kz/Document/?doc_id=31388745,prg.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-604b60050d36,https://prg.kz/document/?doc_id=30205702,prg.kz,web_page,2,2,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;official_ministry_team_order
 src-8dbb8cab8311,https://pro.mytenge.kz/company/170540015039,pro.mytenge.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-b4010b5ff104,https://proceedings.jacow.org/PAC2011/papers/PAC11_Guide.pdf,proceedings.jacow.org,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,conference_student_grant_roster
 src-a3a580611a9d,https://profi.kz/profile/TaymanovAY/,profi.kz,web_page,4,1,1,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review;self_authored_service_profile
 src-5e10b9b964f4,https://publicreg.myafsa.com/details/220440900224/,publicreg.myafsa.com,web_page,2,1,0,2,0,0,0,accepted_affiliation_history;accepted_location_evidence,active_affiliation_legal_entity_location;manual_web_evidence
 src-74b0e239b8e1,https://publicreg.myafsa.com/details/250640900594/,publicreg.myafsa.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review

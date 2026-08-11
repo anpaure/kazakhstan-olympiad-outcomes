@@ -669,5 +669,21 @@
     "review_reason": "Official IMO records place exact-name Alexey Doktorovich on Kazakhstan's 1999 team and Israel's 2000 team; later Microsoft sources use the single-letter Doctorovich transliteration in Israel.",
     "evidence_url": "https://www.imo-official.org/results/individual/country/ISR/",
     "canonical_person_id": "kaz-69e7f14df70f"
+  },
+  {
+    "left": "Zhandos Z. Seksembayev",
+    "right": "Zhandos Seksembayev",
+    "token_similarity": 0.95,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2007
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The rare exact name, Kazakhstan physics field, and age-compatible 2006 school-Olympiad to 2010-2011 ENU student chronology support one identity. The IPhO record's unexplained Z. initial differs from the later Berikkaliyevich patronymic, so the match remains probable.",
+    "evidence_url": "https://tuymaada.lensky-kray.ru/wp-content/uploads/2020/07/Tujmaada-25-years.pdf",
+    "canonical_person_id": "kaz-8b1c1fe467bb"
   }
 ]

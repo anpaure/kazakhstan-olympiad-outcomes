@@ -3612,6 +3612,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees."
   },
   {
+    "location_id": "loc-960ed59461206372",
+    "evidence_id": "ev-413550b36cb11ca7",
+    "source_id": "src-41e346629e66",
+    "person_id": "kaz-8b1c1fe467bb",
+    "name": "Zhandos Seksembayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://iness.kz/wp-content/uploads/2025/08/Abstract_Book_INESS25_Final_250806_095729.pdf",
+    "evidence_kind": "current_research_affiliation_location",
+    "confidence": "probable",
+    "review_reason": "The INESS-2025 abstract affiliates Zhandos Seksembayev with Astana Business Campus at Nazarbayev University and gives an nu.edu.kz address. Astana is inferred from the active institutional research affiliation rather than asserted as a residence, and the identity remains probable."
+  },
+  {
     "location_id": "loc-84e77a8a6e713b1b",
     "evidence_id": "ev-6a0a7ace7347ca2a",
     "source_id": "src-5accee2663c2",
