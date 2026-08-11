@@ -470,3 +470,11 @@ KSU Lyceum No. 134,Lyceum No. 134,Lyceum No. 134,legal_form_variant,English lega
 Lyceum No.134,Lyceum No. 134,Lyceum No. 134,punctuation_variant,Spacing variant of the Almaty school name.,https://www.gov.kz/memleket/entities/edu/press/news/details/1260137
 Лицей №134,Lyceum No. 134,Lyceum No. 134,multilingual_name,Russian school name normalized to English.,https://www.gov.kz/memleket/entities/edu/press/news/details/1260137
 InDrive,inDrive,inDrive,capitalization_variant,Official brand capitalization uses a lowercase initial letter.,https://indrive.com/
+Institute of Solid State Physics,Osipyan Institute of Solid State Physics RAS (ISSP RAS),ISSP RAS,expanded_name,LinkedIn's abbreviated institution label normalized to the institute's official English name.,https://www.issp.ac.ru/main/index.php/en/about-issp/847-issp.html
+Institute of Solid State Physics RAS,Osipyan Institute of Solid State Physics RAS (ISSP RAS),ISSP RAS,expanded_name,Short English name normalized to the institute's official English name.,https://www.issp.ac.ru/main/index.php/en/about-issp/847-issp.html
+Osipyan Institute of Solid State Physics RAS,Osipyan Institute of Solid State Physics RAS (ISSP RAS),ISSP RAS,acronym_expansion,Official name without the parenthetical acronym.,https://www.issp.ac.ru/main/index.php/en/about-issp/847-issp.html
+Московский Физико-Технический Институт (Государственный Университет) (МФТИ),Moscow Institute of Physics and Technology (MIPT),MIPT,multilingual_name,The accepted profile's Russian former legal name normalized to MIPT's canonical English name.,https://mipt.ru/english/
+Terasense Group Inc,TeraSense,TeraSense,legal_form_variant,LinkedIn company name without punctuation normalized to the official TeraSense brand.,https://terasense.com/company/
+"Terasense Group, Inc",TeraSense,TeraSense,legal_form_variant,LinkedIn company name normalized to the official TeraSense brand.,https://terasense.com/company/
+"Terasense Group, Inc.",TeraSense,TeraSense,legal_form_variant,LinkedIn company name with punctuation normalized to the official TeraSense brand.,https://terasense.com/company/
+Terasense Inc.,TeraSense,TeraSense,legal_form_variant,Current official legal-form label normalized to the TeraSense brand.,https://terasense.com/company/

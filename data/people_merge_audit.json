@@ -573,5 +573,37 @@
     "review_reason": "The IOI registry uses Akezhan Askar while Kazakhstan's Ministry of Education reporting uses Akzhan Askar for the same 2025 contestant from NIS Semey.",
     "evidence_url": "https://oq.gov.kz/en/qazalemnews/1113",
     "canonical_person_id": "kaz-822bb4ee42e0"
+  },
+  {
+    "left": "Yenlik Bakytbekova",
+    "right": "Yenlik Bakytbekova",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IChO"
+    ],
+    "left_years": [
+      2025
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The IChO registry uses Yenlik Bakytbekova while NIS Almaty-Nauryzbay uses the Enlik transliteration for the same 2025 silver medalist and Cambridge scholarship recipient.",
+    "evidence_url": "https://schools.nis.edu.kz/ru/school/nzm-almaty-nauryzbay/news/1899",
+    "canonical_person_id": "kaz-eebfbe6a6de9"
+  },
+  {
+    "left": "Viatcheslav Muravev",
+    "right": "Viatcheslav Muravev",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2001
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The IPhO registry uses Viatcheslav Muravev while the age-compatible rare-name physics profile and current ISSP publications use Viacheslav Muravev and the Russian Academy biography uses Вячеслав Муравьев.",
+    "evidence_url": "https://poisknews.ru/wp-content/uploads/candidates/info/ran_b195b49d.pdf",
+    "canonical_person_id": "kaz-2c50f8bc247c"
   }
 ]

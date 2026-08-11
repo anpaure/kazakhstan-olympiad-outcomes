@@ -2233,6 +2233,17 @@
     "evidence_url": "https://linkedin.com/in/van-li-972a8a2b8"
   },
   {
+    "person_id": "kaz-2c50f8bc247c",
+    "name": "Viatcheslav Muravev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_url": "https://www.linkedin.com/in/viacheslav-muravev-a4b27bab",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile identifies the United States as Viacheslav's location alongside his ongoing TeraSense vice-president role; the city is not asserted because TeraSense's current official contact address differs from the profile's San Jose header."
+  },
+  {
     "person_id": "kaz-e7f80acbcb7b",
     "name": "Viktor Passichenko",
     "country_code": "US",
@@ -2308,6 +2319,17 @@
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Statkraft. The public profile header independently agrees.",
     "evidence_url": "https://nl.linkedin.com/in/vyacheslav-li"
+  },
+  {
+    "person_id": "kaz-eebfbe6a6de9",
+    "name": "Yenlik Bakytbekova",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "Cambridge, England, United Kingdom",
+    "evidence_url": "https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work/visiting-the-university",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official visitor page identifies its Cambridge location."
   },
   {
     "person_id": "kaz-279f8d67af01",

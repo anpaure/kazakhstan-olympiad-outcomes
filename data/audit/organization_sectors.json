@@ -1099,6 +1099,13 @@
     "rationale": "Reviewed core activity is oil and gas."
   },
   {
+    "organization_sector_id": "sector-f151830b20ac5b9e",
+    "canonical_name": "TeraSense",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "Reviewed core activity is manufacturing semiconductor terahertz cameras scanners detectors and sources."
+  },
+  {
     "organization_sector_id": "sector-bc3e22891fd0138e",
     "canonical_name": "TETmedical",
     "organization_type": "company",

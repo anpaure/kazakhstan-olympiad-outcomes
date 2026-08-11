@@ -266,6 +266,7 @@ org-2692fcf72aa4541c,Montana State University-Bozeman,Montana State University,M
 org-66c10f4de0d2d29a,MIPT (SU),Moscow Institute of Physics and Technology (MIPT),MIPT,same_entity,Acronym variant,
 org-57633474d70e44a3,Moscow Institute of Physics and Technology,Moscow Institute of Physics and Technology (MIPT),MIPT,same_entity,Official name without acronym,
 org-8fce8c5aa5721687,Moscow Institute of Physics and Technology (State University) (MIPT),Moscow Institute of Physics and Technology (MIPT),MIPT,same_entity,Former legal-name variant,
+org-dc4bf4d6e56be791,Московский Физико-Технический Институт (Государственный Университет) (МФТИ),Moscow Institute of Physics and Technology (MIPT),MIPT,multilingual_name,The accepted profile's Russian former legal name normalized to MIPT's canonical English name.,https://mipt.ru/english/
 org-1652ee0e8e840a63,"MoveAWheeL, Inc",MoveAWheeL,MoveAWheeL,legal_form_variant,Legal-form cleanup,
 org-4fcf40cba2d27835,MUSAB LLP / CONTROLS LLP,MUSAB / CONTROLS,MUSAB / CONTROLS,legal_form_variant,Combined public-profile label normalized without legal-form suffixes,http://www.musab.pro
 org-47af585a5c2017c2,Nanyang Technological University,Nanyang Technological University (NTU),NTU,same_entity,Official name without acronym,
@@ -316,6 +317,9 @@ org-fe1a940880b1c5a7,NURORDA INTERNATIONAL SCHOOLS,Nurorda School-Lyceum,Nurorda
 org-c5605baf40109e9d,NURORDA SCHOOL-LYCEUM,Nurorda School-Lyceum,Nurorda School-Lyceum,capitalization_variant,Capitalization cleanup of the official institution name.,https://nurorda.edu.kz/en
 org-adb6fafbffab9665,"OnPoint Analytics, Inc.",OnPoint Analytics,OnPoint Analytics,same_entity,Legal-form variant,
 org-c28645300b56e558,Opt-AI Inc,Opt-AI,Opt-AI,legal_form_variant,Legal-form cleanup,
+org-4339ad2bb9d6d0d3,Institute of Solid State Physics,Osipyan Institute of Solid State Physics RAS (ISSP RAS),ISSP RAS,expanded_name,LinkedIn's abbreviated institution label normalized to the institute's official English name.,https://www.issp.ac.ru/main/index.php/en/about-issp/847-issp.html
+org-96531d1369e526bf,Institute of Solid State Physics RAS,Osipyan Institute of Solid State Physics RAS (ISSP RAS),ISSP RAS,expanded_name,Short English name normalized to the institute's official English name.,https://www.issp.ac.ru/main/index.php/en/about-issp/847-issp.html
+org-f3450096594bf2c2,Osipyan Institute of Solid State Physics RAS,Osipyan Institute of Solid State Physics RAS (ISSP RAS),ISSP RAS,acronym_expansion,Official name without the parenthetical acronym.,https://www.issp.ac.ru/main/index.php/en/about-issp/847-issp.html
 org-f21d3b7c0c53ea62,Penn State University,Pennsylvania State University,Penn State,same_entity,Common short name,
 org-5c5562ba3596d016,Pennsylvania State University Applied Research Laboratory,Pennsylvania State University,Penn State,parent_organization,University laboratory,
 org-ff34c97159178985,Pifagor company,Pifagor School,Pifagor School,brand_variant,English press variant of the education organization,https://pifagor.kz/high/kz
@@ -404,6 +408,10 @@ org-212094f0683163fa,Synapse.kz,synapse.kz,synapse.kz,capitalization_variant,Cap
 org-53e45136cf793e94,JSC «Tau-Кen Samruk» National Mining Company,Tau-Ken Samruk,Tau-Ken Samruk,legal_form_variant,Legal-form and descriptor cleanup,
 org-bd54d2278299d3dd,Tavia Acquisition Corp,Tavia Acquisition,Tavia Acquisition,legal_form_variant,Legal-form cleanup,
 org-7b11447b2e365b80,Тенгизшевройл,Tengizchevroil,Tengizchevroil,multilingual_name,Russian company name,
+org-4d17ec9164c1ba59,Terasense Group Inc,TeraSense,TeraSense,legal_form_variant,LinkedIn company name without punctuation normalized to the official TeraSense brand.,https://terasense.com/company/
+org-1249cf9068a83a38,"Terasense Group, Inc",TeraSense,TeraSense,legal_form_variant,LinkedIn company name normalized to the official TeraSense brand.,https://terasense.com/company/
+org-4f8122b1766ce440,"Terasense Group, Inc.",TeraSense,TeraSense,legal_form_variant,LinkedIn company name with punctuation normalized to the official TeraSense brand.,https://terasense.com/company/
+org-45f9085337ed1876,Terasense Inc.,TeraSense,TeraSense,legal_form_variant,Current official legal-form label normalized to the TeraSense brand.,https://terasense.com/company/
 org-bb0d7ba862021016,"TETmedical, Inc",TETmedical,TETmedical,same_entity,Legal-form punctuation variant,
 org-e5c2ee751340a694,"TETmedical, Inc.",TETmedical,TETmedical,same_entity,Legal-form punctuation variant,
 org-a3bcd420ed9593ff,CUHK,The Chinese University of Hong Kong (CUHK),CUHK,same_entity,Common acronym,

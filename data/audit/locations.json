@@ -2842,6 +2842,20 @@
     "review_reason": "Country follows the location attached to the accepted current role at Huawei. The profile header points to South Korea, but it conflicts with the active-role location and is not used."
   },
   {
+    "location_id": "loc-425d43ff0d87dc09",
+    "evidence_id": "ev-462186056e338cce",
+    "source_id": "src-a0be29190386",
+    "person_id": "kaz-2c50f8bc247c",
+    "name": "Viatcheslav Muravev",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "United States",
+    "evidence_url": "https://www.linkedin.com/in/viacheslav-muravev-a4b27bab",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile identifies the United States as Viacheslav's location alongside his ongoing TeraSense vice-president role; the city is not asserted because TeraSense's current official contact address differs from the profile's San Jose header."
+  },
+  {
     "location_id": "loc-c44674a015b5f3dd",
     "evidence_id": "ev-b52fbbbf5276977b",
     "source_id": "src-9d713637c916",
@@ -2938,6 +2952,20 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Statkraft. The public profile header independently agrees."
+  },
+  {
+    "location_id": "loc-c879246e420e56a4",
+    "evidence_id": "ev-2d4ae477df726654",
+    "source_id": "src-f902c5259f1c",
+    "person_id": "kaz-eebfbe6a6de9",
+    "name": "Yenlik Bakytbekova",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "Cambridge, England, United Kingdom",
+    "evidence_url": "https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work/visiting-the-university",
+    "evidence_kind": "current_education_location",
+    "confidence": "confirmed",
+    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official visitor page identifies its Cambridge location."
   },
   {
     "location_id": "loc-79c3d118ec720b70",
