@@ -2,16 +2,16 @@
   "provider": "Exa with reviewed public-profile supplements",
   "endpoint": "https://api.exa.ai/contents",
   "fallback_endpoint": "https://api.exa.ai/search",
-  "generated_at": "2026-08-11T19:35:40+00:00",
+  "generated_at": "2026-08-11T23:02:02+00:00",
   "input_path": "data/researched_people.csv",
   "input_people_count": 456,
-  "accepted_linkedin_count": 295,
-  "profile_count": 295,
-  "successful_profile_count": 273,
+  "accepted_linkedin_count": 296,
+  "profile_count": 296,
+  "successful_profile_count": 274,
   "cached_search_profile_count": 0,
   "manual_public_profile_count": 11,
   "error_profile_count": 11,
-  "total_cost_usd": 0.274,
+  "total_cost_usd": 0.275,
   "key_persisted": false,
   "requests": [
     {
@@ -169,6 +169,12 @@
       "retrieved_at": "2026-08-11T19:35:40+00:00",
       "requested_profile_count": 1,
       "cost_usd": 0.0
+    },
+    {
+      "request_id": "f8982fcee02c3ef9321cf855f0c24445",
+      "retrieved_at": "2026-08-11T23:02:02+00:00",
+      "requested_profile_count": 1,
+      "cost_usd": 0.001
     }
   ],
   "profiles": [
@@ -689,6 +695,20 @@
       "content_characters": 1903,
       "text": "# Alikhan Zhumagaleyev\n\nSecond year Biomedical Sciences student at The Chinese University of Hong Kong\n\nHong Kong, Hong Kong SAR (HK)\n\n3 connections • 4 followers\n\n## About\n\nI am a second-year Biomedical Sciences student at the Chinese University of Hong Kong. In my freshman year, I mainly involved myself in education as I was teaching high-school students biology and was also making tasks for the final stages of the National Biology Olympiad. During the summer before my second year at the University, I was gaining experience in a laboratory by doing a small research on the effect of expression of particular epigenetic markers on osteoarthritis. On top of that, I had a chance to be one of the representatives of the jury from Kazakhstan at the 34th International Biology Olympiad. Currently, I am preparing Kazakhstani students for the Science Olympiads and also serve as a vice-president of the Central Asian Students Association at the CUHK.\n\n## Education\n\n### [The Chinese University of Hong Kong](https://www.linkedin.com/school/the-chinese-university-of-hong-kong)\n\n2022 - 2026 (4 years) in Australia\n\nThe Chinese University of Hong Kong is a higher education institution. The Chinese University of Hong Kong is an educational institution located in Hong Kong. The Chinese University of Hong Kong has 3,000-4,000 employees (+8-9% YoY) and has annual revenue in the $1B-$2B range, founded in 1963. Headquartered in Australia, with presence in Hong Kong and China. Its workforce is distributed across 43 countries (including Hong Kong, China, United States, United Kingdom, and Australia). Research output of 100,000-200,000 works, primarily in Medicine, Biochemistry, Genetics and Molecular Biology, and Engineering. Funds research behind 3,000-4,000 works.\n\n## Skills\n\nresearch • biology • epigenetics • teaching • biomedical sciences • chinese • laboratory skills • biomedical • education",
       "source_endpoint": "https://api.exa.ai/contents"
+    },
+    {
+      "person_id": "kaz-fcb382e0caae",
+      "name": "Alikhan Zimanov",
+      "linkedin_url": "https://linkedin.com/in/alikhan-zimanov-92564b1a8",
+      "status": "success",
+      "error": "",
+      "request_id": "f8982fcee02c3ef9321cf855f0c24445",
+      "retrieved_at": "2026-08-11T23:02:02+00:00",
+      "title": "Alikhan Zimanov",
+      "resolved_url": "https://linkedin.com/in/alikhan-zimanov-92564b1a8",
+      "content_characters": 1142,
+      "source_endpoint": "https://api.exa.ai/contents",
+      "text": "# Alikhan Zimanov\n\nDL enthusiast and high-level competitive programmer\n\nAlmaty, Kazakhstan (KZ)\n\n5 followers\n\n## About\n\nDL enthusiast and high-level competitive programmer\n\n## Education\n\n### Bachelor's degree, Computer Science at [Higher School of Economics](https://www.linkedin.com/school/высшая-школа-экономики)\n\n2020 - 2024 (4 years) in Moscow, Russian Federation\n\nActivities: Activities and Societies: ICPC\n\nHigher School of Economics is a higher education institution. HSE University is one of the top universities in Russia and the leader in Eastern Europe and Eurasia in economics and social sciences. Higher School of Economics has 1,000-2,000 employees (+10% YoY) and has annual revenue in the $1M-$10M range, founded in 1992. Headquartered in Moscow, Russia. Its workforce is distributed across 71 countries (including Russia, Germany, Serbia, United Kingdom, and United States).\n\n## GitHub\n\n[GitHub Profile](https://github.com/ALILILILILI-KHAN)\n\nUsername: ALILILILILI-KHAN\n\nTotal Contributions: 261\n\nNotable Repositories:\n\n- Templates - 171 contributions\n\n- HashMap-Code-Review - 5 contributions\n\n- cv_homework - 100 contributions"
     },
     {
       "person_id": "kaz-ceec4f816e2c",

@@ -2198,6 +2198,20 @@
     "review_reason": "AIFC's reviewed report identifies Daniyar's board chairmanship at the Astana International Financial Centre in Astana; the identity remains probable."
   },
   {
+    "location_id": "loc-b8d5adb1afc76256",
+    "evidence_id": "ev-3c084c3a4f560150",
+    "source_id": "src-9a93997545d0",
+    "person_id": "kaz-7e3271c82f49",
+    "name": "Daniyar Maminov",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "location_label": "Singapore",
+    "evidence_url": "https://www.nfactorial.school/hall-of-fame",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "nFactorial lists exact-name Daniyar Maminov at Google in Singapore. His direct Limon interview independently describes the internal Google transfer from Korea to Singapore and says that he had been living and working there for a year."
+  },
+  {
     "location_id": "loc-c61758409d4a118d",
     "evidence_id": "ev-de4b7b269c1c6e29",
     "source_id": "src-73d0d5014956",

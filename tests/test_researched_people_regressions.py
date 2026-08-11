@@ -1427,6 +1427,56 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             location["evidence_kind"], "historical_outcome_location"
         )
 
+    def test_daniyar_maminov_google_singapore_and_unist_history(self):
+        person = self.people["kaz-7e3271c82f49"]
+        location = self.locations[person["person_id"]]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["organization"], "Google")
+        self.assertEqual(person["role"], "Software Engineer")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertIn(
+            "Ulsan National Institute of Science and Technology (UNIST)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertTrue(
+            any(row["organization"] == "Meta" for row in affiliations)
+        )
+        self.assertTrue(
+            any(row["organization"] == "Rubrik" for row in affiliations)
+        )
+        self.assertEqual(location["country_code"], "SG")
+        self.assertEqual(location["location_label"], "Singapore")
+
+    def test_alikhan_zimanov_hse_history_does_not_guess_country(self):
+        person = self.people["kaz-fcb382e0caae"]
+
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://linkedin.com/in/alikhan-zimanov-92564b1a8",
+        )
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["destination_status"], "history_only")
+        self.assertEqual(self.alma_maters(person["person_id"]), {"HSE University"})
+        self.assertNotIn(person["person_id"], self.locations)
+
+    def test_aset_iskakov_metu_history_replaces_openalex_namesake(self):
+        person = self.people["kaz-fc88fa90b799"]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["destination_status"], "history_only")
+        self.assertEqual(
+            self.alma_maters(person["person_id"]),
+            {"Middle East Technical University"},
+        )
+        self.assertFalse(
+            any("A5112917287" in row["evidence_url"] for row in affiliations)
+        )
+        self.assertNotIn(person["person_id"], self.locations)
+
 
 if __name__ == "__main__":
     unittest.main()

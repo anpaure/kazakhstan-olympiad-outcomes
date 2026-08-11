@@ -300,6 +300,21 @@
     "review_reason": "Improvado's current company biography identifies Daniel Kravtsov as CEO and co-founder; the career-to-IOI identity match remains probable and is documented separately."
   },
   {
+    "destination_review_id": "dest-review-bb6b188eeeadcaed",
+    "evidence_id": "ev-8f14e8c96f12c0b2",
+    "source_id": "src-83f0ffbcdb6d",
+    "person_id": "kaz-7e3271c82f49",
+    "name": "Daniyar Maminov",
+    "organization": "Google",
+    "role": "Software Engineer",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://stemco.org/stem-camp/singapore-summer-2024/",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "StemCo's Singapore program identifies exact-name Daniyar Maminov as a Google Software Engineer. His direct Limon interview independently connects that Google career to the IOI alumnus and documents the internal move to Singapore."
+  },
+  {
     "destination_review_id": "dest-review-986c8c540d3e6ae2",
     "evidence_id": "ev-475088c52cdf80e7",
     "source_id": "src-556808850d76",

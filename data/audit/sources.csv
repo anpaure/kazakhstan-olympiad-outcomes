@@ -64,7 +64,7 @@ src-5d9d1af7e798,https://codeforces.com/profile/Fortitude,codeforces.com,structu
 src-e8a586313073,https://codeforces.com/profile/HCPS42,codeforces.com,structured_profile,3,1,0,1,0,2,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_codeforces;codeforces
 src-7843ac6760d7,https://codeforces.com/profile/I_Love_Trott,codeforces.com,structured_profile,2,1,0,1,0,1,0,accepted_affiliation_history;structured_affiliation,accepted_cphof_codeforces;cphof_codeforces
 src-c744d2d4d060,https://codeforces.com/profile/Kh.Madi,codeforces.com,structured_profile,3,1,0,1,0,2,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_cphof_codeforces;codeforces
-src-5f275d1cea55,https://codeforces.com/profile/LeMieux,codeforces.com,structured_profile,3,1,0,1,2,0,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_cphof_codeforces;codeforces
+src-5f275d1cea55,https://codeforces.com/profile/LeMieux,codeforces.com,structured_profile,3,1,0,1,0,2,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_cphof_codeforces;codeforces
 src-0c75db6d22f1,https://codeforces.com/profile/Lokeo,codeforces.com,structured_profile,2,1,0,1,0,1,0,accepted_affiliation_history;structured_affiliation,accepted_cphof_codeforces;cphof_codeforces
 src-334ea3ff1b27,https://codeforces.com/profile/MadNick,codeforces.com,structured_profile,2,1,0,1,0,1,0,accepted_location_evidence;structured_identity,active_affiliation_profile_location;codeforces
 src-68bebf963f0d,https://codeforces.com/profile/Madiyar,codeforces.com,structured_profile,3,1,0,1,0,2,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_cphof_codeforces;codeforces
@@ -120,7 +120,7 @@ src-84663dbfae07,https://codeforces.com/profile/rmn,codeforces.com,structured_pr
 src-404f576923c6,https://codeforces.com/profile/rrizabek,codeforces.com,structured_profile,3,1,1,1,1,0,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_codeforces;codeforces
 src-081c69855889,https://codeforces.com/profile/sancho,codeforces.com,structured_profile,3,1,0,1,2,0,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_cphof_codeforces;codeforces
 src-e1602414eba0,https://codeforces.com/profile/seduneon,codeforces.com,structured_profile,3,1,0,1,0,2,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_cphof_codeforces;codeforces
-src-7e7f6e68c4f4,https://codeforces.com/profile/sstrong,codeforces.com,structured_profile,1,1,1,0,0,0,0,structured_identity,codeforces
+src-7e7f6e68c4f4,https://codeforces.com/profile/sstrong,codeforces.com,structured_profile,1,1,0,0,0,1,0,structured_identity,codeforces
 src-6ffc5d28d50b,https://codeforces.com/profile/teamskiy,codeforces.com,structured_profile,3,1,0,1,0,2,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_codeforces;codeforces
 src-20f35760de40,https://codeforces.com/profile/wansur?locale=en&mobile=false,codeforces.com,structured_profile,2,1,0,2,0,0,0,accepted_affiliation_history;accepted_location_evidence,active_affiliation_profile_location;self_authored_competitive_programming_profile
 src-d0f09a6d320b,https://codeforces.com/profile/yerniyaz,codeforces.com,structured_profile,3,1,0,1,0,2,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_codeforces;codeforces
@@ -174,7 +174,7 @@ src-1a13b4131f71,https://cphof.org/profile/ioi:5481,cphof.org,structured_profile
 src-14447b405598,https://cphof.org/profile/topcoder%3AZoRGaN,cphof.org,structured_profile,1,1,0,0,0,1,0,manual_review,manual
 src-9d355f6c9367,https://cphof.org/profile/topcoder:Algiz,cphof.org,structured_profile,1,1,0,0,0,1,0,structured_identity,cphof
 src-0976d644f50f,https://cphof.org/profile/topcoder:AmanS,cphof.org,structured_profile,1,1,0,0,0,1,0,structured_identity,cphof
-src-e0d5093d245f,https://cphof.org/profile/topcoder:Daniyar7,cphof.org,structured_profile,1,1,1,0,0,0,0,structured_identity,cphof
+src-e0d5093d245f,https://cphof.org/profile/topcoder:Daniyar7,cphof.org,structured_profile,1,1,0,0,0,1,0,structured_identity,cphof
 src-0b0a614dd05d,https://cphof.org/profile/topcoder:Hypuk,cphof.org,structured_profile,4,1,1,1,0,2,0,accepted_affiliation_history;manual_review;structured_affiliation;structured_identity,accepted_cphof;cphof;manual
 src-d8cb5bca6b4b,https://cphof.org/profile/topcoder:Kh.Madi,cphof.org,structured_profile,1,1,0,0,0,1,0,structured_identity,cphof
 src-d3a7f2bdad7e,https://cphof.org/profile/topcoder:Madiyar1,cphof.org,structured_profile,3,1,0,1,0,2,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_cphof;cphof
@@ -253,7 +253,7 @@ src-10734fe4237a,https://github.com/Hypuk,github.com,structured_profile,1,1,0,0,
 src-5990ea34b46b,https://github.com/IamNoPro,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-dca591644d39,https://github.com/Jettatura,github.com,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,github
 src-0621fbc5029b,https://github.com/LP110108,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
-src-f23ab3b471c7,https://github.com/LeMieuxCF-zz,github.com,structured_profile,1,1,0,0,1,0,0,structured_identity,github
+src-f23ab3b471c7,https://github.com/LeMieuxCF-zz,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-e74c78234cab,https://github.com/LordRonin,github.com,structured_profile,1,1,0,0,1,0,0,structured_identity,github
 src-205378902d89,https://github.com/MadiBal,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-fc8671d8381f,https://github.com/Na2a,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
@@ -305,7 +305,7 @@ src-efc4e5d6bde2,https://github.com/dli7319,github.com,structured_profile,2,1,0,
 src-8a82fc66fe78,https://github.com/dohchuk,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-cf19614ffd6f,https://github.com/domikedos,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-30d24d59e4cc,https://github.com/dushayevsaken,github.com,structured_profile,3,1,0,1,0,2,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_github;github
-src-6d07eaf451e3,https://github.com/dxtvzw,github.com,structured_profile,1,1,0,0,1,0,0,structured_identity,github
+src-6d07eaf451e3,https://github.com/dxtvzw,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-3ce15e24ca1a,https://github.com/easternn,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-86698252daca,https://github.com/engineeringVolosati,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
 src-8491fc00aa61,https://github.com/erel3,github.com,structured_profile,1,1,0,0,0,1,0,structured_identity,github
@@ -511,6 +511,7 @@ src-1b5da9afc371,https://kz.linkedin.com/jobs/view/area-sales-manager-at-sulzer-
 src-e3a5de1b11df,https://lab.globaluni.ru/upload/%D0%9A%D0%B0%D1%84%D0%B5%D0%B4%D1%80%D0%B0%20%D0%BE%D0%B1%D1%89%D0%B5%D0%B9%20%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B8/%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D0%B0/%D0%A1%D0%A2%D0%9E_2024.pdf,lab.globaluni.ru,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-174c0fe4995a,https://leetcode.com/u/altynkhanov/,leetcode.com,web_page,1,1,0,1,0,0,0,accepted_location_evidence,career_source_location
 src-e0616e36e722,https://lifeinsurance.kz/severnaya-i-yuzhnaya-amerika/nakopitelnoe-strahovanie-vzglyad-iz-kanady,lifeinsurance.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
+src-07d20b49c352,https://limon.kg/ru/news:83012,limon.kg,web_page,5,1,1,4,0,0,0,accepted_affiliation_history;manual_review,direct_career_interview;manual;manual_review
 src-678e7a7048b6,https://linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80-%D0%B7%D0%B0%D0%B9%D1%86%D0%B5%D0%B2-98b05014b,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-0b5fc2b37776,https://linkedin.com/in/%D0%B4%D0%B0%D0%BC%D0%B8%D1%80-%D0%B5%D0%BB%D0%B5%D1%83%D1%81%D0%B8%D0%B7%D0%BE%D0%B2-b989232a0,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-338376655f48,https://linkedin.com/in/%D1%80%D1%83%D1%81%D1%82%D0%B0%D0%BC-%D1%82%D0%B5%D0%BC%D0%B8%D1%80%D0%B1%D0%B5%D0%BA%D0%BE%D0%B2-65269287,linkedin.com,linkedin,9,1,1,8,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_public_profile;manual_review
@@ -531,6 +532,7 @@ src-36c8bb1d2e04,https://linkedin.com/in/alen-abdrakhmanov-b2638b1a0,linkedin.co
 src-70ebdc29ae88,https://linkedin.com/in/alen-bayev-1402012bb,linkedin.com,linkedin,11,1,1,10,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual;manual_review
 src-c3781bdfe572,https://linkedin.com/in/ali-dautalinov,linkedin.com,linkedin,14,1,2,12,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
 src-fbda2ffac964,https://linkedin.com/in/alikhan-kudaibergenov-27726a154,linkedin.com,linkedin,6,1,2,4,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;career_source_location;linkedin;manual;manual_review
+src-40a05286a619,https://linkedin.com/in/alikhan-zimanov-92564b1a8,linkedin.com,linkedin,2,1,0,2,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin
 src-c935cef410f3,https://linkedin.com/in/almas-serikov-703604160,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-28981a768d52,https://linkedin.com/in/almaz-rakhmetov-2097151ab,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-47e99e22d92c,https://linkedin.com/in/almaz-rakhmetov-a2451223,linkedin.com,linkedin,14,1,1,13,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
@@ -793,7 +795,7 @@ src-cb3ca79e413d,https://openalex.org/A5085884395,openalex.org,structured_profil
 src-df9c6bf88fa1,https://openalex.org/A5090872106,openalex.org,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,openalex
 src-2b7479e77b00,https://openalex.org/A5097357477,openalex.org,structured_profile,1,1,0,0,0,1,0,structured_identity,openalex
 src-79bf59f50a6c,https://openalex.org/A5102067479,openalex.org,structured_profile,4,1,0,0,4,0,0,structured_affiliation;structured_identity,openalex
-src-524332dda34d,https://openalex.org/A5112917287,openalex.org,structured_profile,9,1,1,4,4,0,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_openalex;openalex
+src-524332dda34d,https://openalex.org/A5112917287,openalex.org,structured_profile,6,1,0,0,0,0,6,review_rejection;structured_affiliation;structured_identity,manual;openalex
 src-aa0cc9330e3a,https://openalex.org/A5112934830,openalex.org,structured_profile,5,1,0,0,0,0,5,review_rejection;structured_affiliation;structured_identity,manual;openalex
 src-5c715662d41a,https://openalex.org/A5115426679,openalex.org,structured_profile,2,1,0,0,0,2,0,structured_affiliation;structured_identity,openalex
 src-083ea69be11a,https://openalex.org/A5117167709,openalex.org,structured_profile,3,1,0,0,0,0,3,review_rejection;structured_affiliation;structured_identity,manual;openalex
@@ -1057,7 +1059,7 @@ src-0a9bf849aaef,https://research.nu.edu.kz/en/persons/kuanysh-yergaliyev,resear
 src-2d44d50b614b,https://research.nu.edu.kz/en/persons/meiram-murzabulatov/,research.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-f33bb7a68ec2,https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/,research.nu.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-c4f8fcc141d4,https://research.utwente.nl/en/publications/nondeterminism-in-stochastic-modeling/,research.utwente.nl,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_research_record
-src-37ad3b1b2b31,https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf,rmebrk.kz,pdf,7,5,3,4,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,historical_outcome_location;manual;manual_review;reviewed_olympiad_destination_table
+src-37ad3b1b2b31,https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf,rmebrk.kz,pdf,9,6,4,5,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,historical_outcome_location;manual;manual_review;reviewed_olympiad_destination_table
 src-793801568f9d,https://rs.linkedin.com/in/temirlan-rakhimov,rs.linkedin.com,linkedin,9,1,2,7,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual
 src-86b5f0ac633c,https://rsp.gov.kz/kz/rsp?page=57304,rsp.gov.kz,web_page,4,1,2,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,current_role_location;destination_review;destination_source_review;manual
 src-d8b3f3b80991,https://ru.linkedin.com/in/david-li-ab07b332b,ru.linkedin.com,linkedin,9,1,1,8,0,0,0,accepted_affiliation_history;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;destination_review;destination_source_review;linkedin
@@ -1186,7 +1188,7 @@ src-0540dee1ba17,https://stats.ioinformatics.org/people/4829,stats.ioinformatics
 src-5b46b0eb81b7,https://stats.ioinformatics.org/people/4957,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
 src-0b1f827d1c08,https://stats.ioinformatics.org/people/4958,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
 src-ba1d94e85f20,https://stats.ioinformatics.org/people/5125,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
-src-5a0488aff2a2,https://stats.ioinformatics.org/people/5126,stats.ioinformatics.org,html,2,1,2,0,0,0,0,participant_registry,IOI
+src-5a0488aff2a2,https://stats.ioinformatics.org/people/5126,stats.ioinformatics.org,web_page,3,1,3,0,0,0,0,manual_review;participant_registry,IOI;manual
 src-4921df81af0f,https://stats.ioinformatics.org/people/5127,stats.ioinformatics.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IOI;manual
 src-d3b4071b64fd,https://stats.ioinformatics.org/people/5480,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
 src-052c9c5bbc04,https://stats.ioinformatics.org/people/5481,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
@@ -1218,6 +1220,7 @@ src-ad3725994ac6,https://stats.ioinformatics.org/people/8684,stats.ioinformatics
 src-4eecb4de1a18,https://stats.ioinformatics.org/people/8685,stats.ioinformatics.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IOI;manual
 src-ed6b003f49ea,https://stats.ioinformatics.org/results/KAZ,stats.ioinformatics.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-fc70a7c4b93c,https://statsnet.co/companies/kz/29048640,statsnet.co,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
+src-83f0ffbcdb6d,https://stemco.org/stem-camp/singapore-summer-2024/,stemco.org,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_destination_reconciliation,destination_review;destination_source_review
 src-ec1f7e2c7945,https://stemolympiads.kz/en/team/anton-draganchuk-2/,stemolympiads.kz,web_page,5,1,2,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review;official_team_profile
 src-f5281d37866d,https://steppeolymp.kz/,steppeolymp.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-4d21221835b6,https://sundong.kim/members/,sundong.kim,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -1311,6 +1314,7 @@ src-b34cd7c55bea,https://www.hec.edu/en/master-s-programs/profiles/ayana-badrako
 src-5fe835c08081,https://www.hec.edu/en/masters-programs/MSc-International-Finance/careers/alumni-profiles,hec.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_alumni_profile
 src-be8d30c8e695,https://www.hku.hk/visit/maps_contact.html,hku.hk,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-807ffbb9186d,https://www.hse.ru/edu/vkr/367645765,hse.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_thesis
+src-3df0f32e00ee,https://www.hse.ru/en/news/729928307.html,hse.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-7c00a4b14ab9,https://www.hse.ru/news/edu/223610496.html,hse.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-c4b2ab5396a9,https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov,hw.ac.uk,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-07f001838ebe,https://www.iastate.edu/life-at-iowa-state/campus-and-ames,iastate.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
@@ -1341,6 +1345,7 @@ src-0373f20f8689,https://www.ibo-info.org/files/downloads/results-reports/result
 src-de6837f0122e,https://www.ibo-info.org/files/downloads/results-reports/results/IBO2025%20Ranking.pdf,ibo-info.org,pdf,4,4,4,0,0,0,0,participant_registry,IBO
 src-7ab5eaf6b98a,https://www.ibo-info.org/files/downloads/results-reports/results/IBO_2026_Individual_Results_Final.pdf,ibo-info.org,pdf,8,4,8,0,0,0,0,manual_review;participant_registry,IBO;manual
 src-a99f07f5f774,https://www.icho-official.org/results/country_info.php?country=Kazakhstan,icho-official.org,html,74,46,70,0,0,4,0,manual_review;participant_registry,IChO;manual
+src-71cba28a578a,https://www.icho-official.org/results/results.php?id=35&year=2003,icho-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-9c080dac45dd,https://www.icho-official.org/results/results.php?id=38&year=2006,icho-official.org,web_page,2,2,2,0,0,0,0,manual_review,manual
 src-530412d8f9ea,https://www.icho-official.org/results/results.php?id=39&year=2007,icho-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-76b64419479c,https://www.igps.uni-hannover.de/en/research/main-research-areas/phytomedicine/publications,igps.uni-hannover.de,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -1349,6 +1354,7 @@ src-66ed7c0a4f6a,https://www.imo-official.org/country_individual_r.aspx?code=KAZ
 src-7a626f46f1c7,https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=year&order=desc&gender=hide&nameform=western,imo-official.org,web_page,3,3,1,0,0,2,0,manual_review,manual
 src-5a2f1d310aa1,https://www.imo-official.org/participant_r.aspx?id=25096,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-05cf1d39c4bf,https://www.imo-official.org/participant_r.aspx?id=26021,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-2c9754a3b805,https://www.imo-official.org/participant_r.aspx?id=28163,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-c18a37300e4d,https://www.imo-official.org/participant_r.aspx?id=33252,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-f57474aeeafb,https://www.imo-official.org/participant_r.aspx?id=3471,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-861452275fe6,https://www.imo-official.org/participant_r.aspx?id=35504,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -1602,6 +1608,7 @@ src-c54c3027f964,https://www.myprivatetutor.hk/teacher/29733/adilet-u-experience
 src-fc9969eeb2f8,https://www.nauka.kz/page.php?lang=3&new=&news_id=7255&page_id=792,nauka.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-135cfd39ecee,https://www.ncste.kz/kz/daribaev-abzal-amankeldievich,ncste.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-901ef9d6adec,https://www.nfactorial.school/blog3/%D0%BA%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B5%D1%86-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9-%D0%BF%D1%80%D0%B8%D0%B4%D1%83%D0%BC%D0%B0%D0%BB-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D0%B2%D0%B8%D0%B4-%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F,nfactorial.school,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-9a93997545d0,https://www.nfactorial.school/hall-of-fame,nfactorial.school,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_role_location
 src-af62a280a294,https://www.nfactorial.school/newest_blog/%D0%B0-%D0%B2%D1%8B-%D0%B7%D0%BD%D0%B0%D0%B5%D1%82%D0%B5-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B3%D0%BE-%D0%BA%D0%B0%D0%B7%D0%B0%D1%85%D0%B0-%D0%B2-caltech-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9-%D0%B2%D1%8B%D0%B8%D0%B3%D1%80%D0%B0%D0%BB-%D0%BF%D0%B5%D1%80%D0%B2%D1%83%D1%8E-%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D1%83%D1%8E-%D0%BC%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C-%D0%BA%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B0-%D0%BD%D0%B0-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9-%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D0%B5,nfactorial.school,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-c5a8f9e3e814,https://www.nis.edu.kz/kk/news/ibo-2025-nis-oqusylary-biologiiadan-alemdik-dodada-top-zardy,nis.edu.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_student_report
 src-2d4b0555309f,https://www.nis.edu.kz/ru/news/ibo-2026-nis-oqusylary-alemnin-uzdik-zas-biologtary-qatarynan-korindi,nis.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
