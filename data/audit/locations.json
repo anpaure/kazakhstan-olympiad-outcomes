@@ -1092,6 +1092,20 @@
     "review_reason": "Country follows the accepted active student affiliation at Airlangga University; the linked official institution source establishes the campus location. Airlangga University's official site identifies its Surabaya campuses."
   },
   {
+    "location_id": "loc-8d0f7bc1eec977ff",
+    "evidence_id": "ev-0b13915e8ac58aea",
+    "source_id": "src-5ee430930caf",
+    "person_id": "kaz-42eef016184c",
+    "name": "Bakhytzhan Baizhikenov",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "location_label": "London, England, United Kingdom",
+    "evidence_url": "https://uk.linkedin.com/in/bahakz",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "The accepted profile places the ongoing Facebook/Meta role in London and its London header agrees; Kazakhstan's 2026 digital ministry profile independently confirms the current senior Meta role."
+  },
+  {
     "location_id": "loc-8f0b5887e6d2c37f",
     "evidence_id": "ev-edf9d8e4c4c5d4f3",
     "source_id": "src-cf0e9c93132d",
@@ -1258,6 +1272,20 @@
     "evidence_kind": "current_education_location",
     "confidence": "probable",
     "review_reason": "Country follows the accepted active student affiliation at University of California, Berkeley; the linked official institution source establishes the campus location. UC Berkeley's official visitor page identifies its Berkeley campus."
+  },
+  {
+    "location_id": "loc-95f3538a48c15982",
+    "evidence_id": "ev-8587a3a795bf09ac",
+    "source_id": "src-d07bd2c93920",
+    "person_id": "kaz-d29c3c1d1239",
+    "name": "Danat Issa",
+    "country_code": "US",
+    "country_name": "United States",
+    "location_label": "Cambridge, Massachusetts, United States",
+    "evidence_url": "https://www.space.mit.edu/people/danat-issa/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "MIT's official Kavli Institute directory places Danat's current postdoctoral appointment at its Cambridge Massachusetts address."
   },
   {
     "location_id": "loc-f01aa6dc16aa9ada",
@@ -3596,5 +3624,19 @@
     "evidence_kind": "active_affiliation_profile_location",
     "confidence": "probable",
     "review_reason": "The accepted current GitHub profile lists both inDrive and Kazakhstan alongside the Data Engineer role."
+  },
+  {
+    "location_id": "loc-8c203fd7563afcd1",
+    "evidence_id": "ev-e699fbb89b6f6e7f",
+    "source_id": "src-5e10b9b964f4",
+    "person_id": "kaz-d5a9e6425d45",
+    "name": "Zhomart Sadykov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Kazakhstan",
+    "evidence_url": "https://publicreg.myafsa.com/details/220440900224/",
+    "evidence_kind": "active_affiliation_legal_entity_location",
+    "confidence": "probable",
+    "review_reason": "The official AIFC public register identifies Zhomart Sadykov as CEO of Kazakhstan-registered Khan Group Limited; the 2026 digital ministry profile confirms that this Khan Group role is concurrent with his displayed AGI Lab role."
   }
 ]

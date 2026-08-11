@@ -21,6 +21,13 @@
     "rationale": "Reviewed core activity is aviation consulting and air-transport services."
   },
   {
+    "organization_sector_id": "sector-f3529c29c6fe4c49",
+    "canonical_name": "AGI Lab",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed core activity is artificial-intelligence research and software development."
+  },
+  {
     "organization_sector_id": "sector-396f519e0425ac52",
     "canonical_name": "AGP Holding",
     "organization_type": "company",

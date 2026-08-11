@@ -34,6 +34,58 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             row for row in self.affiliations if row["person_id"] == person_id
         ]
 
+    def test_bakhytzhan_baizhikenov_meta_london_and_education(self):
+        person = self.people["kaz-42eef016184c"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Meta")
+        self.assertEqual(person["role"], "Senior Software Engineer")
+        self.assertEqual(person["linkedin_url"], "https://uk.linkedin.com/in/bahakz")
+        self.assertIn(
+            "Kazakh-British Technical University (KBTU)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertIn("University of London", self.alma_maters(person["person_id"]))
+        self.assertIn(
+            "The London School of Economics and Political Science (LSE)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertEqual(location["country_code"], "GB")
+        self.assertEqual(location["location_label"], "London, England, United Kingdom")
+
+    def test_zhomart_sadykov_agi_lab_ntu_and_kazakhstan(self):
+        person = self.people["kaz-d5a9e6425d45"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "AGI Lab")
+        self.assertEqual(person["role"], "Chief Executive Officer")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertIn(
+            "Nanyang Technological University (NTU)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertEqual(location["country_code"], "KZ")
+
+    def test_danat_issa_mit_two_alma_maters_and_cambridge(self):
+        person = self.people["kaz-d29c3c1d1239"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(
+            person["organization"],
+            "Massachusetts Institute of Technology (MIT)",
+        )
+        self.assertEqual(person["role"], "Postdoctoral Associate")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://www.linkedin.com/in/danat-issa-045685218",
+        )
+        self.assertIn("Nazarbayev University", self.alma_maters(person["person_id"]))
+        self.assertIn("Northwestern University", self.alma_maters(person["person_id"]))
+        self.assertEqual(location["country_code"], "US")
+        self.assertEqual(
+            location["location_label"], "Cambridge, Massachusetts, United States"
+        )
+
     def test_dinmukhammed_omar_singapore_location(self):
         person = self.people["kaz-bdb3a76b4430"]
         location = self.locations[person["person_id"]]

@@ -1343,8 +1343,8 @@
     "people_count": 1,
     "accepted_rows": 0,
     "supporting_rows": 1,
-    "candidate_rows": 1,
-    "superseded_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 1,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;structured_affiliation",
     "source_adapters": "accepted_cphof_codeforces;cphof_codeforces"
@@ -2241,10 +2241,10 @@
     "source_kind": "structured_profile",
     "evidence_rows": 1,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 0,
     "supporting_rows": 0,
     "candidate_rows": 0,
-    "superseded_rows": 0,
+    "superseded_rows": 1,
     "rejected_rows": 0,
     "provenances": "structured_identity",
     "source_adapters": "cphof"
@@ -2706,10 +2706,10 @@
     "source_kind": "structured_profile",
     "evidence_rows": 3,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 0,
     "supporting_rows": 1,
-    "candidate_rows": 1,
-    "superseded_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 2,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;structured_affiliation;structured_identity",
     "source_adapters": "accepted_cphof;cphof"
@@ -14880,6 +14880,21 @@
     "source_adapters": "academic_profile"
   },
   {
+    "source_id": "src-9ec2104de196",
+    "source_url": "https://physics.northwestern.edu/about/news/2025/danat-issa-earns-phd.html",
+    "source_host": "physics.northwestern.edu",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "manual_web_evidence"
+  },
+  {
     "source_id": "src-21a2e80ad3ea",
     "source_url": "https://pifagor.kz/high/kz",
     "source_host": "pifagor.kz",
@@ -14998,6 +15013,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
     "source_adapters": "career_source_location;manual;manual_review;self_authored_service_profile"
+  },
+  {
+    "source_id": "src-5e10b9b964f4",
+    "source_url": "https://publicreg.myafsa.com/details/220440900224/",
+    "source_host": "publicreg.myafsa.com",
+    "source_kind": "web_page",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence",
+    "source_adapters": "active_affiliation_legal_entity_location;manual_web_evidence"
   },
   {
     "source_id": "src-74b0e239b8e1",
@@ -16728,16 +16758,16 @@
     "source_id": "src-eeaf48a6f91c",
     "source_url": "https://stats.ioinformatics.org/people/2621",
     "source_host": "stats.ioinformatics.org",
-    "source_kind": "html",
-    "evidence_rows": 3,
+    "source_kind": "web_page",
+    "evidence_rows": 4,
     "people_count": 1,
-    "accepted_rows": 3,
+    "accepted_rows": 4,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IOI"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IOI;manual"
   },
   {
     "source_id": "src-dc20bfb2c448",
@@ -16833,16 +16863,16 @@
     "source_id": "src-15491788865a",
     "source_url": "https://stats.ioinformatics.org/people/311",
     "source_host": "stats.ioinformatics.org",
-    "source_kind": "html",
-    "evidence_rows": 4,
+    "source_kind": "web_page",
+    "evidence_rows": 5,
     "people_count": 1,
-    "accepted_rows": 4,
+    "accepted_rows": 5,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IOI"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IOI;manual"
   },
   {
     "source_id": "src-73b08de23130",
@@ -17820,6 +17850,21 @@
     "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review"
   },
   {
+    "source_id": "src-5ee430930caf",
+    "source_url": "https://uk.linkedin.com/in/bahakz",
+    "source_host": "uk.linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 7,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 7,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual_profile_transcription"
+  },
+  {
     "source_id": "src-0b08cc7c098e",
     "source_url": "https://uk.linkedin.com/in/dinmukhamed-rakhimzhanov-93a2b8302",
     "source_host": "uk.linkedin.com",
@@ -18103,6 +18148,21 @@
     "rejected_rows": 0,
     "provenances": "manual_review",
     "source_adapters": "manual"
+  },
+  {
+    "source_id": "src-4233637936fa",
+    "source_url": "https://www.aict.info/2018/info/AICT2018-Conference-Program.pdf",
+    "source_host": "aict.info",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "manual_web_evidence"
   },
   {
     "source_id": "src-577b7218b39a",
@@ -18568,6 +18628,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
     "source_adapters": "active_affiliation_profile_location;manual;manual_review"
+  },
+  {
+    "source_id": "src-8064153e41f4",
+    "source_url": "https://www.gov.kz/memleket/entities/maidd/press/news/details/1189055?lang=ru",
+    "source_host": "gov.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 6,
+    "people_count": 2,
+    "accepted_rows": 4,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_destination_reconciliation;manual_review",
+    "source_adapters": "destination_review;destination_source_review;manual"
   },
   {
     "source_id": "src-5a1c49e54448",
@@ -21795,6 +21870,21 @@
     "source_adapters": "accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review"
   },
   {
+    "source_id": "src-3a579c08152b",
+    "source_url": "https://www.linkedin.com/in/danat-issa-045685218",
+    "source_host": "linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "accepted_linkedin_profile;linkedin"
+  },
+  {
     "source_id": "src-23f4e63a873d",
     "source_url": "https://www.linkedin.com/in/daniil-shatokhin-9a69b7297",
     "source_host": "linkedin.com",
@@ -23149,15 +23239,15 @@
     "source_url": "https://www.space.mit.edu/people/danat-issa/",
     "source_host": "space.mit.edu",
     "source_kind": "web_page",
-    "evidence_rows": 2,
+    "evidence_rows": 3,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 1,
+    "supporting_rows": 2,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;manual_review",
-    "source_adapters": "manual;manual_review"
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "current_role_location;manual;manual_review"
   },
   {
     "source_id": "src-2cd844d7e068",
@@ -24375,6 +24465,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-f0070ce78399",
+    "source_url": "https://yessenovfoundation.org/en/danat-isa/",
+    "source_host": "yessenovfoundation.org",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "manual_web_evidence"
+  },
+  {
     "source_id": "src-0a4dee991a37",
     "source_url": "https://yessenovfoundation.org/en/halyikbek-elshibekov/",
     "source_host": "yessenovfoundation.org",
@@ -24388,5 +24493,20 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history",
     "source_adapters": "institutional_biography"
+  },
+  {
+    "source_id": "src-607e85ccf2ed",
+    "source_url": "https://yvision.kz/post/letnyaya-shkola-po-programmirovaniyu-2012-v-almaty-253446",
+    "source_host": "yvision.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "manual_web_evidence"
   }
 ]

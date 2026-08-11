@@ -120,6 +120,21 @@
     "review_reason": "The accepted profile lists Software Engineer at Meta as current from September 2025."
   },
   {
+    "destination_review_id": "dest-review-9c2fca46d8018784",
+    "evidence_id": "ev-592b8d6ed3d8cd36",
+    "source_id": "src-8064153e41f4",
+    "person_id": "kaz-42eef016184c",
+    "name": "Bakhytzhan Baizhikenov",
+    "organization": "Meta",
+    "role": "Senior Software Engineer",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://www.gov.kz/memleket/entities/maidd/press/news/details/1189055?lang=ru",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "Kazakhstan's digital ministry identifies Baizhikenov as a current senior Meta developer in its report on the March 2026 Central Asia Programming Championship."
+  },
+  {
     "destination_review_id": "dest-review-986c8c540d3e6ae2",
     "evidence_id": "ev-475088c52cdf80e7",
     "source_id": "src-556808850d76",
@@ -628,5 +643,20 @@
     "evidence_url": "https://uk.linkedin.com/in/zhan-kurbanbayev",
     "reviewed_at": "2026-08-10",
     "review_reason": "The accepted profile lists Software Engineer at a stealth startup as current from February 2026."
+  },
+  {
+    "destination_review_id": "dest-review-90905540b552cbaa",
+    "evidence_id": "ev-25e13eaa2be211d3",
+    "source_id": "src-8064153e41f4",
+    "person_id": "kaz-d5a9e6425d45",
+    "name": "Zhomart Sadykov",
+    "organization": "AGI Lab",
+    "role": "Chief Executive Officer",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://www.gov.kz/memleket/entities/maidd/press/news/details/1189055?lang=ru",
+    "reviewed_at": "2026-08-11",
+    "review_reason": "Kazakhstan's digital ministry identifies Sadykov as CEO of both AGI Lab and Khan Group in 2026; AGI Lab is used as the single displayed destination while Khan Group remains in affiliation history."
   }
 ]
