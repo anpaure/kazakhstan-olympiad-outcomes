@@ -501,3 +501,8 @@ Süleyman Demirel University,Suleyman Demirel University (Turkey),Suleyman Demir
 Университет Туран,Turan University,Turan University,multilingual_name,Russian profile label normalized to the university's official English name.,https://turan.edu.kz/en/contacts
 Университет «Туран»,Turan University,Turan University,multilingual_name,Russian official name normalized to the university's official English name.,https://turan.edu.kz/en/contacts
 Тұран университеті,Turan University,Turan University,multilingual_name,Kazakh official name normalized to the university's official English name.,https://turan.edu.kz/en/contacts
+Budker Institute of Nuclear Physics,Budker Institute of Nuclear Physics,Budker Institute,same_entity,Canonical display declaration.,https://www.inp.nsk.su/budker-institute-of-nuclear-physics
+G.I. Budker Institute of Nuclear Physics,Budker Institute of Nuclear Physics,Budker Institute,expanded_name,English honorific-name variant normalized to the concise institute name.,https://www.inp.nsk.su/budker-institute-of-nuclear-physics
+Budker Institute of Nuclear Physics SB RAS,Budker Institute of Nuclear Physics,Budker Institute,expanded_name,Russian Academy branch suffix normalized to the concise institute name.,https://www.inp.nsk.su/budker-institute-of-nuclear-physics
+BINP,Budker Institute of Nuclear Physics,Budker Institute,acronym,Common English acronym normalized to the institute's canonical name.,https://www.inp.nsk.su/budker-institute-of-nuclear-physics
+Novosibirsk State University,Novosibirsk State University (NSU),NSU,acronym_expansion,Official English name without the parenthetical acronym.,https://english.nsu.ru/

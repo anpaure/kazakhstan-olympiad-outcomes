@@ -444,6 +444,38 @@
     "canonical_person_id": "kaz-dcb24ecb815a"
   },
   {
+    "left": "Damir Yeliusizov",
+    "right": "Damir Yeliussizov",
+    "token_similarity": 0.97,
+    "shared_olympiads": [
+      "IMO"
+    ],
+    "left_years": [
+      2004
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The official 2004 IMO result uses Yeliusizov while the same rare-name Kazakhstan delegation leader and the mathematician's academic site use Yeliussizov.",
+    "evidence_url": "https://www.damir.xyz/",
+    "canonical_person_id": "kaz-45c2d7c0bad6"
+  },
+  {
+    "left": "Leoned Kardapoltsev",
+    "right": "Leonid Kardapoltsev",
+    "token_similarity": 0.947,
+    "shared_olympiads": [
+      "IPhO"
+    ],
+    "left_years": [
+      2003
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The official IPhO record's Leoned spelling is an evident first-name error for the age-compatible rare-name physicist Leonid Kardapoltsev documented continuously at NSU and the Budker Institute.",
+    "evidence_url": "https://indico.ihep.ac.cn/event/18572/?print=1",
+    "canonical_person_id": "kaz-45fb4c336c70"
+  },
+  {
     "left": "Daulet Turetaev",
     "right": "Daulet Turetayev",
     "token_similarity": 0.968,

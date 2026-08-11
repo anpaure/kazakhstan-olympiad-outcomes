@@ -85,6 +85,10 @@ org-42a07b51b552eeca,Università Bocconi,Bocconi University,Bocconi University,m
 org-d12a01eb2e8adaf1,Boreskov Institute of catalysis,Boreskov Institute of Catalysis,Boreskov Institute of Catalysis,capitalization_variant,Capitalization correction,https://catalysis.ru/
 org-94d09c4e0004cd14,Boston University School of Medicine,Boston University,Boston University,parent_organization,Former name of a Boston University school,https://www.bu.edu/brand/guidelines/editorial-style/schools-colleges-and-departments/
 org-c94295522ef9b0f6,Chobanian & Avedisian School of Medicine,Boston University,Boston University,parent_organization,Current Boston University medical-school name,https://www.bu.edu/brand/guidelines/editorial-style/schools-colleges-and-departments/
+org-36eea6cad2414810,BINP,Budker Institute of Nuclear Physics,Budker Institute,acronym,Common English acronym normalized to the institute's canonical name.,https://www.inp.nsk.su/budker-institute-of-nuclear-physics
+org-5dcfd5fa0de4b676,Budker Institute of Nuclear Physics,Budker Institute of Nuclear Physics,Budker Institute,same_entity,Canonical display declaration.,https://www.inp.nsk.su/budker-institute-of-nuclear-physics
+org-6f549f63abc1a9d4,Budker Institute of Nuclear Physics SB RAS,Budker Institute of Nuclear Physics,Budker Institute,expanded_name,Russian Academy branch suffix normalized to the concise institute name.,https://www.inp.nsk.su/budker-institute-of-nuclear-physics
+org-eb7dc46372634079,G.I. Budker Institute of Nuclear Physics,Budker Institute of Nuclear Physics,Budker Institute,expanded_name,English honorific-name variant normalized to the concise institute name.,https://www.inp.nsk.su/budker-institute-of-nuclear-physics
 org-021c9fe05e7ca038,Buzachi Operating LTD,Buzachi Operating,Buzachi Operating,legal_form_variant,Legal-form cleanup,
 org-4b898f87824a7625,California Institute of Technology,California Institute of Technology (Caltech),Caltech,same_entity,Official name without acronym,
 org-7a15daf168dd4f66,Caltech,California Institute of Technology (Caltech),Caltech,same_entity,Common short name,
@@ -318,6 +322,7 @@ org-3574c4eeacc347b8,NCOC,North Caspian Operating Company (NCOC),NCOC,same_entit
 org-cb818ac2f5d9b50e,North Caspian Operating Company N.V. (NCOC N.V.),North Caspian Operating Company (NCOC),NCOC,same_entity,Legal-form variant,
 org-cc26a521b8c0d6af,North Caspian Operating Company N.V. (NCOC),North Caspian Operating Company (NCOC),NCOC,same_entity,Legal-form variant,
 org-6b68a2076c97d854,NWAFU,Northwest A&F University,Northwest A&F University,acronym_expansion,Official university acronym,
+org-848a043577fce2d6,Novosibirsk State University,Novosibirsk State University (NSU),NSU,acronym_expansion,Official English name without the parenthetical acronym.,https://english.nsu.ru/
 org-90f1660619996003,Novosibirsk State University (NSU),Novosibirsk State University (NSU),NSU,same_entity,Canonical display declaration,https://english.nsu.ru/
 org-0bbed4d0cca2dfa5,NTP Ltd,NTP,NTP,legal_form_variant,Legal-form cleanup,
 org-d6e040371bd99e75,NURORDA Almaty,Nurorda School-Lyceum,Nurorda School-Lyceum,parent_organization,Almaty campus label normalized to the Nurorda School-Lyceum network.,https://nurordaalmaty.kz/

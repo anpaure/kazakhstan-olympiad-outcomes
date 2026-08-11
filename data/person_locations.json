@@ -1001,6 +1001,17 @@
     "review_reason": "NIS Astana-Nura identifies Damir as its current grade-11 student in Astana."
   },
   {
+    "person_id": "kaz-45c2d7c0bad6",
+    "name": "Damir Yeliussizov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://www.damir.xyz/",
+    "evidence_kind": "current_role_location",
+    "confidence": "confirmed",
+    "review_reason": "Damir's academic site explicitly identifies him as a current KBTU professor in Almaty, Kazakhstan."
+  },
+  {
     "person_id": "kaz-d3e4616882fd",
     "name": "Danat Duisenbekov",
     "country_code": "US",
@@ -1604,6 +1615,17 @@
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/kuat-yessenov-b1b188b3"
+  },
+  {
+    "person_id": "kaz-45fb4c336c70",
+    "name": "Leonid Kardapoltsev",
+    "country_code": "RU",
+    "country_name": "Russia",
+    "location_label": "Novosibirsk, Russia",
+    "evidence_url": "https://indico.ihep.ac.cn/event/18572/?print=1",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The reviewed seminar biography states that Leonid Kardapoltsev works at the Budker Institute and Novosibirsk State University in Novosibirsk, Russia; identity confidence remains probable because the source does not mention IPhO."
   },
   {
     "person_id": "kaz-c792c9bfcef4",

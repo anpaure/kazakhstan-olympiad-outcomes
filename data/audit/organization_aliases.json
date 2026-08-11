@@ -774,6 +774,42 @@
     "evidence_url": "https://www.bu.edu/brand/guidelines/editorial-style/schools-colleges-and-departments/"
   },
   {
+    "organization_alias_id": "org-36eea6cad2414810",
+    "alias": "BINP",
+    "canonical_name": "Budker Institute of Nuclear Physics",
+    "display_name": "Budker Institute",
+    "merge_type": "acronym",
+    "rationale": "Common English acronym normalized to the institute's canonical name.",
+    "evidence_url": "https://www.inp.nsk.su/budker-institute-of-nuclear-physics"
+  },
+  {
+    "organization_alias_id": "org-5dcfd5fa0de4b676",
+    "alias": "Budker Institute of Nuclear Physics",
+    "canonical_name": "Budker Institute of Nuclear Physics",
+    "display_name": "Budker Institute",
+    "merge_type": "same_entity",
+    "rationale": "Canonical display declaration.",
+    "evidence_url": "https://www.inp.nsk.su/budker-institute-of-nuclear-physics"
+  },
+  {
+    "organization_alias_id": "org-6f549f63abc1a9d4",
+    "alias": "Budker Institute of Nuclear Physics SB RAS",
+    "canonical_name": "Budker Institute of Nuclear Physics",
+    "display_name": "Budker Institute",
+    "merge_type": "expanded_name",
+    "rationale": "Russian Academy branch suffix normalized to the concise institute name.",
+    "evidence_url": "https://www.inp.nsk.su/budker-institute-of-nuclear-physics"
+  },
+  {
+    "organization_alias_id": "org-eb7dc46372634079",
+    "alias": "G.I. Budker Institute of Nuclear Physics",
+    "canonical_name": "Budker Institute of Nuclear Physics",
+    "display_name": "Budker Institute",
+    "merge_type": "expanded_name",
+    "rationale": "English honorific-name variant normalized to the concise institute name.",
+    "evidence_url": "https://www.inp.nsk.su/budker-institute-of-nuclear-physics"
+  },
+  {
     "organization_alias_id": "org-021c9fe05e7ca038",
     "alias": "Buzachi Operating LTD",
     "canonical_name": "Buzachi Operating",
@@ -2869,6 +2905,15 @@
     "merge_type": "acronym_expansion",
     "rationale": "Official university acronym",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-848a043577fce2d6",
+    "alias": "Novosibirsk State University",
+    "canonical_name": "Novosibirsk State University (NSU)",
+    "display_name": "NSU",
+    "merge_type": "acronym_expansion",
+    "rationale": "Official English name without the parenthetical acronym.",
+    "evidence_url": "https://english.nsu.ru/"
   },
   {
     "organization_alias_id": "org-90f1660619996003",

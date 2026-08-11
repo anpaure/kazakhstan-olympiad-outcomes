@@ -125,6 +125,40 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             location["location_label"], "Nashville, Tennessee, United States"
         )
 
+    def test_damir_yeliussizov_kbtu_professor_and_phd(self):
+        person = self.people["kaz-45c2d7c0bad6"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["name"], "Damir Yeliussizov")
+        self.assertIn("Damir Yeliusizov", person["aliases"])
+        self.assertEqual(
+            person["organization"],
+            "Kazakh-British Technical University (KBTU)",
+        )
+        self.assertEqual(person["role"], "Professor")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertIn(
+            "Kazakh-British Technical University (KBTU)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+
+    def test_leonid_kardapoltsev_probable_budker_researcher(self):
+        person = self.people["kaz-45fb4c336c70"]
+        location = self.locations[person["person_id"]]
+        alma_maters = self.alma_maters(person["person_id"])
+
+        self.assertEqual(person["name"], "Leonid Kardapoltsev")
+        self.assertIn("Leoned Kardapoltsev", person["aliases"])
+        self.assertEqual(person["organization"], "Budker Institute of Nuclear Physics")
+        self.assertEqual(person["role"], "Researcher")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertIn("Novosibirsk State University (NSU)", alma_maters)
+        self.assertIn("Budker Institute of Nuclear Physics", alma_maters)
+        self.assertEqual(location["country_code"], "RU")
+        self.assertEqual(location["location_label"], "Novosibirsk, Russia")
+
     def test_anton_draganchuk_outcome_and_mipt_alma_mater(self):
         person = self.people["kaz-b76707715f6b"]
 
