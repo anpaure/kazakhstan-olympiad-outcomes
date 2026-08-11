@@ -11,46 +11,60 @@
 <div id="iso-outcomes-viz">
   <header class="iso-page-header">
     <div>
-      <h1>Where Kazakhstan's Olympiad alumni went</h1>
-      <p>IMO, IOI, IPhO, IBO, and IChO participants, joined to reviewed public career and education evidence.</p>
+      <h1 data-i18n="pageTitle">Where Kazakhstan's Olympiad alumni went</h1>
+      <p data-i18n="pageSubtitle">IMO, IOI, IPhO, IBO, and IChO participants, joined to reviewed public career and education evidence.</p>
     </div>
-    <nav class="iso-page-links" aria-label="Project resources">
-      <a href="kazakhstan_olympiad_outcomes_audit.xlsx" download>Audit workbook</a>
-      <a href="https://github.com/anpaure/kazakhstan-olympiad-outcomes/tree/main/data/audit">Source data</a>
-      <a href="https://github.com/anpaure/kazakhstan-olympiad-outcomes">Method and code</a>
-    </nav>
+    <div class="iso-header-tools">
+      <div class="iso-header-actions">
+        <div class="iso-language-selector" role="group" aria-label="Language" data-i18n-aria="language">
+          <button type="button" data-language="en" aria-label="English" title="English">EN</button>
+          <button type="button" data-language="ru" aria-label="Русский" title="Русский">RU</button>
+          <button type="button" data-language="kk" aria-label="Қазақша" title="Қазақша">KZ</button>
+        </div>
+        <button class="iso-share-button" type="button" data-share aria-label="Share this page" title="Share this page" data-i18n-aria="sharePage" data-i18n-title="sharePage">
+          <i data-lucide="share-2"></i>
+          <span data-share-label data-i18n="share">Share</span>
+        </button>
+        <span class="visually-hidden" role="status" aria-live="polite" data-share-status></span>
+      </div>
+      <nav class="iso-page-links" aria-label="Project resources" data-i18n-aria="projectResources">
+        <a href="kazakhstan_olympiad_outcomes_audit.xlsx" download data-i18n="auditWorkbook">Audit workbook</a>
+        <a href="https://github.com/anpaure/kazakhstan-olympiad-outcomes/tree/main/data/audit" data-i18n="sourceData">Source data</a>
+        <a href="https://github.com/anpaure/kazakhstan-olympiad-outcomes" data-i18n="methodCode">Method and code</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="viz-grid iso-summary" aria-label="Research summary">
+  <div class="viz-grid iso-summary" aria-label="Research summary" data-i18n-aria="researchSummary">
     <div class="card viz-stat">
-      <div class="text-muted">Canonical alumni</div>
+      <div class="text-muted" data-i18n="canonicalAlumni">Canonical alumni</div>
       <div class="viz-stat-value" data-stat="canonical">0</div>
-      <div class="text-small text-muted">deduplicated across five olympiads</div>
+      <div class="text-small text-muted" data-i18n="canonicalNote">deduplicated across five olympiads</div>
     </div>
     <div class="card viz-stat">
-      <div class="text-muted">Probable or confirmed</div>
+      <div class="text-muted" data-i18n="highConfidence">Probable or confirmed</div>
       <div class="viz-stat-value" data-stat="high-confidence">0</div>
-      <div class="text-small text-muted">supported by contextual evidence</div>
+      <div class="text-small text-muted" data-i18n="highConfidenceNote">supported by contextual evidence</div>
     </div>
     <div class="card viz-stat">
-      <div class="text-muted">LinkedIn profiles found</div>
+      <div class="text-muted" data-i18n="linkedinFound">LinkedIn profiles found</div>
       <div class="viz-stat-value" data-stat="linkedin">0</div>
-      <div class="text-small text-muted">mostly through published profile links</div>
+      <div class="text-small text-muted" data-i18n="linkedinNote">mostly through published profile links</div>
     </div>
   </div>
 
-  <div class="viz-controls iso-controls" aria-label="Visualization filters">
-    <label class="form-label">Confidence
+  <div class="viz-controls iso-controls" aria-label="Visualization filters" data-i18n-aria="visualizationFilters">
+    <label class="form-label"><span data-i18n="confidence">Confidence</span>
       <select class="form-select" data-control="confidence">
-        <option value="high">Confirmed + probable</option>
-        <option value="confirmed">Confirmed only</option>
-        <option value="candidate">Include candidates</option>
-        <option value="all">All alumni</option>
+        <option value="high" data-i18n="confidenceHigh">Confirmed + probable</option>
+        <option value="confirmed" data-i18n="confidenceConfirmed">Confirmed only</option>
+        <option value="candidate" data-i18n="confidenceCandidates">Include candidates</option>
+        <option value="all" data-i18n="confidenceAll">All alumni</option>
       </select>
     </label>
-    <label class="form-label">Olympiad
+    <label class="form-label"><span data-i18n="olympiad">Olympiad</span>
       <select class="form-select" data-control="olympiad">
-        <option value="all">All five</option>
+        <option value="all" data-i18n="allFive">All five</option>
         <option value="IMO">IMO</option>
         <option value="IOI">IOI</option>
         <option value="IPhO">IPhO</option>
@@ -58,40 +72,40 @@
         <option value="IChO">IChO</option>
       </select>
     </label>
-    <label class="form-label">Outcome country
+    <label class="form-label"><span data-i18n="outcomeCountry">Outcome country</span>
       <select class="form-select" data-control="country">
-        <option value="all">All countries</option>
+        <option value="all" data-i18n="allCountries">All countries</option>
       </select>
     </label>
-    <label class="form-label">Sector
+    <label class="form-label"><span data-i18n="sector">Sector</span>
       <select class="form-select" data-control="sector">
-        <option value="all">All sectors</option>
+        <option value="all" data-i18n="allSectors">All sectors</option>
       </select>
     </label>
-    <label class="form-label">Sort people by
+    <label class="form-label"><span data-i18n="sortPeople">Sort people by</span>
       <select class="form-select" data-control="sort">
-        <option value="confidence">Confidence, then name</option>
-        <option value="year-asc">Olympiad year, oldest first</option>
-        <option value="year-desc">Olympiad year, newest first</option>
-        <option value="destination-asc">Destination, A–Z</option>
-        <option value="destination-desc">Destination, Z–A</option>
+        <option value="confidence" data-i18n="sortConfidence">Confidence, then name</option>
+        <option value="year-asc" data-i18n="sortYearAsc">Olympiad year, oldest first</option>
+        <option value="year-desc" data-i18n="sortYearDesc">Olympiad year, newest first</option>
+        <option value="destination-asc" data-i18n="sortDestinationAsc">Destination, A–Z</option>
+        <option value="destination-desc" data-i18n="sortDestinationDesc">Destination, Z–A</option>
       </select>
     </label>
-    <label class="form-label">Find a person
-      <input class="form-control" data-control="search" type="search" placeholder="Name, job, school, year">
+    <label class="form-label"><span data-i18n="findPerson">Find a person</span>
+      <input class="form-control" data-control="search" type="search" placeholder="Name, job, school, year" data-i18n-placeholder="searchPlaceholder">
     </label>
   </div>
 
   <div class="iso-ranking-grid">
     <section>
-      <h3>Companies &amp; organizations</h3>
-      <div class="iso-ranked-scroll" tabindex="0" aria-label="Ranked companies and organizations">
+      <h3 data-i18n="companiesOrganizations">Companies &amp; organizations</h3>
+      <div class="iso-ranked-scroll" tabindex="0" aria-label="Ranked companies and organizations" data-i18n-aria="rankedCompanies">
         <div class="iso-bar-chart" data-chart="companies"></div>
       </div>
     </section>
     <section>
-      <h3>Educational institutions</h3>
-      <div class="iso-ranked-scroll" tabindex="0" aria-label="Ranked educational institutions">
+      <h3 data-i18n="educationalInstitutions">Educational institutions</h3>
+      <div class="iso-ranked-scroll" tabindex="0" aria-label="Ranked educational institutions" data-i18n-aria="rankedEducation">
         <div class="iso-bar-chart" data-chart="education"></div>
       </div>
     </section>
@@ -99,45 +113,45 @@
 
   <div class="iso-analysis-grid">
     <section>
-      <h3>Sector distribution</h3>
+      <h3 data-i18n="sectorDistribution">Sector distribution</h3>
       <div class="iso-pie-chart" data-chart="sectors"></div>
     </section>
     <section>
-      <h3>Country distribution</h3>
+      <h3 data-i18n="countryDistribution">Country distribution</h3>
       <div class="iso-pie-chart" data-chart="countries"></div>
     </section>
     <section class="iso-coverage-panel">
-      <h3>Research coverage by olympiad</h3>
+      <h3 data-i18n="coverageByOlympiad">Research coverage by olympiad</h3>
       <div class="iso-coverage-chart" data-chart="coverage"></div>
     </section>
   </div>
 
   <div class="iso-selection text-small text-muted" data-selection>Showing probable and confirmed outcomes.</div>
 
-  <div class="table-responsive" tabindex="0" aria-label="Filtered alumni results">
+  <div class="table-responsive" tabindex="0" aria-label="Filtered alumni results" data-i18n-aria="filteredResults">
     <table class="table table-sm">
       <thead>
         <tr>
-          <th>Alumnus</th>
+          <th data-i18n="alumnus">Alumnus</th>
           <th>
-            <span class="iso-th-label">Olympiad
-              <button class="iso-sort-button" data-sort-header="year" type="button" aria-label="Sort by Olympiad year" title="Sort by Olympiad year">
+            <span class="iso-th-label"><span data-i18n="olympiad">Olympiad</span>
+              <button class="iso-sort-button" data-sort-header="year" type="button" aria-label="Sort by Olympiad year" title="Sort by Olympiad year" data-i18n-aria="sortByOlympiadYear" data-i18n-title="sortByOlympiadYear">
                 <i data-lucide="arrow-up-down"></i>
               </button>
             </span>
           </th>
           <th>
-            <span class="iso-th-label">Destination
-              <button class="iso-sort-button" data-sort-header="destination" type="button" aria-label="Sort by destination" title="Sort by destination">
+            <span class="iso-th-label"><span data-i18n="destination">Destination</span>
+              <button class="iso-sort-button" data-sort-header="destination" type="button" aria-label="Sort by destination" title="Sort by destination" data-i18n-aria="sortByDestination" data-i18n-title="sortByDestination">
                 <i data-lucide="arrow-up-down"></i>
               </button>
             </span>
           </th>
-          <th>Role</th>
-          <th>Alma mater</th>
-          <th>Country</th>
-          <th>Sources</th>
-          <th><span class="visually-hidden">Confidence</span></th>
+          <th data-i18n="role">Role</th>
+          <th data-i18n="almaMater">Alma mater</th>
+          <th data-i18n="country">Country</th>
+          <th data-i18n="sources">Sources</th>
+          <th><span class="visually-hidden" data-i18n="confidence">Confidence</span></th>
         </tr>
       </thead>
       <tbody data-people-table></tbody>
@@ -198,6 +212,79 @@
     margin: 6px 0 0;
     color: var(--iso-muted-foreground);
     font-size: 14px;
+  }
+  #iso-outcomes-viz .iso-header-tools {
+    display: grid;
+    min-width: max-content;
+    justify-items: end;
+    gap: 9px;
+  }
+  #iso-outcomes-viz .iso-header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  #iso-outcomes-viz .iso-language-selector {
+    display: inline-flex;
+    height: 34px;
+    overflow: hidden;
+    border: 1px solid var(--iso-border);
+    border-radius: 4px;
+    background: var(--iso-surface);
+  }
+  #iso-outcomes-viz .iso-language-selector button {
+    width: 38px;
+    padding: 0;
+    border: 0;
+    border-right: 1px solid var(--iso-border);
+    color: var(--iso-muted-foreground);
+    background: transparent;
+    font: inherit;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  #iso-outcomes-viz .iso-language-selector button:last-child {
+    border-right: 0;
+  }
+  #iso-outcomes-viz .iso-language-selector button:hover,
+  #iso-outcomes-viz .iso-language-selector button[aria-pressed="true"] {
+    color: var(--iso-foreground);
+    background: color-mix(in srgb, var(--iso-accent) 70%, var(--iso-surface));
+  }
+  #iso-outcomes-viz .iso-language-selector button:focus-visible,
+  #iso-outcomes-viz .iso-share-button:focus-visible {
+    position: relative;
+    z-index: 1;
+    outline: 2px solid var(--iso-ring);
+    outline-offset: 1px;
+  }
+  #iso-outcomes-viz .iso-share-button {
+    display: inline-flex;
+    width: 118px;
+    height: 34px;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: 1px solid var(--iso-border);
+    border-radius: 4px;
+    color: var(--iso-primary);
+    background: var(--iso-surface);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 650;
+    cursor: pointer;
+  }
+  #iso-outcomes-viz .iso-share-button:hover {
+    border-color: var(--iso-primary);
+    background: color-mix(in srgb, var(--iso-accent) 45%, var(--iso-surface));
+  }
+  #iso-outcomes-viz .iso-share-button svg {
+    width: 14px;
+    height: 14px;
+    stroke-width: 2;
   }
   #iso-outcomes-viz .iso-page-links {
     display: flex;
@@ -533,6 +620,14 @@
       align-items: start;
       gap: 12px;
     }
+    #iso-outcomes-viz .iso-header-tools {
+      width: 100%;
+      min-width: 0;
+      justify-items: start;
+    }
+    #iso-outcomes-viz .iso-header-actions {
+      justify-content: flex-start;
+    }
     #iso-outcomes-viz .iso-page-links {
       justify-content: flex-start;
     }
@@ -622,6 +717,391 @@
 (() => {
   const root = document.getElementById('iso-outcomes-viz');
   const people = /*__DATA__*/[];
+  const translations = {
+    en: {
+      documentTitle: 'ISO Futures: Kazakhstan Olympiad Alumni',
+      metaDescription: "Auditable research on where Kazakhstan's international science olympiad alumni studied and worked.",
+      pageTitle: "Where Kazakhstan's Olympiad alumni went",
+      pageSubtitle: 'IMO, IOI, IPhO, IBO, and IChO participants, joined to reviewed public career and education evidence.',
+      language: 'Language',
+      share: 'Share',
+      sharePage: 'Share this page',
+      shared: 'Shared',
+      linkCopied: 'Link copied',
+      shareFailed: 'Copy failed',
+      projectResources: 'Project resources',
+      auditWorkbook: 'Audit workbook',
+      sourceData: 'Source data',
+      methodCode: 'Method and code',
+      researchSummary: 'Research summary',
+      canonicalAlumni: 'Canonical alumni',
+      canonicalNote: 'deduplicated across five olympiads',
+      highConfidence: 'Probable or confirmed',
+      highConfidenceNote: 'supported by contextual evidence',
+      linkedinFound: 'LinkedIn profiles found',
+      linkedinNote: 'mostly through published profile links',
+      visualizationFilters: 'Visualization filters',
+      confidence: 'Confidence',
+      confidenceHigh: 'Confirmed + probable',
+      confidenceConfirmed: 'Confirmed only',
+      confidenceCandidates: 'Include candidates',
+      confidenceAll: 'All alumni',
+      olympiad: 'Olympiad',
+      allFive: 'All five',
+      outcomeCountry: 'Outcome country',
+      allCountries: 'All countries',
+      unknownCountry: 'Unknown / not found',
+      sector: 'Sector',
+      allSectors: 'All sectors',
+      sortPeople: 'Sort people by',
+      sortConfidence: 'Confidence, then name',
+      sortYearAsc: 'Olympiad year, oldest first',
+      sortYearDesc: 'Olympiad year, newest first',
+      sortDestinationAsc: 'Destination, A–Z',
+      sortDestinationDesc: 'Destination, Z–A',
+      findPerson: 'Find a person',
+      searchPlaceholder: 'Name, job, school, year',
+      companiesOrganizations: 'Companies & organizations',
+      rankedCompanies: 'Ranked companies and organizations',
+      educationalInstitutions: 'Educational institutions',
+      rankedEducation: 'Ranked educational institutions',
+      sectorDistribution: 'Sector distribution',
+      countryDistribution: 'Country distribution',
+      coverageByOlympiad: 'Research coverage by olympiad',
+      filteredResults: 'Filtered alumni results',
+      alumnus: 'Alumnus',
+      destination: 'Destination',
+      role: 'Role',
+      almaMater: 'Alma mater',
+      country: 'Country',
+      sources: 'Sources',
+      sortByOlympiadYear: 'Sort by Olympiad year',
+      sortByDestination: 'Sort by destination',
+      sortYearNextAsc: 'Sort by Olympiad year, oldest first',
+      sortYearNextDesc: 'Sort by Olympiad year, newest first',
+      sortDestinationNextAsc: 'Sort by destination, A–Z',
+      sortDestinationNextDesc: 'Sort by destination, Z–A',
+      companiesChartTitle: 'Companies and organizations',
+      educationChartTitle: 'Educational institutions',
+      companiesChartAria: 'Companies and organizations ranked by matched alumni',
+      educationChartAria: 'Educational institutions ranked by matched alumni',
+      companiesChartDesc: 'Horizontal bars show current non-educational destinations for the currently filtered alumni.',
+      educationChartDesc: 'Horizontal bars show alma maters and current educational destinations for the currently filtered alumni.',
+      noCompanies: 'No company destinations',
+      noEducation: 'No educational institutions',
+      matchedAlumni: 'Matched alumni (people)',
+      sectorChartAria: 'Sector distribution for filtered alumni',
+      countryChartAria: 'Country distribution for filtered alumni',
+      sectorChartDesc: 'Pie slices show the share of filtered alumni with each destination sector.',
+      countryChartDesc: 'Pie slices show the share of filtered alumni with each sourced country.',
+      noDestinationData: 'No destination data for this filter',
+      otherCountries: 'Other countries',
+      coverageChartAria: 'Research confidence coverage for each olympiad',
+      coverageChartDesc: 'Stacked bars show confirmed, probable, candidate, and unmatched alumni for each olympiad.',
+      alumniPeople: 'Alumni (people)',
+      roleNotPublic: 'Role not publicly stated',
+      lastKnown: 'last known',
+      filtersTarget: 'the filters',
+      currentFiltersTarget: 'the current filters',
+      selected: 'Selected'
+    },
+    ru: {
+      documentTitle: 'ISO Futures: казахстанские олимпиадники',
+      metaDescription: 'Проверяемое исследование об учебе и карьере казахстанских участников международных предметных олимпиад.',
+      pageTitle: 'Куда поступили и устроились казахстанские олимпиадники',
+      pageSubtitle: 'Участники IMO, IOI, IPhO, IBO и IChO, дополненные проверенными открытыми данными об образовании и карьере.',
+      language: 'Язык',
+      share: 'Поделиться',
+      sharePage: 'Поделиться страницей',
+      shared: 'Отправлено',
+      linkCopied: 'Скопировано',
+      shareFailed: 'Ошибка',
+      projectResources: 'Материалы проекта',
+      auditWorkbook: 'Аудит-таблица',
+      sourceData: 'Исходные данные',
+      methodCode: 'Методика и код',
+      researchSummary: 'Сводка исследования',
+      canonicalAlumni: 'Уникальные участники',
+      canonicalNote: 'дедуплицированы по пяти олимпиадам',
+      highConfidence: 'Подтвержденные или вероятные',
+      highConfidenceNote: 'подкреплены контекстными источниками',
+      linkedinFound: 'Найдены профили LinkedIn',
+      linkedinNote: 'в основном по опубликованным ссылкам',
+      visualizationFilters: 'Фильтры визуализации',
+      confidence: 'Надежность',
+      confidenceHigh: 'Подтвержденные + вероятные',
+      confidenceConfirmed: 'Только подтвержденные',
+      confidenceCandidates: 'Включить кандидатов',
+      confidenceAll: 'Все участники',
+      olympiad: 'Олимпиада',
+      allFive: 'Все пять',
+      outcomeCountry: 'Страна результата',
+      allCountries: 'Все страны',
+      unknownCountry: 'Неизвестно / не найдено',
+      sector: 'Сектор',
+      allSectors: 'Все секторы',
+      sortPeople: 'Сортировка списка',
+      sortConfidence: 'Надежность, затем имя',
+      sortYearAsc: 'Год олимпиады, сначала ранние',
+      sortYearDesc: 'Год олимпиады, сначала новые',
+      sortDestinationAsc: 'Назначение, А–Я',
+      sortDestinationDesc: 'Назначение, Я–А',
+      findPerson: 'Найти человека',
+      searchPlaceholder: 'Имя, работа, вуз, год',
+      companiesOrganizations: 'Компании и организации',
+      rankedCompanies: 'Рейтинг компаний и организаций',
+      educationalInstitutions: 'Учебные заведения',
+      rankedEducation: 'Рейтинг учебных заведений',
+      sectorDistribution: 'Распределение по секторам',
+      countryDistribution: 'Распределение по странам',
+      coverageByOlympiad: 'Охват исследования по олимпиадам',
+      filteredResults: 'Отфильтрованные результаты',
+      alumnus: 'Участник',
+      destination: 'Назначение',
+      role: 'Роль',
+      almaMater: 'Образование',
+      country: 'Страна',
+      sources: 'Источники',
+      sortByOlympiadYear: 'Сортировать по году олимпиады',
+      sortByDestination: 'Сортировать по назначению',
+      sortYearNextAsc: 'По году олимпиады, сначала ранние',
+      sortYearNextDesc: 'По году олимпиады, сначала новые',
+      sortDestinationNextAsc: 'По назначению, А–Я',
+      sortDestinationNextDesc: 'По назначению, Я–А',
+      companiesChartTitle: 'Компании и организации',
+      educationChartTitle: 'Учебные заведения',
+      companiesChartAria: 'Компании и организации по числу найденных участников',
+      educationChartAria: 'Учебные заведения по числу найденных участников',
+      companiesChartDesc: 'Горизонтальные столбцы показывают текущие неакадемические назначения после применения фильтров.',
+      educationChartDesc: 'Горизонтальные столбцы показывают образование и текущие учебные назначения после применения фильтров.',
+      noCompanies: 'Нет назначений в компании',
+      noEducation: 'Нет учебных заведений',
+      matchedAlumni: 'Найденные участники (чел.)',
+      sectorChartAria: 'Распределение отфильтрованных участников по секторам',
+      countryChartAria: 'Распределение отфильтрованных участников по странам',
+      sectorChartDesc: 'Секторы круга показывают долю участников по секторам назначения.',
+      countryChartDesc: 'Секторы круга показывают долю участников по странам из источников.',
+      noDestinationData: 'Для этого фильтра нет данных о назначении',
+      otherCountries: 'Другие страны',
+      coverageChartAria: 'Надежность исследования по каждой олимпиаде',
+      coverageChartDesc: 'Составные столбцы показывают подтвержденных, вероятных, кандидатных и ненайденных участников.',
+      alumniPeople: 'Участники (чел.)',
+      roleNotPublic: 'Роль не указана в открытых источниках',
+      lastKnown: 'последняя известная',
+      filtersTarget: 'фильтрам',
+      currentFiltersTarget: 'текущим фильтрам',
+      selected: 'Выбрано'
+    },
+    kk: {
+      documentTitle: 'ISO Futures: Қазақстан олимпиада түлектері',
+      metaDescription: 'Қазақстандық халықаралық пән олимпиадасы қатысушыларының оқуы мен мансабы туралы тексерілетін зерттеу.',
+      pageTitle: 'Қазақстандық олимпиада түлектерінің жолы',
+      pageSubtitle: 'IMO, IOI, IPhO, IBO және IChO қатысушыларының оқу және мансап жолдары тексерілген ашық деректермен толықтырылды.',
+      language: 'Тіл',
+      share: 'Бөлісу',
+      sharePage: 'Парақшамен бөлісу',
+      shared: 'Бөлісілді',
+      linkCopied: 'Көшірілді',
+      shareFailed: 'Қате',
+      projectResources: 'Жоба материалдары',
+      auditWorkbook: 'Аудит кестесі',
+      sourceData: 'Бастапқы деректер',
+      methodCode: 'Әдістеме және код',
+      researchSummary: 'Зерттеу қорытындысы',
+      canonicalAlumni: 'Бірегей қатысушылар',
+      canonicalNote: 'бес олимпиада бойынша қайталанулар біріктірілді',
+      highConfidence: 'Расталған немесе ықтимал',
+      highConfidenceNote: 'мәнмәтіндік деректермен негізделген',
+      linkedinFound: 'LinkedIn профильдері табылды',
+      linkedinNote: 'көбі жарияланған профиль сілтемелері арқылы',
+      visualizationFilters: 'Визуализация сүзгілері',
+      confidence: 'Сенімділік',
+      confidenceHigh: 'Расталған + ықтимал',
+      confidenceConfirmed: 'Тек расталған',
+      confidenceCandidates: 'Үміткерлерді қосу',
+      confidenceAll: 'Барлық қатысушылар',
+      olympiad: 'Олимпиада',
+      allFive: 'Бесеуі де',
+      outcomeCountry: 'Нәтиже елі',
+      allCountries: 'Барлық елдер',
+      unknownCountry: 'Белгісіз / табылмады',
+      sector: 'Сала',
+      allSectors: 'Барлық салалар',
+      sortPeople: 'Тізімді сұрыптау',
+      sortConfidence: 'Сенімділік, кейін аты',
+      sortYearAsc: 'Олимпиада жылы, ескіден жаңаға',
+      sortYearDesc: 'Олимпиада жылы, жаңадан ескіге',
+      sortDestinationAsc: 'Бағыт, А–Я',
+      sortDestinationDesc: 'Бағыт, Я–А',
+      findPerson: 'Адамды іздеу',
+      searchPlaceholder: 'Аты, жұмыс, оқу, жыл',
+      companiesOrganizations: 'Компаниялар мен ұйымдар',
+      rankedCompanies: 'Компаниялар мен ұйымдар рейтингі',
+      educationalInstitutions: 'Білім беру ұйымдары',
+      rankedEducation: 'Білім беру ұйымдарының рейтингі',
+      sectorDistribution: 'Салалар бойынша үлестірім',
+      countryDistribution: 'Елдер бойынша үлестірім',
+      coverageByOlympiad: 'Олимпиадалар бойынша зерттеу қамтуы',
+      filteredResults: 'Сүзгіден өткен нәтижелер',
+      alumnus: 'Қатысушы',
+      destination: 'Бағыт',
+      role: 'Рөл',
+      almaMater: 'Білімі',
+      country: 'Ел',
+      sources: 'Дереккөздер',
+      sortByOlympiadYear: 'Олимпиада жылы бойынша сұрыптау',
+      sortByDestination: 'Бағыт бойынша сұрыптау',
+      sortYearNextAsc: 'Олимпиада жылы, ескіден жаңаға',
+      sortYearNextDesc: 'Олимпиада жылы, жаңадан ескіге',
+      sortDestinationNextAsc: 'Бағыт бойынша, А–Я',
+      sortDestinationNextDesc: 'Бағыт бойынша, Я–А',
+      companiesChartTitle: 'Компаниялар мен ұйымдар',
+      educationChartTitle: 'Білім беру ұйымдары',
+      companiesChartAria: 'Табылған қатысушылар саны бойынша компаниялар мен ұйымдар',
+      educationChartAria: 'Табылған қатысушылар саны бойынша білім беру ұйымдары',
+      companiesChartDesc: 'Көлденең жолақтар сүзгіден кейінгі ағымдағы білімнен тыс бағыттарды көрсетеді.',
+      educationChartDesc: 'Көлденең жолақтар сүзгіден кейінгі оқу орындары мен ағымдағы оқу бағыттарын көрсетеді.',
+      noCompanies: 'Компаниялық бағыттар жоқ',
+      noEducation: 'Білім беру ұйымдары жоқ',
+      matchedAlumni: 'Табылған қатысушылар (адам)',
+      sectorChartAria: 'Сүзгіден өткен қатысушылардың салалар бойынша үлестірімі',
+      countryChartAria: 'Сүзгіден өткен қатысушылардың елдер бойынша үлестірімі',
+      sectorChartDesc: 'Дөңгелек бөліктері қатысушылардың бағыт салалары бойынша үлесін көрсетеді.',
+      countryChartDesc: 'Дөңгелек бөліктері қатысушылардың дереккөздердегі елдер бойынша үлесін көрсетеді.',
+      noDestinationData: 'Бұл сүзгі үшін бағыт деректері жоқ',
+      otherCountries: 'Басқа елдер',
+      coverageChartAria: 'Әр олимпиада бойынша зерттеу сенімділігі',
+      coverageChartDesc: 'Жинақталған жолақтар расталған, ықтимал, үміткер және табылмаған қатысушыларды көрсетеді.',
+      alumniPeople: 'Қатысушылар (адам)',
+      roleNotPublic: 'Рөл ашық деректерде көрсетілмеген',
+      lastKnown: 'соңғы белгілі',
+      filtersTarget: 'сүзгілерге',
+      currentFiltersTarget: 'ағымдағы сүзгілерге',
+      selected: 'Таңдалды'
+    }
+  };
+  const sectorLabels = {
+    en: {},
+    ru: {
+      'Technology & Software': 'Технологии и ПО',
+      'Finance & Insurance': 'Финансы и страхование',
+      'Consulting & Professional Services': 'Консалтинг и профессиональные услуги',
+      'Energy & Natural Resources': 'Энергетика и природные ресурсы',
+      'Healthcare & Life Sciences': 'Здравоохранение и науки о жизни',
+      'Government & Public Sector': 'Государство и госсектор',
+      'Industrial & Manufacturing': 'Промышленность и производство',
+      'Consumer & Media': 'Потребительский сектор и медиа',
+      'Transportation & Infrastructure': 'Транспорт и инфраструктура',
+      'Environment & Nonprofit': 'Экология и НКО',
+      'Education & Research': 'Образование и исследования',
+      'Independent & Other': 'Независимые и прочее'
+    },
+    kk: {
+      'Technology & Software': 'Технологиялар және БҚ',
+      'Finance & Insurance': 'Қаржы және сақтандыру',
+      'Consulting & Professional Services': 'Консалтинг және кәсіби қызметтер',
+      'Energy & Natural Resources': 'Энергетика және табиғи ресурстар',
+      'Healthcare & Life Sciences': 'Денсаулық сақтау және өмір туралы ғылымдар',
+      'Government & Public Sector': 'Мемлекеттік және қоғамдық сектор',
+      'Industrial & Manufacturing': 'Өнеркәсіп және өндіріс',
+      'Consumer & Media': 'Тұтыну секторы және медиа',
+      'Transportation & Infrastructure': 'Көлік және инфрақұрылым',
+      'Environment & Nonprofit': 'Экология және коммерциялық емес ұйымдар',
+      'Education & Research': 'Білім және зерттеу',
+      'Independent & Other': 'Тәуелсіз және басқа'
+    }
+  };
+  const countryLabels = {
+    kk: {
+      AE: 'Біріккен Араб Әмірліктері',
+      AT: 'Аустрия',
+      AU: 'Аустралия',
+      BE: 'Бельгия',
+      CA: 'Канада',
+      CH: 'Швейцария',
+      DE: 'Германия',
+      DK: 'Дания',
+      EE: 'Эстония',
+      FR: 'Франция',
+      GB: 'Ұлыбритания',
+      HK: 'Гонконг',
+      HU: 'Мажарстан',
+      ID: 'Индонезия',
+      IE: 'Ирландия',
+      IL: 'Израиль',
+      IT: 'Италия',
+      KG: 'Қырғызстан',
+      KR: 'Оңтүстік Корея',
+      KZ: 'Қазақстан',
+      LU: 'Люксембург',
+      MY: 'Малайзия',
+      NL: 'Нидерланд',
+      PL: 'Польша',
+      QA: 'Катар',
+      RO: 'Румыния',
+      RS: 'Сербия',
+      RU: 'Ресей',
+      SA: 'Сауд Арабиясы',
+      SE: 'Швеция',
+      SG: 'Сингапур',
+      TR: 'Түркия',
+      TW: 'Тайвань',
+      US: 'АҚШ',
+      UZ: 'Өзбекстан',
+      VN: 'Вьетнам'
+    }
+  };
+  const confidenceLabels = {
+    en: { confirmed: 'Confirmed', probable: 'Probable', candidate: 'Candidate', unmatched: 'Unmatched' },
+    ru: { confirmed: 'Подтверждено', probable: 'Вероятно', candidate: 'Кандидат', unmatched: 'Не найдено' },
+    kk: { confirmed: 'Расталған', probable: 'Ықтимал', candidate: 'Үміткер', unmatched: 'Табылмаған' }
+  };
+  const sourceLabelKeys = {
+    'Accepted LinkedIn profile': 'sourceAcceptedLinkedin',
+    'Reviewed destination or identity source': 'sourceOutcome',
+    'Official Olympiad result': 'sourceOlympiad',
+    'Alma mater source': 'sourceEducation',
+    'Outcome country source': 'sourceCountry',
+    'Last-known country source': 'sourceLastCountry',
+    'Additional reviewed evidence': 'sourceAdditional'
+  };
+  Object.assign(translations.en, {
+    sourceAcceptedLinkedin: 'Accepted LinkedIn profile',
+    sourceOutcome: 'Reviewed destination or identity source',
+    sourceOlympiad: 'Official Olympiad result',
+    sourceEducation: 'Alma mater source',
+    sourceCountry: 'Outcome country source',
+    sourceLastCountry: 'Last-known country source',
+    sourceAdditional: 'Additional reviewed evidence'
+  });
+  Object.assign(translations.ru, {
+    sourceAcceptedLinkedin: 'Принятый профиль LinkedIn',
+    sourceOutcome: 'Проверенный источник назначения или личности',
+    sourceOlympiad: 'Официальный результат олимпиады',
+    sourceEducation: 'Источник об образовании',
+    sourceCountry: 'Источник страны назначения',
+    sourceLastCountry: 'Источник последней известной страны',
+    sourceAdditional: 'Дополнительный проверенный источник'
+  });
+  Object.assign(translations.kk, {
+    sourceAcceptedLinkedin: 'Қабылданған LinkedIn профилі',
+    sourceOutcome: 'Бағыт немесе тұлға туралы тексерілген дереккөз',
+    sourceOlympiad: 'Олимпиаданың ресми нәтижесі',
+    sourceEducation: 'Білім туралы дереккөз',
+    sourceCountry: 'Бағыт елі туралы дереккөз',
+    sourceLastCountry: 'Соңғы белгілі ел туралы дереккөз',
+    sourceAdditional: 'Қосымша тексерілген дереккөз'
+  });
+  const localeByLanguage = { en: 'en', ru: 'ru', kk: 'kk-KZ' };
+  function normalizedLanguage(value) {
+    const language = String(value || '').toLowerCase().split('-')[0];
+    if (language === 'kz') return 'kk';
+    return ['en', 'ru', 'kk'].includes(language) ? language : '';
+  }
+  let storedLanguage = '';
+  try { storedLanguage = localStorage.getItem('iso-outcomes-language') || ''; } catch {}
+  const queryLanguage = new URLSearchParams(window.location.search).get('lang');
+  let currentLanguage = normalizedLanguage(queryLanguage) || normalizedLanguage(storedLanguage) || 'en';
   const confidenceRank = { unmatched: 0, candidate: 1, probable: 2, confirmed: 3 };
   const confidenceColors = {
     confirmed: 'var(--iso-series-1)',
@@ -661,7 +1141,11 @@
     sort: root.querySelector('[data-control="sort"]'),
     search: root.querySelector('[data-control="search"]'),
     yearSort: root.querySelector('[data-sort-header="year"]'),
-    destinationSort: root.querySelector('[data-sort-header="destination"]')
+    destinationSort: root.querySelector('[data-sort-header="destination"]'),
+    languageButtons: [...root.querySelectorAll('[data-language]')],
+    share: root.querySelector('[data-share]'),
+    shareLabel: root.querySelector('[data-share-label]'),
+    shareStatus: root.querySelector('[data-share-status]')
   };
 
   if (!people.some(person => person.confidence === 'candidate')) {
@@ -672,40 +1156,134 @@
     people.filter(person => person.countryCode),
     group => group[0].country,
     person => person.countryCode
-  ).map(([code, name]) => ({ code, name }))
-    .sort((a, b) => d3.ascending(a.name, b.name));
-  countryOptions.forEach(country => {
-    const option = document.createElement('option');
-    option.value = country.code;
-    option.textContent = country.name;
-    controls.country.append(option);
-  });
-  if (people.some(person => !person.countryCode)) {
-    const option = document.createElement('option');
-    option.value = 'unknown';
-    option.textContent = 'Unknown / not found';
-    controls.country.append(option);
-  }
-
-  [...new Set(people.map(person => person.sector).filter(Boolean))]
-    .sort(d3.ascending)
-    .forEach(sector => {
-      const option = document.createElement('option');
-      option.value = sector;
-      option.textContent = sector;
-      controls.sector.append(option);
-    });
+  ).map(([code, name]) => ({ code, name }));
+  const sectorOptions = [...new Set(people.map(person => person.sector).filter(Boolean))];
+  const hasUnknownCountry = people.some(person => !person.countryCode);
 
   root.querySelector('[data-stat="canonical"]').textContent = people.length;
   root.querySelector('[data-stat="high-confidence"]').textContent = people.filter(d => confidenceRank[d.confidence] >= 2).length;
   root.querySelector('[data-stat="linkedin"]').textContent = people.filter(d => d.linkedin).length;
 
+  function t(key) {
+    return translations[currentLanguage]?.[key] ?? translations.en[key] ?? key;
+  }
+
+  function translatedSector(sector) {
+    return sectorLabels[currentLanguage]?.[sector] || sector;
+  }
+
+  function translatedConfidence(confidence) {
+    return confidenceLabels[currentLanguage]?.[confidence] || confidence;
+  }
+
+  function translatedSourceLabel(label) {
+    const translationKey = sourceLabelKeys[label];
+    return translationKey ? t(translationKey) : label;
+  }
+
+  function displayCountry(code, fallback = '') {
+    if (!code) return fallback;
+    const countryLabel = countryLabels[currentLanguage]?.[code];
+    if (countryLabel) return countryLabel;
+    try {
+      return new Intl.DisplayNames([localeByLanguage[currentLanguage]], { type: 'region' }).of(code) || fallback;
+    } catch {
+      return fallback;
+    }
+  }
+
+  function translateStaticDom() {
+    root.querySelectorAll('[data-i18n]').forEach(element => {
+      element.textContent = t(element.dataset.i18n);
+    });
+    root.querySelectorAll('[data-i18n-aria]').forEach(element => {
+      element.setAttribute('aria-label', t(element.dataset.i18nAria));
+    });
+    root.querySelectorAll('[data-i18n-title]').forEach(element => {
+      element.title = t(element.dataset.i18nTitle);
+    });
+    root.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+      element.placeholder = t(element.dataset.i18nPlaceholder);
+    });
+  }
+
+  function rebuildDynamicOptions() {
+    controls.country.querySelectorAll('[data-dynamic-option]').forEach(option => option.remove());
+    controls.sector.querySelectorAll('[data-dynamic-option]').forEach(option => option.remove());
+    const collator = new Intl.Collator(localeByLanguage[currentLanguage], { sensitivity: 'base' });
+    countryOptions
+      .map(country => ({ ...country, label: displayCountry(country.code, country.name) }))
+      .sort((a, b) => collator.compare(a.label, b.label))
+      .forEach(country => {
+        const option = document.createElement('option');
+        option.value = country.code;
+        option.textContent = country.label;
+        option.dataset.dynamicOption = 'true';
+        controls.country.append(option);
+      });
+    if (hasUnknownCountry) {
+      const option = document.createElement('option');
+      option.value = 'unknown';
+      option.textContent = t('unknownCountry');
+      option.dataset.dynamicOption = 'true';
+      controls.country.append(option);
+    }
+    sectorOptions
+      .map(sector => ({ sector, label: translatedSector(sector) }))
+      .sort((a, b) => collator.compare(a.label, b.label))
+      .forEach(({ sector, label }) => {
+        const option = document.createElement('option');
+        option.value = sector;
+        option.textContent = label;
+        option.dataset.dynamicOption = 'true';
+        controls.sector.append(option);
+      });
+    controls.country.value = state.country;
+    controls.sector.value = state.sector;
+  }
+
+  let shareFeedbackTimer = 0;
+  function applyLanguage(language, persist = true) {
+    currentLanguage = normalizedLanguage(language) || 'en';
+    document.documentElement.lang = currentLanguage;
+    document.title = t('documentTitle');
+    document.querySelector('meta[name="description"]')?.setAttribute('content', t('metaDescription'));
+    window.clearTimeout(shareFeedbackTimer);
+    controls.share.dataset.feedback = '';
+    controls.shareLabel.textContent = t('share');
+    controls.shareStatus.textContent = '';
+    translateStaticDom();
+    rebuildDynamicOptions();
+    controls.languageButtons.forEach(button => {
+      button.setAttribute('aria-pressed', String(button.dataset.language === currentLanguage));
+    });
+    const url = new URL(window.location.href);
+    if (currentLanguage === 'en') url.searchParams.delete('lang');
+    else url.searchParams.set('lang', currentLanguage);
+    window.history.replaceState(null, '', url);
+    if (persist) {
+      try { localStorage.setItem('iso-outcomes-language', currentLanguage); } catch {}
+    }
+    render();
+  }
+
   function personCount(count) {
+    if (currentLanguage === 'kk') return `${count} адам`;
+    if (currentLanguage === 'ru') {
+      const mod10 = count % 10;
+      const mod100 = count % 100;
+      const noun = mod10 === 1 && mod100 !== 11
+        ? 'человек'
+        : mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14) ? 'человека' : 'человек';
+      return `${count} ${noun}`;
+    }
     return `${count} ${count === 1 ? 'person' : 'people'}`;
   }
 
-  function matchCount(count, target) {
-    return `${personCount(count)} ${count === 1 ? 'matches' : 'match'} ${target}.`;
+  function matchCount(count, targetKey) {
+    if (currentLanguage === 'kk') return `${personCount(count)} ${t(targetKey)} сәйкес келеді.`;
+    if (currentLanguage === 'ru') return `${personCount(count)} ${count === 1 ? 'соответствует' : 'соответствуют'} ${t(targetKey)}.`;
+    return `${personCount(count)} ${count === 1 ? 'matches' : 'match'} ${t(targetKey)}.`;
   }
 
   function confidenceAllowed(value) {
@@ -801,16 +1379,14 @@
     const svg = d3.select(container).selectAll('svg').data([null]).join('svg')
       .attr('viewBox', `0 0 ${width} ${height}`)
       .attr('role', 'img')
-      .attr('aria-label', `${education ? 'Educational institutions' : 'Companies and organizations'} ranked by matched alumni`);
+      .attr('aria-label', t(education ? 'educationChartAria' : 'companiesChartAria'));
     svg.selectAll('*').remove();
-    svg.append('title').text(education ? 'Educational institutions' : 'Companies and organizations');
-    svg.append('desc').text(education
-      ? 'Horizontal bars show alma maters and current educational destinations for the currently filtered alumni.'
-      : 'Horizontal bars show current non-educational destinations for the currently filtered alumni.');
+    svg.append('title').text(t(education ? 'educationChartTitle' : 'companiesChartTitle'));
+    svg.append('desc').text(t(education ? 'educationChartDesc' : 'companiesChartDesc'));
 
     if (!data.length) {
       svg.append('text').attr('x', width / 2).attr('y', height / 2).attr('text-anchor', 'middle')
-        .attr('class', 'muted-label').text(education ? 'No educational institutions' : 'No company destinations');
+        .attr('class', 'muted-label').text(t(education ? 'noEducation' : 'noCompanies'));
       return;
     }
 
@@ -832,7 +1408,7 @@
         ? 'var(--iso-primary)'
         : education ? '#d97706' : 'var(--iso-series-1)')
       .attr('fill-opacity', d => state.selectedOrganization && state.selectedOrganization !== d.label ? 0.28 : 0.82)
-      .attr('data-tooltip', d => `${d.label}: ${d.count}; ${d.people.slice(0, 8).join(', ')}${d.people.length > 8 ? '…' : ''}`)
+      .attr('data-tooltip', d => `${d.label}: ${personCount(d.count)}; ${d.people.slice(0, 8).join(', ')}${d.people.length > 8 ? '…' : ''}`)
       .on('click keydown', (event, d) => {
         if (event.type === 'keydown' && !['Enter', ' '].includes(event.key)) return;
         event.preventDefault();
@@ -850,10 +1426,11 @@
       .text(d => d.count);
     svg.append('text').attr('class', 'axis-title').attr('data-axis', 'x')
       .attr('x', margin.left + innerWidth / 2).attr('y', height - 6).attr('text-anchor', 'middle')
-      .text('Matched alumni (people)');
+      .text(t('matchedAlumni'));
   }
 
   function distributionData(kind) {
+    const collator = new Intl.Collator(localeByLanguage[currentLanguage], { sensitivity: 'base' });
     const values = filteredPeople({ ignoreSelection: true }).filter(person => {
       if (kind === 'sector') return Boolean(person.organization && person.sector);
       return Boolean(person.countryCode);
@@ -862,14 +1439,18 @@
       values,
       group => ({ count: group.length, label: kind === 'sector' ? group[0].sector : group[0].country }),
       person => kind === 'sector' ? person.sector : person.countryCode
-    ).map(([key, payload]) => ({ key, ...payload }))
-      .sort((a, b) => d3.descending(a.count, b.count) || d3.ascending(a.label, b.label));
+    ).map(([key, payload]) => ({
+      key,
+      count: payload.count,
+      label: kind === 'sector' ? translatedSector(key) : displayCountry(key, payload.label)
+    }))
+      .sort((a, b) => d3.descending(a.count, b.count) || collator.compare(a.label, b.label));
     if (kind === 'country' && data.length > 9) {
       const retained = data.slice(0, 8);
       const remainder = data.slice(8);
       retained.push({
         key: '__other__',
-        label: 'Other countries',
+        label: t('otherCountries'),
         count: d3.sum(remainder, item => item.count)
       });
       data = retained;
@@ -893,18 +1474,14 @@
     const svg = d3.select(container).selectAll('svg').data([null]).join('svg')
       .attr('viewBox', `0 0 ${width} ${height}`)
       .attr('role', 'img')
-      .attr('aria-label', `${kind === 'sector' ? 'Sector' : 'Country'} distribution for filtered alumni`);
+      .attr('aria-label', t(kind === 'sector' ? 'sectorChartAria' : 'countryChartAria'));
     svg.selectAll('*').remove();
-    svg.append('title').text(kind === 'sector' ? 'Sector distribution' : 'Country distribution');
-    svg.append('desc').text(
-      kind === 'sector'
-        ? 'Pie slices show the share of filtered alumni with each destination sector.'
-        : 'Pie slices show the share of filtered alumni with each sourced country.'
-    );
+    svg.append('title').text(t(kind === 'sector' ? 'sectorDistribution' : 'countryDistribution'));
+    svg.append('desc').text(t(kind === 'sector' ? 'sectorChartDesc' : 'countryChartDesc'));
 
     if (!data.length) {
       svg.append('text').attr('x', width / 2).attr('y', height / 2).attr('text-anchor', 'middle')
-        .attr('class', 'muted-label').text('No destination data for this filter');
+        .attr('class', 'muted-label').text(t('noDestinationData'));
       return;
     }
 
@@ -916,7 +1493,7 @@
       .attr('class', 'slice')
       .attr('tabindex', item => item.data.key === '__other__' ? -1 : 0)
       .attr('d', arc)
-      .attr('fill', item => color(kind === 'sector' ? item.data.label : item.data.key))
+      .attr('fill', item => color(item.data.key))
       .attr('stroke', 'var(--iso-surface)')
       .attr('stroke-width', 1.5)
       .attr('aria-label', item => `${item.data.label}: ${personCount(item.data.count)}`)
@@ -943,7 +1520,7 @@
       const row = Math.floor(index / columns);
       const group = svg.append('g').attr('transform', `translate(${column * columnWidth},${legendTop + row * 22})`);
       group.append('rect').attr('width', 10).attr('height', 10).attr('y', -8)
-        .attr('fill', color(kind === 'sector' ? item.label : item.key));
+        .attr('fill', color(item.key));
       const maxLength = columns === 1 ? 36 : 20;
       const label = item.label.length > maxLength ? `${item.label.slice(0, maxLength - 1)}…` : item.label;
       group.append('text').attr('x', 15).text(`${label} ${item.count}`);
@@ -961,7 +1538,7 @@
       return { olympiad, counts: Object.fromEntries(statuses.map(status => [status, relevant.filter(d => d.confidence === status).length])) };
     });
     const width = Math.max(300, container.clientWidth || 390);
-    const isNarrow = width < 420;
+    const isNarrow = width < 480;
     const height = isNarrow ? 370 : 330;
     const margin = { top: 16, right: 18, bottom: isNarrow ? 100 : 72, left: 52 };
     const innerWidth = width - margin.left - margin.right;
@@ -973,10 +1550,10 @@
     const svg = d3.select(container).selectAll('svg').data([null]).join('svg')
       .attr('viewBox', `0 0 ${width} ${height}`)
       .attr('role', 'img')
-      .attr('aria-label', 'Research confidence coverage for each olympiad');
+      .attr('aria-label', t('coverageChartAria'));
     svg.selectAll('*').remove();
-    svg.append('title').text('Research coverage by olympiad');
-    svg.append('desc').text('Stacked bars show confirmed, probable, candidate, and unmatched alumni for each olympiad.');
+    svg.append('title').text(t('coverageByOlympiad'));
+    svg.append('desc').text(t('coverageChartDesc'));
     const chart = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
     chart.append('rect').attr('class', 'frame').attr('width', innerWidth).attr('height', innerHeight);
     chart.call(d3.axisLeft(y).ticks(Math.min(4, maxTotal)).tickSize(-innerWidth).tickFormat(d3.format('d')))
@@ -994,8 +1571,8 @@
       .join('rect').attr('class', 'segment').attr('tabindex', 0)
       .attr('x', d => x(d.data.olympiad)).attr('width', x.bandwidth())
       .attr('y', d => y(d.value[1])).attr('height', d => Math.max(0, y(d.value[0]) - y(d.value[1])))
-      .attr('data-tooltip', d => `${d.data.olympiad} — ${d.status}: ${d.data[d.status]}`)
-      .attr('aria-label', d => `${d.data.olympiad}, ${d.status}, ${personCount(d.data[d.status])}`)
+      .attr('data-tooltip', d => `${d.data.olympiad} — ${translatedConfidence(d.status)}: ${d.data[d.status]}`)
+      .attr('aria-label', d => `${d.data.olympiad}, ${translatedConfidence(d.status)}, ${personCount(d.data[d.status])}`)
       .on('click keydown', (event, d) => {
         if (event.type === 'keydown' && !['Enter', ' '].includes(event.key)) return;
         event.preventDefault();
@@ -1007,30 +1584,30 @@
       .attr('x', margin.left + innerWidth / 2)
       .attr('y', margin.top + innerHeight + (isNarrow ? 32 : 34))
       .attr('text-anchor', 'middle')
-      .text('Olympiad');
+      .text(t('olympiad'));
     svg.append('text').attr('class', 'axis-title').attr('data-axis', 'y')
       .attr('transform', `translate(14,${margin.top + innerHeight / 2}) rotate(-90)`).attr('text-anchor', 'middle')
-      .text('Alumni (people)');
+      .text(t('alumniPeople'));
 
     const legend = svg.append('g').attr('transform', `translate(${margin.left},${isNarrow ? height - 27 : height - 7})`);
     let offset = 0;
     let row = 0;
-    const itemWidths = { confirmed: 82, probable: 74, candidate: 82, unmatched: 92 };
     statuses.forEach(status => {
-      const itemWidth = itemWidths[status];
+      const label = translatedConfidence(status);
+      const itemWidth = Math.max(74, label.length * 7 + 24);
       if (isNarrow && offset && offset + itemWidth > innerWidth) {
         offset = 0;
         row += 1;
       }
       const item = legend.append('g').attr('transform', `translate(${offset},${row * 18})`);
       item.append('rect').attr('width', 9).attr('height', 9).attr('y', -8).attr('fill', confidenceColors[status]);
-      item.append('text').attr('x', 13).text(status[0].toUpperCase() + status.slice(1));
+      item.append('text').attr('x', 13).text(label);
       offset += itemWidth;
     });
   }
 
   function sortPeople(rows) {
-    const collator = new Intl.Collator(undefined, { sensitivity: 'base', numeric: true });
+    const collator = new Intl.Collator(localeByLanguage[currentLanguage], { sensitivity: 'base', numeric: true });
     const byName = (a, b) => collator.compare(a.name, b.name);
     const destinationKey = value => value.replace(/^[^\p{L}\p{N}]+/u, '');
     const byDestination = (a, b, direction) => {
@@ -1054,7 +1631,7 @@
       const tr = document.createElement('tr');
       if (state.selectedOrganization && personHasOrganization(person, state.selectedOrganization)) tr.classList.add('is-highlighted');
       const nameCell = document.createElement('td');
-      nameCell.dataset.label = 'Alumnus';
+      nameCell.dataset.label = t('alumnus');
       const link = person.linkedin || person.profile;
       if (link) {
         const anchor = document.createElement('a');
@@ -1067,36 +1644,36 @@
         nameCell.textContent = person.name;
       }
       const olympiadCell = document.createElement('td');
-      olympiadCell.dataset.label = 'Olympiad';
+      olympiadCell.dataset.label = t('olympiad');
       const years = person.firstYear === person.lastYear
         ? person.firstYear
         : `${person.firstYear}-${person.lastYear}`;
       olympiadCell.textContent = `${person.olympiads.join(', ')} · ${years}`;
       const destinationCell = document.createElement('td');
-      destinationCell.dataset.label = 'Destination';
+      destinationCell.dataset.label = t('destination');
       destinationCell.textContent = person.organization || '—';
       if (person.organization && person.sector) {
         const sector = document.createElement('div');
         sector.className = 'iso-cell-meta';
-        sector.textContent = person.sector;
+        sector.textContent = translatedSector(person.sector);
         destinationCell.append(sector);
       }
       const roleCell = document.createElement('td');
-      roleCell.dataset.label = 'Role';
-      roleCell.textContent = person.role || 'Role not publicly stated';
+      roleCell.dataset.label = t('role');
+      roleCell.textContent = person.role || t('roleNotPublic');
       const almaCell = document.createElement('td');
-      almaCell.dataset.label = 'Alma mater';
+      almaCell.dataset.label = t('almaMater');
       almaCell.textContent = person.almaMater || '—';
       if (person.almaMaterRole) almaCell.title = person.almaMaterRole;
       const countryCell = document.createElement('td');
-      countryCell.dataset.label = 'Country';
+      countryCell.dataset.label = t('country');
       const isHistoricalLocation = person.locationEvidenceKind === 'historical_latest_known_location';
       countryCell.textContent = person.country
-        ? `${person.country}${isHistoricalLocation ? ' · last known' : ''}`
+        ? `${displayCountry(person.countryCode, person.country)}${isHistoricalLocation ? ` · ${t('lastKnown')}` : ''}`
         : '—';
       if (person.location) countryCell.title = person.location;
       const sourcesCell = document.createElement('td');
-      sourcesCell.dataset.label = 'Sources';
+      sourcesCell.dataset.label = t('sources');
       const sourceLinks = document.createElement('div');
       sourceLinks.className = 'iso-source-links';
       person.sources.forEach(source => {
@@ -1105,8 +1682,9 @@
         anchor.href = source.url;
         anchor.target = '_blank';
         anchor.rel = 'noopener noreferrer';
-        anchor.setAttribute('aria-label', source.label);
-        anchor.title = source.label;
+        const sourceLabel = translatedSourceLabel(source.label);
+        anchor.setAttribute('aria-label', sourceLabel);
+        anchor.title = sourceLabel;
         const icon = document.createElement('i');
         icon.setAttribute('data-lucide', source.icon);
         anchor.append(icon);
@@ -1114,19 +1692,20 @@
       });
       sourcesCell.append(sourceLinks);
       const confidenceCell = document.createElement('td');
-      confidenceCell.dataset.label = 'Confidence';
+      confidenceCell.dataset.label = t('confidence');
       confidenceCell.className = 'iso-confidence-cell';
       const confidenceDot = document.createElement('span');
       confidenceDot.className = 'iso-confidence-dot';
       confidenceDot.style.background = confidenceColors[person.confidence];
-      confidenceDot.setAttribute('aria-label', `Confidence: ${person.confidence}`);
-      confidenceDot.title = `Confidence: ${person.confidence}`;
+      const confidenceLabel = `${t('confidence')}: ${translatedConfidence(person.confidence)}`;
+      confidenceDot.setAttribute('aria-label', confidenceLabel);
+      confidenceDot.title = confidenceLabel;
       confidenceCell.append(confidenceDot);
       tr.append(nameCell, olympiadCell, destinationCell, roleCell, almaCell, countryCell, sourcesCell, confidenceCell);
       return tr;
     }));
     if (window.lucide) window.lucide.createIcons({ attrs: { 'aria-hidden': 'true' } });
-    root.querySelector('[data-table-note]').textContent = matchCount(rows.length, 'the current filters');
+    root.querySelector('[data-table-note]').textContent = matchCount(rows.length, 'currentFiltersTarget');
   }
 
   function updateSortHeaders() {
@@ -1142,17 +1721,17 @@
       'aria-sort',
       state.sort === 'destination-asc' ? 'ascending' : state.sort === 'destination-desc' ? 'descending' : 'none'
     );
-    controls.yearSort.title = state.sort === 'year-asc'
-      ? 'Sort by Olympiad year, newest first'
-      : 'Sort by Olympiad year, oldest first';
-    controls.destinationSort.title = state.sort === 'destination-asc'
-      ? 'Sort by destination, Z–A'
-      : 'Sort by destination, A–Z';
+    const yearTitle = t(state.sort === 'year-asc' ? 'sortYearNextDesc' : 'sortYearNextAsc');
+    const destinationTitle = t(state.sort === 'destination-asc' ? 'sortDestinationNextDesc' : 'sortDestinationNextAsc');
+    controls.yearSort.title = yearTitle;
+    controls.yearSort.setAttribute('aria-label', yearTitle);
+    controls.destinationSort.title = destinationTitle;
+    controls.destinationSort.setAttribute('aria-label', destinationTitle);
   }
 
   function render() {
-    const selected = state.selectedOrganization ? ` Selected: ${state.selectedOrganization}.` : '';
-    root.querySelector('[data-selection]').textContent = `${matchCount(filteredPeople().length, 'the filters')}${selected}`;
+    const selected = state.selectedOrganization ? ` ${t('selected')}: ${state.selectedOrganization}.` : '';
+    root.querySelector('[data-selection]').textContent = `${matchCount(filteredPeople().length, 'filtersTarget')}${selected}`;
     drawOrganizationRanking('companies', false);
     drawOrganizationRanking('education', true);
     drawDistribution('sectors', 'sector');
@@ -1160,6 +1739,58 @@
     drawCoverage();
     updateSortHeaders();
     renderTable();
+  }
+
+  function showShareFeedback(key) {
+    window.clearTimeout(shareFeedbackTimer);
+    controls.share.dataset.feedback = key;
+    controls.shareLabel.textContent = t(key);
+    controls.shareStatus.textContent = t(key);
+    shareFeedbackTimer = window.setTimeout(() => {
+      controls.share.dataset.feedback = '';
+      controls.shareLabel.textContent = t('share');
+      controls.shareStatus.textContent = '';
+    }, 1800);
+  }
+
+  async function copyShareUrl(value) {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(value);
+      return;
+    }
+    const textarea = document.createElement('textarea');
+    textarea.value = value;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.append(textarea);
+    textarea.select();
+    const copied = document.execCommand('copy');
+    textarea.remove();
+    if (!copied) throw new Error('Clipboard copy failed');
+  }
+
+  async function sharePage() {
+    const url = new URL(window.location.href);
+    url.hash = '';
+    if (currentLanguage === 'en') url.searchParams.delete('lang');
+    else url.searchParams.set('lang', currentLanguage);
+    const shareData = { title: t('documentTitle'), text: t('pageSubtitle'), url: url.toString() };
+    if (typeof navigator.share === 'function') {
+      try {
+        await navigator.share(shareData);
+        showShareFeedback('shared');
+        return;
+      } catch (error) {
+        if (error?.name === 'AbortError') return;
+      }
+    }
+    try {
+      await copyShareUrl(shareData.url);
+      showShareFeedback('linkCopied');
+    } catch {
+      showShareFeedback('shareFailed');
+    }
   }
 
   controls.confidence.addEventListener('change', event => { state.confidence = event.target.value; state.selectedOrganization = ''; render(); });
@@ -1180,6 +1811,10 @@
     updateSortHeaders();
     renderTable();
   });
+  controls.languageButtons.forEach(button => {
+    button.addEventListener('click', () => applyLanguage(button.dataset.language));
+  });
+  controls.share.addEventListener('click', sharePage);
 
   const observer = new ResizeObserver(() => {
     drawOrganizationRanking('companies', false);
@@ -1189,7 +1824,7 @@
     drawCoverage();
   });
   observer.observe(root.querySelector('.iso-ranking-grid'));
-  render();
+  applyLanguage(currentLanguage, false);
 })();
 </script>
 </body>

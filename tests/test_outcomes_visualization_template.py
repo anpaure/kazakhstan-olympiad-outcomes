@@ -93,7 +93,7 @@ class CountryAndHistoryTest(unittest.TestCase):
     def test_search_includes_alma_mater_and_history(self):
         self.assertIn("person.almaMater", self.template)
         self.assertIn("...(person.historyTerms || [])", self.template)
-        self.assertIn("<th>Alma mater</th>", self.template)
+        self.assertIn('<th data-i18n="almaMater">Alma mater</th>', self.template)
 
 
 class SourceAndConfidenceTest(unittest.TestCase):
@@ -104,13 +104,48 @@ class SourceAndConfidenceTest(unittest.TestCase):
     def test_sources_are_compact_accessible_icon_links(self):
         self.assertIn("lucide@0.468.0", self.template)
         self.assertIn("className = 'iso-source-link'", self.template)
-        self.assertIn("anchor.setAttribute('aria-label', source.label)", self.template)
+        self.assertIn("const sourceLabel = translatedSourceLabel(source.label)", self.template)
+        self.assertIn("anchor.setAttribute('aria-label', sourceLabel)", self.template)
         self.assertIn("icon.setAttribute('data-lucide', source.icon)", self.template)
 
     def test_confidence_uses_an_accessible_color_dot(self):
         self.assertIn("className = 'iso-confidence-dot'", self.template)
-        self.assertIn("Confidence: ${person.confidence}", self.template)
+        self.assertIn("translatedConfidence(person.confidence)", self.template)
+        self.assertIn("confidenceDot.setAttribute('aria-label', confidenceLabel)", self.template)
         self.assertNotIn("confidenceCell.textContent = person.confidence", self.template)
+
+
+class LocalizationAndShareTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.template = TEMPLATE.read_text(encoding="utf-8")
+
+    def test_english_russian_and_kazakh_are_selectable(self):
+        self.assertIn('data-language="en"', self.template)
+        self.assertIn('data-language="ru"', self.template)
+        self.assertIn('data-language="kk"', self.template)
+        self.assertIn("const translations = {", self.template)
+        self.assertIn("ru: {", self.template)
+        self.assertIn("kk: {", self.template)
+
+    def test_language_updates_dynamic_content_and_persists(self):
+        self.assertIn("function applyLanguage(language, persist = true)", self.template)
+        self.assertIn("document.documentElement.lang = currentLanguage", self.template)
+        self.assertIn("localStorage.setItem('iso-outcomes-language', currentLanguage)", self.template)
+        self.assertIn("url.searchParams.set('lang', currentLanguage)", self.template)
+        self.assertIn("new Intl.DisplayNames", self.template)
+        self.assertIn("const countryLabels = {", self.template)
+        self.assertIn("countryLabels[currentLanguage]?.[code]", self.template)
+        self.assertIn("translatedSector(person.sector)", self.template)
+        self.assertIn("translatedSourceLabel(source.label)", self.template)
+
+    def test_share_uses_native_api_with_clipboard_fallback(self):
+        self.assertIn("data-share", self.template)
+        self.assertIn('aria-live="polite" data-share-status', self.template)
+        self.assertIn("await navigator.share(shareData)", self.template)
+        self.assertIn("navigator.clipboard?.writeText", self.template)
+        self.assertIn("document.execCommand('copy')", self.template)
+        self.assertIn("controls.share.addEventListener('click', sharePage)", self.template)
 
 
 if __name__ == "__main__":
