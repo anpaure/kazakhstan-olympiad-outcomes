@@ -23,7 +23,7 @@ source URL used for review.
 10. Use `profile_sanity_review.csv` for the reproducible 48-person review sample,
     including separate links for participation, identity, destination, location,
     and alma-mater claims.
-11. Use `linkedin_destination_reconciliation.csv` to compare all 298 accepted
+11. Use `linkedin_destination_reconciliation.csv` to compare all 299 accepted
     profiles with the published single destination; conflicts must have an
     explicit review decision and direct reference URL.
 12. Use `profile_sanity_review_findings.csv` to inspect the detected downstream
@@ -85,14 +85,29 @@ JSON equivalents are generated beside every CSV table.
 `traceability_status=complete` means a probable or confirmed person has both
 accepted participation evidence and accepted or supporting outcome evidence.
 
+## Latest Sanity Review
+
+The reproducible sample uses seed `20260812-round2` and contains 12 people from
+each confirmed/probable and older/newer stratum. All 48 source chains were
+re-opened; a deeper source-by-source inspection covered three profiles from each
+stratum. The review corrected eight sampled rows and expanded each detected
+pattern into a full-dataset scan.
+
+The resulting ledger contains 21 resolved root-cause classes and no unresolved
+findings. The fixes include canonical Olympiad-link cross-checking, conservative
+country publication, explicit destination-source precedence, own-profile versus
+third-party-source separation, bounded education and employment chronology,
+roleless-directory chronology, malformed organization rejection, and alma-mater
+recovery from accepted non-LinkedIn sources.
+
 ## Exa Review Trail
 
 The complete exact-name LinkedIn review trail remains in the parent `data/`
 directory rather than being flattened into the final-outcome tables:
 
-- `exa_linkedin_review_queue.csv`: all 358 exact-name profile results and their
+- `exa_linkedin_review_queue.csv`: all 377 exact-name profile results and their
   deterministic review and outcome statuses.
-- `exa_outcome_integrations.csv`: 104 accepted career updates with direct
+- `exa_outcome_integrations.csv`: 105 accepted career updates with direct
   Olympiad and career evidence links.
 - `exa_identity_review_decisions.csv`: supporting, deferred, and rejected
   decisions for secondary profiles, each with a reason and review link.

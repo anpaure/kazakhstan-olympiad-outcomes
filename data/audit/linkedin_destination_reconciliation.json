@@ -726,8 +726,8 @@
     "profile_hydration_status": "success",
     "profile_current_organizations": "",
     "profile_current_roles": "",
-    "published_destination": "Nazarbayev University",
-    "published_role": "Student",
+    "published_destination": "",
+    "published_role": "",
     "organization_alignment": "not_parsed",
     "role_alignment": "not_parsed",
     "alignment_status": "no_current_affiliation_parsed",
@@ -3127,13 +3127,13 @@
     "profile_current_organizations": "",
     "profile_current_roles": "",
     "published_destination": "CoBALT",
-    "published_role": "",
+    "published_role": "Team Member",
     "organization_alignment": "not_parsed",
     "role_alignment": "not_parsed",
     "alignment_status": "no_current_affiliation_parsed",
-    "review_decision": "",
-    "review_reason": "",
-    "review_reference_url": ""
+    "review_decision": "destination_source_review",
+    "review_reason": "CoBALT's public company page names Nurlykhan Kopenov among its employees and places the company in Seoul, but it does not expose his formal title. Team Member is used as a neutral sourced descriptor rather than inventing a job function.",
+    "review_reference_url": "https://kr.linkedin.com/company/cobalt-inc"
   },
   {
     "person_id": "kaz-3437e4fc5bbd",
@@ -3319,13 +3319,13 @@
     "profile_current_organizations": "Nazarbayev University",
     "profile_current_roles": "Bachelor of Science - BS Mathematics Computer Science",
     "published_destination": "Desargues AI",
-    "published_role": "",
+    "published_role": "Founding Team Member",
     "organization_alignment": "reconciled",
     "role_alignment": "reconciled",
-    "alignment_status": "reconciled_source_precedence",
-    "review_decision": "retain_published_post_graduation_headline",
-    "review_reason": "The accepted profile headline says Desargues AI and BSc in Math from NU, while its dated Nazarbayev University degree ends in 2026. Retain Desargues AI as the post-graduation destination; the profile does not expose a formal role title.",
-    "review_reference_url": "https://kz.linkedin.com/in/baimurzzin"
+    "alignment_status": "reconciled_destination_review",
+    "review_decision": "destination_source_review",
+    "review_reason": "Rakhim's accepted profile identifies Desargues AI in the current headline, and a public meeting post names him with the startup's founder team. The source supports Founding Team Member but not a narrower functional title.",
+    "review_reference_url": "https://kz.linkedin.com/in/adil-mimenbayev-838991351"
   },
   {
     "person_id": "kaz-ccd5a4548c56",
@@ -3831,13 +3831,13 @@
     "profile_current_organizations": "",
     "profile_current_roles": "",
     "published_destination": "Canadian provincial government",
-    "published_role": "",
+    "published_role": "Provincial Government Employee",
     "organization_alignment": "not_parsed",
     "role_alignment": "not_parsed",
     "alignment_status": "no_current_affiliation_parsed",
-    "review_decision": "",
-    "review_reason": "",
-    "review_reference_url": ""
+    "review_decision": "destination_source_review",
+    "review_reason": "Sultan's self-authored 2026 post explicitly says that he currently works in provincial government. The source does not disclose the province or a formal title, so the destination uses the narrow descriptive role Provincial Government Employee.",
+    "review_reference_url": "https://www.linkedin.com/posts/sultan-aitekenov_i-created-this-map-to-illustrate-the-concentration-activity-7437493791571439617-40_4"
   },
   {
     "person_id": "kaz-c884dd65cdc8",
@@ -4102,14 +4102,14 @@
     "profile_hydration_status": "success",
     "profile_current_organizations": "",
     "profile_current_roles": "",
-    "published_destination": "",
-    "published_role": "",
+    "published_destination": "AirAsia",
+    "published_role": "Senior Data Scientist",
     "organization_alignment": "not_parsed",
     "role_alignment": "not_parsed",
     "alignment_status": "no_current_affiliation_parsed",
-    "review_decision": "",
-    "review_reason": "",
-    "review_reference_url": ""
+    "review_decision": "destination_source_review",
+    "review_reason": "An exact-identity classmate post identifies Tolebi as a Senior Data Scientist at AirAsia Super App. Tolebi's self-authored February 2024 farewell post independently establishes that the AirAsia role had ended, so it is published as his latest verified bounded employment rather than as a current UK role.",
+    "review_reference_url": "https://ru.linkedin.com/posts/alisher-toiguliyev-962b688b_%D1%81%D0%BF%D1%83%D1%81%D1%82%D1%8F-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%BB%D0%B5%D1%82-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%82%D0%B8%D0%BB%D0%B8%D1%81%D1%8C-%D1%81-%D0%BE%D0%B4%D0%BD%D0%BE%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%BC-activity-6974344092897931264-ZlNu"
   },
   {
     "person_id": "kaz-f3c66de0174f",
@@ -4267,6 +4267,22 @@
     "organization_alignment": "matched",
     "role_alignment": "matched",
     "alignment_status": "matched_current_profile",
+    "review_decision": "",
+    "review_reason": "",
+    "review_reference_url": ""
+  },
+  {
+    "person_id": "kaz-444dd6943eb0",
+    "name": "Vyacheslav Kim",
+    "linkedin_url": "https://www.linkedin.com/in/slavakim",
+    "profile_hydration_status": "success",
+    "profile_current_organizations": "",
+    "profile_current_roles": "",
+    "published_destination": "Self-employed",
+    "published_role": "Software Engineering Consultant",
+    "organization_alignment": "not_parsed",
+    "role_alignment": "not_parsed",
+    "alignment_status": "no_current_affiliation_parsed",
     "review_decision": "",
     "review_reason": "",
     "review_reference_url": ""

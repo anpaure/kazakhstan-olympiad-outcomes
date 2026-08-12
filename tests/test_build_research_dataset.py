@@ -98,10 +98,98 @@ class ManualEvidenceConfidenceTest(unittest.TestCase):
         self.assertEqual(row.organization, "Current Co")
         self.assertEqual(row.role, "Software Engineer")
         self.assertEqual(row.start_year, "2025")
+        self.assertEqual(row.profile_url, "https://example.test/profile")
         self.assertEqual(row.linkedin_url, "https://linkedin.com/in/test")
         self.assertIn("Destination review", row.verification_basis)
         self.assertIn("https://linkedin.com/in/test", row.evidence_urls)
         self.assertIn("https://linkedin.com/posts/test-current-role", row.evidence_urls)
+
+    def test_third_party_destination_source_does_not_replace_own_profile(self):
+        people = [
+            {
+                "person_id": "kaz-test",
+                "canonical_name": "Test Person",
+                "aliases": "Test Person",
+                "olympiads": "IMO",
+                "years": "2021",
+                "first_year": "2021",
+                "last_year": "2021",
+                "awards": "Bronze",
+                "research_scope": "early_career_or_university",
+            }
+        ]
+        verified = [
+            {
+                "person_id": "kaz-test",
+                "name": "Test Person",
+                "organization": "Current Co",
+                "role": "Team Member",
+                "affiliation_type": "employment",
+                "start_year": "",
+                "end_year": "",
+                "olympiad_evidence_url": "https://example.test/olympiad",
+                "career_evidence_url": "https://linkedin.com/in/third-party",
+                "linkedin_url": "https://linkedin.com/in/test",
+                "confidence": "confirmed",
+                "verification_basis": "Own profile identifies the organization.",
+            }
+        ]
+        reviews = [
+            {
+                "person_id": "kaz-test",
+                "name": "Test Person",
+                "organization": "Current Co",
+                "role": "Founding Team Member",
+                "affiliation_type": "employment",
+                "start_year": "",
+                "end_year": "",
+                "evidence_url": "https://linkedin.com/in/third-party",
+                "reviewed_at": "2026-08-12",
+                "review_reason": "A third party names the founding team.",
+            }
+        ]
+
+        [row] = build_rows(people, [], [], verified, [], reviews)
+
+        self.assertEqual(row.profile_url, "https://linkedin.com/in/test")
+        self.assertEqual(row.linkedin_url, "https://linkedin.com/in/test")
+        self.assertIn("https://linkedin.com/in/third-party", row.evidence_urls)
+
+    def test_linkedin_career_source_remains_profile_without_separate_linkedin(self):
+        people = [
+            {
+                "person_id": "kaz-test",
+                "canonical_name": "Test Person",
+                "aliases": "Test Person",
+                "olympiads": "IMO",
+                "years": "2010",
+                "first_year": "2010",
+                "last_year": "2010",
+                "awards": "Silver",
+                "research_scope": "career",
+            }
+        ]
+        verified = [
+            {
+                "person_id": "kaz-test",
+                "name": "Test Person",
+                "organization": "Current Co",
+                "role": "Engineer",
+                "affiliation_type": "employment",
+                "start_year": "2024",
+                "end_year": "",
+                "olympiad_evidence_url": "https://example.test/olympiad",
+                "career_evidence_url": "https://linkedin.com/in/test",
+                "linkedin_url": "",
+                "confidence": "probable",
+                "verification_basis": "Rare exact-name profile.",
+            }
+        ]
+
+        [row] = build_rows(people, [], [], verified)
+
+        self.assertEqual(row.profile_url, "https://linkedin.com/in/test")
+        self.assertEqual(row.linkedin_url, "")
 
 
 class RejectedCandidateTest(unittest.TestCase):

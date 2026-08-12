@@ -153,13 +153,15 @@ def compact_sources(
     if OLYMPIAD_SOURCE_PATTERN.search(str(row.get("profile_url") or "")):
         olympiad_sources.append(row.get("profile_url"))
 
-    def olympiad_source_rank(url: object) -> tuple[int, str]:
+    def olympiad_source_rank(url: object) -> tuple[int, int, str]:
         value = str(url or "")
         if re.search(r"/(?:contestant|participant|profile)[_/]", value, re.IGNORECASE):
-            return 0, value.casefold()
-        if re.search(r"(?:team_|country|individual)", value, re.IGNORECASE):
-            return 1, value.casefold()
-        return 2, value.casefold()
+            source_rank = 0
+        elif re.search(r"(?:team_|country|individual)", value, re.IGNORECASE):
+            source_rank = 1
+        else:
+            source_rank = 2
+        return source_rank, int(not value.casefold().startswith("https://")), value.casefold()
 
     if olympiad_sources:
         best_olympiad_source = min(

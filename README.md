@@ -11,16 +11,16 @@ The pipeline does not drive a browser across LinkedIn profiles. Discovery and ex
 The checked-in data currently contains:
 
 - 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
-- 456 canonical people with 50 reviewed alias pairs
+- 456 canonical people with 58 reviewed alias pairs
 - 440 researched people, all classified as probable or confirmed
 - 311 confirmed and 129 probable identity, education, or career outcomes
-- 427 manually reviewed outcomes backed by public evidence
-- 407 researched people with one resolved destination and 298 with a public LinkedIn URL
-- 2,596 sourced employment/education history rows, including 578 selected alma-mater records across 389 people
-- 72 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
+- 428 manually reviewed outcomes backed by public evidence
+- 408 researched people with one resolved destination and 299 with a public LinkedIn URL
+- 2,604 sourced employment/education history rows, including 579 selected alma-mater records across 391 people
+- 76 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
 - 521 reviewed organization aliases collapsed into canonical employers and universities
-- 208 reviewed sector classifications covering every displayed non-educational destination
-- 433 sourced outcome-country records across 36 countries; 23 people remain unknown rather than defaulting to Kazakhstan
+- 209 reviewed sector classifications covering every displayed non-educational destination
+- 413 sourced outcome-country records across 36 countries; 27 researched people remain unknown rather than defaulting to Kazakhstan
 - 1 additional person with candidate-only evidence retained for audit but no accepted outcome
 - 162 rejected identity sources retained with review reasons and supporting links
 
@@ -144,7 +144,9 @@ The two apply scripts merge the auditable Exa review overlays before assembly. `
 
 `scripts/build_audit_bundle.py` then creates normalized audit tables under `data/audit/`. The final people, affiliation-history, location, and destination-review tables join to a row-level evidence ledger; evidence joins to a deduplicated source registry through `source_id`; every evidence row retains its direct `source_url`. Accepted, supporting, candidate, superseded, and rejected claims remain visible instead of being collapsed into one compound URL field. See `data/audit/README.md` for the audit procedure and data dictionary.
 
-`scripts/build_profile_sanity_review.py` adds a reproducible 48-person manual-review ledger, stratified equally by confirmed/probable status and pre/post-2005 Olympiad era. Selection sorts each stratum by SHA-256 of the fixed seed, stratum, and `person_id`, so the cohort can be regenerated exactly. It also reconciles all 298 accepted LinkedIn profiles against the single published destination and role, and records explicit source-precedence decisions for conflicts. The current pass found 10 downstream root-cause classes, corrected the affected records, and leaves zero unexplained LinkedIn destination or role mismatches.
+`scripts/build_profile_sanity_review.py` adds a reproducible 48-person manual-review ledger, stratified equally by confirmed/probable status and pre/post-2005 Olympiad era. Selection sorts each stratum by SHA-256 of the fixed seed, stratum, and `person_id`, so the cohort can be regenerated exactly. The latest pass re-opened participation, identity, destination, location, alma-mater, and LinkedIn-consistency sources for all 48 rows, then inspected three profiles from each stratum in greater depth. Eight sampled rows required corrections. The downstream scan documented and resolved 21 root-cause classes, including stale destination chronology, unsupported country inference, malformed affiliations, missing alma-mater ingestion, third-party profile/source conflation, and canonical Olympiad-link drift.
+
+The same build reconciles all 299 accepted LinkedIn profiles against the single published destination and role. Every conflict now has an explicit source-precedence decision, and zero LinkedIn destination or role mismatches remain unexplained. The root-cause ledger and exact supporting links are in `data/audit/profile_sanity_review_findings.csv`.
 
 The validation step checks participant-row conservation, unique person IDs, confidence/evidence rules, timeline conflicts, recent-competitor exclusions, strict destination statuses, canonical organization names, distinct selected alma-mater organizations, sourced country codes, exact publication of every accepted Exa outcome and destination-review decision, preservation of superseded history, rejection-ledger leakage, audit-table joins, direct HTTP(S) source links, and complete traceability for every probable or confirmed outcome.
 
@@ -221,10 +223,10 @@ highlights. The JSON also records input count, searched count, successful and
 failed counts, and coverage percentage.
 
 Current Exa search coverage: 456 of 456 canonical people, 456 successful searches,
-zero errors, and 2,860 ranked result rows. Total recorded search cost is $3.522.
-The profile audit covers all 298 accepted LinkedIn profiles: 276 full-content
+zero errors, and 3,155 ranked result rows. Total recorded search cost is $3.722.
+The profile audit covers all 299 accepted LinkedIn profiles: 277 full-content
 retrievals succeeded, 11 are reviewed manual public-profile transcriptions, and
-11 retrieval errors remain logged, at $0.278 recorded hydration cost.
+11 retrieval errors remain logged, at $0.282 recorded hydration cost.
 
 Outputs:
 
@@ -247,9 +249,9 @@ a deterministic `review_status` of `selected`, `supporting`, `deferred`, or `rej
 against the accepted evidence and rejection ledger after LinkedIn URL
 canonicalization. The current queue contains 113 people with an explicit
 expected-Olympiad bridge; none remain unmatched or probable, and none need an
-outcome decision. Across all 358 exact-name profile results, 213 are selected, 5
-are supporting duplicate profiles, 39 are explicitly deferred with review reasons,
-and 101 are rejected. No exact-name candidates remain unreviewed.
+outcome decision. Across all 377 exact-name profile results, 213 are selected, 5
+are supporting duplicate profiles, 49 are explicitly deferred with review reasons,
+and 110 are rejected. No exact-name candidates remain unreviewed.
 
 Review-queue outputs:
 

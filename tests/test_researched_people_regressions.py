@@ -86,6 +86,81 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         )
         self.assertEqual(location["evidence_kind"], "historical_outcome_location")
 
+    def test_tolebi_sailauov_uses_bounded_airasia_role(self):
+        person = self.people["kaz-47297d0b8770"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "AirAsia")
+        self.assertEqual(person["role"], "Senior Data Scientist")
+        self.assertEqual(person["end_year"], "2024")
+        self.assertEqual(person["destination_status"], "latest_employment")
+        self.assertEqual(location["country_code"], "MY")
+        self.assertEqual(location["evidence_kind"], "historical_outcome_location")
+        self.assertIn("last verified in 2024", location["location_label"])
+
+    def test_vyacheslav_kim_handle_bridge_resolves_consulting_and_mit(self):
+        person = self.people["kaz-444dd6943eb0"]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertIn("Slava Kim", person["aliases"])
+        self.assertEqual(person["organization"], "Self-employed")
+        self.assertEqual(person["role"], "Software Engineering Consultant")
+        self.assertEqual(person["start_year"], "2024")
+        self.assertEqual(person["destination_status"], "latest_employment")
+        self.assertEqual(person["linkedin_url"], "https://www.linkedin.com/in/slavakim")
+        self.assertIn(
+            "Massachusetts Institute of Technology (MIT)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertTrue(
+            any(
+                row["organization"] == "Figma"
+                and row["role"] == "Staff Software Engineer"
+                and row["end_year"] == "2024"
+                and not row["is_current"]
+                for row in affiliations
+            )
+        )
+        self.assertNotIn(person["person_id"], self.locations)
+
+    def test_unresolved_destinations_only_use_explicit_latest_known_locations(self):
+        allowed = {
+            "current_research_affiliation_location",
+            "historical_outcome_location",
+        }
+        for person in self.people.values():
+            if person["destination_status"] not in {"none", "history_only"}:
+                continue
+            location = self.locations.get(person["person_id"])
+            if location:
+                self.assertIn(location["evidence_kind"], allowed, person["name"])
+
+    def test_manual_imo_identity_links_match_canonical_participants(self):
+        expected = {
+            "kaz-b788eb650e7a": "https://www.imo-official.org/results/contestant/4012/",
+            "kaz-09e9190640e1": "https://www.imo-official.org/results/contestant/4962/",
+            "kaz-c8b296e6cadb": "https://www.imo-official.org/results/contestant/33250/",
+        }
+        stale = {
+            "https://www.imo-official.org/results/contestant/4462/",
+            "https://www.imo-official.org/results/contestant/4695/",
+            "https://www.imo-official.org/results/contestant/34044/",
+        }
+        for person_id, url in expected.items():
+            evidence_urls = set(self.people[person_id]["evidence_urls"].split(";"))
+            self.assertIn(url, evidence_urls)
+            self.assertFalse(evidence_urls & stale)
+
+    def test_rakhim_primary_profile_is_his_own_linkedin(self):
+        person = self.people["kaz-07372798186f"]
+
+        self.assertEqual(person["profile_url"], "https://kz.linkedin.com/in/baimurzzin")
+        self.assertEqual(person["linkedin_url"], "https://kz.linkedin.com/in/baimurzzin")
+        self.assertIn(
+            "https://kz.linkedin.com/in/adil-mimenbayev-838991351",
+            person["evidence_urls"],
+        )
+
     def test_yerzhigit_tolebekov_uses_current_founder_role(self):
         person = self.people["kaz-209930256d24"]
         location = self.locations[person["person_id"]]
@@ -1753,6 +1828,23 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                 )
 
         self.assertEqual(implausible, [])
+
+    def test_aman_sariyev_completed_degree_is_history_not_current_study(self):
+        person = self.people["kaz-6e64602de321"]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["destination_status"], "history_only")
+        self.assertEqual(person["organization"], "")
+        self.assertNotIn(person["person_id"], self.locations)
+        masters = [
+            row
+            for row in affiliations
+            if row["organization"] == "Nazarbayev University"
+            and row["role"].startswith("Master of Science")
+        ]
+        self.assertTrue(masters)
+        self.assertTrue(all(row["end_year"] == "2020" for row in masters))
+        self.assertTrue(all(not row["is_current"] for row in masters))
 
 
 if __name__ == "__main__":

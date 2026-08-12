@@ -224,6 +224,10 @@ PRIORITY_OVERRIDE_KINDS = {
     "current_research_affiliation_location",
     "current_role_location",
 }
+UNRESOLVED_DESTINATION_OVERRIDE_KINDS = {
+    "current_research_affiliation_location",
+    "historical_outcome_location",
+}
 
 OUTPUT_FIELDS = [
     "person_id",
@@ -646,6 +650,22 @@ def build_rows(
         # out of the country dataset even when that history has a sourced row
         # in the override ledger.
         if clean_text(person.get("confidence")) not in {"probable", "confirmed"}:
+            continue
+
+        destination_status = clean_text(person.get("destination_status"))
+        if destination_status in {"none", "history_only"}:
+            # A stale school, profile, or structured-affiliation location is not
+            # an outcome country. Only an explicitly reviewed historical
+            # post-school outcome or a genuinely current research affiliation
+            # can supply a latest-known country without a selected destination.
+            if (
+                override
+                and override.get("evidence_kind")
+                in UNRESOLVED_DESTINATION_OVERRIDE_KINDS
+            ):
+                row = dict(override)
+                row["name"] = clean_text(person.get("name"))
+                output.append(row)
             continue
 
         # A reviewed role location overrides conflicting automated extraction.

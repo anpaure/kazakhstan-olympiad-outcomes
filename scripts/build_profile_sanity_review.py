@@ -21,7 +21,7 @@ except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path
     from organization_names import canonicalize_organization
 
 
-SAMPLE_SEED = "20260812"
+SAMPLE_SEED = "20260812-round2"
 ERA_CUTOFF_YEAR = 2005
 SAMPLE_PER_STRATUM = 12
 REVIEWED_AT = "2026-08-12"
@@ -104,6 +104,41 @@ CORRECTED_SAMPLE_NOTES = {
         "Corrected an open-ended DESY role to historical 2015-2024 employment after "
         "the current staff page listed Vadim under Alumni and a 2024 DESY publication "
         "provided the latest direct affiliation."
+    ),
+    "kaz-24cc764a8eaf": (
+        "Removed an unsupported Kazakhstan country value. Shapagat's accepted source "
+        "establishes historical education but no current or latest-known outcome "
+        "location, so country remains unknown."
+    ),
+    "kaz-07372798186f": (
+        "Filled the previously blank Desargues AI role with the narrow sourced label "
+        "Founding Team Member after a public meeting post named Rakhim with the "
+        "startup's founder team; no more specific function is claimed."
+    ),
+    "kaz-5c429c277917": (
+        "Added the University of Hong Kong master's and Chinese University of Hong "
+        "Kong bachelor's records after the sampled destination source was found to "
+        "contain education that had not entered affiliation history."
+    ),
+    "kaz-8c9c1b2b81a6": (
+        "Removed a duplicate degree sentence that had been parsed as an institution; "
+        "the canonical D. Serikbayev East Kazakhstan Technical University master's "
+        "record remains selected as the alma mater."
+    ),
+    "kaz-6e64602de321": (
+        "Changed an undated Student headline to completed 2018-2020 Nazarbayev "
+        "University master's history after the same profile's dated education "
+        "section showed no current enrollment or later outcome."
+    ),
+    "kaz-b788eb650e7a": (
+        "Replaced a stale direct IMO contestant URL with Nurgali's canonical "
+        "participant-registry URL after the full source-link comparison found that "
+        "the old ID belonged to a different contestant."
+    ),
+    "kaz-09e9190640e1": (
+        "Replaced a stale direct IMO contestant URL with Vitaliy's canonical "
+        "participant-registry URL after the sampled source-chain review found that "
+        "the old ID belonged to a different contestant."
     ),
 }
 

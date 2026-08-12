@@ -45,6 +45,11 @@ DEFAULT_DESTINATION_REVIEWS = Path("data/destination_reviews.csv")
 DEFAULT_REJECTIONS = Path("data/rejected_identity_candidates.csv")
 DEFAULT_CSV = Path("data/person_affiliations.csv")
 DEFAULT_JSON = Path("data/person_affiliations.json")
+NON_CHRONOLOGICAL_DIRECTORY_SOURCES = {
+    "codeforces",
+    "cphof",
+    "cphof_codeforces",
+}
 
 OUTPUT_FIELDS = [
     "person_id",
@@ -173,6 +178,15 @@ INSTITUTION_TERMS = re.compile(
     re.IGNORECASE,
 )
 DATE_DURATION_PATTERN = re.compile(r"^(?:19|20)\d{2}\s*\(")
+DATE_RANGE_FRAGMENT_PATTERN = re.compile(
+    r"\b(?:19|20)\d{2}\s*[-–]\s*(?:19|20)\d{2}\b"
+)
+DEGREE_SENTENCE_ORGANIZATION_PATTERN = re.compile(
+    r"^(?:associate|bachelors?|b\.?\s*sc\.?|b\.?\s*s\.?|bs\b|b\.?\s*a\.?|"
+    r"b\.?\s*eng\.?|beng\b|masters?|m\.?\s*sc\.?|m\.?\s*s\.?|ms\b|"
+    r"m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|ph\.?d|doctor|specialist)\b.*\bat\b",
+    re.IGNORECASE,
+)
 LEADING_YEAR_RANGE_PATTERN = re.compile(
     r"^(?:19|20)\d{2}\s*[-–]\s*(?:19|20)\d{2}\s*,\s*"
 )
@@ -264,6 +278,10 @@ def valid_affiliation(organization: str, role: str) -> bool:
     if DATE_DURATION_PATTERN.match(organization):
         return False
     if MONTH_DURATION_PATTERN.match(organization):
+        return False
+    if DATE_RANGE_FRAGMENT_PATTERN.search(organization):
+        return False
+    if DEGREE_SENTENCE_ORGANIZATION_PATTERN.search(organization):
         return False
     if INCOMPLETE_INSTITUTION_PATTERN.search(organization):
         return False
@@ -712,6 +730,44 @@ def merge_undated_duplicates(
     return merged
 
 
+def apply_destination_review_precedence(
+    rows: list[dict[str, object]],
+) -> list[dict[str, object]]:
+    """Demote weaker open rows superseded by a destination review."""
+    reviewed_organizations = {
+        (
+            clean_text(row.get("person_id")),
+            normalized_type(
+                clean_text(row.get("affiliation_type")), clean_text(row.get("role"))
+            ),
+            clean_text(row.get("organization")).casefold(),
+        )
+        for row in rows
+        if clean_text(row.get("evidence_kind")) == "destination_source_review"
+    }
+    for row in rows:
+        key = (
+            clean_text(row.get("person_id")),
+            normalized_type(
+                clean_text(row.get("affiliation_type")), clean_text(row.get("role"))
+            ),
+            clean_text(row.get("organization")).casefold(),
+        )
+        if (
+            key in reviewed_organizations
+            and bool(row.get("is_current"))
+            and clean_text(row.get("evidence_kind"))
+            != "destination_source_review"
+            and (
+                clean_text(row.get("evidence_kind")) == "manual_review"
+                or not clean_text(row.get("role"))
+                or "alumn" in clean_text(row.get("role")).casefold()
+            )
+        ):
+            row["is_current"] = False
+    return rows
+
+
 def education_score(
     row: dict[str, object],
     destination_organization: str,
@@ -894,7 +950,25 @@ def build_rows(
             continue
         organization = canonicalize_organization(organization)
         person = people_by_id[person_id]
+        start_year = clean_text(affiliation.get("start_year"))
         end_year = clean_text(affiliation.get("end_year"))
+        is_current = is_current_affiliation(end_year, affiliation_type, as_of_year)
+        source = clean_text(affiliation.get("source"))
+        if (
+            source in NON_CHRONOLOGICAL_DIRECTORY_SOURCES
+            and not role
+            and not start_year
+            and not end_year
+        ):
+            is_current = False
+        if (
+            source == "orcid"
+            and affiliation_type == "employment"
+            and not role
+            and not start_year
+            and not end_year
+        ):
+            is_current = False
         rows.append(
             {
                 "person_id": person_id,
@@ -902,14 +976,12 @@ def build_rows(
                 "organization": organization,
                 "role": role,
                 "affiliation_type": affiliation_type,
-                "start_year": clean_text(affiliation.get("start_year")),
+                "start_year": start_year,
                 "end_year": end_year,
-                "is_current": is_current_affiliation(
-                    end_year, affiliation_type, as_of_year
-                ),
+                "is_current": is_current,
                 "selected_as_alma_mater": False,
                 "evidence_url": clean_text(affiliation.get("evidence_url")),
-                "evidence_kind": f"accepted_{clean_text(affiliation.get('source')) or 'structured'}",
+                "evidence_kind": f"accepted_{source or 'structured'}",
                 "confidence": clean_text(affiliation.get("confidence")),
                 "evidence_text": clean_text(affiliation.get("evidence_text"))[:500].rstrip(),
             }
@@ -1045,7 +1117,9 @@ def build_rows(
             )
         ):
             deduplicated[key] = row
-    rows = merge_undated_duplicates(list(deduplicated.values()))
+    rows = apply_destination_review_precedence(
+        merge_undated_duplicates(list(deduplicated.values()))
+    )
 
     education_by_person: dict[str, list[dict[str, object]]] = defaultdict(list)
     for row in rows:

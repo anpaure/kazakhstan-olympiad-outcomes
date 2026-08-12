@@ -42,6 +42,13 @@
     "rationale": "Reviewed profile identifies a private owner-operated business without a narrower public classification."
   },
   {
+    "organization_sector_id": "sector-a87e054e23724d95",
+    "canonical_name": "AirAsia",
+    "organization_type": "company",
+    "sector": "Transportation & Infrastructure",
+    "rationale": "AirAsia is an airline and travel-services group; the reviewed destination is a data-science role within that aviation business."
+  },
+  {
     "organization_sector_id": "sector-96c934e1bce4a135",
     "canonical_name": "Alem Entertainment",
     "organization_type": "company",

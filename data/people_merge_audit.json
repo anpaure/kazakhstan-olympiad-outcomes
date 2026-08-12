@@ -411,6 +411,23 @@
     "reason": "manual_transliteration"
   },
   {
+    "left": "Vyacheslav Kim",
+    "right": "Vyacheslav Kim",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IOI"
+    ],
+    "left_years": [
+      2011,
+      2012
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "The IOI-linked Codeforces and Topcoder handle imslavko appears on Slava Kim's self-authored career site alongside his MIT education and software-engineering history.",
+    "evidence_url": "https://slv.io/",
+    "canonical_person_id": "kaz-444dd6943eb0"
+  },
+  {
     "left": "Berdibek Shapagat",
     "right": "Shapagat Berdibek",
     "token_similarity": 1.0,

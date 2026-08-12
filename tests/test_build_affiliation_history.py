@@ -1,6 +1,7 @@
 import unittest
 
 from scripts.build_affiliation_history import (
+    apply_destination_review_precedence,
     build_rows,
     education_score,
     extract_affiliations,
@@ -342,6 +343,17 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
             ),
             [],
         )
+
+    def test_keeps_valid_degree_but_rejects_malformed_duplicate_organizations(self):
+        rows = extract_affiliations(
+            "## Education "
+            "### Master's degree, information systems at Example University "
+            "### Example University 2014 - 2018 (4 years) 2009 - 2014 (5 years)"
+        )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["organization"], "Example University")
+        self.assertEqual(rows[0]["role"], "Master's degree, information systems")
 
     def test_rejects_incomplete_institution_names(self):
         self.assertEqual(
@@ -928,6 +940,142 @@ class ManualAffiliationTest(unittest.TestCase):
         self.assertEqual(
             merged[0]["evidence_kind"], "reviewed_olympiad_destination_table"
         )
+
+    def test_destination_review_demotes_weaker_open_same_organization_rows(self):
+        common = {
+            "person_id": "person-1",
+            "name": "Example Person",
+            "organization": "Example Co",
+            "affiliation_type": "employment",
+            "selected_as_alma_mater": False,
+            "confidence": "confirmed",
+        }
+        rows = [
+            {
+                **common,
+                "role": "",
+                "start_year": "",
+                "end_year": "",
+                "is_current": True,
+                "evidence_url": "https://example.com/summary",
+                "evidence_kind": "manual_review",
+                "evidence_text": "Undated outcome summary.",
+            },
+            {
+                **common,
+                "role": "Engineer",
+                "start_year": "2020",
+                "end_year": "2024",
+                "is_current": False,
+                "evidence_url": "https://example.com/review",
+                "evidence_kind": "destination_source_review",
+                "evidence_text": "Reviewed bounded role.",
+            },
+            {
+                **common,
+                "role": "Principal Engineer",
+                "start_year": "2025",
+                "end_year": "",
+                "is_current": True,
+                "evidence_url": "https://example.com/current",
+                "evidence_kind": "accepted_linkedin_profile",
+                "evidence_text": "Principal Engineer 2025 - Present.",
+            },
+        ]
+
+        reconciled = apply_destination_review_precedence(rows)
+
+        self.assertFalse(reconciled[0]["is_current"])
+        self.assertFalse(reconciled[1]["is_current"])
+        self.assertTrue(reconciled[2]["is_current"])
+
+    def test_undated_roleless_orcid_employment_is_not_assumed_current(self):
+        people = [
+            {
+                "person_id": "person-1",
+                "name": "Example Person",
+                "confidence": "probable",
+                "organization": "Example University",
+                "affiliation_type": "employment",
+            }
+        ]
+        identities = [
+            {
+                "person_id": "person-1",
+                "confidence": "probable",
+                "profile_url": "https://orcid.org/0000-0000-0000-0000",
+                "evidence_url": "https://orcid.org/0000-0000-0000-0000",
+            }
+        ]
+        affiliations = [
+            {
+                "person_id": "person-1",
+                "organization": "Example University",
+                "role": "",
+                "affiliation_type": "employment",
+                "start_year": "",
+                "end_year": "",
+                "source": "orcid",
+                "evidence_url": "https://orcid.org/0000-0000-0000-0000",
+                "confidence": "probable",
+                "evidence_text": "Example University",
+            }
+        ]
+
+        rows = build_rows(people, [], identities, affiliations, [], [], [], 2026)
+
+        self.assertEqual(len(rows), 1)
+        self.assertFalse(rows[0]["is_current"])
+
+    def test_undated_competitive_directory_organization_is_not_current(self):
+        people = [
+            {
+                "person_id": "person-1",
+                "name": "Example Person",
+                "confidence": "confirmed",
+                "organization": "Current Co",
+                "affiliation_type": "employment",
+            }
+        ]
+        identities = [
+            {
+                "person_id": "person-1",
+                "confidence": "confirmed",
+                "profile_url": "https://codeforces.com/profile/example",
+                "evidence_url": "https://codeforces.com/profile/example",
+            }
+        ]
+        common = {
+            "person_id": "person-1",
+            "affiliation_type": "employment",
+            "source": "cphof_codeforces",
+            "evidence_url": "https://codeforces.com/profile/example",
+            "confidence": "confirmed",
+        }
+        affiliations = [
+            {
+                **common,
+                "organization": "Example University",
+                "role": "",
+                "start_year": "",
+                "end_year": "",
+                "evidence_text": "organization=Example University",
+            },
+            {
+                **common,
+                "organization": "Dated Lab",
+                "role": "Researcher",
+                "start_year": "2025",
+                "end_year": "",
+                "evidence_text": "Researcher from 2025",
+            },
+        ]
+
+        rows = build_rows(people, [], identities, affiliations, [], [], [], 2026)
+        rows_by_organization = {row["organization"]: row for row in rows}
+
+        self.assertFalse(rows_by_organization["Example University"]["is_current"])
+        self.assertTrue(rows_by_organization["Dated Lab"]["is_current"])
 
     def test_includes_sourced_manual_history_and_selects_alma_mater(self):
         people = [

@@ -11,7 +11,11 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 try:
-    from scripts.build_affiliation_history import extract_affiliations
+    from scripts.build_affiliation_history import (
+        NON_CHRONOLOGICAL_DIRECTORY_SOURCES,
+        extract_affiliations,
+        valid_affiliation,
+    )
     from scripts.build_exa_review_queue import canonical_url
     from scripts.build_profile_sanity_review import (
         ERA_CUTOFF_YEAR,
@@ -20,7 +24,11 @@ try:
         build_reconciliation,
         select_sample,
     )
-    from scripts.build_research_dataset import identity_urls
+    from scripts.build_research_dataset import (
+        identity_urls,
+        linkedin_profile_slug,
+        preferred_manual_profile_url,
+    )
     from scripts.build_location_evidence import (
         COUNTRY_NAMES,
         TRUSTED_OVERRIDE_KINDS,
@@ -40,7 +48,11 @@ try:
         organization_metadata,
     )
 except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
-    from build_affiliation_history import extract_affiliations
+    from build_affiliation_history import (
+        NON_CHRONOLOGICAL_DIRECTORY_SOURCES,
+        extract_affiliations,
+        valid_affiliation,
+    )
     from build_exa_review_queue import canonical_url
     from build_profile_sanity_review import (
         ERA_CUTOFF_YEAR,
@@ -49,7 +61,11 @@ except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path
         build_reconciliation,
         select_sample,
     )
-    from build_research_dataset import identity_urls
+    from build_research_dataset import (
+        identity_urls,
+        linkedin_profile_slug,
+        preferred_manual_profile_url,
+    )
     from build_location_evidence import (
         COUNTRY_NAMES,
         TRUSTED_OVERRIDE_KINDS,
@@ -278,6 +294,26 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     }
     audit_people_by_id = {row["person_id"]: row for row in audit_people}
     audit_evidence_by_id = {row["evidence_id"]: row for row in audit_evidence}
+    participant_profile_urls_by_person: dict[str, set[str]] = defaultdict(set)
+    for row in audit_participations:
+        person_url = row.get("person_url", "").strip().rstrip("/")
+        if person_url:
+            participant_profile_urls_by_person[row["person_id"]].add(person_url)
+
+    direct_imo_url_pattern = re.compile(
+        r"^https?://www\.imo-official\.org/results/contestant/\d+/?$",
+        re.IGNORECASE,
+    )
+    for row in verified:
+        evidence_url = row.get("olympiad_evidence_url", "").strip().rstrip("/")
+        if not direct_imo_url_pattern.match(evidence_url):
+            continue
+        canonical_urls = participant_profile_urls_by_person.get(row["person_id"], set())
+        if evidence_url not in canonical_urls:
+            errors.append(
+                f"manual IMO contestant URL disagrees with participant registry for "
+                f"{row['person_id']}"
+            )
     audit_sources_by_id = {row["source_id"]: row for row in audit_sources}
 
     def duplicate_field(rows: list[dict[str, str]], field: str, label: str) -> None:
@@ -684,6 +720,28 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         if not row.get("evidence_url", "").startswith(("http://", "https://")):
             errors.append(f"affiliation history has no direct HTTP(S) source for {person_id}")
         if (
+            row.get("evidence_kind") == "accepted_orcid"
+            and row.get("affiliation_type") == "employment"
+            and row.get("is_current", "").casefold() == "true"
+            and not row.get("role")
+            and not row.get("start_year")
+            and not row.get("end_year")
+        ):
+            errors.append(
+                f"undated roleless ORCID employment is marked current for {person_id}"
+            )
+        if (
+            row.get("evidence_kind", "").removeprefix("accepted_")
+            in NON_CHRONOLOGICAL_DIRECTORY_SOURCES
+            and row.get("is_current", "").casefold() == "true"
+            and not row.get("role")
+            and not row.get("start_year")
+            and not row.get("end_year")
+        ):
+            errors.append(
+                f"undated directory organization is marked current for {person_id}"
+            )
+        if (
             row.get("evidence_kind") in structured_affiliation_kinds
             and (
                 person_id,
@@ -701,6 +759,11 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         ):
             errors.append(f"selected alma mater is not education for {person_id}")
         organization = row.get("organization", "")
+        if organization and not valid_affiliation(organization, row.get("role", "")):
+            errors.append(
+                f"affiliation history has malformed organization for {person_id}: "
+                f"{organization}"
+            )
         if row.get("selected_as_alma_mater", "").casefold() == "true":
             metadata = organization_metadata(organization)
             if metadata.get("sector") and metadata.get("sector") != "Education & Research":
@@ -712,6 +775,28 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             errors.append(
                 f"affiliation history retains noncanonical organization for {person_id}: "
                 f"{organization}"
+            )
+
+    for person_id, review in destination_reviews_by_id.items():
+        review_organization = canonicalize_organization(review.get("organization", ""))
+        review_type = review.get("affiliation_type", "")
+        contradictory_current = [
+            row
+            for row in affiliations_by_person.get(person_id, [])
+            if row.get("is_current", "").casefold() == "true"
+            and canonicalize_organization(row.get("organization", ""))
+            == review_organization
+            and row.get("affiliation_type") == review_type
+            and row.get("evidence_kind") != "destination_source_review"
+            and (
+                row.get("evidence_kind") == "manual_review"
+                or not row.get("role")
+                or "alumn" in row.get("role", "").casefold()
+            )
+        ]
+        if contradictory_current:
+            errors.append(
+                f"weaker current affiliation contradicts destination review for {person_id}"
             )
 
     try:
@@ -1069,7 +1154,6 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             "affiliation_type": "affiliation_type",
             "start_year": "start_year",
             "end_year": "end_year",
-            "career_evidence_url": "profile_url",
             "linkedin_url": "linkedin_url",
             "confidence": "confidence",
             "verification_basis": "verification_basis",
@@ -1091,6 +1175,13 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
                 errors.append(
                     f"Exa outcome integration {expected_field} was not published for {person_id}"
                 )
+        expected_profile_url = preferred_manual_profile_url(
+            expected.get("career_evidence_url", ""), expected.get("linkedin_url", "")
+        )
+        if final is not None and final.get("profile_url", "").strip() != expected_profile_url:
+            errors.append(
+                f"Exa outcome integration primary profile was not published for {person_id}"
+            )
         final_urls = split_values(final.get("evidence_urls", "")) if final else set()
         for field in ("olympiad_evidence_url", "career_evidence_url"):
             expected_url = expected.get(field, "").strip()
@@ -1320,8 +1411,32 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             "organization"
         ):
             errors.append(f"{person_id} has {destination_status} status without an organization")
+        if destination_status in {"latest_employment", "current_education"} and not row.get(
+            "role"
+        ):
+            errors.append(f"{person_id} has {destination_status} status without a role")
         if destination_status == "current_education" and row.get("affiliation_type") != "education":
             errors.append(f"{person_id} has current education status without education type")
+        if (
+            destination_status == "current_education"
+            and not row.get("start_year")
+            and not row.get("end_year")
+        ):
+            same_organization_completed_degrees = [
+                affiliation
+                for affiliation in affiliations_by_person.get(person_id, [])
+                if affiliation.get("affiliation_type") == "education"
+                and canonicalize_organization(affiliation.get("organization", ""))
+                == canonicalize_organization(row.get("organization", ""))
+                and affiliation.get("end_year", "").isdigit()
+                and int(affiliation["end_year"]) < DATA_AS_OF_YEAR
+                and affiliation.get("selected_as_alma_mater", "").casefold() == "true"
+            ]
+            if same_organization_completed_degrees:
+                errors.append(
+                    f"{person_id} uses an undated current-student summary over a "
+                    "completed same-institution degree"
+                )
         if destination_status == "latest_employment" and re.search(
             r"\b(?:ph\.?\s*d|doctoral)\s+researcher\b",
             row.get("role", ""),
@@ -1357,6 +1472,22 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         final_row = researched_by_id.get(person_id)
         if final_row is None:
             continue
+        expected_profile_url = preferred_manual_profile_url(
+            verified_row.get("career_evidence_url", ""),
+            verified_row.get("linkedin_url", ""),
+        )
+        if final_row.get("profile_url", "").strip() != expected_profile_url:
+            errors.append(f"manual primary profile source was not preserved for {person_id}")
+        career_slug = linkedin_profile_slug(
+            verified_row.get("career_evidence_url", "")
+        )
+        own_slug = linkedin_profile_slug(verified_row.get("linkedin_url", ""))
+        if career_slug and own_slug and career_slug != own_slug:
+            final_slug = linkedin_profile_slug(final_row.get("profile_url", ""))
+            if final_slug != own_slug:
+                errors.append(
+                    f"third-party LinkedIn source replaced own profile for {person_id}"
+                )
         expected_confidence = verified_row.get("confidence", "").strip() or "confirmed"
         if expected_confidence not in {"probable", "confirmed"}:
             errors.append(

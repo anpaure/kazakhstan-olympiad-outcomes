@@ -470,6 +470,45 @@ class LocationExtractionTest(unittest.TestCase):
             rows[0]["evidence_kind"], "historical_outcome_location"
         )
 
+    def test_generic_affiliation_location_does_not_fill_unknown_destination(self):
+        people = [
+            {
+                "person_id": "kaz-unknown",
+                "name": "Unknown Outcome",
+                "confidence": "confirmed",
+                "destination_status": "history_only",
+            }
+        ]
+        overrides = {
+            "kaz-unknown": {
+                "person_id": "kaz-unknown",
+                "name": "Unknown Outcome",
+                "country_code": "KZ",
+                "country_name": "Kazakhstan",
+                "location_label": "Almaty, Kazakhstan",
+                "evidence_url": "https://example.org/old-university-record",
+                "evidence_kind": "career_source_location",
+                "confidence": "confirmed",
+                "review_reason": "A completed degree was in Almaty.",
+            }
+        }
+
+        self.assertEqual(build_rows(people, [], overrides), [])
+
+    def test_structured_affiliation_country_does_not_fill_unknown_destination(self):
+        people = [
+            {
+                "person_id": "kaz-unknown",
+                "name": "Unknown Outcome",
+                "confidence": "probable",
+                "destination_status": "none",
+                "country_code": "KZ",
+                "profile_url": "https://example.org/profile",
+            }
+        ]
+
+        self.assertEqual(build_rows(people, [], {}), [])
+
     def test_ended_employment_location_is_always_marked_historical(self):
         people = [
             {
@@ -648,7 +687,7 @@ class LocationExtractionTest(unittest.TestCase):
             country_from_location("Sepang, Selangor, Malaysia"), "MY"
         )
 
-    def test_unknown_country_is_limited_to_people_without_a_destination(self):
+    def test_current_education_has_country_but_employment_may_remain_unknown(self):
         people = json.loads(
             Path("data/researched_people.json").read_text(encoding="utf-8")
         )
@@ -665,16 +704,16 @@ class LocationExtractionTest(unittest.TestCase):
             for person in people
             if person["person_id"] not in locations
         }
-        invalid = sorted(
+        current_students_without_country = sorted(
             person["person_id"]
             for person in people
             if person["person_id"] in missing
             and person.get("confidence") in {"probable", "confirmed"}
-            and person.get("destination_status")
-            not in {"none", "history_only"}
+            and person.get("destination_status") == "current_education"
         )
 
-        self.assertEqual(invalid, [])
+        self.assertEqual(current_students_without_country, [])
+        self.assertIn("kaz-444dd6943eb0", missing)
 
 
 if __name__ == "__main__":

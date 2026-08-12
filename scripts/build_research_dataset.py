@@ -75,13 +75,26 @@ def load_csv(path: Path) -> list[dict[str, str]]:
 
 
 def is_linkedin_profile(url: str) -> bool:
-    return bool(
-        re.match(
-            r"^https?://(?:[a-z0-9-]+\.)?linkedin\.com/in/[^/?#]+/?(?:[?#].*)?$",
-            clean_text(url),
-            re.IGNORECASE,
-        )
+    return bool(linkedin_profile_slug(url))
+
+
+def linkedin_profile_slug(url: str) -> str:
+    match = re.match(
+        r"^https?://(?:[a-z0-9-]+\.)?linkedin\.com/in/([^/?#]+)/?(?:[?#].*)?$",
+        clean_text(url),
+        re.IGNORECASE,
     )
+    return match.group(1).casefold() if match else ""
+
+
+def preferred_manual_profile_url(career_evidence_url: str, linkedin_url: str) -> str:
+    career_url = clean_text(career_evidence_url)
+    own_linkedin_url = clean_text(linkedin_url)
+    career_profile_slug = linkedin_profile_slug(career_url)
+    own_profile_slug = linkedin_profile_slug(own_linkedin_url)
+    if career_profile_slug and own_profile_slug and own_profile_slug != career_profile_slug:
+        return own_linkedin_url
+    return career_url
 
 
 def identity_sort_key(row: dict[str, str]) -> tuple[int, float, int]:
@@ -473,8 +486,10 @@ def build_rows(
             confidence = clean_text(manual.get("confidence")) or "confirmed"
             identity_score = "1.0"
             identity_source = "verified"
-            profile_url = manual["career_evidence_url"]
-            linkedin_url = manual["linkedin_url"]
+            profile_url = preferred_manual_profile_url(
+                manual["career_evidence_url"], manual["linkedin_url"]
+            )
+            linkedin_url = clean_text(manual["linkedin_url"])
             organization = manual["organization"]
             role = manual["role"]
             affiliation_type = manual["affiliation_type"]
@@ -526,9 +541,6 @@ def build_rows(
             end_year = destination_review["end_year"]
             review_url = clean_text(destination_review.get("evidence_url"))
             if review_url:
-                profile_url = review_url
-                if is_linkedin_profile(review_url):
-                    linkedin_url = review_url
                 manual_urls.append(review_url)
             review_reason = clean_text(destination_review.get("review_reason"))
             if review_reason:

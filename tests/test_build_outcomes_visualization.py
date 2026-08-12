@@ -63,6 +63,26 @@ class CompactVisualizationDataTest(unittest.TestCase):
         self.assertEqual(len(olympiad_sources), 1)
         self.assertIn("contestant", olympiad_sources[0]["url"])
 
+    def test_ui_prefers_https_for_duplicate_olympiad_profile_urls(self):
+        row = {
+            "linkedin_url": "https://linkedin.com/in/example",
+            "profile_url": "https://linkedin.com/in/example",
+            "organization": "Example Co",
+            "evidence_urls": (
+                "http://stats.ioinformatics.org/people/2474;"
+                "https://stats.ioinformatics.org/people/2474"
+            ),
+        }
+
+        sources = compact_sources(row, {}, [], [])
+
+        olympiad_sources = [source for source in sources if source["kind"] == "olympiad"]
+        self.assertEqual(len(olympiad_sources), 1)
+        self.assertEqual(
+            olympiad_sources[0]["url"],
+            "https://stats.ioinformatics.org/people/2474",
+        )
+
     def test_alma_icons_prefer_official_sources_over_profile_rows(self):
         row = {
             "linkedin_url": "https://linkedin.com/in/example",

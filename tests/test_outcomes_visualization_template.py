@@ -112,6 +112,12 @@ class LayoutPolishTest(unittest.TestCase):
         self.assertIn("x(d.count) + 8", self.template)
         self.assertNotIn("valueLabelInside", self.template)
 
+    def test_mobile_destination_metadata_stays_in_the_value_column(self):
+        self.assertIn(
+            "#iso-outcomes-viz .table td .iso-cell-meta {\n      grid-column: 2;",
+            self.template,
+        )
+
 
 class CountryAndHistoryTest(unittest.TestCase):
     @classmethod
