@@ -1254,5 +1254,45 @@
     "evidence_url": "https://kz.linkedin.com/in/yerlan-zhumabayev-307a8161",
     "reason": "Environmental executive profile began university study in 1995 and was already a university student during Kazakhstan's school-level 1997 IMO; it is not the contestant",
     "review_evidence_url": "https://almaty.fizmat.kz/ru/muzey/uchastniki-mezhdunarodnykh-olimpiad/"
+  },
+  {
+    "person_id": "kaz-32cf54f8673f",
+    "person_name": "Oleg Obukhov",
+    "source_id": "src-776a650d13d7",
+    "evidence_url": "https://linkedin.com/in/%D0%BE%D0%BB%D0%B5%D0%B3-%D0%BE%D0%B1%D1%83%D1%85%D0%BE%D0%B2-a157418a",
+    "reason": "Photographer profile attended university from 1977 to 1982 and is decades too old to be Kazakhstan's school-level 2006-2007 IBO contestant",
+    "review_evidence_url": "https://k-t-l.narod.ru/we/success.html"
+  },
+  {
+    "person_id": "kaz-32cf54f8673f",
+    "person_name": "Oleg Obukhov",
+    "source_id": "src-a2934b7275ae",
+    "evidence_url": "https://linkedin.com/in/olegdelone",
+    "reason": "Engineering profile began university in 2004 and was already a university student during Kazakhstan's school-level 2006-2007 IBO participation",
+    "review_evidence_url": "https://k-t-l.narod.ru/we/success.html"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-480159d0bb0f",
+    "evidence_url": "https://linkedin.com/in/kirill-panov-a77944197",
+    "reason": "Ural engineering profile attended university from 1997 to 2002 and was already a university student during Kazakhstan's school-level 1998 IMO",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1998"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-0001d875fcbc",
+    "evidence_url": "https://linkedin.com/in/zaitsau",
+    "reason": "Belarus software profile began university in 2005 and is too young to be Kazakhstan's school-level 1996 IMO contestant",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1996"
+  },
+  {
+    "person_id": "kaz-6c47e89eeff1",
+    "person_name": "Alexander Zaitsev",
+    "source_id": "src-fc5fe85ea0c8",
+    "evidence_url": "https://linkedin.com/in/zaitsev-a-d",
+    "reason": "Belarus engineering profile began university in 2011 and is too young to be Kazakhstan's school-level 1996 IMO contestant",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1996"
   }
 ]

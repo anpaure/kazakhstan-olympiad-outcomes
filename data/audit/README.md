@@ -20,6 +20,14 @@ source URL used for review.
    the original source wording remains in `evidence_text`.
 8. Use `organization_sectors.csv` to audit organization type and sector assignments.
 9. Use `destination_reviews.csv` to inspect any source-level correction that filled or superseded the earlier displayed destination.
+10. Use `profile_sanity_review.csv` for the reproducible 48-person review sample,
+    including separate links for participation, identity, destination, location,
+    and alma-mater claims.
+11. Use `linkedin_destination_reconciliation.csv` to compare all 298 accepted
+    profiles with the published single destination; conflicts must have an
+    explicit review decision and direct reference URL.
+12. Use `profile_sanity_review_findings.csv` to inspect the detected downstream
+    causes, corrections, and regression guards.
 
 ## Tables
 
@@ -50,6 +58,15 @@ source URL used for review.
 - `sources.csv`: one row per deduplicated URL with usage and review-status
   counts.
 - `rejections.csv`: explicit reviewed rejection decisions and reasons.
+- `profile_sanity_review.csv`: deterministic, stratified 48-person manual review
+  with field-level checks and direct source columns.
+- `linkedin_destination_reconciliation.csv`: one row per accepted LinkedIn
+  profile, its parsed current affiliations, published destination, and any
+  required source-precedence decision.
+- `profile_sanity_review_findings.csv`: root-cause ledger linking each detected
+  issue to its correction, prevention rule, and evidence URLs.
+- `profile_sanity_review_manifest.json`: sample seed/method, cohort counts,
+  reconciliation totals, and unresolved counts.
 - `manifest.json`: schema version, keys, joins, status vocabulary, and row
   counts.
 
@@ -73,9 +90,9 @@ accepted participation evidence and accepted or supporting outcome evidence.
 The complete exact-name LinkedIn review trail remains in the parent `data/`
 directory rather than being flattened into the final-outcome tables:
 
-- `exa_linkedin_review_queue.csv`: all 347 exact-name profile results and their
+- `exa_linkedin_review_queue.csv`: all 358 exact-name profile results and their
   deterministic review and outcome statuses.
-- `exa_outcome_integrations.csv`: 75 accepted career updates with direct
+- `exa_outcome_integrations.csv`: 104 accepted career updates with direct
   Olympiad and career evidence links.
 - `exa_identity_review_decisions.csv`: supporting, deferred, and rejected
   decisions for secondary profiles, each with a reason and review link.
@@ -94,5 +111,6 @@ python scripts/hydrate_linkedin_profiles_with_exa.py
 python scripts/build_affiliation_history.py
 python scripts/build_location_evidence.py
 python scripts/build_audit_bundle.py
+python scripts/build_profile_sanity_review.py
 python scripts/validate_research.py
 ```

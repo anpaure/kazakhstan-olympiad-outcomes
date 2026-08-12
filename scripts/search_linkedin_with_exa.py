@@ -63,7 +63,7 @@ def clean_text(value: object) -> str:
 
 def normalize_name(value: str) -> str:
     value = value.casefold()
-    value = re.sub(r"[^a-z0-9]+", " ", value)
+    value = "".join(character if character.isalnum() else " " for character in value)
     return re.sub(r"\s+", " ", value).strip()
 
 
@@ -97,12 +97,31 @@ def linkedin_result_kind(url: str) -> str:
     return "other_linkedin"
 
 
+def identity_names(person: dict[str, str]) -> list[str]:
+    canonical_name = clean_text(person.get("name") or person.get("canonical_name"))
+    names = [canonical_name]
+    names.extend(clean_text(alias) for alias in str(person.get("aliases") or "").split(";"))
+
+    distinct_names = []
+    seen = set()
+    for name in names:
+        normalized = normalize_name(name)
+        if not normalized or normalized in seen:
+            continue
+        seen.add(normalized)
+        distinct_names.append(name)
+    return distinct_names
+
+
 def build_query(person: dict[str, str]) -> str:
-    name = clean_text(person.get("name") or person.get("canonical_name"))
+    names = identity_names(person)
+    name_query = " OR ".join(f'"{name}"' for name in names)
+    if len(names) > 1:
+        name_query = f"({name_query})"
     olympiads = clean_text(person.get("olympiads"))
     years = clean_text(person.get("years"))
     return (
-        f'"{name}" Kazakhstan {olympiads} Olympiad {years} '
+        f"{name_query} Kazakhstan {olympiads} Olympiad {years} "
         "current employer university role"
     ).strip()
 
@@ -189,7 +208,9 @@ class ExaClient:
         raise RuntimeError("Exa search failed without an HTTP error")
 
 
-def normalize_result(result: dict[str, object], rank: int, name: str) -> dict[str, object]:
+def normalize_result(
+    result: dict[str, object], rank: int, names: list[str]
+) -> dict[str, object]:
     title = clean_text(result.get("title"))
     url = clean_text(result.get("url"))
     highlights = [clean_text(item) for item in result.get("highlights", []) if clean_text(item)]
@@ -201,7 +222,7 @@ def normalize_result(result: dict[str, object], rank: int, name: str) -> dict[st
         "published_date": clean_text(result.get("publishedDate")),
         "author": clean_text(result.get("author")),
         "result_kind": linkedin_result_kind(url),
-        "exact_name_in_title": exact_name_in_title(name, title),
+        "exact_name_in_title": any(exact_name_in_title(name, title) for name in names),
         "highlights": highlights,
         "highlight_scores": scores if isinstance(scores, list) else [],
     }
@@ -213,6 +234,7 @@ def search_person(
     num_results: int,
 ) -> dict[str, object]:
     name = clean_text(person.get("name") or person.get("canonical_name"))
+    names = identity_names(person)
     query = build_query(person)
     base = {
         "person_id": clean_text(person.get("person_id")),
@@ -239,7 +261,7 @@ def search_person(
     cost_total = cost.get("total", 0.0) if isinstance(cost, dict) else 0.0
     raw_results = response.get("results", [])
     results = [
-        normalize_result(result, rank, name)
+        normalize_result(result, rank, names)
         for rank, result in enumerate(raw_results, start=1)
         if isinstance(result, dict)
     ]

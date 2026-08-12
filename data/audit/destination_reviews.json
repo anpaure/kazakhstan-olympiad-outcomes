@@ -30,6 +30,21 @@
     "review_reason": "The cited 2022 profile explicitly identifies Samatov as the director of BIL No. 1 and says he had taught chemistry for eleven years."
   },
   {
+    "destination_review_id": "dest-review-b6882f2fadad5741",
+    "evidence_id": "ev-a12de7866bfe79a8",
+    "source_id": "src-a222c66c52f0",
+    "person_id": "kaz-47792c0edb59",
+    "name": "Adil Kabylda",
+    "organization": "University of Luxembourg",
+    "role": "Postdoctoral Researcher",
+    "affiliation_type": "employment",
+    "start_year": "2026",
+    "end_year": "",
+    "evidence_url": "https://www.uni.lu/fstm-en/people/adil-kabylda/",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "The University of Luxembourg's current official profile identifies Adil Kabylda as a postdoctoral researcher after his January 2026 PhD defense. This supersedes the accepted LinkedIn experience heading that still labels his 2021 doctoral role current."
+  },
+  {
     "destination_review_id": "dest-review-a41003a396796a54",
     "evidence_id": "ev-787c12d5ee8e2024",
     "source_id": "src-930e3ee43c01",
@@ -208,6 +223,21 @@
     "evidence_url": "https://sgholding.kz/kz/sotrudniki/",
     "reviewed_at": "2026-08-11",
     "review_reason": "SG Holding's current staff page explicitly lists Anuar Nurlanovich Kaumbayev as Acting Director of the SG Beton plant. SG Beton is used as the single displayed destination; the separate SG Sand Quarry registry directorship remains supporting corporate evidence rather than a second destination."
+  },
+  {
+    "destination_review_id": "dest-review-2c48f70d6ed5f80a",
+    "evidence_id": "ev-2cbb1879207993d8",
+    "source_id": "src-9d48468a5736",
+    "person_id": "kaz-c9401ed42eb0",
+    "name": "Anuar Nurtazin",
+    "organization": "SOE Centre for Olympic Training in Wrestling",
+    "role": "Consultant, Sports Financing Model Project",
+    "affiliation_type": "employment",
+    "start_year": "2024",
+    "end_year": "",
+    "evidence_url": "https://kz.linkedin.com/in/anuarnurtazin01",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "The accepted public profile identifies Consultant on the Sports Financing Model Project at the SOE Centre for Olympic Training in Wrestling as current from May 2024. This exact dated role supersedes the generic Business and Financial Manager summary while retaining the same employer."
   },
   {
     "destination_review_id": "dest-review-91ab07c7549792d3",
@@ -615,6 +645,21 @@
     "review_reason": "The accepted profile lists Quantitative Researcher at an undisclosed proprietary trading firm as current from April 2024."
   },
   {
+    "destination_review_id": "dest-review-88ab7b0d79ab62cd",
+    "evidence_id": "ev-33f6b5b77e8abf21",
+    "source_id": "src-707c04c8fe92",
+    "person_id": "kaz-253b9dc2b33d",
+    "name": "Nurlan Algashev",
+    "organization": "WHO Regional Office for Europe",
+    "role": "Consultant, WHO Office in Cyprus",
+    "affiliation_type": "employment",
+    "start_year": "2025",
+    "end_year": "",
+    "evidence_url": "https://linkedin.com/in/nurlan-algashov",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "The accepted public profile identifies Consultant for the WHO Office in Cyprus as current from June 2025. This supersedes the older Technical Officer title, whose profile entries end in 2023."
+  },
+  {
     "destination_review_id": "dest-review-bf1f765e125106cf",
     "evidence_id": "ev-f6caea7a6b782232",
     "source_id": "src-9823a6711d77",
@@ -870,6 +915,21 @@
     "review_reason": "The self-authored source establishes the Drizzle co-founder role in 2017 but does not support treating it as current; the displayed latest-known outcome is therefore bounded to 2017."
   },
   {
+    "destination_review_id": "dest-review-7d995682bc8ce7fb",
+    "evidence_id": "ev-3b59b59c206e9cd4",
+    "source_id": "src-3a11ea421e67",
+    "person_id": "kaz-1deffa0c0a86",
+    "name": "Vadim Murzin",
+    "organization": "Deutsches Elektronen-Synchrotron DESY",
+    "role": "Scientist",
+    "affiliation_type": "employment",
+    "start_year": "2015",
+    "end_year": "2024",
+    "evidence_url": "https://bib-pubdb1.desy.de/record/622088/export/print?ln=en",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "DESY's 2024 publication record identifies Vadim Murzin as an author affiliated with DESY, while the current P64 staff page lists him under Alumni. The accepted ORCID supplies the 2015 start, so the role is bounded to 2015-2024 and shown as historical latest employment rather than current staff."
+  },
+  {
     "destination_review_id": "dest-review-307114ae2fe5e1c6",
     "evidence_id": "ev-e08f18bd802121bc",
     "source_id": "src-fcc406487429",
@@ -898,6 +958,21 @@
     "evidence_url": "https://www.linkedin.com/in/yerniyaz-nurgabylov-701b83121",
     "reviewed_at": "2026-08-10",
     "review_reason": "The accepted profile lists Technical Staff at Tzafon as current from May 2025."
+  },
+  {
+    "destination_review_id": "dest-review-81dae71268fb5b75",
+    "evidence_id": "ev-9702433870198466",
+    "source_id": "src-d5ae4459d1a5",
+    "person_id": "kaz-209930256d24",
+    "name": "Yerzhigit Tolebekov",
+    "organization": "MUSAB / CONTROLS",
+    "role": "Managing Director and Founder",
+    "affiliation_type": "employment",
+    "start_year": "2014",
+    "end_year": "",
+    "evidence_url": "https://linkedin.com/in/yerzhigit-tulebekov-6096b180",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "The accepted public profile identifies Managing Director and Founder at MUSAB/CONTROLS as current since September 2014. This supersedes the undated Premix Pro process-engineer summary, whose cited university paper does not establish a current Premix Pro role."
   },
   {
     "destination_review_id": "dest-review-087beb5ce7babf86",

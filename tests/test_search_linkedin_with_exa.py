@@ -19,11 +19,13 @@ class ExaLinkedInAuditTest(unittest.TestCase):
         query = build_query(
             {
                 "name": "Nurtas Shyntas",
+                "aliases": "Nurtas Shyntas;Нұртас Шынтас",
                 "olympiads": "IMO",
                 "years": "2019;2020",
             }
         )
         self.assertIn('"Nurtas Shyntas"', query)
+        self.assertIn('OR "Нұртас Шынтас"', query)
         self.assertIn("Kazakhstan IMO Olympiad 2019;2020", query)
 
     def test_linkedin_profile_classification_accepts_country_subdomains(self):
@@ -45,6 +47,11 @@ class ExaLinkedInAuditTest(unittest.TestCase):
 
     def test_exact_name_rejects_extended_surname(self):
         self.assertFalse(exact_name_in_title("Aslan Kuan", "Aslan Kuanbayev | LinkedIn"))
+
+    def test_exact_name_supports_cyrillic_aliases(self):
+        self.assertTrue(
+            exact_name_in_title("Седлецкий Антон", "Антон Седлецкий | LinkedIn")
+        )
 
     def test_explicit_person_selection_ignores_default_confidence_filter(self):
         people = [

@@ -470,9 +470,9 @@ def build_evidence(
             source_url=row.get("olympiad_evidence_url", ""),
             provenance="manual_review",
             source_adapter="manual",
-            review_status="superseded" if destination_superseded else "accepted",
+            review_status="accepted",
             confidence=confidence,
-            supports_final_outcome=not destination_superseded,
+            supports_final_outcome=True,
             evidence_text=basis,
             review_note=basis,
         )
@@ -486,9 +486,9 @@ def build_evidence(
             source_url=row.get("career_evidence_url", ""),
             provenance="manual_review",
             source_adapter="manual",
-            review_status="accepted",
+            review_status="superseded" if destination_superseded else "accepted",
             confidence=confidence,
-            supports_final_outcome=True,
+            supports_final_outcome=not destination_superseded,
             organization=row.get("organization", ""),
             role=row.get("role", ""),
             evidence_text=basis,
@@ -517,6 +517,16 @@ def build_evidence(
         final = final_by_person[person_id]
         source_url = clean_text(row.get("evidence_url")) or clean_text(row.get("profile_url"))
         rejection = rejection_by_key.get((person_id, normalize_url(source_url)))
+        final_urls = {
+            normalize_url(url)
+            for url in clean_text(final.get("evidence_urls")).split(";")
+            if clean_text(url)
+        }
+        final_urls.update(
+            normalize_url(final.get(field, ""))
+            for field in ("profile_url", "linkedin_url")
+            if clean_text(final.get(field, ""))
+        )
         selected = (
             person_id not in verified_by_person
             and normalize_url(row.get("profile_url", "")) == normalize_url(final.get("profile_url", ""))
@@ -524,10 +534,13 @@ def build_evidence(
         )
         if rejection:
             status = "rejected"
-        elif person_id in verified_by_person:
-            status = "superseded"
         elif selected:
             status = "accepted"
+        elif (
+            normalize_url(source_url) in final_urls
+            and row.get("confidence") in {"probable", "confirmed"}
+        ):
+            status = "supporting"
         else:
             status = "candidate"
         add_evidence(
@@ -543,7 +556,7 @@ def build_evidence(
             external_record_id=row.get("source_id", ""),
             review_status=status,
             confidence=row.get("confidence", "candidate"),
-            supports_final_outcome=selected,
+            supports_final_outcome=selected or status == "supporting",
             organization=row.get("organization", ""),
             role=row.get("role", ""),
             evidence_text=row.get("evidence_text", ""),
@@ -559,6 +572,16 @@ def build_evidence(
         final = final_by_person[person_id]
         source_url = clean_text(row.get("evidence_url"))
         rejection = rejection_by_key.get((person_id, normalize_url(source_url)))
+        final_urls = {
+            normalize_url(url)
+            for url in clean_text(final.get("evidence_urls")).split(";")
+            if clean_text(url)
+        }
+        final_urls.update(
+            normalize_url(final.get(field, ""))
+            for field in ("profile_url", "linkedin_url")
+            if clean_text(final.get(field, ""))
+        )
         selected = (
             person_id not in verified_by_person
             and canonicalize_organization(row.get("organization"))
@@ -569,10 +592,13 @@ def build_evidence(
         )
         if rejection:
             status = "rejected"
-        elif person_id in verified_by_person:
-            status = "superseded"
         elif selected:
             status = "accepted"
+        elif (
+            normalize_url(source_url) in final_urls
+            and row.get("confidence") in {"probable", "confirmed"}
+        ):
+            status = "supporting"
         else:
             status = "candidate"
         add_evidence(
@@ -587,7 +613,7 @@ def build_evidence(
             source_adapter=row.get("source", ""),
             review_status=status,
             confidence=row.get("confidence", "candidate"),
-            supports_final_outcome=selected,
+            supports_final_outcome=selected or status == "supporting",
             organization=row.get("organization", ""),
             role=row.get("role", ""),
             evidence_text=row.get("evidence_text", ""),

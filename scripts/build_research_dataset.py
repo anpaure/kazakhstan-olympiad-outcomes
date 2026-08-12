@@ -229,6 +229,21 @@ def normalize_destination(
     if not organization:
         return "", "", "", "none", "No reviewed destination is available.", "", ""
 
+    if affiliation_type.casefold() in {
+        "organization",
+        "company_or_organization",
+        "institution",
+    }:
+        return (
+            "",
+            "",
+            "",
+            "history_only",
+            "A profile organization without a job or student role is retained only in history.",
+            "",
+            "",
+        )
+
     if role.casefold() == "research author":
         return (
             "",
@@ -254,24 +269,39 @@ def normalize_destination(
             "",
         )
 
-    if affiliation_type.casefold() == "education":
-        role_text = role.casefold()
-        active_student = bool(
-            re.search(r"\b(?:student|ph\.?d candidate|doctoral candidate|incoming)\b", role_text)
+    role_text = role.casefold()
+    end_is_current = not end_year or (
+        end_year.isdigit() and int(end_year) >= as_of_year
+    )
+    source_marks_education = affiliation_type.casefold() == "education"
+    active_student = bool(
+        re.search(
+            r"\b(?:student|ph\.?\s*d candidate|doctoral candidate|incoming)\b",
+            role_text,
         )
-        end_is_current = not end_year or (
-            end_year.isdigit() and int(end_year) >= as_of_year
+    )
+    employment_student = bool(
+        re.search(
+            r"\b(?:ph\.?\s*d|doctoral|masters?|undergraduate|graduate)\s+"
+            r"(?:student|candidate|researcher)\b",
+            role_text,
         )
-        if active_student and end_is_current:
-            return (
-                organization,
-                role,
-                "education",
-                "current_education",
-                "The latest reviewed destination is an active student affiliation.",
-                start_year,
-                end_year,
-            )
+    ) and not re.search(r"\bstudent researchers?\b", role_text)
+    if end_is_current and (
+        (source_marks_education and active_student)
+        or (not source_marks_education and employment_student)
+    ):
+        return (
+            organization,
+            role,
+            "education",
+            "current_education",
+            "The latest reviewed destination is an active student affiliation.",
+            start_year,
+            end_year,
+        )
+
+    if source_marks_education:
 
         staff_role = bool(
             re.search(
@@ -356,7 +386,13 @@ def affiliation_supported_by_identity(
     identity_rows: list[dict[str, str]],
 ) -> bool:
     evidence_url = clean_text(affiliation.get("evidence_url")).rstrip("/")
-    if evidence_url and evidence_url in identity_urls(best_identity):
+    if not evidence_url:
+        return False
+
+    if (
+        CONFIDENCE_RANK.get(best_identity.get("confidence", "candidate"), 0) >= 1
+        and evidence_url in identity_urls(best_identity)
+    ):
         return True
 
     support_reasons = {
@@ -364,7 +400,9 @@ def affiliation_supported_by_identity(
         "direct_olympiad_evidence",
     }
     for identity_row in identity_rows:
-        if evidence_url and evidence_url not in identity_urls(identity_row):
+        if evidence_url not in identity_urls(identity_row):
+            continue
+        if CONFIDENCE_RANK.get(identity_row.get("confidence", "candidate"), 0) < 1:
             continue
         reasons = {
             reason
@@ -417,14 +455,14 @@ def build_rows(
         affiliation_rows = affiliations_by_person.get(person_id, [])
         manual = verified_by_person.get(person_id)
         best_identity = max(identity_rows, key=identity_sort_key, default=None)
-        eligible_affiliations = affiliation_rows
-        if best_identity and CONFIDENCE_RANK.get(best_identity["confidence"], 0) >= 1:
-            eligible_affiliations = [
-                row
-                for row in affiliation_rows
-                if CONFIDENCE_RANK.get(row.get("confidence", "candidate"), 0) >= 1
-                and affiliation_supported_by_identity(row, best_identity, identity_rows)
-            ]
+        eligible_affiliations = [
+            row
+            for row in affiliation_rows
+            if best_identity
+            and CONFIDENCE_RANK.get(best_identity["confidence"], 0) >= 1
+            and CONFIDENCE_RANK.get(row.get("confidence", "candidate"), 0) >= 1
+            and affiliation_supported_by_identity(row, best_identity, identity_rows)
+        ]
         best_affiliation = max(
             eligible_affiliations, key=affiliation_sort_key, default=None
         )
@@ -500,6 +538,14 @@ def build_rows(
                     if part
                 )
 
+        if confidence not in {"probable", "confirmed"}:
+            organization = ""
+            role = ""
+            affiliation_type = ""
+            start_year = ""
+            end_year = ""
+            country_code = ""
+
         (
             organization,
             role,
@@ -518,14 +564,46 @@ def build_rows(
         if not organization:
             country_code = ""
 
+        accepted_identity_rows: list[dict[str, str]] = []
+        if manual:
+            accepted_identity_rows = [
+                row
+                for row in identity_rows
+                if CONFIDENCE_RANK.get(row.get("confidence", "candidate"), 0) >= 1
+            ]
+        elif best_identity:
+            if CONFIDENCE_RANK.get(best_identity.get("confidence", "candidate"), 0) >= 1:
+                best_urls = identity_urls(best_identity)
+                accepted_identity_rows = [
+                    row
+                    for row in identity_rows
+                    if CONFIDENCE_RANK.get(row.get("confidence", "candidate"), 0) >= 1
+                    and identity_urls(row) & best_urls
+                ]
+            else:
+                accepted_identity_rows = [best_identity]
+
+        accepted_urls = set()
+        for identity in accepted_identity_rows:
+            accepted_urls.update(identity_urls(identity))
+        accepted_urls.update(
+            clean_text(row.get("evidence_url"))
+            for row in eligible_affiliations
+            if clean_text(row.get("evidence_url"))
+        )
         urls = {
             clean_text(url)
             for url in manual_urls
-            + [row.get("evidence_url", "") for row in identity_rows]
-            + [row.get("evidence_url", "") for row in affiliation_rows]
+            + list(accepted_urls)
+            + [profile_url, linkedin_url]
             if clean_text(url)
         }
-        sources = {row["source"] for row in identity_rows if row.get("source")}
+        sources = {
+            row["source"] for row in accepted_identity_rows if row.get("source")
+        }
+        sources.update(
+            row["source"] for row in eligible_affiliations if row.get("source")
+        )
         if manual:
             sources.add("verified")
         output.append(

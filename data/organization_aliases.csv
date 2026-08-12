@@ -518,3 +518,5 @@ BCC INVEST,BCC Invest,BCC Invest,capitalization_variant,Uppercase label on the r
 Baiken-U LLP,Baiken-U,Baiken-U,legal_suffix_variant,English legal suffix normalized to the concise company name.,https://www.nuclear.kz/download/files/NSK-61-62-2023.pdf
 ТОО «Байкен-U»,Baiken-U,Baiken-U,multilingual_name,Russian legal-entity label normalized to the concise company name.,https://www.nuclear.kz/download/files/NPK-17.pdf
 «Байкен-U» ЖШС,Baiken-U,Baiken-U,multilingual_name,Kazakh legal-entity label normalized to the concise company name.,https://www.nuclear.kz/download/files/NSK-61-62-2023.pdf
+"Center for Pedagogical Measurements under the AEO Nazarbayev Intellectual Schools",Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,The accepted profile identifies the assessment center as a unit under the NIS autonomous educational organization.,https://linkedin.com/in/yerlan-b-887a4336
+"""Center for Pedagogical Measurements"" under the AEO ""Nazarbayev Intellectual schools""",Nazarbayev Intellectual Schools (NIS),NIS,parent_organization,Quoted public-profile wording normalized to the NIS parent organization.,https://linkedin.com/in/yerlan-b-887a4336

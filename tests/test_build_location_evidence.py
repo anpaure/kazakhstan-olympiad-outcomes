@@ -470,6 +470,41 @@ class LocationExtractionTest(unittest.TestCase):
             rows[0]["evidence_kind"], "historical_outcome_location"
         )
 
+    def test_ended_employment_location_is_always_marked_historical(self):
+        people = [
+            {
+                "person_id": "kaz-ended-role",
+                "name": "Ended Role",
+                "confidence": "confirmed",
+                "organization": "Example Company",
+                "role": "Engineer",
+                "affiliation_type": "employment",
+                "destination_status": "latest_employment",
+                "end_year": "2024",
+            }
+        ]
+        overrides = {
+            "kaz-ended-role": {
+                "person_id": "kaz-ended-role",
+                "name": "Ended Role",
+                "country_code": "US",
+                "country_name": "United States",
+                "location_label": "California, United States",
+                "evidence_url": "https://example.org/ended-role",
+                "evidence_kind": "career_source_location",
+                "confidence": "confirmed",
+                "review_reason": "The role source identifies California.",
+            }
+        }
+
+        [row] = build_rows(people, [], overrides)
+
+        self.assertEqual(row["evidence_kind"], "historical_outcome_location")
+        self.assertEqual(
+            row["location_label"],
+            "California, United States (last verified in 2024)",
+        )
+
     def test_unmatched_identity_stays_excluded_even_with_override(self):
         people = [
             {
@@ -613,7 +648,7 @@ class LocationExtractionTest(unittest.TestCase):
             country_from_location("Sepang, Selangor, Malaysia"), "MY"
         )
 
-    def test_only_participant_history_rows_have_unknown_country(self):
+    def test_unknown_country_is_limited_to_people_without_a_destination(self):
         people = json.loads(
             Path("data/researched_people.json").read_text(encoding="utf-8")
         )
@@ -630,16 +665,16 @@ class LocationExtractionTest(unittest.TestCase):
             for person in people
             if person["person_id"] not in locations
         }
-        with Path("data/location_overrides.csv").open(
-            newline="", encoding="utf-8"
-        ) as handle:
-            participant_history = {
-                row["person_id"]
-                for row in csv.DictReader(handle)
-                if row["evidence_kind"] == "participant_history_location"
-            }
+        invalid = sorted(
+            person["person_id"]
+            for person in people
+            if person["person_id"] in missing
+            and person.get("confidence") in {"probable", "confirmed"}
+            and person.get("destination_status")
+            not in {"none", "history_only"}
+        )
 
-        self.assertEqual(missing, participant_history)
+        self.assertEqual(invalid, [])
 
 
 if __name__ == "__main__":

@@ -1,9 +1,78 @@
 import unittest
 
-from scripts.build_audit_bundle import build_audit_organization_aliases, build_bundle
+from scripts.build_audit_bundle import (
+    build_audit_organization_aliases,
+    build_bundle,
+    build_evidence,
+)
 
 
 class AuditBundleTest(unittest.TestCase):
+    def test_destination_review_supersedes_only_old_career_claim(self):
+        person_id = "kaz-test"
+        final = {
+            "person_id": person_id,
+            "name": "Test Person",
+            "profile_url": "https://example.test/current",
+            "linkedin_url": "https://linkedin.com/in/test",
+            "evidence_urls": ";".join(
+                [
+                    "https://example.test/olympiad",
+                    "https://example.test/old-career",
+                    "https://example.test/current",
+                ]
+            ),
+        }
+        verified = {
+            "person_id": person_id,
+            "name": "Test Person",
+            "organization": "Old Co",
+            "role": "Analyst",
+            "affiliation_type": "employment",
+            "start_year": "2020",
+            "end_year": "2024",
+            "olympiad_evidence_url": "https://example.test/olympiad",
+            "career_evidence_url": "https://example.test/old-career",
+            "linkedin_url": "https://linkedin.com/in/test",
+            "confidence": "confirmed",
+            "verification_basis": "Reviewed identity and former role.",
+        }
+        review = {
+            "person_id": person_id,
+            "organization": "Current Co",
+            "role": "Engineer",
+            "affiliation_type": "employment",
+            "start_year": "2025",
+            "end_year": "",
+        }
+        identities = [
+            {
+                "person_id": person_id,
+                "source": "orcid",
+                "source_id": "namesake",
+                "profile_url": "https://example.test/namesake",
+                "evidence_url": "https://example.test/namesake",
+                "matched_name": "Test Person",
+                "confidence": "candidate",
+                "score_reasons": "exact_name;ambiguous_same_name_source",
+                "organization": "Wrong University",
+                "role": "Researcher",
+                "evidence_text": "Name-only candidate.",
+            }
+        ]
+
+        evidence = build_evidence(
+            [], [final], identities, [], [verified], [], [review]
+        )
+        by_type = {row["claim_type"]: row for row in evidence}
+
+        self.assertEqual(by_type["olympiad_identity_bridge"]["review_status"], "accepted")
+        self.assertTrue(by_type["olympiad_identity_bridge"]["supports_final_outcome"])
+        self.assertEqual(by_type["career_outcome"]["review_status"], "superseded")
+        self.assertFalse(by_type["career_outcome"]["supports_final_outcome"])
+        self.assertEqual(by_type["identity_candidate"]["review_status"], "candidate")
+        self.assertFalse(by_type["identity_candidate"]["supports_final_outcome"])
+
     def test_organization_alias_audit_preserves_normalization_source(self):
         rows = build_audit_organization_aliases(
             [

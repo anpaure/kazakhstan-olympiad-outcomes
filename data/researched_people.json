@@ -114,9 +114,9 @@
     "start_year": "2017",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/ganik;https://www.imo-official.org/results/contestant/3154/;https://www.linkedin.com/in/gani-nazirov",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://www.imo-official.org/results/contestant/3154/;https://www.linkedin.com/in/gani-nazirov",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public profile directly lists bronze medals at IMO 33 and IMO 34 and documents a Microsoft AI and ML career through July 2026 including work on ML.NET; Destination review: The accepted profile's current Microsoft title is Principal Software Engineer from October 2017."
   },
   {
@@ -174,9 +174,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://sites.google.com/nes.ru/evgenyyakovlev/home;https://www.imo-official.org/results/contestant/3170/;https://www.wikidata.org/wiki/Q4536895",
-    "evidence_count": 3,
-    "sources": "verified;wikidata",
+    "evidence_urls": "https://sites.google.com/nes.ru/evgenyyakovlev/home;https://www.imo-official.org/results/contestant/3170/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public academic CV explicitly lists winning Kazakhstan's 1992 National Mathematics Olympiad and a 1992 IMO bronze medal then documents an uninterrupted applied-mathematics and economics career through UC Berkeley the New Economic School and the University of Essex"
   },
   {
@@ -564,9 +564,9 @@
     "start_year": "2023",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://linkedin.com/in/nurgali-arystanov-07548042;https://www.imo-official.org/results/contestant/4462/;https://www.wikidata.org/wiki/Q123700015",
-    "evidence_count": 3,
-    "sources": "verified;wikidata",
+    "evidence_urls": "https://linkedin.com/in/nurgali-arystanov-07548042;https://www.imo-official.org/results/contestant/4462/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The official IMO record and government biography establish the rare exact-name identity and the professional profile corroborates his current appointment as Kazakhstan's ambassador to the Republic of Korea"
   },
   {
@@ -614,20 +614,20 @@
     "identity_source": "orcid",
     "profile_url": "https://orcid.org/0000-0002-6272-1079",
     "linkedin_url": "",
-    "organization": "Khristianovich Institute of Theoretical and Applied Mechanics (ITAM SB RAS)",
-    "role": "senior reseacher",
-    "affiliation_type": "employment",
-    "organization_category": "Academia",
+    "organization": "",
+    "role": "",
+    "affiliation_type": "",
+    "organization_category": "Unknown",
     "role_category": "Other",
-    "destination_status": "latest_employment",
-    "destination_note": "One reviewed latest employment or organizational role is used as the destination.",
-    "start_year": "2017",
+    "destination_status": "none",
+    "destination_note": "No reviewed destination is available.",
+    "start_year": "",
     "end_year": "",
-    "country_code": "RU",
+    "country_code": "",
     "evidence_urls": "https://orcid.org/0000-0002-6272-1079",
     "evidence_count": 1,
     "sources": "orcid",
-    "verification_basis": "orcid=0000-0002-6272-1079; current_affiliation=Institute of Theoretical and Applied Mechanics,Novosibirsk State University; past_affiliation=Novosibirsk State University,Institute of Theoretical and Applied Mechanics; role=senior reseacher; Institute of Theoretical and Applied Mechanics; senior reseacher; Computational aerodynamics laboratory; 2017"
+    "verification_basis": "orcid=0000-0002-6272-1079; current_affiliation=Institute of Theoretical and Applied Mechanics,Novosibirsk State University; past_affiliation=Novosibirsk State University,Institute of Theoretical and Applied Mechanics; role=senior reseacher"
   },
   {
     "person_id": "kaz-5f05301e71f7",
@@ -804,9 +804,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/Bekbolatov;https://openalex.org/A5062874394;https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=year&order=desc&gender=hide&nameform=western;https://www.linkedin.com/in/bekbolatov",
-    "evidence_count": 4,
-    "sources": "github;openalex;verified",
+    "evidence_urls": "https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=year&order=desc&gender=hide&nameform=western;https://www.linkedin.com/in/bekbolatov",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "Caltech's official 2004 commencement program identifies the rare exact-name mathematics graduate as being from Aktobe Kazakhstan and the same Caltech timeline appears on his current Genie profile; Destination review: The accepted profile lists Software Developer at Genie from June 2025 and does not identify him as Genie's founder."
   },
   {
@@ -954,9 +954,9 @@
     "start_year": "2014",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/ikarib;https://openalex.org/A5000781420;https://orcid.org/0000-0001-8603-0136;https://www.bankofcanada.ca/profile/iskander-karibzhanov/;https://www.imo-official.org/participant_r.aspx?id=4924;https://www.wikidata.org/wiki/Q102563456",
-    "evidence_count": 6,
-    "sources": "github;openalex;orcid;verified;wikidata",
+    "evidence_urls": "https://openalex.org/A5000781420;https://orcid.org/0000-0001-8603-0136;https://www.bankofcanada.ca/profile/iskander-karibzhanov/;https://www.imo-official.org/participant_r.aspx?id=4924",
+    "evidence_count": 4,
+    "sources": "openalex;openalex_orcid;orcid;verified",
     "verification_basis": "Official IMO record and Bank of Canada CV identify the same person and career history"
   },
   {
@@ -984,9 +984,9 @@
     "start_year": "2014",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://egemen.kz/amp/article/4007-matematikalyq-olimpiada-el-abyroyyna-abyroy-qosty;https://kz.linkedin.com/in/mikhail-shakhmatov;https://openalex.org/A5004741842",
-    "evidence_count": 3,
-    "sources": "openalex;verified",
+    "evidence_urls": "https://egemen.kz/amp/article/4007-matematikalyq-olimpiada-el-abyroyyna-abyroy-qosty;https://kz.linkedin.com/in/mikhail-shakhmatov",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "A Kazakhstan national newspaper identifies him as the country's 1998 Olympiad winner and the only matching public profile has the same rare name and Almaty location with Boğazici University beginning immediately after his final IMO appearance; Destination review: The accepted profile lists this exact current KAZ Minerals title from October 2014."
   },
   {
@@ -1104,9 +1104,9 @@
     "start_year": "2017",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/tsvayer;https://tr.linkedin.com/in/vitaliy-tsvayer;https://www.imo-official.org/results/contestant/4695/",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://tr.linkedin.com/in/vitaliy-tsvayer;https://www.imo-official.org/results/contestant/4695/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His indexed public profile explicitly lists participation in the 38th International Mathematical Olympiad in 1997 and documents his current remote backend and software-architecture work"
   },
   {
@@ -1164,9 +1164,9 @@
     "start_year": "2022",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://openalex.org/A5056714187;https://www.icho-official.org/results/country_info.php?country=Kazakhstan;https://www.linkedin.com/in/adil-zhugralin-9bb1b03",
-    "evidence_count": 3,
-    "sources": "openalex;verified",
+    "evidence_urls": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan;https://www.linkedin.com/in/adil-zhugralin-9bb1b03",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "MIT officially identifies the rare exact-name Kazakhstan chemistry student and Boston College documents the same research career while current professional and patent records place him in Novartis intellectual property"
   },
   {
@@ -1224,8 +1224,8 @@
     "start_year": "2020",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:271;https://stats.ioinformatics.org/people/271;https://www.flcompanyregistry.com/companies/mli-trading-llc/",
-    "evidence_count": 3,
+    "evidence_urls": "http://stats.ioinformatics.org/people/271;https://cphof.org/profile/ioi:271;https://stats.ioinformatics.org/people/271;https://www.flcompanyregistry.com/companies/mli-trading-llc/",
+    "evidence_count": 4,
     "sources": "cphof;verified",
     "verification_basis": "The active Florida company record names rare exact-name Arman Prashev as MLI Trading's sole authorized member and registered agent and records a 2026 annual filing. The exact name and age-compatible chronology strongly match Kazakhstan's 1998-2000 IOI entrant, but no reviewed source explicitly joins the US business record to the Olympiad result."
   },
@@ -1284,9 +1284,9 @@
     "start_year": "2021",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:331;https://orcid.org/0009-0003-0918-765X;https://rcez.kz/departmentdirectorinformationsecurity;https://stats.ioinformatics.org/people/331",
+    "evidence_urls": "http://stats.ioinformatics.org/people/331;https://cphof.org/profile/ioi:331;https://rcez.kz/departmentdirectorinformationsecurity;https://stats.ioinformatics.org/people/331",
     "evidence_count": 4,
-    "sources": "cphof;orcid;verified",
+    "sources": "cphof;verified",
     "verification_basis": "The official health IT center profile identifies Beket Zhapbasbay and documents his current department-director role, applied-mathematics education, and earlier Kazakhstan IT work; the rare exact name and reviewed 2001 NSU programming result bridge the profile to the accepted 1998 IOI identity.; Destination review: The official center profile identifies Beket as the current director of its Information Security and Personal Data Protection Department, a role begun in 2021."
   },
   {
@@ -1344,10 +1344,10 @@
     "start_year": "2023",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://kz.linkedin.com/in/kairatakhmetov;https://openalex.org/A5143710020;https://orcid.org/0000-0001-7188-5422;https://orcid.org/0000-0002-8807-536X;https://orcid.org/0000-0003-3354-4023;https://orcid.org/0009-0001-6556-1939;https://www.apple-events.com/events/central-eurasian-venture-forum-2024;https://www.wikidata.org/wiki/Q62626570",
-    "evidence_count": 9,
-    "sources": "openalex;orcid;verified;wikidata",
-    "verification_basis": "The venture-forum biography explicitly links the Freedom Telecom CEO and MIPT graduate to the 1998 and 1999 IPhO appearances and Asian Physics Olympiad gold"
+    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://kz.linkedin.com/in/kairatakhmetov;https://www.apple-events.com/events/central-eurasian-venture-forum-2024",
+    "evidence_count": 3,
+    "sources": "verified",
+    "verification_basis": "The venture-forum biography explicitly links full-name Freedom Telecom CEO Kairat Bakibayevich Akhmetov to the 1998 and 1999 IPhO appearances and Asian Physics Olympiad gold; his self-authored interview separately identifies MIPT as his university."
   },
   {
     "person_id": "kaz-b41761cae333",
@@ -1404,8 +1404,8 @@
     "start_year": "2026",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:1516;https://kz.linkedin.com/in/maxat-aipanov-192903a3",
-    "evidence_count": 2,
+    "evidence_urls": "http://stats.ioinformatics.org/people/1516;https://cphof.org/profile/ioi:1516;https://kz.linkedin.com/in/maxat-aipanov-192903a3",
+    "evidence_count": 3,
     "sources": "cphof;verified",
     "verification_basis": "CPHOF links the Kazakhstan IOI record and the distinctive public profile lists Kcell plus matching software and data-warehouse education and experience; Destination review: The accepted profile shows an April 2026 promotion from Data Warehouse Expert to Head of Intelligent Systems Development."
   },
@@ -1422,22 +1422,22 @@
     "confidence": "probable",
     "identity_score": "1.0",
     "identity_source": "verified",
-    "profile_url": "https://www.who.int/docs/librariesprovider2/default-document-library/prep-2.0-ms-informationsession-26september---meetingreport-infodocwithannexes.pdf?download=true&sfvrsn=39b0c7a1_1",
+    "profile_url": "https://linkedin.com/in/nurlan-algashov",
     "linkedin_url": "https://linkedin.com/in/nurlan-algashov",
     "organization": "WHO Regional Office for Europe",
-    "role": "Technical Officer",
+    "role": "Consultant, WHO Office in Cyprus",
     "affiliation_type": "employment",
     "organization_category": "Industry",
     "role_category": "Other",
     "destination_status": "latest_employment",
     "destination_note": "One reviewed latest employment or organizational role is used as the destination.",
-    "start_year": "2018",
+    "start_year": "2025",
     "end_year": "",
     "country_code": "",
     "evidence_urls": "https://linkedin.com/in/nurlan-algashov;https://www.ibo-info.org/files/downloads/results-reports/results/IBO1999.pdf;https://www.who.int/docs/librariesprovider2/default-document-library/prep-2.0-ms-informationsession-26september---meetingreport-infodocwithannexes.pdf?download=true&sfvrsn=39b0c7a1_1",
     "evidence_count": 3,
     "sources": "verified",
-    "verification_basis": "The rare Algashov transliteration exact Kazakhstan profile begins an MD in 1999 immediately after the IBO appearances and continues through Nazarbayev University medicine into WHO public-health work; no source explicitly joins the Olympiad and career records."
+    "verification_basis": "The rare Algashov transliteration exact Kazakhstan profile begins an MD in 1999 immediately after the IBO appearances and continues through Nazarbayev University medicine into WHO public-health work; no source explicitly joins the Olympiad and career records.; Destination review: The accepted public profile identifies Consultant for the WHO Office in Cyprus as current from June 2025. This supersedes the older Technical Officer title, whose profile entries end in 2023."
   },
   {
     "person_id": "kaz-f2b0c2f36f45",
@@ -1464,9 +1464,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/nustemirov;https://openalex.org/A5002212308;https://www.icho-official.org/results/country_info.php?country=Kazakhstan;https://www.linkedin.com/in/nurzhan",
-    "evidence_count": 4,
-    "sources": "github;openalex;verified",
+    "evidence_urls": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan;https://www.linkedin.com/in/nurzhan",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The rare exact-name IChO record connects through an Iowa State master's thesis and Ames Laboratory paper to the same Iowa State education and Kazakh language on his current DFlow profile; Destination review: The accepted profile lists a current DFlow Solana Rust development role from February 2025."
   },
   {
@@ -1494,9 +1494,9 @@
     "start_year": "2012",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/renat.shaimardanov;https://cphof.org/profile/ioi:1953;https://github.com/srenat;https://linkedin.com/in/renatshaimardanov;https://openalex.org/A5085884395;https://stats.ioinformatics.org/people/1953",
-    "evidence_count": 6,
-    "sources": "codeforces;cphof;github;openalex;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/1953;http://www.agregator.kz;https://codeforces.com/profile/renat.shaimardanov;https://cphof.org/profile/ioi:1953;https://github.com/srenat;https://linkedin.com/in/renatshaimardanov;https://stats.ioinformatics.org/people/1953",
+    "evidence_count": 7,
+    "sources": "codeforces;cphof;github;verified",
     "verification_basis": "The rare exact-name Kazakhstan profile begins computer-science study at KazNU in the 1998 IOI year and identifies Agregator as his current company, matching the independently linked Kazakhstan CPHOF and GitHub identity; no source explicitly joins the professional to the IOI contestant"
   },
   {
@@ -1704,9 +1704,9 @@
     "start_year": "2017",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:4829;https://github.com/DaisyKey;https://improvado.io/blog-authors/daniel-kravtsov;https://stats.ioinformatics.org/people/4829;https://www.linkedin.com/in/danielkravtsov",
+    "evidence_urls": "http://stats.ioinformatics.org/people/4829;https://cphof.org/profile/ioi:4829;https://improvado.io/blog-authors/daniel-kravtsov;https://stats.ioinformatics.org/people/4829;https://www.linkedin.com/in/danielkravtsov",
     "evidence_count": 5,
-    "sources": "cphof;github;verified",
+    "sources": "cphof;verified",
     "verification_basis": "The Improvado founder profile and company biography identify Daniel Kravtsov as current CEO in San Francisco; independent interviews describe a Temirtau-born programmer whose age matches the 1999-2000 IOI entrant. No reviewed source explicitly joins the career and Olympiad records.; Destination review: Improvado's current company biography identifies Daniel Kravtsov as CEO and co-founder; the career-to-IOI identity match remains probable and is documented separately."
   },
   {
@@ -1734,9 +1734,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:5480;https://github.com/bestleggins;https://github.com/dgorbachev;https://github.com/gorbachevdmitr;https://openalex.org/A5044903043;https://openalex.org/A5102067479;https://www.wikidata.org/wiki/Q102430205",
-    "evidence_count": 7,
-    "sources": "cphof;github;openalex;wikidata",
+    "evidence_urls": "http://stats.ioinformatics.org/people/5480;https://cphof.org/profile/ioi:5480",
+    "evidence_count": 2,
+    "sources": "cphof",
     "verification_basis": "profile=ioi:5480; country=Kazakhstan; contest=IOI"
   },
   {
@@ -1794,8 +1794,8 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://orcid.org/0000-0001-6563-802X;https://orcid.org/0000-0001-9350-984X;https://orcid.org/0009-0006-9829-4845;https://research.nu.edu.kz/en/persons/kuanysh-yergaliyev;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2000.pdf",
-    "evidence_count": 5,
+    "evidence_urls": "https://orcid.org/0000-0001-6563-802X;https://research.nu.edu.kz/en/persons/kuanysh-yergaliyev;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2000.pdf",
+    "evidence_count": 3,
     "sources": "orcid;verified",
     "verification_basis": "The adjacent 1999 and 2000 official IBO records align with the exact-name ORCID medical training timeline and Nazarbayev University's current faculty profile"
   },
@@ -1846,11 +1846,11 @@
     "linkedin_url": "",
     "organization": "Al-Farabi Kazakh National University",
     "role": "PhD student",
-    "affiliation_type": "employment",
-    "organization_category": "Academia",
+    "affiliation_type": "education",
+    "organization_category": "Education",
     "role_category": "Student",
-    "destination_status": "latest_employment",
-    "destination_note": "One reviewed latest employment or organizational role is used as the destination.",
+    "destination_status": "current_education",
+    "destination_note": "The latest reviewed destination is an active student affiliation.",
     "start_year": "2023",
     "end_year": "",
     "country_code": "KZ",
@@ -1884,9 +1884,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/shiralikadyrov;https://linkedin.com/in/shirali-kadyrov-0731b6217;https://openalex.org/A5029144735;https://openalex.org/A5140608942;https://orcid.org/0000-0002-8352-2597;https://www.imo-official.org/team_r.aspx?code=KAZ&year=1999;https://www.wikidata.org/wiki/Q102371253;https://www.wikidata.org/wiki/Q95604376",
-    "evidence_count": 8,
-    "sources": "github;openalex;orcid;verified;wikidata",
+    "evidence_urls": "http://sdu.edu.kz/en/staff/shirali.kadyrov;https://linkedin.com/in/shirali-kadyrov-0731b6217;https://openalex.org/A5029144735;https://openalex.org/A5140608942;https://orcid.org/0000-0002-8352-2597;https://scholar.google.com/citations?user=RAa3Sw4AAAAJ&hl=en;https://www.imo-official.org/team_r.aspx?code=KAZ&year=1999",
+    "evidence_count": 7,
+    "sources": "openalex;openalex_orcid;orcid;verified",
     "verification_basis": "The rare exact-name public profile corroborates the current New Uzbekistan University mathematics appointment already linked through his claimed ORCID and publication record; the official IMO page confirms the Kazakhstan contestant"
   },
   {
@@ -1914,9 +1914,9 @@
     "start_year": "2021",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://kg.linkedin.com/in/ulan-mukashev-59771a2b;https://openalex.org/A5004694719;https://www.imo-official.org/results/contestant/5752/",
-    "evidence_count": 3,
-    "sources": "openalex;verified",
+    "evidence_urls": "https://kg.linkedin.com/in/ulan-mukashev-59771a2b;https://www.imo-official.org/results/contestant/5752/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His accepted profile explicitly lists the 1999 IMO honorable mention and 2000 IMO bronze medal and now identifies two ongoing Kumtor Gold Company roles in Kyrgyzstan. The November 2021 Manager, Site Administration role is used as the single destination because it is the later and more senior of the concurrent roles; the older Kuwait Oil Company profile is superseded."
   },
   {
@@ -1974,9 +1974,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:5481;https://github.com/yerke;https://www.linkedin.com/in/yerkebulant",
+    "evidence_urls": "http://stats.ioinformatics.org/people/5481;https://cphof.org/profile/ioi:5481;https://www.linkedin.com/in/yerkebulant",
     "evidence_count": 3,
-    "sources": "cphof;github;verified",
+    "sources": "cphof;verified",
     "verification_basis": "CPHOF establishes the IOI identity and the public professional profile plus current employee directory agree on Square and software engineering"
   },
   {
@@ -2006,7 +2006,7 @@
     "country_code": "",
     "evidence_urls": "https://international.binus.ac.id/binus-people/zhandos-yessenbayev-b-sc-m-sc-ph-d/;https://openalex.org/A5015103840;https://orcid.org/0000-0002-6322-3848;https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=name&order=desc",
     "evidence_count": 4,
-    "sources": "openalex;orcid;verified",
+    "sources": "openalex;openalex_orcid;orcid;verified",
     "verification_basis": "Official IMO results and university staff page agree on the rare exact name"
   },
   {
@@ -2034,9 +2034,9 @@
     "start_year": "2018",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://at.linkedin.com/in/zhanybek-alpichshev-41bb4b207;https://ist.ac.at/wp-content/uploads/2023/09/cv_alpichshev_010923.pdf;https://openalex.org/A5009913548;https://openalex.org/A5041419575;https://openalex.org/A5128444948;https://www2.pd.infn.it/Olifis/bronze.htm",
-    "evidence_count": 6,
-    "sources": "openalex;verified",
+    "evidence_urls": "https://at.linkedin.com/in/zhanybek-alpichshev-41bb4b207;https://ist.ac.at/wp-content/uploads/2023/09/cv_alpichshev_010923.pdf;https://www2.pd.infn.it/Olifis/bronze.htm",
+    "evidence_count": 3,
+    "sources": "verified",
     "verification_basis": "The rare exact-name 1999 IPhO record aligns with the MIPT and Stanford physics timeline in his institutional CV which lists the current ISTA assistant professorship"
   },
   {
@@ -2124,9 +2124,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/iganichev;https://openalex.org/A5030915482;https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=year&order=desc&gender=hide&nameform=western;https://www.linkedin.com/in/igor-ganichev-067bba16",
-    "evidence_count": 4,
-    "sources": "github;openalex;verified",
+    "evidence_urls": "https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=year&order=desc&gender=hide&nameform=western;https://www.linkedin.com/in/igor-ganichev-067bba16",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His current public profile explicitly lists one gold and two silver IMO medals while MIT identifies his hometown as Glubokoe in East Kazakhstan and the profile now places him at a private hedge fund; Destination review: The accepted profile specifies Quantitative Researcher at a private hedge fund rather than the generic Researcher summary."
   },
   {
@@ -2154,9 +2154,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/topcoder:Hypuk;https://github.com/Hypuk;https://linkedin.com/in/hypuk;https://openalex.org/A5064536910;https://www.wikidata.org/wiki/Q135258838",
-    "evidence_count": 5,
-    "sources": "cphof;github;openalex;verified;wikidata",
+    "evidence_urls": "http://stats.ioinformatics.org/people/1717;https://cphof.org/profile/topcoder:Hypuk;https://linkedin.com/in/hypuk;https://www.topcoder.com/members/Hypuk",
+    "evidence_count": 4,
+    "sources": "cphof;verified",
     "verification_basis": "The professional profile uses the same distinctive Hypuk handle as the linked Topcoder and GitHub identity and repeats the KBTU education recorded by CPHOF while listing a current Jane Street software-engineering role"
   },
   {
@@ -2184,9 +2184,9 @@
     "start_year": "2015",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/k-nic;https://linkedin.com/in/rustem-takhanov-7907149;https://openalex.org/A5029285634;https://orcid.org/0000-0001-7405-8254;https://www.imo-official.org/team_r.aspx?code=KAZ&year=2000;https://www.wikidata.org/wiki/Q102405659",
-    "evidence_count": 6,
-    "sources": "github;openalex;orcid;verified;wikidata",
+    "evidence_urls": "https://linkedin.com/in/rustem-takhanov-7907149;https://openalex.org/A5029285634;https://orcid.org/0000-0001-7405-8254;https://www.imo-official.org/team_r.aspx?code=KAZ&year=2000",
+    "evidence_count": 4,
+    "sources": "openalex;orcid;verified",
     "verification_basis": "The rare exact-name academic profile identifies a current Nazarbayev University assistant professorship and matches the existing claimed ORCID and publication record; the official IMO page confirms the Kazakhstan contestant"
   },
   {
@@ -2214,8 +2214,8 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:2074;https://il.linkedin.com/in/simonshkilevich;https://sessionize.com/simon-shkilevich/;https://stats.ioinformatics.org/people/2074",
-    "evidence_count": 4,
+    "evidence_urls": "http://stats.ioinformatics.org/people/2074;https://cphof.org/profile/ioi:2074;https://il.linkedin.com/in/simonshkilevich;https://sessionize.com/simon-shkilevich/;https://stats.ioinformatics.org/people/2074",
+    "evidence_count": 5,
     "sources": "cphof;verified",
     "verification_basis": "The rare-surname Simon Shkilevich profile identifies a current Vi Labs DevOps and MLOps leadership role in Tel Aviv and is consistent with Semen as an adopted-name variant. No reviewed source explicitly joins it to the 2000-2001 IOI record.; Destination review: The current speaker profile identifies Simon Shkilevich as Vi's DevOps and MLOps Tech Lead in Tel Aviv; the Semen-to-Simon identity match remains probable and is documented separately."
   },
@@ -2274,9 +2274,9 @@
     "start_year": "2023",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/Yerbol-Kurmangaliyev;https://orcid.org/0000-0003-4829-2025;https://www.brandeis.edu/biology/faculty/kurmangaliyev-yerbol.html;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2000.pdf;https://www.wikidata.org/wiki/Q91117387",
-    "evidence_count": 5,
-    "sources": "github;orcid;verified;wikidata",
+    "evidence_urls": "https://orcid.org/0000-0003-4829-2025;https://www.brandeis.edu/biology/faculty/kurmangaliyev-yerbol.html;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2000.pdf",
+    "evidence_count": 3,
+    "sources": "orcid;verified",
     "verification_basis": "The rare exact-name official IBO record aligns with a self-asserted ORCID timeline and Brandeis's current faculty page for its assistant professor of biology"
   },
   {
@@ -2364,9 +2364,9 @@
     "start_year": "2020",
     "end_year": "2021",
     "country_code": "",
-    "evidence_urls": "https://kz.linkedin.com/in/zeinul-gabiden-kazhkenov-23203052;https://openalex.org/A5064386650;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
-    "evidence_count": 3,
-    "sources": "openalex;verified",
+    "evidence_urls": "https://kz.linkedin.com/in/zeinul-gabiden-kazhkenov-23203052;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The unique full name in the 2000 and 2001 IChO records matches Moscow State and Minnesota chemistry publications and a current Kazakhstan profile showing Cornell education and Polymer Production; Destination review: The profile identifies Financial Director as the latest disclosed Polymer Production role and dates it September 2020 to October 2021."
   },
   {
@@ -2415,19 +2415,19 @@
     "profile_url": "https://kz.linkedin.com/in/anuarnurtazin01",
     "linkedin_url": "https://kz.linkedin.com/in/anuarnurtazin01",
     "organization": "SOE Centre for Olympic Training in Wrestling",
-    "role": "Business and Financial Manager",
+    "role": "Consultant, Sports Financing Model Project",
     "affiliation_type": "employment",
     "organization_category": "Academia",
-    "role_category": "Leadership",
+    "role_category": "Other",
     "destination_status": "latest_employment",
     "destination_note": "One reviewed latest employment or organizational role is used as the destination.",
-    "start_year": "",
+    "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://kz.linkedin.com/in/anuarnurtazin01;https://openalex.org/A5118766857;https://orcid.org/0000-0002-3563-2644;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
-    "evidence_count": 4,
-    "sources": "openalex;orcid;verified",
-    "verification_basis": "His current public profile explicitly recalls representing Kazakhstan at IChO and a 2026 government-cited report names him national chemistry-team coach while the profile lists his current management organization"
+    "evidence_urls": "https://kz.linkedin.com/in/anuarnurtazin01;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "evidence_count": 2,
+    "sources": "verified",
+    "verification_basis": "His current public profile explicitly recalls representing Kazakhstan at IChO and a 2026 government-cited report names him national chemistry-team coach while the profile lists his current management organization; Destination review: The accepted public profile identifies Consultant on the Sports Financing Model Project at the SOE Centre for Olympic Training in Wrestling as current from May 2024. This exact dated role supersedes the generic Business and Financial Manager summary while retaining the same employer."
   },
   {
     "person_id": "kaz-5e6bd77516c5",
@@ -2454,8 +2454,8 @@
     "start_year": "2017",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:4958;https://github.com/Ascarbek;https://linkedin.com/in/askarbek-zadauly-264b8662",
-    "evidence_count": 3,
+    "evidence_urls": "http://stats.ioinformatics.org/people/4958;https://cphof.org/profile/ioi:4958;https://github.com/Ascarbek;https://linkedin.com/in/askarbek-zadauly-264b8662",
+    "evidence_count": 4,
     "sources": "cphof;github;verified",
     "verification_basis": "The rare exact-name Almaty profile begins applied mathematics at KazNU in the 2001 IOI year and lists a current ZINE frontend role; CPHOF independently links the Kazakhstan contestant to the official IOI record"
   },
@@ -2604,9 +2604,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:4957;https://github.com/DenQ;https://github.com/denis-ivanov;https://github.com/denisivan0v;https://github.com/jumph4x;https://github.com/pcheliniy;https://openalex.org/A5024573934;https://orcid.org/0000-0001-5292-0667;https://orcid.org/0000-0001-6553-8133;https://orcid.org/0000-0001-6757-5587;https://orcid.org/0000-0001-7382-7330;https://orcid.org/0000-0001-7599-9240;https://orcid.org/0000-0001-8119-6831;https://orcid.org/0000-0001-8206-2915;https://orcid.org/0000-0001-8804-2333;https://orcid.org/0000-0002-0335-3333;https://orcid.org/0000-0002-0857-192X;https://orcid.org/0000-0002-1784-2170;https://orcid.org/0000-0002-4743-5090;https://orcid.org/0000-0002-5332-5103;https://orcid.org/0000-0002-8444-4412;https://orcid.org/0000-0003-1354-3648;https://orcid.org/0000-0003-1358-3981;https://orcid.org/0000-0003-2961-261X;https://orcid.org/0000-0003-3260-1268;https://orcid.org/0000-0003-4441-3272;https://orcid.org/0000-0003-4826-6847;https://orcid.org/0009-0000-4440-4865;https://orcid.org/0009-0000-6690-8335;https://orcid.org/0009-0004-0480-9613;https://orcid.org/0009-0004-2226-3634;https://orcid.org/0009-0004-7159-0156;https://orcid.org/0009-0006-6297-6078;https://orcid.org/0009-0006-6701-3449;https://orcid.org/0009-0008-1932-7499;https://orcid.org/0009-0008-7331-9721;https://www.wikidata.org/wiki/Q116496749;https://www.wikidata.org/wiki/Q136616370;https://www.wikidata.org/wiki/Q24025801;https://www.wikidata.org/wiki/Q5257292;https://www.wikidata.org/wiki/Q55653013;https://www.wikidata.org/wiki/Q59315209;https://www.wikidata.org/wiki/Q62036345;https://www.wikidata.org/wiki/Q87393898",
-    "evidence_count": 44,
-    "sources": "cphof;github;openalex;orcid;wikidata",
+    "evidence_urls": "http://stats.ioinformatics.org/people/4957;https://cphof.org/profile/ioi:4957",
+    "evidence_count": 2,
+    "sources": "cphof",
     "verification_basis": "profile=ioi:4957; country=Kazakhstan; contest=IOI"
   },
   {
@@ -2724,9 +2724,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://app.qwoted.com/opportunities/event-12th-annual-summit-downstream-central-asia-and-caspian-2025;https://openalex.org/A5056926393;https://openalex.org/A5132268199;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
-    "evidence_count": 4,
-    "sources": "openalex;verified",
+    "evidence_urls": "https://app.qwoted.com/opportunities/event-12th-annual-summit-downstream-central-asia-and-caspian-2025;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The official IChO result is joined to his career by TUAT's 2003-04 Kazakhstan National University exchange roster and a 2010 Tokyo Tech chemical-engineering paper; a 2025 industry summit lists his current Sulzer Chemtech sales role"
   },
   {
@@ -2844,9 +2844,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:245;https://www.wikidata.org/wiki/Q4320113",
+    "evidence_urls": "http://stats.ioinformatics.org/people/245;https://cphof.org/profile/ioi:245",
     "evidence_count": 2,
-    "sources": "cphof;wikidata",
+    "sources": "cphof",
     "verification_basis": "profile=ioi:245; country=Kazakhstan; contest=IOI"
   },
   {
@@ -2904,9 +2904,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://openalex.org/A5097357477;https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
-    "evidence_count": 3,
-    "sources": "openalex;verified",
+    "evidence_urls": "https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The official IChO name and rare identity align with Heriot-Watt's biography beginning his petroleum-engineering degree in 2003 immediately after the 2002 contest and documenting a continuous Kazakhstan-to-UK academic career"
   },
   {
@@ -2964,8 +2964,8 @@
     "start_year": "2020",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:4046;https://linkedin.com/in/khairosh",
-    "evidence_count": 2,
+    "evidence_urls": "http://stats.ioinformatics.org/people/4046;https://cphof.org/profile/ioi:4046;https://linkedin.com/in/khairosh",
+    "evidence_count": 3,
     "sources": "cphof;verified",
     "verification_basis": "The rare exact-name profile repeats the KBTU 2002-2007 information-systems education recorded by CPHOF and documents a continuous engineering career to Siemens Energy; CPHOF links the identity to Kazakhstan's 2002 IOI team"
   },
@@ -2994,9 +2994,9 @@
     "start_year": "2016",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://openalex.org/A5035341026;https://openalex.org/A5076354693;https://orcid.org/0000-0001-5959-5254;https://www.imo-official.org/participant_r.aspx?id=6950;https://www.linkedin.com/in/kuat-yessenov-b1b188b3",
-    "evidence_count": 5,
-    "sources": "openalex;orcid;verified",
+    "evidence_urls": "https://www.imo-official.org/participant_r.aspx?id=6950;https://www.linkedin.com/in/kuat-yessenov-b1b188b3",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The rare exact-name three-time Kazakhstan IMO medalist has a personal MIT page and official MIT Putnam record that match the MIT education on his public Google profile; Destination review: The accepted profile lists Software Engineer at Google as current from June 2016."
   },
   {
@@ -3024,9 +3024,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://kz.linkedin.com/in/meiram-murzabulatov-8889b0138;https://openalex.org/A5056921340;https://orcid.org/0000-0002-8329-7481;https://research.nu.edu.kz/en/persons/meiram-murzabulatov/;https://www.wikidata.org/wiki/Q102796161",
-    "evidence_count": 5,
-    "sources": "openalex;orcid;verified;wikidata",
+    "evidence_urls": "https://kz.linkedin.com/in/meiram-murzabulatov-8889b0138;https://openalex.org/A5056921340;https://orcid.org/0000-0002-8329-7481;https://research.nu.edu.kz/en/persons/meiram-murzabulatov/",
+    "evidence_count": 4,
+    "sources": "openalex;openalex_orcid;orcid;verified",
     "verification_basis": "Public profile lists IMO bronze and official university profile lists current faculty role"
   },
   {
@@ -3132,22 +3132,22 @@
     "confidence": "probable",
     "identity_score": "1.0",
     "identity_source": "verified",
-    "profile_url": "https://farabi.university/storage/files/280775433965e7f8a0376b3254557968_%D0%BA%D0%B0%D0%B1%D1%83%D0%BB%D0%BE%D0%B2%20%D0%B0%D0%BD%D0%B3.pdf",
+    "profile_url": "https://linkedin.com/in/yerzhigit-tulebekov-6096b180",
     "linkedin_url": "https://linkedin.com/in/yerzhigit-tulebekov-6096b180",
-    "organization": "Premix Pro",
-    "role": "Process Engineer",
+    "organization": "MUSAB / CONTROLS",
+    "role": "Managing Director and Founder",
     "affiliation_type": "employment",
     "organization_category": "Industry",
-    "role_category": "Engineering",
+    "role_category": "Leadership",
     "destination_status": "latest_employment",
     "destination_note": "One reviewed latest employment or organizational role is used as the destination.",
-    "start_year": "",
+    "start_year": "2014",
     "end_year": "",
     "country_code": "",
     "evidence_urls": "https://farabi.university/storage/files/280775433965e7f8a0376b3254557968_%D0%BA%D0%B0%D0%B1%D1%83%D0%BB%D0%BE%D0%B2%20%D0%B0%D0%BD%D0%B3.pdf;https://linkedin.com/in/yerzhigit-tulebekov-6096b180;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
     "evidence_count": 3,
     "sources": "verified",
-    "verification_basis": "The Tulebekov transliteration exact Kazakhstan profile lists chemistry at Zhambyl Kazakh-Turkish High School through the 2002 IChO year and continues through chemical manufacturing and current KazNU-affiliated chemistry research; no source explicitly joins the Olympiad and career records."
+    "verification_basis": "The Tulebekov transliteration exact Kazakhstan profile lists chemistry at Zhambyl Kazakh-Turkish High School through the 2002 IChO year and continues through chemical manufacturing and current KazNU-affiliated chemistry research; no source explicitly joins the Olympiad and career records.; Destination review: The accepted public profile identifies Managing Director and Founder at MUSAB/CONTROLS as current since September 2014. This supersedes the undated Premix Pro process-engineer summary, whose cited university paper does not establish a current Premix Pro role."
   },
   {
     "person_id": "kaz-9b09f062bfeb",
@@ -3174,9 +3174,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/itomatik;https://cphof.org/profile/topcoder:Tomato;https://github.com/itomatik;https://linkedin.com/in/zdatbayev;https://openalex.org/A5020545419;https://openalex.org/A5115426679",
+    "evidence_urls": "http://stats.ioinformatics.org/people/2616;https://codeforces.com/profile/itomatik;https://cphof.org/profile/topcoder:Tomato;https://github.com/itomatik;https://linkedin.com/in/zdatbayev;https://www.topcoder.com/members/Tomato",
     "evidence_count": 6,
-    "sources": "codeforces;cphof;github;openalex;verified",
+    "sources": "codeforces;cphof;cphof_codeforces;github;verified",
     "verification_basis": "The exact-name public profile explicitly lists his Kazakhstan IOI silver medal and current Nace AI co-founder and CTO role; the official IOI registry independently confirms his 2002-2004 appearances"
   },
   {
@@ -3234,9 +3234,9 @@
     "start_year": "2022",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/13EYECORE;https://orcid.org/0000-0001-8228-872X;https://orcid.org/0000-0002-5328-0291;https://theorg.com/org/biovectra/org-chart/alexey-dudnik;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2003.pdf;https://www.wikidata.org/wiki/Q57010419",
-    "evidence_count": 6,
-    "sources": "github;orcid;verified;wikidata",
+    "evidence_urls": "https://orcid.org/0000-0002-5328-0291;https://theorg.com/org/biovectra/org-chart/alexey-dudnik;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2003.pdf",
+    "evidence_count": 3,
+    "sources": "orcid;verified",
     "verification_basis": "The 2003 and 2005 official IBO records align with the exact-name ORCID education and DTU timeline while two recently updated professional directories list the current BIOVECTRA principal scientist role"
   },
   {
@@ -3264,9 +3264,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "KZ",
-    "evidence_urls": "https://cphof.org/profile/ioi:4087;https://openalex.org/A5073070441;https://orcid.org/0000-0001-9693-7487",
-    "evidence_count": 3,
-    "sources": "cphof;openalex;orcid",
+    "evidence_urls": "http://stats.ioinformatics.org/people/4087;https://cphof.org/profile/ioi:4087;https://openalex.org/A5073070441;https://orcid.org/0000-0001-9693-7487",
+    "evidence_count": 4,
+    "sources": "cphof;openalex;openalex_orcid;orcid",
     "verification_basis": "profile=ioi:4087; country=Kazakhstan; contest=IOI; SDU University; Associate Professor; Information Systems"
   },
   {
@@ -3414,9 +3414,9 @@
     "start_year": "2019",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://linkedin.com/in/dmitriy-dolzhnikov-7a874037;https://openalex.org/A5038381260;https://orcid.org/0000-0002-2588-0759;https://sites.northwestern.edu/weiss-lab/people/alumni/;https://www.icho-official.org/results/country_info.php?country=Kazakhstan;https://www.wikidata.org/wiki/Q46639306",
-    "evidence_count": 6,
-    "sources": "openalex;orcid;verified;wikidata",
+    "evidence_urls": "https://linkedin.com/in/dmitriy-dolzhnikov-7a874037;https://openalex.org/A5038381260;https://orcid.org/0000-0002-2588-0759;https://sites.northwestern.edu/weiss-lab/people/alumni/;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "evidence_count": 5,
+    "sources": "openalex;orcid;verified",
     "verification_basis": "The rare exact-name profile begins a chemistry degree at Novosibirsk State University in the 2003 IChO year and continues through a chemistry doctorate and Northwestern postdoctoral work; Northwestern's alumni page identifies his Intel role, but no source explicitly joins the researcher to the IChO contestant"
   },
   {
@@ -3444,9 +3444,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://openalex.org/A5090872106;https://shoqanschool.kz/genuineadmin/news/view?id=109;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
-    "evidence_count": 3,
-    "sources": "openalex;verified",
+    "evidence_urls": "https://shoqanschool.kz/genuineadmin/news/view?id=109;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The rare exact name and middle initial connect the 2003 IChO medalist to Moscow State chemistry publications and a full patronymic in Kazakhstan PhD records while the school's current schedule names him AP chemistry teacher"
   },
   {
@@ -3564,8 +3564,8 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:4086;https://kz.linkedin.com/in/sultan-dalipov-620ba924",
-    "evidence_count": 2,
+    "evidence_urls": "http://stats.ioinformatics.org/people/4086;https://cphof.org/profile/ioi:4086;https://kz.linkedin.com/in/sultan-dalipov-620ba924",
+    "evidence_count": 3,
     "sources": "cphof;verified",
     "verification_basis": "CPHOF establishes the Kazakhstan IOI identity and the distinctive public profile describes the matching founder and serial entrepreneur"
   },
@@ -3594,8 +3594,8 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:150;https://linkedin.com/in/almaz-rakhmetov-a2451223;https://orcid.org/0009-0008-4139-5252;https://stats.ioinformatics.org/people/150",
-    "evidence_count": 4,
+    "evidence_urls": "http://stats.ioinformatics.org/people/150;https://cphof.org/profile/ioi:150;https://linkedin.com/in/almaz-rakhmetov-a2451223;https://orcid.org/0009-0008-4139-5252;https://stats.ioinformatics.org/people/150",
+    "evidence_count": 5,
     "sources": "cphof;orcid;verified",
     "verification_basis": "The exact-name Kazakhstan profile documents student-programming placements in 2005 and 2006 immediately after the 2004 IOI appearance and a continuous software path through SDU, ENU, Platonus, and AWS; no source explicitly identifies the professional as the IOI contestant"
   },
@@ -3624,9 +3624,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/akim;https://codeforces.com/profile/mika;https://github.com/engineeringVolosati;https://github.com/erel3;https://github.com/jeugheung;https://github.com/kimandrik;https://github.com/lkiikq;https://nazymaltbridge.substack.com/p/welcome-to-altbridge;https://orcid.org/0000-0001-5974-6753;https://orcid.org/0000-0002-0253-9451;https://orcid.org/0000-0002-0974-6787;https://orcid.org/0000-0002-3093-5881;https://orcid.org/0000-0002-3422-5043;https://orcid.org/0000-0002-4476-3910;https://orcid.org/0009-0007-9347-0296;https://orcid.org/0009-0008-3224-5463;https://orcid.org/0009-0009-2227-2932;https://orcid.org/0009-0009-2557-4848;https://www.linkedin.com/in/kimandrik;https://www.nfactorial.school/blog3/%D0%BA%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B5%D1%86-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9-%D0%BF%D1%80%D0%B8%D0%B4%D1%83%D0%BC%D0%B0%D0%BB-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D0%B2%D0%B8%D0%B4-%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F;https://www.wikidata.org/wiki/Q116196233",
-    "evidence_count": 21,
-    "sources": "codeforces;github;orcid;verified;wikidata",
+    "evidence_urls": "https://codeforces.com/profile/akim;https://nazymaltbridge.substack.com/p/welcome-to-altbridge;https://www.linkedin.com/in/kimandrik;https://www.nfactorial.school/blog3/%D0%BA%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B5%D1%86-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9-%D0%BF%D1%80%D0%B8%D0%B4%D1%83%D0%BC%D0%B0%D0%BB-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D0%B2%D0%B8%D0%B4-%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F",
+    "evidence_count": 4,
+    "sources": "codeforces;verified",
     "verification_basis": "nFactorial's biography explicitly joins the Taldykorgan student and his 2004-2006 IMO medals to MSU and the CKKS homomorphic-encryption researcher; Altbridge's founder biography identifies that same CKKS cryptographer as CTO and co-founder, while his profile corroborates the 2006-2011 MSU and 2014-2019 SNU timeline"
   },
   {
@@ -3744,9 +3744,9 @@
     "start_year": "2022",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/daulet-askarov;https://orcid.org/0000-0001-5975-0322;https://orcid.org/0000-0003-1469-5950;https://orcid.org/0009-0001-2588-7563;https://www.linkedin.com/in/daulet-askarov-98347b26;https://www.wikidata.org/wiki/Q59751301",
-    "evidence_count": 6,
-    "sources": "github;orcid;verified;wikidata",
+    "evidence_urls": "https://www.linkedin.com/in/daulet-askarov-98347b26",
+    "evidence_count": 1,
+    "sources": "verified",
     "verification_basis": "Public profile identifies the 2005 IPhO silver medalist and lists Meta and Stanford; Destination review: The accepted profile lists Senior Software Engineer at Meta as current from May 2022."
   },
   {
@@ -3774,9 +3774,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/nesco;https://ipho-unofficial.org/countries/KAZ/individual;https://orcid.org/0000-0002-2237-2812;https://www.researchgate.net/profile/Nessipbek-Mynbayev",
-    "evidence_count": 4,
-    "sources": "codeforces;orcid;verified",
+    "evidence_urls": "https://codeforces.com/profile/nesco;https://ipho-unofficial.org/countries/KAZ/individual;https://www.researchgate.net/profile/Nessipbek-Mynbayev",
+    "evidence_count": 3,
+    "sources": "codeforces;verified",
     "verification_basis": "The rare exact-name research profile identifies a nuclear-engineering graduate and current researcher at National Laboratory Astana, while publications independently place the same researcher in Nazarbayev University's nuclear-physics work. The physics field, Kazakhstan continuity, and age-compatible chronology strongly match the 2004 IPhO bronze medalist, but no reviewed source explicitly joins the career record to the Olympiad result."
   },
   {
@@ -3804,9 +3804,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://orcid.org/0009-0008-2523-0570;https://www.haileybury.kz/en/almaty/board-of-governors;https://www.imo-official.org/results/contestant/8190/",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://www.haileybury.kz/en/almaty/board-of-governors;https://www.imo-official.org/results/contestant/8190/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The official IMO record and rare exact name align with a Kazakhstan press biography that explicitly mentions international mathematics Olympiads; Haileybury Almaty's institutional biography documents his MIT education and current NKM Capital role"
   },
   {
@@ -3864,8 +3864,8 @@
     "start_year": "2018",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:2038;https://linkedin.com/in/salamat-nuraliyev-6a24b613",
-    "evidence_count": 2,
+    "evidence_urls": "http://stats.ioinformatics.org/people/2038;https://cphof.org/profile/ioi:2038;https://linkedin.com/in/salamat-nuraliyev-6a24b613",
+    "evidence_count": 3,
     "sources": "cphof;verified",
     "verification_basis": "The rare exact-name Kazakhstan profile begins computer engineering at SDU in the 2004 IOI year and lists a current KAZ Minerals development role; CPHOF independently links the contestant to the official IOI record"
   },
@@ -3894,8 +3894,8 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:2227;https://kz.linkedin.com/in/syrymbet-iskakov-42335a20",
-    "evidence_count": 2,
+    "evidence_urls": "http://stats.ioinformatics.org/people/2227;https://cphof.org/profile/ioi:2227;https://kz.linkedin.com/in/syrymbet-iskakov-42335a20",
+    "evidence_count": 3,
     "sources": "cphof;verified",
     "verification_basis": "CPHOF establishes the IOI identity and the distinctive public profile lists current BI Group employment with matching information-systems education; Destination review: The accepted profile lists the Russian title Director of Information Technology at BI Group as current from August 2025."
   },
@@ -3942,22 +3942,22 @@
     "confidence": "probable",
     "identity_score": "1.0",
     "identity_source": "verified",
-    "profile_url": "https://photon-science.desy.de/facilities/petra_iii/beamlines/p64_advanced_xafs/contact__staff/index_eng.html",
+    "profile_url": "https://bib-pubdb1.desy.de/record/622088/export/print?ln=en",
     "linkedin_url": "",
     "organization": "Deutsches Elektronen-Synchrotron DESY",
-    "role": "Scientist (alumnus)",
+    "role": "Scientist",
     "affiliation_type": "employment",
     "organization_category": "Industry",
     "role_category": "Research & Academia",
     "destination_status": "latest_employment",
     "destination_note": "One reviewed latest employment or organizational role is used as the destination.",
-    "start_year": "",
-    "end_year": "",
+    "start_year": "2015",
+    "end_year": "2024",
     "country_code": "",
-    "evidence_urls": "https://github.com/vadmu;https://orcid.org/0000-0003-2743-8398;https://photon-science.desy.de/facilities/petra_iii/beamlines/p64_advanced_xafs/contact__staff/index_eng.html;https://www.chem.msu.ru/rus/olimpiad/olimp2004/welcome.html;https://www.wikidata.org/wiki/Q59662365",
-    "evidence_count": 5,
-    "sources": "github;orcid;verified;wikidata",
-    "verification_basis": "MSU's official Mendeleev record identifies the exact-name 11th-grade chemistry medalist from Balkhash in 2004; the same uncommon name continues through an MSU chemistry doctorate and X-ray catalysis research to DESY's official scientist alumni roster, but no source explicitly joins the researcher to the Olympiad contestant"
+    "evidence_urls": "https://bib-pubdb1.desy.de/record/622088/export/print?ln=en;https://orcid.org/0000-0003-2743-8398;https://photon-science.desy.de/facilities/petra_iii/beamlines/p64_advanced_xafs/contact__staff/index_eng.html;https://www.chem.msu.ru/rus/olimpiad/olimp2004/welcome.html",
+    "evidence_count": 4,
+    "sources": "orcid;verified",
+    "verification_basis": "MSU's official Mendeleev record identifies the exact-name 11th-grade chemistry medalist from Balkhash in 2004; the same uncommon name continues through an MSU chemistry doctorate and X-ray catalysis research to DESY's official scientist alumni roster, but no source explicitly joins the researcher to the Olympiad contestant; Destination review: DESY's 2024 publication record identifies Vadim Murzin as an author affiliated with DESY, while the current P64 staff page lists him under Alumni. The accepted ORCID supplies the 2015 start, so the role is bounded to 2015-2024 and shown as historical latest employment rather than current staff."
   },
   {
     "person_id": "kaz-ec29db418566",
@@ -3984,9 +3984,9 @@
     "start_year": "2026",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://ar2024.telecom.kz/en/board-of-directors.html;https://orcid.org/0009-0006-8959-5339;https://sk.kz/press-center/news/79261/?lang=en",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://ar2024.telecom.kz/en/board-of-directors.html;https://sk.kz/press-center/news/79261/?lang=en",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "Kazakhtelecom's official annual report directly lists his July 2004 IPhO bronze medal and full education and executive timeline while Samruk-Kazyna records his July 2026 appointment as KTZ chairman"
   },
   {
@@ -4164,9 +4164,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/bahakz;https://cphof.org/profile/topcoder:bahakz;https://stats.ioinformatics.org/people/311;https://uk.linkedin.com/in/bahakz;https://www.gov.kz/memleket/entities/maidd/press/news/details/1189055?lang=ru",
-    "evidence_count": 5,
-    "sources": "cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/311;https://codeforces.com/profile/bahakz;https://cphof.org/profile/topcoder:bahakz;https://stats.ioinformatics.org/people/311;https://uk.linkedin.com/in/bahakz;https://www.gov.kz/memleket/entities/maidd/press/news/details/1189055?lang=ru;https://www.topcoder.com/members/bahakz",
+    "evidence_count": 7,
+    "sources": "cphof;cphof_codeforces;verified",
     "verification_basis": "His self-authored profile identifies him as Central Asia's first IOI gold medalist and documents his KBTU and London education; Kazakhstan's Ministry of Artificial Intelligence and Digital Development identifies him as a current senior Meta developer in 2026.; Destination review: Kazakhstan's digital ministry identifies Baizhikenov as a current senior Meta developer in its report on the March 2026 Central Asia Programming Championship."
   },
   {
@@ -4194,9 +4194,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://linkedin.com/in/diyar-mailepessov-5828b722;https://orcid.org/0000-0001-8924-2476;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2005",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://linkedin.com/in/diyar-mailepessov-5828b722;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2005",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The rare exact-name profile repeats the Nanyang Technological University life-sciences path and current National Environment Agency role already connected to the Kazakhstan biology olympian through official and Singapore government sources"
   },
   {
@@ -4344,9 +4344,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://kz.linkedin.com/in/nurbol-duisenbayev;https://orcid.org/0009-0007-9235-7654;https://www.imo-official.org/results/contestant/8547/",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://kz.linkedin.com/in/nurbol-duisenbayev;https://www.imo-official.org/results/contestant/8547/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "Among three exact-name profiles this is the one whose 2006-10 degree and 2010-11 University of Essex study follow the IMO timeline and whose algorithm-focused software career fits the mathematics background; no career source explicitly mentions the Olympiad"
   },
   {
@@ -4404,8 +4404,8 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:4447;https://patents.justia.com/patent/20220053043;https://stats.ioinformatics.org/people/4447",
-    "evidence_count": 3,
+    "evidence_urls": "http://stats.ioinformatics.org/people/4447;https://cphof.org/profile/ioi:4447;https://patents.justia.com/patent/20220053043;https://stats.ioinformatics.org/people/4447",
+    "evidence_count": 4,
     "sources": "cphof;verified",
     "verification_basis": "Google patents identify rare exact-name inventor Ruslan Kudubayev in Mountain View, while a 2024 YouTube Music launch post names him on its Tesla engineering team and Cambridge and GitHub programming evidence aligns with the IOI alumnus. Software Engineer is a probable normalization from the engineering-team and patent evidence rather than a quoted formal title.; Destination review: Google patents identify Ruslan Kudubayev as a Mountain View inventor and a 2024 YouTube Music launch post independently names him on its engineering team. Software Engineer is a probable normalization, not a quoted formal title."
   },
@@ -4464,9 +4464,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://community.topcoder.com/pdfs/tournaments/tchs07_webprogram.pdf;https://cphof.org/profile/topcoder:TokarR;https://gelu.ai/;https://github.com/ttim",
-    "evidence_count": 4,
-    "sources": "cphof;github;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/2304;https://community.topcoder.com/pdfs/tournaments/tchs07_webprogram.pdf;https://cphof.org/profile/topcoder:TokarR;https://gelu.ai/;https://www.topcoder.com/members/TokarR",
+    "evidence_count": 5,
+    "sources": "cphof;verified",
     "verification_basis": "The official TopCoder program explicitly identifies Kazakhstan competitor TokarR as Timur Abishev; his linked GitHub identity and Gelu AI's current founder profile document the same rare-name engineer's JetBrains, Twitter, and Baseten career before founding Gelu AI in New York.; Destination review: Gelu AI's current profile identifies Timur Abishev as founder and CEO in New York, after engineering roles at JetBrains, Twitter, and Baseten."
   },
   {
@@ -4494,9 +4494,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/AYKAVU;https://github.com/bychkov;https://github.com/timbermand;https://github.com/vba75;https://github.com/vbychkov;https://ipho-unofficial.org/countries/KAZ/individual;https://orcid.org/0000-0002-1379-5389;https://orcid.org/0000-0002-5470-1297;https://www.linkedin.com/in/vladimir-bychkov-98954252;https://www.wikidata.org/wiki/Q17617042;https://www.wikidata.org/wiki/Q18634139;https://www.wikidata.org/wiki/Q21091867;https://www.wikidata.org/wiki/Q25647148;https://www.wikidata.org/wiki/Q4101303;https://www.wikidata.org/wiki/Q4101304;https://www.wikidata.org/wiki/Q71317135",
-    "evidence_count": 16,
-    "sources": "github;orcid;verified;wikidata",
+    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://www.linkedin.com/in/vladimir-bychkov-98954252",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The public profile explicitly lists his 2005 and 2006 IPhO medals and current Micron employment while a recently updated professional directory supplies the role title"
   },
   {
@@ -4524,8 +4524,8 @@
     "start_year": "2019",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:2555;https://linkedin.com/in/yerlan-b-887a4336;https://stats.ioinformatics.org/people/2555",
-    "evidence_count": 3,
+    "evidence_urls": "http://stats.ioinformatics.org/people/2555;https://cphof.org/profile/ioi:2555;https://linkedin.com/in/yerlan-b-887a4336;https://stats.ioinformatics.org/people/2555",
+    "evidence_count": 4,
     "sources": "cphof;verified",
     "verification_basis": "The accepted profile explicitly lists the 2006 IOI silver medal and an ongoing software-development department head role at the Center for Pedagogical Measurements under Nazarbayev Intellectual Schools; the official IOI record independently confirms the exact-name Kazakhstan result."
   },
@@ -4554,9 +4554,9 @@
     "start_year": "2012",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://orcid.org/0009-0001-1396-0030;https://sa.linkedin.com/in/yermek-kaipov-50525632;https://www.slb.com/-/media/files/testing-services/industry-article/202008-wo-efficiently-increasing-dynamic-reservoir-evaluation.ashx",
-    "evidence_count": 4,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://sa.linkedin.com/in/yermek-kaipov-50525632;https://www.slb.com/-/media/files/testing-services/industry-article/202008-wo-efficiently-increasing-dynamic-reservoir-evaluation.ashx",
+    "evidence_count": 3,
+    "sources": "verified",
     "verification_basis": "The rare exact-name IPhO record has a plausible timeline with a self-asserted ORCID and current SLB profile while an SLB technical article names him reservoir and production testing domain champion but no source explicitly joins the olympiad identity"
   },
   {
@@ -4584,9 +4584,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://orcid.org/0000-0003-4016-3835;https://www.linkedin.com/in/yevgeniy-zagayevskiy",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://www.linkedin.com/in/yevgeniy-zagayevskiy",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The rare exact name and uninterrupted technical timeline join the 2005 IPhO medal to a 2005-09 KBTU degree documented in a professional society biography and then to Alberta graduate research patents Halliburton product work and current VoltaGrid employment"
   },
   {
@@ -4704,9 +4704,9 @@
     "start_year": "2026",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://egemen.kz/article/4115-aldynhghy-aghalar-senimin-aqtaymyz;https://github.com/daulet;https://www.linkedin.com/in/daulet-zhanguzin",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://egemen.kz/article/4115-aldynhghy-aghalar-senimin-aqtaymyz;https://www.linkedin.com/in/daulet-zhanguzin",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "A Kazakhstan newspaper names him among the country's IMO bronze medalists while the rare exact name and continuous NTU-to-Microsoft-to-Google-to-Groq timeline lead to his current NVIDIA role"
   },
   {
@@ -4854,9 +4854,9 @@
     "start_year": "2012",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/LP110108;https://github.com/domikedos;https://github.com/ikar49;https://ipho-unofficial.org/countries/KAZ/individual;https://kz.linkedin.com/in/pavel-levchenko-a315041a7;https://orcid.org/0000-0002-4467-8038;https://orcid.org/0009-0005-0053-0479;https://orcid.org/0009-0005-7757-3530",
-    "evidence_count": 8,
-    "sources": "github;orcid;verified",
+    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://kz.linkedin.com/in/pavel-levchenko-a315041a7",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The 2006 contestant reappears by exact name as a Kazakhstan IPhO observer in 2013 and APhO moderator in 2019 and authored a 2012 oil-production physics problem; an Atyrau profile at Tengizchevroil fits that path but does not explicitly mention the Olympiad; Destination review: The accepted profile lists Reservoir Simulation Engineer at Tengizchevroil as current from September 2012."
   },
   {
@@ -4944,8 +4944,8 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:2621;https://stats.ioinformatics.org/people/2621;https://www.gov.kz/memleket/entities/maidd/press/news/details/1189055?lang=ru",
-    "evidence_count": 3,
+    "evidence_urls": "http://stats.ioinformatics.org/people/2621;https://cphof.org/profile/ioi:2621;https://stats.ioinformatics.org/people/2621;https://www.gov.kz/memleket/entities/maidd/press/news/details/1189055?lang=ru",
+    "evidence_count": 4,
     "sources": "cphof;verified",
     "verification_basis": "An exact-name 2012 programming-school profile explicitly identifies the NTU student as Kazakhstan's IOI gold medalist; the same rare name and programming domain continue through Khan Group leadership and a 2026 government profile naming him CEO of AGI Lab and Khan Group but no career source explicitly mentions IOI.; Destination review: Kazakhstan's digital ministry identifies Sadykov as CEO of both AGI Lab and Khan Group in 2026; AGI Lab is used as the single displayed destination while Khan Group remains in affiliation history."
   },
@@ -4974,9 +4974,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/AdilzhanIsmailov;https://github.com/adilzhan-ismailov-depop;https://github.com/aismlv;https://theorg.com/org/depop/teams/engineering-team;https://uk.linkedin.com/in/adilzhanismailov;https://www.imo-official.org/results/contestant/15618/",
-    "evidence_count": 6,
-    "sources": "github;verified",
+    "evidence_urls": "https://theorg.com/org/depop/teams/engineering-team;https://uk.linkedin.com/in/adilzhanismailov;https://www.imo-official.org/results/contestant/15618/",
+    "evidence_count": 3,
+    "sources": "verified",
     "verification_basis": "The rare exact name belongs to a Kazakhstan member of Barcelona GSE's 2015 class whose economics doctorate and public Depop machine-learning work form a coherent timeline from the 2007 IMO; however no career source explicitly mentions the Olympiad"
   },
   {
@@ -5094,9 +5094,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://linkedin.com/in/arnat-balabiyev;https://orcid.org/0000-0002-8904-598X;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2008.pdf;https://www.wikidata.org/wiki/Q64897135",
-    "evidence_count": 4,
-    "sources": "orcid;verified;wikidata",
+    "evidence_urls": "https://linkedin.com/in/arnat-balabiyev;https://orcid.org/0000-0002-8904-598X;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2008.pdf",
+    "evidence_count": 3,
+    "sources": "orcid;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2007 and 2008 IBO awards and current Arizona State senior staff scientist role; the official IBO reports independently confirm the Kazakhstan results"
   },
   {
@@ -5304,9 +5304,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:2430;https://github.com/vpas;https://theorg.com/org/augment-code/offices/hq;https://www.linkedin.com/in/viktor-passichenko",
+    "evidence_urls": "http://stats.ioinformatics.org/people/2430;https://cphof.org/profile/ioi:2430;https://theorg.com/org/augment-code/offices/hq;https://www.linkedin.com/in/viktor-passichenko",
     "evidence_count": 4,
-    "sources": "cphof;github;verified",
+    "sources": "cphof;verified",
     "verification_basis": "CPHOF and the profile's IOI honor establish identity while the current company directory and public profile agree on the Augment Code AI role"
   },
   {
@@ -5364,9 +5364,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/ordabayevy;https://orcid.org/0000-0002-1493-9364;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2007;https://www.linkedin.com/in/ordabayevy",
-    "evidence_count": 4,
-    "sources": "github;orcid;verified",
+    "evidence_urls": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2007;https://www.linkedin.com/in/ordabayevy",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public profile and personal CV explicitly list the 2007 IChO silver medal and a current 2026 publication independently confirms employment at Generate:Biomedicines"
   },
   {
@@ -5514,9 +5514,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/rmn;https://cphof.org/profile/topcoder:army",
-    "evidence_count": 2,
-    "sources": "cphof",
+    "evidence_urls": "http://stats.ioinformatics.org/people/2936;https://codeforces.com/profile/rmn;https://cphof.org/profile/topcoder:army;https://www.topcoder.com/members/army",
+    "evidence_count": 4,
+    "sources": "cphof;cphof_codeforces",
     "verification_basis": "profile=topcoder:army; country=Kazakhstan; contest=IOI; codeforces=rmn; universities=Kazakh-British Technical University; organization=KBTU"
   },
   {
@@ -5654,20 +5654,20 @@
     "identity_source": "codeforces",
     "profile_url": "https://codeforces.com/profile/gh_ost",
     "linkedin_url": "",
-    "organization": "Khan Group",
+    "organization": "",
     "role": "",
-    "affiliation_type": "company_or_organization",
-    "organization_category": "Industry",
+    "affiliation_type": "",
+    "organization_category": "Unknown",
     "role_category": "Other",
-    "destination_status": "latest_employment",
-    "destination_note": "One reviewed latest employment or organizational role is used as the destination.",
+    "destination_status": "history_only",
+    "destination_note": "A profile organization without a job or student role is retained only in history.",
     "start_year": "",
     "end_year": "",
-    "country_code": "KZ",
-    "evidence_urls": "https://codeforces.com/profile/gh_ost;https://github.com/sanzharkz;https://github.com/sanzharo",
-    "evidence_count": 3,
-    "sources": "codeforces;github",
-    "verification_basis": "handle=gh_ost; country=Kazakhstan; city=Aqtöbe; organization=Khan Group; login=sanzharo; company=@khangroupkz; location=Almaty; website=http://sanzhar.kz/"
+    "country_code": "",
+    "evidence_urls": "https://codeforces.com/profile/gh_ost",
+    "evidence_count": 1,
+    "sources": "codeforces",
+    "verification_basis": "handle=gh_ost; country=Kazakhstan; city=Aqtöbe; organization=Khan Group"
   },
   {
     "person_id": "kaz-24cc764a8eaf",
@@ -5754,9 +5754,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://ca.linkedin.com/in/sultan-aitekenov;https://orcid.org/0000-0002-7294-775X;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://ca.linkedin.com/in/sultan-aitekenov;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The public profile explicitly lists his 2008 IChO silver medal and states in a 2026 post that he currently works in provincial government in Canada"
   },
   {
@@ -5814,9 +5814,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Whichislovely;https://github.com/VyacheslavLi;https://github.com/vyacheslav-li;https://ipho-unofficial.org/countries/KAZ/individual;https://nl.linkedin.com/in/vyacheslav-li;https://orcid.org/0009-0003-9763-9360",
-    "evidence_count": 6,
-    "sources": "codeforces;github;orcid;verified",
+    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://nl.linkedin.com/in/vyacheslav-li",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The public profile explicitly lists his 2009 IPhO silver medal and current Quantitative Analyst role at Statkraft while ISTA independently confirms the transition"
   },
   {
@@ -5844,9 +5844,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://orcid.org/0000-0002-6366-3405;https://uk.linkedin.com/in/yegor-klochkov-1a06a093;https://www.imo-official.org/results/contestant/17820/;https://www.wikidata.org/wiki/Q103160537",
-    "evidence_count": 4,
-    "sources": "orcid;verified;wikidata",
+    "evidence_urls": "https://uk.linkedin.com/in/yegor-klochkov-1a06a093;https://www.imo-official.org/results/contestant/17820/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The rare exact-name BMO roster supplies a 1991 birth date that fits both IMO appearances and the Humboldt doctorate and publication timeline leading to current Voleon employment but no career source explicitly mentions the Olympiad; Destination review: The accepted profile lists Senior Member of Research Staff at The Voleon Group as current from May 2025."
   },
   {
@@ -5904,8 +5904,8 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:4645;https://kz.linkedin.com/in/yernaz-satybaldiyev",
-    "evidence_count": 2,
+    "evidence_urls": "http://stats.ioinformatics.org/people/4645;https://cphof.org/profile/ioi:4645;https://kz.linkedin.com/in/yernaz-satybaldiyev",
+    "evidence_count": 3,
     "sources": "cphof;verified",
     "verification_basis": "The public profile explicitly lists IOI 2008 and current NCOC experience and is corroborated by the CPHOF identity"
   },
@@ -6024,8 +6024,8 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/AliD;https://cphof.org/profile/ioi:134;https://linkedin.com/in/ali-dautalinov",
-    "evidence_count": 3,
+    "evidence_urls": "http://stats.ioinformatics.org/people/134;https://codeforces.com/profile/AliD;https://cphof.org/profile/ioi:134;https://linkedin.com/in/ali-dautalinov",
+    "evidence_count": 4,
     "sources": "codeforces;cphof;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2010 and 2011 IOI bronze medals and current lawyer role at Synergy Partners; the official IOI registry independently confirms the Kazakhstan results"
   },
@@ -6054,9 +6054,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/topcoder:amir.tu;https://github.com/amirtu",
-    "evidence_count": 2,
-    "sources": "cphof;github",
+    "evidence_urls": "http://stats.ioinformatics.org/people/161;https://cphof.org/profile/topcoder:amir.tu;https://www.topcoder.com/members/amir.tu",
+    "evidence_count": 3,
+    "sources": "cphof",
     "verification_basis": "profile=topcoder:amir.tu; country=Kazakhstan; contest=IOI"
   },
   {
@@ -6144,8 +6144,8 @@
     "start_year": "2020",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cphof.org/profile/ioi:2935;https://kz.linkedin.com/in/darkhan-akzholov-b0399151",
-    "evidence_count": 2,
+    "evidence_urls": "http://stats.ioinformatics.org/people/2935;https://cphof.org/profile/ioi:2935;https://kz.linkedin.com/in/darkhan-akzholov-b0399151",
+    "evidence_count": 3,
     "sources": "cphof;verified",
     "verification_basis": "CPHOF establishes the Kazakhstan IOI identity and the rare exact-name public profile lists current Google employment in Zurich; Destination review: The accepted profile lists Software Engineer at Google as current from May 2020."
   },
@@ -6174,9 +6174,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://orcid.org/0000-0001-6703-7965;https://sandbox.tetmedical.com/our-team/;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2009;https://www.linkedin.com/in/furkatmukhtarov;https://www.wikidata.org/wiki/Q88653669",
-    "evidence_count": 5,
-    "sources": "orcid;verified;wikidata",
+    "evidence_urls": "https://sandbox.tetmedical.com/our-team/;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2009;https://www.linkedin.com/in/furkatmukhtarov",
+    "evidence_count": 3,
+    "sources": "verified",
     "verification_basis": "His public profile explicitly lists the 2009 IChO bronze medal as part of Kazakhstan's national team and TETmedical's current team page identifies him as a research scientist; Destination review: The accepted profile shows a June 2025 promotion to Senior Research Scientist at TETmedical."
   },
   {
@@ -6264,9 +6264,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Madiyar;https://cphof.org/profile/topcoder:Madiyar1;https://linkedin.com/in/aitbayev",
-    "evidence_count": 3,
-    "sources": "codeforces;cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/1390;https://codeforces.com/profile/Madiyar;https://cphof.org/profile/topcoder:Madiyar1;https://linkedin.com/in/aitbayev;https://www.topcoder.com/members/Madiyar1",
+    "evidence_count": 5,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly lists his Kazakhstan IOI record and current Snap software-engineering role; the official IOI registry independently confirms the 2009 and 2010 appearances"
   },
   {
@@ -6324,9 +6324,9 @@
     "start_year": "2022",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/Roman116f;https://github.com/rolang;https://linkedin.com/in/roman-langolf;https://press.ucoz.kz/news/2009-07-11",
-    "evidence_count": 4,
-    "sources": "github;verified",
+    "evidence_urls": "https://linkedin.com/in/roman-langolf;https://press.ucoz.kz/news/2009-07-11",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The rare exact-name profile and independently linked rolang GitHub identity both identify AnyMind Group while the school report explicitly connects Roman Langolf to Kazakhstan's 2009 international biology team"
   },
   {
@@ -6386,7 +6386,7 @@
     "country_code": "",
     "evidence_urls": "https://orcid.org/0000-0002-5922-0011;https://uk.linkedin.com/in/tolebi-sailauov-phd;https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=year&order=desc&gender=hide&nameform=western",
     "evidence_count": 3,
-    "sources": "orcid;verified",
+    "sources": "verified",
     "verification_basis": "The 2009 Balkan olympiad roster supplies the rare exact name and birth date while his self-asserted ORCID and publications consistently document NTU engineering degrees on the expected timeline"
   },
   {
@@ -6444,9 +6444,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://find-and-update.company-information.service.gov.uk/officers/my8HsHrIuqw_No-TeaKB_nIPPZk/appointments;https://github.com/django-kz;https://ipho-unofficial.org/countries/KAZ/individual;https://kz.linkedin.com/in/zhanibek-kaimuldenov-5567b7124;https://orcid.org/0000-0002-6599-2675",
-    "evidence_count": 5,
-    "sources": "github;orcid;verified",
+    "evidence_urls": "https://find-and-update.company-information.service.gov.uk/officers/my8HsHrIuqw_No-TeaKB_nIPPZk/appointments;https://github.com/django-kz;https://ipho-unofficial.org/countries/KAZ/individual;https://kz.linkedin.com/in/zhanibek-kaimuldenov-5567b7124",
+    "evidence_count": 4,
+    "sources": "github;verified",
     "verification_basis": "The rare exact name plus Kazakh nationality and October 1990 birth date in the official UK registry match the 2009 IPhO contestant and MIPT education timeline"
   },
   {
@@ -6504,9 +6504,9 @@
     "start_year": "2022",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/ACube;https://cphof.org/profile/topcoder%3AZoRGaN;https://cphof.org/profile/topcoder:ZoRGaN;https://www.linkedin.com/in/ali-amir-aldan-a2b81b46",
-    "evidence_count": 4,
-    "sources": "codeforces;cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/147;https://codeforces.com/profile/ACube;https://cphof.org/profile/topcoder%3AZoRGaN;https://cphof.org/profile/topcoder:ZoRGaN;https://www.linkedin.com/in/ali-amir-aldan-a2b81b46;https://www.topcoder.com/members/ZoRGaN",
+    "evidence_count": 6,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "Competition profile joins IOI medals to MIT and public professional profile lists Fourier; Destination review: The accepted profile lists Co-Founder at Fourier as current from May 2022."
   },
   {
@@ -6534,9 +6534,9 @@
     "start_year": "2013",
     "end_year": "2013",
     "country_code": "",
-    "evidence_urls": "https://github.com/Duysenbaev1;https://github.com/aza4k;https://prg.kz/Document/?doc_id=31388745;https://www.imo-official.org/results/contestant/19385/",
-    "evidence_count": 4,
-    "sources": "github;verified",
+    "evidence_urls": "https://prg.kz/Document/?doc_id=31388745;https://www.imo-official.org/results/contestant/19385/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "Samruk-Kazyna's official 2010 scholarship release gives his full patronymic and international mathematics awards while a 2013 Ministry of Education order names that same full person as a mathematics teacher at the Republican Physics and Mathematics School"
   },
   {
@@ -6564,9 +6564,9 @@
     "start_year": "2014",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/azizkhan;https://cphof.org/profile/topcoder:azizkhan;https://linkedin.com/in/azizkhan-almakhan-1652b952",
-    "evidence_count": 3,
-    "sources": "codeforces;cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/309;https://codeforces.com/profile/azizkhan;https://cphof.org/profile/topcoder:azizkhan;https://linkedin.com/in/azizkhan-almakhan-1652b952;https://www.codechef.com/users/azizkhan;https://www.topcoder.com/members/azizkhan",
+    "evidence_count": 6,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The rare exact-name profile repeats the KBTU education and azizkhan competitive-programming identity linked by CPHOF and lists a current Google software-engineering role"
   },
   {
@@ -6594,9 +6594,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/DenisOvchinnikov93;https://github.com/Jettatura;https://github.com/ovchinnikov7;https://github.com/zamerzan;https://orcid.org/0000-0001-9313-2448;https://www.imo-official.org/results/contestant/19458/;https://www.linkedin.com/in/denis-ovchinnikov-math;https://www.wikidata.org/wiki/Q90699472",
-    "evidence_count": 8,
-    "sources": "github;orcid;verified;wikidata",
+    "evidence_urls": "https://www.imo-official.org/results/contestant/19458/;https://www.linkedin.com/in/denis-ovchinnikov-math",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public professional profile directly lists the 2010 IMO gold medal and his current NVIDIA deep-learning algorithms role under the same exact name"
   },
   {
@@ -6894,9 +6894,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://linkedin.com/in/zhaslan-baraissov-5460b1151;https://orcid.org/0000-0002-2018-982X;https://scoreboard.bc-pf.org/en/results/physics/international-physics-olympiad/2011;https://www.wikidata.org/wiki/Q89571852",
-    "evidence_count": 4,
-    "sources": "orcid;verified;wikidata",
+    "evidence_urls": "https://linkedin.com/in/zhaslan-baraissov-5460b1151;https://orcid.org/0000-0002-2018-982X;https://scoreboard.bc-pf.org/en/results/physics/international-physics-olympiad/2011",
+    "evidence_count": 3,
+    "sources": "orcid;verified",
     "verification_basis": "The rare exact-name public profile corroborates the Cornell doctoral affiliation already tied to the 2010 and 2011 Kazakhstan IPhO medalist through official results and institutional research records"
   },
   {
@@ -7035,19 +7035,19 @@
     "profile_url": "https://www.ku.ac.ae/college-people/ahsan-habib-khandoker",
     "linkedin_url": "https://linkedin.com/in/baizaq",
     "organization": "Khalifa University",
-    "role": "Doctoral Researcher",
-    "affiliation_type": "employment",
-    "organization_category": "Academia",
-    "role_category": "Research & Academia",
-    "destination_status": "latest_employment",
-    "destination_note": "One reviewed latest employment or organizational role is used as the destination.",
+    "role": "PhD Student in Biomedical Engineering",
+    "affiliation_type": "education",
+    "organization_category": "Education",
+    "role_category": "Student",
+    "destination_status": "current_education",
+    "destination_note": "The latest reviewed destination is an active student affiliation.",
     "start_year": "2026",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/EigenLayerovich;https://linkedin.com/in/baizaq;https://orcid.org/0009-0007-8895-1669;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2011;https://www.ku.ac.ae/college-people/ahsan-habib-khandoker",
-    "evidence_count": 5,
-    "sources": "github;orcid;verified",
-    "verification_basis": "The rare exact-name profile begins a Nazarbayev University medical-science path in 2012 immediately after the 2011 IBO appearance and continues through NU biology research to a current Khalifa precision-medicine doctorate; official NU and Khalifa pages corroborate the research path, but no source explicitly joins it to the IBO contestant"
+    "evidence_urls": "https://linkedin.com/in/baizaq;https://orcid.org/0009-0007-8895-1669;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2011;https://www.ku.ac.ae/college-people/ahsan-habib-khandoker",
+    "evidence_count": 4,
+    "sources": "orcid;verified",
+    "verification_basis": "The rare exact-name profile begins a Nazarbayev University medical-science path in 2012 immediately after the 2011 IBO appearance and continues through NU biology research to an active Khalifa biomedical-engineering PhD. The accepted profile gives the 2026 PhD enrollment, and Khalifa University's lab roster lists Baizak under Students rather than Staff; no source explicitly joins him to the IBO contestant, so the identity remains probable."
   },
   {
     "person_id": "kaz-f5050685c728",
@@ -7104,9 +7104,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://orcid.org/0000-0002-8420-6166;https://www.linkedin.com/in/kaisarbek",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://www.linkedin.com/in/kaisarbek",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The public profile explicitly lists his 2011 and 2012 IPhO medals and current Senior Photonics Engineer role at Ayar Labs"
   },
   {
@@ -7134,9 +7134,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Kh.Madi;https://cphof.org/profile/topcoder:Kh.Madi;https://linkedin.com/in/khmadi",
-    "evidence_count": 3,
-    "sources": "codeforces;cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/1389;https://codeforces.com/profile/Kh.Madi;https://cphof.org/profile/topcoder:Kh.Madi;https://linkedin.com/in/khmadi;https://www.topcoder.com/members/Kh.Madi",
+    "evidence_count": 5,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2011 and 2012 IOI record and current Head of Engineering role at Pika; the official IOI registry independently confirms the Kazakhstan appearances"
   },
   {
@@ -7284,9 +7284,9 @@
     "start_year": "2022",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://orcid.org/0000-0002-5668-577X;https://www.icho-official.org/results/country_info.php?country=Kazakhstan;https://www.linkedin.com/in/vladislav-kamysbayev-83bb81181;https://www.wikidata.org/wiki/Q96950210",
-    "evidence_count": 4,
-    "sources": "orcid;verified;wikidata",
+    "evidence_urls": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan;https://www.linkedin.com/in/vladislav-kamysbayev-83bb81181",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The rare exact-name two-time Kazakhstan IChO medalist aligns with a University of Chicago chemistry doctorate and publication record while his current professional profile places him at Intel"
   },
   {
@@ -7310,13 +7310,13 @@
     "organization_category": "Unknown",
     "role_category": "Other",
     "destination_status": "history_only",
-    "destination_note": "An undated academic organization without a student or staff role is retained only in history.",
+    "destination_note": "A profile organization without a job or student role is retained only in history.",
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/SlavaSSU;https://codeforces.com/profile/imslavko;https://cphof.org/profile/topcoder:imslavko;https://github.com/LordRonin;https://github.com/VolosGreeck;https://github.com/VyacheslavKimTR;https://github.com/vyacheslav-kim-vertex;https://orcid.org/0000-0001-5996-2296;https://www.wikidata.org/wiki/Q12538435",
-    "evidence_count": 9,
-    "sources": "codeforces;cphof;github;orcid;wikidata",
+    "evidence_urls": "http://stats.ioinformatics.org/people/2474;https://codeforces.com/profile/imslavko;https://cphof.org/profile/topcoder:imslavko;https://www.topcoder.com/members/imslavko",
+    "evidence_count": 4,
+    "sources": "cphof;cphof_codeforces",
     "verification_basis": "profile=topcoder:imslavko; country=Kazakhstan; contest=IOI; codeforces=imslavko; organization=MIT"
   },
   {
@@ -7404,9 +7404,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Aman;https://cphof.org/profile/topcoder:AmanS;https://linkedin.com/in/aman-sariyev",
-    "evidence_count": 3,
-    "sources": "codeforces;cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/2716;https://codeforces.com/profile/Aman;https://cphof.org/profile/topcoder:AmanS;https://linkedin.com/in/aman-sariyev;https://www.topcoder.com/members/AmanS",
+    "evidence_count": 5,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2012 IOI silver medal and Kazakhstan national informatics record and documents his Nazarbayev University education; the official IOI registry independently confirms his 2012 and 2013 appearances"
   },
   {
@@ -7524,9 +7524,9 @@
     "start_year": "2023",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/DaurenMuratov;https://codeforces.com/profile/noname5;https://cphof.org/profile/ioi:2821;https://linkedin.com/in/dauren-muratov-1a114676;https://orcid.org/0000-0003-4970-9101;https://stats.ioinformatics.org/people/2821",
-    "evidence_count": 6,
-    "sources": "codeforces;cphof;orcid;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/2821;https://cphof.org/profile/ioi:2821;https://linkedin.com/in/dauren-muratov-1a114676;https://orcid.org/0000-0003-4970-9101;https://stats.ioinformatics.org/people/2821",
+    "evidence_count": 5,
+    "sources": "cphof;orcid;verified",
     "verification_basis": "The rare exact-name Astana profile begins Nazarbayev University in 2013 immediately after the 2012 IOI appearance and documents a coherent software career through Meta, Booking.com, and DashDevs; no source explicitly identifies the professional as the IOI contestant"
   },
   {
@@ -7794,9 +7794,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/azhetessovlunarenergy;https://ipho-unofficial.org/countries/KAZ/individual;https://www.linkedin.com/in/aidarzhetessov",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://www.linkedin.com/in/aidarzhetessov",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2013 IPhO silver medal and current Lunar Energy controls-engineering role; the official country result independently confirms the Kazakhstan award"
   },
   {
@@ -7824,9 +7824,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/chizhik;https://uk.linkedin.com/in/alishertortay;https://www.imo-official.org/results/contestant/23507/",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://uk.linkedin.com/in/alishertortay;https://www.imo-official.org/results/contestant/23507/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public profile explicitly lists both Kazakhstan IMO bronze medals and his current Citadel Securities employment while a current team directory identifies him as a quantitative researcher"
   },
   {
@@ -7854,9 +7854,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/amirbralin;https://linkedin.com/in/amirbralin;https://orcid.org/0009-0008-0675-2824;https://scoreboard.bc-pf.org/en/results/physics/international-physics-olympiad/2013",
-    "evidence_count": 4,
-    "sources": "github;orcid;verified",
+    "evidence_urls": "https://linkedin.com/in/amirbralin;https://orcid.org/0009-0008-0675-2824;https://scoreboard.bc-pf.org/en/results/physics/international-physics-olympiad/2013",
+    "evidence_count": 3,
+    "sources": "orcid;verified",
     "verification_basis": "The rare exact-name public profile corroborates the current Texas Tech postdoctoral appointment already linked to the Kazakhstan IPhO medalist through official and university sources"
   },
   {
@@ -7944,9 +7944,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://academy.edufo.ru/%D0%B7%D0%B0%D0%B3%D1%80%D0%B8%D0%B1%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B1-%D0%B0/;https://github.com/sumrexromanus;https://linkedin.com/in/bogdanzagribelnyy;https://orcid.org/0000-0003-3799-2720",
-    "evidence_count": 4,
-    "sources": "github;orcid;verified",
+    "evidence_urls": "https://academy.edufo.ru/%D0%B7%D0%B0%D0%B3%D1%80%D0%B8%D0%B1%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B1-%D0%B0/;https://linkedin.com/in/bogdanzagribelnyy;https://orcid.org/0000-0003-3799-2720",
+    "evidence_count": 3,
+    "sources": "orcid;verified",
     "verification_basis": "The rare exact-name public profile corroborates the Insilico Medicine medicinal-chemistry role already connected to Kazakhstan's 2013 IChO contestant through a published olympiad biography"
   },
   {
@@ -8034,9 +8034,9 @@
     "start_year": "2019",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Meirambek;https://cphof.org/profile/topcoder:meirambek;https://linkedin.com/in/meirambek77",
-    "evidence_count": 3,
-    "sources": "codeforces;cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/3114;https://codeforces.com/profile/Meirambek;https://cphof.org/profile/topcoder:meirambek;https://linkedin.com/in/meirambek77;https://www.topcoder.com/members/meirambek",
+    "evidence_count": 5,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly lists his Kazakhstan IOI record and current Google software-engineering role; the official IOI registry independently confirms the 2013 and 2015 appearances"
   },
   {
@@ -8094,9 +8094,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/NurlashKO;https://cphof.org/profile/topcoder:NurlashKO_TC",
-    "evidence_count": 2,
-    "sources": "cphof",
+    "evidence_urls": "http://stats.ioinformatics.org/people/3116;https://codeforces.com/profile/NurlashKO;https://cphof.org/profile/topcoder:NurlashKO_TC;https://www.topcoder.com/members/NurlashKO_TC",
+    "evidence_count": 4,
+    "sources": "cphof;cphof_codeforces",
     "verification_basis": "profile=topcoder:NurlashKO_TC; country=Kazakhstan; contest=IOI; codeforces=NurlashKO; universities=Kazakh-British Technical University; organization=KBTU"
   },
   {
@@ -8124,9 +8124,9 @@
     "start_year": "2023",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://graduate.dartmouth.edu/eees/people/alumni;https://orcid.org/0000-0002-8999-7710;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2014",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://graduate.dartmouth.edu/eees/people/alumni;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2014",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "Nazarbayev University's official faculty archive connects his undergraduate genetics thesis to a Dartmouth PhD and Dartmouth's alumni directory identifies him as a 2023 graduate and NCBI evolutionary-genomics postdoctoral fellow; his ORCID and NCBI publications preserve the same research identity"
   },
   {
@@ -8154,9 +8154,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/MonSteRRR;https://github.com/imanmal1k;https://github.com/yerzhan-ryte;https://github.com/yerzhanimanmalik;https://kz.linkedin.com/in/yerzhan-imanmalik;https://nfactorialai.com/;https://orcid.org/0000-0002-3215-3154",
-    "evidence_count": 7,
-    "sources": "codeforces;github;orcid;verified",
+    "evidence_urls": "https://codeforces.com/profile/MonSteRRR;https://kz.linkedin.com/in/yerzhan-imanmalik;https://nfactorialai.com/",
+    "evidence_count": 3,
+    "sources": "codeforces;verified",
     "verification_basis": "His self-authored profile explicitly lists the 2014 IMO bronze medal and EPAM Systems as his current employer while its Skoltech machine-learning timeline matches the official 2013 and 2014 Kazakhstan results; nFactorial's current faculty directory supplies the Senior Data Scientist title"
   },
   {
@@ -8184,9 +8184,9 @@
     "start_year": "2023",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Zhanadil;https://cphof.org/profile/topcoder:Zhanadil;https://github.com/Zhanadil;https://linkedin.com/in/zhanadil",
-    "evidence_count": 4,
-    "sources": "codeforces;cphof;github;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/3115;https://codeforces.com/profile/Zhanadil;https://cphof.org/profile/topcoder:Zhanadil;https://github.com/Zhanadil;https://linkedin.com/in/zhanadil;https://www.topcoder.com/members/Zhanadil;zhanadil",
+    "evidence_count": 7,
+    "sources": "codeforces;cphof;cphof_codeforces;github;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2013 IOI appearance and current Google software-engineering role; the official IOI registry independently confirms the Kazakhstan participation"
   },
   {
@@ -8202,22 +8202,22 @@
     "confidence": "confirmed",
     "identity_score": "1.0",
     "identity_source": "verified",
-    "profile_url": "https://linkedin.com/in/kabylda",
+    "profile_url": "https://www.uni.lu/fstm-en/people/adil-kabylda/",
     "linkedin_url": "https://linkedin.com/in/kabylda",
     "organization": "University of Luxembourg",
-    "role": "PhD Researcher, Theoretical Chemical Physics Group",
+    "role": "Postdoctoral Researcher",
     "affiliation_type": "employment",
     "organization_category": "Academia",
     "role_category": "Research & Academia",
     "destination_status": "latest_employment",
     "destination_note": "One reviewed latest employment or organizational role is used as the destination.",
-    "start_year": "2021",
+    "start_year": "2026",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/kabylda;https://linkedin.com/in/kabylda;https://orcid.org/0000-0002-8620-6135",
-    "evidence_count": 3,
-    "sources": "github;orcid;verified",
-    "verification_basis": "His claimed ORCID and exact-name public profile explicitly list the 2014 and 2015 IChO medals; the profile records his University of Luxembourg theoretical chemical physics doctorate and a 2026 post-PhD transition"
+    "evidence_urls": "https://kabylda.github.io;https://linkedin.com/in/kabylda;https://orcid.org/0000-0002-8620-6135;https://www.uni.lu/fstm-en/people/adil-kabylda/",
+    "evidence_count": 4,
+    "sources": "orcid;verified",
+    "verification_basis": "His claimed ORCID and exact-name public profile explicitly list the 2014 and 2015 IChO medals; the profile records his University of Luxembourg theoretical chemical physics doctorate and a 2026 post-PhD transition; Destination review: The University of Luxembourg's current official profile identifies Adil Kabylda as a postdoctoral researcher after his January 2026 PhD defense. This supersedes the accepted LinkedIn experience heading that still labels his 2021 doctoral role current."
   },
   {
     "person_id": "kaz-d3e9cb1dd495",
@@ -8244,9 +8244,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/akhan42;https://codeforces.com/profile/pink_roses;https://kz.linkedin.com/in/404akhan;https://www.imo-official.org/participant_r.aspx?id=25096",
-    "evidence_count": 4,
-    "sources": "codeforces;verified",
+    "evidence_urls": "https://kz.linkedin.com/in/404akhan;https://www.imo-official.org/participant_r.aspx?id=25096",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public profile explicitly states that he won IMO gold medals in 2014 and 2015 and identifies his current quantitative-research role at Squarepoint alongside a Nazarbayev University computer-science degree"
   },
   {
@@ -8274,9 +8274,9 @@
     "start_year": "2026",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://pubmed.ncbi.nlm.nih.gov/41742061/;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2014;https://www.wikidata.org/wiki/Q123244419",
-    "evidence_count": 3,
-    "sources": "verified;wikidata",
+    "evidence_urls": "https://pubmed.ncbi.nlm.nih.gov/41742061/;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2014",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The exact name appears in TÜBİTAK's 2015 foreign-undergraduate scholarship roster under a program restricted to international science-Olympiad medalists immediately after his two IBO appearances; a 2026 University of Rostock cardiology publication is a rare-name and field-consistent continuation but no source explicitly joins the two stages"
   },
   {
@@ -8304,9 +8304,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/Askarbek-orakov;https://hsph.harvard.edu/profile/askarbek-orakov/;https://orcid.org/0000-0001-6823-5269;https://www.linkedin.com/in/askarbek-orakov;https://www.wikidata.org/wiki/Q117277775;https://yessenovfoundation.org/en/askarbek-orakov/",
-    "evidence_count": 6,
-    "sources": "github;orcid;verified;wikidata",
+    "evidence_urls": "https://hsph.harvard.edu/profile/askarbek-orakov/;https://orcid.org/0000-0001-6823-5269;https://www.linkedin.com/in/askarbek-orakov;https://yessenovfoundation.org/en/askarbek-orakov/",
+    "evidence_count": 4,
+    "sources": "orcid;verified",
     "verification_basis": "Foundation biography states IBO silver and Harvard has an official current staff profile"
   },
   {
@@ -8334,9 +8334,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://orcid.org/0009-0005-2478-7631;https://scoreboard.bc-pf.org/en/results/physics/international-physics-olympiad/2014;https://www.linkedin.com/in/danat-issa-045685218;https://www.space.mit.edu/people/danat-issa/",
-    "evidence_count": 4,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://scoreboard.bc-pf.org/en/results/physics/international-physics-olympiad/2014;https://www.linkedin.com/in/danat-issa-045685218;https://www.space.mit.edu/people/danat-issa/",
+    "evidence_count": 3,
+    "sources": "verified",
     "verification_basis": "The rare exact-name Kazakhstan IPhO record aligns with Nazarbayev and Northwestern education while MIT's official directory confirms the current postdoctoral appointment."
   },
   {
@@ -8394,9 +8394,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/LeMieux;https://cphof.org/profile/topcoder:Daniyar7;https://github.com/LeMieuxCF-zz;https://limon.kg/ru/news:83012;https://stats.ioinformatics.org/people/5126;https://stemco.org/stem-camp/singapore-summer-2024/",
-    "evidence_count": 6,
-    "sources": "codeforces;cphof;github;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/5126;https://codeforces.com/profile/LeMieux;https://cphof.org/profile/topcoder:Daniyar7;https://limon.kg/ru/news:83012;https://stats.ioinformatics.org/people/5126;https://stemco.org/stem-camp/singapore-summer-2024/;https://www.topcoder.com/members/Daniyar7",
+    "evidence_count": 7,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The official IOI registry identifies Daniyar Maminov as Kazakhstan's 2014 and 2015 bronze medalist. In a direct career interview, the same exact-name Almaty KTL alumnus describes those international informatics Olympiads, graduating from UNIST in 2020, internships at Meta, Rubrik, and Google, and his continuing Google career after an internal move from Korea to Singapore. StemCo independently identifies Daniyar Maminov as a Google Software Engineer, while nFactorial lists him at Google in Singapore.; Destination review: StemCo's Singapore program identifies exact-name Daniyar Maminov as a Google Software Engineer. His direct Limon interview independently connects that Google career to the IOI alumnus and documents the internal move to Singapore."
   },
   {
@@ -8484,9 +8484,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Miras321;https://cphof.org/profile/codeforces:Miras321;https://github.com/myrzakereyms;https://linkedin.com/in/miras-myrzakerey-b37529101",
+    "evidence_urls": "http://stats.ioinformatics.org/people/5125;https://codeforces.com/profile/Miras321;https://cphof.org/profile/codeforces:Miras321;https://linkedin.com/in/miras-myrzakerey-b37529101",
     "evidence_count": 4,
-    "sources": "codeforces;cphof;github;verified",
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The rare exact-name profile repeats the 2014-2018 Nazarbayev University timeline linked to the Kazakhstan Codeforces and CPHOF identity and lists a current Bloomberg senior software-engineering role"
   },
   {
@@ -8574,9 +8574,9 @@
     "start_year": "2021",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Algiz;https://cphof.org/profile/topcoder:Algiz;https://github.com/lgzy;https://linkedin.com/in/ulugbek-adilbekov;https://stats.ioinformatics.org/people/5127",
-    "evidence_count": 5,
-    "sources": "codeforces;cphof;github;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/5127;https://codeforces.com/profile/Algiz;https://cphof.org/profile/topcoder:Algiz;https://linkedin.com/in/ulugbek-adilbekov;https://stats.ioinformatics.org/people/5127;https://www.topcoder.com/members/Algiz",
+    "evidence_count": 6,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The accepted exact-name profile explicitly lists the 2014 IOI silver medal and a current Two Sigma software-engineering role in London beginning in June 2021; the official IOI record independently confirms the Kazakhstan result."
   },
   {
@@ -8664,9 +8664,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://orcid.org/0000-0001-8631-3515;https://orcid.org/0000-0002-3893-2618;https://orcid.org/0000-0002-4686-8978;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2015;https://www.jkimlab.com/people",
-    "evidence_count": 5,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://orcid.org/0000-0002-4686-8978;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2015;https://www.jkimlab.com/people",
+    "evidence_count": 3,
+    "sources": "verified",
     "verification_basis": "UNIST's official pre-IBO article identifies the Kazakhstan competitor and his fall 2015 admission while the matching self-asserted ORCID lists UNIST life sciences from 2015 to 2020 followed by KIST brain science; Destination review: The current Neural Circuitry of Action laboratory roster at KIST identifies Almas Serikov and dates his research internship from March 2024; its education history independently matches the accepted UNIST and KIST neuroscience trajectory, so this ongoing research role supersedes the completed master's degree as the displayed destination."
   },
   {
@@ -8844,9 +8844,9 @@
     "start_year": "2022",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Ownz;https://codeforces.com/profile/bekzhan29;https://codeforces.com/profile/bekzhan97;https://codeforces.com/profile/jasik29;https://cphof.org/profile/codeforces:bekzhan29;https://linkedin.com/in/bekzhan29",
-    "evidence_count": 6,
-    "sources": "codeforces;cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/5639;https://codeforces.com/profile/Ownz;https://codeforces.com/profile/bekzhan29;https://codeforces.com/profile/bekzhan97;https://codeforces.com/profile/jasik29;https://cphof.org/profile/codeforces:bekzhan29;https://linkedin.com/in/bekzhan29",
+    "evidence_count": 7,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2015 IOI silver medal and current Google Android AI Core engineering role; the official IOI record independently confirms the Kazakhstan award"
   },
   {
@@ -8964,9 +8964,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Na2a;https://codeforces.com/profile/na2a;https://cphof.org/profile/topcoder:nazarbek;https://github.com/Na2a;https://uk.linkedin.com/in/nazarbek",
-    "evidence_count": 5,
-    "sources": "codeforces;cphof;github;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/5638;https://codeforces.com/profile/Na2a;https://codeforces.com/profile/na2a;https://cphof.org/profile/topcoder:nazarbek;https://github.com/Na2a;https://uk.linkedin.com/in/nazarbek;https://www.topcoder.com/members/nazarbek",
+    "evidence_count": 7,
+    "sources": "codeforces;cphof;cphof_codeforces;github;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2015 and 2016 IOI participation and current quantitative technologist role at Qube Research & Technologies; the official IOI registry independently confirms the Kazakhstan appearances"
   },
   {
@@ -8994,9 +8994,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://buki-kz.com/user-49146/;https://github.com/NurlybekSulaimanov;https://linkedin.com/in/nurlybek-sulaimanov-387201245",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://buki-kz.com/user-49146/;https://linkedin.com/in/nurlybek-sulaimanov-387201245",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The rare exact-name profile repeats the KAIST biology education and personal biology writing linked to the verified IBO identity and lists a current full-stack engineering role at AlliedYoung FBC"
   },
   {
@@ -9084,9 +9084,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/Adilet33709;https://ipho-unofficial.org/countries/KAZ/individual;https://www.linkedin.com/in/adilet-uvaliyev;https://www.myprivatetutor.hk/teacher/29733/adilet-u-experienced-physics-tutor-with-a-bsc-from-hku",
-    "evidence_count": 4,
-    "sources": "github;verified",
+    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://www.linkedin.com/in/adilet-uvaliyev;https://www.myprivatetutor.hk/teacher/29733/adilet-u-experienced-physics-tutor-with-a-bsc-from-hku",
+    "evidence_count": 3,
+    "sources": "verified",
     "verification_basis": "His self-authored tutoring profile states that he won two IPhO silver medals and earned a physics degree from HKU while the rare exact name and dates match the Kazakhstan record; Destination review: Adilet's active Hong Kong tutoring profile explicitly advertises his physics teaching, states his HKU physics degree, and identifies his two IPhO silver medals. Self-employed is used because the listing names no separate employer."
   },
   {
@@ -9114,8 +9114,8 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/AdilkhanSarsen;https://github.com/adolkhan;https://www.linkedin.com/in/adilkhan-sarsen-b62749140/;https://www.nauka.kz/page.php?lang=3&new=&news_id=7255&page_id=792",
-    "evidence_count": 4,
+    "evidence_urls": "https://github.com/AdilkhanSarsen;https://github.com/adolkhan;https://www.instagram.com/sarsenadilkhan;https://www.linkedin.com/in/adilkhan-sarsen-b62749140;https://www.linkedin.com/in/adilkhan-sarsen-b62749140/;https://www.nauka.kz/page.php?lang=3&new=&news_id=7255&page_id=792;https://www.threads.com/@sarsenadilkha",
+    "evidence_count": 7,
     "sources": "github;verified",
     "verification_basis": "National science portal confirms IPhO bronze and public GitHub profile states current role and links LinkedIn"
   },
@@ -9174,9 +9174,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://orcid.org/0009-0002-1233-0632;https://scoreboard.bc-pf.org/en/results/biology/national-olympiad/2017;https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Ffinal-reports%2FIBO-2024+Report.pdf",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://scoreboard.bc-pf.org/en/results/biology/national-olympiad/2017;https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Ffinal-reports%2FIBO-2024+Report.pdf",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The IBO report identifies the rare exact-name former Kazakhstan biology olympian as a KAIST PhD candidate and his 2026 publication confirms the active affiliation"
   },
   {
@@ -9234,9 +9234,9 @@
     "start_year": "2022",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://de.linkedin.com/in/anel-orazgaliyeva;https://github.com/ao1385;https://www.nis.edu.kz/storage/files/01JSKCF66NTSVQAB3HC9QDMGEP.pdf",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://de.linkedin.com/in/anel-orazgaliyeva;https://www.nis.edu.kz/storage/files/01JSKCF66NTSVQAB3HC9QDMGEP.pdf",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "An official NIS report explicitly joins her 2016 IBO silver medal to admission at NYU Abu Dhabi and her current public profile documents her progression to SDE II at AWS"
   },
   {
@@ -9294,9 +9294,9 @@
     "start_year": "2026",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://chem.yale.edu/posts/2026-07-01-chemistry-phd-graduate-profiles;https://github.com/AntonMorgunov;https://github.com/amgenesis;https://github.com/anmorgunov;https://ischemist.com/cv;https://orcid.org/0000-0002-7784-8961;https://orcid.org/0000-0003-1697-8858;https://orcid.org/0009-0004-6245-0354;https://www.linkedin.com/in/anmorgunov",
-    "evidence_count": 9,
-    "sources": "github;orcid;verified",
+    "evidence_urls": "https://chem.yale.edu/posts/2026-07-01-chemistry-phd-graduate-profiles;https://ischemist.com;https://ischemist.com/cv;https://orcid.org/0009-0004-6245-0354;https://www.linkedin.com/in/anmorgunov",
+    "evidence_count": 5,
+    "sources": "orcid;verified",
     "verification_basis": "Personal CV lists his 2017 IChO gold medal; Yale's July 2026 graduate profile states the Genesis Molecular AI destination; an active employer-specific GitHub profile under his exact name lists @genesistherapeutics and corroborates that the move began"
   },
   {
@@ -9324,8 +9324,8 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://linkedin.com/in/aaruzhan;https://orcid.org/0009-0005-2174-9816;https://orcid.org/0009-0009-3827-8634",
-    "evidence_count": 3,
+    "evidence_urls": "https://linkedin.com/in/aaruzhan;https://orcid.org/0009-0009-3827-8634",
+    "evidence_count": 2,
     "sources": "orcid;verified",
     "verification_basis": "Her self-authored profile explicitly lists IMO bronze medals in 2016 and 2017 and silver in 2018 and identifies her as a current EPFL PhD student after MIT; the official IMO record independently confirms the exact name years and awards"
   },
@@ -9384,8 +9384,8 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/MadNick;https://cphof.org/profile/topcoder:Nurbakhyt;https://github.com/jmadibekov;https://stats.ioinformatics.org/people/5942;https://www.linkedin.com/in/jmadibekov",
-    "evidence_count": 5,
+    "evidence_urls": "http://stats.ioinformatics.org/people/5942;https://codeforces.com/profile/MadNick;https://cphof.org/profile/topcoder:Nurbakhyt;https://github.com/jmadibekov;https://stats.ioinformatics.org/people/5942;https://www.linkedin.com/in/jmadibekov;https://www.topcoder.com/members/Nurbakhyt",
+    "evidence_count": 7,
     "sources": "codeforces;cphof;github;verified",
     "verification_basis": "Official IOI profile and public GitHub profile agree on the rare exact name"
   },
@@ -9470,13 +9470,13 @@
     "organization_category": "Unknown",
     "role_category": "Other",
     "destination_status": "history_only",
-    "destination_note": "An undated academic organization without a student or staff role is retained only in history.",
+    "destination_note": "A profile organization without a job or student role is retained only in history.",
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/sancho;https://cphof.org/profile/topcoder:sanchoman;https://github.com/SBidaibek",
-    "evidence_count": 3,
-    "sources": "codeforces;cphof;github",
+    "evidence_urls": "http://stats.ioinformatics.org/people/5941;https://codeforces.com/profile/sancho;https://cphof.org/profile/topcoder:sanchoman;https://www.topcoder.com/members/sanchoman",
+    "evidence_count": 4,
+    "sources": "codeforces;cphof;cphof_codeforces",
     "verification_basis": "profile=topcoder:sanchoman; country=Kazakhstan; contest=IOI; codeforces=sancho; organization=HKUST"
   },
   {
@@ -9504,9 +9504,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/nezametdinov;https://cphof.org/profile/topcoder:shaihitdin;https://stats.ioinformatics.org/results/KAZ;https://www.linkedin.com/in/shaikhitdin",
-    "evidence_count": 4,
-    "sources": "codeforces;cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/5943;https://codeforces.com/profile/nezametdinov;https://cphof.org/profile/topcoder:shaihitdin;https://stats.ioinformatics.org/results/KAZ;https://www.linkedin.com/in/shaikhitdin;https://www.topcoder.com/members/shaihitdin",
+    "evidence_count": 6,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "Official IOI result and public professional profile agree on exact name and current employer"
   },
   {
@@ -9564,9 +9564,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://de.linkedin.com/in/alexey-tsekhovoy-7a75b4257;https://orcid.org/0000-0001-9605-2523;https://www.hse.ru/news/edu/223610496.html;https://www.imo-official.org/results/contestant/27302/",
-    "evidence_count": 4,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://de.linkedin.com/in/alexey-tsekhovoy-7a75b4257;https://www.hse.ru/news/edu/223610496.html;https://www.imo-official.org/results/contestant/27302/",
+    "evidence_count": 3,
+    "sources": "verified",
     "verification_basis": "HSE's official article explicitly identifies its first-year computer-science student as Kazakhstan's 2018 IMO silver medalist and his public education profile documents completion of the HSE degree in 2023"
   },
   {
@@ -9594,9 +9594,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/alihotnik;https://github.com/alihuuuntr;https://linkedin.com/in/alikhan-kudaibergenov-27726a154",
-    "evidence_count": 3,
-    "sources": "codeforces;github;verified",
+    "evidence_urls": "https://linkedin.com/in/alikhan-kudaibergenov-27726a154",
+    "evidence_count": 1,
+    "sources": "verified",
     "verification_basis": "His self-authored exact-name profile explicitly identifies him as an IMO medalist and documents a 2020-2026 University of Waterloo education; Kazakhstan's official IMO record independently confirms the 2017 and 2018 appearances and medals"
   },
   {
@@ -9624,9 +9624,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/SmallBoy;https://cphof.org/profile/codeforces:SmallBoy;https://github.com/AskhatZhalgasov;https://stats.ioinformatics.org/people/6269;https://www.signalhire.com/profiles/askhat-zhalgasov/249914809",
+    "evidence_urls": "http://stats.ioinformatics.org/people/6269;https://codeforces.com/profile/SmallBoy;https://cphof.org/profile/codeforces:SmallBoy;https://stats.ioinformatics.org/people/6269;https://www.signalhire.com/profiles/askhat-zhalgasov/249914809",
     "evidence_count": 5,
-    "sources": "codeforces;cphof;github;verified",
+    "sources": "codeforces;cphof;verified",
     "verification_basis": "The rare exact-name current professional record places Askhat at Tower Research Capital in Hong Kong from January 2025 and lists the same University of Hong Kong and Chinese University of Hong Kong education trajectory documented by HKU; the exact name, age-compatible timeline, quantitative field, and Hong Kong continuity strongly match the 2017 Kazakhstan IOI medalist, but no reviewed source explicitly joins the career record to the Olympiad result."
   },
   {
@@ -9654,9 +9654,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://cse.hkust.edu.hk/~mxj/students.html;https://github.com/assemzh;https://hk.linkedin.com/in/assemzhunis;https://orcid.org/0000-0003-0640-2425;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2017",
-    "evidence_count": 5,
-    "sources": "github;orcid;verified",
+    "evidence_urls": "https://cse.hkust.edu.hk/~mxj/students.html;https://hk.linkedin.com/in/assemzhunis;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2017",
+    "evidence_count": 3,
+    "sources": "verified",
     "verification_basis": "Her public profile explicitly lists the 2017 IChO bronze medal while the current HKUST research-group page lists her as an HKPFS PhD student since fall 2024"
   },
   {
@@ -9684,9 +9684,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/daulettoibazar;https://linkedin.com/in/daulet-toibazar-54118b174;https://orcid.org/0009-0002-4978-4400;https://orcid.org/0009-0008-1492-995X;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2017",
-    "evidence_count": 5,
-    "sources": "github;orcid;verified",
+    "evidence_urls": "https://linkedin.com/in/daulet-toibazar-54118b174;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2017",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The rare exact-name profile begins a Nazarbayev University biology degree in the 2017 IBO year, continues through KAUST bioinformatics and machine learning corroborated by official university records, and identifies a current HUMAIN AI role; no source explicitly joins the professional to the IBO contestant"
   },
   {
@@ -9714,8 +9714,8 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/allbackoff;https://github.com/allbackoff;https://kr.linkedin.com/in/allbackoff",
-    "evidence_count": 3,
+    "evidence_urls": "https://codeforces.com/profile/allbackoff;https://github.com/allbackoff;https://kr.linkedin.com/in/allbackoff;linkedin.com/in/allbackoff",
+    "evidence_count": 4,
     "sources": "codeforces;github;verified",
     "verification_basis": "Public profile lists the 2018 IBO silver medal and current Adriel employment"
   },
@@ -9774,9 +9774,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/MadiBal;https://orcid.org/0009-0007-2163-524X;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2017;https://weproject.media/articles/detail/madi-baltagulov-ob-uchebe-v-yale-kak-kazakhstanets-postupil-v-magistraturu-ligi-plyushcha-po-obshche/;https://www.linkedin.com/in/madi-baltagulov-509bbb18b;https://www.linkedin.com/posts/madi-baltagulov-509bbb18b_entrepreneurship-publichealth-digitalhealth-activity-7383501897166385153-8i4q",
-    "evidence_count": 6,
-    "sources": "github;orcid;verified",
+    "evidence_urls": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2017;https://weproject.media/articles/detail/madi-baltagulov-ob-uchebe-v-yale-kak-kazakhstanets-postupil-v-magistraturu-ligi-plyushcha-po-obshche/;https://www.linkedin.com/in/madi-baltagulov-509bbb18b;https://www.linkedin.com/posts/madi-baltagulov-509bbb18b_entrepreneurship-publichealth-digitalhealth-activity-7383501897166385153-8i4q",
+    "evidence_count": 4,
+    "sources": "verified",
     "verification_basis": "A direct 2026 interview identifies him as the Kazakhstan international biology-team bronze medalist and a Yale epidemiology master's student after Vanderbilt molecular biology; Destination review: Madi Baltagulov's self-authored post says he is founding NutraLens with two co-founders; his public profile lists NutraLens as his current experience after completing his Yale MPH."
   },
   {
@@ -9864,9 +9864,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Nurlykhan;https://codeforces.com/profile/nurlykhan;https://cphof.org/profile/codeforces:nurlykhan;https://github.com/NurlykhanKairly;https://kz.linkedin.com/in/nurlykhan",
+    "evidence_urls": "http://stats.ioinformatics.org/people/6268;https://codeforces.com/profile/Nurlykhan;https://codeforces.com/profile/nurlykhan;https://cphof.org/profile/codeforces:nurlykhan;https://kz.linkedin.com/in/nurlykhan",
     "evidence_count": 5,
-    "sources": "codeforces;cphof;github;verified",
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2017 and 2018 IOI record and current Listly software-engineering role; the official IOI registry independently confirms the Kazakhstan appearances"
   },
   {
@@ -9894,9 +9894,9 @@
     "start_year": "2026",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://ch.linkedin.com/in/shyngys-aitkazinov-00496b193;https://github.com/shyngys-aitkazinov;https://ipho2017.id/",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://ch.linkedin.com/in/shyngys-aitkazinov-00496b193;https://ipho2017.id/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The public profile explicitly lists his 2017 IPhO silver medal and current Citadel Securities employment in Zurich; Destination review: The accepted profile lists a Quantitative Researcher internship at Citadel Securities from July 2026."
   },
   {
@@ -9924,9 +9924,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/persolok;https://sg.linkedin.com/in/shyngys-bilyalov-23b6b819b;https://www.imo-official.org/results/contestant/27303/",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://sg.linkedin.com/in/shyngys-bilyalov-23b6b819b;https://www.imo-official.org/results/contestant/27303/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public profile explicitly lists all three IMO results and current Graviton employment while current staff directories identify his quantitative-research role"
   },
   {
@@ -9954,8 +9954,8 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/Freezeboy700;https://rs.linkedin.com/in/temirlan-rakhimov;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2017",
-    "evidence_count": 3,
+    "evidence_urls": "https://github.com/Freezeboy700;https://rs.linkedin.com/in/temirlan-rakhimov;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2017;timurr396@gmail.com",
+    "evidence_count": 4,
     "sources": "github;verified",
     "verification_basis": "The exact-name age-compatible Kazakhstan profile documents IITU study immediately after the 2017 Olympiad period and a current Allegro AI Engineer role in Poland. No reviewed source explicitly joins the career profile to the IChO result.; Destination review: The accepted probable profile identifies AI Engineer at Allegro as Temirlan's current role in Poland; the Serbia profile header is not used as the role location."
   },
@@ -10014,9 +10014,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/sstrong;https://github.com/dxtvzw;https://linkedin.com/in/alikhan-zimanov-92564b1a8;https://www.hse.ru/en/news/729928307.html;https://www.imo-official.org/participant_r.aspx?id=28163",
-    "evidence_count": 5,
-    "sources": "codeforces;github;verified",
+    "evidence_urls": "https://codeforces.com/profile/sstrong;https://linkedin.com/in/alikhan-zimanov-92564b1a8;https://www.hse.ru/en/news/729928307.html;https://www.imo-official.org/participant_r.aspx?id=28163",
+    "evidence_count": 4,
+    "sources": "codeforces;verified",
     "verification_basis": "The official IMO record identifies Kazakhstan's 2018-2019 bronze medalist. HSE University identifies exact-name Alikhan Zimanov as a second-year Applied Mathematics and Information Science bachelor's student in 2022 and a third-year Faculty of Computer Science contestant later that year. The rare exact-name LinkedIn profile gives a matching 2020-2024 HSE Computer Science bachelor's timeline and describes a high-level competitive programmer, but no reviewed career source explicitly mentions the IMO, so the identity remains probable and the completed education is retained only as alma-mater history."
   },
   {
@@ -10134,9 +10134,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/YaKon4ick;https://cphof.org/profile/codeforces:YaKon4ick;https://github.com/daniyarzt;https://linkedin.com/in/daniyarzt",
+    "evidence_urls": "http://stats.ioinformatics.org/people/6567;https://codeforces.com/profile/YaKon4ick;https://cphof.org/profile/codeforces:YaKon4ick;https://linkedin.com/in/daniyarzt",
     "evidence_count": 4,
-    "sources": "codeforces;cphof;github;verified",
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2018 and 2019 IOI silver medals and current Huawei Switzerland computer-vision research internship; the official IOI record independently confirms the Kazakhstan awards"
   },
   {
@@ -10164,9 +10164,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://de.linkedin.com/in/diyart;https://github.com/tdiyar;https://ipho-unofficial.org/countries/KAZ/individual",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://de.linkedin.com/in/diyart;https://ipho-unofficial.org/countries/KAZ/individual",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public profile explicitly lists the 2018 IPhO bronze medal and current Siemens Healthineers employment together with current graduate study at FAU Erlangen-Nurnberg; Destination review: The accepted profile lists Data Scientist at Siemens Healthineers as current from October 2025."
   },
   {
@@ -10194,9 +10194,9 @@
     "start_year": "2023",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://kr.linkedin.com/in/moldagulovg;https://orcid.org/0009-0006-5742-130X;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2018",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://kr.linkedin.com/in/moldagulovg;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2018",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2018 IChO bronze medal and current graduate research at the Institute for Basic Science in Ulsan; the official result independently confirms the Kazakhstan award"
   },
   {
@@ -10224,9 +10224,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/olzhik11;https://uk.linkedin.com/in/olzhas-nurpeisov;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://uk.linkedin.com/in/olzhas-nurpeisov;https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The rare exact-name 2018 and 2019 IChO records align with the KAIST profile and multiple recent Laminar team posts confirming active work there; Destination review: The accepted profile lists Software Engineer at Laminar as current from April 2025."
   },
   {
@@ -10254,9 +10254,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/Rainhunter13;https://uk.linkedin.com/in/rainhunter13;https://www.imo-official.org/results/contestant/27859/",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://uk.linkedin.com/in/rainhunter13;https://www.imo-official.org/results/contestant/27859/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public profile explicitly lists the 2018 IMO bronze medal and current Laminar employment while his linked GitHub account identifies his backend role"
   },
   {
@@ -10284,9 +10284,9 @@
     "start_year": "2023",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://orcid.org/0009-0007-6708-1094;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2018;https://www.nuin.northwestern.edu/current-students/student-profiles.html?page=3",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2018;https://www.nuin.northwestern.edu/current-students/student-profiles.html?page=3",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The rare exact-name Kazakhstan 2018 IBO bronze medalist is linked through a Kazakhstan student profile and Harvard 2023 education to Northwestern's current neuroscience PhD directory and verified ORCID email domain"
   },
   {
@@ -10314,9 +10314,9 @@
     "start_year": "2026",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/vladislach;https://linkedin.com/in/vladcherd;https://scoreboard.bc-pf.org/en/profile/5fa68a8ad8bb1ad06363cce0",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://linkedin.com/in/vladcherd;https://scoreboard.bc-pf.org/en/profile/5fa68a8ad8bb1ad06363cce0",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2019 IChO silver medal and an April 2026 move to Mirendil as a member of technical staff; the official result independently confirms the Kazakhstan award"
   },
   {
@@ -10344,9 +10344,9 @@
     "start_year": "2026",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/zhamaliddinkalzhan;https://ipho-unofficial.org/countries/KAZ/individual;https://linkedin.com/in/zhamaliddin-kalzhan;https://orcid.org/0009-0004-5307-9178",
-    "evidence_count": 4,
-    "sources": "codeforces;orcid;verified",
+    "evidence_urls": "https://codeforces.com/profile/zhamaliddinkalzhan;https://ipho-unofficial.org/countries/KAZ/individual;https://linkedin.com/in/zhamaliddin-kalzhan",
+    "evidence_count": 3,
+    "sources": "codeforces;verified",
     "verification_basis": "The rare exact-name profile links a Shymkent Bilim-Innovation Lyceum diploma to KAIST electrical engineering beginning in the 2018 IPhO year and a current Samsung digital-IP role, while KAIST laboratory records independently corroborate the same student; no source explicitly states that the professional is the IPhO contestant"
   },
   {
@@ -10374,9 +10374,9 @@
     "start_year": "2022",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://almaty.fizmat.kz/news/rezultaty-50-oy-mezhdunarodnoy-khimiches/;https://chemistry.dartmouth.edu/graduate/current-graduate-students/class-2022;https://orcid.org/0000-0001-6181-572X",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://almaty.fizmat.kz/news/rezultaty-50-oy-mezhdunarodnoy-khimiches/;https://chemistry.dartmouth.edu/graduate/current-graduate-students/class-2022",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His official school names him as Kazakhstan's 2018 IChO silver medalist and Dartmouth lists the same rare exact name as a current chemistry graduate student from Nazarbayev University"
   },
   {
@@ -10434,9 +10434,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/998batrr;https://codeforces.com/profile/998kover;https://cphof.org/profile/codeforces:998kover;https://linkedin.com/in/998batrr",
-    "evidence_count": 4,
-    "sources": "codeforces;cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/6855;https://codeforces.com/profile/998batrr;https://codeforces.com/profile/998kover;https://cphof.org/profile/codeforces:998kover;https://linkedin.com/in/998batrr",
+    "evidence_count": 5,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The professional profile URL uses the same 998batrr handle as the Kazakhstan Codeforces identity linked to CPHOF and lists a current Nethermind software-engineering role"
   },
   {
@@ -10494,9 +10494,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/daniil-melnichenko;https://github.com/daniilmelnichenko;https://linkedin.com/in/daniilmel;https://orcid.org/0009-0006-8939-5337;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2019",
-    "evidence_count": 5,
-    "sources": "github;orcid;verified",
+    "evidence_urls": "https://linkedin.com/in/daniilmel;https://orcid.org/0009-0006-8939-5337;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2019",
+    "evidence_count": 3,
+    "sources": "orcid;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2019 IChO bronze medal and current HITS AI research role; the official IChO result independently confirms the Kazakhstan award"
   },
   {
@@ -10524,9 +10524,9 @@
     "start_year": "2025",
     "end_year": "2029",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Daveeed;https://codeforces.com/profile/Watersphere;https://codeforces.com/profile/Wenze_Li;https://codeforces.com/profile/dumbstudent;https://github.com/davidli3100;https://github.com/dli;https://github.com/dli7319;https://github.com/lidavidm;https://github.com/taweili;https://ipho-unofficial.org/countries/KAZ/individual;https://openreview.net/profile?id=~David_Li1;https://orcid.org/0000-0001-5188-9143;https://orcid.org/0000-0001-5221-1334;https://orcid.org/0000-0001-6334-1441;https://orcid.org/0000-0001-6663-0310;https://orcid.org/0000-0001-6680-8764;https://orcid.org/0000-0001-6948-1154;https://orcid.org/0000-0001-7637-8649;https://orcid.org/0000-0001-9316-1951;https://orcid.org/0000-0002-0092-660X;https://orcid.org/0000-0002-1028-8445;https://orcid.org/0000-0002-1151-1354;https://orcid.org/0000-0002-2668-7184;https://orcid.org/0000-0002-3187-6190;https://orcid.org/0000-0002-4285-5598;https://orcid.org/0000-0002-4450-8776;https://orcid.org/0000-0002-4863-311X;https://orcid.org/0000-0002-5005-4643;https://orcid.org/0000-0002-5020-8534;https://orcid.org/0000-0002-5208-8732;https://orcid.org/0000-0002-5362-5675;https://orcid.org/0000-0002-6401-4263;https://orcid.org/0000-0002-6489-0191;https://orcid.org/0000-0002-6681-9161;https://orcid.org/0000-0002-6995-3454;https://orcid.org/0000-0002-7398-7630;https://orcid.org/0000-0002-7512-9672;https://orcid.org/0000-0002-7684-2023;https://orcid.org/0000-0002-8921-5168;https://orcid.org/0000-0002-9332-317X;https://orcid.org/0000-0003-1222-5189;https://orcid.org/0000-0003-1519-0575;https://orcid.org/0000-0003-2408-5638;https://orcid.org/0000-0003-2853-0743;https://orcid.org/0000-0003-3869-5154;https://orcid.org/0000-0003-4323-9321;https://orcid.org/0009-0000-2842-3257;https://orcid.org/0009-0000-4673-0955;https://orcid.org/0009-0000-4974-5132;https://orcid.org/0009-0000-6436-5218;https://orcid.org/0009-0000-7932-2499;https://orcid.org/0009-0002-8858-2852;https://orcid.org/0009-0003-0295-8597;https://orcid.org/0009-0003-1937-2752;https://orcid.org/0009-0003-4135-6118;https://orcid.org/0009-0003-5876-6930;https://orcid.org/0009-0003-8638-143X;https://orcid.org/0009-0004-2259-4388;https://orcid.org/0009-0005-5057-5181;https://orcid.org/0009-0005-6716-5541;https://orcid.org/0009-0005-6953-5104;https://orcid.org/0009-0005-7527-0632;https://orcid.org/0009-0006-1898-6834;https://orcid.org/0009-0006-6234-0096;https://orcid.org/0009-0006-6665-1967;https://orcid.org/0009-0006-7105-7671;https://orcid.org/0009-0007-7896-9929;https://orcid.org/0009-0008-5119-2360;https://orcid.org/0009-0008-6616-9817;https://orcid.org/0009-0008-7453-6998;https://orcid.org/0009-0009-3241-7808;https://ru.linkedin.com/in/david-li-ab07b332b;https://www.wikidata.org/wiki/Q102165512;https://www.wikidata.org/wiki/Q105523474;https://www.wikidata.org/wiki/Q107277515;https://www.wikidata.org/wiki/Q119728393;https://www.wikidata.org/wiki/Q125906193;https://www.wikidata.org/wiki/Q5236579;https://www.wikidata.org/wiki/Q5236581;https://www.wikidata.org/wiki/Q88064254;https://www.wikidata.org/wiki/Q88184480;https://www.wikidata.org/wiki/Q91946334;https://www.wikidata.org/wiki/Q99675851",
-    "evidence_count": 83,
-    "sources": "codeforces;github;orcid;verified;wikidata",
+    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://openreview.net/profile?id=~David_Li1;https://ru.linkedin.com/in/david-li-ab07b332b",
+    "evidence_count": 3,
+    "sources": "verified",
     "verification_basis": "The profile alias Li David and its MIPT applied-physics degree beginning immediately after his 2019 RFMS graduation and IPhO appearance form a highly specific timeline through Skoltech and Huawei; the common name and absence of an explicit Olympiad statement prevent a confirmed match; Destination review: The accepted profile dates the Huawei deep-learning research role through August 2025 and lists the 2025-2029 MBZUAI machine-learning PhD as the ongoing affiliation in Abu Dhabi."
   },
   {
@@ -10554,9 +10554,9 @@
     "start_year": "2025",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/kassymm;https://it.linkedin.com/in/kassymm;https://www.imo-official.org/results/contestant/29351/;https://www.linkedin.com/in/kassymm/",
-    "evidence_count": 4,
-    "sources": "github;verified",
+    "evidence_urls": "https://it.linkedin.com/in/kassymm;https://www.imo-official.org/results/contestant/29351/;https://www.linkedin.com/in/kassymm/",
+    "evidence_count": 3,
+    "sources": "verified",
     "verification_basis": "His public profile explicitly lists the 2019 IMO bronze medal and current Huawei employment and describes his work on spatial AI while Bocconi independently lists him as a research assistant; Destination review: The accepted profile identifies the current Huawei position as a Research Intern role and describes the work as spatial AI."
   },
   {
@@ -10584,9 +10584,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/mbaimuratov;https://it.linkedin.com/in/meiirbek-baimuratov;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2019;https://www.linkedin.com/in/meiirbek-baimuratov/",
-    "evidence_count": 4,
-    "sources": "github;verified",
+    "evidence_urls": "https://it.linkedin.com/in/meiirbek-baimuratov;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2019;https://www.linkedin.com/in/meiirbek-baimuratov/",
+    "evidence_count": 3,
+    "sources": "verified",
     "verification_basis": "The exact IBO name appears in Nazarbayev University's 2019 biological-sciences dean's list and the same rare profile documents a software-engineering path through Meta and Google internships to Bloomberg; Destination review: His February 2026 post says the Bloomberg placement finished while the accepted profile lists an ongoing Computer Science master's at Padua."
   },
   {
@@ -10614,9 +10614,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/IamNoPro;https://kr.linkedin.com/in/nurlykhan-kopenov;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2019",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://kr.linkedin.com/in/nurlykhan-kopenov;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2019",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "Olympiad problem-setting records identify the same rare exact name as a KAIST student immediately after his 2019 IChO medal and his current profile preserves that KAIST timeline while listing CoBALT"
   },
   {
@@ -10734,9 +10734,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/bthero;https://cphof.org/profile/codeforces:bthero;https://github.com/BThero;https://linkedin.com/in/bthero",
-    "evidence_count": 4,
-    "sources": "codeforces;cphof;github;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/6856;https://codeforces.com/profile/bthero;https://cphof.org/profile/codeforces:bthero;https://github.com/BThero;https://linkedin.com/in/bthero",
+    "evidence_count": 5,
+    "sources": "codeforces;cphof;cphof_codeforces;github;verified",
     "verification_basis": "The exact-name public profile states that he represented Kazakhstan at the 2019 and 2020 IOIs and lists a Frontend Lead Developer role at HARBOUR.SPACE; the official IOI registry independently confirms both appearances"
   },
   {
@@ -10752,22 +10752,22 @@
     "confidence": "probable",
     "identity_score": "1.0",
     "identity_source": "verified",
-    "profile_url": "https://nur.nu.edu.kz/items/86a10e4c-8685-4d44-b3d3-7d8c00c39682",
+    "profile_url": "https://schools.nis.edu.kz/en/school/nzm-astana-nura/news/2303?menu=4&parent_menu=4",
     "linkedin_url": "https://kz.linkedin.com/in/temirlan-ismagulov-766740206",
-    "organization": "",
-    "role": "",
-    "affiliation_type": "",
-    "organization_category": "Unknown",
+    "organization": "Nazarbayev Intellectual Schools (NIS)",
+    "role": "Physics Teacher",
+    "affiliation_type": "employment",
+    "organization_category": "Academia",
     "role_category": "Other",
-    "destination_status": "history_only",
-    "destination_note": "Completed or undated education is retained as alma-mater/history evidence, not as a destination.",
+    "destination_status": "latest_employment",
+    "destination_note": "One reviewed latest employment or organizational role is used as the destination.",
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/Temirlan;https://ipho-unofficial.org/countries/KAZ/individual;https://kz.linkedin.com/in/temirlan-ismagulov-766740206;https://nur.nu.edu.kz/items/86a10e4c-8685-4d44-b3d3-7d8c00c39682",
-    "evidence_count": 4,
-    "sources": "github;verified",
-    "verification_basis": "The rare exact name and physics continuity connect the 2019 IPhO contestant to Nazarbayev University's official 2025 acoustic-metamaterials bachelor's thesis and a matching public education profile but neither career source explicitly mentions IPhO"
+    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://kz.linkedin.com/in/temirlan-ismagulov-766740206;https://schools.nis.edu.kz/en/school/nzm-astana-nura/news/2303?menu=4&parent_menu=4",
+    "evidence_count": 3,
+    "sources": "verified",
+    "verification_basis": "NIS Astana-Nura's official June 2026 report names exact-name Temirlan Ismagulov as the physics teacher who prepared Kazakhstan's EuPhO silver medalist. The rare name, NIS and physics continuity, and Nazarbayev University's official 2025 physics thesis align with the 2019 IPhO contestant, but the employer report does not explicitly mention his IPhO appearance."
   },
   {
     "person_id": "kaz-7b9356cf00a8",
@@ -10794,9 +10794,9 @@
     "start_year": "2026",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/RockyB;https://cphof.org/profile/codeforces:RockyB;https://github.com/ironjaaan;https://github.com/kzh7;https://uk.linkedin.com/in/zhan-kurbanbayev",
+    "evidence_urls": "http://stats.ioinformatics.org/people/6857;https://codeforces.com/profile/RockyB;https://cphof.org/profile/codeforces:RockyB;https://github.com/kzh7;https://uk.linkedin.com/in/zhan-kurbanbayev",
     "evidence_count": 5,
-    "sources": "codeforces;cphof;github;verified",
+    "sources": "codeforces;cphof;cphof_codeforces;github;verified",
     "verification_basis": "Public profile lists both the 2019 IOI bronze medal and current startup affiliation; Destination review: The accepted profile lists Software Engineer at a stealth startup as current from February 2026."
   },
   {
@@ -10824,9 +10824,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/Abilmuzhubayev;https://linkedin.com/in/abilmuzhubayev;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2020",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://linkedin.com/in/abilmuzhubayev;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2020",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "The exact-name public profile explicitly lists the 2020 IChO bronze medal and current Google software-engineering role after Nazarbayev University; the official result independently confirms the Kazakhstan award"
   },
   {
@@ -10974,9 +10974,9 @@
     "start_year": "2023",
     "end_year": "2026",
     "country_code": "",
-    "evidence_urls": "https://github.com/khaidarkairbek;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2021;https://www.linkedin.com/in/khaidar-kairbek",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2021;https://www.linkedin.com/in/khaidar-kairbek",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public profile explicitly lists Kazakhstan IChO medals from 2020 and 2021 together with current Marble employment and Dartmouth education; Destination review: The exact profile dates Marble employment to June through September 2025 and instead shows the Dartmouth engineering degree through 2026."
   },
   {
@@ -11004,9 +11004,9 @@
     "start_year": "2021",
     "end_year": "2026",
     "country_code": "",
-    "evidence_urls": "https://kr.linkedin.com/in/kibriyanur-abdugafarova;https://orcid.org/0009-0005-4171-6923;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2020",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://kr.linkedin.com/in/kibriyanur-abdugafarova;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2020",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "Her public profile explicitly lists the 2020 IChO bronze medal and triple Kazakhstan national chemistry gold alongside KAIST education from 2021 to 2026"
   },
   {
@@ -11034,9 +11034,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Fortitude;https://cphof.org/profile/codeforces:Fortitude;https://github.com/Fortitude42;https://linkedin.com/in/pkyzyrkanov",
+    "evidence_urls": "http://stats.ioinformatics.org/people/7158;https://codeforces.com/profile/Fortitude;https://cphof.org/profile/codeforces:Fortitude;https://linkedin.com/in/pkyzyrkanov",
     "evidence_count": 4,
-    "sources": "codeforces;cphof;github;verified",
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2020 IOI bronze medal and a current machine-learning research role under NDA; the official IOI registry independently confirms the Kazakhstan award"
   },
   {
@@ -11094,9 +11094,9 @@
     "start_year": "2026",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://de.linkedin.com/in/tbeka;https://github.com/tbeka;https://www.imo-official.org/results/contestant/30321/",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://de.linkedin.com/in/tbeka;https://www.imo-official.org/results/contestant/30321/",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public profile explicitly lists the 2020 IMO silver medal and current KIT research-assistant work alongside his 2024 to 2027 degree"
   },
   {
@@ -11124,9 +11124,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Thanos234;https://cphof.org/profile/codeforces:Thanos234;https://github.com/easternn;https://stats.ioinformatics.org/people/7159;https://www.linkedin.com/in/timur-ratnikov-a3201524a/",
+    "evidence_urls": "http://stats.ioinformatics.org/people/7159;https://codeforces.com/profile/Thanos234;https://cphof.org/profile/codeforces:Thanos234;https://stats.ioinformatics.org/people/7159;https://www.linkedin.com/in/timur-ratnikov-a3201524a/",
     "evidence_count": 5,
-    "sources": "codeforces;cphof;github;verified",
+    "sources": "cphof;verified",
     "verification_basis": "The user-supplied exact-name profile documents Timur's 2021-2025 HSE education in Moscow; its age-compatible timeline and location agree with the Moscow GitHub account linked from his accepted Kazakhstan competitive-programming identity."
   },
   {
@@ -11214,9 +11214,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/seduneon;https://cphof.org/profile/codeforces:seduneon;https://github.com/seduneon;https://www.linkedin.com/in/zhambyl-maksotov/",
-    "evidence_count": 4,
-    "sources": "codeforces;cphof;github;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/7160;https://codeforces.com/profile/seduneon;https://cphof.org/profile/codeforces:seduneon;https://github.com/seduneon;https://www.linkedin.com/in/zhambyl-maksotov/",
+    "evidence_count": 5,
+    "sources": "codeforces;cphof;cphof_codeforces;github;verified",
     "verification_basis": "The user-reviewed current LinkedIn profile identifies Huawei as Zhambyl's destination; the same exact-name profile links the seduneon GitHub handle used by his Kazakhstan CPHOF and Codeforces records. The public Exa cache still exposes his concurrent 2022-2027 Nazarbayev University education but omits the newer experience section, so the role is conservatively recorded as Intern.; Destination review: The user-reviewed current profile identifies Huawei as Zhambyl's destination. Exa's cached public copy still omits the newer experience section, so Intern is retained as the narrowest role label and his concurrent 2022-2027 Nazarbayev University degree remains in education history."
   },
   {
@@ -11304,9 +11304,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/fractal;https://cphof.org/profile/codeforces:fractal;https://linkedin.com/in/fracta1l",
-    "evidence_count": 3,
-    "sources": "codeforces;cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/7497;https://codeforces.com/profile/fractal;https://cphof.org/profile/codeforces:fractal;https://linkedin.com/in/fracta1l",
+    "evidence_count": 4,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly identifies him as Kazakhstan's 2021 IOI bronze medalist and links the official IOI person record while listing his current quantitative research internship at Squarepoint"
   },
   {
@@ -11364,9 +11364,9 @@
     "start_year": "2024",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://at.linkedin.com/in/assylbek-olzhabayev-b8b94a190;https://github.com/assylbekolzhabayev;https://www.nis.edu.kz/storage/files/01JSKD3FB0SVR0VQAXEE8BCGCY.pdf",
-    "evidence_count": 3,
-    "sources": "github;verified",
+    "evidence_urls": "https://at.linkedin.com/in/assylbek-olzhabayev-b8b94a190;https://www.nis.edu.kz/storage/files/01JSKD3FB0SVR0VQAXEE8BCGCY.pdf",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "An official NIS report directly identifies his 2021 IMO bronze medal and his public profile repeats that award while documenting current mathematics study and research at ISTA and the Hausdorff Center"
   },
   {
@@ -11484,9 +11484,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/mmadsoul;https://scoreboard.bc-pf.org/en/profile/6153ac1ad7af56e7d9894be8",
-    "evidence_count": 2,
-    "sources": "github;verified",
+    "evidence_urls": "https://scoreboard.bc-pf.org/en/profile/6153ac1ad7af56e7d9894be8",
+    "evidence_count": 1,
+    "sources": "verified",
     "verification_basis": "His Scoreboard profile directly joins his 2021 and 2022 IChO medals to current Nazarbayev University study and volunteer work with Beyond Curriculum PF"
   },
   {
@@ -11514,9 +11514,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Mansur;https://cphof.org/profile/codeforces:Mansur;https://github.com/mansur20478;https://linkedin.com/in/mansurmukimbekov",
+    "evidence_urls": "http://stats.ioinformatics.org/people/7498;https://codeforces.com/profile/Mansur;https://cphof.org/profile/codeforces:Mansur;https://linkedin.com/in/mansurmukimbekov",
     "evidence_count": 4,
-    "sources": "codeforces;cphof;github;verified",
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2021 IOI medal and current zero-knowledge software-engineering internship at Axiom; the official IOI registry independently confirms the Kazakhstan result"
   },
   {
@@ -11544,9 +11544,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/CPEdu;https://codeforces.com/profile/I_Love_Trott;https://cphof.org/profile/codeforces:I_Love_Trott;https://hk.linkedin.com/in/mukhammadarifsakhmoldin",
-    "evidence_count": 4,
-    "sources": "codeforces;cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/7499;https://codeforces.com/profile/CPEdu;https://codeforces.com/profile/I_Love_Trott;https://cphof.org/profile/codeforces:I_Love_Trott;https://hk.linkedin.com/in/mukhammadarifsakhmoldin",
+    "evidence_count": 5,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2021 and 2022 IOI medals and current Optiver software-engineering internship; the official IOI registry independently confirms the Kazakhstan results"
   },
   {
@@ -11630,7 +11630,7 @@
     "organization_category": "Unknown",
     "role_category": "Other",
     "destination_status": "history_only",
-    "destination_note": "An undated academic organization without a student or staff role is retained only in history.",
+    "destination_note": "A profile organization without a job or student role is retained only in history.",
     "start_year": "",
     "end_year": "",
     "country_code": "",
@@ -11664,9 +11664,9 @@
     "start_year": "2023",
     "end_year": "2027",
     "country_code": "",
-    "evidence_urls": "https://kz.linkedin.com/in/sanzhar-bissenali-323103260;https://orcid.org/0009-0009-2568-393X;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2023",
-    "evidence_count": 3,
-    "sources": "orcid;verified",
+    "evidence_urls": "https://kz.linkedin.com/in/sanzhar-bissenali-323103260;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2023",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public profile explicitly lists Kazakhstan medals at IChO 2021 through 2023 and current Caltech education from 2023 to 2027 while his personal site independently confirms the Caltech timeline"
   },
   {
@@ -11814,9 +11814,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/zauytkhan;https://github.com/AdiletNZ;https://linkedin.com/in/adilet-zauytkhan-37a94221b",
-    "evidence_count": 3,
-    "sources": "codeforces;github;verified",
+    "evidence_urls": "https://codeforces.com/profile/zauytkhan;https://linkedin.com/in/adilet-zauytkhan-37a94221b",
+    "evidence_count": 2,
+    "sources": "codeforces;verified",
     "verification_basis": "His self-authored profile explicitly lists the 2022 IMO bronze medal and identifies him as a computer-science student at UNIST; Kazakhstan's official IMO record independently confirms the exact name year and medal"
   },
   {
@@ -11904,9 +11904,9 @@
     "start_year": "2023",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://github.com/Dalbick;https://ipho-unofficial.org/countries/KAZ/individual;https://orcid.org/0000-0001-7711-9622;https://www.linkedin.com/in/daniil-shatokhin-9a69b7297",
-    "evidence_count": 4,
-    "sources": "github;orcid;verified",
+    "evidence_urls": "https://ipho-unofficial.org/countries/KAZ/individual;https://www.linkedin.com/in/daniil-shatokhin-9a69b7297",
+    "evidence_count": 2,
+    "sources": "verified",
     "verification_basis": "His public profile directly lists the June 2022 IPhO gold medal and joins it to Vanderbilt study from 2022 to 2026 and current software work at Kashgari Dictionary"
   },
   {
@@ -12024,9 +12024,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Tekor;https://cphof.org/profile/codeforces:Tekor;https://linkedin.com/in/taimas-korganbayev-a19b75211",
-    "evidence_count": 3,
-    "sources": "codeforces;cphof;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/7809;https://codeforces.com/profile/Tekor;https://cphof.org/profile/codeforces:Tekor;https://linkedin.com/in/taimas-korganbayev-a19b75211",
+    "evidence_count": 4,
+    "sources": "codeforces;cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2022 and 2023 IOI medals and current Jump Trading software-engineering internship; the official IOI registry independently confirms the Kazakhstan results"
   },
   {
@@ -12054,9 +12054,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://codeforces.com/profile/Lokeo;https://cphof.org/profile/codeforces:Lokeo;https://github.com/lovingkirsi;https://github.com/weinadium;https://linkedin.com/in/van-li-972a8a2b8;https://orcid.org/0000-0001-7978-9558",
-    "evidence_count": 6,
-    "sources": "cphof;github;orcid;verified",
+    "evidence_urls": "http://stats.ioinformatics.org/people/7810;https://codeforces.com/profile/Lokeo;https://cphof.org/profile/codeforces:Lokeo;https://linkedin.com/in/van-li-972a8a2b8",
+    "evidence_count": 4,
+    "sources": "cphof;cphof_codeforces;verified",
     "verification_basis": "The exact-name public profile explicitly lists his 2022 IOI bronze medal and 2023 honourable mention and a current Huawei internship; the official IOI registry independently confirms the Kazakhstan results"
   },
   {
@@ -12084,9 +12084,9 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://izho.kz/contest/results-izho-2022/;https://orcid.org/0000-0001-7134-5370;https://orcid.org/0009-0001-6746-8084;https://www.wikidata.org/wiki/Q97072273",
-    "evidence_count": 4,
-    "sources": "orcid;verified;wikidata",
+    "evidence_urls": "https://izho.kz/contest/results-izho-2022/;https://orcid.org/0009-0001-6746-8084",
+    "evidence_count": 2,
+    "sources": "orcid;verified",
     "verification_basis": "The official 2022 Zhautykov record identifies Vladimir Lim as a Pavlodar School-Lyceum No. 8 physics gold medalist before his Kazakhstan IPhO silver; his claimed and verified ORCID identifies MIPT and 2025-2026 nanocrystal research, but the common name and absence of an explicit Olympiad statement prevent confirmation"
   },
   {

@@ -119,6 +119,7 @@ POSTSECONDARY_ROLE_PATTERN = re.compile(
 )
 POSTSECONDARY_INSTITUTION_PATTERN = re.compile(
     r"\b(?:university|college|polytechnic|institute of technology|technical institute|"
+    r"institute of science and technology|école polytechnique|"
     r"institute of physics and technology|"
     r"school of (?:economics|engineering|medicine|business)|école normale|graduate school)\b",
     re.IGNORECASE,
@@ -192,7 +193,8 @@ STUDENT_EDUCATION_ROLE_PATTERN = re.compile(
     r"(?:\b(?:bachelors?|masters?|ph\.?\s*d|doctoral|doctorate|undergraduate|"
     r"postgraduate|graduate|magistrant|магистрант)\b.*\b(?:student|candidate)\b|"
     r"\b(?:student|candidate)\b.*\b(?:bachelors?|masters?|ph\.?\s*d|doctoral|"
-    r"doctorate|undergraduate|postgraduate|graduate|magistrant|магистрант)\b)",
+    r"doctorate|undergraduate|postgraduate|graduate|magistrant|магистрант)\b|"
+    r"\b(?:ph\.?\s*d|doctoral)\s+researcher\b)",
     re.IGNORECASE,
 )
 

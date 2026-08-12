@@ -34,6 +34,91 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             row for row in self.affiliations if row["person_id"] == person_id
         ]
 
+    def test_temirlan_ismagulov_teacher_outcome_is_consistent(self):
+        person = self.people["kaz-c91345744362"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Nazarbayev Intellectual Schools (NIS)")
+        self.assertEqual(person["role"], "Physics Teacher")
+        self.assertEqual(person["destination_status"], "latest_employment")
+        self.assertIn("Nazarbayev University", self.alma_maters(person["person_id"]))
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Astana, Kazakhstan")
+        self.assertEqual(
+            location["evidence_url"],
+            "https://schools.nis.edu.kz/en/school/nzm-astana-nura/news/2303?menu=4&parent_menu=4",
+        )
+
+    def test_baizak_kudaibergenov_doctorate_is_a_student_destination(self):
+        person = self.people["kaz-ce11e3134fa1"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Khalifa University")
+        self.assertEqual(person["role"], "PhD Student in Biomedical Engineering")
+        self.assertEqual(person["affiliation_type"], "education")
+        self.assertEqual(person["destination_status"], "current_education")
+        self.assertIn("Khalifa University", self.alma_maters(person["person_id"]))
+        self.assertEqual(location["country_code"], "AE")
+
+    def test_adil_kabylda_uses_post_phd_university_role(self):
+        person = self.people["kaz-47792c0edb59"]
+
+        self.assertEqual(person["organization"], "University of Luxembourg")
+        self.assertEqual(person["role"], "Postdoctoral Researcher")
+        self.assertEqual(person["affiliation_type"], "employment")
+        self.assertEqual(person["destination_status"], "latest_employment")
+        self.assertEqual(person["start_year"], "2026")
+        self.assertIn("University of Luxembourg", self.alma_maters(person["person_id"]))
+
+    def test_vadim_murzin_desy_role_is_bounded_by_alumni_status(self):
+        person = self.people["kaz-1deffa0c0a86"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "Deutsches Elektronen-Synchrotron DESY")
+        self.assertEqual(person["role"], "Scientist")
+        self.assertEqual(person["start_year"], "2015")
+        self.assertEqual(person["end_year"], "2024")
+        self.assertEqual(person["destination_status"], "latest_employment")
+        self.assertEqual(location["country_code"], "DE")
+        self.assertEqual(
+            location["location_label"],
+            "Hamburg, Germany (last verified in 2024)",
+        )
+        self.assertEqual(location["evidence_kind"], "historical_outcome_location")
+
+    def test_yerzhigit_tolebekov_uses_current_founder_role(self):
+        person = self.people["kaz-209930256d24"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "MUSAB / CONTROLS")
+        self.assertEqual(person["role"], "Managing Director and Founder")
+        self.assertEqual(person["start_year"], "2014")
+        self.assertEqual(person["end_year"], "")
+        self.assertEqual(person["destination_status"], "latest_employment")
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+
+    def test_anuar_nurtazin_uses_dated_current_consultant_role(self):
+        person = self.people["kaz-c9401ed42eb0"]
+
+        self.assertEqual(
+            person["organization"], "SOE Centre for Olympic Training in Wrestling"
+        )
+        self.assertEqual(person["role"], "Consultant, Sports Financing Model Project")
+        self.assertEqual(person["start_year"], "2024")
+        self.assertEqual(person["end_year"], "")
+
+    def test_nurlan_algashev_uses_current_who_consultant_role(self):
+        person = self.people["kaz-253b9dc2b33d"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "WHO Regional Office for Europe")
+        self.assertEqual(person["role"], "Consultant, WHO Office in Cyprus")
+        self.assertEqual(person["start_year"], "2025")
+        self.assertEqual(person["end_year"], "")
+        self.assertEqual(location["country_code"], "DK")
+        self.assertNotIn("technical-officer", location["review_reason"].casefold())
+
     def test_batyr_yerzhanuly_school_record_remains_history_only(self):
         person = self.people["kaz-a4eaedad760e"]
         nis = next(
@@ -336,7 +421,10 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(person["role"], "Financial Director")
         self.assertIn("Cornell University", self.alma_maters(person["person_id"]))
         self.assertEqual(location["country_code"], "KZ")
-        self.assertEqual(location["location_label"], "Kazakhstan")
+        self.assertEqual(
+            location["location_label"], "Kazakhstan (last verified in 2021)"
+        )
+        self.assertEqual(location["evidence_kind"], "historical_outcome_location")
         self.assertNotEqual(location["country_code"], "US")
 
     def test_alexandr_shakiyev_remote_armeta_role_is_in_kazakhstan(self):
@@ -605,6 +693,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         )
         self.assertEqual(location["country_code"], "KZ")
         self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+        self.assertEqual(location["evidence_kind"], "current_role_location")
 
     def test_zhambyl_maksotov_huawei_destination(self):
         person = self.people["kaz-0f47bbbea1f0"]
@@ -980,7 +1069,11 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(person["end_year"], "2021")
         self.assertEqual(person["confidence"], "probable")
         self.assertEqual(location["country_code"], "KZ")
-        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+        self.assertEqual(
+            location["location_label"],
+            "Almaty, Kazakhstan (last verified in 2021)",
+        )
+        self.assertEqual(location["evidence_kind"], "historical_outcome_location")
 
     def test_zhandos_seksembayev_probable_nu_plasma_researcher(self):
         person = self.people["kaz-8b1c1fe467bb"]
@@ -1055,7 +1148,11 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             self.alma_maters(person["person_id"]),
         )
         self.assertEqual(location["country_code"], "KZ")
-        self.assertEqual(location["location_label"], "Kyzylorda, Kazakhstan")
+        self.assertEqual(
+            location["location_label"],
+            "Kyzylorda, Kazakhstan (last verified in 2024)",
+        )
+        self.assertEqual(location["evidence_kind"], "historical_outcome_location")
 
     def test_dair_nurtayev_probable_mipt_undergraduate(self):
         person = self.people["kaz-4a80af9daaab"]
@@ -1395,6 +1492,9 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(
             person["evidence_urls"], "https://orcid.org/0000-0002-6272-1079"
         )
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["role"], "")
+        self.assertEqual(person["destination_status"], "none")
 
     def test_demeu_shakhanov_probable_bsg_director_and_alma_mater(self):
         person = self.people["kaz-7923131239ad"]
@@ -1473,9 +1573,10 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(self.alma_maters(person["person_id"]), {"HSE University"})
         self.assertNotIn(person["person_id"], self.locations)
 
-    def test_aset_iskakov_metu_and_historical_slb_without_guessed_country(self):
+    def test_aset_iskakov_metu_and_explicit_historical_slb_location(self):
         person = self.people["kaz-fc88fa90b799"]
         affiliations = self.affiliations_for(person["person_id"])
+        location = self.locations[person["person_id"]]
 
         self.assertEqual(person["confidence"], "probable")
         self.assertEqual(person["organization"], "SLB")
@@ -1496,7 +1597,12 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertFalse(
             any("A5112917287" in row["evidence_url"] for row in affiliations)
         )
-        self.assertNotIn(person["person_id"], self.locations)
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(
+            location["location_label"],
+            "Astana, Kazakhstan (last verified in 2017)",
+        )
+        self.assertEqual(location["evidence_kind"], "historical_outcome_location")
 
     def test_guljanar_kalmaganbetova_current_role_country_and_alma_maters(self):
         person = self.people["kaz-952a451859f7"]

@@ -139,6 +139,10 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
 
     def test_student_roles_are_education_even_when_source_type_is_employment(self):
         self.assertEqual(normalized_type("employment", "PhD candidate"), "education")
+        self.assertEqual(normalized_type("employment", "PhD Researcher"), "education")
+        self.assertEqual(
+            normalized_type("employment", "Doctoral Researcher"), "education"
+        )
         self.assertEqual(
             normalized_type("employment", "Magistrant student"), "education"
         )
@@ -148,6 +152,10 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
         )
         self.assertEqual(
             normalized_type("employment", "Student Recruiting Manager"),
+            "employment",
+        )
+        self.assertEqual(
+            normalized_type("employment", "Postdoctoral Researcher"),
             "employment",
         )
 
@@ -227,6 +235,25 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
                 }
             )
         )
+
+    def test_active_students_at_polytechnique_and_unist_are_postsecondary(self):
+        for organization, role in (
+            ("École Polytechnique", "Mathematics Student"),
+            (
+                "Ulsan National Institute of Science and Technology (UNIST)",
+                "Student",
+            ),
+        ):
+            with self.subTest(organization=organization):
+                self.assertTrue(
+                    is_postsecondary_education(
+                        {
+                            "organization": organization,
+                            "role": role,
+                            "evidence_text": "",
+                        }
+                    )
+                )
 
     def test_extracts_grouped_degrees_inside_education_section(self):
         rows = extract_affiliations(

@@ -6,11 +6,21 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
 try:
+    from scripts.build_affiliation_history import extract_affiliations
     from scripts.build_exa_review_queue import canonical_url
+    from scripts.build_profile_sanity_review import (
+        ERA_CUTOFF_YEAR,
+        SAMPLE_PER_STRATUM,
+        SAMPLE_SEED,
+        build_reconciliation,
+        select_sample,
+    )
+    from scripts.build_research_dataset import identity_urls
     from scripts.build_location_evidence import (
         COUNTRY_NAMES,
         TRUSTED_OVERRIDE_KINDS,
@@ -30,7 +40,16 @@ try:
         organization_metadata,
     )
 except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
+    from build_affiliation_history import extract_affiliations
     from build_exa_review_queue import canonical_url
+    from build_profile_sanity_review import (
+        ERA_CUTOFF_YEAR,
+        SAMPLE_PER_STRATUM,
+        SAMPLE_SEED,
+        build_reconciliation,
+        select_sample,
+    )
+    from build_research_dataset import identity_urls
     from build_location_evidence import (
         COUNTRY_NAMES,
         TRUSTED_OVERRIDE_KINDS,
@@ -119,7 +138,9 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "destination_reviews": data_dir / "destination_reviews.csv",
         "person_merges": data_dir / "person_merges.csv",
         "exa_outcomes": data_dir / "exa_outcome_integrations.csv",
+        "exa_outcome_decisions": data_dir / "exa_outcome_review_decisions.csv",
         "exa_profiles": data_dir / "exa_linkedin_profile_audit.json",
+        "identity_candidates": data_dir / "identity_candidates.csv",
         "locations": data_dir / "person_locations.csv",
         "location_overrides": data_dir / "location_overrides.csv",
         "affiliations": data_dir / "person_affiliations.csv",
@@ -138,6 +159,16 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "audit_sources": data_dir / "audit" / "sources.csv",
         "audit_rejections": data_dir / "audit" / "rejections.csv",
         "audit_manifest": data_dir / "audit" / "manifest.json",
+        "profile_sanity_review": data_dir / "audit" / "profile_sanity_review.csv",
+        "linkedin_reconciliation": data_dir
+        / "audit"
+        / "linkedin_destination_reconciliation.csv",
+        "profile_review_findings": data_dir
+        / "audit"
+        / "profile_sanity_review_findings.csv",
+        "profile_review_manifest": data_dir
+        / "audit"
+        / "profile_sanity_review_manifest.json",
     }
     missing = [str(path) for path in required.values() if not path.exists()]
     if missing:
@@ -151,7 +182,9 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     destination_reviews = read_csv(required["destination_reviews"])
     person_merges = read_csv(required["person_merges"])
     exa_outcomes = read_csv(required["exa_outcomes"])
+    exa_outcome_decisions = read_csv(required["exa_outcome_decisions"])
     exa_profiles = json.loads(required["exa_profiles"].read_text(encoding="utf-8"))
+    identity_candidates = read_csv(required["identity_candidates"])
     locations = read_csv(required["locations"])
     location_overrides = load_overrides(required["location_overrides"])
     affiliations = read_csv(required["affiliations"])
@@ -172,6 +205,12 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     audit_sources = read_csv(required["audit_sources"])
     audit_rejections = read_csv(required["audit_rejections"])
     audit_manifest = json.loads(required["audit_manifest"].read_text(encoding="utf-8"))
+    profile_sanity_review = read_csv(required["profile_sanity_review"])
+    linkedin_reconciliation = read_csv(required["linkedin_reconciliation"])
+    profile_review_findings = read_csv(required["profile_review_findings"])
+    profile_review_manifest = json.loads(
+        required["profile_review_manifest"].read_text(encoding="utf-8")
+    )
 
     def duplicate_ids(rows: list[dict[str, str]], label: str) -> None:
         counts = Counter(row.get("person_id", "") for row in rows)
@@ -220,9 +259,23 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         row["person_id"]: row for row in destination_reviews
     }
     exa_outcomes_by_id = {row["person_id"]: row for row in exa_outcomes}
+    exa_outcome_decisions_by_profile = {
+        (
+            row.get("person_id", "").strip(),
+            canonical_url(row.get("candidate_url", "")),
+        ): row
+        for row in exa_outcome_decisions
+    }
     affiliations_by_person: dict[str, list[dict[str, str]]] = {}
     for row in affiliations:
         affiliations_by_person.setdefault(row.get("person_id", ""), []).append(row)
+    identity_candidates_by_source = {
+        (row.get("person_id", ""), canonical_url(url))
+        for row in identity_candidates
+        if row.get("confidence") in {"probable", "confirmed"}
+        for url in identity_urls(row)
+        if canonical_url(url)
+    }
     audit_people_by_id = {row["person_id"]: row for row in audit_people}
     audit_evidence_by_id = {row["evidence_id"]: row for row in audit_evidence}
     audit_sources_by_id = {row["source_id"]: row for row in audit_sources}
@@ -604,12 +657,44 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             "accepted LinkedIn profiles have no selected alma mater: "
             + ", ".join(missing_linkedin_alma[:8])
         )
+    current_students_without_alma = sorted(
+        person_id
+        for person_id, row in researched_by_id.items()
+        if row.get("destination_status") == "current_education"
+        and person_id not in people_with_alma
+    )
+    if current_students_without_alma:
+        errors.append(
+            "current education destinations have no selected alma mater: "
+            + ", ".join(current_students_without_alma[:8])
+        )
+    structured_affiliation_kinds = {
+        "accepted_codeforces",
+        "accepted_cphof",
+        "accepted_cphof_codeforces",
+        "accepted_github",
+        "accepted_openalex",
+        "accepted_openalex_orcid",
+        "accepted_orcid",
+    }
     for row in affiliations:
         person_id = row.get("person_id", "")
         if not row.get("organization", ""):
             errors.append(f"affiliation history has no organization for {person_id}")
         if not row.get("evidence_url", "").startswith(("http://", "https://")):
             errors.append(f"affiliation history has no direct HTTP(S) source for {person_id}")
+        if (
+            row.get("evidence_kind") in structured_affiliation_kinds
+            and (
+                person_id,
+                canonical_url(row.get("evidence_url", "")),
+            )
+            not in identity_candidates_by_source
+        ):
+            errors.append(
+                f"structured affiliation lacks a probable identity bridge for {person_id}: "
+                f"{row.get('evidence_url', '')}"
+            )
         if (
             row.get("selected_as_alma_mater", "").casefold() == "true"
             and row.get("affiliation_type") != "education"
@@ -848,6 +933,123 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             "text", ""
         ).strip():
             errors.append(f"Exa profile audit has empty successful content for {person_id}")
+        if status not in {"success", "search_cache", "manual_public_profile"}:
+            continue
+        current_profile_organizations = {
+            canonicalize_organization(row.get("organization", ""))
+            for row in extract_affiliations(profile.get("text", ""))
+            if row.get("is_current") and row.get("organization")
+        }
+        current_profile_organizations.discard("")
+        if not current_profile_organizations:
+            continue
+        final_organization = canonicalize_organization(
+            researched_by_id.get(person_id, {}).get("organization", "")
+        )
+        profile_key = canonical_url(profile.get("linkedin_url", ""))
+        explicitly_reviewed = (
+            person_id in destination_reviews_by_id
+            or (person_id, profile_key) in exa_outcome_decisions_by_profile
+        )
+        if final_organization not in current_profile_organizations and not explicitly_reviewed:
+            errors.append(
+                f"accepted LinkedIn current organization is not reconciled for {person_id}: "
+                + ", ".join(sorted(current_profile_organizations))
+            )
+
+    for index, decision in enumerate(exa_outcome_decisions, start=2):
+        person_id = decision.get("person_id", "").strip()
+        candidate_url = decision.get("candidate_url", "").strip()
+        review_url = decision.get("review_evidence_url", "").strip()
+        if person_id not in researched_by_id:
+            errors.append(f"Exa outcome decision row {index} has an unknown person")
+        if not candidate_url.startswith(("http://", "https://")):
+            errors.append(f"Exa outcome decision row {index} has no candidate URL")
+        if not decision.get("decision", "").strip() or not decision.get("reason", "").strip():
+            errors.append(f"Exa outcome decision row {index} is incomplete")
+        if not review_url.startswith(("http://", "https://")):
+            errors.append(f"Exa outcome decision row {index} has no review source")
+
+    expected_reconciliation = build_reconciliation(
+        researched,
+        exa_profiles.get("profiles", []),
+        destination_reviews,
+        exa_outcome_decisions,
+        audit_evidence,
+    )
+    if linkedin_reconciliation != [
+        {key: str(value) for key, value in row.items()}
+        for row in expected_reconciliation
+    ]:
+        errors.append("LinkedIn destination reconciliation is stale")
+    if len(linkedin_reconciliation) != len(accepted_linkedin):
+        errors.append("LinkedIn destination reconciliation does not cover every profile")
+    if any(
+        row.get("alignment_status", "").startswith("unreconciled")
+        for row in linkedin_reconciliation
+    ):
+        errors.append("LinkedIn destination reconciliation contains unresolved mismatches")
+    if any(
+        row.get("profile_hydration_status") == "error"
+        and (
+            not row.get("review_decision", "").strip()
+            or not row.get("review_reference_url", "").startswith(("http://", "https://"))
+        )
+        for row in linkedin_reconciliation
+    ):
+        errors.append("LinkedIn retrieval errors lack an auditable fallback source")
+
+    expected_sample = select_sample(
+        researched, SAMPLE_SEED, ERA_CUTOFF_YEAR, SAMPLE_PER_STRATUM
+    )
+    expected_sample_keys = [
+        (
+            str(row["stratum"]),
+            str(row["sample_rank"]),
+            str(row["sample_hash"]),
+            str(row["person"]["person_id"]),
+        )
+        for row in expected_sample
+    ]
+    actual_sample_keys = [
+        (
+            row.get("stratum", ""),
+            row.get("sample_rank", ""),
+            row.get("sample_hash", ""),
+            row.get("person_id", ""),
+        )
+        for row in profile_sanity_review
+    ]
+    if actual_sample_keys != expected_sample_keys:
+        errors.append("profile sanity sample is not reproducible from its declared seed")
+    if any(
+        row.get("participation_check") != "pass"
+        or row.get("manual_review_status") not in {"pass", "pass_after_correction"}
+        for row in profile_sanity_review
+    ):
+        errors.append("profile sanity sample contains an unresolved review failure")
+    if any(row.get("status") != "resolved" for row in profile_review_findings):
+        errors.append("profile sanity root-cause ledger contains unresolved findings")
+    expected_review_manifest = {
+        "sample_seed": SAMPLE_SEED,
+        "era_cutoff_year": ERA_CUTOFF_YEAR,
+        "sample_per_stratum": SAMPLE_PER_STRATUM,
+        "sample_population": len(
+            [
+                row
+                for row in researched
+                if row.get("confidence") in {"probable", "confirmed"}
+            ]
+        ),
+        "sample_size": len(profile_sanity_review),
+        "accepted_linkedin_profiles": len(linkedin_reconciliation),
+        "unreconciled_linkedin_profiles": 0,
+        "root_cause_findings": len(profile_review_findings),
+        "unresolved_findings": 0,
+    }
+    for field, expected_value in expected_review_manifest.items():
+        if profile_review_manifest.get(field) != expected_value:
+            errors.append(f"profile sanity review manifest has stale {field}")
 
     for person_id, expected in exa_outcomes_by_id.items():
         merged = verified_by_id.get(person_id)
@@ -1120,6 +1322,20 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             errors.append(f"{person_id} has {destination_status} status without an organization")
         if destination_status == "current_education" and row.get("affiliation_type") != "education":
             errors.append(f"{person_id} has current education status without education type")
+        if destination_status == "latest_employment" and re.search(
+            r"\b(?:ph\.?\s*d|doctoral)\s+researcher\b",
+            row.get("role", ""),
+            re.IGNORECASE,
+        ):
+            errors.append(
+                f"{person_id} publishes an active doctoral researcher as employment"
+            )
+        if re.search(
+            r"\balumn(?:us|a|i)\b",
+            row.get("role", ""),
+            re.IGNORECASE,
+        ):
+            errors.append(f"{person_id} publishes alumni status as a destination role")
         if row.get("role", "").casefold() == "research author":
             errors.append(f"{person_id} publishes authorship as a destination")
         final_urls = {
@@ -1218,6 +1434,9 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "audit_sources": len(audit_sources),
         "organization_sectors": len(organization_sectors),
         "destination_reviews": len(destination_reviews),
+        "profile_sanity_sample": len(profile_sanity_review),
+        "linkedin_profiles_reconciled": len(linkedin_reconciliation),
+        "profile_review_findings": len(profile_review_findings),
     }
     return errors, summary
 

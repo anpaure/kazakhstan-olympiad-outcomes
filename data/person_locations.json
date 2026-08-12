@@ -37,11 +37,11 @@
     "name": "Abylay Samatov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Karaganda, Kazakhstan",
+    "location_label": "Karaganda, Kazakhstan (last verified in 2022)",
     "evidence_url": "https://inkaraganda.kz/novosti/obshhestvo/pedagog-po-himii-iz-karagandy-podgotovil-bolee-10-pobeditelej-mezhdunarodnyh-intellektualnyh-sorevnovanij/",
-    "evidence_kind": "career_source_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "confirmed",
-    "review_reason": "The cited role profile places BIL No. 1 and Samatov's principal and teaching work in Karaganda Kazakhstan."
+    "review_reason": "The cited role profile places BIL No. 1 and Samatov's principal and teaching work in Karaganda Kazakhstan. The selected role ended in 2022, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-01654d909e91",
@@ -360,7 +360,7 @@
     "evidence_url": "https://spark-interfax.ru/moskva-perovo/ooo-nbparts-inn-7720746557-ogrn-1127746252072-5bcd223ce9c747d1ae4842ee62558963",
     "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
-    "review_reason": "The reviewed 2012-2020 NBPARTS directorship was at the Moscow company. This is historical latest-known evidence only; no current residence is inferred, and the identity remains probable."
+    "review_reason": "The reviewed 2012-2020 NBPARTS directorship was at the Moscow company. This is historical latest-known evidence only; no current residence is inferred, and the identity remains probable. The selected role ended in 2020, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-275559ab7cdd",
@@ -840,11 +840,11 @@
     "name": "Andrey Jigalov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Almaty, Kazakhstan",
+    "location_label": "Almaty, Kazakhstan (last verified in 2021)",
     "evidence_url": "https://ipbb.kz/eng/ap-09260382-superviser-sapakhova-z/",
-    "evidence_kind": "career_source_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
-    "review_reason": "The institute's official project page records Andrey Viktorovich Zhigalov in its Kazakhstan research group, and the institute's official contact page places it in Almaty. The affiliation is dated to 2021."
+    "review_reason": "The institute's official project page records Andrey Viktorovich Zhigalov in its Kazakhstan research group, and the institute's official contact page places it in Almaty. The affiliation is dated to 2021. The selected role ended in 2021, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-5b00b5124ff5",
@@ -884,11 +884,11 @@
     "name": "Anna Zavalishina",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2023)",
     "evidence_url": "https://osme.org/wp-content/uploads/2023/07/Raptor-inventory-of-the-Karatau-State-Nature-Reserve-southern-Kazakhstan.pdf",
-    "evidence_kind": "career_source_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
-    "review_reason": "The 2023 paper places Anna's latest reviewed conservation affiliation at the Association for the Conservation of Biodiversity of Kazakhstan; the identity remains probable."
+    "review_reason": "The 2023 paper places Anna's latest reviewed conservation affiliation at the Association for the Conservation of Biodiversity of Kazakhstan; the identity remains probable. The selected role ended in 2023, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-7dd0181a5ee2",
@@ -963,9 +963,9 @@
     "country_name": "Kazakhstan",
     "location_label": "Kazakhstan (latest role verified in 2025)",
     "evidence_url": "https://www.qazaqgaz.kz/ru/novosti-kompanii/qazaqgaz-basshylyy-ramynda-zgerister-oryn-aldy",
-    "evidence_kind": "career_source_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
-    "review_reason": "QazaqGaz's official executive notice and annual-report biography identify the rare exact-name Anuar Bitanov in Kazakhstan leadership, with an age-compatible 1980 birth year. The identity bridge to the 1997 IPhO entrant remains probable."
+    "review_reason": "QazaqGaz's official executive notice and annual-report biography identify the rare exact-name Anuar Bitanov in Kazakhstan leadership, with an age-compatible 1980 birth year. The identity bridge to the 1997 IPhO entrant remains probable. The selected role ended in 2025, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-1c91927cfc70",
@@ -1098,6 +1098,17 @@
     "confidence": "probable",
     "review_reason": "Country follows the location attached to the accepted current role at Pifagor School. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/assan-zholdassov-5290639"
+  },
+  {
+    "person_id": "kaz-fc88fa90b799",
+    "name": "Aset Iskakov",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan (last verified in 2017)",
+    "evidence_url": "https://kz.linkedin.com/in/asset-iskakov-805a34a4",
+    "evidence_kind": "historical_outcome_location",
+    "confidence": "probable",
+    "review_reason": "The accepted profile explicitly places Aset's latest disclosed SLB role in Astana from April 2014 through May 2017. This is historical latest-known evidence only; his current education-leave status names no institution and no current residence is inferred. The selected role ended in 2017, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-7f627c03e4ca",
@@ -1240,7 +1251,7 @@
     "evidence_url": "https://www.hec.edu/en/master-s-programs/profiles/ayana-badrakova",
     "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
-    "review_reason": "HEC's 2015 UBS analyst outcome is independently located in London by a reviewed professional directory. This is historical latest-known evidence only; no current residence is inferred, and the identity remains probable."
+    "review_reason": "HEC's 2015 UBS analyst outcome is independently located in London by a reviewed professional directory. This is historical latest-known evidence only; no current residence is inferred, and the identity remains probable. The selected role ended in 2015, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-e252a91b0399",
@@ -1291,11 +1302,11 @@
     "name": "Azamat Duysenbaev",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2013)",
     "evidence_url": "https://prg.kz/Document/?doc_id=31388745",
-    "evidence_kind": "career_source_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "confirmed",
-    "review_reason": "The 2013 Ministry of Education order places Azamat's latest reviewed mathematics-teacher role at Kazakhstan's Republican Physics and Mathematics School."
+    "review_reason": "The 2013 Ministry of Education order places Azamat's latest reviewed mathematics-teacher role at Kazakhstan's Republican Physics and Mathematics School. The selected role ended in 2013, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-e4459aeba14c",
@@ -1357,11 +1368,11 @@
     "name": "Baizak Kudaibergenov",
     "country_code": "AE",
     "country_name": "United Arab Emirates",
-    "location_label": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-    "evidence_kind": "current_role_location",
+    "location_label": "Abu Dhabi, United Arab Emirates",
+    "evidence_url": "https://www.ku.ac.ae/college-people/ahsan-habib-khandoker",
+    "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Country follows the location attached to the accepted current role at Khalifa University. The public profile header independently agrees.",
-    "evidence_url": "https://linkedin.com/in/baizaq"
+    "review_reason": "Country follows the accepted active student affiliation at Khalifa University; the linked official institution source establishes the campus location. Khalifa University's official faculty and lab page identifies the university in Abu Dhabi and lists Baizak Kudaibergenov under its students."
   },
   {
     "person_id": "kaz-e592924f7a04",
@@ -2303,11 +2314,11 @@
     "name": "Kanat Satylkhanov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2023)",
     "evidence_url": "https://imojp.org/support/IMO2023_REPORT_jp.pdf",
-    "evidence_kind": "career_source_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "confirmed",
-    "review_reason": "The official IMO report identifies Kanat's latest reviewed deputy-leader role for Kazakhstan's national team; the role is dated to 2023."
+    "review_reason": "The official IMO report identifies Kanat's latest reviewed deputy-leader role for Kazakhstan's national team; the role is dated to 2023. The selected role ended in 2023, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-11782cb39ded",
@@ -2967,7 +2978,7 @@
     "evidence_url": "https://linkedin.com/in/nurlan-algashov",
     "evidence_kind": "active_affiliation_profile_location",
     "confidence": "probable",
-    "review_reason": "The accepted profile places Nurlan in Denmark alongside his ongoing WHO Regional Office for Europe technical-officer role; no conflicting current affiliation is present."
+    "review_reason": "The accepted profile places Nurlan in Denmark and independently lists his ongoing consultant role at WHO Regional Office for Europe. The role itself is home-based, so Denmark is corroborated profile location rather than a claimed worksite or legal residence."
   },
   {
     "person_id": "kaz-88a74ae3e050",
@@ -3084,11 +3095,11 @@
     "name": "Nurzhan Abdrakhmanov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kyzylorda, Kazakhstan",
+    "location_label": "Kyzylorda, Kazakhstan (last verified in 2024)",
     "evidence_url": "https://uranconference.kz/download/files/information/sbornik2024_5_rus.pdf",
-    "evidence_kind": "career_source_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
-    "review_reason": "The latest reviewed Baiken-U publication affiliates N.N. Abdrakhmanov with the company in Kyzylorda, Kazakhstan in 2024. This is the latest sourced professional location, not a claim of residence or continuing employment after 2024."
+    "review_reason": "The latest reviewed Baiken-U publication affiliates N.N. Abdrakhmanov with the company in Kyzylorda, Kazakhstan in 2024. This is the latest sourced professional location, not a claim of residence or continuing employment after 2024. The selected role ended in 2024, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-d1a89ad778a3",
@@ -3117,11 +3128,11 @@
     "name": "Nurzhan Nagashbekov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_url": "https://orcid.org/0009-0007-2656-9739",
-    "evidence_kind": "affiliation_country",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://farabi.university/pages/206?lang=en",
+    "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Country comes from the accepted structured affiliation record."
+    "review_reason": "Country follows the accepted active student affiliation at Al-Farabi Kazakh National University; the linked official institution source establishes the campus location. Al-Farabi KazNU's official site identifies its campus address at 71 Al-Farabi Avenue in Almaty Kazakhstan."
   },
   {
     "person_id": "kaz-f2b0c2f36f45",
@@ -3209,7 +3220,7 @@
     "evidence_url": "https://probeg.org/race/74199/",
     "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
-    "review_reason": "The age-compatible rare-name match appears in a dated 2020 Moscow race result with Moscow as his city and 1984 as his birth year. This is the latest verified location found and is not presented as current residence."
+    "review_reason": "The age-compatible rare-name match appears in a dated 2020 Moscow race result with Moscow as his city and 1984 as his birth year. This is the latest verified location found and is not presented as current residence. The selected role ended in 2019, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-3bb636937f0d",
@@ -3531,17 +3542,6 @@
     "review_reason": "Country follows the accepted active student affiliation at Nazarbayev University; the linked official institution source establishes the campus location. Nazarbayev University's official contact page identifies its Astana campus."
   },
   {
-    "person_id": "kaz-860c6f9abbfa",
-    "name": "Sanzhar Orazbayev",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_url": "https://codeforces.com/profile/gh_ost",
-    "evidence_kind": "affiliation_country",
-    "confidence": "probable",
-    "review_reason": "Country comes from the accepted structured affiliation record."
-  },
-  {
     "person_id": "kaz-4f8a3959755f",
     "name": "Sanzhar Otey",
     "country_code": "KZ",
@@ -3792,7 +3792,7 @@
     "evidence_url": "https://kase.kz/files/emitters/BCCI/bccirbf7_2020.pdf",
     "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
-    "review_reason": "The bounded latest reviewed role was at Kazakhstan brokerage BCC Invest through 2020. This is historical latest-known evidence only; no current residence is inferred."
+    "review_reason": "The bounded latest reviewed role was at Kazakhstan brokerage BCC Invest through 2020. This is historical latest-known evidence only; no current residence is inferred. The selected role ended in 2020, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-21741893c5a2",
@@ -3899,10 +3899,10 @@
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Astana, Kazakhstan",
-    "evidence_url": "https://nur.nu.edu.kz/items/86a10e4c-8685-4d44-b3d3-7d8c00c39682",
+    "evidence_url": "https://schools.nis.edu.kz/en/school/nzm-astana-nura/news/2303?menu=4&parent_menu=4",
     "evidence_kind": "career_source_location",
     "confidence": "probable",
-    "review_reason": "Temirlan's latest accepted affiliation is his 2025 Nazarbayev University physics graduation in Astana; this is a historical latest-known location."
+    "review_reason": "NIS Astana-Nura's official June 2026 report identifies Temirlan as the physics teacher who prepared Kazakhstan's EuPhO silver medalist; the role source establishes Astana as his latest reviewed professional location."
   },
   {
     "person_id": "kaz-d19956e64f90",
@@ -3964,11 +3964,11 @@
     "name": "Timur Zhiyentayev",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "Pasadena, California, United States",
+    "location_label": "Pasadena, California, United States (last verified in 2017)",
     "evidence_url": "https://medium.com/%40tima103/how-to-get-more-paying-users-with-user-friendly-paywall-part-ii-8e09766f62eb",
-    "evidence_kind": "career_source_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "confirmed",
-    "review_reason": "The self-authored 2017 Drizzle co-founder record belongs to the Pasadena California startup and is retained as a historical latest-known role rather than current employment."
+    "review_reason": "The self-authored 2017 Drizzle co-founder record belongs to the Pasadena California startup and is retained as a historical latest-known role rather than current employment. The selected role ended in 2017, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-47297d0b8770",
@@ -4019,11 +4019,11 @@
     "name": "Vadim Murzin",
     "country_code": "DE",
     "country_name": "Germany",
-    "location_label": "Hamburg, Germany",
+    "location_label": "Hamburg, Germany (last verified in 2024)",
     "evidence_url": "https://photon-science.desy.de/facilities/petra_iii/beamlines/p64_advanced_xafs/contact__staff/index_eng.html",
-    "evidence_kind": "career_source_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
-    "review_reason": "DESY's reviewed scientist alumni page places Vadim's latest known research affiliation at its Hamburg facility; it is not presented as current."
+    "review_reason": "DESY's reviewed scientist alumni page places Vadim's latest known research affiliation at its Hamburg facility; it is not presented as current. The selected role ended in 2024, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-36f5d4e0f896",
@@ -4243,7 +4243,7 @@
     "evidence_url": "https://ariregister.rik.ee/est/company/16568487/file/9011480944",
     "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
-    "review_reason": "Estonia's registry places Yerbol's bounded 2022-2024 Quantstellation board role at the Tallinn company. This is historical latest-known evidence only; no current residence is inferred, and the identity remains probable."
+    "review_reason": "Estonia's registry places Yerbol's bounded 2022-2024 Quantstellation board role at the Tallinn company. This is historical latest-known evidence only; no current residence is inferred, and the identity remains probable. The selected role ended in 2024, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-8ad6d5a1915d",
@@ -4536,11 +4536,11 @@
     "name": "Zeinul-Gabiden Kazhkenov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
+    "location_label": "Kazakhstan (last verified in 2021)",
     "evidence_url": "https://kz.linkedin.com/in/zeinul-gabiden-kazhkenov-23203052",
-    "evidence_kind": "career_source_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
-    "review_reason": "The accepted profile's primary location is Kazakhstan and its latest disclosed Polymer Production role is explicitly located in Kazakhstan; the older Cornell and Memorial Sloan Kettering records are historical education and research affiliations and do not determine the outcome country."
+    "review_reason": "The accepted profile's primary location is Kazakhstan and its latest disclosed Polymer Production role is explicitly located in Kazakhstan; the older Cornell and Memorial Sloan Kettering records are historical education and research affiliations and do not determine the outcome country. The selected role ended in 2021, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-b22287fe1ff1",
@@ -4725,9 +4725,9 @@
     "country_name": "Kazakhstan",
     "location_label": "Almaty, Kazakhstan (last verified in 2022)",
     "evidence_url": "https://axoftglobal.com/reviews",
-    "evidence_kind": "career_source_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "probable",
-    "review_reason": "A 2022 business testimonial identifies exact full-name Zharas Bakhytovich Baideldinov of Corvus Technologies in Almaty, consistent with the rare-name 1993 IMO alumnus and his Kazakhstan dissertation record. This is latest-known evidence, not a current residence claim."
+    "review_reason": "A 2022 business testimonial identifies exact full-name Zharas Bakhytovich Baideldinov of Corvus Technologies in Almaty, consistent with the rare-name 1993 IMO alumnus and his Kazakhstan dissertation record. This is latest-known evidence, not a current residence claim. The selected role ended in 2022, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-f67b534425a5",

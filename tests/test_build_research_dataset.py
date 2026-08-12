@@ -1,6 +1,7 @@
 import unittest
 
 from scripts.build_research_dataset import (
+    affiliation_supported_by_identity,
     build_rows,
     normalize_destination,
     organization_category,
@@ -162,6 +163,58 @@ class RejectedCandidateTest(unittest.TestCase):
         self.assertEqual(row.organization, "")
         self.assertEqual(row.evidence_urls, "")
 
+    def test_probable_affiliation_requires_non_candidate_identity_for_same_source(self):
+        candidate_identity = {
+            "source": "orcid",
+            "profile_url": "https://orcid.org/0000-0000-0000-0001",
+            "evidence_url": "https://orcid.org/0000-0000-0000-0001",
+            "confidence": "candidate",
+            "score_reasons": "exact_name;ambiguous_same_name_source",
+            "outbound_urls": "",
+        }
+        probable_affiliation = {
+            "evidence_url": "https://orcid.org/0000-0000-0000-0001",
+            "confidence": "probable",
+        }
+
+        self.assertFalse(
+            affiliation_supported_by_identity(
+                probable_affiliation,
+                candidate_identity,
+                [candidate_identity],
+            )
+        )
+
+        probable_identity = {
+            **candidate_identity,
+            "confidence": "probable",
+            "score_reasons": "exact_name;direct_olympiad_evidence",
+        }
+        self.assertTrue(
+            affiliation_supported_by_identity(
+                probable_affiliation,
+                probable_identity,
+                [probable_identity],
+            )
+        )
+
+        selected_identity = {
+            **probable_identity,
+            "profile_url": "https://orcid.org/0000-0000-0000-0002",
+            "evidence_url": "https://orcid.org/0000-0000-0000-0002",
+        }
+        unbridged_secondary_identity = {
+            **probable_identity,
+            "score_reasons": "exact_name;field_alignment;plausible_timeline",
+        }
+        self.assertFalse(
+            affiliation_supported_by_identity(
+                probable_affiliation,
+                selected_identity,
+                [selected_identity, unbridged_secondary_identity],
+            )
+        )
+
 
 class OrganizationCategoryTest(unittest.TestCase):
     def test_school_employers_are_not_classified_as_industry(self):
@@ -243,6 +296,46 @@ class DestinationNormalizationTest(unittest.TestCase):
         self.assertEqual(normalized[0], "Example University")
         self.assertEqual(normalized[3], "current_education")
 
+    def test_active_phd_student_is_education_even_when_source_calls_it_employment(self):
+        normalized = normalize_destination(
+            "Example University", "PhD student", "employment", "2024", ""
+        )
+
+        self.assertEqual(normalized[0], "Example University")
+        self.assertEqual(normalized[2], "education")
+        self.assertEqual(normalized[3], "current_education")
+
+    def test_active_doctoral_researcher_is_treated_as_a_student(self):
+        for role in ("PhD Researcher", "Doctoral Researcher"):
+            with self.subTest(role=role):
+                normalized = normalize_destination(
+                    "Example University", role, "employment", "2024", ""
+                )
+
+                self.assertEqual(normalized[0], "Example University")
+                self.assertEqual(normalized[2], "education")
+                self.assertEqual(normalized[3], "current_education")
+
+    def test_postdoctoral_researcher_remains_employment(self):
+        normalized = normalize_destination(
+            "Example University", "Postdoctoral Researcher", "employment", "2026", ""
+        )
+
+        self.assertEqual(normalized[2], "employment")
+        self.assertEqual(normalized[3], "latest_employment")
+
+    def test_undergraduate_research_fellow_remains_employment(self):
+        normalized = normalize_destination(
+            "Example University",
+            "Undergraduate Research Fellow",
+            "employment",
+            "2026",
+            "",
+        )
+
+        self.assertEqual(normalized[2], "employment")
+        self.assertEqual(normalized[3], "latest_employment")
+
     def test_university_researcher_is_employment(self):
         normalized = normalize_destination(
             "Example University", "Senior Researcher", "education", "2024", ""
@@ -261,6 +354,14 @@ class DestinationNormalizationTest(unittest.TestCase):
 
     def test_unscoped_academic_organization_is_not_a_destination(self):
         normalized = normalize_destination("MIT", "", "organization", "", "")
+
+        self.assertEqual(normalized[0], "")
+        self.assertEqual(normalized[3], "history_only")
+
+    def test_unscoped_company_organization_is_not_a_destination(self):
+        normalized = normalize_destination(
+            "Example Company", "", "organization", "", ""
+        )
 
         self.assertEqual(normalized[0], "")
         self.assertEqual(normalized[3], "history_only")

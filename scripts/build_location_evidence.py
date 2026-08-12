@@ -705,6 +705,32 @@ def build_rows(
                 }
             )
 
+    people_by_id = {
+        clean_text(person.get("person_id")): person for person in people
+    }
+    for row in output:
+        person = people_by_id.get(row["person_id"], {})
+        end_year = clean_text(person.get("end_year"))
+        if (
+            clean_text(person.get("destination_status")) != "latest_employment"
+            or not end_year.isdigit()
+            or int(end_year) >= 2026
+        ):
+            continue
+        row["evidence_kind"] = "historical_outcome_location"
+        if not re.search(
+            r"(?:last verified|latest known|latest role verified)",
+            row["location_label"],
+            re.IGNORECASE,
+        ):
+            row["location_label"] = (
+                f"{row['location_label']} (last verified in {end_year})"
+            )
+        row["review_reason"] = (
+            f"{row['review_reason']} The selected role ended in {end_year}, so this "
+            "is displayed as a historical latest-known country rather than a current residence."
+        )
+
     return sorted(output, key=lambda row: (row["name"].casefold(), row["person_id"]))
 
 

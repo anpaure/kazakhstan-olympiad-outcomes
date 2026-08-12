@@ -2718,6 +2718,24 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-981612f17b5680d6",
+    "alias": "\"Center for Pedagogical Measurements\" under the AEO \"Nazarbayev Intellectual schools\"",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "parent_organization",
+    "rationale": "Quoted public-profile wording normalized to the NIS parent organization.",
+    "evidence_url": "https://linkedin.com/in/yerlan-b-887a4336"
+  },
+  {
+    "organization_alias_id": "org-26a19788d55e4f6a",
+    "alias": "Center for Pedagogical Measurements under the AEO Nazarbayev Intellectual Schools",
+    "canonical_name": "Nazarbayev Intellectual Schools (NIS)",
+    "display_name": "NIS",
+    "merge_type": "parent_organization",
+    "rationale": "The accepted profile identifies the assessment center as a unit under the NIS autonomous educational organization.",
+    "evidence_url": "https://linkedin.com/in/yerlan-b-887a4336"
+  },
+  {
     "organization_alias_id": "org-a939baa12ff712ea",
     "alias": "Nazarbayev Intellectual School in Semey",
     "canonical_name": "Nazarbayev Intellectual Schools (NIS)",

@@ -60,6 +60,15 @@ class OrganizationNormalizationTest(unittest.TestCase):
         self.assertIn("@khangroupkz", aliases)
         self.assertIn("Khan Group LLP", aliases)
 
+    def test_nis_assessment_center_normalizes_to_parent(self):
+        self.assertEqual(
+            canonicalize_organization(
+                '"Center for Pedagogical Measurements" under the AEO '
+                '"Nazarbayev Intellectual schools"'
+            ),
+            "Nazarbayev Intellectual Schools (NIS)",
+        )
+
     def test_common_university_aliases_merge(self):
         self.assertEqual(
             canonicalize_organization("UC Berkeley"),
