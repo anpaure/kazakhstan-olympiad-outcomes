@@ -847,5 +847,22 @@
     "review_reason": "The official IPhO record lists Danil Murtazin while an Aktau School-Gymnasium No. 4 retrospective identifies its 2001 international physics gold medalist as Муртазин Даниил; the reviewed forms are spelling variants of the same contestant.",
     "evidence_url": "https://www.lada.kz/sms_news/6463-otkrytoe-pismo-roditeley-shkoly-gimnazii-4.html",
     "canonical_person_id": "kaz-1e390288b2cc"
+  },
+  {
+    "left": "Aset Iskakov",
+    "right": "Aset Iskakov",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IChO"
+    ],
+    "left_years": [
+      2002,
+      2003
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "A Kazakhstan chemistry-Olympiad history identifies Aset Iskakov as the 2002-2003 IChO medalist who entered METU in 2003; the Asset spelling variant's public profile records the same rare-name 2003-2007 METU Petroleum Engineering timeline.",
+    "evidence_url": "https://kz.linkedin.com/in/asset-iskakov-805a34a4",
+    "canonical_person_id": "kaz-fc88fa90b799"
   }
 ]

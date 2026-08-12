@@ -30,7 +30,7 @@ Graviton Research Capital LLP,Graviton Research Capital,Graviton Research Capita
 HITS Inc,HITS,HITS,same_entity,Legal-form variant
 Huawei Noah's Ark Lab,Huawei,Huawei,parent_organization,Huawei research unit
 Huawei Switzerland,Huawei,Huawei,parent_organization,Huawei national subsidiary
-IoS_Flutter company,iOS/Flutter,iOS/Flutter,same_entity,Source employer label with generic company suffix,https://kz.linkedin.com/in/azamat-aidanov-64046076
+IoS_Flutter company,iOS_Flutter,iOS_Flutter,same_entity,Source employer label with generic company suffix,https://kz.linkedin.com/in/azamat-aidanov-64046076
 KAZ Minerals Management LLP,KAZ Minerals,KAZ Minerals,parent_organization,KAZ Minerals management entity
 Khan Group LLP,Khan Group,Khan Group,same_entity,Legal-form variant
 @khangroupkz,Khan Group,Khan Group,same_entity,Public handle corroborated by a second Khan Group affiliation
@@ -303,7 +303,7 @@ Barcelona Graduate School of Economics,Barcelona School of Economics (BSE),Barce
 Jacobs University Bremen,Constructor University,Constructor University,former_name,University adopted the Constructor University name in 2022
 MBZUAI (Mohamed bin Zayed University of Artificial Intelligence),Mohamed bin Zayed University of Artificial Intelligence (MBZUAI),MBZUAI,name_order,Acronym-first source label
 Atyrau Oil&Gas Institute,Utebayev Atyrau Oil and Gas University,Atyrau Oil and Gas University,former_name,Former institute name for the current university
-ios_flutter,iOS/Flutter,iOS/Flutter,capitalization_variant,Normalized capitalization of the source employer label,https://kz.linkedin.com/in/azamat-aidanov-64046076
+ios_flutter,iOS_Flutter,iOS_Flutter,capitalization_variant,Normalized capitalization of the source employer label,https://kz.linkedin.com/in/azamat-aidanov-64046076
 AIFC Green Finance Centre,Astana International Financial Centre,AIFC,parent_organization,Green Finance Centre is an AIFC subsidiary,https://aifc.kz/news/aifc-green-finance-centre-to-open-a-branch-in-bishkek/
 AIFC Green Finance Centre Ltd,Astana International Financial Centre,AIFC,parent_organization,Legal name of the AIFC subsidiary,https://aifc.kz/wp-content/uploads/2024/06/aifc_ar2020_eng.pdf
 Kumtor Operating Company,Kumtor Gold Company,Kumtor Gold,former_name,Operations transferred from KOC to KGC in 2014,https://www.kumtor.kg/en/deposit/history/

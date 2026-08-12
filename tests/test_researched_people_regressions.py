@@ -1473,13 +1473,22 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(self.alma_maters(person["person_id"]), {"HSE University"})
         self.assertNotIn(person["person_id"], self.locations)
 
-    def test_aset_iskakov_metu_history_replaces_openalex_namesake(self):
+    def test_aset_iskakov_metu_and_historical_slb_without_guessed_country(self):
         person = self.people["kaz-fc88fa90b799"]
         affiliations = self.affiliations_for(person["person_id"])
 
-        self.assertEqual(person["confidence"], "confirmed")
-        self.assertEqual(person["organization"], "")
-        self.assertEqual(person["destination_status"], "history_only")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(person["organization"], "SLB")
+        self.assertEqual(
+            person["role"], "Caspian Recruiting and University Relations Manager"
+        )
+        self.assertEqual(person["destination_status"], "latest_employment")
+        self.assertEqual(person["start_year"], "2014")
+        self.assertEqual(person["end_year"], "2017")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://kz.linkedin.com/in/asset-iskakov-805a34a4",
+        )
         self.assertEqual(
             self.alma_maters(person["person_id"]),
             {"Middle East Technical University"},
@@ -1527,6 +1536,117 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             )
         )
         self.assertNotIn(person["person_id"], self.locations)
+
+    def test_saken_serhanov_linkedin_start_date_and_ucla_outcome(self):
+        person = self.people["kaz-09d9fdb93af5"]
+
+        self.assertEqual(
+            person["organization"],
+            "University of California, Los Angeles (UCLA)",
+        )
+        self.assertEqual(person["role"], "Senior Project Scientist")
+        self.assertEqual(person["start_year"], "2021")
+
+    def test_sampled_authoritative_biographies_supply_alma_maters(self):
+        self.assertEqual(
+            self.alma_maters("kaz-a5c7de0d34ee"),
+            {"Stanford University", "London Business School"},
+        )
+        self.assertEqual(
+            self.alma_maters("kaz-0f8fdc911846"),
+            {
+                "Indiana University Bloomington",
+                "University of Illinois Urbana-Champaign",
+            },
+        )
+        self.assertIn(
+            "Al-Farabi Kazakh National University",
+            self.alma_maters("kaz-11782cb39ded"),
+        )
+
+    def test_structured_student_roles_are_education(self):
+        dauren = next(
+            row
+            for row in self.affiliations_for("kaz-28f11085b34d")
+            if row["organization"] == "Abai Kazakh National Pedagogical University"
+        )
+        ayat = next(
+            row
+            for row in self.affiliations_for("kaz-e252a91b0399")
+            if row["organization"] == "Pennsylvania State University"
+            and row["role"] == "PhD candidate"
+        )
+
+        self.assertEqual(dauren["affiliation_type"], "education")
+        self.assertTrue(dauren["selected_as_alma_mater"])
+        self.assertEqual(ayat["affiliation_type"], "education")
+
+    def test_azamat_aidanov_employer_is_not_rendered_as_a_technology_pair(self):
+        person = self.people["kaz-e310964136d0"]
+
+        self.assertEqual(person["organization"], "iOS_Flutter")
+        self.assertEqual(person["role"], "Head of Quality Assurance")
+
+    def test_alen_abdrakhmanov_degree_ignores_achievement_date_range(self):
+        kbtu_degrees = [
+            row
+            for row in self.affiliations_for("kaz-6ff2bc2176bd")
+            if row["organization"] == "Kazakh-British Technical University (KBTU)"
+            and row["role"].startswith("Bachelor of Applied Science")
+        ]
+
+        self.assertEqual(len(kbtu_degrees), 1)
+        self.assertEqual(kbtu_degrees[0]["start_year"], "2018")
+        self.assertEqual(kbtu_degrees[0]["end_year"], "2021")
+
+    def test_adilet_zauytkhan_school_dates_do_not_leak_into_unist_degree(self):
+        affiliations = self.affiliations_for("kaz-59a056858c02")
+        unist_degree = next(
+            row
+            for row in affiliations
+            if row["organization"]
+            == "Ulsan National Institute of Science and Technology (UNIST)"
+            and row["role"].startswith("Bachelor of Science")
+        )
+        high_school = next(
+            row
+            for row in affiliations
+            if row["organization"] == "Bilim-Innovation Lyceums (BIL)"
+            and row["role"].startswith("High School Diploma")
+        )
+
+        self.assertEqual(unist_degree["start_year"], "")
+        self.assertEqual(unist_degree["end_year"], "")
+        self.assertEqual(high_school["start_year"], "2017")
+        self.assertEqual(high_school["end_year"], "2022")
+
+    def test_postsecondary_degree_dates_do_not_predate_olympiad_timeline(self):
+        implausible = []
+        for row in self.affiliations:
+            start_year = row.get("start_year", "")
+            role = row.get("role", "").casefold()
+            if (
+                not row.get("selected_as_alma_mater")
+                or not start_year.isdigit()
+                or not any(
+                    degree in role
+                    for degree in (
+                        "bachelor",
+                        "undergraduate",
+                        "master",
+                        "phd",
+                        "doctor",
+                    )
+                )
+            ):
+                continue
+            first_olympiad_year = int(self.people[row["person_id"]]["first_year"])
+            if int(start_year) < first_olympiad_year - 1:
+                implausible.append(
+                    (row["person_id"], row["organization"], start_year)
+                )
+
+        self.assertEqual(implausible, [])
 
 
 if __name__ == "__main__":

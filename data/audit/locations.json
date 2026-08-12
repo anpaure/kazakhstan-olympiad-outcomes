@@ -994,18 +994,18 @@
     "review_reason": "Country follows the accepted active student affiliation at Imperial College London; the linked official institution source establishes the campus location. Imperial's official campus page identifies its London campuses."
   },
   {
-    "location_id": "loc-da585ce2cd08952b",
-    "evidence_id": "ev-00bc092d2ffb00c9",
-    "source_id": "src-516e4860170e",
+    "location_id": "loc-bbf855ec66b71409",
+    "evidence_id": "ev-145b68370b6d158f",
+    "source_id": "src-9ed7890c8ad5",
     "person_id": "kaz-64e130a742d3",
     "name": "Amir Sakhipov",
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "location_id": "loc-e965b71d9b93cf51",
@@ -1358,18 +1358,18 @@
     "review_reason": "tLab's current site lists Arnur Tokhtabayev as CEO and gives the company's active address in Astana Kazakhstan."
   },
   {
-    "location_id": "loc-bdf8011dbc2ff85a",
-    "evidence_id": "ev-15a9f63b8736d274",
-    "source_id": "src-2a3bbc6c0ffe",
+    "location_id": "loc-9267f4f20632ba49",
+    "evidence_id": "ev-b70fbdceb8db0e2d",
+    "source_id": "src-4c75ad0f9d52",
     "person_id": "kaz-4fe09b624ebf",
     "name": "Artur Kim",
     "country_code": "SG",
     "country_name": "Singapore",
     "location_label": "Singapore",
-    "evidence_url": "https://www.ntu.edu.sg/about-us/visit-us",
+    "evidence_url": "https://www.ntu.edu.sg/about-us/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Nanyang Technological University (NTU); the linked official institution source establishes the campus location. NTU's official visitor page identifies its Singapore campus."
+    "review_reason": "Country follows the accepted active student affiliation at Nanyang Technological University (NTU); the linked official institution source establishes the campus location. NTU's official contact page identifies its Singapore campus."
   },
   {
     "location_id": "loc-30f0fe5b9c002d22",
@@ -1484,18 +1484,18 @@
     "review_reason": "The accepted current sole-proprietor record is in Kazakhstan's government business-entities register. Only the country is asserted because the reviewed registry result does not state a city."
   },
   {
-    "location_id": "loc-fd0d7b7e0e81ec06",
-    "evidence_id": "ev-ba10d61d317f79d9",
-    "source_id": "src-516e4860170e",
+    "location_id": "loc-ceaa9a841b4302db",
+    "evidence_id": "ev-31a2814139e1ac08",
+    "source_id": "src-9ed7890c8ad5",
     "person_id": "kaz-53073a123482",
     "name": "Assem Zhunis",
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "location_id": "loc-731894be9cb6f4e0",
@@ -1621,7 +1621,7 @@
     "evidence_url": "https://linkedin.com/in/azamat-aidanov-64046076",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at iOS/Flutter. The public profile header independently agrees."
+    "review_reason": "Country follows the location attached to the accepted current role at iOS_Flutter. The public profile header independently agrees."
   },
   {
     "location_id": "loc-e53bf8aefbbdb223",
@@ -1848,18 +1848,18 @@
     "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees."
   },
   {
-    "location_id": "loc-8123243eefd2caa6",
-    "evidence_id": "ev-cd81c5cdbbc1ac60",
-    "source_id": "src-516e4860170e",
+    "location_id": "loc-0020ad0b024df526",
+    "evidence_id": "ev-c93bafd662b010cf",
+    "source_id": "src-9ed7890c8ad5",
     "person_id": "kaz-cb653a13b10b",
     "name": "Batyrkhan Sakenov",
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "location_id": "loc-6d3aa0d4710dda78",
@@ -2450,32 +2450,32 @@
     "review_reason": "Country follows the location attached to the accepted current role at NVIDIA. The profile header points to United States, but it conflicts with the active-role location and is not used."
   },
   {
-    "location_id": "loc-b18a512e4ce9c04e",
-    "evidence_id": "ev-3858de3e0425ef0d",
-    "source_id": "src-516e4860170e",
+    "location_id": "loc-cb7c8a7dcce9f042",
+    "evidence_id": "ev-c12c95271372e47f",
+    "source_id": "src-9ed7890c8ad5",
     "person_id": "kaz-c5f47f6f2526",
     "name": "Dias Suleimenov",
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
-    "location_id": "loc-feba8a167e5cb20c",
-    "evidence_id": "ev-9c00ce6442fc32f4",
-    "source_id": "src-f902c5259f1c",
+    "location_id": "loc-3bda6eecfb7438f9",
+    "evidence_id": "ev-5f99588b55160834",
+    "source_id": "src-0a1f77646095",
     "person_id": "kaz-319ba97c86aa",
     "name": "Dinmukhamed Rakhimzhanov",
     "country_code": "GB",
     "country_name": "United Kingdom",
     "location_label": "Cambridge, England, United Kingdom",
-    "evidence_url": "https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work/visiting-the-university",
+    "evidence_url": "https://www.cam.ac.uk/about-the-university/contact-the-university",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official visitor page identifies its Cambridge location."
+    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official contact page identifies its Cambridge location."
   },
   {
     "location_id": "loc-b4a8076522a89ca6",
@@ -2562,18 +2562,18 @@
     "review_reason": "Country follows the location attached to the accepted current role at Intel Corporation. The public profile header independently agrees."
   },
   {
-    "location_id": "loc-b0d2864469c16dd7",
-    "evidence_id": "ev-d9ce3bd3dcea1772",
-    "source_id": "src-516e4860170e",
+    "location_id": "loc-a8bf5e23c1478d3b",
+    "evidence_id": "ev-38993380fdbba4cc",
+    "source_id": "src-9ed7890c8ad5",
     "person_id": "kaz-9ad9420e5768",
     "name": "Doszhan Bissimbi",
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "location_id": "loc-ebde928ec4ee60cc",
@@ -2618,18 +2618,18 @@
     "review_reason": "Country follows Erke Nurkenov's current United Group Alatau executive role; the company's official contact page identifies its legal and actual address in Almaty Kazakhstan."
   },
   {
-    "location_id": "loc-d28f2eae68cd5c4c",
-    "evidence_id": "ev-ddc0fc8e5141f9a9",
-    "source_id": "src-516e4860170e",
+    "location_id": "loc-641a2d421aab0cad",
+    "evidence_id": "ev-93859a797194fb10",
+    "source_id": "src-9ed7890c8ad5",
     "person_id": "kaz-087d239f6acf",
     "name": "Fetullakh Sam",
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "location_id": "loc-573479c50c5ea2ca",
@@ -3332,18 +3332,18 @@
     "review_reason": "The accepted profile places the person in United Arab Emirates and independently lists the matched current role at Smart Global (IIoT)."
   },
   {
-    "location_id": "loc-ca8a91f77c3d6830",
-    "evidence_id": "ev-eadf36a809c3e6f3",
-    "source_id": "src-2a3bbc6c0ffe",
+    "location_id": "loc-0e43f573e9145841",
+    "evidence_id": "ev-b4a5459a4b79c7a8",
+    "source_id": "src-4c75ad0f9d52",
     "person_id": "kaz-618279226751",
     "name": "Maxim Tsoy",
     "country_code": "SG",
     "country_name": "Singapore",
     "location_label": "Singapore",
-    "evidence_url": "https://www.ntu.edu.sg/about-us/visit-us",
+    "evidence_url": "https://www.ntu.edu.sg/about-us/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Country follows the accepted active student affiliation at Nanyang Technological University (NTU); the linked official institution source establishes the campus location. NTU's official visitor page identifies its Singapore campus."
+    "review_reason": "Country follows the accepted active student affiliation at Nanyang Technological University (NTU); the linked official institution source establishes the campus location. NTU's official contact page identifies its Singapore campus."
   },
   {
     "location_id": "loc-ca4791e3079c7567",
@@ -3486,18 +3486,18 @@
     "review_reason": "Brandkamp's reviewed catalogue explicitly identifies Mirat as its Kazakhstan Sales Partner; no narrower location is asserted."
   },
   {
-    "location_id": "loc-3821a6af9ce45faa",
-    "evidence_id": "ev-3008c1d6aca0d789",
-    "source_id": "src-f902c5259f1c",
+    "location_id": "loc-c10879313327ab05",
+    "evidence_id": "ev-2bcc73e1a7d4ba04",
+    "source_id": "src-0a1f77646095",
     "person_id": "kaz-69bda00903cf",
     "name": "Miron Yurkevich",
     "country_code": "GB",
     "country_name": "United Kingdom",
     "location_label": "Cambridge, England, United Kingdom",
-    "evidence_url": "https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work/visiting-the-university",
+    "evidence_url": "https://www.cam.ac.uk/about-the-university/contact-the-university",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official visitor page identifies its Cambridge location."
+    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official contact page identifies its Cambridge location."
   },
   {
     "location_id": "loc-67bab5f935d37438",
@@ -4102,18 +4102,18 @@
     "review_reason": "The accepted profile places Raiymbek in Mountain View, California, while Armeta's current team page identifies the same ML Engineer destination."
   },
   {
-    "location_id": "loc-2594eff96619b04b",
-    "evidence_id": "ev-5ab86b08c5983844",
-    "source_id": "src-516e4860170e",
+    "location_id": "loc-93c9bda06881c7e5",
+    "evidence_id": "ev-784bc2706a7ddc14",
+    "source_id": "src-9ed7890c8ad5",
     "person_id": "kaz-8db1b6d8afd7",
     "name": "Raiymbek Baishuak",
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "location_id": "loc-f1ddfcb5669da510",
@@ -5320,18 +5320,18 @@
     "review_reason": "Samruk-Kazyna's current appointment notice places Yelzhas at Kazakhstan Temir Zholy in Astana."
   },
   {
-    "location_id": "loc-c879246e420e56a4",
-    "evidence_id": "ev-2d4ae477df726654",
-    "source_id": "src-f902c5259f1c",
+    "location_id": "loc-4d5913077a8224a7",
+    "evidence_id": "ev-36e6cd70aab72537",
+    "source_id": "src-0a1f77646095",
     "person_id": "kaz-eebfbe6a6de9",
     "name": "Yenlik Bakytbekova",
     "country_code": "GB",
     "country_name": "United Kingdom",
     "location_label": "Cambridge, England, United Kingdom",
-    "evidence_url": "https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work/visiting-the-university",
+    "evidence_url": "https://www.cam.ac.uk/about-the-university/contact-the-university",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official visitor page identifies its Cambridge location."
+    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official contact page identifies its Cambridge location."
   },
   {
     "location_id": "loc-d3bb233b0384bc8a",
@@ -5362,18 +5362,18 @@
     "review_reason": "Country follows the accepted active student affiliation at University of Debrecen; the linked official institution source establishes the campus location. The university's official contact page identifies its Debrecen campus."
   },
   {
-    "location_id": "loc-f89f965e5c9b1ef0",
-    "evidence_id": "ev-c0aba86d51f73cba",
-    "source_id": "src-516e4860170e",
+    "location_id": "loc-eadb6afa80c31b6f",
+    "evidence_id": "ev-c24dfc7dd582265b",
+    "source_id": "src-9ed7890c8ad5",
     "person_id": "kaz-a07bb87cf2c6",
     "name": "Yerassyl Temirbekov",
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "location_id": "loc-cd411d6d98e01b02",

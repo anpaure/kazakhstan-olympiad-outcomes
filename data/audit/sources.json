@@ -544,15 +544,15 @@
     "source_url": "https://biology.ufl.edu/zhanar-abil/",
     "source_host": "biology.ufl.edu",
     "source_kind": "web_page",
-    "evidence_rows": 3,
+    "evidence_rows": 5,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 2,
+    "supporting_rows": 4,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "current_role_location;manual;manual_review"
+    "source_adapters": "current_role_location;manual;manual_review;official_university_biography"
   },
   {
     "source_id": "src-69f1d3174ce1",
@@ -694,10 +694,10 @@
     "source_url": "https://ch.linkedin.com/in/shyngys-aitkazinov-00496b193",
     "source_host": "ch.linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 19,
+    "evidence_rows": 18,
     "people_count": 1,
     "accepted_rows": 2,
-    "supporting_rows": 17,
+    "supporting_rows": 16,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
@@ -5925,8 +5925,8 @@
     "source_adapters": "accepted_linkedin_profile;active_affiliation_profile_location;destination_review;destination_source_review;linkedin;manual;manual_review"
   },
   {
-    "source_id": "src-516e4860170e",
-    "source_url": "https://hkust.edu.hk/about/campus",
+    "source_id": "src-9ed7890c8ad5",
+    "source_url": "https://hkust.edu.hk/contact-us",
     "source_host": "hkust.edu.hk",
     "source_kind": "web_page",
     "evidence_rows": 8,
@@ -6762,7 +6762,7 @@
     "superseded_rows": 1,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_destination_reconciliation;manual_review",
-    "source_adapters": "accepted_linkedin_profile;destination_review;destination_source_review;linkedin;manual;manual_review"
+    "source_adapters": "accepted_linkedin_profile;destination_review;destination_source_review;linkedin;manual"
   },
   {
     "source_id": "src-2dc274f62231",
@@ -6829,15 +6829,15 @@
     "source_url": "https://kz.linkedin.com/in/alen-abdrakhmanov",
     "source_host": "kz.linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 12,
+    "evidence_rows": 11,
     "people_count": 1,
     "accepted_rows": 2,
-    "supporting_rows": 10,
+    "supporting_rows": 9,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual;manual_review"
+    "source_adapters": "accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual"
   },
   {
     "source_id": "src-c3c03d59d598",
@@ -6859,10 +6859,10 @@
     "source_url": "https://kz.linkedin.com/in/almas-ordabayev-04808078",
     "source_host": "kz.linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 12,
+    "evidence_rows": 11,
     "people_count": 1,
     "accepted_rows": 0,
-    "supporting_rows": 12,
+    "supporting_rows": 11,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
@@ -6958,6 +6958,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
     "source_adapters": "accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual;manual_review"
+  },
+  {
+    "source_id": "src-249daf260ac8",
+    "source_url": "https://kz.linkedin.com/in/asset-iskakov-805a34a4",
+    "source_host": "kz.linkedin.com",
+    "source_kind": "linkedin",
+    "evidence_rows": 7,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 6,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "accepted_linkedin_profile;linkedin;manual;manual_review"
   },
   {
     "source_id": "src-591de3cd2db1",
@@ -7894,10 +7909,10 @@
     "source_url": "https://linkedin.com/in/adilet-zauytkhan-37a94221b",
     "source_host": "linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 8,
+    "evidence_rows": 6,
     "people_count": 1,
     "accepted_rows": 2,
-    "supporting_rows": 6,
+    "supporting_rows": 4,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
@@ -8127,17 +8142,17 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review"
+    "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual"
   },
   {
     "source_id": "src-c20fd13991b7",
     "source_url": "https://linkedin.com/in/aman-sariyev",
     "source_host": "linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 10,
+    "evidence_rows": 9,
     "people_count": 1,
     "accepted_rows": 2,
-    "supporting_rows": 8,
+    "supporting_rows": 7,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
@@ -8772,7 +8787,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual;manual_review"
+    "source_adapters": "accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual"
   },
   {
     "source_id": "src-c6e1320f0c36",
@@ -9349,10 +9364,10 @@
     "source_url": "https://linkedin.com/in/fracta1l",
     "source_host": "linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 12,
+    "evidence_rows": 11,
     "people_count": 1,
     "accepted_rows": 2,
-    "supporting_rows": 10,
+    "supporting_rows": 9,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
@@ -10114,10 +10129,10 @@
     "source_url": "https://linkedin.com/in/raiymbek-akshulakov",
     "source_host": "linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 16,
+    "evidence_rows": 15,
     "people_count": 1,
     "accepted_rows": 0,
-    "supporting_rows": 16,
+    "supporting_rows": 15,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
@@ -10482,7 +10497,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
-    "source_adapters": "accepted_linkedin_profile;linkedin;manual;manual_review"
+    "source_adapters": "accepted_linkedin_profile;linkedin;manual"
   },
   {
     "source_id": "src-bd365438eda8",
@@ -11029,15 +11044,15 @@
     "source_url": "https://linkedin.com/in/zhaslan-baraissov-5460b1151",
     "source_host": "linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 6,
+    "evidence_rows": 5,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 5,
+    "supporting_rows": 4,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
-    "source_adapters": "accepted_linkedin_profile;linkedin;manual;manual_review"
+    "source_adapters": "accepted_linkedin_profile;linkedin;manual"
   },
   {
     "source_id": "src-4fdd06d1f4cd",
@@ -15765,6 +15780,21 @@
     "source_adapters": "current_research_affiliation_location;manual;manual_review"
   },
   {
+    "source_id": "src-e488a56fb8b0",
+    "source_url": "https://qazaqgaz.kz/storage/app/media/korporativnye-dokumenty/en/QazaqGaz_YR_ENG.pdf",
+    "source_host": "qazaqgaz.kz",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_company_biography"
+  },
+  {
     "source_id": "src-1382f27ad8bf",
     "source_url": "https://qazinform.com/amp/kazakh-students-won-one-silver-and-two-gold-medals-in-ipho-2009-mexico_a2186614/",
     "source_host": "qazinform.com",
@@ -15823,6 +15853,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
     "source_adapters": "active_affiliation_profile_location;manual;manual_review"
+  },
+  {
+    "source_id": "src-4b87a9e355ce",
+    "source_url": "https://qazinform.com/news/new-deputy-board-chairman-of-qazaqgaz-named_a4059696",
+    "source_host": "qazinform.com",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "biographical_news_profile"
   },
   {
     "source_id": "src-52e378835104",
@@ -15979,15 +16024,15 @@
     "source_url": "https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf",
     "source_host": "rmebrk.kz",
     "source_kind": "pdf",
-    "evidence_rows": 9,
-    "people_count": 6,
-    "accepted_rows": 4,
-    "supporting_rows": 5,
+    "evidence_rows": 7,
+    "people_count": 5,
+    "accepted_rows": 3,
+    "supporting_rows": 4,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "historical_outcome_location;manual;manual_review;reviewed_olympiad_destination_table"
+    "source_adapters": "historical_outcome_location;manual;reviewed_olympiad_destination_table"
   },
   {
     "source_id": "src-793801568f9d",
@@ -19020,6 +19065,21 @@
     "source_adapters": "official_university_internship_roster"
   },
   {
+    "source_id": "src-cb02bb87af74",
+    "source_url": "https://welcome.kaznu.kz/content/files/pages/folder17985/%D0%9F%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B8%D0%B2%D1%88%D0%B8%D0%B5_PhD_2022.pdf",
+    "source_host": "welcome.kaznu.kz",
+    "source_kind": "pdf",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_admission_record"
+  },
+  {
     "source_id": "src-ab9e580cd97c",
     "source_url": "https://weproject.media/articles/detail/kak-biznesmeny-kazakhstana-zarabatyvayut-dostavlyaya-tovar-iz-kitaya/?amp=y",
     "source_host": "weproject.media",
@@ -19215,8 +19275,8 @@
     "source_adapters": "current_education_location"
   },
   {
-    "source_id": "src-f902c5259f1c",
-    "source_url": "https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work/visiting-the-university",
+    "source_id": "src-0a1f77646095",
+    "source_url": "https://www.cam.ac.uk/about-the-university/contact-the-university",
     "source_host": "cam.ac.uk",
     "source_kind": "web_page",
     "evidence_rows": 3,
@@ -23119,15 +23179,15 @@
     "source_url": "https://www.linkedin.com/in/arman-shaninov-6950b7132",
     "source_host": "linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 5,
+    "evidence_rows": 4,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 4,
+    "supporting_rows": 3,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "active_affiliation_profile_location;manual;manual_profile_transcription;manual_review"
+    "source_adapters": "active_affiliation_profile_location;manual;manual_profile_transcription"
   },
   {
     "source_id": "src-9b88ab9ace30",
@@ -23367,7 +23427,7 @@
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review",
-    "source_adapters": "accepted_linkedin_profile;active_affiliation_profile_location;destination_review;linkedin;manual;manual_review"
+    "source_adapters": "accepted_linkedin_profile;active_affiliation_profile_location;destination_review;destination_source_review;linkedin;manual;manual_review"
   },
   {
     "source_id": "src-ebd29b97fb73",
@@ -23554,10 +23614,10 @@
     "source_url": "https://www.linkedin.com/in/ordabayevy",
     "source_host": "linkedin.com",
     "source_kind": "linkedin",
-    "evidence_rows": 12,
+    "evidence_rows": 11,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 11,
+    "supporting_rows": 10,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
@@ -24345,8 +24405,8 @@
     "source_adapters": "official_faculty_cv"
   },
   {
-    "source_id": "src-2a3bbc6c0ffe",
-    "source_url": "https://www.ntu.edu.sg/about-us/visit-us",
+    "source_id": "src-4c75ad0f9d52",
+    "source_url": "https://www.ntu.edu.sg/about-us/contact-us",
     "source_host": "ntu.edu.sg",
     "source_kind": "web_page",
     "evidence_rows": 2,

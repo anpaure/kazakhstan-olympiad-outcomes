@@ -1611,19 +1611,19 @@
     "evidence_url": ""
   },
   {
-    "organization_alias_id": "org-e9de831c294a67b2",
+    "organization_alias_id": "org-d088947930c990fa",
     "alias": "ios_flutter",
-    "canonical_name": "iOS/Flutter",
-    "display_name": "iOS/Flutter",
+    "canonical_name": "iOS_Flutter",
+    "display_name": "iOS_Flutter",
     "merge_type": "capitalization_variant",
     "rationale": "Normalized capitalization of the source employer label",
     "evidence_url": "https://kz.linkedin.com/in/azamat-aidanov-64046076"
   },
   {
-    "organization_alias_id": "org-3a82c1992e209ebb",
+    "organization_alias_id": "org-15408f110a80289f",
     "alias": "IoS_Flutter company",
-    "canonical_name": "iOS/Flutter",
-    "display_name": "iOS/Flutter",
+    "canonical_name": "iOS_Flutter",
+    "display_name": "iOS_Flutter",
     "merge_type": "same_entity",
     "rationale": "Source employer label with generic company suffix",
     "evidence_url": "https://kz.linkedin.com/in/azamat-aidanov-64046076"

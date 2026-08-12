@@ -786,10 +786,10 @@
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-b695dee1b41c",
@@ -1072,10 +1072,10 @@
     "country_code": "SG",
     "country_name": "Singapore",
     "location_label": "Singapore",
-    "evidence_url": "https://www.ntu.edu.sg/about-us/visit-us",
+    "evidence_url": "https://www.ntu.edu.sg/about-us/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Nanyang Technological University (NTU); the linked official institution source establishes the campus location. NTU's official visitor page identifies its Singapore campus."
+    "review_reason": "Country follows the accepted active student affiliation at Nanyang Technological University (NTU); the linked official institution source establishes the campus location. NTU's official contact page identifies its Singapore campus."
   },
   {
     "person_id": "kaz-32bc606217ec",
@@ -1171,10 +1171,10 @@
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-40e246e1831e",
@@ -1272,7 +1272,7 @@
     "location_label": "Astana, Kazakhstan",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at iOS/Flutter. The public profile header independently agrees.",
+    "review_reason": "Country follows the location attached to the accepted current role at iOS_Flutter. The public profile header independently agrees.",
     "evidence_url": "https://linkedin.com/in/azamat-aidanov-64046076"
   },
   {
@@ -1457,10 +1457,10 @@
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-fae12779c8ad",
@@ -1930,10 +1930,10 @@
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-319ba97c86aa",
@@ -1941,10 +1941,10 @@
     "country_code": "GB",
     "country_name": "United Kingdom",
     "location_label": "Cambridge, England, United Kingdom",
-    "evidence_url": "https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work/visiting-the-university",
+    "evidence_url": "https://www.cam.ac.uk/about-the-university/contact-the-university",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official visitor page identifies its Cambridge location."
+    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official contact page identifies its Cambridge location."
   },
   {
     "person_id": "kaz-8263929a366c",
@@ -2018,10 +2018,10 @@
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-5354c12725ae",
@@ -2062,10 +2062,10 @@
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-6ea5dd0e4291",
@@ -2623,10 +2623,10 @@
     "country_code": "SG",
     "country_name": "Singapore",
     "location_label": "Singapore",
-    "evidence_url": "https://www.ntu.edu.sg/about-us/visit-us",
+    "evidence_url": "https://www.ntu.edu.sg/about-us/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "probable",
-    "review_reason": "Country follows the accepted active student affiliation at Nanyang Technological University (NTU); the linked official institution source establishes the campus location. NTU's official visitor page identifies its Singapore campus."
+    "review_reason": "Country follows the accepted active student affiliation at Nanyang Technological University (NTU); the linked official institution source establishes the campus location. NTU's official contact page identifies its Singapore campus."
   },
   {
     "person_id": "kaz-c97c1b9e1718",
@@ -2744,10 +2744,10 @@
     "country_code": "GB",
     "country_name": "United Kingdom",
     "location_label": "Cambridge, England, United Kingdom",
-    "evidence_url": "https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work/visiting-the-university",
+    "evidence_url": "https://www.cam.ac.uk/about-the-university/contact-the-university",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official visitor page identifies its Cambridge location."
+    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official contact page identifies its Cambridge location."
   },
   {
     "person_id": "kaz-2c17c88cc511",
@@ -3228,10 +3228,10 @@
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-07372798186f",
@@ -4185,10 +4185,10 @@
     "country_code": "GB",
     "country_name": "United Kingdom",
     "location_label": "Cambridge, England, United Kingdom",
-    "evidence_url": "https://www.cam.ac.uk/about-the-university/how-the-university-and-colleges-work/visiting-the-university",
+    "evidence_url": "https://www.cam.ac.uk/about-the-university/contact-the-university",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official visitor page identifies its Cambridge location."
+    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official contact page identifies its Cambridge location."
   },
   {
     "person_id": "kaz-f63c5a4ed4de",
@@ -4218,10 +4218,10 @@
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://hkust.edu.hk/about/campus",
+    "evidence_url": "https://hkust.edu.hk/contact-us",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
   },
   {
     "person_id": "kaz-84154f378216",

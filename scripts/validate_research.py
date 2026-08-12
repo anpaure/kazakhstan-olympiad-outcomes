@@ -359,10 +359,18 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             and row.get("role", "").strip() == expected_fields["role"]
             and row.get("affiliation_type", "").strip()
             == expected_fields["affiliation_type"]
-            and row.get("start_year", "").strip() == expected_fields["start_year"]
-            and row.get("end_year", "").strip() == expected_fields["end_year"]
+            and (
+                not expected_fields["start_year"]
+                or row.get("start_year", "").strip() == expected_fields["start_year"]
+            )
+            and (
+                not expected_fields["end_year"]
+                or row.get("end_year", "").strip() == expected_fields["end_year"]
+            )
             and row.get("evidence_url", "").strip().rstrip("/")
             == evidence_url.rstrip("/")
+            and row.get("evidence_kind", "").strip()
+            == "destination_source_review"
             for row in affiliations_by_person.get(person_id, [])
         )
         if not matching_history:

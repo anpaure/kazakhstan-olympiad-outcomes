@@ -573,6 +573,23 @@ class LocationExtractionTest(unittest.TestCase):
 
         self.assertEqual(missing, [])
 
+    def test_shared_university_locations_use_current_official_pages(self):
+        locations = load_organization_locations(Path("data/organization_locations.csv"))
+
+        expected = {
+            "Hong Kong University of Science and Technology (HKUST)":
+                "https://hkust.edu.hk/contact-us",
+            "Nanyang Technological University (NTU)":
+                "https://www.ntu.edu.sg/about-us/contact-us",
+            "University of Cambridge":
+                "https://www.cam.ac.uk/about-the-university/contact-the-university",
+        }
+        for organization, url in expected.items():
+            self.assertEqual(
+                locations[organization_key(organization)]["evidence_url"],
+                url,
+            )
+
     def test_talgat_uses_primary_honeywell_location_not_project_country(self):
         locations = {
             row["person_id"]: row

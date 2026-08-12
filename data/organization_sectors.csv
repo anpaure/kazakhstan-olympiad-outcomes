@@ -68,7 +68,7 @@ HUMAIN,company,Technology & Software,Reviewed core activity is artificial intell
 Impala Partners,company,Finance & Insurance,Reviewed core activity is investment management.
 Insilico Medicine,company,Healthcare & Life Sciences,Reviewed core activity is AI-enabled drug discovery.
 Intel Corporation,company,Technology & Software,Reviewed core activity is semiconductor technology.
-iOS/Flutter,company,Technology & Software,Reviewed core activity is mobile software development.
+iOS_Flutter,company,Technology & Software,Reviewed core activity is mobile software development.
 Jane Street,company,Finance & Insurance,Reviewed core activity is quantitative trading.
 Jump Trading,company,Finance & Insurance,Reviewed core activity is quantitative trading.
 Kashgari Dictionary,company,Education & Research,Reviewed core activity is language-learning technology.

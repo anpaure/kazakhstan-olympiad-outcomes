@@ -178,8 +178,8 @@ org-d04ff6b530c96efd,IITU,International Information Technology University (IITU)
 org-0ab0b1a7ea174d35,International Information Technologies University,International Information Technology University (IITU),IITU,same_entity,Plural variant,
 org-dc03cdcc3853884e,International Information Technology University,International Information Technology University (IITU),IITU,same_entity,Official name without acronym,
 org-b036db504106c3b5,International IT University,International Information Technology University (IITU),IITU,same_entity,Short name,
-org-e9de831c294a67b2,ios_flutter,iOS/Flutter,iOS/Flutter,capitalization_variant,Normalized capitalization of the source employer label,https://kz.linkedin.com/in/azamat-aidanov-64046076
-org-3a82c1992e209ebb,IoS_Flutter company,iOS/Flutter,iOS/Flutter,same_entity,Source employer label with generic company suffix,https://kz.linkedin.com/in/azamat-aidanov-64046076
+org-d088947930c990fa,ios_flutter,iOS_Flutter,iOS_Flutter,capitalization_variant,Normalized capitalization of the source employer label,https://kz.linkedin.com/in/azamat-aidanov-64046076
+org-15408f110a80289f,IoS_Flutter company,iOS_Flutter,iOS_Flutter,same_entity,Source employer label with generic company suffix,https://kz.linkedin.com/in/azamat-aidanov-64046076
 org-4233dfc4c745cfad,It service & solution GmbH & Co. KG,IT Service & Solution,IT Service & Solution,legal_form_variant,Capitalization and legal-form cleanup,
 org-06541bd14c58d118,The Johns Hopkins University - Paul H. Nitze School of Advanced International Studies (SAIS),Johns Hopkins University,Johns Hopkins University,parent_organization,University school,
 org-b5aee2cb70fe091e,Joint Institute for Nuclear Research,Joint Institute for Nuclear Research,JINR,same_entity,Canonical display declaration,https://ugrk.jinr.ru/contacts/requisites.php

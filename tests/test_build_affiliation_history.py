@@ -5,6 +5,7 @@ from scripts.build_affiliation_history import (
     education_score,
     extract_affiliations,
     is_postsecondary_education,
+    merge_undated_duplicates,
     normalized_type,
 )
 
@@ -135,6 +136,36 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
             normalized_type("education", "Специалист, Международные отношения"),
             "education",
         )
+
+    def test_student_roles_are_education_even_when_source_type_is_employment(self):
+        self.assertEqual(normalized_type("employment", "PhD candidate"), "education")
+        self.assertEqual(
+            normalized_type("employment", "Magistrant student"), "education"
+        )
+        self.assertEqual(
+            normalized_type("employment", "PhD Student & Research Assistant"),
+            "education",
+        )
+        self.assertEqual(
+            normalized_type("employment", "Student Recruiting Manager"),
+            "employment",
+        )
+
+    def test_teaching_assistant_is_employment_but_phd_student_role_is_education(self):
+        rows = extract_affiliations(
+            "## Experience "
+            "### Graduate Teaching Assistant - Example University "
+            "Sep 2024 - Dec 2024 "
+            "### PhD Student & Research Assistant - Graduate University "
+            "Jan 2025 - Present "
+            "### Undergraduate Student Researcher - Research University "
+            "Jun 2024 - Aug 2024"
+        )
+
+        self.assertEqual(len(rows), 3)
+        self.assertEqual(rows[0]["affiliation_type"], "employment")
+        self.assertEqual(rows[1]["affiliation_type"], "education")
+        self.assertEqual(rows[2]["affiliation_type"], "employment")
 
     def test_russian_specialist_job_is_not_education(self):
         rows = extract_affiliations(
@@ -652,6 +683,225 @@ class AlmaMaterSelectionTest(unittest.TestCase):
 
 
 class ManualAffiliationTest(unittest.TestCase):
+    def test_search_snippet_is_not_joined_to_a_different_person(self):
+        people = [
+            {
+                "person_id": "person-1",
+                "name": "Example Person",
+                "confidence": "confirmed",
+                "profile_url": "https://linkedin.com/in/example",
+                "linkedin_url": "https://linkedin.com/in/example",
+                "organization": "",
+                "affiliation_type": "",
+            }
+        ]
+        searches = [
+            {
+                "person_id": "different-person",
+                "results": [
+                    {
+                        "url": "https://linkedin.com/in/example",
+                        "highlights": [
+                            "## Education ### Bachelor of Science at "
+                            "Example University 2010 - 2020"
+                        ],
+                    }
+                ],
+            }
+        ]
+
+        rows = build_rows(people, searches, [], [], [], [], [], 2026)
+
+        self.assertEqual(rows, [])
+
+    def test_owner_search_snippet_can_supply_affiliation_history(self):
+        people = [
+            {
+                "person_id": "person-1",
+                "name": "Example Person",
+                "confidence": "confirmed",
+                "profile_url": "https://linkedin.com/in/example",
+                "linkedin_url": "https://linkedin.com/in/example",
+                "organization": "",
+                "affiliation_type": "",
+            }
+        ]
+        searches = [
+            {
+                "person_id": "person-1",
+                "results": [
+                    {
+                        "url": "https://linkedin.com/in/example",
+                        "highlights": [
+                            "## Education ### Bachelor of Science at "
+                            "Example University 2018 - 2022"
+                        ],
+                    }
+                ],
+            }
+        ]
+
+        rows = build_rows(people, searches, [], [], [], [], [], 2026)
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["organization"], "Example University")
+        self.assertEqual(rows[0]["start_year"], "2018")
+
+    def test_undated_duplicate_is_folded_into_latest_dated_source_record(self):
+        common = {
+            "person_id": "person-1",
+            "name": "Example Person",
+            "organization": "Example Co",
+            "role": "Engineer",
+            "affiliation_type": "employment",
+            "evidence_url": "https://example.com/profile",
+            "confidence": "probable",
+            "selected_as_alma_mater": False,
+        }
+        rows = [
+            {
+                **common,
+                "start_year": "2020",
+                "end_year": "2022",
+                "is_current": False,
+                "evidence_kind": "accepted_linkedin_profile",
+                "evidence_text": "Past period.",
+            },
+            {
+                **common,
+                "start_year": "2024",
+                "end_year": "",
+                "is_current": True,
+                "evidence_kind": "accepted_linkedin_profile",
+                "evidence_text": "Current period.",
+            },
+            {
+                **common,
+                "start_year": "",
+                "end_year": "",
+                "is_current": True,
+                "evidence_kind": "destination_source_review",
+                "evidence_text": "Reviewed current destination.",
+                "confidence": "confirmed",
+            },
+        ]
+
+        merged = merge_undated_duplicates(rows)
+
+        self.assertEqual(len(merged), 2)
+        current = next(row for row in merged if row["start_year"] == "2024")
+        self.assertEqual(current["evidence_kind"], "destination_source_review")
+        self.assertEqual(current["confidence"], "confirmed")
+        self.assertEqual(current["evidence_text"], "Reviewed current destination.")
+
+    def test_undated_manual_summary_does_not_replace_profile_provenance(self):
+        common = {
+            "person_id": "person-1",
+            "name": "Example Person",
+            "organization": "Example Co",
+            "role": "Engineer",
+            "affiliation_type": "employment",
+            "evidence_url": "https://example.com/profile",
+            "confidence": "confirmed",
+            "selected_as_alma_mater": False,
+        }
+        rows = [
+            {
+                **common,
+                "start_year": "2024",
+                "end_year": "",
+                "is_current": True,
+                "evidence_kind": "accepted_linkedin_profile",
+                "evidence_text": "Dated profile record.",
+            },
+            {
+                **common,
+                "start_year": "",
+                "end_year": "",
+                "is_current": True,
+                "evidence_kind": "manual_review",
+                "evidence_text": "Longer manually reviewed outcome summary.",
+            },
+        ]
+
+        merged = merge_undated_duplicates(rows)
+
+        self.assertEqual(len(merged), 1)
+        self.assertEqual(merged[0]["evidence_kind"], "accepted_linkedin_profile")
+        self.assertEqual(merged[0]["evidence_text"], "Dated profile record.")
+
+    def test_attached_degree_dates_beat_overlapping_achievement_dates(self):
+        common = {
+            "person_id": "person-1",
+            "name": "Example Person",
+            "organization": "Example University",
+            "role": "Bachelor of Applied Science",
+            "affiliation_type": "education",
+            "evidence_url": "https://linkedin.com/in/example",
+            "evidence_kind": "accepted_linkedin_profile",
+            "confidence": "probable",
+            "selected_as_alma_mater": False,
+            "is_current": False,
+        }
+        rows = [
+            {
+                **common,
+                "start_year": "2018",
+                "end_year": "2021",
+                "evidence_text": (
+                    "Bachelor of Applied Science at Example University "
+                    "2018 - 2021 (3 years)"
+                ),
+            },
+            {
+                **common,
+                "start_year": "2010",
+                "end_year": "2020",
+                "evidence_text": (
+                    "Bachelor of Applied Science at Example University ... "
+                    + "profile summary " * 30
+                    + "competition achievements 2010-2020"
+                ),
+            },
+        ]
+
+        merged = merge_undated_duplicates(rows)
+
+        self.assertEqual(len(merged), 1)
+        self.assertEqual(merged[0]["start_year"], "2018")
+        self.assertEqual(merged[0]["end_year"], "2021")
+
+    def test_reviewed_open_history_beats_bounded_destination_summary(self):
+        common = {
+            "person_id": "person-1",
+            "name": "Example Person",
+            "organization": "Example University",
+            "role": "Undergraduate Student",
+            "affiliation_type": "education",
+            "start_year": "2000",
+            "is_current": False,
+            "selected_as_alma_mater": False,
+            "evidence_url": "https://example.com/source",
+            "confidence": "probable",
+            "evidence_text": "Historical enrollment record.",
+        }
+        rows = [
+            {
+                **common,
+                "end_year": "",
+                "evidence_kind": "reviewed_olympiad_destination_table",
+            },
+            {**common, "end_year": "2000", "evidence_kind": "manual_review"},
+        ]
+
+        merged = merge_undated_duplicates(rows)
+
+        self.assertEqual(len(merged), 1)
+        self.assertEqual(merged[0]["end_year"], "")
+        self.assertEqual(
+            merged[0]["evidence_kind"], "reviewed_olympiad_destination_table"
+        )
+
     def test_includes_sourced_manual_history_and_selects_alma_mater(self):
         people = [
             {

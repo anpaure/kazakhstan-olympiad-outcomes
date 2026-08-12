@@ -108,13 +108,13 @@ EXCLUDED_ROLE_PATTERN = re.compile(
     re.IGNORECASE,
 )
 EDUCATION_TERMS = re.compile(
-    r"\b(?:associate|bachelors?|b\.?\s*sc\.?|b\.?\s*s\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|masters?|m\.?\s*sc\.?|m\.?\s*s\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|ph\.?d|doctor|specialist|student|undergraduate|postgraduate|graduate|degree|diploma|school|education|бакалавр|магистр|специалист)\b",
+    r"\b(?:associate|bachelors?|b\.?\s*sc\.?|b\.?\s*s\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|masters?|m\.?\s*sc\.?|m\.?\s*s\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|ph\.?d|doctor|specialist|student|candidate|undergraduate|postgraduate|graduate|magistrant|degree|diploma|school|education|бакалавр|магистр|магистрант|специалист)\b",
     re.IGNORECASE,
 )
 POSTSECONDARY_ROLE_PATTERN = re.compile(
     r"\b(?:bachelors?|b\.?\s*sc\.?|b\.?\s*s\.?|bs\b|b\.?\s*a\.?|b\.?\s*eng\.?|beng\b|"
     r"masters?|m\.?\s*sc\.?|m\.?\s*s\.?|ms\b|m\.?\s*a\.?|m\.?\s*eng\.?|meng\b|mba\b|mph\b|"
-    r"ph\.?d|doctor(?:ate)?|specialist|undergraduate|graduate (?:student|studies)|medical student|бакалавр|магистр|специалист)\b",
+    r"ph\.?d|doctor(?:ate)?|specialist|undergraduate|graduate (?:student|studies)|medical student|magistrant|бакалавр|магистр|магистрант|специалист)\b",
     re.IGNORECASE,
 )
 POSTSECONDARY_INSTITUTION_PATTERN = re.compile(
@@ -129,7 +129,7 @@ SECONDARY_INSTITUTION_PATTERN = re.compile(
     re.IGNORECASE,
 )
 NON_ALMA_ROLE_PATTERN = re.compile(
-    r"\b(?:research|teaching) assistants?\b|\binstructors?\b|\b(?:acting )?deans?\b|"
+    r"\b(?:research|teaching) assistants?\b|\bstudent researchers?\b|\binstructors?\b|\b(?:acting )?deans?\b|"
     r"\b(?:intern|fellow|visiting|exchange (?:student|program|semester|study|studies)|"
     r"summer (?:research )?(?:school|semester)|certificate|"
     r"short course|participant|director|manager|founder|co-?founder|chief|officer|partner|"
@@ -138,7 +138,7 @@ NON_ALMA_ROLE_PATTERN = re.compile(
     re.IGNORECASE,
 )
 EMPLOYMENT_ROLE_TERMS = re.compile(
-    r"\b(?:researcher|research assistant|fellow|scientist|engineer|professor|lecturer|teacher)\b",
+    r"\b(?:researcher|research assistant|teaching assistant|fellow|scientist|engineer|professor|lecturer|teacher)\b",
     re.IGNORECASE,
 )
 STRONG_EMPLOYMENT_ROLE_TERMS = re.compile(
@@ -188,6 +188,13 @@ ONE_OFF_ROLE_PATTERN = re.compile(
     r"\b(?:(?:19|20)\d{2}\s+participant|summer school|summer intern(?:ship)?)\b",
     re.IGNORECASE,
 )
+STUDENT_EDUCATION_ROLE_PATTERN = re.compile(
+    r"(?:\b(?:bachelors?|masters?|ph\.?\s*d|doctoral|doctorate|undergraduate|"
+    r"postgraduate|graduate|magistrant|магистрант)\b.*\b(?:student|candidate)\b|"
+    r"\b(?:student|candidate)\b.*\b(?:bachelors?|masters?|ph\.?\s*d|doctoral|"
+    r"doctorate|undergraduate|postgraduate|graduate|magistrant|магистрант)\b)",
+    re.IGNORECASE,
+)
 
 
 def clean_text(value: object) -> str:
@@ -209,6 +216,25 @@ def is_strong_employment_role(role: object) -> bool:
     return bool(
         SPECIALIST_ROLE_PATTERN.search(role_text)
         and not SPECIALIST_DEGREE_PATTERN.match(role_text)
+    )
+
+
+def is_student_education_role(role: object) -> bool:
+    role_text = clean_text(role)
+    if not role_text or is_strong_employment_role(role_text):
+        return False
+    if re.search(r"\bstudent researchers?\b", role_text, re.IGNORECASE):
+        return False
+    if STUDENT_EDUCATION_ROLE_PATTERN.search(role_text):
+        return True
+    return bool(
+        re.fullmatch(
+            r"(?:(?:full|part)[ -]?time\s+)?(?:student|undergraduate|postgraduate|"
+            r"graduate student|doctoral student|ph\.?\s*d (?:student|candidate)|"
+            r"magistrant(?: student)?|магистрант)",
+            role_text,
+            re.IGNORECASE,
+        )
     )
 
 
@@ -282,9 +308,12 @@ def parse_experience(segment: str, organization: str = "") -> dict[str, object] 
         role = ROLE_STOP_PATTERN.sub("", segment)
         affiliation_type = (
             "education"
-            if EDUCATION_TERMS.search(role)
-            and not EMPLOYMENT_ROLE_TERMS.search(role)
-            and not is_strong_employment_role(role)
+            if is_student_education_role(role)
+            or (
+                EDUCATION_TERMS.search(role)
+                and not EMPLOYMENT_ROLE_TERMS.search(role)
+                and not is_strong_employment_role(role)
+            )
             else "employment"
         )
         return make_entry(organization, role, affiliation_type, segment)
@@ -311,9 +340,12 @@ def parse_experience(segment: str, organization: str = "") -> dict[str, object] 
         )
     affiliation_type = (
         "education"
-        if EDUCATION_TERMS.search(role)
-        and not EMPLOYMENT_ROLE_TERMS.search(role)
-        and not is_strong_employment_role(role)
+        if is_student_education_role(role)
+        or (
+            EDUCATION_TERMS.search(role)
+            and not EMPLOYMENT_ROLE_TERMS.search(role)
+            and not is_strong_employment_role(role)
+        )
         else "employment"
     )
     return make_entry(
@@ -486,6 +518,8 @@ def rejected_urls(rows: list[dict[str, str]]) -> set[tuple[str, str]]:
 
 def normalized_type(value: str, role: str = "") -> str:
     value = clean_text(value).casefold()
+    if is_student_education_role(role):
+        return "education"
     if value in {"education", "qualification"}:
         role_text = clean_text(role).casefold()
         if is_strong_employment_role(role_text) or (
@@ -520,6 +554,160 @@ def row_key(row: dict[str, object]) -> tuple[str, ...]:
         clean_text(row.get("end_year")),
         canonical_url(clean_text(row.get("evidence_url"))),
     )
+
+
+def logical_row_key(row: dict[str, object]) -> tuple[str, ...]:
+    return (
+        clean_text(row.get("person_id")),
+        normalized_type(
+            clean_text(row.get("affiliation_type")), clean_text(row.get("role"))
+        ),
+        clean_text(row.get("organization")).casefold(),
+        clean_text(row.get("role")).casefold(),
+        canonical_url(clean_text(row.get("evidence_url"))),
+    )
+
+
+def evidence_explicitly_supports_dates(row: dict[str, object]) -> bool:
+    start_year = clean_text(row.get("start_year"))
+    end_year = clean_text(row.get("end_year"))
+    if not start_year.isdigit():
+        return False
+    heading_context = clean_text(row.get("evidence_text"))[:320]
+    if end_year.isdigit():
+        return bool(
+            re.search(
+                rf"\b{re.escape(start_year)}\s*[-–]\s*{re.escape(end_year)}\b",
+                heading_context,
+            )
+        )
+    return bool(
+        re.search(
+            rf"\b{re.escape(start_year)}\s*[-–]\s*(?:present|current)\b",
+            heading_context,
+            re.IGNORECASE,
+        )
+    )
+
+
+def date_ranges_overlap(
+    left: dict[str, object], right: dict[str, object]
+) -> bool:
+    left_start = clean_text(left.get("start_year"))
+    right_start = clean_text(right.get("start_year"))
+    if not left_start.isdigit() or not right_start.isdigit():
+        return False
+    left_end = clean_text(left.get("end_year"))
+    right_end = clean_text(right.get("end_year"))
+    left_end_value = int(left_end) if left_end.isdigit() else 9999
+    right_end_value = int(right_end) if right_end.isdigit() else 9999
+    return max(int(left_start), int(right_start)) <= min(
+        left_end_value, right_end_value
+    )
+
+
+def merge_undated_duplicates(
+    rows: list[dict[str, object]],
+) -> list[dict[str, object]]:
+    """Fold source-snippet duplicates into a dated record from the same source."""
+    grouped: dict[tuple[str, ...], list[dict[str, object]]] = defaultdict(list)
+    for row in rows:
+        grouped[logical_row_key(row)].append(row)
+
+    merged: list[dict[str, object]] = []
+    confidence_priority = {"candidate": 1, "probable": 2, "confirmed": 3}
+
+    for group in grouped.values():
+        dated = [
+            row
+            for row in group
+            if clean_text(row.get("start_year")) or clean_text(row.get("end_year"))
+        ]
+        undated = [row for row in group if row not in dated]
+        if (
+            dated
+            and logical_row_key(dated[0])[1] == "education"
+            and POSTSECONDARY_ROLE_PATTERN.search(clean_text(dated[0].get("role")))
+        ):
+            explicit_profile_rows = [
+                row
+                for row in dated
+                if clean_text(row.get("evidence_kind"))
+                == "accepted_linkedin_profile"
+                and evidence_explicitly_supports_dates(row)
+            ]
+            if explicit_profile_rows:
+                dated = [
+                    row
+                    for row in dated
+                    if clean_text(row.get("evidence_kind"))
+                    != "accepted_linkedin_profile"
+                    or evidence_explicitly_supports_dates(row)
+                    or not any(
+                        date_ranges_overlap(row, explicit)
+                        for explicit in explicit_profile_rows
+                    )
+                ]
+        reviewed_open_historical_starts = {
+            clean_text(row.get("start_year"))
+            for row in dated
+            if clean_text(row.get("start_year"))
+            and not clean_text(row.get("end_year"))
+            and not bool(row.get("is_current"))
+            and clean_text(row.get("evidence_kind")) != "manual_review"
+        }
+        dated = [
+            row
+            for row in dated
+            if not (
+                clean_text(row.get("start_year"))
+                in reviewed_open_historical_starts
+                and clean_text(row.get("end_year"))
+                and clean_text(row.get("evidence_kind")) == "manual_review"
+            )
+        ]
+        if not dated:
+            merged.extend(undated)
+            continue
+        if not undated:
+            merged.extend(dated)
+            continue
+
+        target = max(
+            dated,
+            key=lambda row: (
+                not clean_text(row.get("end_year")),
+                int(clean_text(row.get("start_year")))
+                if clean_text(row.get("start_year")).isdigit()
+                else 0,
+                int(clean_text(row.get("end_year")))
+                if clean_text(row.get("end_year")).isdigit()
+                else 0,
+            ),
+        )
+        for row in undated:
+            target_kind = clean_text(target.get("evidence_kind"))
+            row_kind = clean_text(row.get("evidence_kind"))
+            if row_kind == "destination_source_review" and (
+                target_kind != "destination_source_review"
+                or len(clean_text(row.get("evidence_text")))
+                > len(clean_text(target.get("evidence_text")))
+            ):
+                for field in ("evidence_kind", "evidence_text"):
+                    target[field] = row.get(field, "")
+            elif (
+                row_kind == target_kind
+                and len(clean_text(row.get("evidence_text")))
+                > len(clean_text(target.get("evidence_text")))
+            ):
+                target["evidence_text"] = row.get("evidence_text", "")
+            if confidence_priority.get(clean_text(row.get("confidence")), 0) > (
+                confidence_priority.get(clean_text(target.get("confidence")), 0)
+            ):
+                target["confidence"] = row.get("confidence", "")
+        merged.extend(dated)
+
+    return merged
 
 
 def education_score(
@@ -630,9 +818,15 @@ def build_rows(
 
     result_texts: dict[str, set[str]] = defaultdict(set)
     for search in searches:
+        search_person_id = clean_text(search.get("person_id"))
         for result in search.get("results", []):
             url_key = canonical_url(clean_text(result.get("url")))
             if url_key not in accepted_profiles:
+                continue
+            if (
+                search_person_id
+                and search_person_id not in accepted_profiles[url_key]
+            ):
                 continue
             text = "\n".join(str(item) for item in result.get("highlights", []) if item)
             if clean_text(text):
@@ -849,7 +1043,7 @@ def build_rows(
             )
         ):
             deduplicated[key] = row
-    rows = list(deduplicated.values())
+    rows = merge_undated_duplicates(list(deduplicated.values()))
 
     education_by_person: dict[str, list[dict[str, object]]] = defaultdict(list)
     for row in rows:
