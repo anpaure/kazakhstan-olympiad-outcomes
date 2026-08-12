@@ -444,6 +444,22 @@ def build_evidence(
         name = clean_text(row.get("name")) or final_by_person[person_id]["name"]
         confidence = clean_text(row.get("confidence")) or "confirmed"
         basis = row.get("verification_basis", "")
+        has_outcome = bool(
+            canonicalize_organization(row.get("organization"))
+            and clean_text(row.get("role"))
+            and clean_text(row.get("affiliation_type"))
+        )
+        identity_source_url = (
+            row.get("olympiad_evidence_url", "")
+            if has_outcome
+            else row.get("career_evidence_url", "")
+            or row.get("olympiad_evidence_url", "")
+        )
+        identity_secondary_url = (
+            ""
+            if has_outcome
+            else row.get("olympiad_evidence_url", "")
+        )
         destination_review = destination_review_by_person.get(person_id)
         destination_superseded = bool(
             destination_review
@@ -467,33 +483,35 @@ def build_evidence(
             person_name=name,
             claim_type="olympiad_identity_bridge",
             claim_summary=f"Reviewed Olympiad identity evidence for {name}",
-            source_url=row.get("olympiad_evidence_url", ""),
+            source_url=identity_source_url,
+            secondary_url=identity_secondary_url,
             provenance="manual_review",
             source_adapter="manual",
             review_status="accepted",
             confidence=confidence,
-            supports_final_outcome=True,
+            supports_final_outcome=has_outcome,
             evidence_text=basis,
             review_note=basis,
         )
-        add_evidence(
-            rows,
-            seen,
-            person_id=person_id,
-            person_name=name,
-            claim_type="career_outcome",
-            claim_summary=f"{row.get('role') or 'Affiliation'} at {row.get('organization')}",
-            source_url=row.get("career_evidence_url", ""),
-            provenance="manual_review",
-            source_adapter="manual",
-            review_status="superseded" if destination_superseded else "accepted",
-            confidence=confidence,
-            supports_final_outcome=not destination_superseded,
-            organization=row.get("organization", ""),
-            role=row.get("role", ""),
-            evidence_text=basis,
-            review_note=basis,
-        )
+        if has_outcome:
+            add_evidence(
+                rows,
+                seen,
+                person_id=person_id,
+                person_name=name,
+                claim_type="career_outcome",
+                claim_summary=f"{row.get('role') or 'Affiliation'} at {row.get('organization')}",
+                source_url=row.get("career_evidence_url", ""),
+                provenance="manual_review",
+                source_adapter="manual",
+                review_status="superseded" if destination_superseded else "accepted",
+                confidence=confidence,
+                supports_final_outcome=not destination_superseded,
+                organization=row.get("organization", ""),
+                role=row.get("role", ""),
+                evidence_text=basis,
+                review_note=basis,
+            )
         add_evidence(
             rows,
             seen,
@@ -506,7 +524,7 @@ def build_evidence(
             source_adapter="linkedin",
             review_status="supporting",
             confidence=confidence,
-            supports_final_outcome=True,
+            supports_final_outcome=has_outcome,
             review_note=basis,
         )
 
@@ -532,6 +550,7 @@ def build_evidence(
             and normalize_url(row.get("profile_url", "")) == normalize_url(final.get("profile_url", ""))
             and bool(normalize_url(final.get("profile_url", "")))
         )
+        supports_destination = final.get("destination_status") != "none"
         if rejection:
             status = "rejected"
         elif selected:
@@ -556,7 +575,8 @@ def build_evidence(
             external_record_id=row.get("source_id", ""),
             review_status=status,
             confidence=row.get("confidence", "candidate"),
-            supports_final_outcome=selected or status == "supporting",
+            supports_final_outcome=(selected or status == "supporting")
+            and supports_destination,
             organization=row.get("organization", ""),
             role=row.get("role", ""),
             evidence_text=row.get("evidence_text", ""),
@@ -590,6 +610,7 @@ def build_evidence(
             and clean_text(row.get("affiliation_type")) == clean_text(final.get("affiliation_type"))
             and final.get("confidence") != "unmatched"
         )
+        supports_destination = final.get("destination_status") != "none"
         if rejection:
             status = "rejected"
         elif selected:
@@ -613,7 +634,8 @@ def build_evidence(
             source_adapter=row.get("source", ""),
             review_status=status,
             confidence=row.get("confidence", "candidate"),
-            supports_final_outcome=selected or status == "supporting",
+            supports_final_outcome=(selected or status == "supporting")
+            and supports_destination,
             organization=row.get("organization", ""),
             role=row.get("role", ""),
             evidence_text=row.get("evidence_text", ""),
@@ -688,7 +710,22 @@ def build_audit_people(
         rejected_count = sum(
             item["review_status"] == "rejected" for item in person_evidence
         )
-        if row["confidence"] in {"probable", "confirmed"}:
+        if (
+            row["confidence"] in {"probable", "confirmed"}
+            and row.get("destination_status") == "none"
+        ):
+            identity_count = sum(
+                item["claim_type"]
+                in {"olympiad_identity_bridge", "identity_candidate"}
+                and item["review_status"] == "accepted"
+                for item in person_evidence
+            )
+            traceability = (
+                "identity_verified"
+                if participation_count and identity_count
+                else "incomplete"
+            )
+        elif row["confidence"] in {"probable", "confirmed"}:
             traceability = "complete" if participation_count and outcome_count else "incomplete"
         elif candidate_count:
             traceability = "review_required"
@@ -1048,7 +1085,7 @@ def build_bundle(
         organization_sectors or []
     )
     manifest = {
-        "schema_version": 5,
+        "schema_version": 6,
         "primary_key": {
             "people": "person_id",
             "affiliations": "affiliation_id",
@@ -1085,11 +1122,23 @@ def build_bundle(
             "complete_outcomes": sum(
                 row["traceability_status"] == "complete" for row in audit_people
             ),
-            "confirmed_outcomes": sum(
+            "resolved_destinations": sum(
+                bool(clean_text(row.get("organization"))) for row in researched
+            ),
+            "verified_identities": sum(
+                row.get("confidence") in {"probable", "confirmed"}
+                for row in researched
+            ),
+            "confirmed_identities": sum(
                 row.get("confidence") == "confirmed" for row in researched
             ),
-            "probable_outcomes": sum(
+            "probable_identities": sum(
                 row.get("confidence") == "probable" for row in researched
+            ),
+            "identity_only_people": sum(
+                row.get("confidence") in {"probable", "confirmed"}
+                and row.get("destination_status") == "none"
+                for row in researched
             ),
             "candidate_only_people": sum(
                 row.get("confidence") == "candidate" for row in researched

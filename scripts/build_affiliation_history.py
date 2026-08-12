@@ -143,6 +143,11 @@ NON_ALMA_ROLE_PATTERN = re.compile(
     r"adviser|administrator|coordinator|research author)\b",
     re.IGNORECASE,
 )
+COMPETITION_DIRECTORY_EVIDENCE = {
+    "accepted_codeforces",
+    "accepted_cphof",
+    "accepted_cphof_codeforces",
+}
 EMPLOYMENT_ROLE_TERMS = re.compile(
     r"\b(?:researcher|research assistant|teaching assistant|fellow|scientist|engineer|professor|lecturer|teacher)\b",
     re.IGNORECASE,
@@ -817,6 +822,9 @@ def is_postsecondary_education(row: dict[str, object]) -> bool:
     role = clean_text(row.get("role"))
     organization = clean_text(row.get("organization"))
     evidence_text = clean_text(row.get("evidence_text"))
+    evidence_kind = clean_text(row.get("evidence_kind"))
+    if evidence_kind in COMPETITION_DIRECTORY_EVIDENCE and not role:
+        return False
     if is_strong_employment_role(role):
         return False
     if NON_ALMA_ROLE_PATTERN.search(role):
@@ -991,8 +999,13 @@ def build_rows(
         person_id = clean_text(manual.get("person_id"))
         if person_id not in people_by_id:
             continue
+        organization = canonicalize_organization(manual.get("organization"))
+        role = clean_text(manual.get("role"))
+        if not valid_affiliation(organization, role):
+            # A reviewed row may establish identity without claiming an outcome.
+            continue
         affiliation_type = normalized_type(
-            clean_text(manual.get("affiliation_type")), clean_text(manual.get("role"))
+            clean_text(manual.get("affiliation_type")), role
         )
         if affiliation_type not in {"employment", "education"}:
             continue
@@ -1001,8 +1014,8 @@ def build_rows(
             {
                 "person_id": person_id,
                 "name": clean_text(people_by_id[person_id].get("name")),
-                "organization": canonicalize_organization(manual.get("organization")),
-                "role": clean_text(manual.get("role")),
+                "organization": organization,
+                "role": role,
                 "affiliation_type": affiliation_type,
                 "start_year": clean_text(manual.get("start_year")),
                 "end_year": end_year,

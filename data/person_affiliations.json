@@ -1142,6 +1142,36 @@
   {
     "person_id": "kaz-674cd62ab22c",
     "name": "Aibatyr Zhumagulov",
+    "organization": "Al-Farabi Kazakh National University",
+    "role": "Master's Degree, Economics",
+    "affiliation_type": "education",
+    "start_year": "1997",
+    "end_year": "1999",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://hcsbk.kz/upload/iblock/df6/kd00eknk2ye7245h77jy7sukfr1js4p4.pdf",
+    "evidence_kind": "official_employer_annual_report",
+    "confidence": "confirmed",
+    "evidence_text": "The bank's official annual report lists Aibatyr's 1997-1999 master's degree in Economics, specializing in Economic Theory, at Al-Farabi Kazakh National University."
+  },
+  {
+    "person_id": "kaz-674cd62ab22c",
+    "name": "Aibatyr Zhumagulov",
+    "organization": "Al-Farabi Kazakh National University",
+    "role": "University Degree, Economics and Management",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "1997",
+    "is_current": false,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://hcsbk.kz/%D0%96%D0%A1%D0%A1%D0%91_EN_2016.pdf",
+    "evidence_kind": "official_employer_annual_report",
+    "confidence": "confirmed",
+    "evidence_text": "The official House Construction Savings Bank annual report identifies Aibatyr Zhumagulov and states that he studied Economics and Management in the Department of Economics and Sociology at Al-Farabi Kazakh National University; the Russian report dates completion to 1997."
+  },
+  {
+    "person_id": "kaz-674cd62ab22c",
+    "name": "Aibatyr Zhumagulov",
     "organization": "Kazakhstan Deposit Insurance Fund",
     "role": "Independent Director",
     "affiliation_type": "employment",
@@ -4532,6 +4562,21 @@
   {
     "person_id": "kaz-8282f3ec5f44",
     "name": "Almas Rymov",
+    "organization": "Stony Brook University",
+    "role": "Graduate Student, Bolashak Scholarship Recipient",
+    "affiliation_type": "education",
+    "start_year": "1997",
+    "end_year": "1998",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://dspace.sunyconnect.suny.edu/bitstreams/0efb7937-1a28-4ad0-803f-380ad32c959f/download",
+    "evidence_kind": "official_university_achievement_roster",
+    "confidence": "probable",
+    "evidence_text": "Stony Brook University's official graduate-student achievements report lists exact-name Almas Rymov as a 1997-1998 Bolashak Presidential Scholarship recipient funded by Kazakhstan's Department of Education. It establishes graduate study at Stony Brook but does not state a degree title or completion."
+  },
+  {
+    "person_id": "kaz-8282f3ec5f44",
+    "name": "Almas Rymov",
     "organization": "Sun Life Financial",
     "role": "Actuary",
     "affiliation_type": "employment",
@@ -7688,7 +7733,7 @@
     "start_year": "",
     "end_year": "",
     "is_current": false,
-    "selected_as_alma_mater": true,
+    "selected_as_alma_mater": false,
     "evidence_url": "https://cphof.org/profile/topcoder:army",
     "evidence_kind": "accepted_cphof",
     "confidence": "confirmed",
@@ -8237,36 +8282,6 @@
   {
     "person_id": "kaz-32bc606217ec",
     "name": "Aruzhan Amanbayeva",
-    "organization": "Northwest A&F University",
-    "role": "Master's student",
-    "affiliation_type": "education",
-    "start_year": "2024",
-    "end_year": "2026",
-    "is_current": true,
-    "selected_as_alma_mater": true,
-    "evidence_url": "https://orcid.org/0009-0009-3827-8634",
-    "evidence_kind": "accepted_orcid",
-    "confidence": "probable",
-    "evidence_text": "NWAFU; Master's student; College of Food Science and Engineering; 2024; 2026"
-  },
-  {
-    "person_id": "kaz-32bc606217ec",
-    "name": "Aruzhan Amanbayeva",
-    "organization": "S. Seifullin Kazakh Agrotechnical Research University",
-    "role": "Master's student",
-    "affiliation_type": "education",
-    "start_year": "2024",
-    "end_year": "2026",
-    "is_current": true,
-    "selected_as_alma_mater": true,
-    "evidence_url": "https://orcid.org/0009-0009-3827-8634",
-    "evidence_kind": "accepted_orcid",
-    "confidence": "probable",
-    "evidence_text": "S.Seifullin Kazakh Agro Technical University; Master's student; \"Food Production\"; 2024; 2026"
-  },
-  {
-    "person_id": "kaz-32bc606217ec",
-    "name": "Aruzhan Amanbayeva",
     "organization": "EPFL",
     "role": "Doctor of Philosophy - PhD, Computer Science",
     "affiliation_type": "education",
@@ -8278,21 +8293,6 @@
     "evidence_url": "https://linkedin.com/in/aaruzhan",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
-  },
-  {
-    "person_id": "kaz-32bc606217ec",
-    "name": "Aruzhan Amanbayeva",
-    "organization": "Kazakh National Agrarian Research University",
-    "role": "Bachelor of Engineering and Technology",
-    "affiliation_type": "education",
-    "start_year": "2020",
-    "end_year": "2024",
-    "is_current": false,
-    "selected_as_alma_mater": true,
-    "evidence_url": "https://orcid.org/0009-0009-3827-8634",
-    "evidence_kind": "accepted_orcid",
-    "confidence": "probable",
-    "evidence_text": "Kazakh National Agrarian Research University; Bachelor of Engineering and Technology; Department of \"Food Technology and Safety\"; 2020; 2024"
   },
   {
     "person_id": "kaz-32bc606217ec",
@@ -8485,9 +8485,9 @@
     "is_current": false,
     "selected_as_alma_mater": false,
     "evidence_url": "https://kz.linkedin.com/in/asset-iskakov-805a34a4",
-    "evidence_kind": "manual_review",
+    "evidence_kind": "destination_source_review",
     "confidence": "probable",
-    "evidence_text": "The official IChO result confirms Aset Iskakov's 2003 silver medal, while a reviewed Kazakhstan chemistry-Olympiad history directly identifies the same Almaty KTL student and records his 2003 enrollment at Middle East Technical University. The rare Asset spelling variant's public profile independently gives the exact 2003-2007 METU Petroleum Engineering timeline, followed immediately by an SLB career. Its latest disclosed job is Caspian Recruiting and University Relations Manager in Astana from"
+    "evidence_text": "The accepted profile dates Aset's latest disclosed SLB role from April 2014 through May 2017 and currently says only that he is on education leave without naming an active institution. The bounded role is retained as historical latest employment, not presented as current."
   },
   {
     "person_id": "kaz-fc88fa90b799",
@@ -11348,11 +11348,26 @@
     "start_year": "",
     "end_year": "",
     "is_current": false,
-    "selected_as_alma_mater": true,
+    "selected_as_alma_mater": false,
     "evidence_url": "https://cphof.org/profile/codeforces:998kover",
     "evidence_kind": "accepted_cphof",
     "confidence": "confirmed",
     "evidence_text": "profile=codeforces:998kover; country=Kazakhstan; contest=IOI; codeforces=998kover; universities=International IT University, Harbour.Space University - Barcelona Campus; organization=Tima's hata"
+  },
+  {
+    "person_id": "kaz-da119ef48a6d",
+    "name": "Batyr Sardarbekov",
+    "organization": "Harbour.Space University",
+    "role": "Bachelor's Degree in Computer Science",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2024",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://harbour.space/news/articles/1st-of-europe-and-4th-in-the-world-in-top-programming-contest",
+    "evidence_kind": "official_university_team_biography",
+    "confidence": "confirmed",
+    "evidence_text": "Harbour.Space's official 2024 ICPC team biography identifies Kazakhstan's Batyr Sardarbekov as its contestant and states Bachelor in Computer Science. The wording is retained as the university's reported credential without inventing start or graduation dates."
   },
   {
     "person_id": "kaz-da119ef48a6d",
@@ -11363,11 +11378,26 @@
     "start_year": "",
     "end_year": "",
     "is_current": false,
-    "selected_as_alma_mater": true,
+    "selected_as_alma_mater": false,
     "evidence_url": "https://cphof.org/profile/codeforces:998kover",
     "evidence_kind": "accepted_cphof",
     "confidence": "confirmed",
     "evidence_text": "profile=codeforces:998kover; country=Kazakhstan; contest=IOI; codeforces=998kover; universities=International IT University, Harbour.Space University - Barcelona Campus; organization=Tima's hata"
+  },
+  {
+    "person_id": "kaz-da119ef48a6d",
+    "name": "Batyr Sardarbekov",
+    "organization": "International Information Technology University (IITU)",
+    "role": "University Student",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2022",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://iitu.edu.kz/documents/2982/Rectors_Report_on_the_results_of_2022-2023.pdf",
+    "evidence_kind": "official_university_student_record",
+    "confidence": "confirmed",
+    "evidence_text": "IITU's official rector report calls Batyr Sardarbekov and his teammates IITU students and records their university team at the November 2022 ICPC World Finals. The source establishes enrollment but does not state a degree or completion."
   },
   {
     "person_id": "kaz-da119ef48a6d",
@@ -12203,11 +12233,11 @@
     "start_year": "",
     "end_year": "",
     "is_current": true,
-    "evidence_text": "Technical Lead - [METAPHORA](https://www.linkedin.com/company/metaphora) (Current) Department: Engineering and Technical • Level: Head METAPHORA is a Business Consulting and Services company. Metaphora is a consulting company that specializes in change management and transformation support. METAPHORA has 1-10 employees and has annual revenue in the under $1M range, founded in 1994. Headquartered in France, with offices in La Defense and Paris. Its workforce is distributed across France, Russia,",
     "selected_as_alma_mater": false,
     "evidence_url": "https://kz.linkedin.com/in/baurzhan-urgunshbayev-143a68104",
-    "evidence_kind": "accepted_linkedin_profile",
-    "confidence": "probable"
+    "evidence_kind": "destination_source_review",
+    "confidence": "probable",
+    "evidence_text": "The accepted profile directly states Technical Lead at METAPHORA as Baurzhan's current role. The prior registry source remains an identity and Kazakhstan-location bridge but did not itself state the selected employer or title."
   },
   {
     "person_id": "kaz-694369c06874",
@@ -12217,7 +12247,7 @@
     "affiliation_type": "employment",
     "start_year": "",
     "end_year": "",
-    "is_current": true,
+    "is_current": false,
     "selected_as_alma_mater": false,
     "evidence_url": "https://pk.uchet.kz/search/iin/860504300028",
     "evidence_kind": "manual_review",
@@ -12448,6 +12478,21 @@
     "evidence_kind": "manual_review",
     "confidence": "probable",
     "evidence_text": "The Institute for Basic Science's current UNIST roster lists the rare exact-name Bekbolat Mamyrbekov as an undergraduate student and a 2026 materials paper independently gives him a UNIST affiliation; no source explicitly joins those records to the official 2023 IChO entrant."
+  },
+  {
+    "person_id": "kaz-d6415e08acc5",
+    "name": "Beket Zhapbasbay",
+    "organization": "Novosibirsk State University (NSU)",
+    "role": "Degree in Applied Mathematics",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://rcez.kz/departmentdirectorinformationsecurity",
+    "evidence_kind": "official_employer_biography",
+    "confidence": "confirmed",
+    "evidence_text": "The Republican Center for Electronic Health's official leadership biography states that Beket Zhapbasbay completed higher education in applied mathematics at Novosibirsk State University."
   },
   {
     "person_id": "kaz-d6415e08acc5",
@@ -13922,17 +13967,17 @@
   {
     "person_id": "kaz-612c627fb60c",
     "name": "Daniyar Kelbetov",
-    "organization": "Astana International Financial Centre",
-    "role": "Chairman of the Board of Directors",
+    "organization": "Contango Trade",
+    "role": "Chief Executive Officer",
     "affiliation_type": "employment",
-    "start_year": "",
+    "start_year": "2026",
     "end_year": "",
     "is_current": true,
     "selected_as_alma_mater": false,
-    "evidence_url": "https://gfc.aifc.kz/uploads/AIFC%20Analytics/State%20of%20Sustainable%20Finance%20in%20Central%20Asia/CA%20to%20publish%20ENG_compressed.pdf",
-    "evidence_kind": "manual_review",
+    "evidence_url": "https://publicreg.myafsa.com/details/260240901629/",
+    "evidence_kind": "destination_source_review",
     "confidence": "probable",
-    "evidence_text": "The rare exact name links Kazakhstan's 2004 and 2005 IMO record to a 2007 Nanyang Technological University mathematics competition and a later Singapore-trained finance career; AIFC's official 2025 report names him as the Green Finance Centre's board chairman, but no source explicitly joins that career profile to the IMO entrant"
+    "evidence_text": "AFSA's active public register names Daniyar Kelbetov as Contango Trade's CEO effective 27 February 2026. His accepted LinkedIn history ends both AIFC roles in March 2025, and his self-authored farewell post independently confirms that he left AIFC after nine years."
   },
   {
     "person_id": "kaz-612c627fb60c",
@@ -13948,6 +13993,21 @@
     "evidence_url": "https://kz.linkedin.com/in/daniyar-frm",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-612c627fb60c",
+    "name": "Daniyar Kelbetov",
+    "organization": "Astana International Financial Centre",
+    "role": "Chairman of the Board of Directors",
+    "affiliation_type": "employment",
+    "start_year": "2023",
+    "end_year": "2025",
+    "is_current": false,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://gfc.aifc.kz/uploads/AIFC%20Analytics/State%20of%20Sustainable%20Finance%20in%20Central%20Asia/CA%20to%20publish%20ENG_compressed.pdf",
+    "evidence_kind": "manual_review",
+    "confidence": "probable",
+    "evidence_text": "The rare exact name links Kazakhstan's 2004 and 2005 IMO record to a 2007 Nanyang Technological University mathematics competition and a later Singapore-trained finance career; AIFC's official 2025 report names him as the Green Finance Centre's board chairman and his accepted profile dates that role from 2023 through March 2025, but no source explicitly joins that career profile to the IMO entrant."
   },
   {
     "person_id": "kaz-612c627fb60c",
@@ -18189,10 +18249,10 @@
     "end_year": "",
     "is_current": true,
     "selected_as_alma_mater": false,
-    "evidence_url": "https://www.apple-events.com/events/central-eurasian-venture-forum-2024",
-    "evidence_kind": "manual_review",
+    "evidence_url": "https://ftel.kz/en/ethical-principles/",
+    "evidence_kind": "destination_source_review",
     "confidence": "confirmed",
-    "evidence_text": "The venture-forum biography explicitly links full-name Freedom Telecom CEO Kairat Bakibayevich Akhmetov to the 1998 and 1999 IPhO appearances and Asian Physics Olympiad gold; his self-authored interview separately identifies MIPT as his university."
+    "evidence_text": "Freedom Telecom's current official ethics page directly names Kairat Akhmetov as Chief Executive Officer. This replaces an event biography as the destination source while preserving the separate profile and interview evidence used for identity and history."
   },
   {
     "person_id": "kaz-9f8b5c60daf2",
@@ -18223,6 +18283,21 @@
     "evidence_url": "https://kz.linkedin.com/in/kairatakhmetov",
     "evidence_kind": "accepted_linkedin_profile",
     "confidence": "probable"
+  },
+  {
+    "person_id": "kaz-9f8b5c60daf2",
+    "name": "Kairat Akhmetov",
+    "organization": "Freedom Telecom",
+    "role": "Chief Executive Officer",
+    "affiliation_type": "employment",
+    "start_year": "2023",
+    "end_year": "",
+    "is_current": false,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://www.apple-events.com/events/central-eurasian-venture-forum-2024",
+    "evidence_kind": "manual_review",
+    "confidence": "confirmed",
+    "evidence_text": "The venture-forum biography explicitly links full-name Freedom Telecom CEO Kairat Bakibayevich Akhmetov to the 1998 and 1999 IPhO appearances and Asian Physics Olympiad gold; his self-authored interview separately identifies MIPT as his university."
   },
   {
     "person_id": "kaz-f0f8ae850677",
@@ -23573,7 +23648,7 @@
     "start_year": "",
     "end_year": "",
     "is_current": false,
-    "selected_as_alma_mater": true,
+    "selected_as_alma_mater": false,
     "evidence_url": "https://cphof.org/profile/topcoder:nazarbek",
     "evidence_kind": "accepted_cphof",
     "confidence": "confirmed",
@@ -23732,6 +23807,21 @@
   {
     "person_id": "kaz-80e9320bcf5e",
     "name": "Nazym Nurlanovna Bashkenova",
+    "organization": "Turgut Ozal University",
+    "role": "Medical Degree",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.pediatricassociates.com/pediatric-office/winter-springs-fl-town-center/pediatricians/nazym-bashkenova-md",
+    "evidence_kind": "official_employer_biography",
+    "confidence": "confirmed",
+    "evidence_text": "Pediatric Associates' current physician biography identifies Turgut Ozal University in Ankara as Nazym Bashkenova's medical school. It separately lists Albert Einstein Healthcare Network as residency, which is retained as training context rather than claimed as a degree."
+  },
+  {
+    "person_id": "kaz-80e9320bcf5e",
+    "name": "Nazym Nurlanovna Bashkenova",
     "organization": "Pediatric Associates",
     "role": "Pediatrician",
     "affiliation_type": "employment",
@@ -23740,9 +23830,9 @@
     "is_current": true,
     "selected_as_alma_mater": false,
     "evidence_url": "https://www.pediatricassociates.com/pediatric-office/winter-springs-fl-town-center/pediatricians/nazym-bashkenova-md",
-    "evidence_kind": "manual_review",
+    "evidence_kind": "destination_source_review",
     "confidence": "confirmed",
-    "evidence_text": "The exact-name 2009 official IBO record aligns with the current pediatrician's Kazakhstan birth and Turkish medical degree biography and an active Florida physician license"
+    "evidence_text": "Pediatric Associates' current physician page directly identifies Nazym Bashkenova as a pediatrician in its Winter Springs practice. The accepted public profile independently names the same current employer and location."
   },
   {
     "person_id": "kaz-0d9cf667fe24",
@@ -24773,7 +24863,7 @@
     "start_year": "",
     "end_year": "",
     "is_current": false,
-    "selected_as_alma_mater": true,
+    "selected_as_alma_mater": false,
     "evidence_url": "https://cphof.org/profile/topcoder:NurlashKO_TC",
     "evidence_kind": "accepted_cphof",
     "confidence": "confirmed",
@@ -25988,7 +26078,7 @@
     "start_year": "",
     "end_year": "",
     "is_current": false,
-    "selected_as_alma_mater": true,
+    "selected_as_alma_mater": false,
     "evidence_url": "https://cphof.org/profile/codeforces:Fortitude",
     "evidence_kind": "accepted_cphof",
     "confidence": "confirmed",
@@ -29312,6 +29402,36 @@
   {
     "person_id": "kaz-860c6f9abbfa",
     "name": "Sanzhar Orazbayev",
+    "organization": "Kazakh-British Technical University (KBTU)",
+    "role": "Bachelor's Degree in Computer Science and Software",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://www.naturalspublishing.com/files/published/d7lg766m627wtw.pdf",
+    "evidence_kind": "peer_reviewed_author_biography",
+    "confidence": "probable",
+    "evidence_text": "A 2015 paper authored by Sanzhar Orazbayev at KBTU states that he received a bachelor's degree in Computer Science and Software there and separately names his IMO awards, directly bridging the university record to the Olympiad alumnus. The source does not state the graduation year."
+  },
+  {
+    "person_id": "kaz-860c6f9abbfa",
+    "name": "Sanzhar Orazbayev",
+    "organization": "UMAG",
+    "role": "Director",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "is_current": true,
+    "selected_as_alma_mater": false,
+    "evidence_url": "https://apiba.prgapp.kz/GetCompanyPdf?companyId=170740010868",
+    "evidence_kind": "manual_review",
+    "confidence": "probable",
+    "evidence_text": "The official IMO registry identifies Kazakhstan's 2008-2009 bronze medalist. A 2015 KBTU paper by Sanzhar Orazbayev explicitly records both his KBTU computer-science degree and IMO awards. Two exact-name GitHub accounts share the personal domain sanzhar.kz and link him successively to Zapis.kz and Khan Group; Kazakhstan's government news service independently names the same Sanzhar Orazbayev as Zapis.kz founder and director. The Zapis company registry exposes the full patronymic Sanzhar Tleuzhan"
+  },
+  {
+    "person_id": "kaz-860c6f9abbfa",
+    "name": "Sanzhar Orazbayev",
     "organization": "Khan Group",
     "role": "",
     "affiliation_type": "employment",
@@ -32157,7 +32277,7 @@
     "selected_as_alma_mater": false,
     "evidence_url": "https://linkedin.com/in/temirlan-amangeldinov",
     "evidence_kind": "accepted_linkedin_profile",
-    "confidence": "confirmed"
+    "confidence": "probable"
   },
   {
     "person_id": "kaz-dcb24ecb815a",
@@ -32258,7 +32378,7 @@
     "start_year": "",
     "end_year": "",
     "is_current": false,
-    "selected_as_alma_mater": true,
+    "selected_as_alma_mater": false,
     "evidence_url": "https://cphof.org/profile/codeforces:bthero",
     "evidence_kind": "accepted_cphof",
     "confidence": "confirmed",
@@ -32322,7 +32442,7 @@
     "selected_as_alma_mater": false,
     "evidence_url": "https://linkedin.com/in/bthero",
     "evidence_kind": "accepted_linkedin_profile",
-    "confidence": "confirmed"
+    "confidence": "probable"
   },
   {
     "person_id": "kaz-c6c074aef2cf",
@@ -38373,6 +38493,21 @@
     "person_id": "kaz-fc8646c120d2",
     "name": "Zhandos Yessenbayev",
     "organization": "L.N. Gumilyov Eurasian National University",
+    "role": "PhD in Computer Science",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://nur.nu.edu.kz/server/api/core/bitstreams/4dd067e1-8247-43b4-907d-24ae261079b8/content",
+    "evidence_kind": "peer_reviewed_author_biography",
+    "confidence": "confirmed",
+    "evidence_text": "The same IEEE Access author biography states that Zhandos received a PhD in computer science from L.N. Gumilyov Eurasian National University; it does not provide the year."
+  },
+  {
+    "person_id": "kaz-fc8646c120d2",
+    "name": "Zhandos Yessenbayev",
+    "organization": "L.N. Gumilyov Eurasian National University",
     "role": "Research author",
     "affiliation_type": "education",
     "start_year": "2012",
@@ -38413,6 +38548,36 @@
     "evidence_kind": "accepted_openalex",
     "confidence": "confirmed",
     "evidence_text": "works=35; citations=173; institutions=L. N. Gumilyov Eurasian National University, Binus University, KazMunayGas (Kazakhstan), Suleyman Demirel University, Nazarbayev University; topics=Natural Language Processing Techniques, Speech Recognition and Synthesis, Topic Modeling, Speech and Audio Processing, Music and Audio Processing; orcid=https://orcid.org/0000-0002-6322-3848"
+  },
+  {
+    "person_id": "kaz-fc8646c120d2",
+    "name": "Zhandos Yessenbayev",
+    "organization": "University of Chicago",
+    "role": "Master's Degree in Computer Science",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2008",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://nur.nu.edu.kz/server/api/core/bitstreams/4dd067e1-8247-43b4-907d-24ae261079b8/content",
+    "evidence_kind": "peer_reviewed_author_biography",
+    "confidence": "confirmed",
+    "evidence_text": "The same IEEE Access author biography states that Zhandos received a master's degree in computer science from the University of Chicago in 2008."
+  },
+  {
+    "person_id": "kaz-fc8646c120d2",
+    "name": "Zhandos Yessenbayev",
+    "organization": "University of Science and Technology MISIS",
+    "role": "Specialist Degree in Applied Mathematics",
+    "affiliation_type": "education",
+    "start_year": "",
+    "end_year": "2006",
+    "is_current": false,
+    "selected_as_alma_mater": true,
+    "evidence_url": "https://nur.nu.edu.kz/server/api/core/bitstreams/4dd067e1-8247-43b4-907d-24ae261079b8/content",
+    "evidence_kind": "peer_reviewed_author_biography",
+    "confidence": "confirmed",
+    "evidence_text": "A 2024 IEEE Access author biography in Nazarbayev University's repository states that Zhandos Yessenbayev received a Specialist degree in applied mathematics from the Moscow Institute of Steel and Alloys (MISIS) in 2006. The historical name is normalized to the university's current official brand."
   },
   {
     "person_id": "kaz-fc8646c120d2",

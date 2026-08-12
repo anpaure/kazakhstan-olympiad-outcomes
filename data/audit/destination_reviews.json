@@ -255,6 +255,21 @@
     "review_reason": "The accepted profile lists Software Engineer at Meta as current from September 2025."
   },
   {
+    "destination_review_id": "dest-review-b31c63ff68560526",
+    "evidence_id": "ev-7089df273d571737",
+    "source_id": "src-249daf260ac8",
+    "person_id": "kaz-fc88fa90b799",
+    "name": "Aset Iskakov",
+    "organization": "SLB",
+    "role": "Caspian Recruiting and University Relations Manager",
+    "affiliation_type": "employment",
+    "start_year": "2014",
+    "end_year": "2017",
+    "evidence_url": "https://kz.linkedin.com/in/asset-iskakov-805a34a4",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "The accepted profile dates Aset's latest disclosed SLB role from April 2014 through May 2017 and currently says only that he is on education leave without naming an active institution. The bounded role is retained as historical latest employment, not presented as current."
+  },
+  {
     "destination_review_id": "dest-review-bfc5ad903b9b3751",
     "evidence_id": "ev-cc367dbc8eac4bb7",
     "source_id": "src-86b5f0ac633c",
@@ -300,6 +315,21 @@
     "review_reason": "The accepted probable transliteration match lists Director at Global Agri Products as current from February 2022 and places the role in Almaty."
   },
   {
+    "destination_review_id": "dest-review-601185bd22868c51",
+    "evidence_id": "ev-4443746a29ab4aa6",
+    "source_id": "src-dbff68d533db",
+    "person_id": "kaz-694369c06874",
+    "name": "Baurzhan Urgunshbayev",
+    "organization": "METAPHORA",
+    "role": "Technical Lead",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://kz.linkedin.com/in/baurzhan-urgunshbayev-143a68104",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "The accepted profile directly states Technical Lead at METAPHORA as Baurzhan's current role. The prior registry source remains an identity and Kazakhstan-location bridge but did not itself state the selected employer or title."
+  },
+  {
     "destination_review_id": "dest-review-bc44062ae87a38dc",
     "evidence_id": "ev-400cc57c3d59d11e",
     "source_id": "src-e58f15b0548d",
@@ -328,6 +358,21 @@
     "evidence_url": "https://improvado.io/blog-authors/daniel-kravtsov",
     "reviewed_at": "2026-08-11",
     "review_reason": "Improvado's current company biography identifies Daniel Kravtsov as CEO and co-founder; the career-to-IOI identity match remains probable and is documented separately."
+  },
+  {
+    "destination_review_id": "dest-review-e448b9fa78b26e21",
+    "evidence_id": "ev-c0410f9489056457",
+    "source_id": "src-64c6b9093a85",
+    "person_id": "kaz-612c627fb60c",
+    "name": "Daniyar Kelbetov",
+    "organization": "Contango Trade",
+    "role": "Chief Executive Officer",
+    "affiliation_type": "employment",
+    "start_year": "2026",
+    "end_year": "",
+    "evidence_url": "https://publicreg.myafsa.com/details/260240901629/",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "AFSA's active public register names Daniyar Kelbetov as Contango Trade's CEO effective 27 February 2026. His accepted LinkedIn history ends both AIFC roles in March 2025, and his self-authored farewell post independently confirms that he left AIFC after nine years."
   },
   {
     "destination_review_id": "dest-review-bb6b188eeeadcaed",
@@ -495,6 +540,21 @@
     "review_reason": "The accepted profile lists Staff Machine Learning Engineer at Instagram as current from September 2025."
   },
   {
+    "destination_review_id": "dest-review-e0c94c06f8a4b749",
+    "evidence_id": "ev-813fceae10b2ca16",
+    "source_id": "src-7719cd5474a5",
+    "person_id": "kaz-9f8b5c60daf2",
+    "name": "Kairat Akhmetov",
+    "organization": "Freedom Telecom",
+    "role": "Chief Executive Officer",
+    "affiliation_type": "employment",
+    "start_year": "2023",
+    "end_year": "",
+    "evidence_url": "https://ftel.kz/en/ethical-principles/",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "Freedom Telecom's current official ethics page directly names Kairat Akhmetov as Chief Executive Officer. This replaces an event biography as the destination source while preserving the separate profile and interview evidence used for identity and history."
+  },
+  {
     "destination_review_id": "dest-review-154c3497baac200a",
     "evidence_id": "ev-67df68609f8aab35",
     "source_id": "src-f1bb39dc7bad",
@@ -628,6 +688,21 @@
     "evidence_url": "https://de.linkedin.com/in/mussa-rajamov",
     "reviewed_at": "2026-08-10",
     "review_reason": "The accepted profile lists Senior Model Validation Specialist at Deutsche Bank as current from March 2025."
+  },
+  {
+    "destination_review_id": "dest-review-aca36bfc4ab28d65",
+    "evidence_id": "ev-72404cacc4961dcb",
+    "source_id": "src-85f0c4394a9d",
+    "person_id": "kaz-80e9320bcf5e",
+    "name": "Nazym Nurlanovna Bashkenova",
+    "organization": "Pediatric Associates",
+    "role": "Pediatrician",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://www.pediatricassociates.com/pediatric-office/winter-springs-fl-town-center/pediatricians/nazym-bashkenova-md",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "Pediatric Associates' current physician page directly identifies Nazym Bashkenova as a pediatrician in its Winter Springs practice. The accepted public profile independently names the same current employer and location."
   },
   {
     "destination_review_id": "dest-review-ecc33850fa40768e",

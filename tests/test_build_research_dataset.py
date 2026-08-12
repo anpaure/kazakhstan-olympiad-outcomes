@@ -11,6 +11,48 @@ from scripts.build_outcomes_visualization import compact_person
 
 
 class ManualEvidenceConfidenceTest(unittest.TestCase):
+    def test_manual_identity_bridge_does_not_invent_a_destination(self):
+        people = [
+            {
+                "person_id": "kaz-test",
+                "canonical_name": "Test Person",
+                "aliases": "Test Person",
+                "olympiads": "IOI",
+                "years": "2025",
+                "first_year": "2025",
+                "last_year": "2025",
+                "awards": "Silver",
+                "research_scope": "recent_competitor",
+            }
+        ]
+        verified = [
+            {
+                "person_id": "kaz-test",
+                "name": "Test Person",
+                "organization": "",
+                "role": "",
+                "affiliation_type": "",
+                "start_year": "",
+                "end_year": "",
+                "olympiad_evidence_url": "https://example.test/olympiad",
+                "career_evidence_url": "https://example.test/identity-bridge",
+                "linkedin_url": "",
+                "confidence": "confirmed",
+                "verification_basis": "The school source identifies the Olympiad entrant.",
+            }
+        ]
+
+        [row] = build_rows(people, [], [], verified)
+
+        self.assertEqual(row.confidence, "confirmed")
+        self.assertEqual(row.identity_source, "verified")
+        self.assertEqual(row.profile_url, "https://example.test/identity-bridge")
+        self.assertEqual(row.destination_status, "none")
+        self.assertEqual(row.organization, "")
+        self.assertEqual(row.role, "")
+        self.assertIn("https://example.test/olympiad", row.evidence_urls)
+        self.assertIn("https://example.test/identity-bridge", row.evidence_urls)
+
     def test_manual_probable_confidence_is_preserved(self):
         people = [
             {

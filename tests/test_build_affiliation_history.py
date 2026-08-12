@@ -12,6 +12,18 @@ from scripts.build_affiliation_history import (
 
 
 class LinkedInAffiliationExtractionTest(unittest.TestCase):
+    def test_roleless_competition_directory_university_is_not_alma_mater(self):
+        self.assertFalse(
+            is_postsecondary_education(
+                {
+                    "organization": "Astana IT University",
+                    "role": "",
+                    "evidence_kind": "accepted_cphof",
+                    "evidence_text": "universities=Astana IT University",
+                }
+            )
+        )
+
     def test_extracts_current_and_past_jobs_and_education(self):
         rows = extract_affiliations(
             "## Experience "
@@ -1174,6 +1186,33 @@ class ManualAffiliationTest(unittest.TestCase):
 
         self.assertEqual(len(rows), 1)
         self.assertTrue(rows[0]["is_current"])
+
+    def test_verified_identity_only_row_does_not_create_blank_affiliation(self):
+        people = [
+            {
+                "person_id": "person-1",
+                "name": "Example Person",
+                "confidence": "confirmed",
+                "organization": "",
+                "affiliation_type": "",
+            }
+        ]
+        verified = [
+            {
+                "person_id": "person-1",
+                "organization": "",
+                "role": "",
+                "affiliation_type": "",
+                "start_year": "",
+                "end_year": "",
+                "career_evidence_url": "https://example.com/identity",
+                "confidence": "confirmed",
+            }
+        ]
+
+        rows = build_rows(people, [], [], [], verified, [], [], 2026)
+
+        self.assertEqual(rows, [])
 
     def test_explicit_manual_past_flag_overrides_graduation_year(self):
         people = [

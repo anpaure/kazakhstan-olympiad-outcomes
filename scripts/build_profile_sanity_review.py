@@ -21,17 +21,19 @@ except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path
     from organization_names import canonicalize_organization
 
 
-SAMPLE_SEED = "20260812-round2"
+SAMPLE_SEED = "20260812-round3"
 ERA_CUTOFF_YEAR = 2005
 SAMPLE_PER_STRATUM = 12
 REVIEWED_AT = "2026-08-12"
 DATA_AS_OF_YEAR = 2026
+DEFAULT_REVIEW_DECISIONS = Path("data/profile_sanity_review_decisions.csv")
 
 SAMPLE_FIELDS = [
     "sample_seed",
     "stratum",
     "sample_rank",
     "sample_hash",
+    "review_fingerprint",
     "person_id",
     "name",
     "olympiads",
@@ -58,6 +60,7 @@ SAMPLE_FIELDS = [
     "country_check",
     "alma_mater_check",
     "manual_review_status",
+    "review_depth",
     "reviewed_at",
     "review_note",
 ]
@@ -94,53 +97,39 @@ FINDING_FIELDS = [
     "reviewed_at",
 ]
 
-CORRECTED_SAMPLE_NOTES = {
-    "kaz-ce11e3134fa1": (
-        "Corrected Doctoral Researcher from employment to active PhD education after "
-        "Khalifa University's lab roster placed Baizak under Students; destination, "
-        "UAE location, and alma-mater history were rebuilt."
-    ),
-    "kaz-1deffa0c0a86": (
-        "Corrected an open-ended DESY role to historical 2015-2024 employment after "
-        "the current staff page listed Vadim under Alumni and a 2024 DESY publication "
-        "provided the latest direct affiliation."
-    ),
-    "kaz-24cc764a8eaf": (
-        "Removed an unsupported Kazakhstan country value. Shapagat's accepted source "
-        "establishes historical education but no current or latest-known outcome "
-        "location, so country remains unknown."
-    ),
-    "kaz-07372798186f": (
-        "Filled the previously blank Desargues AI role with the narrow sourced label "
-        "Founding Team Member after a public meeting post named Rakhim with the "
-        "startup's founder team; no more specific function is claimed."
-    ),
-    "kaz-5c429c277917": (
-        "Added the University of Hong Kong master's and Chinese University of Hong "
-        "Kong bachelor's records after the sampled destination source was found to "
-        "contain education that had not entered affiliation history."
-    ),
-    "kaz-8c9c1b2b81a6": (
-        "Removed a duplicate degree sentence that had been parsed as an institution; "
-        "the canonical D. Serikbayev East Kazakhstan Technical University master's "
-        "record remains selected as the alma mater."
-    ),
-    "kaz-6e64602de321": (
-        "Changed an undated Student headline to completed 2018-2020 Nazarbayev "
-        "University master's history after the same profile's dated education "
-        "section showed no current enrollment or later outcome."
-    ),
-    "kaz-b788eb650e7a": (
-        "Replaced a stale direct IMO contestant URL with Nurgali's canonical "
-        "participant-registry URL after the full source-link comparison found that "
-        "the old ID belonged to a different contestant."
-    ),
-    "kaz-09e9190640e1": (
-        "Replaced a stale direct IMO contestant URL with Vitaliy's canonical "
-        "participant-registry URL after the sampled source-chain review found that "
-        "the old ID belonged to a different contestant."
-    ),
-}
+REVIEW_DECISION_FIELDS = [
+    "sample_seed",
+    "person_id",
+    "review_fingerprint",
+    "review_depth",
+    "review_status",
+    "reviewed_at",
+    "review_note",
+]
+
+REVIEW_FINGERPRINT_FIELDS = [
+    "person_id",
+    "name",
+    "olympiads",
+    "years",
+    "outcome_status",
+    "organization",
+    "role",
+    "destination_status",
+    "outcome_country_name",
+    "outcome_location_label",
+    "alma_mater",
+    "primary_profile_url",
+    "linkedin_url",
+    "participation_source_urls",
+    "identity_source_urls",
+    "destination_source_urls",
+    "location_source_url",
+    "alma_mater_source_urls",
+    "profile_hydration_status",
+    "profile_current_affiliations",
+    "linkedin_destination_alignment",
+]
 
 
 def clean_text(value: object) -> str:
@@ -173,6 +162,35 @@ def joined(values: list[str] | set[str]) -> str:
 
 def sample_hash(seed: str, stratum: str, person_id: str) -> str:
     return hashlib.sha256(f"{seed}:{stratum}:{person_id}".encode()).hexdigest()
+
+
+def review_fingerprint(row: dict[str, object]) -> str:
+    payload = "\x1f".join(clean_text(row.get(field)) for field in REVIEW_FINGERPRINT_FIELDS)
+    return hashlib.sha256(payload.encode()).hexdigest()[:20]
+
+
+def load_review_decisions(path: Path) -> dict[tuple[str, str], dict[str, str]]:
+    if not path.exists():
+        return {}
+    with path.open(newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        if reader.fieldnames != REVIEW_DECISION_FIELDS:
+            raise ValueError(
+                f"Unexpected profile review decision fields: {reader.fieldnames!r}"
+            )
+        rows = list(reader)
+    decisions: dict[tuple[str, str], dict[str, str]] = {}
+    for index, raw in enumerate(rows, start=2):
+        row = {field: clean_text(raw.get(field)) for field in REVIEW_DECISION_FIELDS}
+        key = (row["sample_seed"], row["person_id"])
+        if not all(row.values()) or key in decisions:
+            raise ValueError(f"Incomplete or duplicate profile review decision at row {index}")
+        if row["review_status"] not in {"pass", "pass_after_correction"}:
+            raise ValueError(f"Invalid profile review status at row {index}")
+        if row["review_depth"] not in {"standard", "deep"}:
+            raise ValueError(f"Invalid profile review depth at row {index}")
+        decisions[key] = row
+    return decisions
 
 
 def select_sample(
@@ -252,6 +270,26 @@ def parsed_current_affiliations(profile: dict[str, object]) -> list[dict[str, ob
             clean_text(row.get("role")).casefold(),
         ),
     )
+
+
+def parsed_historical_affiliations(profile: dict[str, object]) -> list[dict[str, object]]:
+    if profile.get("status") not in {
+        "success",
+        "search_cache",
+        "manual_public_profile",
+    }:
+        return []
+    output = []
+    for row in extract_affiliations(str(profile.get("text") or "")):
+        if row.get("is_current") or not clean_text(row.get("organization")):
+            continue
+        output.append(
+            {
+                **row,
+                "organization": canonicalize_organization(row.get("organization")),
+            }
+        )
+    return output
 
 
 ROLE_TRANSLATIONS = {
@@ -350,6 +388,7 @@ def build_reconciliation(
         person_id = clean_text(profile.get("person_id"))
         person = people_by_id[person_id]
         current = parsed_current_affiliations(profile)
+        historical = parsed_historical_affiliations(profile)
         current_organizations = {
             clean_text(row.get("organization")) for row in current if row.get("organization")
         }
@@ -373,6 +412,25 @@ def build_reconciliation(
         destination_review = reviews_by_id.get(person_id)
         outcome_decision = decisions_by_key.get((person_id, profile_key))
         profile_status = clean_text(profile.get("status"))
+        bounded_destination_rows = [
+            row
+            for row in historical
+            if clean_text(row.get("organization")) == final_organization
+            and clean_text(row.get("end_year")).isdigit()
+            and int(clean_text(row.get("end_year"))) <= DATA_AS_OF_YEAR
+        ]
+        matching_bounded_destination_rows = [
+            row
+            for row in bounded_destination_rows
+            if clean_text(person.get("end_year"))
+            and clean_text(row.get("end_year")) == clean_text(person.get("end_year"))
+            and roles_compatible(
+                person.get("role", ""),
+                clean_text(row.get("role")),
+                person.get("affiliation_type", ""),
+                clean_text(row.get("affiliation_type")),
+            )
+        ]
 
         fallback_evidence = sorted(
             outcome_evidence_by_id.get(person_id, []),
@@ -388,6 +446,22 @@ def build_reconciliation(
             organization_alignment = "not_checked"
             role_alignment = "not_checked"
             alignment = "profile_retrieval_unavailable"
+        elif not current and matching_bounded_destination_rows:
+            organization_alignment = "matched"
+            role_alignment = "matched"
+            alignment = "matched_historical_profile"
+        elif not current and bounded_destination_rows and destination_review:
+            organization_alignment = "reconciled"
+            role_alignment = "reconciled"
+            alignment = "reconciled_destination_review"
+        elif not current and bounded_destination_rows and outcome_decision:
+            organization_alignment = "reconciled"
+            role_alignment = "reconciled"
+            alignment = "reconciled_source_precedence"
+        elif not current and bounded_destination_rows:
+            organization_alignment = "unreconciled"
+            role_alignment = "unreconciled"
+            alignment = "unreconciled_bounded_profile_destination"
         elif not current:
             organization_alignment = "not_parsed"
             role_alignment = "not_parsed"
@@ -477,6 +551,7 @@ def build_sample_rows(
     profiles: list[dict[str, object]],
     reconciliation: list[dict[str, object]],
     seed: str,
+    review_decisions: dict[tuple[str, str], dict[str, str]] | None = None,
 ) -> list[dict[str, object]]:
     audit_people_by_id = {row["person_id"]: row for row in audit_people}
     profiles_by_id = {clean_text(row.get("person_id")): row for row in profiles}
@@ -545,10 +620,7 @@ def build_sample_rows(
         has_destination = bool(clean_text(audit_person.get("organization")))
         has_country = bool(clean_text(audit_person.get("outcome_country_name")))
         has_alma = bool(clean_text(audit_person.get("alma_mater")))
-        corrected_note = CORRECTED_SAMPLE_NOTES.get(person_id)
-
-        output.append(
-            {
+        row: dict[str, object] = {
                 "sample_seed": seed,
                 "stratum": selection["stratum"],
                 "sample_rank": selection["sample_rank"],
@@ -590,18 +662,27 @@ def build_sample_rows(
                 "alma_mater_check": (
                     "pass" if has_alma and alma_urls else "not_available"
                 ),
-                "manual_review_status": (
-                    "pass_after_correction" if corrected_note else "pass"
+                "manual_review_status": "pending",
+                "review_depth": "",
+                "reviewed_at": "",
+                "review_note": (
+                    "No current fingerprinted manual review decision matches this "
+                    "generated profile record."
                 ),
-                "reviewed_at": REVIEWED_AT,
-                "review_note": corrected_note
-                or (
-                    "Re-opened the participation, identity, destination or history, "
-                    "location, alma-mater, and LinkedIn-consistency source chain; no "
-                    "contradictory evidence was found."
-                ),
-            }
-        )
+        }
+        row["review_fingerprint"] = review_fingerprint(row)
+        decision = (review_decisions or {}).get((seed, person_id), {})
+        if decision.get("review_fingerprint") == row["review_fingerprint"]:
+            row["manual_review_status"] = decision["review_status"]
+            row["review_depth"] = decision["review_depth"]
+            row["reviewed_at"] = decision["reviewed_at"]
+            row["review_note"] = decision["review_note"]
+        elif decision:
+            row["review_note"] = (
+                "The stored manual review decision is stale because the profile "
+                "fingerprint changed."
+            )
+        output.append(row)
     return output
 
 
@@ -612,6 +693,9 @@ def main() -> int:
     parser.add_argument("--seed", default=SAMPLE_SEED)
     parser.add_argument("--cutoff-year", type=int, default=ERA_CUTOFF_YEAR)
     parser.add_argument("--sample-per-stratum", type=int, default=SAMPLE_PER_STRATUM)
+    parser.add_argument(
+        "--review-decisions", type=Path, default=DEFAULT_REVIEW_DECISIONS
+    )
     args = parser.parse_args()
 
     data_dir = Path(args.data_dir)
@@ -625,6 +709,7 @@ def main() -> int:
     destination_reviews = read_csv(data_dir / "destination_reviews.csv")
     outcome_decisions = read_csv(data_dir / "exa_outcome_review_decisions.csv")
     findings = read_csv(data_dir / "profile_sanity_review_findings.csv")
+    review_decisions = load_review_decisions(args.review_decisions)
 
     reconciliation = build_reconciliation(
         researched, profiles, destination_reviews, outcome_decisions, evidence
@@ -640,6 +725,7 @@ def main() -> int:
         profiles,
         reconciliation,
         args.seed,
+        review_decisions,
     )
 
     write_rows(audit_dir / "profile_sanity_review.csv", sample_rows, SAMPLE_FIELDS)
@@ -673,6 +759,9 @@ def main() -> int:
         "sample_strata": dict(Counter(row["stratum"] for row in sample_rows)),
         "sample_review_statuses": dict(
             Counter(row["manual_review_status"] for row in sample_rows)
+        ),
+        "deep_reviewed_profiles": sum(
+            row["review_depth"] == "deep" for row in sample_rows
         ),
         "accepted_linkedin_profiles": len(reconciliation),
         "linkedin_alignment_statuses": dict(

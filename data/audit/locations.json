@@ -644,18 +644,18 @@
     "review_reason": "Qazinform's Ministry of Education report places Alikhan's active Bilim-Innovation student affiliation in Almaty."
   },
   {
-    "location_id": "loc-5d7652e6fffcee82",
-    "evidence_id": "ev-060608b30ae1b3c0",
-    "source_id": "src-0e7c72f6eeaf",
+    "location_id": "loc-43603e76edf208a1",
+    "evidence_id": "ev-e0b3b3c99635f900",
+    "source_id": "src-107c2360ec04",
     "person_id": "kaz-61c6139b5eb9",
     "name": "Alikhan Zhumagaleyev",
     "country_code": "HK",
     "country_name": "Hong Kong",
     "location_label": "Hong Kong",
-    "evidence_url": "https://www.cuhk.edu.hk/english/campus/cuhk-campus.html",
+    "evidence_url": "https://www.cuhk.edu.hk/english/campus/campus.html",
     "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at The Chinese University of Hong Kong (CUHK); the linked official institution source establishes the campus location. CUHK's official campus page identifies its Hong Kong campus."
+    "review_reason": "Country follows the accepted active student affiliation at The Chinese University of Hong Kong (CUHK); the linked official institution source establishes the campus location. CUHK's current official campus page identifies its Hong Kong campus."
   },
   {
     "location_id": "loc-3593f7112d303db1",
@@ -2100,18 +2100,18 @@
     "review_reason": "Country follows the location attached to the accepted current role at WeGlobal.ai. The public profile header independently agrees."
   },
   {
-    "location_id": "loc-ebdda57e42473a0b",
-    "evidence_id": "ev-a37ef40b6329bc9f",
-    "source_id": "src-b0a99941680b",
+    "location_id": "loc-d4c3b3c01c7030c3",
+    "evidence_id": "ev-7728155e95011106",
+    "source_id": "src-64c6b9093a85",
     "person_id": "kaz-612c627fb60c",
     "name": "Daniyar Kelbetov",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Astana, Kazakhstan",
-    "evidence_url": "https://gfc.aifc.kz/uploads/AIFC%20Analytics/State%20of%20Sustainable%20Finance%20in%20Central%20Asia/CA%20to%20publish%20ENG_compressed.pdf",
+    "evidence_url": "https://publicreg.myafsa.com/details/260240901629/",
     "evidence_kind": "current_role_location",
     "confidence": "probable",
-    "review_reason": "AIFC's reviewed report identifies Daniyar's board chairmanship at the Astana International Financial Centre in Astana; the identity remains probable."
+    "review_reason": "AFSA's active public register identifies Daniyar as Contango Trade's CEO effective February 2026 and gives the company's registered address in Astana; the identity bridge to the IMO alumnus remains probable."
   },
   {
     "location_id": "loc-b8d5adb1afc76256",
@@ -4326,6 +4326,20 @@
     "review_reason": "Country follows the accepted active student affiliation at Nazarbayev University; the linked official institution source establishes the campus location. Nazarbayev University's official contact page identifies its Astana campus."
   },
   {
+    "location_id": "loc-bf379e72d93e56e5",
+    "evidence_id": "ev-5c38f0fe02461735",
+    "source_id": "src-ae703cbd0a96",
+    "person_id": "kaz-860c6f9abbfa",
+    "name": "Sanzhar Orazbayev",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Almaty, Kazakhstan",
+    "evidence_url": "https://apiba.prgapp.kz/GetCompanyPdf?companyId=170740010868",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "The April 2026 registry extract, checked against Kazakhstan e-government data, identifies full-patronymic Sanzhar Tleuzhanovich Orazbayev as UMAG's director and places the active software company in Almaty. The cross-source identity bridge remains probable."
+  },
+  {
     "location_id": "loc-d06f20569141cee0",
     "evidence_id": "ev-3dadaa80c012428f",
     "source_id": "src-99d5fb588fbd",
@@ -4711,25 +4725,25 @@
     "name": "Temirlan Amangeldinov",
     "country_code": "KR",
     "country_name": "South Korea",
-    "location_label": "Seoul, South Korea",
+    "location_label": "Seoul, South Korea (last verified in 2022)",
     "evidence_url": "https://kz.linkedin.com/in/temirlan-amangeldinov",
-    "evidence_kind": "current_role_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted LinkedIn page explicitly places Temirlan's Seoul Robotics experience in Seoul South Korea; the stale Astana header is not used."
+    "review_reason": "The accepted LinkedIn page explicitly places Temirlan's latest disclosed Seoul Robotics role in Seoul from January through November 2022. The current Astana profile header is not treated as a role-consistent residence, and no later employment location is inferred. The selected role ended in 2022, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
-    "location_id": "loc-7a45094d495adcb3",
-    "evidence_id": "ev-57b205867a9672c0",
+    "location_id": "loc-918c9f740487bd3b",
+    "evidence_id": "ev-c21a43228c8b8ffb",
     "source_id": "src-41066d1b57e1",
     "person_id": "kaz-c6c074aef2cf",
     "name": "Temirlan Baibolov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
+    "country_code": "ES",
+    "country_name": "Spain",
+    "location_label": "Barcelona, Spain (last verified in 2024)",
     "evidence_url": "https://linkedin.com/in/bthero",
-    "evidence_kind": "active_affiliation_profile_location",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted profile places Temirlan in Kazakhstan alongside the ongoing Harbour.Space frontend lead-developer role."
+    "review_reason": "The accepted profile places Temirlan's latest disclosed HARBOUR.SPACE Frontend Lead Developer role in Barcelona from July 2023 through August 2024. His later 2025 Astana IT University contest affiliation is retained as history but does not establish a degree or current residence. The selected role ended in 2024, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "location_id": "loc-a728524f684a9535",

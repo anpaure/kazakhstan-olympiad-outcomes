@@ -95,6 +95,11 @@ AUDIT_REVIEW_STATUSES = {
     "rejected",
 }
 DATA_AS_OF_YEAR = 2026
+STRUCTURED_RESEARCH_AFFILIATION_KINDS = {
+    "accepted_openalex",
+    "accepted_openalex_orcid",
+    "accepted_orcid",
+}
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -104,6 +109,70 @@ def read_csv(path: Path) -> list[dict[str, str]]:
 
 def split_values(value: str) -> set[str]:
     return {item.strip() for item in value.split(";") if item.strip()}
+
+
+def structured_alma_timeline_conflicts(
+    affiliations: list[dict[str, str]], minimum_overlap_years: int = 2
+) -> list[tuple[str, str, str, str]]:
+    """Find structured alma rows that contradict a separately trusted degree."""
+
+    by_person: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in affiliations:
+        by_person[row.get("person_id", "")].append(row)
+
+    conflicts: set[tuple[str, str, str, str]] = set()
+    for person_id, rows in by_person.items():
+        structured_rows = [
+            row
+            for row in rows
+            if row.get("evidence_kind") in STRUCTURED_RESEARCH_AFFILIATION_KINDS
+            and row.get("affiliation_type") == "education"
+            and row.get("selected_as_alma_mater", "").casefold() == "true"
+            and row.get("start_year", "").isdigit()
+            and row.get("end_year", "").isdigit()
+        ]
+        trusted_rows = [
+            row
+            for row in rows
+            if row.get("evidence_kind") not in STRUCTURED_RESEARCH_AFFILIATION_KINDS
+            and row.get("affiliation_type") == "education"
+            and row.get("selected_as_alma_mater", "").casefold() == "true"
+            and row.get("start_year", "").isdigit()
+            and row.get("end_year", "").isdigit()
+        ]
+        trusted_organizations = {
+            canonicalize_organization(row.get("organization", ""))
+            for row in trusted_rows
+        }
+        for structured in structured_rows:
+            structured_organization = canonicalize_organization(
+                structured.get("organization", "")
+            )
+            if structured_organization in trusted_organizations:
+                continue
+            structured_start = int(structured["start_year"])
+            structured_end = int(structured["end_year"])
+            for trusted in trusted_rows:
+                trusted_organization = canonicalize_organization(
+                    trusted.get("organization", "")
+                )
+                if structured_organization == trusted_organization:
+                    continue
+                overlap = (
+                    min(structured_end, int(trusted["end_year"]))
+                    - max(structured_start, int(trusted["start_year"]))
+                    + 1
+                )
+                if overlap >= minimum_overlap_years:
+                    conflicts.add(
+                        (
+                            person_id,
+                            structured.get("evidence_url", "").strip().rstrip("/"),
+                            structured_organization,
+                            trusted_organization,
+                        )
+                    )
+    return sorted(conflicts)
 
 
 def stale_employment_superseded_by_active_education(
@@ -777,6 +846,15 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
                 f"{organization}"
             )
 
+    for person_id, source_url, structured_organization, trusted_organization in (
+        structured_alma_timeline_conflicts(affiliations)
+    ):
+        errors.append(
+            "structured alma timeline conflicts with trusted education for "
+            f"{person_id}: {structured_organization} versus {trusted_organization} "
+            f"({source_url})"
+        )
+
     for person_id, review in destination_reviews_by_id.items():
         review_organization = canonicalize_organization(review.get("organization", ""))
         review_type = review.get("affiliation_type", "")
@@ -1110,6 +1188,8 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     if any(
         row.get("participation_check") != "pass"
         or row.get("manual_review_status") not in {"pass", "pass_after_correction"}
+        or row.get("review_depth") not in {"standard", "deep"}
+        or not row.get("review_fingerprint", "").strip()
         for row in profile_sanity_review
     ):
         errors.append("profile sanity sample contains an unresolved review failure")
@@ -1333,17 +1413,38 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         if not participation_evidence:
             errors.append(f"{person_id} has no accepted participation evidence")
         if final_row.get("confidence") in {"probable", "confirmed"}:
-            outcome_evidence = [
-                row
-                for row in person_evidence
-                if row.get("supports_final_outcome") == "True"
-                and row.get("review_status") in {"accepted", "supporting"}
-            ]
-            if not outcome_evidence:
-                errors.append(f"{person_id} has no accepted source-linked outcome evidence")
             audit_row = audit_people_by_id.get(person_id, {})
-            if audit_row.get("traceability_status") != "complete":
-                errors.append(f"{person_id} is high confidence without complete audit traceability")
+            if final_row.get("destination_status") == "none":
+                identity_evidence = [
+                    row
+                    for row in person_evidence
+                    if row.get("claim_type")
+                    in {"olympiad_identity_bridge", "identity_candidate"}
+                    and row.get("review_status") == "accepted"
+                ]
+                if not identity_evidence:
+                    errors.append(
+                        f"{person_id} has no accepted source-linked identity evidence"
+                    )
+                if audit_row.get("traceability_status") != "identity_verified":
+                    errors.append(
+                        f"{person_id} has no destination without verified identity traceability"
+                    )
+            else:
+                outcome_evidence = [
+                    row
+                    for row in person_evidence
+                    if row.get("supports_final_outcome") == "True"
+                    and row.get("review_status") in {"accepted", "supporting"}
+                ]
+                if not outcome_evidence:
+                    errors.append(
+                        f"{person_id} has no accepted source-linked outcome evidence"
+                    )
+                if audit_row.get("traceability_status") != "complete":
+                    errors.append(
+                        f"{person_id} is high confidence without complete audit traceability"
+                    )
 
     manifest_counts = audit_manifest.get("counts", {})
     expected_manifest_counts = {
@@ -1360,11 +1461,23 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "complete_outcomes": sum(
             row.get("traceability_status") == "complete" for row in audit_people
         ),
-        "confirmed_outcomes": sum(
+        "resolved_destinations": sum(
+            bool(row.get("organization", "").strip()) for row in researched
+        ),
+        "verified_identities": sum(
+            row.get("confidence") in {"probable", "confirmed"}
+            for row in researched
+        ),
+        "confirmed_identities": sum(
             row.get("confidence") == "confirmed" for row in researched
         ),
-        "probable_outcomes": sum(
+        "probable_identities": sum(
             row.get("confidence") == "probable" for row in researched
+        ),
+        "identity_only_people": sum(
+            row.get("confidence") in {"probable", "confirmed"}
+            and row.get("destination_status") == "none"
+            for row in researched
         ),
         "candidate_only_people": sum(
             row.get("confidence") == "candidate" for row in researched
@@ -1472,6 +1585,19 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         final_row = researched_by_id.get(person_id)
         if final_row is None:
             continue
+        manual_organization = canonicalize_organization(
+            verified_row.get("organization", "")
+        )
+        manual_role = verified_row.get("role", "").strip()
+        manual_type = verified_row.get("affiliation_type", "").strip()
+        manual_dates = any(
+            verified_row.get(field, "").strip()
+            for field in ("start_year", "end_year")
+        )
+        if not manual_organization and (manual_role or manual_type or manual_dates):
+            errors.append(
+                f"identity-only manual evidence has partial outcome fields for {person_id}"
+            )
         expected_profile_url = preferred_manual_profile_url(
             verified_row.get("career_evidence_url", ""),
             verified_row.get("linkedin_url", ""),

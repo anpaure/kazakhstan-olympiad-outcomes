@@ -9,8 +9,10 @@ source URL used for review.
 1. Find the person in `people.csv` and copy `person_id`.
 2. Filter `evidence.csv` by that `person_id`.
 3. Open the `source_url` values on rows marked `accepted` or `supporting`.
-4. Confirm at least one `olympiad_participation` row and one row where
-   `supports_final_outcome` is `True`.
+4. Confirm at least one `olympiad_participation` row. For a resolved destination,
+   also confirm one row where `supports_final_outcome` is `True`; for an
+   identity-only row, confirm an accepted `olympiad_identity_bridge` and keep
+   the destination fields blank.
 5. Review any `candidate`, `superseded`, or `rejected` rows for contrary or
    discarded matches.
 6. Filter `affiliations.csv` for sourced past jobs, schools, and the selected
@@ -84,16 +86,18 @@ JSON equivalents are generated beside every CSV table.
 
 `traceability_status=complete` means a probable or confirmed person has both
 accepted participation evidence and accepted or supporting outcome evidence.
+`traceability_status=identity_verified` means the participant's identity has a
+reviewed bridge but no later destination has been established.
 
 ## Latest Sanity Review
 
-The reproducible sample uses seed `20260812-round2` and contains 12 people from
+The reproducible sample uses seed `20260812-round3` and contains 12 people from
 each confirmed/probable and older/newer stratum. All 48 source chains were
-re-opened; a deeper source-by-source inspection covered three profiles from each
-stratum. The review corrected eight sampled rows and expanded each detected
+re-opened; 19 received a deeper source-by-source inspection. The review corrected
+11 sampled rows and expanded each detected
 pattern into a full-dataset scan.
 
-The resulting ledger contains 21 resolved root-cause classes and no unresolved
+The resulting ledger contains 33 resolved root-cause classes and no unresolved
 findings. The fixes include canonical Olympiad-link cross-checking, conservative
 country publication, explicit destination-source precedence, own-profile versus
 third-party-source separation, bounded education and employment chronology,
@@ -107,8 +111,8 @@ directory rather than being flattened into the final-outcome tables:
 
 - `exa_linkedin_review_queue.csv`: all 377 exact-name profile results and their
   deterministic review and outcome statuses.
-- `exa_outcome_integrations.csv`: 105 accepted career updates with direct
-  Olympiad and career evidence links.
+- `exa_outcome_integrations.csv`: 115 accepted destination, affiliation, and
+  identity-only updates with direct evidence links.
 - `exa_identity_review_decisions.csv`: supporting, deferred, and rejected
   decisions for secondary profiles, each with a reason and review link.
 - `exa_identity_rejections.csv`: namesakes promoted into the rejection ledger.

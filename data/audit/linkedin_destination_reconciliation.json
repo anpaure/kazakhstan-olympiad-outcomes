@@ -1064,12 +1064,12 @@
     "profile_current_roles": "",
     "published_destination": "SLB",
     "published_role": "Caspian Recruiting and University Relations Manager",
-    "organization_alignment": "not_parsed",
-    "role_alignment": "not_parsed",
-    "alignment_status": "no_current_affiliation_parsed",
-    "review_decision": "",
-    "review_reason": "",
-    "review_reference_url": ""
+    "organization_alignment": "matched",
+    "role_alignment": "matched",
+    "alignment_status": "matched_historical_profile",
+    "review_decision": "destination_source_review",
+    "review_reason": "The accepted profile dates Aset's latest disclosed SLB role from April 2014 through May 2017 and currently says only that he is on education leave without naming an active institution. The bounded role is retained as historical latest employment, not presented as current.",
+    "review_reference_url": "https://kz.linkedin.com/in/asset-iskakov-805a34a4"
   },
   {
     "person_id": "kaz-61a74e788b9b",
@@ -1483,9 +1483,9 @@
     "organization_alignment": "matched",
     "role_alignment": "matched",
     "alignment_status": "matched_current_profile",
-    "review_decision": "",
-    "review_reason": "",
-    "review_reference_url": ""
+    "review_decision": "destination_source_review",
+    "review_reason": "The accepted profile directly states Technical Lead at METAPHORA as Baurzhan's current role. The prior registry source remains an identity and Kazakhstan-location bridge but did not itself state the selected employer or title.",
+    "review_reference_url": "https://kz.linkedin.com/in/baurzhan-urgunshbayev-143a68104"
   },
   {
     "person_id": "kaz-b82a97fb3f53",
@@ -1718,14 +1718,14 @@
     "profile_hydration_status": "success",
     "profile_current_organizations": "",
     "profile_current_roles": "",
-    "published_destination": "Astana International Financial Centre",
-    "published_role": "Chairman of the Board of Directors",
+    "published_destination": "Contango Trade",
+    "published_role": "Chief Executive Officer",
     "organization_alignment": "not_parsed",
     "role_alignment": "not_parsed",
     "alignment_status": "no_current_affiliation_parsed",
-    "review_decision": "",
-    "review_reason": "",
-    "review_reference_url": ""
+    "review_decision": "destination_source_review",
+    "review_reason": "AFSA's active public register names Daniyar Kelbetov as Contango Trade's CEO effective 27 February 2026. His accepted LinkedIn history ends both AIFC roles in March 2025, and his self-authored farewell post independently confirms that he left AIFC after nine years.",
+    "review_reference_url": "https://publicreg.myafsa.com/details/260240901629/"
   },
   {
     "person_id": "kaz-c1c8ab962b25",
@@ -2282,10 +2282,10 @@
     "published_role": "Chief Executive Officer",
     "organization_alignment": "reconciled",
     "role_alignment": "reconciled",
-    "alignment_status": "reconciled_source_precedence",
-    "review_decision": "retain_published_newer_official_role",
-    "review_reason": "Freedom Telecom's official leadership page and multiple 2026 records identify Kairat Akhmetov as CEO; the undated Messenger CRM and Nommi profile entries do not supersede that current role.",
-    "review_reference_url": "https://ftel.kz/corporate-innovation/"
+    "alignment_status": "reconciled_destination_review",
+    "review_decision": "destination_source_review",
+    "review_reason": "Freedom Telecom's current official ethics page directly names Kairat Akhmetov as Chief Executive Officer. This replaces an event biography as the destination source while preserving the separate profile and interview evidence used for identity and history.",
+    "review_reference_url": "https://ftel.kz/en/ethical-principles/"
   },
   {
     "person_id": "kaz-f0f8ae850677",
@@ -2926,6 +2926,22 @@
     "review_decision": "",
     "review_reason": "",
     "review_reference_url": ""
+  },
+  {
+    "person_id": "kaz-80e9320bcf5e",
+    "name": "Nazym Nurlanovna Bashkenova",
+    "linkedin_url": "https://www.linkedin.com/in/nazym-bashkenova-6537a1246",
+    "profile_hydration_status": "manual_public_profile",
+    "profile_current_organizations": "",
+    "profile_current_roles": "",
+    "published_destination": "Pediatric Associates",
+    "published_role": "Pediatrician",
+    "organization_alignment": "not_parsed",
+    "role_alignment": "not_parsed",
+    "alignment_status": "no_current_affiliation_parsed",
+    "review_decision": "destination_source_review",
+    "review_reason": "Pediatric Associates' current physician page directly identifies Nazym Bashkenova as a pediatrician in its Winter Springs practice. The accepted public profile independently names the same current employer and location.",
+    "review_reference_url": "https://www.pediatricassociates.com/pediatric-office/winter-springs-fl-town-center/pediatricians/nazym-bashkenova-md"
   },
   {
     "person_id": "kaz-999af747a5a2",
@@ -3976,9 +3992,9 @@
     "profile_current_roles": "",
     "published_destination": "Seoul Robotics",
     "published_role": "Research Engineer",
-    "organization_alignment": "not_parsed",
-    "role_alignment": "not_parsed",
-    "alignment_status": "no_current_affiliation_parsed",
+    "organization_alignment": "matched",
+    "role_alignment": "matched",
+    "alignment_status": "matched_historical_profile",
     "review_decision": "",
     "review_reason": "",
     "review_reference_url": ""
@@ -3992,9 +4008,9 @@
     "profile_current_roles": "",
     "published_destination": "Harbour.Space University",
     "published_role": "Frontend Lead Developer",
-    "organization_alignment": "not_parsed",
-    "role_alignment": "not_parsed",
-    "alignment_status": "no_current_affiliation_parsed",
+    "organization_alignment": "matched",
+    "role_alignment": "matched",
+    "alignment_status": "matched_historical_profile",
     "review_decision": "",
     "review_reason": "",
     "review_reference_url": ""
@@ -4616,9 +4632,9 @@
     "profile_current_roles": "",
     "published_destination": "Polymer Production",
     "published_role": "Financial Director",
-    "organization_alignment": "not_parsed",
-    "role_alignment": "not_parsed",
-    "alignment_status": "no_current_affiliation_parsed",
+    "organization_alignment": "matched",
+    "role_alignment": "matched",
+    "alignment_status": "matched_historical_profile",
     "review_decision": "destination_source_review",
     "review_reason": "The profile identifies Financial Director as the latest disclosed Polymer Production role and dates it September 2020 to October 2021.",
     "review_reference_url": "https://kz.linkedin.com/in/zeinul-gabiden-kazhkenov-23203052"

@@ -1,4 +1,5 @@
 import json
+import csv
 import unittest
 from pathlib import Path
 
@@ -194,7 +195,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(location["country_code"], "DK")
         self.assertNotIn("technical-officer", location["review_reason"].casefold())
 
-    def test_batyr_yerzhanuly_school_record_remains_history_only(self):
+    def test_batyr_yerzhanuly_identity_is_verified_without_a_destination(self):
         person = self.people["kaz-a4eaedad760e"]
         nis = next(
             row
@@ -202,11 +203,13 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             if row["organization"] == "Nazarbayev Intellectual Schools (NIS)"
         )
 
-        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["confidence"], "confirmed")
         self.assertEqual(person["organization"], "")
         self.assertEqual(person["role"], "")
+        self.assertEqual(person["destination_status"], "none")
         self.assertEqual(nis["role"], "High School Student")
         self.assertFalse(nis["is_current"])
+        self.assertNotIn(person["person_id"], self.locations)
 
     def test_bakhytzhan_baizhikenov_meta_london_and_education(self):
         person = self.people["kaz-42eef016184c"]
@@ -624,7 +627,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         )
 
     def test_older_gold_medalists_are_not_forced_to_namesakes(self):
-        for person_id in ("kaz-dbcaf30d53de", "kaz-1e390288b2cc"):
+        for person_id in ("kaz-dbcaf30d53de",):
             with self.subTest(person_id=person_id):
                 person = self.people[person_id]
                 self.assertEqual(person["confidence"], "unmatched")
@@ -780,13 +783,14 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertIn("Nazarbayev University", self.alma_maters(person["person_id"]))
         self.assertEqual(location["country_code"], "KZ")
 
-    def test_stale_school_records_remain_history_only(self):
+    def test_akezhan_identity_is_verified_but_school_remains_history_only(self):
         person_id = "kaz-822bb4ee42e0"
         person = self.people[person_id]
 
-        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["confidence"], "confirmed")
         self.assertEqual(person["organization"], "")
         self.assertEqual(person["role"], "")
+        self.assertEqual(person["destination_status"], "none")
         self.assertIn(
             "Nazarbayev Intellectual Schools (NIS)", self.alma_maters(person_id)
         )
@@ -813,7 +817,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             location["location_label"], "Cambridge, England, United Kingdom"
         )
 
-    def test_akezhan_askar_completed_school_history_remains_unmatched(self):
+    def test_akezhan_askar_completed_school_history_is_not_a_destination(self):
         person = self.people["kaz-822bb4ee42e0"]
         affiliations = self.affiliations_for(person["person_id"])
         nis = next(
@@ -822,9 +826,10 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             if row["organization"] == "Nazarbayev Intellectual Schools (NIS)"
         )
 
-        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["confidence"], "confirmed")
         self.assertEqual(person["organization"], "")
         self.assertEqual(person["role"], "")
+        self.assertEqual(person["destination_status"], "none")
         self.assertEqual(nis["role"], "Grade 12 student")
         self.assertEqual(nis["end_year"], "2026")
         self.assertFalse(nis["is_current"])
@@ -1470,13 +1475,17 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         )
         self.assertIn("last verified in 2020", location["location_label"])
 
-    def test_yerlan_jumabayev_name_only_candidates_are_rejected(self):
+    def test_yerlan_jumabayev_identity_is_verified_without_a_career_match(self):
         person = self.people["kaz-514026a01ba3"]
 
-        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["confidence"], "confirmed")
         self.assertEqual(person["organization"], "")
         self.assertEqual(person["role"], "")
-        self.assertEqual(person["profile_url"], "")
+        self.assertEqual(person["destination_status"], "none")
+        self.assertEqual(
+            person["profile_url"],
+            "https://almaty.fizmat.kz/ru/muzey/uchastniki-mezhdunarodnykh-olimpiad/",
+        )
         self.assertEqual(
             self.alma_maters(person["person_id"]),
             {"Republican Physics and Mathematics School (RFMS)"},
@@ -1489,8 +1498,9 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(person["name"], "Almas Sakhauyev")
         self.assertIn("Almas Sakhavyev", person["aliases"])
         self.assertIn("Сахауев Алмас", person["aliases"])
-        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["confidence"], "confirmed")
         self.assertEqual(person["organization"], "")
+        self.assertEqual(person["destination_status"], "none")
         self.assertEqual(
             self.alma_maters(person["person_id"]),
             {"Republican Physics and Mathematics School (RFMS)"},
@@ -1512,8 +1522,9 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
     def test_anton_sedletskiy_rejects_conflicting_nstu_namesake(self):
         person = self.people["kaz-e8eb1ebde919"]
 
-        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["confidence"], "confirmed")
         self.assertEqual(person["organization"], "")
+        self.assertEqual(person["destination_status"], "none")
         self.assertIn("Седлецкий Антон", person["aliases"])
         self.assertEqual(
             self.alma_maters(person["person_id"]),
@@ -1537,8 +1548,9 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
     def test_oleg_obukhov_kokshetau_school_history(self):
         person = self.people["kaz-32cf54f8673f"]
 
-        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["confidence"], "confirmed")
         self.assertEqual(person["organization"], "")
+        self.assertEqual(person["destination_status"], "none")
         self.assertIn("Олег Обухов", person["aliases"])
         self.assertEqual(
             self.alma_maters(person["person_id"]),
@@ -1548,7 +1560,9 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
     def test_danil_murtazin_retains_sourced_aktau_school_history(self):
         person = self.people["kaz-1e390288b2cc"]
 
-        self.assertEqual(person["confidence"], "unmatched")
+        self.assertEqual(person["confidence"], "confirmed")
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["destination_status"], "none")
         self.assertIn("Данил Муртазин", person["aliases"])
         self.assertIn("Даниил Муртазин", person["aliases"])
         self.assertEqual(
@@ -1845,6 +1859,115 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertTrue(masters)
         self.assertTrue(all(row["end_year"] == "2020" for row in masters))
         self.assertTrue(all(not row["is_current"] for row in masters))
+
+    def test_daniyar_kelbetov_uses_current_contango_role_and_bounded_aifc_history(self):
+        person = self.people["kaz-612c627fb60c"]
+        location = self.locations[person["person_id"]]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["organization"], "Contango Trade")
+        self.assertEqual(person["role"], "Chief Executive Officer")
+        self.assertEqual(person["start_year"], "2026")
+        self.assertEqual(person["end_year"], "")
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Astana, Kazakhstan")
+        aifc_roles = [
+            row
+            for row in affiliations
+            if row["organization"] == "Astana International Financial Centre"
+        ]
+        self.assertTrue(aifc_roles)
+        self.assertTrue(all(not row["is_current"] for row in aifc_roles))
+        self.assertTrue(all(row["end_year"] for row in aifc_roles))
+
+    def test_sanzhar_orazbayev_uses_umag_kbtu_and_almaty(self):
+        person = self.people["kaz-860c6f9abbfa"]
+        location = self.locations[person["person_id"]]
+
+        self.assertEqual(person["organization"], "UMAG")
+        self.assertEqual(person["role"], "Director")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertIn(
+            "Kazakh-British Technical University (KBTU)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+
+    def test_aruzhan_amanbayeva_rejects_agricultural_namesake(self):
+        person = self.people["kaz-32bc606217ec"]
+        alma_maters = self.alma_maters(person["person_id"])
+
+        self.assertEqual(person["organization"], "EPFL")
+        self.assertEqual(person["role"], "PhD Student")
+        self.assertEqual(
+            alma_maters,
+            {"EPFL", "Massachusetts Institute of Technology (MIT)"},
+        )
+        with Path("data/rejected_identity_candidates.csv").open(
+            newline="", encoding="utf-8"
+        ) as handle:
+            rejections = list(csv.DictReader(handle))
+        self.assertTrue(
+            any(
+                row["person_id"] == person["person_id"]
+                and row["evidence_url"]
+                == "https://orcid.org/0009-0009-3827-8634"
+                for row in rejections
+            )
+        )
+
+    def test_recovered_official_alma_maters_remain_selected(self):
+        expected = {
+            "kaz-674cd62ab22c": {"Al-Farabi Kazakh National University"},
+            "kaz-8282f3ec5f44": {"Stony Brook University"},
+            "kaz-d6415e08acc5": {"Novosibirsk State University (NSU)"},
+            "kaz-fc8646c120d2": {
+                "L.N. Gumilyov Eurasian National University",
+                "University of Chicago",
+                "University of Science and Technology MISIS",
+            },
+            "kaz-80e9320bcf5e": {"Turgut Ozal University"},
+            "kaz-da119ef48a6d": {
+                "Harbour.Space University",
+                "International Information Technology University (IITU)",
+            },
+        }
+
+        for person_id, organizations in expected.items():
+            with self.subTest(person_id=person_id):
+                self.assertTrue(
+                    organizations.issubset(self.alma_maters(person_id)),
+                    (person_id, self.alma_maters(person_id)),
+                )
+
+    def test_bounded_profile_roles_publish_historical_locations(self):
+        expected = {
+            "kaz-dcb24ecb815a": ("Seoul Robotics", "2022", "KR"),
+            "kaz-c6c074aef2cf": ("Harbour.Space University", "2024", "ES"),
+            "kaz-fc88fa90b799": ("SLB", "2017", None),
+        }
+
+        for person_id, (organization, end_year, country_code) in expected.items():
+            with self.subTest(person_id=person_id):
+                person = self.people[person_id]
+                self.assertEqual(person["organization"], organization)
+                self.assertEqual(person["end_year"], end_year)
+                selected_rows = [
+                    row
+                    for row in self.affiliations_for(person_id)
+                    if row["organization"] == organization
+                    and row["role"] == person["role"]
+                    and row["end_year"] == end_year
+                ]
+                self.assertTrue(selected_rows)
+                self.assertTrue(all(not row["is_current"] for row in selected_rows))
+                if country_code:
+                    location = self.locations[person_id]
+                    self.assertEqual(location["country_code"], country_code)
+                    self.assertEqual(
+                        location["evidence_kind"], "historical_outcome_location"
+                    )
 
 
 if __name__ == "__main__":

@@ -83,6 +83,47 @@ class CompactVisualizationDataTest(unittest.TestCase):
             "https://stats.ioinformatics.org/people/2474",
         )
 
+    def test_destination_review_source_beats_superseded_profile_summary(self):
+        row = {
+            "linkedin_url": "https://linkedin.com/in/example",
+            "profile_url": "https://example.test/old-employer",
+            "organization": "Current Co",
+            "evidence_urls": "",
+        }
+        evidence = [
+            {
+                "claim_type": "career_outcome",
+                "review_status": "superseded",
+                "supports_final_outcome": False,
+                "source_url": "https://example.test/old-employer",
+            },
+            {
+                "claim_type": "destination_source_review",
+                "review_status": "accepted",
+                "supports_final_outcome": True,
+                "source_url": "https://example.test/current-employer",
+            },
+        ]
+        location = {"evidence_url": "https://example.test/current-employer"}
+
+        sources = compact_sources(row, location, [], evidence)
+        outcome_sources = [source for source in sources if source["kind"] == "outcome"]
+
+        self.assertEqual(
+            outcome_sources,
+            [
+                {
+                    "url": "https://example.test/current-employer",
+                    "kind": "outcome",
+                    "label": "Reviewed destination source",
+                    "icon": "briefcase-business",
+                }
+            ],
+        )
+        self.assertFalse(
+            any(source["url"] == row["profile_url"] for source in sources)
+        )
+
     def test_alma_icons_prefer_official_sources_over_profile_rows(self):
         row = {
             "linkedin_url": "https://linkedin.com/in/example",

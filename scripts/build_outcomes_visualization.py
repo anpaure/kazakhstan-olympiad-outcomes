@@ -134,12 +134,38 @@ def compact_sources(
         sources.append({"url": value, "kind": kind, "label": label, "icon": icon})
 
     add(row.get("linkedin_url"), "profile", "Accepted LinkedIn profile", "user-round")
-    add(
-        row.get("profile_url"),
-        "outcome" if row.get("organization") else "evidence",
-        "Reviewed destination or identity source",
-        "briefcase-business" if row.get("organization") else "file-search-2",
+    destination_evidence = [
+        evidence
+        for evidence in audit_evidence
+        if evidence.get("review_status") == "accepted"
+        and evidence.get("supports_final_outcome")
+        and evidence.get("claim_type")
+        in {"destination_source_review", "career_outcome"}
+    ]
+    destination_evidence.sort(
+        key=lambda evidence: (
+            evidence.get("claim_type") != "destination_source_review",
+            str(evidence.get("source_url") or ""),
+        )
     )
+    if row.get("organization") and destination_evidence:
+        add(
+            destination_evidence[0].get("source_url"),
+            "outcome",
+            "Reviewed destination source",
+            "briefcase-business",
+        )
+    else:
+        add(
+            row.get("profile_url"),
+            "outcome" if row.get("organization") else "evidence",
+            (
+                "Reviewed destination source"
+                if row.get("organization")
+                else "Reviewed identity source"
+            ),
+            "briefcase-business" if row.get("organization") else "file-search-2",
+        )
 
     olympiad_sources = [
         evidence.get("source_url")

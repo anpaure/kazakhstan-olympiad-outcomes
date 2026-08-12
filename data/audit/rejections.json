@@ -1294,5 +1294,37 @@
     "evidence_url": "https://linkedin.com/in/zaitsev-a-d",
     "reason": "Belarus engineering profile began university in 2011 and is too young to be Kazakhstan's school-level 1996 IMO contestant",
     "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1996"
+  },
+  {
+    "person_id": "kaz-1e83de167408",
+    "person_name": "Ekrem Mahmudov",
+    "source_id": "src-132e32487fc4",
+    "evidence_url": "https://kz.linkedin.com/in/akram-makhmudov-69981974",
+    "reason": "Kazakhstan's official supplier registry identifies full-name Akram Anvarovich Makhmudov as born 31 March 1975, while the profile says tertiary Business Academy study began in 1993; he was already a university student during the 1994-1995 school IBO appearances.",
+    "review_evidence_url": "https://www.goszakup.gov.kz/ru/registry/show_supplier/101250"
+  },
+  {
+    "person_id": "kaz-514026a01ba3",
+    "person_name": "Yerlan Jumabayev",
+    "source_id": "src-612cfd11ae4f",
+    "evidence_url": "https://linkedin.com/in/yayz0",
+    "reason": "The 2023-2027 undergraduate timeline makes this competitive-programming RFMS alumnus far too young to be Kazakhstan's 1997 school IMO contestant.",
+    "review_evidence_url": "https://www.imo-official.org/results/contestant/4857/"
+  },
+  {
+    "person_id": "kaz-32cf54f8673f",
+    "person_name": "Oleg Obukhov",
+    "source_id": "src-4cfcc2488507",
+    "evidence_url": "https://www.linkedin.com/in/olegobukhov",
+    "reason": "The profile began Kyiv Polytechnic study in 1998 and is years too old to be Kazakhstan's school-level 2006-2007 IBO contestant.",
+    "review_evidence_url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2006.pdf"
+  },
+  {
+    "person_id": "kaz-32bc606217ec",
+    "person_name": "Aruzhan Amanbayeva",
+    "source_id": "src-8729700f1021",
+    "evidence_url": "https://orcid.org/0009-0009-3827-8634",
+    "reason": "This ORCID belongs to a different Aruzhan Amanbayeva whose 2020-2024 food-technology bachelor's and 2024-2026 agricultural master's timeline conflicts with the Olympiad alumna's sourced 2018-2022 MIT mathematics degree and ongoing EPFL computer-science PhD.",
+    "review_evidence_url": "https://people.epfl.ch/aruzhan.amanbayeva"
   }
 ]

@@ -301,6 +301,13 @@
     "rationale": "Reviewed core activity is AI sales and lead-management software."
   },
   {
+    "organization_sector_id": "sector-674b698f0e8b16d0",
+    "canonical_name": "Contango Trade",
+    "organization_type": "company",
+    "sector": "Energy & Natural Resources",
+    "rationale": "AFSA's active register describes wholesale trading of ferrous non-ferrous rare-earth and precious metals."
+  },
+  {
     "organization_sector_id": "sector-c4b673bd24c4fa8d",
     "canonical_name": "Corvus Technologies",
     "organization_type": "company",
@@ -1356,6 +1363,13 @@
     "organization_type": "company",
     "sector": "Finance & Insurance",
     "rationale": "Reviewed core activity is banking and wealth management."
+  },
+  {
+    "organization_sector_id": "sector-fff46539fcebcd47",
+    "canonical_name": "UMAG",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "The current Kazakhstan registry classifies UMAG's principal activity as support of software databases websites and information systems."
   },
   {
     "organization_sector_id": "sector-cbc72fffbd3f8718",

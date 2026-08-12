@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "primary_key": {
     "people": "person_id",
     "affiliations": "affiliation_id",
@@ -31,18 +31,21 @@
   "counts": {
     "people": 456,
     "participations": 680,
-    "affiliations": 2604,
-    "locations": 413,
-    "organization_aliases": 521,
-    "organization_sectors": 209,
-    "destination_reviews": 76,
-    "evidence_rows": 6177,
-    "sources": 1753,
-    "rejections": 162,
-    "complete_outcomes": 440,
-    "confirmed_outcomes": 311,
-    "probable_outcomes": 129,
+    "affiliations": 2615,
+    "locations": 414,
+    "organization_aliases": 525,
+    "organization_sectors": 211,
+    "destination_reviews": 81,
+    "evidence_rows": 6183,
+    "sources": 1762,
+    "rejections": 166,
+    "complete_outcomes": 435,
+    "resolved_destinations": 409,
+    "verified_identities": 447,
+    "confirmed_identities": 318,
+    "probable_identities": 129,
+    "identity_only_people": 12,
     "candidate_only_people": 1,
-    "unmatched_people": 15
+    "unmatched_people": 8
   }
 }

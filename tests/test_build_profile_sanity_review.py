@@ -1,7 +1,9 @@
 import unittest
 
 from scripts.build_profile_sanity_review import (
+    build_sample_rows,
     build_reconciliation,
+    review_fingerprint,
     select_sample,
 )
 
@@ -146,6 +148,154 @@ class ProfileSanityReviewTests(unittest.TestCase):
         self.assertEqual(
             rows[0]["review_reference_url"], "https://example.com/verified-role"
         )
+
+    def test_bounded_profile_destination_requires_a_review(self):
+        people = [
+            {
+                "person_id": "kaz-stale",
+                "name": "Stale Role",
+                "organization": "Former Employer",
+                "role": "Director",
+                "affiliation_type": "employment",
+            }
+        ]
+        profiles = [
+            {
+                "person_id": "kaz-stale",
+                "name": "Stale Role",
+                "linkedin_url": "https://linkedin.com/in/stale",
+                "status": "success",
+                "text": (
+                    "## Experience\n\n### Director - Former Employer\n\n"
+                    "2023 - 2025"
+                ),
+            }
+        ]
+
+        unresolved = build_reconciliation(people, profiles, [], [])
+        self.assertEqual(
+            unresolved[0]["alignment_status"],
+            "unreconciled_bounded_profile_destination",
+        )
+
+        people[0]["start_year"] = "2023"
+        people[0]["end_year"] = "2025"
+        matched = build_reconciliation(people, profiles, [], [])
+        self.assertEqual(
+            matched[0]["alignment_status"], "matched_historical_profile"
+        )
+
+        people[0]["start_year"] = ""
+        people[0]["end_year"] = ""
+
+        reviewed = build_reconciliation(
+            people,
+            profiles,
+            [
+                {
+                    "person_id": "kaz-stale",
+                    "evidence_url": "https://example.com/new-role",
+                    "review_reason": "A newer source establishes the replacement role.",
+                }
+            ],
+            [],
+        )
+        self.assertEqual(
+            reviewed[0]["alignment_status"], "reconciled_destination_review"
+        )
+
+    def test_sample_review_requires_matching_fingerprint(self):
+        selection = [
+            {
+                "person": {"person_id": "kaz-review"},
+                "stratum": "confirmed_newer",
+                "sample_rank": 1,
+                "sample_hash": "abc123",
+            }
+        ]
+        audit_person = {
+            "person_id": "kaz-review",
+            "name": "Review Person",
+            "olympiads": "IMO",
+            "years": "2020",
+            "outcome_status": "career",
+            "organization": "Example Co",
+            "role": "Engineer",
+            "destination_status": "latest_employment",
+            "outcome_country_name": "United States",
+            "outcome_location_label": "United States",
+            "alma_mater": "Example University",
+            "primary_profile_url": "https://example.com/profile",
+            "linkedin_url": "",
+            "outcome_country_source_url": "https://example.com/location",
+        }
+        evidence = [
+            {
+                "person_id": "kaz-review",
+                "claim_type": "olympiad_participation",
+                "source_url": "https://example.com/imo",
+                "review_status": "accepted",
+                "supports_final_outcome": "False",
+            },
+            {
+                "person_id": "kaz-review",
+                "claim_type": "career_outcome",
+                "source_url": "https://example.com/job",
+                "review_status": "accepted",
+                "supports_final_outcome": "True",
+            },
+        ]
+        affiliations = [
+            {
+                "person_id": "kaz-review",
+                "selected_as_alma_mater": "true",
+                "evidence_url": "https://example.com/degree",
+            }
+        ]
+
+        pending = build_sample_rows(
+            selection, [audit_person], evidence, affiliations, [], [], "seed"
+        )
+        self.assertEqual(pending[0]["manual_review_status"], "pending")
+        self.assertEqual(
+            pending[0]["review_fingerprint"], review_fingerprint(pending[0])
+        )
+
+        decision = {
+            ("seed", "kaz-review"): {
+                "review_fingerprint": pending[0]["review_fingerprint"],
+                "review_status": "pass",
+                "review_depth": "deep",
+                "reviewed_at": "2026-08-12",
+                "review_note": "Source chain reviewed.",
+            }
+        }
+        reviewed = build_sample_rows(
+            selection,
+            [audit_person],
+            evidence,
+            affiliations,
+            [],
+            [],
+            "seed",
+            decision,
+        )
+        self.assertEqual(reviewed[0]["manual_review_status"], "pass")
+        self.assertEqual(reviewed[0]["review_depth"], "deep")
+
+        audit_person["role"] = "Senior Engineer"
+        changed = build_sample_rows(
+            selection,
+            [audit_person],
+            evidence,
+            affiliations,
+            [],
+            [],
+            "seed",
+            decision,
+        )
+        self.assertEqual(changed[0]["manual_review_status"], "pending")
+        self.assertIn("stale", changed[0]["review_note"])
 
 
 if __name__ == "__main__":

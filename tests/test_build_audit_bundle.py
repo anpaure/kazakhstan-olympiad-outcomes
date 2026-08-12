@@ -1,6 +1,7 @@
 import unittest
 
 from scripts.build_audit_bundle import (
+    build_audit_people,
     build_audit_organization_aliases,
     build_bundle,
     build_evidence,
@@ -8,6 +9,157 @@ from scripts.build_audit_bundle import (
 
 
 class AuditBundleTest(unittest.TestCase):
+    def test_structured_identity_only_evidence_is_not_an_outcome(self):
+        person_id = "kaz-structured"
+        final = {
+            "person_id": person_id,
+            "name": "Structured Person",
+            "aliases": "Structured Person",
+            "olympiads": "IOI",
+            "years": "2001",
+            "awards": "",
+            "research_scope": "career",
+            "confidence": "confirmed",
+            "destination_status": "none",
+            "destination_note": "No reviewed destination is available.",
+            "organization": "",
+            "role": "",
+            "affiliation_type": "",
+            "start_year": "",
+            "end_year": "",
+            "country_code": "",
+            "organization_category": "Unknown",
+            "role_category": "Other",
+            "profile_url": "https://cphof.org/profile/ioi:test",
+            "linkedin_url": "",
+            "evidence_urls": "https://cphof.org/profile/ioi:test",
+            "verification_basis": "Registry-linked profile.",
+        }
+        participation = {
+            "participation_id": "part-structured",
+            "evidence_id": "",
+            "person_id": person_id,
+            "canonical_name": "Structured Person",
+            "recorded_name": "Structured Person",
+            "olympiad": "IOI",
+            "country": "Kazakhstan",
+            "country_code": "KAZ",
+            "year": "2001",
+            "award": "",
+            "rank": "",
+            "score": "",
+            "person_url": "https://stats.ioinformatics.org/people/test",
+            "source_url": "https://stats.ioinformatics.org/people/test",
+            "source_type": "html",
+        }
+        identity = {
+            "person_id": person_id,
+            "canonical_name": "Structured Person",
+            "matched_name": "Structured Person",
+            "source": "cphof",
+            "source_id": "ioi:test",
+            "profile_url": "https://cphof.org/profile/ioi:test",
+            "evidence_url": "https://cphof.org/profile/ioi:test",
+            "organization": "",
+            "role": "",
+            "confidence": "confirmed",
+            "evidence_text": "Registry-linked profile.",
+            "score_reasons": "profile=ioi:test",
+        }
+
+        evidence = build_evidence([participation], [final], [identity], [], [], [])
+        identity_row = next(
+            row for row in evidence if row["claim_type"] == "identity_candidate"
+        )
+        self.assertEqual(identity_row["review_status"], "accepted")
+        self.assertFalse(identity_row["supports_final_outcome"])
+
+        [audit_person] = build_audit_people([final], [], evidence)
+        self.assertEqual(audit_person["traceability_status"], "identity_verified")
+        self.assertEqual(audit_person["outcome_evidence_count"], 0)
+
+    def test_identity_only_manual_evidence_has_no_career_claim(self):
+        person_id = "kaz-test"
+        final = {
+            "person_id": person_id,
+            "name": "Test Person",
+            "aliases": "Test Person",
+            "olympiads": "IOI",
+            "years": "2025",
+            "awards": "Silver",
+            "research_scope": "recent_competitor",
+            "confidence": "confirmed",
+            "destination_status": "none",
+            "destination_note": "No reviewed destination is available.",
+            "organization": "",
+            "role": "",
+            "affiliation_type": "",
+            "start_year": "",
+            "end_year": "",
+            "country_code": "",
+            "organization_category": "Unknown",
+            "role_category": "Other",
+            "profile_url": "https://example.test/identity",
+            "linkedin_url": "https://linkedin.com/in/test-person",
+            "evidence_urls": "https://example.test/identity",
+            "verification_basis": "Reviewed school-to-Olympiad identity bridge.",
+        }
+        verified = {
+            "person_id": person_id,
+            "name": "Test Person",
+            "organization": "",
+            "role": "",
+            "affiliation_type": "",
+            "start_year": "",
+            "end_year": "",
+            "olympiad_evidence_url": "https://example.test/olympiad",
+            "career_evidence_url": "https://example.test/identity",
+            "linkedin_url": "https://linkedin.com/in/test-person",
+            "confidence": "confirmed",
+            "verification_basis": "Reviewed school-to-Olympiad identity bridge.",
+        }
+
+        participations = [
+            {
+                "participation_id": "part-test",
+                "evidence_id": "",
+                "person_id": person_id,
+                "canonical_name": "Test Person",
+                "recorded_name": "Test Person",
+                "olympiad": "IOI",
+                "country": "Kazakhstan",
+                "country_code": "KAZ",
+                "year": "2025",
+                "award": "Silver",
+                "rank": "",
+                "score": "",
+                "person_url": "https://example.test/olympiad",
+                "source_url": "https://example.test/olympiad",
+                "source_type": "html",
+            }
+        ]
+        evidence = build_evidence(
+            participations, [final], [], [], [verified], []
+        )
+
+        self.assertNotIn("career_outcome", {row["claim_type"] for row in evidence})
+        identity = next(
+            row for row in evidence if row["claim_type"] == "olympiad_identity_bridge"
+        )
+        self.assertEqual(identity["source_url"], "https://example.test/identity")
+        self.assertEqual(
+            identity["secondary_url"], "https://example.test/olympiad"
+        )
+        self.assertFalse(identity["supports_final_outcome"])
+        public_profile = next(
+            row for row in evidence if row["claim_type"] == "public_profile"
+        )
+        self.assertFalse(public_profile["supports_final_outcome"])
+
+        [audit_person] = build_audit_people([final], [verified], evidence)
+        self.assertEqual(audit_person["traceability_status"], "identity_verified")
+        self.assertEqual(audit_person["outcome_evidence_count"], 0)
+
     def test_destination_review_supersedes_only_old_career_claim(self):
         person_id = "kaz-test"
         final = {
@@ -243,8 +395,11 @@ class AuditBundleTest(unittest.TestCase):
             },
         )
         self.assertEqual(bundle["rejections"][0]["reason"], "Name-only collision")
-        self.assertEqual(bundle["manifest"]["counts"]["confirmed_outcomes"], 0)
-        self.assertEqual(bundle["manifest"]["counts"]["probable_outcomes"], 1)
+        self.assertEqual(bundle["manifest"]["counts"]["resolved_destinations"], 1)
+        self.assertEqual(bundle["manifest"]["counts"]["verified_identities"], 1)
+        self.assertEqual(bundle["manifest"]["counts"]["confirmed_identities"], 0)
+        self.assertEqual(bundle["manifest"]["counts"]["probable_identities"], 1)
+        self.assertEqual(bundle["manifest"]["counts"]["identity_only_people"], 0)
         self.assertEqual(bundle["manifest"]["counts"]["candidate_only_people"], 0)
         self.assertEqual(bundle["manifest"]["counts"]["unmatched_people"], 0)
 

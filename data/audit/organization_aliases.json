@@ -3096,6 +3096,15 @@
     "evidence_url": "https://www.issp.ac.ru/main/index.php/en/about-issp/847-issp.html"
   },
   {
+    "organization_alias_id": "org-9c25a5334bab89b8",
+    "alias": "Pediatric Associates Family of Companies",
+    "canonical_name": "Pediatric Associates",
+    "display_name": "Pediatric Associates",
+    "merge_type": "parent_organization",
+    "rationale": "The accepted public profile's employer brand is normalized to the Pediatric Associates organization named by the current physician page.",
+    "evidence_url": "https://www.pediatricassociates.com/pediatric-office/winter-springs-fl-town-center/pediatricians/nazym-bashkenova-md"
+  },
+  {
     "organization_alias_id": "org-f21d3b7c0c53ea62",
     "alias": "Penn State University",
     "canonical_name": "Pennsylvania State University",
@@ -4543,6 +4552,33 @@
     "merge_type": "multilingual_name",
     "rationale": "Italian short name",
     "evidence_url": ""
+  },
+  {
+    "organization_alias_id": "org-c8bfc10fcaf7e462",
+    "alias": "MISIS University",
+    "canonical_name": "University of Science and Technology MISIS",
+    "display_name": "MISIS University",
+    "merge_type": "brand_name",
+    "rationale": "The university's official rebranding guidance recommends MISIS University as a concise brand form.",
+    "evidence_url": "https://en.misis.ru/university/rebranding/"
+  },
+  {
+    "organization_alias_id": "org-568d59983d72b6c2",
+    "alias": "Moscow Institute of Steel and Alloys (MISIS)",
+    "canonical_name": "University of Science and Technology MISIS",
+    "display_name": "MISIS University",
+    "merge_type": "historical_name",
+    "rationale": "The institution's official history identifies Moscow Institute of Steel and Alloys as its pre-2008 name and its current brand as University of Science and Technology MISIS.",
+    "evidence_url": "https://en.misis.ru/university/ourhistory/"
+  },
+  {
+    "organization_alias_id": "org-d315b4d548e4d505",
+    "alias": "NUST MISIS",
+    "canonical_name": "University of Science and Technology MISIS",
+    "display_name": "MISIS University",
+    "merge_type": "brand_name",
+    "rationale": "The university's official rebranding guidance accepts NUST MISIS as a traditional name and recommends University of Science and Technology MISIS.",
+    "evidence_url": "https://en.misis.ru/university/rebranding/"
   },
   {
     "organization_alias_id": "org-d9419f61f5b751fd",
