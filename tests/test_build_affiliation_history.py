@@ -8,10 +8,74 @@ from scripts.build_affiliation_history import (
     is_postsecondary_education,
     merge_undated_duplicates,
     normalized_type,
+    preferred_affiliation_records,
 )
 
 
 class LinkedInAffiliationExtractionTest(unittest.TestCase):
+    def test_complete_profile_supersedes_lossy_search_snippet(self):
+        searches = [
+            {
+                "person_id": "person-1",
+                "results": [
+                    {
+                        "url": "https://linkedin.com/in/example",
+                        "highlights": [
+                            "### [Example University](https://linkedin.com/school/example) "
+                            "2018 - 2020"
+                        ],
+                    }
+                ],
+            }
+        ]
+        profiles = [
+            {
+                "person_id": "person-1",
+                "status": "success",
+                "linkedin_url": "https://www.linkedin.com/in/example/",
+                "resolved_url": "https://linkedin.com/in/example",
+                "title": "Example Person",
+                "text": (
+                    "## Experience "
+                    "### Associate Professor - "
+                    "[Example University](https://linkedin.com/school/example) "
+                    "2018 - 2020 "
+                    "## Education "
+                    "### Doctor of Philosophy at "
+                    "[Degree University](https://linkedin.com/school/degree) "
+                    "2012 - 2018"
+                ),
+            }
+        ]
+
+        records = preferred_affiliation_records(searches, profiles)
+
+        self.assertEqual(len(records), 1)
+        self.assertIn("## Experience", records[0]["results"][0]["highlights"][0])
+
+    def test_search_snippet_remains_when_profile_hydration_failed(self):
+        searches = [
+            {
+                "person_id": "person-1",
+                "results": [
+                    {
+                        "url": "https://linkedin.com/in/example",
+                        "highlights": ["### Engineer - Example Co (Current)"],
+                    }
+                ],
+            }
+        ]
+        profiles = [
+            {
+                "person_id": "person-1",
+                "status": "error",
+                "linkedin_url": "https://linkedin.com/in/example",
+                "text": "",
+            }
+        ]
+
+        self.assertEqual(preferred_affiliation_records(searches, profiles), searches)
+
     def test_roleless_competition_directory_university_is_not_alma_mater(self):
         self.assertFalse(
             is_postsecondary_education(
@@ -103,6 +167,23 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
             "Massachusetts Institute of Technology (MIT)",
         )
         self.assertEqual(rows[0]["affiliation_type"], "education")
+
+    def test_extracts_undated_degree_heading_from_trusted_education_section(self):
+        rows = extract_affiliations(
+            "## Education\n"
+            "### Master's degree, Information Systems at "
+            "East Kazakhstan State Technical University\n"
+            "Activities: Mathematics Olympiad participant"
+        )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(
+            rows[0]["organization"],
+            "D. Serikbayev East Kazakhstan Technical University",
+        )
+        self.assertEqual(rows[0]["role"], "Master's degree, Information Systems")
+        self.assertEqual(rows[0]["start_year"], "")
+        self.assertEqual(rows[0]["end_year"], "")
 
     def test_distance_education_department_specialist_is_employment(self):
         rows = extract_affiliations(
@@ -204,6 +285,20 @@ class LinkedInAffiliationExtractionTest(unittest.TestCase):
         self.assertEqual(rows[0]["affiliation_type"], "employment")
         self.assertEqual(rows[1]["affiliation_type"], "employment")
         self.assertEqual(rows[2]["affiliation_type"], "education")
+
+    def test_grouped_university_jobs_do_not_become_education(self):
+        rows = extract_affiliations(
+            "## Experience "
+            "### [Astana Medical University](https://example.test/university) "
+            "#### Specialist "
+            "Jul 2022 - Aug 2023 "
+            "#### Acting Dean of Research School "
+            "Dec 2022 - Feb 2023"
+        )
+
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[0]["affiliation_type"], "employment")
+        self.assertEqual(rows[1]["affiliation_type"], "employment")
 
     def test_research_affiliation_is_not_postsecondary_education(self):
         self.assertFalse(

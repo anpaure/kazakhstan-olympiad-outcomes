@@ -396,6 +396,10 @@ def current_role_match_score(
             expected_organization
         ):
             return 5
+        # A matching title cannot bridge two explicitly different employers.
+        # This matters when a reviewed destination supersedes a stale profile's
+        # current marker but both roles use a generic title such as Engineer.
+        return 0
 
     actual_role = role_key(current_role.get("role"))
     expected_role = role_key(destination_role)

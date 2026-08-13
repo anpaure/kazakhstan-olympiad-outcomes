@@ -38,6 +38,22 @@ class StablePersonIdTest(unittest.TestCase):
         self.assertEqual(people[0].canonical_name, "Nurdaulet Kemel")
         self.assertEqual(people[0].aliases, "Kemel Nurdaulet")
 
+    def test_uses_verified_given_name_order_for_reversed_result_sheet_name(self):
+        rows = [
+            {
+                "olympiad": "IBO",
+                "year": "2002",
+                "name": "Kambarov Yerkebulan",
+                "award": "Bronze",
+                "source_url": "https://example.test/results",
+            }
+        ]
+
+        people, _ = build_registry(rows)
+
+        self.assertEqual(people[0].canonical_name, "Yerkebulan Kambarov")
+        self.assertEqual(people[0].aliases, "Kambarov Yerkebulan")
+
     def test_reviewed_merge_can_cross_olympiads_and_preserve_id(self):
         rows = [
             {

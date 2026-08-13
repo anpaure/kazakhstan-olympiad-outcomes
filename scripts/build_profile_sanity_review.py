@@ -21,10 +21,10 @@ except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path
     from organization_names import canonicalize_organization
 
 
-SAMPLE_SEED = "20260812-round3"
+SAMPLE_SEED = "20260812-round4"
 ERA_CUTOFF_YEAR = 2005
 SAMPLE_PER_STRATUM = 12
-REVIEWED_AT = "2026-08-12"
+REVIEWED_AT = "2026-08-13"
 DATA_AS_OF_YEAR = 2026
 DEFAULT_REVIEW_DECISIONS = Path("data/profile_sanity_review_decisions.csv")
 
@@ -198,7 +198,9 @@ def select_sample(
     seed: str = SAMPLE_SEED,
     cutoff_year: int = ERA_CUTOFF_YEAR,
     per_stratum: int = SAMPLE_PER_STRATUM,
+    excluded_person_ids: set[str] | None = None,
 ) -> list[dict[str, object]]:
+    excluded_person_ids = excluded_person_ids or set()
     selected: list[dict[str, object]] = []
     for confidence in ("probable", "confirmed"):
         for era, predicate in (
@@ -210,6 +212,7 @@ def select_sample(
                 row
                 for row in people
                 if row.get("confidence") == confidence
+                and row.get("person_id") not in excluded_person_ids
                 and row.get("first_year", "").isdigit()
                 and predicate(int(row["first_year"]))
             ]
@@ -710,12 +713,21 @@ def main() -> int:
     outcome_decisions = read_csv(data_dir / "exa_outcome_review_decisions.csv")
     findings = read_csv(data_dir / "profile_sanity_review_findings.csv")
     review_decisions = load_review_decisions(args.review_decisions)
+    previously_reviewed_ids = {
+        person_id
+        for (decision_seed, person_id) in review_decisions
+        if decision_seed != args.seed
+    }
 
     reconciliation = build_reconciliation(
         researched, profiles, destination_reviews, outcome_decisions, evidence
     )
     selected = select_sample(
-        researched, args.seed, args.cutoff_year, args.sample_per_stratum
+        researched,
+        args.seed,
+        args.cutoff_year,
+        args.sample_per_stratum,
+        previously_reviewed_ids,
     )
     sample_rows = build_sample_rows(
         selected,
@@ -746,13 +758,16 @@ def main() -> int:
         "sample_per_stratum": args.sample_per_stratum,
         "sample_method": (
             "Within each confidence/era stratum, sort by SHA-256 of "
-            "seed:stratum:person_id and take the first rows."
+            "seed:stratum:person_id and take the first rows after excluding "
+            "people signed in earlier review rounds."
         ),
+        "excluded_previously_reviewed": len(previously_reviewed_ids),
         "sample_population": len(
             [
                 row
                 for row in researched
                 if row.get("confidence") in {"probable", "confirmed"}
+                and row.get("person_id") not in previously_reviewed_ids
             ]
         ),
         "sample_size": len(sample_rows),
@@ -762,6 +777,14 @@ def main() -> int:
         ),
         "deep_reviewed_profiles": sum(
             row["review_depth"] == "deep" for row in sample_rows
+        ),
+        "cumulative_signed_profiles": len(
+            {
+                person_id
+                for (decision_seed, person_id), decision in review_decisions.items()
+                if decision_seed == args.seed
+                or decision.get("review_status") in {"pass", "pass_after_correction"}
+            }
         ),
         "accepted_linkedin_profiles": len(reconciliation),
         "linkedin_alignment_statuses": dict(

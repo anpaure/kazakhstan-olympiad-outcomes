@@ -22,6 +22,7 @@ try:
         SAMPLE_PER_STRATUM,
         SAMPLE_SEED,
         build_reconciliation,
+        load_review_decisions,
         select_sample,
     )
     from scripts.build_research_dataset import (
@@ -59,6 +60,7 @@ except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path
         SAMPLE_PER_STRATUM,
         SAMPLE_SEED,
         build_reconciliation,
+        load_review_decisions,
         select_sample,
     )
     from build_research_dataset import (
@@ -245,6 +247,7 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "audit_rejections": data_dir / "audit" / "rejections.csv",
         "audit_manifest": data_dir / "audit" / "manifest.json",
         "profile_sanity_review": data_dir / "audit" / "profile_sanity_review.csv",
+        "profile_review_decisions": data_dir / "profile_sanity_review_decisions.csv",
         "linkedin_reconciliation": data_dir
         / "audit"
         / "linkedin_destination_reconciliation.csv",
@@ -291,6 +294,9 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     audit_rejections = read_csv(required["audit_rejections"])
     audit_manifest = json.loads(required["audit_manifest"].read_text(encoding="utf-8"))
     profile_sanity_review = read_csv(required["profile_sanity_review"])
+    profile_review_decisions = load_review_decisions(
+        required["profile_review_decisions"]
+    )
     linkedin_reconciliation = read_csv(required["linkedin_reconciliation"])
     profile_review_findings = read_csv(required["profile_review_findings"])
     profile_review_manifest = json.loads(
@@ -1162,8 +1168,17 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     ):
         errors.append("LinkedIn retrieval errors lack an auditable fallback source")
 
+    previously_reviewed_ids = {
+        person_id
+        for (decision_seed, person_id) in profile_review_decisions
+        if decision_seed != SAMPLE_SEED
+    }
     expected_sample = select_sample(
-        researched, SAMPLE_SEED, ERA_CUTOFF_YEAR, SAMPLE_PER_STRATUM
+        researched,
+        SAMPLE_SEED,
+        ERA_CUTOFF_YEAR,
+        SAMPLE_PER_STRATUM,
+        previously_reviewed_ids,
     )
     expected_sample_keys = [
         (
@@ -1199,14 +1214,23 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         "sample_seed": SAMPLE_SEED,
         "era_cutoff_year": ERA_CUTOFF_YEAR,
         "sample_per_stratum": SAMPLE_PER_STRATUM,
+        "excluded_previously_reviewed": len(previously_reviewed_ids),
         "sample_population": len(
             [
                 row
                 for row in researched
                 if row.get("confidence") in {"probable", "confirmed"}
+                and row.get("person_id") not in previously_reviewed_ids
             ]
         ),
         "sample_size": len(profile_sanity_review),
+        "cumulative_signed_profiles": len(
+            {
+                person_id
+                for (_, person_id), decision in profile_review_decisions.items()
+                if decision.get("review_status") in {"pass", "pass_after_correction"}
+            }
+        ),
         "accepted_linkedin_profiles": len(linkedin_reconciliation),
         "unreconciled_linkedin_profiles": 0,
         "root_cause_findings": len(profile_review_findings),

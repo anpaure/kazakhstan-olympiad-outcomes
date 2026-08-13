@@ -12,6 +12,7 @@ import csv
 import hashlib
 import html as html_lib
 import json
+import math
 import os
 import re
 import sys
@@ -40,6 +41,15 @@ OFFICIAL_SOURCE_URLS = {
 SCOREBOARD_SOURCE_URLS = {
     "IBO": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad",
     "IChO": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad",
+}
+
+# The IOI statistics archive can lag behind a completed contest. These are
+# official CMS scoreboards used only to fill a year absent from results/KAZ;
+# once the archive publishes that year, its row wins during deduplication.
+IOI_LIVE_SCOREBOARDS = {
+    2026: {
+        "scoreboard_url": "https://ranking.ioi2026.uz/",
+    },
 }
 
 EXA_SOURCE_QUERIES = {
@@ -508,6 +518,95 @@ def parse_ioi(html: str, source_url: str) -> list[Participant]:
     return participants
 
 
+def parse_ioi_live_scoreboard(
+    year: int,
+    source_url: str,
+    teams: dict[str, dict[str, object]],
+    users: dict[str, dict[str, object]],
+    scores: dict[str, dict[str, float]],
+) -> list[Participant]:
+    """Parse a completed official CMS scoreboard while the archive catches up."""
+    kazakhstan_teams = {
+        key
+        for key, team in teams.items()
+        if key.upper() == COUNTRY_CODE or clean_text(team.get("name", "")) == COUNTRY
+    }
+    if not kazakhstan_teams or not users:
+        return []
+
+    totals = {
+        user_id: sum(float(value) for value in scores.get(user_id, {}).values())
+        for user_id in users
+    }
+    ordered_scores = sorted(totals.values(), reverse=True)
+    if not ordered_scores:
+        return []
+
+    def award_cutoff(share: int) -> float:
+        # S6.11 uses "at least" each fraction of all contestants; ties at the
+        # boundary receive the same award.
+        index = max(0, math.ceil(len(ordered_scores) / share) - 1)
+        return ordered_scores[index]
+
+    gold_cutoff = award_cutoff(12)
+    silver_cutoff = award_cutoff(4)
+    bronze_cutoff = award_cutoff(2)
+
+    participants: list[Participant] = []
+    for user_id, user in users.items():
+        if user.get("team") not in kazakhstan_teams:
+            continue
+
+        name = clean_text(f"{user.get('f_name', '')} {user.get('l_name', '')}")
+        total = totals[user_id]
+        if total >= gold_cutoff:
+            award = "Gold"
+        elif total >= silver_cutoff:
+            award = "Silver"
+        elif total >= bronze_cutoff:
+            award = "Bronze"
+        else:
+            award = ""
+        rank = 1 + sum(other_total > total for other_total in ordered_scores)
+        score = f"{total:.2f}".rstrip("0").rstrip(".")
+        participants.append(
+            Participant(
+                olympiad="IOI",
+                country=COUNTRY,
+                country_code=COUNTRY_CODE,
+                year=year,
+                name=name,
+                award=award,
+                rank=f"{rank}/{len(ordered_scores)}",
+                score=score,
+                person_url="",
+                source_url=source_url,
+                source_type="scoreboard",
+            )
+        )
+    return participants
+
+
+def collect_ioi_live_scoreboard(
+    year: int,
+    config: dict[str, str],
+    cache_dir: Path,
+    refresh: bool,
+) -> list[Participant]:
+    scoreboard_url = config["scoreboard_url"]
+
+    def load_json(endpoint: str) -> dict[str, object]:
+        return json.loads(fetch_html(urljoin(scoreboard_url, endpoint), cache_dir, refresh))
+
+    return parse_ioi_live_scoreboard(
+        year=year,
+        source_url=OFFICIAL_SOURCE_URLS["IOI"],
+        teams=load_json("teams/"),
+        users=load_json("users/"),
+        scores=load_json("scores"),
+    )
+
+
 def extract_ibo_links(results_html: str, source_url: str) -> list[tuple[int, str, str]]:
     soup = BeautifulSoup(results_html, "html.parser")
     links_by_year: dict[int, tuple[int, str, str]] = {}
@@ -737,7 +836,22 @@ def collect(
         elif olympiad == "IOI":
             source_url = OFFICIAL_SOURCE_URLS[olympiad]
             print(f"Collecting {olympiad} from {source_url}", file=sys.stderr)
-            all_participants.extend(parse_ioi(fetch_html(source_url, cache_dir, refresh), source_url))
+            archive_participants = parse_ioi(
+                fetch_html(source_url, cache_dir, refresh),
+                source_url,
+            )
+            all_participants.extend(archive_participants)
+            archive_years = {participant.year for participant in archive_participants}
+            for year, config in IOI_LIVE_SCOREBOARDS.items():
+                if year in archive_years:
+                    continue
+                print(
+                    f"Collecting IOI {year} live results from {config['scoreboard_url']}",
+                    file=sys.stderr,
+                )
+                all_participants.extend(
+                    collect_ioi_live_scoreboard(year, config, cache_dir, refresh)
+                )
         elif olympiad in {"IPhO", "IChO"}:
             scoreboard_seen_years: set[int] = set()
             if olympiad in SCOREBOARD_SOURCE_URLS:

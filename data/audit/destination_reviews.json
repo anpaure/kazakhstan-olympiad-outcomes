@@ -180,6 +180,21 @@
     "review_reason": "The accepted profile lists Software Engineer at UBS as current from June 2026."
   },
   {
+    "destination_review_id": "dest-review-930b70fa5a66d630",
+    "evidence_id": "ev-56128e6a46675f5d",
+    "source_id": "src-482090dc6cef",
+    "person_id": "kaz-a2f029eab00c",
+    "name": "Amir Tulegenov",
+    "organization": "Xperience AI",
+    "role": "OpenCV Contributor",
+    "affiliation_type": "employment",
+    "start_year": "2021",
+    "end_year": "2021",
+    "evidence_url": "https://github.com/opencv/opencv/commit/cbb230fdfc0223a33cf2629963fe0253b91ca3eb",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "CPHOF and the 2017 IPSC roster identify Kazakhstan's IOI contestant as amir.tu. The exact-name GitHub account amirtu differs only by punctuation and authored OpenCV changes with Amir's full-name Gmail and Xperience AI work addresses. The bridge is retained as probable, the role is limited to the directly observed OpenCV contribution, and the 2021 end year prevents this historical work-domain evidence from being presented as current."
+  },
+  {
     "destination_review_id": "dest-review-3e2b9a8569c2fd07",
     "evidence_id": "ev-29cf0932e978b52b",
     "source_id": "src-f1f26f9fce25",
@@ -238,6 +253,21 @@
     "evidence_url": "https://kz.linkedin.com/in/anuarnurtazin01",
     "reviewed_at": "2026-08-12",
     "review_reason": "The accepted public profile identifies Consultant on the Sports Financing Model Project at the SOE Centre for Olympic Training in Wrestling as current from May 2024. This exact dated role supersedes the generic Business and Financial Manager summary while retaining the same employer."
+  },
+  {
+    "destination_review_id": "dest-review-6469886120ca9198",
+    "evidence_id": "ev-9ef12759cb21388e",
+    "source_id": "src-639532653704",
+    "person_id": "kaz-863407f79649",
+    "name": "Arman Yesenamanov",
+    "organization": "Deep Infra",
+    "role": "Software Engineer",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://github.com/yesenarman",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "Arman's exact-handle GitHub profile was updated in June 2026 to list @deepinfra and shows July 2026 public contributions to deepinfra/docs. This newer active developer identity supersedes the accepted LinkedIn snapshot's stale 2021-present Yandex entry. The newer source does not publish a work location, so no current country is inferred."
   },
   {
     "destination_review_id": "dest-review-91ab07c7549792d3",
@@ -555,6 +585,21 @@
     "review_reason": "Freedom Telecom's current official ethics page directly names Kairat Akhmetov as Chief Executive Officer. This replaces an event biography as the destination source while preserving the separate profile and interview evidence used for identity and history."
   },
   {
+    "destination_review_id": "dest-review-5457ffa4098e9fdd",
+    "evidence_id": "ev-f6eed37b18ea8005",
+    "source_id": "src-9f94e44937d4",
+    "person_id": "kaz-bcd45c045c97",
+    "name": "Kairat Zhubayev",
+    "organization": "Otbasy Bank",
+    "role": "Head of Budget Planning Division, Planning and Strategic Analysis Department",
+    "affiliation_type": "employment",
+    "start_year": "2019",
+    "end_year": "",
+    "evidence_url": "https://linkedin.com/in/kairat-zhubayev-150785174",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "The profile's detailed experience section explicitly identifies Otbasy Bank and dates this role from January 2019 to present in Almaty. Altyn Bank appears only in the headline and a roleless company block, so the dated experience row takes precedence and the stale headline is retained only as historical evidence."
+  },
+  {
     "destination_review_id": "dest-review-154c3497baac200a",
     "evidence_id": "ev-67df68609f8aab35",
     "source_id": "src-f1bb39dc7bad",
@@ -733,6 +778,21 @@
     "evidence_url": "https://linkedin.com/in/nurlan-algashov",
     "reviewed_at": "2026-08-12",
     "review_reason": "The accepted public profile identifies Consultant for the WHO Office in Cyprus as current from June 2025. This supersedes the older Technical Officer title, whose profile entries end in 2023."
+  },
+  {
+    "destination_review_id": "dest-review-7af52905e0378495",
+    "evidence_id": "ev-a1f67e3f67294e54",
+    "source_id": "src-05b9a94b12ab",
+    "person_id": "kaz-88a74ae3e050",
+    "name": "Nurlan Zhussipov",
+    "organization": "Woven by Toyota",
+    "role": "Team Member",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://github.com/NurlashKO/blog/commit/96b521a0bdba07f8e90a6c0c74c5206c84ee7247.patch",
+    "reviewed_at": "2026-08-12",
+    "review_reason": "The exact IOI-linked NurlashKO GitHub account's November 2025 commit uses Nurlan's full-name woven.toyota work address. It is newer than commits from the same repository using mercari.com and supersedes the accepted LinkedIn snapshot's stale Codebusters current marker. No formal Woven title is public, so Team Member is retained as a neutral affiliation label."
   },
   {
     "destination_review_id": "dest-review-cffa8a9137c8e768",

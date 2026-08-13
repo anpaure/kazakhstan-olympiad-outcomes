@@ -280,18 +280,18 @@
     "review_reason": "Country follows the location attached to the accepted current role at Lunar Energy. The public profile header independently agrees."
   },
   {
-    "location_id": "loc-bcac8067f0df7e0c",
-    "evidence_id": "ev-3c0343a96b8246d7",
-    "source_id": "src-3bae2c720f20",
+    "location_id": "loc-e8f7e16e7ac62507",
+    "evidence_id": "ev-1ecf4a79aa0744b5",
+    "source_id": "src-430c805dcf05",
     "person_id": "kaz-66f479eb4560",
     "name": "Aidos Kuatov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "Dartmouth, Massachusetts, United States",
-    "evidence_url": "https://www.umassd.edu/about/directions/",
-    "evidence_kind": "current_education_location",
+    "location_label": "Fall River, Massachusetts, United States",
+    "evidence_url": "https://www.linkedin.com/in/aidoskuatov",
+    "evidence_kind": "active_affiliation_profile_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at University of Massachusetts Dartmouth; the linked official institution source establishes the campus location. UMass Dartmouth's official directions page identifies its Dartmouth campus."
+    "review_reason": "The accepted profile explicitly places Aidos's ongoing UMass Dartmouth PhD and research-assistant role in Fall River, Massachusetts."
   },
   {
     "location_id": "loc-8e3b2eafa92f9594",
@@ -2562,20 +2562,6 @@
     "review_reason": "Country follows the location attached to the accepted current role at TETmedical. The public profile header independently agrees."
   },
   {
-    "location_id": "loc-c622cd8089fe6d8b",
-    "evidence_id": "ev-6e5fd5d67cdea5bb",
-    "source_id": "src-6a3be5015a5c",
-    "person_id": "kaz-6fa4b627983f",
-    "name": "Gabit Bekakhmetov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Kazakhstan",
-    "evidence_url": "https://www.paradigms.kz/en",
-    "evidence_kind": "current_role_location",
-    "confidence": "confirmed",
-    "review_reason": "Paradigm Shift's current Kazakhstan team page names Gabit as managing partner; no narrower personal location is asserted."
-  },
-  {
     "location_id": "loc-36e5140a6a55bc68",
     "evidence_id": "ev-89d2557506f8e268",
     "source_id": "src-28ff4753b51f",
@@ -2809,9 +2795,9 @@
     "country_name": "Kazakhstan",
     "location_label": "Almaty, Kazakhstan",
     "evidence_url": "https://linkedin.com/in/kairat-zhubayev-150785174",
-    "evidence_kind": "active_affiliation_profile_location",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted profile places Kairat in Almaty Kazakhstan alongside the reviewed Altyn Bank financial-risk leadership role."
+    "review_reason": "The accepted profile explicitly places Kairat's selected January 2019-present Otbasy Bank budget-planning role in Almaty, Kazakhstan."
   },
   {
     "location_id": "loc-e71c3f4c2d065bad",
@@ -2826,20 +2812,6 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Country follows the location attached to the accepted current role at Ayar Labs. The public profile header independently agrees."
-  },
-  {
-    "location_id": "loc-f65cf55cd4dd3a34",
-    "evidence_id": "ev-46bde050495d03ce",
-    "source_id": "src-502cf1665a9e",
-    "person_id": "kaz-8b03ffcc0625",
-    "name": "Kambarov Yerkebulan",
-    "country_code": "BE",
-    "country_name": "Belgium",
-    "location_label": "Бельгия",
-    "evidence_url": "https://linkedin.com/in/yerkebulan-kambarov-b32aa160",
-    "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country follows the location attached to the accepted current role at Johnson & Johnson. The public profile header independently agrees."
   },
   {
     "location_id": "loc-10638211e6f62cc3",
@@ -3666,6 +3638,20 @@
     "evidence_kind": "active_affiliation_profile_location",
     "confidence": "probable",
     "review_reason": "The accepted profile places Nurlan in Denmark and independently lists his ongoing consultant role at WHO Regional Office for Europe. The role itself is home-based, so Denmark is corroborated profile location rather than a claimed worksite or legal residence."
+  },
+  {
+    "location_id": "loc-5325d72ae1b0ee7e",
+    "evidence_id": "ev-28186d303ee90acd",
+    "source_id": "src-040d7f70ddf8",
+    "person_id": "kaz-88a74ae3e050",
+    "name": "Nurlan Zhussipov",
+    "country_code": "JP",
+    "country_name": "Japan",
+    "location_label": "Tokyo, Japan",
+    "evidence_url": "https://cz.linkedin.com/pub/dir/?first=&last=Zhussipov&search=Search",
+    "evidence_kind": "active_affiliation_profile_location",
+    "confidence": "confirmed",
+    "review_reason": "LinkedIn's current exact-name directory places Nurlan Zhussipov in Tokyo. That location agrees with his newer woven.toyota work-domain commit and Woven by Toyota's official Tokyo headquarters, while the accepted individual profile's Kazakhstan and Codebusters snapshot is stale."
   },
   {
     "location_id": "loc-8d7ba4040050b884",
@@ -5194,6 +5180,20 @@
     "review_reason": "Nazarbayev University's April 2026 report identifies Yerkanat among its students and places the university event in Astana."
   },
   {
+    "location_id": "loc-f65cf55cd4dd3a34",
+    "evidence_id": "ev-46bde050495d03ce",
+    "source_id": "src-502cf1665a9e",
+    "person_id": "kaz-8b03ffcc0625",
+    "name": "Yerkebulan Kambarov",
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "location_label": "Бельгия",
+    "evidence_url": "https://linkedin.com/in/yerkebulan-kambarov-b32aa160",
+    "evidence_kind": "current_role_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the location attached to the accepted current role at Johnson & Johnson. The public profile header independently agrees."
+  },
+  {
     "location_id": "loc-4f9b9bea62b5e410",
     "evidence_id": "ev-1205a3f46b048aac",
     "source_id": "src-5c7ec693c02b",
@@ -5432,18 +5432,18 @@
     "review_reason": "NSTU's current faculty roster places the accepted professor in Novosibirsk Russia."
   },
   {
-    "location_id": "loc-88701f2053d7dcb0",
-    "evidence_id": "ev-c203f2b3b556dab5",
-    "source_id": "src-9a5c5ab43357",
+    "location_id": "loc-6ab9a8c91778c6bc",
+    "evidence_id": "ev-8f6940842d826195",
+    "source_id": "src-f988994e6af3",
     "person_id": "kaz-49f853356dc6",
     "name": "Yevgeni Yakovlev",
     "country_code": "GB",
     "country_name": "United Kingdom",
     "location_label": "Colchester, England, United Kingdom",
-    "evidence_url": "https://www.essex.ac.uk/people/yakov37409/evgeny-yakovlev",
+    "evidence_url": "https://sites.google.com/nes.ru/evgenyyakovlev/home",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "The University of Essex's current staff profile places Evgeny Yakovlev's economics role at its Colchester campus in the United Kingdom."
+    "review_reason": "Yakovlev's current academic site identifies him as a University of Essex senior lecturer and gives his primary contact address at Wivenhoe Park in Colchester."
   },
   {
     "location_id": "loc-209ebbf07665307a",

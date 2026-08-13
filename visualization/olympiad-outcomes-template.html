@@ -1332,8 +1332,18 @@
     ].filter(Boolean))];
   }
 
+  function employmentDestinations(person) {
+    const destinations = person.destinations && person.destinations.length
+      ? person.destinations
+      : person.organization && person.organizationType !== 'education'
+        ? [{ organization: person.organization, role: person.role, sector: person.sector }]
+        : [];
+    return destinations.filter(destination => destination.organizationType !== 'education');
+  }
+
   function personHasOrganization(person, organization) {
-    return person.organization === organization || educationalOrganizations(person).includes(organization);
+    return employmentDestinations(person).some(destination => destination.organization === organization)
+      || educationalOrganizations(person).includes(organization);
   }
 
   function filteredPeople({ ignoreSelection = false } = {}) {
@@ -1353,7 +1363,7 @@
     const values = filteredPeople({ ignoreSelection: true }).flatMap(person => {
       const organizations = education
         ? educationalOrganizations(person)
-        : person.organization && person.organizationType !== 'education' ? [person.organization] : [];
+        : employmentDestinations(person).map(destination => destination.organization);
       return organizations.map(label => ({ label, person }));
     });
     return d3.rollups(values, group => ({
@@ -1632,16 +1642,27 @@
       olympiadCell.textContent = `${person.olympiads.join(', ')} · ${years}`;
       const destinationCell = document.createElement('td');
       destinationCell.dataset.label = t('destination');
-      destinationCell.textContent = person.organization || '—';
-      if (person.organization && person.sector) {
+      const destinations = person.organizationType === 'education'
+        ? [{ organization: person.organization, role: person.role, sector: person.sector }]
+        : employmentDestinations(person);
+      destinationCell.textContent = destinations.length
+        ? destinations.map(destination => destination.organization).join('; ')
+        : '—';
+      const destinationSectors = [...new Set(destinations.map(destination => destination.sector).filter(Boolean))];
+      if (destinationSectors.length) {
         const sector = document.createElement('div');
         sector.className = 'iso-cell-meta';
-        sector.textContent = translatedSector(person.sector);
+        sector.textContent = destinationSectors.map(translatedSector).join('; ');
         destinationCell.append(sector);
       }
       const roleCell = document.createElement('td');
       roleCell.dataset.label = t('role');
-      roleCell.textContent = person.role || t('roleNotPublic');
+      const destinationRoles = [...new Set(destinations.map(destination => destination.role).filter(Boolean))];
+      roleCell.textContent = destinationRoles.length === 1
+        ? destinationRoles[0]
+        : destinationRoles.length
+          ? destinations.map(destination => `${destination.organization}: ${destination.role || t('roleNotPublic')}`).join('; ')
+          : person.role || t('roleNotPublic');
       const almaCell = document.createElement('td');
       almaCell.dataset.label = t('almaMater');
       almaCell.textContent = person.almaMater || '—';

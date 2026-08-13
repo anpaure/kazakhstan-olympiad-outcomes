@@ -38,6 +38,42 @@ class ProfileSanityReviewTests(unittest.TestCase):
             },
         )
 
+    def test_sample_can_exclude_previously_reviewed_people(self):
+        people = [
+            {
+                "person_id": f"probable-older-{index}",
+                "name": f"Person {index}",
+                "confidence": "probable",
+                "first_year": "2000",
+            }
+            for index in range(4)
+        ]
+        people += [
+            {
+                "person_id": f"{confidence}-{era}-{index}",
+                "name": f"{confidence} {era} {index}",
+                "confidence": confidence,
+                "first_year": year,
+            }
+            for confidence in ("probable", "confirmed")
+            for era, year in (("older", "2000"), ("newer", "2010"))
+            for index in range(4)
+            if not (confidence == "probable" and era == "older")
+        ]
+        baseline = select_sample(people, seed="fixed", per_stratum=2)
+        excluded = {row["person"]["person_id"] for row in baseline}
+
+        replacement = select_sample(
+            people,
+            seed="fixed",
+            per_stratum=2,
+            excluded_person_ids=excluded,
+        )
+
+        self.assertFalse(
+            excluded & {row["person"]["person_id"] for row in replacement}
+        )
+
     def test_reconciliation_requires_explicit_review_for_mismatch(self):
         people = [
             {

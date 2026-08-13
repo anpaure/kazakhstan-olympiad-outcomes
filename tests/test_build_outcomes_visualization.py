@@ -34,6 +34,69 @@ class CompactVisualizationDataTest(unittest.TestCase):
         self.assertEqual(person["organizationType"], "company")
         self.assertEqual(person["sector"], "Technology & Software")
 
+    def test_exposes_source_explicit_concurrent_destination(self):
+        row = {
+            "person_id": "person-1",
+            "name": "Example Person",
+            "aliases": "Example Person",
+            "olympiads": "IOI",
+            "first_year": 2007,
+            "last_year": 2007,
+            "awards": "Gold",
+            "confidence": "probable",
+            "organization": "AGI Lab",
+            "role": "Chief Executive Officer",
+            "organization_category": "Industry",
+            "role_category": "Leadership",
+            "destination_status": "latest_employment",
+            "profile_url": "https://example.com/profile",
+            "linkedin_url": "",
+            "research_scope": "career",
+            "evidence_urls": "https://example.com/profile",
+        }
+        affiliations = [
+            {
+                "organization": "AGI Lab",
+                "role": "Chief Executive Officer",
+                "affiliation_type": "employment",
+                "is_current": True,
+                "evidence_kind": "destination_source_review",
+                "evidence_text": (
+                    "The reviewed source identifies the person as CEO of both "
+                    "AGI Lab and Khan Group concurrently."
+                ),
+            },
+            {
+                "organization": "Khan Group",
+                "role": "Chief Executive Officer",
+                "affiliation_type": "employment",
+                "is_current": True,
+                "evidence_kind": "manual_web_evidence",
+                "evidence_text": "The role remains current.",
+            },
+            {
+                "organization": "Old Employer",
+                "role": "Engineer",
+                "affiliation_type": "employment",
+                "is_current": True,
+                "evidence_kind": "manual_web_evidence",
+                "evidence_text": "Not named by the destination review.",
+            },
+        ]
+
+        person = compact_person(row, affiliations=affiliations)
+
+        self.assertEqual(
+            [destination["organization"] for destination in person["destinations"]],
+            ["AGI Lab", "Khan Group"],
+        )
+        self.assertTrue(
+            all(
+                destination["role"] == "Chief Executive Officer"
+                for destination in person["destinations"]
+            )
+        )
+
     def test_ui_keeps_only_one_olympiad_source(self):
         row = {
             "linkedin_url": "https://linkedin.com/in/example",
@@ -82,6 +145,25 @@ class CompactVisualizationDataTest(unittest.TestCase):
             olympiad_sources[0]["url"],
             "https://stats.ioinformatics.org/people/2474",
         )
+
+    def test_ui_does_not_publish_live_ioi_fallback_url(self):
+        row = {
+            "linkedin_url": "",
+            "profile_url": "",
+            "organization": "",
+            "evidence_urls": "https://stats.ioinformatics.org/results/KAZ",
+        }
+        evidence = [
+            {
+                "claim_type": "olympiad_participation",
+                "review_status": "accepted",
+                "source_url": "https://stats.ioinformatics.org/results/KAZ",
+            }
+        ]
+
+        sources = compact_sources(row, {}, [], evidence)
+
+        self.assertEqual(sources, [])
 
     def test_destination_review_source_beats_superseded_profile_summary(self):
         row = {
@@ -196,6 +278,26 @@ class CompactVisualizationDataTest(unittest.TestCase):
         )
         self.assertEqual(person["country"], "United Arab Emirates")
         self.assertIn("Abu Dhabi", person["location"])
+
+    def test_published_zhomart_record_includes_both_ceo_destinations(self):
+        html = Path("docs/index.html").read_text(encoding="utf-8")
+        match = re.search(
+            r'\{"id":"kaz-d5a9e6425d45".*?"scope":"career"\}',
+            html,
+        )
+
+        self.assertIsNotNone(match)
+        person = json.loads(match.group(0))
+        self.assertEqual(
+            [destination["organization"] for destination in person["destinations"]],
+            ["AGI Lab", "Khan Group"],
+        )
+        self.assertTrue(
+            all(
+                destination["role"] == "Chief Executive Officer"
+                for destination in person["destinations"]
+            )
+        )
 
 
 if __name__ == "__main__":

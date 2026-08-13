@@ -13,7 +13,10 @@ from pathlib import Path
 try:
     from scripts.build_exa_review_queue import canonical_url
     from scripts.destination_reviews import load_destination_reviews
-    from scripts.hydrate_linkedin_profiles_with_exa import profile_search_records
+    from scripts.hydrate_linkedin_profiles_with_exa import (
+        MANUAL_PROFILE_STATUS,
+        profile_search_records,
+    )
     from scripts.build_research_dataset import (
         CONFIDENCE_RANK,
         affiliation_supported_by_identity,
@@ -24,7 +27,10 @@ try:
 except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
     from build_exa_review_queue import canonical_url
     from destination_reviews import load_destination_reviews
-    from hydrate_linkedin_profiles_with_exa import profile_search_records
+    from hydrate_linkedin_profiles_with_exa import (
+        MANUAL_PROFILE_STATUS,
+        profile_search_records,
+    )
     from build_research_dataset import (
         CONFIDENCE_RANK,
         affiliation_supported_by_identity,
@@ -93,6 +99,10 @@ SECTION_EDUCATION_PATTERN = re.compile(
     r"(?=\s+(?:(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+)?(?:19|20)\d{2}\s*-|\s+\.{3}|$)",
     re.IGNORECASE,
 )
+UNDATED_SECTION_EDUCATION_PATTERN = re.compile(
+    r"^(?P<role>.{2,140}?)\s+at\s+(?P<organization>.{2,160})$",
+    re.IGNORECASE,
+)
 LINK_ONLY_PATTERN = re.compile(
     r"^(?:at\s+)?\[(?P<organization>[^\]]{2,160})\]\([^)]+\)",
     re.IGNORECASE,
@@ -154,7 +164,7 @@ EMPLOYMENT_ROLE_TERMS = re.compile(
 )
 STRONG_EMPLOYMENT_ROLE_TERMS = re.compile(
     r"\b(?:director|manager|founder|co-?founder|chief|officer|partner|analyst|"
-    r"consultant|developer|architect|president|head|lead|owner|"
+    r"consultant|developer|architect|president|dean|head|lead|owner|"
     r"advisor|adviser|administrator|coordinator|(?:senior\s+)?specialist\s+of)\b",
     re.IGNORECASE,
 )
@@ -226,6 +236,8 @@ def clean_text(value: object) -> str:
 
 def is_strong_employment_role(role: object) -> bool:
     role_text = clean_text(role)
+    if role_text.casefold() in {"specialist", "специалист"}:
+        return True
     if STRONG_EMPLOYMENT_ROLE_TERMS.search(role_text):
         return True
     if ASSOCIATE_EMPLOYMENT_PATTERN.search(role_text):
@@ -387,6 +399,21 @@ def parse_education(
     trusted_section: bool = False,
     heading_title: str = "",
 ) -> dict[str, object] | None:
+    if trusted_section:
+        heading_match = UNDATED_SECTION_EDUCATION_PATTERN.match(heading_title)
+        if (
+            heading_match
+            and POSTSECONDARY_ROLE_PATTERN.search(heading_match.group("role"))
+            and INSTITUTION_TERMS.search(heading_match.group("organization"))
+        ):
+            heading_entry = make_entry(
+                heading_match.group("organization"),
+                heading_match.group("role"),
+                "education",
+                segment,
+            )
+            if heading_entry:
+                return heading_entry
     match = (
         LINKED_EDUCATION_PATTERN.match(segment)
         or PLAIN_EDUCATION_PATTERN.match(segment)
@@ -531,6 +558,36 @@ def load_csv(path: Path) -> list[dict[str, str]]:
 
 def is_linkedin(url: str) -> bool:
     return "linkedin.com/in/" in clean_text(url).casefold()
+
+
+def preferred_affiliation_records(
+    searches: list[dict[str, object]],
+    profiles: list[dict[str, object]],
+) -> list[dict[str, object]]:
+    """Prefer complete accepted profiles over lossy same-URL search snippets."""
+    complete_profile_urls = {
+        canonical_url(
+            clean_text(profile.get("resolved_url") or profile.get("linkedin_url"))
+        )
+        for profile in profiles
+        if clean_text(profile.get("status")) in {"success", MANUAL_PROFILE_STATUS}
+        and clean_text(profile.get("text"))
+    }
+    complete_profile_urls.discard("")
+
+    filtered_searches: list[dict[str, object]] = []
+    for search in searches:
+        results = [
+            result
+            for result in search.get("results", [])
+            if isinstance(result, dict)
+            and canonical_url(clean_text(result.get("url")))
+            not in complete_profile_urls
+        ]
+        if results:
+            filtered_searches.append({**search, "results": results})
+
+    return filtered_searches + profile_search_records(profiles)
 
 
 def rejected_urls(rows: list[dict[str, str]]) -> set[tuple[str, str]]:
@@ -1254,8 +1311,9 @@ def main() -> int:
     )
     rows = build_rows(
         json.loads(args.people.read_text(encoding="utf-8")),
-        audit.get("searches", [])
-        + profile_search_records(profile_audit.get("profiles", [])),
+        preferred_affiliation_records(
+            audit.get("searches", []), profile_audit.get("profiles", [])
+        ),
         json.loads(args.identities.read_text(encoding="utf-8")),
         json.loads(args.affiliations.read_text(encoding="utf-8")),
         load_csv(args.verified),

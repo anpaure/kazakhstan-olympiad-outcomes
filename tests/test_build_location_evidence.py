@@ -298,6 +298,36 @@ class LocationExtractionTest(unittest.TestCase):
 
         self.assertEqual(build_rows(people, searches, {}), [])
 
+    def test_matching_title_does_not_bridge_different_employers(self):
+        people = [
+            {
+                "person_id": "kaz-worker",
+                "name": "Example Worker",
+                "confidence": "confirmed",
+                "linkedin_url": "https://linkedin.com/in/example-worker",
+                "organization": "Deep Infra",
+                "role": "Software Engineer",
+                "affiliation_type": "employment",
+                "destination_status": "latest_employment",
+            }
+        ]
+        searches = [
+            {
+                "results": [
+                    {
+                        "url": "https://linkedin.com/in/example-worker",
+                        "highlights": [
+                            "# Example Worker Astana, Kazakhstan (KZ) 20 connections "
+                            "## Experience ### Software Engineer - Yandex (Current) "
+                            "Jan 2021 - Present in Almaty, Kazakhstan"
+                        ],
+                    }
+                ]
+            }
+        ]
+
+        self.assertEqual(build_rows(people, searches, {}), [])
+
     def test_reviewed_override_supersedes_automatic_role_location(self):
         people = [
             {

@@ -23,7 +23,17 @@ MANUAL_ALIAS_GROUPS = [
 ]
 
 CANONICAL_NAME_OVERRIDES = {
+    "binazar zhassulan": "Zhassulan Binazar",
+    "kambarov yerkebulan": "Yerkebulan Kambarov",
+    "kazhymurat aknazar": "Aknazar Kazhymurat",
+    "kemeldinov aidyn": "Aidyn Kemeldinov",
     "kemel nurdaulet": "Nurdaulet Kemel",
+    "manatuly angsar": "Angsar Manatuly",
+    "mukashev maxim": "Maxim Mukashev",
+    "sailov talgat": "Talgat Sailov",
+    "shaninov arman": "Arman Shaninov",
+    "sossin viktor": "Viktor Sossin",
+    "umbetalin aibek": "Aibek Umbetalin",
 }
 
 DEFAULT_MANUAL_MERGES = Path("data/person_merges.csv")

@@ -6,6 +6,7 @@ from scripts.collect_kazakhstan_participants import (
     parse_ibo_row,
     parse_imo,
     parse_ioi,
+    parse_ioi_live_scoreboard,
 )
 
 
@@ -131,6 +132,47 @@ class IoiResultsParsingTest(unittest.TestCase):
             participants[0].person_url,
             "https://stats.ioinformatics.org/people/1516",
         )
+
+    def test_live_scoreboard_fills_archive_lag_with_medals(self):
+        teams = {"KAZ": {"name": "Kazakhstan"}, "USA": {"name": "United States"}}
+        users = {
+            "KAZ1": {"f_name": "Gold", "l_name": "Person", "team": "KAZ"},
+            "KAZ2": {"f_name": "Silver", "l_name": "Person", "team": "KAZ"},
+        }
+        scores = {
+            "KAZ1": {"day1": 100, "day2": 100},
+            "KAZ2": {"day1": 80, "day2": 80},
+        }
+        for index, total in enumerate((190, 180), start=20):
+            user_id = f"USA{index}"
+            users[user_id] = {"f_name": "Other", "l_name": str(index), "team": "USA"}
+            scores[user_id] = {"contest": total}
+        for index, total in enumerate(range(159, 148, -1), start=1):
+            user_id = f"USA{index}"
+            users[user_id] = {"f_name": "Other", "l_name": str(index), "team": "USA"}
+            scores[user_id] = {"contest": total}
+
+        participants = parse_ioi_live_scoreboard(
+            2026,
+            "https://stats.example/results/KAZ",
+            teams,
+            users,
+            scores,
+        )
+
+        self.assertEqual(
+            [(row.name, row.award, row.rank, row.score) for row in participants],
+            [
+                ("Gold Person", "Gold", "1/15", "200"),
+                ("Silver Person", "Silver", "4/15", "160"),
+            ],
+        )
+        self.assertEqual(participants[1].person_url, "")
+        self.assertEqual(
+            participants[1].source_url,
+            "https://stats.example/results/KAZ",
+        )
+        self.assertEqual(participants[1].source_type, "scoreboard")
 
 
 if __name__ == "__main__":

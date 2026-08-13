@@ -615,7 +615,8 @@
     ],
     "left_years": [
       2024,
-      2025
+      2025,
+      2026
     ],
     "right_years": [],
     "reason": "reviewed_alias_augmentation",
@@ -631,7 +632,8 @@
       "IOI"
     ],
     "left_years": [
-      2025
+      2025,
+      2026
     ],
     "right_years": [],
     "reason": "reviewed_alias_augmentation",
@@ -881,5 +883,38 @@
     "review_reason": "A Kazakhstan chemistry-Olympiad history identifies Aset Iskakov as the 2002-2003 IChO medalist who entered METU in 2003; the Asset spelling variant's public profile records the same rare-name 2003-2007 METU Petroleum Engineering timeline.",
     "evidence_url": "https://kz.linkedin.com/in/asset-iskakov-805a34a4",
     "canonical_person_id": "kaz-fc88fa90b799"
+  },
+  {
+    "left": "Arman Yesenamanov",
+    "right": "Arman Yesenamanov",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IOI"
+    ],
+    "left_years": [
+      2008
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "CPHOF identifies Arman Yesenamanov as Kazakhstan's 2008 IOI contestant, links his rmn Codeforces account, and records the same person as Arman Yessenamanov on KBTU's 2011 ICPC World Finals team.",
+    "evidence_url": "https://cphof.org/profile/topcoder:army",
+    "canonical_person_id": "kaz-863407f79649"
+  },
+  {
+    "left": "Nurlan Zhussipov",
+    "right": "Nurlan Zhussipov",
+    "token_similarity": 1.0,
+    "shared_olympiads": [
+      "IOI"
+    ],
+    "left_years": [
+      2013,
+      2014
+    ],
+    "right_years": [],
+    "reason": "reviewed_alias_augmentation",
+    "review_reason": "CPHOF links the IOI contestant to the NurlashKO handle; the exact-handle GitHub account uses the full name Nurlan Zhussupov and the same software-development identity.",
+    "evidence_url": "https://github.com/NurlashKO",
+    "canonical_person_id": "kaz-88a74ae3e050"
   }
 ]

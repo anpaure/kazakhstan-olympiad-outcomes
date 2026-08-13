@@ -29,23 +29,23 @@
     "rejected"
   ],
   "counts": {
-    "people": 456,
-    "participations": 680,
-    "affiliations": 2615,
+    "people": 457,
+    "participations": 684,
+    "affiliations": 2624,
     "locations": 414,
     "organization_aliases": 525,
-    "organization_sectors": 211,
-    "destination_reviews": 81,
-    "evidence_rows": 6183,
-    "sources": 1762,
-    "rejections": 166,
-    "complete_outcomes": 435,
-    "resolved_destinations": 409,
+    "organization_sectors": 214,
+    "destination_reviews": 85,
+    "evidence_rows": 6210,
+    "sources": 1771,
+    "rejections": 168,
+    "complete_outcomes": 436,
+    "resolved_destinations": 412,
     "verified_identities": 447,
-    "confirmed_identities": 318,
-    "probable_identities": 129,
-    "identity_only_people": 12,
+    "confirmed_identities": 317,
+    "probable_identities": 130,
+    "identity_only_people": 11,
     "candidate_only_people": 1,
-    "unmatched_people": 8
+    "unmatched_people": 9
   }
 }

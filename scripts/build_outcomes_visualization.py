@@ -120,6 +120,9 @@ def compact_sources(
 ) -> list[dict[str, str]]:
     sources: list[dict[str, str]] = []
     seen: set[str] = set()
+    unpublished_urls = {
+        "https://stats.ioinformatics.org/results/kaz",
+    }
 
     def add(url: object, kind: str, label: str, icon: str) -> None:
         value = str(url or "").strip()
@@ -127,6 +130,7 @@ def compact_sources(
         if (
             not value.startswith(("http://", "https://"))
             or key in seen
+            or key in unpublished_urls
             or (kind != "olympiad" and OLYMPIAD_SOURCE_PATTERN.search(value))
         ):
             return
@@ -217,6 +221,73 @@ def compact_sources(
     return sources[:5]
 
 
+def explicit_destinations(
+    row: dict[str, object], affiliations: list[dict[str, object]]
+) -> list[dict[str, str]]:
+    """Return the primary destination plus source-explicit concurrent roles."""
+    primary_organization = canonicalize_organization(row.get("organization"))
+    if not primary_organization:
+        return []
+
+    primary_metadata = organization_metadata(
+        primary_organization, row.get("organization_category", "")
+    )
+    destinations = [
+        {
+            "organization": display_organization(primary_organization),
+            "role": str(row.get("role") or ""),
+            "organizationType": primary_metadata["organization_type"],
+            "sector": primary_metadata["sector"],
+        }
+    ]
+    if primary_metadata["organization_type"] == "education":
+        return destinations
+
+    destination_review_text = " ".join(
+        str(item.get("evidence_text") or "")
+        for item in affiliations
+        if str(item.get("evidence_kind") or "").casefold()
+        == "destination_source_review"
+    )
+    if not re.search(r"\b(?:both|concurrent(?:ly)?)\b", destination_review_text, re.I):
+        return destinations
+
+    normalized_review_text = destination_review_text.casefold()
+    seen = {primary_organization.casefold()}
+    for item in affiliations:
+        is_current = item.get("is_current") is True or str(
+            item.get("is_current") or ""
+        ).casefold() == "true"
+        if (
+            str(item.get("affiliation_type") or "").casefold() != "employment"
+            or not is_current
+        ):
+            continue
+        organization = canonicalize_organization(item.get("organization"))
+        key = organization.casefold()
+        display_name = display_organization(organization)
+        if (
+            not organization
+            or key in seen
+            or (
+                key not in normalized_review_text
+                and display_name.casefold() not in normalized_review_text
+            )
+        ):
+            continue
+        metadata = organization_metadata(organization, "employment")
+        destinations.append(
+            {
+                "organization": display_name,
+                "role": str(item.get("role") or ""),
+                "organizationType": metadata["organization_type"],
+                "sector": metadata["sector"],
+            }
+        )
+        seen.add(key)
+    return destinations
+
+
 def compact_person(
     row: dict[str, object],
     location: dict[str, object] | None = None,
@@ -230,6 +301,7 @@ def compact_person(
     organization_classification = organization_metadata(
         organization, row.get("organization_category", "")
     )
+    destinations = explicit_destinations(row, affiliations)
     alma_rows = selected_alma_maters(affiliations)
     alma_maters = [
         {
@@ -266,6 +338,7 @@ def compact_person(
         "confidence": row["confidence"],
         "organization": display_organization(organization),
         "role": row["role"],
+        "destinations": destinations,
         "organizationCategory": row["organization_category"],
         "organizationType": organization_classification["organization_type"],
         "sector": organization_classification["sector"],

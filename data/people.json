@@ -1305,21 +1305,6 @@
     "source_urls": "https://stats.ioinformatics.org/results/KAZ"
   },
   {
-    "person_id": "kaz-8b03ffcc0625",
-    "canonical_name": "Kambarov Yerkebulan",
-    "aliases": "Kambarov Yerkebulan",
-    "olympiads": "IBO",
-    "years": "2001;2002",
-    "first_year": 2001,
-    "last_year": 2002,
-    "estimated_birth_year_min": 1982,
-    "estimated_birth_year_max": 1986,
-    "awards": "Bronze",
-    "participant_rows": 2,
-    "research_scope": "career",
-    "source_urls": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2001.pdf;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2002.pdf"
-  },
-  {
     "person_id": "kaz-00408ca19291",
     "canonical_name": "Rashid Amirov",
     "aliases": "Rashid Amirov",
@@ -1393,6 +1378,21 @@
     "participant_rows": 1,
     "research_scope": "career",
     "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-8b03ffcc0625",
+    "canonical_name": "Yerkebulan Kambarov",
+    "aliases": "Kambarov Yerkebulan",
+    "olympiads": "IBO",
+    "years": "2001;2002",
+    "first_year": 2001,
+    "last_year": 2002,
+    "estimated_birth_year_min": 1982,
+    "estimated_birth_year_max": 1986,
+    "awards": "Bronze",
+    "participant_rows": 2,
+    "research_scope": "career",
+    "source_urls": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2001.pdf;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2002.pdf"
   },
   {
     "person_id": "kaz-bb70c982f38a",
@@ -1650,6 +1650,21 @@
     "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
   },
   {
+    "person_id": "kaz-c444a5fa2a99",
+    "canonical_name": "Arman Shaninov",
+    "aliases": "Shaninov Arman",
+    "olympiads": "IBO",
+    "years": "2003",
+    "first_year": 2003,
+    "last_year": 2003,
+    "estimated_birth_year_min": 1984,
+    "estimated_birth_year_max": 1988,
+    "awards": "",
+    "participant_rows": 1,
+    "research_scope": "career",
+    "source_urls": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2003.pdf"
+  },
+  {
     "person_id": "kaz-3769a5a94566",
     "canonical_name": "Dauren Auzhani",
     "aliases": "Dauren Auzhani",
@@ -1753,21 +1768,6 @@
     "participant_rows": 1,
     "research_scope": "career",
     "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
-  },
-  {
-    "person_id": "kaz-c444a5fa2a99",
-    "canonical_name": "Shaninov Arman",
-    "aliases": "Shaninov Arman",
-    "olympiads": "IBO",
-    "years": "2003",
-    "first_year": 2003,
-    "last_year": 2003,
-    "estimated_birth_year_min": 1984,
-    "estimated_birth_year_max": 1988,
-    "awards": "",
-    "participant_rows": 1,
-    "research_scope": "career",
-    "source_urls": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2003.pdf"
   },
   {
     "person_id": "kaz-c884dd65cdc8",
@@ -2205,21 +2205,6 @@
     "source_urls": "https://stats.ioinformatics.org/results/KAZ"
   },
   {
-    "person_id": "kaz-b48f403765ac",
-    "canonical_name": "Sossin Viktor",
-    "aliases": "Sossin Viktor",
-    "olympiads": "IMO",
-    "years": "2005",
-    "first_year": 2005,
-    "last_year": 2005,
-    "estimated_birth_year_min": 1986,
-    "estimated_birth_year_max": 1990,
-    "awards": "Bronze medal",
-    "participant_rows": 1,
-    "research_scope": "career",
-    "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
-  },
-  {
     "person_id": "kaz-26535589e436",
     "canonical_name": "Timur Abishev",
     "aliases": "Timur Abishev",
@@ -2233,6 +2218,21 @@
     "participant_rows": 3,
     "research_scope": "career",
     "source_urls": "https://stats.ioinformatics.org/results/KAZ"
+  },
+  {
+    "person_id": "kaz-b48f403765ac",
+    "canonical_name": "Viktor Sossin",
+    "aliases": "Sossin Viktor",
+    "olympiads": "IMO",
+    "years": "2005",
+    "first_year": 2005,
+    "last_year": 2005,
+    "estimated_birth_year_min": 1986,
+    "estimated_birth_year_max": 1990,
+    "awards": "Bronze medal",
+    "participant_rows": 1,
+    "research_scope": "career",
+    "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
   },
   {
     "person_id": "kaz-fe0afafbd5f3",
@@ -2310,6 +2310,21 @@
     "source_urls": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan"
   },
   {
+    "person_id": "kaz-845e316f4e10",
+    "canonical_name": "Aibek Umbetalin",
+    "aliases": "Umbetalin Aibek",
+    "olympiads": "IBO",
+    "years": "2006",
+    "first_year": 2006,
+    "last_year": 2006,
+    "estimated_birth_year_min": 1987,
+    "estimated_birth_year_max": 1991,
+    "awards": "Bronze",
+    "participant_rows": 1,
+    "research_scope": "career",
+    "source_urls": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2006.pdf"
+  },
+  {
     "person_id": "kaz-3c4d427574a2",
     "canonical_name": "Aizana Turmukhametova",
     "aliases": "Aizana Turmukhametova",
@@ -2355,6 +2370,21 @@
     "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
   },
   {
+    "person_id": "kaz-2c17c88cc511",
+    "canonical_name": "Maxim Mukashev",
+    "aliases": "Mukashev Maxim",
+    "olympiads": "IBO",
+    "years": "2006",
+    "first_year": 2006,
+    "last_year": 2006,
+    "estimated_birth_year_min": 1987,
+    "estimated_birth_year_max": 1991,
+    "awards": "Silver",
+    "participant_rows": 1,
+    "research_scope": "career",
+    "source_urls": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2006.pdf"
+  },
+  {
     "person_id": "kaz-1bea50762a08",
     "canonical_name": "Merlan Nagidulin",
     "aliases": "Merlan Nagidulin",
@@ -2368,21 +2398,6 @@
     "participant_rows": 1,
     "research_scope": "career",
     "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
-  },
-  {
-    "person_id": "kaz-2c17c88cc511",
-    "canonical_name": "Mukashev Maxim",
-    "aliases": "Mukashev Maxim",
-    "olympiads": "IBO",
-    "years": "2006",
-    "first_year": 2006,
-    "last_year": 2006,
-    "estimated_birth_year_min": 1987,
-    "estimated_birth_year_max": 1991,
-    "awards": "Silver",
-    "participant_rows": 1,
-    "research_scope": "career",
-    "source_urls": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2006.pdf"
   },
   {
     "person_id": "kaz-b2785ae44f62",
@@ -2431,23 +2446,8 @@
   },
   {
     "person_id": "kaz-7b9ddf320af6",
-    "canonical_name": "Sailov Talgat",
+    "canonical_name": "Talgat Sailov",
     "aliases": "Sailov Talgat",
-    "olympiads": "IBO",
-    "years": "2006",
-    "first_year": 2006,
-    "last_year": 2006,
-    "estimated_birth_year_min": 1987,
-    "estimated_birth_year_max": 1991,
-    "awards": "Bronze",
-    "participant_rows": 1,
-    "research_scope": "career",
-    "source_urls": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2006.pdf"
-  },
-  {
-    "person_id": "kaz-845e316f4e10",
-    "canonical_name": "Umbetalin Aibek",
-    "aliases": "Umbetalin Aibek",
     "olympiads": "IBO",
     "years": "2006",
     "first_year": 2006,
@@ -2747,7 +2747,7 @@
   {
     "person_id": "kaz-863407f79649",
     "canonical_name": "Arman Yesenamanov",
-    "aliases": "Arman Yesenamanov",
+    "aliases": "Arman Yesenamanov;Arman Yessenamanov",
     "olympiads": "IOI",
     "years": "2008",
     "first_year": 2008,
@@ -3240,6 +3240,21 @@
     "source_urls": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2010;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2011"
   },
   {
+    "person_id": "kaz-f02da7099fac",
+    "canonical_name": "Aidyn Kemeldinov",
+    "aliases": "Kemeldinov Aidyn",
+    "olympiads": "IPhO",
+    "years": "2010",
+    "first_year": 2010,
+    "last_year": 2010,
+    "estimated_birth_year_min": 1991,
+    "estimated_birth_year_max": 1995,
+    "awards": "Silver Medal",
+    "participant_rows": 1,
+    "research_scope": "career",
+    "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
     "person_id": "kaz-f4ec7f952510",
     "canonical_name": "Ali-Amir Aldan",
     "aliases": "Ali-Amir Aldan",
@@ -3253,6 +3268,21 @@
     "participant_rows": 2,
     "research_scope": "career",
     "source_urls": "https://stats.ioinformatics.org/results/KAZ"
+  },
+  {
+    "person_id": "kaz-f648d0d6bf6d",
+    "canonical_name": "Angsar Manatuly",
+    "aliases": "Manatuly Angsar",
+    "olympiads": "IPhO",
+    "years": "2010",
+    "first_year": 2010,
+    "last_year": 2010,
+    "estimated_birth_year_min": 1991,
+    "estimated_birth_year_max": 1995,
+    "awards": "Silver Medal",
+    "participant_rows": 1,
+    "research_scope": "career",
+    "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
   },
   {
     "person_id": "kaz-790df21958f8",
@@ -3298,36 +3328,6 @@
     "participant_rows": 1,
     "research_scope": "career",
     "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
-  },
-  {
-    "person_id": "kaz-f02da7099fac",
-    "canonical_name": "Kemeldinov Aidyn",
-    "aliases": "Kemeldinov Aidyn",
-    "olympiads": "IPhO",
-    "years": "2010",
-    "first_year": 2010,
-    "last_year": 2010,
-    "estimated_birth_year_min": 1991,
-    "estimated_birth_year_max": 1995,
-    "awards": "Silver Medal",
-    "participant_rows": 1,
-    "research_scope": "career",
-    "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
-  },
-  {
-    "person_id": "kaz-f648d0d6bf6d",
-    "canonical_name": "Manatuly Angsar",
-    "aliases": "Manatuly Angsar",
-    "olympiads": "IPhO",
-    "years": "2010",
-    "first_year": 2010,
-    "last_year": 2010,
-    "estimated_birth_year_min": 1991,
-    "estimated_birth_year_max": 1995,
-    "awards": "Silver Medal",
-    "participant_rows": 1,
-    "research_scope": "career",
-    "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
   },
   {
     "person_id": "kaz-c97c1b9e1718",
@@ -3945,21 +3945,6 @@
     "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
   },
   {
-    "person_id": "kaz-ef33110ee8b0",
-    "canonical_name": "Binazar Zhassulan",
-    "aliases": "Binazar Zhassulan;Zhassulan Binazar",
-    "olympiads": "IChO",
-    "years": "2013;2014",
-    "first_year": 2013,
-    "last_year": 2014,
-    "estimated_birth_year_min": 1994,
-    "estimated_birth_year_max": 1998,
-    "awards": "Bronze",
-    "participant_rows": 2,
-    "research_scope": "career",
-    "source_urls": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2013;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2014"
-  },
-  {
     "person_id": "kaz-12d9dc922ba8",
     "canonical_name": "Bogdan Zagribelnyy",
     "aliases": "Bogdan Zagribelnyy",
@@ -4037,7 +4022,7 @@
   {
     "person_id": "kaz-88a74ae3e050",
     "canonical_name": "Nurlan Zhussipov",
-    "aliases": "Nurlan Zhussipov",
+    "aliases": "Nurlan Zhussipov;Nurlan Zhussupov",
     "olympiads": "IOI",
     "years": "2013;2014",
     "first_year": 2013,
@@ -4093,6 +4078,21 @@
     "participant_rows": 1,
     "research_scope": "career",
     "source_urls": "https://stats.ioinformatics.org/results/KAZ"
+  },
+  {
+    "person_id": "kaz-ef33110ee8b0",
+    "canonical_name": "Zhassulan Binazar",
+    "aliases": "Binazar Zhassulan;Zhassulan Binazar",
+    "olympiads": "IChO",
+    "years": "2013;2014",
+    "first_year": 2013,
+    "last_year": 2014,
+    "estimated_birth_year_min": 1994,
+    "estimated_birth_year_max": 1998,
+    "awards": "Bronze",
+    "participant_rows": 2,
+    "research_scope": "career",
+    "source_urls": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2013;https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2014"
   },
   {
     "person_id": "kaz-47792c0edb59",
@@ -4770,6 +4770,21 @@
     "source_urls": "https://www.imo-official.org/results/individual/country/KAZ/"
   },
   {
+    "person_id": "kaz-a875a18e20f1",
+    "canonical_name": "Aknazar Kazhymurat",
+    "aliases": "Kazhymurat Aknazar",
+    "olympiads": "IPhO",
+    "years": "2017",
+    "first_year": 2017,
+    "last_year": 2017,
+    "estimated_birth_year_min": 1998,
+    "estimated_birth_year_max": 2002,
+    "awards": "Gold Medal",
+    "participant_rows": 1,
+    "research_scope": "career",
+    "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
     "person_id": "kaz-e2c1785c3b0f",
     "canonical_name": "Alexey Tsekhovoy",
     "aliases": "Alexey Tsekhovoy",
@@ -4858,21 +4873,6 @@
     "participant_rows": 2,
     "research_scope": "career",
     "source_urls": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2017;https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2018"
-  },
-  {
-    "person_id": "kaz-a875a18e20f1",
-    "canonical_name": "Kazhymurat Aknazar",
-    "aliases": "Kazhymurat Aknazar",
-    "olympiads": "IPhO",
-    "years": "2017",
-    "first_year": 2017,
-    "last_year": 2017,
-    "estimated_birth_year_min": 1998,
-    "estimated_birth_year_max": 2002,
-    "awards": "Gold Medal",
-    "participant_rows": 1,
-    "research_scope": "career",
-    "source_urls": "https://ipho-unofficial.org/countries/KAZ/individual"
   },
   {
     "person_id": "kaz-c792c9bfcef4",
@@ -6154,13 +6154,13 @@
     "canonical_name": "Mansur Mamadakhunov",
     "aliases": "Mansur Mamadakhunov",
     "olympiads": "IOI",
-    "years": "2023;2025",
+    "years": "2023;2025;2026",
     "first_year": 2023,
-    "last_year": 2025,
+    "last_year": 2026,
     "estimated_birth_year_min": 2004,
     "estimated_birth_year_max": 2008,
     "awards": "Honourable Mention;Silver",
-    "participant_rows": 2,
+    "participant_rows": 3,
     "research_scope": "recent_competitor",
     "source_urls": "https://stats.ioinformatics.org/results/KAZ"
   },
@@ -6439,13 +6439,13 @@
     "canonical_name": "Maxim Tsoy",
     "aliases": "Maksim Tsoy;Maxim Tsoy",
     "olympiads": "IOI",
-    "years": "2024;2025",
+    "years": "2024;2025;2026",
     "first_year": 2024,
-    "last_year": 2025,
+    "last_year": 2026,
     "estimated_birth_year_min": 2005,
     "estimated_birth_year_max": 2009,
-    "awards": "Silver",
-    "participant_rows": 2,
+    "awards": "Gold;Silver",
+    "participant_rows": 3,
     "research_scope": "recent_competitor",
     "source_urls": "https://stats.ioinformatics.org/results/KAZ"
   },
@@ -6499,13 +6499,13 @@
     "canonical_name": "Akezhan Askar",
     "aliases": "Akezhan Askar;Akzhan Askar",
     "olympiads": "IOI",
-    "years": "2025",
+    "years": "2025;2026",
     "first_year": 2025,
-    "last_year": 2025,
+    "last_year": 2026,
     "estimated_birth_year_min": 2006,
     "estimated_birth_year_max": 2010,
     "awards": "Silver",
-    "participant_rows": 1,
+    "participant_rows": 2,
     "research_scope": "recent_competitor",
     "source_urls": "https://stats.ioinformatics.org/results/KAZ"
   },
@@ -6718,6 +6718,21 @@
     "participant_rows": 1,
     "research_scope": "recent_competitor",
     "source_urls": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan"
+  },
+  {
+    "person_id": "kaz-175c23c0ca43",
+    "canonical_name": "Aldiyar Seitbay",
+    "aliases": "Aldiyar Seitbay",
+    "olympiads": "IOI",
+    "years": "2026",
+    "first_year": 2026,
+    "last_year": 2026,
+    "estimated_birth_year_min": 2007,
+    "estimated_birth_year_max": 2011,
+    "awards": "Silver",
+    "participant_rows": 1,
+    "research_scope": "recent_competitor",
+    "source_urls": "https://stats.ioinformatics.org/results/KAZ"
   },
   {
     "person_id": "kaz-796f13ed0022",

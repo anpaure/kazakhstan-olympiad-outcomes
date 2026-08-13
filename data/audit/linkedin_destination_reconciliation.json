@@ -976,6 +976,22 @@
     "review_reference_url": ""
   },
   {
+    "person_id": "kaz-863407f79649",
+    "name": "Arman Yesenamanov",
+    "linkedin_url": "https://kz.linkedin.com/in/yesenarman",
+    "profile_hydration_status": "success",
+    "profile_current_organizations": "Yandex",
+    "profile_current_roles": "Software Engineer",
+    "published_destination": "Deep Infra",
+    "published_role": "Software Engineer",
+    "organization_alignment": "reconciled",
+    "role_alignment": "reconciled",
+    "alignment_status": "reconciled_destination_review",
+    "review_decision": "destination_source_review",
+    "review_reason": "Arman's exact-handle GitHub profile was updated in June 2026 to list @deepinfra and shows July 2026 public contributions to deepinfra/docs. This newer active developer identity supersedes the accepted LinkedIn snapshot's stale 2021-present Yandex entry. The newer source does not publish a work location, so no current country is inferred.",
+    "review_reference_url": "https://github.com/yesenarman"
+  },
+  {
     "person_id": "kaz-2b2d1a08a130",
     "name": "Arnat Balabiyev",
     "linkedin_url": "https://linkedin.com/in/arnat-balabiyev",
@@ -2310,13 +2326,13 @@
     "profile_hydration_status": "success",
     "profile_current_organizations": "Otbasy Bank",
     "profile_current_roles": "Head of the budget planning division of the planning and strategic analysis department",
-    "published_destination": "Altyn Bank",
-    "published_role": "Head of Financial Risks and Portfolio Analysis Division",
-    "organization_alignment": "reconciled",
-    "role_alignment": "reconciled",
-    "alignment_status": "reconciled_source_precedence",
-    "review_decision": "retain_published_ambiguous_current_roles",
-    "review_reason": "The same profile has an Altyn Bank current headline and an overlapping Otbasy Bank entry marked current; it does not establish that the older-dated Otbasy entry replaced the headline role",
+    "published_destination": "Otbasy Bank",
+    "published_role": "Head of Budget Planning Division, Planning and Strategic Analysis Department",
+    "organization_alignment": "matched",
+    "role_alignment": "matched",
+    "alignment_status": "matched_current_profile",
+    "review_decision": "destination_source_review",
+    "review_reason": "The profile's detailed experience section explicitly identifies Otbasy Bank and dates this role from January 2019 to present in Almaty. Altyn Bank appears only in the headline and a roleless company block, so the dated experience row takes precedence and the stale headline is retained only as historical evidence.",
     "review_reference_url": "https://linkedin.com/in/kairat-zhubayev-150785174"
   },
   {
@@ -2337,7 +2353,7 @@
   },
   {
     "person_id": "kaz-8b03ffcc0625",
-    "name": "Kambarov Yerkebulan",
+    "name": "Yerkebulan Kambarov",
     "linkedin_url": "https://linkedin.com/in/yerkebulan-kambarov-b32aa160",
     "profile_hydration_status": "success",
     "profile_current_organizations": "Johnson & Johnson",
@@ -3086,6 +3102,22 @@
     "review_decision": "destination_source_review",
     "review_reason": "The accepted public profile identifies Consultant for the WHO Office in Cyprus as current from June 2025. This supersedes the older Technical Officer title, whose profile entries end in 2023.",
     "review_reference_url": "https://linkedin.com/in/nurlan-algashov"
+  },
+  {
+    "person_id": "kaz-88a74ae3e050",
+    "name": "Nurlan Zhussipov",
+    "linkedin_url": "https://kz.linkedin.com/in/nurlan-zhussupov-634baa45",
+    "profile_hydration_status": "success",
+    "profile_current_organizations": "Codebusters;FizMat",
+    "profile_current_roles": "Android Developer;Rezerv;Ychenik",
+    "published_destination": "Woven by Toyota",
+    "published_role": "Team Member",
+    "organization_alignment": "reconciled",
+    "role_alignment": "reconciled",
+    "alignment_status": "reconciled_destination_review",
+    "review_decision": "destination_source_review",
+    "review_reason": "The exact IOI-linked NurlashKO GitHub account's November 2025 commit uses Nurlan's full-name woven.toyota work address. It is newer than commits from the same repository using mercari.com and supersedes the accepted LinkedIn snapshot's stale Codebusters current marker. No formal Woven title is public, so Team Member is retained as a neutral affiliation label.",
+    "review_reference_url": "https://github.com/NurlashKO/blog/commit/96b521a0bdba07f8e90a6c0c74c5206c84ee7247.patch"
   },
   {
     "person_id": "kaz-6b502ce47b9f",

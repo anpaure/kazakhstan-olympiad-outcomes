@@ -1,11 +1,12 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-08-12",
-  "sample_seed": "20260812-round3",
+  "reviewed_at": "2026-08-13",
+  "sample_seed": "20260812-round4",
   "era_cutoff_year": 2005,
   "sample_per_stratum": 12,
-  "sample_method": "Within each confidence/era stratum, sort by SHA-256 of seed:stratum:person_id and take the first rows.",
-  "sample_population": 447,
+  "sample_method": "Within each confidence/era stratum, sort by SHA-256 of seed:stratum:person_id and take the first rows after excluding people signed in earlier review rounds.",
+  "excluded_previously_reviewed": 48,
+  "sample_population": 399,
   "sample_size": 48,
   "sample_strata": {
     "probable_older": 12,
@@ -14,20 +15,21 @@
     "confirmed_newer": 12
   },
   "sample_review_statuses": {
-    "pass": 37,
-    "pass_after_correction": 11
+    "pass": 44,
+    "pass_after_correction": 4
   },
-  "deep_reviewed_profiles": 19,
-  "accepted_linkedin_profiles": 300,
+  "deep_reviewed_profiles": 20,
+  "cumulative_signed_profiles": 96,
+  "accepted_linkedin_profiles": 302,
   "linkedin_alignment_statuses": {
-    "matched_current_profile": 234,
+    "matched_current_profile": 235,
     "no_current_affiliation_parsed": 39,
     "profile_retrieval_unavailable": 11,
-    "reconciled_source_precedence": 8,
-    "reconciled_destination_review": 4,
+    "reconciled_source_precedence": 7,
+    "reconciled_destination_review": 6,
     "matched_historical_profile": 4
   },
   "unreconciled_linkedin_profiles": 0,
-  "root_cause_findings": 33,
+  "root_cause_findings": 44,
   "unresolved_findings": 0
 }

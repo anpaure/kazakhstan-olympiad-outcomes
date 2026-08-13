@@ -233,6 +233,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
     def test_zhomart_sadykov_agi_lab_ntu_and_kazakhstan(self):
         person = self.people["kaz-d5a9e6425d45"]
         location = self.locations[person["person_id"]]
+        affiliations = self.affiliations_for(person["person_id"])
 
         self.assertEqual(person["organization"], "AGI Lab")
         self.assertEqual(person["role"], "Chief Executive Officer")
@@ -240,6 +241,14 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertIn(
             "Nanyang Technological University (NTU)",
             self.alma_maters(person["person_id"]),
+        )
+        self.assertTrue(
+            any(
+                affiliation["organization"] == "Khan Group"
+                and affiliation["role"] == "Chief Executive Officer"
+                and affiliation["is_current"]
+                for affiliation in affiliations
+            )
         )
         self.assertEqual(location["country_code"], "KZ")
 
@@ -1720,8 +1729,9 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         person = self.people["kaz-a2f029eab00c"]
         affiliations = self.affiliations_for(person["person_id"])
 
-        self.assertEqual(person["organization"], "")
-        self.assertEqual(person["destination_status"], "none")
+        self.assertEqual(person["organization"], "Xperience AI")
+        self.assertEqual(person["end_year"], "2021")
+        self.assertEqual(person["destination_status"], "latest_employment")
         self.assertTrue(
             any(
                 row["organization"] == "Xperience AI"
@@ -1968,6 +1978,120 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                     self.assertEqual(
                         location["evidence_kind"], "historical_outcome_location"
                     )
+
+    def test_nurlan_zhussipov_uses_newer_woven_identity_trail(self):
+        person = self.people["kaz-88a74ae3e050"]
+        location = self.locations[person["person_id"]]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertIn("Nurlan Zhussupov", person["aliases"])
+        self.assertEqual(person["organization"], "Woven by Toyota")
+        self.assertEqual(person["role"], "Team Member")
+        self.assertEqual(person["destination_status"], "latest_employment")
+        self.assertEqual(
+            person["linkedin_url"],
+            "https://kz.linkedin.com/in/nurlan-zhussupov-634baa45",
+        )
+        self.assertIn(
+            "Kazakh-British Technical University (KBTU)",
+            self.alma_maters(person["person_id"]),
+        )
+        self.assertTrue(
+            any(
+                row["organization"] == "Mercari"
+                and row["end_year"] == "2025"
+                and not row["is_current"]
+                for row in affiliations
+            )
+        )
+        self.assertEqual(location["country_code"], "JP")
+        self.assertEqual(location["location_label"], "Tokyo, Japan")
+
+    def test_arman_deep_infra_does_not_inherit_yandex_country(self):
+        person = self.people["kaz-863407f79649"]
+
+        self.assertEqual(person["organization"], "Deep Infra")
+        self.assertEqual(person["role"], "Software Engineer")
+        self.assertNotIn(person["person_id"], self.locations)
+
+    def test_amir_tulegenov_uses_bounded_xperience_ai_evidence(self):
+        person = self.people["kaz-a2f029eab00c"]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["organization"], "Xperience AI")
+        self.assertEqual(person["role"], "OpenCV Contributor")
+        self.assertEqual(person["end_year"], "2021")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertNotIn(person["person_id"], self.locations)
+        self.assertTrue(
+            any(
+                row["organization"] == "Xperience AI"
+                and row["role"] == "OpenCV Contributor"
+                and row["end_year"] == "2021"
+                and not row["is_current"]
+                for row in affiliations
+            )
+        )
+
+    def test_kairat_zhubayev_prefers_dated_otbasy_experience(self):
+        person = self.people["kaz-bcd45c045c97"]
+        location = self.locations[person["person_id"]]
+        affiliations = self.affiliations_for(person["person_id"])
+
+        self.assertEqual(person["organization"], "Otbasy Bank")
+        self.assertEqual(
+            person["role"],
+            "Head of Budget Planning Division, Planning and Strategic Analysis Department",
+        )
+        self.assertEqual(person["start_year"], "2019")
+        self.assertEqual(location["country_code"], "KZ")
+        self.assertEqual(location["location_label"], "Almaty, Kazakhstan")
+        self.assertTrue(
+            any(
+                row["organization"] == "Altyn Bank"
+                and not row["is_current"]
+                for row in affiliations
+            )
+        )
+        self.assertFalse(
+            any(
+                row["organization"] == "Altyn Bank" and row["is_current"]
+                for row in affiliations
+            )
+        )
+
+    def test_sampled_authoritative_biographies_supply_education(self):
+        self.assertEqual(
+            self.alma_maters("kaz-49f853356dc6"),
+            {
+                "Lomonosov Moscow State University (MSU)",
+                "New Economic School",
+                "University of California, Berkeley",
+            },
+        )
+        self.assertEqual(
+            self.alma_maters("kaz-ec29db418566"),
+            {"Moscow Institute of Physics and Technology (MIPT)"},
+        )
+        self.assertEqual(
+            self.alma_maters("kaz-6fa4b627983f"),
+            {"Duke University", "University of Oxford"},
+        )
+        self.assertNotIn("kaz-6fa4b627983f", self.locations)
+
+    def test_hydrated_profiles_supersede_lossy_affiliation_snippets(self):
+        self.assertEqual(
+            self.alma_maters("kaz-8c9c1b2b81a6"),
+            {"D. Serikbayev East Kazakhstan Technical University"},
+        )
+        self.assertEqual(
+            self.alma_maters("kaz-0606abc1583b"),
+            {"Boğaziçi University", "The Ohio State University"},
+        )
+        self.assertNotIn(
+            "Suleyman Demirel University (SDU)",
+            self.alma_maters("kaz-0606abc1583b"),
+        )
 
 
 if __name__ == "__main__":

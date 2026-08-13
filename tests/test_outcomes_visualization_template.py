@@ -18,9 +18,10 @@ class OrganizationSplitTest(unittest.TestCase):
 
     def test_company_ranking_uses_destination_and_education_uses_alma_maters(self):
         self.assertIn(
-            "person.organizationType !== 'education' ? [person.organization] : []",
+            "employmentDestinations(person).map(destination => destination.organization)",
             self.template,
         )
+        self.assertIn("person.destinations && person.destinations.length", self.template)
         self.assertIn("...(person.almaMaters || []).map(alma => alma.organization)", self.template)
         self.assertIn("personHasOrganization(person, state.selectedOrganization)", self.template)
         self.assertNotIn('data-control="companies-only"', self.template)
@@ -180,7 +181,7 @@ class LocalizationAndShareTest(unittest.TestCase):
         self.assertIn("new Intl.DisplayNames", self.template)
         self.assertIn("const countryLabels = {", self.template)
         self.assertIn("countryLabels[currentLanguage]?.[code]", self.template)
-        self.assertIn("translatedSector(person.sector)", self.template)
+        self.assertIn("destinationSectors.map(translatedSector)", self.template)
         self.assertIn("translatedSourceLabel(source.label)", self.template)
 
     def test_share_uses_native_api_with_clipboard_fallback(self):
