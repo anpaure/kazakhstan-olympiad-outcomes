@@ -53,7 +53,7 @@ sector-5324d0e0a8a9a060,Desargues AI,company,Technology & Software,Reviewed core
 sector-538b15b97d3270c2,Deutsche Bank,company,Finance & Insurance,Reviewed core activity is banking and financial services.
 sector-64be73229f88cac9,Deutsches Elektronen-Synchrotron DESY,nonprofit,Education & Research,Reviewed organization is a publicly funded scientific research center.
 sector-f6f193d615ec248c,DFlow,company,Technology & Software,Reviewed core activity is blockchain trading infrastructure.
-sector-d9b71961fa5e8228,Dove Science Academy,nonprofit,Education & Research,Reviewed organization is a public charter-school network.
+sector-d9b71961fa5e8228,Dove Science Academy,education,Education & Research,Reviewed organization is a public charter-school network.
 sector-bb090d4cc6a01ecd,Drizzle,company,Technology & Software,Reviewed core activity is software products.
 sector-91268016fe6765ef,ElevenLabs,company,Technology & Software,Reviewed core activity is AI audio software.
 sector-c4f106ca6cc7424d,Embassy of Kazakhstan in the Republic of Korea,government,Government & Public Sector,Reviewed organization is a diplomatic mission.
@@ -77,6 +77,7 @@ sector-6ad05f5b3d95d338,GrapheneOS Foundation,nonprofit,Technology & Software,Re
 sector-cd365ddfbaaa161c,GRATA International,company,Consulting & Professional Services,Reviewed core activity is legal services.
 sector-62908d63ac2589c8,Graviton Research Capital,company,Finance & Insurance,Reviewed core activity is quantitative investment management.
 sector-cda285a15b31ddac,Higgsfield AI,company,Technology & Software,Reviewed core activity is generative AI software.
+sector-cfb2cbc2eab2c79d,HITS,company,Healthcare & Life Sciences,The accepted profile links hits-ai and the company's own profile identifies a privately held AI drug-discovery company rather than an educational institution.
 sector-1a41a2e61a1d3e4b,Home Credit Bank,company,Finance & Insurance,Reviewed core activity is consumer banking.
 sector-7a23266ba6f58eb2,Honeywell,company,Industrial & Manufacturing,Reviewed core activity is industrial engineering and manufacturing.
 sector-df853f864c74fa85,Huawei,company,Technology & Software,Reviewed core activity is telecommunications and computing technology.
@@ -86,7 +87,7 @@ sector-e65e95ec71ac3e2b,Improvado,company,Technology & Software,The reviewed des
 sector-3478318400e64a2e,inDrive,company,Technology & Software,Reviewed core activity is a technology platform for mobility and urban services.
 sector-784b3795c944c9a6,InnoDent,company,Healthcare & Life Sciences,The reviewed destination develops dental-regeneration biotechnology.
 sector-5505720f19964d65,Insilico Medicine,company,Healthcare & Life Sciences,Reviewed core activity is AI-enabled drug discovery.
-sector-84233a8c7c872f26,Institute of Plant Biology and Biotechnology,nonprofit,Education & Research,Reviewed organization is a public scientific institute for plant biology and biotechnology research.
+sector-84233a8c7c872f26,Institute of Plant Biology and Biotechnology,education,Education & Research,Reviewed organization is a public scientific institute for plant biology and biotechnology research.
 sector-5e28929224141843,Intel Corporation,company,Technology & Software,Reviewed core activity is semiconductor technology.
 sector-365b9fca035bcf93,iOS_Flutter,company,Technology & Software,Reviewed core activity is mobile software development.
 sector-79bab30d3f57461d,Jane Street,company,Finance & Insurance,Reviewed core activity is quantitative trading.
@@ -167,7 +168,7 @@ sector-a01c6b28c9be9239,Siemens Healthineers,company,Healthcare & Life Sciences,
 sector-b2b94b06a0073d0d,Silleno,company,Energy & Natural Resources,Reviewed core activity is petrochemicals.
 sector-cff6ee72182eb4aa,Singapore International Math Contests Centre (SIMCC),company,Education & Research,Reviewed core activity is organizing and delivering international academic competitions and training.
 sector-ad0171e49f3db50d,Singapore National Physics and Mathematics Olympiad Teams,independent,Education & Research,Reviewed activity is preparing Singapore's national physics and mathematics Olympiad teams.
-sector-a83a403aa39134e9,Skoltech,nonprofit,Education & Research,Reviewed organization is a graduate research university focused on science and technology.
+sector-a83a403aa39134e9,Skoltech,education,Education & Research,Reviewed organization is a graduate research university focused on science and technology.
 sector-59bde72b615b1278,SLB,company,Energy & Natural Resources,Reviewed core activity is oilfield technology and services.
 sector-e054a44dfbc8b1fc,Smart Global (IIoT),company,Technology & Software,Reviewed core activity is industrial internet-of-things software.
 sector-98df9a59f0641d0c,Snap,company,Consumer & Media,Reviewed core activity is consumer social media.

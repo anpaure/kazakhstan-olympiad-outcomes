@@ -2,8 +2,8 @@
   "checked_at": "2026-09-07",
   "target": "local copy of the published page",
   "people": 457,
-  "known_country_chart_total": 415,
-  "unknown_countries": 42,
+  "known_country_chart_total": 410,
+  "unknown_countries": 47,
   "sort_toggles": ["name", "country", "alma", "destination", "year"],
   "languages": ["en", "ru", "kk"],
   "viewport_widths": [1440, 390],
@@ -18,5 +18,17 @@
   "research_affiliation_search": "passed",
   "concurrent_ceo_roles": "passed",
   "empty_results_clear_charts": "passed",
+  "admissions_do_not_supply_attendance_or_country": "passed",
+  "non_degree_course_search_without_alma_mater": "passed",
+  "hits_company_and_skoltech_education": "passed",
+  "specific_current_role": "passed",
+  "sector_filter_includes_hits": "passed",
+  "olympiad_filter_country_totals": [
+    {"olympiad": "IMO", "people": 132, "known": 117, "pie": 117},
+    {"olympiad": "IOI", "people": 70, "known": 60, "pie": 60},
+    {"olympiad": "IPhO", "people": 89, "known": 77, "pie": 77},
+    {"olympiad": "IBO", "people": 84, "known": 77, "pie": 77},
+    {"olympiad": "IChO", "people": 83, "known": 80, "pie": 80}
+  ],
   "new_public_person_or_source_links": 0
 }

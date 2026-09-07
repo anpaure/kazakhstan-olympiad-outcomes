@@ -14,9 +14,11 @@ from pathlib import Path
 try:
     from scripts.destination_reviews import load_destination_reviews
     from scripts.organization_names import canonicalize_organization
+    from scripts.organization_sectors import load_organization_sectors
 except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
     from destination_reviews import load_destination_reviews
     from organization_names import canonicalize_organization
+    from organization_sectors import load_organization_sectors
 
 
 CONFIDENCE_RANK = {"unmatched": -1, "candidate": 0, "probable": 1, "confirmed": 2}
@@ -137,6 +139,13 @@ def organization_category(organization: str, affiliation_type: str) -> str:
     affiliation_type = clean_text(affiliation_type).casefold()
     if affiliation_type == "education":
         return "Education"
+    reviewed = load_organization_sectors().get(normalized_organization)
+    if reviewed:
+        if reviewed["organization_type"] == "education":
+            return "Academia"
+        if reviewed["organization_type"] == "government":
+            return "Government"
+        return "Industry"
     if any(
         term in text
         for term in [
@@ -165,7 +174,6 @@ def organization_category(organization: str, affiliation_type: str) -> str:
         "beyond curriculum pf",
         "binus international",
         "harbour.space",
-        "hits",
         "hkust",
         "kaist",
         "mit",
@@ -226,6 +234,13 @@ def role_category(role: str, organization: str, affiliation_type: str) -> str:
     return "Other"
 
 
+def is_prospective_education(role: object) -> bool:
+    return bool(re.search(
+        r"\b(?:incoming|prospective)\b|\badmitted\s+(?:to|in)\b|\badmission offer\b",
+        clean_text(role), re.IGNORECASE,
+    ))
+
+
 def normalize_destination(
     organization: str,
     role: str,
@@ -283,6 +298,15 @@ def normalize_destination(
         )
 
     role_text = role.casefold()
+    if is_prospective_education(role) and (
+        affiliation_type.casefold() == "education"
+        or re.search(r"\b(?:student|phd|doctoral|undergraduate|graduate)\b", role_text)
+    ):
+        return (
+            "", "", "", "history_only",
+            "An admission or planned enrollment is retained in history; attendance is not established.",
+            "", "",
+        )
     end_is_current = not end_year or (
         end_year.isdigit() and int(end_year) >= as_of_year
     )

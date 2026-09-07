@@ -561,17 +561,6 @@
     "evidence_url": "https://uk.linkedin.com/in/alishertortay"
   },
   {
-    "person_id": "kaz-1877dd6f71f9",
-    "name": "Alisher Yerkebayev",
-    "country_code": "FR",
-    "country_name": "France",
-    "location_label": "Paris, France",
-    "evidence_url": "https://www.ens.psl.eu/en/contact",
-    "evidence_kind": "current_education_location",
-    "confidence": "probable",
-    "review_reason": "Country follows the accepted active student affiliation at École normale supérieure (ENS); the linked official institution source establishes the campus location. ENS's official contact page identifies its Paris campus."
-  },
-  {
     "person_id": "kaz-8282f3ec5f44",
     "name": "Almas Rymov",
     "country_code": "CA",
@@ -2486,17 +2475,6 @@
     "review_reason": "The accepted profile places Marat in the United Arab Emirates alongside the ongoing eXpace founder and CEO role."
   },
   {
-    "person_id": "kaz-c8b296e6cadb",
-    "name": "Margulan Sharel",
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "location_label": "London, United Kingdom",
-    "evidence_url": "https://www.imperial.ac.uk/visit/campuses/",
-    "evidence_kind": "current_education_location",
-    "confidence": "probable",
-    "review_reason": "Country follows the accepted active student affiliation at Imperial College London; the linked official institution source establishes the campus location. Imperial's official campus page identifies its London campuses."
-  },
-  {
     "person_id": "kaz-3dd740673c5d",
     "name": "Maxat Aipanov",
     "country_code": "KZ",
@@ -2517,17 +2495,6 @@
     "confidence": "probable",
     "review_reason": "The accepted profile places the person in United Arab Emirates and independently lists the matched current role at Smart Global (IIoT).",
     "evidence_url": "https://linkedin.com/in/maxim-shpilkin"
-  },
-  {
-    "person_id": "kaz-618279226751",
-    "name": "Maxim Tsoy",
-    "country_code": "SG",
-    "country_name": "Singapore",
-    "location_label": "Singapore",
-    "evidence_url": "https://www.ntu.edu.sg/about-us/contact-us",
-    "evidence_kind": "current_education_location",
-    "confidence": "probable",
-    "review_reason": "Country follows the accepted active student affiliation at Nanyang Technological University (NTU); the linked official institution source establishes the campus location. NTU's official contact page identifies its Singapore campus."
   },
   {
     "person_id": "kaz-c97c1b9e1718",
@@ -2825,17 +2792,6 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "The new KazAID chairmanship, Astana profile location, and dated July/August 2026 official meeting reports agree. The old Seoul embassy role is superseded."
-  },
-  {
-    "person_id": "kaz-92adb8a08f0e",
-    "name": "Nurgul Yegenbergenova",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "Cambridge, Massachusetts, United States",
-    "evidence_url": "https://www.mit.edu/visitmit/",
-    "evidence_kind": "current_education_location",
-    "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Massachusetts Institute of Technology (MIT); the linked official institution source establishes the campus location. MIT's official visitor page identifies its Cambridge campus."
   },
   {
     "person_id": "kaz-2732f0e135fa",
@@ -3980,17 +3936,6 @@
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
     "review_reason": "Samruk-Kazyna's current appointment notice places Yelzhas at Kazakhstan Temir Zholy in Astana."
-  },
-  {
-    "person_id": "kaz-eebfbe6a6de9",
-    "name": "Yenlik Bakytbekova",
-    "country_code": "GB",
-    "country_name": "United Kingdom",
-    "location_label": "Cambridge, England, United Kingdom",
-    "evidence_url": "https://www.cam.ac.uk/about-the-university/contact-the-university",
-    "evidence_kind": "current_education_location",
-    "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at University of Cambridge; the linked official institution source establishes the campus location. The university's official contact page identifies its Cambridge location."
   },
   {
     "person_id": "kaz-f63c5a4ed4de",

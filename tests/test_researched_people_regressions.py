@@ -30,6 +30,37 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             if row["person_id"] == person_id and row["selected_as_alma_mater"]
         }
 
+    def test_incoming_admissions_do_not_supply_current_outcome_or_country(self):
+        for person_id in ("kaz-1877dd6f71f9", "kaz-c8b296e6cadb", "kaz-618279226751", "kaz-92adb8a08f0e", "kaz-eebfbe6a6de9"):
+            with self.subTest(person_id=person_id):
+                self.assertEqual(self.people[person_id]["destination_status"], "history_only")
+                self.assertEqual(self.people[person_id]["organization"], "")
+                self.assertNotIn(person_id, self.locations)
+                admissions = [r for r in self.affiliations_for(person_id) if "incoming" in r["role"].lower()]
+                self.assertTrue(admissions)
+                self.assertTrue(all(not r["is_current"] and not r["selected_as_alma_mater"] for r in admissions))
+
+    def test_kravtsov_online_course_remains_searchable_but_not_alma_mater(self):
+        person_id = "kaz-bb641e236bb0"
+        self.assertNotIn("Stanford University", self.alma_maters(person_id))
+        self.assertTrue(any("XCS229" in r["role"] for r in self.affiliations_for(person_id)))
+
+    def test_current_profile_role_and_start_dates_are_preserved(self):
+        for person_id, role, start_year in (
+            ("kaz-f0f8ae850677", "Software Engineer", "2024"),
+            ("kaz-8a1e18c44a89", "AI Researcher", "2025"),
+            ("kaz-ce2eeb5d3d04", "Quantitative Technologist", "2025"),
+        ):
+            with self.subTest(person_id=person_id):
+                self.assertEqual(self.people[person_id]["role"], role)
+                self.assertEqual(self.people[person_id]["start_year"], start_year)
+                self.assertEqual(self.people[person_id]["end_year"], "")
+
+    def test_admission_does_not_invent_previous_university_end_date(self):
+        hkust = next(r for r in self.affiliations_for("kaz-1877dd6f71f9") if r["organization"] == "Hong Kong University of Science and Technology (HKUST)")
+        self.assertEqual(hkust["end_year"], "")
+        self.assertFalse(hkust["is_current"])
+
     def affiliations_for(self, person_id):
         return [
             row for row in self.affiliations if row["person_id"] == person_id
@@ -793,21 +824,18 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(location["country_code"], "KZ")
         self.assertEqual(location["location_label"], "Kyzylorda Region, Kazakhstan")
 
-    def test_maxim_tsoy_incoming_ntu_student(self):
+    def test_maxim_tsoy_ntu_admission_is_not_attendance(self):
         person = self.people["kaz-618279226751"]
-        location = self.locations[person["person_id"]]
         affiliations = self.affiliations_for(person["person_id"])
 
-        self.assertEqual(
-            person["organization"], "Nanyang Technological University (NTU)"
-        )
-        self.assertEqual(person["role"], "Incoming Undergraduate Student")
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["destination_status"], "history_only")
         self.assertEqual(person["confidence"], "probable")
         self.assertEqual(
             self.alma_maters(person["person_id"]),
-            {"Nanyang Technological University (NTU)"},
+            {"Republican Physics and Mathematics School (RFMS)"},
         )
-        self.assertEqual(location["country_code"], "SG")
+        self.assertNotIn(person["person_id"], self.locations)
         self.assertTrue(
             any(
                 row["organization"]
@@ -855,26 +883,22 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         )
         self.assertTrue(self.affiliations_for(person_id))
 
-    def test_yenlik_bakytbekova_incoming_cambridge_student(self):
+    def test_yenlik_bakytbekova_cambridge_admission_is_not_attendance(self):
         person = self.people["kaz-eebfbe6a6de9"]
-        location = self.locations[person["person_id"]]
 
-        self.assertEqual(person["organization"], "University of Cambridge")
-        self.assertEqual(person["role"], "Incoming Undergraduate Student")
+        self.assertEqual(person["organization"], "")
+        self.assertEqual(person["destination_status"], "history_only")
         self.assertEqual(person["confidence"], "confirmed")
         self.assertIn("Enlik Bakytbekova", person["aliases"])
         self.assertEqual(
             self.alma_maters(person["person_id"]),
-            {"University of Cambridge"},
+            {"Nazarbayev Intellectual Schools (NIS)"},
         )
         self.assertIn(
             "Nazarbayev Intellectual Schools (NIS)",
             {row["organization"] for row in self.affiliations_for(person["person_id"])},
         )
-        self.assertEqual(location["country_code"], "GB")
-        self.assertEqual(
-            location["location_label"], "Cambridge, England, United Kingdom"
-        )
+        self.assertNotIn(person["person_id"], self.locations)
 
     def test_akezhan_askar_completed_school_history_is_not_a_destination(self):
         person = self.people["kaz-822bb4ee42e0"]
@@ -1895,10 +1919,11 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
                 "University of Illinois Urbana-Champaign",
             },
         )
-        self.assertIn(
+        self.assertNotIn(
             "Al-Farabi Kazakh National University",
             self.alma_maters("kaz-11782cb39ded"),
         )
+        self.assertTrue(any(r["evidence_kind"] == "official_university_admission_record" for r in self.affiliations_for("kaz-11782cb39ded")))
 
     def test_structured_student_roles_are_education(self):
         dauren = next(

@@ -402,6 +402,18 @@ class OrganizationCategoryTest(unittest.TestCase):
 
 
 class DestinationNormalizationTest(unittest.TestCase):
+    def test_admission_is_not_current_attendance(self):
+        for role in ("Incoming Undergraduate Student", "Prospective PhD Student", "Admitted to Physics"):
+            with self.subTest(role=role):
+                normalized = normalize_destination("Example University", role, "education", "2026", "2030")
+                self.assertEqual(normalized[0], "")
+                self.assertEqual(normalized[3], "history_only")
+        self.assertEqual(normalize_destination("Example University", "Incoming PhD Student", "employment", "2026", "")[3], "history_only")
+
+    def test_reviewed_company_and_university_types_override_name_heuristics(self):
+        self.assertEqual(organization_category("HITS", "employment"), "Industry")
+        self.assertEqual(organization_category("Skoltech", "employment"), "Academia")
+
     def test_destination_uses_canonical_organization_name(self):
         normalized = normalize_destination(
             "Amazon Web Services (AWS)", "Software Engineer", "employment", "2024", ""

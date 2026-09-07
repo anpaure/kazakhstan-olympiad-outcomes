@@ -435,6 +435,21 @@
     "review_reason": "The accepted profile explicitly names ML Team Lead at AgroCredit Corporation from July 2026 to present in Astana. Kcell ended in June 2021, and the lecturer role ended in June 2025."
   },
   {
+    "destination_review_id": "dest-review-d8961ce01e813d26",
+    "evidence_id": "ev-3ae93c04a7904646",
+    "source_id": "src-ffe96a0a662d",
+    "person_id": "kaz-8a1e18c44a89",
+    "name": "Daniil Melnichenko",
+    "organization": "HITS",
+    "role": "AI Researcher",
+    "affiliation_type": "employment",
+    "start_year": "2025",
+    "end_year": "",
+    "evidence_url": "https://linkedin.com/in/daniilmel",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The accepted exact-profile retrieval places the current HITS AI Researcher role in Seoul from August 2025. The prior KAIST Research Fellow role ends in August 2025 and the KAIST master's degree is completed in 2025."
+  },
+  {
     "destination_review_id": "dest-review-fed51165cc793be4",
     "evidence_id": "ev-747ab04f760b8faa",
     "source_id": "src-24982414622f",
@@ -660,6 +675,21 @@
     "review_reason": "Freedom Telecom's current official ethics page directly names Kairat Akhmetov as Chief Executive Officer. This replaces an event biography as the destination source while preserving the separate profile and interview evidence used for identity and history."
   },
   {
+    "destination_review_id": "dest-review-10e03e6d64d10fa4",
+    "evidence_id": "ev-7222c81d47fe0f77",
+    "source_id": "src-9cd441392daa",
+    "person_id": "kaz-f0f8ae850677",
+    "name": "Kairat Albakov",
+    "organization": "Adriel",
+    "role": "Software Engineer",
+    "affiliation_type": "employment",
+    "start_year": "2024",
+    "end_year": "",
+    "evidence_url": "https://kr.linkedin.com/in/allbackoff",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The accepted exact-profile retrieval explicitly lists Software Engineer at Adriel from November 2024 to Present in Seoul. The older Engineer summary omitted the specialization and dated start."
+  },
+  {
     "destination_review_id": "dest-review-5457ffa4098e9fdd",
     "evidence_id": "ev-f6eed37b18ea8005",
     "source_id": "src-9f94e44937d4",
@@ -808,6 +838,21 @@
     "evidence_url": "https://de.linkedin.com/in/mussa-rajamov",
     "reviewed_at": "2026-08-10",
     "review_reason": "The accepted profile lists Senior Model Validation Specialist at Deutsche Bank as current from March 2025."
+  },
+  {
+    "destination_review_id": "dest-review-258a5b88fbb4e033",
+    "evidence_id": "ev-b5d2ebc666c67caa",
+    "source_id": "src-55ad161a891a",
+    "person_id": "kaz-ce2eeb5d3d04",
+    "name": "Nazarbek Altybay",
+    "organization": "Qube Research & Technologies",
+    "role": "Quantitative Technologist",
+    "affiliation_type": "employment",
+    "start_year": "2025",
+    "end_year": "",
+    "evidence_url": "https://uk.linkedin.com/in/nazarbek",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The accepted exact-profile retrieval explicitly dates the current Qube Research & Technologies role from December 2025 in London. Portofino ended in August 2025 and remains employment history."
   },
   {
     "destination_review_id": "dest-review-aca36bfc4ab28d65",

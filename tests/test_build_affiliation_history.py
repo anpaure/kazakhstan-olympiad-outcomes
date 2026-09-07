@@ -15,6 +15,12 @@ from scripts.build_affiliation_history import (
 
 
 class LinkedInAffiliationExtractionTest(unittest.TestCase):
+    def test_admissions_and_non_degree_courses_are_not_alma_maters(self):
+        for role in ("Incoming Undergraduate Student", "PhD Student (admitted in 2022; continuation not established)", "Machine Learning Stanford XCS229", "Online course in Machine Learning"):
+            with self.subTest(role=role):
+                self.assertFalse(is_postsecondary_education({"organization": "Stanford University", "role": role}))
+        self.assertTrue(is_postsecondary_education({"organization": "Stanford University", "role": "Bachelor's degree, Computer Science", "evidence_text": "Coursework included machine learning."}))
+
     def test_publication_affiliation_is_neither_a_degree_nor_current_employment(self):
         for raw_type in ("education", "employment", "research"):
             self.assertEqual(normalized_type(raw_type, "Research author"), "research")

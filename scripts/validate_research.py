@@ -27,6 +27,7 @@ try:
     )
     from scripts.build_research_dataset import (
         identity_urls,
+        is_prospective_education,
         linkedin_profile_slug,
         preferred_manual_profile_url,
     )
@@ -65,6 +66,7 @@ except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path
     )
     from build_research_dataset import (
         identity_urls,
+        is_prospective_education,
         linkedin_profile_slug,
         preferred_manual_profile_url,
     )
@@ -804,6 +806,13 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     }
     for row in affiliations:
         person_id = row.get("person_id", "")
+        if row.get("affiliation_type") == "education" and is_prospective_education(row.get("role")) and (
+            row.get("is_current", "").casefold() == "true"
+            or row.get("selected_as_alma_mater", "").casefold() == "true"
+        ):
+            errors.append(f"admission implies current attendance or alma mater for {person_id}")
+        if re.search(r"\bXCS\d+\b", row.get("role", ""), re.IGNORECASE) and row.get("selected_as_alma_mater", "").casefold() == "true":
+            errors.append(f"non-degree online course implies alma mater for {person_id}")
         if (row.get("affiliation_type") == "research" or re.search(
             r"\bresearch author\b", row.get("role", ""), re.IGNORECASE
         )) and (
@@ -1557,6 +1566,8 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
                 f"{person_id} retains noncanonical destination organization: {organization}"
             )
         destination_status = row.get("destination_status", "")
+        if destination_status == "current_education" and is_prospective_education(row.get("role")):
+            errors.append(f"{person_id} has an admission-only current education destination")
         if destination_status not in {
             "none",
             "history_only",

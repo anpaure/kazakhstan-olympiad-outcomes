@@ -1,0 +1,569 @@
+{
+  "reviewed_at": "2026-09-07",
+  "base_commit": "c5354c533e4ddfa5e5f50c64b4566522279f21ac",
+  "sample_seed": "revalidate-all-2026-09-07-final",
+  "sample_method": "From base-commit people with a selected destination, sort by SHA-256(seed + ':' + person_id), take first 16. Sample was chosen before inspecting sources.",
+  "scope": "Repeated whole-dataset and export validation, existing same-day complete LinkedIn/participation audit, plus additional semantic review. Cached exact-profile evidence is explicitly identified and is not a new independent retrieval.",
+  "limitations": [
+    "Not every external claim was independently reread in this repeat pass.",
+    "Prior all-302 LinkedIn retrieval had 14 failures and three retained conflicting or incomplete earlier profiles.",
+    "Page reachability and identity confidence do not prove continued employment, enrollment or residence.",
+    "Probable identities remain probable without an explicit Olympiad-to-career bridge."
+  ],
+  "sample": [
+    {
+      "person_id": "kaz-9b09f062bfeb",
+      "name": "Zhanibek Datbayev",
+      "identity_confidence": "confirmed",
+      "identity_basis": "The exact-name public profile explicitly lists his Kazakhstan IOI silver medal and current Nace AI co-founder and CTO role; the official IOI registry independently confirms his 2002-2004 appearances",
+      "source_url": "https://linkedin.com/in/zdatbayev",
+      "destination": "Nace AI",
+      "role": "CTO, Co-Founder",
+      "location": {
+        "person_id": "kaz-9b09f062bfeb",
+        "name": "Zhanibek Datbayev",
+        "country_code": "US",
+        "country_name": "United States",
+        "location_label": "Palo Alto, California, United States",
+        "evidence_kind": "current_role_location",
+        "confidence": "confirmed",
+        "review_reason": "Country follows the location attached to the accepted current role at Nace AI. The public profile header independently agrees.",
+        "evidence_url": "https://linkedin.com/in/zdatbayev"
+      },
+      "alma_maters": [
+        {
+          "organization": "Kazakh-British Technical University (KBTU)",
+          "role": "Information Systems",
+          "start_year": "2004",
+          "end_year": "2006",
+          "evidence_url": "https://linkedin.com/in/zdatbayev"
+        },
+        {
+          "organization": "Purdue University",
+          "role": "Master’s Degree Computer Science",
+          "start_year": "2010",
+          "end_year": "2012",
+          "evidence_url": "https://linkedin.com/in/zdatbayev"
+        }
+      ],
+      "profile_retrieved_at": "2026-09-07T10:37:26+00:00",
+      "profile_text_sha256": "35cdec87c0dd6a1d3db2b4b3c4902383b6d310fa1f1525ced690d8dd345ed8a3",
+      "review_status": "retained_cached_source",
+      "review_decision": "Reviewed same-day Exa text: Nace AI CTO/co-founder in Palo Alto from 2024; Purdue BS and MS and earlier KBTU attendance retained."
+    },
+    {
+      "person_id": "kaz-0e1075c1b53e",
+      "name": "Zhassulan Shaikhygali",
+      "identity_confidence": "probable",
+      "identity_basis": "The official IBO result identifies Kazakhstan's exact-name 2011 silver medalist; UNIST records the rare exact name and its 2015-2016 biomedical-engineering path, while PyPI names Zhassulan Shaikhygali and links its avalanche-etl project directly to the shaikhzhas GitHub account whose current profile lists Data Engineer at inDrive in Kazakhstan. No reviewed source explicitly joins the Olympiad and career records.",
+      "source_url": "https://github.com/shaikhzhas",
+      "destination": "inDrive",
+      "role": "Data Engineer",
+      "location": {
+        "person_id": "kaz-0e1075c1b53e",
+        "name": "Zhassulan Shaikhygali",
+        "country_code": "KZ",
+        "country_name": "Kazakhstan",
+        "location_label": "Kazakhstan",
+        "evidence_url": "https://github.com/shaikhzhas",
+        "evidence_kind": "active_affiliation_profile_location",
+        "confidence": "probable",
+        "review_reason": "The accepted current GitHub profile lists both inDrive and Kazakhstan alongside the Data Engineer role."
+      },
+      "alma_maters": [
+        {
+          "organization": "Ulsan National Institute of Science and Technology (UNIST)",
+          "role": "Bachelor of Science",
+          "start_year": "",
+          "end_year": "",
+          "evidence_url": "https://single.unist.ac.kr/ourmembers/"
+        }
+      ],
+      "profile_retrieved_at": null,
+      "profile_text_sha256": null,
+      "review_status": "retained",
+      "review_decision": "Reopened GitHub: Data Engineer, inDrive, Kazakhstan. UNIST history retained from earlier evidence. No explicit IBO-to-career bridge was found; identity remains probable."
+    },
+    {
+      "person_id": "kaz-2be498890319",
+      "name": "Bakitkan Bahautdinov",
+      "identity_confidence": "probable",
+      "identity_basis": "The age-compatible exact-name biology profile uses the Bakytzhan Bakhautdin transliteration, lists an ongoing Global Agri Products director role in Almaty, and documents a continuous biology and molecular-medicine career. No reviewed source explicitly joins it to the 1994-1995 IBO record.; Destination review: The accepted probable transliteration match lists Director at Global Agri Products as current from February 2022 and places the role in Almaty.",
+      "source_url": "https://linkedin.com/in/bakytzhan-bakhautdin-77bb02ab",
+      "destination": "Global Agri Products",
+      "role": "Director",
+      "location": {
+        "person_id": "kaz-2be498890319",
+        "name": "Bakitkan Bahautdinov",
+        "country_code": "KZ",
+        "country_name": "Kazakhstan",
+        "location_label": "Almaty, Kazakhstan",
+        "evidence_url": "https://linkedin.com/in/bakytzhan-bakhautdin-77bb02ab",
+        "evidence_kind": "current_role_location",
+        "confidence": "probable",
+        "review_reason": "The age-compatible exact-name biology profile uses a close transliteration variant and places the current Global Agri Products director role in Almaty. The career-to-IBO identity bridge remains probable."
+      },
+      "alma_maters": [
+        {
+          "organization": "Cleveland State University",
+          "role": "Doctor of Philosophy (Ph.D.), Molecular Medicine",
+          "start_year": "2004",
+          "end_year": "2010",
+          "evidence_url": "https://linkedin.com/in/bakytzhan-bakhautdin-77bb02ab"
+        },
+        {
+          "organization": "Fatih University",
+          "role": "Bachelor's Degree, Biology, General",
+          "start_year": "1997",
+          "end_year": "2001",
+          "evidence_url": "https://linkedin.com/in/bakytzhan-bakhautdin-77bb02ab"
+        }
+      ],
+      "profile_retrieved_at": "2026-09-07T10:37:18+00:00",
+      "profile_text_sha256": "b1136e821858cb0de44410afd970bc9189cf53a7ae241b40133d9a4e97ad1da1",
+      "review_status": "retained_cached_source",
+      "review_decision": "Reviewed same-day Exa text: Global Agri director in Almaty from 2022; Fatih undergraduate and Cleveland State master's/PhD chronology. No direct IBO bridge; transliteration match remains probable."
+    },
+    {
+      "person_id": "kaz-cae8a8caf16a",
+      "name": "Yerokhin Maxim",
+      "identity_confidence": "confirmed",
+      "identity_basis": "Kazakhstanskaya Pravda explicitly identifies Maxim Erokhin as Kazakhstan's 2000 and 2001 IBO bronze medalist and an Institute of Gene Biology scientist; the institute's current staff page lists him as leading researcher and head of its Chromatin Biology Group.",
+      "source_url": "https://www.genebiology.ru/ob-institute/sotrudniki/erokhin-maksim-maksimovich/",
+      "destination": "Institute of Gene Biology, Russian Academy of Sciences",
+      "role": "Leading Researcher and Head, Chromatin Biology Group",
+      "location": {
+        "person_id": "kaz-cae8a8caf16a",
+        "name": "Yerokhin Maxim",
+        "country_code": "RU",
+        "country_name": "Russia",
+        "location_label": "Moscow, Russia",
+        "evidence_url": "https://www.genebiology.ru/ob-institute/sotrudniki/erokhin-maksim-maksimovich/",
+        "evidence_kind": "career_source_location",
+        "confidence": "confirmed",
+        "review_reason": "The Institute of Gene Biology's current staff page places his laboratory role at its Moscow institute."
+      },
+      "alma_maters": [
+        {
+          "organization": "Lomonosov Moscow State University (MSU)",
+          "role": "Specialist degree, Biochemistry",
+          "start_year": "",
+          "end_year": "2006",
+          "evidence_url": "https://genebiology.ru/site/assets/files/23323/zakliuchenie_ibg_ran.pdf"
+        }
+      ],
+      "profile_retrieved_at": null,
+      "profile_text_sha256": null,
+      "review_status": "retained",
+      "review_decision": "Reopened institute biography confirms Leading Researcher and Head of Chromatin Biology Group. Prior MSU degree source retained; no new degree dates inferred."
+    },
+    {
+      "person_id": "kaz-d9616cfe0fb5",
+      "name": "Nurlykhan Kopenov",
+      "identity_confidence": "confirmed",
+      "identity_basis": "Olympiad problem-setting records identify the same rare exact name as a KAIST student immediately after his 2019 IChO medal; his current profile lists CoBALT, and CoBALT's public company page names him among its employees but does not expose a formal title; Destination review: CoBALT's public company page names Nurlykhan Kopenov among its employees and places the company in Seoul, but it does not expose his formal title. Team Member is used as a neutral sourced descriptor rather than inventing a job function.",
+      "source_url": "https://kr.linkedin.com/company/cobalt-inc",
+      "destination": "CoBALT",
+      "role": "Team Member",
+      "location": {
+        "person_id": "kaz-d9616cfe0fb5",
+        "name": "Nurlykhan Kopenov",
+        "country_code": "KR",
+        "country_name": "South Korea",
+        "location_label": "Seoul, South Korea",
+        "evidence_url": "https://kr.linkedin.com/company/cobalt-inc",
+        "evidence_kind": "current_role_location",
+        "confidence": "confirmed",
+        "review_reason": "CoBALT's public company page names Nurlykhan among its employees and identifies the company's Seoul headquarters and address."
+      },
+      "alma_maters": [
+        {
+          "organization": "Korea Advanced Institute of Science and Technology (KAIST)",
+          "role": "Bachelor's degree, computer science",
+          "start_year": "2019",
+          "end_year": "2023",
+          "evidence_url": "https://kr.linkedin.com/in/nurlykhan-kopenov"
+        }
+      ],
+      "profile_retrieved_at": "2026-09-07T10:37:22+00:00",
+      "profile_text_sha256": "21053d652a12b59692e299007ed6d5aa0ec3f3069c54f4750c1679777ae90bbc",
+      "review_status": "partly_revalidated",
+      "review_decision": "Reopened CoBALT employee list includes Nurlykhan, but does not specify his title or personal workplace. Own retrieved profile still shows undated Stonelab and completed KAIST. Team Member remains a nonspecific summary; no new current-location claim made."
+    },
+    {
+      "person_id": "kaz-ce2eeb5d3d04",
+      "name": "Nazarbek Altybay",
+      "identity_confidence": "confirmed",
+      "identity_basis": "The exact-name public profile explicitly lists his 2015 and 2016 IOI participation and current quantitative technologist role at Qube Research & Technologies; the official IOI registry independently confirms the Kazakhstan appearances",
+      "source_url": "https://uk.linkedin.com/in/nazarbek",
+      "destination": "Qube Research & Technologies",
+      "role": "Quantitative Technologist",
+      "location": {
+        "person_id": "kaz-ce2eeb5d3d04",
+        "name": "Nazarbek Altybay",
+        "country_code": "GB",
+        "country_name": "United Kingdom",
+        "location_label": "London Area, United Kingdom",
+        "evidence_kind": "current_role_location",
+        "confidence": "confirmed",
+        "review_reason": "Country follows the location attached to the accepted current role at Qube Research & Technologies. The public profile header independently agrees.",
+        "evidence_url": "https://uk.linkedin.com/in/nazarbek"
+      },
+      "alma_maters": [
+        {
+          "organization": "Ulsan National Institute of Science and Technology (UNIST)",
+          "role": "Bachelor's degree Computer Science",
+          "start_year": "2016",
+          "end_year": "2020",
+          "evidence_url": "https://uk.linkedin.com/in/nazarbek"
+        }
+      ],
+      "profile_retrieved_at": "2026-09-07T10:37:22+00:00",
+      "profile_text_sha256": "e16fe5f9ebd16304b0df754f368a58aaddd66de14a5518d737d160a86de3cb32",
+      "review_status": "corrected",
+      "review_decision": "Same-day exact-profile text supports Qube Quantitative Technologist from December 2025 in London. Added missing start year. Portofino is ended history and UNIST degree is completed."
+    },
+    {
+      "person_id": "kaz-bd7725315da3",
+      "name": "Adam Taimanov",
+      "identity_confidence": "confirmed",
+      "identity_basis": "Adam Taimanov's exact-name tutor profile explicitly states his 2020 International Biology Olympiad bronze, documents his biology teaching offer, and lists service activity from August 2022; the audited IBO scoreboard independently confirms the same exact-name result. This is retained as his latest reviewed public role, not proof of more recent platform activity.",
+      "source_url": "https://profi.kz/profile/TaymanovAY/",
+      "destination": "Self-employed",
+      "role": "Biology Tutor",
+      "location": {
+        "person_id": "kaz-bd7725315da3",
+        "name": "Adam Taimanov",
+        "country_code": "KZ",
+        "country_name": "Kazakhstan",
+        "location_label": "Almaty, Kazakhstan",
+        "evidence_url": "https://profi.kz/profile/TaymanovAY/",
+        "evidence_kind": "career_source_location",
+        "confidence": "probable",
+        "review_reason": "Adam's exact-name tutoring profile places the latest reviewed public role in Almaty. The location is marked probable because the profile also says he was last online more than a year ago."
+      },
+      "alma_maters": [
+        {
+          "organization": "Galaxy International School Almaty",
+          "role": "Secondary School",
+          "start_year": "2021",
+          "end_year": "2022",
+          "evidence_url": "https://profi.kz/profile/TaymanovAY/"
+        }
+      ],
+      "profile_retrieved_at": null,
+      "profile_text_sha256": null,
+      "review_status": "unavailable",
+      "review_decision": "Profi page was unavailable in this repeat pass. Retained earlier reviewed tutoring, school and last-known location evidence, not marked freshly verified."
+    },
+    {
+      "person_id": "kaz-8a1e18c44a89",
+      "name": "Daniil Melnichenko",
+      "identity_confidence": "confirmed",
+      "identity_basis": "The exact-name public profile explicitly lists his 2019 IChO bronze medal and current HITS AI research role; the official IChO result independently confirms the Kazakhstan award",
+      "source_url": "https://linkedin.com/in/daniilmel",
+      "destination": "HITS",
+      "role": "AI Researcher",
+      "location": {
+        "person_id": "kaz-8a1e18c44a89",
+        "name": "Daniil Melnichenko",
+        "country_code": "KR",
+        "country_name": "South Korea",
+        "location_label": "Seoul, South Korea",
+        "evidence_kind": "current_role_location",
+        "confidence": "confirmed",
+        "review_reason": "Country follows the location attached to the accepted current role at HITS. The public profile header independently agrees.",
+        "evidence_url": "https://linkedin.com/in/daniilmel"
+      },
+      "alma_maters": [
+        {
+          "organization": "Korea Advanced Institute of Science and Technology (KAIST)",
+          "role": "Master's degree, Bio&Brain Engineering",
+          "start_year": "2023",
+          "end_year": "2025",
+          "evidence_url": "https://linkedin.com/in/daniilmel"
+        }
+      ],
+      "profile_retrieved_at": "2026-09-07T10:37:19+00:00",
+      "profile_text_sha256": "281a9da031edc5d08edac4b0e24e0cc127bab7f840a9f23f5c71d32ff6673ed6",
+      "review_status": "corrected",
+      "review_decision": "Exact-profile text supports HITS AI Researcher from August 2025 in Seoul, after KAIST MS. Company's own LinkedIn and careers site confirm it is a private drug-discovery company. Corrected start year and organization category."
+    },
+    {
+      "person_id": "kaz-bb641e236bb0",
+      "name": "Danil Kravtsov",
+      "identity_confidence": "probable",
+      "identity_basis": "The Improvado founder profile and company biography identify Daniel Kravtsov as current CEO in San Francisco; independent interviews describe a Temirtau-born programmer whose age matches the 1999-2000 IOI entrant. No reviewed source explicitly joins the career and Olympiad records.; Destination review: Improvado's current company biography identifies Daniel Kravtsov as CEO and co-founder; the career-to-IOI identity match remains probable and is documented separately.",
+      "source_url": "https://www.linkedin.com/in/danielkravtsov",
+      "destination": "Improvado",
+      "role": "CEO and Co-Founder",
+      "location": {
+        "person_id": "kaz-bb641e236bb0",
+        "name": "Danil Kravtsov",
+        "country_code": "US",
+        "country_name": "United States",
+        "location_label": "San Francisco, California, United States",
+        "evidence_url": "https://www.linkedin.com/in/danielkravtsov",
+        "evidence_kind": "active_affiliation_profile_location",
+        "confidence": "probable",
+        "review_reason": "The exact-name Improvado co-founder profile places Daniel Kravtsov in San Francisco; independent interviews identify him as a Temirtau-born programmer of the age implied by the 1999-2000 IOI record. The identity bridge remains probable."
+      },
+      "alma_maters": [
+        {
+          "organization": "ITMO University",
+          "role": "Master of computer science and technology entrepreneurship Master of computer science and technology entrepreneurship",
+          "start_year": "",
+          "end_year": "",
+          "evidence_url": "https://www.linkedin.com/in/danielkravtsov"
+        },
+        {
+          "organization": "Tomsk State University of Control Systems and Radioelectronics",
+          "role": "Master of computer-science",
+          "start_year": "",
+          "end_year": "",
+          "evidence_url": "https://www.linkedin.com/in/danielkravtsov"
+        }
+      ],
+      "profile_retrieved_at": "2026-09-07T10:37:19+00:00",
+      "profile_text_sha256": "a480b7a31f5ede011e90cbe45d6be2be05088f4bd701f617f52c9fb34e765c07",
+      "review_status": "corrected",
+      "review_decision": "Reopened Improvado biography confirms CEO/co-founder. Reviewed exact-profile education: Stanford entry is only XCS229, not a degree; removed selected alma status, retained course history. Identity remains probable."
+    },
+    {
+      "person_id": "kaz-f0f8ae850677",
+      "name": "Kairat Albakov",
+      "identity_confidence": "confirmed",
+      "identity_basis": "Public profile lists the 2018 IBO silver medal and current Adriel employment",
+      "source_url": "https://kr.linkedin.com/in/allbackoff",
+      "destination": "Adriel",
+      "role": "Software Engineer",
+      "location": {
+        "person_id": "kaz-f0f8ae850677",
+        "name": "Kairat Albakov",
+        "country_code": "KR",
+        "country_name": "South Korea",
+        "location_label": "Seoul, South Korea",
+        "evidence_kind": "current_role_location",
+        "confidence": "confirmed",
+        "review_reason": "Country follows the location attached to the accepted current role at Adriel. The public profile header independently agrees.",
+        "evidence_url": "https://kr.linkedin.com/in/allbackoff"
+      },
+      "alma_maters": [
+        {
+          "organization": "Korea Advanced Institute of Science and Technology (KAIST)",
+          "role": "Bachelor's degree Computer Science",
+          "start_year": "2018",
+          "end_year": "2022",
+          "evidence_url": "https://kr.linkedin.com/in/allbackoff"
+        }
+      ],
+      "profile_retrieved_at": "2026-09-07T10:37:20+00:00",
+      "profile_text_sha256": "7ecbad9581945ae72f6929f89f5dc8edbf3da103a6ecd0b73a276d739e2db9f2",
+      "review_status": "corrected",
+      "review_decision": "Same-day profile explicitly lists Software Engineer at Adriel from November 2024 in Seoul. Corrected generic Engineer and missing start year. KAIST degree and double major remain history."
+    },
+    {
+      "person_id": "kaz-8bfc979cedef",
+      "name": "Arnur Makenov",
+      "identity_confidence": "confirmed",
+      "identity_basis": "The public profile explicitly lists his 2015 and 2016 International Chemistry Olympiad medals and current Meta employment in Switzerland; Destination review: The accepted profile lists Software Engineer at Meta as current from September 2025.",
+      "source_url": "https://ch.linkedin.com/in/makenov",
+      "destination": "Meta",
+      "role": "Software Engineer",
+      "location": {
+        "person_id": "kaz-8bfc979cedef",
+        "name": "Arnur Makenov",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "location_label": "Zurich, Switzerland",
+        "evidence_kind": "current_role_location",
+        "confidence": "confirmed",
+        "review_reason": "Country follows the location attached to the accepted current role at Meta. The public profile header independently agrees.",
+        "evidence_url": "https://ch.linkedin.com/in/makenov"
+      },
+      "alma_maters": [
+        {
+          "organization": "Korea Advanced Institute of Science and Technology (KAIST)",
+          "role": "Bachelor's degree, Computer Science, Chemical Engineering (Double major), Business (Minor)",
+          "start_year": "2016",
+          "end_year": "2021",
+          "evidence_url": "https://ch.linkedin.com/in/makenov"
+        }
+      ],
+      "profile_retrieved_at": "2026-09-07T10:37:17+00:00",
+      "profile_text_sha256": "5cd56ce710411a198755ec678237b1e5a924dbb7ab0b109876d206a24ccde091",
+      "review_status": "retained_cached_source",
+      "review_decision": "Reviewed same-day profile: Meta role in Zurich from September 2025, after ended Google Dublin role and Amazon London role. Both 2015 and 2016 IChO awards are explicitly listed; KAIST education retained."
+    },
+    {
+      "person_id": "kaz-618279226751",
+      "name": "Maxim Tsoy",
+      "identity_confidence": "probable",
+      "identity_basis": "The official IOI registry identifies Kazakhstan's 2024-2025 silver medalist Maxim Tsoy, while Ministry-sourced reporting identifies the same exact-name student and competition record. Spectrum International School's February 2026 announcement states that its Maxim Tsoy was admitted to Nanyang Technological University in Singapore. The exact name, age-compatible school timeline, and informatics trajectory support the match, but the admission post does not explicitly mention the IOI, so it remains probable.",
+      "source_url": "https://www.linkedin.com/posts/spectrum-international-school_congratulations-to-maxim-tsoy-on-his-admission-activity-7427313268790202368-sOzG",
+      "destination": "",
+      "role": "",
+      "location": null,
+      "alma_maters": [
+        {
+          "organization": "Republican Physics and Mathematics School (RFMS)",
+          "role": "High School Student",
+          "start_year": "",
+          "end_year": "2025",
+          "evidence_url": "https://www.inform.kz/ru/kazahstanskie-shkolniki-zavoevali-chetire-medali-na-prestizhnoy-mezhdunarodnoy-olimpiade-029dda"
+        }
+      ],
+      "profile_retrieved_at": null,
+      "profile_text_sha256": null,
+      "review_status": "corrected",
+      "review_decision": "Reopened Spectrum post proves an NTU offer only. Removed active attendance, Singapore country and NTU alma selection; retained offer as searchable history and RFMS school history. School-name discrepancy remains a reason not to upgrade identity confidence."
+    },
+    {
+      "person_id": "kaz-b48f403765ac",
+      "name": "Sossin Viktor",
+      "identity_confidence": "probable",
+      "identity_basis": "The rare reverse-order exact-name profile and mathematics-education career align with the official 2005 IMO contestant; NIS independently documents his 2025 appointment as principal in Petropavl.",
+      "source_url": "https://ib.nis.edu.kz/ru/school/nzm-petropavl/news/1404",
+      "destination": "Nazarbayev Intellectual Schools (NIS)",
+      "role": "School Principal",
+      "location": {
+        "person_id": "kaz-b48f403765ac",
+        "name": "Sossin Viktor",
+        "country_code": "KZ",
+        "country_name": "Kazakhstan",
+        "location_label": "Петропавловск Г.А., Северо-Казахстанская область, Казахстан",
+        "evidence_kind": "current_role_location",
+        "confidence": "probable",
+        "review_reason": "Country follows the location attached to the accepted current role at Nazarbayev Intellectual Schools (NIS).",
+        "evidence_url": "https://linkedin.com/in/viktorsossin"
+      },
+      "alma_maters": [
+        {
+          "organization": "Kazakh-British Technical University (KBTU)",
+          "role": "Master's degree, Information Technology",
+          "start_year": "2010",
+          "end_year": "2011",
+          "evidence_url": "https://linkedin.com/in/viktorsossin"
+        },
+        {
+          "organization": "University of Sussex",
+          "role": "Master's degree, Education, Distinction",
+          "start_year": "2015",
+          "end_year": "2016",
+          "evidence_url": "https://linkedin.com/in/viktorsossin"
+        }
+      ],
+      "profile_retrieved_at": "2026-09-07T10:37:24+00:00",
+      "profile_text_sha256": "1b04eba88af78681c1e97d0dd42b052deaaf6e64279d7a0a36ed11e6888de9fc",
+      "review_status": "partly_revalidated",
+      "review_decision": "NIS appointment URL returned 502. Same-day LinkedIn retrieval supports Petropavl principal from August 2025 and KBTU/Sussex degrees. Earlier Taldykorgan current flag does not supersede the later appointment."
+    },
+    {
+      "person_id": "kaz-6bd1daf828d9",
+      "name": "Amir Pshenbayev",
+      "identity_confidence": "confirmed",
+      "identity_basis": "The Global Talent Fund biography explicitly identifies Amir Pshenbayev as Kazakhstan's 2024 and 2025 IPhO medalist and a physics student at Imperial College London.",
+      "source_url": "https://www.globtalent.org/gtf-big-talent-scholars-bios/amir-pshenbayev",
+      "destination": "Imperial College London",
+      "role": "Physics Student",
+      "location": {
+        "person_id": "kaz-6bd1daf828d9",
+        "name": "Amir Pshenbayev",
+        "country_code": "GB",
+        "country_name": "United Kingdom",
+        "location_label": "London, United Kingdom",
+        "evidence_url": "https://www.imperial.ac.uk/visit/campuses/",
+        "evidence_kind": "current_education_location",
+        "confidence": "confirmed",
+        "review_reason": "Country follows the accepted active student affiliation at Imperial College London; the linked official institution source establishes the campus location. Imperial's official campus page identifies its London campuses."
+      },
+      "alma_maters": [
+        {
+          "organization": "Imperial College London",
+          "role": "Physics Student",
+          "start_year": "2025",
+          "end_year": "",
+          "evidence_url": "https://www.globtalent.org/gtf-big-talent-scholars-bios/amir-pshenbayev"
+        }
+      ],
+      "profile_retrieved_at": "2026-09-07T10:37:17+00:00",
+      "profile_text_sha256": "a36f48a2a2779e836171c4fe547b5f9ae9e1ef5318329fb8a6bffc903945ccf4",
+      "review_status": "retained",
+      "review_decision": "GTF biography interview predates university. A later GTF post explicitly states he is studying Physics at Imperial; outcome retained using that attendance corroboration, not the earlier offer alone.",
+      "corroborating_source_url": "https://www.linkedin.com/posts/globaltalentfund_kazakhstan-ipho-activity-7453130553811431425-EFgq"
+    },
+    {
+      "person_id": "kaz-cb653a13b10b",
+      "name": "Batyrkhan Sakenov",
+      "identity_confidence": "probable",
+      "identity_basis": "HKUST's current Chern Class roster lists the rare exact-name Batyrkhan Sakenov as a mathematics student; official IMO records identify Kazakhstan's 2023 bronze medalist but no source explicitly joins the two records.",
+      "source_url": "https://www.math.hkust.edu.hk/ug/chern_class/",
+      "destination": "Hong Kong University of Science and Technology (HKUST)",
+      "role": "Mathematics Student",
+      "location": {
+        "person_id": "kaz-cb653a13b10b",
+        "name": "Batyrkhan Sakenov",
+        "country_code": "HK",
+        "country_name": "Hong Kong",
+        "location_label": "Hong Kong",
+        "evidence_url": "https://hkust.edu.hk/contact-us",
+        "evidence_kind": "current_education_location",
+        "confidence": "probable",
+        "review_reason": "Country follows the accepted active student affiliation at Hong Kong University of Science and Technology (HKUST); the linked official institution source establishes the campus location. HKUST's official contact page identifies its Hong Kong campus."
+      },
+      "alma_maters": [
+        {
+          "organization": "Hong Kong University of Science and Technology (HKUST)",
+          "role": "Mathematics Student",
+          "start_year": "",
+          "end_year": "",
+          "evidence_url": "https://www.math.hkust.edu.hk/ug/chern_class/"
+        }
+      ],
+      "profile_retrieved_at": null,
+      "profile_text_sha256": null,
+      "review_status": "retained_indexed_source",
+      "review_decision": "HKUST page open did not expose the student roster, but indexed text for the same primary URL explicitly lists SAKENOV, Batyrkhan in Year 3. Retain probable mathematics-student identity without inferring start or end dates."
+    },
+    {
+      "person_id": "kaz-f29c25aa7066",
+      "name": "Kirill Mayerle",
+      "identity_confidence": "probable",
+      "identity_basis": "MSU's official 1999 Mendeleev results identify the rare Maerle spelling as an 11th-grade Kazakhstan chemistry winner and the public profile begins MSU chemistry study that same year before a continuous research career now documented by Skoltech; no source explicitly names his IChO medal.",
+      "source_url": "https://crei.skoltech.ru/cpse/people/",
+      "destination": "Skoltech",
+      "role": "Research Scientist",
+      "location": {
+        "person_id": "kaz-f29c25aa7066",
+        "name": "Kirill Mayerle",
+        "country_code": "RU",
+        "country_name": "Russia",
+        "location_label": "Москва, Россия",
+        "evidence_kind": "current_role_location",
+        "confidence": "probable",
+        "review_reason": "Country follows the location attached to the accepted current role at Skoltech. The public profile header independently agrees.",
+        "evidence_url": "https://linkedin.com/in/kirillmaerle"
+      },
+      "alma_maters": [
+        {
+          "organization": "A.N. Nesmeyanov Institute of Organoelement Compounds, Russian Academy of Sciences",
+          "role": "PhD (Candidate of Sciences) in Analytical Chemistry",
+          "start_year": "2005",
+          "end_year": "2009",
+          "evidence_url": "https://ru.linkedin.com/in/kirillmaerle"
+        },
+        {
+          "organization": "Lomonosov Moscow State University (MSU)",
+          "role": "специалист, химик",
+          "start_year": "1999",
+          "end_year": "2005",
+          "evidence_url": "https://linkedin.com/in/kirillmaerle"
+        }
+      ],
+      "profile_retrieved_at": "2026-09-07T10:37:21+00:00",
+      "profile_text_sha256": "112e0edeb681e60c3d01bb00956e6b66f050e58ab35e76538cd0bf39b20b0abb",
+      "review_status": "partly_revalidated",
+      "review_decision": "Skoltech people URL redirects to a center landing page without the name; earlier indexed staff roster still identifies Research Scientist. Employment retained with this freshness limitation. Corrected Skoltech organization type to education."
+    }
+  ]
+}

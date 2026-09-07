@@ -1659,9 +1659,9 @@
     "organization_alignment": "matched",
     "role_alignment": "matched",
     "alignment_status": "matched_current_profile",
-    "review_decision": "",
-    "review_reason": "",
-    "review_reference_url": ""
+    "review_decision": "destination_source_review",
+    "review_reason": "The accepted exact-profile retrieval places the current HITS AI Researcher role in Seoul from August 2025. The prior KAIST Research Fellow role ends in August 2025 and the KAIST master's degree is completed in 2025.",
+    "review_reference_url": "https://linkedin.com/in/daniilmel"
   },
   {
     "person_id": "kaz-3be79cb80aa3",
@@ -2327,13 +2327,13 @@
     "profile_current_organizations": "Adriel",
     "profile_current_roles": "Software Engineer",
     "published_destination": "Adriel",
-    "published_role": "Engineer",
+    "published_role": "Software Engineer",
     "organization_alignment": "matched",
     "role_alignment": "matched",
     "alignment_status": "matched_current_profile",
-    "review_decision": "",
-    "review_reason": "",
-    "review_reference_url": ""
+    "review_decision": "destination_source_review",
+    "review_reason": "The accepted exact-profile retrieval explicitly lists Software Engineer at Adriel from November 2024 to Present in Seoul. The older Engineer summary omitted the specialization and dated start.",
+    "review_reference_url": "https://kr.linkedin.com/in/allbackoff"
   },
   {
     "person_id": "kaz-bcd45c045c97",
@@ -2939,9 +2939,9 @@
     "organization_alignment": "matched",
     "role_alignment": "matched",
     "alignment_status": "matched_current_profile",
-    "review_decision": "",
-    "review_reason": "",
-    "review_reference_url": ""
+    "review_decision": "destination_source_review",
+    "review_reason": "The accepted exact-profile retrieval explicitly dates the current Qube Research & Technologies role from December 2025 in London. Portofino ended in August 2025 and remains employment history.",
+    "review_reference_url": "https://uk.linkedin.com/in/nazarbek"
   },
   {
     "person_id": "kaz-80e9320bcf5e",
@@ -3062,8 +3062,8 @@
     "profile_hydration_status": "success",
     "profile_current_organizations": "NURORDA INTERNATIONAL SCHOOL",
     "profile_current_roles": "",
-    "published_destination": "Massachusetts Institute of Technology (MIT)",
-    "published_role": "Incoming Undergraduate Student",
+    "published_destination": "",
+    "published_role": "",
     "organization_alignment": "reconciled",
     "role_alignment": "reconciled",
     "alignment_status": "reconciled_source_precedence",

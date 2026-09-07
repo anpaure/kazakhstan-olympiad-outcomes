@@ -261,3 +261,56 @@ publishable files and 2,241 reachable Git objects, including workbook XML.
 The owner account name was absent from tracked file contents, and reachable
 commit authors and committers use the anpaure noreply identity. This does not
 prove that every possible secret format is absent or remove external copies.
+
+## Semantic Revalidation
+
+Repeated the whole-dataset checks for all 457 people and 684 participations,
+then inspected an additional deterministic 16-person sample. The selection,
+per-person decisions, source URLs, cached-profile hashes, and access limitations
+are in `../revalidation/2026-09-07/semantic_review.json`. This pass reused the
+same-day complete LinkedIn and participation retrievals documented above;
+it did not claim a second fresh retrieval of every source.
+
+Corrections:
+
+- Five incoming university records were based on admission offers, not
+  demonstrated attendance: Alisher Yerkebayev, Margulan Sharel, Maxim Tsoy,
+  Nurgul Yegenbergenova, and Yenlik Bakytbekova. These remain searchable history
+  but no longer supply a current destination, country, or university alma mater.
+  Kanat Tyutenov's admission-only PhD record likewise no longer supplies alma
+  mater. Alisher's later ENS offer does not establish an HKUST end year.
+- Danil Kravtsov's Stanford XCS229 course remains searchable, but Stanford is
+  no longer selected as an alma mater on that basis.
+- HITS is a private AI drug-discovery company, not an educational institution.
+  Skoltech is a research university. Reviewed organization types now take
+  precedence over name-based categories, including existing government entries.
+- Kairat Albakov's current role is Software Engineer at Adriel from 2024.
+  Daniil Melnichenko's HITS role and Nazarbek Altybay's Qube role both begin in
+  2025, as explicitly stated in their accepted profile text.
+
+Four root-cause entries and eight additional tests cover these failures.
+The dataset now has 408 selected destinations, 595 selected alma-mater
+institution records across 409 people, and 410 sourced countries.
+There are 49 missing destinations, 48 missing alma maters, and 47 unknown
+countries. These counts are gaps, not successful factual verifications.
+
+The sample retained explicit limitations: Adam Taimanov's page was unavailable;
+the NIS appointment page returned 502; Skoltech's old staff URL redirects to a
+center landing page; CoBALT's employee list gives no specific personal title or
+workplace. Earlier evidence is retained with those limitations. Probable
+identities were not upgraded merely because a career source was readable.
+
+Verification: 392 tests and the full research validator pass. All 27 CSV/JSON
+pairs, 255,424 workbook data cells across 13 sheets, workbook summary counts,
+and 457 embedded page records agree. UI checks passed at 1440px and 390px in
+all three languages, including all five sorting controls in both directions,
+admission and course exclusions, role specificity, sector filtering, and
+country-chart totals for each Olympiad. Analytics was blocked during testing.
+The 1,158 public person/source URLs are unchanged, with zero additions.
+
+The repeat privacy scan found no local home paths or common credential patterns
+in publishable files or 2,286 reachable Git objects. The final-file scan covered
+144 publishable files, including workbook XML. A separate owner-name check
+found no matches in tracked file contents, and all reachable commit authors
+and committers use the anpaure noreply identity. These are bounded pattern checks,
+not proof that every possible personal detail or secret is absent.

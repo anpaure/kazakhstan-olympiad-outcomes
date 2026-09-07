@@ -14,12 +14,12 @@ The checked-in data currently contains:
 - 457 people with 60 reviewed alias pairs
 - 448 accepted identities: 317 confirmed and 131 probable
 - 440 manually reviewed people backed by public evidence
-- 413 resolved destinations and 302 accepted public LinkedIn profiles
+- 408 resolved destinations and 302 accepted public LinkedIn profiles
 - 2,686 history rows: 1,708 employment, 949 education, and 29 research affiliations
-- 599 selected alma-mater records across 411 people
-- 97 destination reviews for missing, stale, or overstated roles
-- 534 organization aliases and 218 sector classifications
-- 415 sourced outcome-country records across 39 countries; 42 people remain unknown rather than defaulting to Kazakhstan
+- 595 selected alma-mater records across 409 people
+- 100 destination reviews for missing, stale, or overstated roles
+- 534 organization aliases and 219 sector classifications
+- 410 sourced outcome-country records across 39 countries; 47 people remain unknown rather than defaulting to Kazakhstan
 - 1 additional person with candidate-only evidence retained for audit but no accepted outcome
 - 8 unmatched people and 171 rejected identity sources retained for audit
 
@@ -39,6 +39,13 @@ institutional roles and one appointment date. Publication affiliations are now s
 history, not employment or education. The 55 initially blank alma-mater rows
 and their remaining gaps are recorded in
 `data/revalidation/2026-09-07/education_followup.json`.
+
+An additional 16-person sample exposed admission offers being counted as
+attendance, a Stanford online course counted as an alma mater, and inconsistent
+company/university categories. These were corrected across the dataset;
+admissions and courses remain searchable history. The sample decisions,
+same-day cached evidence, and retrieval limitations are recorded in
+`data/revalidation/2026-09-07/semantic_review.json`.
 
 The current first step is implemented in `scripts/collect_kazakhstan_participants.py`. It collects Kazakhstan competitors from:
 
@@ -160,7 +167,7 @@ The two apply scripts merge the auditable Exa review overlays before assembly. `
 
 `scripts/build_audit_bundle.py` then creates normalized audit tables under `data/audit/`. The final people, affiliation-history, location, and destination-review tables join to a row-level evidence ledger; evidence joins to a deduplicated source registry through `source_id`; every evidence row retains its direct `source_url`. Accepted, supporting, candidate, superseded, and rejected claims remain visible instead of being collapsed into one compound URL field. See `data/audit/README.md` for the audit procedure and data dictionary.
 
-`scripts/build_profile_sanity_review.py` adds a reproducible 48-person manual-review ledger, stratified equally by confirmed/probable status and pre/post-2005 Olympiad era. Selection sorts each stratum by SHA-256 of the fixed seed, stratum, and `person_id`, so the cohort can be regenerated exactly. The signed August sample excluded the 48 profiles from the previous round and records participation, identity, destination, location, alma-mater, source-health, and LinkedIn-consistency checks for 48 new rows; 22 received deeper reviews and six required corrections. The cumulative root-cause ledger now contains 55 resolved findings, including September's subsequent checks. The dated revalidation report distinguishes these review scopes.
+`scripts/build_profile_sanity_review.py` adds a reproducible 48-person manual-review ledger, stratified equally by confirmed/probable status and pre/post-2005 Olympiad era. Selection sorts each stratum by SHA-256 of the fixed seed, stratum, and `person_id`, so the cohort can be regenerated exactly. The signed August sample excluded the 48 profiles from the previous round and records participation, identity, destination, location, alma-mater, source-health, and LinkedIn-consistency checks for 48 new rows; 22 received deeper reviews and six required corrections. The cumulative root-cause ledger now contains 59 resolved findings, including September's subsequent checks. The dated revalidation report distinguishes these review scopes.
 
 The same build reconciles all 302 accepted LinkedIn profiles against the single published destination and role. Every conflict now has an explicit source-precedence decision, and zero LinkedIn destination or role mismatches remain unexplained. The root-cause ledger and exact supporting links are in `data/audit/profile_sanity_review_findings.csv`.
 

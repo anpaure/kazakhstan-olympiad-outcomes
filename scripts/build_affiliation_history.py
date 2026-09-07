@@ -22,6 +22,7 @@ try:
         affiliation_supported_by_identity,
         identity_sort_key,
         identity_urls,
+        is_prospective_education,
     )
     from scripts.organization_names import canonicalize_organization
 except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path.
@@ -36,6 +37,7 @@ except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path
         affiliation_supported_by_identity,
         identity_sort_key,
         identity_urls,
+        is_prospective_education,
     )
     from organization_names import canonicalize_organization
 
@@ -930,6 +932,10 @@ def is_postsecondary_education(row: dict[str, object]) -> bool:
     organization = clean_text(row.get("organization"))
     evidence_text = clean_text(row.get("evidence_text"))
     evidence_kind = clean_text(row.get("evidence_kind"))
+    if is_prospective_education(role) or evidence_kind == "official_university_admission_record":
+        return False
+    if re.search(r"\b(?:XCS\d+|online course|non[- ]degree course)\b", role, re.IGNORECASE):
+        return False
     if organization.casefold() == "clinton global initiative university":
         return False
     if evidence_kind in COMPETITION_DIRECTORY_EVIDENCE and not role:
@@ -1245,6 +1251,12 @@ def build_rows(
         merge_undated_duplicates(list(deduplicated.values()))
     )
     rows = apply_completed_education_precedence(rows, as_of_year)
+    for row in rows:
+        if row["affiliation_type"] == "education" and (
+            is_prospective_education(row["role"])
+            or row["evidence_kind"] == "official_university_admission_record"
+        ):
+            row["is_current"] = False
 
     education_by_person: dict[str, list[dict[str, object]]] = defaultdict(list)
     for row in rows:
@@ -1263,6 +1275,7 @@ def build_rows(
                     clean_text(row.get("organization"))
                 )
                 and not is_strong_employment_role(row.get("role"))
+                and not is_prospective_education(row.get("role"))
                 and not NON_ALMA_ROLE_PATTERN.search(
                     f"{clean_text(row.get('role'))} {clean_text(row.get('evidence_text'))}"
                 )

@@ -380,7 +380,7 @@
   {
     "organization_sector_id": "sector-d9b71961fa5e8228",
     "canonical_name": "Dove Science Academy",
-    "organization_type": "nonprofit",
+    "organization_type": "education",
     "sector": "Education & Research",
     "rationale": "Reviewed organization is a public charter-school network."
   },
@@ -546,6 +546,13 @@
     "rationale": "Reviewed core activity is generative AI software."
   },
   {
+    "organization_sector_id": "sector-cfb2cbc2eab2c79d",
+    "canonical_name": "HITS",
+    "organization_type": "company",
+    "sector": "Healthcare & Life Sciences",
+    "rationale": "The accepted profile links hits-ai and the company's own profile identifies a privately held AI drug-discovery company rather than an educational institution."
+  },
+  {
     "organization_sector_id": "sector-1a41a2e61a1d3e4b",
     "canonical_name": "Home Credit Bank",
     "organization_type": "company",
@@ -611,7 +618,7 @@
   {
     "organization_sector_id": "sector-84233a8c7c872f26",
     "canonical_name": "Institute of Plant Biology and Biotechnology",
-    "organization_type": "nonprofit",
+    "organization_type": "education",
     "sector": "Education & Research",
     "rationale": "Reviewed organization is a public scientific institute for plant biology and biotechnology research."
   },
@@ -1178,7 +1185,7 @@
   {
     "organization_sector_id": "sector-a83a403aa39134e9",
     "canonical_name": "Skoltech",
-    "organization_type": "nonprofit",
+    "organization_type": "education",
     "sector": "Education & Research",
     "rationale": "Reviewed organization is a graduate research university focused on science and technology."
   },

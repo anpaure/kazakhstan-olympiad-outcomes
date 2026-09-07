@@ -14,7 +14,7 @@ except ModuleNotFoundError:  # Direct script execution adds scripts/ to sys.path
 
 
 DEFAULT_SECTORS = Path(__file__).resolve().parents[1] / "data/organization_sectors.csv"
-ORGANIZATION_TYPES = {"company", "government", "nonprofit", "independent"}
+ORGANIZATION_TYPES = {"company", "government", "nonprofit", "independent", "education"}
 SECTORS = {
     "Consulting & Professional Services",
     "Consumer & Media",
@@ -81,6 +81,9 @@ def organization_metadata(
             "rationale": "",
         }
     category = clean_organization(organization_category).casefold()
+    reviewed = load_organization_sectors().get(canonical_name.casefold())
+    if reviewed:
+        return reviewed
     if category in {"academia", "education"}:
         return {
             "canonical_name": canonical_name,
@@ -88,12 +91,9 @@ def organization_metadata(
             "sector": "Education & Research",
             "rationale": "Destination is classified as an educational or research institution.",
         }
-    return load_organization_sectors().get(
-        canonical_name.casefold(),
-        {
-            "canonical_name": canonical_name,
-            "organization_type": "",
-            "sector": "",
-            "rationale": "",
-        },
-    )
+    return {
+        "canonical_name": canonical_name,
+        "organization_type": "",
+        "sector": "",
+        "rationale": "",
+    }

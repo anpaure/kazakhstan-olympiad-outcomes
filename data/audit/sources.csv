@@ -458,7 +458,7 @@ src-62aa82ed417f,https://kebab.eportfolio.kz/ru/portfolio/?pane=public&school=10
 src-9c0684a2310c,https://kg.linkedin.com/in/ulan-mukashev-59771a2b,kg.linkedin.com,linkedin,12,1,1,11,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
 src-ed1108db640e,https://kmgpetrochem.kz/ru/news/102-2024-08-29,kmgpetrochem.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-04f3f1e32229,https://kr.linkedin.com/company/cobalt-inc,kr.linkedin.com,linkedin,4,1,2,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,current_role_location;destination_review;destination_source_review;manual
-src-9cd441392daa,https://kr.linkedin.com/in/allbackoff,kr.linkedin.com,linkedin,16,1,2,14,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
+src-9cd441392daa,https://kr.linkedin.com/in/allbackoff,kr.linkedin.com,linkedin,17,1,2,14,0,1,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review
 src-7de44ca13713,https://kr.linkedin.com/in/galymzhnb,kr.linkedin.com,linkedin,9,1,2,6,0,1,0,accepted_affiliation_history;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;destination_review;destination_source_review;linkedin;manual;manual_review
 src-681644037d75,https://kr.linkedin.com/in/guldana-abduali,kr.linkedin.com,linkedin,9,1,0,9,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin
 src-8189b757a7d9,https://kr.linkedin.com/in/kibriyanur-abdugafarova,kr.linkedin.com,linkedin,19,1,1,18,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin;manual;manual_review
@@ -614,7 +614,7 @@ src-0212e8754028,https://linkedin.com/in/bychkovvv,linkedin.com,linkedin,1,1,0,0
 src-c7f9ef011150,https://linkedin.com/in/damir-kurmanguzhin-b02726235,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-1f1bc5003ecf,https://linkedin.com/in/damir-tulegenov-3a2706185,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-7d7081d294e2,https://linkedin.com/in/daniil-melnichenko-637776251,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
-src-ffe96a0a662d,https://linkedin.com/in/daniilmel,linkedin.com,linkedin,15,1,1,14,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
+src-ffe96a0a662d,https://linkedin.com/in/daniilmel,linkedin.com,linkedin,16,1,1,14,0,1,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual
 src-ea6470e56232,https://linkedin.com/in/danil-kravtsov,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-426bc1d620c9,https://linkedin.com/in/daniyar-murtazin-47b177330,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-3d8ec66081bd,https://linkedin.com/in/daniyar-zakarin-33b45899,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
@@ -1294,7 +1294,7 @@ src-279f878454d5,https://uk.linkedin.com/in/alishertortay,uk.linkedin.com,linked
 src-aee4b0e8804f,https://uk.linkedin.com/in/azamat-ukpegaziyev-868b1947,uk.linkedin.com,linkedin,11,1,1,10,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
 src-5ee430930caf,https://uk.linkedin.com/in/bahakz,uk.linkedin.com,linkedin,20,1,0,20,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual_profile_transcription
 src-0b08cc7c098e,https://uk.linkedin.com/in/dinmukhamed-rakhimzhanov-93a2b8302,uk.linkedin.com,linkedin,5,1,2,3,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin;manual;manual_review
-src-55ad161a891a,https://uk.linkedin.com/in/nazarbek,uk.linkedin.com,linkedin,12,1,2,10,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
+src-55ad161a891a,https://uk.linkedin.com/in/nazarbek,uk.linkedin.com,linkedin,13,1,2,10,0,1,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual
 src-a089ced9e4b2,https://uk.linkedin.com/in/olzhas-nurpeisov,uk.linkedin.com,linkedin,10,1,2,8,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review
 src-c4e69d00a40c,https://uk.linkedin.com/in/rainhunter13,uk.linkedin.com,linkedin,9,1,1,8,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
 src-837adade5fb9,https://uk.linkedin.com/in/sergazy-kalmurzayev-2ba468231,uk.linkedin.com,linkedin,9,1,1,8,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;active_affiliation_profile_location;destination_review;destination_source_review;linkedin
@@ -1326,7 +1326,7 @@ src-bd7156e340c8,https://www.bc.edu/content/bc-web/schools/morrissey/departments
 src-d1ced10055ef,https://www.brandeis.edu/biology/faculty/kurmangaliyev-yerbol.html,brandeis.edu,web_page,3,1,0,2,0,1,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-7708d695dc5c,https://www.brandeis.edu/now/2022/september/new-faculty-2022.html,brandeis.edu,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;manual_destination_reconciliation,destination_review;destination_source_review;official_degree_completion
 src-385c85371c70,https://www.caltech.edu/about/visit,caltech.edu,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
-src-0a1f77646095,https://www.cam.ac.uk/about-the-university/contact-the-university,cam.ac.uk,web_page,3,3,0,3,0,0,0,accepted_location_evidence,current_education_location
+src-0a1f77646095,https://www.cam.ac.uk/about-the-university/contact-the-university,cam.ac.uk,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
 src-1a358d79c355,https://www.caravan.kz/gazeta/beregi-mozgi-smolodu-384231/,caravan.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-d78c63eeaee4,https://www.caravan.kz/news/pavlodarskijj-shkolnik-stal-bronzovym-prizerom-mezhdunarodnojj-olimpiady-po-informatike-188192/,caravan.kz,web_page,2,1,0,2,0,0,0,accepted_affiliation_history;accepted_location_evidence,historical_outcome_location;reported_school_biography
 src-0a6777d958be,https://www.caravan.kz/news/pavlodarskijj-vunderkind-poluchit-vysshee-obrazovanie-v-ssha-199184/,caravan.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,reported_university_attendance
@@ -1341,7 +1341,7 @@ src-d6b6fccb53ed,https://www.dnb.com/business-directory/company-profiles.ceptah_
 src-acf8ebeb51bc,https://www.e-xecutive.ru/users/389062-talap-akashev,e-xecutive.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-8db77efd68e9,https://www.e-xecutive.ru/users/69833-askerbek-zhaksylykov,e-xecutive.ru,web_page,3,1,0,3,0,0,0,accepted_affiliation_history,self_authored_career_profile
 src-4a8afd906db6,https://www.econ.msu.ru/news/News.20120206_1235/,econ.msu.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_student_record
-src-f14b667aec2c,https://www.ens.psl.eu/en/contact,ens.psl.eu,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
+src-f14b667aec2c,https://www.ens.psl.eu/en/contact,ens.psl.eu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-4c5e2a14907c,https://www.ens.psl.eu/sites/default/files/admis-et-lc-bo2026_signe.pdf,ens.psl.eu,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-4aa6dadbee40,https://www.epfl.ch/campus/visitors/coming-to-epfl/,epfl.ch,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-83910637c936,https://www.finmag.cz/obchodni-rejstrik/25478192-microplus-s-r-o,finmag.cz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,company_registry_history
@@ -1550,7 +1550,7 @@ src-b12f5d981515,https://www.imo-official.org/team_r.aspx?code=KAZ&year=2000,imo
 src-610a8e278324,https://www.imo-official.org/team_r.aspx?code=KAZ&year=2004,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-681ec8bee7aa,https://www.imo-official.org/team_r.aspx?code=KAZ&year=2012,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-5deec4b2750b,https://www.imo-official.org/team_r.aspx?code=KAZ&year=2015,imo-official.org,web_page,1,1,1,0,0,0,0,manual_review,manual
-src-4c57ba95b381,https://www.imperial.ac.uk/visit/campuses/,imperial.ac.uk,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
+src-4c57ba95b381,https://www.imperial.ac.uk/visit/campuses/,imperial.ac.uk,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-1bcd82e9003e,https://www.inforegister.ee/en/2181368-ID/,inforegister.ee,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-1de92d5f7853,https://www.inform.kz/person/nurzhan-khazhimuratuly-kadzhiakbarov-1736839590,inform.kz,web_page,8,1,0,8,0,0,0,accepted_affiliation_history,official_news_agency_biography
 src-4c799ce6963b,https://www.inform.kz/ru/kazahstanskie-shkolniki-zavoevali-chetire-medali-na-prestizhnoy-mezhdunarodnoy-olimpiade-029dda,inform.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_student_report
@@ -1655,7 +1655,7 @@ src-52b1211247ed,https://www.math.hkust.edu.hk/ug/competition/previous/2024/phot
 src-3bb8653b2b1a,https://www.math.ucdavis.edu/people/grads,math.ucdavis.edu,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-a0c5284dc3d2,https://www.mbi.nus.edu.sg/research-fellow/murat-shagirov/,mbi.nus.edu.sg,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-530e5828b691,https://www.mdpi.com/1420-3049/28/18/6451,mdpi.com,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,peer_reviewed_affiliation
-src-83744c9838c3,https://www.mit.edu/visitmit/,mit.edu,web_page,5,5,0,5,0,0,0,accepted_location_evidence,current_education_location
+src-83744c9838c3,https://www.mit.edu/visitmit/,mit.edu,web_page,4,4,0,4,0,0,0,accepted_location_evidence,current_education_location
 src-929039b2a6c7,https://www.msu.kz/ru/information/kafedry/detail.php?ELEMENT_ID=8321,msu.kz,web_page,5,1,1,4,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review;official_university_alumni_profile
 src-c54c3027f964,https://www.myprivatetutor.hk/teacher/29733/adilet-u-experienced-physics-tutor-with-a-bsc-from-hku,myprivatetutor.hk,web_page,5,1,1,3,0,1,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,current_role_location;destination_review;destination_source_review;manual;manual_review
 src-dc6ecba7feb5,https://www.naturalspublishing.com/files/published/d7lg766m627wtw.pdf,naturalspublishing.com,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;peer_reviewed_author_biography
@@ -1672,7 +1672,7 @@ src-6806f9f45154,https://www.nis.edu.kz/storage/files/01JSKCF66NTSVQAB3HC9QDMGEP
 src-8615a8c71bef,https://www.nis.edu.kz/storage/files/01JSKD3FB0SVR0VQAXEE8BCGCY.pdf,nis.edu.kz,pdf,1,1,1,0,0,0,0,manual_review,manual
 src-1884c2ae8f46,https://www.northwestern.edu/about/visit/campuses.html,northwestern.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-6bd45cfae6db,https://www.nss.ece.vt.edu/angelos/resume/cv_stavrou_latest.html,nss.ece.vt.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_faculty_cv
-src-4c75ad0f9d52,https://www.ntu.edu.sg/about-us/contact-us,ntu.edu.sg,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
+src-4c75ad0f9d52,https://www.ntu.edu.sg/about-us/contact-us,ntu.edu.sg,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-6b74dd29dc3d,https://www.nuclear.kz/download/files/NPK-17.pdf,nuclear.kz,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-6798116035bf,https://www.nuin.northwestern.edu/current-students/student-profiles.html?page=3,nuin.northwestern.edu,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-50f3e9d07dfc,https://www.nyu.edu/footer/map.html,nyu.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location

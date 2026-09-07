@@ -7,6 +7,11 @@ from scripts.organization_sectors import (
 
 
 class OrganizationSectorTest(unittest.TestCase):
+    def test_reviewed_type_overrides_stale_category(self):
+        self.assertEqual(organization_metadata("HITS", "Academia")["organization_type"], "company")
+        self.assertEqual(organization_metadata("HITS", "Academia")["sector"], "Healthcare & Life Sciences")
+        self.assertEqual(organization_metadata("Skoltech", "Industry")["organization_type"], "education")
+
     def test_alias_uses_canonical_company_sector(self):
         metadata = organization_metadata("Amazon Web Services", "Industry")
 
