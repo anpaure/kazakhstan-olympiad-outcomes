@@ -225,6 +225,21 @@
     "review_reason": "The accepted profile lists a 2026-2030 Bachelor of Science in Mathematics at Caltech and identifies Amirbek as Math at Caltech '30."
   },
   {
+    "destination_review_id": "dest-review-e0f5b026875b6798",
+    "evidence_id": "ev-81f9ad7a6b167ba1",
+    "source_id": "src-950a6038bd32",
+    "person_id": "kaz-4a00a35c3f4a",
+    "name": "Andrey Bogdanchikov",
+    "organization": "Suleyman Demirel University (SDU)",
+    "role": "Vice Rector for Strategic Development and Digitalization",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://sdu.edu.kz/en/leadership/",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "SDU's current Leadership and Executive Board pages identify this vice-rector role; the university's May 26 2026 forum announcement corroborates it. The prior Associate Professor destination omitted the executive role. The older expert biography is used for completed degrees only. No appointment date is inferred."
+  },
+  {
     "destination_review_id": "dest-review-9a922a915d52c245",
     "evidence_id": "ev-b52841186c94922e",
     "source_id": "src-1f0e6eb4c6b1",
@@ -810,6 +825,21 @@
     "review_reason": "Pediatric Associates' current physician page directly identifies Nazym Bashkenova as a pediatrician in its Winter Springs practice. The accepted public profile independently names the same current employer and location."
   },
   {
+    "destination_review_id": "dest-review-9edc630b61939a3a",
+    "evidence_id": "ev-2ae8cb29f4ba1a7b",
+    "source_id": "src-f1b9e8c2cd6d",
+    "person_id": "kaz-f4f08ec984b8",
+    "name": "Nikolay Berezhnoy",
+    "organization": "Nazarbayev University",
+    "role": "Senior Researcher, Laboratory of Molecular Oncology",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://nla.nu.edu.kz/tpost/x0ibxmnno1-plasma-lipidome-profiling-of-patients-wi",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "National Laboratory Astana's 2025-2027 lipidomics project explicitly identifies Nikolay as principal investigator and Senior Researcher in Molecular Oncology. This current project supersedes the old Bioengineering and Regenerative Medicine title. Project dates are not assumed to be employment dates; old Singapore profiles do not override the current Kazakhstan project."
+  },
+  {
     "destination_review_id": "dest-review-ecc33850fa40768e",
     "evidence_id": "ev-96567fd42cc60c3d",
     "source_id": "src-6be0102e4d2b",
@@ -1258,6 +1288,21 @@
     "evidence_url": "https://uk.linkedin.com/in/yegor-klochkov-1a06a093",
     "reviewed_at": "2026-08-10",
     "review_reason": "The accepted profile lists Senior Member of Research Staff at The Voleon Group as current from May 2025."
+  },
+  {
+    "destination_review_id": "dest-review-09756469f4d09f03",
+    "evidence_id": "ev-09719a7281464228",
+    "source_id": "src-7708d695dc5c",
+    "person_id": "kaz-84154f378216",
+    "name": "Yerbol Kurmangaliyev",
+    "organization": "Brandeis University",
+    "role": "Assistant Professor of Biology",
+    "affiliation_type": "employment",
+    "start_year": "2022",
+    "end_year": "",
+    "evidence_url": "https://www.brandeis.edu/now/2022/september/new-faculty-2022.html",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "Brandeis's September 21 2022 announcement identifies Yerbol among the new faculty who joined that fall and were welcomed at August orientation. This dates the appointment to 2022 rather than the stored 2023 start. The current faculty page independently retains the Assistant Professor of Biology title."
   },
   {
     "destination_review_id": "dest-review-dba3ee246df41c31",

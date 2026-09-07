@@ -2271,13 +2271,13 @@
     "role_category": "Research & Academia",
     "destination_status": "latest_employment",
     "destination_note": "One reviewed latest employment or organizational role is used as the destination.",
-    "start_year": "2023",
+    "start_year": "2022",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://orcid.org/0000-0003-4829-2025;https://www.brandeis.edu/biology/faculty/kurmangaliyev-yerbol.html;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2000.pdf",
-    "evidence_count": 3,
+    "evidence_urls": "https://orcid.org/0000-0003-4829-2025;https://www.brandeis.edu/biology/faculty/kurmangaliyev-yerbol.html;https://www.brandeis.edu/now/2022/september/new-faculty-2022.html;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2000.pdf",
+    "evidence_count": 4,
     "sources": "orcid;verified",
-    "verification_basis": "The rare exact-name official IBO record aligns with a self-asserted ORCID timeline and Brandeis's current faculty page for its assistant professor of biology"
+    "verification_basis": "The rare exact-name official IBO record aligns with a self-asserted ORCID timeline and Brandeis's current faculty page for its assistant professor of biology; Destination review: Brandeis's September 21 2022 announcement identifies Yerbol among the new faculty who joined that fall and were welcomed at August orientation. This dates the appointment to 2022 rather than the stored 2023 start. The current faculty page independently retains the Assistant Professor of Biology title."
   },
   {
     "person_id": "kaz-cae8a8caf16a",
@@ -2535,7 +2535,7 @@
     "profile_url": "https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/",
     "linkedin_url": "",
     "organization": "Nazarbayev University",
-    "role": "Senior Researcher in Bioengineering and Regenerative Medicine",
+    "role": "Senior Researcher, Laboratory of Molecular Oncology",
     "affiliation_type": "employment",
     "organization_category": "Academia",
     "role_category": "Research & Academia",
@@ -2544,10 +2544,10 @@
     "start_year": "",
     "end_year": "",
     "country_code": "",
-    "evidence_urls": "https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2002.pdf",
-    "evidence_count": 2,
+    "evidence_urls": "https://nla.nu.edu.kz/tpost/x0ibxmnno1-plasma-lipidome-profiling-of-patients-wi;https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/;https://www.ibo-info.org/files/downloads/results-reports/results/IBO2002.pdf",
+    "evidence_count": 3,
     "sources": "verified",
-    "verification_basis": "The adjacent 2001 and 2002 official IBO records align with the rare exact-name Kazakhstan researcher and the biological field on Nazarbayev University's current staff profile"
+    "verification_basis": "The adjacent 2001 and 2002 official IBO records align with the rare exact-name Kazakhstan researcher and the biological field on Nazarbayev University's current staff profile; Destination review: National Laboratory Astana's 2025-2027 lipidomics project explicitly identifies Nikolay as principal investigator and Senior Researcher in Molecular Oncology. This current project supersedes the old Bioengineering and Regenerative Medicine title. Project dates are not assumed to be employment dates; old Singapore profiles do not override the current Kazakhstan project."
   },
   {
     "person_id": "kaz-9bc854d0232a",
@@ -3255,19 +3255,19 @@
     "profile_url": "https://cphof.org/profile/ioi:4087",
     "linkedin_url": "",
     "organization": "Suleyman Demirel University (SDU)",
-    "role": "Associate Professor",
+    "role": "Vice Rector for Strategic Development and Digitalization",
     "affiliation_type": "employment",
     "organization_category": "Academia",
-    "role_category": "Research & Academia",
+    "role_category": "Other",
     "destination_status": "latest_employment",
     "destination_note": "One reviewed latest employment or organizational role is used as the destination.",
     "start_year": "",
     "end_year": "",
     "country_code": "KZ",
-    "evidence_urls": "http://stats.ioinformatics.org/people/4087;https://cphof.org/profile/ioi:4087;https://openalex.org/A5073070441;https://orcid.org/0000-0001-9693-7487",
-    "evidence_count": 4,
+    "evidence_urls": "http://stats.ioinformatics.org/people/4087;https://cphof.org/profile/ioi:4087;https://openalex.org/A5073070441;https://orcid.org/0000-0001-9693-7487;https://sdu.edu.kz/en/leadership/",
+    "evidence_count": 5,
     "sources": "cphof;openalex;openalex_orcid;orcid",
-    "verification_basis": "profile=ioi:4087; country=Kazakhstan; contest=IOI; SDU University; Associate Professor; Information Systems"
+    "verification_basis": "profile=ioi:4087; country=Kazakhstan; contest=IOI; SDU University; Associate Professor; Information Systems; Destination review: SDU's current Leadership and Executive Board pages identify this vice-rector role; the university's May 26 2026 forum announcement corroborates it. The prior Associate Professor destination omitted the executive role. The older expert biography is used for completed degrees only. No appointment date is inferred."
   },
   {
     "person_id": "kaz-bfdcf65f4a6e",

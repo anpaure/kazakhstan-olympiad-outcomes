@@ -604,15 +604,15 @@
     "source_url": "https://bolashak.gov.kz/o-stipendii/istorii-uspeha/ajtuov-bauyrzhan-abdugalievich",
     "source_host": "bolashak.gov.kz",
     "source_kind": "web_page",
-    "evidence_rows": 4,
+    "evidence_rows": 5,
     "people_count": 1,
     "accepted_rows": 2,
-    "supporting_rows": 2,
+    "supporting_rows": 3,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review",
-    "source_adapters": "career_source_location;destination_review;destination_source_review;manual"
+    "source_adapters": "career_source_location;destination_review;destination_source_review;manual;official_scholarship_biography"
   },
   {
     "source_id": "src-64e5df7efbde",
@@ -3225,6 +3225,21 @@
     "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review"
   },
   {
+    "source_id": "src-30fa0d773032",
+    "source_url": "https://digitalcommons.dartmouth.edu/dissertations/165/",
+    "source_host": "digitalcommons.dartmouth.edu",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_degree_completion"
+  },
+  {
     "source_id": "src-ecf379dfab9b",
     "source_url": "https://dspace.mit.edu/server/api/core/items/5ce13076-f6ee-4514-bd98-4dc4805dc111",
     "source_host": "dspace.mit.edu",
@@ -3274,15 +3289,15 @@
     "source_url": "https://edlightacademy.kz/trainers",
     "source_host": "edlightacademy.kz",
     "source_kind": "web_page",
-    "evidence_rows": 4,
+    "evidence_rows": 5,
     "people_count": 1,
     "accepted_rows": 2,
-    "supporting_rows": 2,
+    "supporting_rows": 3,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review",
-    "source_adapters": "career_source_location;destination_review;destination_source_review;manual"
+    "source_adapters": "career_source_location;destination_review;destination_source_review;manual;official_employer_biography"
   },
   {
     "source_id": "src-44a6a96f2636",
@@ -6690,19 +6705,34 @@
     "source_adapters": "institutional_profile"
   },
   {
-    "source_id": "src-9c64cc394107",
-    "source_url": "https://k-t-l.narod.ru/we/success.html",
+    "source_id": "src-07dcbcd1d445",
+    "source_url": "https://k-t-l.narod.ru/news2007.html",
     "source_host": "k-t-l.narod.ru",
     "source_kind": "web_page",
-    "evidence_rows": 2,
+    "evidence_rows": 1,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 0,
     "supporting_rows": 1,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;manual_review",
-    "source_adapters": "manual;school_alumni_archive"
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "school_alumni_archive"
+  },
+  {
+    "source_id": "src-9c64cc394107",
+    "source_url": "https://k-t-l.narod.ru/we/success.html",
+    "source_host": "k-t-l.narod.ru",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 0,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "manual_review",
+    "source_adapters": "manual"
   },
   {
     "source_id": "src-21fd73d05ac2",
@@ -11730,6 +11760,21 @@
     "source_adapters": "accepted_linkedin_profile;current_role_location;linkedin;manual"
   },
   {
+    "source_id": "src-f1b9e8c2cd6d",
+    "source_url": "https://nla.nu.edu.kz/tpost/x0ibxmnno1-plasma-lipidome-profiling-of-patients-wi",
+    "source_host": "nla.nu.edu.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation",
+    "source_adapters": "current_role_location;destination_review;destination_source_review"
+  },
+  {
     "source_id": "src-1b06af578c08",
     "source_url": "https://nu.edu.kz/en/about/contacts",
     "source_host": "nu.edu.kz",
@@ -13296,8 +13341,8 @@
     "source_kind": "structured_profile",
     "evidence_rows": 3,
     "people_count": 1,
-    "accepted_rows": 1,
-    "supporting_rows": 2,
+    "accepted_rows": 0,
+    "supporting_rows": 3,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
@@ -16459,15 +16504,15 @@
     "source_url": "https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/",
     "source_host": "research.nu.edu.kz",
     "source_kind": "web_page",
-    "evidence_rows": 3,
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
-    "supporting_rows": 2,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
     "candidate_rows": 0,
-    "superseded_rows": 0,
+    "superseded_rows": 1,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "current_role_location;manual;manual_review"
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review"
   },
   {
     "source_id": "src-c4f8fcc141d4",
@@ -16633,6 +16678,21 @@
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history",
     "source_adapters": "institutional_profile"
+  },
+  {
+    "source_id": "src-5a7b0f277346",
+    "source_url": "https://scholarworks.brandeis.edu/esploro/profile/yerbol_kurmangaliyev/output?institution=01BRAND_INST",
+    "source_host": "scholarworks.brandeis.edu",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_biography"
   },
   {
     "source_id": "src-d648202c3447",
@@ -17415,6 +17475,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-950a6038bd32",
+    "source_url": "https://sdu.edu.kz/en/leadership/",
+    "source_host": "sdu.edu.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_destination_reconciliation",
+    "source_adapters": "destination_review;destination_source_review"
+  },
+  {
     "source_id": "src-ac3b5c7d0b71",
     "source_url": "https://sdu.edu.kz/en/sdu-university-professor-led-kazakhstans-historic-victory-at-the-international-physics-olympiad/",
     "source_host": "sdu.edu.kz",
@@ -17428,6 +17503,21 @@
     "rejected_rows": 0,
     "provenances": "manual_review",
     "source_adapters": "manual"
+  },
+  {
+    "source_id": "src-f517a8185f60",
+    "source_url": "https://sdu.edu.kz/ru/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D1%8B-%D1%81%D0%B4%D1%83/",
+    "source_host": "sdu.edu.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 3,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_degree_completion;official_university_biography"
   },
   {
     "source_id": "src-9ab35b532d92",
@@ -19776,13 +19866,28 @@
     "source_kind": "web_page",
     "evidence_rows": 3,
     "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 1,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
+    "source_adapters": "current_role_location;manual;manual_review"
+  },
+  {
+    "source_id": "src-7708d695dc5c",
+    "source_url": "https://www.brandeis.edu/now/2022/september/new-faculty-2022.html",
+    "source_host": "brandeis.edu",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
     "accepted_rows": 1,
     "supporting_rows": 2,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "current_role_location;manual;manual_review"
+    "provenances": "accepted_affiliation_history;manual_destination_reconciliation",
+    "source_adapters": "destination_review;destination_source_review;official_degree_completion"
   },
   {
     "source_id": "src-385c85371c70",
@@ -19834,6 +19939,21 @@
     "source_url": "https://www.caravan.kz/news/pavlodarskijj-shkolnik-stal-bronzovym-prizerom-mezhdunarodnojj-olimpiady-po-informatike-188192/",
     "source_host": "caravan.kz",
     "source_kind": "web_page",
+    "evidence_rows": 2,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;accepted_location_evidence",
+    "source_adapters": "historical_outcome_location;reported_school_biography"
+  },
+  {
+    "source_id": "src-0a6777d958be",
+    "source_url": "https://www.caravan.kz/news/pavlodarskijj-vunderkind-poluchit-vysshee-obrazovanie-v-ssha-199184/",
+    "source_host": "caravan.kz",
+    "source_kind": "web_page",
     "evidence_rows": 1,
     "people_count": 1,
     "accepted_rows": 0,
@@ -19841,8 +19961,8 @@
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "accepted_location_evidence",
-    "source_adapters": "historical_outcome_location"
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "reported_university_attendance"
   },
   {
     "source_id": "src-19b5bc0b1ae1",
@@ -20269,15 +20389,15 @@
     "source_url": "https://www.haileybury.kz/en/almaty/board-of-governors",
     "source_host": "haileybury.kz",
     "source_kind": "web_page",
-    "evidence_rows": 2,
+    "evidence_rows": 6,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 1,
+    "supporting_rows": 5,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;manual_review",
-    "source_adapters": "manual;manual_review"
+    "source_adapters": "manual;manual_review;official_board_biography"
   },
   {
     "source_id": "src-b34cd7c55bea",
@@ -20374,15 +20494,15 @@
     "source_url": "https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov",
     "source_host": "hw.ac.uk",
     "source_kind": "web_page",
-    "evidence_rows": 3,
+    "evidence_rows": 6,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 2,
+    "supporting_rows": 5,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "current_role_location;manual;manual_review"
+    "source_adapters": "current_role_location;manual;manual_review;official_university_biography"
   },
   {
     "source_id": "src-07f001838ebe",
@@ -24739,15 +24859,15 @@
     "source_url": "https://www.msu.kz/ru/information/kafedry/detail.php?ELEMENT_ID=8321",
     "source_host": "msu.kz",
     "source_kind": "web_page",
-    "evidence_rows": 3,
+    "evidence_rows": 5,
     "people_count": 1,
     "accepted_rows": 1,
-    "supporting_rows": 2,
+    "supporting_rows": 4,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
     "provenances": "accepted_affiliation_history;accepted_location_evidence;manual_review",
-    "source_adapters": "current_role_location;manual;manual_review"
+    "source_adapters": "current_role_location;manual;manual_review;official_university_alumni_profile"
   },
   {
     "source_id": "src-c54c3027f964",

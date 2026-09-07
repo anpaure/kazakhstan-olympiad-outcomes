@@ -15,12 +15,13 @@ The checked-in data currently contains:
 - 448 accepted identities: 317 confirmed and 131 probable
 - 440 manually reviewed people backed by public evidence
 - 413 resolved destinations and 302 accepted public LinkedIn profiles
-- 2,662 employment/education history rows, including 585 selected alma-mater records across 402 people
-- 93 destination reviews for missing, stale, or overstated roles
-- 528 organization aliases and 217 sector classifications
+- 2,686 history rows: 1,708 employment, 949 education, and 29 research affiliations
+- 599 selected alma-mater records across 411 people
+- 97 destination reviews for missing, stale, or overstated roles
+- 534 organization aliases and 218 sector classifications
 - 415 sourced outcome-country records across 39 countries; 42 people remain unknown rather than defaulting to Kazakhstan
 - 1 additional person with candidate-only evidence retained for audit but no accepted outcome
-- 8 unmatched people and 168 rejected identity sources retained for audit
+- 8 unmatched people and 171 rejected identity sources retained for audit
 
 The September 7, 2026 revalidation attempted all 302 accepted LinkedIn profiles
 through Exa: 288 returned content and 14 were unavailable. Responses may be
@@ -32,6 +33,12 @@ added. See `data/audit/revalidation_report.md` for scope, corrections, and gaps.
 A follow-up reviewed Aldiyar's reported university enrollment and Sanzhar's
 historical HKUST attendance. The decisions and remaining uncertainty are in
 `data/revalidation/2026-09-07/followup_review.json`.
+
+Further review recovered missing education for nine people and corrected two
+institutional roles and one appointment date. Publication affiliations are now separate research
+history, not employment or education. The 55 initially blank alma-mater rows
+and their remaining gaps are recorded in
+`data/revalidation/2026-09-07/education_followup.json`.
 
 The current first step is implemented in `scripts/collect_kazakhstan_participants.py`. It collects Kazakhstan competitors from:
 
@@ -153,11 +160,11 @@ The two apply scripts merge the auditable Exa review overlays before assembly. `
 
 `scripts/build_audit_bundle.py` then creates normalized audit tables under `data/audit/`. The final people, affiliation-history, location, and destination-review tables join to a row-level evidence ledger; evidence joins to a deduplicated source registry through `source_id`; every evidence row retains its direct `source_url`. Accepted, supporting, candidate, superseded, and rejected claims remain visible instead of being collapsed into one compound URL field. See `data/audit/README.md` for the audit procedure and data dictionary.
 
-`scripts/build_profile_sanity_review.py` adds a reproducible 48-person manual-review ledger, stratified equally by confirmed/probable status and pre/post-2005 Olympiad era. Selection sorts each stratum by SHA-256 of the fixed seed, stratum, and `person_id`, so the cohort can be regenerated exactly. The latest pass excluded all 48 profiles from the previous round and re-opened participation, identity, destination, location, alma-mater, source-health, and LinkedIn-consistency evidence for 48 new rows; 20 received a deeper source-by-source review and four required corrections. Across both rounds, the downstream scan documented and resolved 44 root-cause classes, including stale destination chronology, unsupported country inference, malformed affiliations, missing alma-mater ingestion, third-party profile/source conflation, structured-profile namesakes, canonical name-order drift, and stale source links.
+`scripts/build_profile_sanity_review.py` adds a reproducible 48-person manual-review ledger, stratified equally by confirmed/probable status and pre/post-2005 Olympiad era. Selection sorts each stratum by SHA-256 of the fixed seed, stratum, and `person_id`, so the cohort can be regenerated exactly. The signed August sample excluded the 48 profiles from the previous round and records participation, identity, destination, location, alma-mater, source-health, and LinkedIn-consistency checks for 48 new rows; 22 received deeper reviews and six required corrections. The cumulative root-cause ledger now contains 55 resolved findings, including September's subsequent checks. The dated revalidation report distinguishes these review scopes.
 
 The same build reconciles all 302 accepted LinkedIn profiles against the single published destination and role. Every conflict now has an explicit source-precedence decision, and zero LinkedIn destination or role mismatches remain unexplained. The root-cause ledger and exact supporting links are in `data/audit/profile_sanity_review_findings.csv`.
 
-The reproducible profile sample is signed separately in `data/profile_sanity_review_decisions.csv`. Each decision is keyed by the sample seed, person ID, and a fingerprint of the displayed claims and source URLs. A changed destination, country, alma mater, profile, or reconciliation result automatically returns that row to `pending` until it is reviewed again. The current 48-person sample contains 20 deep reviews and four rows corrected during this pass; 96 distinct profiles have now been signed across the two non-overlapping rounds.
+The reproducible profile sample is signed separately in `data/profile_sanity_review_decisions.csv`. Each decision is keyed by the sample seed, person ID, and a fingerprint of the displayed claims and source URLs. A changed destination, country, alma mater, profile, or reconciliation result automatically returns that row to `pending` until it is reviewed again. There are 96 distinct signed profiles across the two non-overlapping rounds. A signed sample or successful structural check is not proof that every external claim is current or correct.
 
 The validation step checks participant-row conservation, unique person IDs, confidence/evidence rules, timeline conflicts, recent-competitor exclusions, strict destination statuses, canonical organization names, distinct selected alma-mater organizations, sourced country codes, exact publication of every accepted Exa outcome and destination-review decision, preservation of superseded history, rejection-ledger leakage, audit-table joins, direct HTTP(S) source links, complete traceability for every probable or confirmed outcome, and separate identity traceability when no destination is known.
 

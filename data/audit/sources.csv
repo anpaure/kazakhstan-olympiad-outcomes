@@ -39,7 +39,7 @@ src-3a11ea421e67,https://bib-pubdb1.desy.de/record/622088/export/print?ln=en,bib
 src-0ffe75318f46,https://bilimdinews.kz/?p=240825,bilimdinews.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-66a9e0df7885,https://bilimdinews.kz/?p=240829,bilimdinews.kz,web_page,3,1,0,3,0,0,0,accepted_affiliation_history;accepted_location_evidence,career_source_location;reviewed_interview_education
 src-7f82de8a062d,https://biology.ufl.edu/zhanar-abil/,biology.ufl.edu,web_page,5,1,1,4,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review;official_university_biography
-src-69f1d3174ce1,https://bolashak.gov.kz/o-stipendii/istorii-uspeha/ajtuov-bauyrzhan-abdugalievich,bolashak.gov.kz,web_page,4,1,2,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,career_source_location;destination_review;destination_source_review;manual
+src-69f1d3174ce1,https://bolashak.gov.kz/o-stipendii/istorii-uspeha/ajtuov-bauyrzhan-abdugalievich,bolashak.gov.kz,web_page,5,1,2,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,career_source_location;destination_review;destination_source_review;manual;official_scholarship_biography
 src-64e5df7efbde,https://buki-kz.com/user-213733/,buki-kz.com,web_page,2,1,0,2,0,0,0,accepted_affiliation_history;accepted_location_evidence,active_affiliation_profile_location;verified_tutor_profile
 src-573343768962,https://buki-kz.com/user-49146/,buki-kz.com,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-a9a96badfaeb,https://ca.linkedin.com/in/sultan-aitekenov,ca.linkedin.com,linkedin,8,1,0,8,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin
@@ -214,10 +214,11 @@ src-abc7ac176d0b,https://de.linkedin.com/in/anel-orazgaliyeva,de.linkedin.com,li
 src-39782c67ee8e,https://de.linkedin.com/in/diyart,de.linkedin.com,linkedin,11,1,2,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review
 src-95e3a27c1ff1,https://de.linkedin.com/in/mussa-rajamov,de.linkedin.com,linkedin,11,1,2,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual;manual_review
 src-515a69fef9d8,https://de.linkedin.com/in/tbeka,de.linkedin.com,linkedin,10,1,1,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
+src-30fa0d773032,https://digitalcommons.dartmouth.edu/dissertations/165/,digitalcommons.dartmouth.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_degree_completion
 src-ecf379dfab9b,https://dspace.mit.edu/server/api/core/items/5ce13076-f6ee-4514-bd98-4dc4805dc111,dspace.mit.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_repository
 src-c520afa5deb5,https://dspace.sunyconnect.suny.edu/bitstreams/0efb7937-1a28-4ad0-803f-380ad32c959f/download,dspace.sunyconnect.suny.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_achievement_roster
 src-f4dd23e6da54,https://e-journal.unair.ac.id/PROMKES/article/download/80754/35523/478461,e-journal.unair.ac.id,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
-src-f4743d117050,https://edlightacademy.kz/trainers,edlightacademy.kz,web_page,4,1,2,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,career_source_location;destination_review;destination_source_review;manual
+src-f4743d117050,https://edlightacademy.kz/trainers,edlightacademy.kz,web_page,5,1,2,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,career_source_location;destination_review;destination_source_review;manual;official_employer_biography
 src-44a6a96f2636,https://edu.unideb.hu/page.php?id=64,edu.unideb.hu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-91de9e7e40a4,https://egemen.kz/article/4115-aldynhghy-aghalar-senimin-aqtaymyz,egemen.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-204782d7ad4c,https://eko.ut.ee/pdf/icho/icho1999r.pdf,eko.ut.ee,pdf,1,1,1,0,0,0,0,manual_review,manual
@@ -445,7 +446,8 @@ src-f5729a60f72c,https://izdatelstvo-sk.kz/news/v-sko-sistemnaya-poddergka-talan
 src-424a1de8593c,https://izho.kz/contest/results-izho-2022/,izho.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-25439f5c3ac7,https://jeetain.wixsite.com/mittal-lab/news,jeetain.wixsite.com,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-f5be315e0d71,https://jeetain.wixsite.com/mittal-lab/people,jeetain.wixsite.com,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_profile
-src-9c64cc394107,https://k-t-l.narod.ru/we/success.html,k-t-l.narod.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;school_alumni_archive
+src-07dcbcd1d445,https://k-t-l.narod.ru/news2007.html,k-t-l.narod.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,school_alumni_archive
+src-9c64cc394107,https://k-t-l.narod.ru/we/success.html,k-t-l.narod.ru,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-21fd73d05ac2,https://kase.kz/files/emitters/BCCI/bccirbf7_2020.pdf,kase.kz,pdf,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation,destination_review;destination_source_review;historical_outcome_location
 src-e69b56da2aec,https://kaz.inform.kz/news/halykaralyk-pan-olimpiadalarynyn-tarbielik-mani-zor-maman_a3969819/,kaz.inform.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-99f2cffb2800,https://kazpravda.kz/n/uchebnik-s-avtografom/,kazpravda.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -781,6 +783,7 @@ src-b5db9260f656,https://nfactorialai.com/,nfactorialai.com,web_page,2,1,1,1,0,0
 src-99d5fb588fbd,https://niac.kz/221140009084,niac.kz,web_page,4,1,2,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,current_role_location;destination_review;destination_source_review;manual
 src-60ec54143394,https://nitec.kz/index.php/en/kontakty/central-office,nitec.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-806e948c98a1,https://nl.linkedin.com/in/vyacheslav-li,nl.linkedin.com,linkedin,9,1,1,8,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
+src-f1b9e8c2cd6d,https://nla.nu.edu.kz/tpost/x0ibxmnno1-plasma-lipidome-profiling-of-patients-wi,nla.nu.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation,current_role_location;destination_review;destination_source_review
 src-1b06af578c08,https://nu.edu.kz/en/about/contacts,nu.edu.kz,web_page,3,3,0,3,0,0,0,accepted_location_evidence,current_education_location
 src-ef8fbe838ecc,https://nu.edu.kz/news-kk/memleket-basshysy-nu-dyng-toert-stwdentin-zhetistikterimen-quttyqtady-2/,nu.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
 src-330c893d8386,https://nur.nu.edu.kz/items/8090871a-9f4d-492d-9232-0ee28a046e58,nur.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -885,7 +888,7 @@ src-9260d743ee56,https://orcid.org/0000-0001-9313-2448,orcid.org,structured_prof
 src-c929580a9b05,https://orcid.org/0000-0001-9316-1951,orcid.org,structured_profile,1,1,0,0,1,0,0,structured_identity,orcid
 src-a783f7f1dba1,https://orcid.org/0000-0001-9350-984X,orcid.org,structured_profile,1,1,0,0,1,0,0,structured_identity,orcid
 src-57e551bed225,https://orcid.org/0000-0001-9605-2523,orcid.org,structured_profile,5,1,0,0,5,0,0,structured_affiliation;structured_identity,orcid
-src-e649a349eaae,https://orcid.org/0000-0001-9693-7487,orcid.org,structured_profile,3,1,1,2,0,0,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_openalex_orcid;openalex_orcid;orcid
+src-e649a349eaae,https://orcid.org/0000-0001-9693-7487,orcid.org,structured_profile,3,1,0,3,0,0,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_openalex_orcid;openalex_orcid;orcid
 src-18a6972dc76b,https://orcid.org/0000-0002-0092-660X,orcid.org,structured_profile,1,1,0,0,1,0,0,structured_identity,orcid
 src-b1dc0d293994,https://orcid.org/0000-0002-0253-9451,orcid.org,structured_profile,1,1,0,0,1,0,0,structured_identity,orcid
 src-6a8743e710fc,https://orcid.org/0000-0002-0306-8866,orcid.org,structured_profile,1,1,0,1,0,0,0,structured_identity,orcid
@@ -1096,7 +1099,7 @@ src-e58f15b0548d,https://rcez.kz/departmentdirectorinformationsecurity,rcez.kz,w
 src-6e7135c9faa5,https://registrar.nu.edu.kz/graduation-2016,registrar.nu.edu.kz,web_page,3,2,1,2,0,0,0,accepted_affiliation_history;manual_review,institutional_alumni_list;manual;manual_review
 src-0a9bf849aaef,https://research.nu.edu.kz/en/persons/kuanysh-yergaliyev,research.nu.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-2d44d50b614b,https://research.nu.edu.kz/en/persons/meiram-murzabulatov/,research.nu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
-src-f33bb7a68ec2,https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/,research.nu.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
+src-f33bb7a68ec2,https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/,research.nu.edu.kz,web_page,2,1,0,1,0,1,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-c4f8fcc141d4,https://research.utwente.nl/en/publications/nondeterminism-in-stochastic-modeling/,research.utwente.nl,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_research_record
 src-37ad3b1b2b31,https://rmebrk.kz/bilim/syrdariya/bekishev.audhimolimp.pdf,rmebrk.kz,pdf,7,5,3,4,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,historical_outcome_location;manual;reviewed_olympiad_destination_table
 src-793801568f9d,https://rs.linkedin.com/in/temirlan-rakhimov,rs.linkedin.com,linkedin,9,1,2,7,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;current_role_location;destination_review;destination_source_review;linkedin;manual
@@ -1108,6 +1111,7 @@ src-44bb12ca61c5,https://ru.linkedin.com/posts/armansu_%D1%81%D0%BF%D0%B8%D1%81%
 src-841c19727c56,https://sa.linkedin.com/in/yermek-kaipov-50525632,sa.linkedin.com,linkedin,9,1,0,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin
 src-966311e12d0f,https://sandbox.tetmedical.com/our-team/,sandbox.tetmedical.com,web_page,2,1,0,1,0,1,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-581cd10210ce,https://scholarship-physics.hkust.edu.hk/physics-major-entry-scholarship-awardees,scholarship-physics.hkust.edu.hk,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_profile
+src-5a7b0f277346,https://scholarworks.brandeis.edu/esploro/profile/yerbol_kurmangaliyev/output?institution=01BRAND_INST,scholarworks.brandeis.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_biography
 src-d648202c3447,https://schools.nis.edu.kz/en/school/nzm-astana-nura/news/2303?menu=4&parent_menu=4,schools.nis.edu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,career_source_location;manual;manual_review
 src-0f6444f03630,https://schools.nis.edu.kz/ru/school/nzm-almaty-nauryzbay/news/1426?menu=4&parent_menu=4,schools.nis.edu.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_school_alumni_profile
 src-efda1f633c6a,https://schools.nis.edu.kz/ru/school/nzm-almaty-nauryzbay/news/1899,schools.nis.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -1160,7 +1164,9 @@ src-879cbf945a97,https://scoreboard.bc-pf.org/en/results/math/silk-road-mathemat
 src-f2b4433b72cd,https://scoreboard.bc-pf.org/en/results/physics/international-physics-olympiad/2011,scoreboard.bc-pf.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-4d9a4c86ef17,https://scoreboard.bc-pf.org/en/results/physics/international-physics-olympiad/2013,scoreboard.bc-pf.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-14892ee2b944,https://scoreboard.bc-pf.org/en/results/physics/international-physics-olympiad/2014,scoreboard.bc-pf.org,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-950a6038bd32,https://sdu.edu.kz/en/leadership/,sdu.edu.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_destination_reconciliation,destination_review;destination_source_review
 src-ac3b5c7d0b71,https://sdu.edu.kz/en/sdu-university-professor-led-kazakhstans-historic-victory-at-the-international-physics-olympiad/,sdu.edu.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-f517a8185f60,https://sdu.edu.kz/ru/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D1%8B-%D1%81%D0%B4%D1%83/,sdu.edu.kz,web_page,3,1,0,3,0,0,0,accepted_affiliation_history,official_degree_completion;official_university_biography
 src-9ab35b532d92,https://sessionize.com/simon-shkilevich/,sessionize.com,web_page,3,1,2,1,0,0,0,accepted_affiliation_history;manual_destination_reconciliation;manual_review,destination_review;destination_source_review;manual
 src-f52f1878f955,https://sg.linkedin.com/company/bestysco,sg.linkedin.com,linkedin,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-89f68441666e,https://sg.linkedin.com/in/asset-daliyev-4ab6a532,sg.linkedin.com,linkedin,6,1,0,6,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin
@@ -1317,11 +1323,13 @@ src-c7dc16af354b,https://www.arirang.ru/archive/kore-ilbo/2025/31.KI.08.08.2025.
 src-1f99e3323987,https://www.armeta.ai/company/team/,armeta.ai,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-a79584fd2fbb,https://www.bankofcanada.ca/profile/iskander-karibzhanov/,bankofcanada.ca,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-bd7156e340c8,https://www.bc.edu/content/bc-web/schools/morrissey/departments/chemistry/research-labs/Hoveyda-research-group/people.html,bc.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_alumni_record
-src-d1ced10055ef,https://www.brandeis.edu/biology/faculty/kurmangaliyev-yerbol.html,brandeis.edu,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
+src-d1ced10055ef,https://www.brandeis.edu/biology/faculty/kurmangaliyev-yerbol.html,brandeis.edu,web_page,3,1,0,2,0,1,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
+src-7708d695dc5c,https://www.brandeis.edu/now/2022/september/new-faculty-2022.html,brandeis.edu,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;manual_destination_reconciliation,destination_review;destination_source_review;official_degree_completion
 src-385c85371c70,https://www.caltech.edu/about/visit,caltech.edu,web_page,2,2,0,2,0,0,0,accepted_location_evidence,current_education_location
 src-0a1f77646095,https://www.cam.ac.uk/about-the-university/contact-the-university,cam.ac.uk,web_page,3,3,0,3,0,0,0,accepted_location_evidence,current_education_location
 src-1a358d79c355,https://www.caravan.kz/gazeta/beregi-mozgi-smolodu-384231/,caravan.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
-src-d78c63eeaee4,https://www.caravan.kz/news/pavlodarskijj-shkolnik-stal-bronzovym-prizerom-mezhdunarodnojj-olimpiady-po-informatike-188192/,caravan.kz,web_page,1,1,0,1,0,0,0,accepted_location_evidence,historical_outcome_location
+src-d78c63eeaee4,https://www.caravan.kz/news/pavlodarskijj-shkolnik-stal-bronzovym-prizerom-mezhdunarodnojj-olimpiady-po-informatike-188192/,caravan.kz,web_page,2,1,0,2,0,0,0,accepted_affiliation_history;accepted_location_evidence,historical_outcome_location;reported_school_biography
+src-0a6777d958be,https://www.caravan.kz/news/pavlodarskijj-vunderkind-poluchit-vysshee-obrazovanie-v-ssha-199184/,caravan.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,reported_university_attendance
 src-19b5bc0b1ae1,https://www.chem.msu.ru/rus/olimpiad/olimp001/silka5.htm,chem.msu.ru,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-ca2c45d77d87,https://www.chem.msu.ru/rus/olimpiad/olimp2004/welcome.html,chem.msu.ru,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-4a879257664d,https://www.chem.msu.ru/rus/olimpiad/olimp99/priz.html,chem.msu.ru,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -1350,14 +1358,14 @@ src-957082b534f0,https://www.gov.kz/memleket/entities/edu/press/news/details/126
 src-cf0e9c93132d,https://www.gov.kz/memleket/entities/edu/press/news/details/1261409,gov.kz,web_page,6,2,2,4,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,active_affiliation_profile_location;manual;manual_review
 src-8064153e41f4,https://www.gov.kz/memleket/entities/maidd/press/news/details/1189055?lang=ru,gov.kz,web_page,6,2,4,2,0,0,0,accepted_affiliation_history;manual_destination_reconciliation;manual_review,destination_review;destination_source_review;manual
 src-5a1c49e54448,https://www.gov.kz/memleket/entities/transport/press/news/details/882464?lang=ru,gov.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
-src-3157f5b4c740,https://www.haileybury.kz/en/almaty/board-of-governors,haileybury.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-3157f5b4c740,https://www.haileybury.kz/en/almaty/board-of-governors,haileybury.kz,web_page,6,1,1,5,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review;official_board_biography
 src-b34cd7c55bea,https://www.hec.edu/en/master-s-programs/profiles/ayana-badrakova,hec.edu,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,historical_outcome_location;manual;manual_review
 src-5fe835c08081,https://www.hec.edu/en/masters-programs/MSc-International-Finance/careers/alumni-profiles,hec.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,institutional_alumni_profile
 src-be8d30c8e695,https://www.hku.hk/visit/maps_contact.html,hku.hk,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-807ffbb9186d,https://www.hse.ru/edu/vkr/367645765,hse.ru,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_thesis
 src-3df0f32e00ee,https://www.hse.ru/en/news/729928307.html,hse.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-7c00a4b14ab9,https://www.hse.ru/news/edu/223610496.html,hse.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
-src-c4b2ab5396a9,https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov,hw.ac.uk,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
+src-c4b2ab5396a9,https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov,hw.ac.uk,web_page,6,1,1,5,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review;official_university_biography
 src-07f001838ebe,https://www.iastate.edu/life-at-iowa-state/campus-and-ames,iastate.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-1083be0de75f,https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Ffinal-reports%2FIBO-2002+report.pdf,ibo-info.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-7081446b05dc,https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Ffinal-reports%2FIBO-2003+report.pdf,ibo-info.org,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -1648,7 +1656,7 @@ src-3bb8653b2b1a,https://www.math.ucdavis.edu/people/grads,math.ucdavis.edu,web_
 src-a0c5284dc3d2,https://www.mbi.nus.edu.sg/research-fellow/murat-shagirov/,mbi.nus.edu.sg,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-530e5828b691,https://www.mdpi.com/1420-3049/28/18/6451,mdpi.com,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,peer_reviewed_affiliation
 src-83744c9838c3,https://www.mit.edu/visitmit/,mit.edu,web_page,5,5,0,5,0,0,0,accepted_location_evidence,current_education_location
-src-929039b2a6c7,https://www.msu.kz/ru/information/kafedry/detail.php?ELEMENT_ID=8321,msu.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
+src-929039b2a6c7,https://www.msu.kz/ru/information/kafedry/detail.php?ELEMENT_ID=8321,msu.kz,web_page,5,1,1,4,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review;official_university_alumni_profile
 src-c54c3027f964,https://www.myprivatetutor.hk/teacher/29733/adilet-u-experienced-physics-tutor-with-a-bsc-from-hku,myprivatetutor.hk,web_page,5,1,1,3,0,1,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,current_role_location;destination_review;destination_source_review;manual;manual_review
 src-dc6ecba7feb5,https://www.naturalspublishing.com/files/published/d7lg766m627wtw.pdf,naturalspublishing.com,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;peer_reviewed_author_biography
 src-fc9969eeb2f8,https://www.nauka.kz/page.php?lang=3&new=&news_id=7255&page_id=792,nauka.kz,web_page,1,1,1,0,0,0,0,manual_review,manual

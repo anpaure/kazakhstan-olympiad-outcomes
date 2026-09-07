@@ -1,0 +1,949 @@
+{
+  "reviewed_at": "2026-09-07",
+  "baseline_commit": "2456b0cf1a060176ba5258c5c858d7fb28b870cd",
+  "scope": "All baseline profiles with a blank alma mater were enumerated; readable existing career pages were screened and explicit education leads were reviewed. Unavailable pages and profiles without explicit education remain unresolved. This is not a fresh external verification of every person.",
+  "counts": {
+    "baseline_blank_alma": 55,
+    "education_added": 9
+  },
+  "profiles": [
+    {
+      "person_id": "kaz-8deb08a4e5fd",
+      "name": "Yevgeni Poroshenko",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://xn--h1ajp7b.xn--p1ai/sveden/employees%3Fspec%3D6609.html",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "87a2556b4ecda99dbbacc9fb94a74c0cff5d864de077e1fb658e7e77b26d6e65",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-dc581aaabaee",
+      "name": "Zharas Bajdelʻdinov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://axoftglobal.com/reviews",
+      "existing_profile_retrieval": "network_error",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-1e83de167408",
+      "name": "Ekrem Mahmudov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "",
+      "existing_profile_retrieval": "not_in_initial_source_health",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-dbcaf30d53de",
+      "name": "Nurbol Sihimbayev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "",
+      "existing_profile_retrieval": "not_in_initial_source_health",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-6c47e89eeff1",
+      "name": "Alexander Zaitsev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://orcid.org/0000-0002-6272-1079",
+      "existing_profile_retrieval": "content_unavailable",
+      "existing_profile_text_sha256": "35e1ea77dbc2ef4d3f27205c63e66f60228c52b402ebb50f57d5ca8944afa5eb",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-5f05301e71f7",
+      "name": "Arnur Tokhtabayev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://tlab.kz/en/",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "df776446193021845fc9971f056f09d320cb592db503bb98ba8c96d9155c283b",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-6baf22bf0570",
+      "name": "Dimitry Dzyabayev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "",
+      "existing_profile_retrieval": "not_in_initial_source_health",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-438a79d3a6d5",
+      "name": "Abzal Daribaev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://www.ncste.kz/kz/daribaev-abzal-amankeldievich",
+      "existing_profile_retrieval": "not_found",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-9bcf8f03ca96",
+      "name": "Andrey Jigalov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://ipbb.kz/eng/ap-09260382-superviser-sapakhova-z/",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "0d2dd53e96a81ecf3ed05ffb2dec7de18410004b8ca7b3565cb88cc725ed7775",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-8c7f0b059859",
+      "name": "Mirat Sadikov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://www.gasagroup.com/Files/Images/corporate_website/Young%20Plants/Catalogues/Brandkamp-Chrysanthemum.pdf",
+      "existing_profile_retrieval": "reachable_pdf",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-68b763708761",
+      "name": "Talap Akashev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://www.e-xecutive.ru/users/389062-talap-akashev",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "367f2e64ecafdb95b0d8cfb3a0d2015efb3baf5b299a63d312dafc23291f5652",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-590493685dc4",
+      "name": "Arman Prashev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://www.flcompanyregistry.com/companies/mli-trading-llc/",
+      "existing_profile_retrieval": "access_restricted",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-b41761cae333",
+      "name": "Kirill Panov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "",
+      "existing_profile_retrieval": "not_in_initial_source_health",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-69e7f14df70f",
+      "name": "Alexey Doktorovich",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://www.linkedin.com/pub/dir/%2B/Doctorovich",
+      "existing_profile_retrieval": "use_exa_profile_audit",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-326e69980428",
+      "name": "Anton Nesveldin",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "",
+      "existing_profile_retrieval": "not_in_initial_source_health",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-1d49feff22fe",
+      "name": "Dmitriy Gorbachev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://cphof.org/profile/ioi:5480",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "794c4cbdf11e4644d899e5cbdc87627deff4440e794478f3ff2ace963e3aa6d1",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-21cc95b51c33",
+      "name": "Yaroslav Alexandrov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "",
+      "existing_profile_retrieval": "not_in_initial_source_health",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-60a5906be728",
+      "name": "Sergey Gussak",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://www.dnb.com/business-directory/company-profiles.ceptah_solutions_pty_ltd.6d2cbb94973965a2a5a472d5d4547de2.html",
+      "existing_profile_retrieval": "access_restricted",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-84154f378216",
+      "name": "Yerbol Kurmangaliyev",
+      "status": "education_added",
+      "institutions": [
+        "Institute for Information Transmission Problems (Kharkevich Institute), Russian Academy of Sciences",
+        "Lomonosov Moscow State University (MSU)"
+      ],
+      "reviewed_education": [
+        {
+          "person_id": "kaz-84154f378216",
+          "name": "Yerbol Kurmangaliyev",
+          "organization": "Institute for Information Transmission Problems (Kharkevich Institute), Russian Academy of Sciences",
+          "role": "PhD in Bioinformatics",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "2012",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://www.brandeis.edu/now/2022/september/new-faculty-2022.html",
+          "evidence_kind": "official_degree_completion",
+          "confidence": "confirmed",
+          "evidence_text": "Brandeis's new-faculty announcement explicitly identifies a 2012 bioinformatics PhD from the Kharkevich Institute of the Russian Academy of Sciences. USC and UCLA appointments in the same biography are postdoctoral jobs, not degrees."
+        },
+        {
+          "person_id": "kaz-84154f378216",
+          "name": "Yerbol Kurmangaliyev",
+          "organization": "Lomonosov Moscow State University (MSU)",
+          "role": "Master of Science",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://scholarworks.brandeis.edu/esploro/profile/yerbol_kurmangaliyev/output?institution=01BRAND_INST",
+          "evidence_kind": "official_university_biography",
+          "confidence": "confirmed",
+          "evidence_text": "Brandeis's ScholarWorks profile explicitly lists an MSc from Lomonosov Moscow State University and carries the accepted ORCID identifier. The source does not give a field or dates."
+        }
+      ],
+      "existing_profile_url": "https://www.brandeis.edu/biology/faculty/kurmangaliyev-yerbol.html",
+      "existing_profile_retrieval": "access_restricted",
+      "existing_profile_text_sha256": "",
+      "limitation": "Completed degrees or explicitly historical attendance only; current role and residence assessed separately."
+    },
+    {
+      "person_id": "kaz-f4f08ec984b8",
+      "name": "Nikolay Berezhnoy",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "bf13a4265078af3129b77f5bf82b15461c873cde6f43ae494197a672c53381cd",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-9bc854d0232a",
+      "name": "Denis Atrashenko",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "",
+      "existing_profile_retrieval": "not_in_initial_source_health",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-58dea61d1101",
+      "name": "Denis Ivanov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://cphof.org/profile/ioi:4957",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "fade97d0e9375872ffb94b98ec8c2c860f81a2395c26c122448a35264f0892f5",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-ff5c7ff39c9d",
+      "name": "Taskyn Shokanbay",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://app.qwoted.com/opportunities/event-12th-annual-summit-downstream-central-asia-and-caspian-2025",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "38913e5a13a0c076bacd5d811d49a3db37eed1711e5533cddfbe0907b9509088",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-d1fb5b8f648d",
+      "name": "Ulan Usserkulov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://github.com/imuster",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "d956ed6bb67139e9167411d49499f2f63885f09c8699e11cb55162865b191eb6",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-bb70c982f38a",
+      "name": "Aituov Baurzhan",
+      "status": "education_added",
+      "institutions": [
+        "University of York"
+      ],
+      "reviewed_education": [
+        {
+          "person_id": "kaz-bb70c982f38a",
+          "name": "Aituov Baurzhan",
+          "organization": "University of York",
+          "role": "Bachelor's degree in Genetics",
+          "affiliation_type": "education",
+          "start_year": "2006",
+          "end_year": "2009",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://bolashak.gov.kz/o-stipendii/istorii-uspeha/ajtuov-bauyrzhan-abdugalievich",
+          "evidence_kind": "official_scholarship_biography",
+          "confidence": "confirmed",
+          "evidence_text": "Bolashak's official success biography explicitly names the University of York in the United Kingdom and a 2006-2009 bachelor's program in Genetics. This is not York University in Canada."
+        }
+      ],
+      "existing_profile_url": "https://bolashak.gov.kz/o-stipendii/istorii-uspeha/ajtuov-bauyrzhan-abdugalievich",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "92d122a8acf3af66d54ec67ece5a42c8a6b7f34e0285aac5e0f03e5cf36c1720",
+      "limitation": "Completed degrees or explicitly historical attendance only; current role and residence assessed separately."
+    },
+    {
+      "person_id": "kaz-49e795089f9c",
+      "name": "Anton Nikolayev",
+      "status": "education_added",
+      "institutions": [
+        "Siberian State University of Telecommunications and Information Science (SibSUTIS)"
+      ],
+      "reviewed_education": [
+        {
+          "person_id": "kaz-49e795089f9c",
+          "name": "Anton Nikolayev",
+          "organization": "Pavlodar School-Lyceum No. 8",
+          "role": "High School Graduate",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "2003",
+          "is_current": false,
+          "selected_as_alma_mater": false,
+          "evidence_url": "https://www.caravan.kz/news/pavlodarskijj-shkolnik-stal-bronzovym-prizerom-mezhdunarodnojj-olimpiady-po-informatike-188192/",
+          "evidence_kind": "reported_school_biography",
+          "confidence": "confirmed",
+          "evidence_text": "The August 30 2003 report explicitly states that the IOI bronze medalist completed grade 11 at Pavlodar Lyceum No. 8 that year. It also identifies his 2002 IOI participation."
+        },
+        {
+          "person_id": "kaz-49e795089f9c",
+          "name": "Anton Nikolayev",
+          "organization": "Siberian State University of Telecommunications and Information Science (SibSUTIS)",
+          "role": "University studies in Information Technology",
+          "affiliation_type": "education",
+          "start_year": "2003",
+          "end_year": "",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://www.caravan.kz/news/pavlodarskijj-vunderkind-poluchit-vysshee-obrazovanie-v-ssha-199184/",
+          "evidence_kind": "reported_university_attendance",
+          "confidence": "confirmed",
+          "evidence_text": "The contemporary report explicitly joins Anton Nikolaev's 2003 IOI medal and Pavlodar Lyceum No. 8 graduation to ongoing SibSUTIS study. The August 30 2003 report already in the location ledger supplies admission in 2003 and Information Technology. This is historical attendance; no degree completion or current enrollment is established."
+        }
+      ],
+      "existing_profile_url": "https://cphof.org/profile/ioi:245",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "2b3e76614605eb61c0fd248371a8bdfcbb7ac5804249eefa79ac698cf0aa7ba7",
+      "limitation": "Completed degrees or explicitly historical attendance only; current role and residence assessed separately."
+    },
+    {
+      "person_id": "kaz-6617107a61a9",
+      "name": "Asylbek Nurgabdeshov",
+      "status": "education_added",
+      "institutions": [
+        "Istanbul Sehir University",
+        "Middle East Technical University",
+        "University of Sheffield"
+      ],
+      "reviewed_education": [
+        {
+          "person_id": "kaz-6617107a61a9",
+          "name": "Asylbek Nurgabdeshov",
+          "organization": "Istanbul Sehir University",
+          "role": "Master of Business Administration (MBA)",
+          "affiliation_type": "education",
+          "start_year": "2010",
+          "end_year": "2011",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov",
+          "evidence_kind": "official_university_biography",
+          "confidence": "confirmed",
+          "evidence_text": "Heriot-Watt's Qualifications section explicitly lists an Istanbul Sehir University MBA from 2010 to 2011."
+        },
+        {
+          "person_id": "kaz-6617107a61a9",
+          "name": "Asylbek Nurgabdeshov",
+          "organization": "Middle East Technical University",
+          "role": "Bachelor of Science, Petroleum and Natural Gas Engineering",
+          "affiliation_type": "education",
+          "start_year": "2003",
+          "end_year": "2009",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov",
+          "evidence_kind": "official_university_biography",
+          "confidence": "confirmed",
+          "evidence_text": "Heriot-Watt's Qualifications section explicitly lists the METU bachelor's degree from 2003 to 2009."
+        },
+        {
+          "person_id": "kaz-6617107a61a9",
+          "name": "Asylbek Nurgabdeshov",
+          "organization": "University of Sheffield",
+          "role": "PhD, Strategic Management and International Business",
+          "affiliation_type": "education",
+          "start_year": "2011",
+          "end_year": "2015",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov",
+          "evidence_kind": "official_university_biography",
+          "confidence": "confirmed",
+          "evidence_text": "Heriot-Watt's biography supplies the PhD field and its Qualifications section dates the Sheffield doctorate from 2011 to 2015."
+        }
+      ],
+      "existing_profile_url": "https://www.hw.ac.uk/profiles/uk/school/ebs/faculty/assylbek-nurgabdeshov",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "72bfae4c5bd5fac5bce8d22cb1c23b51027a4cc111f828c23173bc76f6fe9fc6",
+      "limitation": "Completed degrees or explicitly historical attendance only; current role and residence assessed separately."
+    },
+    {
+      "person_id": "kaz-7e2cf66f126f",
+      "name": "Rafael Mavlyukeyev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://checko.ru/entrepreneur/mavlyukeev-rafaehl-311774632700409",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "c5832c8ad2730e329d173457ba86e44cd304b5ee2fb55ceae87a44041119fd47",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-4a00a35c3f4a",
+      "name": "Andrey Bogdanchikov",
+      "status": "education_added",
+      "institutions": [
+        "Suleyman Demirel University (SDU)"
+      ],
+      "reviewed_education": [
+        {
+          "person_id": "kaz-4a00a35c3f4a",
+          "name": "Andrey Bogdanchikov",
+          "organization": "Suleyman Demirel University (SDU)",
+          "role": "Master of Science in Computing System and Software",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "2010",
+          "is_current": false,
+          "selected_as_alma_mater": false,
+          "evidence_url": "https://sdu.edu.kz/ru/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D1%8B-%D1%81%D0%B4%D1%83/",
+          "evidence_kind": "official_university_biography",
+          "confidence": "confirmed",
+          "evidence_text": "SDU's expert biography explicitly lists the Computing System and Software MSc awarded in 2010. The master's start date is not stated."
+        },
+        {
+          "person_id": "kaz-4a00a35c3f4a",
+          "name": "Andrey Bogdanchikov",
+          "organization": "Suleyman Demirel University (SDU)",
+          "role": "PhD in Computing System and Software",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "2014",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://sdu.edu.kz/ru/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D1%8B-%D1%81%D0%B4%D1%83/",
+          "evidence_kind": "official_degree_completion",
+          "confidence": "confirmed",
+          "evidence_text": "SDU's expert biography explicitly lists the Computing System and Software PhD awarded in 2014. The doctorate's start date is not stated."
+        },
+        {
+          "person_id": "kaz-4a00a35c3f4a",
+          "name": "Andrey Bogdanchikov",
+          "organization": "Suleyman Demirel University (SDU)",
+          "role": "Specialist degree in Software and Hardware for Computers and Networks",
+          "affiliation_type": "education",
+          "start_year": "2003",
+          "end_year": "2008",
+          "is_current": false,
+          "selected_as_alma_mater": false,
+          "evidence_url": "https://sdu.edu.kz/ru/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D1%8B-%D1%81%D0%B4%D1%83/",
+          "evidence_kind": "official_university_biography",
+          "confidence": "confirmed",
+          "evidence_text": "SDU's expert biography explicitly gives admission in 2003 and the specialist degree awarded in 2008. Its stale dean wording is not used for the current role."
+        }
+      ],
+      "existing_profile_url": "https://cphof.org/profile/ioi:4087",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "f5621b576fc0b29fef8b3d3878c9ae0c4377a77df67cb0da1fc17a0795530f81",
+      "limitation": "Completed degrees or explicitly historical attendance only; current role and residence assessed separately."
+    },
+    {
+      "person_id": "kaz-bfdcf65f4a6e",
+      "name": "Anton Vassilyev",
+      "status": "education_added",
+      "institutions": [
+        "Lomonosov Moscow State University (MSU)"
+      ],
+      "reviewed_education": [
+        {
+          "person_id": "kaz-bfdcf65f4a6e",
+          "name": "Anton Vassilyev",
+          "organization": "Lomonosov Moscow State University (MSU)",
+          "role": "Candidate of Sciences in Mathematics",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "",
+          "is_current": false,
+          "selected_as_alma_mater": false,
+          "evidence_url": "https://www.msu.kz/ru/information/kafedry/detail.php?ELEMENT_ID=8321",
+          "evidence_kind": "official_university_alumni_profile",
+          "confidence": "confirmed",
+          "evidence_text": "The Mathematics alumni section explicitly lists Anton Vasilyev's Candidate of Sciences defense at Moscow State University in Moscow. The same department page identifies his current associate-professor role; no graduation date is inferred."
+        },
+        {
+          "person_id": "kaz-bfdcf65f4a6e",
+          "name": "Anton Vassilyev",
+          "organization": "Lomonosov Moscow State University (MSU)",
+          "role": "Undergraduate studies in Mathematics",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://www.msu.kz/ru/information/kafedry/detail.php?ELEMENT_ID=8321",
+          "evidence_kind": "official_university_alumni_profile",
+          "confidence": "confirmed",
+          "evidence_text": "The Kazakhstan branch's Mathematics alumni section includes Anton Vasilyev among its graduates who subsequently defended Candidate of Sciences dissertations. No undergraduate credential or dates are stated."
+        }
+      ],
+      "existing_profile_url": "https://www.msu.kz/ru/information/kafedry/detail.php?ELEMENT_ID=8321",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "49d39ec35b399f2b34ac5e98ce3388c307112f69a671ab29ada3754700552558",
+      "limitation": "Completed degrees or explicitly historical attendance only; current role and residence assessed separately."
+    },
+    {
+      "person_id": "kaz-42f3a5145199",
+      "name": "Denis Utkin",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "",
+      "existing_profile_retrieval": "not_in_initial_source_health",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-0d9cf667fe24",
+      "name": "Nessipbek Mynbayev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://www.researchgate.net/profile/Nessipbek-Mynbayev",
+      "existing_profile_retrieval": "access_restricted",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-f9d3ca151739",
+      "name": "Nurzhas Makishev",
+      "status": "education_added",
+      "institutions": [
+        "Harvard University",
+        "Massachusetts Institute of Technology (MIT)",
+        "University of Pennsylvania"
+      ],
+      "reviewed_education": [
+        {
+          "person_id": "kaz-f9d3ca151739",
+          "name": "Nurzhas Makishev",
+          "organization": "Harvard University",
+          "role": "Master of Public Administration (Harvard Kennedy School)",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://www.haileybury.kz/en/almaty/board-of-governors",
+          "evidence_kind": "official_board_biography",
+          "confidence": "confirmed",
+          "evidence_text": "Haileybury explicitly states that Nurzhas received an MPA from Harvard Kennedy School. The university is the normalized alma mater and the school remains in the degree description."
+        },
+        {
+          "person_id": "kaz-f9d3ca151739",
+          "name": "Nurzhas Makishev",
+          "organization": "Massachusetts Institute of Technology (MIT)",
+          "role": "Bachelor's degree in Computer Science and Engineering",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "",
+          "is_current": false,
+          "selected_as_alma_mater": false,
+          "evidence_url": "https://www.haileybury.kz/en/almaty/board-of-governors",
+          "evidence_kind": "official_board_biography",
+          "confidence": "confirmed",
+          "evidence_text": "Haileybury's biography explicitly lists two MIT bachelor's degrees: Economics and Computer Science and Engineering. Both credentials are retained without inventing dates."
+        },
+        {
+          "person_id": "kaz-f9d3ca151739",
+          "name": "Nurzhas Makishev",
+          "organization": "Massachusetts Institute of Technology (MIT)",
+          "role": "Bachelor's degree in Economics",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://www.haileybury.kz/en/almaty/board-of-governors",
+          "evidence_kind": "official_board_biography",
+          "confidence": "confirmed",
+          "evidence_text": "Haileybury's biography explicitly lists two MIT bachelor's degrees: Economics and Computer Science and Engineering. The page gives no dates."
+        },
+        {
+          "person_id": "kaz-f9d3ca151739",
+          "name": "Nurzhas Makishev",
+          "organization": "University of Pennsylvania",
+          "role": "Master of Business Administration (Wharton)",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://www.haileybury.kz/en/almaty/board-of-governors",
+          "evidence_kind": "official_board_biography",
+          "confidence": "confirmed",
+          "evidence_text": "Haileybury explicitly states that Nurzhas received an MBA from Wharton. Wharton is normalized to the University of Pennsylvania; the school name remains in the degree description."
+        }
+      ],
+      "existing_profile_url": "https://www.haileybury.kz/en/almaty/board-of-governors",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "a9d760c25d804f17923d5fc6ea8ec77b7a669ef45c63096b4bd7162ea62da5d1",
+      "limitation": "Completed degrees or explicitly historical attendance only; current role and residence assessed separately."
+    },
+    {
+      "person_id": "kaz-eab69c3a4463",
+      "name": "Ruslan Manakhayev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://www.spe-events.org/conference/SPE_Annual_Caspian_Technical_Conference_and_Exhibition_2025/technical-program/nbspinnovations-in-geoscience-3",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "90d130deefe4c315e20db925f15a22b766b0d25385c12f348a4f62fc758f2079",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-d272c7de9446",
+      "name": "Timur Zhiyentayev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://medium.com/%40tima103/how-to-get-more-paying-users-with-user-friendly-paywall-part-ii-8e09766f62eb",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "c521fb991ef00dd62ed5335602214660690dc19c921c06a172d1aaf841ea490b",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-1deffa0c0a86",
+      "name": "Vadim Murzin",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://photon-science.desy.de/facilities/petra_iii/beamlines/p64_advanced_xafs/contact__staff/index_eng.html",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "44381a26f30a95247a17294aac74e58e1ffd6aba975d73832222fa803878e548",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-5af905ca2550",
+      "name": "Yerulan Sabyrgali",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [
+        {
+          "person_id": "kaz-5af905ca2550",
+          "name": "Yerulan Sabyrgali",
+          "organization": "Heriot-Watt University",
+          "role": "Research Coauthor (affiliation relationship not stated)",
+          "affiliation_type": "education",
+          "start_year": "2015",
+          "end_year": "2015",
+          "is_current": false,
+          "selected_as_alma_mater": false,
+          "evidence_url": "https://www.searchanddiscovery.com/documents/2016/41779vasconez/ndx_vasconez.pdf",
+          "evidence_kind": "manual_review",
+          "confidence": "probable",
+          "evidence_text": "A reviewed Kazakhstan chemistry-Olympiad history table directly identifies Yerulan Sabyrgali as the 2004 IChO participant from Almaty School No. 162 and records a later university destination in Manchester, England, without naming the institution. A 2015 AAPG presentation then lists the same rare exact name with Heriot-Watt University in Edinburgh on ion-exchange modelling for low-salinity waterflooding. The direct Olympiad-to-UK education bridge, chemistry continuity, and chronology make the la"
+        }
+      ],
+      "existing_profile_url": "https://www.searchanddiscovery.com/documents/2016/41779vasconez/ndx_vasconez.pdf",
+      "existing_profile_retrieval": "reachable_pdf",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-7faf2594f89e",
+      "name": "Kuat Mukambetkazievich Usseingazin",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://ba.prg.kz/231010000-atyrau/071040017099-too-agp-kholding/",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "558fdd82937539da398aaac139c1b633c6a96a6026ce8dda281402078fe85df6",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-260600835e64",
+      "name": "Ruslan Kudubayev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://patents.justia.com/patent/20220053043",
+      "existing_profile_retrieval": "access_restricted",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-26535589e436",
+      "name": "Timur Abishev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://gelu.ai/",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "424489ae741fbfd0e5dd8df09bcf540c87e2b6ddffddcaf1e9c9a239011eb091",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-408aa9ea598e",
+      "name": "Abylay Samatov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://inkaraganda.kz/novosti/obshhestvo/pedagog-po-himii-iz-karagandy-podgotovil-bolee-10-pobeditelej-mezhdunarodnyh-intellektualnyh-sorevnovanij/",
+      "existing_profile_retrieval": "network_error",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-8bd82bc015a6",
+      "name": "Yerbol Y. Bekbayev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://ariregister.rik.ee/est/company/16568487/file/9011480944",
+      "existing_profile_retrieval": "reachable_pdf",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-273cfae90c97",
+      "name": "Zhanbolat Zholgeldiev",
+      "status": "education_added",
+      "institutions": [
+        "Makhambet Utemisov West Kazakhstan University"
+      ],
+      "reviewed_education": [
+        {
+          "person_id": "kaz-273cfae90c97",
+          "name": "Zhanbolat Zholgeldiev",
+          "organization": "Makhambet Utemisov West Kazakhstan University",
+          "role": "University graduate (credential not stated)",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://edlightacademy.kz/trainers",
+          "evidence_kind": "official_employer_biography",
+          "confidence": "confirmed",
+          "evidence_text": "Edlight's biography identifies Zhanbolat's 2007 and 2008 IChO medals and explicitly states that he graduated from West Kazakhstan State University named after M. Utemisov. Degree level and dates are not stated."
+        }
+      ],
+      "existing_profile_url": "https://edlightacademy.kz/trainers",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "c4b716ffe6272e759e831d0c50b27134076e9d0577b46830361805213dec2507",
+      "limitation": "Completed degrees or explicitly historical attendance only; current role and residence assessed separately."
+    },
+    {
+      "person_id": "kaz-016e33a136a1",
+      "name": "Nursultan Khadjimuratov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://steppeolymp.kz/",
+      "existing_profile_retrieval": "content_unavailable",
+      "existing_profile_text_sha256": "e52bb1bcfaf7c6982605fe4d756d5b31dd27637ce1e7bada20e445b4b4f3ebeb",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-a2f029eab00c",
+      "name": "Amir Tulegenov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://github.com/opencv/opencv/commit/cbb230fdfc0223a33cf2629963fe0253b91ca3eb",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "e966b968fe235658142138fc907feb4d6af3c6b1e4d387d35628b14dde46d638",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-21741893c5a2",
+      "name": "Talap Kossybakov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://galaxy.edu.kz/en/staff/index/2",
+      "existing_profile_retrieval": "not_found",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-790df21958f8",
+      "name": "Azamat Duysenbaev",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://prg.kz/Document/?doc_id=31388745",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "49e788ace83b4203498e61f466a37835bd065c82f30693521abfdfdbd4b1b9db",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-6fd6f0f7d5f7",
+      "name": "Azim Amanzholov",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://kazpravda.kz/n/znak-uvazheniya-molodym-talantam/",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "5764125e6ce31ef0ebc64aba0b1cd122e707f1158b226c4fecb25d8f0faf0441",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-ecb44be83ff0",
+      "name": "Kairat Ashim",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://www.linkedin.com/posts/wu-julia_lately-ive-been-filtering-for-one-trait-activity-7440019349970599937-zJXu",
+      "existing_profile_retrieval": "use_exa_profile_audit",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-eda797e5a5c1",
+      "name": "Roman Kogay",
+      "status": "education_added",
+      "institutions": [
+        "Dartmouth College"
+      ],
+      "reviewed_education": [
+        {
+          "person_id": "kaz-eda797e5a5c1",
+          "name": "Roman Kogay",
+          "organization": "Dartmouth College",
+          "role": "PhD, Ecology Evolution Environment and Society",
+          "affiliation_type": "education",
+          "start_year": "",
+          "end_year": "2023",
+          "is_current": false,
+          "selected_as_alma_mater": true,
+          "evidence_url": "https://digitalcommons.dartmouth.edu/dissertations/165/",
+          "evidence_kind": "official_degree_completion",
+          "confidence": "probable",
+          "evidence_text": "Dartmouth's repository identifies Roman Kogay's PhD thesis and gives November 2023 as the award date. Its EEES alumni page independently links him to the accepted NCBI outcome. The Olympiad-to-researcher identity retains its existing probable status."
+        }
+      ],
+      "existing_profile_url": "https://graduate.dartmouth.edu/eees/people/alumni",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "5529cd02d7f3f27abe70e4e98fb90ea83ea065b372dc0683e749fd396b8b2d0a",
+      "limitation": "Completed degrees or explicitly historical attendance only; current role and residence assessed separately."
+    },
+    {
+      "person_id": "kaz-caf5fa5b20bf",
+      "name": "Anton Khvan",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://pubmed.ncbi.nlm.nih.gov/41742061/",
+      "existing_profile_retrieval": "content_unavailable",
+      "existing_profile_text_sha256": "4a7d280516eec1580e45a864f4f272e4e70e44a12e4245f866c5a882ec0055e1",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-a55fa73a7d5f",
+      "name": "Anna Zavalishina",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://osme.org/wp-content/uploads/2023/07/Raptor-inventory-of-the-Karatau-State-Nature-Reserve-southern-Kazakhstan.pdf",
+      "existing_profile_retrieval": "reachable_pdf",
+      "existing_profile_text_sha256": "",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-4f8a3959755f",
+      "name": "Sanzhar Otey",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://niac.kz/221140009084",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "1d2a322d4a34d5049714d4b9d439d01be90e4e80cc3fda04c4db05bfdb089ebb",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-f7400a612d63",
+      "name": "Rizabek Alpamys",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://codeforces.com/profile/rrizabek",
+      "existing_profile_retrieval": "reachable",
+      "existing_profile_text_sha256": "a0ca4ffaf437d3f43ee37a781192410f28e9837bb39f53d0ccbf5866621833a9",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    },
+    {
+      "person_id": "kaz-9208d8d1b297",
+      "name": "Vladimir Lim",
+      "status": "education_unresolved",
+      "institutions": [],
+      "reviewed_education": [],
+      "existing_profile_url": "https://orcid.org/0009-0001-6746-8084",
+      "existing_profile_retrieval": "content_unavailable",
+      "existing_profile_text_sha256": "35e1ea77dbc2ef4d3f27205c63e66f60228c52b402ebb50f57d5ca8944afa5eb",
+      "limitation": "No education was added. A missing alma mater is unresolved, not a passed education check. Existing source retrieval is not proof that a qualification is absent."
+    }
+  ]
+}

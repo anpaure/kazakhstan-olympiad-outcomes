@@ -148,6 +148,7 @@ org-a4de49f86606d496,Graviton Research Capital LLP,Graviton Research Capital,Gra
 org-82cd2ddd0d236111,Hacettepe Üniversitesi,Hacettepe University,Hacettepe University,multilingual_name,Turkish public name normalized to the university's English name,https://www.hacettepe.edu.tr/
 org-afed4f94b89f26b6,HARBOUR.SPACE,Harbour.Space University,Harbour.Space,same_entity,Capitalization variant,
 org-0ee0364b3655ee89,Harbour.Space University - Barcelona Campus,Harbour.Space University,Harbour.Space,parent_organization,Campus label,
+org-2ee7e221b590cef2,Harvard Kennedy School,Harvard University,Harvard University,parent_organization,Graduate school within Harvard University.,https://www.haileybury.kz/en/almaty/board-of-governors
 org-04b3b88b38bbbc1f,Harvard T.H. Chan School of Public Health,Harvard University,Harvard University,parent_organization,University school,
 org-295c1178439899aa,The HEINEKEN Company,HEINEKEN,HEINEKEN,same_entity,Public brand name,https://www.theheinekencompany.com/
 org-e96c81c30cfc1fbc,HITS Inc,HITS,HITS,same_entity,Legal-form variant,
@@ -259,6 +260,7 @@ org-dcd615017c7dd6e5,"Lowe's Companies, Inc",Lowe's,Lowe's,legal_form_variant,Le
 org-02c10c3c072808c6,KSU Lyceum No. 134,Lyceum No. 134,Lyceum No. 134,legal_form_variant,English legal-form expansion normalized to the school name.,https://www.gov.kz/memleket/entities/edu/press/news/details/1260137
 org-0fabb49906c837a8,Lyceum No.134,Lyceum No. 134,Lyceum No. 134,punctuation_variant,Spacing variant of the Almaty school name.,https://www.gov.kz/memleket/entities/edu/press/news/details/1260137
 org-b6fd27c51c7dddfa,Лицей №134,Lyceum No. 134,Lyceum No. 134,multilingual_name,Russian school name normalized to English.,https://www.gov.kz/memleket/entities/edu/press/news/details/1260137
+org-22de66e5c9e74307,West Kazakhstan State University named after M. Utemisov,Makhambet Utemisov West Kazakhstan University,Makhambet Utemisov WKU,former_name,The university's history and current rector page identify the historical and current English names.,https://wku.edu.kz/en/o-vuze/universitet/istoriya-universiteta
 org-9a58fffca7fd5cf9,Kazakh Humanitarian Law University,Maqsut Narikbayev University (MNU),MNU,historical_name,Hyphenless historical English name of the university now named MNU,https://lp.kazguu.kz/unversityhystory-eng
 org-8b7948d8886cd774,Kazakh Humanitarian-Law University,Maqsut Narikbayev University (MNU),MNU,historical_name,Historical English name of the university now named MNU,https://lp.kazguu.kz/unversityhystory-eng
 org-432a6187f2bcb598,Massachusetts Institute of Technology,Massachusetts Institute of Technology (MIT),MIT,same_entity,Official name without acronym,
@@ -400,6 +402,7 @@ org-45595550b2a00d36,Предприниматель,Self-employed,Self-employed,
 org-62e003bd6816f01e,Фриланс,Self-employed,Self-employed,translated_name,Russian independent-work label,
 org-0355b45213a5ddfe,Senimdi Kurylys LLP (Bechtel-Enka JV),Senimdi Kurylys (Bechtel-Enka JV),Senimdi Kurylys,legal_form_variant,Legal-form cleanup,
 org-aed91b86ff5a5df0,SHB Finance,SHBFinance,SHBFinance,spacing_variant,Spaced corporate-name variant normalized to the current SHBFinance brand,https://www.shbfinance.com.vn/about-us/board-of-management
+org-58b1fd4932c9a637,SibSUTIS,Siberian State University of Telecommunications and Information Science (SibSUTIS),SibSUTIS,acronym_expansion,Common English acronym for the Novosibirsk telecommunications university.,https://sibsutis.ru/en/
 org-afb7a55054f0d10d,Siemens Corporation,Siemens,Siemens,same_entity,The country-specific corporate label is normalized to the concise Siemens parent brand.,https://www.linkedin.com/in/gani-nazirov
 org-00630fe4af65629b,Siemens Oil & Gas Offshore AS,Siemens,Siemens,parent_organization,The historical oil-and-gas subsidiary is normalized to its Siemens parent for affiliation search.,https://linkedin.com/in/khairosh
 org-ebb889b7b1d60eb0,Siemens WLL Qatar,Siemens,Siemens,parent_organization,The Qatar legal subsidiary is normalized to the Siemens parent used by the accepted profile link.,https://linkedin.com/in/khairosh
@@ -508,6 +511,8 @@ org-74246aebff0a91e9,University of Minnesota-Twin Cities,University of Minnesota
 org-136d09e3cdcd0ac1,UNC Chapel Hill,University of North Carolina at Chapel Hill,UNC Chapel Hill,same_entity,Common campus name,
 org-cd6b762ba622be87,Università degli Studi di Padova (UNIPD) / University of Padua,University of Padua,University of Padua,multilingual_name,Bilingual source label,
 org-db998b25964d1687,Università di Padova,University of Padua,University of Padua,multilingual_name,Italian short name,
+org-916ad1663bde7a0c,The Wharton School,University of Pennsylvania,University of Pennsylvania,parent_organization,Wharton is the University of Pennsylvania business school.,https://www.wharton.upenn.edu/
+org-a11bc3d17dfa6319,Wharton,University of Pennsylvania,University of Pennsylvania,parent_organization,Wharton is the University of Pennsylvania business school.,https://www.wharton.upenn.edu/
 org-c8bfc10fcaf7e462,MISIS University,University of Science and Technology MISIS,MISIS University,brand_name,The university's official rebranding guidance recommends MISIS University as a concise brand form.,https://en.misis.ru/university/rebranding/
 org-568d59983d72b6c2,Moscow Institute of Steel and Alloys (MISIS),University of Science and Technology MISIS,MISIS University,historical_name,The institution's official history identifies Moscow Institute of Steel and Alloys as its pre-2008 name and its current brand as University of Science and Technology MISIS.,https://en.misis.ru/university/ourhistory/
 org-d315b4d548e4d505,NUST MISIS,University of Science and Technology MISIS,MISIS University,brand_name,The university's official rebranding guidance accepts NUST MISIS as a traditional name and recommends University of Science and Technology MISIS.,https://en.misis.ru/university/rebranding/

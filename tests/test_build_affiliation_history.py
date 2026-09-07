@@ -6,6 +6,7 @@ from scripts.build_affiliation_history import (
     build_rows,
     education_score,
     extract_affiliations,
+    is_current_affiliation,
     is_postsecondary_education,
     merge_undated_duplicates,
     normalized_type,
@@ -14,6 +15,14 @@ from scripts.build_affiliation_history import (
 
 
 class LinkedInAffiliationExtractionTest(unittest.TestCase):
+    def test_publication_affiliation_is_neither_a_degree_nor_current_employment(self):
+        for raw_type in ("education", "employment", "research"):
+            self.assertEqual(normalized_type(raw_type, "Research author"), "research")
+        self.assertEqual(normalized_type("employment", "CTIT Research Author (status not stated)"), "research")
+        self.assertEqual(normalized_type("research", "Author"), "research")
+        for end_year in ("", "2020", "2026", "2027"):
+            self.assertFalse(is_current_affiliation(end_year, "research", 2026))
+
     def test_official_graduation_demotes_stale_same_degree_only(self):
         common = {
             "person_id": "person-1", "organization": "Example University",

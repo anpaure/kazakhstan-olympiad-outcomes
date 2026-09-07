@@ -3500,18 +3500,18 @@
     "review_reason": "The reviewed current research profile places Nessipbek at National Laboratory Astana and the linked nuclear-physics work affiliates him with Nazarbayev University in Astana; the identity bridge remains probable."
   },
   {
-    "location_id": "loc-c3f71e4591bcfdbe",
-    "evidence_id": "ev-3578d039dd0ae35d",
-    "source_id": "src-f33bb7a68ec2",
+    "location_id": "loc-9cdccb7f0f9aa0a8",
+    "evidence_id": "ev-9f7626982821c649",
+    "source_id": "src-f1b9e8c2cd6d",
     "person_id": "kaz-f4f08ec984b8",
     "name": "Nikolay Berezhnoy",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
     "location_label": "Astana, Kazakhstan",
-    "evidence_url": "https://research.nu.edu.kz/en/persons/nikolay-berezhnoy/",
+    "evidence_url": "https://nla.nu.edu.kz/tpost/x0ibxmnno1-plasma-lipidome-profiling-of-patients-wi",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Nazarbayev University's current researcher profile places Nikolay's bioengineering role at the university in Astana."
+    "review_reason": "National Laboratory Astana's active 2025-2027 project identifies Nikolay as its Molecular Oncology senior researcher and PI with research at NU's core facility. This supports his current Astana affiliation rather than a stale Singapore profile or the former bioengineering laboratory."
   },
   {
     "location_id": "loc-ee3e48772f928008",

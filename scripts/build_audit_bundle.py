@@ -798,11 +798,10 @@ def append_affiliation_history_evidence(
     for row in affiliation_history:
         person_id = row["person_id"]
         final = final_by_person[person_id]
-        claim_type = (
-            "education_history"
-            if row.get("affiliation_type") == "education"
-            else "employment_history"
-        )
+        claim_type = {
+            "education": "education_history",
+            "research": "research_affiliation_history",
+        }.get(row.get("affiliation_type"), "employment_history")
         claim_summary = f"{row.get('role') or 'Affiliation'} at {row.get('organization')}"
         evidence_id = add_evidence(
             evidence,

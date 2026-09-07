@@ -1615,6 +1615,87 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             self.alma_maters(person["person_id"]),
             {"Bilim-Innovation Lyceums (BIL)"},
         )
+        school = next(r for r in self.affiliations_for(person["person_id"])
+                      if r["evidence_kind"] == "school_alumni_archive")
+        self.assertEqual(school["role"], "Grade 11 Student")
+        self.assertEqual(school["end_year"], "")
+        self.assertFalse(school["is_current"])
+        self.assertIn("2007", school["evidence_text"])
+
+    def test_non_linkedin_biographies_preserve_all_verified_alma_maters(self):
+        expected = {
+            "kaz-49e795089f9c": {"Siberian State University of Telecommunications and Information Science (SibSUTIS)"},
+            "kaz-6617107a61a9": {"Middle East Technical University", "Istanbul Sehir University", "University of Sheffield"},
+            "kaz-f9d3ca151739": {"Massachusetts Institute of Technology (MIT)", "Harvard University", "University of Pennsylvania"},
+            "kaz-bb70c982f38a": {"University of York"},
+            "kaz-273cfae90c97": {"Makhambet Utemisov West Kazakhstan University"},
+            "kaz-eda797e5a5c1": {"Dartmouth College"},
+            "kaz-84154f378216": {"Lomonosov Moscow State University (MSU)", "Institute for Information Transmission Problems (Kharkevich Institute), Russian Academy of Sciences"},
+            "kaz-bfdcf65f4a6e": {"Lomonosov Moscow State University (MSU)"},
+            "kaz-4a00a35c3f4a": {"Suleyman Demirel University (SDU)"},
+        }
+        for person_id, institutions in expected.items():
+            with self.subTest(person_id=person_id):
+                self.assertEqual(self.alma_maters(person_id), institutions)
+
+    def test_anton_nikolayev_historical_study_is_not_current_enrollment(self):
+        person_id = "kaz-49e795089f9c"
+        self.assertEqual(self.people[person_id]["organization"], "")
+        attendance = next(r for r in self.affiliations_for(person_id)
+                          if r["evidence_kind"] == "reported_university_attendance")
+        self.assertEqual(attendance["start_year"], "2003")
+        self.assertEqual(attendance["end_year"], "")
+        self.assertFalse(attendance["is_current"])
+        self.assertIn("historical", self.locations[person_id]["evidence_kind"])
+
+    def test_nurzhas_keeps_both_mit_degrees_and_both_graduate_schools(self):
+        rows = self.affiliations_for("kaz-f9d3ca151739")
+        degrees = [r for r in rows if r["affiliation_type"] == "education"]
+        self.assertEqual(len(degrees), 4)
+        self.assertEqual(sum(r["organization"] == "Massachusetts Institute of Technology (MIT)"
+                             for r in degrees), 2)
+        self.assertTrue(all(not r["is_current"] for r in degrees))
+
+    def test_andrey_bogdanchikov_executive_role_and_three_degrees(self):
+        person_id = "kaz-4a00a35c3f4a"
+        self.assertEqual(self.people[person_id]["role"],
+                         "Vice Rector for Strategic Development and Digitalization")
+        self.assertEqual(self.people[person_id]["start_year"], "")
+        degrees = [r for r in self.affiliations_for(person_id)
+                   if r["affiliation_type"] == "education"]
+        self.assertEqual({r["end_year"] for r in degrees}, {"2008", "2010", "2014"})
+        self.assertTrue(all(not r["is_current"] for r in degrees))
+
+    def test_nikolay_berezhnoy_uses_current_lab_not_stale_profile_department(self):
+        person_id = "kaz-f4f08ec984b8"
+        self.assertEqual(self.people[person_id]["role"],
+                         "Senior Researcher, Laboratory of Molecular Oncology")
+        self.assertEqual(self.people[person_id]["start_year"], "")
+        self.assertEqual(self.people[person_id]["end_year"], "")
+        self.assertEqual(self.locations[person_id]["country_code"], "KZ")
+        self.assertIn("nla.nu.edu.kz", self.locations[person_id]["evidence_url"])
+        old = [r for r in self.affiliations_for(person_id)
+               if "Regenerative" in r["role"]]
+        self.assertTrue(old)
+        self.assertTrue(all(not r["is_current"] for r in old))
+
+    def test_research_authorship_is_preserved_without_a_job_or_degree_claim(self):
+        rows = [r for r in self.affiliations if "research author" in r["role"].casefold()]
+        self.assertTrue(rows)
+        self.assertTrue(all(r["affiliation_type"] == "research" for r in rows))
+        self.assertTrue(all(not r["is_current"] and not r["selected_as_alma_mater"] for r in rows))
+        with Path("data/audit/evidence.csv").open(newline="") as handle:
+            evidence = [r for r in csv.DictReader(handle)
+                        if r["provenance"] == "accepted_affiliation_history"
+                        and "research author" in r["role"].casefold()]
+        self.assertEqual(len(evidence), len(rows))
+        self.assertTrue(all(r["claim_type"] == "research_affiliation_history" for r in evidence))
+
+    def test_yerbol_brandeis_start_follows_dated_appointment_announcement(self):
+        person = self.people["kaz-84154f378216"]
+        self.assertEqual(person["organization"], "Brandeis University")
+        self.assertEqual(person["start_year"], "2022")
+        self.assertEqual(person["role"], "Assistant Professor of Biology")
 
     def test_danil_murtazin_retains_sourced_aktau_school_history(self):
         person = self.people["kaz-1e390288b2cc"]

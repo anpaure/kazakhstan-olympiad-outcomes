@@ -37,10 +37,13 @@ source URL used for review.
   a traceability status.
 - `participations.csv`: one row per Olympiad appearance, joined to `person_id`
   and its evidence record.
-- `affiliations.csv`: accepted employment and education history. Every row
+- `affiliations.csv`: accepted employment, education, and research affiliation history. Every row
   joins to evidence/source IDs; each distinct higher-education institution has
   `selected_as_alma_mater=true`, with one secondary-school fallback only when
   no higher education is known.
+  `affiliation_type=research` records publication affiliations only. Its years
+  describe research observations, not job or degree dates, and it never
+  establishes current employment or an alma mater.
 - `locations.csv`: one sourced outcome-country claim per covered person. It
   follows the explicit location of the selected current role; active students
   use the sourced campus country in the parent `organization_locations.csv`

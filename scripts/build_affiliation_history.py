@@ -607,6 +607,8 @@ def rejected_urls(rows: list[dict[str, str]]) -> set[tuple[str, str]]:
 
 def normalized_type(value: str, role: str = "") -> str:
     value = clean_text(value).casefold()
+    if value == "research" or re.search(r"\bresearch author\b", role, re.IGNORECASE):
+        return "research"
     if is_student_education_role(role):
         return "education"
     if value in {"education", "qualification"}:
@@ -624,6 +626,9 @@ def is_current_affiliation(
     end_year: str, affiliation_type: str, as_of_year: int
 ) -> bool:
     """Treat education through its stated graduation year as current."""
+    if affiliation_type == "research":
+        # Publication years do not establish an ongoing appointment.
+        return False
     return not end_year or (
         affiliation_type == "education"
         and end_year.isdigit()
@@ -1111,7 +1116,7 @@ def build_rows(
         affiliation_type = normalized_type(
             clean_text(manual.get("affiliation_type")), role
         )
-        if affiliation_type not in {"employment", "education"}:
+        if affiliation_type not in {"employment", "education", "research"}:
             continue
         end_year = clean_text(manual.get("end_year"))
         rows.append(
@@ -1145,7 +1150,7 @@ def build_rows(
         organization = canonicalize_organization(manual.get("organization"))
         evidence_url = clean_text(manual.get("evidence_url"))
         if (
-            affiliation_type not in {"employment", "education"}
+            affiliation_type not in {"employment", "education", "research"}
             or not valid_affiliation(organization, role)
             or not evidence_url
         ):
@@ -1157,6 +1162,8 @@ def build_rows(
             if current_value
             else is_current_affiliation(end_year, affiliation_type, as_of_year)
         )
+        if affiliation_type == "research":
+            is_current = False
         rows.append(
             {
                 "person_id": person_id,

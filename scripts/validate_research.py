@@ -612,7 +612,7 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
         affiliation_type = row.get("affiliation_type", "").casefold()
         organization = canonicalize_organization(row.get("organization", ""))
         evidence_url = row.get("evidence_url", "")
-        if affiliation_type not in {"employment", "education"}:
+        if affiliation_type not in {"employment", "education", "research"}:
             errors.append(
                 f"manual affiliation row {index} has invalid type: {affiliation_type!r}"
             )
@@ -804,6 +804,16 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     }
     for row in affiliations:
         person_id = row.get("person_id", "")
+        if (row.get("affiliation_type") == "research" or re.search(
+            r"\bresearch author\b", row.get("role", ""), re.IGNORECASE
+        )) and (
+            row.get("affiliation_type") != "research"
+            or row.get("is_current", "").casefold() == "true"
+            or row.get("selected_as_alma_mater", "").casefold() == "true"
+        ):
+            errors.append(
+                f"publication affiliation implies employment or education for {person_id}"
+            )
         if not row.get("organization", ""):
             errors.append(f"affiliation history has no organization for {person_id}")
         if not row.get("evidence_url", "").startswith(("http://", "https://")):

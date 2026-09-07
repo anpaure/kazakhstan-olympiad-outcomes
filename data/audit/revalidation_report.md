@@ -196,3 +196,68 @@ The additional privacy scan found no local home paths or common credential
 patterns in publishable files or 2,192 reachable Git objects, including workbook
 XML. A separate current-file scan found no owner account name. As above, this
 is not proof that every possible secret format is absent.
+
+## Education Coverage Follow-up
+
+A further pass enumerated all 55 profiles with no selected alma mater and
+screened the available career biographies. Nine had explicit education that
+had not been transcribed into affiliation history:
+
+| Person | Added education |
+| --- | --- |
+| Anton Nikolayev | Historical SibSUTIS study from 2003; completion and current study are not established |
+| Asylbek Nurgabdeshov | METU bachelor's, Istanbul Sehir MBA, Sheffield PhD |
+| Nurzhas Makishev | Both MIT bachelor's degrees, Wharton MBA, Harvard Kennedy School MPA |
+| Aituov Baurzhan | University of York genetics bachelor's, 2006-2009 |
+| Zhanbolat Zholgeldiev | Makhambet Utemisov West Kazakhstan University; credential and dates unstated |
+| Roman Kogay | Dartmouth PhD awarded in 2023; Olympiad identity remains probable |
+| Yerbol Kurmangaliyev | Moscow State MSc and Kharkevich Institute bioinformatics PhD |
+| Anton Vassilyev | Moscow State undergraduate studies and Candidate of Sciences |
+| Andrey Bogdanchikov | SDU specialist, master's, and PhD degrees |
+
+The full per-person audit, sources, retrieval limitations, and unresolved
+records are in `../revalidation/2026-09-07/education_followup.json`. There are
+now 599 selected institution records across 411 people; 46 still have no
+reviewed alma mater. Those blanks are not classified as passed education checks.
+
+Two institutional roles were corrected: Andrey Bogdanchikov is SDU's Vice
+Rector for Strategic Development and Digitalization; Nikolay Berezhnoy's active
+National Laboratory Astana project identifies him as a Senior Researcher in
+Molecular Oncology. Project dates do not become employment dates, and the
+older Singapore profiles do not override his current Kazakhstan affiliation.
+Brandeis's September 21 2022 new-faculty announcement also corrects Yerbol
+Kurmangaliyev's appointment year from 2023 to 2022.
+Oleg Obukhov's 2006 school end date was removed: the dated 2007 school report
+still identifies him as a grade-11 pupil, without proving a graduation date.
+
+The degree tests also exposed 29 publication-based affiliations across eight
+people incorrectly typed as education or employment. Seven were marked current
+from publication years. They now have type `research`, stay searchable, and
+cannot become current employment or alma-mater evidence. The source-ledger
+claim type is `research_affiliation_history`; all original records are retained.
+
+Root causes were incomplete extraction from non-LinkedIn biographies,
+superseded institutional departments or titles, event years used as school
+end dates, and institution category confused with a person's relationship.
+Regression tests cover these cases and the whole-dataset validator rejects
+publication affiliations marked as current or selected as alma maters.
+
+Eighteen relevant URLs received a new reachability check: 14 readable HTML
+responses, one PDF, one JavaScript-only profile, one access restriction, and
+one network failure. Brandeis's indexed institutional text supplied the degree
+details where direct retrieval was incomplete. Retrieval limitations remain
+recorded in `../revalidation/2026-09-07/education_source_health.json`.
+
+Final verification: 384 tests pass; all 27 CSV/JSON pairs, 255,438 workbook data
+cells across 13 sheets, summary counts, and 457 embedded records agree. Browser
+checks passed in all three languages at 1440px and 390px, including the ten
+changed education/role displays, research-history search, every sort toggle,
+empty results, charts, and 42 unknown countries. Analytics was blocked during QA.
+There are 1,158 public person/source URLs and no additions. The source audit
+retains the evidence URLs even when the frozen public-link policy suppresses them.
+
+Privacy checks found no local home paths or common credential patterns in 143
+publishable files and 2,241 reachable Git objects, including workbook XML.
+The owner account name was absent from tracked file contents, and reachable
+commit authors and committers use the anpaure noreply identity. This does not
+prove that every possible secret format is absent or remove external copies.
