@@ -5768,18 +5768,18 @@
     "review_reason": "A 2022 business testimonial identifies exact full-name Zharas Bakhytovich Baideldinov of Corvus Technologies in Almaty, consistent with the rare-name 1993 IMO alumnus and his Kazakhstan dissertation record. This is latest-known evidence, not a current residence claim. The selected role ended in 2022, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
-    "location_id": "loc-1d17f5120b8b2d47",
-    "evidence_id": "ev-9f173eaa94ec7f54",
-    "source_id": "src-c6894d5cd154",
+    "location_id": "loc-e63887940b6b10aa",
+    "evidence_id": "ev-71efdbb78cb2e511",
+    "source_id": "src-63f1edcc70fc",
     "person_id": "kaz-f67b534425a5",
     "name": "Zhaslan Baraissov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "Ithaca, New York, United States",
-    "evidence_url": "https://www.cornell.edu/visit/",
-    "evidence_kind": "current_education_location",
+    "location_label": "Ithaca, New York, United States (last verified in 2026)",
+    "evidence_url": "https://cbb.cornell.edu/about/events/zhaslan-baraissovs-phd-defense",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Cornell University; the linked official institution source establishes the campus location. Cornell's official visitor page identifies its Ithaca campus."
+    "review_reason": "Cornell's dated March 2026 thesis defense and graduation announcement establish the last known academic location in Ithaca. The current KLA office and residence are not stated in the alumni job listing; no location is inferred from KLA headquarters."
   },
   {
     "location_id": "loc-831bd6ca0e4d5078",

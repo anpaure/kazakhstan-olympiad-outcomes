@@ -136,3 +136,63 @@ copies held elsewhere.
 Repeat the publishable-file check with
 `python scripts/check_publishable_privacy.py`; add `--history` to inspect
 reachable Git history as well. Reports omit matching secret text.
+
+## Final Follow-up
+
+The additional search audit is in
+`../revalidation/2026-09-07/missing_outcomes_followup.json`: 32 searches for
+missing outcomes, four exact-profile retrieval attempts, and one targeted
+Akezhan search. It records result URLs, text hashes, and decisions. Search
+results alone did not establish any new identity.
+
+- Zhaslan Baraissov: Cornell's Center for Bright Beams explicitly announces
+  his PhD graduation and lists his next role as Scientist at KLA. The alumni
+  row links the already accepted LinkedIn profile. The 2019-2026 Cornell PhD
+  remains in alma-mater history alongside NTU; no KLA start date is inferred.
+  United States is explicitly last known from Cornell in 2026, not an inferred
+  KLA office or a claim about current residence.
+- Akezhan Askar: a new exact-name LinkedIn snippet mentions two IOI silver
+  medals and Nanyang Technological University Singapore, class of 2030.
+  Exact-profile retrieval returned `ENTITY_NOT_FOUND`. The follow-up search
+  still returned only a snippet, so enrollment dates, degree, and residence
+  remain unverified. The lead is retained without adding a public link.
+- Three newly inspected namesakes were rejected for incompatible school or
+  university chronology. These are included in the rejection ledger and
+  workbook, not just discarded from the search response.
+
+Root cause: refreshing LinkedIn and ORCID can reproduce a stale student role.
+Explicit university graduation and subsequent-employment evidence must take
+precedence. A new regression check prevents a reviewed degree completion from
+remaining active in older open-ended records, while preserving later degrees,
+other institutions, and university employment. The history-preservation
+validator now uses the same case-insensitive role comparison as deduplication.
+
+UI review also found that the mobile stacked table hid every sorting control
+with its header. The same five header controls are now visible above the mobile
+list; the removed top-level sorting dropdown has not returned.
+
+The final dataset retains 457 people, 684 participations, 448 accepted
+identities, 413 resolved destinations, and 42 unknown countries. There are
+still eight unmatched identities, one candidate identity, and 44 people without
+a selected destination. Absence of evidence is not treated as Kazakhstan
+residence, continued study, or a current job.
+
+All four newly checked institutional/company URLs returned readable responses;
+see `../revalidation/2026-09-07/late_source_health.json`. The public page has
+1,159 person/source URLs, with no additions. The former Cornell visitor link
+was removed because it no longer supports a current-student location.
+
+Verification: 376 unit tests and full dataset validation passed. Browser checks
+exercised every sort in both directions at 1440px and 390px in English,
+Russian, and Kazakh, plus historical-job search, changed profiles, unknown
+countries, empty results, and chart totals. No page overflow, clipped chart
+counts/legends, or JavaScript exceptions were detected. Test traffic did not
+reach Google Analytics.
+The independent export comparison passed for all 27 CSV/JSON pairs, 254,285
+workbook data cells across 13 sheets, summary totals, and 457 embedded page
+records.
+
+The additional privacy scan found no local home paths or common credential
+patterns in publishable files or 2,192 reachable Git objects, including workbook
+XML. A separate current-file scan found no owner account name. As above, this
+is not proof that every possible secret format is absent.

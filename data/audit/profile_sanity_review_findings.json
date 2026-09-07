@@ -698,5 +698,19 @@
     "evidence_urls": "https://anpaure.github.io/kazakhstan-olympiad-outcomes/",
     "status": "resolved",
     "reviewed_at": "2026-09-07"
+  },
+  {
+    "finding_id": "reviewed-degree-completion-precedence",
+    "affected_person_ids": "kaz-f67b534425a5",
+    "affected_names": "Zhaslan Baraissov",
+    "review_scope": "2026-09-07_followup",
+    "severity": "medium",
+    "issue": "Cornell's 2026 PhD graduate and KLA scientist still appeared as a current PhD candidate.",
+    "root_cause": "The retrieved LinkedIn and ORCID records retained open-ended education; refreshing those sources alone did not incorporate the university's explicit graduation and next-job announcement.",
+    "correction": "Use Cornell's alumni listing for Scientist at KLA and keep the 2019-2026 PhD in alma-mater history. Country is explicitly last known from Cornell because the KLA office is not stated.",
+    "prevention": "A reviewed official degree completion demotes older open-ended rows for the same degree and start year without affecting later degrees or employment. Unit and dataset regressions cover this precedence.",
+    "evidence_urls": "https://cbb.cornell.edu/about/cbb-alumni;https://cbb.cornell.edu/spotlights/congratulations-new-phd-dr-zhaslan-baraissov",
+    "status": "resolved",
+    "reviewed_at": "2026-09-07"
   }
 ]

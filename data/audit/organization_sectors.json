@@ -721,6 +721,13 @@
     "rationale": "Reviewed core activity is IT services and technology consulting."
   },
   {
+    "organization_sector_id": "sector-fb8c4aa0e20581e1",
+    "canonical_name": "KLA",
+    "organization_type": "company",
+    "sector": "Industrial & Manufacturing",
+    "rationale": "KLA develops process-control and inspection equipment for semiconductor manufacturing as described at https://www.kla.com/company."
+  },
+  {
     "organization_sector_id": "sector-fd08a23ae028836e",
     "canonical_name": "KMG PetroChem",
     "organization_type": "company",

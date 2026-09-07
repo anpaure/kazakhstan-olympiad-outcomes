@@ -48,6 +48,25 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(self.locations[person_id]["country_code"], "KZ")
         self.assertIn("interview", person["verification_basis"])
 
+    def test_zhaslan_kla_role_supersedes_completed_cornell_doctorate(self):
+        person_id = "kaz-f67b534425a5"
+        person = self.people[person_id]
+        self.assertEqual(person["organization"], "KLA")
+        self.assertEqual(person["role"], "Scientist")
+        self.assertEqual(person["destination_status"], "latest_employment")
+        self.assertEqual(person["start_year"], "")
+        self.assertEqual(self.alma_maters(person_id), {"Cornell University", "Nanyang Technological University (NTU)"})
+        cornell = [r for r in self.affiliations_for(person_id) if r["organization"] == "Cornell University"]
+        self.assertTrue(cornell)
+        self.assertTrue(all(not r["is_current"] for r in cornell))
+        degree = next(r for r in cornell if r["selected_as_alma_mater"])
+        self.assertEqual(degree["end_year"], "2026")
+        self.assertEqual(degree["evidence_kind"], "official_degree_completion")
+        location = self.locations[person_id]
+        self.assertEqual(location["evidence_kind"], "historical_outcome_location")
+        self.assertIn("last verified in 2026", location["location_label"])
+        self.assertIn("KLA office", location["review_reason"])
+
     def test_sanzhar_hkust_attendance_does_not_imply_graduation_or_residence(self):
         person_id = "kaz-0869880ec7a7"
         self.assertEqual(self.people[person_id]["organization"], "")

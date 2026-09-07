@@ -4536,11 +4536,11 @@
     "name": "Zhaslan Baraissov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "Ithaca, New York, United States",
-    "evidence_url": "https://www.cornell.edu/visit/",
-    "evidence_kind": "current_education_location",
+    "location_label": "Ithaca, New York, United States (last verified in 2026)",
+    "evidence_url": "https://cbb.cornell.edu/about/events/zhaslan-baraissovs-phd-defense",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the accepted active student affiliation at Cornell University; the linked official institution source establishes the campus location. Cornell's official visitor page identifies its Ithaca campus."
+    "review_reason": "Cornell's dated March 2026 thesis defense and graduation announcement establish the last known academic location in Ithaca. The current KLA office and residence are not stated in the alumni job listing; no location is inferred from KLA headquarters."
   },
   {
     "person_id": "kaz-0e1075c1b53e",

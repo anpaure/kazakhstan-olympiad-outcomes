@@ -1,6 +1,26 @@
 import unittest
 
-from scripts.validate_research import structured_alma_timeline_conflicts
+from scripts.validate_research import manual_history_preserved, structured_alma_timeline_conflicts
+
+
+class ManualHistoryPreservationTest(unittest.TestCase):
+    def test_role_capitalization_does_not_hide_preserved_evidence(self):
+        verified = {"organization": "MIT", "role": "PhD Candidate",
+                    "career_evidence_url": "https://example.test/profile/"}
+        history = {"organization": "Massachusetts Institute of Technology (MIT)",
+                   "role": "PhD candidate", "evidence_url": "https://example.test/profile"}
+        self.assertTrue(manual_history_preserved(verified, [history]))
+
+    def test_different_claim_or_source_is_not_preserved_history(self):
+        verified = {"organization": "MIT", "role": "PhD Candidate",
+                    "career_evidence_url": "https://example.test/profile"}
+        history = {"organization": "MIT", "role": "PhD candidate",
+                   "evidence_url": "https://example.test/profile"}
+        for field, value in [("organization", "Harvard University"),
+                             ("role", "Research Scientist"),
+                             ("evidence_url", "https://example.test/other")]:
+            with self.subTest(field=field):
+                self.assertFalse(manual_history_preserved(verified, [{**history, field: value}]))
 
 
 def alma(

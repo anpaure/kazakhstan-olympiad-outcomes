@@ -2025,6 +2025,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-fd6028bd25cd5d1e",
+    "alias": "KLA Corporation",
+    "canonical_name": "KLA",
+    "display_name": "KLA",
+    "merge_type": "legal_form_variant",
+    "rationale": "The corporation uses KLA as its current company brand.",
+    "evidence_url": "https://www.kla.com/company"
+  },
+  {
     "organization_alias_id": "org-8d9c3199fc2535fc",
     "alias": "KMG PetroChem LLP",
     "canonical_name": "KMG PetroChem",

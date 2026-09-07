@@ -1342,5 +1342,29 @@
     "evidence_url": "https://kz.linkedin.com/in/yernar-tursynbay",
     "reason": "The Astana IT University profile began undergraduate study in 2020 and is far too young to be Kazakhstan's school-level 2010-2011 IBO contestant whose biology affiliation is documented in 2015.",
     "review_evidence_url": "https://research.nu.edu.kz/en/publications/pim-1-kinase-as-cancer-drug-target-an-update-review/fingerprints/"
+  },
+  {
+    "person_id": "kaz-21cc95b51c33",
+    "person_name": "Yaroslav Alexandrov",
+    "source_id": "src-de75a513e6d0",
+    "evidence_url": "https://www.linkedin.com/in/yalexandrov",
+    "reason": "The JetBrains product leader lists Moscow School 1543 from 2001-2008 and MSU undergraduate study from 2008. This school timeline conflicts with Kazakhstan's 1999 IPhO contestant and there is no Olympiad identity bridge.",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-21cc95b51c33",
+    "person_name": "Yaroslav Alexandrov",
+    "source_id": "src-7e9aba4b6a2c",
+    "evidence_url": "https://www.linkedin.com/in/yaroslavalexandrov",
+    "reason": "The DHL finance profile lists Moscow Power Engineering university study from 1993-1998 before the school-level 1999 IPhO and gives no Kazakhstan physics-Olympiad identity bridge.",
+    "review_evidence_url": "https://ipho-unofficial.org/countries/KAZ/individual"
+  },
+  {
+    "person_id": "kaz-b41761cae333",
+    "person_name": "Kirill Panov",
+    "source_id": "src-04df4d20d70e",
+    "evidence_url": "https://www.linkedin.com/in/panov-kirill",
+    "reason": "The finance profile lists Dnipro economics undergraduate study from 1997-2001 spanning Kazakhstan's school-level 1998 IMO and provides no mathematics-Olympiad identity bridge.",
+    "review_evidence_url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=1998"
   }
 ]

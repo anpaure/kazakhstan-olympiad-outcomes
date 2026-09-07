@@ -1,6 +1,7 @@
 import unittest
 
 from scripts.build_affiliation_history import (
+    apply_completed_education_precedence,
     apply_destination_review_precedence,
     build_rows,
     education_score,
@@ -13,6 +14,41 @@ from scripts.build_affiliation_history import (
 
 
 class LinkedInAffiliationExtractionTest(unittest.TestCase):
+    def test_official_graduation_demotes_stale_same_degree_only(self):
+        common = {
+            "person_id": "person-1", "organization": "Example University",
+            "affiliation_type": "education", "role": "PhD Candidate",
+            "start_year": "2019", "end_year": "", "is_current": True,
+            "evidence_kind": "accepted_linkedin_profile",
+        }
+        rows = [
+            {**common, "role": "PhD, Applied Physics", "end_year": "2026",
+             "is_current": False, "evidence_kind": "official_degree_completion"},
+            dict(common),
+            {**common, "role": "PhD", "evidence_kind": "accepted_orcid"},
+            {**common, "role": "", "start_year": ""},
+            {**common, "role": "Postdoctoral Researcher", "affiliation_type": "employment"},
+            {**common, "role": "Master's Student"},
+            {**common, "start_year": "2026"},
+            {**common, "organization": "Another University"},
+            {**common, "person_id": "person-2"},
+        ]
+        actual = apply_completed_education_precedence(rows, 2026)
+        self.assertEqual([r["is_current"] for r in actual], [False] * 4 + [True] * 5)
+        self.assertEqual(actual[1]["end_year"], "")
+
+    def test_expected_end_year_does_not_prove_graduation(self):
+        common = {
+            "person_id": "person-1", "organization": "Example University",
+            "affiliation_type": "education", "role": "PhD Candidate",
+            "start_year": "2019", "end_year": "", "is_current": True,
+            "evidence_kind": "accepted_linkedin_profile",
+        }
+        for kind, year in [("manual_profile_transcription", "2026"), ("official_degree_completion", "2027")]:
+            with self.subTest(kind=kind, year=year):
+                rows = [{**common, "end_year": year, "is_current": False, "evidence_kind": kind}, dict(common)]
+                self.assertTrue(apply_completed_education_precedence(rows, 2026)[1]["is_current"])
+
     def test_deans_list_honor_does_not_turn_education_into_a_job(self):
         row = extract_affiliations("## Education\n### [B.S. dean's list at [University of California, Berkeley](https://linkedin.com/school/berkeley)\n1999 - 2001")[0]
         self.assertEqual(row["role"], "B.S. dean's list")

@@ -224,6 +224,7 @@ org-5032ad1f8aee499e,Khristianovich Institute of Theoretical and Applied Mechani
 org-05e93d903e6886c7,KAUST,King Abdullah University of Science and Technology (KAUST),KAUST,same_entity,Acronym,
 org-f524fa89838b083c,KAUST (King Abdullah University of Science and Technology),King Abdullah University of Science and Technology (KAUST),KAUST,same_entity,Reversed acronym label,
 org-998745fa7b0b1777,King Abdullah University of Science and Technology,King Abdullah University of Science and Technology (KAUST),KAUST,same_entity,Official name without acronym,
+org-fd6028bd25cd5d1e,KLA Corporation,KLA,KLA,legal_form_variant,The corporation uses KLA as its current company brand.,https://www.kla.com/company
 org-8d9c3199fc2535fc,KMG PetroChem LLP,KMG PetroChem,KMG PetroChem,legal_form_variant,Employer legal-form suffix removed,https://kmgpetrochem.kz/
 org-749a58ff8876cd6d,LLP “KMG PetroChem”,KMG PetroChem,KMG PetroChem,legal_form_variant,Quoted legal-form variant normalized to the public company name,https://kmgpetrochem.kz/
 org-6b59421a55d78137,"3D Integrated Opto-Electronic Device Lab, KAIST",Korea Advanced Institute of Science and Technology (KAIST),KAIST,parent_organization,University laboratory,

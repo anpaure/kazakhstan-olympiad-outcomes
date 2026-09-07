@@ -214,6 +214,20 @@ def stale_employment_superseded_by_active_education(
     return ended_employment and not ongoing_employment and active_education
 
 
+def manual_history_preserved(
+    verified_row: dict[str, str], history_rows: list[dict[str, str]],
+) -> bool:
+    return any(
+        canonicalize_organization(row.get("organization", ""))
+        == canonicalize_organization(verified_row.get("organization", ""))
+        and row.get("role", "").strip().casefold()
+        == verified_row.get("role", "").strip().casefold()
+        and row.get("evidence_url", "").strip().rstrip("/")
+        == verified_row.get("career_evidence_url", "").strip().rstrip("/")
+        for row in history_rows
+    )
+
+
 def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
     errors: list[str] = []
     required = {
@@ -1651,31 +1665,14 @@ def validate(data_dir: Path) -> tuple[list[str], dict[str, int]]:
             )
         if person_id in destination_reviews_by_id:
             history_rows = affiliations_by_person.get(person_id, [])
-            preserved_in_history = any(
-                row.get("organization", "").strip()
-                == canonicalize_organization(verified_row.get("organization", ""))
-                and row.get("role", "").strip()
-                == verified_row.get("role", "").strip()
-                and row.get("evidence_url", "").strip().rstrip("/")
-                == verified_row.get("career_evidence_url", "").strip().rstrip("/")
-                for row in history_rows
-            )
-            if not preserved_in_history:
+            if not manual_history_preserved(verified_row, history_rows):
                 errors.append(
                     f"superseded manual evidence was not preserved for {person_id}"
                 )
             continue
         if final_row.get("destination_status") == "history_only":
             history_rows = affiliations_by_person.get(person_id, [])
-            preserved_in_history = any(
-                row.get("organization", "").strip()
-                == canonicalize_organization(verified_row.get("organization", ""))
-                and row.get("role", "").strip() == verified_row.get("role", "").strip()
-                and row.get("evidence_url", "").strip().rstrip("/")
-                == verified_row.get("career_evidence_url", "").strip().rstrip("/")
-                for row in history_rows
-            )
-            if not preserved_in_history:
+            if not manual_history_preserved(verified_row, history_rows):
                 errors.append(f"manual history evidence was not preserved for {person_id}")
             continue
         for field in ("organization", "role"):

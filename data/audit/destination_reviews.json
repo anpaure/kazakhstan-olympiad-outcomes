@@ -1380,6 +1380,21 @@
     "review_reason": "Edlight Academy explicitly connects Zhanbolat's IChO medals to his current chemistry teaching at BIL Oskemen."
   },
   {
+    "destination_review_id": "dest-review-e33f97a6249d3d32",
+    "evidence_id": "ev-6125e1577389e12f",
+    "source_id": "src-37cb6de64a59",
+    "person_id": "kaz-f67b534425a5",
+    "name": "Zhaslan Baraissov",
+    "organization": "KLA",
+    "role": "Scientist",
+    "affiliation_type": "employment",
+    "start_year": "",
+    "end_year": "",
+    "evidence_url": "https://cbb.cornell.edu/about/cbb-alumni",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "Cornell's Center for Bright Beams identifies Zhaslan Baraissov among past PhD students and explicitly lists Scientist at KLA in its Where Are They Now column. The row links his accepted LinkedIn profile. The university's separate graduation announcement supersedes the stale PhD-candidate role. No KLA start date or office is stated."
+  },
+  {
     "destination_review_id": "dest-review-90905540b552cbaa",
     "evidence_id": "ev-25e13eaa2be211d3",
     "source_id": "src-8064153e41f4",

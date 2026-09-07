@@ -695,25 +695,44 @@
       overflow: auto;
     }
     #iso-outcomes-viz .table {
+      display: block;
       min-width: 0;
       table-layout: auto;
     }
     #iso-outcomes-viz .table thead {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
+      display: block;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: #e8eef4;
+      border-bottom: 1px solid var(--iso-border);
     }
     #iso-outcomes-viz .table tbody,
     #iso-outcomes-viz .table tr,
     #iso-outcomes-viz .table td {
       display: block;
       width: 100%;
+    }
+    #iso-outcomes-viz .table thead tr {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 12px;
+      padding: 6px 12px;
+    }
+    #iso-outcomes-viz .table thead th:nth-child(n) {
+      display: block;
+      position: static;
+      width: auto;
+      padding: 0;
+      border: 0;
+    }
+    #iso-outcomes-viz .table thead th:nth-child(4),
+    #iso-outcomes-viz .table thead th:last-child {
+      display: none;
+    }
+    #iso-outcomes-viz .iso-sort-button {
+      width: 44px;
+      height: 44px;
     }
     #iso-outcomes-viz .table tbody tr {
       padding: 12px;

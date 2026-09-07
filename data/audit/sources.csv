@@ -44,6 +44,9 @@ src-64e5df7efbde,https://buki-kz.com/user-213733/,buki-kz.com,web_page,2,1,0,2,0
 src-573343768962,https://buki-kz.com/user-49146/,buki-kz.com,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-a9a96badfaeb,https://ca.linkedin.com/in/sultan-aitekenov,ca.linkedin.com,linkedin,8,1,0,8,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin
 src-3469f7fcf38c,https://cajmse.kaznmu.edu.kz/contacts/,cajmse.kaznmu.edu.kz,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
+src-37cb6de64a59,https://cbb.cornell.edu/about/cbb-alumni,cbb.cornell.edu,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_destination_reconciliation,destination_review;destination_source_review
+src-63f1edcc70fc,https://cbb.cornell.edu/about/events/zhaslan-baraissovs-phd-defense,cbb.cornell.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,historical_outcome_location
+src-2f5e170a3d01,https://cbb.cornell.edu/spotlights/congratulations-new-phd-dr-zhaslan-baraissov,cbb.cornell.edu,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_degree_completion
 src-1275eed05e72,https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/7/2024/05/10220209/2024_VU_Commencement_Program_digital_1.pdf,cdn.vanderbilt.edu,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,official_commencement_program
 src-83affba46114,https://cemse.kaust.edu.sa/profiles/alibek-sailanbayev,cemse.kaust.edu.sa,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-e4a73071df0b,https://centrasia.org/newsA.php?st=1082953860,centrasia.org,web_page,1,1,1,0,0,0,0,manual_review,manual
@@ -759,7 +762,7 @@ src-b440fb69f18f,https://linkedin.com/in/zdatbayev,linkedin.com,linkedin,15,1,2,
 src-132075c2d12c,https://linkedin.com/in/zhalgasserimbetov,linkedin.com,linkedin,11,1,2,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
 src-01e7ef85f6b5,https://linkedin.com/in/zhamaliddin-kalzhan,linkedin.com,linkedin,11,1,1,10,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
 src-c93f4227b7fb,https://linkedin.com/in/zhanadil,linkedin.com,linkedin,10,1,2,8,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual
-src-93bc43a2791f,https://linkedin.com/in/zhaslan-baraissov-5460b1151,linkedin.com,linkedin,5,1,1,4,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin;manual
+src-93bc43a2791f,https://linkedin.com/in/zhaslan-baraissov-5460b1151,linkedin.com,linkedin,5,1,0,4,0,1,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin;manual
 src-4fdd06d1f4cd,https://linkedin.com/in/zhassulan-binazar-294bb7146,linkedin.com,linkedin,7,1,0,7,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual_public_profile
 src-766f396a7516,https://materials.proxyvote.com/Approved/356390/20240724/NOMNP_582615.PDF,materials.proxyvote.com,pdf,1,1,0,1,0,0,0,accepted_affiliation_history,official_company_proxy_statement
 src-f0aa41693d98,https://matol.kz/results/235,matol.kz,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,olympiad_school_record
@@ -1322,7 +1325,6 @@ src-d78c63eeaee4,https://www.caravan.kz/news/pavlodarskijj-shkolnik-stal-bronzov
 src-19b5bc0b1ae1,https://www.chem.msu.ru/rus/olimpiad/olimp001/silka5.htm,chem.msu.ru,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-ca2c45d77d87,https://www.chem.msu.ru/rus/olimpiad/olimp2004/welcome.html,chem.msu.ru,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-4a879257664d,https://www.chem.msu.ru/rus/olimpiad/olimp99/priz.html,chem.msu.ru,web_page,1,1,1,0,0,0,0,manual_review,manual
-src-c6894d5cd154,https://www.cornell.edu/visit/,cornell.edu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-509037217209,https://www.coteccons.vn/wp-content/uploads/2025/10/CTD_BCTN-2025_ENG.pdf,coteccons.vn,pdf,2,1,0,2,0,0,0,accepted_affiliation_history,official_company_annual_report
 src-9f294bb0ccba,https://www.cs.cmu.edu/~yangp/icpc/20260202ECFinal.pdf,cs.cmu.edu,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-107c2360ec04,https://www.cuhk.edu.hk/english/campus/campus.html,cuhk.edu.hk,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
@@ -1602,6 +1604,7 @@ src-57bcb1ad8206,https://www.linkedin.com/in/nazym-bashkenova-6537a1246,linkedin
 src-567c8bfa5c47,https://www.linkedin.com/in/nurzhan,linkedin.com,linkedin,14,1,2,12,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_destination_reconciliation;manual_review,accepted_linkedin_profile;active_affiliation_profile_location;destination_review;destination_source_review;linkedin;manual;manual_review
 src-4cfcc2488507,https://www.linkedin.com/in/olegobukhov,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-7ca19e4e82da,https://www.linkedin.com/in/ordabayevy,linkedin.com,linkedin,11,1,1,10,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
+src-04df4d20d70e,https://www.linkedin.com/in/panov-kirill,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-727c74c5a5f8,https://www.linkedin.com/in/rkaldybayev,linkedin.com,linkedin,10,1,0,10,0,0,0,accepted_affiliation_history;manual_review,accepted_linkedin_profile;linkedin
 src-3316f5f1bea5,https://www.linkedin.com/in/saken-sherkhanov-398a65264,linkedin.com,linkedin,13,1,0,13,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin
 src-a4f36fa11036,https://www.linkedin.com/in/sergey-umentayev,linkedin.com,linkedin,12,1,1,11,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
@@ -1616,6 +1619,8 @@ src-9d713637c916,https://www.linkedin.com/in/viktor-passichenko,linkedin.com,lin
 src-26a2326d0279,https://www.linkedin.com/in/viktorsossin,linkedin.com,linkedin,1,1,0,1,0,0,0,accepted_affiliation_history,manual_profile_transcription
 src-6c6c2beb2621,https://www.linkedin.com/in/vladimir-bychkov-98954252,linkedin.com,linkedin,11,1,1,10,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;active_affiliation_profile_location;linkedin;manual
 src-df1cdfa8ece7,https://www.linkedin.com/in/vladislav-kamysbayev-83bb81181,linkedin.com,linkedin,10,1,1,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
+src-de75a513e6d0,https://www.linkedin.com/in/yalexandrov,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
+src-7e9aba4b6a2c,https://www.linkedin.com/in/yaroslavalexandrov,linkedin.com,linkedin,1,1,0,0,0,0,1,review_rejection,manual
 src-973c5f3d11ea,https://www.linkedin.com/in/yerbolat-ablemetov-393b47206,linkedin.com,linkedin,8,1,0,8,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin
 src-5c7ec693c02b,https://www.linkedin.com/in/yerkebulant,linkedin.com,linkedin,22,1,1,21,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
 src-bf8966f74138,https://www.linkedin.com/in/yerken,linkedin.com,linkedin,10,1,1,9,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual

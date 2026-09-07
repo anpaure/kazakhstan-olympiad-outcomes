@@ -1,0 +1,50 @@
+[
+  {
+    "source_url": "https://cbb.cornell.edu/about/cbb-alumni",
+    "checked_at": "2026-09-07T11:39:31+00:00",
+    "http_status": 200,
+    "resolved_url": "https://cbb.cornell.edu/about/cbb-alumni",
+    "content_type": "text/html; charset=utf-8",
+    "title": "CBB Alumni | The Center for Bright Beams",
+    "text_characters": 10341,
+    "text_cache": "37cb6de64a595d00ed66.txt",
+    "status": "reachable",
+    "text_sha256": "a57fe0297edbf02a1d5bb107acf55421e6fe70fb265ac7278d6af7b64f467ba7"
+  },
+  {
+    "source_url": "https://cbb.cornell.edu/spotlights/congratulations-new-phd-dr-zhaslan-baraissov",
+    "checked_at": "2026-09-07T11:39:32+00:00",
+    "http_status": 200,
+    "resolved_url": "https://cbb.cornell.edu/spotlights/congratulations-new-phd-dr-zhaslan-baraissov",
+    "content_type": "text/html; charset=utf-8",
+    "title": "Congratulations new PhD, Dr. Zhaslan Baraissov! | The Center for Bright Beams",
+    "text_characters": 1478,
+    "text_cache": "2f5e170a3d0177eff9a2.txt",
+    "status": "reachable",
+    "text_sha256": "c4ec040c47714e6dc13427f7d3b2b9877c2c887fae5fab468c6e6572756085db"
+  },
+  {
+    "source_url": "https://cbb.cornell.edu/about/events/zhaslan-baraissovs-phd-defense",
+    "checked_at": "2026-09-07T11:39:32+00:00",
+    "http_status": 200,
+    "resolved_url": "https://cbb.cornell.edu/about/events/zhaslan-baraissovs-phd-defense",
+    "content_type": "text/html; charset=utf-8",
+    "title": "Zhaslan Baraissov's PhD Defense | The Center for Bright Beams",
+    "text_characters": 3169,
+    "text_cache": "63f1edcc70fcae719984.txt",
+    "status": "reachable",
+    "text_sha256": "095a259590302f97df9f2c5695be12396dc1313c9539d5db47fe2ca905c58435"
+  },
+  {
+    "source_url": "https://www.kla.com/company",
+    "checked_at": "2026-09-07T11:39:32+00:00",
+    "http_status": 200,
+    "resolved_url": "https://www.kla.com/company",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Company | KLA",
+    "text_characters": 15534,
+    "text_cache": "ef199ef21deeaeb237d0.txt",
+    "status": "reachable",
+    "text_sha256": "f410be9ac4c64064f0b6881289ff02a441bb52c5002d5c5fdfc10507075bd29f"
+  }
+]

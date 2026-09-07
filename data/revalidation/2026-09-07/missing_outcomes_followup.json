@@ -1,0 +1,1577 @@
+{
+  "reviewed_at": "2026-09-07",
+  "provider": "Exa",
+  "key_persisted": false,
+  "scope": "32 follow-up searches for missing outcomes, four exact-profile attempts and one targeted Akezhan search. These do not replace the earlier all-profile revalidation.",
+  "limitations": "Search results are leads, not accepted identities. Titles, URLs and text hashes preserve retrieval provenance without publishing unrelated profile text. Country and employment remain unknown when evidence is insufficient.",
+  "searches": [
+    {
+      "person_id": "kaz-dbcaf30d53de",
+      "name": "Nurbol Sihimbayev",
+      "query": "\"Nurbol Sihimbayev\"",
+      "searched_at": "2026-09-07T11:21:53+00:00",
+      "request_id": "f182d5fa1edec23b111ef7fcff0967e1",
+      "status": "ok",
+      "cost_usd": 0,
+      "results": [],
+      "decision": "No exact-name results. Keep the historical IBO entrant unmatched."
+    },
+    {
+      "person_id": "kaz-1e83de167408",
+      "name": "Ekrem Mahmudov",
+      "query": "\"Akram Makhmudov\" Kazakhstan biology",
+      "searched_at": "2026-09-07T11:21:54+00:00",
+      "request_id": "32bbeb166025f158bdc747de9a48d88f",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/akram-makhmudov-87a4123b",
+          "title": "akram makhmudov",
+          "text_characters": 1295,
+          "text_sha256": "88d69086cb668d1bfb9b14164031e056469b6018e7477ece7e5a67fca753652e"
+        },
+        {
+          "url": "https://www.linkedin.com/in/akram-makhmudov-69981974",
+          "title": "akram makhmudov",
+          "text_characters": 2921,
+          "text_sha256": "7b7aec69e86160ee23d1232b0c9241d1559849d70a2313ff8594a97da83e8ed2"
+        },
+        {
+          "url": "https://doi.org/10.5281/zenodo.14203725",
+          "title": "Comparative and Superlative Degree of Adjectives and the Order of its Use in Sentences",
+          "text_characters": 258,
+          "text_sha256": "823e096103c00b7214a0e80b486bd6b6cb81602f371ebac430788b166ace942c"
+        },
+        {
+          "url": "https://www.linkedin.com/in/akram-makhmudov-68b37a1a8",
+          "title": "akram makhmudov",
+          "text_characters": 5050,
+          "text_sha256": "9671f00d83b7f345b04ca6d10f3236dfb67876578e991d280521f48fafef7bd8"
+        },
+        {
+          "url": "https://doi.org/10.5281/zenodo.14203726",
+          "title": "Comparative and Superlative Degree of Adjectives and the Order of its Use in Sentences",
+          "text_characters": 5500,
+          "text_sha256": "ba99df99c54daeb914ceefb75e592d948050b2bdbf45d4b122a3e3b79fc5d8e4"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/akram-makhmudov-68b37a1a8_gitexaikazakhstan-gitexaicac-gitexuniverse-activity-7455999889341341696-5KUt",
+          "title": "I'm excited to attend @GITEX AI KAZAKHSTAN on 4-5 May 2026. Click here 👉 to get your FREE visitor pass and let's meet up there! | Akram Makhmudov",
+          "text_characters": 1161,
+          "text_sha256": "09d6bec8191e87fe01134bbc75df24dfb05706e26dbe30d83f74bc1214312466"
+        }
+      ],
+      "decision": "SDU lecturer Akram Makhmudov is a possible namesake, but the profile has no education, school or IBO identity bridge. Do not accept the Sanur Almaty Plast outcome."
+    },
+    {
+      "person_id": "kaz-326e69980428",
+      "name": "Anton Nesveldin",
+      "query": "\"Anton Nesveldin\"",
+      "searched_at": "2026-09-07T11:21:56+00:00",
+      "request_id": "f8842092b0c1d5f402e6b095e840d2b4",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Fresults%2FIBO2000.pdf",
+          "title": "Ranking IBO 2000 (Turkey)",
+          "text_characters": 5500,
+          "text_sha256": "70b69b28a384a5c00303cb65acb4f066362ed39c8fadaf5498d6eb734e568da4"
+        }
+      ],
+      "decision": "Only old Olympiad results establish this identity. No later affiliation found."
+    },
+    {
+      "person_id": "kaz-9bc854d0232a",
+      "name": "Denis Atrashenko",
+      "query": "\"Denis Atroshenko\" Kazakhstan",
+      "searched_at": "2026-09-07T11:21:57+00:00",
+      "request_id": "60077a3270c66e2fc24fffa59b873c52",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.mdpi.com/2311-5637/12/4/199",
+          "title": "Exogenous Carbohydrate Effects on Thermoadaptation and Thermostress in Ogataea parapolymorpha Under Different Carbon Sources",
+          "text_characters": 5500,
+          "text_sha256": "3d4fada3e0fb5c55ffc10748172d5522045dc87a7c784e8a16e68a15de74591a"
+        },
+        {
+          "url": "https://webtv.un.org/en/asset/k19/k1959xvbgu",
+          "title": "Russian Federation Review - 44th Session of Universal Periodic Review",
+          "text_characters": 5500,
+          "text_sha256": "db74dbe562a5e9afe68e419c1e00145aaf4d5917f4a3602fb9f8e22654172d5b"
+        },
+        {
+          "url": "https://governingbodies.iom.int/system/files/en/council/115/c-115-11-list-of-participants.pdf",
+          "title": "[PDF] C/115/11 - List of participants - IOM Governing Bodies",
+          "text_characters": 5500,
+          "text_sha256": "89c6e4376810e791612149c33c76e688ef461846761b737143454a2124f2b4d8"
+        },
+        {
+          "url": "https://www.linkedin.com/in/denis-atroshenko-04862a90",
+          "title": "denis atroshenko",
+          "text_characters": 1811,
+          "text_sha256": "207150ab69b2154ee791cb417bca702ccc1ba2f8a56e8a7e9be812f1c09b85b1"
+        },
+        {
+          "url": "https://faqs.tips/post/does-anyone-have-software-for-the-rotor-gene-3000.html",
+          "title": "Does anyone have software for the Rotor Gene 3000? - FAQS.TIPS",
+          "text_characters": 482,
+          "text_sha256": "bf496820b8da14f5d6d2e855defdabc343e03f8e38b80f275a54ddd22509c073"
+        },
+        {
+          "url": "https://www.linkedin.com/in/denis-atroshenko-55428a5a",
+          "title": "denis atroshenko",
+          "text_characters": 1351,
+          "text_sha256": "491af5e9f05bad7f039d04d9a54d55470e63784d9cacfee10c11d5b4d6f1dc10"
+        }
+      ],
+      "decision": "Atroshenko professional and academic namesakes do not establish the Kazakhstan IPhO bridge. The exact-spelling logistics profile also lacks education and identity evidence."
+    },
+    {
+      "person_id": "kaz-21cc95b51c33",
+      "name": "Yaroslav Alexandrov",
+      "query": "\"Yaroslav Alexandrov\" Kazakhstan",
+      "searched_at": "2026-09-07T11:21:58+00:00",
+      "request_id": "4d7f86afe47165768f9a684d5065f677",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://astanatimes.com/2013/04/kazakhstans-knights-prepare-for-medieval-battle-of-nations/",
+          "title": "Kazakhstan's Knights Prepare for Medieval Battle of Nations",
+          "text_characters": 1922,
+          "text_sha256": "32ff257aa609b0d984e8f9716a59e35f43c1b50282fd8df3c1132879f7b88d43"
+        },
+        {
+          "url": "https://ipho-unofficial.org/countries/KAZ/individual",
+          "title": "IPhO: Kazakhstan - Individual Results",
+          "text_characters": 5500,
+          "text_sha256": "b597e5ef70a1601e8da80fc8385276658b1ab6f68b7d46920a2ce9ade20f7a5e"
+        },
+        {
+          "url": "https://medium.com/@yaleksar",
+          "title": "Yaroslav Alexandrov – Medium",
+          "text_characters": 431,
+          "text_sha256": "bb9bdc49177a7b1498a765acfc9f14a14c4d296ce311299fab924bdee0844c81"
+        },
+        {
+          "url": "https://www.linkedin.com/in/yalexandrov",
+          "title": "Yarik Alexandrov",
+          "text_characters": 5500,
+          "text_sha256": "16f2eb902ac1a996706802d7ddf68811e73b1b9bc0d026f8eaa2d7bebc01c367"
+        },
+        {
+          "url": "https://www.linkedin.com/in/yaroslav-alexandrov-31394b87",
+          "title": "yaroslav alexandrov",
+          "text_characters": 5500,
+          "text_sha256": "8cff66010dea934bbcba65bba28325d2c91d511a7753e08e3dc5d0a6404d508a"
+        },
+        {
+          "url": "https://www.linkedin.com/in/yaroslavalexandrov",
+          "title": "Yaroslav Alexandrov",
+          "text_characters": 5500,
+          "text_sha256": "8c3c38a9c9e84e88f3553ccc12d89e4cf80d37d10d438d62ac85ab1d1a0d602f"
+        }
+      ],
+      "decision": "Do not accept the JetBrains or DHL namesakes: their disclosed school/university timelines conflict with the 1999 IPhO entrant. The other Moscow product profile still lacks an identity bridge."
+    },
+    {
+      "person_id": "kaz-b41761cae333",
+      "name": "Kirill Panov",
+      "query": "\"Kirill Panov\" Kazakhstan mathematics",
+      "searched_at": "2026-09-07T11:22:00+00:00",
+      "request_id": "a1569d5608ea107528d09f02d2c339e5",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://bariz.org/imo/participants/5374",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 294,
+          "text_sha256": "b062ae453b4642ceb020a41415468c31d4b83d7654489c38124a9d19ceb8fea3"
+        },
+        {
+          "url": "https://www.imo-official.org/results/individual/country/KAZ/",
+          "title": "Individual Results – Kazakhstan",
+          "text_characters": 5500,
+          "text_sha256": "98b90bfb73a4c8d9b10009049e6bdac6af6ef081d2589474c663fdea3beccba3"
+        },
+        {
+          "url": "https://www.imo-official.org/hall-of-fame/KAZ/",
+          "title": "KAZ — Hall of Fame",
+          "text_characters": 5500,
+          "text_sha256": "ae9495ebb995cbf62290186b7b23ee8d6c63c56e20d2713def4ef3af773b8f5d"
+        },
+        {
+          "url": "https://bariz.org/imo/countries/KAZ/individual-results?sort=p5",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 5500,
+          "text_sha256": "a575f00d287972341ee7827a85289252d2c13d6ba640a04b8693a49977afd399"
+        },
+        {
+          "url": "https://www.linkedin.com/in/kirill-panov-716a23372",
+          "title": "Kirill Panov",
+          "text_characters": 814,
+          "text_sha256": "57408b2e13f611d663096fa4d78353064a75d56c688ab782f9e4a8734e395852"
+        },
+        {
+          "url": "https://www.linkedin.com/in/panov-kirill",
+          "title": "Kirill Panov",
+          "text_characters": 3661,
+          "text_sha256": "aa2bdf580e64929798786b00449a6cc8b2462db61a4328df0a887b1eca67daab"
+        }
+      ],
+      "decision": "Do not accept the finance profile with 1997-2001 university dates. The METRO result lacks education and Olympiad evidence; its city label is not a job title."
+    },
+    {
+      "person_id": "kaz-6baf22bf0570",
+      "name": "Dimitry Dzyabayev",
+      "query": "\"Dmitry Dzyabayev\"",
+      "searched_at": "2026-09-07T11:22:01+00:00",
+      "request_id": "ec61ff16b3767b20ea2d916a32ca72d7",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://bariz.org/imo/participants/4590",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 299,
+          "text_sha256": "249d11c9d7e6956478f1dfb3cb8db33e66c9a3a23fc3513a1df9362fef7f4f33"
+        },
+        {
+          "url": "https://www.linkedin.com/in/dmitry-zabavsky-084bbb38",
+          "title": "Dmitry Zabavsky",
+          "text_characters": 382,
+          "text_sha256": "4b8cf6d3dcb5ac5670acbed5ff070a871cdcaf737dcdd12ee065df15da1dcf7e"
+        },
+        {
+          "url": "https://www.linkedin.com/in/dzyablik",
+          "title": "Dmitry Zyablov",
+          "text_characters": 4150,
+          "text_sha256": "6a222427e214edffbaebc28561d952f5efc5fa002afdf882b1099f9cbe53a455"
+        },
+        {
+          "url": "https://www.linkedin.com/in/dmytro-zabavskyi-47a84556",
+          "title": "Dmytro Zabavskyi",
+          "text_characters": 5500,
+          "text_sha256": "3db7c4d958caf910f4065f4c06358f726d6305f3017ed494b575912999780471"
+        },
+        {
+          "url": "https://www.linkedin.com/in/dmitry-babayev-6ba9b3155",
+          "title": "Dmitry Babayev",
+          "text_characters": 2859,
+          "text_sha256": "413a5c12466deecbe8ec8c02d4effc0d720fabf80972db876cd9a5fecdb9218f"
+        },
+        {
+          "url": "https://www.linkedin.com/in/dmitry-babaytsev-a1b03b203",
+          "title": "Dmitry Babaytsev",
+          "text_characters": 5500,
+          "text_sha256": "aa0089bfe0fb713bce68b32e21cedf1c1a2b140bf9dbd45d2f102be387ebaeef"
+        }
+      ],
+      "decision": "Results do not establish a later profile for the official 1996 IMO contestant. Similar surnames are not a match."
+    },
+    {
+      "person_id": "kaz-6c47e89eeff1",
+      "name": "Alexander Zaitsev",
+      "query": "\"Alexander Zaitsev\" Kazakhstan olympiad",
+      "searched_at": "2026-09-07T11:22:03+00:00",
+      "request_id": "9d7074189f930815cda8559e90174184",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://bariz.org/imo/participants/4547",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 299,
+          "text_sha256": "5db786db5a74af87c11cc8d1efbdcc1ca50858a98a4f2b8229181ea76f8b03a3"
+        },
+        {
+          "url": "https://www.imo-official.org/hall-of-fame/KAZ/",
+          "title": "KAZ — Hall of Fame - International Mathematical Olympiad",
+          "text_characters": 5500,
+          "text_sha256": "ae9495ebb995cbf62290186b7b23ee8d6c63c56e20d2713def4ef3af773b8f5d"
+        },
+        {
+          "url": "https://auca.kg/en/faculty_zaitsev_alexander",
+          "title": "American University of Central Asia - AUCA - ALEXANDER ZAITSEV",
+          "text_characters": 83,
+          "text_sha256": "2fc91433bfc53e1156ff0328b5bd9f276d42e434d05ebeda1b4e7cb69bce53bd"
+        },
+        {
+          "url": "https://www.linkedin.com/in/zaitsev-alexander-nullptr",
+          "title": "Alexander Zaitsev",
+          "text_characters": 4196,
+          "text_sha256": "0f97c7ef39c2280547d553535cfb54adaf782d206616c606ded8416ecb3e828d"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Alexander_Zaitsev_(figure_skater)",
+          "title": "Alexander Zaitsev (pair skater) - Wikipedia",
+          "text_characters": 4549,
+          "text_sha256": "6e82e308fb92163c66635fa3aac94293024c97b6d0412610dbbcc3a80cb5c512"
+        },
+        {
+          "url": "https://zamazan4ik.github.io/",
+          "title": "Alexander Zaitsev | CTO, architect, software engineer (mostly C++/Rust), a little bit DevOps",
+          "text_characters": 5500,
+          "text_sha256": "750c474d53a8954b7a3c24bc859b4f35c53541b8ddc3d1347c28906f8cb8bac1"
+        }
+      ],
+      "decision": "AUCA and software namesakes do not bridge to the 1996 IMO participant. Retain candidate status for the existing unproven research identity."
+    },
+    {
+      "person_id": "kaz-f67bd98affb8",
+      "name": "Taiman Sabyrgaliyev",
+      "query": "\"Taiman Sabyrgaliyev\"",
+      "searched_at": "2026-09-07T11:22:04+00:00",
+      "request_id": "39bd5539c33b50afd3dab052a4143969",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://scoreboard.bc-pf.org/en/results/physics/international-physics-olympiad/2011",
+          "title": "International Physics Olympiad. 2011 - Scoreboard",
+          "text_characters": 5500,
+          "text_sha256": "f7a6959f2a38663596eff01f1e6cc17e884333622da1109369ced46e4822538d"
+        },
+        {
+          "url": "https://ipho-unofficial.org/timeline/2011/individual",
+          "title": "IPhO 2011 - Individual Results",
+          "text_characters": 5500,
+          "text_sha256": "17d68537f9c07c51ab6615ab9f33bed4b41d5520cad2e1ee259ed3c7e250b24b"
+        },
+        {
+          "url": "https://ipho-unofficial.org/countries/KAZ/individual",
+          "title": "IPhO: Kazakhstan - Individual Results",
+          "text_characters": 5500,
+          "text_sha256": "b597e5ef70a1601e8da80fc8385276658b1ab6f68b7d46920a2ce9ade20f7a5e"
+        },
+        {
+          "url": "https://exa.ai/library/person/wt905m6bbzlptfw66nnxljp8c",
+          "title": "taiman t. sabyrgaliyev",
+          "text_characters": 994,
+          "text_sha256": "0c618a2dd519bdff7925c953ca46d41c8a61770c76fa664ab0ecd852116f26b6"
+        },
+        {
+          "url": "https://qazinform.com/news/three-kazakh-students-won-gold-at-int-l-physics-olympiad-in-thailand_a2393828",
+          "title": "Three Kazakh students won gold at Int'l Physics Olympiad ...",
+          "text_characters": 606,
+          "text_sha256": "ce7fc5747624b9f8741d26a745a047227067b5ba9ebcdfef46875d16b2af0bdb"
+        },
+        {
+          "url": "https://www.scribd.com/document/378075858/Ipho-Winners-45",
+          "title": "International Physics Olympiad Winners | PDF",
+          "text_characters": 5500,
+          "text_sha256": "03465b0ee9dbced727bfe80dabdc1ff1cf9f5ab28d90e015091cf0f9a3bbe020"
+        }
+      ],
+      "decision": "Publications corroborate historical MIPT research, not a current job or enrollment. Retain the bounded doctoral history."
+    },
+    {
+      "person_id": "kaz-6d8ff9e71d31",
+      "name": "Nurislam Yeshenkulov",
+      "query": "\"Nurislam Yeshenkulov\"",
+      "searched_at": "2026-09-07T11:22:07+00:00",
+      "request_id": "c263b52e32f1b21149b1b172b948fd84",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.ibo-info.org/en/contest/past-ibos.html?file=files%2Fdownloads%2Fresults-reports%2Fresults%2FIBO2012_Detailed_Results.pdf",
+          "title": "[PDF] 23rd International Biology Olympiad Singapore, 8-15 July 2012 ...",
+          "text_characters": 5500,
+          "text_sha256": "cbef0981b5947fb8de1fe0bed96ba20a336e63d5ade2f6418d0334c7e15108c9"
+        },
+        {
+          "url": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2013",
+          "title": "International Biology Olympiad. 2013 | Scoreboard",
+          "text_characters": 5500,
+          "text_sha256": "206ccf35242562a97bdcc04c49517942ac025ade5e154a2ecace873f71e46183"
+        },
+        {
+          "url": "https://science.olympiad.ch/fileadmin/user_upload/International_Olympiads_in_Switzerland/IBO_2013/Results_IBO_2013.pdf",
+          "title": "IBO2013_final_ranking 2014_03_29",
+          "text_characters": 5500,
+          "text_sha256": "fb4657bdf06fb362e4b5770fe42375f740d37e7df20a6dc707444ef0a0a2f559"
+        },
+        {
+          "url": "https://scoreboard.bc-pf.org/en/results/biology/international_biology_olympiad/2012",
+          "title": "International Biology Olympiad. 2012 | Scoreboard",
+          "text_characters": 5500,
+          "text_sha256": "bd079c491952cbe4884d48e14732ab0b850323c9361b603e26bf0588503c2b0f"
+        },
+        {
+          "url": "https://scoreboard.bc-pf.org/results/biology/international_biology_olympiad/2012",
+          "title": "Международная биологическая олимпиада. 2012 - Scoreboard",
+          "text_characters": 5500,
+          "text_sha256": "75f6a26368f2d7bcde5b419f73ff904c7b3849b26603e56595ada84a23aa4e26"
+        },
+        {
+          "url": "https://www.yumpu.com/it/document/view/30574413/23rd-international-biology-olympiad-singapore-8-15-july-2012-",
+          "title": "23rd International Biology Olympiad Singapore, 8-15 July 2012 ...",
+          "text_characters": 5500,
+          "text_sha256": "7bddd61e2e8704d62bba8898839224f62582be8dcac62ff88b9bd75415e4df48"
+        }
+      ],
+      "decision": "The 2015 student-congress report supports historical medical study only. No current practice or qualification is inferred."
+    },
+    {
+      "person_id": "kaz-d1fb5b8f648d",
+      "name": "Ulan Usserkulov",
+      "query": "\"Ulan Usserkulov\"",
+      "searched_at": "2026-09-07T11:22:08+00:00",
+      "request_id": "d64a870b830cce72d8cea11b8a7ec7a3",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://bariz.org/imo/participants/6659",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 317,
+          "text_sha256": "a03195888bde70e14d61879e0dd495f8938cab790569cc16574757850ecffbf1"
+        },
+        {
+          "url": "https://www.linkedin.com/in/ulan-usserkulov-900b732",
+          "title": "Ulan Usserkulov",
+          "text_characters": 321,
+          "text_sha256": "0ee27e283e95169222b42a2fc95a6e64893c5748589333d9dbd4a9265b95f414"
+        },
+        {
+          "url": "https://www.imo-official.org/team_r.aspx?code=KAZ&year=2001",
+          "title": "IMO 2001 - Kazakhstan - International Mathematical Olympiad",
+          "text_characters": 987,
+          "text_sha256": "42d6e1fde4e0be6e578d5b3e9ba7f782597166f7b3ca935538dc74789ead6f9d"
+        },
+        {
+          "url": "https://www.imo-official.org/hall-of-fame/KAZ/",
+          "title": "KAZ — Hall of Fame - International Mathematical Olympiad",
+          "text_characters": 5500,
+          "text_sha256": "ae9495ebb995cbf62290186b7b23ee8d6c63c56e20d2713def4ef3af773b8f5d"
+        },
+        {
+          "url": "https://www.imo-official.org/country_hall.aspx?code=KAZ",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 5500,
+          "text_sha256": "6796c3a26bd9e342847e3924f51e2691a3dffb2afd95c5df0d7110f2e9e016db"
+        },
+        {
+          "url": "https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=name&order=asc",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 5500,
+          "text_sha256": "dff0ef01f16e61a1b633f157b75e32671e384f7444aba9c85a77ad7490f4a8a8"
+        }
+      ],
+      "decision": "The new LinkedIn result has no employment or education. GitHub also has no employer; its location conflicts with the profile header. Do not fill destination or country."
+    },
+    {
+      "person_id": "kaz-5a5848e42390",
+      "name": "Kuandyk Altynkhanov",
+      "query": "\"Kuandyk Altynkhanov\"",
+      "searched_at": "2026-09-07T11:22:10+00:00",
+      "request_id": "c7e1e262cc11dee6bf50c96972810603",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/kuandyk",
+          "title": "Kuandyk Altynkhanov",
+          "text_characters": 703,
+          "text_sha256": "2e8d6e0eb0cde88172f3006d7673df4e3117d40a22ffd54f937423adc0d3504c"
+        },
+        {
+          "url": "https://bariz.org/imo/participants/25100",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 315,
+          "text_sha256": "0c9d8a7711549679f90a7b911ff1c46824f18ad7263023ed3a63ff21c947a9df"
+        },
+        {
+          "url": "https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=name&order=asc",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 5500,
+          "text_sha256": "dff0ef01f16e61a1b633f157b75e32671e384f7444aba9c85a77ad7490f4a8a8"
+        },
+        {
+          "url": "https://www.imo-official.org/results/individual/year/2014/",
+          "title": "Individual Results IMO 2014",
+          "text_characters": 5500,
+          "text_sha256": "337559901694eed483613fd0aef138c34acfd749d6f9acd0a7e5649ace6a9d29"
+        },
+        {
+          "url": "https://www.imo-official.org/country_hall.aspx?code=KAZ",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 5500,
+          "text_sha256": "6796c3a26bd9e342847e3924f51e2691a3dffb2afd95c5df0d7110f2e9e016db"
+        },
+        {
+          "url": "https://www.imo-official.org/year_individual_r.aspx?column=total&gender=hide&nameform=western&order=desc&year=2014",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 5500,
+          "text_sha256": "ee91ca911dcddc45c1263e6212785dadc25cadde50ee1efe4ef5b90bb6fcdcb2"
+        }
+      ],
+      "decision": "Alternate LinkedIn slug corroborates UNIST 2014-2018 and the IMO medal. A software-engineer headline without an employer does not fill the destination."
+    },
+    {
+      "person_id": "kaz-a242fdf22bda",
+      "name": "Nursultan Pangsat",
+      "query": "\"Nursultan Pansat\"",
+      "searched_at": "2026-09-07T11:22:11+00:00",
+      "request_id": "e1b11785d147be8e7a85fa94bf982a28",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/pansatnursultan",
+          "title": "Nursultan Pansat",
+          "text_characters": 4850,
+          "text_sha256": "abc210b88911be64a30a12265aa43404feea2206599be19c92dc43719e8881a6"
+        },
+        {
+          "url": "https://qazinform.com/news/kazakh-schoolchildren-haul-bronze-at-int-39-l-zhautykov-olympiad_a2738166",
+          "title": "Kazakh schoolchildren haul bronze at Int'l Zhautykov Olympiad",
+          "text_characters": 704,
+          "text_sha256": "933a6697fea90ca70f15e79169bf7fc8ce62339e95cb5cccab1604cdfcd5adb9"
+        },
+        {
+          "url": "https://www.podchaser.com/podcasts/qoqys-talk-1059684/episodes/qtalk-17-yaponskaya-istoriya-o-167193457",
+          "title": "qtalk #17: Японская история отца и сына (самый вайбовый выпуск) by QOQYS TALK | Podchaser",
+          "text_characters": 786,
+          "text_sha256": "a3a6e7f54482947c2fe691ae8500cea3042c4313691a679f644090ce71ddd652"
+        },
+        {
+          "url": "https://archive.jolbors.com/works/view/2341",
+          "title": "Basqa urpaq – basqa Dastur  — Центрально—азиатский фестиваль",
+          "text_characters": 2974,
+          "text_sha256": "e464f3e85d819a1ef10b8a403815f9ef95d9dc39d6c8fb391468935251937159"
+        },
+        {
+          "url": "https://www.locatefamily.com/P/PAN/PANSAT-1.html",
+          "title": "Locate PANSAT Family Members | Locate Family Worldwide",
+          "text_characters": 1699,
+          "text_sha256": "6f5d3640d97da67d712ba63c9ee79bcaa5c63ffa6e137ab8ffd694ab648e387e"
+        }
+      ],
+      "decision": "Alternate Pansat spelling corroborates the IPhO medal and KAIST 2018-2023. The stale student About text does not establish current enrollment or a job."
+    },
+    {
+      "person_id": "kaz-24cc764a8eaf",
+      "name": "Shapagat Berdibek",
+      "query": "\"Shapagat Berdibek\"",
+      "searched_at": "2026-09-07T11:22:13+00:00",
+      "request_id": "28aca79a67d9e4b1282ddcce5aa7c22a",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/shapagatberdibek",
+          "title": "Shapagat Berdibek",
+          "text_characters": 3000,
+          "text_sha256": "a791ab9f27efa2143197210b2315481c945cbcde06fc55b02f4701b4e0bc96ae"
+        },
+        {
+          "url": "https://inspirehep.net/authors/2558688",
+          "title": "Shapagat Berdibek - Inspire HEP",
+          "text_characters": 1199,
+          "text_sha256": "6f558aee2f03d5a37553a8aa4bba1bfd333373fc42449dc56905d11cd9298fde"
+        },
+        {
+          "url": "http://hdl.handle.net/1721.1/106769",
+          "title": "Measurement of optical properties of molten salts and metallic compounds for advanced solar and nuclear systems",
+          "text_characters": 5500,
+          "text_sha256": "627318ffa989243ff69957bed50be55587506997b54fa9648ccfeebc64445ab7"
+        },
+        {
+          "url": "https://exa.ai/library/person/wnt7xkf0b6c25bg2cj5s6klpg",
+          "title": "Shapagat Berdibek",
+          "text_characters": 1367,
+          "text_sha256": "8625c2c573e1f369547f6e97d1f9e8de26b07c660fa0d1d0cb62404aa0736322"
+        },
+        {
+          "url": "https://exa.ai/library/person/0hrt4j166knsb4ys59ygqdcwc",
+          "title": "Shapagat Berdibek",
+          "text_characters": 1880,
+          "text_sha256": "a69ec14d11eb541d4709a9ffa007edcf7923909388716cbc426bb5dca6c019b1"
+        },
+        {
+          "url": "https://doi.org/10.1093/mnras/stw1604",
+          "title": "Shock–turbulence interaction in core-collapse supernovae",
+          "text_characters": 5500,
+          "text_sha256": "c29e8c3d56cf32d04b1923e5def433ac90ac9f0a2be534c918e63a263261da07"
+        }
+      ],
+      "decision": "MIT thesis and older physics research do not establish a new job. Preserve the earlier reviewed education rather than replacing it with an incomplete social-only retrieval."
+    },
+    {
+      "person_id": "kaz-51f03f3fb603",
+      "name": "Almas Sakhauyev",
+      "query": "\"Almas Sakhauyev\"",
+      "searched_at": "2026-09-07T11:22:14+00:00",
+      "request_id": "5e197976ed2176ecb16dc40410236098",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://bariz.org/imo/participants/5288",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 317,
+          "text_sha256": "39f13b796f0ed9a5e615884e04e07a9bf38f02be0fefb70353c1d54179ad8b1d"
+        },
+        {
+          "url": "https://www.linkedin.com/in/almas-sakpayev-986b7b57",
+          "title": "Almas Sakpayev",
+          "text_characters": 5500,
+          "text_sha256": "4e17f86ee73db1f85df18aa40b5d52736ba9efb48c85b616a852665b19ad4b6b"
+        },
+        {
+          "url": "https://www.linkedin.com/in/almas-sakh-0b7418184",
+          "title": "Almas Sakh",
+          "text_characters": 653,
+          "text_sha256": "52b6f8d35f977c47e0bde82d7b719eef47244c06e49dc0665e7d3c8108464f14"
+        },
+        {
+          "url": "https://steamcommunity.com/profiles/76561198268664649",
+          "title": "Steam Community :: Алмас Сах",
+          "text_characters": 398,
+          "text_sha256": "f2269362c8378dfe6c23e981606bfda774167b483a1bad154e97db930d5260a4"
+        },
+        {
+          "url": "https://www.linkedin.com/in/%D0%B0%D0%BB%D0%BC%D0%B0%D1%81-%D1%81%D0%B0%D0%BA%D0%B5%D0%BD%D0%BE%D0%B2-22895180",
+          "title": "Алмас Сакенов",
+          "text_characters": 1929,
+          "text_sha256": "308582bf7d82946584592bc0b57962780dc252fb462e5189720cd7d4316fbb58"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/almas-sakpayev-986b7b57_signed-up-for-cfa-level-1-may-2026-time-activity-7384085536950501376-VgPC",
+          "title": "Signed up for CFA Level 1 (May 2026). | Almas Sakpayev",
+          "text_characters": 1133,
+          "text_sha256": "94f74d8719b50408a3f73d00f0377d6a3d99003a2b59c4c8ccf337a66f6f5ed2"
+        }
+      ],
+      "decision": "Results for Sakpayev, Sakh and Sakenov are not evidence for Sakhauyev. Retain the verified Olympiad identity with unknown destination."
+    },
+    {
+      "person_id": "kaz-514026a01ba3",
+      "name": "Yerlan Jumabayev",
+      "query": "\"Yerlan Jumabayev\"",
+      "searched_at": "2026-09-07T11:22:16+00:00",
+      "request_id": "3a5153e61722bd55748c26b3b254dda3",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/yerlan-jumabayev-117674242",
+          "title": "Yerlan Jumabayev",
+          "text_characters": 1225,
+          "text_sha256": "ca5164b344c93545891f0ec3e631e422c224f20ae4886f4ea4163797d2ca6998"
+        },
+        {
+          "url": "https://kz.linkedin.com/in/thevarp",
+          "title": "Yerlan Jumabayev - Frontend Developer в компании Fratelli G",
+          "text_characters": 5496,
+          "text_sha256": "c48cf41d42b0f6ea7851fa38b88c730d107fade3b3056f41fcf0fecc373194f0"
+        },
+        {
+          "url": "https://bariz.org/imo/participants/4857",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 318,
+          "text_sha256": "a4de6f9534398b6625129ccdb1bc69ab37350a24e04a5c1fe5299fa0791d8e3c"
+        },
+        {
+          "url": "https://www.northdata.com/Aitekina,%20Aziza,%20London/c5l",
+          "title": "Aziza Aitekina, London",
+          "text_characters": 888,
+          "text_sha256": "56be307cdf791396f9251c517240742d42f0a9195229b0d99330757d5bd59660"
+        },
+        {
+          "url": "https://www.imo-official.org/country_hall.aspx?code=KAZ",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 5500,
+          "text_sha256": "6796c3a26bd9e342847e3924f51e2691a3dffb2afd95c5df0d7110f2e9e016db"
+        },
+        {
+          "url": "https://www.imo-official.org/results/individual/year/1997/",
+          "title": "Individual Results IMO 1997",
+          "text_characters": 5500,
+          "text_sha256": "476be6485d7958f54b358a213f952e52fc04cadade0d4e1b900fa0f23b9eea1f"
+        }
+      ],
+      "decision": "Jupiter-K founder result lacks school, education dates and IMO evidence. Keep it as an unaccepted lead; do not merge the younger software developer."
+    },
+    {
+      "person_id": "kaz-56660a53cf0d",
+      "name": "Timur Ratnikov",
+      "query": "\"Timur Ratnikov\"",
+      "searched_at": "2026-09-07T11:24:13+00:00",
+      "request_id": "2cae89f7b9c0fc27443a0fa2978d44d4",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://codeforces.com/profile/Thanos234",
+          "title": "Thanos234 - Codeforces",
+          "text_characters": 859,
+          "text_sha256": "362874e9ec983379fd44a7909f72a782151a8750195902460d2b805231528105"
+        },
+        {
+          "url": "https://cphof.org/profile/codeforces:Thanos234",
+          "title": "Profile of Timur Ratnikov - Competitive Programming Hall Of Fame",
+          "text_characters": 436,
+          "text_sha256": "cec6cd25c346062eaeaa508a834a5850830f2231e78fd71fbae7ef61cdd7d938"
+        },
+        {
+          "url": "https://stats.ioinformatics.org/people/7159",
+          "title": "Timur Ratnikov - International Olympiad in Informatics – Statistics - IOI",
+          "text_characters": 339,
+          "text_sha256": "209fb0c0f01357073076a1bf1a97df830c8dd9e5cf292b8e42633c661588eb4b"
+        },
+        {
+          "url": "https://www.linkedin.com/in/timur-ratnikov-7b779356",
+          "title": "Timur Ratnikov",
+          "text_characters": 5500,
+          "text_sha256": "2a8109e8b2e4dc65395cd579f44584f4e4efdcc35108f231042d264dae68d475"
+        },
+        {
+          "url": "https://pypi.org/project/bhw1lib/",
+          "title": "bhw1lib v0.0.3",
+          "text_characters": 456,
+          "text_sha256": "8f0a373ac09188b03aa0bd86dd332097d9c3402ed855a62351a5a5eea2187832"
+        },
+        {
+          "url": "https://kz.linkedin.com/in/timur-ratnikov-a3201524a",
+          "title": "Timur Ratnikov - Student at Higher School of Economics | LinkedIn",
+          "text_characters": 765,
+          "text_sha256": "7053ad7f29381738b583122db8b80544873144e840b02da168eaefad4c7d96c2"
+        }
+      ],
+      "decision": "Accepted profile has HSE 2021-2025 but no later role. The logistics executive with decades of work history is a namesake."
+    },
+    {
+      "person_id": "kaz-477ae2fd5dbc",
+      "name": "Alikhan Kudaibergenov",
+      "query": "\"Alikhan Kudaibergenov\"",
+      "searched_at": "2026-09-07T11:24:15+00:00",
+      "request_id": "3fbbf46e61907a210c09a0a4f42e4533",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/alikhan-kudaibergenov-27726a154",
+          "title": "Alikhan Kudaibergenov",
+          "text_characters": 4483,
+          "text_sha256": "71e61804400b03615b633dc4f7f38dfb32b5d6e8b2a9c69e6c6936783fabfbcf"
+        },
+        {
+          "url": "https://bariz.org/imo/participants/27301",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 387,
+          "text_sha256": "7bfebddb10dbe442cbfac0d60323382ec6fb5679e47879787a19bb055c43aeb2"
+        },
+        {
+          "url": "https://www.imo-official.org/results/individual/year/2017/",
+          "title": "Individual Results IMO 2017",
+          "text_characters": 5500,
+          "text_sha256": "539efddef6c998165283a30778df8c45604e8f685e9506fea578e59be58baa0a"
+        },
+        {
+          "url": "https://www.imo-official.org/results/individual/year/2018/",
+          "title": "Individual Results IMO 2018",
+          "text_characters": 5500,
+          "text_sha256": "4a933924aa0b601ebd1744cd2166c7742237e74debdb8a259cb9029f36fa47ba"
+        },
+        {
+          "url": "https://www.nur.kz/society/1793791-skolnika-iz-nur-sultana-priglasili-ucitsa-srazu-14-vuzov-mira/",
+          "title": "Школьника из Нур-Султана пригласили учиться сразу 14 вузов мира",
+          "text_characters": 2009,
+          "text_sha256": "739d6dac8dedc4a0dead7a1a28d12c84035f6a8124c72e879997402659c58a51"
+        },
+        {
+          "url": "https://www.imo-official.org/country_hall.aspx?code=KAZ",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 5500,
+          "text_sha256": "6796c3a26bd9e342847e3924f51e2691a3dffb2afd95c5df0d7110f2e9e016db"
+        }
+      ],
+      "decision": "Accepted profile retains Waterloo study through 2026 without a new dated job. University offers and undated internship activity do not establish a current outcome."
+    },
+    {
+      "person_id": "kaz-af55ed678a4e",
+      "name": "Aibek Myrzatay",
+      "query": "\"Aibek Myrzatay\"",
+      "searched_at": "2026-09-07T11:24:17+00:00",
+      "request_id": "4f4f4b3db2638eec79403f085b3d9920",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/eyebaek",
+          "title": "Aibek Myrzatay",
+          "text_characters": 2416,
+          "text_sha256": "1093259f79080f70d7bf7b92c9284ba4b1dffba38f4f95c051569f1cc48b52c3"
+        },
+        {
+          "url": "https://www.kaggle.com/aibekmyrzatay",
+          "title": "Aibek Myrzatay | Kaggle",
+          "text_characters": 197,
+          "text_sha256": "af90b4b40d25baae2c739c26015bea7ad65e7e49d5bdde43abcd3bc1651f70c3"
+        },
+        {
+          "url": "https://mirror.codeforces.com/profile/AibekMI",
+          "title": "AibekMI - Codeforces",
+          "text_characters": 1390,
+          "text_sha256": "daf3d8a723795972179bebe4cb439f36a5a4f0e5c8e88664ebf3cc793c9b749c"
+        },
+        {
+          "url": "https://www.imo-official.org/results/individual/year/2021/",
+          "title": "Individual Results IMO 2021",
+          "text_characters": 5500,
+          "text_sha256": "0a814d1e6c1b490c5a5b01ab517d08486457b8c55b4cdf5f7225357275cfbbe1"
+        },
+        {
+          "url": "https://contest.yandex.ru/contest/42753/standings?lang=en",
+          "title": "Standings — Moscow Regional Contest Finals",
+          "text_characters": 5500,
+          "text_sha256": "dd2ba30081ca930e118cef20467efe4c4d9f292520fc18352b0f1bd35361ae79"
+        },
+        {
+          "url": "https://izho.kz/contest/results/",
+          "title": "Results IZhO 2020 - IZHO",
+          "text_characters": 5500,
+          "text_sha256": "6b4fe44cc686b6aa966fc978854da2505a007b3447ad692b22fd9b1a0959d0a5"
+        }
+      ],
+      "decision": "Yandex employment is explicitly July-August 2023. HSE study ends in 2025. Neither is promoted to a current job or student destination."
+    },
+    {
+      "person_id": "kaz-fcb382e0caae",
+      "name": "Alikhan Zimanov",
+      "query": "\"Alikhan Zimanov\"",
+      "searched_at": "2026-09-07T11:24:18+00:00",
+      "request_id": "bf1552a4818f0903d9d805ceabf96de7",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/alikhan-zimanov-92564b1a8",
+          "title": "Alikhan Zimanov",
+          "text_characters": 1142,
+          "text_sha256": "378e0e578c6bd51586636b145c70d9f10b4aa1103cf85163c0a37e043e54ff33"
+        },
+        {
+          "url": "https://codeforces.com/profile/sstrong",
+          "title": "sstrong",
+          "text_characters": 1127,
+          "text_sha256": "e0d3c0ad9c485be87dfd52977bf1918ba13d6923e820280611c81b81909c58b1"
+        },
+        {
+          "url": "https://github.com/dxtvzw",
+          "title": "Alikhan Zimanov dxtvzw",
+          "text_characters": 533,
+          "text_sha256": "f1d6c486f42aa690c931a597a2c01c2b5e404067c1c364477a05aefc8a6994b2"
+        },
+        {
+          "url": "https://cphof.org/profile/codeforces:sstrong",
+          "title": "Profile of Alikhan Zimanov",
+          "text_characters": 568,
+          "text_sha256": "377a1b2d8204adb7cbd16bff155a73081b6d4f9598cf0f72550611c2a5e8f98f"
+        },
+        {
+          "url": "https://mirror.codeforces.com/profile/sstrong",
+          "title": "sstrong - Codeforces",
+          "text_characters": 1398,
+          "text_sha256": "36736513c2d9e9f4a778d93fbfecf91d7679d0f37d11c6a41124d9dba53162b5"
+        },
+        {
+          "url": "https://bariz.org/imo/participants/28163",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 383,
+          "text_sha256": "6d56b5e8da5bcae220c3f904c4ed72f0c43b93e9755d39c4b1b40d9776658843"
+        }
+      ],
+      "decision": "Accepted profile has HSE 2020-2024 and programming repositories but no current employer."
+    },
+    {
+      "person_id": "kaz-e2c1785c3b0f",
+      "name": "Alexey Tsekhovoy",
+      "query": "\"Alexey Tsekhovoy\" HSE",
+      "searched_at": "2026-09-07T11:24:21+00:00",
+      "request_id": "50b606bd5e97095c3829786c0edb7cd0",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/alexey-tsekhovoy-7a75b4257",
+          "title": "Alexey Tsekhovoy",
+          "text_characters": 792,
+          "text_sha256": "9396f3b13c77e9b78173d7b1c0120e45ec7028d0f0f3705e1609decc950700b0"
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9605-2523",
+          "title": "Alexey Tsekhovoy (0000-0001-9605-2523) - ORCID",
+          "text_characters": 3311,
+          "text_sha256": "b2301760f193adb56aa5de9447e081d50ba03b82096bcf8c8e0d8ac4192617ba"
+        },
+        {
+          "url": "https://pmworldlibrary.net/authors/dr-alexey-ph-tsekhovoy/",
+          "title": "Alexey Tsekhovoy | PMWorldLibrary",
+          "text_characters": 1955,
+          "text_sha256": "75e576d14ce7c3144f3f7dce87c0a9ab63c6360a191704daf04f83ff60533a06"
+        },
+        {
+          "url": "https://bariz.org/imo/participants/27302",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 370,
+          "text_sha256": "82eeb7d7351c9f098a7ce35bff8e8ea7722945691074710de55c94c492c5d09f"
+        },
+        {
+          "url": "https://yonetim.adscientificindex.com/scientist/alexey-tsekhovoy/5014539/",
+          "title": "Alexey Tsekhovoy – Engineering & Technology / Computer… | AD Scientific Index",
+          "text_characters": 5500,
+          "text_sha256": "1df9cc7f5dbb9e67f940877f610cf667441057feea0c517b80a59aaa878eddb7"
+        },
+        {
+          "url": "https://doi.org/10.1504/ijbir.2024.139809",
+          "title": "The impact of project management maturity on the choice of SME growth strategies: the case of Kazakhstan",
+          "text_characters": 1935,
+          "text_sha256": "6a946b0f20d527708968c30c6bf45b0a0b5271761b314c99f83e32e29e196a51"
+        }
+      ],
+      "decision": "Accepted HSE study is bounded 2018-2023. A Germany profile header does not establish a role or current outcome country."
+    },
+    {
+      "person_id": "kaz-1b79632fc187",
+      "name": "Aigerim Turuspekova",
+      "query": "\"Aigerim Turuspekova\"",
+      "searched_at": "2026-09-07T11:24:23+00:00",
+      "request_id": "19e3f0a9ab87b9616c0fb5bc3092a3ee",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://it.linkedin.com/in/aigerim-turuspekova",
+          "title": "Aigerim Turuspekova - Milano, Lombardia, Italia",
+          "text_characters": 5500,
+          "text_sha256": "09fb3bef5de28211584d2e2ba7b42b3b4061fb9eb0bb58b1f12b9628563954c5"
+        },
+        {
+          "url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+          "title": "IChO Results - International Chemistry Olympiad (IChO)",
+          "text_characters": 5500,
+          "text_sha256": "133c62a195a1a6cc9ed6f65099d3c6797659eb697f913f1f0b16d234a83b473e"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/minerva-investment-management_mims-long-short-fund-may-2026-activity-7462913830185005056-a50_",
+          "title": "The Long-Short Equity Fund seeks to generate a positive absolute return throughout all market conditions. By employing a long-short structure, the fund aims to maintain both market-neutral and beta-neutral exposure while keeping … | Minerva Investment Management Society",
+          "text_characters": 3261,
+          "text_sha256": "cfd4cf44ce5a739d3f2a5433f5c6aa3728461fec2d038cb8bd924545a33192e7"
+        },
+        {
+          "url": "https://www.icho-official.org/results/results.php?id=53&year=2021",
+          "title": "IChO Results",
+          "text_characters": 5500,
+          "text_sha256": "5a125a9a264ccd70fc33ea2c3428f90f34541bebb9e4240144cfbd5d7471b34b"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/minerva-investment-management_long-short-report-december-2025-activity-7403061998260916224-1wzF",
+          "title": "The goal of the Long-Short Equity Fund is to generate a positive absolute return throughout all market conditions. By employing a long-short structure, the fund maintains market-neutral exposure with minimal correlation to … | Minerva Investment Management Society",
+          "text_characters": 4497,
+          "text_sha256": "6bacb82f3b54fe3d5c767e1dd11674d7b266c475312d39bf1ba5cc04dff93af5"
+        },
+        {
+          "url": "https://www.topuniversities.com/student-info/careers-advice/guide-penning-perfect-cover-letter",
+          "title": "Guide to Penning the Perfect Cover Letter",
+          "text_characters": 5496,
+          "text_sha256": "764579f07cdb2159214a4f6ea1f8a7851d3c76d32ff94398ad5a339c3baed35c"
+        }
+      ],
+      "decision": "Minerva society posts name her as a student-fund analyst. Club participation is not treated as paid employment or proof of a new degree after the reviewed Bocconi history."
+    },
+    {
+      "person_id": "kaz-f7400a612d63",
+      "name": "Rizabek Alpamys",
+      "query": "\"Rizabek Alpamys\"",
+      "searched_at": "2026-09-07T11:24:24+00:00",
+      "request_id": "02be15e595358d25f70f6ac1bb8fbfb3",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://mirror.codeforces.com/profile/rrizabek",
+          "title": "rrizabek - Codeforces",
+          "text_characters": 1338,
+          "text_sha256": "295cbb84e0500153ed2a31a129bc17f0ffa911d8aafb69502c9bf19cc154ebe8"
+        },
+        {
+          "url": "https://ipho-unofficial.org/timeline/2022/individual",
+          "title": "IPhO 2022 - Individual Results",
+          "text_characters": 5500,
+          "text_sha256": "242ec1843889b73934bfda79521e67ce0c1f70d1dba70ed6b8327f9d1fd6ba5d"
+        },
+        {
+          "url": "https://www.ipho2021.lt/en/results/",
+          "title": "Results - International Physics Olympiad (IPhO) 2021",
+          "text_characters": 5500,
+          "text_sha256": "0ce6d2c0cb3339850ab15a5a3f10804b7e990e784a5f276c0afa7b17753841ce"
+        },
+        {
+          "url": "http://ipho-unofficial.org/timeline/2021/individual",
+          "title": "IPhO 2021 - Individual Results",
+          "text_characters": 5500,
+          "text_sha256": "ee52b9c4298b44ae792db55f26f626b7eea3494f500e7408b155dcbf4b3a310a"
+        },
+        {
+          "url": "https://ipho-unofficial.org/countries/KAZ/individual",
+          "title": "IPhO: Kazakhstan - Individual Results",
+          "text_characters": 5500,
+          "text_sha256": "b597e5ef70a1601e8da80fc8385276658b1ab6f68b7d46920a2ce9ade20f7a5e"
+        },
+        {
+          "url": "https://scoreboard.bc-pf.org/en/results/physics/international-zhautykov-olympiad/2020",
+          "title": "International Zhautykov Olympiad. 2020 | Scoreboard",
+          "text_characters": 5406,
+          "text_sha256": "fb79c33ed3f619f6ffab75810f5f0eaaa06417261378ac43d5b38c93413fadf9"
+        }
+      ],
+      "decision": "Programming and Olympiad directories do not add a dated later affiliation. Keep existing history without inferring a current university role."
+    },
+    {
+      "person_id": "kaz-cc4a2f7877ce",
+      "name": "Timur Murat",
+      "query": "\"Timur Murat\" IMO",
+      "searched_at": "2026-09-07T11:24:26+00:00",
+      "request_id": "e202865e13ddc5ef16d213ce7c1108f2",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.imo-official.org/results/team/year/2026/country/KAZ/",
+          "title": "IMO 2026 - Kazakhstan - International Mathematical Olympiad",
+          "text_characters": 874,
+          "text_sha256": "2513d4e444ffbe292b559f9979c4e4527ebebe748ae403d1c17e81a1b658443d"
+        },
+        {
+          "url": "https://qazinform.com/news/kazakhstan-wins-6-medals-at-imo-330ec7",
+          "title": "Kazakhstan wins 6 medals at IMO - Qazinform",
+          "text_characters": 1740,
+          "text_sha256": "01edf1eafeaddbaacd92e22e2e68472f3016c8aa800c356bd4fb40152edccf21"
+        },
+        {
+          "url": "https://www.imo-official.com/results/team/year/2026/country/KAZ/",
+          "title": "Kazakhstan – IMO 2026",
+          "text_characters": 874,
+          "text_sha256": "2513d4e444ffbe292b559f9979c4e4527ebebe748ae403d1c17e81a1b658443d"
+        },
+        {
+          "url": "https://www.imo-official.com/results/individual/year/2026/",
+          "title": "Individual Results IMO 2026",
+          "text_characters": 5500,
+          "text_sha256": "9023be6b9942b8a4f2308d1842da6609951e6571ccbeff773961279c969007ec"
+        },
+        {
+          "url": "https://www.imo2026.com/Results/Individual_Results.htm",
+          "title": "Individual Results-IMO 2026",
+          "text_characters": 702,
+          "text_sha256": "db1741c6a6427d20e8fb8789b31f1d97f80dc1ebe9f3ea124b5943671459df73"
+        },
+        {
+          "url": "https://el.kz/en/kazakh-school-students-win-6-medals-at-the-international-mathematical-olympiad_400050522/",
+          "title": "Kazakh school students win 6 medals at the International ... - El.kz",
+          "text_characters": 2042,
+          "text_sha256": "217caebd54e858f49b2aa543a036e5b9787472e3a31b07625ec6747f4db06d64"
+        }
+      ],
+      "decision": "Results establish recent Olympiad participation only; no post-school destination found."
+    },
+    {
+      "person_id": "kaz-822bb4ee42e0",
+      "name": "Akezhan Askar",
+      "query": "\"Akezhan Askar\" university",
+      "searched_at": "2026-09-07T11:24:28+00:00",
+      "request_id": "cae7698091df0d7efc77514eb4df03b2",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://kz.linkedin.com/in/akezhan-askar-6a8300329",
+          "title": "Akezhan Askar - 2x IOI silver medalist🥈 | NTU 30",
+          "text_characters": 270,
+          "text_sha256": "2990d30cb7dfecf806e4d67e58303d185d9d51f3d156d4c5e58cd66efde796d4"
+        },
+        {
+          "url": "http://stats.ioinformatics.org/people/8684",
+          "title": "Akezhan Askar",
+          "text_characters": 449,
+          "text_sha256": "d103be3414f30b645c2691529614e32b0ff109ebf2132e52d3c5954d025504cf"
+        },
+        {
+          "url": "https://cphof.org/profile/codeforces:ILoveGulim",
+          "title": "Profile of Akezhan Askar",
+          "text_characters": 457,
+          "text_sha256": "fd15469f5c858ae5b6ef8c468e65496b925bcccbea50c7a6eb026b70d9c8ca4c"
+        },
+        {
+          "url": "https://trz.nis.edu.kz/en/school/nzm-semei/news/1856",
+          "title": "NIS Semey student wins gold at International olympiad",
+          "text_characters": 1383,
+          "text_sha256": "e7e365b04c57e7f09a19e95a85300814010b193c3a4cf5b76385ca93c62046d3"
+        },
+        {
+          "url": "https://astanahub.com/en/blog/uchenik-nis-stal-priziorom-mezhdunarodnoi-olimpiady-po-informatike",
+          "title": "NIS student became a prize-winner of the International Olympiad ...",
+          "text_characters": 508,
+          "text_sha256": "138b851ff521cf080b7783cbd3a6d7cdf8780686c508c979f3ba8f8872d4b30b"
+        },
+        {
+          "url": "https://qazinform.com/news/kazakh-students-sweep-four-medals-at-ioi-2025-fc5a9c",
+          "title": "Kazakh students sweep four medals at IOI 2025",
+          "text_characters": 989,
+          "text_sha256": "5060c9c195f29e388a38a25539201590667134bc4102be6cddd4e2940b85489d"
+        }
+      ],
+      "decision": "New exact-name LinkedIn snippet mentions two IOI silver medals and Nanyang Technological University Singapore, class of 2030. Exact contents returned ENTITY_NOT_FOUND, and the targeted search remained a snippet. Keep as a promising lead; do not infer enrollment dates, degree, coaching dates or residence."
+    },
+    {
+      "person_id": "kaz-a4eaedad760e",
+      "name": "Batyr Yerzhanuly",
+      "query": "\"Batyr Yerzhanuly\"",
+      "searched_at": "2026-09-07T11:24:30+00:00",
+      "request_id": "8e92daa810c6a43245ea8fb7331040cc",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://qazinform.com/news/kazakhstani-students-claim-6-bronze-medals-at-ijso-2023-in-thailand-88634a",
+          "title": "Kazakhstani students claim 6 bronze medals at IJSO 2023 in Thailand",
+          "text_characters": 973,
+          "text_sha256": "691f771d796c7f6da5780a2cfa68f22c7ae9c9249844b8732a638827f29f12dd"
+        },
+        {
+          "url": "https://www.ibo-info.org/files/downloads/results-reports/results/IBO2025%20Ranking.pdf",
+          "title": "Ranking of IBO 2025 in Quezon City, Philippines",
+          "text_characters": 5500,
+          "text_sha256": "f8a141384367b1f9e16df5eda2f7d5f189468e5121f8791859172b86da570230"
+        },
+        {
+          "url": "https://www.nis.edu.kz/storage/files/01JSKD3FB0SVR0VQAXEE8BCGCY.pdf",
+          "title": "PART 1",
+          "text_characters": 5500,
+          "text_sha256": "d7874ac56d9ad0a6ab2244132dc5666a6c50e303dd10752bef3f4e2dfc4a8574"
+        }
+      ],
+      "decision": "School and Olympiad results do not establish a post-school destination."
+    },
+    {
+      "person_id": "kaz-1e390288b2cc",
+      "name": "Danil Murtazin",
+      "query": "\"Danil Murtazin\"",
+      "searched_at": "2026-09-07T11:24:33+00:00",
+      "request_id": "48883e191fc46b7f0d9854b5c5b9f1af",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.eliteprospects.com/player/1041709/danil-murtazin",
+          "title": "Danil Murtazin - Stats, Contract, Salary & More",
+          "text_characters": 340,
+          "text_sha256": "5d6162f287d663ff6ef28dc1fcd1b473090d2037b3fe612951deba12b7614318"
+        },
+        {
+          "url": "https://volleybox.net/es/danil-murtazin-p285462",
+          "title": "Danil Murtazin - jugador de voleibol",
+          "text_characters": 693,
+          "text_sha256": "30d88fa7c4f569869d3ee88cf1d04b286cbe529a46058d4190d397135a3f0528"
+        },
+        {
+          "url": "https://trackhockey.pro/ar/2008-murtazin-danil",
+          "title": "Danil Murtazin, 2008",
+          "text_characters": 3654,
+          "text_sha256": "c05fb5f2e724a351ed4cb6b0a8ea795799e35898a94c4febe83b21c46552939b"
+        },
+        {
+          "url": "https://ipho-unofficial.org/timeline/2001/individual",
+          "title": "IPhO 2001 - Individual Results",
+          "text_characters": 5500,
+          "text_sha256": "34515fe502c84d0614e20d378d8ceb02c3e0a72cb93be160f8f3f39973c2f297"
+        },
+        {
+          "url": "https://ipho-unofficial.org/timeline/2000/individual",
+          "title": "IPhO 2000 - Individual Results",
+          "text_characters": 5500,
+          "text_sha256": "178126cb8053bdb74219cd9f69f35e45590065e1abd7e24ced606f9608f57e74"
+        },
+        {
+          "url": "https://forum.amazing-online.com/members/danil.229904/about",
+          "title": "Даниль | Форум онлайн-игры – AMAZING ONLINE",
+          "text_characters": 182,
+          "text_sha256": "7b5036a6aa2d595b08317e65ad48aa0d279544037965d2552931d57ae68ed45c"
+        }
+      ],
+      "decision": "Sporting namesakes and result tables do not establish the entrant's career."
+    },
+    {
+      "person_id": "kaz-78ad0418eb0b",
+      "name": "Roman Kriven",
+      "query": "\"Roman Kriven\"",
+      "searched_at": "2026-09-07T11:24:34+00:00",
+      "request_id": "0223417a6c5046b9b95d0fae58da4d1b",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://bariz.org/imo/participants/3658",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 294,
+          "text_sha256": "fbd2f888b049531c078d6c24aaff2b9532df580f772b4583a12a998f9d0e6426"
+        },
+        {
+          "url": "https://www.kaggle.com/romankriven",
+          "title": "Roman Kriven | Kaggle",
+          "text_characters": 229,
+          "text_sha256": "9fcdcd081e1889a4f52dc988150b63e35ee92981a7f95f2653d5e8c01a7c61fc"
+        },
+        {
+          "url": "https://www.imo-official.org/results/contestant/3658/",
+          "title": "Roman Kriven - IMO Results",
+          "text_characters": 1435,
+          "text_sha256": "5e0e20566297a8000c5ff08d5f706c12853f17f4c65afc782f670244c6d3d15f"
+        },
+        {
+          "url": "https://bariz.org/imo/countries/KAZ/team-results/1993",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 641,
+          "text_sha256": "f3a845dbfca1dbbecc38af9027685b681a70ac0386023294565f8b16ab40c1f0"
+        },
+        {
+          "url": "https://www.imo-official.org/hall.aspx?block=129&column=awards&language=en&nameform=western&order=desc",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 5212,
+          "text_sha256": "602d44bc96ff9e68adc8a11af73a3e47564ffe53ec8ad615a19811e7e076784b"
+        },
+        {
+          "url": "https://www.imo-official.org/results/individual/year/1993/",
+          "title": "Individual Results IMO 1993",
+          "text_characters": 5500,
+          "text_sha256": "786bcbe8fd1f4f78d0a05ab15c4dd0956b8c0962c7decfc70137cbb2e8f6345d"
+        }
+      ],
+      "decision": "Kaggle/result-table leads do not state a verified employer or current education."
+    },
+    {
+      "person_id": "kaz-197ec90e92c1",
+      "name": "Yuriy Kudryavtsev",
+      "query": "\"Yuriy Kudryavtsev\" chemistry",
+      "searched_at": "2026-09-07T11:24:36+00:00",
+      "request_id": "c07f15e340d4ef06b4f57c68760b5d04",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.icho-official.org/results/results.php?id=32&year=2000",
+          "title": "2000 - IChO Results",
+          "text_characters": 5500,
+          "text_sha256": "3bfa6289074818360b6b68519d658b6c9afdda7e3baf892c703c82e384361c3a"
+        },
+        {
+          "url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+          "title": "IChO Results - International Chemistry Olympiad (IChO)",
+          "text_characters": 5500,
+          "text_sha256": "133c62a195a1a6cc9ed6f65099d3c6797659eb697f913f1f0b16d234a83b473e"
+        },
+        {
+          "url": "https://www.ndt.net/article/wcndt2016/papers/tu1c4.pdf",
+          "title": "Ultrasonic Measurement of Residual Stresses in Welded Elements and Structures",
+          "text_characters": 5500,
+          "text_sha256": "d7a93cc9281479ea435cf66281f8f2349f88aed639d7390deb54a1c2a9bdca9a"
+        },
+        {
+          "url": "https://doi.org/10.1007/978-1-4614-0225-1_14",
+          "title": "Residual Stresses Management: Measurements, Fatigue Analysis and Beneficial Redistribution",
+          "text_characters": 2948,
+          "text_sha256": "cedb688eea2b3bb94ace3b5a4d077d33e4381fa50ea2556167b492a1d5e0023c"
+        },
+        {
+          "url": "https://pubs.acs.org/doi/10.1021/acsami.1c01024",
+          "title": "Metal-Free, Graphene Oxide-Based Tunable Soliton and ...",
+          "text_characters": 5500,
+          "text_sha256": "5bac2fc50a27f656dcac893056d9e8691f4995742207a179bccc4488ead6b4f0"
+        },
+        {
+          "url": "https://doi.org/10.4028/www.scientific.net/amm.70.273",
+          "title": "Ultrasonic Measurement of Residual Stresses in Welded Elements of Ship Structure",
+          "text_characters": 2531,
+          "text_sha256": "5b62168b14db394457310a8ca4ed98817d7a72507248be6751e663dccc723772"
+        }
+      ],
+      "decision": "Research results lack a school/Olympiad identity bridge. The ACS result was mostly page boilerplate and cannot verify an affiliation."
+    },
+    {
+      "person_id": "kaz-6e64602de321",
+      "name": "Aman Sariyev",
+      "query": "\"Aman Sariyev\"",
+      "searched_at": "2026-09-07T11:24:38+00:00",
+      "request_id": "ec6857794b42984f0e877f53e19e6748",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/aman-sariyev",
+          "title": "Aman Sariyev",
+          "text_characters": 3899,
+          "text_sha256": "5fddc9898e508ff856f1a7cb15f1b72ca6a7fa7cbe10272fd0400f33fc5033b1"
+        },
+        {
+          "url": "https://codeforces.com/profile/Aman",
+          "title": "Aman - Codeforces",
+          "text_characters": 786,
+          "text_sha256": "219fc7aa5619d79916d4ca28309021da0772d120b751f2e01f32373b575cca3d"
+        },
+        {
+          "url": "https://cphof.org/profile/topcoder:AmanS",
+          "title": "Profile of Aman Sariyev - Competitive Programming Hall Of Fame",
+          "text_characters": 529,
+          "text_sha256": "52f38d55a765d3d307217e4abc63aab541682b481613f19147d8352061445a78"
+        },
+        {
+          "url": "http://stats.ioinformatics.org/people/2716",
+          "title": "Aman Sariyev - International Olympiad in Informatics – Statistics",
+          "text_characters": 533,
+          "text_sha256": "fa750a6e9e51537ed8b5958b2826b43c60a31594479d7ab4c9852fe067dcf312"
+        },
+        {
+          "url": "https://stats.ioinformatics.org/people/2716?sort=abs_rank_asc",
+          "title": "Aman Sariyev",
+          "text_characters": 533,
+          "text_sha256": "5cc939da2ff6db3167c76705ae89ef693e54e9ac4a3ae791390d2c4664591f17"
+        },
+        {
+          "url": "https://www.linkedin.com/in/aman-sariyev-49158475",
+          "title": "Aman Sariyev",
+          "text_characters": 5487,
+          "text_sha256": "b062ca1ce5c655767937c871bc1f62c58bfe64f2a5135f30f591d7c9809c5256"
+        }
+      ],
+      "decision": "Retain the accepted computing profile. The drilling-engineering namesake is already rejected for incompatible university chronology."
+    },
+    {
+      "person_id": "kaz-b8e3ad83d883",
+      "name": "Andrey Drobakh",
+      "query": "\"Andrey Drobakh\"",
+      "searched_at": "2026-09-07T11:24:39+00:00",
+      "request_id": "ed9d9958c8340d0928e3da1adf9e847e",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://bariz.org/imo/participants/20770",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 1133,
+          "text_sha256": "af6e974e4712e1809a8e95745664f77731d40d74128d3a7ac4d3afaea377ea73"
+        },
+        {
+          "url": "https://www.skool.com/@andrey-drobakh-6361",
+          "title": "Andrey Drobakh",
+          "text_characters": 264,
+          "text_sha256": "0f4b92a3c67a441178b711356d2ec3955a3321dedcfef7a110666a481cf91eee"
+        },
+        {
+          "url": "https://qazinform.com/news/pavlodar-student-wins-gold-at-int-l-math-contest_a2184644",
+          "title": "Pavlodar student wins gold at Int'l Math Contest",
+          "text_characters": 516,
+          "text_sha256": "11af452f18136ad5d48a950fd408a0f0342d8b2a960477308db11004575b0b64"
+        },
+        {
+          "url": "https://www.imo-official.org/country_individual_r.aspx?code=KAZ&column=name&order=asc",
+          "title": "International Mathematical Olympiad",
+          "text_characters": 5500,
+          "text_sha256": "dff0ef01f16e61a1b633f157b75e32671e384f7444aba9c85a77ad7490f4a8a8"
+        },
+        {
+          "url": "https://scoreboard.bc-pf.org/en/results/math/balkan-mathematical-olympiad/2011",
+          "title": "Balkan Mathematical Olympiad. 2011 | Scoreboard",
+          "text_characters": 4552,
+          "text_sha256": "375f6a5de4d06be65a2e6e8b6ea54a5ab296dde7ae65e3454138b418e2006239"
+        },
+        {
+          "url": "https://qazinform.com/news/pavlodar-students-won-bmo-silver-and-bronze-medals_a2381944",
+          "title": "Pavlodar students won BMO silver and bronze medals",
+          "text_characters": 487,
+          "text_sha256": "553da10e1d2e9e0783ee70a4e78975e4620c67644221f0b80f406d1fd55063d4"
+        }
+      ],
+      "decision": "An English-learning community profile does not establish an employer. No new destination inferred."
+    },
+    {
+      "person_id": "kaz-32cf54f8673f",
+      "name": "Oleg Obukhov",
+      "query": "\"Oleg Obukhov\" Kazakhstan biology",
+      "searched_at": "2026-09-07T11:24:41+00:00",
+      "request_id": "7320013840224187c4079dee1da6ef33",
+      "status": "ok",
+      "cost_usd": 0.007,
+      "results": [
+        {
+          "url": "https://urfu.ru/en/about-the-university/rectorate/persons/content/17/",
+          "title": "Rectorate",
+          "text_characters": 2490,
+          "text_sha256": "a66368bb56d8f5e110b0b7ee2eb2ab7c3acc60cd372656940204f1f1179570fa"
+        },
+        {
+          "url": "https://hdl.handle.net/10356/45636",
+          "title": "Study of homogenous assumption in epithelium tissue.",
+          "text_characters": 1789,
+          "text_sha256": "bb079aa1ffe1c538bfa6c8757a5d2bc0b63c1d07053ce30e6d9e62a48187389e"
+        },
+        {
+          "url": "https://urfu.ru/en/faculty-and-staff/administrative-staff/",
+          "title": "Administrative Staff",
+          "text_characters": 1357,
+          "text_sha256": "88947f5b0d5e3e0faf8c52083f9eedb720b815fcdc803ac8956ed5f46fb15ca4"
+        },
+        {
+          "url": "https://uf-pz.net/wp-content/uploads/2026/03/SU-Official-letter-2026.pdf",
+          "title": "Q,—._ﬁ‘",
+          "text_characters": 3641,
+          "text_sha256": "aa0cdf4ee49da89e29372bf0f45675219e689852f861c31c828a77526149e061"
+        },
+        {
+          "url": "https://urfu.ru/en/contacts/",
+          "title": "Contacts",
+          "text_characters": 1339,
+          "text_sha256": "3c7690be364a123ee7a49a8f9e9e93d21e90469fc11b9264f3467da1fdc89929"
+        },
+        {
+          "url": "https://urfu.ru/fr/decouvrir-lurfu/equipe-de-gouvernance/",
+          "title": "Équipe de gouvernance",
+          "text_characters": 1826,
+          "text_sha256": "8b3d5a4dcda77293a1fb88ca67b855cc8d368f6e55ff789a595203a5fdc2c9f7"
+        }
+      ],
+      "decision": "The 2011 NTU thesis author is a possible historical lead, but no school/Olympiad bridge was found and direct retrieval was blocked. The Ural rector and older professional profiles are not accepted."
+    }
+  ],
+  "exact_profile_attempts": [
+    {
+      "person_id": "kaz-822bb4ee42e0",
+      "url": "https://www.linkedin.com/in/akezhan-askar-6a8300329",
+      "retrieved_at": "2026-09-07T11:31:32+00:00",
+      "request_id": "b1cc5c0b19a4b2aa73f3bbb788a897c5",
+      "statuses": [
+        {
+          "id": "https://www.linkedin.com/in/akezhan-askar-6a8300329",
+          "status": "error",
+          "error": {
+            "httpStatusCode": 404,
+            "tag": "ENTITY_NOT_FOUND"
+          }
+        }
+      ],
+      "results": []
+    },
+    {
+      "person_id": "kaz-21cc95b51c33",
+      "url": "https://www.linkedin.com/in/yalexandrov",
+      "retrieved_at": "2026-09-07T11:31:32+00:00",
+      "request_id": "62ef8acef25aa036b9e65c52fe67f36b",
+      "statuses": [
+        {
+          "id": "https://www.linkedin.com/in/yalexandrov",
+          "status": "success",
+          "source": "cached"
+        }
+      ],
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/yalexandrov",
+          "title": "Yarik Alexandrov",
+          "text_characters": 29991,
+          "text_sha256": "91b7aa93d69f5770d2c4e503effeea6c4f4ab11e91a2b85c14aedeee02f8f655"
+        }
+      ]
+    },
+    {
+      "person_id": "kaz-21cc95b51c33",
+      "url": "https://www.linkedin.com/in/yaroslav-alexandrov-31394b87",
+      "retrieved_at": "2026-09-07T11:31:33+00:00",
+      "request_id": "3bef457c70eb2fd6be90f5ebcfe04603",
+      "statuses": [
+        {
+          "id": "https://www.linkedin.com/in/yaroslav-alexandrov-31394b87",
+          "status": "success",
+          "source": "cached"
+        }
+      ],
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/yaroslav-alexandrov-31394b87",
+          "title": "Yaroslav Alexandrov",
+          "text_characters": 17083,
+          "text_sha256": "5065265c4af051f0fece8e904e73115303cacb90a3743550d34325e7d4fa3e78"
+        }
+      ]
+    },
+    {
+      "person_id": "kaz-1e83de167408",
+      "url": "https://www.linkedin.com/in/akram-makhmudov-87a4123b",
+      "retrieved_at": "2026-09-07T11:31:33+00:00",
+      "request_id": "e09dc8ff3f6b8296a8b6a6ee386dab5f",
+      "statuses": [
+        {
+          "id": "https://www.linkedin.com/in/akram-makhmudov-87a4123b",
+          "status": "success",
+          "source": "cached"
+        }
+      ],
+      "results": [
+        {
+          "url": "https://www.linkedin.com/in/akram-makhmudov-87a4123b",
+          "title": "Akram Makhmudov",
+          "text_characters": 1295,
+          "text_sha256": "88d69086cb668d1bfb9b14164031e056469b6018e7477ece7e5a67fca753652e"
+        }
+      ]
+    }
+  ],
+  "targeted_search": {
+    "person_id": "kaz-822bb4ee42e0",
+    "query": "\"Akezhan Askar\" \"Nanyang\"",
+    "searched_at": "2026-09-07T11:33:04+00:00",
+    "request_id": "b8efd4cf816acfba658742b8949bb6e0",
+    "results": [
+      {
+        "url": "https://kz.linkedin.com/in/akezhan-askar-6a8300329",
+        "title": "Akezhan Askar - 2x IOI silver medalist   | NTU 30' | LinkedIn",
+        "text_characters": 204,
+        "text_sha256": "d977c1e48e08c9fa92129345192d0f068dd3fc940acaf5f170722274347e0a43"
+      },
+      {
+        "url": "https://www.linkedin.com/in/akezhan-nurashev-53569514a",
+        "title": "Akezhan Nurashev",
+        "text_characters": 13842,
+        "text_sha256": "bbb2a263f72358a7fd9e22d8600431758ba3496bc9782ed6f551aa6dca605720"
+      },
+      {
+        "url": "https://www.linkedin.com/in/akezhan-shakenov-2b64a3242",
+        "title": "Akezhan Shakenov",
+        "text_characters": 8508,
+        "text_sha256": "4071b1ae84f2ec71c8c17fb9d06915978c71c04fc185efbb0208d4573b53b07c"
+      }
+    ]
+  },
+  "correction": {
+    "person_id": "kaz-f67b534425a5",
+    "name": "Zhaslan Baraissov",
+    "destination": "KLA",
+    "role": "Scientist",
+    "degree": "Cornell PhD completed in 2026; start 2019 from accepted profile/ORCID history",
+    "country": "United States, explicitly last known at Cornell in 2026; KLA office and current residence not established",
+    "sources": [
+      "https://cbb.cornell.edu/about/cbb-alumni",
+      "https://cbb.cornell.edu/spotlights/congratulations-new-phd-dr-zhaslan-baraissov",
+      "https://cbb.cornell.edu/about/events/zhaslan-baraissovs-phd-defense"
+    ],
+    "identity_bridge": "Cornell's alumni row links the already accepted LinkedIn profile.",
+    "root_cause": "LinkedIn and ORCID had stale open-ended PhD records; university graduation and subsequent-employment evidence must take precedence."
+  }
+}

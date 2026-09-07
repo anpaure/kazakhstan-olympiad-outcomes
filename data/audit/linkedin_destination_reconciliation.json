@@ -4822,13 +4822,13 @@
     "profile_hydration_status": "success",
     "profile_current_organizations": "Cornell University",
     "profile_current_roles": "PhD candidate",
-    "published_destination": "Cornell University",
-    "published_role": "PhD Candidate",
-    "organization_alignment": "matched",
-    "role_alignment": "matched",
-    "alignment_status": "matched_current_profile",
-    "review_decision": "",
-    "review_reason": "",
-    "review_reference_url": ""
+    "published_destination": "KLA",
+    "published_role": "Scientist",
+    "organization_alignment": "reconciled",
+    "role_alignment": "reconciled",
+    "alignment_status": "reconciled_destination_review",
+    "review_decision": "destination_source_review",
+    "review_reason": "Cornell's Center for Bright Beams identifies Zhaslan Baraissov among past PhD students and explicitly lists Scientist at KLA in its Where Are They Now column. The row links his accepted LinkedIn profile. The university's separate graduation announcement supersedes the stale PhD-candidate role. No KLA start date or office is stated.",
+    "review_reference_url": "https://cbb.cornell.edu/about/cbb-alumni"
   }
 ]

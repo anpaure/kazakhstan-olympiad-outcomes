@@ -22,14 +22,14 @@
   "cumulative_signed_profiles": 96,
   "accepted_linkedin_profiles": 302,
   "linkedin_alignment_statuses": {
-    "matched_current_profile": 237,
+    "matched_current_profile": 236,
     "no_current_affiliation_parsed": 37,
     "profile_retrieval_unavailable": 10,
     "reconciled_source_precedence": 6,
-    "reconciled_destination_review": 7,
+    "reconciled_destination_review": 8,
     "matched_historical_profile": 5
   },
   "unreconciled_linkedin_profiles": 0,
-  "root_cause_findings": 50,
+  "root_cause_findings": 51,
   "unresolved_findings": 0
 }

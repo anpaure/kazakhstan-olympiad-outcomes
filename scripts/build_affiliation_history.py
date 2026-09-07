@@ -837,6 +837,52 @@ def apply_destination_review_precedence(
     return rows
 
 
+def degree_level(role: str) -> int:
+    role = clean_text(role).casefold()
+    if re.search(r"\b(?:ph\.?d|doctor)", role):
+        return 4
+    if re.search(r"\b(?:master|msc|ms\b|specialist|магистр|специалист)", role):
+        return 3
+    if re.search(r"\b(?:bachelor|bsc|bs\b|beng\b|b\.?\s*eng\.?|undergraduate|бакалавр)", role):
+        return 2
+    return 0
+
+
+def apply_completed_education_precedence(
+    rows: list[dict[str, object]], as_of_year: int,
+) -> list[dict[str, object]]:
+    """Keep a reviewed graduation from remaining active in older profiles."""
+    completions: dict[tuple[str, str], list[dict[str, object]]] = defaultdict(list)
+    for row in rows:
+        end_year = clean_text(row.get("end_year"))
+        if (
+            row.get("evidence_kind") == "official_degree_completion"
+            and row.get("affiliation_type") == "education"
+            and not row.get("is_current")
+            and end_year.isdigit()
+            and int(end_year) <= as_of_year
+            and degree_level(clean_text(row.get("role")))
+        ):
+            key = (clean_text(row.get("person_id")), clean_text(row.get("organization")))
+            completions[key].append(row)
+
+    for row in rows:
+        if row.get("affiliation_type") != "education" or not row.get("is_current"):
+            continue
+        if clean_text(row.get("end_year")):
+            continue
+        key = (clean_text(row.get("person_id")), clean_text(row.get("organization")))
+        start_year = clean_text(row.get("start_year"))
+        role = clean_text(row.get("role"))
+        for completion in completions.get(key, []):
+            same_degree = degree_level(role) == degree_level(clean_text(completion.get("role")))
+            same_start = not start_year or start_year == clean_text(completion.get("start_year"))
+            if (same_degree and same_start) or (not role and not start_year):
+                row["is_current"] = False
+                break
+    return rows
+
+
 def education_score(
     row: dict[str, object],
     destination_organization: str,
@@ -855,15 +901,7 @@ def education_score(
         or not destination_organization
         or organization != destination_organization.casefold()
     )
-    degree_rank = 0
-    if re.search(r"\b(?:ph\.?d|doctor)", role):
-        degree_rank = 4
-    elif re.search(r"\b(?:master|msc|ms\b|specialist|магистр|специалист)", role):
-        degree_rank = 3
-    elif re.search(r"\b(?:bachelor|bsc|bs\b|beng\b|b\.?\s*eng\.?|undergraduate|бакалавр)", role):
-        degree_rank = 2
-    elif "school" not in organization:
-        degree_rank = 1
+    degree_rank = degree_level(role) or int("school" not in organization)
     degree_levels = sum(
         bool(pattern.search(role))
         for pattern in (
@@ -1199,6 +1237,7 @@ def build_rows(
     rows = apply_destination_review_precedence(
         merge_undated_duplicates(list(deduplicated.values()))
     )
+    rows = apply_completed_education_precedence(rows, as_of_year)
 
     education_by_person: dict[str, list[dict[str, object]]] = defaultdict(list)
     for row in rows:
