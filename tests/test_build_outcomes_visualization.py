@@ -3,7 +3,7 @@ import re
 import unittest
 from pathlib import Path
 
-from scripts.build_outcomes_visualization import compact_person, compact_sources
+from scripts.build_outcomes_visualization import compact_person, compact_sources, restrict_public_links
 
 
 class CompactVisualizationDataTest(unittest.TestCase):
@@ -84,7 +84,10 @@ class CompactVisualizationDataTest(unittest.TestCase):
             },
         ]
 
-        person = compact_person(row, affiliations=affiliations)
+        concurrent = [{"person_id": "person-1", "organization": "Khan Group",
+                       "role": "Chief Executive Officer", "evidence_url": "https://example.com/profile",
+                       "reviewed_at": "2026-09-07"}]
+        person = compact_person(row, affiliations=affiliations, concurrent=concurrent)
 
         self.assertEqual(
             [destination["organization"] for destination in person["destinations"]],
@@ -96,6 +99,18 @@ class CompactVisualizationDataTest(unittest.TestCase):
                 for destination in person["destinations"]
             )
         )
+        self.assertEqual(len(compact_person(row, affiliations=affiliations)["destinations"]), 1)
+        affiliations[1]["is_current"] = False
+        with self.assertRaises(ValueError):
+            compact_person(row, affiliations=affiliations, concurrent=concurrent)
+
+    def test_only_previously_published_links_are_exposed(self):
+        person = {"profile": "https://example.test/new", "linkedin": "https://example.test/old",
+                  "sources": [{"url": "https://example.test/new"}, {"url": "https://example.test/old"}]}
+        result = restrict_public_links([person], {"https://example.test/old"})[0]
+        self.assertEqual(result["profile"], "")
+        self.assertEqual(result["linkedin"], "https://example.test/old")
+        self.assertEqual(result["sources"], [{"url": "https://example.test/old"}])
 
     def test_ui_keeps_only_one_olympiad_source(self):
         row = {

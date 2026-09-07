@@ -25,7 +25,7 @@ source URL used for review.
 10. Use `profile_sanity_review.csv` for the reproducible 48-person review sample,
     including separate links for participation, identity, destination, location,
     and alma-mater claims.
-11. Use `linkedin_destination_reconciliation.csv` to compare all 299 accepted
+11. Use `linkedin_destination_reconciliation.csv` to compare all 302 accepted
     profiles with the published single destination; conflicts must have an
     explicit review decision and direct reference URL.
 12. Use `profile_sanity_review_findings.csv` to inspect the detected downstream
@@ -91,18 +91,21 @@ reviewed bridge but no later destination has been established.
 
 ## Latest Sanity Review
 
-The reproducible sample uses seed `20260812-round3` and contains 12 people from
-each confirmed/probable and older/newer stratum. All 48 source chains were
-re-opened; 19 received a deeper source-by-source inspection. The review corrected
-11 sampled rows and expanded each detected
-pattern into a full-dataset scan.
+The retained stratified sample uses seed `20260812-round4` and contains 12 people
+from each confirmed/probable and older/newer stratum. Review decisions are bound
+to fingerprints: changed records become pending until explicitly re-reviewed.
+Two changed sample records were re-signed on September 7; this does not claim
+that every earlier manual review was repeated on that date.
 
-The resulting ledger contains 33 resolved root-cause classes and no unresolved
-findings. The fixes include canonical Olympiad-link cross-checking, conservative
-country publication, explicit destination-source precedence, own-profile versus
-third-party-source separation, bounded education and employment chronology,
-roleless-directory chronology, malformed organization rejection, and alma-mater
-recovery from accepted non-LinkedIn sources.
+The September 7 full-dataset pass is documented in `revalidation_report.md`.
+Its additional non-LinkedIn sample uses SHA-256 of `20260907:person_id` and takes
+12 records from the non-LinkedIn population with an organization. Source failures
+and partial checks remain explicit. `profile_revalidation.csv` records all 302
+fresh LinkedIn attempts and preservation decisions. Raw retrievals, source health,
+and participation comparisons are under `../revalidation/2026-09-07/`.
+
+The root-cause ledger now contains 50 corrected code/data findings. This does
+not mean that all external pages are reachable or all identities are certain.
 
 ## Exa Review Trail
 
@@ -111,7 +114,7 @@ directory rather than being flattened into the final-outcome tables:
 
 - `exa_linkedin_review_queue.csv`: all 377 exact-name profile results and their
   deterministic review and outcome statuses.
-- `exa_outcome_integrations.csv`: 115 accepted destination, affiliation, and
+- `exa_outcome_integrations.csv`: 119 accepted destination, affiliation, and
   identity-only updates with direct evidence links.
 - `exa_identity_review_decisions.csv`: supporting, deferred, and rejected
   decisions for secondary profiles, each with a reason and review link.

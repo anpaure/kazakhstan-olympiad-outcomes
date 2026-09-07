@@ -42,6 +42,13 @@
     "rationale": "Reviewed profile identifies a private owner-operated business without a narrower public classification."
   },
   {
+    "organization_sector_id": "sector-a6a0bf8b64aac019",
+    "canonical_name": "AgroCredit Corporation",
+    "organization_type": "government",
+    "sector": "Finance & Insurance",
+    "rationale": "Reviewed employer provides agricultural lending and credit-scoring services in Kazakhstan."
+  },
+  {
     "organization_sector_id": "sector-a87e054e23724d95",
     "canonical_name": "AirAsia",
     "organization_type": "company",
@@ -663,6 +670,13 @@
     "organization_type": "government",
     "sector": "Transportation & Infrastructure",
     "rationale": "Reviewed organization operates national air-navigation infrastructure."
+  },
+  {
+    "organization_sector_id": "sector-14fffb500cd784d2",
+    "canonical_name": "KazAID",
+    "organization_type": "government",
+    "sector": "Government & Public Sector",
+    "rationale": "Kazakhstan government agency for international development assistance."
   },
   {
     "organization_sector_id": "sector-79e5c0f3de707fa6",
@@ -1405,6 +1419,13 @@
     "organization_type": "company",
     "sector": "Consulting & Professional Services",
     "rationale": "Reviewed core activity is recruitment and staffing services."
+  },
+  {
+    "organization_sector_id": "sector-e1f2589f26fe280c",
+    "canonical_name": "Vacuumlabs",
+    "organization_type": "company",
+    "sector": "Technology & Software",
+    "rationale": "Reviewed employer develops software and fintech products."
   },
   {
     "organization_sector_id": "sector-808587fd0054c2ad",

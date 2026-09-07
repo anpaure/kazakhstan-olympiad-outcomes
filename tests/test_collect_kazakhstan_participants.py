@@ -11,6 +11,36 @@ from scripts.collect_kazakhstan_participants import (
 
 
 class IboArchiveParsingTest(unittest.TestCase):
+    def test_heading_is_not_a_participant(self):
+        self.assertIsNone(parse_ibo_row(["Ranking of IBO 2024 in Astana, Kazachstan"], "https://example.test/results.pdf", 2024))
+
+    def test_2016_final_rank_is_not_the_leading_identifier(self):
+        row = parse_ibo_row(["117 30C Kazakhstan Mr. Otarbayev Daniyar Male 57,03 Bronze 83"], "https://example.test/2016.pdf", 2016)
+        self.assertEqual((row.name, row.rank, row.award), ("Otarbayev Daniyar", "83", "Bronze"))
+
+    def test_older_final_rank_is_not_the_leading_identifier(self):
+        for year in [2002, 2003, 2004, 2006]:
+            with self.subTest(year=year):
+                result = parse_ibo_row(["342 Kazakhstan Example Student 25.27 55 Silver"], "https://example.test/results.pdf", year)
+                self.assertEqual(result.rank, "55")
+
+    def test_country_code_and_separate_name_columns(self):
+        cases = [
+            (2010, "90 KAZ- 2704 Talap KOSSYBAKOV 53.511 Bronze", "Talap Kossybakov", "90", "Bronze"),
+            (2013, "35 silver Nurislam Yeshenkulov KAZ Kazakhstan 31,4", "Nurislam Yeshenkulov", "35", "Silver"),
+            (2014, "61SILVER Kazakhstan KAZ01 KAZ 01 Askarbek ORAKOV 35.5", "Askarbek Orakov", "61", "Silver"),
+            (2019, "105 B Kazahstan Adlet Turtemir 53 50", "Adlet Turtemir", "105", "Bronze"),
+        ]
+        for year, line, name, rank, award in cases:
+            with self.subTest(year=year):
+                result = parse_ibo_row([line], "https://example.test/result.pdf", year)
+                self.assertEqual((result.name, result.rank, result.award), (name, rank, award))
+
+    def test_table_and_text_names_have_identical_punctuation(self):
+        a = parse_ibo_row(["Bronze", "KAZAKHSTAN", "TAIMANOV, ADAM"], "https://example.test/2020.pdf", 2020)
+        b = parse_ibo_row(["Bronze KAZAKHSTAN TAIMANOV, ADAM"], "https://example.test/2020.pdf", 2020)
+        self.assertEqual(a.name, b.name)
+
     def test_site_root_relative_pdf_link(self):
         html = '<a href="files/downloads/results-reports/results/IBO2005.pdf">IBO 2005</a>'
         self.assertEqual(
@@ -158,6 +188,7 @@ class IoiResultsParsingTest(unittest.TestCase):
             teams,
             users,
             scores,
+            eligible_user_ids=set(users),
         )
 
         self.assertEqual(
@@ -173,6 +204,17 @@ class IoiResultsParsingTest(unittest.TestCase):
             "https://stats.example/results/KAZ",
         )
         self.assertEqual(participants[1].source_type, "scoreboard")
+
+    def test_unverified_live_population_cannot_supply_awards(self):
+        with self.assertRaises(ValueError):
+            parse_ioi_live_scoreboard(2026, "https://example.test/", {}, {}, {})
+
+    def test_guests_are_excluded_from_live_rank_denominator(self):
+        teams = {"KAZ": {"name": "Kazakhstan"}, "GUEST": {"name": "Guest"}}
+        users = {"KAZ1": {"f_name": "Test", "l_name": "Person", "team": "KAZ"}, "X": {"team": "GUEST"}}
+        rows = parse_ioi_live_scoreboard(2026, "https://example.test/", teams, users,
+                                        {"KAZ1": {"score": 5}, "X": {"score": 10}}, {"KAZ1"})
+        self.assertEqual(rows[0].rank, "1/1")
 
 
 if __name__ == "__main__":

@@ -530,8 +530,8 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         person = self.people["kaz-c792c9bfcef4"]
         location = self.locations[person["person_id"]]
 
-        self.assertEqual(person["organization"], "NutraLens")
-        self.assertEqual(person["role"], "Co-founder")
+        self.assertEqual(person["organization"], "Yale University")
+        self.assertEqual(person["role"], "Program Administrator and Data Engineer")
         self.assertEqual(
             person["linkedin_url"],
             "https://www.linkedin.com/in/madi-baltagulov-509bbb18b",
@@ -541,7 +541,7 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
         self.assertEqual(location["country_code"], "US")
         self.assertEqual(
             location["location_label"],
-            "New Haven, Connecticut, United States",
+            "New Haven, CT",
         )
 
     def test_nurislam_tursynbek_current_unc_role_and_actual_degrees(self):

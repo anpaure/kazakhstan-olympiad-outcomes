@@ -1245,13 +1245,13 @@
   {
     "person_id": "kaz-ae7bbfa79815",
     "name": "Azamat Smagulov",
-    "country_code": "US",
-    "country_name": "United States",
-    "location_label": "San Francisco, California, United States",
-    "evidence_kind": "current_role_location",
+    "country_code": "SK",
+    "country_name": "Slovakia",
+    "location_label": "Slovakia (last verified in 2026)",
+    "evidence_url": "https://linkedin.com/in/azamatsmagulov",
+    "evidence_kind": "historical_outcome_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at Prog.AI. The profile header points to Kazakhstan, but it conflicts with the active-role location and is not used.",
-    "evidence_url": "https://linkedin.com/in/azamatsmagulov"
+    "review_reason": "The latest disclosed Vacuumlabs role ended in August 2026 in Slovakia. This is the last known work location; current residence is unknown. The selected role ended in 2026, so this is displayed as a historical latest-known country rather than a current residence."
   },
   {
     "person_id": "kaz-c11d384a01db",
@@ -1500,11 +1500,11 @@
     "name": "Birzhan Muldagaliyev",
     "country_code": "KZ",
     "country_name": "Kazakhstan",
-    "location_label": "Almaty, Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/birzhan-moldagaliyev",
     "evidence_kind": "current_role_location",
-    "confidence": "probable",
-    "review_reason": "Country follows the location attached to the accepted current role at Kcell. The public profile header independently agrees.",
-    "evidence_url": "https://linkedin.com/in/birzhan-moldagaliyev"
+    "confidence": "confirmed",
+    "review_reason": "The July 2026-present AgroCredit role explicitly places the work in Astana. The Almaty profile header does not override that role location."
   },
   {
     "person_id": "kaz-12d9dc922ba8",
@@ -2380,10 +2380,10 @@
     "name": "Madi Baltagulov",
     "country_code": "US",
     "country_name": "United States",
-    "location_label": "New Haven, Connecticut, United States",
+    "location_label": "New Haven, CT",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at NutraLens.",
+    "review_reason": "Country follows the location attached to the accepted current role at Yale University. The public profile header independently agrees.",
     "evidence_url": "https://www.linkedin.com/in/madi-baltagulov-509bbb18b"
   },
   {
@@ -2807,13 +2807,13 @@
   {
     "person_id": "kaz-b788eb650e7a",
     "name": "Nurgali Arystanov",
-    "country_code": "KR",
-    "country_name": "South Korea",
-    "location_label": "South Korea",
-    "evidence_kind": "active_affiliation_profile_location",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://linkedin.com/in/nurgali-arystanov-07548042",
+    "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "The accepted profile places the person in South Korea and independently lists the matched current role at Embassy of Kazakhstan in the Republic of Korea.",
-    "evidence_url": "https://linkedin.com/in/nurgali-arystanov-07548042"
+    "review_reason": "The new KazAID chairmanship, Astana profile location, and dated July/August 2026 official meeting reports agree. The old Seoul embassy role is superseded."
   },
   {
     "person_id": "kaz-92adb8a08f0e",
@@ -3225,13 +3225,13 @@
   {
     "person_id": "kaz-5529282c441f",
     "name": "Roman Cheremnov",
-    "country_code": "KZ",
-    "country_name": "Kazakhstan",
-    "location_label": "Almaty, Kazakhstan",
-    "evidence_kind": "current_role_location",
+    "country_code": "FR",
+    "country_name": "France",
+    "location_label": "Palaiseau, France",
+    "evidence_url": "https://www.polytechnique.edu/en/campus/access-campus",
+    "evidence_kind": "current_education_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at Astana/Almaty Physics Battles Tournament. The public profile header independently agrees.",
-    "evidence_url": "https://kz.linkedin.com/in/roman-cheremnov-a02b8a341"
+    "review_reason": "Country follows the accepted active student affiliation at École Polytechnique; the linked official institution source establishes the campus location. École Polytechnique's official access page identifies its Palaiseau campus."
   },
   {
     "person_id": "kaz-eda797e5a5c1",
@@ -3868,7 +3868,7 @@
     "location_label": "Antalya, Turkey",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at Self-employed. The public profile header independently agrees.",
+    "review_reason": "Country follows the location attached to the accepted current role at Self-employed.",
     "evidence_url": "https://tr.linkedin.com/in/vitaliy-tsvayer"
   },
   {
@@ -4407,7 +4407,7 @@
     "location_label": "Taipei, Taipei City, Taiwan",
     "evidence_kind": "current_role_location",
     "confidence": "confirmed",
-    "review_reason": "Country follows the location attached to the accepted current role at Google. The public profile header independently agrees.",
+    "review_reason": "Country follows the location attached to the accepted current role at Google.",
     "evidence_url": "https://linkedin.com/in/zhanadil"
   },
   {

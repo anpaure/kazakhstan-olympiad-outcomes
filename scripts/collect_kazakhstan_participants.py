@@ -43,14 +43,9 @@ SCOREBOARD_SOURCE_URLS = {
     "IChO": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad",
 }
 
-# The IOI statistics archive can lag behind a completed contest. These are
-# official CMS scoreboards used only to fill a year absent from results/KAZ;
-# once the archive publishes that year, its row wins during deduplication.
-IOI_LIVE_SCOREBOARDS = {
-    2026: {
-        "scoreboard_url": "https://ranking.ioi2026.uz/",
-    },
-}
+# Completed contests belong in the official archive. A future temporary
+# scoreboard must provide an audited eligible-user list, excluding guests.
+IOI_LIVE_SCOREBOARDS: dict[int, dict] = {}
 
 EXA_SOURCE_QUERIES = {
     "IMO": 'Kazakhstan IMO individual results contestants official KAZ "International Mathematical Olympiad"',
@@ -110,10 +105,10 @@ IBO_LEGACY_PDF_ROWS: dict[int, list[tuple[str, str]]] = {
 }
 
 IBO_COUNTRY_PATTERN = re.compile(
-    r"(?<![A-Za-z])(?:kazakhstan|kazakhistan|kazachstan|kazakistan)(?![A-Za-z])",
+    r"(?<![A-Za-z])(?:kazakhstan|kazakhistan|kazachstan|kazakistan|kazahstan)(?![A-Za-z])",
     flags=re.IGNORECASE,
 )
-IBO_CODE_PATTERN = re.compile(r"\bKAZ(?:[- ]?[A-Z]?\d+)\b", flags=re.IGNORECASE)
+IBO_CODE_PATTERN = re.compile(r"\bKAZ\s*[- ]?\s*[A-Z]?\d+\b", flags=re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -524,8 +519,12 @@ def parse_ioi_live_scoreboard(
     teams: dict[str, dict[str, object]],
     users: dict[str, dict[str, object]],
     scores: dict[str, dict[str, float]],
+    eligible_user_ids: set[str] | None = None,
 ) -> list[Participant]:
     """Parse a completed official CMS scoreboard while the archive catches up."""
+    if not eligible_user_ids or not eligible_user_ids.issubset(users):
+        raise ValueError("Live rankings require an explicit, verified eligible-user list")
+    users = {key: value for key, value in users.items() if key in eligible_user_ids}
     kazakhstan_teams = {
         key
         for key, team in teams.items()
@@ -589,7 +588,7 @@ def parse_ioi_live_scoreboard(
 
 def collect_ioi_live_scoreboard(
     year: int,
-    config: dict[str, str],
+    config: dict,
     cache_dir: Path,
     refresh: bool,
 ) -> list[Participant]:
@@ -600,10 +599,11 @@ def collect_ioi_live_scoreboard(
 
     return parse_ioi_live_scoreboard(
         year=year,
-        source_url=OFFICIAL_SOURCE_URLS["IOI"],
+        source_url=scoreboard_url,
         teams=load_json("teams/"),
         users=load_json("users/"),
         scores=load_json("scores"),
+        eligible_user_ids=set(config.get("eligible_user_ids", [])),
     )
 
 
@@ -661,7 +661,7 @@ def parse_ibo_pdf(pdf_content: bytes, source_url: str, year: int) -> list[Partic
                 parsed = parse_ibo_row(row, source_url, year)
                 if parsed is None:
                     continue
-                key = (parsed.year, parsed.name.lower())
+                key = (parsed.year, re.sub(r"[^a-z ]", "", parsed.name.lower()))
                 if key in seen:
                     continue
                 seen.add(key)
@@ -671,6 +671,13 @@ def parse_ibo_pdf(pdf_content: bytes, source_url: str, year: int) -> list[Partic
 
 def extract_pdf_rows(page) -> list[list[str]]:
     rows: list[list[str]] = []
+    # Text extraction preserves medal labels that sometimes fall outside the
+    # detected table grid. Prefer it when both representations contain a row.
+    try:
+        text = page.extract_text() or ""
+    except Exception:
+        text = ""
+    rows.extend([[clean_text(line)] for line in text.splitlines() if clean_text(line)])
     try:
         for table in page.extract_tables() or []:
             for row in table or []:
@@ -680,14 +687,6 @@ def extract_pdf_rows(page) -> list[list[str]]:
     except Exception:
         pass
 
-    try:
-        text = page.extract_text() or ""
-    except Exception:
-        text = ""
-    for line in text.splitlines():
-        line = clean_text(line)
-        if line:
-            rows.append([line])
     return rows
 
 
@@ -697,15 +696,21 @@ def parse_ibo_row(row: list[str], source_url: str, year: int) -> Participant | N
         return None
 
     award = extract_award(joined)
-    rank = row[0] if row and re.fullmatch(r"\d+", row[0]) else ""
+    line = clean_text(" ".join(row))
+    rank_match = re.match(r"^(\d+)", line)
+    rank = rank_match.group(1) if rank_match else ""
+    if year in {2002, 2003, 2004, 2006, 2016}:
+        # These sheets have a leading ID/order and a separate final rank.
+        rank_match = re.search(r"\s(\d+)\s*(?:Gold|Silver|Bronze|Merit)?\s*$", line, re.IGNORECASE)
+        rank = rank_match.group(1) if rank_match else ""
     score = ""
 
-    name = extract_ibo_name_from_cells(row)
+    name = extract_ibo_name_from_line(line)
     if not name:
-        name = extract_ibo_name_from_line(joined)
+        name = extract_ibo_name_from_cells(row)
     if not name:
         return None
-    name = " ".join(token.capitalize() if token.isupper() else token for token in name.split())
+    name = " ".join(token.capitalize() if token.isupper() else token for token in name.replace(",", " ").split())
 
     return Participant(
         olympiad="IBO",
@@ -722,6 +727,7 @@ def parse_ibo_row(row: list[str], source_url: str, year: int) -> Participant | N
 
 
 def extract_award(text: str) -> str:
+    text = re.sub(r"(?<=\d)(?=Gold|Silver|Bronze)", " ", text, flags=re.IGNORECASE)
     for award in ["Gold", "Silver", "Bronze", "Certificate of Merit", "Merit", "Participant"]:
         if re.search(rf"\b{re.escape(award)}\b", text, flags=re.IGNORECASE):
             return award
@@ -759,7 +765,7 @@ def extract_ibo_name_from_line(line: str) -> str:
 
     if country_match:
         after = line[country_match.end() :].replace("|", " ").strip()
-        after = IBO_CODE_PATTERN.sub("", after, count=1).strip()
+        after = re.sub(r"^(?:(?:KAZ\s*[- ]?\s*\d*|\d+[A-Z]?|Mr\.|Ms\.)\s*)+", "", after, flags=re.IGNORECASE)
         candidate = words_until_numeric(after)
         if looks_like_name(candidate):
             return candidate
@@ -767,6 +773,8 @@ def extract_ibo_name_from_line(line: str) -> str:
         before = line[: country_match.start()].replace("|", " ").strip()
         before = re.sub(r"^(?:\W*\d+(?:[.,]\d+)?)+\s*", "", before)
         before = IBO_CODE_PATTERN.sub("", before, count=1).strip()
+        before = re.sub(r"^(?:gold|silver|bronze|merit|[BSGX])\s+", "", before, flags=re.IGNORECASE)
+        before = re.sub(r"\s+KAZ$", "", before, flags=re.IGNORECASE)
         candidate = words_until_numeric(before)
         if looks_like_name(candidate):
             return candidate
@@ -778,7 +786,7 @@ def words_until_numeric(text: str) -> str:
     for token in text.split():
         if re.search(r"\d", token):
             break
-        if token.lower() in {"gold", "silver", "bronze", "participant", "b", "s", "g"}:
+        if token.lower() in {"gold", "silver", "bronze", "merit", "participant", "b", "s", "g", "male", "female"}:
             break
         if IBO_COUNTRY_PATTERN.fullmatch(token.strip(",;:|")):
             break
@@ -799,6 +807,8 @@ def looks_like_name(candidate: str) -> bool:
     if extract_award(candidate):
         return False
     if re.search(r"\d", candidate):
+        return False
+    if re.search(r"\b(?:ranking|results?|ibo|country|gender)\b", candidate, flags=re.IGNORECASE):
         return False
     return bool(re.search(r"[A-Za-z]", candidate)) and len(candidate.split()) >= 2
 
@@ -857,12 +867,13 @@ def collect(
             if olympiad in SCOREBOARD_SOURCE_URLS:
                 scoreboard_url = SCOREBOARD_SOURCE_URLS[olympiad]
                 print(f"Collecting {olympiad} scoreboard data from {scoreboard_url}", file=sys.stderr)
-                scoreboard_participants, scoreboard_seen_years = collect_scoreboard(
-                    olympiad,
-                    scoreboard_url,
-                    cache_dir,
-                    refresh,
-                )
+                try:
+                    scoreboard_participants, scoreboard_seen_years = collect_scoreboard(
+                        olympiad, scoreboard_url, cache_dir, refresh,
+                    )
+                except requests.RequestException as error:
+                    print(f"Scoreboard unavailable ({type(error).__name__}); using the official {olympiad} archive.", file=sys.stderr)
+                    scoreboard_participants = []
                 all_participants.extend(scoreboard_participants)
 
             source_url = OFFICIAL_SOURCE_URLS[olympiad]
@@ -878,12 +889,15 @@ def collect(
         elif olympiad == "IBO":
             scoreboard_url = SCOREBOARD_SOURCE_URLS[olympiad]
             print(f"Collecting {olympiad} scoreboard data from {scoreboard_url}", file=sys.stderr)
-            scoreboard_participants, scoreboard_seen_years = collect_scoreboard(
-                olympiad,
-                scoreboard_url,
-                cache_dir,
-                refresh,
-            )
+            try:
+                scoreboard_participants, scoreboard_seen_years = collect_scoreboard(
+                    olympiad, scoreboard_url, cache_dir, refresh,
+                )
+            except requests.RequestException as error:
+                if not include_ibo_pdfs:
+                    raise
+                print(f"Scoreboard unavailable ({type(error).__name__}); using official IBO PDFs.", file=sys.stderr)
+                scoreboard_participants, scoreboard_seen_years = [], set()
             all_participants.extend(scoreboard_participants)
 
             if include_ibo_pdfs:

@@ -2476,11 +2476,11 @@
     "year": 2010,
     "name": "Ilya Skripin",
     "award": "Bronze",
-    "rank": "105",
+    "rank": "104",
     "score": "74.466",
     "person_url": "",
-    "source_url": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2010",
-    "source_type": "scoreboard"
+    "source_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "source_type": "html"
   },
   {
     "olympiad": "IChO",
@@ -2502,11 +2502,11 @@
     "year": 2010,
     "name": "Zhalgas Serimbetov",
     "award": "Bronze",
-    "rank": "122",
+    "rank": "121",
     "score": "70.418",
     "person_url": "",
-    "source_url": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2010",
-    "source_type": "scoreboard"
+    "source_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "source_type": "html"
   },
   {
     "olympiad": "IChO",
@@ -5791,11 +5791,11 @@
     "year": 2026,
     "name": "Akezhan Askar",
     "award": "Silver",
-    "rank": "73/386",
+    "rank": "73/375",
     "score": "320.55",
-    "person_url": "",
+    "person_url": "https://stats.ioinformatics.org/people/8684",
     "source_url": "https://stats.ioinformatics.org/results/KAZ",
-    "source_type": "scoreboard"
+    "source_type": "html"
   },
   {
     "olympiad": "IOI",
@@ -5804,11 +5804,11 @@
     "year": 2026,
     "name": "Aldiyar Seitbay",
     "award": "Silver",
-    "rank": "48/386",
+    "rank": "48/375",
     "score": "343.79",
-    "person_url": "",
+    "person_url": "https://stats.ioinformatics.org/people/8965",
     "source_url": "https://stats.ioinformatics.org/results/KAZ",
-    "source_type": "scoreboard"
+    "source_type": "html"
   },
   {
     "olympiad": "IOI",
@@ -5817,11 +5817,11 @@
     "year": 2026,
     "name": "Mansur Mamadakhunov",
     "award": "Silver",
-    "rank": "54/386",
+    "rank": "54/375",
     "score": "339.91",
-    "person_url": "",
+    "person_url": "https://stats.ioinformatics.org/people/8082",
     "source_url": "https://stats.ioinformatics.org/results/KAZ",
-    "source_type": "scoreboard"
+    "source_type": "html"
   },
   {
     "olympiad": "IOI",
@@ -5830,11 +5830,11 @@
     "year": 2026,
     "name": "Maxim Tsoy",
     "award": "Gold",
-    "rank": "5/386",
+    "rank": "5/375",
     "score": "452.33",
-    "person_url": "",
+    "person_url": "https://stats.ioinformatics.org/people/8348",
     "source_url": "https://stats.ioinformatics.org/results/KAZ",
-    "source_type": "scoreboard"
+    "source_type": "html"
   },
   {
     "olympiad": "IOI",

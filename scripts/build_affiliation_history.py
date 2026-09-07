@@ -145,9 +145,9 @@ SECONDARY_INSTITUTION_PATTERN = re.compile(
     re.IGNORECASE,
 )
 NON_ALMA_ROLE_PATTERN = re.compile(
-    r"\b(?:research|teaching) assistants?\b|\bstudent researchers?\b|\binstructors?\b|\b(?:acting )?deans?\b|"
+    r"\b(?:research|teaching) assistants?\b|\bstudent researchers?\b|\binstructors?\b|\b(?:acting )?deans?\b(?!['\u2019]s list\b)|"
     r"\b(?:intern|fellow|visiting|exchange (?:student|program|semester|study|studies)|"
-    r"summer (?:research )?(?:school|semester)|certificate|"
+    r"summer (?:research )?(?:school|semester|program)|certificate|"
     r"short course|participant|director|manager|founder|co-?founder|chief|officer|partner|"
     r"analyst|consultant|developer|architect|president|head|lead|owner|advisor|"
     r"adviser|administrator|coordinator|research author)\b",
@@ -236,6 +236,9 @@ def clean_text(value: object) -> str:
 
 def is_strong_employment_role(role: object) -> bool:
     role_text = clean_text(role)
+    role_text = re.sub(r"\bdean['\u2019]s list\b", "", role_text, flags=re.IGNORECASE)
+    if re.search(r"\bstudent\b.*\b(?:outreach|planning|representative|ambassador)\b", role_text, re.IGNORECASE):
+        return True
     if role_text.casefold() in {"specialist", "специалист"}:
         return True
     if STRONG_EMPLOYMENT_ROLE_TERMS.search(role_text):
@@ -257,6 +260,8 @@ def is_student_education_role(role: object) -> bool:
     if not role_text or is_strong_employment_role(role_text):
         return False
     if re.search(r"\bstudent researchers?\b", role_text, re.IGNORECASE):
+        return False
+    if re.search(r"\b(?:outreach|planning|representative|ambassador)\b", role_text, re.IGNORECASE):
         return False
     if STUDENT_EDUCATION_ROLE_PATTERN.search(role_text):
         return True
@@ -319,6 +324,8 @@ def make_entry(
 ) -> dict[str, object] | None:
     organization = LEADING_YEAR_RANGE_PATTERN.sub("", strip_markdown(organization))
     role = strip_markdown(role)
+    if role.startswith("[") and "]" not in role:
+        role = role[1:]
     role = clean_text(ROLE_STOP_PATTERN.sub("", role)).strip(" .,-")
     if affiliation_type == "education" and "olympiad" in organization.casefold():
         return None
@@ -880,6 +887,8 @@ def is_postsecondary_education(row: dict[str, object]) -> bool:
     organization = clean_text(row.get("organization"))
     evidence_text = clean_text(row.get("evidence_text"))
     evidence_kind = clean_text(row.get("evidence_kind"))
+    if organization.casefold() == "clinton global initiative university":
+        return False
     if evidence_kind in COMPETITION_DIRECTORY_EVIDENCE and not role:
         return False
     if is_strong_employment_role(role):

@@ -90,6 +90,21 @@
     "review_reason": "The accepted profile lists PhD Student and Research Assistant at UMass Dartmouth as current from September 2025."
   },
   {
+    "destination_review_id": "dest-review-8fd121eb7852e98a",
+    "evidence_id": "ev-b54fcedf7571e006",
+    "source_id": "src-a1510baf6f38",
+    "person_id": "kaz-dd3a643dd7b7",
+    "name": "Aiganym Baltashova",
+    "organization": "Massachusetts Institute of Technology (MIT)",
+    "role": "Undergraduate Transfer Student",
+    "affiliation_type": "education",
+    "start_year": "2026",
+    "end_year": "2029",
+    "evidence_url": "https://linkedin.com/in/aiganym-baltashova",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The accepted exact-URL profile now includes an MIT Bachelor of Science for 2026-2029. The latest recorded Mercor engagement ended in August 2026 and Jane Street FTTP was a March 2026 short program; MIT is the ongoing degree destination."
+  },
+  {
     "destination_review_id": "dest-review-d795290b3387c654",
     "evidence_id": "ev-1ea214c2af7c75cc",
     "source_id": "src-69f1d3174ce1",
@@ -315,6 +330,21 @@
     "review_reason": "Kazakhstan's current government business-entities register lists full-patronymic Aslan Erlanuly Kuan as a sole proprietor under OKED 85609, other education support activity. Self-employed is used as the single displayed destination because the registry does not expose a separate trading name."
   },
   {
+    "destination_review_id": "dest-review-a8cf1157f71471bd",
+    "evidence_id": "ev-2618932f4121ec16",
+    "source_id": "src-c11143451cc8",
+    "person_id": "kaz-ae7bbfa79815",
+    "name": "Azamat Smagulov",
+    "organization": "Vacuumlabs",
+    "role": "Senior Software Engineer",
+    "affiliation_type": "employment",
+    "start_year": "2024",
+    "end_year": "2026",
+    "evidence_url": "https://linkedin.com/in/azamatsmagulov",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The newly retrieved experience dates Vacuumlabs from July 2024 to August 2026 in Slovakia and ends Prog.AI in July 2024. Retain Vacuumlabs as the latest disclosed job with a bounded end year, not as current employment."
+  },
+  {
     "destination_review_id": "dest-review-9c2fca46d8018784",
     "evidence_id": "ev-592b8d6ed3d8cd36",
     "source_id": "src-8064153e41f4",
@@ -373,6 +403,21 @@
     "evidence_url": "https://rcez.kz/departmentdirectorinformationsecurity",
     "reviewed_at": "2026-08-11",
     "review_reason": "The official center profile identifies Beket as the current director of its Information Security and Personal Data Protection Department, a role begun in 2021."
+  },
+  {
+    "destination_review_id": "dest-review-1e4762fad5f72c89",
+    "evidence_id": "ev-5952272c1075afaa",
+    "source_id": "src-a0649ccff3e4",
+    "person_id": "kaz-ebbffad91290",
+    "name": "Birzhan Muldagaliyev",
+    "organization": "AgroCredit Corporation",
+    "role": "ML Team Lead",
+    "affiliation_type": "employment",
+    "start_year": "2026",
+    "end_year": "",
+    "evidence_url": "https://linkedin.com/in/birzhan-moldagaliyev",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The accepted profile explicitly names ML Team Lead at AgroCredit Corporation from July 2026 to present in Astana. Kcell ended in June 2021, and the lecturer role ended in June 2025."
   },
   {
     "destination_review_id": "dest-review-fed51165cc793be4",
@@ -510,6 +555,21 @@
     "review_reason": "The accepted profile shows a June 2025 promotion to Senior Research Scientist at TETmedical."
   },
   {
+    "destination_review_id": "dest-review-1e4798bff27eeb36",
+    "evidence_id": "ev-e185fb54149a5d7c",
+    "source_id": "src-7de44ca13713",
+    "person_id": "kaz-213b92028ecf",
+    "name": "Galymzhan Baktybai",
+    "organization": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "role": "Undergraduate Student, Biological Sciences",
+    "affiliation_type": "education",
+    "start_year": "2025",
+    "end_year": "2029",
+    "evidence_url": "https://kr.linkedin.com/in/galymzhnb",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The profile specifies Biological Sciences as the intended major and Chemical and Biomolecular Engineering as a minor in the 2025-2029 KAIST degree. The July-August 2026 IBS research internship has ended."
+  },
+  {
     "destination_review_id": "dest-review-b32cb01a0a33b94a",
     "evidence_id": "ev-b7557d58530c04f5",
     "source_id": "src-adee98ce90ac",
@@ -645,19 +705,19 @@
     "review_reason": "The accepted profile lists Software Engineer at Google as current from June 2016."
   },
   {
-    "destination_review_id": "dest-review-0d03bf766c396324",
-    "evidence_id": "ev-674106ddbeeee8aa",
-    "source_id": "src-81efe84f49fb",
+    "destination_review_id": "dest-review-74d83fd33dcde48c",
+    "evidence_id": "ev-719af641f6b7fbf3",
+    "source_id": "src-ddbc5ce03a6a",
     "person_id": "kaz-c792c9bfcef4",
     "name": "Madi Baltagulov",
-    "organization": "NutraLens",
-    "role": "Co-founder",
+    "organization": "Yale University",
+    "role": "Program Administrator and Data Engineer",
     "affiliation_type": "employment",
-    "start_year": "2025",
+    "start_year": "2026",
     "end_year": "",
-    "evidence_url": "https://www.linkedin.com/posts/madi-baltagulov-509bbb18b_entrepreneurship-publichealth-digitalhealth-activity-7383501897166385153-8i4q",
-    "reviewed_at": "2026-08-11",
-    "review_reason": "Madi Baltagulov's self-authored post says he is founding NutraLens with two co-founders; his public profile lists NutraLens as his current experience after completing his Yale MPH."
+    "evidence_url": "https://www.linkedin.com/in/madi-baltagulov-509bbb18b",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The latest dated current role is Program Administrator, Data Engineer at Yale School of Public Health / PopHIVE from July 2026 in New Haven. NutraLens founder/CEO and the unnamed startup remain searchable concurrent history; Yale and Vanderbilt degrees are retained."
   },
   {
     "destination_review_id": "dest-review-67756224c6af2238",
@@ -763,6 +823,21 @@
     "evidence_url": "https://hk.linkedin.com/in/nurdauletkemel",
     "reviewed_at": "2026-08-10",
     "review_reason": "The accepted profile lists Quantitative Researcher at an undisclosed proprietary trading firm as current from April 2024."
+  },
+  {
+    "destination_review_id": "dest-review-0b0a1aaa549a07a9",
+    "evidence_id": "ev-5d234862a42c5e25",
+    "source_id": "src-bfb125f656e5",
+    "person_id": "kaz-b788eb650e7a",
+    "name": "Nurgali Arystanov",
+    "organization": "KazAID",
+    "role": "Chairman of the Board",
+    "affiliation_type": "employment",
+    "start_year": "2026",
+    "end_year": "",
+    "evidence_url": "https://linkedin.com/in/nurgali-arystanov-07548042",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The refreshed profile headline and About section name Chairman of the Board at KazAID in Astana. Its repost of the July 22 KazAID announcement dates the appointment to July 20, 2026. The dated August 20 Astana Civil Service Hub meeting independently corroborates this office. The older embassy experience still marked Current is stale and does not supersede the new appointment."
   },
   {
     "destination_review_id": "dest-review-88ab7b0d79ab62cd",
@@ -900,6 +975,21 @@
     "review_reason": "Rakhim's accepted profile identifies Desargues AI in the current headline, and a public meeting post names him with the startup's founder team. The source supports Founding Team Member but not a narrower functional title."
   },
   {
+    "destination_review_id": "dest-review-7107c09baa82b676",
+    "evidence_id": "ev-7e8f2a9a501c7ea4",
+    "source_id": "src-c3311adf79c7",
+    "person_id": "kaz-b596c2a8a5f9",
+    "name": "Rassul Karabalin",
+    "organization": "Amazon",
+    "role": "Tech Lead, Processor Fabrication, Quantum Computing",
+    "affiliation_type": "employment",
+    "start_year": "2020",
+    "end_year": "",
+    "evidence_url": "http://www.linkedin.com/in/rassul",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The accepted profile gives the exact current Amazon role as Tech Lead, Processor Fabrication, Quantum Computing from May 2020. Retain the same employer and use the detailed experience title."
+  },
+  {
     "destination_review_id": "dest-review-d598dcd816bf7cce",
     "evidence_id": "ev-a0e1bf96d7cd43a9",
     "source_id": "src-3df7b3ac03de",
@@ -915,19 +1005,34 @@
     "review_reason": "The accepted profile lists Senior Software Engineer at Google as current from November 2025."
   },
   {
-    "destination_review_id": "dest-review-a85442ad1a5b8f57",
-    "evidence_id": "ev-e1e786940b64fd7e",
+    "destination_review_id": "dest-review-8dcd8694c395d934",
+    "evidence_id": "ev-0ddb8e550129206d",
     "source_id": "src-5d8553aafbe6",
     "person_id": "kaz-a2011ec03297",
     "name": "Renat Bekbolatov",
     "organization": "Genie",
-    "role": "Software Developer",
+    "role": "Founder and Lead Engineer",
     "affiliation_type": "employment",
     "start_year": "2025",
     "end_year": "",
     "evidence_url": "https://www.linkedin.com/in/bekbolatov",
-    "reviewed_at": "2026-08-10",
-    "review_reason": "The accepted profile lists Software Developer at Genie from June 2025 and does not identify him as Genie's founder."
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The accepted exact-URL profile now explicitly titles the June 2025-present Genie role Founder & Lead Engineer in Bellevue, superseding the older Software Developer wording. The separate Meta entry is bounded to April 2026."
+  },
+  {
+    "destination_review_id": "dest-review-67421de6a700e4f5",
+    "evidence_id": "ev-25b28d0a943e30d6",
+    "source_id": "src-e8e14e92e20d",
+    "person_id": "kaz-5529282c441f",
+    "name": "Roman Cheremnov",
+    "organization": "École Polytechnique",
+    "role": "Undergraduate Student, Mathematics and Physics",
+    "affiliation_type": "education",
+    "start_year": "2026",
+    "end_year": "2029",
+    "evidence_url": "https://kz.linkedin.com/in/roman-cheremnov-a02b8a341",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The profile now lists a 2026-2029 bachelor program at École Polytechnique. The physics-tournament Head of Academics role explicitly ended in December 2025. The ongoing degree replaces that ended school-era role as the destination."
   },
   {
     "destination_review_id": "dest-review-9f555d08a25e9eb1",
@@ -1048,6 +1153,21 @@
     "evidence_url": "https://kase.kz/files/emitters/BCCI/bccirbf7_2020.pdf",
     "reviewed_at": "2026-08-11",
     "review_reason": "The exact-name executive profile supplies Talap's historical BCC Invest role, while BCC Invest's official staffing disclosure as of 1 December 2020 names a different director of trading operations. The displayed role is therefore bounded as ended by 2020 and is not treated as current."
+  },
+  {
+    "destination_review_id": "dest-review-cea34866c4116a15",
+    "evidence_id": "ev-673e3e0e244693bc",
+    "source_id": "src-b0c9a9b83363",
+    "person_id": "kaz-c83291856fc0",
+    "name": "Tamirlan Seidakhmetov",
+    "organization": "Meta",
+    "role": "Data Science Manager",
+    "affiliation_type": "employment",
+    "start_year": "2024",
+    "end_year": "",
+    "evidence_url": "https://www.linkedin.com/in/tamirlan",
+    "reviewed_at": "2026-09-07",
+    "review_reason": "The accepted exact-URL profile explicitly lists Data Science Manager at Meta from November 2024 to present. The original university alumni biography uses the older generic Data Scientist title; the detailed current-role record takes precedence."
   },
   {
     "destination_review_id": "dest-review-331f1f926044fcef",

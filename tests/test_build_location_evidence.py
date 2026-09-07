@@ -15,6 +15,13 @@ from scripts.organization_names import canonicalize_organization, organization_k
 
 
 class LocationExtractionTest(unittest.TestCase):
+    def test_ended_current_year_role_is_historical(self):
+        person = {"person_id": "test", "name": "Test", "confidence": "confirmed", "destination_status": "latest_employment", "end_year": "2026"}
+        override = {"person_id": "test", "country_code": "SK", "country_name": "Slovakia", "location_label": "Slovakia", "evidence_kind": "current_role_location", "review_reason": "Role ended in August 2026."}
+        row = build_rows([person], [], {"test": override})[0]
+        self.assertEqual(row["evidence_kind"], "historical_outcome_location")
+        self.assertIn("last verified in 2026", row["location_label"])
+        self.assertEqual(country_from_location("Slovakia"), "SK")
     def test_current_role_location_is_preferred_over_profile_header(self):
         result = extract_location(
             "# Person CTO at Example Singapore (SG) 57 connections "

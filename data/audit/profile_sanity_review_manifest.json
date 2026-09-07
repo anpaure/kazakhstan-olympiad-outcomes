@@ -15,21 +15,21 @@
     "confirmed_newer": 12
   },
   "sample_review_statuses": {
-    "pass": 44,
-    "pass_after_correction": 4
+    "pass": 42,
+    "pass_after_correction": 6
   },
-  "deep_reviewed_profiles": 20,
+  "deep_reviewed_profiles": 22,
   "cumulative_signed_profiles": 96,
   "accepted_linkedin_profiles": 302,
   "linkedin_alignment_statuses": {
-    "matched_current_profile": 235,
-    "no_current_affiliation_parsed": 39,
-    "profile_retrieval_unavailable": 11,
-    "reconciled_source_precedence": 7,
-    "reconciled_destination_review": 6,
-    "matched_historical_profile": 4
+    "matched_current_profile": 237,
+    "no_current_affiliation_parsed": 37,
+    "profile_retrieval_unavailable": 10,
+    "reconciled_source_precedence": 6,
+    "reconciled_destination_review": 7,
+    "matched_historical_profile": 5
   },
   "unreconciled_linkedin_profiles": 0,
-  "root_cause_findings": 44,
+  "root_cause_findings": 50,
   "unresolved_findings": 0
 }

@@ -45,6 +45,15 @@
     "evidence_url": ""
   },
   {
+    "organization_alias_id": "org-3e8ca1955a63a5d5",
+    "alias": "JSC \"AgroCredit Corporation\"",
+    "canonical_name": "AgroCredit Corporation",
+    "display_name": "AgroCredit Corporation",
+    "merge_type": "legal_form_variant",
+    "rationale": "Remove the legal-form prefix and quotation marks from the employer named by the accepted profile.",
+    "evidence_url": "https://linkedin.com/in/birzhan-moldagaliyev"
+  },
+  {
     "organization_alias_id": "org-0c7dc004aec88e97",
     "alias": "AIJKO GmbH",
     "canonical_name": "AIJKO",
@@ -4651,6 +4660,15 @@
     "merge_type": "legal_form_variant",
     "rationale": "Employer legal-form suffix removed",
     "evidence_url": "https://wtt-solutions.com/"
+  },
+  {
+    "organization_alias_id": "org-7939875d291b5aea",
+    "alias": "Yale School of Public Health",
+    "canonical_name": "Yale University",
+    "display_name": "Yale University",
+    "merge_type": "parent_organization",
+    "rationale": "Yale public-health school is a constituent school of Yale University, as identified by the accepted education and employment profile.",
+    "evidence_url": "https://www.linkedin.com/in/madi-baltagulov-509bbb18b"
   },
   {
     "organization_alias_id": "org-0695481704fca89c",

@@ -3230,8 +3230,8 @@
     "source_type": "scoreboard"
   },
   {
-    "participation_id": "part-1825664ad029ef24",
-    "evidence_id": "ev-a10022b5c5d85d3d",
+    "participation_id": "part-988ad4bd7aff6b42",
+    "evidence_id": "ev-42308ac82a07fb9c",
     "person_id": "kaz-9dadae71693b",
     "canonical_name": "Ilya Skripin",
     "recorded_name": "Ilya Skripin",
@@ -3240,11 +3240,11 @@
     "country_code": "KAZ",
     "year": "2010",
     "award": "Bronze",
-    "rank": "105",
+    "rank": "104",
     "score": "74.466",
     "person_url": "",
-    "source_url": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2010",
-    "source_type": "scoreboard"
+    "source_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "source_type": "html"
   },
   {
     "participation_id": "part-5e97bfbcb7cc2bfa",
@@ -3264,8 +3264,8 @@
     "source_type": "scoreboard"
   },
   {
-    "participation_id": "part-961d5a8108e07f69",
-    "evidence_id": "ev-e44ea7b50784bffd",
+    "participation_id": "part-990e4f2a34a253fb",
+    "evidence_id": "ev-df3e933492978b51",
     "person_id": "kaz-73232d09a9cf",
     "canonical_name": "Zhalgas Serimbetov",
     "recorded_name": "Zhalgas Serimbetov",
@@ -3274,11 +3274,11 @@
     "country_code": "KAZ",
     "year": "2010",
     "award": "Bronze",
-    "rank": "122",
+    "rank": "121",
     "score": "70.418",
     "person_url": "",
-    "source_url": "https://scoreboard.bc-pf.org/en/results/chemistry/international-chemistry-olympiad/2010",
-    "source_type": "scoreboard"
+    "source_url": "https://www.icho-official.org/results/country_info.php?country=Kazakhstan",
+    "source_type": "html"
   },
   {
     "participation_id": "part-6a2dd10c634af338",
@@ -7566,7 +7566,7 @@
   },
   {
     "participation_id": "part-0c9678767774e759",
-    "evidence_id": "ev-c9aa46d219150156",
+    "evidence_id": "ev-82350293736bdd34",
     "person_id": "kaz-822bb4ee42e0",
     "canonical_name": "Akezhan Askar",
     "recorded_name": "Akezhan Askar",
@@ -7575,15 +7575,15 @@
     "country_code": "KAZ",
     "year": "2026",
     "award": "Silver",
-    "rank": "73/386",
+    "rank": "73/375",
     "score": "320.55",
-    "person_url": "",
+    "person_url": "https://stats.ioinformatics.org/people/8684",
     "source_url": "https://stats.ioinformatics.org/results/KAZ",
-    "source_type": "scoreboard"
+    "source_type": "html"
   },
   {
     "participation_id": "part-8168b589d05bb09c",
-    "evidence_id": "ev-f7d02439e4feed29",
+    "evidence_id": "ev-9326707f5def1045",
     "person_id": "kaz-175c23c0ca43",
     "canonical_name": "Aldiyar Seitbay",
     "recorded_name": "Aldiyar Seitbay",
@@ -7592,15 +7592,15 @@
     "country_code": "KAZ",
     "year": "2026",
     "award": "Silver",
-    "rank": "48/386",
+    "rank": "48/375",
     "score": "343.79",
-    "person_url": "",
+    "person_url": "https://stats.ioinformatics.org/people/8965",
     "source_url": "https://stats.ioinformatics.org/results/KAZ",
-    "source_type": "scoreboard"
+    "source_type": "html"
   },
   {
     "participation_id": "part-fbde822f1f3d0118",
-    "evidence_id": "ev-0b21853ca5fd3901",
+    "evidence_id": "ev-7fc6f7163ae24f92",
     "person_id": "kaz-ec0591e8ac95",
     "canonical_name": "Mansur Mamadakhunov",
     "recorded_name": "Mansur Mamadakhunov",
@@ -7609,15 +7609,15 @@
     "country_code": "KAZ",
     "year": "2026",
     "award": "Silver",
-    "rank": "54/386",
+    "rank": "54/375",
     "score": "339.91",
-    "person_url": "",
+    "person_url": "https://stats.ioinformatics.org/people/8082",
     "source_url": "https://stats.ioinformatics.org/results/KAZ",
-    "source_type": "scoreboard"
+    "source_type": "html"
   },
   {
     "participation_id": "part-017be7f1473dcf1f",
-    "evidence_id": "ev-73ab161ecbe1550b",
+    "evidence_id": "ev-aa89b4589a0344ef",
     "person_id": "kaz-618279226751",
     "canonical_name": "Maxim Tsoy",
     "recorded_name": "Maxim Tsoy",
@@ -7626,11 +7626,11 @@
     "country_code": "KAZ",
     "year": "2026",
     "award": "Gold",
-    "rank": "5/386",
+    "rank": "5/375",
     "score": "452.33",
-    "person_url": "",
+    "person_url": "https://stats.ioinformatics.org/people/8348",
     "source_url": "https://stats.ioinformatics.org/results/KAZ",
-    "source_type": "scoreboard"
+    "source_type": "html"
   },
   {
     "participation_id": "part-21378557a53932c3",

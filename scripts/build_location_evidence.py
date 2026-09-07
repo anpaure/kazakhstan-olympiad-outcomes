@@ -73,6 +73,7 @@ COUNTRY_NAMES = {
     "SA": "Saudi Arabia",
     "SE": "Sweden",
     "SG": "Singapore",
+    "SK": "Slovakia",
     "TR": "Türkiye",
     "TW": "Taiwan",
     "AE": "United Arab Emirates",
@@ -118,6 +119,7 @@ COUNTRY_ALIASES = {
     "russian federation": "RU",
     "saudi arabia": "SA",
     "singapore": "SG",
+    "slovakia": "SK",
     "south korea": "KR",
     "spain": "ES",
     "sweden": "SE",
@@ -169,6 +171,7 @@ CITY_COUNTRIES = {
     "moscow": "RU",
     "mountain view": "US",
     "new york": "US",
+    "new haven, ct": "US",
     "novosibirsk": "RU",
     "riyadh": "SA",
     "san francisco": "US",
@@ -738,7 +741,7 @@ def build_rows(
         if (
             clean_text(person.get("destination_status")) != "latest_employment"
             or not end_year.isdigit()
-            or int(end_year) >= 2026
+            or int(end_year) > 2026
         ):
             continue
         row["evidence_kind"] = "historical_outcome_location"

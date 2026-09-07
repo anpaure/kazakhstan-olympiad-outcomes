@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 from collections import defaultdict
@@ -222,7 +223,8 @@ def compact_sources(
 
 
 def explicit_destinations(
-    row: dict[str, object], affiliations: list[dict[str, object]]
+    row: dict[str, object], affiliations: list[dict[str, object]],
+    concurrent: list[dict[str, str]] | None = None,
 ) -> list[dict[str, str]]:
     """Return the primary destination plus source-explicit concurrent roles."""
     primary_organization = canonicalize_organization(row.get("organization"))
@@ -243,38 +245,24 @@ def explicit_destinations(
     if primary_metadata["organization_type"] == "education":
         return destinations
 
-    destination_review_text = " ".join(
-        str(item.get("evidence_text") or "")
-        for item in affiliations
-        if str(item.get("evidence_kind") or "").casefold()
-        == "destination_source_review"
-    )
-    if not re.search(r"\b(?:both|concurrent(?:ly)?)\b", destination_review_text, re.I):
-        return destinations
-
-    normalized_review_text = destination_review_text.casefold()
     seen = {primary_organization.casefold()}
-    for item in affiliations:
-        is_current = item.get("is_current") is True or str(
-            item.get("is_current") or ""
-        ).casefold() == "true"
-        if (
-            str(item.get("affiliation_type") or "").casefold() != "employment"
-            or not is_current
-        ):
+    for item in concurrent or []:
+        if item.get("person_id") != row["person_id"]:
             continue
         organization = canonicalize_organization(item.get("organization"))
         key = organization.casefold()
         display_name = display_organization(organization)
-        if (
-            not organization
-            or key in seen
-            or (
-                key not in normalized_review_text
-                and display_name.casefold() not in normalized_review_text
-            )
-        ):
+        if not organization or key in seen:
             continue
+        supported = any(
+            canonicalize_organization(affiliation.get("organization")) == organization
+            and affiliation.get("role") == item.get("role")
+            and str(affiliation.get("is_current")).lower() == "true"
+            and affiliation.get("affiliation_type") == "employment"
+            for affiliation in affiliations
+        )
+        if not supported or not item.get("evidence_url") or not item.get("reviewed_at"):
+            raise ValueError(f"Unsupported concurrent destination for {row['person_id']}: {organization}")
         metadata = organization_metadata(organization, "employment")
         destinations.append(
             {
@@ -293,6 +281,7 @@ def compact_person(
     location: dict[str, object] | None = None,
     affiliations: list[dict[str, object]] | None = None,
     audit_evidence: list[dict[str, object]] | None = None,
+    concurrent: list[dict[str, str]] | None = None,
 ) -> dict[str, object]:
     location = location or {}
     affiliations = affiliations or []
@@ -301,7 +290,7 @@ def compact_person(
     organization_classification = organization_metadata(
         organization, row.get("organization_category", "")
     )
-    destinations = explicit_destinations(row, affiliations)
+    destinations = explicit_destinations(row, affiliations, concurrent)
     alma_rows = selected_alma_maters(affiliations)
     alma_maters = [
         {
@@ -370,6 +359,8 @@ def main() -> int:
     parser.add_argument("--locations", default="data/person_locations.json")
     parser.add_argument("--affiliations", default="data/person_affiliations.json")
     parser.add_argument("--audit-evidence", default="data/audit/evidence.json")
+    parser.add_argument("--concurrent-destinations", default="data/concurrent_destinations.csv")
+    parser.add_argument("--published-links", default="data/published_links.json")
     parser.add_argument(
         "--template",
         default="visualization/olympiad-outcomes-template.html",
@@ -379,6 +370,9 @@ def main() -> int:
         default="docs/index.html",
     )
     args = parser.parse_args()
+
+    with Path(args.concurrent_destinations).open(newline="", encoding="utf-8") as handle:
+        concurrent = list(csv.DictReader(handle))
 
     rows = json.loads(Path(args.data).read_text(encoding="utf-8"))
     locations = {
@@ -397,9 +391,14 @@ def main() -> int:
             locations.get(row["person_id"]),
             affiliations_by_person.get(row["person_id"]),
             evidence_by_person.get(row["person_id"]),
+            concurrent,
         )
         for row in rows
     ]
+    # The publication allowlist implements the user's restriction on new links.
+    links_path = Path(args.published_links)
+    allowed_links = set(json.loads(links_path.read_text(encoding="utf-8")))
+    compact = restrict_public_links(compact, allowed_links)
     template = Path(args.template).read_text(encoding="utf-8")
     marker = "/*__DATA__*/[]"
     if marker not in template:
@@ -411,6 +410,15 @@ def main() -> int:
     output_path.write_text(output, encoding="utf-8")
     print(f"Wrote {len(compact)} people to {args.out}")
     return 0
+
+
+def restrict_public_links(people: list[dict[str, object]], allowed: set[str]) -> list[dict[str, object]]:
+    for person in people:
+        for field in ("profile", "linkedin"):
+            if person[field] not in allowed:
+                person[field] = ""
+        person["sources"] = [source for source in person["sources"] if source["url"] in allowed]
+    return people
 
 
 if __name__ == "__main__":

@@ -4,6 +4,7 @@ org-7cda7889ed0f7ed4,A.N.Nesmeyanov Institute of Organoelement RAS,"A.N. Nesmeya
 org-6994e06341ff8092,Казахский национальный педагогический университет имени Абая,Abai Kazakh National Pedagogical University,Abai Kazakh National Pedagogical University,multilingual_name,Russian university name,
 org-362f7e070f06da87,"Age of Learning, Inc. / ABCmouse.com",Age of Learning,Age of Learning,parent_organization,Product and legal-form suffix cleanup,https://www.ageoflearning.com/
 org-769df70c1898529a,AGP Holding LLP,AGP Holding,AGP Holding,same_entity,Legal-form variant,
+org-3e8ca1955a63a5d5,"JSC ""AgroCredit Corporation""",AgroCredit Corporation,AgroCredit Corporation,legal_form_variant,Remove the legal-form prefix and quotation marks from the employer named by the accepted profile.,https://linkedin.com/in/birzhan-moldagaliyev
 org-0c7dc004aec88e97,AIJKO GmbH,AIJKO,AIJKO,legal_form_variant,Legal-form cleanup,
 org-4c3f71cd5cb3ea1b,Universitas Airlangga,Airlangga University,Airlangga University,translated_name,Official English name,
 org-38dfeae5b20d7ca2,Akhmet Yassawi University,Akhmet Yassawi International Kazakh-Turkish University,Akhmet Yassawi University,same_entity,Short university name,
@@ -516,6 +517,7 @@ org-5400a7902abc7402,Wand,Wand AI,Wand AI,same_entity,Short public brand used by
 org-7173b0ca068d2f0e,Wand.ai,Wand AI,Wand AI,same_entity,Domain-style brand variant,https://wand.ai/
 org-4231a992ea3e313f,Washington University School of Medicine in St. Louis,Washington University in St. Louis,Washington University in St. Louis,parent_organization,University school,
 org-8937ea73fd82998a,WTT Solutions LLC,WTT Solutions,WTT Solutions,legal_form_variant,Employer legal-form suffix removed,https://wtt-solutions.com/
+org-7939875d291b5aea,Yale School of Public Health,Yale University,Yale University,parent_organization,"Yale public-health school is a constituent school of Yale University, as identified by the accepted education and employment profile.",https://www.linkedin.com/in/madi-baltagulov-509bbb18b
 org-0695481704fca89c,元智大學,Yuan Ze University,Yuan Ze University,multilingual_name,Official Chinese name,
 org-d442a93279b665aa,Ecole Nationale Supérieure de Géologie,École Nationale Supérieure de Géologie (ENSG),ENSG,diacritic_variant,ASCII-leading source name normalized to the official French name,https://ensg.univ-lorraine.fr/lecole/presentation/
 org-312edc848a9a268e,École Nationale Supérieure de Géologie,École Nationale Supérieure de Géologie (ENSG),ENSG,same_entity,Official name without acronym,https://ensg.univ-lorraine.fr/lecole/presentation/

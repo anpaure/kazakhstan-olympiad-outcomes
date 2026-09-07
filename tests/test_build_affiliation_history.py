@@ -13,6 +13,18 @@ from scripts.build_affiliation_history import (
 
 
 class LinkedInAffiliationExtractionTest(unittest.TestCase):
+    def test_deans_list_honor_does_not_turn_education_into_a_job(self):
+        row = extract_affiliations("## Education\n### [B.S. dean's list at [University of California, Berkeley](https://linkedin.com/school/berkeley)\n1999 - 2001")[0]
+        self.assertEqual(row["role"], "B.S. dean's list")
+        self.assertTrue(is_postsecondary_education(row))
+    def test_student_outreach_is_employment_not_a_degree(self):
+        rows = extract_affiliations("## Experience\n### Graduate Student Outreach and Planning - Yale University\n2024 - 2026")
+        self.assertEqual(rows[0]["affiliation_type"], "employment")
+
+    def test_non_degree_programs_are_not_alma_maters(self):
+        for organization, role in [("Clinton Global Initiative University", "Fellow"), ("University of Cambridge", "Summer Program")]:
+            with self.subTest(organization=organization):
+                self.assertFalse(is_postsecondary_education({"organization": organization, "role": role, "affiliation_type": "education"}))
     def test_complete_profile_supersedes_lossy_search_snippet(self):
         searches = [
             {

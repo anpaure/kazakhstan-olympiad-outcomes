@@ -10,19 +10,24 @@ The pipeline does not drive a browser across LinkedIn profiles. Discovery and ex
 
 The checked-in data currently contains:
 
-- 680 olympiad participation rows: 204 IMO, 112 IOI, 123 IPhO, 125 IBO, and 116 IChO
-- 456 canonical people with 58 reviewed alias pairs
-- 440 researched people, all classified as probable or confirmed
-- 311 confirmed and 129 probable identity, education, or career outcomes
-- 428 manually reviewed outcomes backed by public evidence
-- 408 researched people with one resolved destination and 299 with a public LinkedIn URL
-- 2,604 sourced employment/education history rows, including 579 selected alma-mater records across 391 people
-- 76 reviewed source-to-destination reconciliations for missing, stale, or overstated roles
-- 521 reviewed organization aliases collapsed into canonical employers and universities
-- 209 reviewed sector classifications covering every displayed non-educational destination
-- 413 sourced outcome-country records across 36 countries; 27 researched people remain unknown rather than defaulting to Kazakhstan
+- 684 participation rows: 204 IMO, 116 IOI, 123 IPhO, 125 IBO, and 116 IChO
+- 457 people with 60 reviewed alias pairs
+- 447 accepted identities: 317 confirmed and 130 probable
+- 439 manually reviewed people backed by public evidence
+- 412 resolved destinations and 302 accepted public LinkedIn profiles
+- 2,659 employment/education history rows, including 583 selected alma-mater records across 400 people
+- 93 destination reviews for missing, stale, or overstated roles
+- 527 organization aliases and 217 sector classifications
+- 414 sourced outcome-country records across 39 countries; 43 people remain unknown rather than defaulting to Kazakhstan
 - 1 additional person with candidate-only evidence retained for audit but no accepted outcome
-- 162 rejected identity sources retained with review reasons and supporting links
+- 9 unmatched people and 168 rejected identity sources retained for audit
+
+The September 7, 2026 revalidation attempted all 302 accepted LinkedIn profiles
+through Exa: 288 returned content and 14 were unavailable. Responses may be
+cached; a successful retrieval is not independent verification of every claim.
+Ten destination records were updated, six participation ranks were corrected,
+and 19 confirmed dead URLs were removed from the page. No new public links were
+added. See `data/audit/revalidation_report.md` for scope, corrections, and gaps.
 
 The current first step is implemented in `scripts/collect_kazakhstan_participants.py`. It collects Kazakhstan competitors from:
 
@@ -224,11 +229,30 @@ cost, result rank, public URL, result type, name-match flag, and returned
 highlights. The JSON also records input count, searched count, successful and
 failed counts, and coverage percentage.
 
-Current Exa search coverage: 456 of 456 canonical people, 456 successful searches,
-zero errors, and 3,155 ranked result rows. Total recorded search cost is $3.722.
-The profile audit covers all 299 accepted LinkedIn profiles: 277 full-content
-retrievals succeeded, 11 are reviewed manual public-profile transcriptions, and
-11 retrieval errors remain logged, at $0.282 recorded hydration cost.
+The original Exa search audit covers the then-current 456 people. Aldiyar's
+additional search is retained in `data/revalidation/2026-09-07/aldiyar_search.json`,
+bringing lifetime search coverage to all 457 current people. No later employer
+or university was established for him.
+
+The active profile evidence combines fresh and retained snapshots; its status
+counts must not be confused with the latest retrieval attempt. The independent
+September attempt and its per-profile decisions are preserved in
+`data/revalidation/2026-09-07/linkedin_retrieval.json` and
+`data/audit/profile_revalidation.csv`.
+
+After rebuilding the page and exporting the audit workbook, run:
+
+```bash
+python -m unittest discover -s tests -q
+python scripts/validate_research.py
+python scripts/validate_artifacts.py
+```
+
+The last check compares CSV/JSON records, all 13 workbook data sheets and summary
+counts, and the embedded public dataset. `data/published_links.json` restricts
+person/source links to the previously published set; new audit evidence does
+not automatically add hyperlinks to the page. Explicit concurrent destinations
+are recorded in `data/concurrent_destinations.csv`, not inferred from prose.
 
 Outputs:
 

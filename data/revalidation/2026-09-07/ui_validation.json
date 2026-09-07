@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-09-07",
+  "target": "local copy of the published page",
+  "people": 457,
+  "known_country_chart_total": 414,
+  "unknown_countries": 43,
+  "sort_toggles": ["name", "country", "alma", "destination", "year"],
+  "languages": ["en", "ru", "kk"],
+  "viewport_widths": [1440, 390],
+  "checked_layouts": 6,
+  "horizontal_overflow": false,
+  "clipped_chart_counts_or_legends": false,
+  "page_exceptions": [],
+  "analytics_blocked_during_test": true,
+  "historical_employer_search": "passed",
+  "updated_profile_search": "passed",
+  "concurrent_ceo_roles": "passed",
+  "empty_results_clear_charts": "passed",
+  "new_public_person_or_source_links": 0
+}
