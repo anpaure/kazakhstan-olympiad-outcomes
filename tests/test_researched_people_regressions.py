@@ -35,6 +35,37 @@ class ResearchedPeopleRegressionTest(unittest.TestCase):
             row for row in self.affiliations if row["person_id"] == person_id
         ]
 
+    def test_aldiyar_reported_university_enrollment_has_explicit_uncertainty(self):
+        person_id = "kaz-175c23c0ca43"
+        person = self.people[person_id]
+        self.assertEqual(person["organization"], "Astana IT University")
+        self.assertEqual(person["role"], "Student")
+        self.assertEqual(person["confidence"], "probable")
+        self.assertEqual(person["destination_status"], "current_education")
+        self.assertEqual(person["start_year"], "2026")
+        self.assertEqual(person["end_year"], "")
+        self.assertEqual(self.alma_maters(person_id), {"Astana IT University"})
+        self.assertEqual(self.locations[person_id]["country_code"], "KZ")
+        self.assertIn("interview", person["verification_basis"])
+
+    def test_sanzhar_hkust_attendance_does_not_imply_graduation_or_residence(self):
+        person_id = "kaz-0869880ec7a7"
+        self.assertEqual(self.people[person_id]["organization"], "")
+        self.assertNotIn(person_id, self.locations)
+        self.assertEqual(
+            self.alma_maters(person_id),
+            {"Hong Kong University of Science and Technology (HKUST)"},
+        )
+        attendance = next(
+            row for row in self.affiliations_for(person_id)
+            if row["evidence_kind"] == "official_university_roster"
+        )
+        self.assertEqual(attendance["start_year"], "2018")
+        self.assertEqual(attendance["end_year"], "")
+        self.assertFalse(attendance["is_current"])
+        with Path("data/location_overrides.csv").open(newline="") as handle:
+            self.assertNotIn(person_id, {row["person_id"] for row in csv.DictReader(handle)})
+
     def test_temirlan_ismagulov_teacher_outcome_is_consistent(self):
         person = self.people["kaz-c91345744362"]
         location = self.locations[person["person_id"]]

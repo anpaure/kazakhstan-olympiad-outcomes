@@ -345,6 +345,21 @@
     "source_adapters": "manual"
   },
   {
+    "source_id": "src-f7832adaaf1c",
+    "source_url": "https://astanait.edu.kz/en/contacts/",
+    "source_host": "astanait.edu.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_location_evidence",
+    "source_adapters": "current_education_location"
+  },
+  {
     "source_id": "src-4a0e630a2504",
     "source_url": "https://at.linkedin.com/in/assylbek-olzhabayev-b8b94a190",
     "source_host": "at.linkedin.com",
@@ -2985,6 +3000,21 @@
     "source_adapters": "manual;manual_review"
   },
   {
+    "source_id": "src-7a76453e1eb7",
+    "source_url": "https://cse.hkust.edu.hk/acm/",
+    "source_host": "cse.hkust.edu.hk",
+    "source_kind": "web_page",
+    "evidence_rows": 1,
+    "people_count": 1,
+    "accepted_rows": 0,
+    "supporting_rows": 1,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history",
+    "source_adapters": "official_university_roster"
+  },
+  {
     "source_id": "src-e970da74cff0",
     "source_url": "https://cse.hkust.edu.hk/~mxj/students.html",
     "source_host": "cse.hkust.edu.hk",
@@ -3253,6 +3283,21 @@
     "rejected_rows": 0,
     "provenances": "manual_review",
     "source_adapters": "manual"
+  },
+  {
+    "source_id": "src-edcf7177b039",
+    "source_url": "https://el.kz/ru/amp/mezhdunarodnaya-olimpiada-po-informatike-o-chyom-mechtaet-aldiyar-seytbay_400051886/",
+    "source_host": "el.kz",
+    "source_kind": "web_page",
+    "evidence_rows": 3,
+    "people_count": 1,
+    "accepted_rows": 1,
+    "supporting_rows": 2,
+    "candidate_rows": 0,
+    "superseded_rows": 0,
+    "rejected_rows": 0,
+    "provenances": "accepted_affiliation_history;manual_review",
+    "source_adapters": "manual;manual_review;reported_profile_interview"
   },
   {
     "source_id": "src-8f7d278f328d",
@@ -18813,16 +18858,16 @@
     "source_id": "src-6a900a3e5b61",
     "source_url": "https://stats.ioinformatics.org/people/8965",
     "source_host": "stats.ioinformatics.org",
-    "source_kind": "html",
-    "evidence_rows": 1,
+    "source_kind": "web_page",
+    "evidence_rows": 2,
     "people_count": 1,
-    "accepted_rows": 1,
+    "accepted_rows": 2,
     "supporting_rows": 0,
     "candidate_rows": 0,
     "superseded_rows": 0,
     "rejected_rows": 0,
-    "provenances": "participant_registry",
-    "source_adapters": "IOI"
+    "provenances": "manual_review;participant_registry",
+    "source_adapters": "IOI;manual"
   },
   {
     "source_id": "src-ed6b003f49ea",

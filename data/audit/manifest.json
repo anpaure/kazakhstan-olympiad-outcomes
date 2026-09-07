@@ -31,21 +31,21 @@
   "counts": {
     "people": 457,
     "participations": 684,
-    "affiliations": 2659,
-    "locations": 414,
-    "organization_aliases": 527,
+    "affiliations": 2662,
+    "locations": 415,
+    "organization_aliases": 528,
     "organization_sectors": 217,
     "destination_reviews": 93,
-    "evidence_rows": 6250,
-    "sources": 1772,
+    "evidence_rows": 6256,
+    "sources": 1775,
     "rejections": 168,
-    "complete_outcomes": 436,
-    "resolved_destinations": 412,
-    "verified_identities": 447,
+    "complete_outcomes": 437,
+    "resolved_destinations": 413,
+    "verified_identities": 448,
     "confirmed_identities": 317,
-    "probable_identities": 130,
+    "probable_identities": 131,
     "identity_only_people": 11,
     "candidate_only_people": 1,
-    "unmatched_people": 9
+    "unmatched_people": 8
   }
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "source_url": "https://astanait.edu.kz/en/contacts/",
+    "checked_at": "2026-09-07T11:17:39+00:00",
+    "http_status": 200,
+    "resolved_url": "https://astanait.edu.kz/en/contacts",
+    "content_type": "text/html; charset=utf-8",
+    "title": "Astana IT University",
+    "text_characters": 2295,
+    "text_cache": "b1fa739ac48b8f6a6c8c.txt",
+    "status": "reachable",
+    "source_id": "src-f7832adaaf1c",
+    "accepted_rows": 0,
+    "supporting_rows": 1
+  },
+  {
+    "source_url": "https://cse.hkust.edu.hk/acm/",
+    "checked_at": "2026-09-07T11:17:41+00:00",
+    "http_status": 200,
+    "resolved_url": "https://cse.hkust.edu.hk/acm/",
+    "content_type": "text/html",
+    "title": "HKUST ACM Programming Team",
+    "text_characters": 4437,
+    "text_cache": "c2491ce53743e63a1a97.txt",
+    "status": "reachable",
+    "source_id": "src-7a76453e1eb7",
+    "accepted_rows": 0,
+    "supporting_rows": 1
+  },
+  {
+    "source_url": "https://el.kz/ru/amp/mezhdunarodnaya-olimpiada-po-informatike-o-chyom-mechtaet-aldiyar-seytbay_400051886/",
+    "checked_at": "2026-09-07T11:17:42+00:00",
+    "http_status": 200,
+    "resolved_url": "https://el.kz/ru/amp/mezhdunarodnaya-olimpiada-po-informatike-o-chyom-mechtaet-aldiyar-seytbay_400051886/",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "\u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u0430\u044f \u043e\u043b\u0438\u043c\u043f\u0438\u0430\u0434\u0430 \u043f\u043e \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0442\u0438\u043a\u0435: \u043e \u0447\u0451\u043c \u043c\u0435\u0447\u0442\u0430\u0435\u0442 \u0410\u043b\u0434\u0438\u044f\u0440 \u0421\u0435\u0439\u0442\u0431\u0430\u0439",
+    "text_characters": 6012,
+    "text_cache": "2c8ef7e16cf9349f6f6e.txt",
+    "status": "reachable",
+    "source_id": "src-edcf7177b039",
+    "accepted_rows": 1,
+    "supporting_rows": 2
+  }
+]

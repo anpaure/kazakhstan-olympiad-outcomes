@@ -12,15 +12,15 @@ The checked-in data currently contains:
 
 - 684 participation rows: 204 IMO, 116 IOI, 123 IPhO, 125 IBO, and 116 IChO
 - 457 people with 60 reviewed alias pairs
-- 447 accepted identities: 317 confirmed and 130 probable
-- 439 manually reviewed people backed by public evidence
-- 412 resolved destinations and 302 accepted public LinkedIn profiles
-- 2,659 employment/education history rows, including 583 selected alma-mater records across 400 people
+- 448 accepted identities: 317 confirmed and 131 probable
+- 440 manually reviewed people backed by public evidence
+- 413 resolved destinations and 302 accepted public LinkedIn profiles
+- 2,662 employment/education history rows, including 585 selected alma-mater records across 402 people
 - 93 destination reviews for missing, stale, or overstated roles
-- 527 organization aliases and 217 sector classifications
-- 414 sourced outcome-country records across 39 countries; 43 people remain unknown rather than defaulting to Kazakhstan
+- 528 organization aliases and 217 sector classifications
+- 415 sourced outcome-country records across 39 countries; 42 people remain unknown rather than defaulting to Kazakhstan
 - 1 additional person with candidate-only evidence retained for audit but no accepted outcome
-- 9 unmatched people and 168 rejected identity sources retained for audit
+- 8 unmatched people and 168 rejected identity sources retained for audit
 
 The September 7, 2026 revalidation attempted all 302 accepted LinkedIn profiles
 through Exa: 288 returned content and 14 were unavailable. Responses may be
@@ -28,6 +28,10 @@ cached; a successful retrieval is not independent verification of every claim.
 Ten destination records were updated, six participation ranks were corrected,
 and 19 confirmed dead URLs were removed from the page. No new public links were
 added. See `data/audit/revalidation_report.md` for scope, corrections, and gaps.
+
+A follow-up reviewed Aldiyar's reported university enrollment and Sanzhar's
+historical HKUST attendance. The decisions and remaining uncertainty are in
+`data/revalidation/2026-09-07/followup_review.json`.
 
 The current first step is implemented in `scripts/collect_kazakhstan_participants.py`. It collects Kazakhstan competitors from:
 
@@ -231,8 +235,9 @@ failed counts, and coverage percentage.
 
 The original Exa search audit covers the then-current 456 people. Aldiyar's
 additional search is retained in `data/revalidation/2026-09-07/aldiyar_search.json`,
-bringing lifetime search coverage to all 457 current people. No later employer
-or university was established for him.
+bringing lifetime search coverage to all 457 current people. A subsequent
+interview review identifies him as a current Astana IT University student;
+the enrollment is recorded as probable, with no inferred degree or end date.
 
 The active profile evidence combines fresh and retained snapshots; its status
 counts must not be confused with the latest retrieval attempt. The independent

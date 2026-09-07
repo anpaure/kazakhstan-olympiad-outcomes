@@ -51,6 +51,7 @@ org-8329a19b83f4c127,КазНМУ,Asfendiyarov Kazakh National Medical Universit
 org-b7a4b3e81390978e,AIFC (Astana International Financial Centre),Astana International Financial Centre,AIFC,same_entity,Acronym-first variant,
 org-60776ba73f5e1299,AIFC Green Finance Centre,Astana International Financial Centre,AIFC,parent_organization,Green Finance Centre is an AIFC subsidiary,https://aifc.kz/news/aifc-green-finance-centre-to-open-a-branch-in-bishkek/
 org-adc7df264d6a8a56,AIFC Green Finance Centre Ltd,Astana International Financial Centre,AIFC,parent_organization,Legal name of the AIFC subsidiary,https://aifc.kz/wp-content/uploads/2024/06/aifc_ar2020_eng.pdf
+org-3f4c11097bf93dcc,Astana IT University,Astana IT University,Astana IT University,same_entity,The institution's official English name is retained without conflating it with IITU.,https://astanait.edu.kz/en/contacts/
 org-6734c42b5baf317f,Astana- Motors,Astana Motors,Astana Motors,punctuation_variant,Spacing and punctuation variant of the automotive company's name,https://astana-motors.kz/
 org-749db96589b950d7,Atyrau Refinery Llp,Atyrau Refinery,Atyrau Refinery,legal_form_variant,Legal-form and capitalization cleanup,
 org-e75e9483c42d9e84,Baiken-U LLP,Baiken-U,Baiken-U,legal_suffix_variant,English legal suffix normalized to the concise company name.,https://www.nuclear.kz/download/files/NSK-61-62-2023.pdf

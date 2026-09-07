@@ -468,6 +468,15 @@
     "evidence_url": "https://aifc.kz/wp-content/uploads/2024/06/aifc_ar2020_eng.pdf"
   },
   {
+    "organization_alias_id": "org-3f4c11097bf93dcc",
+    "alias": "Astana IT University",
+    "canonical_name": "Astana IT University",
+    "display_name": "Astana IT University",
+    "merge_type": "same_entity",
+    "rationale": "The institution's official English name is retained without conflating it with IITU.",
+    "evidence_url": "https://astanait.edu.kz/en/contacts/"
+  },
+  {
     "organization_alias_id": "org-6734c42b5baf317f",
     "alias": "Astana- Motors",
     "canonical_name": "Astana Motors",

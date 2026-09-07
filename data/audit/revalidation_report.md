@@ -2,6 +2,9 @@
 
 ## Scope
 
+The figures below describe the initial pass. The follow-up at the end records
+subsequent corrections and the final checked export.
+
 - All 457 people and 684 participations passed structural, identity, chronology,
   country, organization, and source-ledger checks.
 - All 684 participations matched fresh archive extraction by Olympiad, year,
@@ -95,3 +98,41 @@ countries. Country-chart counts sum to the 414 known-country records. No page
 overflow, clipped chart counts/legends, or JavaScript exceptions were detected.
 The published link set contains no additions. Publishable files and workbook
 XML were scanned for local home paths and embedded API-key assignments.
+
+## Follow-up Review
+
+- Aldiyar Seitbay: an August 2026 interview reports Astana IT University
+  enrollment after Bilim-Innovation Astana. The destination is Student, with
+  probable confidence in the audit. No degree level or graduation date is
+  inferred. The interview's competition-date claims do not replace official
+  IOI results.
+- Sanzhar Bidaibek: HKUST's 2018-2019 roster explicitly identifies first-year
+  Engineering study. This now supplies alma-mater attendance. Graduation,
+  current employment, and current country remain unestablished.
+- Removed Sanzhar's sports-club-based country override. The existing guard
+  already excluded it from the public page; deleting the input also prevents
+  its later reuse as career-location evidence.
+
+The per-person decisions, sources, and root causes are recorded in
+`../revalidation/2026-09-07/followup_review.json`. The updated dataset has
+448 accepted identities, 413 resolved destinations, and 42 unknown countries.
+No person or source hyperlinks were added to the public page.
+All three newly used evidence URLs returned readable responses; their separate
+reachability results are in `../revalidation/2026-09-07/followup_source_health.json`.
+
+Final checks: 371 tests passed; all 27 CSV/JSON pairs, 253,995 workbook data
+cells, summary counts, and 457 embedded public records agree. Browser checks
+passed at desktop and mobile widths in all three languages, including the
+two changed profiles, five sort toggles, and chart/filter counts.
+
+The privacy check inspected 138 publishable files and 2,157 reachable Git
+blobs, commits, and tags, including workbook XML. It found no local home paths
+or common embedded credential formats. An additional scan found no owner
+username or space-separated name in the publishable files. All reachable
+commit authors and committers use the anpaure GitHub noreply identity. These
+checks do not establish that every possible secret format is absent or remove
+copies held elsewhere.
+
+Repeat the publishable-file check with
+`python scripts/check_publishable_privacy.py`; add `--history` to inspect
+reachable Git history as well. Reports omit matching secret text.

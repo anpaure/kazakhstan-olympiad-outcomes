@@ -1,0 +1,40 @@
+[
+  {
+    "person_id": "kaz-175c23c0ca43",
+    "name": "Aldiyar Seitbay",
+    "reviewed_at": "2026-09-07",
+    "evidence_urls": [
+      "https://stats.ioinformatics.org/people/8965",
+      "https://www.gov.kz/memleket/entities/edu/press/news/details/1279465?lang=ru",
+      "https://el.kz/ru/amp/mezhdunarodnaya-olimpiada-po-informatike-o-chyom-mechtaet-aldiyar-seytbay_400051886/",
+      "https://astanait.edu.kz/en/contacts/"
+    ],
+    "decision": "Add reported current Astana IT University student outcome with probable confidence. Retain Bilim-Innovation Astana as completed school history.",
+    "limits": "The interview supplies enrollment, not an independent university roster. It does not state a degree level, program or completion date. Competition-date claims in the interview are not used to override official IOI results.",
+    "root_cause": "The initial Exa result established competition identity only. A separate interview contains later enrollment information."
+  },
+  {
+    "person_id": "kaz-0869880ec7a7",
+    "name": "Sanzhar Bidaibek",
+    "reviewed_at": "2026-09-07",
+    "evidence_urls": [
+      "https://cse.hkust.edu.hk/acm/",
+      "https://amir.goharshady.com/group/alumni",
+      "https://codeforces.com/profile/sancho"
+    ],
+    "decision": "Add HKUST as documented alma-mater attendance, beginning in 2018. Keep current destination and country unknown.",
+    "limits": "The university roster establishes first-year Engineering enrollment in 2018-2019; the supervisor's alumni page separately records UROP participation in 2021. Neither establishes a completed degree or a current job.",
+    "root_cause": "The roleless competition-directory affiliation was correctly excluded from degree evidence, but explicit student-year data in the university page's inline script had not been integrated."
+  },
+  {
+    "person_id": "kaz-0869880ec7a7",
+    "name": "Sanzhar Bidaibek",
+    "reviewed_at": "2026-09-07",
+    "evidence_urls": [
+      "https://ibjjf.com/events/2873/athletes-list-by-academy-teams"
+    ],
+    "decision": "Remove the unused Hong Kong country override based on a sports-club roster.",
+    "limits": "The existing unresolved-destination guard already suppressed this row from the published country dataset. This correction removes the unsupported input as well.",
+    "root_cause": "Club participation was overinterpreted as a latest-known outcome location; it does not establish employment, education or residence."
+  }
+]

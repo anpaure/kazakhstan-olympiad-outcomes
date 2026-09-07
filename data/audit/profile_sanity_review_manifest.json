@@ -6,7 +6,7 @@
   "sample_per_stratum": 12,
   "sample_method": "Within each confidence/era stratum, sort by SHA-256 of seed:stratum:person_id and take the first rows after excluding people signed in earlier review rounds.",
   "excluded_previously_reviewed": 48,
-  "sample_population": 399,
+  "sample_population": 400,
   "sample_size": 48,
   "sample_strata": {
     "probable_older": 12,

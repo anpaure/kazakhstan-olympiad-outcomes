@@ -363,6 +363,17 @@
     "review_reason": "Aldiyar's separate exact-name BUKI profile repeats his IPhO distinction and advertises current physics tutoring in Almaty, Kazakhstan, corroborating the Profi destination record."
   },
   {
+    "person_id": "kaz-175c23c0ca43",
+    "name": "Aldiyar Seitbay",
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "location_label": "Astana, Kazakhstan",
+    "evidence_url": "https://astanait.edu.kz/en/contacts/",
+    "evidence_kind": "current_education_location",
+    "confidence": "probable",
+    "review_reason": "Country follows the accepted active student affiliation at Astana IT University; the linked official institution source establishes the campus location. The university's official contact page identifies its campus in Astana Kazakhstan."
+  },
+  {
     "person_id": "kaz-6ff2bc2176bd",
     "name": "Alen Abdrakhmanov",
     "country_code": "KZ",

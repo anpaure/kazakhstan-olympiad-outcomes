@@ -22,6 +22,7 @@ src-c2cb21cf0386,https://ariregister.rik.ee/est/company/16568487/file/9011480944
 src-6f8a279ee993,https://arxiv.org/abs/2605.14136,arxiv.org,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,publication_affiliation_note
 src-cd1fac53fc4b,https://aspirantura.lebedev.ru/wp-content/uploads/2022/04/%D0%90%D1%80%D1%85%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%D0%90%D1%81%D0%BF%D0%B8%D1%80_2018_4.pdf,aspirantura.lebedev.ru,pdf,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-7737326d3977,https://ast.repetitors.info/repetitor/olimpiady-po-fizike/,ast.repetitors.info,web_page,1,1,1,0,0,0,0,manual_review,manual
+src-f7832adaaf1c,https://astanait.edu.kz/en/contacts/,astanait.edu.kz,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-4a0e630a2504,https://at.linkedin.com/in/assylbek-olzhabayev-b8b94a190,at.linkedin.com,linkedin,8,1,1,7,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;current_role_location;linkedin;manual;manual_review
 src-17be1eb03127,https://at.linkedin.com/in/zhanybek-alpichshev-41bb4b207,at.linkedin.com,linkedin,7,1,0,7,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,accepted_linkedin_profile;active_affiliation_profile_location;linkedin
 src-09c1108e1f7b,https://au.linkedin.com/in/angsar-manatuly-7409bb2b9,au.linkedin.com,linkedin,1,1,1,0,0,0,0,manual_review,manual
@@ -198,6 +199,7 @@ src-94b05de4fff8,https://cphof.org/profile/topcoder:sanchoman,cphof.org,structur
 src-924f4ba517eb,https://cphof.org/profile/topcoder:shaihitdin,cphof.org,structured_profile,3,1,0,3,0,0,0,accepted_affiliation_history;structured_affiliation;structured_identity,accepted_cphof;cphof
 src-6077f64cc2c8,https://crei.skoltech.ru/cpse/people/,crei.skoltech.ru,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-e2b6f3274aa2,https://cs.kaist.ac.kr/people/ugstudents?gubun=&gubun_lang=ko&keyword=&page=1,cs.kaist.ac.kr,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
+src-7a76453e1eb7,https://cse.hkust.edu.hk/acm/,cse.hkust.edu.hk,web_page,1,1,0,1,0,0,0,accepted_affiliation_history,official_university_roster
 src-e970da74cff0,https://cse.hkust.edu.hk/~mxj/students.html,cse.hkust.edu.hk,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-4ac8560d9547,https://cseweb.ucsd.edu/~mniethammer/author/nurislam-tursynbek/,cseweb.ucsd.edu,web_page,4,1,1,3,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review;research_group_biography
 src-040d7f70ddf8,https://cz.linkedin.com/pub/dir/?first=&last=Zhussipov&search=Search,cz.linkedin.com,linkedin,1,1,0,1,0,0,0,accepted_location_evidence,active_affiliation_profile_location
@@ -216,6 +218,7 @@ src-f4743d117050,https://edlightacademy.kz/trainers,edlightacademy.kz,web_page,4
 src-44a6a96f2636,https://edu.unideb.hu/page.php?id=64,edu.unideb.hu,web_page,1,1,0,1,0,0,0,accepted_location_evidence,current_education_location
 src-91de9e7e40a4,https://egemen.kz/article/4115-aldynhghy-aghalar-senimin-aqtaymyz,egemen.kz,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-204782d7ad4c,https://eko.ut.ee/pdf/icho/icho1999r.pdf,eko.ut.ee,pdf,1,1,1,0,0,0,0,manual_review,manual
+src-edcf7177b039,https://el.kz/ru/amp/mezhdunarodnaya-olimpiada-po-informatike-o-chyom-mechtaet-aldiyar-seytbay_400051886/,el.kz,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review;reported_profile_interview
 src-8f7d278f328d,https://elevenlabs.io/blog/authors/sergazy-kalmurzayev,elevenlabs.io,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
 src-fcfca15a4ba9,https://events.crugroup.com/middleeastsulphur/speakers-2022,events.crugroup.com,web_page,4,1,1,3,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,affiliation_country;conference_biography;manual;manual_review
 src-4f1accc77046,https://faio.kz/2024/,faio.kz,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_review,manual;manual_review
@@ -1253,7 +1256,7 @@ src-aff45f0eeb43,https://stats.ioinformatics.org/people/8347,stats.ioinformatics
 src-3fde99c6a84f,https://stats.ioinformatics.org/people/8348,stats.ioinformatics.org,web_page,4,1,4,0,0,0,0,manual_review;participant_registry,IOI;manual
 src-ad3725994ac6,https://stats.ioinformatics.org/people/8684,stats.ioinformatics.org,html,2,1,2,0,0,0,0,participant_registry,IOI
 src-4eecb4de1a18,https://stats.ioinformatics.org/people/8685,stats.ioinformatics.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IOI;manual
-src-6a900a3e5b61,https://stats.ioinformatics.org/people/8965,stats.ioinformatics.org,html,1,1,1,0,0,0,0,participant_registry,IOI
+src-6a900a3e5b61,https://stats.ioinformatics.org/people/8965,stats.ioinformatics.org,web_page,2,1,2,0,0,0,0,manual_review;participant_registry,IOI;manual
 src-ed6b003f49ea,https://stats.ioinformatics.org/results/KAZ,stats.ioinformatics.org,web_page,1,1,1,0,0,0,0,manual_review,manual
 src-fc70a7c4b93c,https://statsnet.co/companies/kz/29048640,statsnet.co,web_page,3,1,1,2,0,0,0,accepted_affiliation_history;accepted_location_evidence;manual_review,current_role_location;manual;manual_review
 src-83f0ffbcdb6d,https://stemco.org/stem-camp/singapore-summer-2024/,stemco.org,web_page,2,1,1,1,0,0,0,accepted_affiliation_history;manual_destination_reconciliation,destination_review;destination_source_review
